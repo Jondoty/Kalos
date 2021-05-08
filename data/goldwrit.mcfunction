@@ -1,0 +1,91 @@
+#Gold Writ, 1.5x Money
+
+entitydata @e[x=-1559,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:2700}
+entitydata @e[x=-1557,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:1440}
+entitydata @e[x=-1555,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:2700}
+entitydata @e[x=-1553,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:2700}
+entitydata @e[x=-1551,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:2700}
+entitydata @e[x=-1549,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:2700}
+entitydata @e[x=-1547,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:4500}
+entitydata @e[x=-1545,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:4500}
+entitydata @e[x=-1543,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:2700}
+entitydata @e[x=-1541,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:2700}
+entitydata @e[x=-1539,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:2700}
+entitydata @e[x=-1537,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:2700}
+entitydata @e[x=-1535,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:1800}
+entitydata @e[x=-1533,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:2700}
+
+entitydata @e[x=-1559,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:3600}
+entitydata @e[x=-1557,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:6000}
+entitydata @e[x=-1555,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:3600}
+entitydata @e[x=-1553,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:3600}
+entitydata @e[x=-1551,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:2880}
+entitydata @e[x=-1549,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:6000}
+entitydata @e[x=-1547,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:6000}
+entitydata @e[x=-1545,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:2400}
+entitydata @e[x=-1543,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:3600}
+entitydata @e[x=-1541,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:6000}
+entitydata @e[x=-1539,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:3600}
+entitydata @e[x=-1537,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:3600}
+entitydata @e[x=-1535,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:6000}
+entitydata @e[x=-1533,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:6000}
+
+entitydata @e[x=-1559,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:7500}
+entitydata @e[x=-1557,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:4500}
+entitydata @e[x=-1555,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:7500}
+entitydata @e[x=-1553,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:7500}
+entitydata @e[x=-1551,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:2400}
+entitydata @e[x=-1549,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:7500}
+entitydata @e[x=-1547,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:7500}
+entitydata @e[x=-1545,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:3000}
+entitydata @e[x=-1543,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:7500}
+entitydata @e[x=-1541,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:7500}
+entitydata @e[x=-1539,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:7500}
+entitydata @e[x=-1537,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:7500}
+entitydata @e[x=-1535,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:4500}
+entitydata @e[x=-1533,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:7500}
+
+entitydata @e[x=-1559,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:6300}
+entitydata @e[x=-1557,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:10500}
+entitydata @e[x=-1555,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:3360}
+entitydata @e[x=-1553,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:3780}
+entitydata @e[x=-1551,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:3780}
+entitydata @e[x=-1549,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:3780}
+entitydata @e[x=-1547,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:3780}
+entitydata @e[x=-1545,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:4200}
+entitydata @e[x=-1543,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:6300}
+entitydata @e[x=-1541,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:15750}
+
+entitydata @e[x=-1559,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:4320}
+entitydata @e[x=-1557,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:4860}
+entitydata @e[x=-1555,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:4860}
+entitydata @e[x=-1553,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:13500}
+entitydata @e[x=-1551,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:8100}
+entitydata @e[x=-1549,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:4860}
+entitydata @e[x=-1547,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:4860}
+entitydata @e[x=-1545,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:18000}
+entitydata @e[x=-1543,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:8100}
+entitydata @e[x=-1541,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:8100}
+
+entitydata @e[x=-1559,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {WinMoney:9600}
+entitydata @e[x=-1557,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {WinMoney:9600}
+entitydata @e[x=-1555,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {WinMoney:9600}
+entitydata @e[x=-1553,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {WinMoney:9600}
+entitydata @e[x=-1551,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {WinMoney:9600}
+entitydata @e[x=-1549,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {WinMoney:9600}
+entitydata @e[x=-1547,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {WinMoney:9600}
+entitydata @e[x=-1545,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {WinMoney:9600}
+
+entitydata @e[x=-1559,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:12000}
+entitydata @e[x=-1557,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:12000}
+entitydata @e[x=-1555,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:12000}
+entitydata @e[x=-1553,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:12000}
+entitydata @e[x=-1551,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:12000}
+entitydata @e[x=-1549,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:12000}
+entitydata @e[x=-1547,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:12000}
+entitydata @e[x=-1545,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:12000}
+entitydata @e[x=-1543,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:16500}
+entitydata @e[x=-1541,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:16500}
+entitydata @e[x=-1539,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:16500}
+entitydata @e[x=-1537,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:16500}
+entitydata @e[x=-1535,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:21600}
