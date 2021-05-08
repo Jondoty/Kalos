@@ -1,0 +1,252 @@
+scoreboard players tag @s add FlyVaniville
+scoreboard players tag @s add FlyKiloude
+scoreboard players tag @s add FlyAquacorde
+scoreboard players tag @s add FlySantalune
+scoreboard players tag @s add FlySnowbelle
+scoreboard players tag @s add FlyCouriway
+scoreboard players tag @s add FlyAnistar
+scoreboard players tag @s add FlyDendemille
+scoreboard players tag @s add FlyPokemonLeague
+scoreboard players tag @s add FlyLumiose
+scoreboard players tag @s add FlyLaverre
+scoreboard players tag @s add FlyAmbrette
+scoreboard players tag @s add FlyCamphrier
+scoreboard players tag @s add FlyCyllage
+scoreboard players tag @s add FlyGeosenge
+scoreboard players tag @s add FlyShalour
+scoreboard players tag @s add FlyCoumarine
+
+
+#Story-based tags
+scoreboard players tag @s add LucarioMoves
+scoreboard players tag @s add PowerPlantPass
+
+#advancements
+advancement grant @s through kalos:champion
+advancement grant @s through kalos:mega2
+advancement grant @s only kalos:mythicalroot
+advancement grant @s only kalos:legendroot
+
+
+scoreboard players set @s Mewtwo 0
+scoreboard players set @s Zapdos 0
+scoreboard players set @s Moltres 0
+scoreboard players set @s Articuno 0
+scoreboard players set @s Xerneas 0
+scoreboard players set @s Yveltal 0
+scoreboard players set @s Hoopa 0
+scoreboard players set @s Diancie 0
+scoreboard players set @s Volcanion 0
+
+
+
+#Mega Ring and Stones
+execute @s ~ ~ ~ megaring @s
+
+
+scoreboard players set @s Abomasite 0
+scoreboard players set @s Absolite 0
+scoreboard players set @s Aggronite 0
+scoreboard players set @s Alakazite 0
+scoreboard players set @s Banettite 0
+scoreboard players set @s Diancite 0
+scoreboard players set @s Garchompite 0
+scoreboard players set @s Gyaradosite 0
+scoreboard players set @s Heracronite 0
+scoreboard players set @s Houndoominite 0
+scoreboard players set @s Kangaskhanite 0
+scoreboard players set @s Manectite 0
+scoreboard players set @s Mawilite 0
+scoreboard players set @s Medichamite 0
+scoreboard players set @s Mewtwonite_X 0
+scoreboard players set @s Mewtwonite_Y 0
+scoreboard players set @s Pinsirite 0
+scoreboard players set @s Scizorite 0
+scoreboard players set @s Tyranitarite 0
+
+
+
+
+#Completes dialogue:
+scoreboard players tag @s add Dialogue1
+scoreboard players tag @s add Dialogue2
+scoreboard players tag @s add Dialogue3
+scoreboard players tag @s add Dialogue4
+scoreboard players tag @s add Dialogue5
+scoreboard players tag @s add Dialogue6
+scoreboard players tag @s add Dialogue7
+scoreboard players tag @s add Dialogue8
+scoreboard players tag @s add Dialogue9
+scoreboard players tag @s add Dialogue10
+scoreboard players tag @s add Dialogue11
+scoreboard players tag @s add Dialogue12
+scoreboard players tag @s add Dialogue13
+scoreboard players tag @s add Dialogue14
+scoreboard players tag @s add Dialogue15
+scoreboard players tag @s add Dialogue16
+scoreboard players tag @s add Dialogue17
+scoreboard players tag @s add Dialogue18
+scoreboard players tag @s add Dialogue19
+scoreboard players tag @s add Dialogue20
+scoreboard players tag @s add Dialogue21
+scoreboard players tag @s add Dialogue22
+scoreboard players tag @s add Dialogue23
+scoreboard players tag @s add Dialogue24
+scoreboard players tag @s add Dialogue25
+scoreboard players tag @s add Dialogue26
+scoreboard players tag @s add Dialogue27
+scoreboard players tag @s add Dialogue28
+scoreboard players tag @s add Dialogue29
+scoreboard players tag @s add Dialogue30
+scoreboard players tag @s add Dialogue31
+scoreboard players tag @s add Dialogue32
+scoreboard players tag @s add Dialogue33
+scoreboard players tag @s add Dialogue34
+scoreboard players tag @s add Dialogue35
+scoreboard players tag @s add Dialogue36
+scoreboard players tag @s add Dialogue37
+scoreboard players tag @s add Dialogue38
+scoreboard players tag @s add Dialogue39
+scoreboard players tag @s add Dialogue40
+scoreboard players tag @s add Dialogue41
+scoreboard players tag @s add Dialogue42
+scoreboard players tag @s add Dialogue43
+scoreboard players tag @s add Dialogue44
+scoreboard players tag @s add Dialogue45
+scoreboard players tag @s add Dialogue46
+scoreboard players tag @s add Dialogue47
+scoreboard players tag @s add Dialogue48
+scoreboard players tag @s add Dialogue49
+scoreboard players tag @s add Dialogue50
+scoreboard players tag @s add Dialogue51
+scoreboard players tag @s add Dialogue52
+scoreboard players tag @s add Dialogue53
+scoreboard players tag @s add Dialogue54
+scoreboard players tag @s add Dialogue55
+scoreboard players tag @s add Dialogue56
+scoreboard players tag @s add Dialogue57
+scoreboard players tag @s add Dialogue58
+scoreboard players tag @s add Dialogue59
+scoreboard players tag @s add Dialogue60
+scoreboard players tag @s add Dialogue61
+scoreboard players tag @s add Dialogue62
+scoreboard players tag @s add Dialogue63
+scoreboard players tag @s add Dialogue64
+scoreboard players tag @s add Dialogue65
+scoreboard players tag @s add Dialogue66
+scoreboard players tag @s add Dialogue67
+scoreboard players tag @s add Dialogue68
+scoreboard players tag @s add Dialogue69
+scoreboard players tag @s add Dialogue70
+scoreboard players tag @s add Dialogue71
+scoreboard players tag @s add Dialogue72
+scoreboard players tag @s add Dialogue73
+scoreboard players tag @s add Dialogue74
+scoreboard players tag @s add Dialogue75
+scoreboard players tag @s add Dialogue76
+scoreboard players tag @s add Dialogue77
+scoreboard players tag @s add Dialogue78
+scoreboard players tag @s add Dialogue79
+scoreboard players tag @s add Dialogue80
+scoreboard players tag @s add Dialogue81
+scoreboard players tag @s add Dialogue82
+scoreboard players tag @s add Dialogue83
+scoreboard players tag @s add Dialogue84
+scoreboard players tag @s add Dialogue85
+scoreboard players tag @s add Dialogue86
+scoreboard players tag @s add Dialogue87
+scoreboard players tag @s add Dialogue88
+scoreboard players tag @s add Dialogue89
+scoreboard players tag @s add Dialogue90
+scoreboard players tag @s add Dialogue91
+scoreboard players tag @s add Dialogue92
+scoreboard players tag @s add Dialogue93
+scoreboard players tag @s add Dialogue94
+scoreboard players tag @s add Dialogue95
+scoreboard players tag @s add Dialogue96
+scoreboard players tag @s add Dialogue97
+scoreboard players tag @s add Dialogue98
+scoreboard players tag @s add Dialogue99
+scoreboard players tag @s add Dialogue100
+scoreboard players tag @s add Dialogue101
+scoreboard players tag @s add Dialogue102
+scoreboard players tag @s add Dialogue103
+scoreboard players tag @s add Dialogue104
+scoreboard players tag @s add Dialogue105
+scoreboard players tag @s add Dialogue106
+scoreboard players tag @s add Dialogue107
+scoreboard players tag @s add Dialogue108
+scoreboard players tag @s add Dialogue109
+scoreboard players tag @s add Dialogue110
+scoreboard players tag @s add Dialogue111
+scoreboard players tag @s add Dialogue112
+scoreboard players tag @s add Dialogue113
+scoreboard players tag @s add Dialogue114
+scoreboard players tag @s add Dialogue115
+scoreboard players tag @s add Dialogue116
+scoreboard players tag @s add Dialogue117
+scoreboard players tag @s add Dialogue118
+scoreboard players tag @s add Dialogue119
+scoreboard players tag @s add Dialogue120
+scoreboard players tag @s add Dialogue121
+scoreboard players tag @s add Dialogue122
+scoreboard players tag @s add Dialogue123
+scoreboard players tag @s add Dialogue124
+scoreboard players tag @s add Dialogue125
+scoreboard players tag @s add Dialogue126
+scoreboard players tag @s add Dialogue127
+scoreboard players tag @s add Dialogue128
+scoreboard players tag @s add Dialogue129
+scoreboard players tag @s add Dialogue130
+scoreboard players tag @s add Dialogue131
+scoreboard players tag @s add Dialogue132
+scoreboard players tag @s add Dialogue133
+scoreboard players tag @s add Dialogue134
+scoreboard players tag @s add Dialogue135
+scoreboard players tag @s add Dialogue136
+scoreboard players tag @s add Dialogue137
+scoreboard players tag @s add Dialogue138
+scoreboard players tag @s add Dialogue139
+scoreboard players tag @s add Dialogue140
+scoreboard players tag @s add Dialogue141
+scoreboard players tag @s add Dialogue142
+scoreboard players tag @s add Dialogue143
+scoreboard players tag @s add Dialogue144
+scoreboard players tag @s add Dialogue145
+scoreboard players tag @s add Dialogue146
+scoreboard players tag @s add Dialogue147
+scoreboard players tag @s add Dialogue148
+scoreboard players tag @s add Dialogue149
+scoreboard players tag @s add Dialogue150
+
+#adds Holo Caster Call tags
+scoreboard players tag @s add Call1
+scoreboard players tag @s add Call2
+scoreboard players tag @s add Call3
+scoreboard players tag @s add Call4
+scoreboard players tag @s add Call5
+scoreboard players tag @s add Call6
+scoreboard players tag @s add Call7
+scoreboard players tag @s add Call8
+scoreboard players tag @s add Call9
+scoreboard players tag @s add Call10
+scoreboard players tag @s add Call11
+scoreboard players tag @s add Call12
+scoreboard players tag @s add Call13
+scoreboard players tag @s add Call14
+scoreboard players tag @s add Call15
+scoreboard players tag @s add Call16
+scoreboard players tag @s add Call17
+scoreboard players tag @s add Call18
+scoreboard players tag @s add Call19
+scoreboard players tag @s add Call20
+scoreboard players tag @s add Call21
+scoreboard players tag @s add Call22
+scoreboard players tag @s add Call23
+scoreboard players tag @s add Call24
+scoreboard players tag @s add Call25
+scoreboard players tag @s add Call26
+scoreboard players tag @s add Call27
+scoreboard players tag @s add Call28
+scoreboard players tag @s add Call29
+scoreboard players tag @s add Call30

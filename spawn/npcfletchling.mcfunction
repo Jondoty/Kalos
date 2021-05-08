@@ -1,0 +1,1 @@
+summon minecraft:parrot ~ ~ ~ {Invulnerable:1,PersistenceRequired:1,Silent:1,ActiveEffects:[{Id:14,Amplifier:0,Duration:999999}],Passengers:[{id:"pixelmon:statue",ndex:661s,gr:7,Animate:1b}]}

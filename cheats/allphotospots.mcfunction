@@ -1,0 +1,14 @@
+scoreboard players tag @s add PhotoSpot1
+scoreboard players tag @s add PhotoSpot2
+scoreboard players tag @s add PhotoSpot3
+scoreboard players tag @s add PhotoSpot4
+scoreboard players tag @s add PhotoSpot5
+scoreboard players tag @s add PhotoSpot6
+scoreboard players tag @s add PhotoSpot7
+scoreboard players tag @s add PhotoSpot8
+scoreboard players tag @s add PhotoSpot9
+scoreboard players tag @s add PhotoSpot10
+scoreboard players tag @s add PhotoSpot11
+scoreboard players tag @s add PhotoSpot12
+scoreboard players tag @s add PhotoSpot13
+scoreboard players tag @s add PhotoSpot14

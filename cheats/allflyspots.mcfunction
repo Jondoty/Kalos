@@ -1,0 +1,17 @@
+scoreboard players tag @s add FlyVaniville
+scoreboard players tag @s add FlyKiloude
+scoreboard players tag @s add FlyAquacorde
+scoreboard players tag @s add FlySantalune
+scoreboard players tag @s add FlySnowbelle
+scoreboard players tag @s add FlyCouriway
+scoreboard players tag @s add FlyAnistar
+scoreboard players tag @s add FlyDendemille
+scoreboard players tag @s add FlyPokemonLeague
+scoreboard players tag @s add FlyLumiose
+scoreboard players tag @s add FlyLaverre
+scoreboard players tag @s add FlyAmbrette
+scoreboard players tag @s add FlyCamphrier
+scoreboard players tag @s add FlyCyllage
+scoreboard players tag @s add FlyGeosenge
+scoreboard players tag @s add FlyShalour
+scoreboard players tag @s add FlyCoumarine
