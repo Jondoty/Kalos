@@ -1,0 +1,282 @@
+#scoreboard objectives add StrengthTrigger trigger
+
+#Walk up to Strength Rock
+#Tellraw asking if player wants to use Strength? [Yes] to confirm
+#
+#
+#
+#End Strength sequence, set to
+
+
+#Route 10 #1 - Testforblock
+execute @a[c=1,x=-2107,y=102,z=-322,dx=17,dy=10,dz=13,tag=Strength,score_StrengthTrigger_min=1,score_StrengthTrigger=1] ~ ~ ~ /fill -2096 101 -325 -2100 103 -329 minecraft:stone 4
+execute @a[c=1,x=-2107,y=102,z=-322,dx=17,dy=10,dz=13,tag=Strength,score_StrengthTrigger_min=1,score_StrengthTrigger=1] ~ ~ ~ /fill -2100 104 -324 -2096 108 -319 air
+execute @a[c=1,x=-2107,y=102,z=-322,dx=17,dy=10,dz=13,tag=Strength,score_StrengthTrigger_min=1,score_StrengthTrigger=1] ~ ~ ~ /playsound minecraft:entity.irongolem.hurt ambient @s ~ ~ ~ 100 1 1
+tellraw @a[c=1,x=-2107,y=102,z=-322,dx=17,dy=10,dz=13,tag=Strength,score_StrengthTrigger_min=1,score_StrengthTrigger=1] {"text":"You used Strength!","italic":true,"color":"gray"}
+scoreboard players set @a[c=1,x=-2107,y=102,z=-322,dx=17,dy=10,dz=13,tag=Strength,score_StrengthTrigger_min=1,score_StrengthTrigger=1] StrengthTrigger 0
+
+#Route 10 #1 Reset
+#fill -2096 104 -319 -2100 108 -324 stone 4
+#fill -2100 99 -325 -2096 103 -329 air
+
+
+
+#Route 10 #2 - Testforblock -2087 103 -366
+execute @a[c=1,x=-2126,y=105,z=-364,r=10,tag=Strength,score_StrengthTrigger_min=2,score_StrengthTrigger=2] ~ ~ ~ /fill -2082 103 -361 -2087 101 -366 minecraft:stone 4
+execute @a[c=1,x=-2126,y=105,z=-364,r=10,tag=Strength,score_StrengthTrigger_min=2,score_StrengthTrigger=2] ~ ~ ~ /fill -2123 104 -366 -2128 108 -361 air
+execute @a[c=1,x=-2126,y=105,z=-364,r=10,tag=Strength,score_StrengthTrigger_min=2,score_StrengthTrigger=2] ~ ~ ~ /playsound minecraft:entity.irongolem.hurt ambient @s ~ ~ ~ 100 1 1
+tellraw @a[c=1,x=-2126,y=105,z=-364,r=10,tag=Strength,score_StrengthTrigger_min=2,score_StrengthTrigger=2] {"text":"You used Strength!","italic":true,"color":"gray"}
+scoreboard players set @a[c=1,x=-2126,y=105,z=-364,r=10,tag=Strength,score_StrengthTrigger_min=2,score_StrengthTrigger=2] StrengthTrigger 0
+
+
+#Route 10 #2 Reset
+#fill -2123 104 -366 -2128 108 -361 minecraft:stone 4
+#fill -2082 103 -361 -2087 101 -366 air
+
+
+
+
+
+
+
+
+
+
+
+
+#Connecting Cave #1 - Testforblock -1765 43 86
+execute @a[c=1,x=-1767,y=43,z=70,dx=6,dy=5,dz=14,tag=Strength,score_StrengthTrigger_min=3,score_StrengthTrigger=3] ~ ~ ~ /fill -1765 44 81 -1761 48 85 air
+execute @a[c=1,x=-1767,y=43,z=70,dx=6,dy=5,dz=14,tag=Strength,score_StrengthTrigger_min=3,score_StrengthTrigger=3] ~ ~ ~ /fill -1761 43 86 -1765 42 90 stone 4
+execute @a[c=1,x=-1767,y=43,z=70,dx=6,dy=5,dz=14,tag=Strength,score_StrengthTrigger_min=3,score_StrengthTrigger=3] ~ ~ ~ /playsound minecraft:entity.irongolem.hurt ambient @s ~ ~ ~ 100 1 1
+tellraw @a[c=1,x=-1767,y=43,z=70,dx=6,dy=5,dz=14,tag=Strength,score_StrengthTrigger_min=3,score_StrengthTrigger=3] {"text":"You used Strength!","italic":true,"color":"gray"}
+scoreboard players set @a[c=1,x=-1767,y=43,z=70,dx=6,dy=5,dz=14,tag=Strength,score_StrengthTrigger_min=3,score_StrengthTrigger=3] StrengthTrigger 0
+
+#Reset
+#/fill -1765 44 81 -1761 48 85 stone 4
+#/fill -1761 43 86 -1765 42 90 air
+
+
+
+#Connecting Cave #2 - Testforblock -1787 43 33
+execute @a[c=1,x=-1801,y=43,z=29,dx=14,dy=5,dz=13,tag=Strength,score_StrengthTrigger_min=4,score_StrengthTrigger=4] ~ ~ ~ /fill -1788 44 37 -1792 48 33 air
+execute @a[c=1,x=-1801,y=43,z=29,dx=14,dy=5,dz=13,tag=Strength,score_StrengthTrigger_min=4,score_StrengthTrigger=4] ~ ~ ~ /fill -1787 42 33 -1783 43 37 stone 4
+execute @a[c=1,x=-1801,y=43,z=29,dx=14,dy=5,dz=13,tag=Strength,score_StrengthTrigger_min=4,score_StrengthTrigger=4] ~ ~ ~ /playsound minecraft:entity.irongolem.hurt ambient @s ~ ~ ~ 100 1 1
+tellraw @a[c=1,x=-1801,y=43,z=29,dx=14,dy=5,dz=13,tag=Strength,score_StrengthTrigger_min=4,score_StrengthTrigger=4] {"text":"You used Strength!","italic":true,"color":"gray"}
+scoreboard players set @a[c=1,x=-1801,y=43,z=29,dx=14,dy=5,dz=13,tag=Strength,score_StrengthTrigger_min=4,score_StrengthTrigger=4] StrengthTrigger 0
+
+#Reset
+#/fill -1788 44 37 -1792 48 33 stone 4
+#/fill -1787 42 33 -1783 43 37 air
+
+
+#Connecting Cave #3 - Testforblock -1839 47 -23
+execute @a[c=1,x=-1842,y=50,z=-21,r=10,tag=Strength,score_StrengthTrigger_min=5,score_StrengthTrigger=5] ~ ~ ~ /fill -1839 46 -19 -1835 47 -23 minecraft:stone 4
+execute @a[c=1,x=-1842,y=50,z=-21,r=10,tag=Strength,score_StrengthTrigger_min=5,score_StrengthTrigger=5] ~ ~ ~ /fill -1840 48 -19 -1844 52 -23 air
+execute @a[c=1,x=-1842,y=50,z=-21,r=10,tag=Strength,score_StrengthTrigger_min=5,score_StrengthTrigger=5] ~ ~ ~ /playsound minecraft:entity.irongolem.hurt ambient @s ~ ~ ~ 100 1 1
+tellraw @a[c=1,x=-1842,y=50,z=-21,r=10,tag=Strength,score_StrengthTrigger_min=5,score_StrengthTrigger=5] {"text":"You used Strength!","italic":true,"color":"gray"}
+scoreboard players set @a[c=1,x=-1842,y=50,z=-21,r=10,tag=Strength,score_StrengthTrigger_min=5,score_StrengthTrigger=5] StrengthTrigger 0
+
+#Reset
+#/fill -1839 46 -19 -1835 47 -23 air
+#/fill -1840 48 -19 -1844 52 -23 minecraft:stone 4
+
+
+
+
+
+
+#Route 8 - Testforblock -1939 150 238
+execute @a[c=1,x=-1942,y=153,z=238,r=10,tag=Strength,score_StrengthTrigger_min=6,score_StrengthTrigger=6] ~ ~ ~ /fill -1939 149 242 -1935 150 238 stone 4
+execute @a[c=1,x=-1942,y=153,z=238,r=10,tag=Strength,score_StrengthTrigger_min=6,score_StrengthTrigger=6] ~ ~ ~ /fill -1940 151 238 -1944 155 242 air
+execute @a[c=1,x=-1942,y=153,z=238,r=10,tag=Strength,score_StrengthTrigger_min=6,score_StrengthTrigger=6] ~ ~ ~ /playsound minecraft:entity.irongolem.hurt ambient @s ~ ~ ~ 100 1 1
+tellraw @a[c=1,x=-1942,y=153,z=238,r=10,tag=Strength,score_StrengthTrigger_min=6,score_StrengthTrigger=6] {"text":"You used Strength!","italic":true,"color":"gray"}
+scoreboard players set @a[c=1,x=-1942,y=153,z=238,r=10,tag=Strength,score_StrengthTrigger_min=6,score_StrengthTrigger=6] StrengthTrigger 0
+
+#Reset
+#/fill -1939 149 242 -1935 150 238 air
+#/fill -1940 151 238 -1944 155 242 stone 4
+
+
+
+
+
+#Reflection Cave - Testforblock -1673 73 -338
+execute @a[c=1,x=-1675,y=73,z=-346,dx=18,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=7,score_StrengthTrigger=7] ~ ~ ~ /fill -1664 74 -338 -1668 78 -334 air
+execute @a[c=1,x=-1675,y=73,z=-346,dx=18,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=7,score_StrengthTrigger=7] ~ ~ ~ /fill -1669 73 -334 -1673 72 -338 stone 4
+execute @a[c=1,x=-1675,y=73,z=-346,dx=18,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=7,score_StrengthTrigger=7] ~ ~ ~ /playsound minecraft:entity.irongolem.hurt ambient @s ~ ~ ~ 100 1 1
+tellraw @a[c=1,x=-1675,y=73,z=-346,dx=18,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=7,score_StrengthTrigger=7] {"text":"You used Strength!","italic":true,"color":"gray"}
+scoreboard players set @a[c=1,x=-1675,y=73,z=-346,dx=18,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=7,score_StrengthTrigger=7] StrengthTrigger 0
+
+#Reset
+#/fill -1664 74 -338 -1668 78 -334 stone 4
+#/fill -1669 73 -334 -1673 72 -338 air
+
+
+
+
+
+#Route 16 #1 - 377 103 -252
+execute @a[c=1,x=377,y=104,z=-247,dx=10,dy=5,dz=10,tag=Strength,score_StrengthTrigger_min=8,score_StrengthTrigger=8] ~ ~ ~ /fill 381 103 -248 377 102 -252 stone 4
+execute @a[c=1,x=377,y=104,z=-247,dx=10,dy=5,dz=10,tag=Strength,score_StrengthTrigger_min=8,score_StrengthTrigger=8] ~ ~ ~ /fill 377 104 -247 381 108 -243 air
+execute @a[c=1,x=377,y=104,z=-247,dx=10,dy=5,dz=10,tag=Strength,score_StrengthTrigger_min=8,score_StrengthTrigger=8] ~ ~ ~ /playsound minecraft:entity.irongolem.hurt ambient @s ~ ~ ~ 100 1 1
+tellraw @a[c=1,x=377,y=104,z=-247,dx=10,dy=5,dz=10,tag=Strength,score_StrengthTrigger_min=8,score_StrengthTrigger=8] {"text":"You used Strength!","italic":true,"color":"gray"}
+scoreboard players set @a[c=1,x=377,y=104,z=-247,dx=10,dy=5,dz=10,tag=Strength,score_StrengthTrigger_min=8,score_StrengthTrigger=8] StrengthTrigger 0
+
+#Reset
+#/fill 381 103 -248 377 102 -252 air
+#/fill 377 104 -247 381 108 -243 stone 4
+
+
+
+
+#Route 16 #2 - 356 99 -212
+execute @a[c=1,x=358,y=100,z=-215,r=10,tag=Strength,score_StrengthTrigger_min=9,score_StrengthTrigger=9] ~ ~ ~ /fill 360 99 -208 356 98 -212 stone 4
+execute @a[c=1,x=358,y=100,z=-215,r=10,tag=Strength,score_StrengthTrigger_min=9,score_StrengthTrigger=9] ~ ~ ~ /fill 360 100 -213 356 104 -217 air
+execute @a[c=1,x=358,y=100,z=-215,r=10,tag=Strength,score_StrengthTrigger_min=9,score_StrengthTrigger=9] ~ ~ ~ /playsound minecraft:entity.irongolem.hurt ambient @s ~ ~ ~ 100 1 1
+tellraw @a[c=1,x=358,y=100,z=-215,r=10,tag=Strength,score_StrengthTrigger_min=9,score_StrengthTrigger=9] {"text":"You used Strength!","italic":true,"color":"gray"}
+scoreboard players set @a[c=1,x=358,y=100,z=-215,r=10,tag=Strength,score_StrengthTrigger_min=9,score_StrengthTrigger=9] StrengthTrigger 0
+
+#Reset
+#/fill 360 99 -208 356 98 -212 air
+#/fill 360 100 -213 356 104 -217 stone 4
+
+
+
+
+
+#Route 19 - Testfor 1422 74 349
+execute @a[c=1,x=1419,y=75,z=351,r=10,tag=Strength,score_StrengthTrigger_min=10,score_StrengthTrigger=10] ~ ~ ~ /fill 1417 75 349 1421 79 353 air
+execute @a[c=1,x=1419,y=75,z=351,r=10,tag=Strength,score_StrengthTrigger_min=10,score_StrengthTrigger=10] ~ ~ ~ /fill 1422 73 349 1426 74 353 stone 4
+execute @a[c=1,x=1419,y=75,z=351,r=10,tag=Strength,score_StrengthTrigger_min=10,score_StrengthTrigger=10] ~ ~ ~ /playsound minecraft:entity.irongolem.hurt ambient @s ~ ~ ~ 100 1 1
+tellraw @a[c=1,x=1419,y=75,z=351,r=10,tag=Strength,score_StrengthTrigger_min=10,score_StrengthTrigger=10] {"text":"You used Strength!","italic":true,"color":"gray"}
+scoreboard players set @a[c=1,x=1419,y=75,z=351,r=10,tag=Strength,score_StrengthTrigger_min=10,score_StrengthTrigger=10] StrengthTrigger 0
+
+#Reset
+#/fill 1417 75 349 1421 79 353 stone 4
+#/fill 1422 73 349 1426 74 353 air
+
+
+
+
+#Route 21 #1 - Testforblock 899 101 365
+execute @a[c=1,x=901,y=103,z=409,r=10,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /fill 903 100 365 899 101 369 stone 4
+execute @a[c=1,x=901,y=103,z=409,r=10,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /fill 899 102 407 903 106 411 air
+execute @a[c=1,x=901,y=103,z=409,r=10,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /playsound minecraft:entity.irongolem.hurt ambient @s ~ ~ ~ 100 1 1
+tellraw @a[c=1,x=901,y=103,z=409,r=10,tag=Strength,score_StrengthTrigger_min=1] {"text":"You used Strength!","italic":true,"color":"gray"}
+scoreboard players set @a[c=1,x=901,y=103,z=409,r=10,tag=Strength,score_StrengthTrigger_min=1] StrengthTrigger 0
+
+#Reset
+#/fill 903 100 365 899 101 369 air
+#/fill 899 102 407 903 106 411 stone 4
+
+
+
+#Route 21 #2 - Testforblock 805 99 452
+execute @a[c=1,x=802,y=104,z=454,r=10,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /fill 805 99 456 809 98 452 stone 4
+execute @a[c=1,x=802,y=104,z=454,r=10,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /fill 804 100 452 800 104 456 air
+execute @a[c=1,x=802,y=104,z=454,r=10,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /playsound minecraft:entity.irongolem.hurt ambient @s ~ ~ ~ 100 1 1
+tellraw @a[c=1,x=802,y=104,z=454,r=10,tag=Strength,score_StrengthTrigger_min=1] {"text":"You used Strength!","italic":true,"color":"gray"}
+scoreboard players set @a[c=1,x=802,y=104,z=454,r=10,tag=Strength,score_StrengthTrigger_min=1] StrengthTrigger 0
+
+#Reset
+#/fill 805 99 456 809 98 452 air
+#/fill 804 100 452 800 104 456 stone 4
+
+
+
+#Route 21 #3 - Testforblock 704 99 498
+execute @a[c=1,x=706,y=100,z=513,r=10,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /fill 704 98 502 708 99 498 stone 4
+execute @a[c=1,x=706,y=100,z=513,r=10,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /fill 708 100 507 704 104 503 air
+execute @a[c=1,x=706,y=100,z=513,r=10,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /playsound minecraft:entity.irongolem.hurt ambient @s ~ ~ ~ 100 1 1
+tellraw @a[c=1,x=706,y=100,z=513,r=10,tag=Strength,score_StrengthTrigger_min=1] {"text":"You used Strength!","italic":true,"color":"gray"}
+scoreboard players set @a[c=1,x=706,y=100,z=513,r=10,tag=Strength,score_StrengthTrigger_min=1] StrengthTrigger 0
+
+#Reset
+#/fill 708 100 507 704 104 503 stone 4
+#/fill 704 98 502 708 99 498 air
+
+
+
+#Victory Road Floor 1 - 2422 39 1645
+execute @a[c=1,x=2419,y=39,z=1630,dx=9,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /fill 2422 40 1640 2426 44 1644 air
+execute @a[c=1,x=2419,y=39,z=1630,dx=9,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /fill 2426 39 1645 2422 38 1649 stone 4
+execute @a[c=1,x=2419,y=39,z=1630,dx=9,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /playsound minecraft:entity.irongolem.hurt ambient @s ~ ~ ~ 100 1 1
+tellraw @a[c=1,x=2419,y=39,z=1630,dx=9,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=1] {"text":"You used Strength!","italic":true,"color":"gray"}
+scoreboard players set @a[c=1,x=2419,y=39,z=1630,dx=9,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=1] StrengthTrigger 0
+
+#Reset
+#/fill 2422 40 1640 2426 44 1644 stone 4
+#/fill 2426 39 1645 2422 38 1649 air
+
+
+#Victory Road Inside 2 #1 - 2183 75 1421
+execute @a[c=1,x=2230,y=75,z=1416,dx=17,dy=5,dz=15,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /fill 2183 73 1421 2174 75 1430 stone 4
+execute @a[c=1,x=2230,y=75,z=1416,dx=17,dy=5,dz=15,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /fill 2222 76 1431 2231 85 1422 air
+execute @a[c=1,x=2230,y=75,z=1416,dx=17,dy=5,dz=15,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /playsound minecraft:entity.irongolem.hurt ambient @s ~ ~ ~ 100 1 1
+tellraw @a[c=1,x=2230,y=75,z=1416,dx=17,dy=5,dz=15,tag=Strength,score_StrengthTrigger_min=1] {"text":"You used Strength!","italic":true,"color":"gray"}
+scoreboard players set @a[c=1,x=2230,y=75,z=1416,dx=17,dy=5,dz=15,tag=Strength,score_StrengthTrigger_min=1] StrengthTrigger 0
+
+#Reset
+#/fill 2183 73 1421 2174 75 1430 air
+#/fill 2222 76 1431 2231 85 1422 stone 4
+
+
+
+#Victory Road Inside 2 #2 - 2181 90 1356
+execute @a[c=1,x=2188,y=90,z=1358,r=10,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /fill 2181 90 1360 2185 89 1356 stone 4
+execute @a[c=1,x=2188,y=90,z=1358,r=10,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /fill 2186 91 1360 2190 95 1356 air
+execute @a[c=1,x=2188,y=90,z=1358,r=10,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /playsound minecraft:entity.irongolem.hurt ambient @s ~ ~ ~ 100 1 1
+tellraw @a[c=1,x=2188,y=90,z=1358,r=10,tag=Strength,score_StrengthTrigger_min=1] {"text":"You used Strength!","italic":true,"color":"gray"}
+scoreboard players set @a[c=1,x=2188,y=90,z=1358,r=10,tag=Strength,score_StrengthTrigger_min=1] StrengthTrigger 0
+
+#Reset
+#/fill 2181 90 1360 2185 89 1356 air
+#/fill 2186 91 1360 2190 95 1356 stone 4
+
+
+#Victory Road Outside 3 #1 - 2219 174 2284
+execute @a[c=1,x=2215,y=174,z=2265,dx=8,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /fill 2219 174 2288 2223 173 2284 stone 4
+execute @a[c=1,x=2215,y=174,z=2265,dx=8,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /fill 2223 175 2277 2219 179 2273 air
+execute @a[c=1,x=2215,y=174,z=2265,dx=8,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /playsound minecraft:entity.irongolem.hurt ambient @s ~ ~ ~ 100 1 1
+tellraw @a[c=1,x=2215,y=174,z=2265,dx=8,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=1] {"text":"You used Strength!","italic":true,"color":"gray"}
+scoreboard players set @a[c=1,x=2215,y=174,z=2265,dx=8,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=1] StrengthTrigger 0
+
+#Reset
+#/fill 2219 174 2288 2223 173 2284 air
+#/fill 2223 175 2277 2219 179 2273 stone 4
+
+
+#Victory Road Outside 3 #2 - 2231 174 2297
+execute @a[c=1,x=2235,y=174,z=2289,dx=14,dy=5,dz=19,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /fill 2231 173 2297 2235 174 2301 stone 4
+execute @a[c=1,x=2235,y=174,z=2289,dx=14,dy=5,dz=19,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /fill 2239 175 2301 2243 179 2297 air
+execute @a[c=1,x=2235,y=174,z=2289,dx=14,dy=5,dz=19,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /playsound minecraft:entity.irongolem.hurt ambient @s ~ ~ ~ 100 1 1
+tellraw @a[c=1,x=2235,y=174,z=2289,dx=14,dy=5,dz=19,tag=Strength,score_StrengthTrigger_min=1] {"text":"You used Strength!","italic":true,"color":"gray"}
+scoreboard players set @a[c=1,x=2235,y=174,z=2289,dx=14,dy=5,dz=19,tag=Strength,score_StrengthTrigger_min=1] StrengthTrigger 0
+
+#Reset
+#/fill 2231 173 2297 2235 174 2301 air
+#/fill 2239 175 2301 2243 179 2297 stone 4
+
+
+
+#Victory Road Inside 3 - 2012 101 1486
+execute @a[c=1,x=2011,y=101,z=1473,dx=11,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /fill 2016 101 1490 2012 98 1486 stone 4
+execute @a[c=1,x=2011,y=101,z=1473,dx=11,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /fill 2012 102 1485 2016 106 1481 air
+execute @a[c=1,x=2011,y=101,z=1473,dx=11,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=1] ~ ~ ~ /playsound minecraft:entity.irongolem.hurt ambient @s ~ ~ ~ 100 1 1
+tellraw @a[c=1,x=2011,y=101,z=1473,dx=11,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=1] {"text":"You used Strength!","italic":true,"color":"gray"}
+scoreboard players set @a[c=1,x=2011,y=101,z=1473,dx=11,dy=5,dz=12,tag=Strength,score_StrengthTrigger_min=1] StrengthTrigger 0
+
+#Reset
+#/fill 2016 101 1490 2012 98 1486 air
+#/fill 2012 102 1485 2016 106 1481 stone 4
+
+
+
+
+
+
+
+
+#Tellraw
+tellraw @a[tag=Strength,score_StrengthTrigger_min=1,score_StrengthTrigger=100] {"text":"Move closer to a strength boulder!","italic":true,"color":"gray"}
+scoreboard players set @a[tag=Strength,score_StrengthTrigger_min=1,score_StrengthTrigger=100] StrengthTrigger 0

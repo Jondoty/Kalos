@@ -1,0 +1,39 @@
+#Flow direction Normal
+
+#Left side
+/fill -157 92 -1908 -151 92 -1932 pixelmon:movement_plate 2
+/fill -151 92 -1938 -191 92 -1933 pixelmon:movement_plate 1
+/fill -186 92 -1939 -191 92 -1967 pixelmon:movement_plate 2
+/fill -192 92 -1967 -215 92 -1962 pixelmon:movement_plate 1
+/fill -221 92 -1962 -216 92 -2005 pixelmon:movement_plate 2
+/fill -221 92 -2011 -185 92 -2006 pixelmon:movement_plate 3
+
+
+#Right Side
+/fill -145 92 -2000 -100 92 -2005 pixelmon:movement_plate 3
+/fill -94 92 -2005 -99 92 -1949 pixelmon:movement_plate 4
+/fill -99 92 -1948 -89 92 -1943 pixelmon:movement_plate 3
+/fill -88 92 -1948 -83 92 -1917 pixelmon:movement_plate 4
+
+
+
+
+#Left Side Reversed
+/fill -185 92 -2006 -215 92 -2011 pixelmon:movement_plate 1
+/fill -221 92 -2011 -216 92 -1968 pixelmon:movement_plate 4
+/fill -221 92 -1962 -192 92 -1967 pixelmon:movement_plate 3
+/fill -186 92 -1967 -191 92 -1939 pixelmon:movement_plate 4
+/fill -191 92 -1938 -151 92 -1933 pixelmon:movement_plate 3
+/fill -157 92 -1932 -151 92 -1908 pixelmon:movement_plate 4
+
+
+
+
+
+
+/fill -157 92 -1908 -151 92 -1932 pixelmon:movement_plate 2
+/fill -151 92 -1938 -191 92 -1933 pixelmon:movement_plate 1
+/fill -186 92 -1939 -191 92 -1967 pixelmon:movement_plate 2
+/fill -192 92 -1967 -215 92 -1962 pixelmon:movement_plate 1
+/fill -221 92 -1962 -216 92 -2005 pixelmon:movement_plate 2
+/fill -221 92 -2011 -185 92 -2006 pixelmon:movement_plate 3

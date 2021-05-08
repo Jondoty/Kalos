@@ -1,0 +1,201 @@
+#execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~
+#execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~
+
+
+
+#Right first section
+clone -588 93 1160 -582 93 1136 -157 91 -1932
+clone -588 94 1160 -582 94 1136 -157 91 -1932
+clone -588 95 1160 -582 95 1136 -157 91 -1932
+clone -588 96 1160 -582 96 1136 -157 91 -1932
+
+#Reversed
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -588 96 1160 -582 96 1136 -157 91 -1932
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -588 95 1160 -582 95 1136 -157 91 -1932
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -588 94 1160 -582 94 1136 -157 91 -1932
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -588 93 1160 -582 93 1136 -157 91 -1932
+
+
+
+#Section 2
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~  clone -636 96 1142 -676 96 1137 -191 91 -1938
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~  clone -636 95 1142 -676 95 1137 -191 91 -1938
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~  clone -636 94 1142 -676 94 1137 -191 91 -1938
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~  clone -636 93 1142 -676 93 1137 -191 91 -1938
+
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -636 93 1142 -676 93 1137 -191 91 -1938
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -636 94 1142 -676 94 1137 -191 91 -1938
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -636 95 1142 -676 95 1137 -191 91 -1938
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -636 96 1142 -676 96 1137 -191 91 -1938
+
+
+#Section 3
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -588 93 1164 -582 93 1136 -191 91 -1967
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -588 94 1164 -582 94 1136 -191 91 -1967
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -588 95 1164 -582 95 1136 -191 91 -1967
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -588 96 1164 -582 96 1136 -191 91 -1967
+
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -588 96 1164 -582 96 1136 -191 91 -1967
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -588 95 1164 -582 95 1136 -191 91 -1967
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -588 94 1164 -582 94 1136 -191 91 -1967
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -588 93 1164 -582 93 1136 -191 91 -1967
+
+
+
+#Section 4 (changes depending on direction)
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -653 96 1142 -676 96 1137 -215 91 -1967
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -653 95 1142 -676 95 1137 -215 91 -1967
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -653 94 1142 -676 94 1137 -215 91 -1967
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -653 93 1142 -676 93 1137 -215 91 -1967
+
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -647 93 1142 -676 93 1137 -221 91 -1967
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -647 94 1142 -676 94 1137 -221 91 -1967
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -647 95 1142 -676 95 1137 -221 91 -1967
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -647 96 1142 -676 96 1137 -221 91 -1967
+
+
+
+#Section 5 (changes depending on direction)
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -588 93 1179 -583 93 1136 -221 91 -2005
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -588 94 1179 -583 94 1136 -221 91 -2005
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -588 95 1179 -583 95 1136 -221 91 -2005
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -588 96 1179 -583 96 1136 -221 91 -2005
+
+
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -588 96 1179 -583 96 1136 -221 91 -2011
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -588 95 1179 -583 95 1136 -221 91 -2011
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -588 94 1179 -583 94 1136 -221 91 -2011
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -588 93 1179 -583 93 1136 -221 91 -2011
+
+
+
+#Section 6
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -640 93 1142 -676 93 1137 -221 91 -2011
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -640 94 1142 -676 94 1137 -221 91 -2011
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -640 95 1142 -676 95 1137 -221 91 -2011
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -640 96 1142 -676 96 1137 -221 91 -2011
+
+
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -646 96 1142 -676 96 1137 -215 91 -2011
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -646 95 1142 -676 95 1137 -215 91 -2011
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -646 94 1142 -676 94 1137 -215 91 -2011
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -646 93 1142 -676 93 1137 -215 91 -2011
+
+
+
+#Section 7
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -588 93 1150 -582 93 1136 -190 91 -2026
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -588 94 1150 -582 94 1136 -190 91 -2026
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -588 95 1150 -582 95 1136 -190 91 -2026
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ clone -588 96 1150 -582 96 1136 -190 91 -2026
+
+
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -588 96 1150 -582 96 1136 -190 91 -2026
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -588 95 1150 -582 95 1136 -190 91 -2026
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -588 94 1150 -582 94 1136 -190 91 -2026
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ clone -588 93 1150 -582 93 1136 -190 91 -2026
+
+
+
+
+
+
+
+
+
+
+#Right Side
+#Section 1 (top to bottom), doesn't reverse
+
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -588 96 1155 -582 96 1136 -145 91 -2025
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -588 95 1155 -582 95 1136 -145 91 -2025
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -588 94 1155 -582 94 1136 -145 91 -2025
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -588 93 1155 -582 93 1136 -145 91 -2025
+
+
+#Section 2
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -631 93 1142 -676 93 1137 -145 91 -2005
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -631 94 1142 -676 94 1137 -145 91 -2005
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -631 95 1142 -676 95 1137 -145 91 -2005
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -631 96 1142 -676 96 1137 -145 91 -2005
+
+#Section 3
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -588 96 1192 -582 96 1136 -99 91 -2005
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -588 95 1192 -582 95 1136 -99 91 -2005
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -588 94 1192 -582 94 1136 -99 91 -2005
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -588 93 1192 -582 93 1136 -99 91 -2005
+
+
+
+#Section 4
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -666 93 1142 -676 93 1137 -99 91 -1948
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -666 94 1142 -676 94 1137 -99 91 -1948
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -666 95 1142 -676 95 1137 -99 91 -1948
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -666 96 1142 -676 96 1137 -99 91 -1948
+
+
+#Section 5
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -582 96 1136 -588 96 1167 -88 91 -1948
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -582 95 1136 -588 95 1167 -88 91 -1948
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -582 94 1136 -588 94 1167 -88 91 -1948
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -582 93 1136 -588 93 1167 -88 91 -1948
+
+#Section 6
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -655 96 1142 -676 96 1137 -110 91 -1922
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -655 95 1142 -676 95 1137 -110 91 -1922
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -655 94 1142 -676 94 1137 -110 91 -1922
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -655 93 1142 -676 93 1137 -110 91 -1922
+
+
+
+#Isolated section at bottom
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -588 96 1151 -582 96 1136 -118 89 -1908
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -588 95 1151 -582 95 1136 -118 89 -1908
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -588 94 1151 -582 94 1136 -118 89 -1908
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ clone -588 93 1151 -582 93 1136 -118 89 -1908
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#/tp @a[x=280,y=100,z=-1868,dx=3,dy=4,dz=12] ~ ~ ~-0.4
+
+#Movement:
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ tp @e[x=-157,y=91,z=-1932,dx=6,dy=3,dz=24] ~ ~ ~-0.4
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ tp @e[x=-191,y=91,z=-1938,dx=40,dy=3,dz=5] ~-0.4 ~ ~
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ tp @e[x=-191,y=91,z=-1967,dx=5,dy=3,dz=28] ~ ~ ~-0.4
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ tp @e[x=-215,y=91,z=-1967,dx=23,dy=3,dz=5] ~-0.4 ~ ~
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ tp @e[x=-221,y=91,z=-2005,dx=5,dy=3,dz=43] ~ ~ ~-0.4
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] ~ ~ ~ tp @e[x=-221,y=91,z=-2011,dx=36,dy=3,dz=5] ~0.4 ~ ~
+
+
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ tp @e[x=-157,y=91,z=-1932,dx=6,dy=3,dz=24] ~ ~ ~0.4
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ tp @e[x=-191,y=91,z=-1938,dx=40,dy=3,dz=5] ~0.4 ~ ~
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ tp @e[x=-191,y=91,z=-1967,dx=5,dy=3,dz=28] ~ ~ ~0.4
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ tp @e[x=-221,y=91,z=-1967,dx=29,dy=3,dz=5] ~0.4 ~ ~
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ tp @e[x=-221,y=91,z=-2011,dx=5,dy=3,dz=43] ~ ~ ~0.4
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] ~ ~ ~ tp @e[x=-215,y=91,z=-2011,dx=30,dy=3,dz=5] ~0.4 ~ ~
+
+
+
+
+
+
+
+
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ tp @e[x=-145,y=91,z=-2005,dx=45,dy=3,dz=5] ~0.4 ~ ~
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ tp @e[x=-99,y=91,z=-2005,dx=5,dy=3,dz=56] ~ ~ ~0.4
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ tp @e[x=-99,y=91,z=-1948,dx=10,dy=3,dz=5] ~-0.4 ~ ~
+execute @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ tp @e[x=-88,y=91,z=-1948,dx=5,dy=3,dz=31] ~ ~ ~0.4

@@ -1,0 +1,689 @@
+#Tags Wild Pokemon, then player-owned
+execute @a ~ ~ ~ /scoreboard players tag @e[r=10,type=pixelmon:pixelmon] add Wild {OwnerUUID:""}
+execute @a ~ ~ ~ /scoreboard players set @e[r=10,type=pixelmon:pixelmon,tag=!Wild,tag=!Player] WildItem 0
+execute @a ~ ~ ~ /scoreboard players tag @e[r=10,type=pixelmon:pixelmon,tag=!Wild,tag=!Player] add Player
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Adds randomness to items given by Pokemon
+scoreboard players add @e[type=pixelmon:pixelmon,tag=Player] BattleItemRNG 1
+scoreboard players set @e[type=pixelmon:pixelmon,tag=Player,score_BattleItemRNG_min=11] BattleItemRNG 1
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Gives WildItem score to obtain an item
+
+#Air Cutter
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=40,score_MovePP1=40,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:39b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=39,score_MovePP1=39,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:38b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=38,score_MovePP1=38,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:37b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=37,score_MovePP1=37,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:36b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=36,score_MovePP1=36,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:35b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=35,score_MovePP1=35,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:34b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=34,score_MovePP1=34,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:33b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=33,score_MovePP1=33,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:32b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=32,score_MovePP1=32,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:31b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=31,score_MovePP1=31,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:30b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=30,score_MovePP1=30,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:29b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=29,score_MovePP1=29,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:28b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=28,score_MovePP1=28,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:27b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=27,score_MovePP1=27,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:26b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=26,score_MovePP1=26,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:25b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=25,score_MovePP1=25,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:24b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=24,score_MovePP1=24,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:23b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=23,score_MovePP1=23,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:22b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=22,score_MovePP1=22,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:21b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=21,score_MovePP1=21,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:20b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=20,score_MovePP1=20,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:19b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=19,score_MovePP1=19,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:18b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=18,score_MovePP1=18,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:17b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=17,score_MovePP1=17,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:16b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=16,score_MovePP1=16,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:15b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=15,score_MovePP1=15,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:14b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=14,score_MovePP1=14,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:13b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=13,score_MovePP1=13,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:12b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=12,score_MovePP1=12,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:11b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=11,score_MovePP1=11,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:10b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=10,score_MovePP1=10,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:9b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=9,score_MovePP1=9,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:8b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=8,score_MovePP1=8,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:7b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=7,score_MovePP1=7,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:6b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=6,score_MovePP1=6,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:5b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=5,score_MovePP1=5,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:4b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=4,score_MovePP1=4,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:3b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=3,score_MovePP1=3,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:2b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=2,score_MovePP1=2,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:1b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP1_min=1,score_MovePP1=1,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:249s,MovePP:0b}]}
+
+#Twister
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=32,score_MovePP2=32,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:31b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=31,score_MovePP2=31,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:30b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=30,score_MovePP2=30,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:29b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=29,score_MovePP2=29,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:28b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=28,score_MovePP2=28,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:27b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=27,score_MovePP2=27,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:26b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=26,score_MovePP2=26,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:25b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=25,score_MovePP2=25,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:24b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=24,score_MovePP2=24,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:23b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=23,score_MovePP2=23,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:22b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=22,score_MovePP2=22,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:21b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=21,score_MovePP2=21,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:20b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=20,score_MovePP2=20,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:19b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=19,score_MovePP2=19,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:18b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=18,score_MovePP2=18,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:17b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=17,score_MovePP2=17,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:16b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=16,score_MovePP2=16,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:15b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=15,score_MovePP2=15,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:14b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=14,score_MovePP2=14,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:13b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=13,score_MovePP2=13,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:12b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=12,score_MovePP2=12,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:11b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=11,score_MovePP2=11,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:10b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=10,score_MovePP2=10,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:9b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=9,score_MovePP2=9,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:8b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=8,score_MovePP2=8,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:7b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=7,score_MovePP2=7,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:6b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=6,score_MovePP2=6,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:5b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=5,score_MovePP2=5,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:4b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=4,score_MovePP2=4,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:3b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=3,score_MovePP2=3,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:2b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=2,score_MovePP2=2,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:1b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP2_min=1,score_MovePP2=1,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:317s,MovePP:0b}]}
+
+#Blizzard
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP3_min=9,score_MovePP3=9,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:106s,MovePP:8b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP3_min=8,score_MovePP3=8,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:106s,MovePP:7b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP3_min=7,score_MovePP3=7,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:106s,MovePP:6b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP3_min=6,score_MovePP3=6,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:106s,MovePP:5b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP3_min=5,score_MovePP3=5,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:106s,MovePP:4b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP3_min=4,score_MovePP3=4,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:106s,MovePP:3b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP3_min=3,score_MovePP3=3,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:106s,MovePP:2b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP3_min=2,score_MovePP3=2,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:106s,MovePP:1b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP3_min=1,score_MovePP3=1,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:106s,MovePP:0b}]}
+
+#Razor Leaf
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=40,score_MovePP4=40,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:39b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=39,score_MovePP4=39,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:38b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=38,score_MovePP4=38,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:37b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=37,score_MovePP4=37,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:36b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=36,score_MovePP4=36,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:35b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=35,score_MovePP4=35,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:34b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=34,score_MovePP4=34,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:33b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=33,score_MovePP4=33,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:32b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=32,score_MovePP4=32,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:31b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=31,score_MovePP4=31,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:30b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=30,score_MovePP4=30,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:29b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=29,score_MovePP4=29,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:28b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=28,score_MovePP4=28,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:27b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=27,score_MovePP4=27,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:26b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=26,score_MovePP4=26,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:25b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=25,score_MovePP4=25,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:24b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=24,score_MovePP4=24,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:23b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=23,score_MovePP4=23,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:22b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=22,score_MovePP4=22,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:21b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=21,score_MovePP4=21,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:20b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=20,score_MovePP4=20,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:19b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=19,score_MovePP4=19,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:18b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=18,score_MovePP4=18,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:17b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=17,score_MovePP4=17,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:16b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=16,score_MovePP4=16,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:15b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=15,score_MovePP4=15,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:14b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=14,score_MovePP4=14,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:13b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=13,score_MovePP4=13,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:12b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=12,score_MovePP4=12,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:11b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=11,score_MovePP4=11,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:10b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=10,score_MovePP4=10,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:9b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=9,score_MovePP4=9,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:8b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=8,score_MovePP4=8,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:7b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=7,score_MovePP4=7,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:6b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=6,score_MovePP4=6,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:5b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=5,score_MovePP4=5,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:4b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=4,score_MovePP4=4,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:3b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=3,score_MovePP4=3,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:2b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=2,score_MovePP4=2,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:1b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP4_min=1,score_MovePP4=1,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:9s,MovePP:0b}]}
+
+
+#Petal Blizzard
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=24,score_MovePP5=24,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:23b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=23,score_MovePP5=23,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:22b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=22,score_MovePP5=22,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:21b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=21,score_MovePP5=21,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:20b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=20,score_MovePP5=20,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:19b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=19,score_MovePP5=19,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:18b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=18,score_MovePP5=18,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:17b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=17,score_MovePP5=17,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:16b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=16,score_MovePP5=16,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:15b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=15,score_MovePP5=15,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:14b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=14,score_MovePP5=14,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:13b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=13,score_MovePP5=13,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:12b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=12,score_MovePP5=12,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:11b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=11,score_MovePP5=11,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:10b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=10,score_MovePP5=10,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:9b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=9,score_MovePP5=9,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:8b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=8,score_MovePP5=8,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:7b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=7,score_MovePP5=7,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:6b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=6,score_MovePP5=6,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:5b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=5,score_MovePP5=5,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:4b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=4,score_MovePP5=4,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:3b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=3,score_MovePP5=3,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:2b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=2,score_MovePP5=2,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:1b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP5_min=1,score_MovePP5=1,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:605s,MovePP:0b}]}
+
+#Surf
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=24,score_MovePP6=24,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:23b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=23,score_MovePP6=23,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:22b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=22,score_MovePP6=22,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:21b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=21,score_MovePP6=21,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:20b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=20,score_MovePP6=20,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:19b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=19,score_MovePP6=19,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:18b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=18,score_MovePP6=18,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:17b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=17,score_MovePP6=17,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:16b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=16,score_MovePP6=16,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:15b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=15,score_MovePP6=15,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:14b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=14,score_MovePP6=14,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:13b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=13,score_MovePP6=13,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:12b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=12,score_MovePP6=12,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:11b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=11,score_MovePP6=11,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:10b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=10,score_MovePP6=10,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:9b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=9,score_MovePP6=9,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:8b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=8,score_MovePP6=8,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:7b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=7,score_MovePP6=7,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:6b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=6,score_MovePP6=6,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:5b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=5,score_MovePP6=5,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:4b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=4,score_MovePP6=4,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:3b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=3,score_MovePP6=3,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:2b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=2,score_MovePP6=2,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:1b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP6_min=1,score_MovePP6=1,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:104s,MovePP:0b}]}
+
+#Muddy Water
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP7_min=16,score_MovePP7=16,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:386s,MovePP:15b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP7_min=15,score_MovePP7=15,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:386s,MovePP:14b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP7_min=14,score_MovePP7=14,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:386s,MovePP:13b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP7_min=13,score_MovePP7=13,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:386s,MovePP:12b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP7_min=12,score_MovePP7=12,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:386s,MovePP:11b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP7_min=11,score_MovePP7=11,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:386s,MovePP:10b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP7_min=10,score_MovePP7=10,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:386s,MovePP:9b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP7_min=9,score_MovePP7=9,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:386s,MovePP:8b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP7_min=8,score_MovePP7=8,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:386s,MovePP:7b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP7_min=7,score_MovePP7=7,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:386s,MovePP:6b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP7_min=6,score_MovePP7=6,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:386s,MovePP:5b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP7_min=5,score_MovePP7=5,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:386s,MovePP:4b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP7_min=4,score_MovePP7=4,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:386s,MovePP:3b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP7_min=3,score_MovePP7=3,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:386s,MovePP:2b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP7_min=2,score_MovePP7=2,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:386s,MovePP:1b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP7_min=1,score_MovePP7=1,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:386s,MovePP:0b}]}
+
+#Rock Slide
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP8_min=16,score_MovePP8=16,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:187s,MovePP:15b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP8_min=15,score_MovePP8=15,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:187s,MovePP:14b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP8_min=14,score_MovePP8=14,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:187s,MovePP:13b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP8_min=13,score_MovePP8=13,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:187s,MovePP:12b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP8_min=12,score_MovePP8=12,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:187s,MovePP:11b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP8_min=11,score_MovePP8=11,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:187s,MovePP:10b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP8_min=10,score_MovePP8=10,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:187s,MovePP:9b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP8_min=9,score_MovePP8=9,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:187s,MovePP:8b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP8_min=8,score_MovePP8=8,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:187s,MovePP:7b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP8_min=7,score_MovePP8=7,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:187s,MovePP:6b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP8_min=6,score_MovePP8=6,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:187s,MovePP:5b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP8_min=5,score_MovePP8=5,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:187s,MovePP:4b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP8_min=4,score_MovePP8=4,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:187s,MovePP:3b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP8_min=3,score_MovePP8=3,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:187s,MovePP:2b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP8_min=2,score_MovePP8=2,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:187s,MovePP:1b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP8_min=1,score_MovePP8=1,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:187s,MovePP:0b}]}
+
+#Hyper Voice
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP9_min=16,score_MovePP9=16,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:366s,MovePP:15b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP9_min=15,score_MovePP9=15,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:366s,MovePP:14b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP9_min=14,score_MovePP9=14,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:366s,MovePP:13b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP9_min=13,score_MovePP9=13,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:366s,MovePP:12b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP9_min=12,score_MovePP9=12,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:366s,MovePP:11b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP9_min=11,score_MovePP9=11,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:366s,MovePP:10b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP9_min=10,score_MovePP9=10,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:366s,MovePP:9b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP9_min=9,score_MovePP9=9,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:366s,MovePP:8b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP9_min=8,score_MovePP9=8,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:366s,MovePP:7b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP9_min=7,score_MovePP9=7,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:366s,MovePP:6b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP9_min=6,score_MovePP9=6,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:366s,MovePP:5b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP9_min=5,score_MovePP9=5,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:366s,MovePP:4b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP9_min=4,score_MovePP9=4,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:366s,MovePP:3b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP9_min=3,score_MovePP9=3,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:366s,MovePP:2b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP9_min=2,score_MovePP9=2,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:366s,MovePP:1b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP9_min=1,score_MovePP9=1,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:366s,MovePP:0b}]}
+
+#Heat Wave
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP10_min=16,score_MovePP10=16,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:210s,MovePP:15b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP10_min=15,score_MovePP10=15,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:210s,MovePP:14b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP10_min=14,score_MovePP10=14,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:210s,MovePP:13b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP10_min=13,score_MovePP10=13,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:210s,MovePP:12b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP10_min=12,score_MovePP10=12,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:210s,MovePP:11b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP10_min=11,score_MovePP10=11,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:210s,MovePP:10b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP10_min=10,score_MovePP10=10,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:210s,MovePP:9b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP10_min=9,score_MovePP10=9,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:210s,MovePP:8b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP10_min=8,score_MovePP10=8,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:210s,MovePP:7b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP10_min=7,score_MovePP10=7,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:210s,MovePP:6b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP10_min=6,score_MovePP10=6,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:210s,MovePP:5b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP10_min=5,score_MovePP10=5,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:210s,MovePP:4b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP10_min=4,score_MovePP10=4,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:210s,MovePP:3b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP10_min=3,score_MovePP10=3,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:210s,MovePP:2b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP10_min=2,score_MovePP10=2,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:210s,MovePP:1b}]}
+scoreboard players set @e[type=pixelmon:pixelmon,score_MovePP10_min=1,score_MovePP10=1,score_WildItem=0,tag=Player] WildItem 1 {Moveset:[{MoveID:210s,MovePP:0b}]}
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Gives item
+
+
+#/give @p pixelmon:aguav_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:babiri_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:kebia_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:lum_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:rawst_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:rindo_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:tanga_berry 1 0 {CanPlaceOn:[farmland]}
+
+#/give @p pixelmon:pecha_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:persim_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:mago_berry 1 0 {CanPlaceOn:[farmland]}
+
+#/give @p pixelmon:chesto_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:colbur_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:kasib_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:payapa_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:wiki_berry 1 0 {CanPlaceOn:[farmland]}
+
+#/give @p pixelmon:cheri_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:chople_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:figy_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:haban_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:leppa_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:occa_berry 1 0 {CanPlaceOn:[farmland]}
+
+#/give @p pixelmon:aspear_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:charti_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:chilan_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:iapapa_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:shuca_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:sitrus_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:wacan_berry 1 0 {CanPlaceOn:[farmland]}
+
+#/give @p pixelmon:white_herb
+#/give @p pixelmon:power_herb
+#/give @p pixelmon:mental_herb
+
+#/give @p pixelmon:damp_rock
+#/give @p pixelmon:smooth_rock
+#/give @p pixelmon:icy_rock
+
+#/give @p pixelmon:hard_stone
+#/give @p pixelmon:float_stone
+#/give @p pixelmon:fire_stone
+#/give @p pixelmon:water_stone
+#/give @p pixelmon:leaf_stone
+#/give @p pixelmon:thunder_stone
+
+#/give @p pixelmon:fire_stone
+#/give @p pixelmon:water_stone
+#/give @p pixelmon:leaf_stone
+#/give @p pixelmon:thunder_stone
+
+#/give @p pixelmon:luminous_moss
+#/give @p pixelmon:soft_sand
+#/give @p pixelmon:stardust
+
+#/give @p pixelmon:heat_rock
+
+
+
+
+#Route 17
+#Air Cutter	Twister	Blizzard
+#/give @p pixelmon:coba_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:oran_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:passho_berry 1 0 {CanPlaceOn:[farmland]}
+#/give @p pixelmon:yache_berry 1 0 {CanPlaceOn:[farmland]}
+
+#Rock Slide	Hyper Voice
+#/give @p pixelmon:snowball
+#/give @p pixelmon:never_melt_ice
+
+
+#Air Cutter	Twister	Blizzard
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP1_min=1,score_BattleItemRNG_min=1,score_BattleItemRNG=2] ~ ~ ~ /give @p pixelmon:coba_berry 1 0 {CanPlaceOn:[farmland]}
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP1_min=1,score_BattleItemRNG_min=3,score_BattleItemRNG=5] ~ ~ ~ /give @p pixelmon:oran_berry 1 0 {CanPlaceOn:[farmland]}
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP1_min=1,score_BattleItemRNG_min=6,score_BattleItemRNG=7] ~ ~ ~ /give @p pixelmon:passho_berry 1 0 {CanPlaceOn:[farmland]}
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP1_min=1,score_BattleItemRNG_min=8,score_BattleItemRNG=10] ~ ~ ~ /give @p pixelmon:yache_berry 1 0 {CanPlaceOn:[farmland]}
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP1_min=1] ~ ~ ~ tellraw @p {"text":"You knocked an item onto the ground during battle!","italic":true,"color":"gray"}
+scoreboard players set @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP1_min=1] WildItem 2
+
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP2_min=1,score_BattleItemRNG_min=1,score_BattleItemRNG=2] ~ ~ ~ /give @p pixelmon:coba_berry 1 0 {CanPlaceOn:[farmland]}
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP2_min=1,score_BattleItemRNG_min=3,score_BattleItemRNG=5] ~ ~ ~ /give @p pixelmon:oran_berry 1 0 {CanPlaceOn:[farmland]}
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP2_min=1,score_BattleItemRNG_min=6,score_BattleItemRNG=7] ~ ~ ~ /give @p pixelmon:passho_berry 1 0 {CanPlaceOn:[farmland]}
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP2_min=1,score_BattleItemRNG_min=8,score_BattleItemRNG=10] ~ ~ ~ /give @p pixelmon:yache_berry 1 0 {CanPlaceOn:[farmland]}
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP2_min=1] ~ ~ ~ tellraw @p {"text":"You knocked an item onto the ground during battle!","italic":true,"color":"gray"}
+scoreboard players set @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP2_min=1] WildItem 2
+
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP3_min=1,score_BattleItemRNG_min=1,score_BattleItemRNG=2] ~ ~ ~ /give @p pixelmon:coba_berry 1 0 {CanPlaceOn:[farmland]}
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP3_min=1,score_BattleItemRNG_min=3,score_BattleItemRNG=5] ~ ~ ~ /give @p pixelmon:oran_berry 1 0 {CanPlaceOn:[farmland]}
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP3_min=1,score_BattleItemRNG_min=6,score_BattleItemRNG=7] ~ ~ ~ /give @p pixelmon:passho_berry 1 0 {CanPlaceOn:[farmland]}
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP3_min=1,score_BattleItemRNG_min=8,score_BattleItemRNG=10] ~ ~ ~ /give @p pixelmon:yache_berry 1 0 {CanPlaceOn:[farmland]}
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP3_min=1] ~ ~ ~ tellraw @p {"text":"You knocked an item onto the ground during battle!","italic":true,"color":"gray"}
+scoreboard players set @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP3_min=1] WildItem 2
+
+#Rock Slide	Hyper Voice
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP8_min=1,score_BattleItemRNG_min=1,score_BattleItemRNG=2] ~ ~ ~ /give @p pixelmon:never_melt_ice
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP8_min=1,score_BattleItemRNG_min=3,score_BattleItemRNG=5] ~ ~ ~ /give @p pixelmon:snowball
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP8_min=1,score_BattleItemRNG_min=6,score_BattleItemRNG=8] ~ ~ ~ /give @p pixelmon:never_melt_ice
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP8_min=1,score_BattleItemRNG_min=9,score_BattleItemRNG=10] ~ ~ ~ /give @p pixelmon:snowball
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP8_min=1] ~ ~ ~ tellraw @p {"text":"You knocked an item onto the ground during battle!","italic":true,"color":"gray"}
+scoreboard players set @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP8_min=1] WildItem 2
+
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP9_min=1,score_BattleItemRNG_min=1,score_BattleItemRNG=2] ~ ~ ~ /give @p pixelmon:never_melt_ice
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP9_min=1,score_BattleItemRNG_min=3,score_BattleItemRNG=5] ~ ~ ~ /give @p pixelmon:snowball
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP9_min=1,score_BattleItemRNG_min=6,score_BattleItemRNG=8] ~ ~ ~ /give @p pixelmon:never_melt_ice
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP9_min=1,score_BattleItemRNG_min=9,score_BattleItemRNG=10] ~ ~ ~ /give @p pixelmon:snowball
+execute @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP9_min=1] ~ ~ ~ tellraw @p {"text":"You knocked an item onto the ground during battle!","italic":true,"color":"gray"}
+scoreboard players set @e[x=735,y=0,z=-417,dx=361,dy=256,dz=495,type=pixelmon:pixelmon,tag=Player,score_WildItem_min=1,score_WildItem=1,score_MovePP9_min=1] WildItem 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Adds WildItem score so doesn't repeat
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Sets Air Cutter PP Current Score
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 40 {Moveset:[{MoveID:249s,MovePP:40b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 39{Moveset:[{MoveID:249s,MovePP:39b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 38 {Moveset:[{MoveID:249s,MovePP:38b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 37 {Moveset:[{MoveID:249s,MovePP:37b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 36 {Moveset:[{MoveID:249s,MovePP:36b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 35 {Moveset:[{MoveID:249s,MovePP:35b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 34 {Moveset:[{MoveID:249s,MovePP:34b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 33 {Moveset:[{MoveID:249s,MovePP:33b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 32 {Moveset:[{MoveID:249s,MovePP:32b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 31 {Moveset:[{MoveID:249s,MovePP:31b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 30 {Moveset:[{MoveID:249s,MovePP:30b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 29 {Moveset:[{MoveID:249s,MovePP:29b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 28 {Moveset:[{MoveID:249s,MovePP:28b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 27 {Moveset:[{MoveID:249s,MovePP:27b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 26 {Moveset:[{MoveID:249s,MovePP:26b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 25 {Moveset:[{MoveID:249s,MovePP:25b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 24 {Moveset:[{MoveID:249s,MovePP:24b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 23 {Moveset:[{MoveID:249s,MovePP:23b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 22 {Moveset:[{MoveID:249s,MovePP:22b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 21 {Moveset:[{MoveID:249s,MovePP:21b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 20 {Moveset:[{MoveID:249s,MovePP:20b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 19 {Moveset:[{MoveID:249s,MovePP:19b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 18 {Moveset:[{MoveID:249s,MovePP:18b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 17 {Moveset:[{MoveID:249s,MovePP:17b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 16 {Moveset:[{MoveID:249s,MovePP:16b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 15 {Moveset:[{MoveID:249s,MovePP:15b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 14 {Moveset:[{MoveID:249s,MovePP:14b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 13 {Moveset:[{MoveID:249s,MovePP:13b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 12 {Moveset:[{MoveID:249s,MovePP:12b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 11 {Moveset:[{MoveID:249s,MovePP:11b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 10 {Moveset:[{MoveID:249s,MovePP:10b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 9 {Moveset:[{MoveID:249s,MovePP:9b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 8 {Moveset:[{MoveID:249s,MovePP:8b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 7 {Moveset:[{MoveID:249s,MovePP:7b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 6 {Moveset:[{MoveID:249s,MovePP:6b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 5 {Moveset:[{MoveID:249s,MovePP:5b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 4 {Moveset:[{MoveID:249s,MovePP:4b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 3 {Moveset:[{MoveID:249s,MovePP:3b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 2 {Moveset:[{MoveID:249s,MovePP:2b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 1 {Moveset:[{MoveID:249s,MovePP:1b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP1 0 {Moveset:[{MoveID:249s,MovePP:0b}]}
+
+#Sets Twister PP Current Score
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 32 {Moveset:[{MoveID:317s,MovePP:32b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 31 {Moveset:[{MoveID:317s,MovePP:31b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 30 {Moveset:[{MoveID:317s,MovePP:30b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 29 {Moveset:[{MoveID:317s,MovePP:29b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 28 {Moveset:[{MoveID:317s,MovePP:28b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 27 {Moveset:[{MoveID:317s,MovePP:27b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 26 {Moveset:[{MoveID:317s,MovePP:26b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 25 {Moveset:[{MoveID:317s,MovePP:25b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 24 {Moveset:[{MoveID:317s,MovePP:24b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 23 {Moveset:[{MoveID:317s,MovePP:23b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 22 {Moveset:[{MoveID:317s,MovePP:22b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 21 {Moveset:[{MoveID:317s,MovePP:21b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 20 {Moveset:[{MoveID:317s,MovePP:20b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 19 {Moveset:[{MoveID:317s,MovePP:19b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 18 {Moveset:[{MoveID:317s,MovePP:18b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 17 {Moveset:[{MoveID:317s,MovePP:17b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 16 {Moveset:[{MoveID:317s,MovePP:16b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 15 {Moveset:[{MoveID:317s,MovePP:15b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 14 {Moveset:[{MoveID:317s,MovePP:14b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 13 {Moveset:[{MoveID:317s,MovePP:13b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 12 {Moveset:[{MoveID:317s,MovePP:12b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 11 {Moveset:[{MoveID:317s,MovePP:11b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 10 {Moveset:[{MoveID:317s,MovePP:10b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 9 {Moveset:[{MoveID:317s,MovePP:9b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 8 {Moveset:[{MoveID:317s,MovePP:8b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 7 {Moveset:[{MoveID:317s,MovePP:7b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 6 {Moveset:[{MoveID:317s,MovePP:6b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 5 {Moveset:[{MoveID:317s,MovePP:5b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 4 {Moveset:[{MoveID:317s,MovePP:4b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 3 {Moveset:[{MoveID:317s,MovePP:3b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 2 {Moveset:[{MoveID:317s,MovePP:2b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 1 {Moveset:[{MoveID:317s,MovePP:1b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP2 0 {Moveset:[{MoveID:317s,MovePP:0b}]}
+
+#Sets Blizzard PP Current Score
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP3 8 {Moveset:[{MoveID:106s,MovePP:8b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP3 7 {Moveset:[{MoveID:106s,MovePP:7b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP3 6 {Moveset:[{MoveID:106s,MovePP:6b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP3 5 {Moveset:[{MoveID:106s,MovePP:5b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP3 4 {Moveset:[{MoveID:106s,MovePP:4b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP3 3 {Moveset:[{MoveID:106s,MovePP:3b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP3 2 {Moveset:[{MoveID:106s,MovePP:2b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP3 1 {Moveset:[{MoveID:106s,MovePP:1b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP3 0 {Moveset:[{MoveID:106s,MovePP:0b}]}
+
+#Sets Razor Leaf PP Current Score
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 40 {Moveset:[{MoveID:9s,MovePP:40b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 39{Moveset:[{MoveID:9s,MovePP:39b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 38 {Moveset:[{MoveID:9s,MovePP:38b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 37 {Moveset:[{MoveID:9s,MovePP:37b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 36 {Moveset:[{MoveID:9s,MovePP:36b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 35 {Moveset:[{MoveID:9s,MovePP:35b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 34 {Moveset:[{MoveID:9s,MovePP:34b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 33 {Moveset:[{MoveID:9s,MovePP:33b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 32 {Moveset:[{MoveID:9s,MovePP:32b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 31 {Moveset:[{MoveID:9s,MovePP:31b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 30 {Moveset:[{MoveID:9s,MovePP:30b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 29 {Moveset:[{MoveID:9s,MovePP:29b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 28 {Moveset:[{MoveID:9s,MovePP:28b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 27 {Moveset:[{MoveID:9s,MovePP:27b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 26 {Moveset:[{MoveID:9s,MovePP:26b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 25 {Moveset:[{MoveID:9s,MovePP:25b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 24 {Moveset:[{MoveID:9s,MovePP:24b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 23 {Moveset:[{MoveID:9s,MovePP:23b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 22 {Moveset:[{MoveID:9s,MovePP:22b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 21 {Moveset:[{MoveID:9s,MovePP:21b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 20 {Moveset:[{MoveID:9s,MovePP:20b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 19 {Moveset:[{MoveID:9s,MovePP:19b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 18 {Moveset:[{MoveID:9s,MovePP:18b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 17 {Moveset:[{MoveID:9s,MovePP:17b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 16 {Moveset:[{MoveID:9s,MovePP:16b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 15 {Moveset:[{MoveID:9s,MovePP:15b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 14 {Moveset:[{MoveID:9s,MovePP:14b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 13 {Moveset:[{MoveID:9s,MovePP:13b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 12 {Moveset:[{MoveID:9s,MovePP:12b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 11 {Moveset:[{MoveID:9s,MovePP:11b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 10 {Moveset:[{MoveID:9s,MovePP:10b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 9 {Moveset:[{MoveID:9s,MovePP:9b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 8 {Moveset:[{MoveID:9s,MovePP:8b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 7 {Moveset:[{MoveID:9s,MovePP:7b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 6 {Moveset:[{MoveID:9s,MovePP:6b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 5 {Moveset:[{MoveID:9s,MovePP:5b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 4 {Moveset:[{MoveID:9s,MovePP:4b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 3 {Moveset:[{MoveID:9s,MovePP:3b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 2 {Moveset:[{MoveID:9s,MovePP:2b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 1 {Moveset:[{MoveID:9s,MovePP:1b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP4 0 {Moveset:[{MoveID:9s,MovePP:0b}]}
+
+#Sets Razor Leaf PP Current Score
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 40 {Moveset:[{MoveID:605s,MovePP:40b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 39{Moveset:[{MoveID:605s,MovePP:39b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 38 {Moveset:[{MoveID:605s,MovePP:38b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 37 {Moveset:[{MoveID:605s,MovePP:37b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 36 {Moveset:[{MoveID:605s,MovePP:36b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 35 {Moveset:[{MoveID:605s,MovePP:35b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 34 {Moveset:[{MoveID:605s,MovePP:34b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 33 {Moveset:[{MoveID:605s,MovePP:33b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 32 {Moveset:[{MoveID:605s,MovePP:32b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 31 {Moveset:[{MoveID:605s,MovePP:31b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 30 {Moveset:[{MoveID:605s,MovePP:30b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 29 {Moveset:[{MoveID:605s,MovePP:29b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 28 {Moveset:[{MoveID:605s,MovePP:28b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 27 {Moveset:[{MoveID:605s,MovePP:27b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 26 {Moveset:[{MoveID:605s,MovePP:26b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 25 {Moveset:[{MoveID:605s,MovePP:25b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 24 {Moveset:[{MoveID:605s,MovePP:24b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 23 {Moveset:[{MoveID:605s,MovePP:23b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 22 {Moveset:[{MoveID:605s,MovePP:22b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 21 {Moveset:[{MoveID:605s,MovePP:21b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 20 {Moveset:[{MoveID:605s,MovePP:20b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 19 {Moveset:[{MoveID:605s,MovePP:19b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 18 {Moveset:[{MoveID:605s,MovePP:18b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 17 {Moveset:[{MoveID:605s,MovePP:17b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 16 {Moveset:[{MoveID:605s,MovePP:16b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 15 {Moveset:[{MoveID:605s,MovePP:15b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 14 {Moveset:[{MoveID:605s,MovePP:14b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 13 {Moveset:[{MoveID:605s,MovePP:13b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 12 {Moveset:[{MoveID:605s,MovePP:12b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 11 {Moveset:[{MoveID:605s,MovePP:11b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 10 {Moveset:[{MoveID:605s,MovePP:10b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 9 {Moveset:[{MoveID:605s,MovePP:9b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 8 {Moveset:[{MoveID:605s,MovePP:8b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 7 {Moveset:[{MoveID:605s,MovePP:7b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 6 {Moveset:[{MoveID:605s,MovePP:6b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 5 {Moveset:[{MoveID:605s,MovePP:5b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 4 {Moveset:[{MoveID:605s,MovePP:4b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 3 {Moveset:[{MoveID:605s,MovePP:3b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 2 {Moveset:[{MoveID:605s,MovePP:2b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 1 {Moveset:[{MoveID:605s,MovePP:1b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP5 0 {Moveset:[{MoveID:605s,MovePP:0b}]}
+
+#Sets Surf PP Current Score
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 24 {Moveset:[{MoveID:104s,MovePP:24b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 23 {Moveset:[{MoveID:104s,MovePP:23b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 22 {Moveset:[{MoveID:104s,MovePP:22b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 21 {Moveset:[{MoveID:104s,MovePP:21b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 20 {Moveset:[{MoveID:104s,MovePP:20b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 19 {Moveset:[{MoveID:104s,MovePP:19b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 18 {Moveset:[{MoveID:104s,MovePP:18b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 17 {Moveset:[{MoveID:104s,MovePP:17b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 16 {Moveset:[{MoveID:104s,MovePP:16b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 15 {Moveset:[{MoveID:104s,MovePP:15b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 14 {Moveset:[{MoveID:104s,MovePP:14b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 13 {Moveset:[{MoveID:104s,MovePP:13b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 12 {Moveset:[{MoveID:104s,MovePP:12b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 11 {Moveset:[{MoveID:104s,MovePP:11b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 10 {Moveset:[{MoveID:104s,MovePP:10b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 9 {Moveset:[{MoveID:104s,MovePP:9b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 8 {Moveset:[{MoveID:104s,MovePP:8b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 7 {Moveset:[{MoveID:104s,MovePP:7b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 6 {Moveset:[{MoveID:104s,MovePP:6b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 5 {Moveset:[{MoveID:104s,MovePP:5b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 4 {Moveset:[{MoveID:104s,MovePP:4b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 3 {Moveset:[{MoveID:104s,MovePP:3b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 2 {Moveset:[{MoveID:104s,MovePP:2b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 1 {Moveset:[{MoveID:104s,MovePP:1b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP6 0 {Moveset:[{MoveID:104s,MovePP:0b}]}
+
+#Sets Muddy Water PP Current Score
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP7 16 {Moveset:[{MoveID:386s,MovePP:16b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP7 15 {Moveset:[{MoveID:386s,MovePP:15b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP7 14 {Moveset:[{MoveID:386s,MovePP:14b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP7 13 {Moveset:[{MoveID:386s,MovePP:13b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP7 12 {Moveset:[{MoveID:386s,MovePP:12b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP7 11 {Moveset:[{MoveID:386s,MovePP:11b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP7 10 {Moveset:[{MoveID:386s,MovePP:10b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP7 9 {Moveset:[{MoveID:386s,MovePP:9b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP7 8 {Moveset:[{MoveID:386s,MovePP:8b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP7 7 {Moveset:[{MoveID:386s,MovePP:7b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP7 6 {Moveset:[{MoveID:386s,MovePP:6b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP7 5 {Moveset:[{MoveID:386s,MovePP:5b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP7 4 {Moveset:[{MoveID:386s,MovePP:4b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP7 3 {Moveset:[{MoveID:386s,MovePP:3b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP7 2 {Moveset:[{MoveID:386s,MovePP:2b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP7 1 {Moveset:[{MoveID:386s,MovePP:1b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP7 0 {Moveset:[{MoveID:386s,MovePP:0b}]}
+
+#Sets Rock Slide PP Current Score
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP8 16 {Moveset:[{MoveID:187s,MovePP:16b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP8 15 {Moveset:[{MoveID:187s,MovePP:15b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP8 14 {Moveset:[{MoveID:187s,MovePP:14b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP8 13 {Moveset:[{MoveID:187s,MovePP:13b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP8 12 {Moveset:[{MoveID:187s,MovePP:12b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP8 11 {Moveset:[{MoveID:187s,MovePP:11b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP8 10 {Moveset:[{MoveID:187s,MovePP:10b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP8 9 {Moveset:[{MoveID:187s,MovePP:9b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP8 8 {Moveset:[{MoveID:187s,MovePP:8b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP8 7 {Moveset:[{MoveID:187s,MovePP:7b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP8 6 {Moveset:[{MoveID:187s,MovePP:6b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP8 5 {Moveset:[{MoveID:187s,MovePP:5b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP8 4 {Moveset:[{MoveID:187s,MovePP:4b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP8 3 {Moveset:[{MoveID:187s,MovePP:3b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP8 2 {Moveset:[{MoveID:187s,MovePP:2b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP8 1 {Moveset:[{MoveID:187s,MovePP:1b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP8 0 {Moveset:[{MoveID:187s,MovePP:0b}]}
+
+#Sets Hyper Voice PP Current Score
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP9 16 {Moveset:[{MoveID:366s,MovePP:16b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP9 15 {Moveset:[{MoveID:366s,MovePP:15b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP9 14 {Moveset:[{MoveID:366s,MovePP:14b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP9 13 {Moveset:[{MoveID:366s,MovePP:13b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP9 12 {Moveset:[{MoveID:366s,MovePP:12b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP9 11 {Moveset:[{MoveID:366s,MovePP:11b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP9 10 {Moveset:[{MoveID:366s,MovePP:10b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP9 9 {Moveset:[{MoveID:366s,MovePP:9b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP9 8 {Moveset:[{MoveID:366s,MovePP:8b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP9 7 {Moveset:[{MoveID:366s,MovePP:7b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP9 6 {Moveset:[{MoveID:366s,MovePP:6b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP9 5 {Moveset:[{MoveID:366s,MovePP:5b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP9 4 {Moveset:[{MoveID:366s,MovePP:4b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP9 3 {Moveset:[{MoveID:366s,MovePP:3b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP9 2 {Moveset:[{MoveID:366s,MovePP:2b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP9 1 {Moveset:[{MoveID:366s,MovePP:1b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP9 0 {Moveset:[{MoveID:366s,MovePP:0b}]}
+
+#Sets Heat Wave PP Current Score
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP10 16 {Moveset:[{MoveID:210s,MovePP:16b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP10 15 {Moveset:[{MoveID:210s,MovePP:15b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP10 14 {Moveset:[{MoveID:210s,MovePP:14b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP10 13 {Moveset:[{MoveID:210s,MovePP:13b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP10 12 {Moveset:[{MoveID:210s,MovePP:12b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP10 11 {Moveset:[{MoveID:210s,MovePP:11b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP10 10 {Moveset:[{MoveID:210s,MovePP:10b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP10 9 {Moveset:[{MoveID:210s,MovePP:9b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP10 8 {Moveset:[{MoveID:210s,MovePP:8b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP10 7 {Moveset:[{MoveID:210s,MovePP:7b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP10 6 {Moveset:[{MoveID:210s,MovePP:6b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP10 5 {Moveset:[{MoveID:210s,MovePP:5b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP10 4 {Moveset:[{MoveID:210s,MovePP:4b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP10 3 {Moveset:[{MoveID:210s,MovePP:3b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP10 2 {Moveset:[{MoveID:210s,MovePP:2b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP10 1 {Moveset:[{MoveID:210s,MovePP:1b}]}
+execute @a ~ ~ ~ /execute @e[r=10,type=pixelmon:pixelmon,tag=Player] ~ ~ ~ scoreboard players set @s MovePP10 0 {Moveset:[{MoveID:210s,MovePP:0b}]}

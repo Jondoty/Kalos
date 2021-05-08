@@ -1,0 +1,1080 @@
+#	Pokémon		Item	Moves				Nature	EVs
+									HP	Attack	Defense	Sp. Atk	Sp. Def	Speed
+19		Rattata	Cheri Berry	{MoveID:192s,MovePP:10b}	{MoveID:95s,MovePP:25b}	{MoveID:133s,MovePP:30b}	{MoveID:148s,MovePP:30b}	Jolly	-	252	-	-	-	252
+543		Venipede	Chesto Berry	{MoveID:17s,MovePP:10b}	{MoveID:279s,MovePP:20b}	{MoveID:21s,MovePP:10b}	{MoveID:16s,MovePP:10b}	Impish	-	252	252	-	-	-
+16		Pidgey	Sharp Beak	{MoveID:209s,MovePP:15b}	{MoveID:133s,MovePP:30b}	{MoveID:317s,MovePP:20b}	{MoveID:83s,MovePP:15b}	Jolly	-	252	-	-	-	252
+659		Bunnelby	Rawst Berry	{MoveID:244s,MovePP:10b}	{MoveID:192s,MovePP:10b}	{MoveID:79s,MovePP:30b}	{MoveID:132s,MovePP:30b}	Adamant	-	252	-	-	-	252
+679		Honedge	Persim Berry	{MoveID:302s,MovePP:20b}	{MoveID:559s,MovePP:30b}	{MoveID:203s,MovePP:20b}	{MoveID:376s,MovePP:40b}	Adamant	-	252	252	-	-	-
+74		Geodude	Shuca Berry	{MoveID:284s,MovePP:15b}	{MoveID:60s,MovePP:20b}	{MoveID:40s,MovePP:15b}	{MoveID:281s,MovePP:20b}	Adamant	-	252	252	-	-	-
+43		Oddish	Big Root	{MoveID:276s,MovePP:10b}	{MoveID:26s,MovePP:15b}	{MoveID:565s,MovePP:20b}	{MoveID:6s,MovePP:35b}	Modest	170	-	170	-	170	-
+421		Cherrim	Persim Berry	{MoveID:398s,MovePP:20b}	{MoveID:336s,MovePP:20b}	{MoveID:19s,MovePP:5b}	{MoveID:30s,MovePP:15b}	Modest	-	-	-	252	-	252
+307		Meditite	Cheri Berry	{MoveID:499s,MovePP:20b}	{MoveID:278s,MovePP:10b}	{MoveID:128s,MovePP:25b}	{MoveID:293s,MovePP:5b}	Lonely	-	252	-	-	-	252
+261		Poochyena	Black Glasses	{MoveID:95s,MovePP:25b}	{MoveID:206s,MovePP:15b}	{MoveID:47s,MovePP:10b}	{MoveID:554s,MovePP:15b}	Hardy	-	252	-	-	-	252
+575		Gothorita	Persim Berry	{MoveID:107s,MovePP:20b}	{MoveID:229s,MovePP:10b}	{MoveID:373s,MovePP:20b}	{MoveID:455s,MovePP:5b}	Calm	-	-	-	252	252	-
+577		Solosis	Quick Claw	{MoveID:180s,MovePP:15b}	{MoveID:505s,MovePP:15b}	{MoveID:307s,MovePP:20b}	{MoveID:20s,MovePP:30b}	Modest	-	-	-	252	252	-
+177		Natu	TwistedSpoon	{MoveID:508s,MovePP:20b}	{MoveID:484s,MovePP:5b}	{MoveID:147s,MovePP:20b}	{MoveID:26s,MovePP:15b}	Modest	-	-	-	252	-	252
+220		Swinub	Persim Berry	{MoveID:265s,MovePP:10b}	{MoveID:448s,MovePP:30b}	{MoveID:220s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Adamant	-	252	252	-	-	-
+60		Poliwag	Cheri Berry	{MoveID:108s,MovePP:20b}	{MoveID:505s,MovePP:15b}	{MoveID:130s,MovePP:20b}	{MoveID:394s,MovePP:15b}	Timid	-	-	-	252	-	252
+285		Shroomish	Big Root	{MoveID:276s,MovePP:10b}	{MoveID:17s,MovePP:10b}	{MoveID:16s,MovePP:10b}	{MoveID:4s,MovePP:10b}	Modest	252	-	-	252	-	-
+309		Electrike	Magnet	{MoveID:301s,MovePP:20b}	{MoveID:133s,MovePP:30b}	{MoveID:123s,MovePP:20b}	{MoveID:95s,MovePP:25b}	Jolly	-	252	-	-	-	252
+209		Snubbull	Pecha Berry	{MoveID:565s,MovePP:20b}	{MoveID:134s,MovePP:20b}	{MoveID:95s,MovePP:25b}	{MoveID:298s,MovePP:20b}	Adamant	-	252	252	-	-	-
+81		Magnemite	Metal Coat	{MoveID:452s,MovePP:10b}	{MoveID:229s,MovePP:10b}	{MoveID:376s,MovePP:40b}	{MoveID:147s,MovePP:20b}	Modest	-	-	-	252	-	252
+246		Larvitar	Passho Berry	{MoveID:187s,MovePP:10b}	{MoveID:95s,MovePP:25b}	{MoveID:60s,MovePP:20b}	{MoveID:47s,MovePP:10b}	Adamant	-	252	-	-	-	252
+511		Pansage	Sitrus Berry	{MoveID:15s,MovePP:15b}	{MoveID:251s,MovePP:15b}	{MoveID:94s,MovePP:30b}	{MoveID:36s,MovePP:20b}	Jolly	-	252	-	-	-	252
+513		Pansear	Passho Berry	{MoveID:49s,MovePP:15b}	{MoveID:185s,MovePP:15b}	{MoveID:94s,MovePP:30b}	{MoveID:54s,MovePP:15b}	Bashful	-	252	-	-	-	252
+515		Panpour	Cheri Berry	{MoveID:217s,MovePP:15b}	{MoveID:225s,MovePP:5b}	{MoveID:399s,MovePP:15b}	{MoveID:94s,MovePP:30b}	Modest	-	-	-	252	-	252
+355		Duskull	Ganlon Berry	{MoveID:271s,MovePP:10b}	{MoveID:207s,MovePP:15b}	{MoveID:232s,MovePP:10b}	{MoveID:16s,MovePP:10b}	Modest	-	-	252	252	-	-
+92		Gastly	Lax Incense	{MoveID:130s,MovePP:20b}	{MoveID:142s,MovePP:10b}	{MoveID:271s,MovePP:10b}	{MoveID:225s,MovePP:5b}	Timid	-	-	-	252	-	252
+66		Machop	Payapa Berry	{MoveID:113s,MovePP:20b}	{MoveID:60s,MovePP:20b}	{MoveID:518s,MovePP:5b}	{MoveID:47s,MovePP:10b}	Adamant	252	252	-	-	-	-
+278		Wingull	Sharp Beak	{MoveID:203s,MovePP:20b}	{MoveID:213s,MovePP:20b}	{MoveID:133s,MovePP:30b}	{MoveID:97s,MovePP:20b}	Serious	252	-	-	-	-	252
+361		Snorunt	Petaya Berry	{MoveID:450s,MovePP:15b}	{MoveID:84s,MovePP:15b}	{MoveID:95s,MovePP:25b}	{MoveID:220s,MovePP:10b}	Jolly	-	252	-	-	-	252
+204		Pineco	Rocky Helmet	{MoveID:218s,MovePP:5b}	{MoveID:279s,MovePP:20b}	{MoveID:215s,MovePP:15b}	{MoveID:246s,MovePP:20b}	Brave	-	252	252	-	-	-
+459		Snover	Occa Berry	{MoveID:9s,MovePP:25b}	{MoveID:448s,MovePP:30b}	{MoveID:341s,MovePP:20b}	{MoveID:37s,MovePP:15b}	Adamant	252	252	-	-	-	-
+167		Spinarak	Binding Band	{MoveID:589s,MovePP:20b}	{MoveID:433s,MovePP:20b}	{MoveID:197s,MovePP:10b}	{MoveID:559s,MovePP:30b}	Adamant	-	252	252	-	-	-
+650		Chespin	Sitrus Berry	{MoveID:5s,MovePP:25b}	{MoveID:2s,MovePP:35b}	{MoveID:93s,MovePP:20b}	{MoveID:39s,MovePP:15b}	Adamant	-	252	252	-	-	-
+653		Fennekin	Charcoal	{MoveID:52s,MovePP:15b}	{MoveID:107s,MovePP:20b}	{MoveID:207s,MovePP:15b}	{MoveID:273s,MovePP:30b}	Modest	-	-	-	252	-	252
+656		Froakie	Wacan Berry	{MoveID:133s,MovePP:30b}	{MoveID:213s,MovePP:20b}	{MoveID:505s,MovePP:15b}	{MoveID:254s,MovePP:20b}	Hasty	-	-	-	252	-	252
+669		Flabébé	Miracle Seed	{MoveID:576s,MovePP:30b}	{MoveID:9s,MovePP:25b}	{MoveID:505s,MovePP:15b}	{MoveID:339s,MovePP:10b}	Docile	-	252	-	252	-	-
+436		Bronzor	Rawst Berry	{MoveID:180s,MovePP:15b}	{MoveID:229s,MovePP:10b}	{MoveID:376s,MovePP:40b}	{MoveID:142s,MovePP:10b}	Modest	-	-	-	170	170	170
+667		Litleo	Persim Berry	{MoveID:48s,MovePP:15b}	{MoveID:84s,MovePP:15b}	{MoveID:518s,MovePP:5b}	{MoveID:56s,MovePP:15b}	Adamant	-	252	-	-	-	252
+165		Ledyba	SilverPowder	{MoveID:161s,MovePP:20b}	{MoveID:375s,MovePP:5b}	{MoveID:255s,MovePP:40b}	{MoveID:26s,MovePP:15b}	Modest	-	-	-	252	-	252
+595		Joltik	Liechi Berry	{MoveID:527s,MovePP:15b}	{MoveID:469s,MovePP:20b}	{MoveID:120s,MovePP:40b}	{MoveID:421s,MovePP:10b}	Jolly	-	252	-	-	-	252
+443		Gible	Dragon Fang	{MoveID:317s,MovePP:20b}	{MoveID:267s,MovePP:10b}	{MoveID:277s,MovePP:15b}	{MoveID:202s,MovePP:15b}	Adamant	-	252	-	-	-	252
+451		Skorupi	Poison Barb	{MoveID:469s,MovePP:20b}	{MoveID:252s,MovePP:15b}	{MoveID:203s,MovePP:20b}	{MoveID:94s,MovePP:30b}	Jolly	-	252	-	-	-	252
+403		Shinx	Razor Fang	{MoveID:95s,MovePP:25b}	{MoveID:301s,MovePP:20b}	{MoveID:123s,MovePP:20b}	{MoveID:561s,MovePP:30b}	Jolly	-	252	-	-	-	252
+343		Baltoy	Rindo Berry	{MoveID:320s,MovePP:5b}	{MoveID:107s,MovePP:20b}	{MoveID:379s,MovePP:20b}	{MoveID:455s,MovePP:5b}	Quiet	-	-	-	252	252	-
+88		Grimer	Payapa Berry	{MoveID:156s,MovePP:20b}	{MoveID:244s,MovePP:10b}	{MoveID:206s,MovePP:15b}	{MoveID:141s,MovePP:10b}	Modest	-	-	-	252	252	-
+434		Stunky	Black Glasses	{MoveID:554s,MovePP:15b}	{MoveID:206s,MovePP:15b}	{MoveID:500s,MovePP:20b}	{MoveID:228s,MovePP:15b}	Modest	252	-	-	252	-	-
+708		Phantump	Sitrus Berry	{MoveID:341s,MovePP:20b}	{MoveID:208s,MovePP:15b}	{MoveID:36s,MovePP:20b}	{MoveID:4s,MovePP:10b}	Adamant	252	252	-	-	-	-
+592		Frillish	Sitrus Berry	{MoveID:108s,MovePP:20b}	{MoveID:136s,MovePP:15b}	{MoveID:30s,MovePP:15b}	{MoveID:34s,MovePP:20b}	Calm	-	-	-	252	252	-
+677		Espurr	Persim Berry	{MoveID:107s,MovePP:20b}	{MoveID:324s,MovePP:10b}	{MoveID:123s,MovePP:20b}	{MoveID:505s,MovePP:15b}	Modest	-	-	-	252	-	252
+624		Pawniard	Chople Berry	{MoveID:241s,MovePP:20b}	{MoveID:313s,MovePP:35b}	{MoveID:228s,MovePP:15b}	{MoveID:215s,MovePP:15b}	Impish	-	252	252	-	-	-
+674		Pancham	Sitrus Berry	{MoveID:64s,MovePP:15b}	{MoveID:62s,MovePP:25b}	{MoveID:37s,MovePP:15b}	{MoveID:94s,MovePP:30b}	Adamant	-	252	252	-	-	-
+662		Fletchinder	Sharp Beak	{MoveID:203s,MovePP:20b}	{MoveID:204s,MovePP:20b}	{MoveID:254s,MovePP:20b}	{MoveID:132s,MovePP:30b}	Jolly	-	252	-	-	-	252
+318		Carvanha	Mystic Water	{MoveID:471s,MovePP:20b}	{MoveID:95s,MovePP:25b}	{MoveID:37s,MovePP:15b}	{MoveID:138s,MovePP:40b}	Adamant	-	252	-	-	-	252
+138		Omanyte	Shell Bell	{MoveID:411s,MovePP:10b}	{MoveID:320s,MovePP:5b}	{MoveID:21s,MovePP:10b}	{MoveID:511s,MovePP:15b}	Bold	-	-	252	-	252	-
+397		Staravia	Cheri Berry	{MoveID:203s,MovePP:20b}	{MoveID:133s,MovePP:30b}	{MoveID:74s,MovePP:20b}	{MoveID:303s,MovePP:25b}	Adamant	-	252	-	-	-	252
+402		Kricketune	Coba Berry	{MoveID:96s,MovePP:15b}	{MoveID:577s,MovePP:25b}	{MoveID:138s,MovePP:40b}	{MoveID:50s,MovePP:20b}	Adamant	-	252	-	-	-	252
+228		Houndour	Chesto Berry	{MoveID:48s,MovePP:15b}	{MoveID:95s,MovePP:25b}	{MoveID:268s,MovePP:10b}	{MoveID:390s,MovePP:40b}	Adamant	-	252	-	-	-	252
+96		Drowzee	Focus Band	{MoveID:107s,MovePP:20b}	{MoveID:130s,MovePP:20b}	{MoveID:505s,MovePP:15b}	{MoveID:20s,MovePP:30b}	Modest	-	-	-	252	-	252
+608		Lampent	{MoveID:117s,MovePP:25b} Bulb	{MoveID:49s,MovePP:15b}	{MoveID:271s,MovePP:10b}	{MoveID:142s,MovePP:10b}	{MoveID:207s,MovePP:15b}	Modest	252	-	-	252	-	-
+163		Hoothoot	Cheri Berry	{MoveID:130s,MovePP:20b}	{MoveID:147s,MovePP:20b}	{MoveID:128s,MovePP:25b}	{MoveID:32s,MovePP:15b}	Modest	-	-	-	252	252	-
+431		Glameow	Silk Scarf	{MoveID:185s,MovePP:15b}	{MoveID:30s,MovePP:15b}	{MoveID:241s,MovePP:20b}	{MoveID:228s,MovePP:15b}	Adamant	-	252	-	-	-	252
+188		Skiploom	Occa Berry	{MoveID:387s,MovePP:30b}	{MoveID:251s,MovePP:15b}	{MoveID:119s,MovePP:30b}	{MoveID:576s,MovePP:30b}	Adamant	-	252	-	-	-	252
+183		Marill	Rindo Berry	{MoveID:505s,MovePP:15b}	{MoveID:108s,MovePP:20b}	{MoveID:336s,MovePP:20b}	{MoveID:429s,MovePP:20b}	Timid	252	-	-	-	-	252
+525		Boldore	Rocky Helmet	{MoveID:284s,MovePP:15b}	{MoveID:84s,MovePP:15b}	{MoveID:83s,MovePP:15b}	{MoveID:215s,MovePP:15b}	Adamant	-	252	252	-	-	-
+281		Kirlia	Tanga Berry	{MoveID:128s,MovePP:25b}	{MoveID:398s,MovePP:20b}	{MoveID:229s,MovePP:10b}	{MoveID:298s,MovePP:20b}	Mild	-	-	-	252	-	252
+363		Spheal	Pecha Berry	{MoveID:144s,MovePP:40b}	{MoveID:363s,MovePP:20b}	{MoveID:311s,MovePP:5b}	{MoveID:60s,MovePP:20b}	Careful	-	252	-	-	252	-
+408		Cranidos	Sitrus Berry	{MoveID:187s,MovePP:10b}	{MoveID:84s,MovePP:15b}	{MoveID:261s,MovePP:10b}	{MoveID:47s,MovePP:10b}	Adamant	-	252	-	-	-	252
+19		Rattata	Razor Fang	{MoveID:188s,MovePP:15b}	{MoveID:254s,MovePP:20b}	{MoveID:260s,MovePP:15b}	{MoveID:263s,MovePP:15b}	Jolly	-	252	-	-	-	252
+543		Venipede	Poison Barb	{MoveID:27s,MovePP:10b}	{MoveID:536s,MovePP:20b}	{MoveID:268s,MovePP:10b}	{MoveID:138s,MovePP:40b}	Impish	-	252	252	-	-	-
+16		Pidgey	Scope Lens	{MoveID:75s,MovePP:15b}	{MoveID:28s,MovePP:20b}	{MoveID:303s,MovePP:25b}	{MoveID:360s,MovePP:15b}	Jolly	-	252	-	-	-	252
+659		Bunnelby	Silk Scarf	{MoveID:25s,MovePP:20b}	{MoveID:36s,MovePP:20b}	{MoveID:127s,MovePP:10b}	{MoveID:393s,MovePP:5b}	Adamant	-	252	-	-	-	252
+679		Honedge	Quick Claw	{MoveID:464s,MovePP:15b}	{MoveID:35s,MovePP:20b}	{MoveID:434s,MovePP:15b}	{MoveID:50s,MovePP:20b}	Adamant	-	252	252	-	-	-
+74		Geodude	Smooth Rock	{MoveID:286s,MovePP:5b}	{MoveID:58s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:267s,MovePP:10b}	Adamant	-	252	252	-	-	-
+43		Oddish	Big Root	{MoveID:276s,MovePP:10b}	{MoveID:38s,MovePP:10b}	{MoveID:16s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Bold	-	-	252	-	252	-
+421		Cherrim	Rose Incense	{MoveID:33s,MovePP:10b}	{MoveID:505s,MovePP:15b}	{MoveID:567s,MovePP:10b}	{MoveID:19s,MovePP:5b}	Modest	-	-	-	252	-	252
+307		Meditite	Muscle Band	{MoveID:168s,MovePP:10b}	{MoveID:223s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:36s,MovePP:20b}	Lonely	-	252	-	-	-	252
+261		Poochyena	Razor Fang	{MoveID:259s,MovePP:5b}	{MoveID:260s,MovePP:15b}	{MoveID:127s,MovePP:10b}	{MoveID:23s,MovePP:20b}	Adamant	-	252	-	-	-	252
+575		Gothorita	Colbur Berry	{MoveID:129s,MovePP:10b}	{MoveID:122s,MovePP:15b}	{MoveID:418s,MovePP:15b}	{MoveID:455s,MovePP:5b}	Calm	-	-	-	252	252	-
+577		Solosis	Sitrus Berry	{MoveID:129s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:139s,MovePP:10b}	{MoveID:289s,MovePP:10b}	Modest	-	-	-	252	252	-
+177		Natu	Wise Glasses	{MoveID:129s,MovePP:10b}	{MoveID:567s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:224s,MovePP:20b}	Modest	-	-	-	252	-	252
+220		Swinub	Never-Melt Ice	{MoveID:58s,MovePP:10b}	{MoveID:106s,MovePP:5b}	{MoveID:187s,MovePP:10b}	{MoveID:220s,MovePP:10b}	Hardy	-	170	-	170	-	170
+60		Poliwag	Damp Rock	{MoveID:104s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:265s,MovePP:10b}	{MoveID:216s,MovePP:5b}	Timid	-	-	-	252	-	252
+285		Shroomish	Bright Powder	{MoveID:15s,MovePP:15b}	{MoveID:25s,MovePP:20b}	{MoveID:34s,MovePP:20b}	{MoveID:179s,MovePP:15b}	Jolly	-	252	-	-	-	252
+309		Electrike	Air Balloon	{MoveID:457s,MovePP:15b}	{MoveID:94s,MovePP:30b}	{MoveID:554s,MovePP:15b}	{MoveID:20s,MovePP:30b}	Modest	-	-	-	252	-	252
+209		Snubbull	King's Rock	{MoveID:450s,MovePP:15b}	{MoveID:48s,MovePP:15b}	{MoveID:449s,MovePP:15b}	{MoveID:608s,MovePP:10b}	Jolly	-	252	-	-	-	252
+81		Magnemite	Light Clay	{MoveID:122s,MovePP:15b}	{MoveID:221s,MovePP:10b}	{MoveID:147s,MovePP:20b}	{MoveID:20s,MovePP:30b}	Modest	-	-	252	252	-	-
+246		Larvitar	Hard Stone	{MoveID:286s,MovePP:5b}	{MoveID:260s,MovePP:15b}	{MoveID:610s,MovePP:20b}	{MoveID:90s,MovePP:10b}	Adamant	-	252	-	-	-	252
+511		Pansage	Salac Berry	{MoveID:15s,MovePP:15b}	{MoveID:260s,MovePP:15b}	{MoveID:251s,MovePP:15b}	{MoveID:228s,MovePP:15b}	Jolly	-	252	-	-	-	252
+513		Pansear	Liechi Berry	{MoveID:204s,MovePP:20b}	{MoveID:208s,MovePP:15b}	{MoveID:251s,MovePP:15b}	{MoveID:346s,MovePP:10b}	Jolly	-	252	-	-	-	252
+515		Panpour	Shell Bell	{MoveID:159s,MovePP:15b}	{MoveID:251s,MovePP:15b}	{MoveID:260s,MovePP:15b}	{MoveID:225s,MovePP:5b}	Adamant	-	252	-	-	-	252
+355		Duskull	Spell Tag	{MoveID:227s,MovePP:15b}	{MoveID:129s,MovePP:10b}	{MoveID:589s,MovePP:20b}	{MoveID:207s,MovePP:15b}	Bold	-	-	252	252	-	-
+92		Gastly	Spell Tag	{MoveID:227s,MovePP:15b}	{MoveID:259s,MovePP:5b}	{MoveID:232s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Timid	-	-	-	252	-	252
+66		Machop	Black Belt	{MoveID:316s,MovePP:5b}	{MoveID:345s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:392s,MovePP:20b}	Adamant	252	252	-	-	-	-
+278		Wingull	Wacan Berry	{MoveID:209s,MovePP:15b}	{MoveID:217s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:405s,MovePP:10b}	Modest	252	-	-	252	-	-
+361		Snorunt	Icy Rock	{MoveID:105s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:21s,MovePP:10b}	{MoveID:220s,MovePP:10b}	Modest	-	-	-	252	252	-
+204		Pineco	Rocky Helmet	{MoveID:16s,MovePP:10b}	{MoveID:17s,MovePP:10b}	{MoveID:268s,MovePP:10b}	{MoveID:469s,MovePP:20b}	Impish	-	252	252	-	-	-
+459		Snover	Expert Belt	{MoveID:105s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:33s,MovePP:10b}	{MoveID:505s,MovePP:15b}	Modest	-	-	-	252	252	-
+167		Spinarak	Coba Berry	{MoveID:93s,MovePP:20b}	{MoveID:462s,MovePP:20b}	{MoveID:615s,MovePP:20b}	{MoveID:259s,MovePP:5b}	Adamant	-	252	252	-	-	-
+650		Chespin	Miracle Seed	{MoveID:15s,MovePP:15b}	{MoveID:88s,MovePP:15b}	{MoveID:610s,MovePP:20b}	{MoveID:392s,MovePP:20b}	Adamant	-	252	-	-	252	-
+653		Fennekin	Passho Berry	{MoveID:51s,MovePP:15b}	{MoveID:129s,MovePP:10b}	{MoveID:207s,MovePP:15b}	{MoveID:19s,MovePP:5b}	Modest	-	-	-	252	-	252
+656		Froakie	Rindo Berry	{MoveID:159s,MovePP:15b}	{MoveID:251s,MovePP:15b}	{MoveID:36s,MovePP:20b}	{MoveID:133s,MovePP:30b}	Adamant	-	252	-	-	-	252
+669		Flabébé	Babiri Berry	{MoveID:567s,MovePP:10b}	{MoveID:33s,MovePP:10b}	{MoveID:129s,MovePP:10b}	{MoveID:22s,MovePP:25b}	Modest	-	-	-	252	-	252
+436		Bronzor	Salac Berry	{MoveID:383s,MovePP:20b}	{MoveID:221s,MovePP:10b}	{MoveID:268s,MovePP:10b}	{MoveID:60s,MovePP:20b}	Modest	-	-	-	252	252	-
+667		Litleo	Heat Rock	{MoveID:51s,MovePP:15b}	{MoveID:554s,MovePP:15b}	{MoveID:366s,MovePP:10b}	{MoveID:19s,MovePP:5b}	Modest	-	-	-	252	-	252
+165		Ledyba	Charti Berry	{MoveID:240s,MovePP:30b}	{MoveID:254s,MovePP:20b}	{MoveID:251s,MovePP:15b}	{MoveID:35s,MovePP:20b}	Adamant	-	252	-	-	-	252
+595		Joltik	Salac Berry	{MoveID:381s,MovePP:15b}	{MoveID:497s,MovePP:10b}	{MoveID:33s,MovePP:10b}	{MoveID:132s,MovePP:30b}	Timid	-	-	-	252	-	252
+443		Gible	Yache Berry	{MoveID:55s,MovePP:15b}	{MoveID:60s,MovePP:20b}	{MoveID:203s,MovePP:20b}	{MoveID:208s,MovePP:15b}	Adamant	-	252	-	-	-	252
+451		Skorupi	Razor Claw	{MoveID:435s,MovePP:15b}	{MoveID:35s,MovePP:20b}	{MoveID:462s,MovePP:20b}	{MoveID:434s,MovePP:15b}	Adamant	-	252	-	-	-	252
+403		Shinx	Magnet	{MoveID:263s,MovePP:15b}	{MoveID:260s,MovePP:15b}	{MoveID:123s,MovePP:20b}	{MoveID:56s,MovePP:15b}	Adamant	-	252	-	-	-	252
+343		Baltoy	Quick Claw	{MoveID:383s,MovePP:20b}	{MoveID:266s,MovePP:10b}	{MoveID:229s,MovePP:10b}	{MoveID:488s,MovePP:10b}	Modest	-	-	-	252	252	-
+88		Grimer	Black Sludge	{MoveID:27s,MovePP:10b}	{MoveID:565s,MovePP:20b}	{MoveID:182s,MovePP:20b}	{MoveID:51s,MovePP:15b}	Calm	-	-	-	252	252	-
+434		Stunky	Scope Lens	{MoveID:50s,MovePP:20b}	{MoveID:434s,MovePP:15b}	{MoveID:208s,MovePP:15b}	{MoveID:278s,MovePP:10b}	Adamant	-	252	-	-	-	252
+708		Phantump	Kasib Berry	{MoveID:241s,MovePP:20b}	{MoveID:531s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:433s,MovePP:20b}	Adamant	-	252	-	-	252	-
+592		Frillish	Shell Bell	{MoveID:104s,MovePP:15b}	{MoveID:227s,MovePP:15b}	{MoveID:129s,MovePP:10b}	{MoveID:139s,MovePP:10b}	Calm	-	-	-	252	252	-
+677		Espurr	TwistedSpoon	{MoveID:129s,MovePP:10b}	{MoveID:122s,MovePP:15b}	{MoveID:33s,MovePP:10b}	{MoveID:223s,MovePP:10b}	Modest	-	-	-	252	-	252
+624		Pawniard	Black Glasses	{MoveID:464s,MovePP:15b}	{MoveID:434s,MovePP:15b}	{MoveID:203s,MovePP:20b}	{MoveID:35s,MovePP:20b}	Impish	-	252	252	-	-	-
+674		Pancham	Black Glasses	{MoveID:610s,MovePP:20b}	{MoveID:260s,MovePP:15b}	{MoveID:208s,MovePP:15b}	{MoveID:187s,MovePP:10b}	Adamant	-	252	252	-	-	-
+662		Fletchinder	King's Rock	{MoveID:204s,MovePP:20b}	{MoveID:133s,MovePP:30b}	{MoveID:303s,MovePP:25b}	{MoveID:75s,MovePP:15b}	Adamant	-	252	-	-	-	252
+318		Carvanha	Chople Berry	{MoveID:260s,MovePP:15b}	{MoveID:159s,MovePP:15b}	{MoveID:471s,MovePP:20b}	{MoveID:450s,MovePP:15b}	Jolly	-	252	-	-	-	252
+138		Omanyte	Rindo Berry	{MoveID:105s,MovePP:10b}	{MoveID:283s,MovePP:10b}	{MoveID:394s,MovePP:15b}	{MoveID:104s,MovePP:15b}	Modest	-	-	252	252	-	-
+397		Staravia	Liechi Berry	{MoveID:262s,MovePP:5b}	{MoveID:203s,MovePP:20b}	{MoveID:28s,MovePP:20b}	{MoveID:133s,MovePP:30b}	Jolly	-	252	-	-	-	252
+402		Kricketune	Sitrus Berry	{MoveID:149s,MovePP:10b}	{MoveID:436s,MovePP:10b}	{MoveID:225s,MovePP:5b}	{MoveID:505s,MovePP:15b}	Calm	-	-	252	-	252	-
+228		Houndour	Charti Berry	{MoveID:501s,MovePP:15b}	{MoveID:51s,MovePP:15b}	{MoveID:269s,MovePP:15b}	{MoveID:445s,MovePP:20b}	Modest	-	-	-	252	-	252
+96		Drowzee	TwistedSpoon	{MoveID:288s,MovePP:15b}	{MoveID:610s,MovePP:20b}	{MoveID:130s,MovePP:20b}	{MoveID:84s,MovePP:15b}	Adamant	-	252	-	-	-	252
+608		Lampent	{MoveID:117s,MovePP:25b} Bulb	{MoveID:53s,MovePP:5b}	{MoveID:227s,MovePP:15b}	{MoveID:142s,MovePP:10b}	{MoveID:232s,MovePP:10b}	Modest	252	-	-	252	-	-
+163		Hoothoot	Yache Berry	{MoveID:209s,MovePP:15b}	{MoveID:227s,MovePP:15b}	{MoveID:130s,MovePP:20b}	{MoveID:170s,MovePP:15b}	Timid	-	-	-	252	-	252
+431		Glameow	Razor Claw	{MoveID:50s,MovePP:20b}	{MoveID:208s,MovePP:15b}	{MoveID:254s,MovePP:20b}	{MoveID:324s,MovePP:10b}	Adamant	-	252	-	-	-	252
+188		Skiploom	Charti Berry	{MoveID:33s,MovePP:10b}	{MoveID:505s,MovePP:15b}	{MoveID:576s,MovePP:30b}	{MoveID:567s,MovePP:10b}	Modest	-	-	-	252	-	252
+183		Marill	Muscle Band	{MoveID:214s,MovePP:10b}	{MoveID:201s,MovePP:15b}	{MoveID:40s,MovePP:15b}	{MoveID:429s,MovePP:20b}	Adamant	252	252	-	-	-	-
+525		Boldore	Air Balloon	{MoveID:283s,MovePP:10b}	{MoveID:60s,MovePP:20b}	{MoveID:285s,MovePP:20b}	{MoveID:267s,MovePP:10b}	Adamant	-	252	252	-	-	-
+281		Kirlia	TwistedSpoon	{MoveID:223s,MovePP:10b}	{MoveID:129s,MovePP:10b}	{MoveID:122s,MovePP:15b}	{MoveID:567s,MovePP:10b}	Modest	-	-	-	252	-	252
+363		Spheal	Icy Rock	{MoveID:525s,MovePP:10b}	{MoveID:159s,MovePP:15b}	{MoveID:26s,MovePP:15b}	{MoveID:220s,MovePP:10b}	Adamant	252	252	-	-	-	-
+408		Cranidos	Petaya Berry	{MoveID:320s,MovePP:5b}	{MoveID:51s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:122s,MovePP:15b}	Modest	-	-	-	252	-	252
+533		Gurdurr	Zoom Lens	{MoveID:308s,MovePP:5b}	{MoveID:433s,MovePP:20b}	{MoveID:284s,MovePP:15b}	{MoveID:240s,MovePP:30b}	Adamant	-	252	252	-	-	-
+705		Sliggoo	Sitrus Berry	{MoveID:149s,MovePP:10b}	{MoveID:16s,MovePP:10b}	{MoveID:233s,MovePP:15b}	{MoveID:437s,MovePP:10b}	Calm	-	-	252	-	252	-
+57		Primeape	Persim Berry	{MoveID:62s,MovePP:25b}	{MoveID:187s,MovePP:10b}	{MoveID:90s,MovePP:10b}	{MoveID:254s,MovePP:20b}	Jolly	-	252	-	-	-	252
+651		Quilladin	Leftovers	{MoveID:470s,MovePP:15b}	{MoveID:4s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:127s,MovePP:10b}	Adamant	-	252	252	-	-	-
+657		Frogadier	Power Herb	{MoveID:127s,MovePP:10b}	{MoveID:610s,MovePP:20b}	{MoveID:159s,MovePP:15b}	{MoveID:393s,MovePP:5b}	Adamant	-	252	-	-	-	252
+654		Braixen	Light Clay	{MoveID:51s,MovePP:15b}	{MoveID:129s,MovePP:10b}	{MoveID:22s,MovePP:25b}	{MoveID:20s,MovePP:30b}	Timid	-	-	-	252	-	252
+400		Bibarel	Chesto Berry	{MoveID:227s,MovePP:15b}	{MoveID:104s,MovePP:15b}	{MoveID:122s,MovePP:15b}	{MoveID:105s,MovePP:10b}	Timid	-	-	-	252	-	252
+444		Gabite	Yache Berry	{MoveID:55s,MovePP:15b}	{MoveID:50s,MovePP:20b}	{MoveID:58s,MovePP:10b}	{MoveID:277s,MovePP:15b}	Adamant	-	252	-	-	-	252
+42		Golbat	Bright Powder	{MoveID:252s,MovePP:15b}	{MoveID:303s,MovePP:25b}	{MoveID:75s,MovePP:15b}	{MoveID:21s,MovePP:10b}	Impish	-	-	252	-	-	252
+417		Pachirisu	Bright Powder	{MoveID:497s,MovePP:10b}	{MoveID:188s,MovePP:15b}	{MoveID:26s,MovePP:15b}	{MoveID:37s,MovePP:15b}	Hardy	-	170	-	170	-	170
+707		Klefki	Apicot Berry	{MoveID:221s,MovePP:10b}	{MoveID:344s,MovePP:10b}	{MoveID:571s,MovePP:10b}	{MoveID:376s,MovePP:40b}	Modest	-	-	-	252	252	-
+40		Wigglytuff	Shell Bell	{MoveID:569s,MovePP:15b}	{MoveID:505s,MovePP:15b}	{MoveID:442s,MovePP:5b}	{MoveID:122s,MovePP:15b}	Modest	252	-	-	252	-	-
+262		Mightyena	Salac Berry	{MoveID:554s,MovePP:15b}	{MoveID:227s,MovePP:15b}	{MoveID:23s,MovePP:20b}	{MoveID:206s,MovePP:15b}	Modest	-	-	-	252	-	252
+211		Qwilfish	Focus Band	{MoveID:105s,MovePP:10b}	{MoveID:427s,MovePP:20b}	{MoveID:17s,MovePP:10b}	{MoveID:411s,MovePP:10b}	Modest	-	-	-	252	-	252
+455		Carnivine	Big Root	{MoveID:535s,MovePP:10b}	{MoveID:27s,MovePP:10b}	{MoveID:326s,MovePP:20b}	{MoveID:341s,MovePP:20b}	Calm	-	-	252	-	252	-
+319		Sharpedo	Focus Band	{MoveID:105s,MovePP:10b}	{MoveID:217s,MovePP:15b}	{MoveID:269s,MovePP:15b}	{MoveID:471s,MovePP:20b}	Modest	-	-	-	252	-	252
+219		Magcargo	Bright Powder	{MoveID:26s,MovePP:15b}	{MoveID:286s,MovePP:5b}	{MoveID:58s,MovePP:10b}	{MoveID:511s,MovePP:15b}	Hasty	-	252	-	-	-	252
+457		Lumineon	Expert Belt	{MoveID:216s,MovePP:5b}	{MoveID:104s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:375s,MovePP:5b}	Timid	-	-	-	252	-	252
+670		Floette	Petaya Berry	{MoveID:505s,MovePP:15b}	{MoveID:565s,MovePP:20b}	{MoveID:597s,MovePP:15b}	{MoveID:36s,MovePP:20b}	Quiet	-	-	-	252	252	-
+82		Magneton	Shuca Berry	{MoveID:122s,MovePP:15b}	{MoveID:221s,MovePP:10b}	{MoveID:138s,MovePP:40b}	{MoveID:376s,MovePP:40b}	Calm	-	-	252	-	252	-
+432		Purugly	Lax Incense	{MoveID:50s,MovePP:20b}	{MoveID:324s,MovePP:10b}	{MoveID:208s,MovePP:15b}	{MoveID:30s,MovePP:15b}	Adamant	-	252	-	-	-	252
+224		Octillery	Cell Battery	{MoveID:287s,MovePP:20b}	{MoveID:387s,MovePP:30b}	{MoveID:283s,MovePP:10b}	{MoveID:159s,MovePP:15b}	Adamant	-	252	252	-	-	-
+618		Stunfisk	Focus Band	{MoveID:122s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:233s,MovePP:15b}	{MoveID:297s,MovePP:10b}	Quiet	170	170	-	170	-	-
+695		Heliolisk	King's Rock	{MoveID:524s,MovePP:20b}	{MoveID:254s,MovePP:20b}	{MoveID:133s,MovePP:30b}	{MoveID:187s,MovePP:10b}	Jolly	-	252	-	-	-	252
+226		Mantine	Wacan Berry	{MoveID:209s,MovePP:15b}	{MoveID:217s,MovePP:15b}	{MoveID:486s,MovePP:10b}	{MoveID:429s,MovePP:20b}	Timid	-	-	-	252	-	252
+317		Swalot	Sitrus Berry	{MoveID:326s,MovePP:20b}	{MoveID:227s,MovePP:15b}	{MoveID:346s,MovePP:10b}	{MoveID:562s,MovePP:10b}	Calm	252	-	-	-	252	-
+545		Scolipede	Scope Lens	{MoveID:435s,MovePP:15b}	{MoveID:433s,MovePP:20b}	{MoveID:187s,MovePP:10b}	{MoveID:35s,MovePP:20b}	Adamant	-	252	-	-	-	252
+112		Rhydon	Quick Claw	{MoveID:286s,MovePP:5b}	{MoveID:309s,MovePP:10b}	{MoveID:528s,MovePP:10b}	{MoveID:58s,MovePP:10b}	Adamant	-	252	252	-	-	-
+586		Sawsbuck	Lum Berry	{MoveID:531s,MovePP:10b}	{MoveID:12s,MovePP:15b}	{MoveID:263s,MovePP:15b}	{MoveID:81s,MovePP:10b}	Adamant	-	252	-	-	-	252
+547		Whimsicott	Coba Berry	{MoveID:24s,MovePP:10b}	{MoveID:129s,MovePP:10b}	{MoveID:567s,MovePP:10b}	{MoveID:19s,MovePP:5b}	Naive	-	-	-	252	-	252
+691		Dragalge	Bright Powder	{MoveID:159s,MovePP:15b}	{MoveID:28s,MovePP:20b}	{MoveID:26s,MovePP:15b}	{MoveID:395s,MovePP:25b}	Adamant	-	252	-	-	-	252
+631		Heatmor	Lax Incense	{MoveID:49s,MovePP:15b}	{MoveID:326s,MovePP:20b}	{MoveID:328s,MovePP:10b}	{MoveID:327s,MovePP:10b}	Modest	252	-	-	252	-	-
+326		Grumpig	Leftovers	{MoveID:29s,MovePP:10b}	{MoveID:304s,MovePP:10b}	{MoveID:129s,MovePP:10b}	{MoveID:227s,MovePP:15b}	Modest	-	-	170	170	170	-
+221		Piloswine	Persim Berry	{MoveID:106s,MovePP:5b}	{MoveID:90s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:220s,MovePP:10b}	Bashful	-	252	-	252	-	-
+288		Vigoroth	Salac Berry	{MoveID:208s,MovePP:15b}	{MoveID:114s,MovePP:20b}	{MoveID:297s,MovePP:10b}	{MoveID:25s,MovePP:20b}	Jolly	-	-	252	-	-	252
+332		Cacturne	Razor Claw	{MoveID:267s,MovePP:10b}	{MoveID:341s,MovePP:20b}	{MoveID:246s,MovePP:20b}	{MoveID:268s,MovePP:10b}	Brave	252	252	-	-	-	-
+203		Girafarig	Ganlon Berry	{MoveID:224s,MovePP:20b}	{MoveID:255s,MovePP:40b}	{MoveID:129s,MovePP:10b}	{MoveID:227s,MovePP:15b}	Timid	-	-	-	252	-	252
+53		Persian	Rocky Helmet	{MoveID:225s,MovePP:5b}	{MoveID:50s,MovePP:20b}	{MoveID:254s,MovePP:20b}	{MoveID:268s,MovePP:10b}	Adamant	252	252	-	-	-	-
+533		Gurdurr	White Herb	{MoveID:342s,MovePP:5b}	{MoveID:286s,MovePP:5b}	{MoveID:506s,MovePP:20b}	{MoveID:392s,MovePP:20b}	Adamant	252	252	-	-	-	-
+705		Sliggoo	Wise Glasses	{MoveID:437s,MovePP:10b}	{MoveID:105s,MovePP:10b}	{MoveID:122s,MovePP:15b}	{MoveID:386s,MovePP:10b}	Modest	-	-	-	252	252	-
+57		Primeape	Scope Lens	{MoveID:316s,MovePP:5b}	{MoveID:286s,MovePP:5b}	{MoveID:518s,MovePP:5b}	{MoveID:58s,MovePP:10b}	Jolly	-	252	-	-	-	252
+651		Quilladin	Expert Belt	{MoveID:394s,MovePP:15b}	{MoveID:33s,MovePP:10b}	{MoveID:27s,MovePP:10b}	{MoveID:505s,MovePP:15b}	Modest	-	-	252	252	-	-
+657		Frogadier	King's Rock	{MoveID:103s,MovePP:5b}	{MoveID:105s,MovePP:10b}	{MoveID:269s,MovePP:15b}	{MoveID:505s,MovePP:15b}	Timid	-	-	-	252	-	252
+654		Braixen	Wide Lens	{MoveID:158s,MovePP:5b}	{MoveID:129s,MovePP:10b}	{MoveID:223s,MovePP:10b}	{MoveID:505s,MovePP:15b}	Modest	-	-	-	252	252	-
+400		Bibarel	Quick Claw	{MoveID:159s,MovePP:15b}	{MoveID:192s,MovePP:10b}	{MoveID:342s,MovePP:5b}	{MoveID:232s,MovePP:10b}	Adamant	-	252	-	-	-	252
+444		Gabite	Haban Berry	{MoveID:438s,MovePP:10b}	{MoveID:267s,MovePP:10b}	{MoveID:286s,MovePP:5b}	{MoveID:58s,MovePP:10b}	Adamant	-	252	-	-	-	252
+42		Golbat	Razor Fang	{MoveID:276s,MovePP:10b}	{MoveID:209s,MovePP:15b}	{MoveID:142s,MovePP:10b}	{MoveID:227s,MovePP:15b}	Naive	-	-	-	252	-	252
+417		Pachirisu	Sitrus Berry	{MoveID:524s,MovePP:20b}	{MoveID:254s,MovePP:20b}	{MoveID:192s,MovePP:10b}	{MoveID:20s,MovePP:30b}	Jolly	-	252	-	-	-	252
+707		Klefki	Occa Berry	{MoveID:221s,MovePP:10b}	{MoveID:567s,MovePP:10b}	{MoveID:129s,MovePP:10b}	{MoveID:566s,MovePP:10b}	Calm	-	-	-	252	252	-
+40		Wigglytuff	Babiri Berry	{MoveID:608s,MovePP:10b}	{MoveID:201s,MovePP:15b}	{MoveID:88s,MovePP:15b}	{MoveID:36s,MovePP:20b}	Adamant	252	252	-	-	-	-
+262		Mightyena	Razor Claw	{MoveID:260s,MovePP:15b}	{MoveID:259s,MovePP:5b}	{MoveID:23s,MovePP:20b}	{MoveID:225s,MovePP:5b}	Adamant	-	252	-	-	-	252
+211		Qwilfish	Cell Battery	{MoveID:214s,MovePP:10b}	{MoveID:433s,MovePP:20b}	{MoveID:93s,MovePP:20b}	{MoveID:326s,MovePP:20b}	Adamant	-	252	-	-	-	252
+455		Carnivine	Binding Band	{MoveID:589s,MovePP:20b}	{MoveID:35s,MovePP:20b}	{MoveID:260s,MovePP:15b}	{MoveID:460s,MovePP:10b}	Adamant	252	252	-	-	-	-
+319		Sharpedo	Muscle Band	{MoveID:434s,MovePP:15b}	{MoveID:159s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:450s,MovePP:15b}	Jolly	-	252	-	-	-	252
+219		Magcargo	White Herb	{MoveID:205s,MovePP:5b}	{MoveID:266s,MovePP:10b}	{MoveID:218s,MovePP:5b}	{MoveID:88s,MovePP:15b}	Quiet	-	252	-	252	-	-
+457		Lumineon	Shell Bell	{MoveID:159s,MovePP:15b}	{MoveID:30s,MovePP:15b}	{MoveID:393s,MovePP:5b}	{MoveID:429s,MovePP:20b}	Jolly	-	252	-	-	-	252
+670		Floette	Kebia Berry	{MoveID:583s,MovePP:10b}	{MoveID:596s,MovePP:10b}	{MoveID:567s,MovePP:10b}	{MoveID:605s,MovePP:15b}	Adamant	-	-	-	252	252	-
+82		Magneton	Quick Claw	{MoveID:430s,MovePP:10b}	{MoveID:221s,MovePP:10b}	{MoveID:124s,MovePP:10b}	{MoveID:376s,MovePP:40b}	Modest	-	-	252	252	-	-
+432		Purugly	Big Root	{MoveID:130s,MovePP:20b}	{MoveID:170s,MovePP:15b}	{MoveID:227s,MovePP:15b}	{MoveID:505s,MovePP:15b}	Modest	-	-	-	252	-	252
+224		Octillery	Razor Claw	{MoveID:51s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:221s,MovePP:10b}	{MoveID:381s,MovePP:15b}	Modest	-	-	-	252	252	-
+618		Stunfisk	Wide Lens	{MoveID:122s,MovePP:15b}	{MoveID:386s,MovePP:10b}	{MoveID:217s,MovePP:15b}	{MoveID:126s,MovePP:5b}	Modest	252	-	-	252	-	-
+695		Heliolisk	Wide Lens	{MoveID:505s,MovePP:15b}	{MoveID:442s,MovePP:5b}	{MoveID:269s,MovePP:15b}	{MoveID:124s,MovePP:10b}	Modest	-	-	-	252	-	252
+226		Mantine	Cell Battery	{MoveID:216s,MovePP:5b}	{MoveID:103s,MovePP:5b}	{MoveID:105s,MovePP:10b}	{MoveID:58s,MovePP:10b}	Mild	-	252	-	252	-	-
+317		Swalot	Black Sludge	{MoveID:326s,MovePP:20b}	{MoveID:16s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:58s,MovePP:10b}	Calm	-	-	252	-	252	-
+545		Scolipede	King's Rock	{MoveID:536s,MovePP:20b}	{MoveID:395s,MovePP:25b}	{MoveID:58s,MovePP:10b}	{MoveID:187s,MovePP:10b}	Jolly	-	252	-	-	-	252
+112		Rhydon	Rocky Helmet	{MoveID:87s,MovePP:5b}	{MoveID:222s,MovePP:10b}	{MoveID:268s,MovePP:10b}	{MoveID:409s,MovePP:10b}	Impish	-	-	252	-	252	-
+586		Sawsbuck	Shell Bell	{MoveID:531s,MovePP:10b}	{MoveID:12s,MovePP:15b}	{MoveID:309s,MovePP:10b}	{MoveID:4s,MovePP:10b}	Adamant	-	252	-	-	-	252
+547		Whimsicott	Sitrus Berry	{MoveID:33s,MovePP:10b}	{MoveID:597s,MovePP:15b}	{MoveID:4s,MovePP:10b}	{MoveID:412s,MovePP:15b}	Modest	-	-	-	252	-	252
+691		Dragalge	Payapa Berry	{MoveID:437s,MovePP:10b}	{MoveID:493s,MovePP:10b}	{MoveID:104s,MovePP:15b}	{MoveID:122s,MovePP:15b}	Modest	-	-	-	252	-	252
+631		Heatmor	Shuca Berry	{MoveID:53s,MovePP:5b}	{MoveID:434s,MovePP:15b}	{MoveID:442s,MovePP:5b}	{MoveID:203s,MovePP:20b}	Hardy	-	252	-	252	-	-
+326		Grumpig	Wise Glasses	{MoveID:129s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:439s,MovePP:20b}	{MoveID:33s,MovePP:10b}	Modest	-	-	-	252	-	252
+221		Piloswine	Zoom Lens	{MoveID:220s,MovePP:10b}	{MoveID:286s,MovePP:5b}	{MoveID:106s,MovePP:5b}	{MoveID:126s,MovePP:5b}	Relaxed	252	-	252	-	-	-
+288		Vigoroth	Bright Powder	{MoveID:105s,MovePP:10b}	{MoveID:122s,MovePP:15b}	{MoveID:51s,MovePP:15b}	{MoveID:227s,MovePP:15b}	Modest	-	-	-	252	-	252
+332		Cacturne	Scope Lens	{MoveID:269s,MovePP:15b}	{MoveID:33s,MovePP:10b}	{MoveID:259s,MovePP:5b}	{MoveID:442s,MovePP:5b}	Quiet	-	252	-	252	-	-
+203		Girafarig	Colbur Berry	{MoveID:129s,MovePP:10b}	{MoveID:122s,MovePP:15b}	{MoveID:33s,MovePP:10b}	{MoveID:567s,MovePP:10b}	Modest	-	-	-	252	-	252
+53		Persian	Life Orb	{MoveID:505s,MovePP:15b}	{MoveID:324s,MovePP:10b}	{MoveID:439s,MovePP:20b}	{MoveID:269s,MovePP:15b}	Timid	-	-	-	252	-	252
+
+
+
+
+Super Track
+
+689		Barbaracle	Bright Powder	{MoveID:286s,MovePP:5b}	{MoveID:533s,MovePP:10b}	{MoveID:511s,MovePP:15b}	{MoveID:26s,MovePP:15b}	Adamant	-	252	-	-	-	252
+701		Hawlucha	Salac Berry	{MoveID:251s,MovePP:15b}	{MoveID:168s,MovePP:10b}	{MoveID:360s,MovePP:15b}	{MoveID:225s,MovePP:5b}	Jolly	-	252	-	-	-	252
+703		Carbink	Light Clay	{MoveID:147s,MovePP:20b}	{MoveID:20s,MovePP:30b}	{MoveID:22s,MovePP:25b}	{MoveID:567s,MovePP:10b}	Calm	-	-	252	-	252	-
+668		Pyroar	King's Rock	{MoveID:51s,MovePP:15b}	{MoveID:366s,MovePP:10b}	{MoveID:554s,MovePP:15b}	{MoveID:599s,MovePP:30b}	Timid	-	-	-	252	-	252
+713		Avalugg	Leftovers	{MoveID:447s,MovePP:10b}	{MoveID:565s,MovePP:20b}	{MoveID:21s,MovePP:10b}	{MoveID:16s,MovePP:10b}	Relaxed	252	-	252	-	-	-
+697		Tyrantrum	Lax Incense	{MoveID:285s,MovePP:20b}	{MoveID:222s,MovePP:10b}	{MoveID:26s,MovePP:15b}	{MoveID:58s,MovePP:10b}	Relaxed	-	-	252	-	252	-
+699		Aurorus	Sitrus Berry	{MoveID:38s,MovePP:10b}	{MoveID:123s,MovePP:20b}	{MoveID:505s,MovePP:15b}	{MoveID:122s,MovePP:15b}	Calm	252	-	-	-	252	-
+663		Talonflame	Charti Berry	{MoveID:505s,MovePP:15b}	{MoveID:422s,MovePP:20b}	{MoveID:207s,MovePP:15b}	{MoveID:51s,MovePP:15b}	Timid	-	-	-	252	-	252
+700		Sylveon	Leftovers	{MoveID:596s,MovePP:10b}	{MoveID:1s,MovePP:30b}	{MoveID:336s,MovePP:20b}	{MoveID:567s,MovePP:10b}	Calm	252	-	-	-	252	-
+652		Chesnaught	Leftovers	{MoveID:225s,MovePP:5b}	{MoveID:613s,MovePP:10b}	{MoveID:278s,MovePP:10b}	{MoveID:470s,MovePP:15b}	Adamant	-	252	252	-	-	-
+655		Delphox	Petaya Berry	{MoveID:565s,MovePP:20b}	{MoveID:129s,MovePP:10b}	{MoveID:51s,MovePP:15b}	{MoveID:505s,MovePP:15b}	Timid	-	-	-	252	-	252
+658		Greninja	Leftovers	{MoveID:595s,MovePP:10b}	{MoveID:246s,MovePP:20b}	{MoveID:217s,MovePP:15b}	{MoveID:16s,MovePP:10b}	Calm	-	-	252	-	252	-
+673		Gogoat	Yache Berry	{MoveID:38s,MovePP:10b}	{MoveID:531s,MovePP:10b}	{MoveID:392s,MovePP:20b}	{MoveID:268s,MovePP:10b}	Impish	-	-	252	-	252	-
+715		Noivern	Yache Berry	{MoveID:192s,MovePP:10b}	{MoveID:563s,MovePP:10b}	{MoveID:505s,MovePP:15b}	{MoveID:228s,MovePP:15b}	Timid	-	-	-	252	-	252
+671		Florges	Babiri Berry	{MoveID:578s,MovePP:10b}	{MoveID:567s,MovePP:10b}	{MoveID:33s,MovePP:10b}	{MoveID:339s,MovePP:10b}	Sassy	-	-	252	-	252	-
+706		Goodra	Lax Incense	{MoveID:38s,MovePP:10b}	{MoveID:386s,MovePP:10b}	{MoveID:437s,MovePP:10b}	{MoveID:493s,MovePP:10b}	Modest	-	-	-	252	252	-
+709		Trevenant	Wise Glasses	{MoveID:129s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:33s,MovePP:10b}	{MoveID:505s,MovePP:15b}	Modest	-	-	-	252	252	-
+711		Gourgeist	Sitrus Berry	{MoveID:207s,MovePP:15b}	{MoveID:619s,MovePP:20b}	{MoveID:307s,MovePP:20b}	{MoveID:606s,MovePP:10b}	Impish	252	-	252	-	-	-
+693		Clawitzer	Bright Powder	{MoveID:512s,MovePP:10b}	{MoveID:386s,MovePP:10b}	{MoveID:26s,MovePP:15b}	{MoveID:565s,MovePP:20b}	Calm	-	-	252	-	252	-
+685		Slurpuff	Big Root	{MoveID:571s,MovePP:10b}	{MoveID:537s,MovePP:10b}	{MoveID:607s,MovePP:20b}	{MoveID:565s,MovePP:20b}	Modest	252	-	-	252	-	-
+683		Aromatisse	Lax Incense	{MoveID:298s,MovePP:20b}	{MoveID:242s,MovePP:10b}	{MoveID:30s,MovePP:15b}	{MoveID:571s,MovePP:10b}	Calm	252	-	-	-	252	-
+689		Barbaracle	Wise Glasses	{MoveID:320s,MovePP:5b}	{MoveID:106s,MovePP:5b}	{MoveID:104s,MovePP:15b}	{MoveID:442s,MovePP:5b}	Modest	-	-	252	252	-	-
+701		Hawlucha	Leftovers	{MoveID:16s,MovePP:10b}	{MoveID:393s,MovePP:5b}	{MoveID:127s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Careful	-	-	252	-	252	-
+703		Carbink	Smooth Rock	{MoveID:16s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:267s,MovePP:10b}	{MoveID:439s,MovePP:20b}	Bold	-	-	252	-	252	-
+668		Pyroar	Heat Rock	{MoveID:19s,MovePP:5b}	{MoveID:366s,MovePP:10b}	{MoveID:158s,MovePP:5b}	{MoveID:24s,MovePP:10b}	Timid	-	-	-	252	-	252
+713		Avalugg	Apicot Berry	{MoveID:29s,MovePP:10b}	{MoveID:232s,MovePP:10b}	{MoveID:525s,MovePP:10b}	{MoveID:162s,MovePP:10b}	Careful	-	-	252	-	252	-
+697		Tyrantrum	Leftovers	{MoveID:260s,MovePP:15b}	{MoveID:298s,MovePP:20b}	{MoveID:267s,MovePP:10b}	{MoveID:55s,MovePP:15b}	Impish	-	-	252	-	252	-
+699		Aurorus	Leftovers	{MoveID:320s,MovePP:5b}	{MoveID:220s,MovePP:10b}	{MoveID:267s,MovePP:10b}	{MoveID:581s,MovePP:20b}	Calm	252	-	-	-	252	-
+663		Talonflame	Heat Rock	{MoveID:505s,MovePP:15b}	{MoveID:158s,MovePP:5b}	{MoveID:19s,MovePP:5b}	{MoveID:24s,MovePP:10b}	Timid	-	-	-	252	-	252
+700		Sylveon	Ganlon Berry	{MoveID:255s,MovePP:40b}	{MoveID:224s,MovePP:20b}	{MoveID:230s,MovePP:10b}	{MoveID:597s,MovePP:15b}	Calm	-	-	252	-	252	-
+652		Chesnaught	Expert Belt	{MoveID:55s,MovePP:15b}	{MoveID:15s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:201s,MovePP:15b}	Adamant	-	252	252	-	-	-
+655		Delphox	Flame Orb	{MoveID:338s,MovePP:10b}	{MoveID:444s,MovePP:10b}	{MoveID:598s,MovePP:10b}	{MoveID:227s,MovePP:15b}	Modest	-	-	-	252	-	252
+658		Greninja	Damp Rock	{MoveID:216s,MovePP:5b}	{MoveID:104s,MovePP:15b}	{MoveID:505s,MovePP:15b}	{MoveID:105s,MovePP:10b}	Timid	-	-	-	252	-	252
+673		Gogoat	Occa Berry	{MoveID:104s,MovePP:15b}	{MoveID:33s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:36s,MovePP:20b}	Quiet	-	252	-	252	-	-
+715		Noivern	Roseli Berry	{MoveID:55s,MovePP:15b}	{MoveID:263s,MovePP:15b}	{MoveID:435s,MovePP:15b}	{MoveID:251s,MovePP:15b}	Adamant	-	252	-	-	-	252
+671		Florges	Kebia Berry	{MoveID:596s,MovePP:10b}	{MoveID:583s,MovePP:10b}	{MoveID:334s,MovePP:20b}	{MoveID:505s,MovePP:15b}	Quiet	-	-	-	252	252	-
+706		Goodra	Lum Berry	{MoveID:214s,MovePP:10b}	{MoveID:88s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:296s,MovePP:10b}	Careful	-	252	-	-	252	-
+709		Trevenant	Leftovers	{MoveID:16s,MovePP:10b}	{MoveID:341s,MovePP:20b}	{MoveID:21s,MovePP:10b}	{MoveID:606s,MovePP:10b}	Careful	-	-	252	-	252	-
+711		Gourgeist	Iron Ball	{MoveID:455s,MovePP:5b}	{MoveID:218s,MovePP:5b}	{MoveID:15s,MovePP:15b}	{MoveID:184s,MovePP:5b}	Impish	170	-	170	-	170	-
+693		Clawitzer	Petaya Berry	{MoveID:221s,MovePP:10b}	{MoveID:217s,MovePP:15b}	{MoveID:493s,MovePP:10b}	{MoveID:505s,MovePP:15b}	Modest	-	-	-	252	252	-
+685		Slurpuff	Petaya Berry	{MoveID:373s,MovePP:20b}	{MoveID:51s,MovePP:15b}	{MoveID:567s,MovePP:10b}	{MoveID:505s,MovePP:15b}	Quiet	-	-	-	252	252	-
+683		Aromatisse	Assault Vest	{MoveID:505s,MovePP:15b}	{MoveID:129s,MovePP:10b}	{MoveID:33s,MovePP:10b}	{MoveID:567s,MovePP:10b}	Calm	-	-	-	252	252	-
+689		Barbaracle	Expert Belt	{MoveID:55s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:435s,MovePP:15b}	{MoveID:434s,MovePP:15b}	Adamant	-	252	252	-	-	-
+701		Hawlucha	Liechi Berry	{MoveID:35s,MovePP:20b}	{MoveID:579s,MovePP:10b}	{MoveID:251s,MovePP:15b}	{MoveID:303s,MovePP:25b}	Adamant	-	252	-	-	-	252
+703		Carbink	Iron Ball	{MoveID:455s,MovePP:5b}	{MoveID:218s,MovePP:5b}	{MoveID:567s,MovePP:10b}	{MoveID:439s,MovePP:20b}	Quiet	-	-	-	252	252	-
+668		Pyroar	Lum Berry	{MoveID:25s,MovePP:20b}	{MoveID:48s,MovePP:15b}	{MoveID:263s,MovePP:15b}	{MoveID:260s,MovePP:15b}	Adamant	-	252	-	-	-	252
+713		Avalugg	Icy Rock	{MoveID:220s,MovePP:10b}	{MoveID:106s,MovePP:5b}	{MoveID:139s,MovePP:10b}	{MoveID:221s,MovePP:10b}	Bold	-	-	252	-	252	-
+697		Tyrantrum	Wide Lens	{MoveID:87s,MovePP:5b}	{MoveID:286s,MovePP:5b}	{MoveID:29s,MovePP:10b}	{MoveID:304s,MovePP:10b}	Impish	252	-	252	-	-	-
+699		Aurorus	Expert Belt	{MoveID:59s,MovePP:5b}	{MoveID:58s,MovePP:10b}	{MoveID:286s,MovePP:5b}	{MoveID:525s,MovePP:10b}	Adamant	-	252	-	-	252	-
+663		Talonflame	Focus Sash	{MoveID:35s,MovePP:20b}	{MoveID:133s,MovePP:30b}	{MoveID:233s,MovePP:15b}	{MoveID:251s,MovePP:15b}	Jolly	-	-	252	-	-	252
+700		Sylveon	Razor Claw	{MoveID:597s,MovePP:15b}	{MoveID:227s,MovePP:15b}	{MoveID:505s,MovePP:15b}	{MoveID:223s,MovePP:10b}	Modest	-	-	-	252	252	-
+652		Chesnaught	Life Orb	{MoveID:442s,MovePP:5b}	{MoveID:33s,MovePP:10b}	{MoveID:27s,MovePP:10b}	{MoveID:505s,MovePP:15b}	Modest	-	-	252	252	-	-
+655		Delphox	Heat Rock	{MoveID:19s,MovePP:5b}	{MoveID:24s,MovePP:10b}	{MoveID:158s,MovePP:5b}	{MoveID:129s,MovePP:10b}	Timid	-	-	-	252	-	252
+658		Greninja	King's Rock	{MoveID:621s,MovePP:20b}	{MoveID:187s,MovePP:10b}	{MoveID:36s,MovePP:20b}	{MoveID:254s,MovePP:20b}	Jolly	-	252	-	-	-	252
+673		Gogoat	Big Root	{MoveID:531s,MovePP:10b}	{MoveID:4s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:268s,MovePP:10b}	Sassy	252	252	-	-	-	-
+715		Noivern	Razor Fang	{MoveID:209s,MovePP:15b}	{MoveID:437s,MovePP:10b}	{MoveID:51s,MovePP:15b}	{MoveID:129s,MovePP:10b}	Modest	-	-	-	252	-	252
+671		Florges	Kebia Berry	{MoveID:224s,MovePP:20b}	{MoveID:36s,MovePP:20b}	{MoveID:129s,MovePP:10b}	{MoveID:597s,MovePP:15b}	Modest	-	-	-	252	252	-
+706		Goodra	Damp Rock	{MoveID:437s,MovePP:10b}	{MoveID:216s,MovePP:5b}	{MoveID:124s,MovePP:10b}	{MoveID:386s,MovePP:10b}	Modest	-	-	-	252	252	-
+709		Trevenant	Choice Band	{MoveID:531s,MovePP:10b}	{MoveID:208s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:435s,MovePP:15b}	Adamant	252	252	-	-	-	-
+711		Gourgeist	Wise Glasses	{MoveID:227s,MovePP:15b}	{MoveID:27s,MovePP:10b}	{MoveID:33s,MovePP:10b}	{MoveID:51s,MovePP:15b}	Modest	-	-	252	252	-	-
+693		Clawitzer	Focus Sash	{MoveID:183s,MovePP:10b}	{MoveID:25s,MovePP:20b}	{MoveID:254s,MovePP:20b}	{MoveID:233s,MovePP:15b}	Jolly	-	252	-	-	-	252
+685		Slurpuff	Kee Berry	{MoveID:262s,MovePP:5b}	{MoveID:608s,MovePP:10b}	{MoveID:28s,MovePP:20b}	{MoveID:537s,MovePP:10b}	Adamant	-	252	-	-	252	-
+683		Aromatisse	Expert Belt	{MoveID:221s,MovePP:10b}	{MoveID:124s,MovePP:10b}	{MoveID:223s,MovePP:10b}	{MoveID:597s,MovePP:15b}	Modest	-	-	-	252	252	-
+689		Barbaracle	Razor Claw	{MoveID:286s,MovePP:5b}	{MoveID:533s,MovePP:10b}	{MoveID:316s,MovePP:5b}	{MoveID:208s,MovePP:15b}	Adamant	-	252	252	-	-	-
+701		Hawlucha	Power Herb	{MoveID:175s,MovePP:5b}	{MoveID:579s,MovePP:10b}	{MoveID:254s,MovePP:20b}	{MoveID:286s,MovePP:5b}	Jolly	-	252	-	-	-	252
+703		Carbink	Scope Lens	{MoveID:184s,MovePP:5b}	{MoveID:129s,MovePP:10b}	{MoveID:597s,MovePP:15b}	{MoveID:439s,MovePP:20b}	Quiet	-	252	-	252	-	-
+668		Pyroar	White Herb	{MoveID:205s,MovePP:5b}	{MoveID:366s,MovePP:10b}	{MoveID:269s,MovePP:15b}	{MoveID:505s,MovePP:15b}	Modest	-	-	-	252	-	252
+713		Avalugg	Iron Ball	{MoveID:286s,MovePP:5b}	{MoveID:447s,MovePP:10b}	{MoveID:218s,MovePP:5b}	{MoveID:58s,MovePP:10b}	Brave	-	252	252	-	-	-
+697		Tyrantrum	Choice Band	{MoveID:260s,MovePP:15b}	{MoveID:55s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:478s,MovePP:5b}	Adamant	-	252	-	-	-	252
+699		Aurorus	Life Orb	{MoveID:57s,MovePP:5b}	{MoveID:221s,MovePP:10b}	{MoveID:124s,MovePP:10b}	{MoveID:129s,MovePP:10b}	Modest	-	-	-	252	252	-
+663		Talonflame	Sitrus Berry	{MoveID:443s,MovePP:15b}	{MoveID:211s,MovePP:15b}	{MoveID:133s,MovePP:30b}	{MoveID:35s,MovePP:20b}	Adamant	-	252	-	-	-	252
+700		Sylveon	Big Root	{MoveID:571s,MovePP:10b}	{MoveID:561s,MovePP:30b}	{MoveID:223s,MovePP:10b}	{MoveID:596s,MovePP:10b}	Modest	-	-	-	252	252	-
+652		Chesnaught	White Herb	{MoveID:470s,MovePP:15b}	{MoveID:409s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:286s,MovePP:5b}	Adamant	-	252	252	-	-	-
+655		Delphox	White Herb	{MoveID:205s,MovePP:5b}	{MoveID:129s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:223s,MovePP:10b}	Modest	-	-	-	252	-	252
+658		Greninja	Wide Lens	{MoveID:103s,MovePP:5b}	{MoveID:269s,MovePP:15b}	{MoveID:106s,MovePP:5b}	{MoveID:383s,MovePP:20b}	Modest	-	-	-	252	-	252
+673		Gogoat	Choice Band	{MoveID:58s,MovePP:10b}	{MoveID:400s,MovePP:15b}	{MoveID:263s,MovePP:15b}	{MoveID:201s,MovePP:15b}	Adamant	-	252	-	-	-	252
+715		Noivern	Wide Lens	{MoveID:437s,MovePP:10b}	{MoveID:541s,MovePP:10b}	{MoveID:51s,MovePP:15b}	{MoveID:442s,MovePP:5b}	Modest	-	-	-	252	-	252
+671		Florges	Lum Berry	{MoveID:505s,MovePP:15b}	{MoveID:42s,MovePP:10b}	{MoveID:129s,MovePP:10b}	{MoveID:597s,MovePP:15b}	Modest	-	-	-	252	252	-
+706		Goodra	White Herb	{MoveID:456s,MovePP:5b}	{MoveID:124s,MovePP:10b}	{MoveID:106s,MovePP:5b}	{MoveID:158s,MovePP:5b}	Modest	-	-	-	252	252	-
+709		Trevenant	Iron Ball	{MoveID:455s,MovePP:5b}	{MoveID:442s,MovePP:5b}	{MoveID:33s,MovePP:10b}	{MoveID:227s,MovePP:15b}	Quiet	-	-	252	252	-	-
+711		Gourgeist	Life Orb	{MoveID:619s,MovePP:20b}	{MoveID:606s,MovePP:10b}	{MoveID:15s,MovePP:15b}	{MoveID:187s,MovePP:10b}	Adamant	252	252	-	-	-	-
+693		Clawitzer	Choice Specs	{MoveID:213s,MovePP:20b}	{MoveID:269s,MovePP:15b}	{MoveID:437s,MovePP:10b}	{MoveID:432s,MovePP:20b}	Modest	-	-	-	252	-	252
+685		Slurpuff	Expert Belt	{MoveID:567s,MovePP:10b}	{MoveID:33s,MovePP:10b}	{MoveID:122s,MovePP:15b}	{MoveID:51s,MovePP:15b}	Modest	-	-	-	252	-	252
+683		Aromatisse	Leftovers	{MoveID:560s,MovePP:20b}	{MoveID:567s,MovePP:10b}	{MoveID:512s,MovePP:10b}	{MoveID:455s,MovePP:5b}	Sassy	252	-	-	-	252	-
+3		Venusaur	Big Root	{MoveID:4s,MovePP:10b}	{MoveID:16s,MovePP:10b}	{MoveID:14s,MovePP:5b}	{MoveID:341s,MovePP:20b}	Calm	252	-	-	-	252	-
+6		Charizard	Salac Berry	{MoveID:55s,MovePP:15b}	{MoveID:31s,MovePP:15b}	{MoveID:243s,MovePP:10b}	{MoveID:208s,MovePP:15b}	Adamant	170	-	-	-	170	170
+9		Blastoise	Zoom Lens	{MoveID:429s,MovePP:20b}	{MoveID:187s,MovePP:10b}	{MoveID:214s,MovePP:10b}	{MoveID:215s,MovePP:15b}	Quiet	170	-	170	-	170	-
+154		Meganium	Sitrus Berry	{MoveID:20s,MovePP:30b}	{MoveID:372s,MovePP:5b}	{MoveID:37s,MovePP:15b}	{MoveID:24s,MovePP:10b}	Gentle	252	-	-	-	252	-
+157		Typhlosion	Passho Berry	{MoveID:49s,MovePP:15b}	{MoveID:51s,MovePP:15b}	{MoveID:24s,MovePP:10b}	{MoveID:19s,MovePP:5b}	Rash	-	-	-	252	-	252
+160		Feraligatr	Lax Incense	{MoveID:138s,MovePP:40b}	{MoveID:471s,MovePP:20b}	{MoveID:58s,MovePP:10b}	{MoveID:389s,MovePP:5b}	Careful	252	-	-	-	252	-
+254		Sceptile	Focus Sash	{MoveID:133s,MovePP:30b}	{MoveID:262s,MovePP:5b}	{MoveID:293s,MovePP:5b}	{MoveID:459s,MovePP:5b}	Timid	-	-	-	252	-	252
+257		Blaziken	Salac Berry	{MoveID:168s,MovePP:10b}	{MoveID:114s,MovePP:20b}	{MoveID:51s,MovePP:15b}	{MoveID:207s,MovePP:15b}	Naughty	170	-	170	-	-	170
+260		Swampert	Jaboca Berry	{MoveID:318s,MovePP:20b}	{MoveID:114s,MovePP:20b}	{MoveID:58s,MovePP:10b}	{MoveID:56s,MovePP:15b}	Sassy	-	-	252	-	252	-
+389		Torterra	Binding Band	{MoveID:277s,MovePP:15b}	{MoveID:15s,MovePP:15b}	{MoveID:232s,MovePP:10b}	{MoveID:14s,MovePP:5b}	Adamant	252	252	-	-	-	-
+392		Infernape	King's Rock	{MoveID:324s,MovePP:10b}	{MoveID:311s,MovePP:5b}	{MoveID:416s,MovePP:10b}	{MoveID:251s,MovePP:15b}	Jolly	-	252	-	-	-	252
+395		Empoleon	Sitrus Berry	{MoveID:346s,MovePP:10b}	{MoveID:35s,MovePP:20b}	{MoveID:471s,MovePP:20b}	{MoveID:313s,MovePP:35b}	Lax	252	-	252	-	-	-
+497		Serperior	Lum Berry	{MoveID:30s,MovePP:15b}	{MoveID:535s,MovePP:10b}	{MoveID:222s,MovePP:10b}	{MoveID:421s,MovePP:10b}	Jolly	-	-	170	-	170	170
+500		Emboar	Chesto Berry	{MoveID:218s,MovePP:5b}	{MoveID:232s,MovePP:10b}	{MoveID:29s,MovePP:10b}	{MoveID:304s,MovePP:10b}	Careful	252	-	-	-	252	-
+503		Samurott	Splash Plate	{MoveID:518s,MovePP:5b}	{MoveID:533s,MovePP:10b}	{MoveID:261s,MovePP:10b}	{MoveID:311s,MovePP:5b}	Mild	252	252	-	-	-	-
+51		Dugtrio	Focus Sash	{MoveID:237s,MovePP:15b}	{MoveID:30s,MovePP:15b}	{MoveID:127s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Hasty	-	252	-	-	-	252
+105		Marowak	Salac Berry	{MoveID:38s,MovePP:10b}	{MoveID:293s,MovePP:5b}	{MoveID:58s,MovePP:10b}	{MoveID:35s,MovePP:20b}	Careful	252	-	-	-	252	-
+308		Medicham	Black Belt	{MoveID:324s,MovePP:10b}	{MoveID:168s,MovePP:10b}	{MoveID:392s,MovePP:20b}	{MoveID:278s,MovePP:10b}	Impish	252	-	-	-	-	252
+195		Quagsire	Rindo Berry	{MoveID:29s,MovePP:10b}	{MoveID:304s,MovePP:10b}	{MoveID:16s,MovePP:10b}	{MoveID:60s,MovePP:20b}	Impish	252	-	252	-	-	-
+210		Granbull	Leftovers	{MoveID:298s,MovePP:20b}	{MoveID:21s,MovePP:10b}	{MoveID:518s,MovePP:5b}	{MoveID:268s,MovePP:10b}	Sassy	170	-	170	-	170	-
+124		Jynx	Enigma Berry	{MoveID:571s,MovePP:10b}	{MoveID:250s,MovePP:5b}	{MoveID:174s,MovePP:10b}	{MoveID:30s,MovePP:15b}	Calm	252	-	252	-	-	-
+122		Mr. Mime	Choice Scarf	{MoveID:337s,MovePP:10b}	{MoveID:567s,MovePP:10b}	{MoveID:129s,MovePP:10b}	{MoveID:33s,MovePP:10b}	Timid	-	-	-	252	-	252
+171		Lanturn	Salac Berry	{MoveID:123s,MovePP:20b}	{MoveID:524s,MovePP:20b}	{MoveID:159s,MovePP:15b}	{MoveID:132s,MovePP:30b}	Naughty	-	252	-	-	-	252
+286		Breloom	Black Belt	{MoveID:373s,MovePP:20b}	{MoveID:336s,MovePP:20b}	{MoveID:240s,MovePP:30b}	{MoveID:119s,MovePP:30b}	Brave	252	252	-	-	-	-
+205		Forretress	Occa Berry	{MoveID:246s,MovePP:20b}	{MoveID:279s,MovePP:20b}	{MoveID:285s,MovePP:20b}	{MoveID:215s,MovePP:15b}	Impish	252	-	252	-	-	-
+227		Skarmory	Lax Incense	{MoveID:246s,MovePP:20b}	{MoveID:285s,MovePP:20b}	{MoveID:513s,MovePP:10b}	{MoveID:74s,MovePP:20b}	Naive	252	-	-	-	-	252
+359		Absol	Sitrus Berry	{MoveID:268s,MovePP:10b}	{MoveID:250s,MovePP:5b}	{MoveID:54s,MovePP:15b}	{MoveID:255s,MovePP:40b}	Careful	170	-	170	-	170	-
+340		Whiscash	Chesto Berry	{MoveID:58s,MovePP:10b}	{MoveID:378s,MovePP:20b}	{MoveID:165s,MovePP:20b}	{MoveID:29s,MovePP:10b}	Careful	-	252	-	-	252	-
+297		Hariyama	King's Rock	{MoveID:278s,MovePP:10b}	{MoveID:324s,MovePP:10b}	{MoveID:284s,MovePP:15b}	{MoveID:314s,MovePP:10b}	Brave	-	170	170	-	170	-
+416		Vespiquen	Quick Claw	{MoveID:473s,MovePP:10b}	{MoveID:16s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:474s,MovePP:10b}	Sassy	170	-	170	-	170	-
+26		Raichu	Focus Sash	{MoveID:311s,MovePP:5b}	{MoveID:196s,MovePP:25b}	{MoveID:123s,MovePP:20b}	{MoveID:457s,MovePP:15b}	Adamant	-	-	-	252	-	252
+87		Dewgong	Icy Rock	{MoveID:292s,MovePP:15b}	{MoveID:16s,MovePP:10b}	{MoveID:29s,MovePP:10b}	{MoveID:220s,MovePP:10b}	Mild	252	-	252	-	-	-
+310		Manectric	Life Orb	{MoveID:260s,MovePP:15b}	{MoveID:374s,MovePP:40b}	{MoveID:133s,MovePP:30b}	{MoveID:263s,MovePP:15b}	Adamant	-	252	-	-	-	252
+398		Staraptor	Focus Sash	{MoveID:254s,MovePP:20b}	{MoveID:360s,MovePP:15b}	{MoveID:133s,MovePP:30b}	{MoveID:262s,MovePP:5b}	Hasty	-	252	-	-	-	252
+423		Gastrodon	Damp Rock	{MoveID:216s,MovePP:5b}	{MoveID:27s,MovePP:10b}	{MoveID:386s,MovePP:10b}	{MoveID:114s,MovePP:20b}	Gentle	-	-	-	252	252	-
+435		Skuntank	Shuca Berry	{MoveID:51s,MovePP:15b}	{MoveID:434s,MovePP:15b}	{MoveID:206s,MovePP:15b}	{MoveID:330s,MovePP:10b}	Naughty	-	252	-	-	-	252
+539		Sawk	Black Belt	{MoveID:499s,MovePP:20b}	{MoveID:509s,MovePP:15b}	{MoveID:518s,MovePP:5b}	{MoveID:225s,MovePP:5b}	Naughty	-	252	-	-	-	252
+538		Throh	Payapa Berry	{MoveID:21s,MovePP:10b}	{MoveID:16s,MovePP:10b}	{MoveID:515s,MovePP:10b}	{MoveID:486s,MovePP:10b}	Impish	-	252	252	-	-	-
+521		Unfezant	Enigma Berry	{MoveID:203s,MovePP:20b}	{MoveID:254s,MovePP:20b}	{MoveID:71s,MovePP:10b}	{MoveID:412s,MovePP:15b}	Jolly	170	170	170	-	-	-
+45		Vileplume	Persim Berry	{MoveID:42s,MovePP:10b}	{MoveID:119s,MovePP:30b}	{MoveID:361s,MovePP:20b}	{MoveID:275s,MovePP:5b}	Calm	-	-	-	-	252	252
+71		Victreebel	Payapa Berry	{MoveID:535s,MovePP:10b}	{MoveID:326s,MovePP:20b}	{MoveID:328s,MovePP:10b}	{MoveID:421s,MovePP:10b}	Quiet	-	-	-	252	252	-
+101		Electrode	Shuca Berry	{MoveID:37s,MovePP:15b}	{MoveID:20s,MovePP:30b}	{MoveID:229s,MovePP:10b}	{MoveID:123s,MovePP:20b}	Calm	252	-	-	-	252	-
+272		Ludicolo	Leftovers	{MoveID:4s,MovePP:10b}	{MoveID:16s,MovePP:10b}	{MoveID:276s,MovePP:10b}	{MoveID:216s,MovePP:5b}	Lax	170	-	170	170	-	-
+275		Shiftry	Iron Ball	{MoveID:416s,MovePP:10b}	{MoveID:9s,MovePP:25b}	{MoveID:201s,MovePP:15b}	{MoveID:35s,MovePP:20b}	Brave	170	170	-	-	170	-
+295		Exploud	Chople Berry	{MoveID:158s,MovePP:5b}	{MoveID:56s,MovePP:15b}	{MoveID:325s,MovePP:10b}	{MoveID:366s,MovePP:10b}	Modest	-	-	252	252	-	-
+428		Lopunny	{MoveID:16s,MovePP:10b} Orb	{MoveID:324s,MovePP:10b}	{MoveID:311s,MovePP:5b}	{MoveID:416s,MovePP:10b}	{MoveID:178s,MovePP:10b}	Naive	252	-	-	-	-	252
+478		Froslass	Colbur Berry	{MoveID:220s,MovePP:10b}	{MoveID:105s,MovePP:10b}	{MoveID:484s,MovePP:5b}	{MoveID:122s,MovePP:15b}	Timid	-	-	-	252	-	252
+549		Lilligant	Persim Berry	{MoveID:298s,MovePP:20b}	{MoveID:7s,MovePP:15b}	{MoveID:42s,MovePP:10b}	{MoveID:410s,MovePP:10b}	Timid	-	-	-	252	-	252
+555		Darmanitan	Leftovers	{MoveID:31s,MovePP:15b}	{MoveID:129s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:207s,MovePP:15b}	Naive	252	-	-	-	-	252
+424		Ambipom	King's Rock	{MoveID:324s,MovePP:10b}	{MoveID:416s,MovePP:10b}	{MoveID:196s,MovePP:25b}	{MoveID:254s,MovePP:20b}	Naive	-	252	-	-	-	252
+563		Cofagrigus	Chesto Berry	{MoveID:136s,MovePP:15b}	{MoveID:207s,MovePP:15b}	{MoveID:250s,MovePP:5b}	{MoveID:29s,MovePP:10b}	Sassy	252	-	-	-	252	-
+623		Golurk	Muscle Band	{MoveID:382s,MovePP:20b}	{MoveID:215s,MovePP:15b}	{MoveID:60s,MovePP:20b}	{MoveID:495s,MovePP:10b}	Lonely	252	-	-	-	252	-
+632		Durant	Sitrus Berry	{MoveID:260s,MovePP:15b}	{MoveID:127s,MovePP:10b}	{MoveID:469s,MovePP:20b}	{MoveID:376s,MovePP:40b}	Naive	170	170	-	-	-	170
+76		Golem	Hard Stone	{MoveID:285s,MovePP:20b}	{MoveID:232s,MovePP:10b}	{MoveID:218s,MovePP:5b}	{MoveID:284s,MovePP:15b}	Impish	170	170	170	-	-	-
+80		Slowbro	Sitrus Berry	{MoveID:346s,MovePP:10b}	{MoveID:129s,MovePP:10b}	{MoveID:224s,MovePP:20b}	{MoveID:213s,MovePP:20b}	Bold	252	-	252	-	-	-
+110		Weezing	Payapa Berry	{MoveID:307s,MovePP:20b}	{MoveID:184s,MovePP:5b}	{MoveID:146s,MovePP:30b}	{MoveID:207s,MovePP:15b}	Impish	252	-	252	-	-	-
+115		Kangaskhan	Sitrus Berry	{MoveID:178s,MovePP:10b}	{MoveID:324s,MovePP:10b}	{MoveID:506s,MovePP:20b}	{MoveID:56s,MovePP:15b}	Adamant	-	252	-	-	-	252
+128		Tauros	Liechi Berry	{MoveID:58s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:297s,MovePP:10b}	{MoveID:38s,MovePP:10b}	Naughty	-	252	-	-	-	252
+442		Spiritomb	Sitrus Berry	{MoveID:259s,MovePP:5b}	{MoveID:307s,MovePP:20b}	{MoveID:16s,MovePP:10b}	{MoveID:352s,MovePP:5b}	Calm	252	-	-	-	252	-
+615		Cryogonal	Charti Berry	{MoveID:292s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:142s,MovePP:10b}	{MoveID:20s,MovePP:30b}	Timid	-	-	252	-	-	252
+621		Druddigon	Roseli Berry	{MoveID:260s,MovePP:15b}	{MoveID:47s,MovePP:10b}	{MoveID:169s,MovePP:30b}	{MoveID:222s,MovePP:10b}	Bold	-	252	252	-	-	-
+518		Musharna	Zoom Lens	{MoveID:130s,MovePP:20b}	{MoveID:170s,MovePP:15b}	{MoveID:224s,MovePP:20b}	{MoveID:336s,MovePP:20b}	Mild	-	-	170	170	170	-
+560		Scrafty	Liechi Berry	{MoveID:324s,MovePP:10b}	{MoveID:392s,MovePP:20b}	{MoveID:331s,MovePP:20b}	{MoveID:38s,MovePP:10b}	Naughty	252	252	-	-	-	-
+598		Ferrothorn	Leftovers	{MoveID:464s,MovePP:15b}	{MoveID:123s,MovePP:20b}	{MoveID:267s,MovePP:10b}	{MoveID:341s,MovePP:20b}	Impish	252	-	252	-	-	-
+65		Alakazam	TwistedSpoon	{MoveID:33s,MovePP:10b}	{MoveID:129s,MovePP:10b}	{MoveID:226s,MovePP:15b}	{MoveID:487s,MovePP:10b}	Timid	-	-	-	252	-	252
+199		Slowking	Sitrus Berry	{MoveID:223s,MovePP:10b}	{MoveID:213s,MovePP:20b}	{MoveID:455s,MovePP:5b}	{MoveID:512s,MovePP:10b}	Calm	-	-	-	252	252	-
+241		Miltank	Lum Berry	{MoveID:88s,MovePP:15b}	{MoveID:336s,MovePP:20b}	{MoveID:300s,MovePP:10b}	{MoveID:305s,MovePP:5b}	Jolly	252	-	-	-	-	252
+334		Altaria	Sitrus Berry	{MoveID:51s,MovePP:15b}	{MoveID:537s,MovePP:10b}	{MoveID:437s,MovePP:10b}	{MoveID:405s,MovePP:10b}	Calm	252	-	-	-	252	-
+454		{MoveID:16s,MovePP:10b}roak	Payapa Berry	{MoveID:324s,MovePP:10b}	{MoveID:201s,MovePP:15b}	{MoveID:259s,MovePP:5b}	{MoveID:225s,MovePP:5b}	Lonely	-	252	-	-	-	252
+576		Gothitelle	Chesto Berry	{MoveID:373s,MovePP:20b}	{MoveID:129s,MovePP:10b}	{MoveID:29s,MovePP:10b}	{MoveID:224s,MovePP:20b}	Sassy	170	-	170	-	-	170
+579		Reuniclus	Kee Berry	{MoveID:129s,MovePP:10b}	{MoveID:33s,MovePP:10b}	{MoveID:139s,MovePP:10b}	{MoveID:289s,MovePP:10b}	Bold	170	-	170	170	-	-
+625		Bisharp	Sitrus Berry	{MoveID:434s,MovePP:15b}	{MoveID:313s,MovePP:35b}	{MoveID:225s,MovePP:5b}	{MoveID:414s,MovePP:10b}	Lax	252	-	252	-	-	-
+460		Abomasnow	Leftovers	{MoveID:525s,MovePP:10b}	{MoveID:292s,MovePP:15b}	{MoveID:4s,MovePP:10b}	{MoveID:341s,MovePP:20b}	Impish	170	-	170	-	170	-
+31		Nidoqueen	Payapa Berry	{MoveID:506s,MovePP:20b}	{MoveID:37s,MovePP:15b}	{MoveID:336s,MovePP:20b}	{MoveID:329s,MovePP:15b}	Relaxed	170	-	170	-	170	-
+34		Nidoking	King's Rock	{MoveID:60s,MovePP:20b}	{MoveID:309s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:54s,MovePP:15b}	Naughty	252	252	-	-	-	-
+346		Cradily	Tanga Berry	{MoveID:505s,MovePP:15b}	{MoveID:421s,MovePP:10b}	{MoveID:326s,MovePP:20b}	{MoveID:328s,MovePP:10b}	Bold	-	-	252	-	252	-
+348		Armaldo	Chesto Berry	{MoveID:435s,MovePP:15b}	{MoveID:283s,MovePP:10b}	{MoveID:29s,MovePP:10b}	{MoveID:232s,MovePP:10b}	Brave	252	-	-	-	252	-
+409		Rampardos	Passho Berry	{MoveID:187s,MovePP:10b}	{MoveID:260s,MovePP:15b}	{MoveID:232s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Brave	-	170	170	-	170	-
+411		Bastiodon	Enigma Berry	{MoveID:464s,MovePP:15b}	{MoveID:225s,MovePP:5b}	{MoveID:486s,MovePP:10b}	{MoveID:414s,MovePP:10b}	Careful	252	252	-	-	-	-
+419		Floatzel	Binding Band	{MoveID:214s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:258s,MovePP:20b}	{MoveID:322s,MovePP:15b}	Naive	-	252	-	-	-	252
+429		Mismagius	Colbur Berry	{MoveID:225s,MovePP:5b}	{MoveID:21s,MovePP:10b}	{MoveID:350s,MovePP:10b}	{MoveID:227s,MovePP:15b}	Naive	252	-	-	-	-	252
+565		Carracosta	Sitrus Berry	{MoveID:214s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:511s,MovePP:15b}	{MoveID:215s,MovePP:15b}	Naughty	252	252	-	-	-	-
+589		Escavalier	Liechi Berry	{MoveID:309s,MovePP:10b}	{MoveID:509s,MovePP:15b}	{MoveID:35s,MovePP:20b}	{MoveID:237s,MovePP:15b}	Brave	252	252	-	-	-	-
+617		Accelgor	Focus Sash	{MoveID:311s,MovePP:5b}	{MoveID:436s,MovePP:10b}	{MoveID:276s,MovePP:10b}	{MoveID:422s,MovePP:20b}	Hasty	-	-	-	252	-	252
+523		Zebstrika	Shuca Berry	{MoveID:37s,MovePP:15b}	{MoveID:524s,MovePP:20b}	{MoveID:263s,MovePP:15b}	{MoveID:258s,MovePP:20b}	Naughty	252	252	-	-	-	-
+426		Drifblim	Salac Berry	{MoveID:224s,MovePP:20b}	{MoveID:326s,MovePP:20b}	{MoveID:484s,MovePP:5b}	{MoveID:255s,MovePP:40b}	Bold	-	-	252	-	252	-
+537		Seismitoad	Chesto Berry	{MoveID:505s,MovePP:15b}	{MoveID:29s,MovePP:10b}	{MoveID:213s,MovePP:20b}	{MoveID:493s,MovePP:10b}	Rash	-	-	170	170	170	-
+62		Poliwrath	Sitrus Berry	{MoveID:105s,MovePP:10b}	{MoveID:159s,MovePP:15b}	{MoveID:129s,MovePP:10b}	{MoveID:526s,MovePP:30b}	Naughty	170	170	-	170	-	-
+78		Rapidash	Passho Berry	{MoveID:393s,MovePP:5b}	{MoveID:204s,MovePP:20b}	{MoveID:113s,MovePP:20b}	{MoveID:298s,MovePP:20b}	Naughty	-	252	-	-	-	252
+89		Muk	Black Sludge	{MoveID:433s,MovePP:20b}	{MoveID:326s,MovePP:20b}	{MoveID:328s,MovePP:10b}	{MoveID:330s,MovePP:10b}	Brave	-	252	252	-	-	-
+94		Gengar	Focus Sash	{MoveID:227s,MovePP:15b}	{MoveID:170s,MovePP:15b}	{MoveID:199s,MovePP:15b}	{MoveID:130s,MovePP:20b}	Timid	-	-	-	252	-	252
+181		Ampharos	Shuca Berry	{MoveID:439s,MovePP:20b}	{MoveID:123s,MovePP:20b}	{MoveID:457s,MovePP:15b}	{MoveID:229s,MovePP:10b}	Mild	170	-	-	170	170	-
+186		Politoed	Cell Battery	{MoveID:159s,MovePP:15b}	{MoveID:311s,MovePP:5b}	{MoveID:37s,MovePP:15b}	{MoveID:393s,MovePP:5b}	Modest	-	-	-	252	-	252
+127		Pinsir	Persim Berry	{MoveID:469s,MovePP:20b}	{MoveID:201s,MovePP:15b}	{MoveID:90s,MovePP:10b}	{MoveID:35s,MovePP:20b}	Naughty	-	252	-	-	-	252
+212		Scizor	Occa Berry	{MoveID:313s,MovePP:35b}	{MoveID:434s,MovePP:15b}	{MoveID:203s,MovePP:20b}	{MoveID:35s,MovePP:20b}	Brave	252	-	252	-	-	-
+214		Heracross	Black Belt	{MoveID:203s,MovePP:20b}	{MoveID:258s,MovePP:20b}	{MoveID:35s,MovePP:20b}	{MoveID:201s,MovePP:15b}	Brave	170	170	170	-	-	-
+217		Ursaring	Chesto Berry	{MoveID:90s,MovePP:10b}	{MoveID:260s,MovePP:15b}	{MoveID:29s,MovePP:10b}	{MoveID:114s,MovePP:20b}	Adamant	-	170	170	-	170	-
+229		Houndoom	Charcoal	{MoveID:206s,MovePP:15b}	{MoveID:204s,MovePP:20b}	{MoveID:207s,MovePP:15b}	{MoveID:259s,MovePP:5b}	Adamant	-	252	-	-	-	252
+232		Donphan	Metronome	{MoveID:58s,MovePP:10b}	{MoveID:47s,MovePP:10b}	{MoveID:282s,MovePP:20b}	{MoveID:144s,MovePP:40b}	Brave	-	252	252	-	-	-
+321		Wailord	Chesto Berry	{MoveID:159s,MovePP:15b}	{MoveID:495s,MovePP:10b}	{MoveID:232s,MovePP:10b}	{MoveID:29s,MovePP:10b}	Brave	-	170	170	-	170	-
+344		Claydol	{MoveID:117s,MovePP:25b} Bulb	{MoveID:129s,MovePP:10b}	{MoveID:105s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:224s,MovePP:20b}	Calm	252	-	-	-	252	-
+437		Bronzong	Sitrus Berry	{MoveID:130s,MovePP:20b}	{MoveID:216s,MovePP:5b}	{MoveID:218s,MovePP:5b}	{MoveID:455s,MovePP:5b}	Impish	170	-	170	-	170	-
+452		Drapion	Scope Lens	{MoveID:434s,MovePP:15b}	{MoveID:225s,MovePP:5b}	{MoveID:427s,MovePP:20b}	{MoveID:435s,MovePP:15b}	Bold	252	-	252	-	-	-
+405		Luxray	Magnet	{MoveID:263s,MovePP:15b}	{MoveID:260s,MovePP:15b}	{MoveID:466s,MovePP:20b}	{MoveID:37s,MovePP:15b}	Lonely	-	252	-	-	252	-
+38		Ninetales	Passho Berry	{MoveID:207s,MovePP:15b}	{MoveID:130s,MovePP:20b}	{MoveID:383s,MovePP:20b}	{MoveID:210s,MovePP:10b}	Modest	-	-	-	252	-	252
+68		Machamp	Rawst Berry	{MoveID:308s,MovePP:5b}	{MoveID:268s,MovePP:10b}	{MoveID:290s,MovePP:40b}	{MoveID:486s,MovePP:10b}	Brave	252	252	-	-	-	-
+213		Shuckle	Binding Band	{MoveID:488s,MovePP:10b}	{MoveID:311s,MovePP:5b}	{MoveID:421s,MovePP:10b}	{MoveID:277s,MovePP:15b}	Careful	252	-	-	-	252	-
+407		Roserade	Big Root	{MoveID:16s,MovePP:10b}	{MoveID:4s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:276s,MovePP:10b}	Calm	252	-	252	-	-	-
+430		Honchkrow	Kee Berry	{MoveID:129s,MovePP:10b}	{MoveID:269s,MovePP:15b}	{MoveID:21s,MovePP:10b}	{MoveID:445s,MovePP:20b}	Quiet	-	-	170	170	170	-
+526		Gigalith	Rawst Berry	{MoveID:60s,MovePP:20b}	{MoveID:283s,MovePP:10b}	{MoveID:406s,MovePP:5b}	{MoveID:232s,MovePP:10b}	Naughty	170	170	170	-	-	-
+534		Conkeldurr	Black Belt	{MoveID:187s,MovePP:10b}	{MoveID:431s,MovePP:10b}	{MoveID:332s,MovePP:10b}	{MoveID:392s,MovePP:20b}	Bold	170	-	170	-	170	-
+530		Excadrill	Soft Sand	{MoveID:54s,MovePP:15b}	{MoveID:187s,MovePP:10b}	{MoveID:528s,MovePP:10b}	{MoveID:215s,MovePP:15b}	Naughty	-	252	252	-	-	-
+553		Krookodile	Black Glasses	{MoveID:260s,MovePP:15b}	{MoveID:60s,MovePP:20b}	{MoveID:225s,MovePP:5b}	{MoveID:114s,MovePP:20b}	Naughty	-	170	170	-	170	-
+208		Steelix	Chesto Berry	{MoveID:58s,MovePP:10b}	{MoveID:29s,MovePP:10b}	{MoveID:232s,MovePP:10b}	{MoveID:285s,MovePP:20b}	Impish	252	-	-	-	252	-
+461		Weavile	Razor Fang	{MoveID:324s,MovePP:10b}	{MoveID:225s,MovePP:5b}	{MoveID:434s,MovePP:15b}	{MoveID:416s,MovePP:10b}	Hasty	-	252	-	-	-	252
+472		Gliscor	Razor Fang	{MoveID:251s,MovePP:15b}	{MoveID:416s,MovePP:10b}	{MoveID:254s,MovePP:20b}	{MoveID:35s,MovePP:20b}	Naughty	-	252	-	-	-	252
+571		Zoroark	Focus Sash	{MoveID:434s,MovePP:15b}	{MoveID:208s,MovePP:15b}	{MoveID:225s,MovePP:5b}	{MoveID:114s,MovePP:20b}	Naive	-	252	-	-	-	252
+630		Mandibuzz	Wacan Berry	{MoveID:225s,MovePP:5b}	{MoveID:329s,MovePP:15b}	{MoveID:405s,MovePP:10b}	{MoveID:16s,MovePP:10b}	Calm	-	-	-	-	252	252
+628		Braviary	King's Rock	{MoveID:187s,MovePP:10b}	{MoveID:209s,MovePP:15b}	{MoveID:412s,MovePP:15b}	{MoveID:513s,MovePP:10b}	Adamant	-	170	170	-	170	-
+73		Tentacruel	Black Sludge	{MoveID:105s,MovePP:10b}	{MoveID:493s,MovePP:10b}	{MoveID:271s,MovePP:10b}	{MoveID:427s,MovePP:20b}	Hasty	-	-	-	252	-	252
+142		Aerodactyl	Choice Scarf	{MoveID:187s,MovePP:10b}	-	-	-	Jolly	-	252	-	-	-	252
+233		Porygon2	Sitrus Berry	{MoveID:106s,MovePP:5b}	{MoveID:343s,MovePP:15b}	{MoveID:295s,MovePP:5b}	{MoveID:247s,MovePP:5b}	Modest	252	-	-	252	-	-
+463		Lickilicky	Kee Berry	{MoveID:122s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:422s,MovePP:20b}	{MoveID:230s,MovePP:10b}	Naive	170	-	170	170	-	-
+469		Yanmega	Cheri Berry	{MoveID:209s,MovePP:15b}	{MoveID:436s,MovePP:10b}	{MoveID:293s,MovePP:5b}	{MoveID:254s,MovePP:20b}	Rash	-	-	-	252	252	-
+282		Gardevoir	Wide Lens	{MoveID:130s,MovePP:20b}	{MoveID:170s,MovePP:15b}	{MoveID:350s,MovePP:10b}	{MoveID:567s,MovePP:10b}	Timid	252	-	-	-	-	252
+475		Gallade	Expert Belt	{MoveID:559s,MovePP:30b}	{MoveID:201s,MovePP:15b}	{MoveID:451s,MovePP:20b}	{MoveID:35s,MovePP:20b}	Hasty	-	252	-	-	-	252
+103		Exeggutor	Petaya Berry	{MoveID:223s,MovePP:10b}	{MoveID:36s,MovePP:20b}	{MoveID:20s,MovePP:30b}	{MoveID:14s,MovePP:5b}	Mild	-	-	-	170	170	170
+121		Starmie	Sitrus Berry	{MoveID:129s,MovePP:10b}	{MoveID:379s,MovePP:20b}	{MoveID:139s,MovePP:10b}	{MoveID:147s,MovePP:20b} Type	Timid	252	-	-	-	-	252
+330		Flygon	Weakness Policy	{MoveID:58s,MovePP:10b}	{MoveID:55s,MovePP:15b}	{MoveID:297s,MovePP:10b}	{MoveID:158s,MovePP:5b}	Naive	-	252	-	-	-	252
+601		Klinklang	Shuca Berry	{MoveID:543s,MovePP:15b}	{MoveID:123s,MovePP:20b}	{MoveID:138s,MovePP:40b}	{MoveID:524s,MovePP:20b}	Impish	252	-	-	-	-	252
+609		Chandelure	Spell Tag	{MoveID:51s,MovePP:15b}	{MoveID:142s,MovePP:10b}	{MoveID:207s,MovePP:15b}	{MoveID:271s,MovePP:10b}	Modest	170	-	-	170	-	170
+134		Vaporeon	Quick Claw	{MoveID:339s,MovePP:10b}	{MoveID:104s,MovePP:15b}	{MoveID:336s,MovePP:20b}	{MoveID:227s,MovePP:15b}	Quiet	-	-	252	252	-	-
+135		Jolteon	Magnet	{MoveID:133s,MovePP:30b}	{MoveID:122s,MovePP:15b}	{MoveID:123s,MovePP:20b}	{MoveID:37s,MovePP:15b}	Hasty	-	-	-	252	-	252
+136		Flareon	Focus Sash	{MoveID:127s,MovePP:10b}	{MoveID:233s,MovePP:15b}	{MoveID:526s,MovePP:30b}	{MoveID:158s,MovePP:5b}	Naughty	-	252	-	252	-	-
+196		Espeon	Focus Sash	{MoveID:346s,MovePP:10b}	{MoveID:170s,MovePP:15b}	{MoveID:224s,MovePP:20b}	{MoveID:21s,MovePP:10b}	Naive	-	-	-	252	-	252
+197		Umbreon	Leftovers	{MoveID:142s,MovePP:10b}	{MoveID:268s,MovePP:10b}	{MoveID:232s,MovePP:10b}	{MoveID:275s,MovePP:5b}	Impish	252	-	252	-	-	-
+470		Leafeon	Scope Lens	{MoveID:435s,MovePP:15b}	{MoveID:400s,MovePP:15b}	{MoveID:35s,MovePP:20b}	{MoveID:377s,MovePP:15b}	Impish	252	-	-	-	-	252
+471		Glaceon	Quick Claw	{MoveID:448s,MovePP:30b}	{MoveID:106s,MovePP:5b}	{MoveID:318s,MovePP:20b}	{MoveID:336s,MovePP:20b}	Rash	252	-	-	252	-	-
+448		Lucario	Black Belt	{MoveID:376s,MovePP:40b}	{MoveID:269s,MovePP:15b}	{MoveID:432s,MovePP:20b}	{MoveID:512s,MovePP:10b}	Modest	-	-	-	252	-	252
+450		Hippowdon	Soft Sand	{MoveID:58s,MovePP:10b}	{MoveID:260s,MovePP:15b}	{MoveID:346s,MovePP:10b}	{MoveID:74s,MovePP:20b}	Impish	-	252	252	-	-	-
+476		Probopass	Cheri Berry	{MoveID:284s,MovePP:15b}	{MoveID:524s,MovePP:20b}	{MoveID:123s,MovePP:20b}	{MoveID:430s,MovePP:10b}	Calm	252	-	-	-	252	-
+477		Dusknoir	Leftovers	{MoveID:99s,MovePP:20b}	{MoveID:207s,MovePP:15b}	{MoveID:307s,MovePP:20b}	{MoveID:250s,MovePP:5b}	Bold	252	-	252	-	-	-
+620		Mienshao	Salac Berry	{MoveID:254s,MovePP:20b}	{MoveID:297s,MovePP:10b}	{MoveID:224s,MovePP:20b}	{MoveID:255s,MovePP:40b}	Naive	252	-	-	-	-	252
+614		Beartic	Sitrus Berry	{MoveID:208s,MovePP:15b}	{MoveID:286s,MovePP:5b}	{MoveID:447s,MovePP:10b}	{MoveID:392s,MovePP:20b}	Brave	-	252	-	-	252	-
+626		Bouffalant	Silk Scarf	{MoveID:542s,MovePP:15b}	{MoveID:258s,MovePP:20b}	{MoveID:47s,MovePP:10b}	{MoveID:203s,MovePP:20b}	Adamant	252	252	-	-	-	-
+306		Aggron	Focus Sash	{MoveID:21s,MovePP:10b}	{MoveID:56s,MovePP:15b}	{MoveID:285s,MovePP:20b}	{MoveID:414s,MovePP:10b}	Impish	252	-	-	-	252	-
+365		Walrein	Chesto Berry	{MoveID:525s,MovePP:10b}	{MoveID:231s,MovePP:15b}	{MoveID:326s,MovePP:20b}	{MoveID:29s,MovePP:10b}	Calm	-	-	252	-	252	-
+473		Mamoswine	Passho Berry	{MoveID:475s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:448s,MovePP:30b}	{MoveID:285s,MovePP:20b}	Adamant	-	170	-	-	170	170
+131		Lapras	Damp Rock	{MoveID:216s,MovePP:5b}	{MoveID:124s,MovePP:10b}	{MoveID:448s,MovePP:30b}	{MoveID:142s,MovePP:10b}	Quiet	-	-	252	252	-	-
+169		Crobat	Charti Berry	{MoveID:462s,MovePP:20b}	{MoveID:435s,MovePP:15b}	{MoveID:130s,MovePP:20b}	{MoveID:254s,MovePP:20b}	Jolly	-	252	-	-	-	252
+462		Magnezone	Magnet	{MoveID:376s,MovePP:40b}	{MoveID:221s,MovePP:10b}	{MoveID:122s,MovePP:15b}	{MoveID:430s,MovePP:10b}	Rash	252	-	-	252	-	-
+464		Rhyperior	Zoom Lens	{MoveID:268s,MovePP:10b}	{MoveID:283s,MovePP:10b}	{MoveID:286s,MovePP:5b}	{MoveID:21s,MovePP:10b}	Brave	170	170	-	-	170	-
+465		Tan{MoveID:11s,MovePP:20b}	Big Root	{MoveID:4s,MovePP:10b}	{MoveID:341s,MovePP:20b}	{MoveID:276s,MovePP:10b}	{MoveID:16s,MovePP:10b}	Bold	170	-	170	-	170	-
+474		Porygon-Z	Wise Glasses	{MoveID:129s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:122s,MovePP:15b}	{MoveID:123s,MovePP:20b}	Modest	-	-	-	252	-	252
+584		Vanilluxe	Never-Melt Ice	{MoveID:105s,MovePP:10b}	{MoveID:525s,MovePP:10b}	{MoveID:318s,MovePP:20b}	{MoveID:292s,MovePP:15b}	Calm	170	-	-	170	170	-
+604		Eelektross	Magnet	{MoveID:457s,MovePP:15b}	{MoveID:421s,MovePP:10b}	{MoveID:122s,MovePP:15b}	{MoveID:123s,MovePP:20b}	Quiet	252	-	-	252	-	-
+130		Gyarados	Muscle Band	{MoveID:450s,MovePP:15b}	{MoveID:214s,MovePP:10b}	{MoveID:123s,MovePP:20b}	{MoveID:401s,MovePP:20b}	Lonely	170	170	-	-	-	170
+143		Snorlax	Sitrus Berry	{MoveID:25s,MovePP:20b}	{MoveID:263s,MovePP:15b}	{MoveID:114s,MovePP:20b}	{MoveID:344s,MovePP:10b}	Adamant	-	252	252	-	-	-
+230		Kingdra	Persim Berry	{MoveID:159s,MovePP:15b}	{MoveID:516s,MovePP:15b}	{MoveID:21s,MovePP:10b}	{MoveID:296s,MovePP:10b}	Adamant	170	170	-	-	-	170
+242		Blissey	Leftovers	{MoveID:30s,MovePP:15b}	{MoveID:505s,MovePP:15b}	{MoveID:512s,MovePP:10b}	{MoveID:372s,MovePP:5b}	Calm	-	-	252	-	252	-
+350		Milotic	Enigma Berry	{MoveID:104s,MovePP:15b}	{MoveID:139s,MovePP:10b}	{MoveID:318s,MovePP:20b}	{MoveID:142s,MovePP:10b}	Bold	252	-	252	-	-	-
+466		Electivire	Expert Belt	{MoveID:113s,MovePP:20b}	{MoveID:127s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:138s,MovePP:40b}	Naughty	170	170	-	-	-	170
+467		Magmortar	Passho Berry	{MoveID:204s,MovePP:20b}	{MoveID:58s,MovePP:10b}	{MoveID:142s,MovePP:10b}	{MoveID:145s,MovePP:20b}	Adamant	252	252	-	-	-	-
+612		Haxorus	Haban Berry	{MoveID:529s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:56s,MovePP:15b}	{MoveID:225s,MovePP:5b}	Hasty	-	252	-	-	-	252
+468		Togekiss	Sitrus Berry	{MoveID:311s,MovePP:5b}	{MoveID:333s,MovePP:20b}	{MoveID:147s,MovePP:20b}	{MoveID:567s,MovePP:10b}	Calm	252	-	-	-	252	-
+637		Volcarona	Power Herb	{MoveID:52s,MovePP:15b}	{MoveID:210s,MovePP:10b}	{MoveID:24s,MovePP:10b}	{MoveID:74s,MovePP:20b}	Modest	252	-	-	-	-	252
+59		Arcanine	Charcoal	{MoveID:51s,MovePP:15b}	{MoveID:24s,MovePP:10b}	{MoveID:206s,MovePP:15b}	{MoveID:19s,MovePP:5b}	Modest	-	-	-	252	-	252
+567		Archeops	Sitrus Berry	{MoveID:133s,MovePP:30b}	{MoveID:251s,MovePP:15b}	{MoveID:260s,MovePP:15b}	{MoveID:254s,MovePP:20b}	Jolly	-	252	-	-	-	252
+149		Dragonite	Custap Berry	{MoveID:16s,MovePP:10b}	{MoveID:123s,MovePP:20b}	{MoveID:405s,MovePP:10b}	{MoveID:187s,MovePP:10b}	Impish	170	-	170	-	170	-
+248		Tyranitar	Iron Ball	{MoveID:187s,MovePP:10b}	{MoveID:285s,MovePP:20b}	{MoveID:123s,MovePP:20b}	{MoveID:416s,MovePP:10b}	Impish	252	-	-	-	252	-
+373		Salamence	Yache Berry	{MoveID:405s,MovePP:10b}	{MoveID:47s,MovePP:10b}	{MoveID:222s,MovePP:10b}	{MoveID:58s,MovePP:10b}	Naughty	-	170	170	-	170	-
+376		Metagross	Occa Berry	{MoveID:370s,MovePP:10b}	{MoveID:430s,MovePP:10b}	{MoveID:288s,MovePP:15b}	{MoveID:132s,MovePP:30b}	Naive	-	252	-	-	-	252
+445		Garchomp	Lax Incense	{MoveID:58s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:267s,MovePP:10b}	{MoveID:277s,MovePP:15b}	Jolly	252	-	-	-	-	252
+635		Hydreigon	Dragon Fang	{MoveID:437s,MovePP:10b}	{MoveID:266s,MovePP:10b}	{MoveID:104s,MovePP:15b}	{MoveID:222s,MovePP:10b}	Rash	-	252	-	-	-	252
+289		Slaking	Chople Berry	{MoveID:58s,MovePP:10b}	{MoveID:201s,MovePP:15b}	{MoveID:187s,MovePP:10b}	{MoveID:311s,MovePP:5b}	Naive	-	252	-	-	-	252
+3		Venusaur	Miracle Seed	{MoveID:56s,MovePP:15b}	{MoveID:17s,MovePP:10b}	{MoveID:460s,MovePP:10b}	{MoveID:58s,MovePP:10b}	Brave	170	170	170	-	-	-
+6		Charizard	Charti Berry	{MoveID:55s,MovePP:15b}	{MoveID:208s,MovePP:15b}	{MoveID:187s,MovePP:10b}	{MoveID:401s,MovePP:20b}	Adamant	-	252	-	-	-	252
+9		Blastoise	Zoom Lens	{MoveID:103s,MovePP:5b}	{MoveID:105s,MovePP:10b}	{MoveID:101s,MovePP:30b}	{MoveID:442s,MovePP:5b}	Quiet	252	-	-	252	-	-
+154		Meganium	Chesto Berry	{MoveID:26s,MovePP:15b}	{MoveID:605s,MovePP:15b}	{MoveID:38s,MovePP:10b}	{MoveID:29s,MovePP:10b}	Bold	252	-	252	-	-	-
+157		Typhlosion	Wide Lens	{MoveID:53s,MovePP:5b}	{MoveID:442s,MovePP:5b}	{MoveID:383s,MovePP:20b}	{MoveID:207s,MovePP:15b}	Naive	-	-	-	252	-	252
+160		Feraligatr	Liechi Berry	{MoveID:342s,MovePP:5b}	{MoveID:214s,MovePP:10b}	{MoveID:450s,MovePP:15b}	{MoveID:401s,MovePP:20b}	Adamant	170	170	-	-	-	170
+254		Sceptile	Scope Lens	{MoveID:400s,MovePP:15b}	{MoveID:434s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:35s,MovePP:20b}	Hasty	-	252	-	-	-	252
+257		Blaziken	Salac Berry	{MoveID:362s,MovePP:10b}	{MoveID:204s,MovePP:20b}	{MoveID:297s,MovePP:10b}	{MoveID:237s,MovePP:15b}	Adamant	170	170	-	-	-	170
+260		Swampert	Chesto Berry	{MoveID:159s,MovePP:15b}	{MoveID:409s,MovePP:10b}	{MoveID:29s,MovePP:10b}	{MoveID:232s,MovePP:10b}	Careful	252	-	-	-	252	-
+389		Torterra	Choice Scarf	{MoveID:187s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:470s,MovePP:15b}	{MoveID:378s,MovePP:20b}	Jolly	-	252	-	-	-	252
+392		Infernape	Charcoal	{MoveID:210s,MovePP:10b}	{MoveID:207s,MovePP:15b}	{MoveID:36s,MovePP:20b}	{MoveID:224s,MovePP:20b}	Mild	170	-	-	170	-	170
+395		Empoleon	Muscle Band	{MoveID:111s,MovePP:20b}	{MoveID:471s,MovePP:20b}	{MoveID:313s,MovePP:35b}	{MoveID:360s,MovePP:15b}	Lonely	170	170	-	-	170	-
+497		Serperior	Sitrus Berry	{MoveID:535s,MovePP:10b}	{MoveID:18s,MovePP:15b}	{MoveID:318s,MovePP:20b}	{MoveID:466s,MovePP:20b}	Sassy	170	-	-	170	170	-
+500		Emboar	Quick Claw	{MoveID:346s,MovePP:10b}	{MoveID:263s,MovePP:15b}	{MoveID:60s,MovePP:20b}	{MoveID:534s,MovePP:10b}	Brave	-	170	170	-	170	-
+503		Samurott	Zoom Lens	{MoveID:106s,MovePP:5b}	{MoveID:59s,MovePP:5b}	{MoveID:293s,MovePP:5b}	{MoveID:103s,MovePP:5b}	Quiet	-	252	-	252	-	-
+51		Dugtrio	Choice Band	{MoveID:21s,MovePP:10b}	{MoveID:519s,MovePP:5b}	{MoveID:58s,MovePP:10b}	{MoveID:187s,MovePP:10b}	Lonely	252	-	-	-	-	252
+105		Marowak	Iron Ball	{MoveID:58s,MovePP:10b}	{MoveID:416s,MovePP:10b}	{MoveID:201s,MovePP:15b}	{MoveID:293s,MovePP:5b}	Brave	252	252	-	-	-	-
+308		Medicham	TwistedSpoon	{MoveID:129s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:33s,MovePP:10b}	{MoveID:224s,MovePP:20b}	Timid	-	-	-	252	-	252
+195		Quagsire	Iron Ball	{MoveID:58s,MovePP:10b}	{MoveID:326s,MovePP:20b}	{MoveID:416s,MovePP:10b}	{MoveID:328s,MovePP:10b}	Impish	170	-	170	-	170	-
+210		Granbull	Wise Glasses	{MoveID:554s,MovePP:15b}	{MoveID:122s,MovePP:15b}	{MoveID:567s,MovePP:10b}	{MoveID:27s,MovePP:10b}	Modest	-	-	252	252	-	-
+124		Jynx	Destiny Knot	{MoveID:67s,MovePP:15b}	{MoveID:324s,MovePP:10b}	{MoveID:530s,MovePP:25b}	{MoveID:225s,MovePP:5b}	Adamant	-	252	-	-	-	252
+122		Mr. Mime	Jaboca Berry	{MoveID:268s,MovePP:10b}	{MoveID:486s,MovePP:10b}	{MoveID:565s,MovePP:20b}	{MoveID:324s,MovePP:10b}	Brave	-	252	-	-	252	-
+171		Lanturn	Sitrus Berry	{MoveID:123s,MovePP:20b}	{MoveID:229s,MovePP:10b}	{MoveID:326s,MovePP:20b}	{MoveID:328s,MovePP:10b}	Calm	-	-	252	252	-	-
+286		Breloom	{MoveID:16s,MovePP:10b} Orb	{MoveID:38s,MovePP:10b}	{MoveID:15s,MovePP:15b}	{MoveID:408s,MovePP:10b}	{MoveID:179s,MovePP:15b}	Jolly	-	252	-	-	-	252
+205		Forretress	Sitrus Berry	{MoveID:246s,MovePP:20b}	{MoveID:58s,MovePP:10b}	{MoveID:430s,MovePP:10b}	{MoveID:218s,MovePP:5b}	Naughty	252	252	-	-	-	-
+227		Skarmory	Cell Battery	{MoveID:443s,MovePP:15b}	{MoveID:303s,MovePP:25b}	{MoveID:35s,MovePP:20b}	{MoveID:56s,MovePP:15b}	Naughty	252	-	-	-	-	252
+359		Absol	Chople Berry	{MoveID:259s,MovePP:5b}	{MoveID:343s,MovePP:15b}	{MoveID:451s,MovePP:20b}	{MoveID:225s,MovePP:5b}	Adamant	252	252	-	-	-	-
+340		Whiscash	Soft Sand	{MoveID:214s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:288s,MovePP:15b}	{MoveID:401s,MovePP:20b}	Adamant	170	170	170	-	-	-
+297		Hariyama	Custap Berry	{MoveID:237s,MovePP:15b}	{MoveID:446s,MovePP:30b}	{MoveID:21s,MovePP:10b}	{MoveID:243s,MovePP:10b}	Careful	-	-	252	-	252	-
+416		Vespiquen	Insect Plate	{MoveID:472s,MovePP:15b}	{MoveID:439s,MovePP:20b}	{MoveID:466s,MovePP:20b}	{MoveID:142s,MovePP:10b}	Quiet	252	-	-	252	-	-
+26		Raichu	Magnet	{MoveID:201s,MovePP:15b}	{MoveID:497s,MovePP:10b}	{MoveID:324s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Jolly	-	252	-	-	-	252
+87		Dewgong	Never-Melt Ice	{MoveID:448s,MovePP:30b}	{MoveID:381s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:311s,MovePP:5b}	Rash	-	-	-	252	-	252
+310		Manectric	Charcoal	{MoveID:51s,MovePP:15b}	{MoveID:205s,MovePP:5b}	{MoveID:457s,MovePP:15b}	{MoveID:335s,MovePP:20b}	Modest	-	-	-	252	-	252
+398		Staraptor	Choice Scarf	{MoveID:258s,MovePP:20b}	{MoveID:415s,MovePP:5b}	{MoveID:405s,MovePP:10b}	{MoveID:519s,MovePP:5b}	Adamant	252	-	-	-	-	252
+423		Gastrodon	Rindo Berry	{MoveID:159s,MovePP:15b}	{MoveID:165s,MovePP:20b}	{MoveID:232s,MovePP:10b}	{MoveID:346s,MovePP:10b}	Careful	-	170	170	-	170	-
+435		Skuntank	Poison Barb	{MoveID:258s,MovePP:20b}	{MoveID:501s,MovePP:15b}	{MoveID:433s,MovePP:20b}	{MoveID:225s,MovePP:5b}	Adamant	-	252	-	-	-	252
+539		Sawk	Focus Sash	{MoveID:58s,MovePP:10b}	{MoveID:268s,MovePP:10b}	{MoveID:297s,MovePP:10b}	{MoveID:237s,MovePP:15b}	Naughty	-	252	-	-	-	252
+538		Throh	Expert Belt	{MoveID:345s,MovePP:10b}	{MoveID:492s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:115s,MovePP:20b}	Brave	-	252	252	-	-	-
+521		Unfezant	Power Herb	{MoveID:59s,MovePP:5b}	{MoveID:133s,MovePP:30b}	{MoveID:130s,MovePP:20b}	{MoveID:175s,MovePP:5b}	Jolly	-	252	-	-	-	252
+45		Vileplume	Power Herb	{MoveID:24s,MovePP:10b}	{MoveID:27s,MovePP:10b}	{MoveID:14s,MovePP:5b}	{MoveID:26s,MovePP:15b}	Modest	252	-	-	252	-	-
+71		Victreebel	Safety Goggles	{MoveID:459s,MovePP:5b}	{MoveID:7s,MovePP:15b}	{MoveID:326s,MovePP:20b}	{MoveID:311s,MovePP:5b}	Rash	-	-	-	252	-	252
+101		Electrode	Focus Sash	{MoveID:497s,MovePP:10b}	{MoveID:225s,MovePP:5b}	{MoveID:21s,MovePP:10b}	{MoveID:184s,MovePP:5b}	Hasty	-	252	-	-	-	252
+272		Ludicolo	Tanga Berry	{MoveID:324s,MovePP:10b}	{MoveID:36s,MovePP:20b}	{MoveID:104s,MovePP:15b}	{MoveID:378s,MovePP:20b}	Naughty	170	170	-	170	-	-
+275		Shiftry	Miracle Seed	{MoveID:324s,MovePP:10b}	{MoveID:383s,MovePP:20b}	{MoveID:24s,MovePP:10b}	{MoveID:37s,MovePP:15b}	Rash	-	-	-	252	-	252
+295		Exploud	Chople Berry	{MoveID:260s,MovePP:15b}	{MoveID:373s,MovePP:20b}	{MoveID:105s,MovePP:10b}	{MoveID:59s,MovePP:5b}	Lonely	-	252	-	252	-	-
+428		Lopunny	Liechi Berry	{MoveID:298s,MovePP:20b}	{MoveID:331s,MovePP:20b}	{MoveID:38s,MovePP:10b}	{MoveID:68s,MovePP:15b}	Jolly	-	252	-	-	-	252
+478		Froslass	Kasib Berry	{MoveID:448s,MovePP:30b}	{MoveID:123s,MovePP:20b}	{MoveID:271s,MovePP:10b}	{MoveID:225s,MovePP:5b}	Lonely	-	252	-	-	-	252
+549		Lilligant	Big Root	{MoveID:341s,MovePP:20b}	{MoveID:4s,MovePP:10b}	{MoveID:16s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Bold	170	-	170	-	170	-
+555		Darmanitan	Luminous Moss	{MoveID:129s,MovePP:10b}	{MoveID:210s,MovePP:10b}	{MoveID:505s,MovePP:15b}	{MoveID:565s,MovePP:20b}	Calm	252	-	-	-	252	-
+424		Ambipom	Focus Sash	{MoveID:36s,MovePP:20b}	{MoveID:122s,MovePP:15b}	{MoveID:445s,MovePP:20b}	{MoveID:114s,MovePP:20b}	Timid	-	-	-	252	-	252
+563		Cofagrigus	Spell Tag	{MoveID:227s,MovePP:15b}	{MoveID:33s,MovePP:10b}	{MoveID:207s,MovePP:15b}	{MoveID:445s,MovePP:20b}	Quiet	252	-	-	252	-	-
+623		Golurk	Wide Lens	{MoveID:409s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:232s,MovePP:10b}	{MoveID:218s,MovePP:5b}	Brave	-	252	-	-	252	-
+632		Durant	Power Herb	{MoveID:127s,MovePP:10b}	{MoveID:215s,MovePP:15b}	{MoveID:132s,MovePP:30b}	{MoveID:255s,MovePP:40b}	Impish	-	-	252	-	-	252
+76		Golem	{MoveID:117s,MovePP:25b} Bulb	{MoveID:187s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:60s,MovePP:20b}	{MoveID:489s,MovePP:15b}	Naughty	-	252	-	-	-	252
+80		Slowbro	Quick Claw	{MoveID:51s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:365s,MovePP:10b}	{MoveID:213s,MovePP:20b}	Modest	-	-	252	252	-	-
+110		Weezing	Safety Goggles	{MoveID:27s,MovePP:10b}	{MoveID:158s,MovePP:5b}	{MoveID:326s,MovePP:20b}	{MoveID:328s,MovePP:10b}	Rash	252	-	-	252	-	-
+115		Kangaskhan	Salac Berry	{MoveID:187s,MovePP:10b}	{MoveID:259s,MovePP:5b}	{MoveID:297s,MovePP:10b}	{MoveID:237s,MovePP:15b}	Jolly	-	252	-	-	-	252
+128		Tauros	Expert Belt	{MoveID:288s,MovePP:15b}	{MoveID:263s,MovePP:15b}	{MoveID:37s,MovePP:15b}	{MoveID:59s,MovePP:5b}	Jolly	-	252	-	-	-	252
+442		Spiritomb	Quick Claw	{MoveID:559s,MovePP:30b}	{MoveID:259s,MovePP:5b}	{MoveID:207s,MovePP:15b}	{MoveID:225s,MovePP:5b}	Brave	252	252	-	-	-	-
+615		Cryogonal	Occa Berry	{MoveID:448s,MovePP:30b}	{MoveID:50s,MovePP:20b}	{MoveID:433s,MovePP:20b}	{MoveID:146s,MovePP:30b}	Hasty	-	252	-	-	-	252
+621		Druddigon	Scope Lens	{MoveID:55s,MovePP:15b}	{MoveID:434s,MovePP:15b}	{MoveID:50s,MovePP:20b}	{MoveID:54s,MovePP:15b}	Lonely	170	-	170	-	170	-
+518		Musharna	Lum Berry	{MoveID:227s,MovePP:15b}	{MoveID:33s,MovePP:10b}	{MoveID:129s,MovePP:10b}	{MoveID:455s,MovePP:5b}	Bold	-	-	252	252	-	-
+560		Scrafty	Coba Berry	{MoveID:168s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:225s,MovePP:5b}	{MoveID:401s,MovePP:20b}	Jolly	252	-	-	-	-	252
+598		Ferrothorn	Chesto Berry	{MoveID:29s,MovePP:10b}	{MoveID:268s,MovePP:10b}	{MoveID:218s,MovePP:5b}	{MoveID:232s,MovePP:10b}	Careful	252	-	-	-	252	-
+65		Alakazam	Focus Sash	{MoveID:230s,MovePP:10b}	{MoveID:311s,MovePP:5b}	{MoveID:21s,MovePP:10b}	{MoveID:129s,MovePP:10b}	Timid	-	-	-	252	-	252
+199		Slowking	King's Rock	{MoveID:288s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:37s,MovePP:15b}	{MoveID:230s,MovePP:10b}	Gentle	-	252	-	-	252	-
+241		Miltank	Razor Fang	{MoveID:88s,MovePP:15b}	{MoveID:416s,MovePP:10b}	{MoveID:201s,MovePP:15b}	{MoveID:466s,MovePP:20b}	Naive	-	252	-	-	-	252
+334		Altaria	Snowball	{MoveID:55s,MovePP:15b}	{MoveID:253s,MovePP:20b}	{MoveID:303s,MovePP:25b}	{MoveID:401s,MovePP:20b}	Lonely	-	252	-	-	-	252
+454		{MoveID:16s,MovePP:10b}roak	Petaya Berry	{MoveID:442s,MovePP:5b}	{MoveID:27s,MovePP:10b}	{MoveID:38s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Modest	-	-	-	252	-	252
+576		Gothitelle	TwistedSpoon	{MoveID:223s,MovePP:10b}	{MoveID:407s,MovePP:40b}	{MoveID:318s,MovePP:20b}	{MoveID:378s,MovePP:20b}	Modest	170	-	170	170	-	-
+579		Reuniclus	King's Rock	{MoveID:187s,MovePP:10b}	{MoveID:184s,MovePP:5b}	{MoveID:218s,MovePP:5b}	{MoveID:455s,MovePP:5b}	Brave	-	170	170	-	170	-
+625		Bisharp	Chople Berry	{MoveID:203s,MovePP:20b}	{MoveID:499s,MovePP:20b}	{MoveID:464s,MovePP:15b}	{MoveID:47s,MovePP:10b}	Adamant	252	252	-	-	-	-
+460		Abomasnow	Miracle Seed	{MoveID:470s,MovePP:15b}	{MoveID:201s,MovePP:15b}	{MoveID:26s,MovePP:15b}	{MoveID:106s,MovePP:5b}	Lonely	170	170	-	170	-	-
+31		Nidoqueen	{MoveID:117s,MovePP:25b} Bulb	{MoveID:122s,MovePP:15b}	{MoveID:57s,MovePP:5b}	{MoveID:266s,MovePP:10b}	{MoveID:114s,MovePP:20b}	Mild	252	-	-	252	-	-
+34		Nidoking	Black Sludge	{MoveID:165s,MovePP:20b}	{MoveID:27s,MovePP:10b}	{MoveID:51s,MovePP:15b}	{MoveID:21s,MovePP:10b}	Quiet	252	-	-	252	-	-
+346		Cradily	Quick Claw	{MoveID:142s,MovePP:10b}	{MoveID:33s,MovePP:10b}	{MoveID:286s,MovePP:5b}	{MoveID:58s,MovePP:10b}	Brave	170	170	-	170	-	-
+348		Armaldo	Razor Fang	{MoveID:187s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:435s,MovePP:15b}	{MoveID:281s,MovePP:20b}	Hasty	252	-	-	-	-	252
+409		Rampardos	Sitrus Berry	{MoveID:478s,MovePP:5b}	{MoveID:286s,MovePP:5b}	{MoveID:409s,MovePP:10b}	{MoveID:47s,MovePP:10b}	Naughty	-	252	-	-	-	252
+411		Bastiodon	Chesto Berry	{MoveID:505s,MovePP:15b}	{MoveID:29s,MovePP:10b}	{MoveID:320s,MovePP:5b}	{MoveID:215s,MovePP:15b}	Bold	-	-	252	252	-	-
+419		Floatzel	Flame Orb	{MoveID:471s,MovePP:20b}	{MoveID:444s,MovePP:10b}	{MoveID:258s,MovePP:20b}	{MoveID:260s,MovePP:15b}	Hasty	-	252	-	-	-	252
+429		Mismagius	Kasib Berry	{MoveID:227s,MovePP:15b}	{MoveID:289s,MovePP:10b}	{MoveID:352s,MovePP:5b}	{MoveID:307s,MovePP:20b}	Timid	252	-	-	-	252	-
+565		Carracosta	Wide Lens	{MoveID:187s,MovePP:10b}	{MoveID:37s,MovePP:15b}	{MoveID:106s,MovePP:5b}	{MoveID:103s,MovePP:5b}	Rash	252	-	-	252	-	-
+589		Escavalier	Quick Claw	{MoveID:258s,MovePP:20b}	{MoveID:114s,MovePP:20b}	{MoveID:435s,MovePP:15b}	{MoveID:35s,MovePP:20b}	Naughty	252	252	-	-	-	-
+617		Accelgor	Weakness Policy	{MoveID:33s,MovePP:10b}	{MoveID:27s,MovePP:10b}	{MoveID:436s,MovePP:10b}	{MoveID:297s,MovePP:10b}	Modest	-	-	-	252	-	252
+523		Zebstrika	Magnet	{MoveID:457s,MovePP:15b}	{MoveID:123s,MovePP:20b}	{MoveID:124s,MovePP:10b}	{MoveID:216s,MovePP:5b}	Timid	-	-	-	252	-	252
+426		Drifblim	Wide Lens	{MoveID:271s,MovePP:10b}	{MoveID:122s,MovePP:15b}	{MoveID:170s,MovePP:15b}	{MoveID:130s,MovePP:20b}	Mild	-	-	-	252	-	252
+537		Seismitoad	Iron Ball	{MoveID:416s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:433s,MovePP:20b}	{MoveID:58s,MovePP:10b}	Brave	-	252	-	-	252	-
+62		Poliwrath	Shell Bell	{MoveID:201s,MovePP:15b}	{MoveID:159s,MovePP:15b}	{MoveID:130s,MovePP:20b}	{MoveID:243s,MovePP:10b}	Naive	252	252	-	-	-	-
+78		Rapidash	Heat Rock	{MoveID:207s,MovePP:15b}	{MoveID:158s,MovePP:5b}	{MoveID:24s,MovePP:10b}	{MoveID:19s,MovePP:5b}	Hasty	-	-	-	252	-	252
+89		Muk	{MoveID:16s,MovePP:10b} Plate	{MoveID:559s,MovePP:30b}	{MoveID:433s,MovePP:20b}	{MoveID:182s,MovePP:20b}	{MoveID:51s,MovePP:15b}	Lonely	-	170	-	170	170	-
+94		Gengar	Expert Belt	{MoveID:259s,MovePP:5b}	{MoveID:31s,MovePP:15b}	{MoveID:67s,MovePP:15b}	{MoveID:207s,MovePP:15b}	Jolly	-	252	-	-	-	252
+181		Ampharos	Lum Berry	{MoveID:201s,MovePP:15b}	{MoveID:68s,MovePP:15b}	{MoveID:138s,MovePP:40b}	{MoveID:374s,MovePP:40b}	Brave	170	170	170	-	-	-
+186		Politoed	Damp Rock	{MoveID:216s,MovePP:5b}	{MoveID:505s,MovePP:15b}	{MoveID:88s,MovePP:15b}	{MoveID:103s,MovePP:5b}	Quiet	-	-	-	252	252	-
+127		Pinsir	Insect Plate	{MoveID:278s,MovePP:10b}	{MoveID:435s,MovePP:15b}	{MoveID:286s,MovePP:5b}	{MoveID:469s,MovePP:20b}	Lonely	-	252	-	-	-	252
+212		Scizor	Insect Plate	{MoveID:446s,MovePP:30b}	{MoveID:435s,MovePP:15b}	{MoveID:278s,MovePP:10b}	{MoveID:132s,MovePP:30b}	Naughty	252	252	-	-	-	-
+214		Heracross	Salac Berry	{MoveID:309s,MovePP:10b}	{MoveID:127s,MovePP:10b}	{MoveID:297s,MovePP:10b}	{MoveID:237s,MovePP:15b}	Naughty	252	-	-	-	-	252
+217		Ursaring	{MoveID:16s,MovePP:10b} Orb	{MoveID:28s,MovePP:20b}	{MoveID:409s,MovePP:10b}	{MoveID:47s,MovePP:10b}	{MoveID:346s,MovePP:10b}	Jolly	-	252	-	-	-	252
+229		Houndoom	Focus Sash	{MoveID:114s,MovePP:20b}	{MoveID:204s,MovePP:20b}	{MoveID:56s,MovePP:15b}	{MoveID:21s,MovePP:10b}	Hasty	-	252	-	-	-	252
+232		Donphan	Focus Sash	{MoveID:262s,MovePP:5b}	{MoveID:233s,MovePP:15b}	{MoveID:56s,MovePP:15b}	{MoveID:59s,MovePP:5b}	Adamant	-	252	-	-	252	-
+321		Wailord	Quick Claw	{MoveID:380s,MovePP:5b}	{MoveID:29s,MovePP:10b}	{MoveID:304s,MovePP:10b}	{MoveID:105s,MovePP:10b}	Timid	-	-	-	252	-	252
+344		Claydol	Sitrus Berry	{MoveID:267s,MovePP:10b}	{MoveID:16s,MovePP:10b}	{MoveID:379s,MovePP:20b}	{MoveID:184s,MovePP:5b}	Impish	252	-	252	-	-	-
+437		Bronzong	Damp Rock	{MoveID:216s,MovePP:5b}	{MoveID:20s,MovePP:30b}	{MoveID:229s,MovePP:10b}	{MoveID:36s,MovePP:20b}	Quiet	252	-	-	252	-	-
+452		Drapion	Shuca Berry	{MoveID:462s,MovePP:20b}	{MoveID:260s,MovePP:15b}	{MoveID:47s,MovePP:10b}	{MoveID:138s,MovePP:40b}	Naive	-	252	-	-	-	252
+405		Luxray	Quick Claw	{MoveID:229s,MovePP:10b}	{MoveID:336s,MovePP:20b}	{MoveID:457s,MovePP:15b}	{MoveID:56s,MovePP:15b}	Careful	252	-	-	-	252	-
+38		Ninetales	Safety Goggles	{MoveID:210s,MovePP:10b}	{MoveID:56s,MovePP:15b}	{MoveID:142s,MovePP:10b}	{MoveID:445s,MovePP:20b}	Timid	252	-	-	-	-	252
+68		Machamp	Expert Belt	{MoveID:67s,MovePP:15b}	{MoveID:316s,MovePP:5b}	{MoveID:31s,MovePP:15b}	{MoveID:148s,MovePP:30b}	Brave	252	252	-	-	-	-
+213		Shuckle	Quick Claw	{MoveID:420s,MovePP:10b}	{MoveID:311s,MovePP:5b}	{MoveID:187s,MovePP:10b}	{MoveID:469s,MovePP:20b}	Bold	252	-	252	-	-	-
+407		Roserade	Occa Berry	{MoveID:371s,MovePP:10b}	{MoveID:33s,MovePP:10b}	{MoveID:274s,MovePP:15b}	{MoveID:30s,MovePP:15b}	Modest	-	-	-	252	-	252
+430		Honchkrow	Black Glasses	{MoveID:259s,MovePP:5b}	{MoveID:225s,MovePP:5b}	{MoveID:258s,MovePP:20b}	{MoveID:21s,MovePP:10b}	Brave	-	252	-	-	252	-
+526		Gigalith	Hard Stone	{MoveID:215s,MovePP:15b}	{MoveID:267s,MovePP:10b}	{MoveID:295s,MovePP:5b}	{MoveID:283s,MovePP:10b}	Naughty	252	-	252	-	-	-
+534		Conkeldurr	Iron Ball	{MoveID:240s,MovePP:30b}	{MoveID:409s,MovePP:10b}	{MoveID:392s,MovePP:20b}	{MoveID:416s,MovePP:10b}	Brave	-	252	-	-	252	-
+530		Excadrill	Chople Berry	{MoveID:127s,MovePP:10b}	{MoveID:376s,MovePP:40b}	{MoveID:313s,MovePP:35b}	{MoveID:35s,MovePP:20b}	Adamant	-	252	252	-	-	-
+553		Krookodile	Roseli Berry	{MoveID:284s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:258s,MovePP:20b}	{MoveID:272s,MovePP:15b}	Naughty	-	252	252	-	-	-
+208		Steelix	Enigma Berry	{MoveID:260s,MovePP:15b}	{MoveID:232s,MovePP:10b}	{MoveID:218s,MovePP:5b}	{MoveID:138s,MovePP:40b}	Impish	252	252	-	-	-	-
+461		Weavile	Never-Melt Ice	{MoveID:448s,MovePP:30b}	{MoveID:67s,MovePP:15b}	{MoveID:228s,MovePP:15b}	{MoveID:21s,MovePP:10b}	Jolly	-	252	-	-	-	252
+472		Gliscor	Liechi Berry	{MoveID:132s,MovePP:30b}	{MoveID:251s,MovePP:15b}	{MoveID:35s,MovePP:20b}	{MoveID:255s,MovePP:40b}	Impish	252	-	252	-	-	-
+571		Zoroark	Expert Belt	{MoveID:36s,MovePP:20b}	{MoveID:227s,MovePP:15b}	{MoveID:51s,MovePP:15b}	{MoveID:445s,MovePP:20b}	Jolly	-	-	-	252	-	252
+630		Mandibuzz	Roseli Berry	{MoveID:269s,MovePP:15b}	{MoveID:209s,MovePP:15b}	{MoveID:227s,MovePP:15b}	{MoveID:445s,MovePP:20b}	Mild	-	-	-	252	-	252
+628		Braviary	Persim Berry	{MoveID:90s,MovePP:10b}	{MoveID:392s,MovePP:20b}	{MoveID:342s,MovePP:5b}	{MoveID:253s,MovePP:20b}	Naughty	-	252	-	-	-	252
+73		Tentacruel	Mystic Water	{MoveID:212s,MovePP:40b}	{MoveID:433s,MovePP:20b}	{MoveID:159s,MovePP:15b}	{MoveID:35s,MovePP:20b}	Hasty	-	252	-	-	-	252
+142		Aerodactyl	Passho Berry	{MoveID:260s,MovePP:15b}	{MoveID:187s,MovePP:10b}	{MoveID:405s,MovePP:10b}	{MoveID:513s,MovePP:10b}	Naive	-	252	-	-	-	252
+233		Porygon2	Petaya Berry	{MoveID:191s,MovePP:10b}	{MoveID:129s,MovePP:10b}	{MoveID:344s,MovePP:10b}	{MoveID:139s,MovePP:10b}	Calm	170	-	170	-	170	-
+463		Lickilicky	Chople Berry	{MoveID:218s,MovePP:5b}	{MoveID:29s,MovePP:10b}	{MoveID:232s,MovePP:10b}	{MoveID:304s,MovePP:10b}	Adamant	127	127	127	-	127	-
+469		Yanmega	Sitrus Berry	{MoveID:129s,MovePP:10b}	{MoveID:436s,MovePP:10b}	{MoveID:37s,MovePP:15b}	{MoveID:38s,MovePP:10b}	Modest	252	-	-	252	-	-
+282		Gardevoir	Bright Powder	{MoveID:508s,MovePP:20b}	{MoveID:122s,MovePP:15b}	{MoveID:224s,MovePP:20b}	{MoveID:26s,MovePP:15b}	Timid	-	-	-	252	-	252
+475		Gallade	Scope Lens	{MoveID:451s,MovePP:20b}	{MoveID:400s,MovePP:15b}	{MoveID:50s,MovePP:20b}	{MoveID:21s,MovePP:10b}	Jolly	-	252	-	-	-	252
+103		Exeggutor	Sitrus Berry	{MoveID:470s,MovePP:15b}	{MoveID:232s,MovePP:10b}	{MoveID:153s,MovePP:10b}	{MoveID:14s,MovePP:5b}	Brave	-	252	-	-	252	-
+121		Starmie	Mystic Water	{MoveID:21s,MovePP:10b}	{MoveID:129s,MovePP:10b}	{MoveID:103s,MovePP:5b}	{MoveID:212s,MovePP:40b}	Modest	-	-	-	252	-	252
+330		Flygon	Haban Berry	{MoveID:37s,MovePP:15b}	{MoveID:133s,MovePP:30b}	{MoveID:187s,MovePP:10b}	{MoveID:254s,MovePP:20b}	Naive	-	252	-	-	-	252
+601		Klinklang	White Herb	{MoveID:229s,MovePP:10b}	{MoveID:376s,MovePP:40b}	{MoveID:221s,MovePP:10b}	{MoveID:489s,MovePP:15b}	Mild	-	-	-	252	-	252
+609		Chandelure	Chesto Berry	{MoveID:33s,MovePP:10b}	{MoveID:29s,MovePP:10b}	{MoveID:210s,MovePP:10b}	{MoveID:207s,MovePP:15b}	Timid	252	-	-	-	-	252
+134		Vaporeon	Leftovers	{MoveID:105s,MovePP:10b}	{MoveID:103s,MovePP:5b}	{MoveID:182s,MovePP:20b}	{MoveID:429s,MovePP:20b}	Modest	-	-	252	252	-	-
+135		Jolteon	Damp Rock	{MoveID:124s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:298s,MovePP:20b}	{MoveID:216s,MovePP:5b}	Timid	-	-	-	252	-	252
+136		Flareon	Charcoal	{MoveID:207s,MovePP:15b}	{MoveID:298s,MovePP:20b}	{MoveID:204s,MovePP:20b}	{MoveID:21s,MovePP:10b}	Impish	252	-	252	-	-	-
+196		Espeon	Kasib Berry	{MoveID:223s,MovePP:10b}	{MoveID:36s,MovePP:20b}	{MoveID:226s,MovePP:15b}	{MoveID:298s,MovePP:20b}	Timid	252	-	-	-	-	252
+197		Umbreon	Chople Berry	{MoveID:268s,MovePP:10b}	{MoveID:275s,MovePP:5b}	{MoveID:508s,MovePP:20b}	{MoveID:526s,MovePP:30b}	Careful	252	252	-	-	-	-
+470		Leafeon	Liechi Berry	{MoveID:400s,MovePP:15b}	{MoveID:59s,MovePP:5b}	{MoveID:38s,MovePP:10b}	{MoveID:346s,MovePP:10b}	Naive	-	252	-	-	-	252
+471		Glaceon	Chesto Berry	{MoveID:525s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:29s,MovePP:10b}	{MoveID:145s,MovePP:20b}	Bold	252	-	252	-	-	-
+448		Lucario	Focus Sash	{MoveID:415s,MovePP:5b}	{MoveID:54s,MovePP:15b}	{MoveID:297s,MovePP:10b}	{MoveID:237s,MovePP:15b}	Jolly	-	252	-	-	-	252
+450		Hippowdon	Sitrus Berry	{MoveID:260s,MovePP:15b}	{MoveID:187s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:232s,MovePP:10b}	Lonely	252	252	-	-	-	-
+476		Probopass	Sitrus Berry	{MoveID:389s,MovePP:5b}	{MoveID:215s,MovePP:15b}	{MoveID:221s,MovePP:10b}	{MoveID:457s,MovePP:15b}	Bold	252	-	252	-	-	-
+477		Dusknoir	Iron Ball	{MoveID:559s,MovePP:30b}	{MoveID:31s,MovePP:15b}	{MoveID:416s,MovePP:10b}	{MoveID:455s,MovePP:5b}	Brave	252	252	-	-	-	-
+620		Mienshao	King's Rock	{MoveID:324s,MovePP:10b}	{MoveID:416s,MovePP:10b}	{MoveID:251s,MovePP:15b}	{MoveID:168s,MovePP:10b}	Jolly	-	252	-	-	-	252
+614		Beartic	Lax Incense	{MoveID:220s,MovePP:10b}	{MoveID:292s,MovePP:15b}	{MoveID:36s,MovePP:20b}	{MoveID:106s,MovePP:5b}	Rash	252	-	-	252	-	-
+626		Bouffalant	Chople Berry	{MoveID:258s,MovePP:20b}	{MoveID:345s,MovePP:10b}	{MoveID:518s,MovePP:5b}	{MoveID:37s,MovePP:15b}	Brave	252	252	-	-	-	-
+306		Aggron	King's Rock	{MoveID:104s,MovePP:15b}	{MoveID:221s,MovePP:10b}	{MoveID:442s,MovePP:5b}	{MoveID:505s,MovePP:15b}	Quiet	-	-	252	252	-	-
+365		Walrein	Metronome	{MoveID:363s,MovePP:20b}	{MoveID:58s,MovePP:10b}	{MoveID:311s,MovePP:5b}	{MoveID:232s,MovePP:10b}	Calm	-	252	-	-	252	-
+473		Mamoswine	Zoom Lens	{MoveID:286s,MovePP:5b}	{MoveID:60s,MovePP:20b}	{MoveID:106s,MovePP:5b}	{MoveID:450s,MovePP:15b}	Brave	-	170	170	-	170	-
+131		Lapras	Mystic Water	{MoveID:104s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:29s,MovePP:10b}	{MoveID:304s,MovePP:10b}	Modest	-	-	170	170	170	-
+169		Crobat	Sharp Beak	{MoveID:209s,MovePP:15b}	{MoveID:227s,MovePP:15b}	{MoveID:142s,MovePP:10b}	{MoveID:445s,MovePP:20b}	Timid	-	-	-	252	-	252
+462		Magnezone	Shuca Berry	{MoveID:229s,MovePP:10b}	{MoveID:123s,MovePP:20b}	{MoveID:221s,MovePP:10b}	{MoveID:318s,MovePP:20b}	Quiet	252	-	-	252	-	-
+464		Rhyperior	Hard Stone	{MoveID:461s,MovePP:5b}	{MoveID:281s,MovePP:20b}	-	-	Lonely	-	252	-	-	-	252
+465		Tan{MoveID:11s,MovePP:20b}	Yache Berry	{MoveID:419s,MovePP:5b}	{MoveID:378s,MovePP:20b}	{MoveID:460s,MovePP:10b}	{MoveID:60s,MovePP:20b}	Naughty	-	252	-	-	-	252
+474		Porygon-Z	Choice Specs	{MoveID:57s,MovePP:5b}	-	-	-	Modest	-	-	-	252	-	252
+584		Vanilluxe	Occa Berry	{MoveID:447s,MovePP:10b}	{MoveID:448s,MovePP:30b}	{MoveID:274s,MovePP:15b}	{MoveID:59s,MovePP:5b}	Lonely	252	252	-	-	-	-
+604		Eelektross	Expert Belt	{MoveID:260s,MovePP:15b}	{MoveID:263s,MovePP:15b}	{MoveID:201s,MovePP:15b}	{MoveID:498s,MovePP:20b}	Naughty	252	252	-	-	-	-
+130		Gyarados	Chesto Berry	{MoveID:159s,MovePP:15b}	{MoveID:29s,MovePP:10b}	{MoveID:60s,MovePP:20b}	{MoveID:59s,MovePP:5b}	Naughty	-	252	-	-	-	252
+143		Snorlax	Sitrus Berry	{MoveID:25s,MovePP:20b}	{MoveID:21s,MovePP:10b}	{MoveID:260s,MovePP:15b}	{MoveID:243s,MovePP:10b}	Brave	-	252	252	-	-	-
+230		Kingdra	Haban Berry	{MoveID:437s,MovePP:10b}	{MoveID:159s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:401s,MovePP:20b}	Mild	170	170	-	170	-	-
+242		Blissey	Custap Berry	{MoveID:229s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:36s,MovePP:20b}	{MoveID:123s,MovePP:20b}	Modest	-	-	252	252	-	-
+350		Milotic	Leftovers	{MoveID:103s,MovePP:5b}	{MoveID:16s,MovePP:10b}	{MoveID:30s,MovePP:15b}	{MoveID:429s,MovePP:20b}	Quiet	252	-	252	-	-	-
+466		Electivire	Shuca Berry	{MoveID:31s,MovePP:15b}	{MoveID:497s,MovePP:10b}	{MoveID:67s,MovePP:15b}	{MoveID:21s,MovePP:10b}	Adamant	170	170	-	-	-	170
+467		Magmortar	Wide Lens	{MoveID:158s,MovePP:5b}	{MoveID:49s,MovePP:15b}	{MoveID:442s,MovePP:5b}	{MoveID:225s,MovePP:5b}	Modest	-	-	-	252	-	252
+612		Haxorus	Persim Berry	{MoveID:296s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:114s,MovePP:20b}	{MoveID:401s,MovePP:20b}	Naughty	170	-	170	-	-	170
+468		Togekiss	Liechi Berry	{MoveID:319s,MovePP:5b}	{MoveID:203s,MovePP:20b}	{MoveID:303s,MovePP:25b}	{MoveID:201s,MovePP:15b}	Brave	252	252	-	-	-	-
+637		Volcarona	Lum Berry	{MoveID:436s,MovePP:10b}	{MoveID:51s,MovePP:15b}	{MoveID:21s,MovePP:10b}	{MoveID:224s,MovePP:20b}	Timid	-	-	-	252	-	252
+59		Arcanine	Weakness Policy	{MoveID:319s,MovePP:5b}	{MoveID:260s,MovePP:15b}	{MoveID:205s,MovePP:5b}	{MoveID:56s,MovePP:15b}	Naughty	-	252	-	-	-	252
+567		Archeops	Enigma Berry	{MoveID:58s,MovePP:10b}	{MoveID:266s,MovePP:10b}	{MoveID:262s,MovePP:5b}	{MoveID:320s,MovePP:5b}	Mild	-	-	-	252	-	252
+149		Dragonite	Salac Berry	{MoveID:437s,MovePP:10b}	{MoveID:105s,MovePP:10b}	{MoveID:122s,MovePP:15b}	{MoveID:22s,MovePP:25b}	Mild	-	-	-	252	-	252
+248		Tyranitar	King's Rock	{MoveID:187s,MovePP:10b}	{MoveID:260s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:401s,MovePP:20b}	Hasty	-	252	-	-	-	252
+373		Salamence	Expert Belt	{MoveID:55s,MovePP:15b}	{MoveID:288s,MovePP:15b}	{MoveID:187s,MovePP:10b}	{MoveID:401s,MovePP:20b}	Lonely	-	170	-	-	170	170
+376		Metagross	Occa Berry	{MoveID:129s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:370s,MovePP:10b}	{MoveID:430s,MovePP:10b}	Quiet	170	170	-	170	-	-
+445		Garchomp	Snowball	{MoveID:158s,MovePP:5b}	{MoveID:266s,MovePP:10b}	{MoveID:104s,MovePP:15b}	{MoveID:267s,MovePP:10b}	Hasty	-	-	-	252	-	252
+635		Hydreigon	Wide Lens	{MoveID:442s,MovePP:5b}	{MoveID:158s,MovePP:5b}	{MoveID:438s,MovePP:10b}	{MoveID:526s,MovePP:30b}	Mild	-	170	-	170	-	170
+289		Slaking	Kee Berry	{MoveID:518s,MovePP:5b}	{MoveID:434s,MovePP:15b}	{MoveID:365s,MovePP:10b}	{MoveID:165s,MovePP:20b}	Jolly	-	252	-	-	-	252
+3		Venusaur	Salac Berry	{MoveID:33s,MovePP:10b}	{MoveID:27s,MovePP:10b}	{MoveID:36s,MovePP:20b}	{MoveID:21s,MovePP:10b}	Timid	-	-	-	252	-	252
+6		Charizard	Choice Scarf	{MoveID:210s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:209s,MovePP:15b}	{MoveID:260s,MovePP:15b}	Mild	-	170	-	170	-	170
+9		Blastoise	Leftovers	{MoveID:324s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:214s,MovePP:10b}	{MoveID:447s,MovePP:10b}	Adamant	252	252	-	-	-	-
+154		Meganium	Light Clay	{MoveID:15s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:147s,MovePP:20b}	{MoveID:20s,MovePP:30b}	Adamant	252	252	-	-	-	-
+157		Typhlosion	Choice Scarf	{MoveID:348s,MovePP:5b}	{MoveID:442s,MovePP:5b}	{MoveID:210s,MovePP:10b}	{MoveID:383s,MovePP:20b}	Modest	-	-	-	252	-	252
+160		Feraligatr	Lum Berry	{MoveID:471s,MovePP:20b}	{MoveID:159s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:67s,MovePP:15b}	Adamant	252	252	-	-	-	-
+254		Sceptile	White Herb	{MoveID:459s,MovePP:5b}	{MoveID:437s,MovePP:10b}	{MoveID:33s,MovePP:10b}	{MoveID:293s,MovePP:5b}	Timid	-	-	-	252	-	252
+257		Blaziken	Choice Band	{MoveID:211s,MovePP:15b}	{MoveID:208s,MovePP:15b}	{MoveID:68s,MovePP:15b}	{MoveID:58s,MovePP:10b}	Hardy	-	252	-	-	-	252
+260		Swampert	Maranga Berry	{MoveID:58s,MovePP:10b}	{MoveID:447s,MovePP:10b}	{MoveID:159s,MovePP:15b}	{MoveID:286s,MovePP:5b}	Adamant	252	252	-	-	-	-
+389		Torterra	Custap Berry	{MoveID:58s,MovePP:10b}	{MoveID:260s,MovePP:15b}	{MoveID:15s,MovePP:15b}	{MoveID:464s,MovePP:15b}	Adamant	-	252	-	-	252	-
+392		Infernape	Life Orb	{MoveID:324s,MovePP:10b}	{MoveID:415s,MovePP:5b}	{MoveID:205s,MovePP:5b}	{MoveID:286s,MovePP:5b}	Hasty	-	252	-	-	-	252
+395		Empoleon	Lum Berry	{MoveID:104s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:381s,MovePP:15b}	{MoveID:292s,MovePP:15b}	Quiet	252	-	-	252	-	-
+497		Serperior	Bright Powder	{MoveID:459s,MovePP:5b}	{MoveID:38s,MovePP:10b}	{MoveID:57s,MovePP:5b}	{MoveID:16s,MovePP:10b}	Calm	170	-	170	-	170	-
+500		Emboar	Quick Claw	{MoveID:211s,MovePP:15b}	{MoveID:201s,MovePP:15b}	{MoveID:204s,MovePP:20b}	{MoveID:58s,MovePP:10b}	Adamant	-	170	170	-	170	-
+503		Samurott	Custap Berry	{MoveID:203s,MovePP:20b}	{MoveID:159s,MovePP:15b}	{MoveID:435s,MovePP:15b}	{MoveID:471s,MovePP:20b}	Adamant	-	170	170	-	170	-
+51		Dugtrio	Choice Band	{MoveID:58s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:237s,MovePP:15b}	{MoveID:203s,MovePP:20b}	Jolly	-	252	-	-	-	252
+105		Marowak	Thick Club	{MoveID:58s,MovePP:10b}	{MoveID:286s,MovePP:5b}	{MoveID:113s,MovePP:20b}	{MoveID:31s,MovePP:15b}	Jolly	-	252	-	-	-	252
+308		Medicham	Expert Belt	{MoveID:168s,MovePP:10b}	{MoveID:288s,MovePP:15b}	{MoveID:67s,MovePP:15b}	{MoveID:446s,MovePP:30b}	Jolly	-	252	-	-	-	252
+195		Quagsire	Rindo Berry	{MoveID:58s,MovePP:10b}	{MoveID:214s,MovePP:10b}	{MoveID:67s,MovePP:15b}	{MoveID:286s,MovePP:5b}	Adamant	-	252	-	-	252	-
+210		Granbull	Sitrus Berry	{MoveID:12s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:263s,MovePP:15b}	{MoveID:296s,MovePP:10b}	Adamant	-	252	-	-	-	252
+124		Jynx	Expert Belt	{MoveID:292s,MovePP:15b}	{MoveID:106s,MovePP:5b}	{MoveID:129s,MovePP:10b}	{MoveID:442s,MovePP:5b}	Modest	-	-	-	252	-	252
+122		Mr. Mime	Light Clay	{MoveID:20s,MovePP:30b}	{MoveID:129s,MovePP:10b}	{MoveID:147s,MovePP:20b}	{MoveID:567s,MovePP:10b}	Bold	252	-	252	-	-	-
+171		Lanturn	Petaya Berry	{MoveID:104s,MovePP:15b}	{MoveID:457s,MovePP:15b}	{MoveID:123s,MovePP:20b}	{MoveID:105s,MovePP:10b}	Modest	-	-	170	170	170	-
+286		Breloom	Focus Sash	{MoveID:179s,MovePP:15b}	{MoveID:331s,MovePP:20b}	{MoveID:187s,MovePP:10b}	{MoveID:15s,MovePP:15b}	Jolly	-	252	-	-	-	252
+205		Forretress	Iron Ball	{MoveID:218s,MovePP:5b}	{MoveID:58s,MovePP:10b}	{MoveID:469s,MovePP:20b}	{MoveID:184s,MovePP:5b}	Brave	252	252	-	-	-	-
+227		Skarmory	Choice Scarf	{MoveID:443s,MovePP:15b}	{MoveID:303s,MovePP:25b}	{MoveID:434s,MovePP:15b}	{MoveID:187s,MovePP:10b}	Jolly	-	252	-	-	-	252
+359		Absol	Scope Lens	{MoveID:434s,MovePP:15b}	{MoveID:288s,MovePP:15b}	{MoveID:259s,MovePP:5b}	{MoveID:342s,MovePP:5b}	Jolly	-	252	-	-	-	252
+340		Whiscash	Expert Belt	{MoveID:266s,MovePP:10b}	{MoveID:104s,MovePP:15b}	{MoveID:106s,MovePP:5b}	{MoveID:21s,MovePP:10b}	Modest	-	-	-	252	252	-
+297		Hariyama	Flame Orb	{MoveID:324s,MovePP:10b}	{MoveID:415s,MovePP:5b}	{MoveID:293s,MovePP:5b}	{MoveID:58s,MovePP:10b}	Brave	-	252	252	-	-	-
+416		Vespiquen	Sitrus Berry	{MoveID:472s,MovePP:15b}	{MoveID:473s,MovePP:10b}	{MoveID:405s,MovePP:10b}	{MoveID:142s,MovePP:10b}	Impish	170	-	170	-	170	-
+26		Raichu	Focus Sash	{MoveID:68s,MovePP:15b}	{MoveID:237s,MovePP:15b}	{MoveID:123s,MovePP:20b}	{MoveID:324s,MovePP:10b}	Jolly	-	252	-	-	-	252
+87		Dewgong	Quick Claw	{MoveID:324s,MovePP:10b}	{MoveID:104s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:471s,MovePP:20b}	Mild	-	-	-	252	252	-
+310		Manectric	Air Balloon	{MoveID:122s,MovePP:15b}	{MoveID:205s,MovePP:5b}	{MoveID:524s,MovePP:20b}	{MoveID:133s,MovePP:30b}	Timid	-	-	-	252	-	252
+398		Staraptor	Choice Band	{MoveID:415s,MovePP:5b}	{MoveID:443s,MovePP:15b}	{MoveID:254s,MovePP:20b}	{MoveID:59s,MovePP:5b}	Mild	-	252	-	-	-	252
+423		Gastrodon	Leftovers	{MoveID:267s,MovePP:10b}	{MoveID:266s,MovePP:10b}	{MoveID:104s,MovePP:15b}	{MoveID:139s,MovePP:10b}	Quiet	-	-	252	252	-	-
+435		Skuntank	Life Orb	{MoveID:225s,MovePP:5b}	{MoveID:259s,MovePP:5b}	{MoveID:501s,MovePP:15b}	{MoveID:433s,MovePP:20b}	Jolly	-	252	-	-	-	252
+539		Sawk	Expert Belt	{MoveID:415s,MovePP:5b}	{MoveID:268s,MovePP:10b}	{MoveID:499s,MovePP:20b}	{MoveID:58s,MovePP:10b}	Jolly	-	252	-	-	-	252
+538		Throh	Expert Belt	{MoveID:58s,MovePP:10b}	{MoveID:492s,MovePP:10b}	{MoveID:268s,MovePP:10b}	{MoveID:187s,MovePP:10b}	Adamant	-	170	170	-	170	-
+521		Unfezant	Power Herb	{MoveID:175s,MovePP:5b}	{MoveID:25s,MovePP:20b}	{MoveID:293s,MovePP:5b}	{MoveID:254s,MovePP:20b}	Jolly	-	252	-	-	-	252
+45		Vileplume	Big Root	{MoveID:26s,MovePP:15b}	{MoveID:341s,MovePP:20b}	{MoveID:16s,MovePP:10b}	{MoveID:276s,MovePP:10b}	Modest	252	-	-	252	-	-
+71		Victreebel	Focus Sash	{MoveID:19s,MovePP:5b}	{MoveID:24s,MovePP:10b}	{MoveID:27s,MovePP:10b}	{MoveID:371s,MovePP:10b}	Modest	-	-	-	252	-	252
+101		Electrode	Air Balloon	{MoveID:122s,MovePP:15b}	{MoveID:318s,MovePP:20b}	{MoveID:381s,MovePP:15b}	{MoveID:21s,MovePP:10b}	Timid	-	-	-	252	-	252
+272		Ludicolo	Leftovers	{MoveID:216s,MovePP:5b}	{MoveID:4s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:276s,MovePP:10b}	Bold	-	-	170	170	170	-
+275		Shiftry	Heat Rock	{MoveID:19s,MovePP:5b}	{MoveID:24s,MovePP:10b}	{MoveID:269s,MovePP:15b}	{MoveID:184s,MovePP:5b}	Hardy	-	-	252	252	-	-
+295		Exploud	Expert Belt	{MoveID:58s,MovePP:10b}	{MoveID:201s,MovePP:15b}	{MoveID:67s,MovePP:15b}	{MoveID:260s,MovePP:15b}	Adamant	-	252	252	-	-	-
+428		Lopunny	Chople Berry	{MoveID:311s,MovePP:5b}	{MoveID:324s,MovePP:10b}	{MoveID:331s,MovePP:20b}	{MoveID:318s,MovePP:20b}	Jolly	252	-	-	-	-	252
+478		Froslass	Icy Rock	{MoveID:220s,MovePP:10b}	{MoveID:106s,MovePP:5b}	{MoveID:448s,MovePP:30b}	{MoveID:227s,MovePP:15b}	Timid	-	-	-	252	-	252
+549		Lilligant	Leftovers	{MoveID:494s,MovePP:20b}	{MoveID:33s,MovePP:10b}	{MoveID:4s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Bold	252	-	252	-	-	-
+555		Darmanitan	Assault Vest	{MoveID:129s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:211s,MovePP:15b}	{MoveID:205s,MovePP:5b}	Sassy	-	-	252	-	252	-
+424		Ambipom	Life Orb	{MoveID:324s,MovePP:10b}	{MoveID:475s,MovePP:10b}	{MoveID:268s,MovePP:10b}	{MoveID:201s,MovePP:15b}	Jolly	-	252	-	-	-	252
+563		Cofagrigus	Maranga Berry	{MoveID:207s,MovePP:15b}	{MoveID:227s,MovePP:15b}	{MoveID:270s,MovePP:5b}	{MoveID:455s,MovePP:5b}	Quiet	252	-	-	252	-	-
+623		Golurk	Lum Berry	{MoveID:308s,MovePP:5b}	{MoveID:382s,MovePP:20b}	{MoveID:58s,MovePP:10b}	{MoveID:187s,MovePP:10b}	Adamant	252	252	-	-	-	-
+632		Durant	Occa Berry	{MoveID:435s,MovePP:15b}	{MoveID:464s,MovePP:15b}	{MoveID:187s,MovePP:10b}	{MoveID:208s,MovePP:15b}	Jolly	-	252	-	-	-	252
+76		Golem	Focus Sash	{MoveID:187s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:184s,MovePP:5b}	{MoveID:489s,MovePP:15b}	Jolly	-	252	-	-	-	252
+80		Slowbro	Leftovers	{MoveID:129s,MovePP:10b}	{MoveID:104s,MovePP:15b}	{MoveID:365s,MovePP:10b}	{MoveID:165s,MovePP:20b}	Bold	252	-	252	-	-	-
+110		Weezing	Black Sludge	{MoveID:27s,MovePP:10b}	{MoveID:124s,MovePP:10b}	{MoveID:158s,MovePP:5b}	{MoveID:227s,MovePP:15b}	Modest	252	-	-	252	-	-
+115		Kangaskhan	Chople Berry	{MoveID:324s,MovePP:10b}	{MoveID:12s,MovePP:15b}	{MoveID:515s,MovePP:10b}	{MoveID:259s,MovePP:5b}	Jolly	-	252	-	-	-	252
+128		Tauros	Life Orb	{MoveID:12s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:268s,MovePP:10b}	{MoveID:59s,MovePP:5b}	Jolly	-	252	-	-	-	252
+442		Spiritomb	Leftovers	{MoveID:207s,MovePP:15b}	{MoveID:559s,MovePP:30b}	{MoveID:37s,MovePP:15b}	{MoveID:230s,MovePP:10b}	Careful	252	-	-	-	252	-
+615		Cryogonal	Occa Berry	{MoveID:292s,MovePP:15b}	{MoveID:221s,MovePP:10b}	{MoveID:106s,MovePP:5b}	{MoveID:385s,MovePP:5b}	Timid	-	-	-	252	-	252
+621		Druddigon	Quick Claw	{MoveID:260s,MovePP:15b}	{MoveID:55s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:187s,MovePP:10b}	Adamant	252	252	-	-	-	-
+518		Musharna	Scope Lens	{MoveID:129s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:33s,MovePP:10b}	{MoveID:346s,MovePP:10b}	Modest	-	-	252	252	-	-
+560		Scrafty	Muscle Band	{MoveID:38s,MovePP:10b}	{MoveID:268s,MovePP:10b}	{MoveID:168s,MovePP:10b}	{MoveID:331s,MovePP:20b}	Adamant	252	252	-	-	-	-
+598		Ferrothorn	Custap Berry	{MoveID:21s,MovePP:10b}	{MoveID:268s,MovePP:10b}	{MoveID:184s,MovePP:5b}	{MoveID:218s,MovePP:5b}	Brave	252	252	-	-	-	-
+65		Alakazam	Wise Glasses	{MoveID:129s,MovePP:10b}	{MoveID:442s,MovePP:5b}	{MoveID:381s,MovePP:15b}	{MoveID:36s,MovePP:20b}	Timid	-	-	-	252	-	252
+199		Slowking	Choice Specs	{MoveID:129s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:381s,MovePP:15b}	{MoveID:442s,MovePP:5b}	Modest	-	-	-	252	252	-
+241		Miltank	Scope Lens	{MoveID:178s,MovePP:10b}	{MoveID:31s,MovePP:15b}	{MoveID:68s,MovePP:15b}	{MoveID:67s,MovePP:15b}	Adamant	-	252	252	-	-	-
+334		Altaria	Power Herb	{MoveID:401s,MovePP:20b}	{MoveID:438s,MovePP:10b}	{MoveID:175s,MovePP:5b}	{MoveID:58s,MovePP:10b}	Jolly	-	252	-	-	-	252
+454		{MoveID:16s,MovePP:10b}roak	Focus Sash	{MoveID:27s,MovePP:10b}	{MoveID:442s,MovePP:5b}	{MoveID:227s,MovePP:15b}	{MoveID:269s,MovePP:15b}	Modest	-	-	-	252	-	252
+576		Gothitelle	Kee Berry	{MoveID:298s,MovePP:20b}	{MoveID:22s,MovePP:25b}	{MoveID:129s,MovePP:10b}	{MoveID:229s,MovePP:10b}	Modest	252	-	-	252	-	-
+579		Reuniclus	Colbur Berry	{MoveID:224s,MovePP:20b}	{MoveID:129s,MovePP:10b}	{MoveID:442s,MovePP:5b}	{MoveID:227s,MovePP:15b}	Quiet	-	-	252	252	-	-
+625		Bisharp	Chople Berry	{MoveID:464s,MovePP:15b}	{MoveID:434s,MovePP:15b}	{MoveID:499s,MovePP:20b}	{MoveID:259s,MovePP:5b}	Jolly	-	252	-	-	-	252
+460		Abomasnow	Focus Sash	{MoveID:106s,MovePP:5b}	{MoveID:470s,MovePP:15b}	{MoveID:442s,MovePP:5b}	{MoveID:448s,MovePP:30b}	Quiet	252	-	-	252	-	-
+31		Nidoqueen	Black Sludge	{MoveID:27s,MovePP:10b}	{MoveID:266s,MovePP:10b}	{MoveID:51s,MovePP:15b}	{MoveID:105s,MovePP:10b}	Modest	252	-	-	252	-	-
+34		Nidoking	Black Sludge	{MoveID:266s,MovePP:10b}	{MoveID:27s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:292s,MovePP:15b}	Modest	-	-	-	252	-	252
+346		Cradily	Leftovers	{MoveID:267s,MovePP:10b}	{MoveID:16s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:58s,MovePP:10b}	Relaxed	252	-	252	-	-	-
+348		Armaldo	Life Orb	{MoveID:435s,MovePP:15b}	{MoveID:187s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:215s,MovePP:15b}	Adamant	252	-	-	-	252	-
+409		Rampardos	Choice Scarf	{MoveID:478s,MovePP:5b}	{MoveID:58s,MovePP:10b}	{MoveID:201s,MovePP:15b}	{MoveID:68s,MovePP:15b}	Jolly	-	252	-	-	-	252
+411		Bastiodon	Leftovers	{MoveID:286s,MovePP:5b}	{MoveID:126s,MovePP:5b}	{MoveID:26s,MovePP:15b}	{MoveID:215s,MovePP:15b}	Careful	252	-	-	-	252	-
+419		Floatzel	Damp Rock	{MoveID:104s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:442s,MovePP:5b}	{MoveID:216s,MovePP:5b}	Hasty	-	-	-	252	-	252
+429		Mismagius	Sitrus Berry	{MoveID:292s,MovePP:15b}	{MoveID:227s,MovePP:15b}	{MoveID:122s,MovePP:15b}	{MoveID:270s,MovePP:5b}	Timid	-	-	-	252	-	252
+565		Carracosta	Damp Rock	{MoveID:216s,MovePP:5b}	{MoveID:159s,MovePP:15b}	{MoveID:187s,MovePP:10b}	{MoveID:58s,MovePP:10b}	Adamant	-	252	-	-	-	252
+589		Escavalier	Life Orb	{MoveID:309s,MovePP:10b}	{MoveID:215s,MovePP:15b}	{MoveID:433s,MovePP:20b}	{MoveID:464s,MovePP:15b}	Brave	252	252	-	-	-	-
+617		Accelgor	Focus Sash	{MoveID:254s,MovePP:20b}	{MoveID:436s,MovePP:10b}	{MoveID:442s,MovePP:5b}	{MoveID:519s,MovePP:5b}	Timid	252	-	-	-	-	252
+523		Zebstrika	Air Balloon	{MoveID:204s,MovePP:20b}	{MoveID:16s,MovePP:10b}	{MoveID:263s,MovePP:15b}	{MoveID:524s,MovePP:20b}	Jolly	-	252	-	-	-	252
+426		Drifblim	Wise Glasses	{MoveID:227s,MovePP:15b}	{MoveID:122s,MovePP:15b}	{MoveID:292s,MovePP:15b}	{MoveID:270s,MovePP:5b}	Timid	-	-	252	-	-	252
+537		Seismitoad	Damp Rock	{MoveID:216s,MovePP:5b}	{MoveID:386s,MovePP:10b}	{MoveID:266s,MovePP:10b}	{MoveID:27s,MovePP:10b}	Timid	-	-	-	252	-	252
+62		Poliwrath	Leftovers	{MoveID:159s,MovePP:15b}	{MoveID:331s,MovePP:20b}	{MoveID:311s,MovePP:5b}	{MoveID:38s,MovePP:10b}	Adamant	252	252	-	-	-	-
+78		Rapidash	Focus Sash	{MoveID:211s,MovePP:15b}	{MoveID:433s,MovePP:20b}	{MoveID:312s,MovePP:15b}	{MoveID:87s,MovePP:5b}	Jolly	-	252	-	-	-	252
+89		Muk	Zoom Lens	{MoveID:463s,MovePP:5b}	{MoveID:268s,MovePP:10b}	{MoveID:559s,MovePP:30b}	{MoveID:232s,MovePP:10b}	Brave	252	252	-	-	-	-
+94		Gengar	Payapa Berry	{MoveID:227s,MovePP:15b}	{MoveID:33s,MovePP:10b}	{MoveID:567s,MovePP:10b}	{MoveID:505s,MovePP:15b}	Timid	-	-	-	252	-	252
+181		Ampharos	Chesto Berry	{MoveID:123s,MovePP:20b}	{MoveID:229s,MovePP:10b}	{MoveID:57s,MovePP:5b}	{MoveID:29s,MovePP:10b}	Modest	252	-	-	252	-	-
+186		Politoed	Chesto Berry	{MoveID:159s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:243s,MovePP:10b}	{MoveID:29s,MovePP:10b}	Careful	-	252	-	-	252	-
+127		Pinsir	Lax Incense	{MoveID:435s,MovePP:15b}	{MoveID:342s,MovePP:5b}	{MoveID:286s,MovePP:5b}	{MoveID:59s,MovePP:5b}	Adamant	-	252	252	-	-	-
+212		Scizor	Life Orb	{MoveID:35s,MovePP:20b}	{MoveID:446s,MovePP:30b}	{MoveID:237s,MovePP:15b}	{MoveID:254s,MovePP:20b}	Brave	252	252	-	-	-	-
+214		Heracross	Coba Berry	{MoveID:309s,MovePP:10b}	{MoveID:286s,MovePP:5b}	{MoveID:28s,MovePP:20b}	{MoveID:208s,MovePP:15b}	Jolly	-	252	-	-	-	252
+217		Ursaring	{MoveID:16s,MovePP:10b} Orb	{MoveID:28s,MovePP:20b}	{MoveID:342s,MovePP:5b}	{MoveID:260s,MovePP:15b}	{MoveID:21s,MovePP:10b}	Adamant	252	252	-	-	-	-
+229		Houndoom	Air Balloon	{MoveID:51s,MovePP:15b}	{MoveID:227s,MovePP:15b}	{MoveID:27s,MovePP:10b}	{MoveID:207s,MovePP:15b}	Timid	-	-	-	252	-	252
+232		Donphan	Maranga Berry	{MoveID:58s,MovePP:10b}	{MoveID:218s,MovePP:5b}	{MoveID:48s,MovePP:15b}	{MoveID:449s,MovePP:15b}	Brave	-	252	252	-	-	-
+321		Wailord	Leftovers	{MoveID:159s,MovePP:15b}	{MoveID:447s,MovePP:10b}	{MoveID:429s,MovePP:20b}	{MoveID:232s,MovePP:10b}	Careful	-	-	252	-	252	-
+344		Claydol	Luminous Moss	{MoveID:266s,MovePP:10b}	{MoveID:129s,MovePP:10b}	{MoveID:510s,MovePP:15b}	{MoveID:105s,MovePP:10b}	Modest	-	-	-	252	252	-
+437		Bronzong	Quick Claw	{MoveID:464s,MovePP:15b}	{MoveID:288s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:184s,MovePP:5b}	Adamant	252	252	-	-	-	-
+452		Drapion	Scope Lens	{MoveID:462s,MovePP:20b}	{MoveID:434s,MovePP:15b}	{MoveID:48s,MovePP:15b}	{MoveID:58s,MovePP:10b}	Jolly	-	252	-	-	-	252
+405		Luxray	White Herb	{MoveID:449s,MovePP:15b}	{MoveID:450s,MovePP:15b}	{MoveID:342s,MovePP:5b}	{MoveID:123s,MovePP:20b}	Adamant	252	252	-	-	-	-
+38		Ninetales	Wide Lens	{MoveID:158s,MovePP:5b}	{MoveID:383s,MovePP:20b}	{MoveID:130s,MovePP:20b}	{MoveID:99s,MovePP:20b}	Timid	-	-	-	-	252	252
+68		Machamp	Choice Scarf	{MoveID:308s,MovePP:5b}	{MoveID:67s,MovePP:15b}	{MoveID:187s,MovePP:10b}	{MoveID:58s,MovePP:10b}	Jolly	-	252	-	-	-	252
+213		Shuckle	Lax Incense	{MoveID:218s,MovePP:5b}	{MoveID:26s,MovePP:15b}	{MoveID:38s,MovePP:10b}	{MoveID:420s,MovePP:10b}	Relaxed	252	-	252	-	-	-
+407		Roserade	White Herb	{MoveID:459s,MovePP:5b}	{MoveID:27s,MovePP:10b}	{MoveID:57s,MovePP:5b}	{MoveID:377s,MovePP:15b}	Timid	-	-	-	252	-	252
+430		Honchkrow	Life Orb	{MoveID:249s,MovePP:25b}	{MoveID:269s,MovePP:15b}	{MoveID:353s,MovePP:10b}	{MoveID:227s,MovePP:15b}	Modest	252	-	-	252	-	-
+526		Gigalith	Custap Berry	{MoveID:286s,MovePP:5b}	{MoveID:58s,MovePP:10b}	{MoveID:267s,MovePP:10b}	{MoveID:184s,MovePP:5b}	Adamant	252	252	-	-	-	-
+534		Conkeldurr	Sitrus Berry	{MoveID:392s,MovePP:20b}	{MoveID:440s,MovePP:10b}	{MoveID:268s,MovePP:10b}	{MoveID:286s,MovePP:5b}	Adamant	-	252	-	-	252	-
+530		Excadrill	Bright Powder	{MoveID:267s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:433s,MovePP:20b}	Adamant	-	170	170	-	170	-
+553		Krookodile	Roseli Berry	{MoveID:58s,MovePP:10b}	{MoveID:260s,MovePP:15b}	{MoveID:286s,MovePP:5b}	{MoveID:222s,MovePP:10b}	Adamant	-	252	-	-	252	-
+208		Steelix	Quick Claw	{MoveID:218s,MovePP:5b}	{MoveID:58s,MovePP:10b}	{MoveID:286s,MovePP:5b}	{MoveID:184s,MovePP:5b}	Brave	-	252	-	-	252	-
+461		Weavile	Focus Sash	{MoveID:324s,MovePP:10b}	{MoveID:67s,MovePP:15b}	{MoveID:434s,MovePP:15b}	{MoveID:21s,MovePP:10b}	Jolly	-	252	-	-	-	252
+472		Gliscor	Expert Belt	{MoveID:203s,MovePP:20b}	{MoveID:58s,MovePP:10b}	{MoveID:435s,MovePP:15b}	{MoveID:286s,MovePP:5b}	Adamant	-	252	252	-	-	-
+571		Zoroark	Sitrus Berry	{MoveID:35s,MovePP:20b}	{MoveID:434s,MovePP:15b}	{MoveID:254s,MovePP:20b}	{MoveID:259s,MovePP:5b}	Jolly	-	252	-	-	-	252
+630		Mandibuzz	Sitrus Berry	{MoveID:445s,MovePP:20b}	{MoveID:269s,MovePP:15b}	{MoveID:209s,MovePP:15b}	{MoveID:206s,MovePP:15b}	Modest	170	-	170	-	170	-
+628		Braviary	Choice Scarf	{MoveID:443s,MovePP:15b}	{MoveID:25s,MovePP:20b}	{MoveID:254s,MovePP:20b}	{MoveID:187s,MovePP:10b}	Adamant	-	252	-	-	-	252
+73		Tentacruel	Focus Sash	{MoveID:103s,MovePP:5b}	{MoveID:27s,MovePP:10b}	{MoveID:276s,MovePP:10b}	{MoveID:318s,MovePP:20b}	Modest	252	-	-	252	-	-
+142		Aerodactyl	Expert Belt	{MoveID:464s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:449s,MovePP:15b}	Jolly	-	252	-	-	-	252
+233		Porygon2	Choice Specs	{MoveID:191s,MovePP:10b}	{MoveID:122s,MovePP:15b}	{MoveID:129s,MovePP:10b}	{MoveID:105s,MovePP:10b}	Modest	252	-	-	252	-	-
+463		Lickilicky	Leftovers	{MoveID:25s,MovePP:20b}	{MoveID:218s,MovePP:5b}	{MoveID:232s,MovePP:10b}	{MoveID:29s,MovePP:10b}	Careful	252	-	-	-	252	-
+469		Yanmega	Lum Berry	{MoveID:375s,MovePP:5b}	{MoveID:209s,MovePP:15b}	{MoveID:293s,MovePP:5b}	{MoveID:276s,MovePP:10b}	Modest	-	-	-	252	-	252
+282		Gardevoir	Lum Berry	{MoveID:129s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:33s,MovePP:10b}	{MoveID:567s,MovePP:10b}	Timid	-	-	-	252	-	252
+475		Gallade	Scope Lens	{MoveID:451s,MovePP:20b}	{MoveID:286s,MovePP:5b}	{MoveID:434s,MovePP:15b}	{MoveID:435s,MovePP:15b}	Adamant	-	252	-	-	252	-
+103		Exeggutor	Expert Belt	{MoveID:459s,MovePP:5b}	{MoveID:129s,MovePP:10b}	{MoveID:27s,MovePP:10b}	{MoveID:320s,MovePP:5b}	Modest	252	-	-	252	-	-
+121		Starmie	Focus Sash	{MoveID:104s,MovePP:15b}	{MoveID:129s,MovePP:10b}	{MoveID:439s,MovePP:20b}	{MoveID:381s,MovePP:15b}	Timid	-	-	-	252	-	252
+330		Flygon	White Herb	{MoveID:456s,MovePP:5b}	{MoveID:266s,MovePP:10b}	{MoveID:51s,MovePP:15b}	{MoveID:276s,MovePP:10b}	Timid	-	-	-	252	-	252
+601		Klinklang	Occa Berry	{MoveID:514s,MovePP:10b}	{MoveID:543s,MovePP:15b}	{MoveID:524s,MovePP:20b}	{MoveID:59s,MovePP:5b}	Adamant	-	252	-	-	-	252
+609		Chandelure	White Herb	{MoveID:205s,MovePP:5b}	{MoveID:227s,MovePP:15b}	{MoveID:21s,MovePP:10b}	{MoveID:207s,MovePP:15b}	Modest	252	-	-	252	-	-
+134		Vaporeon	Leftovers	{MoveID:386s,MovePP:10b}	{MoveID:106s,MovePP:5b}	{MoveID:429s,MovePP:20b}	{MoveID:346s,MovePP:10b}	Modest	252	-	-	252	-	-
+135		Jolteon	King's Rock	{MoveID:124s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:216s,MovePP:5b}	{MoveID:346s,MovePP:10b}	Timid	-	-	-	252	-	252
+136		Flareon	White Herb	{MoveID:342s,MovePP:5b}	{MoveID:25s,MovePP:20b}	{MoveID:207s,MovePP:15b}	{MoveID:205s,MovePP:5b}	Brave	252	252	-	-	-	-
+196		Espeon	Lum Berry	{MoveID:129s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:57s,MovePP:5b}	{MoveID:36s,MovePP:20b}	Modest	-	-	-	252	-	252
+197		Umbreon	Sitrus Berry	{MoveID:241s,MovePP:20b}	{MoveID:37s,MovePP:15b}	{MoveID:230s,MovePP:10b}	{MoveID:138s,MovePP:40b}	Impish	252	-	252	-	-	-
+470		Leafeon	Heat Rock	{MoveID:19s,MovePP:5b}	{MoveID:400s,MovePP:15b}	{MoveID:435s,MovePP:15b}	{MoveID:14s,MovePP:5b}	Adamant	-	252	252	-	-	-
+471		Glaceon	Focus Sash	{MoveID:220s,MovePP:10b}	{MoveID:106s,MovePP:5b}	{MoveID:318s,MovePP:20b}	{MoveID:57s,MovePP:5b}	Modest	-	-	252	252	-	-
+448		Lucario	Muscle Band	{MoveID:415s,MovePP:5b}	{MoveID:58s,MovePP:10b}	{MoveID:362s,MovePP:10b}	{MoveID:208s,MovePP:15b}	Jolly	-	252	-	-	-	252
+450		Hippowdon	Sitrus Berry	{MoveID:58s,MovePP:10b}	{MoveID:260s,MovePP:15b}	{MoveID:365s,MovePP:10b}	{MoveID:346s,MovePP:10b}	Adamant	-	252	-	-	252	-
+476		Probopass	Scope Lens	{MoveID:286s,MovePP:5b}	{MoveID:464s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:184s,MovePP:5b}	Adamant	-	252	252	-	-	-
+477		Dusknoir	Leftovers	{MoveID:16s,MovePP:10b}	{MoveID:207s,MovePP:15b}	{MoveID:21s,MovePP:10b}	{MoveID:26s,MovePP:15b}	Sassy	252	-	-	-	252	-
+620		Mienshao	Focus Sash	{MoveID:113s,MovePP:20b}	{MoveID:324s,MovePP:10b}	{MoveID:168s,MovePP:10b}	{MoveID:254s,MovePP:20b}	Jolly	-	252	-	-	-	252
+614		Beartic	Sitrus Berry	{MoveID:35s,MovePP:20b}	{MoveID:447s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:201s,MovePP:15b}	Adamant	-	252	252	-	-	-
+626		Bouffalant	Sitrus Berry	{MoveID:35s,MovePP:20b}	{MoveID:58s,MovePP:10b}	{MoveID:542s,MovePP:15b}	{MoveID:268s,MovePP:10b}	Adamant	252	252	-	-	-	-
+306		Aggron	Wide Lens	{MoveID:312s,MovePP:15b}	{MoveID:438s,MovePP:10b}	{MoveID:447s,MovePP:10b}	{MoveID:286s,MovePP:5b}	Adamant	-	252	252	-	-	-
+365		Walrein	Leftovers	{MoveID:104s,MovePP:15b}	{MoveID:106s,MovePP:5b}	{MoveID:220s,MovePP:10b}	{MoveID:381s,MovePP:15b}	Modest	252	-	-	252	-	-
+473		Mamoswine	Lax Incense	{MoveID:220s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:342s,MovePP:5b}	{MoveID:126s,MovePP:5b}	Adamant	252	252	-	-	-	-
+131		Lapras	Bright Powder	{MoveID:104s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:122s,MovePP:15b}	{MoveID:129s,MovePP:10b}	Modest	252	-	-	252	-	-
+169		Crobat	Razor Claw	{MoveID:462s,MovePP:20b}	{MoveID:443s,MovePP:15b}	{MoveID:288s,MovePP:15b}	{MoveID:435s,MovePP:15b}	Jolly	-	252	-	-	-	252
+462		Magnezone	Bright Powder	{MoveID:229s,MovePP:10b}	{MoveID:221s,MovePP:10b}	{MoveID:430s,MovePP:10b}	{MoveID:123s,MovePP:20b}	Modest	-	-	252	252	-	-
+464		Rhyperior	Focus Sash	{MoveID:87s,MovePP:5b}	{MoveID:447s,MovePP:10b}	{MoveID:268s,MovePP:10b}	{MoveID:114s,MovePP:20b}	Impish	252	-	252	-	-	-
+465		Tan{MoveID:11s,MovePP:20b}	Heat Rock	{MoveID:19s,MovePP:5b}	{MoveID:24s,MovePP:10b}	{MoveID:14s,MovePP:5b}	{MoveID:419s,MovePP:5b}	Modest	-	-	252	252	-	-
+474		Porygon-Z	Expert Belt	{MoveID:129s,MovePP:10b}	{MoveID:105s,MovePP:10b}	{MoveID:381s,MovePP:15b}	{MoveID:229s,MovePP:10b}	Modest	252	-	-	252	-	-
+584		Vanilluxe	Leftovers	{MoveID:220s,MovePP:10b}	{MoveID:106s,MovePP:5b}	{MoveID:221s,MovePP:10b}	{MoveID:385s,MovePP:5b}	Modest	252	-	-	252	-	-
+604		Eelektross	Assault Vest	{MoveID:201s,MovePP:15b}	{MoveID:254s,MovePP:20b}	{MoveID:36s,MovePP:20b}	{MoveID:263s,MovePP:15b}	Brave	252	252	-	-	-	-
+130		Gyarados	Wacan Berry	{MoveID:401s,MovePP:20b}	{MoveID:159s,MovePP:15b}	{MoveID:286s,MovePP:5b}	{MoveID:58s,MovePP:10b}	Jolly	-	252	-	-	-	252
+143		Snorlax	Life Orb	{MoveID:12s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:260s,MovePP:15b}	{MoveID:21s,MovePP:10b}	Adamant	-	252	252	-	-	-
+230		Kingdra	Maranga Berry	{MoveID:216s,MovePP:5b}	{MoveID:103s,MovePP:5b}	{MoveID:437s,MovePP:10b}	{MoveID:105s,MovePP:10b}	Modest	170	-	-	170	-	170
+242		Blissey	Leftovers	{MoveID:122s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:114s,MovePP:20b}	{MoveID:224s,MovePP:20b}	Bold	252	-	252	-	-	-
+350		Milotic	Wide Lens	{MoveID:103s,MovePP:5b}	{MoveID:106s,MovePP:5b}	{MoveID:318s,MovePP:20b}	{MoveID:139s,MovePP:10b}	Calm	-	-	-	252	252	-
+466		Electivire	Air Balloon	{MoveID:122s,MovePP:15b}	{MoveID:129s,MovePP:10b}	{MoveID:442s,MovePP:5b}	{MoveID:381s,MovePP:15b}	Modest	-	-	-	252	-	252
+467		Magmortar	Passho Berry	{MoveID:211s,MovePP:15b}	{MoveID:68s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:201s,MovePP:15b}	Jolly	-	252	-	-	-	252
+612		Haxorus	Choice Band	{MoveID:296s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:55s,MovePP:15b}	{MoveID:187s,MovePP:10b}	Jolly	-	252	-	-	-	252
+468		Togekiss	King's Rock	{MoveID:36s,MovePP:20b}	{MoveID:123s,MovePP:20b}	{MoveID:209s,MovePP:15b}	{MoveID:227s,MovePP:15b}	Timid	-	-	-	252	-	252
+637		Volcarona	White Herb	{MoveID:205s,MovePP:5b}	{MoveID:494s,MovePP:20b}	{MoveID:436s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Bold	252	-	252	-	-	-
+59		Arcanine	White Herb	{MoveID:205s,MovePP:5b}	{MoveID:19s,MovePP:5b}	{MoveID:24s,MovePP:10b}	{MoveID:437s,MovePP:10b}	Timid	-	-	-	252	-	252
+567		Archeops	Choice Band	{MoveID:203s,MovePP:20b}	{MoveID:58s,MovePP:10b}	{MoveID:478s,MovePP:5b}	{MoveID:254s,MovePP:20b}	Jolly	-	252	-	-	-	252
+149		Dragonite	Choice Band	{MoveID:296s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:59s,MovePP:5b}	{MoveID:342s,MovePP:5b}	Adamant	-	252	-	-	252	-
+248		Tyranitar	Chople Berry	{MoveID:286s,MovePP:5b}	{MoveID:260s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:401s,MovePP:20b}	Jolly	-	252	-	-	-	252
+373		Salamence	Yache Berry	{MoveID:456s,MovePP:5b}	{MoveID:438s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:201s,MovePP:15b}	Jolly	-	252	-	-	-	252
+376		Metagross	Occa Berry	{MoveID:58s,MovePP:10b}	{MoveID:370s,MovePP:10b}	{MoveID:446s,MovePP:30b}	{MoveID:184s,MovePP:5b}	Adamant	170	170	-	-	170	-
+445		Garchomp	Choice Scarf	{MoveID:296s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:48s,MovePP:15b}	{MoveID:260s,MovePP:15b}	Adamant	-	252	-	-	-	252
+635		Hydreigon	White Herb	{MoveID:456s,MovePP:5b}	{MoveID:225s,MovePP:5b}	{MoveID:266s,MovePP:10b}	{MoveID:51s,MovePP:15b}	Timid	-	-	-	252	-	252
+289		Slaking	Choice Band	{MoveID:59s,MovePP:5b}	{MoveID:208s,MovePP:15b}	{MoveID:409s,MovePP:10b}	{MoveID:58s,MovePP:10b}	Adamant	252	252	-	-	-	-
+3		Venusaur	Black Sludge	{MoveID:4s,MovePP:10b}	{MoveID:38s,MovePP:10b}	{MoveID:27s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Bold	252	-	-	-	252	-
+6		Charizard	Assault Vest	{MoveID:210s,MovePP:10b}	{MoveID:209s,MovePP:15b}	{MoveID:437s,MovePP:10b}	{MoveID:442s,MovePP:5b}	Modest	-	-	-	252	-	252
+9		Blastoise	Custap Berry	{MoveID:346s,MovePP:10b}	{MoveID:159s,MovePP:15b}	{MoveID:331s,MovePP:20b}	{MoveID:187s,MovePP:10b}	Adamant	252	252	-	-	-	-
+154		Meganium	Leftovers	{MoveID:4s,MovePP:10b}	{MoveID:341s,MovePP:20b}	{MoveID:16s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Bold	-	-	252	-	252	-
+157		Typhlosion	Power Herb	{MoveID:383s,MovePP:20b}	{MoveID:458s,MovePP:15b}	{MoveID:60s,MovePP:20b}	{MoveID:24s,MovePP:10b}	Modest	-	-	-	252	-	252
+160		Feraligatr	Liechi Berry	{MoveID:401s,MovePP:20b}	{MoveID:159s,MovePP:15b}	{MoveID:260s,MovePP:15b}	{MoveID:38s,MovePP:10b}	Adamant	-	252	-	-	-	252
+254		Sceptile	Leftovers	{MoveID:4s,MovePP:10b}	{MoveID:262s,MovePP:5b}	{MoveID:33s,MovePP:10b}	{MoveID:16s,MovePP:10b}	Calm	-	-	252	-	252	-
+257		Blaziken	Shuca Berry	{MoveID:204s,MovePP:20b}	{MoveID:211s,MovePP:15b}	{MoveID:68s,MovePP:15b}	{MoveID:113s,MovePP:20b}	Hardy	-	252	-	-	-	252
+260		Swampert	Chesto Berry	{MoveID:232s,MovePP:10b}	{MoveID:29s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:159s,MovePP:15b}	Careful	252	-	-	-	252	-
+389		Torterra	Leftovers	{MoveID:326s,MovePP:20b}	{MoveID:4s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Hardy	252	-	-	-	252	-
+392		Infernape	Focus Sash	{MoveID:324s,MovePP:10b}	{MoveID:311s,MovePP:5b}	{MoveID:211s,MovePP:15b}	{MoveID:415s,MovePP:5b}	Jolly	-	252	-	-	-	252
+395		Empoleon	Petaya Berry	{MoveID:104s,MovePP:15b}	{MoveID:38s,MovePP:10b}	{MoveID:106s,MovePP:5b}	{MoveID:322s,MovePP:15b}	Calm	252	-	-	252	-	-
+497		Serperior	Choice Specs	{MoveID:459s,MovePP:5b}	-	-	-	Modest	-	-	-	252	-	252
+500		Emboar	Salac Berry	{MoveID:38s,MovePP:10b}	{MoveID:51s,MovePP:15b}	{MoveID:442s,MovePP:5b}	{MoveID:217s,MovePP:15b}	Timid	-	-	-	252	-	252
+503		Samurott	Salac Berry	{MoveID:103s,MovePP:5b}	{MoveID:105s,MovePP:10b}	{MoveID:36s,MovePP:20b}	{MoveID:21s,MovePP:10b}	Modest	-	-	170	170	170	-
+51		Dugtrio	Bright Powder	{MoveID:16s,MovePP:10b}	{MoveID:127s,MovePP:10b}	{MoveID:38s,MovePP:10b}	{MoveID:267s,MovePP:10b}	Jolly	-	252	-	-	-	252
+105		Marowak	Thick Club	{MoveID:58s,MovePP:10b}	{MoveID:296s,MovePP:10b}	{MoveID:293s,MovePP:5b}	{MoveID:187s,MovePP:10b}	Jolly	-	252	-	-	-	252
+308		Medicham	Life Orb	{MoveID:168s,MovePP:10b}	{MoveID:451s,MovePP:20b}	{MoveID:324s,MovePP:10b}	{MoveID:293s,MovePP:5b}	Adamant	-	252	-	-	-	252
+195		Quagsire	Leftovers	{MoveID:232s,MovePP:10b}	{MoveID:165s,MovePP:20b}	{MoveID:58s,MovePP:10b}	{MoveID:159s,MovePP:15b}	Careful	252	-	-	-	252	-
+210		Granbull	Life Orb	{MoveID:48s,MovePP:15b}	{MoveID:450s,MovePP:15b}	{MoveID:608s,MovePP:10b}	{MoveID:260s,MovePP:15b}	Adamant	-	252	-	-	-	252
+124		Jynx	Wide Lens	{MoveID:174s,MovePP:10b}	{MoveID:106s,MovePP:5b}	{MoveID:129s,MovePP:10b}	{MoveID:324s,MovePP:10b}	Timid	-	-	-	252	-	252
+122		Mr. Mime	Babiri Berry	{MoveID:227s,MovePP:15b}	{MoveID:381s,MovePP:15b}	{MoveID:567s,MovePP:10b}	{MoveID:129s,MovePP:10b}	Modest	-	-	-	252	-	252
+171		Lanturn	Chesto Berry	{MoveID:326s,MovePP:20b}	{MoveID:29s,MovePP:10b}	{MoveID:229s,MovePP:10b}	{MoveID:105s,MovePP:10b}	Bold	-	-	252	-	252	-
+286		Breloom	{MoveID:16s,MovePP:10b} Orb	{MoveID:21s,MovePP:10b}	{MoveID:4s,MovePP:10b}	{MoveID:38s,MovePP:10b}	{MoveID:331s,MovePP:20b}	Careful	170	-	170	-	170	-
+205		Forretress	Custap Berry	{MoveID:427s,MovePP:20b}	{MoveID:285s,MovePP:20b}	{MoveID:246s,MovePP:20b}	{MoveID:184s,MovePP:5b}	Careful	252	-	-	-	252	-
+227		Skarmory	Lum Berry	{MoveID:246s,MovePP:20b}	{MoveID:285s,MovePP:20b}	{MoveID:74s,MovePP:20b}	{MoveID:16s,MovePP:10b}	Careful	252	-	-	-	252	-
+359		Absol	Bright Powder	{MoveID:38s,MovePP:10b}	{MoveID:37s,MovePP:15b}	{MoveID:426s,MovePP:5b}	{MoveID:207s,MovePP:15b}	Jolly	-	252	-	-	-	252
+340		Whiscash	Leftovers	{MoveID:29s,MovePP:10b}	{MoveID:304s,MovePP:10b}	{MoveID:126s,MovePP:5b}	{MoveID:386s,MovePP:10b}	Calm	170	-	170	-	170	-
+297		Hariyama	Sitrus Berry	{MoveID:243s,MovePP:10b}	{MoveID:201s,MovePP:15b}	{MoveID:67s,MovePP:15b}	{MoveID:446s,MovePP:30b}	Careful	-	-	252	-	252	-
+416		Vespiquen	Custap Berry	{MoveID:472s,MovePP:15b}	{MoveID:254s,MovePP:20b}	{MoveID:203s,MovePP:20b}	{MoveID:270s,MovePP:5b}	Brave	252	252	-	-	-	-
+26		Raichu	Lum Berry	{MoveID:311s,MovePP:5b}	{MoveID:430s,MovePP:10b}	{MoveID:122s,MovePP:15b}	{MoveID:36s,MovePP:20b}	Timid	-	-	-	252	-	252
+87		Dewgong	Salac Berry	{MoveID:216s,MovePP:5b}	{MoveID:29s,MovePP:10b}	{MoveID:104s,MovePP:15b}	{MoveID:326s,MovePP:20b}	Bold	170	-	170	-	170	-
+310		Manectric	Choice Scarf	{MoveID:444s,MovePP:10b}	{MoveID:124s,MovePP:10b}	{MoveID:524s,MovePP:20b}	{MoveID:205s,MovePP:5b}	Timid	-	-	-	252	-	252
+398		Staraptor	Sitrus Berry	{MoveID:443s,MovePP:15b}	{MoveID:12s,MovePP:15b}	{MoveID:405s,MovePP:10b}	{MoveID:360s,MovePP:15b}	Jolly	-	252	-	-	-	252
+423		Gastrodon	Leftovers	{MoveID:165s,MovePP:20b}	{MoveID:232s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:159s,MovePP:15b}	Bold	-	-	252	-	252	-
+435		Skuntank	Custap Berry	{MoveID:434s,MovePP:15b}	{MoveID:433s,MovePP:20b}	{MoveID:158s,MovePP:5b}	{MoveID:184s,MovePP:5b}	Brave	-	170	170	-	170	-
+539		Sawk	Life Orb	{MoveID:415s,MovePP:5b}	{MoveID:58s,MovePP:10b}	{MoveID:286s,MovePP:5b}	{MoveID:225s,MovePP:5b}	Adamant	-	252	-	-	-	252
+538		Throh	Flame Orb	{MoveID:21s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:492s,MovePP:10b}	{MoveID:268s,MovePP:10b}	Brave	-	252	-	-	252	-
+521		Unfezant	Bright Powder	{MoveID:293s,MovePP:5b}	{MoveID:360s,MovePP:15b}	{MoveID:16s,MovePP:10b}	{MoveID:75s,MovePP:15b}	Impish	252	-	-	-	252	-
+45		Vileplume	Lum Berry	{MoveID:276s,MovePP:10b}	{MoveID:24s,MovePP:10b}	{MoveID:361s,MovePP:20b}	{MoveID:27s,MovePP:10b}	Modest	-	-	-	252	-	252
+71		Victreebel	Life Orb	{MoveID:371s,MovePP:10b}	{MoveID:24s,MovePP:10b}	{MoveID:27s,MovePP:10b}	{MoveID:421s,MovePP:10b}	Modest	-	-	-	252	-	252
+101		Electrode	Damp Rock	{MoveID:216s,MovePP:5b}	{MoveID:124s,MovePP:10b}	{MoveID:225s,MovePP:5b}	{MoveID:20s,MovePP:30b}	Timid	-	-	-	252	-	252
+272		Ludicolo	Kee Berry	{MoveID:324s,MovePP:10b}	{MoveID:103s,MovePP:5b}	{MoveID:4s,MovePP:10b}	{MoveID:36s,MovePP:20b}	Modest	-	-	-	252	-	252
+275		Shiftry	Focus Sash	{MoveID:324s,MovePP:10b}	{MoveID:259s,MovePP:5b}	{MoveID:113s,MovePP:20b}	{MoveID:21s,MovePP:10b}	Adamant	-	252	252	-	-	-
+295		Exploud	Life Orb	{MoveID:292s,MovePP:15b}	{MoveID:366s,MovePP:10b}	{MoveID:442s,MovePP:5b}	{MoveID:227s,MovePP:15b}	Timid	-	-	-	252	-	252
+428		Lopunny	Flame Orb	{MoveID:444s,MovePP:10b}	{MoveID:318s,MovePP:20b}	{MoveID:21s,MovePP:10b}	{MoveID:127s,MovePP:10b}	Jolly	252	-	-	-	-	252
+478		Froslass	Focus Sash	{MoveID:106s,MovePP:5b}	{MoveID:292s,MovePP:15b}	{MoveID:227s,MovePP:15b}	{MoveID:270s,MovePP:5b}	Timid	-	-	-	252	-	252
+549		Lilligant	Lum Berry	{MoveID:24s,MovePP:10b}	{MoveID:361s,MovePP:20b}	{MoveID:298s,MovePP:20b}	{MoveID:4s,MovePP:10b}	Bold	127	-	127	127	-	127
+555		Darmanitan	Choice Scarf	{MoveID:211s,MovePP:15b}	{MoveID:286s,MovePP:5b}	{MoveID:254s,MovePP:20b}	{MoveID:342s,MovePP:5b}	Impish	-	252	-	-	-	252
+424		Ambipom	King's Rock	{MoveID:416s,MovePP:10b}	{MoveID:225s,MovePP:5b}	{MoveID:25s,MovePP:20b}	{MoveID:268s,MovePP:10b}	Jolly	-	252	-	-	-	252
+563		Cofagrigus	Leftovers	{MoveID:207s,MovePP:15b}	{MoveID:16s,MovePP:10b}	{MoveID:271s,MovePP:10b}	{MoveID:224s,MovePP:20b}	Bold	252	-	-	-	252	-
+623		Golurk	Iron Ball	{MoveID:409s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:382s,MovePP:20b}	{MoveID:416s,MovePP:10b}	Brave	252	252	-	-	-	-
+632		Durant	Focus Sash	{MoveID:503s,MovePP:15b}	{MoveID:435s,MovePP:15b}	{MoveID:464s,MovePP:15b}	{MoveID:21s,MovePP:10b}	Jolly	252	-	-	-	-	252
+76		Golem	Iron Ball	{MoveID:187s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:184s,MovePP:5b}	{MoveID:416s,MovePP:10b}	Brave	-	252	-	-	252	-
+80		Slowbro	Leftovers	{MoveID:129s,MovePP:10b}	{MoveID:104s,MovePP:15b}	{MoveID:106s,MovePP:5b}	{MoveID:455s,MovePP:5b}	Quiet	252	-	252	-	-	-
+110		Weezing	Chesto Berry	{MoveID:16s,MovePP:10b}	{MoveID:207s,MovePP:15b}	{MoveID:326s,MovePP:20b}	{MoveID:29s,MovePP:10b}	Careful	252	-	-	-	252	-
+115		Kangaskhan	Salac Berry	{MoveID:324s,MovePP:10b}	{MoveID:262s,MovePP:5b}	{MoveID:25s,MovePP:20b}	{MoveID:38s,MovePP:10b}	Jolly	-	252	-	-	-	252
+128		Tauros	Sitrus Berry	{MoveID:16s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:26s,MovePP:15b}	{MoveID:58s,MovePP:10b}	Careful	252	-	-	-	252	-
+442		Spiritomb	Custap Berry	{MoveID:207s,MovePP:15b}	{MoveID:259s,MovePP:5b}	{MoveID:38s,MovePP:10b}	{MoveID:307s,MovePP:20b}	Careful	252	-	-	-	252	-
+615		Cryogonal	Focus Sash	{MoveID:220s,MovePP:10b}	{MoveID:292s,MovePP:15b}	{MoveID:106s,MovePP:5b}	{MoveID:184s,MovePP:5b}	Naive	-	-	-	252	-	252
+621		Druddigon	Choice Band	{MoveID:296s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:342s,MovePP:5b}	{MoveID:222s,MovePP:10b}	Adamant	252	252	-	-	-	-
+518		Musharna	Chesto Berry	{MoveID:508s,MovePP:20b}	{MoveID:224s,MovePP:20b}	{MoveID:227s,MovePP:15b}	{MoveID:29s,MovePP:10b}	Relaxed	-	-	252	-	252	-
+560		Scrafty	Leftovers	{MoveID:392s,MovePP:20b}	{MoveID:268s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:440s,MovePP:10b}	Careful	252	-	-	-	252	-
+598		Ferrothorn	Leftovers	{MoveID:232s,MovePP:10b}	{MoveID:39s,MovePP:15b}	{MoveID:218s,MovePP:5b}	{MoveID:341s,MovePP:20b}	Sassy	252	-	-	-	252	-
+65		Alakazam	Choice Specs	{MoveID:129s,MovePP:10b}	{MoveID:442s,MovePP:5b}	{MoveID:99s,MovePP:20b}	{MoveID:337s,MovePP:10b}	Timid	-	-	-	252	-	252
+199		Slowking	Lum Berry	{MoveID:129s,MovePP:10b}	{MoveID:104s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:455s,MovePP:5b}	Quiet	252	-	-	-	252	-
+241		Miltank	Salac Berry	{MoveID:38s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:288s,MovePP:15b}	Jolly	-	252	-	-	-	252
+334		Altaria	Wide Lens	{MoveID:537s,MovePP:10b}	{MoveID:96s,MovePP:15b}	{MoveID:597s,MovePP:15b}	{MoveID:170s,MovePP:15b}	Calm	252	-	-	-	252	-
+454		{MoveID:16s,MovePP:10b}roak	Wide Lens	{MoveID:316s,MovePP:5b}	{MoveID:259s,MovePP:5b}	{MoveID:463s,MovePP:5b}	{MoveID:225s,MovePP:5b}	Adamant	-	252	-	-	-	252
+576		Gothitelle	Bright Powder	{MoveID:38s,MovePP:10b}	{MoveID:329s,MovePP:15b}	{MoveID:230s,MovePP:10b}	{MoveID:129s,MovePP:10b}	Modest	252	-	-	252	-	-
+579		Reuniclus	{MoveID:16s,MovePP:10b} Orb	{MoveID:337s,MovePP:10b}	{MoveID:129s,MovePP:10b}	{MoveID:442s,MovePP:5b}	{MoveID:139s,MovePP:10b}	Relaxed	-	-	252	-	252	-
+625		Bisharp	Focus Sash	{MoveID:225s,MovePP:5b}	{MoveID:259s,MovePP:5b}	{MoveID:39s,MovePP:15b}	{MoveID:464s,MovePP:15b}	Adamant	252	252	-	-	-	-
+460		Abomasnow	Occa Berry	{MoveID:106s,MovePP:5b}	{MoveID:442s,MovePP:5b}	{MoveID:21s,MovePP:10b}	{MoveID:448s,MovePP:30b}	Quiet	252	-	-	252	-	-
+31		Nidoqueen	Black Sludge	{MoveID:433s,MovePP:20b}	{MoveID:222s,MovePP:10b}	{MoveID:60s,MovePP:20b}	{MoveID:58s,MovePP:10b}	Adamant	252	252	-	-	-	-
+34		Nidoking	Muscle Band	{MoveID:58s,MovePP:10b}	{MoveID:433s,MovePP:20b}	{MoveID:309s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Adamant	-	252	-	-	-	252
+346		Cradily	Big Root	{MoveID:326s,MovePP:20b}	{MoveID:21s,MovePP:10b}	{MoveID:341s,MovePP:20b}	{MoveID:276s,MovePP:10b}	Sassy	252	-	252	-	-	-
+348		Armaldo	Choice Band	{MoveID:342s,MovePP:5b}	{MoveID:286s,MovePP:5b}	{MoveID:58s,MovePP:10b}	{MoveID:435s,MovePP:15b}	Adamant	252	252	-	-	-	-
+409		Rampardos	Sitrus Berry	{MoveID:478s,MovePP:5b}	{MoveID:58s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Relaxed	-	252	-	-	252	-
+411		Bastiodon	Sitrus Berry	{MoveID:414s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:486s,MovePP:10b}	{MoveID:232s,MovePP:10b}	Brave	252	252	-	-	-	-
+419		Floatzel	Life Orb	{MoveID:159s,MovePP:15b}	{MoveID:471s,MovePP:20b}	{MoveID:113s,MovePP:20b}	{MoveID:21s,MovePP:10b}	Hasty	-	252	-	-	-	252
+429		Mismagius	Bright Powder	{MoveID:439s,MovePP:20b}	{MoveID:21s,MovePP:10b}	{MoveID:291s,MovePP:5b}	{MoveID:250s,MovePP:5b}	Bold	252	-	252	-	-	-
+565		Carracosta	Weakness Policy	{MoveID:159s,MovePP:15b}	{MoveID:187s,MovePP:10b}	{MoveID:471s,MovePP:20b}	{MoveID:58s,MovePP:10b}	Adamant	-	252	-	-	-	252
+589		Escavalier	Custap Berry	{MoveID:309s,MovePP:10b}	{MoveID:464s,MovePP:15b}	{MoveID:37s,MovePP:15b}	{MoveID:237s,MovePP:15b}	Adamant	252	252	-	-	-	-
+617		Accelgor	Focus Sash	{MoveID:436s,MovePP:10b}	{MoveID:311s,MovePP:5b}	{MoveID:442s,MovePP:5b}	{MoveID:21s,MovePP:10b}	Timid	-	-	-	252	-	252
+523		Zebstrika	Focus Sash	{MoveID:422s,MovePP:20b}	{MoveID:263s,MovePP:15b}	{MoveID:123s,MovePP:20b}	{MoveID:524s,MovePP:20b}	Jolly	-	252	-	-	-	252
+426		Drifblim	Custap Berry	{MoveID:227s,MovePP:15b}	{MoveID:122s,MovePP:15b}	{MoveID:130s,MovePP:20b}	{MoveID:270s,MovePP:5b}	Bold	-	-	-	-	252	252
+537		Seismitoad	Maranga Berry	{MoveID:201s,MovePP:15b}	{MoveID:433s,MovePP:20b}	{MoveID:127s,MovePP:10b}	{MoveID:268s,MovePP:10b}	Jolly	-	252	-	-	-	252
+62		Poliwrath	Sitrus Berry	{MoveID:159s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:331s,MovePP:20b}	{MoveID:515s,MovePP:10b}	Adamant	252	252	-	-	-	-
+78		Rapidash	Charcoal	{MoveID:211s,MovePP:15b}	{MoveID:309s,MovePP:10b}	{MoveID:12s,MovePP:15b}	{MoveID:21s,MovePP:10b}	Jolly	-	252	-	-	-	252
+89		Muk	Quick Claw	{MoveID:463s,MovePP:5b}	{MoveID:559s,MovePP:30b}	{MoveID:201s,MovePP:15b}	{MoveID:184s,MovePP:5b}	Adamant	252	252	-	-	-	-
+94		Gengar	Lum Berry	{MoveID:27s,MovePP:10b}	{MoveID:122s,MovePP:15b}	{MoveID:227s,MovePP:15b}	{MoveID:270s,MovePP:5b}	Timid	-	-	-	252	-	252
+181		Ampharos	Zoom Lens	{MoveID:124s,MovePP:10b}	{MoveID:442s,MovePP:5b}	{MoveID:381s,MovePP:15b}	{MoveID:439s,MovePP:20b}	Quiet	252	-	-	252	-	-
+186		Politoed	Wide Lens	{MoveID:103s,MovePP:5b}	{MoveID:106s,MovePP:5b}	{MoveID:442s,MovePP:5b}	{MoveID:130s,MovePP:20b}	Modest	-	-	-	252	252	-
+127		Pinsir	Choice Scarf	{MoveID:435s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:415s,MovePP:5b}	{MoveID:70s,MovePP:5b}	Jolly	-	252	-	-	-	252
+212		Scizor	Occa Berry	{MoveID:469s,MovePP:20b}	{MoveID:203s,MovePP:20b}	{MoveID:405s,MovePP:10b}	{MoveID:446s,MovePP:30b}	Adamant	252	252	-	-	-	-
+214		Heracross	Salac Berry	{MoveID:309s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:237s,MovePP:15b}	{MoveID:297s,MovePP:10b}	Jolly	-	252	-	-	-	252
+217		Ursaring	Quick Claw	{MoveID:25s,MovePP:20b}	{MoveID:316s,MovePP:5b}	{MoveID:58s,MovePP:10b}	{MoveID:203s,MovePP:20b}	Adamant	252	252	-	-	-	-
+229		Houndoom	White Herb	{MoveID:205s,MovePP:5b}	{MoveID:269s,MovePP:15b}	{MoveID:24s,MovePP:10b}	{MoveID:19s,MovePP:5b}	Timid	-	-	-	252	-	252
+232		Donphan	Quick Claw	{MoveID:58s,MovePP:10b}	{MoveID:286s,MovePP:5b}	{MoveID:15s,MovePP:15b}	{MoveID:126s,MovePP:5b}	Adamant	-	252	-	-	252	-
+321		Wailord	Zoom Lens	{MoveID:103s,MovePP:5b}	{MoveID:106s,MovePP:5b}	{MoveID:126s,MovePP:5b}	{MoveID:57s,MovePP:5b}	Modest	252	-	-	252	-	-
+344		Claydol	Custap Berry	{MoveID:58s,MovePP:10b}	{MoveID:288s,MovePP:15b}	{MoveID:187s,MovePP:10b}	{MoveID:184s,MovePP:5b}	Adamant	-	252	-	-	252	-
+437		Bronzong	Lum Berry	{MoveID:22s,MovePP:25b}	{MoveID:187s,MovePP:10b}	{MoveID:288s,MovePP:15b}	{MoveID:455s,MovePP:5b}	Brave	252	252	-	-	-	-
+452		Drapion	Razor Claw	{MoveID:462s,MovePP:20b}	{MoveID:434s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:35s,MovePP:20b}	Careful	252	252	-	-	-	-
+405		Luxray	Air Balloon	{MoveID:449s,MovePP:15b}	{MoveID:450s,MovePP:15b}	{MoveID:20s,MovePP:30b}	{MoveID:123s,MovePP:20b}	Careful	252	-	-	-	252	-
+38		Ninetales	Passho Berry	{MoveID:51s,MovePP:15b}	{MoveID:383s,MovePP:20b}	{MoveID:33s,MovePP:10b}	{MoveID:224s,MovePP:20b}	Timid	252	-	-	-	-	252
+68		Machamp	Flame Orb	{MoveID:21s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:415s,MovePP:5b}	{MoveID:268s,MovePP:10b}	Adamant	-	252	-	-	252	-
+213		Shuckle	Leftovers	{MoveID:16s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:267s,MovePP:10b}	{MoveID:89s,MovePP:20b}	Relaxed	252	-	252	-	-	-
+407		Roserade	Black Sludge	{MoveID:16s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:4s,MovePP:10b}	{MoveID:276s,MovePP:10b}	Bold	252	-	252	-	-	-
+430		Honchkrow	Life Orb	{MoveID:434s,MovePP:15b}	{MoveID:111s,MovePP:20b}	{MoveID:259s,MovePP:5b}	{MoveID:123s,MovePP:20b}	Adamant	252	252	-	-	-	-
+526		Gigalith	Leftovers	{MoveID:187s,MovePP:10b}	{MoveID:285s,MovePP:20b}	{MoveID:232s,MovePP:10b}	{MoveID:58s,MovePP:10b}	Quiet	252	-	-	-	252	-
+534		Conkeldurr	Iron Ball	{MoveID:416s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:342s,MovePP:5b}	{MoveID:240s,MovePP:30b}	Brave	-	252	-	-	252	-
+530		Excadrill	Life Orb	{MoveID:58s,MovePP:10b}	{MoveID:203s,MovePP:20b}	{MoveID:433s,MovePP:20b}	{MoveID:187s,MovePP:10b}	Adamant	-	170	170	-	170	-
+553		Krookodile	Liechi Berry	{MoveID:58s,MovePP:10b}	{MoveID:258s,MovePP:20b}	{MoveID:499s,MovePP:20b}	{MoveID:187s,MovePP:10b}	Jolly	-	252	-	-	-	252
+208		Steelix	Iron Ball	{MoveID:218s,MovePP:5b}	{MoveID:268s,MovePP:10b}	{MoveID:37s,MovePP:15b}	{MoveID:232s,MovePP:10b}	Relaxed	-	252	252	-	-	-
+461		Weavile	Focus Sash	{MoveID:225s,MovePP:5b}	{MoveID:67s,MovePP:15b}	{MoveID:434s,MovePP:15b}	{MoveID:324s,MovePP:10b}	Jolly	-	252	-	-	-	252
+472		Gliscor	Focus Sash	{MoveID:58s,MovePP:10b}	{MoveID:251s,MovePP:15b}	{MoveID:254s,MovePP:20b}	{MoveID:114s,MovePP:20b}	Jolly	252	-	-	-	-	252
+571		Zoroark	Focus Band	{MoveID:21s,MovePP:10b}	{MoveID:114s,MovePP:20b}	{MoveID:269s,MovePP:15b}	{MoveID:442s,MovePP:5b}	Timid	-	-	-	252	-	252
+630		Mandibuzz	Leftovers	{MoveID:38s,MovePP:10b}	{MoveID:37s,MovePP:15b}	{MoveID:426s,MovePP:5b}	{MoveID:405s,MovePP:10b}	Careful	170	-	170	-	170	-
+628		Braviary	Wacan Berry	{MoveID:443s,MovePP:15b}	{MoveID:412s,MovePP:15b}	{MoveID:342s,MovePP:5b}	{MoveID:59s,MovePP:5b}	Adamant	-	252	-	-	-	252
+73		Tentacruel	Black Sludge	{MoveID:104s,MovePP:15b}	{MoveID:16s,MovePP:10b}	{MoveID:17s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Bold	252	-	252	-	-	-
+142		Aerodactyl	Choice Band	{MoveID:286s,MovePP:5b}	{MoveID:203s,MovePP:20b}	{MoveID:58s,MovePP:10b}	{MoveID:260s,MovePP:15b}	Jolly	-	252	-	-	-	252
+233		Porygon2	Lum Berry	{MoveID:191s,MovePP:10b}	{MoveID:123s,MovePP:20b}	{MoveID:227s,MovePP:15b}	{MoveID:105s,MovePP:10b}	Modest	252	-	-	252	-	-
+463		Lickilicky	Lax Incense	{MoveID:88s,MovePP:15b}	{MoveID:460s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:184s,MovePP:5b}	Adamant	252	252	-	-	-	-
+469		Yanmega	King's Rock	{MoveID:436s,MovePP:10b}	{MoveID:209s,MovePP:15b}	{MoveID:293s,MovePP:5b}	{MoveID:227s,MovePP:15b}	Modest	-	-	-	252	-	252
+282		Gardevoir	Babiri Berry	{MoveID:129s,MovePP:10b}	{MoveID:597s,MovePP:15b}	{MoveID:442s,MovePP:5b}	{MoveID:122s,MovePP:15b}	Modest	-	-	-	252	-	252
+475		Gallade	Lum Berry	{MoveID:451s,MovePP:20b}	{MoveID:415s,MovePP:5b}	{MoveID:512s,MovePP:10b}	{MoveID:510s,MovePP:15b}	Jolly	-	252	-	-	-	252
+103		Exeggutor	Lum Berry	{MoveID:470s,MovePP:15b}	{MoveID:288s,MovePP:15b}	{MoveID:184s,MovePP:5b}	{MoveID:455s,MovePP:5b}	Brave	252	252	-	-	-	-
+121		Starmie	King's Rock	{MoveID:104s,MovePP:15b}	{MoveID:129s,MovePP:10b}	{MoveID:122s,MovePP:15b}	{MoveID:105s,MovePP:10b}	Timid	-	-	-	252	-	252
+330		Flygon	Lum Berry	{MoveID:58s,MovePP:10b}	{MoveID:296s,MovePP:10b}	{MoveID:260s,MovePP:15b}	{MoveID:286s,MovePP:5b}	Adamant	-	252	-	-	-	252
+601		Klinklang	Leftovers	{MoveID:221s,MovePP:10b}	{MoveID:122s,MovePP:15b}	{MoveID:21s,MovePP:10b}	{MoveID:16s,MovePP:10b}	Modest	-	-	-	252	-	252
+609		Chandelure	Leftovers	{MoveID:224s,MovePP:20b}	{MoveID:207s,MovePP:15b}	{MoveID:227s,MovePP:15b}	{MoveID:210s,MovePP:10b}	Bold	252	-	-	-	252	-
+134		Vaporeon	Expert Belt	{MoveID:104s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:381s,MovePP:15b}	Modest	252	-	-	252	-	-
+135		Jolteon	Razor Fang	{MoveID:122s,MovePP:15b}	{MoveID:57s,MovePP:5b}	{MoveID:373s,MovePP:20b}	{MoveID:381s,MovePP:15b}	Timid	-	-	-	252	-	252
+136		Flareon	White Herb	{MoveID:95s,MovePP:25b}	{MoveID:342s,MovePP:5b}	{MoveID:59s,MovePP:5b}	{MoveID:48s,MovePP:15b}	Adamant	-	252	-	-	252	-
+196		Espeon	Expert Belt	{MoveID:129s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:381s,MovePP:15b}	{MoveID:567s,MovePP:10b}	Timid	-	-	-	252	-	252
+197		Umbreon	Chesto Berry	{MoveID:232s,MovePP:10b}	{MoveID:257s,MovePP:5b}	{MoveID:268s,MovePP:10b}	{MoveID:29s,MovePP:10b}	Careful	252	-	252	-	-	-
+470		Leafeon	Quick Claw	{MoveID:400s,MovePP:15b}	{MoveID:435s,MovePP:15b}	{MoveID:203s,MovePP:20b}	{MoveID:293s,MovePP:5b}	Adamant	-	252	252	-	-	-
+471		Glaceon	Bright Powder	{MoveID:106s,MovePP:5b}	{MoveID:227s,MovePP:15b}	{MoveID:381s,MovePP:15b}	{MoveID:293s,MovePP:5b}	Modest	-	-	252	252	-	-
+448		Lucario	Weakness Policy	{MoveID:432s,MovePP:20b}	{MoveID:437s,MovePP:10b}	{MoveID:286s,MovePP:5b}	{MoveID:319s,MovePP:5b}	Hardy	-	170	-	170	-	170
+450		Hippowdon	Chesto Berry	{MoveID:232s,MovePP:10b}	{MoveID:29s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:260s,MovePP:15b}	Sassy	252	-	-	-	252	-
+476		Probopass	Life Orb	{MoveID:221s,MovePP:10b}	{MoveID:439s,MovePP:20b}	{MoveID:266s,MovePP:10b}	{MoveID:122s,MovePP:15b}	Modest	-	-	-	252	252	-
+477		Dusknoir	Lum Berry	{MoveID:559s,MovePP:30b}	{MoveID:307s,MovePP:20b}	{MoveID:270s,MovePP:5b}	{MoveID:455s,MovePP:5b}	Relaxed	252	-	-	-	252	-
+620		Mienshao	Muscle Band	{MoveID:278s,MovePP:10b}	{MoveID:324s,MovePP:10b}	{MoveID:168s,MovePP:10b}	{MoveID:486s,MovePP:10b}	Impish	252	252	-	-	-	-
+614		Beartic	Assault Vest	{MoveID:292s,MovePP:15b}	{MoveID:555s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:201s,MovePP:15b}	Jolly	-	252	-	-	-	252
+626		Bouffalant	Life Orb	{MoveID:58s,MovePP:10b}	{MoveID:542s,MovePP:15b}	{MoveID:268s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Adamant	252	252	-	-	-	-
+306		Aggron	Shuca Berry	{MoveID:414s,MovePP:10b}	{MoveID:225s,MovePP:5b}	{MoveID:58s,MovePP:10b}	{MoveID:208s,MovePP:15b}	Brave	-	252	-	-	252	-
+365		Walrein	Lax Incense	{MoveID:385s,MovePP:5b}	{MoveID:126s,MovePP:5b}	{MoveID:29s,MovePP:10b}	{MoveID:304s,MovePP:10b}	Bold	-	-	252	-	252	-
+473		Mamoswine	Life Orb	{MoveID:58s,MovePP:10b}	{MoveID:450s,MovePP:15b}	{MoveID:12s,MovePP:15b}	{MoveID:286s,MovePP:5b}	Adamant	252	252	-	-	-	-
+131		Lapras	Chesto Berry	{MoveID:291s,MovePP:5b}	{MoveID:29s,MovePP:10b}	{MoveID:88s,MovePP:15b}	{MoveID:389s,MovePP:5b}	Impish	-	-	252	-	252	-
+169		Crobat	Wide Lens	{MoveID:130s,MovePP:20b}	{MoveID:203s,MovePP:20b}	{MoveID:462s,MovePP:20b}	{MoveID:225s,MovePP:5b}	Jolly	-	252	-	-	-	252
+462		Magnezone	Assault Vest	{MoveID:122s,MovePP:15b}	{MoveID:221s,MovePP:10b}	{MoveID:191s,MovePP:10b}	{MoveID:524s,MovePP:20b}	Modest	-	-	-	252	252	-
+464		Rhyperior	Wide Lens	{MoveID:187s,MovePP:10b}	{MoveID:409s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Brave	252	252	-	-	-	-
+465		Tan{MoveID:11s,MovePP:20b}	Lax Incense	{MoveID:460s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:203s,MovePP:20b}	{MoveID:201s,MovePP:15b}	Adamant	-	252	252	-	-	-
+474		Porygon-Z	Sitrus Berry	{MoveID:191s,MovePP:10b}	{MoveID:122s,MovePP:15b}	{MoveID:227s,MovePP:15b}	{MoveID:139s,MovePP:10b}	Timid	-	-	-	252	-	252
+584		Vanilluxe	Maranga Berry	{MoveID:225s,MovePP:5b}	{MoveID:105s,MovePP:10b}	{MoveID:182s,MovePP:20b}	{MoveID:318s,MovePP:20b}	Calm	252	-	-	-	252	-
+604		Eelektross	Leftovers	{MoveID:229s,MovePP:10b}	{MoveID:36s,MovePP:20b}	{MoveID:51s,MovePP:15b}	{MoveID:21s,MovePP:10b}	Bold	252	-	-	-	252	-
+130		Gyarados	Chesto Berry	{MoveID:401s,MovePP:20b}	{MoveID:214s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:29s,MovePP:10b}	Careful	252	-	-	-	252	-
+143		Snorlax	Assault Vest	{MoveID:88s,MovePP:15b}	{MoveID:610s,MovePP:20b}	{MoveID:58s,MovePP:10b}	{MoveID:260s,MovePP:15b}	Careful	252	-	-	-	252	-
+230		Kingdra	White Herb	{MoveID:456s,MovePP:5b}	{MoveID:104s,MovePP:15b}	{MoveID:106s,MovePP:5b}	{MoveID:21s,MovePP:10b}	Modest	170	-	-	170	-	170
+242		Blissey	Chople Berry	{MoveID:16s,MovePP:10b}	{MoveID:141s,MovePP:10b}	{MoveID:265s,MovePP:10b}	{MoveID:167s,MovePP:10b}	Bold	-	-	252	-	252	-
+350		Milotic	Leftovers	{MoveID:105s,MovePP:10b}	{MoveID:29s,MovePP:10b}	{MoveID:304s,MovePP:10b}	{MoveID:104s,MovePP:15b}	Impish	252	-	-	-	252	-
+466		Electivire	Shuca Berry	{MoveID:68s,MovePP:15b}	{MoveID:31s,MovePP:15b}	{MoveID:67s,MovePP:15b}	{MoveID:58s,MovePP:10b}	Jolly	-	252	-	-	-	252
+467		Magmortar	White Herb	{MoveID:205s,MovePP:5b}	{MoveID:129s,MovePP:10b}	{MoveID:442s,MovePP:5b}	{MoveID:21s,MovePP:10b}	Timid	-	-	-	252	-	252
+612		Haxorus	Yache Berry	{MoveID:401s,MovePP:20b}	{MoveID:55s,MovePP:15b}	{MoveID:222s,MovePP:10b}	{MoveID:58s,MovePP:10b}	Jolly	-	252	-	-	-	252
+468		Togekiss	Expert Belt	{MoveID:432s,MovePP:20b}	{MoveID:209s,MovePP:15b}	{MoveID:210s,MovePP:10b}	{MoveID:567s,MovePP:10b}	Modest	-	-	-	252	-	252
+637		Volcarona	Leftovers	{MoveID:541s,MovePP:10b}	{MoveID:494s,MovePP:20b}	{MoveID:436s,MovePP:10b}	{MoveID:210s,MovePP:10b}	Bold	252	-	252	-	-	-
+59		Arcanine	Sitrus Berry	{MoveID:415s,MovePP:5b}	{MoveID:211s,MovePP:15b}	{MoveID:260s,MovePP:15b}	{MoveID:319s,MovePP:5b}	Jolly	-	252	-	-	-	252
+567		Archeops	Sitrus Berry	{MoveID:187s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:203s,MovePP:20b}	{MoveID:21s,MovePP:10b}	Jolly	-	252	-	-	-	252
+149		Dragonite	Snowball	{MoveID:438s,MovePP:10b}	{MoveID:312s,MovePP:15b}	{MoveID:319s,MovePP:5b}	{MoveID:31s,MovePP:15b}	Adamant	-	252	-	-	-	252
+248		Tyranitar	Focus Sash	{MoveID:187s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:342s,MovePP:5b}	{MoveID:222s,MovePP:10b}	Brave	252	252	-	-	-	-
+373		Salamence	Lum Berry	{MoveID:296s,MovePP:10b}	{MoveID:260s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:288s,MovePP:15b}	Jolly	-	252	-	-	-	252
+376		Metagross	{MoveID:16s,MovePP:10b} Orb	{MoveID:337s,MovePP:10b}	{MoveID:370s,MovePP:10b}	{MoveID:21s,MovePP:10b}	{MoveID:58s,MovePP:10b}	Careful	252	-	-	-	252	-
+445		Garchomp	Focus Sash	{MoveID:35s,MovePP:20b}	{MoveID:286s,MovePP:5b}	{MoveID:58s,MovePP:10b}	{MoveID:55s,MovePP:15b}	Jolly	-	252	-	-	-	252
+635		Hydreigon	Roseli Berry	{MoveID:438s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:260s,MovePP:15b}	{MoveID:222s,MovePP:10b}	Jolly	-	252	-	-	-	252
+289		Slaking	Life Orb	{MoveID:25s,MovePP:20b}	{MoveID:434s,MovePP:15b}	{MoveID:463s,MovePP:5b}	{MoveID:203s,MovePP:20b}	Jolly	-	252	-	-	-	252
+144		Articuno	Icy Rock	{MoveID:220s,MovePP:10b}	{MoveID:106s,MovePP:5b}	{MoveID:75s,MovePP:15b}	{MoveID:405s,MovePP:10b}	Modest	252	-	-	252	-	-
+145		Zapdos	Magnet	{MoveID:122s,MovePP:15b}	{MoveID:381s,MovePP:15b}	{MoveID:249s,MovePP:25b}	{MoveID:320s,MovePP:5b}	Timid	-	-	-	252	-	252
+146		Moltres	White Herb	{MoveID:205s,MovePP:5b}	{MoveID:209s,MovePP:15b}	{MoveID:412s,MovePP:15b}	{MoveID:207s,MovePP:15b}	Modest	-	-	-	252	-	252
+243		Raikou	Shuca Berry	{MoveID:122s,MovePP:15b}	{MoveID:524s,MovePP:20b}	{MoveID:227s,MovePP:15b}	{MoveID:383s,MovePP:20b}	Timid	-	-	-	252	-	252
+244		Entei	Focus Sash	{MoveID:205s,MovePP:5b}	{MoveID:204s,MovePP:20b}	{MoveID:48s,MovePP:15b}	{MoveID:286s,MovePP:5b}	Lonely	-	252	-	-	-	252
+245		Suicune	Chesto Berry	{MoveID:224s,MovePP:20b}	{MoveID:104s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:29s,MovePP:10b}	Bold	252	-	252	-	-	-
+377		Regirock	Leftovers	{MoveID:267s,MovePP:10b}	{MoveID:232s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:440s,MovePP:10b}	Careful	252	-	-	-	252	-
+378		Regice	Sitrus Berry	{MoveID:122s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:442s,MovePP:5b}	{MoveID:16s,MovePP:10b}	Modest	252	-	-	252	-	-
+379		Registeel	Chesto Berry	{MoveID:232s,MovePP:10b}	{MoveID:165s,MovePP:20b}	{MoveID:464s,MovePP:15b}	{MoveID:29s,MovePP:10b}	Careful	252	-	-	-	252	-
+638		Cobalion	Chesto Berry	{MoveID:442s,MovePP:5b}	{MoveID:221s,MovePP:10b}	{MoveID:224s,MovePP:20b}	{MoveID:29s,MovePP:10b}	Bold	252	-	-	-	252	-
+639		Terrakion	Expert Belt	{MoveID:415s,MovePP:5b}	{MoveID:58s,MovePP:10b}	{MoveID:286s,MovePP:5b}	{MoveID:203s,MovePP:20b}	Jolly	-	252	-	-	-	252
+640		Virizion	Salac Berry	{MoveID:532s,MovePP:15b}	{MoveID:400s,MovePP:15b}	{MoveID:225s,MovePP:5b}	{MoveID:286s,MovePP:5b}	Jolly	-	252	-	-	-	252
+641		Tornadus	Life Orb	{MoveID:541s,MovePP:10b}	{MoveID:36s,MovePP:20b}	{MoveID:442s,MovePP:5b}	{MoveID:269s,MovePP:15b}	Timid	-	-	-	252	-	252
+642		Thundurus	Chesto Berry	{MoveID:122s,MovePP:15b}	{MoveID:21s,MovePP:10b}	{MoveID:16s,MovePP:10b}	{MoveID:29s,MovePP:10b}	Bold	252	-	-	-	252	-
+380		Latias	Lax Incense	{MoveID:224s,MovePP:20b}	{MoveID:359s,MovePP:5b}	{MoveID:437s,MovePP:10b}	{MoveID:139s,MovePP:10b}	Bold	252	-	252	-	-	-
+381		Latios	Lax Incense	{MoveID:224s,MovePP:20b}	{MoveID:358s,MovePP:5b}	{MoveID:437s,MovePP:10b}	{MoveID:139s,MovePP:10b}	Bold	252	-	252	-	-	-
+485		Heatran	Focus Sash	{MoveID:458s,MovePP:15b}	{MoveID:266s,MovePP:10b}	{MoveID:221s,MovePP:10b}	{MoveID:269s,MovePP:15b}	Modest	252	-	-	252	-	-
+488		Cresselia	Chesto Berry	{MoveID:224s,MovePP:20b}	{MoveID:129s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:29s,MovePP:10b}	Bold	252	-	252	-	-	-
+645		Landorus	Apicot Berry	{MoveID:29s,MovePP:10b}	{MoveID:304s,MovePP:10b}	{MoveID:284s,MovePP:15b}	{MoveID:126s,MovePP:5b}	Careful	-	-	252	-	252	-
+486		Regigigas	Bright Powder	{MoveID:142s,MovePP:10b}	{MoveID:26s,MovePP:15b}	{MoveID:440s,MovePP:10b}	{MoveID:268s,MovePP:10b}	Adamant	252	252	-	-	-	-
+144		Articuno	Lum Berry	{MoveID:385s,MovePP:5b}	{MoveID:198s,MovePP:5b}	{MoveID:448s,MovePP:30b}	{MoveID:105s,MovePP:10b}	Bold	252	-	-	-	252	-
+145		Zapdos	Bright Powder	{MoveID:229s,MovePP:10b}	{MoveID:210s,MovePP:10b}	{MoveID:26s,MovePP:15b}	{MoveID:405s,MovePP:10b}	Bold	252	-	-	-	252	-
+146		Moltres	Power Herb	{MoveID:204s,MovePP:20b}	{MoveID:175s,MovePP:5b}	{MoveID:203s,MovePP:20b}	{MoveID:158s,MovePP:5b}	Naughty	-	252	-	-	-	252
+243		Raikou	Leftovers	{MoveID:229s,MovePP:10b}	{MoveID:430s,MovePP:10b}	{MoveID:224s,MovePP:20b}	{MoveID:227s,MovePP:15b}	Timid	-	-	252	-	-	252
+244		Entei	Chesto Berry	{MoveID:224s,MovePP:20b}	{MoveID:207s,MovePP:15b}	{MoveID:51s,MovePP:15b}	{MoveID:29s,MovePP:10b}	Bold	170	-	170	-	170	-
+245		Suicune	Sitrus Berry	{MoveID:103s,MovePP:5b}	{MoveID:105s,MovePP:10b}	{MoveID:227s,MovePP:15b}	{MoveID:318s,MovePP:20b}	Modest	252	-	-	252	-	-
+377		Regirock	Custap Berry	{MoveID:286s,MovePP:5b}	{MoveID:440s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:184s,MovePP:5b}	Adamant	252	252	-	-	-	-
+378		Regice	Chesto Berry	{MoveID:122s,MovePP:15b}	{MoveID:292s,MovePP:15b}	{MoveID:105s,MovePP:10b}	{MoveID:29s,MovePP:10b}	Timid	170	-	170	-	-	170
+379		Registeel	King's Rock	{MoveID:281s,MovePP:20b}	{MoveID:58s,MovePP:10b}	{MoveID:464s,MovePP:15b}	{MoveID:68s,MovePP:15b}	Jolly	-	252	-	-	-	252
+638		Cobalion	Maranga Berry	{MoveID:414s,MovePP:10b}	{MoveID:532s,MovePP:15b}	{MoveID:133s,MovePP:30b}	{MoveID:464s,MovePP:15b}	Brave	252	252	-	-	-	-
+639		Terrakion	Choice Scarf	{MoveID:532s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:286s,MovePP:5b}	{MoveID:203s,MovePP:20b}	Adamant	-	252	-	-	-	252
+640		Virizion	Sitrus Berry	{MoveID:33s,MovePP:10b}	{MoveID:442s,MovePP:5b}	{MoveID:224s,MovePP:20b}	{MoveID:16s,MovePP:10b}	Timid	-	-	252	-	-	252
+641		Tornadus	Yache Berry	{MoveID:38s,MovePP:10b}	{MoveID:26s,MovePP:15b}	{MoveID:442s,MovePP:5b}	{MoveID:541s,MovePP:10b}	Modest	252	-	-	252	-	-
+642		Thundurus	Choice Specs	{MoveID:122s,MovePP:15b}	{MoveID:269s,MovePP:15b}	{MoveID:442s,MovePP:5b}	{MoveID:36s,MovePP:20b}	Timid	-	-	-	252	-	252
+380		Latias	White Herb	{MoveID:456s,MovePP:5b}	{MoveID:124s,MovePP:10b}	{MoveID:129s,MovePP:10b}	{MoveID:359s,MovePP:5b}	Timid	-	-	-	252	-	252
+381		Latios	White Herb	{MoveID:456s,MovePP:5b}	{MoveID:122s,MovePP:15b}	{MoveID:129s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Timid	-	-	-	252	-	252
+485		Heatran	White Herb	{MoveID:205s,MovePP:5b}	{MoveID:207s,MovePP:15b}	{MoveID:221s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Modest	252	-	-	252	-	-
+488		Cresselia	Leftovers	{MoveID:26s,MovePP:15b}	{MoveID:275s,MovePP:5b}	{MoveID:16s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Bold	252	-	-	-	252	-
+645		Landorus	Choice Scarf	{MoveID:266s,MovePP:10b}	{MoveID:383s,MovePP:20b}	{MoveID:442s,MovePP:5b}	{MoveID:36s,MovePP:20b}	Modest	-	-	-	252	-	252
+486		Regigigas	Zoom Lens	{MoveID:124s,MovePP:10b}	{MoveID:16s,MovePP:10b}	{MoveID:442s,MovePP:5b}	{MoveID:142s,MovePP:10b}	Quiet	252	-	-	252	-	-
+144		Articuno	Charti Berry	{MoveID:525s,MovePP:10b}	{MoveID:147s,MovePP:20b}	{MoveID:303s,MovePP:25b}	{MoveID:254s,MovePP:20b}	Jolly	-	252	-	-	-	252
+145		Zapdos	Petaya Berry	{MoveID:124s,MovePP:10b}	{MoveID:20s,MovePP:30b}	{MoveID:216s,MovePP:5b}	{MoveID:111s,MovePP:20b}	Naive	-	-	-	252	-	252
+146		Moltres	Heat Rock	{MoveID:19s,MovePP:5b}	{MoveID:24s,MovePP:10b}	{MoveID:51s,MovePP:15b}	{MoveID:209s,MovePP:15b}	Timid	-	-	-	252	-	252
+243		Raikou	Air Balloon	{MoveID:122s,MovePP:15b}	{MoveID:524s,MovePP:20b}	{MoveID:227s,MovePP:15b}	{MoveID:21s,MovePP:10b}	Timid	-	-	-	252	-	252
+244		Entei	Choice Scarf	{MoveID:348s,MovePP:5b}	{MoveID:210s,MovePP:10b}	{MoveID:383s,MovePP:20b}	{MoveID:24s,MovePP:10b}	Timid	-	-	-	252	-	252
+245		Suicune	Leftovers	{MoveID:104s,MovePP:15b}	{MoveID:106s,MovePP:5b}	{MoveID:224s,MovePP:20b}	{MoveID:21s,MovePP:10b}	Bold	252	-	252	-	-	-
+377		Regirock	Luminous Moss	{MoveID:67s,MovePP:15b}	{MoveID:187s,MovePP:10b}	{MoveID:440s,MovePP:10b}	{MoveID:58s,MovePP:10b}	Adamant	252	252	-	-	-	-
+378		Regice	Leftovers	{MoveID:229s,MovePP:10b}	{MoveID:105s,MovePP:10b}	{MoveID:165s,MovePP:20b}	{MoveID:21s,MovePP:10b}	Bold	252	-	252	-	-	-
+379		Registeel	Leftovers	{MoveID:165s,MovePP:20b}	{MoveID:215s,MovePP:15b}	{MoveID:229s,MovePP:10b}	{MoveID:221s,MovePP:10b}	Bold	252	-	-	-	252	-
+638		Cobalion	Lax Incense	{MoveID:37s,MovePP:15b}	{MoveID:38s,MovePP:10b}	{MoveID:230s,MovePP:10b}	{MoveID:464s,MovePP:15b}	Jolly	-	252	-	-	-	252
+639		Terrakion	Sitrus Berry	{MoveID:35s,MovePP:20b}	{MoveID:532s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:187s,MovePP:10b}	Jolly	-	252	-	-	-	252
+640		Virizion	Coba Berry	{MoveID:400s,MovePP:15b}	{MoveID:286s,MovePP:5b}	{MoveID:532s,MovePP:15b}	{MoveID:21s,MovePP:10b}	Jolly	-	252	-	-	-	252
+641		Tornadus	Chesto Berry	{MoveID:29s,MovePP:10b}	{MoveID:209s,MovePP:15b}	{MoveID:269s,MovePP:15b}	{MoveID:442s,MovePP:5b}	Bold	252	-	-	-	252	-
+642		Thundurus	Sitrus Berry	{MoveID:263s,MovePP:15b}	{MoveID:254s,MovePP:20b}	{MoveID:260s,MovePP:15b}	{MoveID:513s,MovePP:10b}	Jolly	-	252	-	-	-	252
+380		Latias	Choice Specs	{MoveID:456s,MovePP:5b}	{MoveID:122s,MovePP:15b}	{MoveID:129s,MovePP:10b}	{MoveID:337s,MovePP:10b}	Timid	-	-	-	252	-	252
+381		Latios	Choice Specs	{MoveID:456s,MovePP:5b}	{MoveID:124s,MovePP:10b}	{MoveID:129s,MovePP:10b}	{MoveID:33s,MovePP:10b}	Timid	-	-	-	252	-	252
+485		Heatran	Shuca Berry	{MoveID:19s,MovePP:5b}	{MoveID:158s,MovePP:5b}	{MoveID:24s,MovePP:10b}	{MoveID:266s,MovePP:10b}	Modest	252	-	-	252	-	-
+488		Cresselia	Lum Berry	{MoveID:292s,MovePP:15b}	{MoveID:505s,MovePP:15b}	{MoveID:336s,MovePP:20b}	{MoveID:37s,MovePP:15b}	Bold	252	-	-	-	252	-
+645		Landorus	Smooth Rock	{MoveID:267s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:187s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Jolly	-	252	-	-	-	252
+486		Regigigas	Leftovers	{MoveID:142s,MovePP:10b}	{MoveID:440s,MovePP:10b}	{MoveID:123s,MovePP:20b}	{MoveID:187s,MovePP:10b}	Adamant	252	252	-	-	-	-
+144		Articuno	Leftovers	{MoveID:412s,MovePP:15b}	{MoveID:106s,MovePP:5b}	{MoveID:513s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Modest	-	-	-	252	-	252
+145		Zapdos	Lum Berry	{MoveID:122s,MovePP:15b}	{MoveID:524s,MovePP:20b}	{MoveID:210s,MovePP:10b}	{MoveID:293s,MovePP:5b}	Timid	-	-	-	252	-	252
+146		Moltres	Charcoal	{MoveID:210s,MovePP:10b}	{MoveID:206s,MovePP:15b}	{MoveID:209s,MovePP:15b}	{MoveID:21s,MovePP:10b}	Timid	-	-	-	252	-	252
+243		Raikou	Air Balloon	{MoveID:124s,MovePP:10b}	{MoveID:457s,MovePP:15b}	{MoveID:147s,MovePP:20b}	{MoveID:383s,MovePP:20b}	Timid	-	-	-	252	-	252
+244		Entei	Life Orb	{MoveID:116s,MovePP:5b}	{MoveID:464s,MovePP:15b}	{MoveID:286s,MovePP:5b}	{MoveID:21s,MovePP:10b}	Adamant	252	252	-	-	-	-
+245		Suicune	Lum Berry	{MoveID:292s,MovePP:15b}	{MoveID:104s,MovePP:15b}	{MoveID:106s,MovePP:5b}	{MoveID:21s,MovePP:10b}	Timid	-	-	-	252	-	252
+377		Regirock	Sitrus Berry	{MoveID:281s,MovePP:20b}	{MoveID:187s,MovePP:10b}	{MoveID:342s,MovePP:5b}	{MoveID:184s,MovePP:5b}	Jolly	-	252	-	-	-	252
+378		Regice	Zoom Lens	{MoveID:124s,MovePP:10b}	{MoveID:106s,MovePP:5b}	{MoveID:442s,MovePP:5b}	{MoveID:123s,MovePP:20b}	Impish	252	-	-	-	252	-
+379		Registeel	Leftovers	{MoveID:16s,MovePP:10b}	{MoveID:26s,MovePP:15b}	{MoveID:58s,MovePP:10b}	{MoveID:21s,MovePP:10b}	Adamant	252	252	-	-	-	-
+638		Cobalion	Life Orb	{MoveID:464s,MovePP:15b}	{MoveID:415s,MovePP:5b}	{MoveID:509s,MovePP:15b}	{MoveID:21s,MovePP:10b}	Jolly	-	252	-	-	-	252
+639		Terrakion	King's Rock	{MoveID:60s,MovePP:20b}	{MoveID:187s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:532s,MovePP:15b}	Jolly	-	252	-	-	-	252
+640		Virizion	Chesto Berry	{MoveID:400s,MovePP:15b}	{MoveID:35s,MovePP:20b}	{MoveID:532s,MovePP:15b}	{MoveID:29s,MovePP:10b}	Impish	252	-	252	-	-	-
+641		Tornadus	Damp Rock	{MoveID:541s,MovePP:10b}	{MoveID:442s,MovePP:5b}	{MoveID:225s,MovePP:5b}	{MoveID:216s,MovePP:5b}	Timid	-	-	-	252	-	252
+642		Thundurus	Magnet	{MoveID:457s,MovePP:15b}	{MoveID:442s,MovePP:5b}	{MoveID:524s,MovePP:20b}	{MoveID:225s,MovePP:5b}	Timid	-	-	-	252	-	252
+380		Latias	Life Orb	{MoveID:456s,MovePP:5b}	{MoveID:58s,MovePP:10b}	{MoveID:54s,MovePP:15b}	{MoveID:55s,MovePP:15b}	Adamant	-	252	-	-	-	252
+381		Latios	Life Orb	{MoveID:456s,MovePP:5b}	{MoveID:58s,MovePP:10b}	{MoveID:401s,MovePP:20b}	{MoveID:296s,MovePP:10b}	Adamant	-	252	-	-	-	252
+485		Heatran	Choice Scarf	{MoveID:481s,MovePP:5b}	{MoveID:266s,MovePP:10b}	{MoveID:437s,MovePP:10b}	{MoveID:221s,MovePP:10b}	Timid	-	-	-	252	-	252
+488		Cresselia	Iron Ball	{MoveID:129s,MovePP:10b}	{MoveID:337s,MovePP:10b}	{MoveID:597s,MovePP:15b}	{MoveID:455s,MovePP:5b}	Quiet	-	-	252	252	-	-
+645		Landorus	White Herb	{MoveID:409s,MovePP:10b}	{MoveID:58s,MovePP:10b}	{MoveID:184s,MovePP:5b}	{MoveID:254s,MovePP:20b}	Adamant	-	252	252	-	-	-
+486		Regigigas	Leftovers	{MoveID:486s,MovePP:10b}	{MoveID:26s,MovePP:15b}	{MoveID:142s,MovePP:10b}	{MoveID:16s,MovePP:10b}	Careful	252	-	252	-	-	-
