@@ -1,5 +1,5 @@
 #Triggered by DialogueTrigger X score and !DialogueX tag
-
+#/execute @a[score_DialogueTrigger_min=1] ~ ~ ~ function dialogues:events
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Mom dialogue when spawned in
@@ -433,10 +433,13 @@ scoreboard players set @a[score_DialogueTrigger_min=14,score_DialogueTrigger=14,
 #scoreboard players set @a[x=179,y=100,z=-115,r=10,tag=Dialogue14] DialogueTrigger 15
 
 scoreboard players add @a[score_DialogueTrigger_min=15,score_DialogueTrigger=15,tag=!Dialogue15] TalkTime 1
+execute @a[score_DialogueTrigger_min=15,score_DialogueTrigger=15,tag=!Dialogue15,score_TalkTime_min=1,score_TalkTime=1] ~ ~ ~ tp @e[x=-504,y=125,z=1256,dy=3,type=pixelmon:npc_chatting] 177 100 -116
+execute @a[score_DialogueTrigger_min=15,score_DialogueTrigger=15,tag=!Dialogue15,score_TalkTime_min=1,score_TalkTime=1] ~ ~ ~ tp @e[x=-504,y=125,z=1258,dy=3,type=pixelmon:npc_chatting] 180 100 -116
 tellraw @a[score_DialogueTrigger_min=15,score_DialogueTrigger=15,tag=!Dialogue15,score_TalkTime_min=2,score_TalkTime=2] ["",{"text":"<"},{"text":"Dexio","color":"aqua"},{"text":"> So, how are you and your Pokémon getting along?"}]
 tellraw @a[score_DialogueTrigger_min=15,score_DialogueTrigger=15,tag=!Dialogue15,score_TalkTime_min=10,score_TalkTime=10] ["",{"text":"<"},{"text":"Dexio","color":"aqua"},{"text":"> The more you walk around with your Pokémon, the stronger your friendship will become."}]
 tellraw @a[score_DialogueTrigger_min=15,score_DialogueTrigger=15,tag=!Dialogue15,score_TalkTime_min=20,score_TalkTime=20] ["",{"text":"<"},{"text":"Dexio","color":"aqua"},{"text":"> Here! This is the TM for Return."}]
-give @a[score_DialogueTrigger_min=15,score_DialogueTrigger=15,tag=!Dialogue15,score_TalkTime_min=22,score_TalkTime=22] pixelmon:tm27
+give @a[score_DialogueTrigger_min=15,score_DialogueTrigger=15,tag=!Dialogue15,score_TalkTime_min=22,score_TalkTime=22] pixelmon:tm_gen6 1 0 {tm:27}
+execute @a[score_DialogueTrigger_min=15,score_DialogueTrigger=15,tag=!Dialogue15,score_TalkTime_min=22,score_TalkTime=22] ~ ~ ~ playsound pixelmon:pixelmon.block.pokelootobtained block @s ~ ~ ~ 1 1 1
 tellraw @a[score_DialogueTrigger_min=15,score_DialogueTrigger=15,tag=!Dialogue15,score_TalkTime_min=29,score_TalkTime=29] ["",{"text":"<"},{"text":"Dexio","color":"aqua"},{"text":"> This is a move that gets more powerful when your friendship with the Pokémon using it is strong."}]
 tellraw @a[score_DialogueTrigger_min=15,score_DialogueTrigger=15,tag=!Dialogue15,score_TalkTime_min=39,score_TalkTime=39] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> Right through this gate, and you'll be in Lumiose City! Go on already!"}]
 
@@ -1184,7 +1187,7 @@ tellraw @a[score_DialogueTrigger_min=32,score_DialogueTrigger=32,tag=!Dialogue32
 tellraw @a[score_DialogueTrigger_min=32,score_DialogueTrigger=32,tag=!Dialogue32,score_TalkTime_min=256,score_TalkTime=256] ["",{"text":"<"},{"text":"Butler","color":"gray"},{"text":"> I remember reading a book on that subject in the palace library. "}]
 tellraw @a[score_DialogueTrigger_min=32,score_DialogueTrigger=32,tag=!Dialogue32,score_TalkTime_min=264,score_TalkTime=264] ["",{"text":"<"},{"text":"Butler","color":"gray"},{"text":"> It had something to do with what you\u2019d now call a Trainer holding a mysterious stone high and making Pokémon evolve even further. "}]
 tellraw @a[score_DialogueTrigger_min=32,score_DialogueTrigger=32,tag=!Dialogue32,score_TalkTime_min=276,score_TalkTime=276] ["",{"text":"<"},{"text":"Butler","color":"gray"},{"text":"> Also, it\u2019s not much, but I would like you to have this."}]
-give @a[score_DialogueTrigger_min=32,score_DialogueTrigger=32,tag=!Dialogue32,score_TalkTime_min=278,score_TalkTime=278] pixelmon:tm17
+give @a[score_DialogueTrigger_min=32,score_DialogueTrigger=32,tag=!Dialogue32,score_TalkTime_min=278,score_TalkTime=278] pixelmon:tm_gen6 1 0 {tm:17}
 execute @a[score_DialogueTrigger_min=32,score_DialogueTrigger=32,tag=!Dialogue32,score_TalkTime_min=278,score_TalkTime=278] ~ ~ ~ playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @a[score_DialogueTrigger_min=32,score_DialogueTrigger=32,tag=!Dialogue32,score_TalkTime_min=284,score_TalkTime=284] ["",{"text":"<"},{"text":"Butler","color":"gray"},{"text":"> Protect blocks opposing Pokémon\u2019s moves. "}]
 tellraw @a[score_DialogueTrigger_min=32,score_DialogueTrigger=32,tag=!Dialogue32,score_TalkTime_min=292,score_TalkTime=292] ["",{"text":"<"},{"text":"Butler","color":"gray"},{"text":"> But if you use it many times in a row, the chances of it not working increase."}]
@@ -1885,7 +1888,7 @@ scoreboard players add @a[score_DialogueTrigger_min=55,score_DialogueTrigger=55,
 execute @a[score_DialogueTrigger_min=55,score_DialogueTrigger=55,tag=!Dialogue55,score_TalkTime_min=14,score_TalkTime=14] ~ ~ ~ entitydata @e[x=-1575,y=34,z=-205,dy=3,type=pixelmon:npc_chatting] {Rotation:[180.0f,0.0f]}
 tellraw @a[score_DialogueTrigger_min=55,score_DialogueTrigger=55,tag=!Dialogue55,score_TalkTime_min=3,score_TalkTime=3] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> Hey, "},{"selector":"@p[score_DialogueTrigger_min=55,score_DialogueTrigger=55,tag=!Dialogue55,score_TalkTime_min=3,score_TalkTime=3]"},{"text":"!"}]
 tellraw @a[score_DialogueTrigger_min=55,score_DialogueTrigger=55,tag=!Dialogue55,score_TalkTime_min=9,score_TalkTime=9] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> If you use the move Flash, not as many wild Pokémon will turn up."}]
-execute @a[score_DialogueTrigger_min=55,score_DialogueTrigger=55,tag=!Dialogue55,score_TalkTime_min=14,score_TalkTime=14] ~ ~ ~ give @s pixelmon:tm70
+execute @a[score_DialogueTrigger_min=55,score_DialogueTrigger=55,tag=!Dialogue55,score_TalkTime_min=14,score_TalkTime=14] ~ ~ ~ pixelmon:tm_gen6 1 0 {tm:70}
 execute @a[score_DialogueTrigger_min=55,score_DialogueTrigger=55,tag=!Dialogue55,score_TalkTime_min=14,score_TalkTime=14] ~ ~ ~ give @s minecraft:fireworks 16 0 {display:{Name:"TM70: Flash",Lore:["Illuminates an area to","the user for 10 minutes."]}}
 tellraw @a[score_DialogueTrigger_min=55,score_DialogueTrigger=55,tag=!Dialogue55,score_TalkTime_min=19,score_TalkTime=19] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> I kinda depend on Flash."}]
 tellraw @a[score_DialogueTrigger_min=55,score_DialogueTrigger=55,tag=!Dialogue55,score_TalkTime_min=26,score_TalkTime=26] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> I\u2019m still not very good at battling, so I keep running into trouble..."}]
@@ -5531,7 +5534,7 @@ execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue
 tellraw @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=3,score_TalkTime=3] {"text":"Thank you for playing Pixelmon Kalos!","color":"white"}
 tellraw @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=12,score_TalkTime=12] {"text":"Map Creators:\nJond - Organizer, terrain, redstone, builder.\nPixelmonChampion - Head builder, custom models."}
 tellraw @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=25,score_TalkTime=25] {"text":"Helpers:\nMystcraftMC | The_GlassPhoenix | callthemuffinman | xuambacraft | Tyranium | Wither999 | Dark_Spartan_"}
-tellraw @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=35,score_TalkTime=35] ["",{"text":"Check out my other projects if you are interested!\n"},{"text":"https://www.curseforge.com/minecraft/worlds/pixelmon-johto","color":"blue","clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/worlds/pixelmon-johto"}}]
+tellraw @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=35,score_TalkTime=35] ["",{"text":"Check out my other projects if you are interested!\n"},{"text":"Pixelmon Johto","color":"blue","clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/worlds/pixelmon-johto"}}]
 tellraw @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=45,score_TalkTime=45] {"text":"All source material credit to Game Freak, The Pokemon Company, and Nintendo."}
 tellraw @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=55,score_TalkTime=55,score_PokemonLeague_min=1,score_PokemonLeague=1] {"text":"You can now encounter post-game Legendaries and Mythicals.","italic":true,"color":"gray"}
 execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=55,score_TalkTime=55] ~ ~ ~ /advancement grant @s only kalos:legendroot
@@ -5539,45 +5542,45 @@ execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue
 
 #Resets legendaries if not caught but encountered
 
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=55,score_TalkTime=55,score_Mewtwo_min=1] ~ ~ ~ execute @e[x=809,y=74,z=525,dx=66,dy=14,dz=92,type=pixelmon:pixelmon,name=Mewtwo] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=55,score_TalkTime=55,score_Mewtwo_min=1] ~ ~ ~ tellraw @s[tag=!MewtwoCatch] {"text":"You can now re-encounter Mewtwo!","italic":true,"color":"gray"}
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=55,score_TalkTime=55,score_Mewtwo_min=1] ~ ~ ~ scoreboard players set @s[tag=!MewtwoCatch] Mewtwo 0
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=55,score_TalkTime=55] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=55,score_TalkTime=55,score_Mewtwo_min=1] ~ ~ ~ execute @e[x=809,y=74,z=525,dx=66,dy=14,dz=92,type=pixelmon:pixelmon,name=Mewtwo] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=55,score_TalkTime=55,score_Mewtwo_min=1] ~ ~ ~ tellraw @s[tag=!MewtwoCatch] {"text":"You can now re-encounter Mewtwo!","italic":true,"color":"gray"}
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=55,score_TalkTime=55,score_Mewtwo_min=1] ~ ~ ~ scoreboard players set @s[tag=!MewtwoCatch] Mewtwo 0
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=55,score_TalkTime=55] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=56,score_TalkTime=56,score_Zygarde_min=1] ~ ~ ~ execute @e[x=1720,y=0,z=-232,dx=421,dy=100,dz=324,type=pixelmon:pixelmon,name=Zygarde] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=56,score_TalkTime=56,score_Zygarde_min=1] ~ ~ ~ tellraw @s[tag=!ZygardeCatch] {"text":"You can now re-encounter Zygarde!","italic":true,"color":"gray"}
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=56,score_TalkTime=56,score_Zygarde_min=1] ~ ~ ~ scoreboard players set @s[tag=!ZygardeCatch] Zygarde 0
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=56,score_TalkTime=56] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=56,score_TalkTime=56,score_Zygarde_min=1] ~ ~ ~ execute @e[x=1720,y=0,z=-232,dx=421,dy=100,dz=324,type=pixelmon:pixelmon,name=Zygarde] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=56,score_TalkTime=56,score_Zygarde_min=1] ~ ~ ~ tellraw @s[tag=!ZygardeCatch] {"text":"You can now re-encounter Zygarde!","italic":true,"color":"gray"}
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=56,score_TalkTime=56,score_Zygarde_min=1] ~ ~ ~ scoreboard players set @s[tag=!ZygardeCatch] Zygarde 0
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=56,score_TalkTime=56] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=57,score_TalkTime=57,score_Diancie_min=1] ~ ~ ~ execute @e[x=-1847,y=0,z=-675,dx=414,dy=89,dz=507,type=pixelmon:pixelmon,name=Diancie] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=57,score_TalkTime=57,score_Diancie_min=1] ~ ~ ~ tellraw @s[tag=!DiancieCatch] {"text":"You can now re-encounter Diancie!","italic":true,"color":"gray"}
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=57,score_TalkTime=57,score_Diancie_min=1] ~ ~ ~ scoreboard players set @s[tag=!DiancieCatch] Diancie 0
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=57,score_TalkTime=57] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=57,score_TalkTime=57,score_Diancie_min=1] ~ ~ ~ execute @e[x=-1847,y=0,z=-675,dx=414,dy=89,dz=507,type=pixelmon:pixelmon,name=Diancie] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=57,score_TalkTime=57,score_Diancie_min=1] ~ ~ ~ tellraw @s[tag=!DiancieCatch] {"text":"You can now re-encounter Diancie!","italic":true,"color":"gray"}
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=57,score_TalkTime=57,score_Diancie_min=1] ~ ~ ~ scoreboard players set @s[tag=!DiancieCatch] Diancie 0
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=57,score_TalkTime=57] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=58,score_TalkTime=58,score_Hoopa_min=1] ~ ~ ~ execute @e[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28,type=pixelmon:pixelmon,name=Hoopa] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=58,score_TalkTime=58,score_Hoopa_min=1] ~ ~ ~ tellraw @s[tag=!HoopaCatch] {"text":"You can now re-encounter Hoopa!","italic":true,"color":"gray"}
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=58,score_TalkTime=58,score_Hoopa_min=1] ~ ~ ~ scoreboard players set @s[tag=!HoopaCatch] Hoopa 0
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=58,score_TalkTime=58] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=58,score_TalkTime=58,score_Hoopa_min=1] ~ ~ ~ execute @e[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28,type=pixelmon:pixelmon,name=Hoopa] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=58,score_TalkTime=58,score_Hoopa_min=1] ~ ~ ~ tellraw @s[tag=!HoopaCatch] {"text":"You can now re-encounter Hoopa!","italic":true,"color":"gray"}
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=58,score_TalkTime=58,score_Hoopa_min=1] ~ ~ ~ scoreboard players set @s[tag=!HoopaCatch] Hoopa 0
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=58,score_TalkTime=58] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=59,score_TalkTime=59,score_Volcanion_min=1] ~ ~ ~ execute @e[x=-937,y=36,z=-742,dx=280,dy=40,dz=117,type=pixelmon:pixelmon,name=Volcanion] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=59,score_TalkTime=59,score_Volcanion_min=1] ~ ~ ~ tellraw @s[tag=!VolcanionCatch] {"text":"You can now re-encounter Volcanion!","italic":true,"color":"gray"}
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=59,score_TalkTime=59,score_Volcanion_min=1] ~ ~ ~ scoreboard players set @s[tag=!MewtwoCatch] Volcanion 0
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=59,score_TalkTime=59] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=59,score_TalkTime=59,score_Volcanion_min=1] ~ ~ ~ execute @e[x=-937,y=36,z=-742,dx=280,dy=40,dz=117,type=pixelmon:pixelmon,name=Volcanion] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=59,score_TalkTime=59,score_Volcanion_min=1] ~ ~ ~ tellraw @s[tag=!VolcanionCatch] {"text":"You can now re-encounter Volcanion!","italic":true,"color":"gray"}
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=59,score_TalkTime=59,score_Volcanion_min=1] ~ ~ ~ scoreboard players set @s[tag=!MewtwoCatch] Volcanion 0
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=59,score_TalkTime=59] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=60,score_TalkTime=60,score_Zapdos_min=6] ~ ~ ~ execute @e[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83,type=pixelmon:pixelmon,name=Zapdos] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=60,score_TalkTime=60,score_Zapdos_min=6] ~ ~ ~ tellraw @s[tag=!ZapdosCatch] {"text":"You can now re-encounter Zapdos!","italic":true,"color":"gray"}
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=60,score_TalkTime=60,score_Zapdos_min=6] ~ ~ ~ scoreboard players set @s[tag=!ZapdosCatch] Zapdos 5
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=60,score_TalkTime=60] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=60,score_TalkTime=60,score_Zapdos_min=6] ~ ~ ~ execute @e[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83,type=pixelmon:pixelmon,name=Zapdos] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=60,score_TalkTime=60,score_Zapdos_min=6] ~ ~ ~ tellraw @s[tag=!ZapdosCatch] {"text":"You can now re-encounter Zapdos!","italic":true,"color":"gray"}
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=60,score_TalkTime=60,score_Zapdos_min=6] ~ ~ ~ scoreboard players set @s[tag=!ZapdosCatch] Zapdos 5
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=60,score_TalkTime=60] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=61,score_TalkTime=61,score_Moltres_min=6] ~ ~ ~ execute @e[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83,type=pixelmon:pixelmon,name=Moltres] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=61,score_TalkTime=61,score_Moltres_min=6] ~ ~ ~ tellraw @s[tag=!MoltresCatch] {"text":"You can now re-encounter Moltres!","italic":true,"color":"gray"}
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=61,score_TalkTime=61,score_Moltres_min=6] ~ ~ ~ scoreboard players set @s[tag=!MewtwoCatch] Moltres 5
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=61,score_TalkTime=61] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=61,score_TalkTime=61,score_Moltres_min=6] ~ ~ ~ execute @e[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83,type=pixelmon:pixelmon,name=Moltres] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=61,score_TalkTime=61,score_Moltres_min=6] ~ ~ ~ tellraw @s[tag=!MoltresCatch] {"text":"You can now re-encounter Moltres!","italic":true,"color":"gray"}
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=61,score_TalkTime=61,score_Moltres_min=6] ~ ~ ~ scoreboard players set @s[tag=!MewtwoCatch] Moltres 5
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=61,score_TalkTime=61] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=62,score_TalkTime=62,score_Articuno_min=6] ~ ~ ~ execute @e[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83,type=pixelmon:pixelmon,name=Articuno] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=62,score_TalkTime=62,score_Articuno_min=6] ~ ~ ~ tellraw @s[tag=!ArticunoCatch] {"text":"You can now re-encounter Articuno!","italic":true,"color":"gray"}
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=62,score_TalkTime=62,score_Articuno_min=6] ~ ~ ~ scoreboard players set @s[tag=!MewtwoCatch] Articuno 5
-#execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=62,score_TalkTime=62] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=62,score_TalkTime=62,score_Articuno_min=6] ~ ~ ~ execute @e[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83,type=pixelmon:pixelmon,name=Articuno] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=62,score_TalkTime=62,score_Articuno_min=6] ~ ~ ~ tellraw @s[tag=!ArticunoCatch] {"text":"You can now re-encounter Articuno!","italic":true,"color":"gray"}
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=62,score_TalkTime=62,score_Articuno_min=6] ~ ~ ~ scoreboard players set @s[tag=!MewtwoCatch] Articuno 5
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=62,score_TalkTime=62] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
 
 execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,score_TalkTime_min=65,score_TalkTime=65,score_PokemonLeague_min=1,score_PokemonLeague=1] ~ ~ ~ /effect @s minecraft:blindness 10 1 true

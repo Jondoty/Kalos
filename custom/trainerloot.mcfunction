@@ -36,7 +36,7 @@ scoreboard players add @a[score_TrainerLoot65_min=1,score_TrainerLoot65=1] Train
 give @a[score_TrainerLoot5_min=1,score_TrainerLoot5=1] pixelmon:luxury_ball 5
 scoreboard players add @a[score_TrainerLoot5_min=1,score_TrainerLoot5=1] TrainerLoot5 1
 
-give @a[score_TrainerLoot6_min=1,score_TrainerLoot6=1] pixelmon:tm54
+give @a[score_TrainerLoot6_min=1,score_TrainerLoot6=1] pixelmon:tm_gen6 1 0 {tm:54}
 scoreboard players add @a[score_TrainerLoot6_min=1,score_TrainerLoot6=1] TrainerLoot6 1
 
 
@@ -72,11 +72,11 @@ give @a[score_TrainerLoot88_min=1,score_TrainerLoot88=1] pixelmon:prism_scale 1
 scoreboard players add @a[score_TrainerLoot88_min=1,score_TrainerLoot88=1] TrainerLoot88 1
 
 #Lumiose Hotel Richissime
-give @a[score_TrainerLoot89_min=1,score_TrainerLoot89=1] pixelmon:tm49 1
+give @a[score_TrainerLoot89_min=1,score_TrainerLoot89=1] pixelmon:tm_gen6 1 0 {tm:49}
 scoreboard players add @a[score_TrainerLoot89_min=1,score_TrainerLoot89=1] TrainerLoot89 1
 
 #Lumiose Museum
-give @a[score_TrainerLoot90_min=1,score_TrainerLoot90=1] pixelmon:tm82 1
+give @a[score_TrainerLoot90_min=1,score_TrainerLoot90=1] pixelmon:tm_gen6 1 0 {tm:82}
 scoreboard players add @a[score_TrainerLoot90_min=1,score_TrainerLoot90=1] TrainerLoot90 1
 
 #Lumiose Feeling Study
@@ -105,7 +105,7 @@ scoreboard players add @a[score_TrainerLoot96_min=1,score_TrainerLoot96=1] Train
 give @a[score_TrainerLoot66_min=1,score_TrainerLoot66=1] pixelmon:ultra_ball
 scoreboard players add @a[score_TrainerLoot66_min=1,score_TrainerLoot66=1] TrainerLoot66 1
 
-give @a[score_TrainerLoot67_min=1,score_TrainerLoot67=1] pixelmon:tm46
+give @a[score_TrainerLoot67_min=1,score_TrainerLoot67=1] pixelmon:tm_gen6 1 0 {tm:46}
 scoreboard players add @a[score_TrainerLoot67_min=1,score_TrainerLoot67=1] TrainerLoot67 1
 
 give @a[score_TrainerLoot68_min=1,score_TrainerLoot68=1] pixelmon:berry_juice
@@ -129,13 +129,13 @@ scoreboard players add @a[score_TrainerLoot9_min=1,score_TrainerLoot9=1,tag=Dial
 
 
 #Ambrette
-give @a[score_TrainerLoot53_min=1,score_TrainerLoot53=1] pixelmon:tm94
+give @a[score_TrainerLoot53_min=1,score_TrainerLoot53=1] pixelmon:tm_gen6 1 0 {tm:94}
 scoreboard players tag @a[score_TrainerLoot53_min=1,score_TrainerLoot53=1] add RockSmash
 tellraw @a[score_TrainerLoot53_min=1,score_TrainerLoot53=1,tag=RockSmash] {"text":"You can now use Rock Smash on rocks!","italic":true,"color":"gray"}
 scoreboard players add @a[score_TrainerLoot53_min=1,score_TrainerLoot53=1] TrainerLoot53 1
 
 
-give @a[score_TrainerLoot10_min=1,score_TrainerLoot10=1] pixelmon:tm167
+give @a[score_TrainerLoot10_min=1,score_TrainerLoot10=1] pixelmon:tm_gen6 1 0 {tm:96}
 scoreboard players add @a[score_TrainerLoot10_min=1,score_TrainerLoot10=1] TrainerLoot10 1
 
 give @a[score_TrainerLoot11_min=1,score_TrainerLoot11=1] pixelmon:rocky_helmet
@@ -146,7 +146,7 @@ scoreboard players add @a[score_TrainerLoot17_min=1,score_TrainerLoot17=1] Train
 
 
 #Connecting Cave
-give @a[score_TrainerLoot63_min=1,score_TrainerLoot63=1] pixelmon:tm21
+give @a[score_TrainerLoot63_min=1,score_TrainerLoot63=1] pixelmon:tm_gen6 1 0 {tm:21}
 scoreboard players add @a[score_TrainerLoot63_min=1,score_TrainerLoot63=1] TrainerLoot63 1
 
 
@@ -156,10 +156,10 @@ scoreboard players add @a[score_TrainerLoot83_min=1,score_TrainerLoot83=1] Train
 
 
 #Cyllage City
-give @a[score_TrainerLoot12_min=1,score_TrainerLoot12=1] pixelmon:tm44
+give @a[score_TrainerLoot12_min=1,score_TrainerLoot12=1] pixelmon:tm_gen6 1 0 {tm:44}
 scoreboard players add @a[score_TrainerLoot12_min=1,score_TrainerLoot12=1] TrainerLoot12 1
 
-give @a[score_TrainerLoot13_min=1,score_TrainerLoot13=1] pixelmon:tm140
+give @a[score_TrainerLoot13_min=1,score_TrainerLoot13=1] pixelmon:tm_gen6 1 0 {tm:88}
 scoreboard players add @a[score_TrainerLoot13_min=1,score_TrainerLoot13=1] TrainerLoot13 1
 
 give @a[score_TrainerLoot14_min=1,score_TrainerLoot14=1] pixelmon:destiny_knot
@@ -174,7 +174,7 @@ scoreboard players add @a[score_TrainerLoot69_min=1,score_TrainerLoot69=1] Train
 
 
 #Geosenge Town
-give @a[score_TrainerLoot70_min=1,score_TrainerLoot70=1] pixelmon:tm66
+give @a[score_TrainerLoot70_min=1,score_TrainerLoot70=1] pixelmon:tm_gen6 1 0 {tm:66}
 scoreboard players add @a[score_TrainerLoot70_min=1,score_TrainerLoot70=1] TrainerLoot70 1
 
 give @a[score_TrainerLoot71_min=1,score_TrainerLoot71=1] pixelmon:ever_stone
@@ -214,7 +214,7 @@ execute @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ /pokegive @a[score_T
 scoreboard players add @a[score_TrainerLoot101_min=1,score_TrainerLoot101=1] TrainerLoot101 1
 
 
-give @a[score_TrainerLoot81_min=1,score_TrainerLoot81=1] pixelmon:tm45
+give @a[score_TrainerLoot81_min=1,score_TrainerLoot81=1] pixelmon:tm_gen6 1 0 {tm:45}
 scoreboard players add @a[score_TrainerLoot81_min=1,score_TrainerLoot81=1] TrainerLoot81 1
 
 
@@ -258,7 +258,7 @@ scoreboard players add @a[score_TrainerLoot77_min=1,score_TrainerLoot77=1] Train
 
 
 #Power Plant
-give @a[score_TrainerLoot21_min=1,score_TrainerLoot21=1] pixelmon:tm43
+give @a[score_TrainerLoot21_min=1,score_TrainerLoot21=1] pixelmon:tm_gen6 1 0 {tm:43}
 scoreboard players add @a[score_TrainerLoot21_min=1,score_TrainerLoot21=1] TrainerLoot21 1
 
 give @a[score_TrainerLoot22_min=1,score_TrainerLoot22=1] pixelmon:magnet
@@ -266,12 +266,12 @@ scoreboard players add @a[score_TrainerLoot22_min=1,score_TrainerLoot22=1] Train
 
 
 #Route 14
-give @a[score_TrainerLoot24_min=1,score_TrainerLoot24=1] pixelmon:tm6
+give @a[score_TrainerLoot24_min=1,score_TrainerLoot24=1] pixelmon:tm_gen6 1 0 {tm:6}
 scoreboard players add @a[score_TrainerLoot24_min=1,score_TrainerLoot24=1] TrainerLoot24 1
 
 
 #Laverre City
-give @a[score_TrainerLoot25_min=1,score_TrainerLoot25=1] pixelmon:tm41
+give @a[score_TrainerLoot25_min=1,score_TrainerLoot25=1] pixelmon:tm_gen6 1 0 {tm:41}
 scoreboard players add @a[score_TrainerLoot25_min=1,score_TrainerLoot25=1] TrainerLoot25 1
 
 give @a[score_TrainerLoot26_min=1,score_TrainerLoot26=1] pixelmon:dusk_stone
@@ -287,7 +287,7 @@ scoreboard players add @a[score_TrainerLoot27_min=1,score_TrainerLoot27=1] Train
 
 
 #Lost Hotel
-give @a[score_TrainerLoot29_min=1,score_TrainerLoot29=1] pixelmon:tm56
+give @a[score_TrainerLoot29_min=1,score_TrainerLoot29=1] pixelmon:tm_gen6 1 0 {tm:56}
 scoreboard players add @a[score_TrainerLoot29_min=1,score_TrainerLoot29=1] TrainerLoot29 1
 
 
@@ -307,7 +307,7 @@ scoreboard players add @a[score_TrainerLoot32_min=1,score_TrainerLoot32=1] Train
 give @a[score_TrainerLoot33_min=1,score_TrainerLoot33=1] pixelmon:big_nugget
 scoreboard players add @a[score_TrainerLoot33_min=1,score_TrainerLoot33=1] TrainerLoot33 1
 
-give @a[score_TrainerLoot34_min=1,score_TrainerLoot34=1] pixelmon:tm42
+give @a[score_TrainerLoot34_min=1,score_TrainerLoot34=1] pixelmon:tm_gen6 1 0 {tm:42}
 scoreboard players add @a[score_TrainerLoot34_min=1,score_TrainerLoot34=1] TrainerLoot34 1
 
 give @a[score_TrainerLoot78_min=1,score_TrainerLoot78=1] pixelmon:sitrus_berry 1 0 {CanPlaceOn:[farmland]}
@@ -318,19 +318,19 @@ scoreboard players add @a[score_TrainerLoot78_min=1,score_TrainerLoot78=1] Train
 give @a[score_TrainerLoot35_min=1,score_TrainerLoot35=1] pixelmon:repeat_ball 10
 scoreboard players add @a[score_TrainerLoot35_min=1,score_TrainerLoot35=1] TrainerLoot35 1
 
-give @a[score_TrainerLoot41_min=1,score_TrainerLoot41=1] pixelmon:tm10
+give @a[score_TrainerLoot41_min=1,score_TrainerLoot41=1] pixelmon:tm_gen6 1 0 {tm:10}
 scoreboard players add @a[score_TrainerLoot41_min=1,score_TrainerLoot41=1] TrainerLoot41 1
 
-execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=1,score_Weekday=2] ~ ~ ~ /give @a[score_TrainerLoot36_min=1,score_TrainerLoot36=1] pixelmon:tm35
+execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=1,score_Weekday=2] ~ ~ ~ /give @a[score_TrainerLoot36_min=1,score_TrainerLoot36=1] pixelmon:tm_gen6 1 0 {tm:35}
 execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=1,score_Weekday=2] ~ ~ ~ /scoreboard players add @a[score_TrainerLoot36_min=1,score_TrainerLoot36=1] TrainerLoot36 1
 
-execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=3,score_Weekday=3] ~ ~ ~ /give @a[score_TrainerLoot37_min=1,score_TrainerLoot37=1] pixelmon:tm77
+execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=3,score_Weekday=3] ~ ~ ~ /give @a[score_TrainerLoot37_min=1,score_TrainerLoot37=1] pixelmon:tm_gen6 1 0 {tm:77}
 execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=3,score_Weekday=3] ~ ~ ~ /scoreboard players add @a[score_TrainerLoot37_min=1,score_TrainerLoot37=1] TrainerLoot37 1
 
-execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=4,score_Weekday=5] ~ ~ ~ /give @a[score_TrainerLoot38_min=1,score_TrainerLoot38=1] pixelmon:tm90
+execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=4,score_Weekday=5] ~ ~ ~ /give @a[score_TrainerLoot38_min=1,score_TrainerLoot38=1] pixelmon:tm_gen6 1 0 {tm:90}
 execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=4,score_Weekday=5] ~ ~ ~ /scoreboard players add @a[score_TrainerLoot38_min=1,score_TrainerLoot38=1] TrainerLoot38 1
 
-execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=6,score_Weekday=7] ~ ~ ~ /give @a[score_TrainerLoot39_min=1,score_TrainerLoot39=1] pixelmon:tm32
+execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=6,score_Weekday=7] ~ ~ ~ /give @a[score_TrainerLoot39_min=1,score_TrainerLoot39=1] pixelmon:tm_gen6 1 0 {tm:32}
 execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=6,score_Weekday=7] ~ ~ ~ /scoreboard players add @a[score_TrainerLoot39_min=1,score_TrainerLoot39=1] TrainerLoot39 1
 
 scoreboard players set @a[score_TrainerLoot36_min=1,score_TrainerLoot36=1] TrainerLoot36 0
@@ -340,13 +340,13 @@ scoreboard players set @a[score_TrainerLoot39_min=1,score_TrainerLoot39=1] Train
 
 
 #Couriway Town
-give @a[score_TrainerLoot42_min=1,score_TrainerLoot42=1] pixelmon:tm89
+give @a[score_TrainerLoot42_min=1,score_TrainerLoot42=1] pixelmon:tm_gen6 1 0 {tm:89}
 scoreboard players add @a[score_TrainerLoot42_min=1,score_TrainerLoot42=1] TrainerLoot42 1
 
 give @a[score_TrainerLoot43_min=1,score_TrainerLoot43=1] pixelmon:revive
 scoreboard players add @a[score_TrainerLoot43_min=1,score_TrainerLoot43=1] TrainerLoot43 1
 
-give @a[score_TrainerLoot44_min=1,score_TrainerLoot44=1] pixelmon:tm55
+give @a[score_TrainerLoot44_min=1,score_TrainerLoot44=1] pixelmon:tm_gen6 1 0 {tm:55}
 scoreboard players add @a[score_TrainerLoot44_min=1,score_TrainerLoot44=1] TrainerLoot44 1
 
 give @a[score_TrainerLoot79_min=1,score_TrainerLoot79=1,score_StarterPick_min=1,score_StarterPick=1] pixelmon:miracle_seed
@@ -361,7 +361,7 @@ scoreboard players add @a[score_TrainerLoot45_min=1,score_TrainerLoot45=1] Train
 
 
 #Snowbelle City
-give @a[score_TrainerLoot47_min=1,score_TrainerLoot47=1] pixelmon:tm8
+give @a[score_TrainerLoot47_min=1,score_TrainerLoot47=1] pixelmon:tm_gen6 1 0 {tm:8}
 scoreboard players add @a[score_TrainerLoot47_min=1,score_TrainerLoot47=1] TrainerLoot47 1
 
 
@@ -374,10 +374,10 @@ scoreboard players add @a[score_TrainerLoot50_min=1,score_TrainerLoot50=1] Train
 
 
 #Kiloude City
-give @a[score_TrainerLoot51_min=1,score_TrainerLoot51=1] pixelmon:tm91
+give @a[score_TrainerLoot51_min=1,score_TrainerLoot51=1] pixelmon:tm_gen6 1 0 {tm:91}
 scoreboard players add @a[score_TrainerLoot51_min=1,score_TrainerLoot51=1] TrainerLoot51 1
 
-give @a[score_TrainerLoot52_min=1,score_TrainerLoot52=1] pixelmon:tm58
+give @a[score_TrainerLoot52_min=1,score_TrainerLoot52=1] pixelmon:tm_gen6 1 0 {tm:58}
 scoreboard players add @a[score_TrainerLoot52_min=1,score_TrainerLoot52=1] TrainerLoot52 1
 
 give @a[score_TrainerLoot80_min=1,score_TrainerLoot80=1] pixelmon:max_revive
@@ -442,7 +442,7 @@ scoreboard players add @a[score_TrainerLoot58_min=1,score_TrainerLoot58=1] Train
 
 #Lysandre's Lab
 #Team Flare Grunt
-give @a[score_TrainerLoot97_min=1,score_TrainerLoot97=1] pixelmon:tm12
+give @a[score_TrainerLoot97_min=1,score_TrainerLoot97=1] pixelmon:tm_gen6 1 0 {tm:12}
 scoreboard players add @a[score_TrainerLoot97_min=1,score_TrainerLoot97=1] TrainerLoot97 1
 
 

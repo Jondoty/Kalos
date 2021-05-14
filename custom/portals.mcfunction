@@ -1,3 +1,6 @@
+tellraw @a[tag=!InitialTags] {"text":"Initial scoreboard values required to run the map not found. TPing to spawn...","italic":true,"color":"gray"}
+tp @a[type=player,tag=!InitialTags] -552 100 1257
+
 #Lobby to Sycamore Welcome scene
 execute @a[x=-764,y=102,z=1208,dy=3,dz=3,tag=!Dialogue266] ~ ~ ~ gamemode spectator @s
 execute @a[x=-764,y=102,z=1208,dy=3,dz=3,tag=!Dialogue266] ~ ~ ~ scoreboard players set @s DialogueTrigger 266

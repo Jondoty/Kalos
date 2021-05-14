@@ -15,9 +15,13 @@ spawnpoint @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3] 506 118 1558
 
 
 #tps player to lobby if they have a Deaths score (and thus glitched back into the spawn)
-tellraw @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3,score_Deaths_min=1] {"text":"Death detected, not clearing data or giving initial scores...","italic":true,"color":"gray"}
-tp @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3,score_Deaths_min=1] -783 102 1210.0 -90 13
-scoreboard players set @a[x=-783,y=102,z=1210,r=20,score_Deaths_min=1] Deaths 0
+tellraw @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3,score_DialogueTrigger=0,score_Deaths_min=1] {"text":"Death detected, not clearing data or giving initial scores...","italic":true,"color":"gray"}
+tp @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3,score_DialogueTrigger=0,score_Deaths_min=1] -783 102 1210.0 -90 13
+scoreboard players set @a[x=-783,y=102,z=1210,r=20,score_DialogueTrigger=0,score_Deaths_min=1] Deaths 0
+
+tellraw @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3,score_DialogueTrigger_min=1,score_Deaths_min=1] {"text":"Death detected, not clearing data or giving initial scores...","italic":true,"color":"gray"}
+tp @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3,score_DialogueTrigger_min=1,score_Deaths_min=1] -783 102 1210.0 -90 13
+scoreboard players set @a[x=-783,y=102,z=1210,r=20,score_DialogueTrigger_min=1,score_Deaths_min=1] Deaths 0
 
 
 #Removes player's current advancements
@@ -54,6 +58,7 @@ scoreboard players set @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3] BattleStreak 0
 scoreboard players set @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3] BattlePoint 0
 scoreboard players set @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3] BattleMaison 0
 scoreboard players set @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3] PlayedDays 0
+scoreboard players set @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3] TalkTime 0
 
 #Event tag Resets if present
 scoreboard players tag @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3] remove GhostGirl
@@ -872,8 +877,8 @@ scoreboard players tag @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3] remove TicketHerb
 scoreboard players tag @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3] remove TicketGym
 scoreboard players tag @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3] remove TicketCenter
 
-
-
+#Gives InitialTags score to check for later in case of an issue
+scoreboard players tag @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3] add InitialTags
 
 
 
@@ -892,4 +897,4 @@ scoreboard players tag @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3] remove TicketCenter
 
 
 #Tp to lobby
-tp @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3] -783 102 1210.0 -90 13
+tp @a[x=-553,y=99,z=1256,dx=2,dy=3,dz=3,score_DialogueTrigger=0] -783 102 1210.0 -90 13
