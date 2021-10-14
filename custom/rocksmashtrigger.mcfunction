@@ -1233,7 +1233,23 @@ scoreboard players set @a[tag=RockSmash,score_RockTrigger_min=44,score_RockTrigg
 
 #------------------------------------------------------------------------------------------------------------------
 #Playsound Item
+
+
 playsound pixelmon:pixelmon.block.pokelootobtained ambient @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=52,score_rng_min=65,score_rng=104] ~ ~ ~ 100 1 1
+give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=52,score_rng_min=65,score_rng=86,score_PokemonLeague=0] pixelmon:hard_stone
+give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=52,score_rng_min=87,score_rng=98,score_PokemonLeague=0] pixelmon:revive
+give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=52,score_rng_min=99,score_rng=104,score_PokemonLeague=0] pixelmon:old_amber
+
+give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=52,score_rng_min=65,score_rng=68,score_PokemonLeague_min=1] pixelmon:armor_fossil
+give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=52,score_rng_min=69,score_rng=72,score_PokemonLeague_min=1] pixelmon:claw_fossil
+give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=52,score_rng_min=73,score_rng=76,score_PokemonLeague_min=1] pixelmon:cover_fossil
+give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=52,score_rng_min=77,score_rng=80,score_PokemonLeague_min=1] pixelmon:dome_fossil
+give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=52,score_rng_min=81,score_rng=84,score_PokemonLeague_min=1] pixelmon:helix_fossil
+give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=52,score_rng_min=85,score_rng=88,score_PokemonLeague_min=1] pixelmon:old_amber
+give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=52,score_rng_min=89,score_rng=92,score_PokemonLeague_min=1] pixelmon:plume_fossil
+give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=52,score_rng_min=93,score_rng=96,score_PokemonLeague_min=1] pixelmon:root_fossil
+give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=52,score_rng_min=97,score_rng=100,score_PokemonLeague_min=1] pixelmon:skull_fossil
+give @a[tag=RockSmash,score_RockTrigger_min=44,score_RockTrigger=52,score_rng_min=101,score_rng=104,score_PokemonLeague_min=1] minecraft:emerald 1 0 {display:{Lore:["A pretty, heart-shaped scale","that is extremely rare.","It glows faintly with all of","the colors of the rainbow."]}}
 
 
 #Glittering Cave #1
@@ -1241,18 +1257,6 @@ tellraw @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=45] {"text":
 execute @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=45] ~ ~ ~ /tp @e[x=-1444,y=147,z=319,r=3,type=pixelmon:statue] ~ ~-1000 ~
 execute @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=45] ~ ~ ~ entitydata @e[x=-1444,y=147,z=319,r=3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:46s}]}
 execute @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=45] ~ ~ ~ playsound minecraft:item.shield.block ambient @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=45] ~ ~ ~ 100 1 1 1
-
-give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=45,score_rng_min=65,score_rng=68,score_PokemonLeague_min=1] pixelmon:armor_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=45,score_rng_min=69,score_rng=72,score_PokemonLeague_min=1] pixelmon:claw_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=45,score_rng_min=73,score_rng=76,score_PokemonLeague_min=1] pixelmon:cover_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=45,score_rng_min=77,score_rng=80,score_PokemonLeague_min=1] pixelmon:dome_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=45,score_rng_min=81,score_rng=84,score_PokemonLeague_min=1] pixelmon:helix_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=45,score_rng_min=85,score_rng=88,score_PokemonLeague_min=1] pixelmon:old_amber
-give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=45,score_rng_min=89,score_rng=92,score_PokemonLeague_min=1] pixelmon:plume_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=45,score_rng_min=93,score_rng=96,score_PokemonLeague_min=1] pixelmon:root_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=45,score_rng_min=97,score_rng=100,score_PokemonLeague_min=1] pixelmon:skull_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=44,score_RockTrigger=44,score_rng_min=101,score_rng=104,score_PokemonLeague_min=1] minecraft:emerald 1 0 {display:{Lore:["A pretty, heart-shaped scale","that is extremely rare.","It glows faintly with all of","the colors of the rainbow."]}}
-
 
 execute @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=45] ~ ~ ~ /execute @e[x=-1444,y=147,z=319,r=3,type=armor_stand] ~ ~ ~ /particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[r=30] 172
 execute @a[tag=RockSmash,score_RockTrigger_min=45,score_RockTrigger=45] ~ ~ ~ /setblock -687 100 1333 minecraft:gold_block
@@ -1265,17 +1269,6 @@ tellraw @a[tag=RockSmash,score_RockTrigger_min=46,score_RockTrigger=46] {"text":
 execute @a[tag=RockSmash,score_RockTrigger_min=46,score_RockTrigger=46] ~ ~ ~ /tp @e[x=-1429,y=147,z=306,r=3,type=pixelmon:statue] ~ ~-1000 ~
 execute @a[tag=RockSmash,score_RockTrigger_min=46,score_RockTrigger=46] ~ ~ ~ entitydata @e[x=-1429,y=147,z=306,r=3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:46s}]}
 execute @a[tag=RockSmash,score_RockTrigger_min=46,score_RockTrigger=46] ~ ~ ~ playsound minecraft:item.shield.block ambient @a[tag=RockSmash,score_RockTrigger_min=46,score_RockTrigger=46] ~ ~ ~ 100 1 1 1
-
-give @a[tag=RockSmash,score_RockTrigger_min=46,score_RockTrigger=46,score_rng_min=65,score_rng=68,score_PokemonLeague_min=1] pixelmon:armor_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=46,score_RockTrigger=46,score_rng_min=69,score_rng=72,score_PokemonLeague_min=1] pixelmon:claw_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=46,score_RockTrigger=46,score_rng_min=73,score_rng=76,score_PokemonLeague_min=1] pixelmon:cover_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=46,score_RockTrigger=46,score_rng_min=77,score_rng=80,score_PokemonLeague_min=1] pixelmon:dome_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=46,score_RockTrigger=46,score_rng_min=81,score_rng=84,score_PokemonLeague_min=1] pixelmon:helix_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=46,score_RockTrigger=46,score_rng_min=85,score_rng=88,score_PokemonLeague_min=1] pixelmon:old_amber
-give @a[tag=RockSmash,score_RockTrigger_min=46,score_RockTrigger=46,score_rng_min=89,score_rng=92,score_PokemonLeague_min=1] pixelmon:plume_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=46,score_RockTrigger=46,score_rng_min=93,score_rng=96,score_PokemonLeague_min=1] pixelmon:root_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=46,score_RockTrigger=46,score_rng_min=97,score_rng=100,score_PokemonLeague_min=1] pixelmon:skull_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=44,score_RockTrigger=44,score_rng_min=101,score_rng=104,score_PokemonLeague_min=1] minecraft:emerald 1 0 {display:{Lore:["A pretty, heart-shaped scale","that is extremely rare.","It glows faintly with all of","the colors of the rainbow."]}}
 
 
 execute @a[tag=RockSmash,score_RockTrigger_min=46,score_RockTrigger=46] ~ ~ ~ /execute @e[x=-1429,y=147,z=306,r=3,type=armor_stand] ~ ~ ~ /particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[r=30] 172
@@ -1291,17 +1284,6 @@ execute @a[tag=RockSmash,score_RockTrigger_min=47,score_RockTrigger=47] ~ ~ ~ /t
 execute @a[tag=RockSmash,score_RockTrigger_min=47,score_RockTrigger=47] ~ ~ ~ entitydata @e[x=-1389,y=147,z=320,r=3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:46s}]}
 execute @a[tag=RockSmash,score_RockTrigger_min=47,score_RockTrigger=47] ~ ~ ~ playsound minecraft:item.shield.block ambient @a[tag=RockSmash,score_RockTrigger_min=47,score_RockTrigger=47] ~ ~ ~ 100 1 1 1
 
-give @a[tag=RockSmash,score_RockTrigger_min=47,score_RockTrigger=47,score_rng_min=65,score_rng=68,score_PokemonLeague_min=1] pixelmon:armor_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=47,score_RockTrigger=47,score_rng_min=69,score_rng=72,score_PokemonLeague_min=1] pixelmon:claw_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=47,score_RockTrigger=47,score_rng_min=73,score_rng=76,score_PokemonLeague_min=1] pixelmon:cover_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=47,score_RockTrigger=47,score_rng_min=77,score_rng=80,score_PokemonLeague_min=1] pixelmon:dome_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=47,score_RockTrigger=47,score_rng_min=81,score_rng=84,score_PokemonLeague_min=1] pixelmon:helix_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=47,score_RockTrigger=47,score_rng_min=85,score_rng=88,score_PokemonLeague_min=1] pixelmon:old_amber
-give @a[tag=RockSmash,score_RockTrigger_min=47,score_RockTrigger=47,score_rng_min=89,score_rng=92,score_PokemonLeague_min=1] pixelmon:plume_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=47,score_RockTrigger=47,score_rng_min=93,score_rng=96,score_PokemonLeague_min=1] pixelmon:root_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=47,score_RockTrigger=47,score_rng_min=97,score_rng=100,score_PokemonLeague_min=1] pixelmon:skull_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=44,score_RockTrigger=44,score_rng_min=101,score_rng=104,score_PokemonLeague_min=1] minecraft:emerald 1 0 {display:{Lore:["A pretty, heart-shaped scale","that is extremely rare.","It glows faintly with all of","the colors of the rainbow."]}}
-
 
 execute @a[tag=RockSmash,score_RockTrigger_min=47,score_RockTrigger=47] ~ ~ ~ /execute @e[x=-1389,y=147,z=320,r=3,type=armor_stand] ~ ~ ~ /particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[r=30] 172
 execute @a[tag=RockSmash,score_RockTrigger_min=47,score_RockTrigger=47] ~ ~ ~ /setblock -687 100 1335 minecraft:gold_block
@@ -1314,17 +1296,6 @@ execute @a[tag=RockSmash,score_RockTrigger_min=48,score_RockTrigger=48] ~ ~ ~ /t
 execute @a[tag=RockSmash,score_RockTrigger_min=48,score_RockTrigger=48] ~ ~ ~ entitydata @e[x=-1388,y=147,z=272,r=3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:46s}]}
 execute @a[tag=RockSmash,score_RockTrigger_min=48,score_RockTrigger=48] ~ ~ ~ playsound minecraft:item.shield.block ambient @a[tag=RockSmash,score_RockTrigger_min=48,score_RockTrigger=48] ~ ~ ~ 100 1 1 1
 
-give @a[tag=RockSmash,score_RockTrigger_min=48,score_RockTrigger=48,score_rng_min=65,score_rng=68,score_PokemonLeague_min=1] pixelmon:armor_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=48,score_RockTrigger=48,score_rng_min=69,score_rng=72,score_PokemonLeague_min=1] pixelmon:claw_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=48,score_RockTrigger=48,score_rng_min=73,score_rng=76,score_PokemonLeague_min=1] pixelmon:cover_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=48,score_RockTrigger=48,score_rng_min=77,score_rng=80,score_PokemonLeague_min=1] pixelmon:dome_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=48,score_RockTrigger=48,score_rng_min=81,score_rng=84,score_PokemonLeague_min=1] pixelmon:helix_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=48,score_RockTrigger=48,score_rng_min=85,score_rng=88,score_PokemonLeague_min=1] pixelmon:old_amber
-give @a[tag=RockSmash,score_RockTrigger_min=48,score_RockTrigger=48,score_rng_min=89,score_rng=92,score_PokemonLeague_min=1] pixelmon:plume_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=48,score_RockTrigger=48,score_rng_min=93,score_rng=96,score_PokemonLeague_min=1] pixelmon:root_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=48,score_RockTrigger=48,score_rng_min=97,score_rng=100,score_PokemonLeague_min=1] pixelmon:skull_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=44,score_RockTrigger=44,score_rng_min=101,score_rng=104,score_PokemonLeague_min=1] minecraft:emerald 1 0 {display:{Lore:["A pretty, heart-shaped scale","that is extremely rare.","It glows faintly with all of","the colors of the rainbow."]}}
-
 
 execute @a[tag=RockSmash,score_RockTrigger_min=48,score_RockTrigger=48] ~ ~ ~ /execute @e[x=-1388,y=147,z=272,r=3,type=armor_stand] ~ ~ ~ /particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[r=30] 172
 execute @a[tag=RockSmash,score_RockTrigger_min=48,score_RockTrigger=48] ~ ~ ~ /setblock -687 100 1336 minecraft:gold_block
@@ -1336,17 +1307,6 @@ tellraw @a[tag=RockSmash,score_RockTrigger_min=49,score_RockTrigger=49] {"text":
 execute @a[tag=RockSmash,score_RockTrigger_min=49,score_RockTrigger=49] ~ ~ ~ /tp @e[x=-1444,y=147,z=270,r=3,type=pixelmon:statue] ~ ~-1000 ~
 execute @a[tag=RockSmash,score_RockTrigger_min=49,score_RockTrigger=49] ~ ~ ~ entitydata @e[x=-1444,y=147,z=270,r=3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:46s}]}
 execute @a[tag=RockSmash,score_RockTrigger_min=49,score_RockTrigger=49] ~ ~ ~ playsound minecraft:item.shield.block ambient @a[tag=RockSmash,score_RockTrigger_min=49,score_RockTrigger=49] ~ ~ ~ 100 1 1 1
-
-give @a[tag=RockSmash,score_RockTrigger_min=49,score_RockTrigger=49,score_rng_min=65,score_rng=68,score_PokemonLeague_min=1] pixelmon:armor_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=49,score_RockTrigger=49,score_rng_min=69,score_rng=72,score_PokemonLeague_min=1] pixelmon:claw_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=49,score_RockTrigger=49,score_rng_min=73,score_rng=76,score_PokemonLeague_min=1] pixelmon:cover_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=49,score_RockTrigger=49,score_rng_min=77,score_rng=80,score_PokemonLeague_min=1] pixelmon:dome_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=49,score_RockTrigger=49,score_rng_min=81,score_rng=84,score_PokemonLeague_min=1] pixelmon:helix_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=49,score_RockTrigger=49,score_rng_min=85,score_rng=88,score_PokemonLeague_min=1] pixelmon:old_amber
-give @a[tag=RockSmash,score_RockTrigger_min=49,score_RockTrigger=49,score_rng_min=89,score_rng=92,score_PokemonLeague_min=1] pixelmon:plume_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=49,score_RockTrigger=49,score_rng_min=93,score_rng=96,score_PokemonLeague_min=1] pixelmon:root_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=49,score_RockTrigger=49,score_rng_min=97,score_rng=100,score_PokemonLeague_min=1] pixelmon:skull_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=44,score_RockTrigger=44,score_rng_min=101,score_rng=104,score_PokemonLeague_min=1] minecraft:emerald 1 0 {display:{Lore:["A pretty, heart-shaped scale","that is extremely rare.","It glows faintly with all of","the colors of the rainbow."]}}
 
 
 execute @a[tag=RockSmash,score_RockTrigger_min=49,score_RockTrigger=49] ~ ~ ~ /execute @e[x=-1444,y=147,z=270,r=3,type=armor_stand] ~ ~ ~ /particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[r=30] 172
@@ -1361,17 +1321,6 @@ execute @a[tag=RockSmash,score_RockTrigger_min=50,score_RockTrigger=50] ~ ~ ~ /t
 execute @a[tag=RockSmash,score_RockTrigger_min=50,score_RockTrigger=50] ~ ~ ~ entitydata @e[x=-1489,y=147,z=285,r=3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:46s}]}
 execute @a[tag=RockSmash,score_RockTrigger_min=50,score_RockTrigger=50] ~ ~ ~ playsound minecraft:item.shield.block ambient @a[tag=RockSmash,score_RockTrigger_min=50,score_RockTrigger=50] ~ ~ ~ 100 1 1 1
 
-give @a[tag=RockSmash,score_RockTrigger_min=50,score_RockTrigger=50,score_rng_min=65,score_rng=68,score_PokemonLeague_min=1] pixelmon:armor_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=50,score_RockTrigger=50,score_rng_min=69,score_rng=72,score_PokemonLeague_min=1] pixelmon:claw_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=50,score_RockTrigger=50,score_rng_min=73,score_rng=76,score_PokemonLeague_min=1] pixelmon:cover_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=50,score_RockTrigger=50,score_rng_min=77,score_rng=80,score_PokemonLeague_min=1] pixelmon:dome_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=50,score_RockTrigger=50,score_rng_min=81,score_rng=84,score_PokemonLeague_min=1] pixelmon:helix_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=50,score_RockTrigger=50,score_rng_min=85,score_rng=88,score_PokemonLeague_min=1] pixelmon:old_amber
-give @a[tag=RockSmash,score_RockTrigger_min=50,score_RockTrigger=50,score_rng_min=89,score_rng=92,score_PokemonLeague_min=1] pixelmon:plume_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=50,score_RockTrigger=50,score_rng_min=93,score_rng=96,score_PokemonLeague_min=1] pixelmon:root_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=50,score_RockTrigger=50,score_rng_min=97,score_rng=100,score_PokemonLeague_min=1] pixelmon:skull_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=44,score_RockTrigger=44,score_rng_min=101,score_rng=104,score_PokemonLeague_min=1] minecraft:emerald 1 0 {display:{Lore:["A pretty, heart-shaped scale","that is extremely rare.","It glows faintly with all of","the colors of the rainbow."]}}
-
 
 execute @a[tag=RockSmash,score_RockTrigger_min=50,score_RockTrigger=50] ~ ~ ~ /execute @e[x=-1489,y=147,z=285,r=3,type=armor_stand] ~ ~ ~ /particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[r=30] 172
 execute @a[tag=RockSmash,score_RockTrigger_min=50,score_RockTrigger=50] ~ ~ ~ /setblock -687 100 1338 minecraft:gold_block
@@ -1385,17 +1334,6 @@ execute @a[tag=RockSmash,score_RockTrigger_min=51,score_RockTrigger=51] ~ ~ ~ /t
 execute @a[tag=RockSmash,score_RockTrigger_min=51,score_RockTrigger=51] ~ ~ ~ entitydata @e[x=-1486,y=147,z=320,r=3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:46s}]}
 execute @a[tag=RockSmash,score_RockTrigger_min=51,score_RockTrigger=51] ~ ~ ~ playsound minecraft:item.shield.block ambient @a[tag=RockSmash,score_RockTrigger_min=51,score_RockTrigger=51] ~ ~ ~ 100 1 1 1
 
-give @a[tag=RockSmash,score_RockTrigger_min=51,score_RockTrigger=51,score_rng_min=65,score_rng=68,score_PokemonLeague_min=1] pixelmon:armor_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=51,score_RockTrigger=51,score_rng_min=69,score_rng=72,score_PokemonLeague_min=1] pixelmon:claw_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=51,score_RockTrigger=51,score_rng_min=73,score_rng=76,score_PokemonLeague_min=1] pixelmon:cover_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=51,score_RockTrigger=51,score_rng_min=77,score_rng=80,score_PokemonLeague_min=1] pixelmon:dome_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=51,score_RockTrigger=51,score_rng_min=81,score_rng=84,score_PokemonLeague_min=1] pixelmon:helix_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=51,score_RockTrigger=51,score_rng_min=85,score_rng=88,score_PokemonLeague_min=1] pixelmon:old_amber
-give @a[tag=RockSmash,score_RockTrigger_min=51,score_RockTrigger=51,score_rng_min=89,score_rng=92,score_PokemonLeague_min=1] pixelmon:plume_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=51,score_RockTrigger=51,score_rng_min=93,score_rng=96,score_PokemonLeague_min=1] pixelmon:root_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=51,score_RockTrigger=51,score_rng_min=97,score_rng=100,score_PokemonLeague_min=1] pixelmon:skull_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=44,score_RockTrigger=44,score_rng_min=101,score_rng=104,score_PokemonLeague_min=1] minecraft:emerald 1 0 {display:{Lore:["A pretty, heart-shaped scale","that is extremely rare.","It glows faintly with all of","the colors of the rainbow."]}}
-
 
 execute @a[tag=RockSmash,score_RockTrigger_min=51,score_RockTrigger=51] ~ ~ ~ /execute @e[x=-1486,y=147,z=320,r=3,type=armor_stand] ~ ~ ~ /particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[r=30] 172
 execute @a[tag=RockSmash,score_RockTrigger_min=51,score_RockTrigger=51] ~ ~ ~ /setblock -687 100 1339 minecraft:gold_block
@@ -1408,17 +1346,6 @@ tellraw @a[tag=RockSmash,score_RockTrigger_min=52,score_RockTrigger=52] {"text":
 execute @a[tag=RockSmash,score_RockTrigger_min=52,score_RockTrigger=52] ~ ~ ~ /tp @e[x=-1466,y=147,z=309,r=3,type=pixelmon:statue] ~ ~-1000 ~
 execute @a[tag=RockSmash,score_RockTrigger_min=52,score_RockTrigger=52] ~ ~ ~ entitydata @e[x=-1466,y=147,z=309,r=3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:46s}]}
 execute @a[tag=RockSmash,score_RockTrigger_min=52,score_RockTrigger=52] ~ ~ ~ playsound minecraft:item.shield.block ambient @a[tag=RockSmash,score_RockTrigger_min=52,score_RockTrigger=52] ~ ~ ~ 100 1 1 1
-
-give @a[tag=RockSmash,score_RockTrigger_min=52,score_RockTrigger=52,score_rng_min=65,score_rng=68,score_PokemonLeague_min=1] pixelmon:armor_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=52,score_RockTrigger=52,score_rng_min=69,score_rng=72,score_PokemonLeague_min=1] pixelmon:claw_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=52,score_RockTrigger=52,score_rng_min=73,score_rng=76,score_PokemonLeague_min=1] pixelmon:cover_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=52,score_RockTrigger=52,score_rng_min=77,score_rng=80,score_PokemonLeague_min=1] pixelmon:dome_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=52,score_RockTrigger=52,score_rng_min=81,score_rng=84,score_PokemonLeague_min=1] pixelmon:helix_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=52,score_RockTrigger=52,score_rng_min=85,score_rng=88,score_PokemonLeague_min=1] pixelmon:old_amber
-give @a[tag=RockSmash,score_RockTrigger_min=52,score_RockTrigger=52,score_rng_min=89,score_rng=92,score_PokemonLeague_min=1] pixelmon:plume_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=52,score_RockTrigger=52,score_rng_min=93,score_rng=96,score_PokemonLeague_min=1] pixelmon:root_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=52,score_RockTrigger=52,score_rng_min=97,score_rng=100,score_PokemonLeague_min=1] pixelmon:skull_fossil
-give @a[tag=RockSmash,score_RockTrigger_min=44,score_RockTrigger=44,score_rng_min=101,score_rng=104,score_PokemonLeague_min=1] minecraft:emerald 1 0 {display:{Lore:["A pretty, heart-shaped scale","that is extremely rare.","It glows faintly with all of","the colors of the rainbow."]}}
 
 
 execute @a[tag=RockSmash,score_RockTrigger_min=52,score_RockTrigger=52] ~ ~ ~ /execute @e[x=-1466,y=147,z=309,r=3,type=armor_stand] ~ ~ ~ /particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[r=30] 172

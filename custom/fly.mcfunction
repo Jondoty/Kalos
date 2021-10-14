@@ -42,7 +42,9 @@ tellraw @a[x=-1670,y=76,z=-1198,dx=23,dy=10,dz=25,score_Fly_min=1] ["",{"text":"
 scoreboard players set @a[x=-1670,y=76,z=-1198,dx=23,dy=10,dz=25,score_Fly_min=1] Fly 0
 
 
-
+#Lobby
+tellraw @a[x=-792,y=100,z=1196,dx=38,dy=20,dz=47,score_Fly_min=1] ["",{"text":"Mom's words echoed... ","italic":true,"color":"gray"},{"selector":"@p[score_Fly_min=1]","italic":true,"color":"gray"},{"text":"! There's a time and place for everything! But not now.","italic":true,"color":"gray"}]
+scoreboard players set @a[x=-792,y=100,z=1196,dx=38,dy=20,dz=47,score_Fly_min=1] Fly 0
 
 
 

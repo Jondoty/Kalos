@@ -16,6 +16,7 @@ scoreboard players tag @s[score_MusicCooldown_min=1] remove FlareBattleMusic
 scoreboard players tag @s[score_MusicCooldown_min=1] remove LysandreBattleMusic
 scoreboard players tag @s[score_MusicCooldown_min=1] remove FriendBattleMusic
 scoreboard players tag @s[score_MusicCooldown_min=1] remove BattleMaisonMusic
+scoreboard players set @s TrainerClass 0
 
 
 #Tells player day of week

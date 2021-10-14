@@ -1,4 +1,4 @@
-#Damage value is +1 TownMap Variant #, mapX value is equal to texture #X
+#Damage value is +1 TownMap Variant #, mapX value is equal to model number
 
 
 

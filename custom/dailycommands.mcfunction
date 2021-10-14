@@ -50,6 +50,10 @@ scoreboard players tag @a remove WaiterCD
 scoreboard players tag @a remove MadameCD
 
 
+
+#Removes QuizTM Cooldown
+scoreboard players tag @a remove QuizCooldown
+
 #-----------------------------------------
 
 #Removes Chateau Writ scores if present
@@ -132,6 +136,35 @@ scoreboard players tag @a[score_PlayedDays_min=9855,score_PlayedDays=9855] add B
 
 advancement grant @a[score_PlayedDays_min=365,score_PlayedDays=365] only kalos:adventurer4
 
+
+
+
+#Resets daily Ribbon Tourist dialogues
+scoreboard players tag @a remove Dialogue269
+scoreboard players tag @a remove Dialogue270
+scoreboard players tag @a remove Dialogue271
+scoreboard players tag @a remove Dialogue272
+scoreboard players tag @a remove Dialogue273
+scoreboard players tag @a remove Dialogue274
+scoreboard players tag @a remove Dialogue275
+scoreboard players tag @a remove Dialogue276
+scoreboard players tag @a remove Dialogue277
+scoreboard players tag @a remove Dialogue278
+scoreboard players tag @a remove Dialogue279
+scoreboard players tag @a remove Dialogue280
+scoreboard players tag @a remove Dialogue281
+scoreboard players tag @a remove Dialogue282
+
+
+
+
+
+
+
+
+
+
+#-----------------------------------------
 
 
 #Fills in stepped-on farmland in Berry Fields

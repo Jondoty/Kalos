@@ -52,9 +52,16 @@ execute @a[score_TalkTrigger_min=4,score_TalkTrigger=5] ~ ~ ~ /scoreboard player
 
 
 
+#Resets randomized Pokemon
+#/scoreboard players set @e[x=-688,y=100,z=1136,dy=3,type=armor_stand] rng 650
+#/scoreboard players set @e[x=-686,y=100,z=1136,dy=3,type=armor_stand] rng 653
+#/scoreboard players set @e[x=-684,y=100,z=1136,dy=3,type=armor_stand] rng 656
+
+
 #Starter Pokemon
 #Chespin - Shauna picks Froakie, Serena picks Fennekin
-execute @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ /pokegive @a[score_TalkTrigger_min=6,score_TalkTrigger=6,score_StarterPick=0] Chespin lvl:5 gr:7
+#execute @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ /pokegive @a[score_TalkTrigger_min=6,score_TalkTrigger=6,score_StarterPick=0] Chespin lvl:5 gr:7
+execute @a[score_TalkTrigger_min=6,score_TalkTrigger=6,score_StarterPick=0] ~ ~ ~ /function randomizer:startersgive
 execute @a[score_TalkTrigger_min=6,score_TalkTrigger=6,score_StarterPick=0] ~ ~ ~ /tellraw @s {"text":"An excellent choice!","italic":true,"color":"gray"}
 execute @a[score_TalkTrigger_min=6,score_TalkTrigger=6,score_StarterPick=0] ~ ~ ~ /scoreboard players set @s StarterPick 1
 execute @a[score_TalkTrigger_min=6,score_TalkTrigger=6,score_StarterPick_min=1] ~ ~ ~ /tp @s 443 108 1369 88 6
@@ -64,7 +71,8 @@ execute @a[score_TalkTrigger_min=6,score_TalkTrigger=6,score_StarterPick_min=1] 
 
 
 #Fennekin - Shauna picks Chespin, Serena picks Froakie
-execute @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ /pokegive @a[score_TalkTrigger_min=7,score_TalkTrigger=7,score_StarterPick=0] Fennekin lvl:5 gr:7
+#execute @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ /pokegive @a[score_TalkTrigger_min=7,score_TalkTrigger=7,score_StarterPick=0] Fennekin lvl:5 gr:7
+execute @a[score_TalkTrigger_min=7,score_TalkTrigger=7,score_StarterPick=0] ~ ~ ~ /function randomizer:startersgive
 execute @a[score_TalkTrigger_min=7,score_TalkTrigger=7,score_StarterPick=0] ~ ~ ~ /tellraw @s {"text":"An excellent choice!","italic":true,"color":"gray"}
 execute @a[score_TalkTrigger_min=7,score_TalkTrigger=7,score_StarterPick=0] ~ ~ ~ /scoreboard players set @s StarterPick 2
 execute @a[score_TalkTrigger_min=7,score_TalkTrigger=7,score_StarterPick_min=1] ~ ~ ~ /tp @s 443 108 1369 88 6
@@ -73,7 +81,8 @@ execute @a[score_TalkTrigger_min=7,score_TalkTrigger=7,score_StarterPick_min=1] 
 
 
 #Froakie - Shauna picks Fennekin, Serena picks Chespin
-execute @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ /pokegive @a[score_TalkTrigger_min=8,score_TalkTrigger=8,score_StarterPick=0] Froakie lvl:5 gr:7
+#execute @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ /pokegive @a[score_TalkTrigger_min=8,score_TalkTrigger=8,score_StarterPick=0] Froakie lvl:5 gr:7
+execute @a[score_TalkTrigger_min=8,score_TalkTrigger=8,score_StarterPick=0] ~ ~ ~ /function randomizer:startersgive
 execute @a[score_TalkTrigger_min=8,score_TalkTrigger=8,score_StarterPick=0] ~ ~ ~ /tellraw @s {"text":"An excellent choice!","italic":true,"color":"gray"}
 execute @a[score_TalkTrigger_min=8,score_TalkTrigger=8,score_StarterPick=0] ~ ~ ~ /scoreboard players set @s StarterPick 3
 execute @a[score_TalkTrigger_min=8,score_TalkTrigger=8,score_StarterPick_min=1] ~ ~ ~ /tp @s 443 108 1369 88 6
@@ -1392,6 +1401,156 @@ execute @a[score_TalkTrigger_min=325,score_TalkTrigger=325] ~ ~ ~ scoreboard pla
 
 #--------------------------------------------------------------------------------------------------------------------------------
 
+#Skips if player is already going about randomization process
+execute @a[score_TalkTrigger_min=330,score_TalkTrigger=330] ~ ~ ~ execute @a[tag=RandomizerTemp] ~ ~ ~ scoreboard players tag @a[score_TalkTrigger_min=330,score_TalkTrigger=330] add Skip
+execute @a[score_TalkTrigger_min=330,score_TalkTrigger=330] ~ ~ ~ tellraw @s[tag=Skip] {"text":"A player is currently randomizing spawners. Please wait."}
+
+execute @a[score_TalkTrigger_min=330,score_TalkTrigger=330,tag=!Skip] ~ ~ ~ scoreboard players enable @s TalkTrigger
+execute @a[score_TalkTrigger_min=330,score_TalkTrigger=330,tag=!Skip] ~ ~ ~ tellraw @s ["",{"text":"This option will only alter the Starters and Pokemon found in caves, from patches of grass, flowers, and water. Events like legendaries and the Friend Safari will remain unaffected. This will change the entire world and take about 15 minutes. Would you like to continue?\n\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 331"}},{"text":"]"}]
+execute @a[score_TalkTrigger_min=330,score_TalkTrigger=330] ~ ~ ~ scoreboard players tag @s remove Skip
+execute @a[score_TalkTrigger_min=330,score_TalkTrigger=330] ~ ~ ~ scoreboard players set @s TalkTrigger 0
+
+
+#Skips if player is already going about randomization process
+execute @a[score_TalkTrigger_min=331,score_TalkTrigger=331] ~ ~ ~ execute @a[tag=RandomizerTemp] ~ ~ ~ scoreboard players tag @a[score_TalkTrigger_min=331,score_TalkTrigger=331] add Skip
+execute @a[score_TalkTrigger_min=331,score_TalkTrigger=331,tag=Skip] ~ ~ ~ tellraw @s {"text":"A player is currently randomizing spawners. Please wait."}
+
+
+execute @a[score_TalkTrigger_min=331,score_TalkTrigger=331,tag=!Skip] ~ ~ ~ tellraw @a {"text":"Beginning randomization process! This will take several minutes"}
+execute @a[score_TalkTrigger_min=331,score_TalkTrigger=331,tag=!Skip] ~ ~ ~ /blockdata -775 104 1217 {Text3:"{\"text\":\"[Randomized\"}"}
+#execute @a[score_TalkTrigger_min=331,score_TalkTrigger=331] ~ ~ ~ /blockdata -775 104 1217 {Text3:"{\"text\":\"[Game-Based\"}"}
+execute @a[score_TalkTrigger_min=331,score_TalkTrigger=331,tag=!Skip] ~ ~ ~ scoreboard players tag @s add RandomizerTemp
+execute @a[score_TalkTrigger_min=331,score_TalkTrigger=331] ~ ~ ~ scoreboard players tag @s remove Skip
+execute @a[score_TalkTrigger_min=331,score_TalkTrigger=331] ~ ~ ~ scoreboard players set @s TalkTrigger 0
+
+
+#--------------------------------------------------------------------------------------------------------------------------------
+
+#TM Quiz Lady First Talk
+#335
+execute @a[score_TalkTrigger_min=335,score_TalkTrigger=335,tag=TMQuiz1] ~ ~ ~ execute @s[tag=TMQuiz2] ~ ~ ~ execute @s[tag=TMQuiz3] ~ ~ ~ execute @s[tag=TMQuiz4] ~ ~ ~ tellraw @s {"text":"I don’t have any more questions for you, quiz champion."}
+execute @a[score_TalkTrigger_min=335,score_TalkTrigger=335,tag=TMQuiz1] ~ ~ ~ execute @s[tag=TMQuiz2] ~ ~ ~ execute @s[tag=TMQuiz3] ~ ~ ~ execute @s[tag=TMQuiz4] ~ ~ ~ scoreboard players set @s TalkTrigger 0
+
+execute @a[score_TalkTrigger_min=335,score_TalkTrigger=335,tag=QuizCooldown] ~ ~ ~ tellraw @s {"text":"Please come again tomorrow. If you give me a correct answer, I’ll give you another TM."}
+
+execute @a[score_TalkTrigger_min=335,score_TalkTrigger=335,tag=!QuizCooldown] ~ ~ ~ tellraw @s {"text":"Totally random TM quiz! If you give me a correct answer... Whoa! I’ll give you a TM! Do you want to try the quiz?"}
+execute @a[score_TalkTrigger_min=335,score_TalkTrigger=335,tag=!QuizCooldown] ~ ~ ~ scoreboard players enable @s TalkTrigger
+execute @a[score_TalkTrigger_min=335,score_TalkTrigger=335,tag=!QuizCooldown] ~ ~ ~ tellraw @s ["",{"text":"["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 336"}},{"text":"]"}]
+
+#336
+#Determines which move player gets quizzed on
+execute @a[score_TalkTrigger_min=336,score_TalkTrigger=336,tag=!TMQuiz1] ~ ~ ~ scoreboard players set @s TalkTrigger 337
+execute @a[score_TalkTrigger_min=336,score_TalkTrigger=336,tag=TMQuiz1] ~ ~ ~ scoreboard players set @s[tag=!TMQuiz2] TalkTrigger 338
+execute @a[score_TalkTrigger_min=336,score_TalkTrigger=336,tag=TMQuiz2] ~ ~ ~ scoreboard players set @s[tag=!TMQuiz3] TalkTrigger 339
+execute @a[score_TalkTrigger_min=336,score_TalkTrigger=336,tag=TMQuiz3] ~ ~ ~ scoreboard players set @s[tag=!TMQuiz4] TalkTrigger 340
+
+
+execute @a[score_TalkTrigger_min=336,score_TalkTrigger=340] ~ ~ ~ tellraw @s {"text":"Yay! Now, here's the question! What's the move that I'm describing?"}
+
+#337 - Confide
+execute @a[score_TalkTrigger_min=337,score_TalkTrigger=337] ~ ~ ~ tellraw @s {"text":"It makes the target lose its ability to concentrate and lowers the target's Sp. Atk stat.","italic":true}
+execute @a[score_TalkTrigger_min=337,score_TalkTrigger=337] ~ ~ ~ scoreboard players enable @s TalkTrigger
+execute @a[score_TalkTrigger_min=337,score_TalkTrigger=337] ~ ~ ~ tellraw @s ["",{"text":"["},{"text":"Confide","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 341"}},{"text":"] \u0020 ["},{"text":"Acrobatics","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 342"}},{"text":"] \u0020 ["},{"text":"Embargo","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 342"}},{"text":"] \u0020 ["},{"text":"Trick Room","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 342"}},{"text":"]"}]
+
+
+#338 - Acrobatics
+execute @a[score_TalkTrigger_min=338,score_TalkTrigger=338] ~ ~ ~ tellraw @s {"text":"If the user is not holding an item, this attack inflicts massive damage.","italic":true}
+execute @a[score_TalkTrigger_min=338,score_TalkTrigger=338] ~ ~ ~ scoreboard players enable @s TalkTrigger
+execute @a[score_TalkTrigger_min=338,score_TalkTrigger=338] ~ ~ ~ tellraw @s ["",{"text":"["},{"text":"Confide","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 344"}},{"text":"] \u0020 ["},{"text":"Acrobatics","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 343"}},{"text":"] \u0020 ["},{"text":"Embargo","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 344"}},{"text":"] \u0020 ["},{"text":"Trick Room","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 344"}},{"text":"]"}]
+
+
+#339 - Embargo
+execute @a[score_TalkTrigger_min=339,score_TalkTrigger=339] ~ ~ ~ tellraw @s {"text":"This move prevents the target from using its held item.","italic":true}
+execute @a[score_TalkTrigger_min=339,score_TalkTrigger=339] ~ ~ ~ scoreboard players enable @s TalkTrigger
+execute @a[score_TalkTrigger_min=339,score_TalkTrigger=339] ~ ~ ~ tellraw @s ["",{"text":"["},{"text":"Confide","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 346"}},{"text":"] \u0020 ["},{"text":"Acrobatics","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 346"}},{"text":"] \u0020 ["},{"text":"Embargo","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 345"}},{"text":"] \u0020 ["},{"text":"Trick Room","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 346"}},{"text":"]"}]
+
+
+#340 - Trick Room
+execute @a[score_TalkTrigger_min=340,score_TalkTrigger=340] ~ ~ ~ tellraw @s {"text":"Slower Pokémon get to move first for five turns.","italic":true}
+execute @a[score_TalkTrigger_min=340,score_TalkTrigger=340] ~ ~ ~ scoreboard players enable @s TalkTrigger
+execute @a[score_TalkTrigger_min=340,score_TalkTrigger=340] ~ ~ ~ tellraw @s ["",{"text":"["},{"text":"Confide","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 348"}},{"text":"] \u0020 ["},{"text":"Acrobatics","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 348"}},{"text":"] \u0020 ["},{"text":"Embargo","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 348"}},{"text":"] \u0020 ["},{"text":"Trick Room","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 347"}},{"text":"]"}]
+
+
+
+
+
+
+
+#Quiz1 Right
+execute @a[score_TalkTrigger_min=341,score_TalkTrigger=341] ~ ~ ~ tellraw @s {"text":"Correct, correct, CORRECT! As I promised, I’ll give you a TM! I don’t have to explain what kind of move this is, correct? Please come again tomorrow. If you give me a correct answer, I’ll give you another TM."}
+execute @a[score_TalkTrigger_min=341,score_TalkTrigger=341] ~ ~ ~ give @s pixelmon:tm_gen6 1 0 {tm:100}
+execute @a[score_TalkTrigger_min=341,score_TalkTrigger=341] ~ ~ ~ playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 10 1 1
+execute @a[score_TalkTrigger_min=341,score_TalkTrigger=341] ~ ~ ~ scoreboard players tag @s add TMQuiz1
+execute @a[score_TalkTrigger_min=341,score_TalkTrigger=341] ~ ~ ~ scoreboard players tag @s add QuizCooldown
+
+#Quiz 1 Wrong
+execute @a[score_TalkTrigger_min=342,score_TalkTrigger=342] ~ ~ ~ tellraw @s {"text":"Hmmm. Are you sure? I'll ask you again."}
+execute @a[score_TalkTrigger_min=342,score_TalkTrigger=342] ~ ~ ~ tellraw @s {"text":"It makes the target lose its ability to concentrate and lowers the target's Sp. Atk stat.","italic":true}
+execute @a[score_TalkTrigger_min=342,score_TalkTrigger=342] ~ ~ ~ scoreboard players enable @s TalkTrigger
+execute @a[score_TalkTrigger_min=342,score_TalkTrigger=342] ~ ~ ~ tellraw @s ["",{"text":"["},{"text":"Confide","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 341"}},{"text":"] \u0020 ["},{"text":"Acrobatics","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 342"}},{"text":"] \u0020 ["},{"text":"Embargo","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 342"}},{"text":"] \u0020 ["},{"text":"Trick Room","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 342"}},{"text":"]"}]
+
+
+
+
+#Quiz2 Right
+execute @a[score_TalkTrigger_min=343,score_TalkTrigger=343] ~ ~ ~ tellraw @s {"text":"Correct, correct, CORRECT! As I promised, I’ll give you a TM! I don’t have to explain what kind of move this is, correct? Please come again tomorrow. If you give me a correct answer, I’ll give you another TM."}
+execute @a[score_TalkTrigger_min=343,score_TalkTrigger=343] ~ ~ ~ give @s pixelmon:tm_gen6 1 0 {tm:62}
+execute @a[score_TalkTrigger_min=343,score_TalkTrigger=343] ~ ~ ~ playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 10 1 1
+execute @a[score_TalkTrigger_min=343,score_TalkTrigger=343] ~ ~ ~ scoreboard players tag @s add TMQuiz2
+execute @a[score_TalkTrigger_min=343,score_TalkTrigger=343] ~ ~ ~ scoreboard players tag @s add QuizCooldown
+
+#Quiz 2 Wrong
+execute @a[score_TalkTrigger_min=344,score_TalkTrigger=344] ~ ~ ~ tellraw @s {"text":"Hmmm. Are you sure? I'll ask you again."}
+execute @a[score_TalkTrigger_min=344,score_TalkTrigger=344] ~ ~ ~ tellraw @s {"text":"It makes the target lose its ability to concentrate and lowers the target's Sp. Atk stat.","italic":true}
+execute @a[score_TalkTrigger_min=344,score_TalkTrigger=344] ~ ~ ~ scoreboard players enable @s TalkTrigger
+execute @a[score_TalkTrigger_min=344,score_TalkTrigger=344] ~ ~ ~ tellraw @s ["",{"text":"["},{"text":"Confide","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 344"}},{"text":"] \u0020 ["},{"text":"Acrobatics","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 343"}},{"text":"] \u0020 ["},{"text":"Embargo","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 344"}},{"text":"] \u0020 ["},{"text":"Trick Room","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 344"}},{"text":"]"}]
+
+
+
+#Quiz3 Right
+execute @a[score_TalkTrigger_min=345,score_TalkTrigger=345] ~ ~ ~ tellraw @s {"text":"Correct, correct, CORRECT! As I promised, I’ll give you a TM! I don’t have to explain what kind of move this is, correct? Please come again tomorrow. If you give me a correct answer, I’ll give you another TM."}
+execute @a[score_TalkTrigger_min=345,score_TalkTrigger=345] ~ ~ ~ give @s pixelmon:tm_gen6 1 0 {tm:63}
+execute @a[score_TalkTrigger_min=345,score_TalkTrigger=345] ~ ~ ~ playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 10 1 1
+execute @a[score_TalkTrigger_min=345,score_TalkTrigger=345] ~ ~ ~ scoreboard players tag @s add TMQuiz3
+execute @a[score_TalkTrigger_min=345,score_TalkTrigger=345] ~ ~ ~ scoreboard players tag @s add QuizCooldown
+
+#Quiz 3 Wrong
+execute @a[score_TalkTrigger_min=346,score_TalkTrigger=346] ~ ~ ~ tellraw @s {"text":"Hmmm. Are you sure? I'll ask you again."}
+execute @a[score_TalkTrigger_min=346,score_TalkTrigger=346] ~ ~ ~ tellraw @s {"text":"It makes the target lose its ability to concentrate and lowers the target's Sp. Atk stat.","italic":true}
+execute @a[score_TalkTrigger_min=346,score_TalkTrigger=346] ~ ~ ~ scoreboard players enable @s TalkTrigger
+execute @a[score_TalkTrigger_min=346,score_TalkTrigger=346] ~ ~ ~ tellraw @s ["",{"text":"["},{"text":"Confide","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 346"}},{"text":"] \u0020 ["},{"text":"Acrobatics","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 346"}},{"text":"] \u0020 ["},{"text":"Embargo","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 345"}},{"text":"] \u0020 ["},{"text":"Trick Room","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 346"}},{"text":"]"}]
+
+
+
+#Quiz3 Right
+execute @a[score_TalkTrigger_min=347,score_TalkTrigger=347] ~ ~ ~ tellraw @s {"text":"Correct, correct, CORRECT! As I promised, I’ll give you a TM! I don’t have to explain what kind of move this is, correct?"}
+execute @a[score_TalkTrigger_min=347,score_TalkTrigger=347] ~ ~ ~ give @s pixelmon:tm_gen6 1 0 {tm:92}
+execute @a[score_TalkTrigger_min=347,score_TalkTrigger=347] ~ ~ ~ playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 10 1 1
+execute @a[score_TalkTrigger_min=347,score_TalkTrigger=347] ~ ~ ~ scoreboard players tag @s add TMQuiz4
+execute @a[score_TalkTrigger_min=347,score_TalkTrigger=347] ~ ~ ~ scoreboard players tag @s add QuizCooldown
+
+
+#Quiz 4 Wrong
+execute @a[score_TalkTrigger_min=348,score_TalkTrigger=348] ~ ~ ~ tellraw @s {"text":"Hmmm. Are you sure? I'll ask you again."}
+execute @a[score_TalkTrigger_min=348,score_TalkTrigger=348] ~ ~ ~ tellraw @s {"text":"It makes the target lose its ability to concentrate and lowers the target's Sp. Atk stat.","italic":true}
+execute @a[score_TalkTrigger_min=348,score_TalkTrigger=348] ~ ~ ~ scoreboard players enable @s TalkTrigger
+execute @a[score_TalkTrigger_min=348,score_TalkTrigger=348] ~ ~ ~ tellraw @s ["",{"text":"["},{"text":"Confide","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 348"}},{"text":"] \u0020 ["},{"text":"Acrobatics","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 348"}},{"text":"] \u0020 ["},{"text":"Embargo","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 348"}},{"text":"] \u0020 ["},{"text":"Trick Room","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 347"}},{"text":"]"}]
+
+
+execute @a[score_TalkTrigger_min=335,score_TalkTrigger=348] ~ ~ ~ scoreboard players set @s TalkTrigger 0
+
+#[Confide]   [Acrobatics]   [Embargo]   [Trick Room]
+
+
+
+
+#--------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
 #Catch-all Reset
 #scoreboard players set @a[score_TalkTrigger_min=1] TalkTrigger 0
 
@@ -1403,4 +1562,4 @@ execute @a[score_TalkTrigger_min=325,score_TalkTrigger=325] ~ ~ ~ scoreboard pla
 #/scoreboard players enable @p TalkTrigger
 
 #For NPCS & Statues
-#/tedit add INTERACT /scoreboard players set @pl TalkTrigger 296
+#/tedit add INTERACT /scoreboard players set @pl TalkTrigger 335

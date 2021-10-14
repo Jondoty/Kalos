@@ -1,5 +1,5 @@
 #Current Map Version
-tellraw @s {"text":"1) Map version: Kalos 2.0.1"}
+tellraw @s {"text":"1) Map version: Kalos 2.1.0"}
 
 scoreboard players tag @s add infoverify
 

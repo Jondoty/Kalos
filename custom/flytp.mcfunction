@@ -42,23 +42,24 @@ execute @p[x=1489,y=204,z=-1346,r=30,tag=FlySpawn] ~ ~ ~ /particle fireworksSpar
 
 
 #Resets music when TP
-scoreboard players set @a[x=1496,y=204,z=-1334,dy=4,tag=FlyKiloude] click 1
-scoreboard players set @a[x=1493,y=204,z=-1335,dy=4] click 1
-scoreboard players set @a[x=1493,y=204,z=-1338,dy=4,tag=FlyAquacorde] click 1
-scoreboard players set @a[x=1492,y=204,z=-1341,dy=4,tag=FlySantalune] click 1
-scoreboard players set @a[x=1489,y=204,z=-1346,dy=4,tag=FlyLumiose] click 1
-scoreboard players set @a[x=1495,y=204,z=-1344,dy=4,tag=FlyPokemonLeague] click 1
-scoreboard players set @a[x=1498,y=204,z=-1341,dy=4,tag=FlySnowbelle] click 1
-scoreboard players set @a[x=1502,y=204,z=-1343,dy=4,tag=FlyCouriway] click 1
-scoreboard players set @a[x=1501,y=204,z=-1347,dy=4,tag=FlyAnistar] click 1
-scoreboard players set @a[x=1495,y=204,z=-1348,dy=4,tag=FlyDendemille] click 1
-scoreboard players set @a[x=1489,y=204,z=-1352,dy=4,tag=FlyLaverre] click 1
-scoreboard players set @a[x=1483,y=204,z=-1349,dy=4,tag=FlyCoumarine] click 1
-scoreboard players set @a[x=1478,y=204,z=-1347,dy=4,tag=FlyShalour] click 1
-scoreboard players set @a[x=1475,y=204,z=-1344,dy=4,tag=FlyGeosenge] click 1
-scoreboard players set @a[x=1479,y=204,z=-1337,dy=4,tag=FlyAmbrette] click 1
-scoreboard players set @a[x=1478,y=204,z=-1342,dy=4,tag=FlyCyllage] click 1
-scoreboard players set @a[x=1484,y=204,z=-1342,dy=4,tag=FlyCamphrier] click 1
+execute @a[x=1496,y=204,z=-1334,dy=4,tag=FlyKiloude] ~ ~ ~ function world:musictitles
+execute @a[x=1493,y=204,z=-1335,dy=4] ~ ~ ~ function world:musictitles
+execute @a[x=1493,y=204,z=-1338,dy=4,tag=FlyAquacorde] ~ ~ ~ function world:musictitles
+execute @a[x=1492,y=204,z=-1341,dy=4,tag=FlySantalune] ~ ~ ~ function world:musictitles
+execute @a[x=1489,y=204,z=-1346,dy=4,tag=FlyLumiose] ~ ~ ~ function world:musictitles
+execute @a[x=1495,y=204,z=-1344,dy=4,tag=FlyPokemonLeague] ~ ~ ~ function world:musictitles
+execute @a[x=1498,y=204,z=-1341,dy=4,tag=FlySnowbelle] ~ ~ ~ function world:musictitles
+execute @a[x=1502,y=204,z=-1343,dy=4,tag=FlyCouriway] ~ ~ ~ function world:musictitles
+execute @a[x=1501,y=204,z=-1347,dy=4,tag=FlyAnistar] ~ ~ ~ function world:musictitles
+execute @a[x=1495,y=204,z=-1348,dy=4,tag=FlyDendemille] ~ ~ ~ function world:musictitles
+execute @a[x=1489,y=204,z=-1352,dy=4,tag=FlyLaverre] ~ ~ ~ function world:musictitles
+execute @a[x=1483,y=204,z=-1349,dy=4,tag=FlyCoumarine] ~ ~ ~ function world:musictitles
+execute @a[x=1478,y=204,z=-1347,dy=4,tag=FlyShalour] ~ ~ ~ function world:musictitles
+execute @a[x=1475,y=204,z=-1344,dy=4,tag=FlyGeosenge] ~ ~ ~ function world:musictitles
+execute @a[x=1479,y=204,z=-1337,dy=4,tag=FlyAmbrette] ~ ~ ~ function world:musictitles
+execute @a[x=1478,y=204,z=-1342,dy=4,tag=FlyCyllage] ~ ~ ~ function world:musictitles
+execute @a[x=1484,y=204,z=-1342,dy=4,tag=FlyCamphrier] ~ ~ ~ function world:musictitles
+
 
 
 

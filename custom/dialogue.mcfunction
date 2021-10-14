@@ -1004,7 +1004,7 @@ scoreboard players add @a[score_DialogueTrigger_min=30,score_DialogueTrigger=30,
 execute @a[score_DialogueTrigger_min=30,score_DialogueTrigger=30,tag=!Dialogue30,score_TalkTime_min=1,score_TalkTime=1] ~ ~ ~ /tp @e[x=-504,y=170,z=1256,dy=3,type=pixelmon:npc_chatting] -1623 100 -319
 execute @a[score_DialogueTrigger_min=30,score_DialogueTrigger=30,tag=!Dialogue30,score_TalkTime_min=1,score_TalkTime=1] ~ ~ ~ particle cloud -1623 100 -319 2 2 2 1 100
 
-tellraw @a[score_DialogueTrigger_min=30,score_DialogueTrigger=30,tag=!Dialogue30,score_TalkTime_min=3,score_TalkTime=3] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> "},{"selector":"@p"},{"text":"! I think I saw the Furfrou go in here!"}]
+tellraw @a[score_DialogueTrigger_min=30,score_DialogueTrigger=30,tag=!Dialogue30,score_TalkTime_min=3,score_TalkTime=3] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> "},{"selector":"@p[score_DialogueTrigger_min=30,score_DialogueTrigger=30,tag=!Dialogue30,score_TalkTime_min=3,score_TalkTime=3]"},{"text":"! I think I saw the Furfrou go in here!"}]
 tellraw @a[score_DialogueTrigger_min=30,score_DialogueTrigger=30,tag=!Dialogue30,score_TalkTime_min=12,score_TalkTime=12] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Why don't you go get it? I'll make sure it can't escape!"}]
 
 execute @a[score_DialogueTrigger_min=30,score_DialogueTrigger=30,tag=!Dialogue30,score_TalkTime_min=20,score_TalkTime=20] ~ ~ ~ /tp @e[x=-1623,y=99,z=-319,dy=3,type=pixelmon:npc_chatting] -504 171 1256
@@ -1578,7 +1578,7 @@ scoreboard players set @a[score_DialogueTrigger_min=42,score_DialogueTrigger=42,
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Team Flare Glittering Cave end battle
-#scoreboard players set @a[x=-1434,y=148,z=273,r=10,tag=Dialogue43,tag=!Dialogue43,score_MusicSteps_min=1,score_TalkTime=0] DialogueTrigger 43
+#scoreboard players set @a[x=-1434,y=148,z=273,r=10,tag=!Dialogue43,score_MusicSteps_min=1,score_TalkTime=0] DialogueTrigger 43
 
 scoreboard players add @a[score_DialogueTrigger_min=43,score_DialogueTrigger=43,tag=!Dialogue43] TalkTime 1
 execute @a[score_DialogueTrigger_min=43,score_DialogueTrigger=43,tag=!Dialogue43,score_TalkTime_min=1,score_TalkTime=1] ~ ~ ~ scoreboard players tag @s remove FlareBattleMusic
@@ -5564,7 +5564,7 @@ execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue
 
 execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=59,score_TalkTime=59,score_Volcanion_min=1] ~ ~ ~ execute @e[x=-937,y=36,z=-742,dx=280,dy=40,dz=117,type=pixelmon:pixelmon,name=Volcanion] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
 execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=59,score_TalkTime=59,score_Volcanion_min=1] ~ ~ ~ tellraw @s[tag=!VolcanionCatch] {"text":"You can now re-encounter Volcanion!","italic":true,"color":"gray"}
-execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=59,score_TalkTime=59,score_Volcanion_min=1] ~ ~ ~ scoreboard players set @s[tag=!MewtwoCatch] Volcanion 0
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=59,score_TalkTime=59,score_Volcanion_min=1] ~ ~ ~ scoreboard players set @s[tag=!VolcanionCatch] Volcanion 0
 execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=59,score_TalkTime=59] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
 execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=60,score_TalkTime=60,score_Zapdos_min=6] ~ ~ ~ execute @e[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83,type=pixelmon:pixelmon,name=Zapdos] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
@@ -5574,12 +5574,12 @@ execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue
 
 execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=61,score_TalkTime=61,score_Moltres_min=6] ~ ~ ~ execute @e[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83,type=pixelmon:pixelmon,name=Moltres] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
 execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=61,score_TalkTime=61,score_Moltres_min=6] ~ ~ ~ tellraw @s[tag=!MoltresCatch] {"text":"You can now re-encounter Moltres!","italic":true,"color":"gray"}
-execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=61,score_TalkTime=61,score_Moltres_min=6] ~ ~ ~ scoreboard players set @s[tag=!MewtwoCatch] Moltres 5
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=61,score_TalkTime=61,score_Moltres_min=6] ~ ~ ~ scoreboard players set @s[tag=!MoltresCatch] Moltres 5
 execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=61,score_TalkTime=61] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
 execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=62,score_TalkTime=62,score_Articuno_min=6] ~ ~ ~ execute @e[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83,type=pixelmon:pixelmon,name=Articuno] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
 execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=62,score_TalkTime=62,score_Articuno_min=6] ~ ~ ~ tellraw @s[tag=!ArticunoCatch] {"text":"You can now re-encounter Articuno!","italic":true,"color":"gray"}
-execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=62,score_TalkTime=62,score_Articuno_min=6] ~ ~ ~ scoreboard players set @s[tag=!MewtwoCatch] Articuno 5
+execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=62,score_TalkTime=62,score_Articuno_min=6] ~ ~ ~ scoreboard players set @s[tag=!ArticunoCatch] Articuno 5
 execute @a[score_DialogueTrigger_min=154,score_DialogueTrigger=154,tag=!Dialogue154,score_TalkTime_min=62,score_TalkTime=62] ~ ~ ~ scoreboard players tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
 
@@ -10435,18 +10435,220 @@ scoreboard players set @a[score_DialogueTrigger_min=265,score_DialogueTrigger=26
 #Handled through a 20-tps introduction for custom camera movement
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Inver Introduction
+#
+
+scoreboard players add @a[score_DialogueTrigger_min=267,score_DialogueTrigger=267,tag=!Dialogue267] TalkTime 1
+
+tellraw @a[score_DialogueTrigger_min=267,score_DialogueTrigger=267,tag=!Dialogue267,score_TalkTime_min=1,score_TalkTime=1] {"text":"<...> Oh... I wasn't expecting a vistor in a place like this."}
+tellraw @a[score_DialogueTrigger_min=267,score_DialogueTrigger=267,tag=!Dialogue267,score_TalkTime_min=8,score_TalkTime=8] {"text":"<...> Hmm... You seem to be a pretty good trainer."}
+tellraw @a[score_DialogueTrigger_min=267,score_DialogueTrigger=267,tag=!Dialogue267,score_TalkTime_min=16,score_TalkTime=16] {"text":"<...> Shall we have a rather strange Pokémon battle?"}
+tellraw @a[score_DialogueTrigger_min=267,score_DialogueTrigger=267,tag=!Dialogue267,score_TalkTime_min=23,score_TalkTime=23] {"text":"<...> I call this an Inverse Battle!"}
+tellraw @a[score_DialogueTrigger_min=267,score_DialogueTrigger=267,tag=!Dialogue267,score_TalkTime_min=30,score_TalkTime=30] {"text":"<Inver> With my mysterious power, I will reverse type matchups for a while..."}
+tellraw @a[score_DialogueTrigger_min=267,score_DialogueTrigger=267,tag=!Dialogue267,score_TalkTime_min=39,score_TalkTime=39] {"text":"<Inver> Supereffective moves will not be very effective. Move that are not very effective will be super effective."}
+tellraw @a[score_DialogueTrigger_min=267,score_DialogueTrigger=267,tag=!Dialogue267,score_TalkTime_min=51,score_TalkTime=51] {"text":"<Inver> What do you think? Does it sound fun?"}
+tellraw @a[score_DialogueTrigger_min=267,score_DialogueTrigger=267,tag=!Dialogue267,score_TalkTime_min=60,score_TalkTime=60] {"text":"<Inver> You may understand it in theory, but when you try it, you'll find that it's more difficult than you thought."}
+
+scoreboard players tag @a[score_DialogueTrigger_min=267,score_DialogueTrigger=267,score_TalkTime_min=60,tag=!Dialogue267] add Dialogue267
+scoreboard players set @a[score_DialogueTrigger_min=267,score_DialogueTrigger=267,score_TalkTime_min=60,tag=Dialogue267] TalkTime 0
+scoreboard players set @a[score_DialogueTrigger_min=267,score_DialogueTrigger=267,tag=Dialogue267] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#
+#Dialogue268
 
 
 
 
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Dialogue269 - Ribbon Tourist Monday
+#Ribbon Tourist
+#/tedit add INTERACT /scoreboard players set @pl DialogueTrigger 269
+
+scoreboard players add @a[score_DialogueTrigger_min=269,score_DialogueTrigger=269,tag=!Dialogue269] TalkTime 1
+
+tellraw @a[score_DialogueTrigger_min=269,score_DialogueTrigger=269,tag=!Dialogue269,score_TalkTime_min=1,score_TalkTime=1] {"text":"<Tourist> Today is Monday! I'm going to help you shift gears and perk right up by giving your Pokémon an Alert Ribbon!"}
+tellraw @a[score_DialogueTrigger_min=269,score_DialogueTrigger=269,tag=!Dialogue269,score_TalkTime_min=12,score_TalkTime=12] {"text":"<Tourist> Send out your Pokémon and I'll pin a ribbon on them!"}
+
+scoreboard players tag @a[score_DialogueTrigger_min=269,score_DialogueTrigger=269,score_TalkTime_min=12,tag=!Dialogue269] add Dialogue269
+scoreboard players set @a[score_DialogueTrigger_min=269,score_DialogueTrigger=269,score_TalkTime_min=12,tag=Dialogue269] TalkTime 0
+scoreboard players set @a[score_DialogueTrigger_min=269,score_DialogueTrigger=269,tag=Dialogue269] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Dialogue270 - Ribbon Tourist Monday Gave ribbon
+#Ribbon Tourist
+
+scoreboard players add @a[score_DialogueTrigger_min=270,score_DialogueTrigger=270,tag=!Dialogue270] TalkTime 1
+tellraw @a[score_DialogueTrigger_min=270,score_DialogueTrigger=270,tag=!Dialogue270,score_TalkTime_min=1,score_TalkTime=1] {"text":"<Tourist> When you're all perked up, everything goes well!"}
+tellraw @a[score_DialogueTrigger_min=270,score_DialogueTrigger=270,tag=!Dialogue270,score_TalkTime_min=8,score_TalkTime=8] {"text":"<Tourist> If you're feeling down, just take a gander at an Alert Ribbon, and you'll feel better in no time!"}
+
+scoreboard players tag @a[score_DialogueTrigger_min=270,score_DialogueTrigger=270,score_TalkTime_min=8,tag=!Dialogue270] add Dialogue270
+scoreboard players set @a[score_DialogueTrigger_min=270,score_DialogueTrigger=270,score_TalkTime_min=8,tag=Dialogue270] TalkTime 0
+scoreboard players set @a[score_DialogueTrigger_min=270,score_DialogueTrigger=270,tag=Dialogue270] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Dialogue271
+#Ribbon Tourist Tuesday
+#/tedit add INTERACT /scoreboard players set @pl DialogueTrigger 271
+
+scoreboard players add @a[score_DialogueTrigger_min=271,score_DialogueTrigger=271,tag=!Dialogue271] TalkTime 1
+tellraw @a[score_DialogueTrigger_min=271,score_DialogueTrigger=271,tag=!Dialogue271,score_TalkTime_min=1,score_TalkTime=1] {"text":"<Tourist> Have you ever had something happen that really scared or surprised you?"}
+tellraw @a[score_DialogueTrigger_min=271,score_DialogueTrigger=271,tag=!Dialogue271,score_TalkTime_min=10,score_TalkTime=10] {"text":"<Tourist> It's important to not forget that feeling. That's why I'm going to give your Pokémon a Shock Ribbon!"}
+tellraw @a[score_DialogueTrigger_min=271,score_DialogueTrigger=271,tag=!Dialogue271,score_TalkTime_min=22,score_TalkTime=22] {"text":"<Tourist> Send out your Pokémon and I'll pin a ribbon on them!"}
+
+scoreboard players tag @a[score_DialogueTrigger_min=271,score_DialogueTrigger=271,score_TalkTime_min=22,tag=!Dialogue271] add Dialogue271
+scoreboard players set @a[score_DialogueTrigger_min=271,score_DialogueTrigger=271,score_TalkTime_min=22,tag=Dialogue271] TalkTime 0
+scoreboard players set @a[score_DialogueTrigger_min=271,score_DialogueTrigger=271,tag=Dialogue271] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Dialogue272
+#Ribbon Tourist Tuesday
+
+scoreboard players add @a[score_DialogueTrigger_min=272,score_DialogueTrigger=272,tag=!Dialogue272] TalkTime 1
+tellraw @a[score_DialogueTrigger_min=272,score_DialogueTrigger=272,tag=!Dialogue272,score_TalkTime_min=1,score_TalkTime=1] {"text":"<Tourist> A bit of excitement makes the world a brighter place!"}
+tellraw @a[score_DialogueTrigger_min=272,score_DialogueTrigger=272,tag=!Dialogue272,score_TalkTime_min=9,score_TalkTime=9] {"text":"<Tourist> Just admire a Shock Ribbon whenever you want to experience a thrill."}
+
+scoreboard players tag @a[score_DialogueTrigger_min=272,score_DialogueTrigger=272,score_TalkTime_min=60,tag=!Dialogue272] add Dialogue272
+scoreboard players set @a[score_DialogueTrigger_min=272,score_DialogueTrigger=272,score_TalkTime_min=60,tag=Dialogue272] TalkTime 0
+scoreboard players set @a[score_DialogueTrigger_min=272,score_DialogueTrigger=272,tag=Dialogue272] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Dialogue273
+#Ribbon Tourist Wednesday
+#/tedit add INTERACT /scoreboard players set @pl DialogueTrigger 273
+
+scoreboard players add @a[score_DialogueTrigger_min=273,score_DialogueTrigger=273,tag=!Dialogue273] TalkTime 1
+tellraw @a[score_DialogueTrigger_min=273,score_DialogueTrigger=273,tag=!Dialogue273,score_TalkTime_min=1,score_TalkTime=1] {"text":"<Tourist> I put on a little weight, and now I'm feeling down..."}
+tellraw @a[score_DialogueTrigger_min=273,score_DialogueTrigger=273,tag=!Dialogue273,score_TalkTime_min=10,score_TalkTime=10] {"text":"<Tourist> Well, I suppose you can't start feeling better without feeling sad first."}
+tellraw @a[score_DialogueTrigger_min=273,score_DialogueTrigger=273,tag=!Dialogue273,score_TalkTime_min=20,score_TalkTime=20] {"text":"<Tourist> Here--I'll give you a Downcast Ribbon!"}
+tellraw @a[score_DialogueTrigger_min=273,score_DialogueTrigger=273,tag=!Dialogue273,score_TalkTime_min=27,score_TalkTime=27] {"text":"<Tourist> Send out your Pokémon and I'll pin a ribbon on them!"}
+
+scoreboard players tag @a[score_DialogueTrigger_min=273,score_DialogueTrigger=273,score_TalkTime_min=27,tag=!Dialogue273] add Dialogue273
+scoreboard players set @a[score_DialogueTrigger_min=273,score_DialogueTrigger=273,score_TalkTime_min=27,tag=Dialogue273] TalkTime 0
+scoreboard players set @a[score_DialogueTrigger_min=273,score_DialogueTrigger=273,tag=Dialogue273] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Dialogue274
+#Ribbon Tourist Wednesday
+
+scoreboard players add @a[score_DialogueTrigger_min=274,score_DialogueTrigger=274,tag=!Dialogue274] TalkTime 1
+tellraw @a[score_DialogueTrigger_min=274,score_DialogueTrigger=274,tag=!Dialogue274,score_TalkTime_min=1,score_TalkTime=1] {"text":"<Tourist> It's easy to drag your feet when you're feeling depressed..."}
+tellraw @a[score_DialogueTrigger_min=274,score_DialogueTrigger=274,tag=!Dialogue274,score_TalkTime_min=10,score_TalkTime=10] {"text":"<Tourist> In times like that, one look at a Downcast Ribbon will surely put a little spring into your step!"}
+
+scoreboard players tag @a[score_DialogueTrigger_min=274,score_DialogueTrigger=274,score_TalkTime_min=10,tag=!Dialogue274] add Dialogue274
+scoreboard players set @a[score_DialogueTrigger_min=274,score_DialogueTrigger=274,score_TalkTime_min=10,tag=Dialogue274] TalkTime 0
+scoreboard players set @a[score_DialogueTrigger_min=274,score_DialogueTrigger=274,tag=Dialogue274] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Dialogue275
+#Ribbon Tourist Thursday
+#/tedit add INTERACT /scoreboard players set @pl DialogueTrigger 275
+
+scoreboard players add @a[score_DialogueTrigger_min=275,score_DialogueTrigger=275,tag=!Dialogue275] TalkTime 1
+tellraw @a[score_DialogueTrigger_min=275,score_DialogueTrigger=275,tag=!Dialogue275,score_TalkTime_min=1,score_TalkTime=1] {"text":"<Tourist> Everyone gets a bit absentminded at times-- and that goes for both Pokémon and people."}
+tellraw @a[score_DialogueTrigger_min=275,score_DialogueTrigger=275,tag=!Dialogue275,score_TalkTime_min=11,score_TalkTime=11] {"text":"<Tourist> To help prevent such absentmindedness, I'll give your Pokémon a Careless Ribbon!"}
+tellraw @a[score_DialogueTrigger_min=275,score_DialogueTrigger=275,tag=!Dialogue275,score_TalkTime_min=21,score_TalkTime=21] {"text":"<Tourist> Send out your Pokémon and I'll pin a ribbon on them!"}
+
+scoreboard players tag @a[score_DialogueTrigger_min=275,score_DialogueTrigger=275,score_TalkTime_min=21,tag=!Dialogue275] add Dialogue275
+scoreboard players set @a[score_DialogueTrigger_min=275,score_DialogueTrigger=275,score_TalkTime_min=21,tag=Dialogue275] TalkTime 0
+scoreboard players set @a[score_DialogueTrigger_min=275,score_DialogueTrigger=275,tag=Dialogue275] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Dialogue276
+#Ribbon Tourist Thursday
+
+scoreboard players add @a[score_DialogueTrigger_min=276,score_DialogueTrigger=276,tag=!Dialogue276] TalkTime 1
+tellraw @a[score_DialogueTrigger_min=276,score_DialogueTrigger=276,tag=!Dialogue276,score_TalkTime_min=1,score_TalkTime=1] {"text":"<Tourist> There's no telling what kind of wacky things can happen when you get absentminded!"}
+tellraw @a[score_DialogueTrigger_min=276,score_DialogueTrigger=276,tag=!Dialogue276,score_TalkTime_min=11,score_TalkTime=11] {"text":"<Tourist> When that happens, it's best to just admire a Careless Ribbon and enjoy yourself!"}
+
+scoreboard players tag @a[score_DialogueTrigger_min=276,score_DialogueTrigger=276,score_TalkTime_min=11,tag=!Dialogue276] add Dialogue276
+scoreboard players set @a[score_DialogueTrigger_min=276,score_DialogueTrigger=276,score_TalkTime_min=11,tag=Dialogue276] TalkTime 0
+scoreboard players set @a[score_DialogueTrigger_min=276,score_DialogueTrigger=276,tag=Dialogue276] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Dialogue277
+#Ribbon Tourist Friday
+#/tedit add INTERACT /scoreboard players set @pl DialogueTrigger 277
+
+scoreboard players add @a[score_DialogueTrigger_min=277,score_DialogueTrigger=277,tag=!Dialogue277] TalkTime 1
+tellraw @a[score_DialogueTrigger_min=277,score_DialogueTrigger=277,tag=!Dialogue277,score_TalkTime_min=1,score_TalkTime=1] {"text":"<Tourist> You ever get a bad case of brain fog and can't figure out why?"}
+tellraw @a[score_DialogueTrigger_min=277,score_DialogueTrigger=277,tag=!Dialogue277,score_TalkTime_min=9,score_TalkTime=9] {"text":"<Tourist> You won't have to worry anymore with this! I'll give you a Relax Ribbon!"}
+tellraw @a[score_DialogueTrigger_min=277,score_DialogueTrigger=277,tag=!Dialogue277,score_TalkTime_min=19,score_TalkTime=19] {"text":"<Tourist> Send out your Pokémon and I'll pin a ribbon on them!"}
+
+scoreboard players tag @a[score_DialogueTrigger_min=277,score_DialogueTrigger=277,score_TalkTime_min=19,tag=!Dialogue277] add Dialogue277
+scoreboard players set @a[score_DialogueTrigger_min=277,score_DialogueTrigger=277,score_TalkTime_min=19,tag=Dialogue277] TalkTime 0
+scoreboard players set @a[score_DialogueTrigger_min=277,score_DialogueTrigger=277,tag=Dialogue277] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Dialogue278
+#Ribbon Tourist Friday
+
+scoreboard players add @a[score_DialogueTrigger_min=278,score_DialogueTrigger=278,tag=!Dialogue278] TalkTime 1
+tellraw @a[score_DialogueTrigger_min=278,score_DialogueTrigger=278,tag=!Dialogue278,score_TalkTime_min=1,score_TalkTime=1] {"text":"<Tourist> When you're feeling refreshed, it's easy to get inspiration!"}
+tellraw @a[score_DialogueTrigger_min=278,score_DialogueTrigger=278,tag=!Dialogue278,score_TalkTime_min=10,score_TalkTime=10] {"text":"<Tourist> Take a look at the Relax Ribbon to refresh your mind and body!"}
+
+scoreboard players tag @a[score_DialogueTrigger_min=278,score_DialogueTrigger=278,score_TalkTime_min=10,tag=!Dialogue278] add Dialogue278
+scoreboard players set @a[score_DialogueTrigger_min=278,score_DialogueTrigger=278,score_TalkTime_min=10,tag=Dialogue278] TalkTime 0
+scoreboard players set @a[score_DialogueTrigger_min=278,score_DialogueTrigger=278,tag=Dialogue278] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Dialogue279
+#Ribbon Tourist Saturday
+#/tedit add INTERACT /scoreboard players set @pl DialogueTrigger 279
+
+scoreboard players add @a[score_DialogueTrigger_min=279,score_DialogueTrigger=279,tag=!Dialogue279] TalkTime 1
+tellraw @a[score_DialogueTrigger_min=279,score_DialogueTrigger=279,tag=!Dialogue279,score_TalkTime_min=1,score_TalkTime=1] {"text":"<Tourist> Ever have nights where you just can't seem to fall asleep?"}
+tellraw @a[score_DialogueTrigger_min=279,score_DialogueTrigger=279,tag=!Dialogue279,score_TalkTime_min=9,score_TalkTime=9] {"text":"<Tourist> Fear no more! With this, only sweet dreams await!"}
+tellraw @a[score_DialogueTrigger_min=279,score_DialogueTrigger=279,tag=!Dialogue279,score_TalkTime_min=17,score_TalkTime=17] {"text":"<Tourist> I'll give your Pokémon a Snooze Ribbon!"}
+tellraw @a[score_DialogueTrigger_min=279,score_DialogueTrigger=279,tag=!Dialogue279,score_TalkTime_min=25,score_TalkTime=25] {"text":"<Tourist> Send out your Pokémon and I'll pin a ribbon on them!"}
+
+scoreboard players tag @a[score_DialogueTrigger_min=279,score_DialogueTrigger=279,score_TalkTime_min=25,tag=!Dialogue279] add Dialogue279
+scoreboard players set @a[score_DialogueTrigger_min=279,score_DialogueTrigger=279,score_TalkTime_min=25,tag=Dialogue279] TalkTime 0
+scoreboard players set @a[score_DialogueTrigger_min=279,score_DialogueTrigger=279,tag=Dialogue279] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Dialogue280
+#Ribbon Tourist Sunday
+
+scoreboard players add @a[score_DialogueTrigger_min=280,score_DialogueTrigger=280,tag=!Dialogue280] TalkTime 1
+tellraw @a[score_DialogueTrigger_min=280,score_DialogueTrigger=280,tag=!Dialogue280,score_TalkTime_min=1,score_TalkTime=1] {"text":"<Tourist> A good night's sleep can cure what ails you!"}
+tellraw @a[score_DialogueTrigger_min=280,score_DialogueTrigger=280,tag=!Dialogue280,score_TalkTime_min=9,score_TalkTime=9] {"text":"<Tourist> When you find yourself having trouble sleeping, say \"good night\" with a Snooze Ribbon!"}
+
+scoreboard players tag @a[score_DialogueTrigger_min=280,score_DialogueTrigger=280,score_TalkTime_min=9,tag=!Dialogue280] add Dialogue280
+scoreboard players set @a[score_DialogueTrigger_min=280,score_DialogueTrigger=280,score_TalkTime_min=9,tag=Dialogue280] TalkTime 0
+scoreboard players set @a[score_DialogueTrigger_min=280,score_DialogueTrigger=280,tag=Dialogue280] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Dialogue281
+#Ribbon Tourist Sunday
+#/tedit add INTERACT /scoreboard players set @pl DialogueTrigger 281
+
+scoreboard players add @a[score_DialogueTrigger_min=281,score_DialogueTrigger=281,tag=!Dialogue281] TalkTime 1
+tellraw @a[score_DialogueTrigger_min=281,score_DialogueTrigger=281,tag=!Dialogue281,score_TalkTime_min=1,score_TalkTime=1] {"text":"<Tourist> What makes you happy? Whatever it is, it's surely something that makes you smile whenever you think of it."}
+tellraw @a[score_DialogueTrigger_min=281,score_DialogueTrigger=281,tag=!Dialogue281,score_TalkTime_min=13,score_TalkTime=13] {"text":"<Tourist> I'm going to give your Pokémon a Smile Ribbon!"}
+tellraw @a[score_DialogueTrigger_min=281,score_DialogueTrigger=281,tag=!Dialogue281,score_TalkTime_min=20,score_TalkTime=20] {"text":"<Tourist> Send out your Pokémon and I'll pin a ribbon on them!"}
+
+scoreboard players tag @a[score_DialogueTrigger_min=281,score_DialogueTrigger=281,score_TalkTime_min=20,tag=!Dialogue281] add Dialogue281
+scoreboard players set @a[score_DialogueTrigger_min=281,score_DialogueTrigger=281,score_TalkTime_min=20,tag=Dialogue281] TalkTime 0
+scoreboard players set @a[score_DialogueTrigger_min=281,score_DialogueTrigger=281,tag=Dialogue281] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Dialogue282
+#Ribbon Tourist
+
+scoreboard players add @a[score_DialogueTrigger_min=282,score_DialogueTrigger=282,tag=!Dialogue282] TalkTime 1
+tellraw @a[score_DialogueTrigger_min=282,score_DialogueTrigger=282,tag=!Dialogue282,score_TalkTime_min=1,score_TalkTime=1] {"text":"<Tourist> When you're smiling, it's easy to get in a good mood!"}
+tellraw @a[score_DialogueTrigger_min=282,score_DialogueTrigger=282,tag=!Dialogue282,score_TalkTime_min=10,score_TalkTime=10] {"text":"<Tourist> Just take a look at a Smile Ribbon whenever you're feeling out of sorts, and you'll be smiling in no time!"}
+
+scoreboard players tag @a[score_DialogueTrigger_min=282,score_DialogueTrigger=282,score_TalkTime_min=10,tag=!Dialogue282] add Dialogue282
+scoreboard players set @a[score_DialogueTrigger_min=282,score_DialogueTrigger=282,score_TalkTime_min=10,tag=Dialogue282] TalkTime 0
+scoreboard players set @a[score_DialogueTrigger_min=282,score_DialogueTrigger=282,tag=Dialogue282] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
-
-
-
-
-
+#
 
 
 
@@ -10493,6 +10695,10 @@ scoreboard players tag @a[score_DialogueTrigger_min=1000,score_DialogueTrigger=1
 scoreboard players set @a[score_DialogueTrigger_min=1000,score_DialogueTrigger=1000,score_TalkTime_min=100,tag=Dialogue1000] TalkTime 0
 scoreboard players set @a[score_DialogueTrigger_min=1000,score_DialogueTrigger=1000,tag=Dialogue1000] DialogueTrigger 0
 
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Placeholder for Randomizer active dialogue
+#DialogueTrigger1001
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
