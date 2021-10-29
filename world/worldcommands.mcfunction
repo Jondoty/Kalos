@@ -37,6 +37,9 @@ execute @a[score_relog_min=1] ~ ~ ~ function custom:relog
 #Randomizer script on a player
 execute @a[tag=RandomizerTemp,c=1] ~ ~ ~ function randomizer:tpscript
 
+#Randomizer trainers function
+execute @e[x=-688,y=100,z=1136,dy=3,tag=Randomizer] ~ ~ ~ execute @a ~ ~ ~ execute @e[tag=!Randomized,type=pixelmon:npc_trainer,r=30,c=1] ~ ~ ~ function randomizer:trainers
+
 #Photo-Spot Dismissal if player walks away
 execute @e[type=armor_stand,tag=PhotoSpot] ~ ~ ~ execute @a[r=50,rm=20,score_DialogueTrigger=0,score_PhotoSpot_min=1] ~ ~ ~ scoreboard players set @s TalkTrigger 299
 

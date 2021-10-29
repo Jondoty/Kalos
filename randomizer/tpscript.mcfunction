@@ -13,7 +13,9 @@ gamemode adventure @s[score_TalkTime_min=1439,score_TalkTime=1440,m=1]
 gamemode adventure @s[score_TalkTime_min=1439,score_TalkTime=1440,m=3]
 scoreboard players tag @s[score_TalkTime_min=1440] remove RandomizerTemp
 tp @s[score_TalkTime_min=1440] -775 103 1214
+playsound minecraft:entity.player.levelup ambient @s[score_TalkTime_min=1440] ~ ~ ~ 100 1 1
 tellraw @s[score_TalkTime_min=1440] {"text":"Randomization process complete!"}
+scoreboard players tag @e[x=-688,y=100,z=1136,dy=3] add Randomizer
 scoreboard players set @s[score_TalkTime_min=1440] DialogueTrigger 0
 scoreboard players set @s[score_TalkTime_min=1440] TalkTime 0
 
@@ -49,10 +51,120 @@ execute @s[score_TalkTime_min=1438,score_TalkTime=1438] ~ ~ ~ /function randomiz
 
 
 
+
+#Progress titles
+
+title @s[score_TalkTime_min=19,score_TalkTime=32] actionbar {"text":"~0% of spawners placed"}
+title @s[score_TalkTime_min=33,score_TalkTime=46] actionbar {"text":"~1% of spawners placed"}
+title @s[score_TalkTime_min=47,score_TalkTime=60] actionbar {"text":"~2% of spawners placed"}
+title @s[score_TalkTime_min=61,score_TalkTime=74] actionbar {"text":"~3% of spawners placed"}
+title @s[score_TalkTime_min=75,score_TalkTime=89] actionbar {"text":"~4% of spawners placed"}
+title @s[score_TalkTime_min=90,score_TalkTime=103] actionbar {"text":"~5% of spawners placed"}
+title @s[score_TalkTime_min=104,score_TalkTime=117] actionbar {"text":"~6% of spawners placed"}
+title @s[score_TalkTime_min=118,score_TalkTime=131] actionbar {"text":"~7% of spawners placed"}
+title @s[score_TalkTime_min=132,score_TalkTime=145] actionbar {"text":"~8% of spawners placed"}
+title @s[score_TalkTime_min=146,score_TalkTime=159] actionbar {"text":"~9% of spawners placed"}
+title @s[score_TalkTime_min=160,score_TalkTime=173] actionbar {"text":"~10% of spawners placed"}
+title @s[score_TalkTime_min=174,score_TalkTime=187] actionbar {"text":"~11% of spawners placed"}
+title @s[score_TalkTime_min=188,score_TalkTime=201] actionbar {"text":"~12% of spawners placed"}
+title @s[score_TalkTime_min=202,score_TalkTime=216] actionbar {"text":"~13% of spawners placed"}
+title @s[score_TalkTime_min=217,score_TalkTime=230] actionbar {"text":"~14% of spawners placed"}
+title @s[score_TalkTime_min=231,score_TalkTime=244] actionbar {"text":"~15% of spawners placed"}
+title @s[score_TalkTime_min=245,score_TalkTime=258] actionbar {"text":"~16% of spawners placed"}
+title @s[score_TalkTime_min=259,score_TalkTime=272] actionbar {"text":"~17% of spawners placed"}
+title @s[score_TalkTime_min=273,score_TalkTime=286] actionbar {"text":"~18% of spawners placed"}
+title @s[score_TalkTime_min=287,score_TalkTime=300] actionbar {"text":"~19% of spawners placed"}
+title @s[score_TalkTime_min=301,score_TalkTime=314] actionbar {"text":"~20% of spawners placed"}
+title @s[score_TalkTime_min=315,score_TalkTime=328] actionbar {"text":"~21% of spawners placed"}
+title @s[score_TalkTime_min=329,score_TalkTime=343] actionbar {"text":"~22% of spawners placed"}
+title @s[score_TalkTime_min=344,score_TalkTime=357] actionbar {"text":"~23% of spawners placed"}
+title @s[score_TalkTime_min=358,score_TalkTime=371] actionbar {"text":"~24% of spawners placed"}
+title @s[score_TalkTime_min=372,score_TalkTime=385] actionbar {"text":"~25% of spawners placed"}
+title @s[score_TalkTime_min=386,score_TalkTime=399] actionbar {"text":"~26% of spawners placed"}
+title @s[score_TalkTime_min=400,score_TalkTime=413] actionbar {"text":"~27% of spawners placed"}
+title @s[score_TalkTime_min=414,score_TalkTime=427] actionbar {"text":"~28% of spawners placed"}
+title @s[score_TalkTime_min=428,score_TalkTime=441] actionbar {"text":"~29% of spawners placed"}
+title @s[score_TalkTime_min=442,score_TalkTime=455] actionbar {"text":"~30% of spawners placed"}
+title @s[score_TalkTime_min=456,score_TalkTime=470] actionbar {"text":"~31% of spawners placed"}
+title @s[score_TalkTime_min=471,score_TalkTime=484] actionbar {"text":"~32% of spawners placed"}
+title @s[score_TalkTime_min=485,score_TalkTime=498] actionbar {"text":"~33% of spawners placed"}
+title @s[score_TalkTime_min=499,score_TalkTime=512] actionbar {"text":"~34% of spawners placed"}
+title @s[score_TalkTime_min=513,score_TalkTime=526] actionbar {"text":"~35% of spawners placed"}
+title @s[score_TalkTime_min=527,score_TalkTime=540] actionbar {"text":"~36% of spawners placed"}
+title @s[score_TalkTime_min=541,score_TalkTime=554] actionbar {"text":"~37% of spawners placed"}
+title @s[score_TalkTime_min=555,score_TalkTime=568] actionbar {"text":"~38% of spawners placed"}
+title @s[score_TalkTime_min=569,score_TalkTime=582] actionbar {"text":"~39% of spawners placed"}
+title @s[score_TalkTime_min=583,score_TalkTime=597] actionbar {"text":"~40% of spawners placed"}
+title @s[score_TalkTime_min=598,score_TalkTime=611] actionbar {"text":"~41% of spawners placed"}
+title @s[score_TalkTime_min=612,score_TalkTime=625] actionbar {"text":"~42% of spawners placed"}
+title @s[score_TalkTime_min=626,score_TalkTime=639] actionbar {"text":"~43% of spawners placed"}
+title @s[score_TalkTime_min=640,score_TalkTime=653] actionbar {"text":"~44% of spawners placed"}
+title @s[score_TalkTime_min=654,score_TalkTime=667] actionbar {"text":"~45% of spawners placed"}
+title @s[score_TalkTime_min=668,score_TalkTime=681] actionbar {"text":"~46% of spawners placed"}
+title @s[score_TalkTime_min=682,score_TalkTime=695] actionbar {"text":"~47% of spawners placed"}
+title @s[score_TalkTime_min=696,score_TalkTime=709] actionbar {"text":"~48% of spawners placed"}
+title @s[score_TalkTime_min=710,score_TalkTime=724] actionbar {"text":"~49% of spawners placed"}
+title @s[score_TalkTime_min=725,score_TalkTime=738] actionbar {"text":"~50% of spawners placed"}
+title @s[score_TalkTime_min=739,score_TalkTime=752] actionbar {"text":"~51% of spawners placed"}
+title @s[score_TalkTime_min=753,score_TalkTime=766] actionbar {"text":"~52% of spawners placed"}
+title @s[score_TalkTime_min=767,score_TalkTime=780] actionbar {"text":"~53% of spawners placed"}
+title @s[score_TalkTime_min=781,score_TalkTime=794] actionbar {"text":"~54% of spawners placed"}
+title @s[score_TalkTime_min=795,score_TalkTime=808] actionbar {"text":"~55% of spawners placed"}
+title @s[score_TalkTime_min=809,score_TalkTime=822] actionbar {"text":"~56% of spawners placed"}
+title @s[score_TalkTime_min=823,score_TalkTime=836] actionbar {"text":"~57% of spawners placed"}
+title @s[score_TalkTime_min=837,score_TalkTime=850] actionbar {"text":"~58% of spawners placed"}
+title @s[score_TalkTime_min=851,score_TalkTime=865] actionbar {"text":"~59% of spawners placed"}
+title @s[score_TalkTime_min=866,score_TalkTime=879] actionbar {"text":"~60% of spawners placed"}
+title @s[score_TalkTime_min=880,score_TalkTime=893] actionbar {"text":"~61% of spawners placed"}
+title @s[score_TalkTime_min=894,score_TalkTime=907] actionbar {"text":"~62% of spawners placed"}
+title @s[score_TalkTime_min=908,score_TalkTime=921] actionbar {"text":"~63% of spawners placed"}
+title @s[score_TalkTime_min=922,score_TalkTime=935] actionbar {"text":"~64% of spawners placed"}
+title @s[score_TalkTime_min=936,score_TalkTime=949] actionbar {"text":"~65% of spawners placed"}
+title @s[score_TalkTime_min=950,score_TalkTime=963] actionbar {"text":"~66% of spawners placed"}
+title @s[score_TalkTime_min=964,score_TalkTime=977] actionbar {"text":"~67% of spawners placed"}
+title @s[score_TalkTime_min=978,score_TalkTime=992] actionbar {"text":"~68% of spawners placed"}
+title @s[score_TalkTime_min=993,score_TalkTime=1006] actionbar {"text":"~69% of spawners placed"}
+title @s[score_TalkTime_min=1007,score_TalkTime=1020] actionbar {"text":"~70% of spawners placed"}
+title @s[score_TalkTime_min=1021,score_TalkTime=1034] actionbar {"text":"~71% of spawners placed"}
+title @s[score_TalkTime_min=1035,score_TalkTime=1048] actionbar {"text":"~72% of spawners placed"}
+title @s[score_TalkTime_min=1049,score_TalkTime=1062] actionbar {"text":"~73% of spawners placed"}
+title @s[score_TalkTime_min=1063,score_TalkTime=1076] actionbar {"text":"~74% of spawners placed"}
+title @s[score_TalkTime_min=1077,score_TalkTime=1090] actionbar {"text":"~75% of spawners placed"}
+title @s[score_TalkTime_min=1091,score_TalkTime=1104] actionbar {"text":"~76% of spawners placed"}
+title @s[score_TalkTime_min=1105,score_TalkTime=1119] actionbar {"text":"~77% of spawners placed"}
+title @s[score_TalkTime_min=1120,score_TalkTime=1133] actionbar {"text":"~78% of spawners placed"}
+title @s[score_TalkTime_min=1134,score_TalkTime=1147] actionbar {"text":"~79% of spawners placed"}
+title @s[score_TalkTime_min=1148,score_TalkTime=1161] actionbar {"text":"~80% of spawners placed"}
+title @s[score_TalkTime_min=1162,score_TalkTime=1175] actionbar {"text":"~81% of spawners placed"}
+title @s[score_TalkTime_min=1176,score_TalkTime=1189] actionbar {"text":"~82% of spawners placed"}
+title @s[score_TalkTime_min=1190,score_TalkTime=1203] actionbar {"text":"~83% of spawners placed"}
+title @s[score_TalkTime_min=1204,score_TalkTime=1217] actionbar {"text":"~84% of spawners placed"}
+title @s[score_TalkTime_min=1218,score_TalkTime=1231] actionbar {"text":"~85% of spawners placed"}
+title @s[score_TalkTime_min=1232,score_TalkTime=1246] actionbar {"text":"~86% of spawners placed"}
+title @s[score_TalkTime_min=1247,score_TalkTime=1260] actionbar {"text":"~87% of spawners placed"}
+title @s[score_TalkTime_min=1261,score_TalkTime=1274] actionbar {"text":"~88% of spawners placed"}
+title @s[score_TalkTime_min=1275,score_TalkTime=1288] actionbar {"text":"~89% of spawners placed"}
+title @s[score_TalkTime_min=1289,score_TalkTime=1302] actionbar {"text":"~90% of spawners placed"}
+title @s[score_TalkTime_min=1303,score_TalkTime=1316] actionbar {"text":"~91% of spawners placed"}
+title @s[score_TalkTime_min=1317,score_TalkTime=1330] actionbar {"text":"~92% of spawners placed"}
+title @s[score_TalkTime_min=1331,score_TalkTime=1344] actionbar {"text":"~93% of spawners placed"}
+title @s[score_TalkTime_min=1345,score_TalkTime=1358] actionbar {"text":"~94% of spawners placed"}
+title @s[score_TalkTime_min=1359,score_TalkTime=1373] actionbar {"text":"~95% of spawners placed"}
+title @s[score_TalkTime_min=1374,score_TalkTime=1387] actionbar {"text":"~96% of spawners placed"}
+title @s[score_TalkTime_min=1388,score_TalkTime=1401] actionbar {"text":"~97% of spawners placed"}
+title @s[score_TalkTime_min=1402,score_TalkTime=1415] actionbar {"text":"~98% of spawners placed"}
+title @s[score_TalkTime_min=1416,score_TalkTime=1429] actionbar {"text":"~99% of spawners placed"}
+title @s[score_TalkTime_min=1430] actionbar {"text":"~100% of spawners placed"}
+
 tellraw @s[score_TalkTime_min=19,score_TalkTime=19] {"text":"Beginning randomized-spawner cloning process... This may take a while. Keep your client open and unpaused in the meantime!"}
-tellraw @s[score_TalkTime_min=357,score_TalkTime=357] {"text":"About 25% through placing spawners."}
-tellraw @s[score_TalkTime_min=714,score_TalkTime=714] {"text":"About 50% through placing spawners."}
-tellraw @s[score_TalkTime_min=1071,score_TalkTime=1071] {"text":"About 75% through placing spawners."}
+#tellraw @s[score_TalkTime_min=357,score_TalkTime=357] {"text":"About 25% through placing spawners."}
+#tellraw @s[score_TalkTime_min=714,score_TalkTime=714] {"text":"About 50% through placing spawners."}
+#tellraw @s[score_TalkTime_min=1071,score_TalkTime=1071] {"text":"About 75% through placing spawners."}
+
+
+
+
+
 tp @s[score_TalkTime_min=19,score_TalkTime=19] -2254 102 -480
 tp @s[score_TalkTime_min=21,score_TalkTime=21] -2253 102 -421
 tp @s[score_TalkTime_min=23,score_TalkTime=23] -2253 102 -452
