@@ -1481,7 +1481,7 @@ scoreboard players add @a[score_DialogueTrigger_min=40,score_DialogueTrigger=40,
 execute @a[score_DialogueTrigger_min=40,score_DialogueTrigger=40,tag=!Dialogue40,score_TalkTime_min=1,score_TalkTime=1] ~ ~ ~ /tp @e[x=-504,y=195,z=1252,dy=3,type=pixelmon:npc_trainer] -1437 148 322
 execute @a[score_DialogueTrigger_min=40,score_DialogueTrigger=40,tag=!Dialogue40,score_TalkTime_min=1,score_TalkTime=1] ~ ~ ~ particle cloud -1437 148 322 2 2 2 1 100
 
-execute @a[score_DialogueTrigger_min=40,score_DialogueTrigger=40,tag=!Dialogue40,score_TalkTime_min=1,score_TalkTime=1] ~ ~ ~ scoreboard players set @s click a
+execute @a[score_DialogueTrigger_min=40,score_DialogueTrigger=40,tag=!Dialogue40,score_TalkTime_min=1,score_TalkTime=1] ~ ~ ~ scoreboard players set @s click 1
 
 tellraw @a[score_DialogueTrigger_min=40,score_DialogueTrigger=40,tag=!Dialogue40,score_TalkTime_min=5,score_TalkTime=5] {"text":"<...> What's this?"}
 tellraw @a[score_DialogueTrigger_min=40,score_DialogueTrigger=40,tag=!Dialogue40,score_TalkTime_min=10,score_TalkTime=10] {"text":"<...> Well, well. What do we have here? A nosy little Trainer has come poking around."}
@@ -5956,8 +5956,8 @@ tellraw @a[score_DialogueTrigger_min=164,score_DialogueTrigger=164,tag=!Dialogue
 tellraw @a[score_DialogueTrigger_min=164,score_DialogueTrigger=164,tag=!Dialogue164,score_TalkTime_min=50,score_TalkTime=50] {"text":"<Diantha> I\u2019m sure we\u2019ll both continue to become even better Trainers as we keep battling and growing!"}
 
 #Diantha tp out
-execute @a[score_DialogueTrigger_min=164,score_DialogueTrigger=164,tag=!Dialogue164,score_TalkTime_min=60,score_TalkTime=61] ~ ~ ~  tp @e[x=-495,y=100,z=256,dy=3,type=pixelmon:npc_chatting] -504 201 1284
-execute @a[score_DialogueTrigger_min=164,score_DialogueTrigger=164,tag=!Dialogue164,score_TalkTime_min=60,score_TalkTime=60] ~ ~ ~  particle cloud -495 101 256 2 2 2 1 100
+execute @a[score_DialogueTrigger_min=164,score_DialogueTrigger=164,tag=!Dialogue164,score_TalkTime_min=60,score_TalkTime=61] ~ ~ ~ tp @e[x=-495,y=100,z=256,dy=3,type=pixelmon:npc_chatting] -504 201 1284
+execute @a[score_DialogueTrigger_min=164,score_DialogueTrigger=164,tag=!Dialogue164,score_TalkTime_min=60,score_TalkTime=60] ~ ~ ~ particle cloud -495 101 256 2 2 2 1 100
 
 scoreboard players tag @a[score_DialogueTrigger_min=164,score_DialogueTrigger=164,score_TalkTime_min=61,tag=!Dialogue164] add Dialogue164
 scoreboard players set @a[score_DialogueTrigger_min=164,score_DialogueTrigger=164,score_TalkTime_min=61,tag=Dialogue164] TalkTime 0
