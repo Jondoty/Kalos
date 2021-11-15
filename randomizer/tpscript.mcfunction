@@ -6,6 +6,21 @@ gamemode spectator @s[score_TalkTime_min=18,score_TalkTime=1438,m=1]
 gamemode spectator @s[score_TalkTime_min=18,score_TalkTime=1438,m=0]
 execute @s[score_TalkTime_min=1,score_TalkTime=1] ~ ~ ~ gamerule maxCommandChainLength 65536
 execute @s[score_TalkTime_min=1,score_TalkTime=1] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0] DialogueTrigger 1001
+execute @s[score_TalkTime_min=1,score_TalkTime=1] ~ ~ ~ fill -770 106 1218 -768 106 1218 minecraft:redstone_block
+execute @s[score_TalkTime_min=1,score_TalkTime=1] ~ ~ ~ setblock -768 103 1218 minecraft:redstone_block
+execute @s[score_TalkTime_min=1,score_TalkTime=1] ~ ~ ~ setblock -768 103 1218 minecraft:quartz_block
+
+#Lobby Signs
+#Random evos on
+#tellraw @a ["",{"text":"Species randomizing upon evolution toggled "},{"text":"On","color":"yellow"}]
+#/blockdata -768 104 1217 {Text3:"{\"text\":\"[Random On Evo]\"}"}
+#/scoreboard players tag @e[x=-688,y=100,z=1136,dy=3] add Evolutions
+
+#Random Evos off
+#tellraw @a ["",{"text":"Species randomizing upon evolution toggled "},{"text":"Off","color":"gray"}]
+#/blockdata -768 104 1217 {Text3:"{\"text\":\"[True-Evo Lines]\"}"}
+#/scoreboard players tag @e[x=-688,y=100,z=1136,dy=3,tag=Evolutions] remove Evolutions
+
 
 #Ends script
 gamemode adventure @s[score_TalkTime_min=1439,score_TalkTime=1440,m=0]
