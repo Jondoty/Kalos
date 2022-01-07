@@ -1,0 +1,1554 @@
+#Command to activate in tellraws:
+#/trigger TalkTrigger set 1
+#/scoreboard players enable @p TalkTrigger
+
+#For NPCS & Statues
+#/tedit add INTERACT /scoreboard players set @pl TalkTrigger 9
+
+#Gender Pick
+#Male
+tellraw @a[scores={TalkTrigger=12}] {"text":"Your gender has been set to male.","italic":true,"color":"gray"}
+scoreboard players set @a[scores={TalkTrigger=12}] Gender 1
+execute as @a[scores={TalkTrigger=12}] run scoreboard players set @s TalkTrigger 0
+
+
+#Female
+tellraw @a[scores={TalkTrigger=13}] {"text":"Your gender has been set to female.","italic":true,"color":"gray"}
+scoreboard players set @a[scores={TalkTrigger=13}] Gender 2
+execute as @a[scores={TalkTrigger=13}] run scoreboard players set @s TalkTrigger 0
+
+
+
+#Yveltal Activate
+execute as @a[scores={TalkTrigger=1}] run scoreboard players set @s DialogueTrigger 131
+execute as @a[scores={TalkTrigger=1}] run scoreboard players set @s TalkTrigger 0
+
+#Xerneas Activate
+execute as @a[scores={TalkTrigger=2}] run scoreboard players set @s DialogueTrigger 131
+execute as @a[scores={TalkTrigger=2}] run scoreboard players set @s TalkTrigger 0
+
+
+#Lumiose Gym Would you like to return to the lobby?
+execute as @a[scores={TalkTrigger=3}] run tp @s -1823 100 -1703 0 ~
+execute as @a[scores={TalkTrigger=3}] run scoreboard players set @s TalkTrigger 0
+
+#Pokemon League RIGHT would you like to end your progress?
+tag @a[limit=1,scores={TalkTrigger=4}] remove Diantha
+tag @a[limit=1,scores={TalkTrigger=4}] remove Wikstrom
+tag @a[limit=1,scores={TalkTrigger=4}] remove Drasna
+tag @a[limit=1,scores={TalkTrigger=4}] remove Siebold
+tag @a[limit=1,scores={TalkTrigger=4}] remove Malva
+tp @a[limit=1,scores={TalkTrigger=4}] -1875 31 2107 0 ~
+
+#Pokemon League LEFT would you like to end your progress?
+tag @a[limit=1,scores={TalkTrigger=5}] remove Diantha
+tag @a[limit=1,scores={TalkTrigger=5}] remove Wikstrom
+tag @a[limit=1,scores={TalkTrigger=5}] remove Drasna
+tag @a[limit=1,scores={TalkTrigger=5}] remove Siebold
+tag @a[limit=1,scores={TalkTrigger=5}] remove Malva
+tp @a[limit=1,scores={TalkTrigger=5}] -1939 31 2107 0 ~
+
+execute as @a[scores={TalkTrigger=4..5}] run scoreboard players set @s TalkTrigger 0
+
+
+
+#Resets randomized Pokemon
+#/scoreboard players set @e[x=-688,y=100,z=1136,dy=3,type=armor_stand] rng 650
+#/scoreboard players set @e[x=-686,y=100,z=1136,dy=3,type=armor_stand] rng 653
+#/scoreboard players set @e[x=-684,y=100,z=1136,dy=3,type=armor_stand] rng 656
+
+
+#Starter Pokemon
+#Chespin - Shauna picks Froakie, Serena picks Fennekin
+#execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[score_TalkTrigger_min=6,score_TalkTrigger=6,score_StarterPick=0] Chespin lvl:5 gr:7
+execute as @a[scores={TalkTrigger=6,StarterPick=0}] run function kalos:randomizer/startersgive
+execute as @a[scores={TalkTrigger=6,StarterPick=0}] run tellraw @s {"text":"An excellent choice!","italic":true,"color":"gray"}
+execute as @a[scores={TalkTrigger=6,StarterPick=0}] run scoreboard players set @s StarterPick 1
+execute as @a[scores={TalkTrigger=6,StarterPick=1..}] run tp @s 443 108 1369 88 6
+execute as @a[scores={TalkTrigger=6,StarterPick=1..}] run scoreboard players set @s TalkTrigger 0
+
+
+
+
+#Fennekin - Shauna picks Chespin, Serena picks Froakie
+#execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[score_TalkTrigger_min=7,score_TalkTrigger=7,score_StarterPick=0] Fennekin lvl:5 gr:7
+execute as @a[scores={TalkTrigger=7,StarterPick=0}] run function kalos:randomizer/startersgive
+execute as @a[scores={TalkTrigger=7,StarterPick=0}] run tellraw @s {"text":"An excellent choice!","italic":true,"color":"gray"}
+execute as @a[scores={TalkTrigger=7,StarterPick=0}] run scoreboard players set @s StarterPick 2
+execute as @a[scores={TalkTrigger=7,StarterPick=1..}] run tp @s 443 108 1369 88 6
+execute as @a[scores={TalkTrigger=7,StarterPick=1..}] run scoreboard players set @s TalkTrigger 0
+
+
+
+#Froakie - Shauna picks Fennekin, Serena picks Chespin
+#execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[score_TalkTrigger_min=8,score_TalkTrigger=8,score_StarterPick=0] Froakie lvl:5 gr:7
+execute as @a[scores={TalkTrigger=8,StarterPick=0}] run function kalos:randomizer/startersgive
+execute as @a[scores={TalkTrigger=8,StarterPick=0}] run tellraw @s {"text":"An excellent choice!","italic":true,"color":"gray"}
+execute as @a[scores={TalkTrigger=8,StarterPick=0}] run scoreboard players set @s StarterPick 3
+execute as @a[scores={TalkTrigger=8,StarterPick=1..}] run tp @s 443 108 1369 88 6
+execute as @a[scores={TalkTrigger=8,StarterPick=1..}] run scoreboard players set @s TalkTrigger 0
+
+
+
+#Bulbasaur
+###give @a[scores={TalkTrigger=9},tag=!KantoStarters] pixelmon:venusaurite
+###execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[scores={TalkTrigger=9},tag=!KantoStarters] Bulbasaur lvl:10 gr:7
+tag @a[scores={TalkTrigger=9},tag=!KantoStarters] add KantoStarters
+scoreboard players set @a[scores={TalkTrigger=9}] DialogueTrigger 20
+execute as @a[scores={TalkTrigger=9},tag=KantoStarters] run tp @s -265 121.15 96 180 8
+execute as @a[scores={TalkTrigger=9},tag=KantoStarters] run scoreboard players set @s TalkTrigger 0
+
+
+
+#Charmander
+###give @a[scores={TalkTrigger=10},tag=!KantoStarters] pixelmon:charizardite_y
+###give @a[scores={TalkTrigger=10},tag=!KantoStarters] pixelmon:charizardite_x
+###execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[scores={TalkTrigger=10},tag=!KantoStarters] Charmander lvl:10 gr:7
+tag @a[scores={TalkTrigger=10},tag=!KantoStarters] add KantoStarters
+scoreboard players set @a[scores={TalkTrigger=10}] DialogueTrigger 20
+execute as @a[scores={TalkTrigger=10},tag=KantoStarters] run tp @s -265 121.15 96 180 8
+execute as @a[scores={TalkTrigger=10},tag=KantoStarters] run scoreboard players set @s TalkTrigger 0
+
+
+
+
+#Squirtle
+###give @a[scores={TalkTrigger=11},tag=!KantoStarters] pixelmon:blastoisinite
+###execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[scores={TalkTrigger=11},tag=!KantoStarters] Squirtle lvl:10 gr:7
+tag @a[scores={TalkTrigger=11},tag=!KantoStarters] add KantoStarters
+scoreboard players set @a[scores={TalkTrigger=11}] DialogueTrigger 20
+execute as @a[scores={TalkTrigger=11},tag=KantoStarters] run tp @s -265 121.15 96 180 8
+execute as @a[scores={TalkTrigger=11},tag=KantoStarters] run scoreboard players set @s TalkTrigger 0
+
+
+
+
+
+
+#Jaw Fossil - 14
+###give @a[scores={TalkTrigger=14}] pixelmon:jaw_fossil
+scoreboard players set @a[scores={TalkTrigger=14}] DialogueTrigger 45
+execute as @a[scores={TalkTrigger=14}] run scoreboard players set @s TalkTrigger 0
+
+
+#Sail Fossil - 15
+###give @a[scores={TalkTrigger=15}] pixelmon:sail_fossil
+scoreboard players set @a[scores={TalkTrigger=15}] DialogueTrigger 45
+execute as @a[scores={TalkTrigger=15}] run scoreboard players set @s TalkTrigger 0
+
+
+#Master Ball - 16
+execute as @a[scores={TalkTrigger=16}] run scoreboard players set @s DialogueTrigger 91
+execute as @a[scores={TalkTrigger=16}] run scoreboard players set @s TalkTrigger 0
+
+
+#Big Nugget - 17
+execute as @a[scores={TalkTrigger=17}] run scoreboard players set @s DialogueTrigger 92
+execute as @a[scores={TalkTrigger=17}] run scoreboard players set @s TalkTrigger 0
+
+
+
+#Red Button (Yveltal) - 18
+execute as @a[scores={TalkTrigger=18,TalkTime=0},tag=Dialogue118] run scoreboard players set @s Yveltal 1
+execute as @a[scores={TalkTrigger=18,TalkTime=0},tag=Dialogue118] run scoreboard players set @s Xerneas 0
+execute as @a[scores={TalkTrigger=18,TalkTime=0},tag=Dialogue118] run scoreboard players set @s DialogueTrigger 119
+execute as @a[scores={TalkTrigger=18}] run scoreboard players set @s TalkTrigger 0
+
+
+#Blue Button (Xerneas) - 19
+execute as @a[scores={TalkTrigger=19,TalkTime=0},tag=Dialogue118] run scoreboard players set @s Xerneas 1
+execute as @a[scores={TalkTrigger=19,TalkTime=0},tag=Dialogue118] run scoreboard players set @s Yveltal 0
+execute as @a[scores={TalkTrigger=19,TalkTime=0},tag=Dialogue118] run scoreboard players set @s DialogueTrigger 120
+execute as @a[scores={TalkTrigger=19}] run scoreboard players set @s TalkTrigger 0
+
+
+
+
+#Lumiose Press EIC Would you like to read the memo? [Yes] - 20
+#testfor @a[x=-444,y=101,z=206,r=6,tag=Dialogue168]
+#execute as @a[x=-444,y=101,z=206,r=6,tag=Dialogue168,score_TalkTime=0] run scoreboard players set @s TalkTrigger 20
+tellraw @a[scores={TalkTrigger=20}] ["",{"text":"<Editor-in-chief> Which part of the memo do you want to read?\n["},{"text":"The secret of the power","color":"red","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 22"}},{"text":"] \u0020 ["},{"text":"In the fog","color":"gray","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 23"}},{"text":"] \u0020 ["},{"text":"A nation-building...","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 24"}},{"text":"]"}]
+execute as @a[scores={TalkTrigger=20}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=20}] run scoreboard players set @s TalkTrigger 0
+
+
+
+#Lumiose Press EIC Would you like to read the memo? [No] - 21
+tellraw @a[scores={TalkTrigger=21}] {"text":"<Editor-in-chief> If you feel like reading my memo, come visit me anytime."}
+execute as @a[scores={TalkTrigger=21}] run scoreboard players set @s TalkTrigger 0
+
+
+#[The secret of the power] Volcanion Memo - 22
+execute as @a[scores={TalkTrigger=22,TalkTime=0}] run tag @s remove Dialogue169
+execute as @a[scores={TalkTrigger=22,TalkTime=0}] run scoreboard players set @s DialogueTrigger 169
+execute as @a[scores={TalkTrigger=22,TalkTime=1..}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=22}] run scoreboard players set @s TalkTrigger 0
+
+
+#[In the fog] Volcanion Memo - 23
+execute as @a[scores={TalkTrigger=23,TalkTime=0}] run tag @s remove Dialogue170
+execute as @a[scores={TalkTrigger=23,TalkTime=0}] run scoreboard players set @s DialogueTrigger 170
+execute as @a[scores={TalkTrigger=23,TalkTime=1..}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=23}] run scoreboard players set @s TalkTrigger 0
+
+
+#[A nation-building...] Volcanion Memo - 24
+execute as @a[scores={TalkTrigger=24,TalkTime=0}] run tag @s remove Dialogue171
+execute as @a[scores={TalkTrigger=24,TalkTime=0}] run scoreboard players set @s DialogueTrigger 171
+execute as @a[scores={TalkTrigger=24,TalkTime=1..}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=24}] run scoreboard players set @s TalkTrigger 0
+
+
+#Looker first dialogue, would you like to fight crime with me? - 25
+execute as @a[scores={TalkTrigger=25,TalkTime=0}] run scoreboard players set @s DialogueTrigger 173
+execute as @a[scores={TalkTrigger=25}] run scoreboard players set @s TalkTrigger 0
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#The Looker's Notebook - 26
+
+execute as @a[scores={TalkTrigger=26,TalkTime=0},tag=!Dialogue173] run tellraw @s[tag=!Dialogue175] {"text":"It's the Looker's notebook!","italic":true,"color":"gray"}
+execute as @a[scores={TalkTrigger=26,TalkTime=0},tag=Dialogue173] run tellraw @s[tag=!Dialogue175] ["",{"text":"LOOKER\u2019S NOTEBOOK","italic":true},{"text":"\nLooker Ticket Locations\n1. In the Pokémon Center next to Magenta Plaza\n2. In Centrico Plaza, in the tower illuminating the city\n3. On Vernal Avenue, at a shop selling medicines\n4. On North Boulevard, 1F, in a place where people rest\n5. On North Boulevard, 1F, in a place filled with art"}]
+
+execute as @a[scores={TalkTrigger=26,TalkTime=0},tag=Dialogue176] run tellraw @s[tag=!Dialogue178] ["",{"text":"LOOKER\u2019S NOTEBOOK","italic":true},{"text":"\nClient: A rep from a Lumiose City mothers\u2019 group \nDetails: \u201cKids in Lumiose City seem to be spending a lot of time in back alleys recently.\u201d\n\u201cWhat are they up to in these shadowy, suspicious places? Inquiring mothers want to know!\u201d\n\u201cMy son is about to take the entrance exam for an elite school for future Ace Trainers!\u201d\n\u201cI can\u2019t have him do anything stupid and get a black mark on his academic record!\u201d\n\u201cYou must do something to make kids stop hanging out in those suspicious alleys!\u201d \nReward: Enough dough to last for a week"}]
+execute as @a[scores={TalkTrigger=26,TalkTime=0},tag=Dialogue176] run tellraw @s[tag=Dialogue178] {"text":"It's the Looker's notebook!","italic":true,"color":"gray"}
+
+execute as @a[scores={TalkTrigger=26}] run scoreboard players set @s TalkTrigger 0
+
+
+
+execute as @a[scores={TalkTrigger=29,TalkTime=0}] run tellraw @s {"text":"LOOKER\u2019S TOP-SECRET JOURNAL\nThe XXth day of the XXth month... I sense that my duties here in the Kalos region draw near their end. I will attempt to contact that one who is rumored to have ties to Team Flare. This will not come without cost, truly. Such a one does not do favors for nothing. I will need something that I can use to persuade such a fiend... Some bargaining chip..."}
+execute as @a[scores={TalkTrigger=29}] run scoreboard players set @s TalkTrigger 0
+
+
+
+
+
+
+
+#Looker Chapter 3 start, is something wrong with Emma [Yes] - 27
+execute as @a[scores={TalkTrigger=27}] run scoreboard players set @s DialogueTrigger 180
+execute as @a[scores={TalkTrigger=27}] run scoreboard players set @s TalkTrigger 0
+
+
+#Looker Chapter 3 start, is something wrong with Emma [No] - 28
+execute as @a[scores={TalkTrigger=28}] run scoreboard players set @s DialogueTrigger 181
+execute as @a[scores={TalkTrigger=28}] run scoreboard players set @s TalkTrigger 0
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#Hotel Guests
+
+#Removes dialogue tags if present
+execute as @a[scores={TalkTrigger=30..35}] run tag @s remove Dialogue218
+execute as @a[scores={TalkTrigger=30..35}] run tag @s remove Dialogue219
+execute as @a[scores={TalkTrigger=30..35}] run tag @s remove Dialogue220
+execute as @a[scores={TalkTrigger=30..35}] run tag @s remove Dialogue221
+execute as @a[scores={TalkTrigger=30..35}] run tag @s remove Dialogue222
+execute as @a[scores={TalkTrigger=30..35}] run tag @s remove Dialogue223
+execute as @a[scores={TalkTrigger=30..35}] run tag @s remove Dialogue224
+
+
+#Maid - 30
+execute as @a[scores={TalkTrigger=30,TalkTime=1..}] run scoreboard players set @s TalkTrigger 0
+execute as @a[scores={TalkTrigger=30}] run scoreboard players add @s[tag=!MaidCD] TrainerLoot102 1
+execute as @a[scores={TalkTrigger=30}] run tag @s add MaidCD
+execute as @a[scores={TalkTrigger=30}] run scoreboard players set @s DialogueTrigger 218
+execute as @a[scores={TalkTrigger=30}] run scoreboard players set @s TalkTrigger 0
+
+
+#Tourist - 31
+execute as @a[scores={TalkTrigger=31,TalkTime=1..}] run scoreboard players set @s TalkTrigger 0
+execute as @a[scores={TalkTrigger=31}] run scoreboard players add @s[tag=!TouristCD] TrainerLoot103 1
+execute as @a[scores={TalkTrigger=31}] run tag @s add TouristCD
+execute as @a[scores={TalkTrigger=31}] run scoreboard players set @s DialogueTrigger 220
+execute as @a[scores={TalkTrigger=31}] run scoreboard players set @s TalkTrigger 0
+
+
+#Backpacker - 32
+execute as @a[scores={TalkTrigger=32,TalkTime=1..}] run scoreboard players set @s TalkTrigger 0
+execute as @a[scores={TalkTrigger=32}] run scoreboard players add @s[tag=!BackpackerCD] TrainerLoot104 1
+execute as @a[scores={TalkTrigger=32}] run tag @s add BackpackerCD
+execute as @a[scores={TalkTrigger=32}] run scoreboard players set @s DialogueTrigger 219
+execute as @a[scores={TalkTrigger=32}] run scoreboard players set @s TalkTrigger 0
+
+
+#Hiker - 33
+execute as @a[scores={TalkTrigger=33,TalkTime=1..}] run scoreboard players set @s TalkTrigger 0
+execute as @a[scores={TalkTrigger=33}] run scoreboard players add @s[tag=!HikerCD] TrainerLoot105 1
+execute as @a[scores={TalkTrigger=33}] run tag @s add HikerCD
+execute as @a[scores={TalkTrigger=33}] run scoreboard players set @s DialogueTrigger 222
+execute as @a[scores={TalkTrigger=33}] run scoreboard players set @s TalkTrigger 0
+
+
+#Waiter - 34
+execute as @a[scores={TalkTrigger=34,TalkTime=1..}] run scoreboard players set @s TalkTrigger 0
+execute as @a[scores={TalkTrigger=34}] run scoreboard players add @s[tag=!WaiterCD] TrainerLoot106 1
+execute as @a[scores={TalkTrigger=34}] run tag @s add WaiterCD
+execute as @a[scores={TalkTrigger=34}] run scoreboard players set @s DialogueTrigger 223
+execute as @a[scores={TalkTrigger=34}] run scoreboard players set @s TalkTrigger 0
+
+
+#Madame - 35
+execute as @a[scores={TalkTrigger=35,TalkTime=1..}] run scoreboard players set @s TalkTrigger 0
+execute as @a[scores={TalkTrigger=35}] run scoreboard players add @s[tag=!MadameCD] TrainerLoot107 1
+execute as @a[scores={TalkTrigger=35}] run tag @s add MadameCD
+execute as @a[scores={TalkTrigger=35}] run scoreboard players set @s DialogueTrigger 224
+execute as @a[scores={TalkTrigger=35}] run scoreboard players set @s TalkTrigger 0
+
+
+#Tourist info on trainers - 36-39
+execute as @a[scores={TalkTrigger=36..39}] run tag @s remove Dialogue221
+execute as @a[scores={TalkTrigger=36..39}] run scoreboard players set @s[scores={TalkTime=0}] DialogueTrigger 221
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#Clothing
+execute as @a[scores={TalkTrigger=40..131}] run function kalos:triggers/clothinggive
+execute as @a[scores={TalkTrigger=40..131}] run scoreboard players set @s TalkTrigger 0
+
+
+
+#Left in some growing room if more clothing were to be added
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#Xerosic's Notes
+#200-208
+
+#Xerosic's Notes #1
+execute as @a[scores={TalkTrigger=200,TalkTime=0}] run tag @s remove Dialogue202
+execute as @a[scores={TalkTrigger=200,TalkTime=0}] run scoreboard players set @s DialogueTrigger 202
+execute as @a[scores={TalkTrigger=200}] run scoreboard players set @s TalkTrigger 0
+
+
+#Xerosic's Notes #2
+execute as @a[scores={TalkTrigger=201,TalkTime=0}] run tag @s remove Dialogue203
+execute as @a[scores={TalkTrigger=201,TalkTime=0}] run scoreboard players set @s DialogueTrigger 203
+execute as @a[scores={TalkTrigger=201}] run scoreboard players set @s TalkTrigger 0
+
+
+#Xerosic's Notes #3
+execute as @a[scores={TalkTrigger=202,TalkTime=0}] run tag @s remove Dialogue204
+execute as @a[scores={TalkTrigger=202,TalkTime=0}] run scoreboard players set @s DialogueTrigger 204
+execute as @a[scores={TalkTrigger=202}] run scoreboard players set @s TalkTrigger 0
+
+
+#Xerosic's Notes #4
+execute as @a[scores={TalkTrigger=203,TalkTime=0}] run tag @s remove Dialogue205
+execute as @a[scores={TalkTrigger=203,TalkTime=0}] run scoreboard players set @s DialogueTrigger 205
+execute as @a[scores={TalkTrigger=203}] run scoreboard players set @s TalkTrigger 0
+
+
+#Xerosic's Notes #5
+execute as @a[scores={TalkTrigger=204,TalkTime=0}] run tag @s remove Dialogue206
+execute as @a[scores={TalkTrigger=204,TalkTime=0}] run scoreboard players set @s DialogueTrigger 206
+execute as @a[scores={TalkTrigger=204}] run scoreboard players set @s TalkTrigger 0
+
+
+#Xerosic's Notes #6
+execute as @a[scores={TalkTrigger=205,TalkTime=0}] run tag @s remove Dialogue207
+execute as @a[scores={TalkTrigger=205,TalkTime=0}] run scoreboard players set @s DialogueTrigger 207
+execute as @a[scores={TalkTrigger=205}] run scoreboard players set @s TalkTrigger 0
+
+
+#Poke loot statue over object
+#/tedit add INTERACT /scoreboard players set @pl TalkTrigger 206
+execute as @a[scores={TalkTrigger=206,TalkTime=0}] run tellraw @s {"text":"It’s someone’s Poké Ball.","italic":true,"color":"gray"}
+execute as @a[scores={TalkTrigger=206}] run scoreboard players set @s TalkTrigger 0
+
+
+#Emma's Looker Bureau notebook
+#/tedit add INTERACT /scoreboard players set @pl TalkTrigger 207
+execute as @a[scores={TalkTrigger=207,TalkTime=0}] run tellraw @s {"text":"It is an empty notebook.","italic":true,"color":"gray"}
+execute as @a[scores={TalkTrigger=207}] run scoreboard players set @s TalkTrigger 0
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#Battle Maison Menus
+execute as @a[scores={TalkTrigger=208,TalkTime=0}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=208,TalkTime=0}] run tellraw @s[scores={BattleMaison=0}] ["",{"text":"Welcome to the Battle Maison. What would you like to do today?\n["},{"text":"Challenge","color":"red","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 214"}},{"text":"] \u0020 \u0020["},{"text":"Info","color":"gray","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 219"}},{"text":"] \u0020 \u0020["},{"text":"Change Music","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 209"}},{"text":"]"}]
+execute as @a[scores={TalkTrigger=208,TalkTime=0}] run tellraw @s[scores={BattleMaison=1..}] ["",{"text":"Welcome to the Battle Maison. What would you like to do today?\n["},{"text":"Challenge","color":"red","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 214"}},{"text":"]    ["},{"text":"Info","color":"gray","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 219"}},{"text":"]    ["},{"text":"Change Music","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 209"}},{"text":"]   ["},{"text":"End Challenge","color":"gold","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 222"}},{"text":"]"}]
+execute as @a[scores={TalkTrigger=208}] run scoreboard players set @s TalkTrigger 0
+
+
+#Change Music
+#209 - Prompt
+execute as @a[scores={TalkTrigger=209,TalkTime=0}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=209,TalkTime=0}] run tellraw @s[tag=Music1] ["",{"text":"The current selection is Music 1. Which music would you like to choose?\n["},{"text":"Music 1","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 210"},"hoverEvent":{"action":"show_text","value":"Regular Trainer battle music"}},{"text":"]  ["},{"text":"Music 2","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 211"},"hoverEvent":{"action":"show_text","value":"Wild Pokemon battle music"}},{"text":"]  ["},{"text":"Music 3","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 212"},"hoverEvent":{"action":"show_text","value":"Friend battle music"}},{"text":"]  ["},{"text":"Music 4","color":"gold","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 213"},"hoverEvent":{"action":"show_text","value":"Gym Leader battle music"}},{"text":"]  ["},{"text":"Music 5","color":"gray","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 223"},"hoverEvent":{"action":"show_text","value":"Korrina Successor battle music"}},{"text":"]  ["},{"text":"Music 6","color":"red","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 224"},"hoverEvent":{"action":"show_text","value":"Lysandre battle music"}},{"text":"]  ["},{"text":"Music 7","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 225"},"hoverEvent":{"action":"show_text","value":"World Championship battle music"}},{"text":"] "}]
+execute as @a[scores={TalkTrigger=209,TalkTime=0}] run tellraw @s[tag=Music2] ["",{"text":"The current selection is Music 2. Which music would you like to choose?\n["},{"text":"Music 1","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 210"},"hoverEvent":{"action":"show_text","value":"Regular Trainer battle music"}},{"text":"]  ["},{"text":"Music 2","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 211"},"hoverEvent":{"action":"show_text","value":"Wild Pokemon battle music"}},{"text":"]  ["},{"text":"Music 3","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 212"},"hoverEvent":{"action":"show_text","value":"Friend battle music"}},{"text":"]  ["},{"text":"Music 4","color":"gold","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 213"},"hoverEvent":{"action":"show_text","value":"Gym Leader battle music"}},{"text":"]  ["},{"text":"Music 5","color":"gray","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 223"},"hoverEvent":{"action":"show_text","value":"Korrina Successor battle music"}},{"text":"]  ["},{"text":"Music 6","color":"red","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 224"},"hoverEvent":{"action":"show_text","value":"Lysandre battle music"}},{"text":"]  ["},{"text":"Music 7","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 225"},"hoverEvent":{"action":"show_text","value":"World Championship battle music"}},{"text":"] "}]
+execute as @a[scores={TalkTrigger=209,TalkTime=0}] run tellraw @s[tag=Music3] ["",{"text":"The current selection is Music 3. Which music would you like to choose?\n["},{"text":"Music 1","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 210"},"hoverEvent":{"action":"show_text","value":"Regular Trainer battle music"}},{"text":"]  ["},{"text":"Music 2","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 211"},"hoverEvent":{"action":"show_text","value":"Wild Pokemon battle music"}},{"text":"]  ["},{"text":"Music 3","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 212"},"hoverEvent":{"action":"show_text","value":"Friend battle music"}},{"text":"]  ["},{"text":"Music 4","color":"gold","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 213"},"hoverEvent":{"action":"show_text","value":"Gym Leader battle music"}},{"text":"]  ["},{"text":"Music 5","color":"gray","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 223"},"hoverEvent":{"action":"show_text","value":"Korrina Successor battle music"}},{"text":"]  ["},{"text":"Music 6","color":"red","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 224"},"hoverEvent":{"action":"show_text","value":"Lysandre battle music"}},{"text":"]  ["},{"text":"Music 7","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 225"},"hoverEvent":{"action":"show_text","value":"World Championship battle music"}},{"text":"] "}]
+execute as @a[scores={TalkTrigger=209,TalkTime=0}] run tellraw @s[tag=Music4] ["",{"text":"The current selection is Music 4. Which music would you like to choose?\n["},{"text":"Music 1","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 210"},"hoverEvent":{"action":"show_text","value":"Regular Trainer battle music"}},{"text":"]  ["},{"text":"Music 2","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 211"},"hoverEvent":{"action":"show_text","value":"Wild Pokemon battle music"}},{"text":"]  ["},{"text":"Music 3","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 212"},"hoverEvent":{"action":"show_text","value":"Friend battle music"}},{"text":"]  ["},{"text":"Music 4","color":"gold","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 213"},"hoverEvent":{"action":"show_text","value":"Gym Leader battle music"}},{"text":"]  ["},{"text":"Music 5","color":"gray","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 223"},"hoverEvent":{"action":"show_text","value":"Korrina Successor battle music"}},{"text":"]  ["},{"text":"Music 6","color":"red","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 224"},"hoverEvent":{"action":"show_text","value":"Lysandre battle music"}},{"text":"]  ["},{"text":"Music 7","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 225"},"hoverEvent":{"action":"show_text","value":"World Championship battle music"}},{"text":"] "}]
+execute as @a[scores={TalkTrigger=209,TalkTime=0}] run tellraw @s[tag=Music5] ["",{"text":"The current selection is Music 5. Which music would you like to choose?\n["},{"text":"Music 1","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 210"},"hoverEvent":{"action":"show_text","value":"Regular Trainer battle music"}},{"text":"]  ["},{"text":"Music 2","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 211"},"hoverEvent":{"action":"show_text","value":"Wild Pokemon battle music"}},{"text":"]  ["},{"text":"Music 3","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 212"},"hoverEvent":{"action":"show_text","value":"Friend battle music"}},{"text":"]  ["},{"text":"Music 4","color":"gold","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 213"},"hoverEvent":{"action":"show_text","value":"Gym Leader battle music"}},{"text":"]  ["},{"text":"Music 5","color":"gray","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 223"},"hoverEvent":{"action":"show_text","value":"Korrina Successor battle music"}},{"text":"]  ["},{"text":"Music 6","color":"red","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 224"},"hoverEvent":{"action":"show_text","value":"Lysandre battle music"}},{"text":"]  ["},{"text":"Music 7","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 225"},"hoverEvent":{"action":"show_text","value":"World Championship battle music"}},{"text":"] "}]
+execute as @a[scores={TalkTrigger=209,TalkTime=0}] run tellraw @s[tag=Music6] ["",{"text":"The current selection is Music 6. Which music would you like to choose?\n["},{"text":"Music 1","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 210"},"hoverEvent":{"action":"show_text","value":"Regular Trainer battle music"}},{"text":"]  ["},{"text":"Music 2","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 211"},"hoverEvent":{"action":"show_text","value":"Wild Pokemon battle music"}},{"text":"]  ["},{"text":"Music 3","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 212"},"hoverEvent":{"action":"show_text","value":"Friend battle music"}},{"text":"]  ["},{"text":"Music 4","color":"gold","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 213"},"hoverEvent":{"action":"show_text","value":"Gym Leader battle music"}},{"text":"]  ["},{"text":"Music 5","color":"gray","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 223"},"hoverEvent":{"action":"show_text","value":"Korrina Successor battle music"}},{"text":"]  ["},{"text":"Music 6","color":"red","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 224"},"hoverEvent":{"action":"show_text","value":"Lysandre battle music"}},{"text":"]  ["},{"text":"Music 7","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 225"},"hoverEvent":{"action":"show_text","value":"World Championship battle music"}},{"text":"] "}]
+execute as @a[scores={TalkTrigger=209,TalkTime=0}] run tellraw @s[tag=Music7] ["",{"text":"The current selection is Music 7. Which music would you like to choose?\n["},{"text":"Music 1","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 210"},"hoverEvent":{"action":"show_text","value":"Regular Trainer battle music"}},{"text":"]  ["},{"text":"Music 2","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 211"},"hoverEvent":{"action":"show_text","value":"Wild Pokemon battle music"}},{"text":"]  ["},{"text":"Music 3","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 212"},"hoverEvent":{"action":"show_text","value":"Friend battle music"}},{"text":"]  ["},{"text":"Music 4","color":"gold","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 213"},"hoverEvent":{"action":"show_text","value":"Gym Leader battle music"}},{"text":"]  ["},{"text":"Music 5","color":"gray","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 223"},"hoverEvent":{"action":"show_text","value":"Korrina Successor battle music"}},{"text":"]  ["},{"text":"Music 6","color":"red","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 224"},"hoverEvent":{"action":"show_text","value":"Lysandre battle music"}},{"text":"]  ["},{"text":"Music 7","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 225"},"hoverEvent":{"action":"show_text","value":"World Championship battle music"}},{"text":"] "}]
+execute as @a[scores={TalkTrigger=209}] run scoreboard players set @s TalkTrigger 0
+
+
+#210 - Music 1 enable (Regular Trainer battle music)
+execute as @a[scores={TalkTrigger=210}] run tag @s add Music1
+execute as @a[scores={TalkTrigger=210}] run tag @s remove Music2
+execute as @a[scores={TalkTrigger=210}] run tag @s remove Music3
+execute as @a[scores={TalkTrigger=210}] run tag @s remove Music4
+execute as @a[scores={TalkTrigger=210}] run tag @s remove Music5
+execute as @a[scores={TalkTrigger=210}] run tag @s remove Music6
+execute as @a[scores={TalkTrigger=210}] run tag @s remove Music7
+execute as @a[scores={TalkTrigger=210}] run tellraw @a {"text":"The music has been set."}
+execute as @a[scores={TalkTrigger=210}] run scoreboard players set @s TalkTrigger 0
+
+#211 - Music 2 enable (Wild Pokemon battle music)
+execute as @a[scores={TalkTrigger=211}] run tag @s remove Music1
+execute as @a[scores={TalkTrigger=211}] run tag @s add Music2
+execute as @a[scores={TalkTrigger=211}] run tag @s remove Music3
+execute as @a[scores={TalkTrigger=211}] run tag @s remove Music4
+execute as @a[scores={TalkTrigger=211}] run tag @s remove Music5
+execute as @a[scores={TalkTrigger=211}] run tag @s remove Music6
+execute as @a[scores={TalkTrigger=211}] run tag @s remove Music7
+execute as @a[scores={TalkTrigger=211}] run tellraw @a {"text":"The music has been set."}
+execute as @a[scores={TalkTrigger=211}] run scoreboard players set @s TalkTrigger 0
+
+#212 - Music 3 enable (Friend battle music)
+execute as @a[scores={TalkTrigger=212}] run tag @s remove Music1
+execute as @a[scores={TalkTrigger=212}] run tag @s remove Music2
+execute as @a[scores={TalkTrigger=212}] run tag @s add Music3
+execute as @a[scores={TalkTrigger=212}] run tag @s remove Music4
+execute as @a[scores={TalkTrigger=212}] run tag @s remove Music5
+execute as @a[scores={TalkTrigger=212}] run tag @s remove Music6
+execute as @a[scores={TalkTrigger=212}] run tag @s remove Music7
+execute as @a[scores={TalkTrigger=212}] run tellraw @a {"text":"The music has been set."}
+execute as @a[scores={TalkTrigger=212}] run scoreboard players set @s TalkTrigger 0
+
+#213 - Music 4 enable (Gym Leader battle music)
+execute as @a[scores={TalkTrigger=213}] run tag @s remove Music1
+execute as @a[scores={TalkTrigger=213}] run tag @s remove Music2
+execute as @a[scores={TalkTrigger=213}] run tag @s remove Music3
+execute as @a[scores={TalkTrigger=213}] run tag @s add Music4
+execute as @a[scores={TalkTrigger=213}] run tag @s remove Music5
+execute as @a[scores={TalkTrigger=213}] run tag @s remove Music6
+execute as @a[scores={TalkTrigger=213}] run tag @s remove Music7
+execute as @a[scores={TalkTrigger=213}] run tellraw @a {"text":"The music has been set."}
+execute as @a[scores={TalkTrigger=213}] run scoreboard players set @s TalkTrigger 0
+
+
+#223 - Music 5 enable (Korrina Successor battle music)
+execute as @a[scores={TalkTrigger=223}] run tag @s remove Music1
+execute as @a[scores={TalkTrigger=223}] run tag @s remove Music2
+execute as @a[scores={TalkTrigger=223}] run tag @s remove Music3
+execute as @a[scores={TalkTrigger=223}] run tag @s remove Music4
+execute as @a[scores={TalkTrigger=223}] run tag @s add Music5
+execute as @a[scores={TalkTrigger=223}] run tag @s remove Music6
+execute as @a[scores={TalkTrigger=223}] run tag @s remove Music7
+execute as @a[scores={TalkTrigger=223}] run tellraw @a {"text":"The music has been set."}
+execute as @a[scores={TalkTrigger=223}] run scoreboard players set @s TalkTrigger 0
+
+#224 - Music 6 enable (Lysandre battle music)
+execute as @a[scores={TalkTrigger=224}] run tag @s remove Music1
+execute as @a[scores={TalkTrigger=224}] run tag @s remove Music2
+execute as @a[scores={TalkTrigger=224}] run tag @s remove Music3
+execute as @a[scores={TalkTrigger=224}] run tag @s remove Music4
+execute as @a[scores={TalkTrigger=224}] run tag @s remove Music5
+execute as @a[scores={TalkTrigger=224}] run tag @s add Music6
+execute as @a[scores={TalkTrigger=224}] run tag @s remove Music7
+execute as @a[scores={TalkTrigger=224}] run tellraw @a {"text":"The music has been set."}
+execute as @a[scores={TalkTrigger=224}] run scoreboard players set @s TalkTrigger 0
+
+#225 - Music 7 enable (World Championship battle music)
+execute as @a[scores={TalkTrigger=225}] run tag @s remove Music1
+execute as @a[scores={TalkTrigger=225}] run tag @s remove Music2
+execute as @a[scores={TalkTrigger=225}] run tag @s remove Music3
+execute as @a[scores={TalkTrigger=225}] run tag @s remove Music4
+execute as @a[scores={TalkTrigger=225}] run tag @s remove Music5
+execute as @a[scores={TalkTrigger=225}] run tag @s remove Music6
+execute as @a[scores={TalkTrigger=225}] run tag @s add Music7
+execute as @a[scores={TalkTrigger=225}] run tellraw @a {"text":"The music has been set."}
+execute as @a[scores={TalkTrigger=225}] run scoreboard players set @s TalkTrigger 0
+
+#226 -
+
+
+
+#214 - Challenge Prompt
+
+#No supers unlocked
+execute as @a[scores={TalkTrigger=214}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=214},tag=!SingleSuper] run tellraw @s[tag=!DoubleSuper] ["",{"text":"Which battle format would you like to choose?\n["},{"text":"Single Battle","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 215"},"hoverEvent":{"action":"show_text","value":"Any above Lv. 50 will be set to Lv. 50. Three Pokémon may enter. Pokémon limitations exist. Item limitations exist."}},{"text":"]    ["},{"text":"Double Battle","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 216"},"hoverEvent":{"action":"show_text","value":"Any above Lv. 50 will be set to Lv. 50. Four Pokémon may enter. Pokémon limitations exist. Item limitations exist."}},{"text":"]"}]
+
+
+#Single Supers unlocked
+execute as @a[scores={TalkTrigger=214},tag=SingleSuper] run tellraw @s[tag=!DoubleSuper] ["",{"text":"Which battle format would you like to choose?\n["},{"text":"Single Battle","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 215"},"hoverEvent":{"action":"show_text","value":"Any above Lv. 50 will be set to Lv. 50. Three Pokémon may enter. Pokémon limitations exist. Item limitations exist."}},{"text":"]    ["},{"text":"Double Battle","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 216"},"hoverEvent":{"action":"show_text","value":"Any above Lv. 50 will be set to Lv. 50. Four Pokémon may enter. Pokémon limitations exist. Item limitations exist."}},{"text":"]   ["},{"text":"Single Super","color":"dark_aqua","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 217"},"hoverEvent":{"action":"show_text","value":"Any above Lv. 50 will be set to Lv. 50. Three Pokémon may enter. Pokémon limitations exist. Item limitations exist."}},{"text":"]"}]
+
+#Double Supers unlocked
+execute as @a[scores={TalkTrigger=214},tag=!SingleSuper] run tellraw @s[tag=DoubleSuper] ["",{"text":"Which battle format would you like to choose?\n["},{"text":"Single Battle","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 215"},"hoverEvent":{"action":"show_text","value":"Any above Lv. 50 will be set to Lv. 50. Three Pokémon may enter. Pokémon limitations exist. Item limitations exist."}},{"text":"]    ["},{"text":"Double Battle","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 216"},"hoverEvent":{"action":"show_text","value":"Any above Lv. 50 will be set to Lv. 50. Four Pokémon may enter. Pokémon limitations exist. Item limitations exist."}},{"text":"]   ["},{"text":"Double Super","color":"dark_green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 218"},"hoverEvent":{"action":"show_text","value":"Any above Lv. 50 will be set to Lv. 50. Four Pokémon may enter. Pokémon limitations exist. Item limitations exist."}},{"text":"]"}]
+
+#Both supers unlocked
+execute as @a[scores={TalkTrigger=214},tag=SingleSuper] run tellraw @s[tag=DoubleSuper] ["",{"text":"Which battle format would you like to choose?\n["},{"text":"Single Battle","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 215"},"hoverEvent":{"action":"show_text","value":"Any above Lv. 50 will be set to Lv. 50. Three Pokémon may enter. Pokémon limitations exist. Item limitations exist."}},{"text":"]    ["},{"text":"Double Battle","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 216"},"hoverEvent":{"action":"show_text","value":"Any above Lv. 50 will be set to Lv. 50. Four Pokémon may enter. Pokémon limitations exist. Item limitations exist."}},{"text":"]   ["},{"text":"Single Super","color":"dark_aqua","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 217"},"hoverEvent":{"action":"show_text","value":"Any above Lv. 50 will be set to Lv. 50. Three Pokémon may enter. Pokémon limitations exist. Item limitations exist."}},{"text":"]   ["},{"text":"Double Super","color":"dark_green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 218"},"hoverEvent":{"action":"show_text","value":"Any above Lv. 50 will be set to Lv. 50. Four Pokémon may enter. Pokémon limitations exist. Item limitations exist."}},{"text":"]"}]
+execute as @a[scores={TalkTrigger=214}] run scoreboard players set @s TalkTrigger 0
+
+
+
+
+#215 - Single Battle
+execute as @a[scores={TalkTrigger=215}] run tellraw @s {"text":"Your challenge has been registered. Please step on the stage to begin!","color":"white"}
+execute as @a[scores={TalkTrigger=215}] run scoreboard players set @s BattleMaison 1
+execute as @a[scores={TalkTrigger=215}] run function kalos:data/maisonstreakstarting
+execute as @a[scores={TalkTrigger=215}] run scoreboard players set @s TalkTrigger 0
+
+
+#216 - Double Battle
+execute as @a[scores={TalkTrigger=216}] run tellraw @s {"text":"Your challenge has been registered. Please step on the stage to begin!","color":"white"}
+execute as @a[scores={TalkTrigger=216}] run scoreboard players set @s BattleMaison 3
+execute as @a[scores={TalkTrigger=216}] run function kalos:data/maisonstreakstarting
+execute as @a[scores={TalkTrigger=216}] run scoreboard players set @s TalkTrigger 0
+
+
+#217 - Single Super
+execute as @a[scores={TalkTrigger=217}] run tellraw @s {"text":"Your challenge has been registered. Please step on the stage to begin!","color":"white"}
+execute as @a[scores={TalkTrigger=217}] run scoreboard players set @s BattleMaison 2
+execute as @a[scores={TalkTrigger=217}] run function kalos:data/maisonstreakstarting
+execute as @a[scores={TalkTrigger=217}] run scoreboard players set @s TalkTrigger 0
+
+
+#218 - Double Super
+execute as @a[scores={TalkTrigger=218}] run tellraw @s {"text":"Your challenge has been registered. Please step on the stage to begin!","color":"white"}
+execute as @a[scores={TalkTrigger=218}] run scoreboard players set @s BattleMaison 4
+execute as @a[scores={TalkTrigger=218}] run function kalos:data/maisonstreakstarting
+execute as @a[scores={TalkTrigger=218}] run scoreboard players set @s TalkTrigger 0
+
+
+
+
+#219 - Info Prompt
+execute as @a[scores={TalkTrigger=219}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=219}] run tellraw @s ["",{"text":"What would you like to hear about?\n[","color":"white"},{"text":"The Battle Maison","color":"gold","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 220"}},{"text":"] \u0020 \u0020[","color":"white"},{"text":"The rules","color":"gray","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 221"}},{"text":"]","color":"white"}]
+execute as @a[scores={TalkTrigger=219}] run scoreboard players set @s TalkTrigger 0
+
+
+#220 - Info about the Battle Maison
+execute as @a[scores={TalkTrigger=220}] run tag @s remove Dialogue228
+execute as @a[scores={TalkTrigger=220,TalkTime=0}] run scoreboard players set @s DialogueTrigger 228
+execute as @a[scores={TalkTrigger=220}] run scoreboard players set @s TalkTrigger 0
+
+
+#221 - Info about the rules
+execute as @a[scores={TalkTrigger=221}] run tag @s remove Dialogue229
+execute as @a[scores={TalkTrigger=221,TalkTime=0}] run scoreboard players set @s DialogueTrigger 229
+execute as @a[scores={TalkTrigger=221}] run scoreboard players set @s TalkTrigger 0
+
+
+#222 - Formally ends players challenge. Will also reset if walk out of room
+execute as @a[scores={TalkTrigger=222}] run scoreboard players set @s BattleMaison 0
+execute as @a[scores={TalkTrigger=222}] run tellraw @s {"text":"Your current challenge has ended! Please come again!","color":"white"}
+execute as @a[scores={TalkTrigger=222}] run scoreboard players set @s TalkTrigger 0
+
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Lumiose Taxis
+
+#227 - When Lumiose City's Power is shut down
+execute as @a[scores={TalkTrigger=227,TalkTime=0},tag=!LumiosePower] run tag @s remove Dialogue239
+execute as @a[scores={TalkTrigger=227,TalkTime=0},tag=!LumiosePower] run scoreboard players set @s DialogueTrigger 239
+execute as @a[scores={TalkTrigger=227},tag=!LumiosePower] run scoreboard players set @s TalkTrigger 0
+
+
+#227 - Lumiose Taxi Prompt
+execute as @a[scores={TalkTrigger=227},tag=LumiosePower] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=227},tag=LumiosePower] run tellraw @s {"text":"<Cab Driver> Thanks for choosing Lumi Cab! The base fare's $710. What are you in the mood for?"}
+execute as @a[scores={TalkTrigger=227},tag=LumiosePower] run tellraw @s ["",{"text":"["},{"text":"Services","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 229"}},{"text":"] \u0020 \u0020["},{"text":"Transportation","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 230"}},{"text":"] \u0020 \u0020["},{"text":"Facilities","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 231"}},{"text":"] \u0020 \u0020["},{"text":"More","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 228"}},{"text":"]"}]
+execute as @a[scores={TalkTrigger=227},tag=LumiosePower] run scoreboard players set @s TalkTrigger 0
+
+
+#Adds a blank line between dialogues
+execute as @a[scores={TalkTrigger=228..236}] run tellraw @s {"text":""}
+
+#228 - Lumiose Taxi Prompt Page 2
+execute as @a[scores={TalkTrigger=228}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=228}] run tellraw @s ["",{"text":"["},{"text":"Shopping","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 232"}},{"text":"] \u0020 \u0020["},{"text":"Fine Dining","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 233"}},{"text":"] \u0020 \u0020["},{"text":"Cafes","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 234"}},{"text":"] \u0020 \u0020["},{"text":"Back","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 227"}},{"text":"] "}]
+execute as @a[scores={TalkTrigger=228}] run scoreboard players set @s TalkTrigger 0
+
+#[Services]    [Transportation]    [Facilities]    [More]
+#[Shopping]    [Fine Dining]    [Cafes]    [Back]
+
+
+#229 - Category Services
+execute as @a[scores={TalkTrigger=229}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=229}] run tellraw @s ["",{"text":"Got it. And where are we headed?\n["},{"text":"South Pokémon Center","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 237"},"hoverEvent":{"action":"show_text","value":"That\u2019s gotta be the Pokémon Center that\u2019s on South Boulevard, right?"}},{"text":"]\n["},{"text":"PR Video Studio","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 238"},"hoverEvent":{"action":"show_text","value":"That\u2019s the place on South Boulevard where you can make Trainer PR Videos, right?"}},{"text":"]\n["},{"text":"Friseur Furfrou","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 239"},"hoverEvent":{"action":"show_text","value":"That\u2019s the shop on Vernal Avenue that\u2019ll trim and style your Pokémon\u2019s pelt, right?"}},{"text":"]\n["},{"text":"Coiffure Clips","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 240"},"hoverEvent":{"action":"show_text","value":"That\u2019s the shop on South Boulevard where you can get your hair cut and dyed, right?"}},{"text":"]\n["},{"text":"Loto-ID Center","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 241"},"hoverEvent":{"action":"show_text","value":"That\u2019s the shop where you can win big on Estival Avenue, isn\u2019t it?"}},{"text":"]\n["},{"text":"North Pokémon Center","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 242"},"hoverEvent":{"action":"show_text","value":"That\u2019s gotta be the Pokémon Center that\u2019s on North Boulevard, right?"}},{"text":"]\n["},{"text":"Hotel Richissime","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 243"},"hoverEvent":{"action":"show_text","value":"That\u2019s the one swanky-looking hotel up on North Boulevard, right?"}},{"text":"]\n["},{"text":"Magenta Pokémon Center","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 244"},"hoverEvent":{"action":"show_text","value":"That\u2019s the Pokémon Center near Magenta Plaza, right?"}},{"text":"]"}]
+execute as @a[scores={TalkTrigger=229}] run scoreboard players set @s TalkTrigger 0
+
+
+#230 - Category Transportation
+execute as @a[scores={TalkTrigger=230}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=230}] run tellraw @s ["",{"text":"Got it. And where are we headed?\n["},{"text":"Gate to Route 4","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 245"},"hoverEvent":{"action":"show_text","value":"Sure, down on South Boulevard where Route 4 enters the city, right?"}},{"text":"]\n["},{"text":"Gate to Route 5","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 246"},"hoverEvent":{"action":"show_text","value":"Sure, down on South Boulevard where Route 5 enters the city, right?"}},{"text":"]\n["},{"text":"Gate to Route 13","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 247"},"hoverEvent":{"action":"show_text","value":"Sure, up on North Boulevard where Route 13 enters the city, right?"}},{"text":"]\n["},{"text":"Gate to Route 14","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 248"},"hoverEvent":{"action":"show_text","value":"Sure, up on North Boulevard where Route 14 enters the city, right?"}},{"text":"]\n["},{"text":"Gate to Route 16","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 249"},"hoverEvent":{"action":"show_text","value":"Sure, up on North Boulevard where Route 16 enters the city, right?"}},{"text":"]\n["},{"text":"Lumiose Station","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 250"},"hoverEvent":{"action":"show_text","value":"That\u2019s the train station where you can board the TMV trains--on North Boulevard, right?"}},{"text":"]"}]
+execute as @a[scores={TalkTrigger=230}] run scoreboard players set @s TalkTrigger 0
+
+
+#231 - Category Facilities
+execute as @a[scores={TalkTrigger=231}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=231,PokemonLeague=0}] run tellraw @s ["",{"text":"Got it. And where are we headed?\n["},{"text":"Pokémon Lab","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 251"},"hoverEvent":{"action":"show_text","value":"Yeah. Right. That research place down on South Boulevard, right?"}},{"text":"]\n["},{"text":"Lumiose Press","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 252"},"hoverEvent":{"action":"show_text","value":"I know it. It\u2019s that place where they print the books, right? On Estival Avenue?"}},{"text":"]\n["},{"text":"Vacant Storefront","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 253"},"hoverEvent":{"action":"show_text","value":"I don\u2019t know much about it myself, but I can get you there, at least!"}},{"text":"]\n["},{"text":"Lumiose Museum","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 254"},"hoverEvent":{"action":"show_text","value":"That place with all the pictures and stuff on North Boulevard, right? I know it well."}},{"text":"]\n["},{"text":"Battle Institute","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 255"},"hoverEvent":{"action":"show_text","value":"Sure, that\u2019s the place up on North Boulevard where you can do the Battle Tests, right?"}},{"text":"]\n["},{"text":"Prism Tower","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 256"},"hoverEvent":{"action":"show_text","value":"Sure, you\u2019ve got to mean the Pokémon Gym that\u2019s smack in the middle of Centrico Plaza."}},{"text":"]"}]
+execute as @a[scores={TalkTrigger=231,PokemonLeague=1..}] run tellraw @s ["",{"text":"Got it. And where are we headed?\n["},{"text":"Pokémon Lab","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 251"},"hoverEvent":{"action":"show_text","value":"Yeah. Right. That research place down on South Boulevard, right?"}},{"text":"]\n["},{"text":"Lumiose Press","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 252"},"hoverEvent":{"action":"show_text","value":"I know it. It\u2019s that place where they print the books, right? On Estival Avenue?"}},{"text":"]\n["},{"text":"Looker Bureau","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 253"},"hoverEvent":{"action":"show_text","value":"I don\u2019t know much about it myself, but I can get you there, at least!"}},{"text":"]\n["},{"text":"Lumiose Museum","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 254"},"hoverEvent":{"action":"show_text","value":"That place with all the pictures and stuff on North Boulevard, right? I know it well."}},{"text":"]\n["},{"text":"Battle Institute","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 255"},"hoverEvent":{"action":"show_text","value":"Sure, that\u2019s the place up on North Boulevard where you can do the Battle Tests, right?"}},{"text":"]\n["},{"text":"Prism Tower","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 256"},"hoverEvent":{"action":"show_text","value":"Sure, you\u2019ve got to mean the Pokémon Gym that\u2019s smack in the middle of Centrico Plaza."}},{"text":"]"}]
+execute as @a[scores={TalkTrigger=231}] run scoreboard players set @s TalkTrigger 0
+
+
+#232 - Category Shopping
+execute as @a[scores={TalkTrigger=232}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=232}] run tellraw @s ["",{"text":"Got it. And where are we headed?\n["},{"text":"Boutique Couture","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 257"},"hoverEvent":{"action":"show_text","value":"It\u2019s that fancy brand-name shop that\u2019s on Vernal Avenue, right?"}},{"text":"]\n["},{"text":"Herboriste","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 258"},"hoverEvent":{"action":"show_text","value":"It\u2019s that place on Vernal Avenue that sells medicines and stuff, right?"}},{"text":"]\n["},{"text":"Stone Emporium","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 259"},"hoverEvent":{"action":"show_text","value":"Isn\u2019t that the shop on Vernal Avenue that sells rocks or something?"}},{"text":"]\n["},{"text":"Poké Ball Boutique","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 260"},"hoverEvent":{"action":"show_text","value":"It\u2019s that place on Autumnal Avenue where they only sell Poké Balls, right?"}},{"text":"]"}]
+execute as @a[scores={TalkTrigger=232}] run scoreboard players set @s TalkTrigger 0
+
+
+#233 - Category Fine Dining
+execute as @a[scores={TalkTrigger=233}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=233}] run tellraw @s ["",{"text":"Got it. And where are we headed?\n["},{"text":"Restaurant Le Nah","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 261"},"hoverEvent":{"action":"show_text","value":"It\u2019s that average place with the average food on South Boulevard, right?"}},{"text":"]\n["},{"text":"Galette Stand","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 262"},"hoverEvent":{"action":"show_text","value":"Sure, sure, it\u2019s that stand on North Boulevard where they sell fresh galettes, right?"}},{"text":"]\n["},{"text":"Juice Shoppe","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 263"},"hoverEvent":{"action":"show_text","value":"Yeah, that\u2019s the shop where you can get fresh juice to drink. On Autumnal Avenue, right?"}},{"text":"]\n["},{"text":"Restaurant Le Yeah","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 264"},"hoverEvent":{"action":"show_text","value":"It\u2019s that expensive place on Autumnal Avenue, right? But the food sure is good."}},{"text":"]\n["},{"text":"Restaurant Le Wow","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 265"},"hoverEvent":{"action":"show_text","value":"It\u2019s the best restaurant in town, you know! On Hibernal Avenue, right? Sure, I know it."}},{"text":"]\n["},{"text":"Sushi High Roller","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 266"},"hoverEvent":{"action":"show_text","value":"Haven\u2019t you got to be a member or something to eat there? I think I know where it is, at least."}},{"text":"]"}]
+execute as @a[scores={TalkTrigger=233}] run scoreboard players set @s TalkTrigger 0
+
+
+#234 - Category Cafes No 1
+execute as @a[scores={TalkTrigger=234}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=234}] run tellraw @s ["",{"text":"Got it. And where are we headed?\n["},{"text":"Café Cyclone","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 267"},"hoverEvent":{"action":"show_text","value":"That kinda weird café near Vert Plaza, right? OK then..."}},{"text":"]\n["},{"text":"Café Introversion","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 268"},"hoverEvent":{"action":"show_text","value":"It\u2019s the place on South Boulevard where all those communications nuts hang out, right?"}},{"text":"]\n["},{"text":"Café Classe","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 269"},"hoverEvent":{"action":"show_text","value":"That\u2019s the one on Vernal Avenue where all the fashionistas hang out, right?"}},{"text":"]\n["},{"text":"Café Woof","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 270"},"hoverEvent":{"action":"show_text","value":"That\u2019s the place on Vernal Avenue where all the Furfrou-loving folks go, right?"}},{"text":"]\n["},{"text":"Café Soleil","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 271"},"hoverEvent":{"action":"show_text","value":"That\u2019s the totally normal café on South Boulevard, isn\u2019t it?"}},{"text":"]\n["},{"text":"Shutterbug Café","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 272"},"hoverEvent":{"action":"show_text","value":"That\u2019s the one those crazy camera fanatics go to, down on South Boulevard, right?"}},{"text":"]\n["},{"text":"Café Rouleau","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 273"},"hoverEvent":{"action":"show_text","value":"Sure, sure. Where all the Roller Skaters hang out on Estival Avenue, right?"}},{"text":"]\n["},{"text":"Café Gallant","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 274"},"hoverEvent":{"action":"show_text","value":"It\u2019s on Estival Avenue, right? I don\u2019t really get it, but OK..."}},{"text":"]\n["},{"text":"More >>>","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 235"}},{"text":"]"}]
+execute as @a[scores={TalkTrigger=234}] run scoreboard players set @s TalkTrigger 0
+
+
+#235 - Category Cafes No 2
+execute as @a[scores={TalkTrigger=235}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=235}] run tellraw @s ["",{"text":"Got it. And where are we headed?\n["},{"text":"Café Triste","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 275"},"hoverEvent":{"action":"show_text","value":"That one on North Boulevard? The one that looks like it\u2019s going out of business?"}},{"text":"]\n["},{"text":"Lysandre Café","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 276"},"hoverEvent":{"action":"show_text","value":"Yeah, I feel like there was some café like that near Magenta Plaza, huh?"}},{"text":"]\n["},{"text":"Café Pokémon-Amie","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 277"},"hoverEvent":{"action":"show_text","value":"I know it. It\u2019s on Autumnal Avenue, yeah? And all the Poké Fans like to hang out there?"}},{"text":"]\n["},{"text":"Café Ultimo","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 278"},"hoverEvent":{"action":"show_text","value":"Right. That place were all the S.T. meatheads hang out on North Boulevard, right?"}},{"text":"]\n["},{"text":"Café Kizuna","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 279"},"hoverEvent":{"action":"show_text","value":"That gloomy café on Hibernal Avenue, right?"}},{"text":"]\n["},{"text":"Café Action!","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 280"},"hoverEvent":{"action":"show_text","value":"Isn\u2019t that the café on North Boulevard where the promo prima donnas hang?"}},{"text":"]\n["},{"text":"Café Bataille","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 281"},"hoverEvent":{"action":"show_text","value":"Yeah, it\u2019s the one on North Boulevard where the battle fanatics get together, right?"}},{"text":"]\n["},{"text":"<<< Back","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 234"}},{"text":"]"}]
+execute as @a[scores={TalkTrigger=235}] run scoreboard players set @s TalkTrigger 0
+
+
+
+
+#237 - 244 Services Activate
+
+
+#245 - 250 - Transportation Activate
+
+
+#251 - 256 - Facilities Activate
+
+
+#257 - 260 - Shopping Activate
+
+
+#261 - 266 - Fine Dining Activate
+
+
+#267 - 281 - Cafes Activate
+
+execute as @a[scores={TalkTrigger=237..281}] run tag @s remove Dialogue238
+execute as @a[scores={TalkTrigger=237..281}] run scoreboard players set @s[scores={TalkTime=0}] DialogueTrigger 238
+
+
+#--------------------------------------------------------------------------------------------------------------------------------
+
+
+#Loto-ID Center
+
+#282 - Activate first dialogue
+
+#if player has already drawn today
+execute as @a[scores={TalkTrigger=282..283},tag=Dialogue240] run tellraw @s {"text":"<Loto-ID Clerk> You can draw a Loto Ticket once a day. Please come back tomorrow!"}
+execute as @a[scores={TalkTrigger=282..283},tag=Dialogue240] run scoreboard players set @s TalkTrigger 0
+
+execute as @a[scores={TalkTrigger=282}] run tag @s remove Dialogue241
+execute as @a[scores={TalkTrigger=282}] run scoreboard players set @s[scores={TalkTime=0}] DialogueTrigger 241
+execute as @a[scores={TalkTrigger=282}] run scoreboard players set @s TalkTrigger 0
+
+#283 - Rolls IDs
+execute as @a[scores={TalkTrigger=283}] run tag @s remove Dialogue240
+execute as @a[scores={TalkTrigger=283}] run scoreboard players set @s[scores={TalkTime=0}] DialogueTrigger 240
+execute as @a[scores={TalkTrigger=283}] run scoreboard players set @s TalkTrigger 0
+
+
+
+#--------------------------------------------------------------------------------------------------------------------------------
+
+
+
+#Battle Maison Battle Point Withdraws
+#/tedit add INTERACT /scoreboard players set @pl TalkTrigger 284
+execute as @a[scores={TalkTrigger=284}] run function kalos:data/maisonbattlepoints
+execute as @a[scores={TalkTrigger=284}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=284}] run tellraw @s ["",{"text":"["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 285"}},{"text":"]"}]
+execute as @a[scores={TalkTrigger=284}] run scoreboard players set @s TalkTrigger 0
+
+#285 - Withdraw how many prompt
+
+#Configures teams based on available points
+execute as @a[scores={TalkTrigger=285..291}] run team join red @e[x=-685,y=100,z=1372,dx=10,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=285..291,BattlePoint=2..}] run team join green @e[x=-685,y=100,z=1372,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=285..291,BattlePoint=8..}] run team join green @e[x=-683,y=100,z=1372,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=285..291,BattlePoint=16..}] run team join green @e[x=-681,y=100,z=1372,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=285..291,BattlePoint=32..}] run team join green @e[x=-679,y=100,z=1372,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=285..291,BattlePoint=48..}] run team join green @e[x=-677,y=100,z=1372,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=285..291,BattlePoint=64..}] run team join green @e[x=-675,y=100,z=1372,dy=5,type=armor_stand]
+
+execute as @a[scores={TalkTrigger=285}] run tellraw @s {"text":"<Maison Clerk> How many would you like to withdraw?"}
+execute as @a[scores={TalkTrigger=285}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=285}] run tellraw @s ["",{"text":"["},{"selector":"@e[x=-685,y=100,z=1372,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 286"}},{"text":"]  ["},{"selector":"@e[x=-683,y=100,z=1372,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 287"}},{"text":"]  ["},{"selector":"@e[x=-681,y=100,z=1372,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 288"}},{"text":"]  ["},{"selector":"@e[x=-679,y=100,z=1372,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 289"}},{"text":"]  ["},{"selector":"@e[x=-677,y=100,z=1372,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 290"}},{"text":"]  ["},{"selector":"@e[x=-675,y=100,z=1372,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 291"}},{"text":"]"}]
+execute as @a[scores={TalkTrigger=285}] run scoreboard players set @s TalkTrigger 0
+
+
+#286 - 2BP
+execute as @a[scores={TalkTrigger=286,BattlePoint=..1}] run tellraw @s {"text":"You don't have that many points stored!","italic":true,"color":"gray"}
+execute as @a[scores={TalkTrigger=286,BattlePoint=..1}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=286,BattlePoint=..1}] run scoreboard players set @s TalkTrigger 0
+
+execute as @a[scores={TalkTrigger=286,BattlePoint=2..}] run playsound minecraft:block.note.bell ambient @s ~ ~ ~ 100 1 1
+###execute as @a[scores={TalkTrigger=286,BattlePoint=2..}] run give @s pixelmon:ruby{display:{Name:"Battle Point",Lore:["Used to exchange for items in the","Battle Maison in Kiloude City."]}} 2
+execute as @a[scores={TalkTrigger=286,BattlePoint=2..}] run scoreboard players remove @s BattlePoint 2
+
+
+#287 - 8BP
+execute as @a[scores={TalkTrigger=287,BattlePoint=0..7}] run tellraw @s {"text":"You don't have that many points stored!","italic":true,"color":"gray"}
+execute as @a[scores={TalkTrigger=287,BattlePoint=0..7}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=287,BattlePoint=0..7}] run scoreboard players set @s TalkTrigger 0
+
+execute as @a[scores={TalkTrigger=287,BattlePoint=8..}] run playsound minecraft:block.note.bell ambient @s ~ ~ ~ 100 1 1
+###execute as @a[scores={TalkTrigger=287,BattlePoint=8..}] run give @s pixelmon:ruby{display:{Name:"Battle Point",Lore:["Used to exchange for items in the","Battle Maison in Kiloude City."]}} 8
+execute as @a[scores={TalkTrigger=287,BattlePoint=8..}] run scoreboard players remove @s BattlePoint 8
+
+
+#288 - 16BP
+execute as @a[scores={TalkTrigger=288,BattlePoint=0..15}] run tellraw @s {"text":"You don't have that many points stored!","italic":true,"color":"gray"}
+execute as @a[scores={TalkTrigger=288,BattlePoint=0..15}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=288,BattlePoint=0..15}] run scoreboard players set @s TalkTrigger 0
+
+execute as @a[scores={TalkTrigger=288,BattlePoint=16..}] run playsound minecraft:block.note.bell ambient @s ~ ~ ~ 100 1 1
+###execute as @a[scores={TalkTrigger=288,BattlePoint=16..}] run give @s pixelmon:ruby{display:{Name:"Battle Point",Lore:["Used to exchange for items in the","Battle Maison in Kiloude City."]}} 16
+execute as @a[scores={TalkTrigger=288,BattlePoint=16..}] run scoreboard players remove @s BattlePoint 16
+
+
+#289 - 32BP
+execute as @a[scores={TalkTrigger=289,BattlePoint=0..31}] run tellraw @s {"text":"You don't have that many points stored!","italic":true,"color":"gray"}
+execute as @a[scores={TalkTrigger=289,BattlePoint=0..31}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=289,BattlePoint=0..31}] run scoreboard players set @s TalkTrigger 0
+
+execute as @a[scores={TalkTrigger=289,BattlePoint=32..}] run playsound minecraft:block.note.bell ambient @s ~ ~ ~ 100 1 1
+###execute as @a[scores={TalkTrigger=289,BattlePoint=32..}] run give @s pixelmon:ruby{display:{Name:"Battle Point",Lore:["Used to exchange for items in the","Battle Maison in Kiloude City."]}} 32
+execute as @a[scores={TalkTrigger=289,BattlePoint=32..}] run scoreboard players remove @s BattlePoint 32
+
+
+#290 - 48BP
+execute as @a[scores={TalkTrigger=290,BattlePoint=0..47}] run tellraw @s {"text":"You don't have that many points stored!","italic":true,"color":"gray"}
+execute as @a[scores={TalkTrigger=290,BattlePoint=0..47}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=290,BattlePoint=0..47}] run scoreboard players set @s TalkTrigger 0
+
+execute as @a[scores={TalkTrigger=290,BattlePoint=48..}] run playsound minecraft:block.note.bell ambient @s ~ ~ ~ 100 1 1
+###execute as @a[scores={TalkTrigger=290,BattlePoint=48..}] run give @s pixelmon:ruby{display:{Name:"Battle Point",Lore:["Used to exchange for items in the","Battle Maison in Kiloude City."]}} 48
+execute as @a[scores={TalkTrigger=290,BattlePoint=48..}] run scoreboard players remove @s BattlePoint 48
+
+
+#291 - 64BP
+execute as @a[scores={TalkTrigger=291,BattlePoint=0..63}] run tellraw @s {"text":"You don't have that many points stored!","italic":true,"color":"gray"}
+execute as @a[scores={TalkTrigger=291,BattlePoint=0..63}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=291,BattlePoint=0..63}] run scoreboard players set @s TalkTrigger 0
+
+execute as @a[scores={TalkTrigger=291,BattlePoint=64..}] run playsound minecraft:block.note.bell ambient @s ~ ~ ~ 100 1 1
+###execute as @a[scores={TalkTrigger=291,BattlePoint=64..}] run give @s pixelmon:ruby{display:{Name:"Battle Point",Lore:["Used to exchange for items in the","Battle Maison in Kiloude City."]}} 64
+execute as @a[scores={TalkTrigger=291,BattlePoint=64..}] run scoreboard players remove @s BattlePoint 64
+
+
+#Withdraw anymore prompt after withdrawing some
+
+execute as @a[scores={TalkTrigger=291}] run team join red @e[x=-685,y=100,z=1372,dx=10,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=291,BattlePoint=2..}] run team join green @e[x=-685,y=100,z=1372,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=291,BattlePoint=8..}] run team join green @e[x=-683,y=100,z=1372,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=291,BattlePoint=16..}] run team join green @e[x=-681,y=100,z=1372,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=291,BattlePoint=32..}] run team join green @e[x=-679,y=100,z=1372,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=291,BattlePoint=48..}] run team join green @e[x=-677,y=100,z=1372,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=291,BattlePoint=64..}] run team join green @e[x=-675,y=100,z=1372,dy=5,type=armor_stand]
+
+execute as @a[scores={TalkTrigger=286..291}] run function kalos:data/maisonpointwithdraw
+execute as @a[scores={TalkTrigger=286..291}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=286..291}] run tellraw @s ["",{"text":"["},{"selector":"@e[x=-685,y=100,z=1372,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 286"}},{"text":"]  ["},{"selector":"@e[x=-683,y=100,z=1372,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 287"}},{"text":"]  ["},{"selector":"@e[x=-681,y=100,z=1372,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 288"}},{"text":"]  ["},{"selector":"@e[x=-679,y=100,z=1372,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 289"}},{"text":"]  ["},{"selector":"@e[x=-677,y=100,z=1372,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 290"}},{"text":"]  ["},{"selector":"@e[x=-675,y=100,z=1372,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 291"}},{"text":"]"}]
+
+
+execute as @a[scores={TalkTrigger=286..291}] run scoreboard players set @s TalkTrigger 0
+
+#--------------------------------------------------------------------------------------------------------------------------------
+
+
+#292 - Restaurant Le Nah Begin
+
+#If Restaurant is busy
+execute as @e[x=-687,y=100,z=1368,dy=3,type=armor_stand,tag=NahBusy] run execute as @a[scores={TalkTrigger=292}] run tellraw @s {"text":"<Restaurant Owner> I'm terribly sorry, but we cannot accommodate more trainers at this time. Please try again in a bit!"}
+execute as @e[x=-687,y=100,z=1368,dy=3,type=armor_stand,tag=NahBusy] run execute as @a[scores={TalkTrigger=292}] run scoreboard players set @s TalkTrigger 0
+
+execute as @a[scores={TalkTrigger=292}] run tag @s remove Dialogue242
+execute as @a[scores={TalkTrigger=292}] run tag @s remove Dialogue243
+execute as @a[scores={TalkTrigger=292}] run tag @s remove Dialogue244
+execute as @a[scores={TalkTrigger=292}] run tag @s remove Dialogue245
+execute as @a[scores={TalkTrigger=292},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LN"}}}]}] run scoreboard players set @s DialogueTrigger 242
+execute as @a[scores={TalkTrigger=292}] run scoreboard players set @s TalkTrigger 0
+
+#-----------------------
+
+#293 - Restaurant Le Yeah Begin
+
+#clear @a[x=-400,y=101,z=174,r=10,score_RestaurantBattle=0] minecraft:paper 0 0 {display:{Name:"Double Battle, LY"}}
+#scoreboard players enable @a[x=-400,y=101,z=174,r=10,score_RestaurantBattle=0] TalkTrigger
+#tellraw @a[x=-400,y=101,z=174,r=10,score_RestaurantBattle=0] ["",{"text":"<Waiter> Begin your dining experience? We recommend for the Double Battle you have at least two Pokemon with you.\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 293"}},{"text":"]"}]
+
+
+#If Restaurant is busy
+execute as @e[x=-687,y=100,z=1368,dy=3,type=armor_stand,tag=YeahBusy] run execute as @a[scores={TalkTrigger=293}] run tellraw @s {"text":"<Waiter> I'm terribly sorry, but we cannot accommodate more trainers at this time. Please try again in a bit!"}
+execute as @e[x=-687,y=100,z=1368,dy=3,type=armor_stand,tag=YeahBusy] run execute as @a[scores={TalkTrigger=293}] run scoreboard players set @s TalkTrigger 0
+
+execute as @a[scores={TalkTrigger=293}] run tag @s remove Dialogue246
+execute as @a[scores={TalkTrigger=293}] run tag @s remove Dialogue247
+execute as @a[scores={TalkTrigger=293}] run tag @s remove Dialogue248
+execute as @a[scores={TalkTrigger=293}] run tag @s remove Dialogue249
+execute as @a[scores={TalkTrigger=293}] run tag @s remove Dialogue250
+execute as @a[scores={TalkTrigger=293},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LY"}}}]}] run scoreboard players set @s DialogueTrigger 246
+execute as @a[scores={TalkTrigger=293}] run scoreboard players set @s TalkTrigger 0
+
+
+#-----------------------
+
+#294 - Restaurant Le Wow Begin
+
+#clear @a[x=-293,y=101,z=174,r=10,score_RestaurantBattle=0] minecraft:paper 0 0 {display:{Name:"Double Battle, Lw"}}
+#scoreboard players enable @a[x=-293,y=101,z=174,r=10,score_RestaurantBattle=0] TalkTrigger
+#tellraw @a[x=-293,y=101,z=174,r=10,score_RestaurantBattle=0] ["",{"text":"<Waiter> Begin your dining experience? We recommend for the Double Battle you have at least two Pokemon with you.\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 294"}},{"text":"]"}]
+
+
+#If Restaurant is busy
+execute as @e[x=-687,y=100,z=1368,dy=3,type=armor_stand,tag=WowBusy] run execute as @a[scores={TalkTrigger=294}] run tellraw @s {"text":"<Waiter> I'm terribly sorry, but we cannot accommodate more trainers at this time. Please try again in a bit!"}
+execute as @e[x=-687,y=100,z=1368,dy=3,type=armor_stand,tag=WowBusy] run execute as @a[scores={TalkTrigger=294}] run scoreboard players set @s TalkTrigger 0
+
+execute as @a[scores={TalkTrigger=294}] run tag @s remove Dialogue251
+execute as @a[scores={TalkTrigger=294}] run tag @s remove Dialogue252
+execute as @a[scores={TalkTrigger=294}] run tag @s remove Dialogue253
+execute as @a[scores={TalkTrigger=294}] run tag @s remove Dialogue254
+execute as @a[scores={TalkTrigger=294}] run tag @s remove Dialogue255
+execute as @a[scores={TalkTrigger=294}] run tag @s remove Dialogue256
+execute as @a[scores={TalkTrigger=294},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LW"}}}]}] run scoreboard players set @s DialogueTrigger 251
+execute as @a[scores={TalkTrigger=294}] run scoreboard players set @s TalkTrigger 0
+
+
+
+#-----------------------
+
+#295 - Restaurant Sushi High Roller Begin
+
+#clear @a[x=-487,y=101,z=174,r=10,score_RestaurantBattle=0] minecraft:paper 0 0 {display:{Name:"Double Battle, HR"}}
+#scoreboard players enable @a[x=-487,y=101,z=174,r=10,score_RestaurantBattle=0] TalkTrigger
+#tellraw @a[x=-487,y=101,z=174,r=10,score_RestaurantBattle=0] ["",{"text":"<Server> Begin your dining experience? We recommend for the Double Battle you have at least two Pokemon with you.\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 295"}},{"text":"]"}]
+
+#if player is not the champion
+execute as @a[scores={TalkTrigger=295,PokemonLeague=0}] run tellraw @s {"text":"<Server> Ah... I’m afraid that I must apologize. Only those who are on par with the Champion are allowed to dine here."}
+execute as @a[scores={TalkTrigger=295,PokemonLeague=0}] run scoreboard players set @s TalkTrigger 0
+
+
+#If Restaurant is busy
+execute as @e[x=-687,y=100,z=1368,dy=3,type=armor_stand,tag=HighRollerBusy] run execute as @a[scores={TalkTrigger=295}] run tellraw @s {"text":"<Server> I'm terribly sorry, but we cannot accommodate more trainers at this time. Please try again in a bit!"}
+execute as @e[x=-687,y=100,z=1368,dy=3,type=armor_stand,tag=HighRollerBusy] run execute as @a[scores={TalkTrigger=295}] run scoreboard players set @s TalkTrigger 0
+
+execute as @a[scores={TalkTrigger=295}] run tag @s remove Dialogue257
+execute as @a[scores={TalkTrigger=295}] run tag @s remove Dialogue258
+execute as @a[scores={TalkTrigger=295}] run tag @s remove Dialogue259
+execute as @a[scores={TalkTrigger=295}] run tag @s remove Dialogue260
+execute as @a[scores={TalkTrigger=295}] run tag @s remove Dialogue261
+execute as @a[scores={TalkTrigger=295}] run tag @s remove Dialogue262
+execute as @a[scores={TalkTrigger=295},nbt={Inventory:[{tag:{display:{Name:"Double Battle, HR"}}}]}] run scoreboard players set @s DialogueTrigger 257
+execute as @a[scores={TalkTrigger=295}] run scoreboard players set @s TalkTrigger 0
+
+
+
+
+#--------------------------------------------------------------------------------------------------------------------------------
+#Photo Spot Commands
+
+#Summons Armor Stands (place in front of sign 1 block)
+#/summon pixelmon:statue ~ ~0.5 ~-1 {ndex:101s,Growth:6b,CustomTexture:"invisible",ForgeData:{SpongeData:{},trainercommands:{interact:["/scoreboard players set @pl TalkTrigger 296"]}}}
+#/summon pixelmon:statue ~ ~-0.5 ~-1 {ndex:101s,Growth:6b,CustomTexture:"invisible",ForgeData:{SpongeData:{},trainercommands:{interact:["/scoreboard players set @pl TalkTrigger 296"]}}}
+
+#296 - Interact Command
+#When Photo Spots are under construction
+#UNSURE OF ACTUAL CRITERIA REQUIRED
+
+#tellraw @a {"text":"The photo spot is still under construction.","italic":true,"color":"gray"}
+#execute as @a[score_TalkTrigger_min=296,score_TalkTrigger=296] run scoreboard players set @s TalkTrigger 0
+
+execute as @a[scores={TalkTrigger=296}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=296}] run tellraw @s ["",{"text":"It's a photo spot! Do you want to call Phil the Photo Guy?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 297"}},{"text":"]"}]
+execute as @a[scores={TalkTrigger=296}] run scoreboard players set @s TalkTrigger 0
+
+
+
+#297 - Summons Phil the Photo Guy
+
+#Assigns a PhotoSpot score depending on the player's location
+execute as @a[scores={TalkTrigger=297},x=518,y=100,z=1289,distance=..50] run scoreboard players set @s PhotoSpot 1
+execute as @a[scores={TalkTrigger=297},x=-161,y=102,z=-358,distance=..50] run scoreboard players set @s PhotoSpot 2
+execute as @a[scores={TalkTrigger=297},x=-1297,y=100,z=-387,distance=..50] run scoreboard players set @s PhotoSpot 3
+execute as @a[scores={TalkTrigger=297},x=-1629,y=103,z=-51,distance=..50] run scoreboard players set @s PhotoSpot 4
+execute as @a[scores={TalkTrigger=297},x=-1071,y=109,z=2014,distance=..50] run scoreboard players set @s PhotoSpot 5
+execute as @a[scores={TalkTrigger=297},x=-351,y=109,z=2014,distance=..50] run scoreboard players set @s PhotoSpot 6
+execute as @a[scores={TalkTrigger=297},x=-2151,y=104,z=-706,distance=..50] run scoreboard players set @s PhotoSpot 7
+execute as @a[scores={TalkTrigger=297},x=-1623,y=76,z=-944,distance=..50] run scoreboard players set @s PhotoSpot 8
+#execute as @a[score_TalkTrigger_min=297,score_TalkTrigger=297,] run scoreboard players set @s PhotoSpot 9
+execute as @a[scores={TalkTrigger=297},x=657,y=120,z=-781,distance=..50] run scoreboard players set @s PhotoSpot 10
+execute as @a[scores={TalkTrigger=297},x=1195,y=108,z=-310,distance=..50] run scoreboard players set @s PhotoSpot 11
+execute as @a[scores={TalkTrigger=297},x=1551,y=115,z=278,distance=..50] run scoreboard players set @s PhotoSpot 12
+execute as @a[scores={TalkTrigger=297},x=1150,y=102,z=532,distance=..50] run scoreboard players set @s PhotoSpot 13
+execute as @a[scores={TalkTrigger=297},x=-1890,y=88,z=2257,distance=..50] run scoreboard players set @s PhotoSpot 14
+
+
+#Particles while Phil tps in
+execute as @a[scores={TalkTrigger=297,PhotoSpot=1}] run particle cloud 516 100 1289 2 2 2 1 100
+execute as @a[scores={TalkTrigger=297,PhotoSpot=2}] run particle cloud -163 102 -358 2 2 2 1 100
+execute as @a[scores={TalkTrigger=297,PhotoSpot=3}] run particle cloud -1299 100 -387 2 2 2 1 100
+execute as @a[scores={TalkTrigger=297,PhotoSpot=4}] run particle cloud -1631 103 -51 2 2 2 1 100
+execute as @a[scores={TalkTrigger=297,PhotoSpot=5}] run particle cloud -1073 109 2014 2 2 2 1 100
+execute as @a[scores={TalkTrigger=297,PhotoSpot=6}] run particle cloud -353 109 2014 2 2 2 1 100
+execute as @a[scores={TalkTrigger=297,PhotoSpot=7}] run particle cloud -2153 104 -706 2 2 2 1 100
+execute as @a[scores={TalkTrigger=297,PhotoSpot=8}] run particle cloud -1625 76 -944 2 2 2 1 100
+#
+execute as @a[scores={TalkTrigger=297,PhotoSpot=10}] run particle cloud 655 120 -781 2 2 2 1 100
+execute as @a[scores={TalkTrigger=297,PhotoSpot=11}] run particle cloud 1195 108 -308 2 2 2 1 100
+execute as @a[scores={TalkTrigger=297,PhotoSpot=12}] run particle cloud 1551 115 278 2 2 2 1 100
+execute as @a[scores={TalkTrigger=297,PhotoSpot=13}] run particle cloud 1152 102 532 2 2 2 1 100
+execute as @a[scores={TalkTrigger=297,PhotoSpot=14}] run particle cloud -1892 88 2257 2 2 2 1 100
+
+
+#tps in Phil depending on the player's location
+execute as @a[scores={TalkTrigger=297,PhotoSpot=1}] run tp @e[x=-477,y=100,z=1243,dy=3,nbt=!{pixelmon:npc_chatting}] 516 100 1289
+execute as @a[scores={TalkTrigger=297,PhotoSpot=2}] run tp @e[x=-477,y=100,z=1245,dy=3,nbt=!{pixelmon:npc_chatting}] -163 102 -358
+execute as @a[scores={TalkTrigger=297,PhotoSpot=3}] run tp @e[x=-477,y=100,z=1247,dy=3,nbt=!{pixelmon:npc_chatting}] -1299 100 -387
+execute as @a[scores={TalkTrigger=297,PhotoSpot=4}] run tp @e[x=-477,y=100,z=1249,dy=3,nbt=!{pixelmon:npc_chatting}] -1631 103 -51
+execute as @a[scores={TalkTrigger=297,PhotoSpot=5}] run tp @e[x=-477,y=100,z=1251,dy=3,nbt=!{pixelmon:npc_chatting}] -1073 109 2014
+execute as @a[scores={TalkTrigger=297,PhotoSpot=6}] run tp @e[x=-477,y=100,z=1253,dy=3,nbt=!{pixelmon:npc_chatting}] -353 109 2014
+execute as @a[scores={TalkTrigger=297,PhotoSpot=7}] run tp @e[x=-477,y=100,z=1255,dy=3,nbt=!{pixelmon:npc_chatting}] -2153 104 -706
+execute as @a[scores={TalkTrigger=297,PhotoSpot=8}] run tp @e[x=-473,y=100,z=1243,dy=3,nbt=!{pixelmon:npc_chatting}] -1625 76 -944
+#execute as @a[score_TalkTrigger_min=297,score_TalkTrigger=297,score_PhotoSpot_min=9,score_PhotoSpot=9] run tp @e[x=-473,y=100,z=1245,dy=3,nbt=!{pixelmon:npc_chatting}]
+execute as @a[scores={TalkTrigger=297,PhotoSpot=10}] run tp @e[x=-473,y=100,z=1247,dy=3,nbt=!{pixelmon:npc_chatting}] 655 120 -781
+execute as @a[scores={TalkTrigger=297,PhotoSpot=11}] run tp @e[x=-473,y=100,z=1249,dy=3,nbt=!{pixelmon:npc_chatting}] 1195 108 -308
+execute as @a[scores={TalkTrigger=297,PhotoSpot=12}] run tp @e[x=-473,y=100,z=1251,dy=3,nbt=!{pixelmon:npc_chatting}] 1551 115 278
+execute as @a[scores={TalkTrigger=297,PhotoSpot=13}] run tp @e[x=-473,y=100,z=1253,dy=3,nbt=!{pixelmon:npc_chatting}] 1152 102 532
+execute as @a[scores={TalkTrigger=297,PhotoSpot=14}] run tp @e[x=-473,y=100,z=1255,dy=3,nbt=!{pixelmon:npc_chatting}] -1892 88 2257
+
+execute as @a[scores={TalkTrigger=297,PhotoSpot=1..}] run tellraw @s {"text":"<Phil> Hey! What do you want to do?"}
+execute as @a[scores={TalkTrigger=297,PhotoSpot=1..}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=297,PhotoSpot=1..}] run tellraw @s ["",{"text":"["},{"text":"Take a photo","color":"red","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 298"}},{"text":"] \u0020["},{"text":"View a photo","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 300"}},{"text":"] \u0020["},{"text":"Good-bye","color":"gray","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 299"}},{"text":"]"}]
+
+execute as @a[scores={TalkTrigger=297}] run scoreboard players set @s TalkTrigger 0
+
+
+
+#298 - Take a Photo Dialogue Activate
+execute as @a[scores={TalkTrigger=298}] run tag @s remove Dialogue263
+execute as @a[scores={TalkTrigger=298}] run scoreboard players set @s DialogueTrigger 263
+execute as @a[scores={TalkTrigger=298}] run scoreboard players set @s TalkTrigger 0
+
+
+#299 - Dismisses Phil
+
+#Prevents if player in dialogue
+execute as @a[scores={TalkTrigger=299,DialogueTrigger=1..}] run scoreboard players set @s TalkTrigger 0
+
+execute as @a[scores={TalkTrigger=299}] run tellraw @s {"text":"<Phil> All right. See ya!"}
+
+#Particles for Phil Tp
+execute as @a[scores={TalkTrigger=299,PhotoSpot=1}] run particle cloud 516 100 1289 2 2 2 1 100
+execute as @a[scores={TalkTrigger=299,PhotoSpot=2}] run particle cloud -163 102 -358 2 2 2 1 100
+execute as @a[scores={TalkTrigger=299,PhotoSpot=3}] run particle cloud -1299 100 -387 2 2 2 1 100
+execute as @a[scores={TalkTrigger=299,PhotoSpot=4}] run particle cloud -1631 103 -51 2 2 2 1 100
+execute as @a[scores={TalkTrigger=299,PhotoSpot=5}] run particle cloud -1073 109 2014 2 2 2 1 100
+execute as @a[scores={TalkTrigger=299,PhotoSpot=6}] run particle cloud -353 109 2014 2 2 2 1 100
+execute as @a[scores={TalkTrigger=299,PhotoSpot=7}] run particle cloud -2153 104 -706 2 2 2 1 100
+execute as @a[scores={TalkTrigger=299,PhotoSpot=8}] run particle cloud -1625 76 -944 2 2 2 1 100
+#
+execute as @a[scores={TalkTrigger=299,PhotoSpot=10}] run particle cloud 655 120 -781 2 2 2 1 100
+execute as @a[scores={TalkTrigger=299,PhotoSpot=11}] run particle cloud 1195 108 -308 2 2 2 1 100
+execute as @a[scores={TalkTrigger=299,PhotoSpot=12}] run particle cloud 1551 115 278 2 2 2 1 100
+execute as @a[scores={TalkTrigger=299,PhotoSpot=13}] run particle cloud 1152 102 532 2 2 2 1 100
+execute as @a[scores={TalkTrigger=299,PhotoSpot=14}] run particle cloud -1892 88 2257 2 2 2 1 100
+
+
+#tps Phil out
+execute as @a[scores={TalkTrigger=299,PhotoSpot=1}] run tp @e[x=516,y=100,z=1289,dy=3,nbt=!{pixelmon:npc_chatting}] -477 101 1243
+execute as @a[scores={TalkTrigger=299,PhotoSpot=2}] run tp @e[x=-163,y=102,z=-358,dy=3,nbt=!{pixelmon:npc_chatting}] -477 101 1245
+execute as @a[scores={TalkTrigger=299,PhotoSpot=3}] run tp @e[x=-1299,y=100,z=-387,dy=3,nbt=!{pixelmon:npc_chatting}] -477 101 1247
+execute as @a[scores={TalkTrigger=299,PhotoSpot=4}] run tp @e[x=-1631,y=103,z=-51,dy=3,nbt=!{pixelmon:npc_chatting}] -477 101 1249
+execute as @a[scores={TalkTrigger=299,PhotoSpot=5}] run tp @e[x=-1073,y=109,z=2014,dy=3,nbt=!{pixelmon:npc_chatting}] -477 101 1251
+execute as @a[scores={TalkTrigger=299,PhotoSpot=6}] run tp @e[x=-353,y=109,z=2014,dy=3,nbt=!{pixelmon:npc_chatting}] -477 101 1253
+execute as @a[scores={TalkTrigger=299,PhotoSpot=7}] run tp @e[x=-2153,y=104,z=-706,dy=3,nbt=!{pixelmon:npc_chatting}] -477 101 1255
+execute as @a[scores={TalkTrigger=299,PhotoSpot=8}] run tp @e[x=-1625,y=76,z=-944,dy=3,nbt=!{pixelmon:npc_chatting}] -473 101 1243
+#
+execute as @a[scores={TalkTrigger=299,PhotoSpot=10}] run tp @e[x=655,y=120,z=-781,dy=3,nbt=!{pixelmon:npc_chatting}] -473 101 1247
+execute as @a[scores={TalkTrigger=299,PhotoSpot=11}] run tp @e[x=1195,y=108,z=-308,dy=3,nbt=!{pixelmon:npc_chatting}] -473 101 1249
+execute as @a[scores={TalkTrigger=299,PhotoSpot=12}] run tp @e[x=1551,y=115,z=278,dy=3,nbt=!{pixelmon:npc_chatting}] -473 101 1251
+execute as @a[scores={TalkTrigger=299,PhotoSpot=13}] run tp @e[x=1152,y=102,z=532,dy=3,nbt=!{pixelmon:npc_chatting}] -473 101 1253
+execute as @a[scores={TalkTrigger=299,PhotoSpot=14}] run tp @e[x=-1892,y=88,z=2257,dy=3,nbt=!{pixelmon:npc_chatting}] -473 101 1255
+
+#Kills armor stand
+execute as @a[scores={TalkTrigger=299,PhotoSpot=1}] run kill @e[x=513,y=100,z=1289,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=299,PhotoSpot=2}] run kill @e[x=-166,y=102,z=-358,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=299,PhotoSpot=3}] run kill @e[x=-1302,y=100,z=-387,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=299,PhotoSpot=4}] run kill @e[x=-1634,y=103,z=-51,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=299,PhotoSpot=5}] run kill @e[x=-1076,y=109,z=2014,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=299,PhotoSpot=6}] run kill @e[x=-356,y=109,z=2014,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=299,PhotoSpot=7}] run kill @e[x=-2156,y=104,z=-706,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=299,PhotoSpot=8}] run kill @e[x=-1628,y=76,z=-944,distance=..2,type=armor_stand]
+#
+execute as @a[scores={TalkTrigger=299,PhotoSpot=10}] run kill @e[x=652,y=120,z=-781,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=299,PhotoSpot=11}] run kill @e[x=1195,y=107.5,z=-305,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=299,PhotoSpot=12}] run kill @e[x=1548,y=115,z=278,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=299,PhotoSpot=13}] run kill @e[x=1155,y=102,z=532,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=299,PhotoSpot=14}] run kill @e[x=-1895,y=88,z=2257,distance=..2,type=armor_stand]
+
+
+execute as @a[scores={TalkTrigger=299}] run scoreboard players set @s PhotoSpot 0
+execute as @a[scores={TalkTrigger=299}] run scoreboard players set @s TalkTrigger 0
+
+
+
+
+
+
+
+
+
+#300 - View a Photo Prompt 1
+
+#renames armor stands
+execute as @a[scores={TalkTrigger=300}] run team join red @e[x=-687,y=100,z=1380,dx=12,dy=3,type=armor_stand]
+execute as @a[scores={TalkTrigger=300}] run data modify entity @e[limit=1,x=-687,y=100,z=1380,dy=5,type=armor_stand] {CustomName:"Aquacorde Town"}
+execute as @a[scores={TalkTrigger=300}] run data modify entity @e[limit=1,x=-685,y=100,z=1380,dy=5,type=armor_stand] {CustomName:"Lumiose City"}
+execute as @a[scores={TalkTrigger=300}] run data modify entity @e[limit=1,x=-683,y=100,z=1380,dy=5,type=armor_stand] {CustomName:"Parfum Palace"}
+execute as @a[scores={TalkTrigger=300}] run data modify entity @e[limit=1,x=-681,y=100,z=1380,dy=5,type=armor_stand] {CustomName:"Route 7"}
+execute as @a[scores={TalkTrigger=300}] run data modify entity @e[limit=1,x=-679,y=100,z=1380,dy=5,type=armor_stand] {CustomName:"Geosenge Town"}
+execute as @a[scores={TalkTrigger=300}] run data modify entity @e[limit=1,x=-677,y=100,z=1380,dy=5,type=armor_stand] {CustomName:"Shalour City"}
+#execute as @a[score_TalkTrigger_min=300,score_TalkTrigger=300] run data modify entity @e[limit=1,x=-675,y=100,z=1380,dy=5,type=armor_stand] {CustomName:""}
+
+execute as @a[scores={TalkTrigger=300},tag=PhotoSpot1] run team join green @e[x=-687,y=100,z=1380,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=300},tag=PhotoSpot2] run team join green @e[x=-685,y=100,z=1380,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=300},tag=PhotoSpot3] run team join green @e[x=-683,y=100,z=1380,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=300},tag=PhotoSpot4] run team join green @e[x=-681,y=100,z=1380,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=300},tag=PhotoSpot6] run team join green @e[x=-679,y=100,z=1380,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=300},tag=PhotoSpot8] run team join green @e[x=-677,y=100,z=1380,dy=5,type=armor_stand]
+#execute as @a[score_TalkTrigger_min=300,score_TalkTrigger=300,tag=] run team join green @e[x=-675,y=100,z=1380,dy=5,type=armor_stand]
+
+
+execute as @a[scores={TalkTrigger=315}] run team join red @e[x=-687,y=100,z=1380,dx=12,dy=3,type=armor_stand]
+execute as @a[scores={TalkTrigger=315}] run data modify entity @e[limit=1,x=-687,y=100,z=1380,dy=5,type=armor_stand] {CustomName:"Frost Cavern"}
+execute as @a[scores={TalkTrigger=315}] run data modify entity @e[limit=1,x=-685,y=100,z=1380,dy=5,type=armor_stand] {CustomName:"Anistar City"}
+execute as @a[scores={TalkTrigger=315}] run data modify entity @e[limit=1,x=-683,y=100,z=1380,dy=5,type=armor_stand] {CustomName:"Couriway Town"}
+execute as @a[scores={TalkTrigger=315}] run data modify entity @e[limit=1,x=-681,y=100,z=1380,dy=5,type=armor_stand] {CustomName:"Snowbelle City"}
+execute as @a[scores={TalkTrigger=315}] run data modify entity @e[limit=1,x=-679,y=100,z=1380,dy=5,type=armor_stand] {CustomName:"Pokémon League"}
+#execute as @a[score_TalkTrigger_min=315,score_TalkTrigger=315] run data modify entity @e[limit=1,x=-677,y=100,z=1380,dy=5,type=armor_stand] {CustomName:"Shalour City"}
+#execute as @a[score_TalkTrigger_min=315,score_TalkTrigger=315] run data modify entity @e[limit=1,x=-675,y=100,z=1380,dy=5,type=armor_stand] {CustomName:""}
+
+execute as @a[scores={TalkTrigger=315},tag=PhotoSpot10] run team join green @e[x=-687,y=100,z=1380,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=315},tag=PhotoSpot11] run team join green @e[x=-685,y=100,z=1380,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=315},tag=PhotoSpot12] run team join green @e[x=-683,y=100,z=1380,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=315},tag=PhotoSpot13] run team join green @e[x=-681,y=100,z=1380,dy=5,type=armor_stand]
+execute as @a[scores={TalkTrigger=315},tag=PhotoSpot14] run team join green @e[x=-679,y=100,z=1380,dy=5,type=armor_stand]
+#execute as @a[score_TalkTrigger_min=315,score_TalkTrigger=315,tag=] run team join green @e[x=-675,y=100,z=1380,dy=5,type=armor_stand]
+
+
+
+execute as @a[scores={TalkTrigger=300}] run tellraw @s {"text":"<Phil> Oh, you want to see a photo? Which one do you want to see?"}
+execute as @a[scores={TalkTrigger=300}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=300}] run tellraw @s ["",{"text":"["},{"selector":"@e[x=-687,y=100,z=1380,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 301"}},{"text":"]\n["},{"selector":"@e[x=-685,y=100,z=1380,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 302"}},{"text":"]\n["},{"selector":"@e[x=-683,y=100,z=1380,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 303"}},{"text":"]\n["},{"selector":"@e[x=-681,y=100,z=1380,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 304"}},{"text":"]\n["},{"selector":"@e[x=-679,y=100,z=1380,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 306"}},{"text":"]\n["},{"selector":"@e[x=-677,y=100,z=1380,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 308"}},{"text":"]\n["},{"text":"Next Page >>","color":"gray","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 315"}},{"text":"] "}]
+execute as @a[scores={TalkTrigger=300}] run scoreboard players set @s TalkTrigger 0
+
+
+
+
+#315 - View a Photo Prompt 2
+execute as @a[scores={TalkTrigger=315}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=315}] run tellraw @s ["",{"text":"["},{"selector":"@e[x=-687,y=100,z=1380,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 310"}},{"text":"]\n["},{"selector":"@e[x=-685,y=100,z=1380,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 311"}},{"text":"]\n["},{"selector":"@e[x=-683,y=100,z=1380,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 312"}},{"text":"]\n["},{"selector":"@e[x=-681,y=100,z=1380,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 313"}},{"text":"]\n["},{"selector":"@e[x=-679,y=100,z=1380,dy=5,type=armor_stand]","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 314"}},{"text":"]\n["},{"text":"<< Back","color":"gray","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 300"}},{"text":"]\n["},{"text":"<<< Main Menu","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 316"}},{"text":"]"}]
+execute as @a[scores={TalkTrigger=315}] run scoreboard players set @s TalkTrigger 0
+
+
+
+#316 - Phil's first menu repeated
+execute as @a[scores={TalkTrigger=316}] run tellraw @s {"text":"<Phil> What do you want to do?"}
+execute as @a[scores={TalkTrigger=316}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=316}] run tellraw @s ["",{"text":"["},{"text":"Take a photo","color":"red","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 298"}},{"text":"] \u0020["},{"text":"View a photo","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 300"}},{"text":"] \u0020["},{"text":"Good-bye","color":"gray","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 299"}},{"text":"]"}]
+execute as @a[scores={TalkTrigger=316}] run scoreboard players set @s TalkTrigger 0
+
+
+
+#----------------
+#If player hasn't unlocked that photo yet
+execute as @a[scores={TalkTrigger=301..314}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=301},tag=!PhotoSpot1] run tellraw @s {"text":"<Phil> I don't think I have a photo from there yet!"}
+execute as @a[scores={TalkTrigger=302},tag=!PhotoSpot2] run tellraw @s {"text":"<Phil> I don't think I have a photo from there yet!"}
+execute as @a[scores={TalkTrigger=303},tag=!PhotoSpot3] run tellraw @s {"text":"<Phil> I don't think I have a photo from there yet!"}
+execute as @a[scores={TalkTrigger=304},tag=!PhotoSpot4] run tellraw @s {"text":"<Phil> I don't think I have a photo from there yet!"}
+execute as @a[scores={TalkTrigger=305},tag=!PhotoSpot5] run tellraw @s {"text":"<Phil> I don't think I have a photo from there yet!"}
+execute as @a[scores={TalkTrigger=306},tag=!PhotoSpot6] run tellraw @s {"text":"<Phil> I don't think I have a photo from there yet!"}
+execute as @a[scores={TalkTrigger=307},tag=!PhotoSpot7] run tellraw @s {"text":"<Phil> I don't think I have a photo from there yet!"}
+execute as @a[scores={TalkTrigger=308},tag=!PhotoSpot8] run tellraw @s {"text":"<Phil> I don't think I have a photo from there yet!"}
+execute as @a[scores={TalkTrigger=309},tag=!PhotoSpot9] run tellraw @s {"text":"<Phil> I don't think I have a photo from there yet!"}
+execute as @a[scores={TalkTrigger=310},tag=!PhotoSpot10] run tellraw @s {"text":"<Phil> I don't think I have a photo from there yet!"}
+execute as @a[scores={TalkTrigger=311},tag=!PhotoSpot11] run tellraw @s {"text":"<Phil> I don't think I have a photo from there yet!"}
+execute as @a[scores={TalkTrigger=312},tag=!PhotoSpot12] run tellraw @s {"text":"<Phil> I don't think I have a photo from there yet!"}
+execute as @a[scores={TalkTrigger=313},tag=!PhotoSpot13] run tellraw @s {"text":"<Phil> I don't think I have a photo from there yet!"}
+execute as @a[scores={TalkTrigger=314},tag=!PhotoSpot14] run tellraw @s {"text":"<Phil> I don't think I have a photo from there yet!"}
+
+#Kills an armor stand if player is spawning a new one
+execute as @a[scores={TalkTrigger=314,PhotoSpot=1}] run kill @e[x=513,y=100,z=1289,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=314,PhotoSpot=2}] run kill @e[x=-166,y=102,z=-358,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=314,PhotoSpot=3}] run kill @e[x=-1302,y=100,z=-387,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=314,PhotoSpot=4}] run kill @e[x=-1634,y=103,z=-51,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=314,PhotoSpot=5}] run kill @e[x=-1076,y=109,z=2014,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=314,PhotoSpot=6}] run kill @e[x=-356,y=109,z=2014,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=314,PhotoSpot=7}] run kill @e[x=-2156,y=104,z=-706,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=314,PhotoSpot=8}] run kill @e[x=-1628,y=76,z=-944,distance=..2,type=armor_stand]
+#
+execute as @a[scores={TalkTrigger=314,PhotoSpot=10}] run kill @e[x=652,y=120,z=-781,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=314,PhotoSpot=11}] run kill @e[x=1195,y=107.5,z=-305,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=314,PhotoSpot=12}] run kill @e[x=1548,y=115,z=278,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=314,PhotoSpot=13}] run kill @e[x=1155,y=102,z=532,distance=..2,type=armor_stand]
+execute as @a[scores={TalkTrigger=314,PhotoSpot=14}] run kill @e[x=-1895,y=88,z=2257,distance=..2,type=armor_stand]
+
+
+#/summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:218s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+#301 - Aquacorde Town Photo
+execute as @a[scores={TalkTrigger=301,PhotoSpot=1},tag=PhotoSpot1] run summon armor_stand 513 100 1289 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:218s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=301,PhotoSpot=2},tag=PhotoSpot1] run summon armor_stand -166 102 -358 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:218s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=301,PhotoSpot=3},tag=PhotoSpot1] run summon armor_stand -1302 100 -387 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:218s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=301,PhotoSpot=4},tag=PhotoSpot1] run summon armor_stand -1634 103 -51 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:218s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=301,PhotoSpot=5},tag=PhotoSpot1] run summon armor_stand -1076 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:218s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=301,PhotoSpot=6},tag=PhotoSpot1] run summon armor_stand -356 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:218s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=301,PhotoSpot=7},tag=PhotoSpot1] run summon armor_stand -2156 104 -706 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:218s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=301,PhotoSpot=8},tag=PhotoSpot1] run summon armor_stand -1628 76 -944 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:218s}],HandItems:[{},{}],DisabledSlots:2039327}
+#
+execute as @a[scores={TalkTrigger=301,PhotoSpot=10},tag=PhotoSpot1] run summon armor_stand 652 120 -781 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:218s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=301,PhotoSpot=11},tag=PhotoSpot1] run summon armor_stand 1195 107.5 -305 {Rotation:[-90.0f,0.0f],Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:218s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=301,PhotoSpot=12},tag=PhotoSpot1] run summon armor_stand 1548 115 278 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:218s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=301,PhotoSpot=13},tag=PhotoSpot1] run summon armor_stand 1155 102 532 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:218s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=301,PhotoSpot=14},tag=PhotoSpot1] run summon armor_stand -1895 88 2257 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:218s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+
+#302 - Lumiose City Town Photo
+execute as @a[scores={TalkTrigger=302,PhotoSpot=1},tag=PhotoSpot2] run summon armor_stand 513 100 1289 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:219s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=302,PhotoSpot=2},tag=PhotoSpot2] run summon armor_stand -166 102 -358 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:219s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=302,PhotoSpot=3},tag=PhotoSpot2] run summon armor_stand -1302 100 -387 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:219s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=302,PhotoSpot=4},tag=PhotoSpot2] run summon armor_stand -1634 103 -51 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:219s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=302,PhotoSpot=5},tag=PhotoSpot2] run summon armor_stand -1076 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:219s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=302,PhotoSpot=6},tag=PhotoSpot2] run summon armor_stand -356 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:219s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=302,PhotoSpot=7},tag=PhotoSpot2] run summon armor_stand -2156 104 -706 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:219s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=302,PhotoSpot=8},tag=PhotoSpot2] run summon armor_stand -1628 76 -944 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:219s}],HandItems:[{},{}],DisabledSlots:2039327}
+#
+execute as @a[scores={TalkTrigger=302,PhotoSpot=10},tag=PhotoSpot2] run summon armor_stand 652 120 -781 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:219s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=302,PhotoSpot=11},tag=PhotoSpot2] run summon armor_stand 1195 107.5 -305 {Rotation:[-90.0f,0.0f],Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:219s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=302,PhotoSpot=12},tag=PhotoSpot2] run summon armor_stand 1548 115 278 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:219s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=302,PhotoSpot=13},tag=PhotoSpot2] run summon armor_stand 1155 102 532 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:219s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=302,PhotoSpot=14},tag=PhotoSpot2] run summon armor_stand -1895 88 2257 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:219s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+
+#303 - Parfum Palace Town Photo
+execute as @a[scores={TalkTrigger=303,PhotoSpot=1},tag=PhotoSpot3] run summon armor_stand 513 100 1289 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:220s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=303,PhotoSpot=2},tag=PhotoSpot3] run summon armor_stand -166 102 -358 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:220s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=303,PhotoSpot=3},tag=PhotoSpot3] run summon armor_stand -1302 100 -387 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:220s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=303,PhotoSpot=4},tag=PhotoSpot3] run summon armor_stand -1634 103 -51 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:220s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=303,PhotoSpot=5},tag=PhotoSpot3] run summon armor_stand -1076 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:220s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=303,PhotoSpot=6},tag=PhotoSpot3] run summon armor_stand -356 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:220s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=303,PhotoSpot=7},tag=PhotoSpot3] run summon armor_stand -2156 104 -706 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:220s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=303,PhotoSpot=8},tag=PhotoSpot3] run summon armor_stand -1628 76 -944 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:220s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+execute as @a[scores={TalkTrigger=303,PhotoSpot=10},tag=PhotoSpot3] run summon armor_stand 652 120 -781 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:220s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=303,PhotoSpot=11},tag=PhotoSpot3] run summon armor_stand 1195 107.5 -305 {Rotation:[-90.0f,0.0f],Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:220s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=303,PhotoSpot=12},tag=PhotoSpot3] run summon armor_stand 1548 115 278 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:220s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=303,PhotoSpot=13},tag=PhotoSpot3] run summon armor_stand 1155 102 532 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:220s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=303,PhotoSpot=14},tag=PhotoSpot3] run summon armor_stand -1895 88 2257 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:220s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+
+#304 - Route 7 Town Photo
+execute as @a[scores={TalkTrigger=304,PhotoSpot=1},tag=PhotoSpot4] run summon armor_stand 513 100 1289 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:221s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=304,PhotoSpot=2},tag=PhotoSpot4] run summon armor_stand -166 102 -358 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:221s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=304,PhotoSpot=3},tag=PhotoSpot4] run summon armor_stand -1302 100 -387 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:221s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=304,PhotoSpot=4},tag=PhotoSpot4] run summon armor_stand -1634 103 -51 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:221s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=304,PhotoSpot=5},tag=PhotoSpot4] run summon armor_stand -1076 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:221s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=304,PhotoSpot=6},tag=PhotoSpot4] run summon armor_stand -356 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:221s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=304,PhotoSpot=7},tag=PhotoSpot4] run summon armor_stand -2156 104 -706 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:221s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=304,PhotoSpot=8},tag=PhotoSpot4] run summon armor_stand -1628 76 -944 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:221s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+execute as @a[scores={TalkTrigger=304,PhotoSpot=10},tag=PhotoSpot4] run summon armor_stand 652 120 -781 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:221s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=304,PhotoSpot=11},tag=PhotoSpot4] run summon armor_stand 1195 107.5 -305 {Rotation:[-90.0f,0.0f],Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:221s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=304,PhotoSpot=12},tag=PhotoSpot4] run summon armor_stand 1548 115 278 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:221s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=304,PhotoSpot=13},tag=PhotoSpot4] run summon armor_stand 1155 102 532 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:221s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=304,PhotoSpot=14},tag=PhotoSpot4] run summon armor_stand -1895 88 2257 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:221s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+
+#305 - Geosenge Town (Weapon) Town Photo
+
+
+
+#306 - Geosenge Town (Destroyed) Town Photo
+execute as @a[scores={TalkTrigger=306,PhotoSpot=1},tag=PhotoSpot6] run summon armor_stand 513 100 1289 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:223s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=306,PhotoSpot=2},tag=PhotoSpot6] run summon armor_stand -166 102 -358 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:223s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=306,PhotoSpot=3},tag=PhotoSpot6] run summon armor_stand -1302 100 -387 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:223s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=306,PhotoSpot=4},tag=PhotoSpot6] run summon armor_stand -1634 103 -51 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:223s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=306,PhotoSpot=5},tag=PhotoSpot6] run summon armor_stand -1076 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:223s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=306,PhotoSpot=6},tag=PhotoSpot6] run summon armor_stand -356 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:223s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=306,PhotoSpot=7},tag=PhotoSpot6] run summon armor_stand -2156 104 -706 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:223s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=306,PhotoSpot=8},tag=PhotoSpot6] run summon armor_stand -1628 76 -944 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:223s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+execute as @a[scores={TalkTrigger=306,PhotoSpot=10},tag=PhotoSpot6] run summon armor_stand 652 120 -781 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:223s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=306,PhotoSpot=11},tag=PhotoSpot6] run summon armor_stand 1195 107.5 -305 {Rotation:[-90.0f,0.0f],Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:223s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=306,PhotoSpot=12},tag=PhotoSpot6] run summon armor_stand 1548 115 278 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:223s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=306,PhotoSpot=13},tag=PhotoSpot6] run summon armor_stand 1155 102 532 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:223s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=306,PhotoSpot=14},tag=PhotoSpot6] run summon armor_stand -1895 88 2257 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:223s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+
+#307 - Geosenge Town (Normal) Town Photo
+
+
+
+#308 - Shalour City Town Photo
+execute as @a[scores={TalkTrigger=308,PhotoSpot=1},tag=PhotoSpot8] run summon armor_stand 513 100 1289 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:225s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=308,PhotoSpot=2},tag=PhotoSpot8] run summon armor_stand -166 102 -358 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:225s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=308,PhotoSpot=3},tag=PhotoSpot8] run summon armor_stand -1302 100 -387 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:225s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=308,PhotoSpot=4},tag=PhotoSpot8] run summon armor_stand -1634 103 -51 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:225s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=308,PhotoSpot=5},tag=PhotoSpot8] run summon armor_stand -1076 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:225s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=308,PhotoSpot=6},tag=PhotoSpot8] run summon armor_stand -356 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:225s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=308,PhotoSpot=7},tag=PhotoSpot8] run summon armor_stand -2156 104 -706 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:225s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=308,PhotoSpot=8},tag=PhotoSpot8] run summon armor_stand -1628 76 -944 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:225s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+execute as @a[scores={TalkTrigger=308,PhotoSpot=10},tag=PhotoSpot8] run summon armor_stand 652 120 -781 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:225s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=308,PhotoSpot=11},tag=PhotoSpot8] run summon armor_stand 1195 107.5 -305 {Rotation:[-90.0f,0.0f],Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:225s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=308,PhotoSpot=12},tag=PhotoSpot8] run summon armor_stand 1548 115 278 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:225s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=308,PhotoSpot=13},tag=PhotoSpot8] run summon armor_stand 1155 102 532 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:225s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=308,PhotoSpot=14},tag=PhotoSpot8] run summon armor_stand -1895 88 2257 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:225s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+
+#309 - Azure Bay Town Photo
+
+
+
+#310 - Frost Cavern Town Photo
+execute as @a[scores={TalkTrigger=310,PhotoSpot=1},tag=PhotoSpot10] run summon armor_stand 513 100 1289 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:227s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=310,PhotoSpot=2},tag=PhotoSpot10] run summon armor_stand -166 102 -358 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:227s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=310,PhotoSpot=3},tag=PhotoSpot10] run summon armor_stand -1302 100 -387 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:227s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=310,PhotoSpot=4},tag=PhotoSpot10] run summon armor_stand -1634 103 -51 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:227s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=310,PhotoSpot=5},tag=PhotoSpot10] run summon armor_stand -1076 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:227s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=310,PhotoSpot=6},tag=PhotoSpot10] run summon armor_stand -356 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:227s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=310,PhotoSpot=7},tag=PhotoSpot10] run summon armor_stand -2156 104 -706 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:227s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=310,PhotoSpot=8},tag=PhotoSpot10] run summon armor_stand -1628 76 -944 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:227s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+execute as @a[scores={TalkTrigger=310,PhotoSpot=10},tag=PhotoSpot10] run summon armor_stand 652 120 -781 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:227s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=310,PhotoSpot=11},tag=PhotoSpot10] run summon armor_stand 1195 107.5 -305 {Rotation:[-90.0f,0.0f],Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:227s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=310,PhotoSpot=12},tag=PhotoSpot10] run summon armor_stand 1548 115 278 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:227s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=310,PhotoSpot=13},tag=PhotoSpot10] run summon armor_stand 1155 102 532 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:227s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=310,PhotoSpot=14},tag=PhotoSpot10] run summon armor_stand -1895 88 2257 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:227s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+
+#311 - Anistar City Town Photo
+execute as @a[scores={TalkTrigger=311,PhotoSpot=1},tag=PhotoSpot11] run summon armor_stand 513 100 1289 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:228s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=311,PhotoSpot=2},tag=PhotoSpot11] run summon armor_stand -166 102 -358 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:228s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=311,PhotoSpot=3},tag=PhotoSpot11] run summon armor_stand -1302 100 -387 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:228s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=311,PhotoSpot=4},tag=PhotoSpot11] run summon armor_stand -1634 103 -51 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:228s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=311,PhotoSpot=5},tag=PhotoSpot11] run summon armor_stand -1076 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:228s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=311,PhotoSpot=6},tag=PhotoSpot11] run summon armor_stand -356 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:228s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=311,PhotoSpot=7},tag=PhotoSpot11] run summon armor_stand -2156 104 -706 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:228s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=311,PhotoSpot=8},tag=PhotoSpot11] run summon armor_stand -1628 76 -944 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:228s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+execute as @a[scores={TalkTrigger=311,PhotoSpot=10},tag=PhotoSpot11] run summon armor_stand 652 120 -781 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:228s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=311,PhotoSpot=11},tag=PhotoSpot11] run summon armor_stand 1195 107.5 -305 {Rotation:[-90.0f,0.0f],Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:228s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=311,PhotoSpot=12},tag=PhotoSpot11] run summon armor_stand 1548 115 278 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:228s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=311,PhotoSpot=13},tag=PhotoSpot11] run summon armor_stand 1155 102 532 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:228s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=311,PhotoSpot=14},tag=PhotoSpot11] run summon armor_stand -1895 88 2257 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:228s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+
+#312 - Couriway Town Town Photo
+execute as @a[scores={TalkTrigger=312,PhotoSpot=1},tag=PhotoSpot12] run summon armor_stand 513 100 1289 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:229s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=312,PhotoSpot=2},tag=PhotoSpot12] run summon armor_stand -166 102 -358 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:229s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=312,PhotoSpot=3},tag=PhotoSpot12] run summon armor_stand -1302 100 -387 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:229s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=312,PhotoSpot=4},tag=PhotoSpot12] run summon armor_stand -1634 103 -51 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:229s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=312,PhotoSpot=5},tag=PhotoSpot12] run summon armor_stand -1076 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:229s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=312,PhotoSpot=6},tag=PhotoSpot12] run summon armor_stand -356 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:229s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=312,PhotoSpot=7},tag=PhotoSpot12] run summon armor_stand -2156 104 -706 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:229s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=312,PhotoSpot=8},tag=PhotoSpot12] run summon armor_stand -1628 76 -944 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:229s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+execute as @a[scores={TalkTrigger=312,PhotoSpot=10},tag=PhotoSpot12] run summon armor_stand 652 120 -781 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:229s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=312,PhotoSpot=11},tag=PhotoSpot12] run summon armor_stand 1195 107.5 -305 {Rotation:[-90.0f,0.0f],Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:229s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=312,PhotoSpot=12},tag=PhotoSpot12] run summon armor_stand 1548 115 278 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:229s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=312,PhotoSpot=13},tag=PhotoSpot12] run summon armor_stand 1155 102 532 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:229s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=312,PhotoSpot=14},tag=PhotoSpot12] run summon armor_stand -1895 88 2257 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:229s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+
+#313 - Snowbelle City Town Photo
+execute as @a[scores={TalkTrigger=313,PhotoSpot=1},tag=PhotoSpot13] run summon armor_stand 513 100 1289 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:230s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=313,PhotoSpot=2},tag=PhotoSpot13] run summon armor_stand -166 102 -358 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:230s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=313,PhotoSpot=3},tag=PhotoSpot13] run summon armor_stand -1302 100 -387 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:230s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=313,PhotoSpot=4},tag=PhotoSpot13] run summon armor_stand -1634 103 -51 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:230s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=313,PhotoSpot=5},tag=PhotoSpot13] run summon armor_stand -1076 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:230s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=313,PhotoSpot=6},tag=PhotoSpot13] run summon armor_stand -356 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:230s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=313,PhotoSpot=7},tag=PhotoSpot13] run summon armor_stand -2156 104 -706 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:230s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=313,PhotoSpot=8},tag=PhotoSpot13] run summon armor_stand -1628 76 -944 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:230s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+execute as @a[scores={TalkTrigger=313,PhotoSpot=10},tag=PhotoSpot13] run summon armor_stand 652 120 -781 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:230s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=313,PhotoSpot=11},tag=PhotoSpot13] run summon armor_stand 1195 107.5 -305 {Rotation:[-90.0f,0.0f],Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:230s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=313,PhotoSpot=12},tag=PhotoSpot13] run summon armor_stand 1548 115 278 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:230s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=313,PhotoSpot=13},tag=PhotoSpot13] run summon armor_stand 1155 102 532 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:230s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=313,PhotoSpot=14},tag=PhotoSpot13] run summon armor_stand -1895 88 2257 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:230s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+
+#314 - Pokémon League Town Photo
+execute as @a[scores={TalkTrigger=314,PhotoSpot=1},tag=PhotoSpot14] run summon armor_stand 513 100 1289 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:231s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=314,PhotoSpot=2},tag=PhotoSpot14] run summon armor_stand -166 102 -358 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:231s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=314,PhotoSpot=3},tag=PhotoSpot14] run summon armor_stand -1302 100 -387 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:231s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=314,PhotoSpot=4},tag=PhotoSpot14] run summon armor_stand -1634 103 -51 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:231s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=314,PhotoSpot=5},tag=PhotoSpot14] run summon armor_stand -1076 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:231s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=314,PhotoSpot=6},tag=PhotoSpot14] run summon armor_stand -356 109 2014 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:231s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=314,PhotoSpot=7},tag=PhotoSpot14] run summon armor_stand -2156 104 -706 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:231s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=314,PhotoSpot=8},tag=PhotoSpot14] run summon armor_stand -1628 76 -944 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:231s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+execute as @a[scores={TalkTrigger=314,PhotoSpot=10},tag=PhotoSpot14] run summon armor_stand 652 120 -781 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:231s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=314,PhotoSpot=11},tag=PhotoSpot14] run summon armor_stand 1195 107.5 -305 {Rotation:[-90.0f,0.0f],Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:231s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=314,PhotoSpot=12},tag=PhotoSpot14] run summon armor_stand 1548 115 278 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:231s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=314,PhotoSpot=13},tag=PhotoSpot14] run summon armor_stand 1155 102 532 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:231s}],HandItems:[{},{}],DisabledSlots:2039327}
+execute as @a[scores={TalkTrigger=314,PhotoSpot=14},tag=PhotoSpot14] run summon armor_stand -1895 88 2257 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:231s}],HandItems:[{},{}],DisabledSlots:2039327}
+
+execute as @a[scores={TalkTrigger=301..314}] run scoreboard players set @s TalkTrigger 0
+
+
+#If player walks away from a photo spot:
+#execute as @e[type=armor_stand,tag=PhotoSpot] run execute as @a[r=50,rm=20,score_DialogueTrigger=0,score_PhotoSpot_min=1] run scoreboard players set @s TalkTrigger 299
+
+
+#317 - Photo Spot out of order (Geosenges)
+execute as @a[scores={TalkTrigger=317}] run tellraw @s {"text":"This photo spot is still under construction.","italic":true,"color":"gray"}
+execute as @a[scores={TalkTrigger=317}] run scoreboard players set @s TalkTrigger 0
+
+#--------------------------------------------------------------------------------------------------------------------------------
+#318 - Shalour Hiker stone prompt
+
+execute as @a[scores={TalkTrigger=318},nbt={Inventory:[{id:"minecraft:prismarine_crystals"}]}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 10 1 1
+###execute as @a[scores={TalkTrigger=318},nbt={Inventory:[{id:"minecraft:prismarine_crystals"}]}] run give @s pixelmon:sun_stone
+execute as @a[scores={TalkTrigger=318},nbt={Inventory:[{id:"minecraft:prismarine_crystals"}]}] run tellraw @s {"text":"<Hiker> It's a funny thing. You tend to come across rare stones in Shalour City. I'll bet the Mega Evolution guru'll be really happy if this is a Mega Stone."}
+execute as @a[scores={TalkTrigger=318},nbt={Inventory:[{id:"minecraft:prismarine_crystals"}]}] run clear @s minecraft:prismarine_crystals
+execute as @a[scores={TalkTrigger=318}] run scoreboard players set @s TalkTrigger 0
+
+#--------------------------------------------------------------------------------------------------------------------------------
+
+#Languages
+
+execute as @a[scores={TalkTrigger=319..325}] run tag @s remove Japanese
+execute as @a[scores={TalkTrigger=319..325}] run tag @s remove English
+execute as @a[scores={TalkTrigger=319..325}] run tag @s remove German
+execute as @a[scores={TalkTrigger=319..325}] run tag @s remove Spanish
+execute as @a[scores={TalkTrigger=319..325}] run tag @s remove French
+execute as @a[scores={TalkTrigger=319..325}] run tag @s remove Italian
+execute as @a[scores={TalkTrigger=319..325}] run tag @s remove Korean
+
+#Japanese
+execute as @a[scores={TalkTrigger=319}] run tellraw @s {"text":"日本語!"}
+execute as @a[scores={TalkTrigger=319}] run tag @s add Japanese
+execute as @a[scores={TalkTrigger=319}] run scoreboard players set @s TalkTrigger 0
+
+#English
+execute as @a[scores={TalkTrigger=320}] run tellraw @s {"text":"English!"}
+execute as @a[scores={TalkTrigger=320}] run tag @s add English
+execute as @a[scores={TalkTrigger=320}] run scoreboard players set @s TalkTrigger 0
+
+#German
+execute as @a[scores={TalkTrigger=321}] run tellraw @s {"text":"Deutsche!"}
+execute as @a[scores={TalkTrigger=321}] run tag @s add German
+execute as @a[scores={TalkTrigger=321}] run scoreboard players set @s TalkTrigger 0
+
+#Spanish
+execute as @a[scores={TalkTrigger=322}] run tellraw @s {"text":"¡Español!"}
+execute as @a[scores={TalkTrigger=322}] run tag @s add Spanish
+execute as @a[scores={TalkTrigger=322}] run scoreboard players set @s TalkTrigger 0
+
+#French
+execute as @a[scores={TalkTrigger=323}] run tellraw @s {"text":"Français!"}
+execute as @a[scores={TalkTrigger=323}] run tag @s add French
+execute as @a[scores={TalkTrigger=323}] run scoreboard players set @s TalkTrigger 0
+
+#Italian
+execute as @a[scores={TalkTrigger=324}] run tellraw @s {"text":"Italiano!"}
+execute as @a[scores={TalkTrigger=324}] run tag @s add Italian
+execute as @a[scores={TalkTrigger=324}] run scoreboard players set @s TalkTrigger 0
+
+#Korean
+execute as @a[scores={TalkTrigger=325}] run tellraw @s {"text":"한국어!"}
+execute as @a[scores={TalkTrigger=325}] run tag @s add Korean
+execute as @a[scores={TalkTrigger=325}] run scoreboard players set @s TalkTrigger 0
+
+
+
+
+
+#--------------------------------------------------------------------------------------------------------------------------------
+
+#Skips if player is already going about randomization process
+execute as @a[scores={TalkTrigger=330}] run execute as @a[tag=RandomizerTemp] run tag @a[scores={TalkTrigger=330}] add Skip
+execute as @a[scores={TalkTrigger=330}] run tellraw @s[tag=Skip] {"text":"A player is currently randomizing spawners. Please wait."}
+
+execute as @a[scores={TalkTrigger=330},tag=!Skip] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=330},tag=!Skip] run tellraw @s ["",{"text":"This option will only alter the Starters and Pokemon found in caves, from patches of grass, flowers, and water. Events like legendaries and the Friend Safari will remain unaffected. This will change the entire world and take about 15 minutes. Would you like to continue?\n\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 331"}},{"text":"]"}]
+execute as @a[scores={TalkTrigger=330}] run tag @s remove Skip
+execute as @a[scores={TalkTrigger=330}] run scoreboard players set @s TalkTrigger 0
+
+
+#Skips if player is already going about randomization process
+execute as @a[scores={TalkTrigger=331}] run execute as @a[tag=RandomizerTemp] run tag @a[scores={TalkTrigger=331}] add Skip
+execute as @a[scores={TalkTrigger=331},tag=Skip] run tellraw @s {"text":"A player is currently randomizing spawners. Please wait."}
+
+
+execute as @a[scores={TalkTrigger=331},tag=!Skip] run tellraw @a {"text":"Beginning randomization process! This will take several minutes"}
+execute as @a[scores={TalkTrigger=331},tag=!Skip] run data modify block -775 104 1217 {Text3:"{\"text\":\"[Randomized\"}"}
+#execute as @a[score_TalkTrigger_min=331,score_TalkTrigger=331] run data modify block -775 104 1217 {Text3:"{\"text\":\"[Game-Based\"}"}
+execute as @a[scores={TalkTrigger=331},tag=!Skip] run tag @s add RandomizerTemp
+execute as @a[scores={TalkTrigger=331}] run tag @s remove Skip
+execute as @a[scores={TalkTrigger=331}] run scoreboard players set @s TalkTrigger 0
+
+
+#--------------------------------------------------------------------------------------------------------------------------------
+
+#TM Quiz Lady First Talk
+#335
+execute as @a[scores={TalkTrigger=335},tag=TMQuiz1,tag=TMQuiz2,tag=TMQuiz3,tag=TMQuiz4] run tellraw @s {"text":"I don’t have any more questions for you, quiz champion."}
+execute as @a[scores={TalkTrigger=335},tag=TMQuiz1,tag=TMQuiz2,tag=TMQuiz3,tag=TMQuiz4] run scoreboard players set @s TalkTrigger 0
+
+execute as @a[scores={TalkTrigger=335},tag=QuizCooldown] run tellraw @s {"text":"Please come again tomorrow. If you give me a correct answer, I’ll give you another TM."}
+
+execute as @a[scores={TalkTrigger=335},tag=!QuizCooldown] run tellraw @s {"text":"Totally random TM quiz! If you give me a correct answer... Whoa! I’ll give you a TM! Do you want to try the quiz?"}
+execute as @a[scores={TalkTrigger=335},tag=!QuizCooldown] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=335},tag=!QuizCooldown] run tellraw @s ["",{"text":"["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 336"}},{"text":"]"}]
+
+#336
+#Determines which move player gets quizzed on
+execute as @a[scores={TalkTrigger=336},tag=!TMQuiz1] run scoreboard players set @s TalkTrigger 337
+execute as @a[scores={TalkTrigger=336},tag=TMQuiz1] run scoreboard players set @s[tag=!TMQuiz2] TalkTrigger 338
+execute as @a[scores={TalkTrigger=336},tag=TMQuiz2] run scoreboard players set @s[tag=!TMQuiz3] TalkTrigger 339
+execute as @a[scores={TalkTrigger=336},tag=TMQuiz3] run scoreboard players set @s[tag=!TMQuiz4] TalkTrigger 340
+
+
+execute as @a[scores={TalkTrigger=336..340}] run tellraw @s {"text":"Yay! Now, here's the question! What's the move that I'm describing?"}
+
+#337 - Confide
+execute as @a[scores={TalkTrigger=337}] run tellraw @s {"text":"It makes the target lose its ability to concentrate and lowers the target's Sp. Atk stat.","italic":true}
+execute as @a[scores={TalkTrigger=337}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=337}] run tellraw @s ["",{"text":"["},{"text":"Confide","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 341"}},{"text":"] \u0020 ["},{"text":"Acrobatics","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 342"}},{"text":"] \u0020 ["},{"text":"Embargo","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 342"}},{"text":"] \u0020 ["},{"text":"Trick Room","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 342"}},{"text":"]"}]
+
+
+#338 - Acrobatics
+execute as @a[scores={TalkTrigger=338}] run tellraw @s {"text":"If the user is not holding an item, this attack inflicts massive damage.","italic":true}
+execute as @a[scores={TalkTrigger=338}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=338}] run tellraw @s ["",{"text":"["},{"text":"Confide","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 344"}},{"text":"] \u0020 ["},{"text":"Acrobatics","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 343"}},{"text":"] \u0020 ["},{"text":"Embargo","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 344"}},{"text":"] \u0020 ["},{"text":"Trick Room","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 344"}},{"text":"]"}]
+
+
+#339 - Embargo
+execute as @a[scores={TalkTrigger=339}] run tellraw @s {"text":"This move prevents the target from using its held item.","italic":true}
+execute as @a[scores={TalkTrigger=339}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=339}] run tellraw @s ["",{"text":"["},{"text":"Confide","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 346"}},{"text":"] \u0020 ["},{"text":"Acrobatics","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 346"}},{"text":"] \u0020 ["},{"text":"Embargo","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 345"}},{"text":"] \u0020 ["},{"text":"Trick Room","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 346"}},{"text":"]"}]
+
+
+#340 - Trick Room
+execute as @a[scores={TalkTrigger=340}] run tellraw @s {"text":"Slower Pokémon get to move first for five turns.","italic":true}
+execute as @a[scores={TalkTrigger=340}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=340}] run tellraw @s ["",{"text":"["},{"text":"Confide","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 348"}},{"text":"] \u0020 ["},{"text":"Acrobatics","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 348"}},{"text":"] \u0020 ["},{"text":"Embargo","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 348"}},{"text":"] \u0020 ["},{"text":"Trick Room","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 347"}},{"text":"]"}]
+
+
+
+
+
+
+
+#Quiz1 Right
+execute as @a[scores={TalkTrigger=341}] run tellraw @s {"text":"Correct, correct, CORRECT! As I promised, I’ll give you a TM! I don’t have to explain what kind of move this is, correct? Please come again tomorrow. If you give me a correct answer, I’ll give you another TM."}
+###execute as @a[scores={TalkTrigger=341}] run give @s pixelmon:tm_gen6{tm:100}
+execute as @a[scores={TalkTrigger=341}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 10 1 1
+execute as @a[scores={TalkTrigger=341}] run tag @s add TMQuiz1
+execute as @a[scores={TalkTrigger=341}] run tag @s add QuizCooldown
+
+#Quiz 1 Wrong
+execute as @a[scores={TalkTrigger=342}] run tellraw @s {"text":"Hmmm. Are you sure? I'll ask you again."}
+execute as @a[scores={TalkTrigger=342}] run tellraw @s {"text":"It makes the target lose its ability to concentrate and lowers the target's Sp. Atk stat.","italic":true}
+execute as @a[scores={TalkTrigger=342}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=342}] run tellraw @s ["",{"text":"["},{"text":"Confide","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 341"}},{"text":"] \u0020 ["},{"text":"Acrobatics","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 342"}},{"text":"] \u0020 ["},{"text":"Embargo","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 342"}},{"text":"] \u0020 ["},{"text":"Trick Room","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 342"}},{"text":"]"}]
+
+
+
+
+#Quiz2 Right
+execute as @a[scores={TalkTrigger=343}] run tellraw @s {"text":"Correct, correct, CORRECT! As I promised, I’ll give you a TM! I don’t have to explain what kind of move this is, correct? Please come again tomorrow. If you give me a correct answer, I’ll give you another TM."}
+###execute as @a[scores={TalkTrigger=343}] run give @s pixelmon:tm_gen6{tm:62}
+execute as @a[scores={TalkTrigger=343}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 10 1 1
+execute as @a[scores={TalkTrigger=343}] run tag @s add TMQuiz2
+execute as @a[scores={TalkTrigger=343}] run tag @s add QuizCooldown
+
+#Quiz 2 Wrong
+execute as @a[scores={TalkTrigger=344}] run tellraw @s {"text":"Hmmm. Are you sure? I'll ask you again."}
+execute as @a[scores={TalkTrigger=344}] run tellraw @s {"text":"It makes the target lose its ability to concentrate and lowers the target's Sp. Atk stat.","italic":true}
+execute as @a[scores={TalkTrigger=344}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=344}] run tellraw @s ["",{"text":"["},{"text":"Confide","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 344"}},{"text":"] \u0020 ["},{"text":"Acrobatics","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 343"}},{"text":"] \u0020 ["},{"text":"Embargo","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 344"}},{"text":"] \u0020 ["},{"text":"Trick Room","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 344"}},{"text":"]"}]
+
+
+
+#Quiz3 Right
+execute as @a[scores={TalkTrigger=345}] run tellraw @s {"text":"Correct, correct, CORRECT! As I promised, I’ll give you a TM! I don’t have to explain what kind of move this is, correct? Please come again tomorrow. If you give me a correct answer, I’ll give you another TM."}
+###execute as @a[scores={TalkTrigger=345}] run give @s pixelmon:tm_gen6{tm:63}
+execute as @a[scores={TalkTrigger=345}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 10 1 1
+execute as @a[scores={TalkTrigger=345}] run tag @s add TMQuiz3
+execute as @a[scores={TalkTrigger=345}] run tag @s add QuizCooldown
+
+#Quiz 3 Wrong
+execute as @a[scores={TalkTrigger=346}] run tellraw @s {"text":"Hmmm. Are you sure? I'll ask you again."}
+execute as @a[scores={TalkTrigger=346}] run tellraw @s {"text":"It makes the target lose its ability to concentrate and lowers the target's Sp. Atk stat.","italic":true}
+execute as @a[scores={TalkTrigger=346}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=346}] run tellraw @s ["",{"text":"["},{"text":"Confide","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 346"}},{"text":"] \u0020 ["},{"text":"Acrobatics","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 346"}},{"text":"] \u0020 ["},{"text":"Embargo","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 345"}},{"text":"] \u0020 ["},{"text":"Trick Room","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 346"}},{"text":"]"}]
+
+
+
+#Quiz3 Right
+execute as @a[scores={TalkTrigger=347}] run tellraw @s {"text":"Correct, correct, CORRECT! As I promised, I’ll give you a TM! I don’t have to explain what kind of move this is, correct?"}
+###execute as @a[scores={TalkTrigger=347}] run give @s pixelmon:tm_gen6{tm:92}
+execute as @a[scores={TalkTrigger=347}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 10 1 1
+execute as @a[scores={TalkTrigger=347}] run tag @s add TMQuiz4
+execute as @a[scores={TalkTrigger=347}] run tag @s add QuizCooldown
+
+
+#Quiz 4 Wrong
+execute as @a[scores={TalkTrigger=348}] run tellraw @s {"text":"Hmmm. Are you sure? I'll ask you again."}
+execute as @a[scores={TalkTrigger=348}] run tellraw @s {"text":"It makes the target lose its ability to concentrate and lowers the target's Sp. Atk stat.","italic":true}
+execute as @a[scores={TalkTrigger=348}] run scoreboard players enable @s TalkTrigger
+execute as @a[scores={TalkTrigger=348}] run tellraw @s ["",{"text":"["},{"text":"Confide","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 348"}},{"text":"] \u0020 ["},{"text":"Acrobatics","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 348"}},{"text":"] \u0020 ["},{"text":"Embargo","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 348"}},{"text":"] \u0020 ["},{"text":"Trick Room","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 347"}},{"text":"]"}]
+
+
+execute as @a[scores={TalkTrigger=335..348}] run scoreboard players set @s TalkTrigger 0
+
+#[Confide]   [Acrobatics]   [Embargo]   [Trick Room]
+
+
+
+
+#--------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+#Catch-all Reset
+#scoreboard players set @a[score_TalkTrigger_min=1] TalkTrigger 0
+
+
+
+
+#Command to activate in tellraws:
+#/trigger TalkTrigger set 1
+#/scoreboard players enable @p TalkTrigger
+
+#For NPCS & Statues
+#/tedit add INTERACT /scoreboard players set @pl TalkTrigger 335

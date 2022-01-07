@@ -1,0 +1,175 @@
+scoreboard objectives add Hat1 dummy
+scoreboard objectives add Hat2 dummy
+scoreboard objectives add Hat3 dummy
+scoreboard objectives add Hat4 dummy
+scoreboard objectives add Hat5 dummy
+scoreboard objectives add Hat6 dummy
+scoreboard objectives add Hat7 dummy
+scoreboard objectives add Hat8 dummy
+scoreboard objectives add Hat9 dummy
+scoreboard objectives add Hat10 dummy
+scoreboard objectives add Hat11 dummy
+scoreboard objectives add Hat12 dummy
+scoreboard objectives add Hat13 dummy
+scoreboard objectives add Hat14 dummy
+scoreboard objectives add Hat15 dummy
+scoreboard objectives add Hat16 dummy
+scoreboard objectives add Hat17 dummy
+scoreboard objectives add Hat18 dummy
+scoreboard objectives add Hat19 dummy
+scoreboard objectives add Hat20 dummy
+
+
+scoreboard objectives add Shirt1 dummy
+scoreboard objectives add Shirt2 dummy
+scoreboard objectives add Shirt3 dummy
+scoreboard objectives add Shirt4 dummy
+scoreboard objectives add Shirt5 dummy
+scoreboard objectives add Shirt6 dummy
+scoreboard objectives add Shirt7 dummy
+scoreboard objectives add Shirt8 dummy
+scoreboard objectives add Shirt9 dummy
+scoreboard objectives add Shirt10 dummy
+scoreboard objectives add Shirt11 dummy
+scoreboard objectives add Shirt12 dummy
+scoreboard objectives add Shirt13 dummy
+scoreboard objectives add Shirt14 dummy
+scoreboard objectives add Shirt15 dummy
+scoreboard objectives add Shirt16 dummy
+scoreboard objectives add Shirt17 dummy
+scoreboard objectives add Shirt18 dummy
+scoreboard objectives add Shirt19 dummy
+scoreboard objectives add Shirt20 dummy
+
+
+scoreboard objectives add Pants1 dummy
+scoreboard objectives add Pants2 dummy
+scoreboard objectives add Pants3 dummy
+scoreboard objectives add Pants4 dummy
+scoreboard objectives add Pants5 dummy
+scoreboard objectives add Pants6 dummy
+scoreboard objectives add Pants7 dummy
+scoreboard objectives add Pants8 dummy
+scoreboard objectives add Pants9 dummy
+scoreboard objectives add Pants10 dummy
+scoreboard objectives add Pants11 dummy
+scoreboard objectives add Pants12 dummy
+scoreboard objectives add Pants13 dummy
+scoreboard objectives add Pants14 dummy
+scoreboard objectives add Pants15 dummy
+scoreboard objectives add Pants16 dummy
+scoreboard objectives add Pants17 dummy
+scoreboard objectives add Pants18 dummy
+scoreboard objectives add Pants19 dummy
+scoreboard objectives add Pants20 dummy
+
+
+scoreboard objectives add Shoes1 dummy
+scoreboard objectives add Shoes2 dummy
+scoreboard objectives add Shoes3 dummy
+scoreboard objectives add Shoes4 dummy
+scoreboard objectives add Shoes5 dummy
+scoreboard objectives add Shoes6 dummy
+scoreboard objectives add Shoes7 dummy
+scoreboard objectives add Shoes8 dummy
+scoreboard objectives add Shoes9 dummy
+scoreboard objectives add Shoes10 dummy
+scoreboard objectives add Shoes11 dummy
+scoreboard objectives add Shoes12 dummy
+scoreboard objectives add Shoes13 dummy
+scoreboard objectives add Shoes14 dummy
+scoreboard objectives add Shoes15 dummy
+scoreboard objectives add Shoes16 dummy
+scoreboard objectives add Shoes17 dummy
+scoreboard objectives add Shoes18 dummy
+scoreboard objectives add Shoes19 dummy
+scoreboard objectives add Shoes20 dummy
+
+
+
+scoreboard players set @a Hat1 0
+scoreboard players set @a Hat2 0
+scoreboard players set @a Hat3 0
+scoreboard players set @a Hat4 0
+scoreboard players set @a Hat5 0
+scoreboard players set @a Hat6 0
+scoreboard players set @a Hat7 0
+scoreboard players set @a Hat8 0
+scoreboard players set @a Hat9 0
+scoreboard players set @a Hat10 0
+scoreboard players set @a Hat11 0
+scoreboard players set @a Hat12 0
+scoreboard players set @a Hat13 0
+scoreboard players set @a Hat14 0
+scoreboard players set @a Hat15 0
+scoreboard players set @a Hat16 0
+scoreboard players set @a Hat17 0
+scoreboard players set @a Hat18 0
+scoreboard players set @a Hat19 0
+scoreboard players set @a Hat20 0
+
+
+scoreboard players set @a Shirt1 0
+scoreboard players set @a Shirt2 0
+scoreboard players set @a Shirt3 0
+scoreboard players set @a Shirt4 0
+scoreboard players set @a Shirt5 0
+scoreboard players set @a Shirt6 0
+scoreboard players set @a Shirt7 0
+scoreboard players set @a Shirt8 0
+scoreboard players set @a Shirt9 0
+scoreboard players set @a Shirt10 0
+scoreboard players set @a Shirt11 0
+scoreboard players set @a Shirt12 0
+scoreboard players set @a Shirt13 0
+scoreboard players set @a Shirt14 0
+scoreboard players set @a Shirt15 0
+scoreboard players set @a Shirt16 0
+scoreboard players set @a Shirt17 0
+scoreboard players set @a Shirt18 0
+scoreboard players set @a Shirt19 0
+scoreboard players set @a Shirt20 0
+
+
+scoreboard players set @a Pants1 0
+scoreboard players set @a Pants2 0
+scoreboard players set @a Pants3 0
+scoreboard players set @a Pants4 0
+scoreboard players set @a Pants5 0
+scoreboard players set @a Pants6 0
+scoreboard players set @a Pants7 0
+scoreboard players set @a Pants8 0
+scoreboard players set @a Pants9 0
+scoreboard players set @a Pants10 0
+scoreboard players set @a Pants11 0
+scoreboard players set @a Pants12 0
+scoreboard players set @a Pants13 0
+scoreboard players set @a Pants14 0
+scoreboard players set @a Pants15 0
+scoreboard players set @a Pants16 0
+scoreboard players set @a Pants17 0
+scoreboard players set @a Pants18 0
+scoreboard players set @a Pants19 0
+scoreboard players set @a Pants20 0
+
+
+scoreboard players set @a Shoes1 0
+scoreboard players set @a Shoes2 0
+scoreboard players set @a Shoes3 0
+scoreboard players set @a Shoes4 0
+scoreboard players set @a Shoes5 0
+scoreboard players set @a Shoes6 0
+scoreboard players set @a Shoes7 0
+scoreboard players set @a Shoes8 0
+scoreboard players set @a Shoes9 0
+scoreboard players set @a Shoes10 0
+scoreboard players set @a Shoes11 0
+scoreboard players set @a Shoes12 0
+scoreboard players set @a Shoes13 0
+scoreboard players set @a Shoes14 0
+scoreboard players set @a Shoes15 0
+scoreboard players set @a Shoes16 0
+scoreboard players set @a Shoes17 0
+scoreboard players set @a Shoes18 0
+scoreboard players set @a Shoes19 0
+scoreboard players set @a Shoes20 0

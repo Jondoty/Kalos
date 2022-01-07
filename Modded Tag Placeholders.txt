@@ -1,0 +1,169 @@
+nbt=!{pixelmon:statue}
+
+becomes
+
+type=pixelmon:statue
+
+
+
+
+
+nbt=!{pixelmon:npc_trainer}
+
+becomes
+
+type=pixelmon:npc_trainer
+
+
+
+
+
+nbt=!{pixelmon:npc_chatting}
+
+becomes
+
+type=pixelmon:npc_chatting
+
+
+
+
+nbt=!{pixelmon:bike}
+
+becomes
+
+type=pixelmon:bike
+
+
+
+
+
+nbt=!{pixelmon:pixelmon}
+
+becomes
+
+type=pixelmon:pixelmon
+
+
+
+
+
+
+nbt=!{pixelmon:npc_shopkeeper}
+
+becomes
+
+type=pixelmon:npc_shopkeeper
+
+
+
+
+
+nbt=!{pixelmon:npc_trader}
+
+becomes
+
+type=pixelmon:npc_trader
+
+
+
+
+nbt=!{pixelmon:painting}
+
+becomes
+
+type=pixelmon:painting
+
+
+
+
+
+
+
+
+
+
+
+###
+
+remove all
+
+masks what should be a valid Pixelmon command
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+data modify entity @e[x=-801,y=64,z=-284,dy=3,type=armor_stand] {CustomName:'{"text":"Pixelmon Johto"}'}
+
+
+
+
+
+
+
+
+
+
+
+
+
+scoreboard players set @e[x=-687,y=100,z=1376,dx=2,dy=4,type=armor_stand] rng 0
+scoreboard players add @e[sort=random,limit=1,x=-687,y=100,z=1376,dx=2,dy=4] rng 1
+scoreboard players add @e[sort=random,limit=1,x=-687,y=100,z=1376,dx=2,dy=4] rng 2
+scoreboard players add @e[sort=random,limit=1,x=-687,y=100,z=1376,dx=2,dy=4] rng 4
+scoreboard players add @e[sort=random,limit=1,x=-687,y=100,z=1376,dx=2,dy=4] rng 8
+scoreboard players add @e[sort=random,limit=1,x=-687,y=100,z=1376,dx=2,dy=4] rng 16
+scoreboard players add @e[sort=random,limit=1,x=-687,y=100,z=1376,dx=2,dy=4] rng 32
+scoreboard players add @e[sort=random,limit=1,x=-687,y=100,z=1376,dx=2,dy=4] rng 64
+scoreboard players add @e[sort=random,limit=1,x=-687,y=100,z=1376,dx=2,dy=4] rng 128
+scoreboard players add @e[sort=random,limit=1,x=-687,y=100,z=1376,dx=2,dy=4] rng 256
+scoreboard players add @e[sort=random,limit=1,x=-687,y=100,z=1376,dx=2,dy=4] rng 512
+
+
+
+replaces
+
+
+scoreboard players set @e[x=-687,y=100,z=1376,dx=2,dy=4,type=armor_stand] rng 0
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,limit=1] rng 1
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,limit=1] rng 2
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,limit=1] rng 4
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,limit=1] rng 8
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,limit=1] rng 16
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,limit=1] rng 32
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,limit=1] rng 64
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,limit=1] rng 128
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,limit=1] rng 256
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,limit=1] rng 512
+
+or
+
+scoreboard players set @e[x=-687,y=100,z=1376,dx=2,dy=4,type=armor_stand] rng 0
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,type=armor_stand] rng 1
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,type=armor_stand] rng 2
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,type=armor_stand] rng 4
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,type=armor_stand] rng 8
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,type=armor_stand] rng 16
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,type=armor_stand] rng 32
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,type=armor_stand] rng 64
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,type=armor_stand] rng 128
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,type=armor_stand] rng 256
+scoreboard players add @r[x=-687,y=100,z=1376,dx=2,dy=4,type=armor_stand] rng 512
+
+
+
+
+
+
+
+#

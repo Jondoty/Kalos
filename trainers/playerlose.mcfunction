@@ -19,20 +19,20 @@
 
 
 #Removes any existing battle music tags
-scoreboard players tag @s remove TrainerBattleMusic
-scoreboard players tag @s remove FriendBattleMusic
-scoreboard players tag @s remove GymLeaderBattleMusic
-scoreboard players tag @s remove EliteFourBattleMusic
-scoreboard players tag @s remove ChampionBattleMusic
-scoreboard players tag @s remove FlareBattleMusic
-scoreboard players tag @s remove LysandreBattleMusic
-scoreboard players tag @s remove KorrinaBattleMusic
+tag @s remove TrainerBattleMusic
+tag @s remove FriendBattleMusic
+tag @s remove GymLeaderBattleMusic
+tag @s remove EliteFourBattleMusic
+tag @s remove ChampionBattleMusic
+tag @s remove FlareBattleMusic
+tag @s remove LysandreBattleMusic
+tag @s remove KorrinaBattleMusic
 
 #Refreshes music
 scoreboard players set @s click 1
 
 
 
-scoreboard players tag @s remove BattleLose
+tag @s remove BattleLose
 scoreboard players set @s TrainerClass 0
 #

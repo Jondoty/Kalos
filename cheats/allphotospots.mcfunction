@@ -1,14 +1,14 @@
-scoreboard players tag @s add PhotoSpot1
-scoreboard players tag @s add PhotoSpot2
-scoreboard players tag @s add PhotoSpot3
-scoreboard players tag @s add PhotoSpot4
-scoreboard players tag @s add PhotoSpot5
-scoreboard players tag @s add PhotoSpot6
-scoreboard players tag @s add PhotoSpot7
-scoreboard players tag @s add PhotoSpot8
-scoreboard players tag @s add PhotoSpot9
-scoreboard players tag @s add PhotoSpot10
-scoreboard players tag @s add PhotoSpot11
-scoreboard players tag @s add PhotoSpot12
-scoreboard players tag @s add PhotoSpot13
-scoreboard players tag @s add PhotoSpot14
+tag @s add PhotoSpot1
+tag @s add PhotoSpot2
+tag @s add PhotoSpot3
+tag @s add PhotoSpot4
+tag @s add PhotoSpot5
+tag @s add PhotoSpot6
+tag @s add PhotoSpot7
+tag @s add PhotoSpot8
+tag @s add PhotoSpot9
+tag @s add PhotoSpot10
+tag @s add PhotoSpot11
+tag @s add PhotoSpot12
+tag @s add PhotoSpot13
+tag @s add PhotoSpot14

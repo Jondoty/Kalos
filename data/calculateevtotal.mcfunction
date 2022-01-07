@@ -1,1533 +1,1533 @@
-scoreboard players add @s Temp 1 {EVSpeed:1s}
-scoreboard players add @s Temp 2 {EVSpeed:2s}
-scoreboard players add @s Temp 3 {EVSpeed:3s}
-scoreboard players add @s Temp 4 {EVSpeed:4s}
-scoreboard players add @s Temp 5 {EVSpeed:5s}
-scoreboard players add @s Temp 6 {EVSpeed:6s}
-scoreboard players add @s Temp 7 {EVSpeed:7s}
-scoreboard players add @s Temp 8 {EVSpeed:8s}
-scoreboard players add @s Temp 9 {EVSpeed:9s}
-scoreboard players add @s Temp 10 {EVSpeed:10s}
-scoreboard players add @s Temp 11 {EVSpeed:11s}
-scoreboard players add @s Temp 12 {EVSpeed:12s}
-scoreboard players add @s Temp 13 {EVSpeed:13s}
-scoreboard players add @s Temp 14 {EVSpeed:14s}
-scoreboard players add @s Temp 15 {EVSpeed:15s}
-scoreboard players add @s Temp 16 {EVSpeed:16s}
-scoreboard players add @s Temp 17 {EVSpeed:17s}
-scoreboard players add @s Temp 18 {EVSpeed:18s}
-scoreboard players add @s Temp 19 {EVSpeed:19s}
-scoreboard players add @s Temp 20 {EVSpeed:20s}
-scoreboard players add @s Temp 21 {EVSpeed:21s}
-scoreboard players add @s Temp 22 {EVSpeed:22s}
-scoreboard players add @s Temp 23 {EVSpeed:23s}
-scoreboard players add @s Temp 24 {EVSpeed:24s}
-scoreboard players add @s Temp 25 {EVSpeed:25s}
-scoreboard players add @s Temp 26 {EVSpeed:26s}
-scoreboard players add @s Temp 27 {EVSpeed:27s}
-scoreboard players add @s Temp 28 {EVSpeed:28s}
-scoreboard players add @s Temp 29 {EVSpeed:29s}
-scoreboard players add @s Temp 30 {EVSpeed:30s}
-scoreboard players add @s Temp 31 {EVSpeed:31s}
-scoreboard players add @s Temp 32 {EVSpeed:32s}
-scoreboard players add @s Temp 33 {EVSpeed:33s}
-scoreboard players add @s Temp 34 {EVSpeed:34s}
-scoreboard players add @s Temp 35 {EVSpeed:35s}
-scoreboard players add @s Temp 36 {EVSpeed:36s}
-scoreboard players add @s Temp 37 {EVSpeed:37s}
-scoreboard players add @s Temp 38 {EVSpeed:38s}
-scoreboard players add @s Temp 39 {EVSpeed:39s}
-scoreboard players add @s Temp 40 {EVSpeed:40s}
-scoreboard players add @s Temp 41 {EVSpeed:41s}
-scoreboard players add @s Temp 42 {EVSpeed:42s}
-scoreboard players add @s Temp 43 {EVSpeed:43s}
-scoreboard players add @s Temp 44 {EVSpeed:44s}
-scoreboard players add @s Temp 45 {EVSpeed:45s}
-scoreboard players add @s Temp 46 {EVSpeed:46s}
-scoreboard players add @s Temp 47 {EVSpeed:47s}
-scoreboard players add @s Temp 48 {EVSpeed:48s}
-scoreboard players add @s Temp 49 {EVSpeed:49s}
-scoreboard players add @s Temp 50 {EVSpeed:50s}
-scoreboard players add @s Temp 51 {EVSpeed:51s}
-scoreboard players add @s Temp 52 {EVSpeed:52s}
-scoreboard players add @s Temp 53 {EVSpeed:53s}
-scoreboard players add @s Temp 54 {EVSpeed:54s}
-scoreboard players add @s Temp 55 {EVSpeed:55s}
-scoreboard players add @s Temp 56 {EVSpeed:56s}
-scoreboard players add @s Temp 57 {EVSpeed:57s}
-scoreboard players add @s Temp 58 {EVSpeed:58s}
-scoreboard players add @s Temp 59 {EVSpeed:59s}
-scoreboard players add @s Temp 60 {EVSpeed:60s}
-scoreboard players add @s Temp 61 {EVSpeed:61s}
-scoreboard players add @s Temp 62 {EVSpeed:62s}
-scoreboard players add @s Temp 63 {EVSpeed:63s}
-scoreboard players add @s Temp 64 {EVSpeed:64s}
-scoreboard players add @s Temp 65 {EVSpeed:65s}
-scoreboard players add @s Temp 66 {EVSpeed:66s}
-scoreboard players add @s Temp 67 {EVSpeed:67s}
-scoreboard players add @s Temp 68 {EVSpeed:68s}
-scoreboard players add @s Temp 69 {EVSpeed:69s}
-scoreboard players add @s Temp 70 {EVSpeed:70s}
-scoreboard players add @s Temp 71 {EVSpeed:71s}
-scoreboard players add @s Temp 72 {EVSpeed:72s}
-scoreboard players add @s Temp 73 {EVSpeed:73s}
-scoreboard players add @s Temp 74 {EVSpeed:74s}
-scoreboard players add @s Temp 75 {EVSpeed:75s}
-scoreboard players add @s Temp 76 {EVSpeed:76s}
-scoreboard players add @s Temp 77 {EVSpeed:77s}
-scoreboard players add @s Temp 78 {EVSpeed:78s}
-scoreboard players add @s Temp 79 {EVSpeed:79s}
-scoreboard players add @s Temp 80 {EVSpeed:80s}
-scoreboard players add @s Temp 81 {EVSpeed:81s}
-scoreboard players add @s Temp 82 {EVSpeed:82s}
-scoreboard players add @s Temp 83 {EVSpeed:83s}
-scoreboard players add @s Temp 84 {EVSpeed:84s}
-scoreboard players add @s Temp 85 {EVSpeed:85s}
-scoreboard players add @s Temp 86 {EVSpeed:86s}
-scoreboard players add @s Temp 87 {EVSpeed:87s}
-scoreboard players add @s Temp 88 {EVSpeed:88s}
-scoreboard players add @s Temp 89 {EVSpeed:89s}
-scoreboard players add @s Temp 90 {EVSpeed:90s}
-scoreboard players add @s Temp 91 {EVSpeed:91s}
-scoreboard players add @s Temp 92 {EVSpeed:92s}
-scoreboard players add @s Temp 93 {EVSpeed:93s}
-scoreboard players add @s Temp 94 {EVSpeed:94s}
-scoreboard players add @s Temp 95 {EVSpeed:95s}
-scoreboard players add @s Temp 96 {EVSpeed:96s}
-scoreboard players add @s Temp 97 {EVSpeed:97s}
-scoreboard players add @s Temp 98 {EVSpeed:98s}
-scoreboard players add @s Temp 99 {EVSpeed:99s}
-scoreboard players add @s Temp 100 {EVSpeed:100s}
-scoreboard players add @s Temp 101 {EVSpeed:101s}
-scoreboard players add @s Temp 102 {EVSpeed:102s}
-scoreboard players add @s Temp 103 {EVSpeed:103s}
-scoreboard players add @s Temp 104 {EVSpeed:104s}
-scoreboard players add @s Temp 105 {EVSpeed:105s}
-scoreboard players add @s Temp 106 {EVSpeed:106s}
-scoreboard players add @s Temp 107 {EVSpeed:107s}
-scoreboard players add @s Temp 108 {EVSpeed:108s}
-scoreboard players add @s Temp 109 {EVSpeed:109s}
-scoreboard players add @s Temp 110 {EVSpeed:110s}
-scoreboard players add @s Temp 111 {EVSpeed:111s}
-scoreboard players add @s Temp 112 {EVSpeed:112s}
-scoreboard players add @s Temp 113 {EVSpeed:113s}
-scoreboard players add @s Temp 114 {EVSpeed:114s}
-scoreboard players add @s Temp 115 {EVSpeed:115s}
-scoreboard players add @s Temp 116 {EVSpeed:116s}
-scoreboard players add @s Temp 117 {EVSpeed:117s}
-scoreboard players add @s Temp 118 {EVSpeed:118s}
-scoreboard players add @s Temp 119 {EVSpeed:119s}
-scoreboard players add @s Temp 120 {EVSpeed:120s}
-scoreboard players add @s Temp 121 {EVSpeed:121s}
-scoreboard players add @s Temp 122 {EVSpeed:122s}
-scoreboard players add @s Temp 123 {EVSpeed:123s}
-scoreboard players add @s Temp 124 {EVSpeed:124s}
-scoreboard players add @s Temp 125 {EVSpeed:125s}
-scoreboard players add @s Temp 126 {EVSpeed:126s}
-scoreboard players add @s Temp 127 {EVSpeed:127s}
-scoreboard players add @s Temp 128 {EVSpeed:128s}
-scoreboard players add @s Temp 129 {EVSpeed:129s}
-scoreboard players add @s Temp 130 {EVSpeed:130s}
-scoreboard players add @s Temp 131 {EVSpeed:131s}
-scoreboard players add @s Temp 132 {EVSpeed:132s}
-scoreboard players add @s Temp 133 {EVSpeed:133s}
-scoreboard players add @s Temp 134 {EVSpeed:134s}
-scoreboard players add @s Temp 135 {EVSpeed:135s}
-scoreboard players add @s Temp 136 {EVSpeed:136s}
-scoreboard players add @s Temp 137 {EVSpeed:137s}
-scoreboard players add @s Temp 138 {EVSpeed:138s}
-scoreboard players add @s Temp 139 {EVSpeed:139s}
-scoreboard players add @s Temp 140 {EVSpeed:140s}
-scoreboard players add @s Temp 141 {EVSpeed:141s}
-scoreboard players add @s Temp 142 {EVSpeed:142s}
-scoreboard players add @s Temp 143 {EVSpeed:143s}
-scoreboard players add @s Temp 144 {EVSpeed:144s}
-scoreboard players add @s Temp 145 {EVSpeed:145s}
-scoreboard players add @s Temp 146 {EVSpeed:146s}
-scoreboard players add @s Temp 147 {EVSpeed:147s}
-scoreboard players add @s Temp 148 {EVSpeed:148s}
-scoreboard players add @s Temp 149 {EVSpeed:149s}
-scoreboard players add @s Temp 150 {EVSpeed:150s}
-scoreboard players add @s Temp 151 {EVSpeed:151s}
-scoreboard players add @s Temp 152 {EVSpeed:152s}
-scoreboard players add @s Temp 153 {EVSpeed:153s}
-scoreboard players add @s Temp 154 {EVSpeed:154s}
-scoreboard players add @s Temp 155 {EVSpeed:155s}
-scoreboard players add @s Temp 156 {EVSpeed:156s}
-scoreboard players add @s Temp 157 {EVSpeed:157s}
-scoreboard players add @s Temp 158 {EVSpeed:158s}
-scoreboard players add @s Temp 159 {EVSpeed:159s}
-scoreboard players add @s Temp 160 {EVSpeed:160s}
-scoreboard players add @s Temp 161 {EVSpeed:161s}
-scoreboard players add @s Temp 162 {EVSpeed:162s}
-scoreboard players add @s Temp 163 {EVSpeed:163s}
-scoreboard players add @s Temp 164 {EVSpeed:164s}
-scoreboard players add @s Temp 165 {EVSpeed:165s}
-scoreboard players add @s Temp 166 {EVSpeed:166s}
-scoreboard players add @s Temp 167 {EVSpeed:167s}
-scoreboard players add @s Temp 168 {EVSpeed:168s}
-scoreboard players add @s Temp 169 {EVSpeed:169s}
-scoreboard players add @s Temp 170 {EVSpeed:170s}
-scoreboard players add @s Temp 171 {EVSpeed:171s}
-scoreboard players add @s Temp 172 {EVSpeed:172s}
-scoreboard players add @s Temp 173 {EVSpeed:173s}
-scoreboard players add @s Temp 174 {EVSpeed:174s}
-scoreboard players add @s Temp 175 {EVSpeed:175s}
-scoreboard players add @s Temp 176 {EVSpeed:176s}
-scoreboard players add @s Temp 177 {EVSpeed:177s}
-scoreboard players add @s Temp 178 {EVSpeed:178s}
-scoreboard players add @s Temp 179 {EVSpeed:179s}
-scoreboard players add @s Temp 180 {EVSpeed:180s}
-scoreboard players add @s Temp 181 {EVSpeed:181s}
-scoreboard players add @s Temp 182 {EVSpeed:182s}
-scoreboard players add @s Temp 183 {EVSpeed:183s}
-scoreboard players add @s Temp 184 {EVSpeed:184s}
-scoreboard players add @s Temp 185 {EVSpeed:185s}
-scoreboard players add @s Temp 186 {EVSpeed:186s}
-scoreboard players add @s Temp 187 {EVSpeed:187s}
-scoreboard players add @s Temp 188 {EVSpeed:188s}
-scoreboard players add @s Temp 189 {EVSpeed:189s}
-scoreboard players add @s Temp 190 {EVSpeed:190s}
-scoreboard players add @s Temp 191 {EVSpeed:191s}
-scoreboard players add @s Temp 192 {EVSpeed:192s}
-scoreboard players add @s Temp 193 {EVSpeed:193s}
-scoreboard players add @s Temp 194 {EVSpeed:194s}
-scoreboard players add @s Temp 195 {EVSpeed:195s}
-scoreboard players add @s Temp 196 {EVSpeed:196s}
-scoreboard players add @s Temp 197 {EVSpeed:197s}
-scoreboard players add @s Temp 198 {EVSpeed:198s}
-scoreboard players add @s Temp 199 {EVSpeed:199s}
-scoreboard players add @s Temp 200 {EVSpeed:200s}
-scoreboard players add @s Temp 201 {EVSpeed:201s}
-scoreboard players add @s Temp 202 {EVSpeed:202s}
-scoreboard players add @s Temp 203 {EVSpeed:203s}
-scoreboard players add @s Temp 204 {EVSpeed:204s}
-scoreboard players add @s Temp 205 {EVSpeed:205s}
-scoreboard players add @s Temp 206 {EVSpeed:206s}
-scoreboard players add @s Temp 207 {EVSpeed:207s}
-scoreboard players add @s Temp 208 {EVSpeed:208s}
-scoreboard players add @s Temp 209 {EVSpeed:209s}
-scoreboard players add @s Temp 210 {EVSpeed:210s}
-scoreboard players add @s Temp 211 {EVSpeed:211s}
-scoreboard players add @s Temp 212 {EVSpeed:212s}
-scoreboard players add @s Temp 213 {EVSpeed:213s}
-scoreboard players add @s Temp 214 {EVSpeed:214s}
-scoreboard players add @s Temp 215 {EVSpeed:215s}
-scoreboard players add @s Temp 216 {EVSpeed:216s}
-scoreboard players add @s Temp 217 {EVSpeed:217s}
-scoreboard players add @s Temp 218 {EVSpeed:218s}
-scoreboard players add @s Temp 219 {EVSpeed:219s}
-scoreboard players add @s Temp 220 {EVSpeed:220s}
-scoreboard players add @s Temp 221 {EVSpeed:221s}
-scoreboard players add @s Temp 222 {EVSpeed:222s}
-scoreboard players add @s Temp 223 {EVSpeed:223s}
-scoreboard players add @s Temp 224 {EVSpeed:224s}
-scoreboard players add @s Temp 225 {EVSpeed:225s}
-scoreboard players add @s Temp 226 {EVSpeed:226s}
-scoreboard players add @s Temp 227 {EVSpeed:227s}
-scoreboard players add @s Temp 228 {EVSpeed:228s}
-scoreboard players add @s Temp 229 {EVSpeed:229s}
-scoreboard players add @s Temp 230 {EVSpeed:230s}
-scoreboard players add @s Temp 231 {EVSpeed:231s}
-scoreboard players add @s Temp 232 {EVSpeed:232s}
-scoreboard players add @s Temp 233 {EVSpeed:233s}
-scoreboard players add @s Temp 234 {EVSpeed:234s}
-scoreboard players add @s Temp 235 {EVSpeed:235s}
-scoreboard players add @s Temp 236 {EVSpeed:236s}
-scoreboard players add @s Temp 237 {EVSpeed:237s}
-scoreboard players add @s Temp 238 {EVSpeed:238s}
-scoreboard players add @s Temp 239 {EVSpeed:239s}
-scoreboard players add @s Temp 240 {EVSpeed:240s}
-scoreboard players add @s Temp 241 {EVSpeed:241s}
-scoreboard players add @s Temp 242 {EVSpeed:242s}
-scoreboard players add @s Temp 243 {EVSpeed:243s}
-scoreboard players add @s Temp 244 {EVSpeed:244s}
-scoreboard players add @s Temp 245 {EVSpeed:245s}
-scoreboard players add @s Temp 246 {EVSpeed:246s}
-scoreboard players add @s Temp 247 {EVSpeed:247s}
-scoreboard players add @s Temp 248 {EVSpeed:248s}
-scoreboard players add @s Temp 249 {EVSpeed:249s}
-scoreboard players add @s Temp 250 {EVSpeed:250s}
-scoreboard players add @s Temp 251 {EVSpeed:251s}
-scoreboard players add @s Temp 252 {EVSpeed:252s}
+scoreboard players add @s[nbt={EVSpeed:1s}] Temp 1
+scoreboard players add @s[nbt={EVSpeed:2s}] Temp 2
+scoreboard players add @s[nbt={EVSpeed:3s}] Temp 3
+scoreboard players add @s[nbt={EVSpeed:4s}] Temp 4
+scoreboard players add @s[nbt={EVSpeed:5s}] Temp 5
+scoreboard players add @s[nbt={EVSpeed:6s}] Temp 6
+scoreboard players add @s[nbt={EVSpeed:7s}] Temp 7
+scoreboard players add @s[nbt={EVSpeed:8s}] Temp 8
+scoreboard players add @s[nbt={EVSpeed:9s}] Temp 9
+scoreboard players add @s[nbt={EVSpeed:10s}] Temp 10
+scoreboard players add @s[nbt={EVSpeed:11s}] Temp 11
+scoreboard players add @s[nbt={EVSpeed:12s}] Temp 12
+scoreboard players add @s[nbt={EVSpeed:13s}] Temp 13
+scoreboard players add @s[nbt={EVSpeed:14s}] Temp 14
+scoreboard players add @s[nbt={EVSpeed:15s}] Temp 15
+scoreboard players add @s[nbt={EVSpeed:16s}] Temp 16
+scoreboard players add @s[nbt={EVSpeed:17s}] Temp 17
+scoreboard players add @s[nbt={EVSpeed:18s}] Temp 18
+scoreboard players add @s[nbt={EVSpeed:19s}] Temp 19
+scoreboard players add @s[nbt={EVSpeed:20s}] Temp 20
+scoreboard players add @s[nbt={EVSpeed:21s}] Temp 21
+scoreboard players add @s[nbt={EVSpeed:22s}] Temp 22
+scoreboard players add @s[nbt={EVSpeed:23s}] Temp 23
+scoreboard players add @s[nbt={EVSpeed:24s}] Temp 24
+scoreboard players add @s[nbt={EVSpeed:25s}] Temp 25
+scoreboard players add @s[nbt={EVSpeed:26s}] Temp 26
+scoreboard players add @s[nbt={EVSpeed:27s}] Temp 27
+scoreboard players add @s[nbt={EVSpeed:28s}] Temp 28
+scoreboard players add @s[nbt={EVSpeed:29s}] Temp 29
+scoreboard players add @s[nbt={EVSpeed:30s}] Temp 30
+scoreboard players add @s[nbt={EVSpeed:31s}] Temp 31
+scoreboard players add @s[nbt={EVSpeed:32s}] Temp 32
+scoreboard players add @s[nbt={EVSpeed:33s}] Temp 33
+scoreboard players add @s[nbt={EVSpeed:34s}] Temp 34
+scoreboard players add @s[nbt={EVSpeed:35s}] Temp 35
+scoreboard players add @s[nbt={EVSpeed:36s}] Temp 36
+scoreboard players add @s[nbt={EVSpeed:37s}] Temp 37
+scoreboard players add @s[nbt={EVSpeed:38s}] Temp 38
+scoreboard players add @s[nbt={EVSpeed:39s}] Temp 39
+scoreboard players add @s[nbt={EVSpeed:40s}] Temp 40
+scoreboard players add @s[nbt={EVSpeed:41s}] Temp 41
+scoreboard players add @s[nbt={EVSpeed:42s}] Temp 42
+scoreboard players add @s[nbt={EVSpeed:43s}] Temp 43
+scoreboard players add @s[nbt={EVSpeed:44s}] Temp 44
+scoreboard players add @s[nbt={EVSpeed:45s}] Temp 45
+scoreboard players add @s[nbt={EVSpeed:46s}] Temp 46
+scoreboard players add @s[nbt={EVSpeed:47s}] Temp 47
+scoreboard players add @s[nbt={EVSpeed:48s}] Temp 48
+scoreboard players add @s[nbt={EVSpeed:49s}] Temp 49
+scoreboard players add @s[nbt={EVSpeed:50s}] Temp 50
+scoreboard players add @s[nbt={EVSpeed:51s}] Temp 51
+scoreboard players add @s[nbt={EVSpeed:52s}] Temp 52
+scoreboard players add @s[nbt={EVSpeed:53s}] Temp 53
+scoreboard players add @s[nbt={EVSpeed:54s}] Temp 54
+scoreboard players add @s[nbt={EVSpeed:55s}] Temp 55
+scoreboard players add @s[nbt={EVSpeed:56s}] Temp 56
+scoreboard players add @s[nbt={EVSpeed:57s}] Temp 57
+scoreboard players add @s[nbt={EVSpeed:58s}] Temp 58
+scoreboard players add @s[nbt={EVSpeed:59s}] Temp 59
+scoreboard players add @s[nbt={EVSpeed:60s}] Temp 60
+scoreboard players add @s[nbt={EVSpeed:61s}] Temp 61
+scoreboard players add @s[nbt={EVSpeed:62s}] Temp 62
+scoreboard players add @s[nbt={EVSpeed:63s}] Temp 63
+scoreboard players add @s[nbt={EVSpeed:64s}] Temp 64
+scoreboard players add @s[nbt={EVSpeed:65s}] Temp 65
+scoreboard players add @s[nbt={EVSpeed:66s}] Temp 66
+scoreboard players add @s[nbt={EVSpeed:67s}] Temp 67
+scoreboard players add @s[nbt={EVSpeed:68s}] Temp 68
+scoreboard players add @s[nbt={EVSpeed:69s}] Temp 69
+scoreboard players add @s[nbt={EVSpeed:70s}] Temp 70
+scoreboard players add @s[nbt={EVSpeed:71s}] Temp 71
+scoreboard players add @s[nbt={EVSpeed:72s}] Temp 72
+scoreboard players add @s[nbt={EVSpeed:73s}] Temp 73
+scoreboard players add @s[nbt={EVSpeed:74s}] Temp 74
+scoreboard players add @s[nbt={EVSpeed:75s}] Temp 75
+scoreboard players add @s[nbt={EVSpeed:76s}] Temp 76
+scoreboard players add @s[nbt={EVSpeed:77s}] Temp 77
+scoreboard players add @s[nbt={EVSpeed:78s}] Temp 78
+scoreboard players add @s[nbt={EVSpeed:79s}] Temp 79
+scoreboard players add @s[nbt={EVSpeed:80s}] Temp 80
+scoreboard players add @s[nbt={EVSpeed:81s}] Temp 81
+scoreboard players add @s[nbt={EVSpeed:82s}] Temp 82
+scoreboard players add @s[nbt={EVSpeed:83s}] Temp 83
+scoreboard players add @s[nbt={EVSpeed:84s}] Temp 84
+scoreboard players add @s[nbt={EVSpeed:85s}] Temp 85
+scoreboard players add @s[nbt={EVSpeed:86s}] Temp 86
+scoreboard players add @s[nbt={EVSpeed:87s}] Temp 87
+scoreboard players add @s[nbt={EVSpeed:88s}] Temp 88
+scoreboard players add @s[nbt={EVSpeed:89s}] Temp 89
+scoreboard players add @s[nbt={EVSpeed:90s}] Temp 90
+scoreboard players add @s[nbt={EVSpeed:91s}] Temp 91
+scoreboard players add @s[nbt={EVSpeed:92s}] Temp 92
+scoreboard players add @s[nbt={EVSpeed:93s}] Temp 93
+scoreboard players add @s[nbt={EVSpeed:94s}] Temp 94
+scoreboard players add @s[nbt={EVSpeed:95s}] Temp 95
+scoreboard players add @s[nbt={EVSpeed:96s}] Temp 96
+scoreboard players add @s[nbt={EVSpeed:97s}] Temp 97
+scoreboard players add @s[nbt={EVSpeed:98s}] Temp 98
+scoreboard players add @s[nbt={EVSpeed:99s}] Temp 99
+scoreboard players add @s[nbt={EVSpeed:100s}] Temp 100
+scoreboard players add @s[nbt={EVSpeed:101s}] Temp 101
+scoreboard players add @s[nbt={EVSpeed:102s}] Temp 102
+scoreboard players add @s[nbt={EVSpeed:103s}] Temp 103
+scoreboard players add @s[nbt={EVSpeed:104s}] Temp 104
+scoreboard players add @s[nbt={EVSpeed:105s}] Temp 105
+scoreboard players add @s[nbt={EVSpeed:106s}] Temp 106
+scoreboard players add @s[nbt={EVSpeed:107s}] Temp 107
+scoreboard players add @s[nbt={EVSpeed:108s}] Temp 108
+scoreboard players add @s[nbt={EVSpeed:109s}] Temp 109
+scoreboard players add @s[nbt={EVSpeed:110s}] Temp 110
+scoreboard players add @s[nbt={EVSpeed:111s}] Temp 111
+scoreboard players add @s[nbt={EVSpeed:112s}] Temp 112
+scoreboard players add @s[nbt={EVSpeed:113s}] Temp 113
+scoreboard players add @s[nbt={EVSpeed:114s}] Temp 114
+scoreboard players add @s[nbt={EVSpeed:115s}] Temp 115
+scoreboard players add @s[nbt={EVSpeed:116s}] Temp 116
+scoreboard players add @s[nbt={EVSpeed:117s}] Temp 117
+scoreboard players add @s[nbt={EVSpeed:118s}] Temp 118
+scoreboard players add @s[nbt={EVSpeed:119s}] Temp 119
+scoreboard players add @s[nbt={EVSpeed:120s}] Temp 120
+scoreboard players add @s[nbt={EVSpeed:121s}] Temp 121
+scoreboard players add @s[nbt={EVSpeed:122s}] Temp 122
+scoreboard players add @s[nbt={EVSpeed:123s}] Temp 123
+scoreboard players add @s[nbt={EVSpeed:124s}] Temp 124
+scoreboard players add @s[nbt={EVSpeed:125s}] Temp 125
+scoreboard players add @s[nbt={EVSpeed:126s}] Temp 126
+scoreboard players add @s[nbt={EVSpeed:127s}] Temp 127
+scoreboard players add @s[nbt={EVSpeed:128s}] Temp 128
+scoreboard players add @s[nbt={EVSpeed:129s}] Temp 129
+scoreboard players add @s[nbt={EVSpeed:130s}] Temp 130
+scoreboard players add @s[nbt={EVSpeed:131s}] Temp 131
+scoreboard players add @s[nbt={EVSpeed:132s}] Temp 132
+scoreboard players add @s[nbt={EVSpeed:133s}] Temp 133
+scoreboard players add @s[nbt={EVSpeed:134s}] Temp 134
+scoreboard players add @s[nbt={EVSpeed:135s}] Temp 135
+scoreboard players add @s[nbt={EVSpeed:136s}] Temp 136
+scoreboard players add @s[nbt={EVSpeed:137s}] Temp 137
+scoreboard players add @s[nbt={EVSpeed:138s}] Temp 138
+scoreboard players add @s[nbt={EVSpeed:139s}] Temp 139
+scoreboard players add @s[nbt={EVSpeed:140s}] Temp 140
+scoreboard players add @s[nbt={EVSpeed:141s}] Temp 141
+scoreboard players add @s[nbt={EVSpeed:142s}] Temp 142
+scoreboard players add @s[nbt={EVSpeed:143s}] Temp 143
+scoreboard players add @s[nbt={EVSpeed:144s}] Temp 144
+scoreboard players add @s[nbt={EVSpeed:145s}] Temp 145
+scoreboard players add @s[nbt={EVSpeed:146s}] Temp 146
+scoreboard players add @s[nbt={EVSpeed:147s}] Temp 147
+scoreboard players add @s[nbt={EVSpeed:148s}] Temp 148
+scoreboard players add @s[nbt={EVSpeed:149s}] Temp 149
+scoreboard players add @s[nbt={EVSpeed:150s}] Temp 150
+scoreboard players add @s[nbt={EVSpeed:151s}] Temp 151
+scoreboard players add @s[nbt={EVSpeed:152s}] Temp 152
+scoreboard players add @s[nbt={EVSpeed:153s}] Temp 153
+scoreboard players add @s[nbt={EVSpeed:154s}] Temp 154
+scoreboard players add @s[nbt={EVSpeed:155s}] Temp 155
+scoreboard players add @s[nbt={EVSpeed:156s}] Temp 156
+scoreboard players add @s[nbt={EVSpeed:157s}] Temp 157
+scoreboard players add @s[nbt={EVSpeed:158s}] Temp 158
+scoreboard players add @s[nbt={EVSpeed:159s}] Temp 159
+scoreboard players add @s[nbt={EVSpeed:160s}] Temp 160
+scoreboard players add @s[nbt={EVSpeed:161s}] Temp 161
+scoreboard players add @s[nbt={EVSpeed:162s}] Temp 162
+scoreboard players add @s[nbt={EVSpeed:163s}] Temp 163
+scoreboard players add @s[nbt={EVSpeed:164s}] Temp 164
+scoreboard players add @s[nbt={EVSpeed:165s}] Temp 165
+scoreboard players add @s[nbt={EVSpeed:166s}] Temp 166
+scoreboard players add @s[nbt={EVSpeed:167s}] Temp 167
+scoreboard players add @s[nbt={EVSpeed:168s}] Temp 168
+scoreboard players add @s[nbt={EVSpeed:169s}] Temp 169
+scoreboard players add @s[nbt={EVSpeed:170s}] Temp 170
+scoreboard players add @s[nbt={EVSpeed:171s}] Temp 171
+scoreboard players add @s[nbt={EVSpeed:172s}] Temp 172
+scoreboard players add @s[nbt={EVSpeed:173s}] Temp 173
+scoreboard players add @s[nbt={EVSpeed:174s}] Temp 174
+scoreboard players add @s[nbt={EVSpeed:175s}] Temp 175
+scoreboard players add @s[nbt={EVSpeed:176s}] Temp 176
+scoreboard players add @s[nbt={EVSpeed:177s}] Temp 177
+scoreboard players add @s[nbt={EVSpeed:178s}] Temp 178
+scoreboard players add @s[nbt={EVSpeed:179s}] Temp 179
+scoreboard players add @s[nbt={EVSpeed:180s}] Temp 180
+scoreboard players add @s[nbt={EVSpeed:181s}] Temp 181
+scoreboard players add @s[nbt={EVSpeed:182s}] Temp 182
+scoreboard players add @s[nbt={EVSpeed:183s}] Temp 183
+scoreboard players add @s[nbt={EVSpeed:184s}] Temp 184
+scoreboard players add @s[nbt={EVSpeed:185s}] Temp 185
+scoreboard players add @s[nbt={EVSpeed:186s}] Temp 186
+scoreboard players add @s[nbt={EVSpeed:187s}] Temp 187
+scoreboard players add @s[nbt={EVSpeed:188s}] Temp 188
+scoreboard players add @s[nbt={EVSpeed:189s}] Temp 189
+scoreboard players add @s[nbt={EVSpeed:190s}] Temp 190
+scoreboard players add @s[nbt={EVSpeed:191s}] Temp 191
+scoreboard players add @s[nbt={EVSpeed:192s}] Temp 192
+scoreboard players add @s[nbt={EVSpeed:193s}] Temp 193
+scoreboard players add @s[nbt={EVSpeed:194s}] Temp 194
+scoreboard players add @s[nbt={EVSpeed:195s}] Temp 195
+scoreboard players add @s[nbt={EVSpeed:196s}] Temp 196
+scoreboard players add @s[nbt={EVSpeed:197s}] Temp 197
+scoreboard players add @s[nbt={EVSpeed:198s}] Temp 198
+scoreboard players add @s[nbt={EVSpeed:199s}] Temp 199
+scoreboard players add @s[nbt={EVSpeed:200s}] Temp 200
+scoreboard players add @s[nbt={EVSpeed:201s}] Temp 201
+scoreboard players add @s[nbt={EVSpeed:202s}] Temp 202
+scoreboard players add @s[nbt={EVSpeed:203s}] Temp 203
+scoreboard players add @s[nbt={EVSpeed:204s}] Temp 204
+scoreboard players add @s[nbt={EVSpeed:205s}] Temp 205
+scoreboard players add @s[nbt={EVSpeed:206s}] Temp 206
+scoreboard players add @s[nbt={EVSpeed:207s}] Temp 207
+scoreboard players add @s[nbt={EVSpeed:208s}] Temp 208
+scoreboard players add @s[nbt={EVSpeed:209s}] Temp 209
+scoreboard players add @s[nbt={EVSpeed:210s}] Temp 210
+scoreboard players add @s[nbt={EVSpeed:211s}] Temp 211
+scoreboard players add @s[nbt={EVSpeed:212s}] Temp 212
+scoreboard players add @s[nbt={EVSpeed:213s}] Temp 213
+scoreboard players add @s[nbt={EVSpeed:214s}] Temp 214
+scoreboard players add @s[nbt={EVSpeed:215s}] Temp 215
+scoreboard players add @s[nbt={EVSpeed:216s}] Temp 216
+scoreboard players add @s[nbt={EVSpeed:217s}] Temp 217
+scoreboard players add @s[nbt={EVSpeed:218s}] Temp 218
+scoreboard players add @s[nbt={EVSpeed:219s}] Temp 219
+scoreboard players add @s[nbt={EVSpeed:220s}] Temp 220
+scoreboard players add @s[nbt={EVSpeed:221s}] Temp 221
+scoreboard players add @s[nbt={EVSpeed:222s}] Temp 222
+scoreboard players add @s[nbt={EVSpeed:223s}] Temp 223
+scoreboard players add @s[nbt={EVSpeed:224s}] Temp 224
+scoreboard players add @s[nbt={EVSpeed:225s}] Temp 225
+scoreboard players add @s[nbt={EVSpeed:226s}] Temp 226
+scoreboard players add @s[nbt={EVSpeed:227s}] Temp 227
+scoreboard players add @s[nbt={EVSpeed:228s}] Temp 228
+scoreboard players add @s[nbt={EVSpeed:229s}] Temp 229
+scoreboard players add @s[nbt={EVSpeed:230s}] Temp 230
+scoreboard players add @s[nbt={EVSpeed:231s}] Temp 231
+scoreboard players add @s[nbt={EVSpeed:232s}] Temp 232
+scoreboard players add @s[nbt={EVSpeed:233s}] Temp 233
+scoreboard players add @s[nbt={EVSpeed:234s}] Temp 234
+scoreboard players add @s[nbt={EVSpeed:235s}] Temp 235
+scoreboard players add @s[nbt={EVSpeed:236s}] Temp 236
+scoreboard players add @s[nbt={EVSpeed:237s}] Temp 237
+scoreboard players add @s[nbt={EVSpeed:238s}] Temp 238
+scoreboard players add @s[nbt={EVSpeed:239s}] Temp 239
+scoreboard players add @s[nbt={EVSpeed:240s}] Temp 240
+scoreboard players add @s[nbt={EVSpeed:241s}] Temp 241
+scoreboard players add @s[nbt={EVSpeed:242s}] Temp 242
+scoreboard players add @s[nbt={EVSpeed:243s}] Temp 243
+scoreboard players add @s[nbt={EVSpeed:244s}] Temp 244
+scoreboard players add @s[nbt={EVSpeed:245s}] Temp 245
+scoreboard players add @s[nbt={EVSpeed:246s}] Temp 246
+scoreboard players add @s[nbt={EVSpeed:247s}] Temp 247
+scoreboard players add @s[nbt={EVSpeed:248s}] Temp 248
+scoreboard players add @s[nbt={EVSpeed:249s}] Temp 249
+scoreboard players add @s[nbt={EVSpeed:250s}] Temp 250
+scoreboard players add @s[nbt={EVSpeed:251s}] Temp 251
+scoreboard players add @s[nbt={EVSpeed:252s}] Temp 252
 
 
 
 
 
 
-scoreboard players add @s Temp 1 {EVSpecialDefence:1s}
-scoreboard players add @s Temp 2 {EVSpecialDefence:2s}
-scoreboard players add @s Temp 3 {EVSpecialDefence:3s}
-scoreboard players add @s Temp 4 {EVSpecialDefence:4s}
-scoreboard players add @s Temp 5 {EVSpecialDefence:5s}
-scoreboard players add @s Temp 6 {EVSpecialDefence:6s}
-scoreboard players add @s Temp 7 {EVSpecialDefence:7s}
-scoreboard players add @s Temp 8 {EVSpecialDefence:8s}
-scoreboard players add @s Temp 9 {EVSpecialDefence:9s}
-scoreboard players add @s Temp 10 {EVSpecialDefence:10s}
-scoreboard players add @s Temp 11 {EVSpecialDefence:11s}
-scoreboard players add @s Temp 12 {EVSpecialDefence:12s}
-scoreboard players add @s Temp 13 {EVSpecialDefence:13s}
-scoreboard players add @s Temp 14 {EVSpecialDefence:14s}
-scoreboard players add @s Temp 15 {EVSpecialDefence:15s}
-scoreboard players add @s Temp 16 {EVSpecialDefence:16s}
-scoreboard players add @s Temp 17 {EVSpecialDefence:17s}
-scoreboard players add @s Temp 18 {EVSpecialDefence:18s}
-scoreboard players add @s Temp 19 {EVSpecialDefence:19s}
-scoreboard players add @s Temp 20 {EVSpecialDefence:20s}
-scoreboard players add @s Temp 21 {EVSpecialDefence:21s}
-scoreboard players add @s Temp 22 {EVSpecialDefence:22s}
-scoreboard players add @s Temp 23 {EVSpecialDefence:23s}
-scoreboard players add @s Temp 24 {EVSpecialDefence:24s}
-scoreboard players add @s Temp 25 {EVSpecialDefence:25s}
-scoreboard players add @s Temp 26 {EVSpecialDefence:26s}
-scoreboard players add @s Temp 27 {EVSpecialDefence:27s}
-scoreboard players add @s Temp 28 {EVSpecialDefence:28s}
-scoreboard players add @s Temp 29 {EVSpecialDefence:29s}
-scoreboard players add @s Temp 30 {EVSpecialDefence:30s}
-scoreboard players add @s Temp 31 {EVSpecialDefence:31s}
-scoreboard players add @s Temp 32 {EVSpecialDefence:32s}
-scoreboard players add @s Temp 33 {EVSpecialDefence:33s}
-scoreboard players add @s Temp 34 {EVSpecialDefence:34s}
-scoreboard players add @s Temp 35 {EVSpecialDefence:35s}
-scoreboard players add @s Temp 36 {EVSpecialDefence:36s}
-scoreboard players add @s Temp 37 {EVSpecialDefence:37s}
-scoreboard players add @s Temp 38 {EVSpecialDefence:38s}
-scoreboard players add @s Temp 39 {EVSpecialDefence:39s}
-scoreboard players add @s Temp 40 {EVSpecialDefence:40s}
-scoreboard players add @s Temp 41 {EVSpecialDefence:41s}
-scoreboard players add @s Temp 42 {EVSpecialDefence:42s}
-scoreboard players add @s Temp 43 {EVSpecialDefence:43s}
-scoreboard players add @s Temp 44 {EVSpecialDefence:44s}
-scoreboard players add @s Temp 45 {EVSpecialDefence:45s}
-scoreboard players add @s Temp 46 {EVSpecialDefence:46s}
-scoreboard players add @s Temp 47 {EVSpecialDefence:47s}
-scoreboard players add @s Temp 48 {EVSpecialDefence:48s}
-scoreboard players add @s Temp 49 {EVSpecialDefence:49s}
-scoreboard players add @s Temp 50 {EVSpecialDefence:50s}
-scoreboard players add @s Temp 51 {EVSpecialDefence:51s}
-scoreboard players add @s Temp 52 {EVSpecialDefence:52s}
-scoreboard players add @s Temp 53 {EVSpecialDefence:53s}
-scoreboard players add @s Temp 54 {EVSpecialDefence:54s}
-scoreboard players add @s Temp 55 {EVSpecialDefence:55s}
-scoreboard players add @s Temp 56 {EVSpecialDefence:56s}
-scoreboard players add @s Temp 57 {EVSpecialDefence:57s}
-scoreboard players add @s Temp 58 {EVSpecialDefence:58s}
-scoreboard players add @s Temp 59 {EVSpecialDefence:59s}
-scoreboard players add @s Temp 60 {EVSpecialDefence:60s}
-scoreboard players add @s Temp 61 {EVSpecialDefence:61s}
-scoreboard players add @s Temp 62 {EVSpecialDefence:62s}
-scoreboard players add @s Temp 63 {EVSpecialDefence:63s}
-scoreboard players add @s Temp 64 {EVSpecialDefence:64s}
-scoreboard players add @s Temp 65 {EVSpecialDefence:65s}
-scoreboard players add @s Temp 66 {EVSpecialDefence:66s}
-scoreboard players add @s Temp 67 {EVSpecialDefence:67s}
-scoreboard players add @s Temp 68 {EVSpecialDefence:68s}
-scoreboard players add @s Temp 69 {EVSpecialDefence:69s}
-scoreboard players add @s Temp 70 {EVSpecialDefence:70s}
-scoreboard players add @s Temp 71 {EVSpecialDefence:71s}
-scoreboard players add @s Temp 72 {EVSpecialDefence:72s}
-scoreboard players add @s Temp 73 {EVSpecialDefence:73s}
-scoreboard players add @s Temp 74 {EVSpecialDefence:74s}
-scoreboard players add @s Temp 75 {EVSpecialDefence:75s}
-scoreboard players add @s Temp 76 {EVSpecialDefence:76s}
-scoreboard players add @s Temp 77 {EVSpecialDefence:77s}
-scoreboard players add @s Temp 78 {EVSpecialDefence:78s}
-scoreboard players add @s Temp 79 {EVSpecialDefence:79s}
-scoreboard players add @s Temp 80 {EVSpecialDefence:80s}
-scoreboard players add @s Temp 81 {EVSpecialDefence:81s}
-scoreboard players add @s Temp 82 {EVSpecialDefence:82s}
-scoreboard players add @s Temp 83 {EVSpecialDefence:83s}
-scoreboard players add @s Temp 84 {EVSpecialDefence:84s}
-scoreboard players add @s Temp 85 {EVSpecialDefence:85s}
-scoreboard players add @s Temp 86 {EVSpecialDefence:86s}
-scoreboard players add @s Temp 87 {EVSpecialDefence:87s}
-scoreboard players add @s Temp 88 {EVSpecialDefence:88s}
-scoreboard players add @s Temp 89 {EVSpecialDefence:89s}
-scoreboard players add @s Temp 90 {EVSpecialDefence:90s}
-scoreboard players add @s Temp 91 {EVSpecialDefence:91s}
-scoreboard players add @s Temp 92 {EVSpecialDefence:92s}
-scoreboard players add @s Temp 93 {EVSpecialDefence:93s}
-scoreboard players add @s Temp 94 {EVSpecialDefence:94s}
-scoreboard players add @s Temp 95 {EVSpecialDefence:95s}
-scoreboard players add @s Temp 96 {EVSpecialDefence:96s}
-scoreboard players add @s Temp 97 {EVSpecialDefence:97s}
-scoreboard players add @s Temp 98 {EVSpecialDefence:98s}
-scoreboard players add @s Temp 99 {EVSpecialDefence:99s}
-scoreboard players add @s Temp 100 {EVSpecialDefence:100s}
-scoreboard players add @s Temp 101 {EVSpecialDefence:101s}
-scoreboard players add @s Temp 102 {EVSpecialDefence:102s}
-scoreboard players add @s Temp 103 {EVSpecialDefence:103s}
-scoreboard players add @s Temp 104 {EVSpecialDefence:104s}
-scoreboard players add @s Temp 105 {EVSpecialDefence:105s}
-scoreboard players add @s Temp 106 {EVSpecialDefence:106s}
-scoreboard players add @s Temp 107 {EVSpecialDefence:107s}
-scoreboard players add @s Temp 108 {EVSpecialDefence:108s}
-scoreboard players add @s Temp 109 {EVSpecialDefence:109s}
-scoreboard players add @s Temp 110 {EVSpecialDefence:110s}
-scoreboard players add @s Temp 111 {EVSpecialDefence:111s}
-scoreboard players add @s Temp 112 {EVSpecialDefence:112s}
-scoreboard players add @s Temp 113 {EVSpecialDefence:113s}
-scoreboard players add @s Temp 114 {EVSpecialDefence:114s}
-scoreboard players add @s Temp 115 {EVSpecialDefence:115s}
-scoreboard players add @s Temp 116 {EVSpecialDefence:116s}
-scoreboard players add @s Temp 117 {EVSpecialDefence:117s}
-scoreboard players add @s Temp 118 {EVSpecialDefence:118s}
-scoreboard players add @s Temp 119 {EVSpecialDefence:119s}
-scoreboard players add @s Temp 120 {EVSpecialDefence:120s}
-scoreboard players add @s Temp 121 {EVSpecialDefence:121s}
-scoreboard players add @s Temp 122 {EVSpecialDefence:122s}
-scoreboard players add @s Temp 123 {EVSpecialDefence:123s}
-scoreboard players add @s Temp 124 {EVSpecialDefence:124s}
-scoreboard players add @s Temp 125 {EVSpecialDefence:125s}
-scoreboard players add @s Temp 126 {EVSpecialDefence:126s}
-scoreboard players add @s Temp 127 {EVSpecialDefence:127s}
-scoreboard players add @s Temp 128 {EVSpecialDefence:128s}
-scoreboard players add @s Temp 129 {EVSpecialDefence:129s}
-scoreboard players add @s Temp 130 {EVSpecialDefence:130s}
-scoreboard players add @s Temp 131 {EVSpecialDefence:131s}
-scoreboard players add @s Temp 132 {EVSpecialDefence:132s}
-scoreboard players add @s Temp 133 {EVSpecialDefence:133s}
-scoreboard players add @s Temp 134 {EVSpecialDefence:134s}
-scoreboard players add @s Temp 135 {EVSpecialDefence:135s}
-scoreboard players add @s Temp 136 {EVSpecialDefence:136s}
-scoreboard players add @s Temp 137 {EVSpecialDefence:137s}
-scoreboard players add @s Temp 138 {EVSpecialDefence:138s}
-scoreboard players add @s Temp 139 {EVSpecialDefence:139s}
-scoreboard players add @s Temp 140 {EVSpecialDefence:140s}
-scoreboard players add @s Temp 141 {EVSpecialDefence:141s}
-scoreboard players add @s Temp 142 {EVSpecialDefence:142s}
-scoreboard players add @s Temp 143 {EVSpecialDefence:143s}
-scoreboard players add @s Temp 144 {EVSpecialDefence:144s}
-scoreboard players add @s Temp 145 {EVSpecialDefence:145s}
-scoreboard players add @s Temp 146 {EVSpecialDefence:146s}
-scoreboard players add @s Temp 147 {EVSpecialDefence:147s}
-scoreboard players add @s Temp 148 {EVSpecialDefence:148s}
-scoreboard players add @s Temp 149 {EVSpecialDefence:149s}
-scoreboard players add @s Temp 150 {EVSpecialDefence:150s}
-scoreboard players add @s Temp 151 {EVSpecialDefence:151s}
-scoreboard players add @s Temp 152 {EVSpecialDefence:152s}
-scoreboard players add @s Temp 153 {EVSpecialDefence:153s}
-scoreboard players add @s Temp 154 {EVSpecialDefence:154s}
-scoreboard players add @s Temp 155 {EVSpecialDefence:155s}
-scoreboard players add @s Temp 156 {EVSpecialDefence:156s}
-scoreboard players add @s Temp 157 {EVSpecialDefence:157s}
-scoreboard players add @s Temp 158 {EVSpecialDefence:158s}
-scoreboard players add @s Temp 159 {EVSpecialDefence:159s}
-scoreboard players add @s Temp 160 {EVSpecialDefence:160s}
-scoreboard players add @s Temp 161 {EVSpecialDefence:161s}
-scoreboard players add @s Temp 162 {EVSpecialDefence:162s}
-scoreboard players add @s Temp 163 {EVSpecialDefence:163s}
-scoreboard players add @s Temp 164 {EVSpecialDefence:164s}
-scoreboard players add @s Temp 165 {EVSpecialDefence:165s}
-scoreboard players add @s Temp 166 {EVSpecialDefence:166s}
-scoreboard players add @s Temp 167 {EVSpecialDefence:167s}
-scoreboard players add @s Temp 168 {EVSpecialDefence:168s}
-scoreboard players add @s Temp 169 {EVSpecialDefence:169s}
-scoreboard players add @s Temp 170 {EVSpecialDefence:170s}
-scoreboard players add @s Temp 171 {EVSpecialDefence:171s}
-scoreboard players add @s Temp 172 {EVSpecialDefence:172s}
-scoreboard players add @s Temp 173 {EVSpecialDefence:173s}
-scoreboard players add @s Temp 174 {EVSpecialDefence:174s}
-scoreboard players add @s Temp 175 {EVSpecialDefence:175s}
-scoreboard players add @s Temp 176 {EVSpecialDefence:176s}
-scoreboard players add @s Temp 177 {EVSpecialDefence:177s}
-scoreboard players add @s Temp 178 {EVSpecialDefence:178s}
-scoreboard players add @s Temp 179 {EVSpecialDefence:179s}
-scoreboard players add @s Temp 180 {EVSpecialDefence:180s}
-scoreboard players add @s Temp 181 {EVSpecialDefence:181s}
-scoreboard players add @s Temp 182 {EVSpecialDefence:182s}
-scoreboard players add @s Temp 183 {EVSpecialDefence:183s}
-scoreboard players add @s Temp 184 {EVSpecialDefence:184s}
-scoreboard players add @s Temp 185 {EVSpecialDefence:185s}
-scoreboard players add @s Temp 186 {EVSpecialDefence:186s}
-scoreboard players add @s Temp 187 {EVSpecialDefence:187s}
-scoreboard players add @s Temp 188 {EVSpecialDefence:188s}
-scoreboard players add @s Temp 189 {EVSpecialDefence:189s}
-scoreboard players add @s Temp 190 {EVSpecialDefence:190s}
-scoreboard players add @s Temp 191 {EVSpecialDefence:191s}
-scoreboard players add @s Temp 192 {EVSpecialDefence:192s}
-scoreboard players add @s Temp 193 {EVSpecialDefence:193s}
-scoreboard players add @s Temp 194 {EVSpecialDefence:194s}
-scoreboard players add @s Temp 195 {EVSpecialDefence:195s}
-scoreboard players add @s Temp 196 {EVSpecialDefence:196s}
-scoreboard players add @s Temp 197 {EVSpecialDefence:197s}
-scoreboard players add @s Temp 198 {EVSpecialDefence:198s}
-scoreboard players add @s Temp 199 {EVSpecialDefence:199s}
-scoreboard players add @s Temp 200 {EVSpecialDefence:200s}
-scoreboard players add @s Temp 201 {EVSpecialDefence:201s}
-scoreboard players add @s Temp 202 {EVSpecialDefence:202s}
-scoreboard players add @s Temp 203 {EVSpecialDefence:203s}
-scoreboard players add @s Temp 204 {EVSpecialDefence:204s}
-scoreboard players add @s Temp 205 {EVSpecialDefence:205s}
-scoreboard players add @s Temp 206 {EVSpecialDefence:206s}
-scoreboard players add @s Temp 207 {EVSpecialDefence:207s}
-scoreboard players add @s Temp 208 {EVSpecialDefence:208s}
-scoreboard players add @s Temp 209 {EVSpecialDefence:209s}
-scoreboard players add @s Temp 210 {EVSpecialDefence:210s}
-scoreboard players add @s Temp 211 {EVSpecialDefence:211s}
-scoreboard players add @s Temp 212 {EVSpecialDefence:212s}
-scoreboard players add @s Temp 213 {EVSpecialDefence:213s}
-scoreboard players add @s Temp 214 {EVSpecialDefence:214s}
-scoreboard players add @s Temp 215 {EVSpecialDefence:215s}
-scoreboard players add @s Temp 216 {EVSpecialDefence:216s}
-scoreboard players add @s Temp 217 {EVSpecialDefence:217s}
-scoreboard players add @s Temp 218 {EVSpecialDefence:218s}
-scoreboard players add @s Temp 219 {EVSpecialDefence:219s}
-scoreboard players add @s Temp 220 {EVSpecialDefence:220s}
-scoreboard players add @s Temp 221 {EVSpecialDefence:221s}
-scoreboard players add @s Temp 222 {EVSpecialDefence:222s}
-scoreboard players add @s Temp 223 {EVSpecialDefence:223s}
-scoreboard players add @s Temp 224 {EVSpecialDefence:224s}
-scoreboard players add @s Temp 225 {EVSpecialDefence:225s}
-scoreboard players add @s Temp 226 {EVSpecialDefence:226s}
-scoreboard players add @s Temp 227 {EVSpecialDefence:227s}
-scoreboard players add @s Temp 228 {EVSpecialDefence:228s}
-scoreboard players add @s Temp 229 {EVSpecialDefence:229s}
-scoreboard players add @s Temp 230 {EVSpecialDefence:230s}
-scoreboard players add @s Temp 231 {EVSpecialDefence:231s}
-scoreboard players add @s Temp 232 {EVSpecialDefence:232s}
-scoreboard players add @s Temp 233 {EVSpecialDefence:233s}
-scoreboard players add @s Temp 234 {EVSpecialDefence:234s}
-scoreboard players add @s Temp 235 {EVSpecialDefence:235s}
-scoreboard players add @s Temp 236 {EVSpecialDefence:236s}
-scoreboard players add @s Temp 237 {EVSpecialDefence:237s}
-scoreboard players add @s Temp 238 {EVSpecialDefence:238s}
-scoreboard players add @s Temp 239 {EVSpecialDefence:239s}
-scoreboard players add @s Temp 240 {EVSpecialDefence:240s}
-scoreboard players add @s Temp 241 {EVSpecialDefence:241s}
-scoreboard players add @s Temp 242 {EVSpecialDefence:242s}
-scoreboard players add @s Temp 243 {EVSpecialDefence:243s}
-scoreboard players add @s Temp 244 {EVSpecialDefence:244s}
-scoreboard players add @s Temp 245 {EVSpecialDefence:245s}
-scoreboard players add @s Temp 246 {EVSpecialDefence:246s}
-scoreboard players add @s Temp 247 {EVSpecialDefence:247s}
-scoreboard players add @s Temp 248 {EVSpecialDefence:248s}
-scoreboard players add @s Temp 249 {EVSpecialDefence:249s}
-scoreboard players add @s Temp 250 {EVSpecialDefence:250s}
-scoreboard players add @s Temp 251 {EVSpecialDefence:251s}
-scoreboard players add @s Temp 252 {EVSpecialDefence:252s}
+scoreboard players add @s[nbt={EVSpecialDefence:1s}] Temp 1
+scoreboard players add @s[nbt={EVSpecialDefence:2s}] Temp 2
+scoreboard players add @s[nbt={EVSpecialDefence:3s}] Temp 3
+scoreboard players add @s[nbt={EVSpecialDefence:4s}] Temp 4
+scoreboard players add @s[nbt={EVSpecialDefence:5s}] Temp 5
+scoreboard players add @s[nbt={EVSpecialDefence:6s}] Temp 6
+scoreboard players add @s[nbt={EVSpecialDefence:7s}] Temp 7
+scoreboard players add @s[nbt={EVSpecialDefence:8s}] Temp 8
+scoreboard players add @s[nbt={EVSpecialDefence:9s}] Temp 9
+scoreboard players add @s[nbt={EVSpecialDefence:10s}] Temp 10
+scoreboard players add @s[nbt={EVSpecialDefence:11s}] Temp 11
+scoreboard players add @s[nbt={EVSpecialDefence:12s}] Temp 12
+scoreboard players add @s[nbt={EVSpecialDefence:13s}] Temp 13
+scoreboard players add @s[nbt={EVSpecialDefence:14s}] Temp 14
+scoreboard players add @s[nbt={EVSpecialDefence:15s}] Temp 15
+scoreboard players add @s[nbt={EVSpecialDefence:16s}] Temp 16
+scoreboard players add @s[nbt={EVSpecialDefence:17s}] Temp 17
+scoreboard players add @s[nbt={EVSpecialDefence:18s}] Temp 18
+scoreboard players add @s[nbt={EVSpecialDefence:19s}] Temp 19
+scoreboard players add @s[nbt={EVSpecialDefence:20s}] Temp 20
+scoreboard players add @s[nbt={EVSpecialDefence:21s}] Temp 21
+scoreboard players add @s[nbt={EVSpecialDefence:22s}] Temp 22
+scoreboard players add @s[nbt={EVSpecialDefence:23s}] Temp 23
+scoreboard players add @s[nbt={EVSpecialDefence:24s}] Temp 24
+scoreboard players add @s[nbt={EVSpecialDefence:25s}] Temp 25
+scoreboard players add @s[nbt={EVSpecialDefence:26s}] Temp 26
+scoreboard players add @s[nbt={EVSpecialDefence:27s}] Temp 27
+scoreboard players add @s[nbt={EVSpecialDefence:28s}] Temp 28
+scoreboard players add @s[nbt={EVSpecialDefence:29s}] Temp 29
+scoreboard players add @s[nbt={EVSpecialDefence:30s}] Temp 30
+scoreboard players add @s[nbt={EVSpecialDefence:31s}] Temp 31
+scoreboard players add @s[nbt={EVSpecialDefence:32s}] Temp 32
+scoreboard players add @s[nbt={EVSpecialDefence:33s}] Temp 33
+scoreboard players add @s[nbt={EVSpecialDefence:34s}] Temp 34
+scoreboard players add @s[nbt={EVSpecialDefence:35s}] Temp 35
+scoreboard players add @s[nbt={EVSpecialDefence:36s}] Temp 36
+scoreboard players add @s[nbt={EVSpecialDefence:37s}] Temp 37
+scoreboard players add @s[nbt={EVSpecialDefence:38s}] Temp 38
+scoreboard players add @s[nbt={EVSpecialDefence:39s}] Temp 39
+scoreboard players add @s[nbt={EVSpecialDefence:40s}] Temp 40
+scoreboard players add @s[nbt={EVSpecialDefence:41s}] Temp 41
+scoreboard players add @s[nbt={EVSpecialDefence:42s}] Temp 42
+scoreboard players add @s[nbt={EVSpecialDefence:43s}] Temp 43
+scoreboard players add @s[nbt={EVSpecialDefence:44s}] Temp 44
+scoreboard players add @s[nbt={EVSpecialDefence:45s}] Temp 45
+scoreboard players add @s[nbt={EVSpecialDefence:46s}] Temp 46
+scoreboard players add @s[nbt={EVSpecialDefence:47s}] Temp 47
+scoreboard players add @s[nbt={EVSpecialDefence:48s}] Temp 48
+scoreboard players add @s[nbt={EVSpecialDefence:49s}] Temp 49
+scoreboard players add @s[nbt={EVSpecialDefence:50s}] Temp 50
+scoreboard players add @s[nbt={EVSpecialDefence:51s}] Temp 51
+scoreboard players add @s[nbt={EVSpecialDefence:52s}] Temp 52
+scoreboard players add @s[nbt={EVSpecialDefence:53s}] Temp 53
+scoreboard players add @s[nbt={EVSpecialDefence:54s}] Temp 54
+scoreboard players add @s[nbt={EVSpecialDefence:55s}] Temp 55
+scoreboard players add @s[nbt={EVSpecialDefence:56s}] Temp 56
+scoreboard players add @s[nbt={EVSpecialDefence:57s}] Temp 57
+scoreboard players add @s[nbt={EVSpecialDefence:58s}] Temp 58
+scoreboard players add @s[nbt={EVSpecialDefence:59s}] Temp 59
+scoreboard players add @s[nbt={EVSpecialDefence:60s}] Temp 60
+scoreboard players add @s[nbt={EVSpecialDefence:61s}] Temp 61
+scoreboard players add @s[nbt={EVSpecialDefence:62s}] Temp 62
+scoreboard players add @s[nbt={EVSpecialDefence:63s}] Temp 63
+scoreboard players add @s[nbt={EVSpecialDefence:64s}] Temp 64
+scoreboard players add @s[nbt={EVSpecialDefence:65s}] Temp 65
+scoreboard players add @s[nbt={EVSpecialDefence:66s}] Temp 66
+scoreboard players add @s[nbt={EVSpecialDefence:67s}] Temp 67
+scoreboard players add @s[nbt={EVSpecialDefence:68s}] Temp 68
+scoreboard players add @s[nbt={EVSpecialDefence:69s}] Temp 69
+scoreboard players add @s[nbt={EVSpecialDefence:70s}] Temp 70
+scoreboard players add @s[nbt={EVSpecialDefence:71s}] Temp 71
+scoreboard players add @s[nbt={EVSpecialDefence:72s}] Temp 72
+scoreboard players add @s[nbt={EVSpecialDefence:73s}] Temp 73
+scoreboard players add @s[nbt={EVSpecialDefence:74s}] Temp 74
+scoreboard players add @s[nbt={EVSpecialDefence:75s}] Temp 75
+scoreboard players add @s[nbt={EVSpecialDefence:76s}] Temp 76
+scoreboard players add @s[nbt={EVSpecialDefence:77s}] Temp 77
+scoreboard players add @s[nbt={EVSpecialDefence:78s}] Temp 78
+scoreboard players add @s[nbt={EVSpecialDefence:79s}] Temp 79
+scoreboard players add @s[nbt={EVSpecialDefence:80s}] Temp 80
+scoreboard players add @s[nbt={EVSpecialDefence:81s}] Temp 81
+scoreboard players add @s[nbt={EVSpecialDefence:82s}] Temp 82
+scoreboard players add @s[nbt={EVSpecialDefence:83s}] Temp 83
+scoreboard players add @s[nbt={EVSpecialDefence:84s}] Temp 84
+scoreboard players add @s[nbt={EVSpecialDefence:85s}] Temp 85
+scoreboard players add @s[nbt={EVSpecialDefence:86s}] Temp 86
+scoreboard players add @s[nbt={EVSpecialDefence:87s}] Temp 87
+scoreboard players add @s[nbt={EVSpecialDefence:88s}] Temp 88
+scoreboard players add @s[nbt={EVSpecialDefence:89s}] Temp 89
+scoreboard players add @s[nbt={EVSpecialDefence:90s}] Temp 90
+scoreboard players add @s[nbt={EVSpecialDefence:91s}] Temp 91
+scoreboard players add @s[nbt={EVSpecialDefence:92s}] Temp 92
+scoreboard players add @s[nbt={EVSpecialDefence:93s}] Temp 93
+scoreboard players add @s[nbt={EVSpecialDefence:94s}] Temp 94
+scoreboard players add @s[nbt={EVSpecialDefence:95s}] Temp 95
+scoreboard players add @s[nbt={EVSpecialDefence:96s}] Temp 96
+scoreboard players add @s[nbt={EVSpecialDefence:97s}] Temp 97
+scoreboard players add @s[nbt={EVSpecialDefence:98s}] Temp 98
+scoreboard players add @s[nbt={EVSpecialDefence:99s}] Temp 99
+scoreboard players add @s[nbt={EVSpecialDefence:100s}] Temp 100
+scoreboard players add @s[nbt={EVSpecialDefence:101s}] Temp 101
+scoreboard players add @s[nbt={EVSpecialDefence:102s}] Temp 102
+scoreboard players add @s[nbt={EVSpecialDefence:103s}] Temp 103
+scoreboard players add @s[nbt={EVSpecialDefence:104s}] Temp 104
+scoreboard players add @s[nbt={EVSpecialDefence:105s}] Temp 105
+scoreboard players add @s[nbt={EVSpecialDefence:106s}] Temp 106
+scoreboard players add @s[nbt={EVSpecialDefence:107s}] Temp 107
+scoreboard players add @s[nbt={EVSpecialDefence:108s}] Temp 108
+scoreboard players add @s[nbt={EVSpecialDefence:109s}] Temp 109
+scoreboard players add @s[nbt={EVSpecialDefence:110s}] Temp 110
+scoreboard players add @s[nbt={EVSpecialDefence:111s}] Temp 111
+scoreboard players add @s[nbt={EVSpecialDefence:112s}] Temp 112
+scoreboard players add @s[nbt={EVSpecialDefence:113s}] Temp 113
+scoreboard players add @s[nbt={EVSpecialDefence:114s}] Temp 114
+scoreboard players add @s[nbt={EVSpecialDefence:115s}] Temp 115
+scoreboard players add @s[nbt={EVSpecialDefence:116s}] Temp 116
+scoreboard players add @s[nbt={EVSpecialDefence:117s}] Temp 117
+scoreboard players add @s[nbt={EVSpecialDefence:118s}] Temp 118
+scoreboard players add @s[nbt={EVSpecialDefence:119s}] Temp 119
+scoreboard players add @s[nbt={EVSpecialDefence:120s}] Temp 120
+scoreboard players add @s[nbt={EVSpecialDefence:121s}] Temp 121
+scoreboard players add @s[nbt={EVSpecialDefence:122s}] Temp 122
+scoreboard players add @s[nbt={EVSpecialDefence:123s}] Temp 123
+scoreboard players add @s[nbt={EVSpecialDefence:124s}] Temp 124
+scoreboard players add @s[nbt={EVSpecialDefence:125s}] Temp 125
+scoreboard players add @s[nbt={EVSpecialDefence:126s}] Temp 126
+scoreboard players add @s[nbt={EVSpecialDefence:127s}] Temp 127
+scoreboard players add @s[nbt={EVSpecialDefence:128s}] Temp 128
+scoreboard players add @s[nbt={EVSpecialDefence:129s}] Temp 129
+scoreboard players add @s[nbt={EVSpecialDefence:130s}] Temp 130
+scoreboard players add @s[nbt={EVSpecialDefence:131s}] Temp 131
+scoreboard players add @s[nbt={EVSpecialDefence:132s}] Temp 132
+scoreboard players add @s[nbt={EVSpecialDefence:133s}] Temp 133
+scoreboard players add @s[nbt={EVSpecialDefence:134s}] Temp 134
+scoreboard players add @s[nbt={EVSpecialDefence:135s}] Temp 135
+scoreboard players add @s[nbt={EVSpecialDefence:136s}] Temp 136
+scoreboard players add @s[nbt={EVSpecialDefence:137s}] Temp 137
+scoreboard players add @s[nbt={EVSpecialDefence:138s}] Temp 138
+scoreboard players add @s[nbt={EVSpecialDefence:139s}] Temp 139
+scoreboard players add @s[nbt={EVSpecialDefence:140s}] Temp 140
+scoreboard players add @s[nbt={EVSpecialDefence:141s}] Temp 141
+scoreboard players add @s[nbt={EVSpecialDefence:142s}] Temp 142
+scoreboard players add @s[nbt={EVSpecialDefence:143s}] Temp 143
+scoreboard players add @s[nbt={EVSpecialDefence:144s}] Temp 144
+scoreboard players add @s[nbt={EVSpecialDefence:145s}] Temp 145
+scoreboard players add @s[nbt={EVSpecialDefence:146s}] Temp 146
+scoreboard players add @s[nbt={EVSpecialDefence:147s}] Temp 147
+scoreboard players add @s[nbt={EVSpecialDefence:148s}] Temp 148
+scoreboard players add @s[nbt={EVSpecialDefence:149s}] Temp 149
+scoreboard players add @s[nbt={EVSpecialDefence:150s}] Temp 150
+scoreboard players add @s[nbt={EVSpecialDefence:151s}] Temp 151
+scoreboard players add @s[nbt={EVSpecialDefence:152s}] Temp 152
+scoreboard players add @s[nbt={EVSpecialDefence:153s}] Temp 153
+scoreboard players add @s[nbt={EVSpecialDefence:154s}] Temp 154
+scoreboard players add @s[nbt={EVSpecialDefence:155s}] Temp 155
+scoreboard players add @s[nbt={EVSpecialDefence:156s}] Temp 156
+scoreboard players add @s[nbt={EVSpecialDefence:157s}] Temp 157
+scoreboard players add @s[nbt={EVSpecialDefence:158s}] Temp 158
+scoreboard players add @s[nbt={EVSpecialDefence:159s}] Temp 159
+scoreboard players add @s[nbt={EVSpecialDefence:160s}] Temp 160
+scoreboard players add @s[nbt={EVSpecialDefence:161s}] Temp 161
+scoreboard players add @s[nbt={EVSpecialDefence:162s}] Temp 162
+scoreboard players add @s[nbt={EVSpecialDefence:163s}] Temp 163
+scoreboard players add @s[nbt={EVSpecialDefence:164s}] Temp 164
+scoreboard players add @s[nbt={EVSpecialDefence:165s}] Temp 165
+scoreboard players add @s[nbt={EVSpecialDefence:166s}] Temp 166
+scoreboard players add @s[nbt={EVSpecialDefence:167s}] Temp 167
+scoreboard players add @s[nbt={EVSpecialDefence:168s}] Temp 168
+scoreboard players add @s[nbt={EVSpecialDefence:169s}] Temp 169
+scoreboard players add @s[nbt={EVSpecialDefence:170s}] Temp 170
+scoreboard players add @s[nbt={EVSpecialDefence:171s}] Temp 171
+scoreboard players add @s[nbt={EVSpecialDefence:172s}] Temp 172
+scoreboard players add @s[nbt={EVSpecialDefence:173s}] Temp 173
+scoreboard players add @s[nbt={EVSpecialDefence:174s}] Temp 174
+scoreboard players add @s[nbt={EVSpecialDefence:175s}] Temp 175
+scoreboard players add @s[nbt={EVSpecialDefence:176s}] Temp 176
+scoreboard players add @s[nbt={EVSpecialDefence:177s}] Temp 177
+scoreboard players add @s[nbt={EVSpecialDefence:178s}] Temp 178
+scoreboard players add @s[nbt={EVSpecialDefence:179s}] Temp 179
+scoreboard players add @s[nbt={EVSpecialDefence:180s}] Temp 180
+scoreboard players add @s[nbt={EVSpecialDefence:181s}] Temp 181
+scoreboard players add @s[nbt={EVSpecialDefence:182s}] Temp 182
+scoreboard players add @s[nbt={EVSpecialDefence:183s}] Temp 183
+scoreboard players add @s[nbt={EVSpecialDefence:184s}] Temp 184
+scoreboard players add @s[nbt={EVSpecialDefence:185s}] Temp 185
+scoreboard players add @s[nbt={EVSpecialDefence:186s}] Temp 186
+scoreboard players add @s[nbt={EVSpecialDefence:187s}] Temp 187
+scoreboard players add @s[nbt={EVSpecialDefence:188s}] Temp 188
+scoreboard players add @s[nbt={EVSpecialDefence:189s}] Temp 189
+scoreboard players add @s[nbt={EVSpecialDefence:190s}] Temp 190
+scoreboard players add @s[nbt={EVSpecialDefence:191s}] Temp 191
+scoreboard players add @s[nbt={EVSpecialDefence:192s}] Temp 192
+scoreboard players add @s[nbt={EVSpecialDefence:193s}] Temp 193
+scoreboard players add @s[nbt={EVSpecialDefence:194s}] Temp 194
+scoreboard players add @s[nbt={EVSpecialDefence:195s}] Temp 195
+scoreboard players add @s[nbt={EVSpecialDefence:196s}] Temp 196
+scoreboard players add @s[nbt={EVSpecialDefence:197s}] Temp 197
+scoreboard players add @s[nbt={EVSpecialDefence:198s}] Temp 198
+scoreboard players add @s[nbt={EVSpecialDefence:199s}] Temp 199
+scoreboard players add @s[nbt={EVSpecialDefence:200s}] Temp 200
+scoreboard players add @s[nbt={EVSpecialDefence:201s}] Temp 201
+scoreboard players add @s[nbt={EVSpecialDefence:202s}] Temp 202
+scoreboard players add @s[nbt={EVSpecialDefence:203s}] Temp 203
+scoreboard players add @s[nbt={EVSpecialDefence:204s}] Temp 204
+scoreboard players add @s[nbt={EVSpecialDefence:205s}] Temp 205
+scoreboard players add @s[nbt={EVSpecialDefence:206s}] Temp 206
+scoreboard players add @s[nbt={EVSpecialDefence:207s}] Temp 207
+scoreboard players add @s[nbt={EVSpecialDefence:208s}] Temp 208
+scoreboard players add @s[nbt={EVSpecialDefence:209s}] Temp 209
+scoreboard players add @s[nbt={EVSpecialDefence:210s}] Temp 210
+scoreboard players add @s[nbt={EVSpecialDefence:211s}] Temp 211
+scoreboard players add @s[nbt={EVSpecialDefence:212s}] Temp 212
+scoreboard players add @s[nbt={EVSpecialDefence:213s}] Temp 213
+scoreboard players add @s[nbt={EVSpecialDefence:214s}] Temp 214
+scoreboard players add @s[nbt={EVSpecialDefence:215s}] Temp 215
+scoreboard players add @s[nbt={EVSpecialDefence:216s}] Temp 216
+scoreboard players add @s[nbt={EVSpecialDefence:217s}] Temp 217
+scoreboard players add @s[nbt={EVSpecialDefence:218s}] Temp 218
+scoreboard players add @s[nbt={EVSpecialDefence:219s}] Temp 219
+scoreboard players add @s[nbt={EVSpecialDefence:220s}] Temp 220
+scoreboard players add @s[nbt={EVSpecialDefence:221s}] Temp 221
+scoreboard players add @s[nbt={EVSpecialDefence:222s}] Temp 222
+scoreboard players add @s[nbt={EVSpecialDefence:223s}] Temp 223
+scoreboard players add @s[nbt={EVSpecialDefence:224s}] Temp 224
+scoreboard players add @s[nbt={EVSpecialDefence:225s}] Temp 225
+scoreboard players add @s[nbt={EVSpecialDefence:226s}] Temp 226
+scoreboard players add @s[nbt={EVSpecialDefence:227s}] Temp 227
+scoreboard players add @s[nbt={EVSpecialDefence:228s}] Temp 228
+scoreboard players add @s[nbt={EVSpecialDefence:229s}] Temp 229
+scoreboard players add @s[nbt={EVSpecialDefence:230s}] Temp 230
+scoreboard players add @s[nbt={EVSpecialDefence:231s}] Temp 231
+scoreboard players add @s[nbt={EVSpecialDefence:232s}] Temp 232
+scoreboard players add @s[nbt={EVSpecialDefence:233s}] Temp 233
+scoreboard players add @s[nbt={EVSpecialDefence:234s}] Temp 234
+scoreboard players add @s[nbt={EVSpecialDefence:235s}] Temp 235
+scoreboard players add @s[nbt={EVSpecialDefence:236s}] Temp 236
+scoreboard players add @s[nbt={EVSpecialDefence:237s}] Temp 237
+scoreboard players add @s[nbt={EVSpecialDefence:238s}] Temp 238
+scoreboard players add @s[nbt={EVSpecialDefence:239s}] Temp 239
+scoreboard players add @s[nbt={EVSpecialDefence:240s}] Temp 240
+scoreboard players add @s[nbt={EVSpecialDefence:241s}] Temp 241
+scoreboard players add @s[nbt={EVSpecialDefence:242s}] Temp 242
+scoreboard players add @s[nbt={EVSpecialDefence:243s}] Temp 243
+scoreboard players add @s[nbt={EVSpecialDefence:244s}] Temp 244
+scoreboard players add @s[nbt={EVSpecialDefence:245s}] Temp 245
+scoreboard players add @s[nbt={EVSpecialDefence:246s}] Temp 246
+scoreboard players add @s[nbt={EVSpecialDefence:247s}] Temp 247
+scoreboard players add @s[nbt={EVSpecialDefence:248s}] Temp 248
+scoreboard players add @s[nbt={EVSpecialDefence:249s}] Temp 249
+scoreboard players add @s[nbt={EVSpecialDefence:250s}] Temp 250
+scoreboard players add @s[nbt={EVSpecialDefence:251s}] Temp 251
+scoreboard players add @s[nbt={EVSpecialDefence:252s}] Temp 252
 
 
 
 
 
-scoreboard players add @s Temp 1 {EVHP:1s}
-scoreboard players add @s Temp 2 {EVHP:2s}
-scoreboard players add @s Temp 3 {EVHP:3s}
-scoreboard players add @s Temp 4 {EVHP:4s}
-scoreboard players add @s Temp 5 {EVHP:5s}
-scoreboard players add @s Temp 6 {EVHP:6s}
-scoreboard players add @s Temp 7 {EVHP:7s}
-scoreboard players add @s Temp 8 {EVHP:8s}
-scoreboard players add @s Temp 9 {EVHP:9s}
-scoreboard players add @s Temp 10 {EVHP:10s}
-scoreboard players add @s Temp 11 {EVHP:11s}
-scoreboard players add @s Temp 12 {EVHP:12s}
-scoreboard players add @s Temp 13 {EVHP:13s}
-scoreboard players add @s Temp 14 {EVHP:14s}
-scoreboard players add @s Temp 15 {EVHP:15s}
-scoreboard players add @s Temp 16 {EVHP:16s}
-scoreboard players add @s Temp 17 {EVHP:17s}
-scoreboard players add @s Temp 18 {EVHP:18s}
-scoreboard players add @s Temp 19 {EVHP:19s}
-scoreboard players add @s Temp 20 {EVHP:20s}
-scoreboard players add @s Temp 21 {EVHP:21s}
-scoreboard players add @s Temp 22 {EVHP:22s}
-scoreboard players add @s Temp 23 {EVHP:23s}
-scoreboard players add @s Temp 24 {EVHP:24s}
-scoreboard players add @s Temp 25 {EVHP:25s}
-scoreboard players add @s Temp 26 {EVHP:26s}
-scoreboard players add @s Temp 27 {EVHP:27s}
-scoreboard players add @s Temp 28 {EVHP:28s}
-scoreboard players add @s Temp 29 {EVHP:29s}
-scoreboard players add @s Temp 30 {EVHP:30s}
-scoreboard players add @s Temp 31 {EVHP:31s}
-scoreboard players add @s Temp 32 {EVHP:32s}
-scoreboard players add @s Temp 33 {EVHP:33s}
-scoreboard players add @s Temp 34 {EVHP:34s}
-scoreboard players add @s Temp 35 {EVHP:35s}
-scoreboard players add @s Temp 36 {EVHP:36s}
-scoreboard players add @s Temp 37 {EVHP:37s}
-scoreboard players add @s Temp 38 {EVHP:38s}
-scoreboard players add @s Temp 39 {EVHP:39s}
-scoreboard players add @s Temp 40 {EVHP:40s}
-scoreboard players add @s Temp 41 {EVHP:41s}
-scoreboard players add @s Temp 42 {EVHP:42s}
-scoreboard players add @s Temp 43 {EVHP:43s}
-scoreboard players add @s Temp 44 {EVHP:44s}
-scoreboard players add @s Temp 45 {EVHP:45s}
-scoreboard players add @s Temp 46 {EVHP:46s}
-scoreboard players add @s Temp 47 {EVHP:47s}
-scoreboard players add @s Temp 48 {EVHP:48s}
-scoreboard players add @s Temp 49 {EVHP:49s}
-scoreboard players add @s Temp 50 {EVHP:50s}
-scoreboard players add @s Temp 51 {EVHP:51s}
-scoreboard players add @s Temp 52 {EVHP:52s}
-scoreboard players add @s Temp 53 {EVHP:53s}
-scoreboard players add @s Temp 54 {EVHP:54s}
-scoreboard players add @s Temp 55 {EVHP:55s}
-scoreboard players add @s Temp 56 {EVHP:56s}
-scoreboard players add @s Temp 57 {EVHP:57s}
-scoreboard players add @s Temp 58 {EVHP:58s}
-scoreboard players add @s Temp 59 {EVHP:59s}
-scoreboard players add @s Temp 60 {EVHP:60s}
-scoreboard players add @s Temp 61 {EVHP:61s}
-scoreboard players add @s Temp 62 {EVHP:62s}
-scoreboard players add @s Temp 63 {EVHP:63s}
-scoreboard players add @s Temp 64 {EVHP:64s}
-scoreboard players add @s Temp 65 {EVHP:65s}
-scoreboard players add @s Temp 66 {EVHP:66s}
-scoreboard players add @s Temp 67 {EVHP:67s}
-scoreboard players add @s Temp 68 {EVHP:68s}
-scoreboard players add @s Temp 69 {EVHP:69s}
-scoreboard players add @s Temp 70 {EVHP:70s}
-scoreboard players add @s Temp 71 {EVHP:71s}
-scoreboard players add @s Temp 72 {EVHP:72s}
-scoreboard players add @s Temp 73 {EVHP:73s}
-scoreboard players add @s Temp 74 {EVHP:74s}
-scoreboard players add @s Temp 75 {EVHP:75s}
-scoreboard players add @s Temp 76 {EVHP:76s}
-scoreboard players add @s Temp 77 {EVHP:77s}
-scoreboard players add @s Temp 78 {EVHP:78s}
-scoreboard players add @s Temp 79 {EVHP:79s}
-scoreboard players add @s Temp 80 {EVHP:80s}
-scoreboard players add @s Temp 81 {EVHP:81s}
-scoreboard players add @s Temp 82 {EVHP:82s}
-scoreboard players add @s Temp 83 {EVHP:83s}
-scoreboard players add @s Temp 84 {EVHP:84s}
-scoreboard players add @s Temp 85 {EVHP:85s}
-scoreboard players add @s Temp 86 {EVHP:86s}
-scoreboard players add @s Temp 87 {EVHP:87s}
-scoreboard players add @s Temp 88 {EVHP:88s}
-scoreboard players add @s Temp 89 {EVHP:89s}
-scoreboard players add @s Temp 90 {EVHP:90s}
-scoreboard players add @s Temp 91 {EVHP:91s}
-scoreboard players add @s Temp 92 {EVHP:92s}
-scoreboard players add @s Temp 93 {EVHP:93s}
-scoreboard players add @s Temp 94 {EVHP:94s}
-scoreboard players add @s Temp 95 {EVHP:95s}
-scoreboard players add @s Temp 96 {EVHP:96s}
-scoreboard players add @s Temp 97 {EVHP:97s}
-scoreboard players add @s Temp 98 {EVHP:98s}
-scoreboard players add @s Temp 99 {EVHP:99s}
-scoreboard players add @s Temp 100 {EVHP:100s}
-scoreboard players add @s Temp 101 {EVHP:101s}
-scoreboard players add @s Temp 102 {EVHP:102s}
-scoreboard players add @s Temp 103 {EVHP:103s}
-scoreboard players add @s Temp 104 {EVHP:104s}
-scoreboard players add @s Temp 105 {EVHP:105s}
-scoreboard players add @s Temp 106 {EVHP:106s}
-scoreboard players add @s Temp 107 {EVHP:107s}
-scoreboard players add @s Temp 108 {EVHP:108s}
-scoreboard players add @s Temp 109 {EVHP:109s}
-scoreboard players add @s Temp 110 {EVHP:110s}
-scoreboard players add @s Temp 111 {EVHP:111s}
-scoreboard players add @s Temp 112 {EVHP:112s}
-scoreboard players add @s Temp 113 {EVHP:113s}
-scoreboard players add @s Temp 114 {EVHP:114s}
-scoreboard players add @s Temp 115 {EVHP:115s}
-scoreboard players add @s Temp 116 {EVHP:116s}
-scoreboard players add @s Temp 117 {EVHP:117s}
-scoreboard players add @s Temp 118 {EVHP:118s}
-scoreboard players add @s Temp 119 {EVHP:119s}
-scoreboard players add @s Temp 120 {EVHP:120s}
-scoreboard players add @s Temp 121 {EVHP:121s}
-scoreboard players add @s Temp 122 {EVHP:122s}
-scoreboard players add @s Temp 123 {EVHP:123s}
-scoreboard players add @s Temp 124 {EVHP:124s}
-scoreboard players add @s Temp 125 {EVHP:125s}
-scoreboard players add @s Temp 126 {EVHP:126s}
-scoreboard players add @s Temp 127 {EVHP:127s}
-scoreboard players add @s Temp 128 {EVHP:128s}
-scoreboard players add @s Temp 129 {EVHP:129s}
-scoreboard players add @s Temp 130 {EVHP:130s}
-scoreboard players add @s Temp 131 {EVHP:131s}
-scoreboard players add @s Temp 132 {EVHP:132s}
-scoreboard players add @s Temp 133 {EVHP:133s}
-scoreboard players add @s Temp 134 {EVHP:134s}
-scoreboard players add @s Temp 135 {EVHP:135s}
-scoreboard players add @s Temp 136 {EVHP:136s}
-scoreboard players add @s Temp 137 {EVHP:137s}
-scoreboard players add @s Temp 138 {EVHP:138s}
-scoreboard players add @s Temp 139 {EVHP:139s}
-scoreboard players add @s Temp 140 {EVHP:140s}
-scoreboard players add @s Temp 141 {EVHP:141s}
-scoreboard players add @s Temp 142 {EVHP:142s}
-scoreboard players add @s Temp 143 {EVHP:143s}
-scoreboard players add @s Temp 144 {EVHP:144s}
-scoreboard players add @s Temp 145 {EVHP:145s}
-scoreboard players add @s Temp 146 {EVHP:146s}
-scoreboard players add @s Temp 147 {EVHP:147s}
-scoreboard players add @s Temp 148 {EVHP:148s}
-scoreboard players add @s Temp 149 {EVHP:149s}
-scoreboard players add @s Temp 150 {EVHP:150s}
-scoreboard players add @s Temp 151 {EVHP:151s}
-scoreboard players add @s Temp 152 {EVHP:152s}
-scoreboard players add @s Temp 153 {EVHP:153s}
-scoreboard players add @s Temp 154 {EVHP:154s}
-scoreboard players add @s Temp 155 {EVHP:155s}
-scoreboard players add @s Temp 156 {EVHP:156s}
-scoreboard players add @s Temp 157 {EVHP:157s}
-scoreboard players add @s Temp 158 {EVHP:158s}
-scoreboard players add @s Temp 159 {EVHP:159s}
-scoreboard players add @s Temp 160 {EVHP:160s}
-scoreboard players add @s Temp 161 {EVHP:161s}
-scoreboard players add @s Temp 162 {EVHP:162s}
-scoreboard players add @s Temp 163 {EVHP:163s}
-scoreboard players add @s Temp 164 {EVHP:164s}
-scoreboard players add @s Temp 165 {EVHP:165s}
-scoreboard players add @s Temp 166 {EVHP:166s}
-scoreboard players add @s Temp 167 {EVHP:167s}
-scoreboard players add @s Temp 168 {EVHP:168s}
-scoreboard players add @s Temp 169 {EVHP:169s}
-scoreboard players add @s Temp 170 {EVHP:170s}
-scoreboard players add @s Temp 171 {EVHP:171s}
-scoreboard players add @s Temp 172 {EVHP:172s}
-scoreboard players add @s Temp 173 {EVHP:173s}
-scoreboard players add @s Temp 174 {EVHP:174s}
-scoreboard players add @s Temp 175 {EVHP:175s}
-scoreboard players add @s Temp 176 {EVHP:176s}
-scoreboard players add @s Temp 177 {EVHP:177s}
-scoreboard players add @s Temp 178 {EVHP:178s}
-scoreboard players add @s Temp 179 {EVHP:179s}
-scoreboard players add @s Temp 180 {EVHP:180s}
-scoreboard players add @s Temp 181 {EVHP:181s}
-scoreboard players add @s Temp 182 {EVHP:182s}
-scoreboard players add @s Temp 183 {EVHP:183s}
-scoreboard players add @s Temp 184 {EVHP:184s}
-scoreboard players add @s Temp 185 {EVHP:185s}
-scoreboard players add @s Temp 186 {EVHP:186s}
-scoreboard players add @s Temp 187 {EVHP:187s}
-scoreboard players add @s Temp 188 {EVHP:188s}
-scoreboard players add @s Temp 189 {EVHP:189s}
-scoreboard players add @s Temp 190 {EVHP:190s}
-scoreboard players add @s Temp 191 {EVHP:191s}
-scoreboard players add @s Temp 192 {EVHP:192s}
-scoreboard players add @s Temp 193 {EVHP:193s}
-scoreboard players add @s Temp 194 {EVHP:194s}
-scoreboard players add @s Temp 195 {EVHP:195s}
-scoreboard players add @s Temp 196 {EVHP:196s}
-scoreboard players add @s Temp 197 {EVHP:197s}
-scoreboard players add @s Temp 198 {EVHP:198s}
-scoreboard players add @s Temp 199 {EVHP:199s}
-scoreboard players add @s Temp 200 {EVHP:200s}
-scoreboard players add @s Temp 201 {EVHP:201s}
-scoreboard players add @s Temp 202 {EVHP:202s}
-scoreboard players add @s Temp 203 {EVHP:203s}
-scoreboard players add @s Temp 204 {EVHP:204s}
-scoreboard players add @s Temp 205 {EVHP:205s}
-scoreboard players add @s Temp 206 {EVHP:206s}
-scoreboard players add @s Temp 207 {EVHP:207s}
-scoreboard players add @s Temp 208 {EVHP:208s}
-scoreboard players add @s Temp 209 {EVHP:209s}
-scoreboard players add @s Temp 210 {EVHP:210s}
-scoreboard players add @s Temp 211 {EVHP:211s}
-scoreboard players add @s Temp 212 {EVHP:212s}
-scoreboard players add @s Temp 213 {EVHP:213s}
-scoreboard players add @s Temp 214 {EVHP:214s}
-scoreboard players add @s Temp 215 {EVHP:215s}
-scoreboard players add @s Temp 216 {EVHP:216s}
-scoreboard players add @s Temp 217 {EVHP:217s}
-scoreboard players add @s Temp 218 {EVHP:218s}
-scoreboard players add @s Temp 219 {EVHP:219s}
-scoreboard players add @s Temp 220 {EVHP:220s}
-scoreboard players add @s Temp 221 {EVHP:221s}
-scoreboard players add @s Temp 222 {EVHP:222s}
-scoreboard players add @s Temp 223 {EVHP:223s}
-scoreboard players add @s Temp 224 {EVHP:224s}
-scoreboard players add @s Temp 225 {EVHP:225s}
-scoreboard players add @s Temp 226 {EVHP:226s}
-scoreboard players add @s Temp 227 {EVHP:227s}
-scoreboard players add @s Temp 228 {EVHP:228s}
-scoreboard players add @s Temp 229 {EVHP:229s}
-scoreboard players add @s Temp 230 {EVHP:230s}
-scoreboard players add @s Temp 231 {EVHP:231s}
-scoreboard players add @s Temp 232 {EVHP:232s}
-scoreboard players add @s Temp 233 {EVHP:233s}
-scoreboard players add @s Temp 234 {EVHP:234s}
-scoreboard players add @s Temp 235 {EVHP:235s}
-scoreboard players add @s Temp 236 {EVHP:236s}
-scoreboard players add @s Temp 237 {EVHP:237s}
-scoreboard players add @s Temp 238 {EVHP:238s}
-scoreboard players add @s Temp 239 {EVHP:239s}
-scoreboard players add @s Temp 240 {EVHP:240s}
-scoreboard players add @s Temp 241 {EVHP:241s}
-scoreboard players add @s Temp 242 {EVHP:242s}
-scoreboard players add @s Temp 243 {EVHP:243s}
-scoreboard players add @s Temp 244 {EVHP:244s}
-scoreboard players add @s Temp 245 {EVHP:245s}
-scoreboard players add @s Temp 246 {EVHP:246s}
-scoreboard players add @s Temp 247 {EVHP:247s}
-scoreboard players add @s Temp 248 {EVHP:248s}
-scoreboard players add @s Temp 249 {EVHP:249s}
-scoreboard players add @s Temp 250 {EVHP:250s}
-scoreboard players add @s Temp 251 {EVHP:251s}
-scoreboard players add @s Temp 252 {EVHP:252s}
+scoreboard players add @s[nbt={EVHP:1s}] Temp 1
+scoreboard players add @s[nbt={EVHP:2s}] Temp 2
+scoreboard players add @s[nbt={EVHP:3s}] Temp 3
+scoreboard players add @s[nbt={EVHP:4s}] Temp 4
+scoreboard players add @s[nbt={EVHP:5s}] Temp 5
+scoreboard players add @s[nbt={EVHP:6s}] Temp 6
+scoreboard players add @s[nbt={EVHP:7s}] Temp 7
+scoreboard players add @s[nbt={EVHP:8s}] Temp 8
+scoreboard players add @s[nbt={EVHP:9s}] Temp 9
+scoreboard players add @s[nbt={EVHP:10s}] Temp 10
+scoreboard players add @s[nbt={EVHP:11s}] Temp 11
+scoreboard players add @s[nbt={EVHP:12s}] Temp 12
+scoreboard players add @s[nbt={EVHP:13s}] Temp 13
+scoreboard players add @s[nbt={EVHP:14s}] Temp 14
+scoreboard players add @s[nbt={EVHP:15s}] Temp 15
+scoreboard players add @s[nbt={EVHP:16s}] Temp 16
+scoreboard players add @s[nbt={EVHP:17s}] Temp 17
+scoreboard players add @s[nbt={EVHP:18s}] Temp 18
+scoreboard players add @s[nbt={EVHP:19s}] Temp 19
+scoreboard players add @s[nbt={EVHP:20s}] Temp 20
+scoreboard players add @s[nbt={EVHP:21s}] Temp 21
+scoreboard players add @s[nbt={EVHP:22s}] Temp 22
+scoreboard players add @s[nbt={EVHP:23s}] Temp 23
+scoreboard players add @s[nbt={EVHP:24s}] Temp 24
+scoreboard players add @s[nbt={EVHP:25s}] Temp 25
+scoreboard players add @s[nbt={EVHP:26s}] Temp 26
+scoreboard players add @s[nbt={EVHP:27s}] Temp 27
+scoreboard players add @s[nbt={EVHP:28s}] Temp 28
+scoreboard players add @s[nbt={EVHP:29s}] Temp 29
+scoreboard players add @s[nbt={EVHP:30s}] Temp 30
+scoreboard players add @s[nbt={EVHP:31s}] Temp 31
+scoreboard players add @s[nbt={EVHP:32s}] Temp 32
+scoreboard players add @s[nbt={EVHP:33s}] Temp 33
+scoreboard players add @s[nbt={EVHP:34s}] Temp 34
+scoreboard players add @s[nbt={EVHP:35s}] Temp 35
+scoreboard players add @s[nbt={EVHP:36s}] Temp 36
+scoreboard players add @s[nbt={EVHP:37s}] Temp 37
+scoreboard players add @s[nbt={EVHP:38s}] Temp 38
+scoreboard players add @s[nbt={EVHP:39s}] Temp 39
+scoreboard players add @s[nbt={EVHP:40s}] Temp 40
+scoreboard players add @s[nbt={EVHP:41s}] Temp 41
+scoreboard players add @s[nbt={EVHP:42s}] Temp 42
+scoreboard players add @s[nbt={EVHP:43s}] Temp 43
+scoreboard players add @s[nbt={EVHP:44s}] Temp 44
+scoreboard players add @s[nbt={EVHP:45s}] Temp 45
+scoreboard players add @s[nbt={EVHP:46s}] Temp 46
+scoreboard players add @s[nbt={EVHP:47s}] Temp 47
+scoreboard players add @s[nbt={EVHP:48s}] Temp 48
+scoreboard players add @s[nbt={EVHP:49s}] Temp 49
+scoreboard players add @s[nbt={EVHP:50s}] Temp 50
+scoreboard players add @s[nbt={EVHP:51s}] Temp 51
+scoreboard players add @s[nbt={EVHP:52s}] Temp 52
+scoreboard players add @s[nbt={EVHP:53s}] Temp 53
+scoreboard players add @s[nbt={EVHP:54s}] Temp 54
+scoreboard players add @s[nbt={EVHP:55s}] Temp 55
+scoreboard players add @s[nbt={EVHP:56s}] Temp 56
+scoreboard players add @s[nbt={EVHP:57s}] Temp 57
+scoreboard players add @s[nbt={EVHP:58s}] Temp 58
+scoreboard players add @s[nbt={EVHP:59s}] Temp 59
+scoreboard players add @s[nbt={EVHP:60s}] Temp 60
+scoreboard players add @s[nbt={EVHP:61s}] Temp 61
+scoreboard players add @s[nbt={EVHP:62s}] Temp 62
+scoreboard players add @s[nbt={EVHP:63s}] Temp 63
+scoreboard players add @s[nbt={EVHP:64s}] Temp 64
+scoreboard players add @s[nbt={EVHP:65s}] Temp 65
+scoreboard players add @s[nbt={EVHP:66s}] Temp 66
+scoreboard players add @s[nbt={EVHP:67s}] Temp 67
+scoreboard players add @s[nbt={EVHP:68s}] Temp 68
+scoreboard players add @s[nbt={EVHP:69s}] Temp 69
+scoreboard players add @s[nbt={EVHP:70s}] Temp 70
+scoreboard players add @s[nbt={EVHP:71s}] Temp 71
+scoreboard players add @s[nbt={EVHP:72s}] Temp 72
+scoreboard players add @s[nbt={EVHP:73s}] Temp 73
+scoreboard players add @s[nbt={EVHP:74s}] Temp 74
+scoreboard players add @s[nbt={EVHP:75s}] Temp 75
+scoreboard players add @s[nbt={EVHP:76s}] Temp 76
+scoreboard players add @s[nbt={EVHP:77s}] Temp 77
+scoreboard players add @s[nbt={EVHP:78s}] Temp 78
+scoreboard players add @s[nbt={EVHP:79s}] Temp 79
+scoreboard players add @s[nbt={EVHP:80s}] Temp 80
+scoreboard players add @s[nbt={EVHP:81s}] Temp 81
+scoreboard players add @s[nbt={EVHP:82s}] Temp 82
+scoreboard players add @s[nbt={EVHP:83s}] Temp 83
+scoreboard players add @s[nbt={EVHP:84s}] Temp 84
+scoreboard players add @s[nbt={EVHP:85s}] Temp 85
+scoreboard players add @s[nbt={EVHP:86s}] Temp 86
+scoreboard players add @s[nbt={EVHP:87s}] Temp 87
+scoreboard players add @s[nbt={EVHP:88s}] Temp 88
+scoreboard players add @s[nbt={EVHP:89s}] Temp 89
+scoreboard players add @s[nbt={EVHP:90s}] Temp 90
+scoreboard players add @s[nbt={EVHP:91s}] Temp 91
+scoreboard players add @s[nbt={EVHP:92s}] Temp 92
+scoreboard players add @s[nbt={EVHP:93s}] Temp 93
+scoreboard players add @s[nbt={EVHP:94s}] Temp 94
+scoreboard players add @s[nbt={EVHP:95s}] Temp 95
+scoreboard players add @s[nbt={EVHP:96s}] Temp 96
+scoreboard players add @s[nbt={EVHP:97s}] Temp 97
+scoreboard players add @s[nbt={EVHP:98s}] Temp 98
+scoreboard players add @s[nbt={EVHP:99s}] Temp 99
+scoreboard players add @s[nbt={EVHP:100s}] Temp 100
+scoreboard players add @s[nbt={EVHP:101s}] Temp 101
+scoreboard players add @s[nbt={EVHP:102s}] Temp 102
+scoreboard players add @s[nbt={EVHP:103s}] Temp 103
+scoreboard players add @s[nbt={EVHP:104s}] Temp 104
+scoreboard players add @s[nbt={EVHP:105s}] Temp 105
+scoreboard players add @s[nbt={EVHP:106s}] Temp 106
+scoreboard players add @s[nbt={EVHP:107s}] Temp 107
+scoreboard players add @s[nbt={EVHP:108s}] Temp 108
+scoreboard players add @s[nbt={EVHP:109s}] Temp 109
+scoreboard players add @s[nbt={EVHP:110s}] Temp 110
+scoreboard players add @s[nbt={EVHP:111s}] Temp 111
+scoreboard players add @s[nbt={EVHP:112s}] Temp 112
+scoreboard players add @s[nbt={EVHP:113s}] Temp 113
+scoreboard players add @s[nbt={EVHP:114s}] Temp 114
+scoreboard players add @s[nbt={EVHP:115s}] Temp 115
+scoreboard players add @s[nbt={EVHP:116s}] Temp 116
+scoreboard players add @s[nbt={EVHP:117s}] Temp 117
+scoreboard players add @s[nbt={EVHP:118s}] Temp 118
+scoreboard players add @s[nbt={EVHP:119s}] Temp 119
+scoreboard players add @s[nbt={EVHP:120s}] Temp 120
+scoreboard players add @s[nbt={EVHP:121s}] Temp 121
+scoreboard players add @s[nbt={EVHP:122s}] Temp 122
+scoreboard players add @s[nbt={EVHP:123s}] Temp 123
+scoreboard players add @s[nbt={EVHP:124s}] Temp 124
+scoreboard players add @s[nbt={EVHP:125s}] Temp 125
+scoreboard players add @s[nbt={EVHP:126s}] Temp 126
+scoreboard players add @s[nbt={EVHP:127s}] Temp 127
+scoreboard players add @s[nbt={EVHP:128s}] Temp 128
+scoreboard players add @s[nbt={EVHP:129s}] Temp 129
+scoreboard players add @s[nbt={EVHP:130s}] Temp 130
+scoreboard players add @s[nbt={EVHP:131s}] Temp 131
+scoreboard players add @s[nbt={EVHP:132s}] Temp 132
+scoreboard players add @s[nbt={EVHP:133s}] Temp 133
+scoreboard players add @s[nbt={EVHP:134s}] Temp 134
+scoreboard players add @s[nbt={EVHP:135s}] Temp 135
+scoreboard players add @s[nbt={EVHP:136s}] Temp 136
+scoreboard players add @s[nbt={EVHP:137s}] Temp 137
+scoreboard players add @s[nbt={EVHP:138s}] Temp 138
+scoreboard players add @s[nbt={EVHP:139s}] Temp 139
+scoreboard players add @s[nbt={EVHP:140s}] Temp 140
+scoreboard players add @s[nbt={EVHP:141s}] Temp 141
+scoreboard players add @s[nbt={EVHP:142s}] Temp 142
+scoreboard players add @s[nbt={EVHP:143s}] Temp 143
+scoreboard players add @s[nbt={EVHP:144s}] Temp 144
+scoreboard players add @s[nbt={EVHP:145s}] Temp 145
+scoreboard players add @s[nbt={EVHP:146s}] Temp 146
+scoreboard players add @s[nbt={EVHP:147s}] Temp 147
+scoreboard players add @s[nbt={EVHP:148s}] Temp 148
+scoreboard players add @s[nbt={EVHP:149s}] Temp 149
+scoreboard players add @s[nbt={EVHP:150s}] Temp 150
+scoreboard players add @s[nbt={EVHP:151s}] Temp 151
+scoreboard players add @s[nbt={EVHP:152s}] Temp 152
+scoreboard players add @s[nbt={EVHP:153s}] Temp 153
+scoreboard players add @s[nbt={EVHP:154s}] Temp 154
+scoreboard players add @s[nbt={EVHP:155s}] Temp 155
+scoreboard players add @s[nbt={EVHP:156s}] Temp 156
+scoreboard players add @s[nbt={EVHP:157s}] Temp 157
+scoreboard players add @s[nbt={EVHP:158s}] Temp 158
+scoreboard players add @s[nbt={EVHP:159s}] Temp 159
+scoreboard players add @s[nbt={EVHP:160s}] Temp 160
+scoreboard players add @s[nbt={EVHP:161s}] Temp 161
+scoreboard players add @s[nbt={EVHP:162s}] Temp 162
+scoreboard players add @s[nbt={EVHP:163s}] Temp 163
+scoreboard players add @s[nbt={EVHP:164s}] Temp 164
+scoreboard players add @s[nbt={EVHP:165s}] Temp 165
+scoreboard players add @s[nbt={EVHP:166s}] Temp 166
+scoreboard players add @s[nbt={EVHP:167s}] Temp 167
+scoreboard players add @s[nbt={EVHP:168s}] Temp 168
+scoreboard players add @s[nbt={EVHP:169s}] Temp 169
+scoreboard players add @s[nbt={EVHP:170s}] Temp 170
+scoreboard players add @s[nbt={EVHP:171s}] Temp 171
+scoreboard players add @s[nbt={EVHP:172s}] Temp 172
+scoreboard players add @s[nbt={EVHP:173s}] Temp 173
+scoreboard players add @s[nbt={EVHP:174s}] Temp 174
+scoreboard players add @s[nbt={EVHP:175s}] Temp 175
+scoreboard players add @s[nbt={EVHP:176s}] Temp 176
+scoreboard players add @s[nbt={EVHP:177s}] Temp 177
+scoreboard players add @s[nbt={EVHP:178s}] Temp 178
+scoreboard players add @s[nbt={EVHP:179s}] Temp 179
+scoreboard players add @s[nbt={EVHP:180s}] Temp 180
+scoreboard players add @s[nbt={EVHP:181s}] Temp 181
+scoreboard players add @s[nbt={EVHP:182s}] Temp 182
+scoreboard players add @s[nbt={EVHP:183s}] Temp 183
+scoreboard players add @s[nbt={EVHP:184s}] Temp 184
+scoreboard players add @s[nbt={EVHP:185s}] Temp 185
+scoreboard players add @s[nbt={EVHP:186s}] Temp 186
+scoreboard players add @s[nbt={EVHP:187s}] Temp 187
+scoreboard players add @s[nbt={EVHP:188s}] Temp 188
+scoreboard players add @s[nbt={EVHP:189s}] Temp 189
+scoreboard players add @s[nbt={EVHP:190s}] Temp 190
+scoreboard players add @s[nbt={EVHP:191s}] Temp 191
+scoreboard players add @s[nbt={EVHP:192s}] Temp 192
+scoreboard players add @s[nbt={EVHP:193s}] Temp 193
+scoreboard players add @s[nbt={EVHP:194s}] Temp 194
+scoreboard players add @s[nbt={EVHP:195s}] Temp 195
+scoreboard players add @s[nbt={EVHP:196s}] Temp 196
+scoreboard players add @s[nbt={EVHP:197s}] Temp 197
+scoreboard players add @s[nbt={EVHP:198s}] Temp 198
+scoreboard players add @s[nbt={EVHP:199s}] Temp 199
+scoreboard players add @s[nbt={EVHP:200s}] Temp 200
+scoreboard players add @s[nbt={EVHP:201s}] Temp 201
+scoreboard players add @s[nbt={EVHP:202s}] Temp 202
+scoreboard players add @s[nbt={EVHP:203s}] Temp 203
+scoreboard players add @s[nbt={EVHP:204s}] Temp 204
+scoreboard players add @s[nbt={EVHP:205s}] Temp 205
+scoreboard players add @s[nbt={EVHP:206s}] Temp 206
+scoreboard players add @s[nbt={EVHP:207s}] Temp 207
+scoreboard players add @s[nbt={EVHP:208s}] Temp 208
+scoreboard players add @s[nbt={EVHP:209s}] Temp 209
+scoreboard players add @s[nbt={EVHP:210s}] Temp 210
+scoreboard players add @s[nbt={EVHP:211s}] Temp 211
+scoreboard players add @s[nbt={EVHP:212s}] Temp 212
+scoreboard players add @s[nbt={EVHP:213s}] Temp 213
+scoreboard players add @s[nbt={EVHP:214s}] Temp 214
+scoreboard players add @s[nbt={EVHP:215s}] Temp 215
+scoreboard players add @s[nbt={EVHP:216s}] Temp 216
+scoreboard players add @s[nbt={EVHP:217s}] Temp 217
+scoreboard players add @s[nbt={EVHP:218s}] Temp 218
+scoreboard players add @s[nbt={EVHP:219s}] Temp 219
+scoreboard players add @s[nbt={EVHP:220s}] Temp 220
+scoreboard players add @s[nbt={EVHP:221s}] Temp 221
+scoreboard players add @s[nbt={EVHP:222s}] Temp 222
+scoreboard players add @s[nbt={EVHP:223s}] Temp 223
+scoreboard players add @s[nbt={EVHP:224s}] Temp 224
+scoreboard players add @s[nbt={EVHP:225s}] Temp 225
+scoreboard players add @s[nbt={EVHP:226s}] Temp 226
+scoreboard players add @s[nbt={EVHP:227s}] Temp 227
+scoreboard players add @s[nbt={EVHP:228s}] Temp 228
+scoreboard players add @s[nbt={EVHP:229s}] Temp 229
+scoreboard players add @s[nbt={EVHP:230s}] Temp 230
+scoreboard players add @s[nbt={EVHP:231s}] Temp 231
+scoreboard players add @s[nbt={EVHP:232s}] Temp 232
+scoreboard players add @s[nbt={EVHP:233s}] Temp 233
+scoreboard players add @s[nbt={EVHP:234s}] Temp 234
+scoreboard players add @s[nbt={EVHP:235s}] Temp 235
+scoreboard players add @s[nbt={EVHP:236s}] Temp 236
+scoreboard players add @s[nbt={EVHP:237s}] Temp 237
+scoreboard players add @s[nbt={EVHP:238s}] Temp 238
+scoreboard players add @s[nbt={EVHP:239s}] Temp 239
+scoreboard players add @s[nbt={EVHP:240s}] Temp 240
+scoreboard players add @s[nbt={EVHP:241s}] Temp 241
+scoreboard players add @s[nbt={EVHP:242s}] Temp 242
+scoreboard players add @s[nbt={EVHP:243s}] Temp 243
+scoreboard players add @s[nbt={EVHP:244s}] Temp 244
+scoreboard players add @s[nbt={EVHP:245s}] Temp 245
+scoreboard players add @s[nbt={EVHP:246s}] Temp 246
+scoreboard players add @s[nbt={EVHP:247s}] Temp 247
+scoreboard players add @s[nbt={EVHP:248s}] Temp 248
+scoreboard players add @s[nbt={EVHP:249s}] Temp 249
+scoreboard players add @s[nbt={EVHP:250s}] Temp 250
+scoreboard players add @s[nbt={EVHP:251s}] Temp 251
+scoreboard players add @s[nbt={EVHP:252s}] Temp 252
 
 
 
 
-scoreboard players add @s Temp 1 {EVAttack:1s}
-scoreboard players add @s Temp 2 {EVAttack:2s}
-scoreboard players add @s Temp 3 {EVAttack:3s}
-scoreboard players add @s Temp 4 {EVAttack:4s}
-scoreboard players add @s Temp 5 {EVAttack:5s}
-scoreboard players add @s Temp 6 {EVAttack:6s}
-scoreboard players add @s Temp 7 {EVAttack:7s}
-scoreboard players add @s Temp 8 {EVAttack:8s}
-scoreboard players add @s Temp 9 {EVAttack:9s}
-scoreboard players add @s Temp 10 {EVAttack:10s}
-scoreboard players add @s Temp 11 {EVAttack:11s}
-scoreboard players add @s Temp 12 {EVAttack:12s}
-scoreboard players add @s Temp 13 {EVAttack:13s}
-scoreboard players add @s Temp 14 {EVAttack:14s}
-scoreboard players add @s Temp 15 {EVAttack:15s}
-scoreboard players add @s Temp 16 {EVAttack:16s}
-scoreboard players add @s Temp 17 {EVAttack:17s}
-scoreboard players add @s Temp 18 {EVAttack:18s}
-scoreboard players add @s Temp 19 {EVAttack:19s}
-scoreboard players add @s Temp 20 {EVAttack:20s}
-scoreboard players add @s Temp 21 {EVAttack:21s}
-scoreboard players add @s Temp 22 {EVAttack:22s}
-scoreboard players add @s Temp 23 {EVAttack:23s}
-scoreboard players add @s Temp 24 {EVAttack:24s}
-scoreboard players add @s Temp 25 {EVAttack:25s}
-scoreboard players add @s Temp 26 {EVAttack:26s}
-scoreboard players add @s Temp 27 {EVAttack:27s}
-scoreboard players add @s Temp 28 {EVAttack:28s}
-scoreboard players add @s Temp 29 {EVAttack:29s}
-scoreboard players add @s Temp 30 {EVAttack:30s}
-scoreboard players add @s Temp 31 {EVAttack:31s}
-scoreboard players add @s Temp 32 {EVAttack:32s}
-scoreboard players add @s Temp 33 {EVAttack:33s}
-scoreboard players add @s Temp 34 {EVAttack:34s}
-scoreboard players add @s Temp 35 {EVAttack:35s}
-scoreboard players add @s Temp 36 {EVAttack:36s}
-scoreboard players add @s Temp 37 {EVAttack:37s}
-scoreboard players add @s Temp 38 {EVAttack:38s}
-scoreboard players add @s Temp 39 {EVAttack:39s}
-scoreboard players add @s Temp 40 {EVAttack:40s}
-scoreboard players add @s Temp 41 {EVAttack:41s}
-scoreboard players add @s Temp 42 {EVAttack:42s}
-scoreboard players add @s Temp 43 {EVAttack:43s}
-scoreboard players add @s Temp 44 {EVAttack:44s}
-scoreboard players add @s Temp 45 {EVAttack:45s}
-scoreboard players add @s Temp 46 {EVAttack:46s}
-scoreboard players add @s Temp 47 {EVAttack:47s}
-scoreboard players add @s Temp 48 {EVAttack:48s}
-scoreboard players add @s Temp 49 {EVAttack:49s}
-scoreboard players add @s Temp 50 {EVAttack:50s}
-scoreboard players add @s Temp 51 {EVAttack:51s}
-scoreboard players add @s Temp 52 {EVAttack:52s}
-scoreboard players add @s Temp 53 {EVAttack:53s}
-scoreboard players add @s Temp 54 {EVAttack:54s}
-scoreboard players add @s Temp 55 {EVAttack:55s}
-scoreboard players add @s Temp 56 {EVAttack:56s}
-scoreboard players add @s Temp 57 {EVAttack:57s}
-scoreboard players add @s Temp 58 {EVAttack:58s}
-scoreboard players add @s Temp 59 {EVAttack:59s}
-scoreboard players add @s Temp 60 {EVAttack:60s}
-scoreboard players add @s Temp 61 {EVAttack:61s}
-scoreboard players add @s Temp 62 {EVAttack:62s}
-scoreboard players add @s Temp 63 {EVAttack:63s}
-scoreboard players add @s Temp 64 {EVAttack:64s}
-scoreboard players add @s Temp 65 {EVAttack:65s}
-scoreboard players add @s Temp 66 {EVAttack:66s}
-scoreboard players add @s Temp 67 {EVAttack:67s}
-scoreboard players add @s Temp 68 {EVAttack:68s}
-scoreboard players add @s Temp 69 {EVAttack:69s}
-scoreboard players add @s Temp 70 {EVAttack:70s}
-scoreboard players add @s Temp 71 {EVAttack:71s}
-scoreboard players add @s Temp 72 {EVAttack:72s}
-scoreboard players add @s Temp 73 {EVAttack:73s}
-scoreboard players add @s Temp 74 {EVAttack:74s}
-scoreboard players add @s Temp 75 {EVAttack:75s}
-scoreboard players add @s Temp 76 {EVAttack:76s}
-scoreboard players add @s Temp 77 {EVAttack:77s}
-scoreboard players add @s Temp 78 {EVAttack:78s}
-scoreboard players add @s Temp 79 {EVAttack:79s}
-scoreboard players add @s Temp 80 {EVAttack:80s}
-scoreboard players add @s Temp 81 {EVAttack:81s}
-scoreboard players add @s Temp 82 {EVAttack:82s}
-scoreboard players add @s Temp 83 {EVAttack:83s}
-scoreboard players add @s Temp 84 {EVAttack:84s}
-scoreboard players add @s Temp 85 {EVAttack:85s}
-scoreboard players add @s Temp 86 {EVAttack:86s}
-scoreboard players add @s Temp 87 {EVAttack:87s}
-scoreboard players add @s Temp 88 {EVAttack:88s}
-scoreboard players add @s Temp 89 {EVAttack:89s}
-scoreboard players add @s Temp 90 {EVAttack:90s}
-scoreboard players add @s Temp 91 {EVAttack:91s}
-scoreboard players add @s Temp 92 {EVAttack:92s}
-scoreboard players add @s Temp 93 {EVAttack:93s}
-scoreboard players add @s Temp 94 {EVAttack:94s}
-scoreboard players add @s Temp 95 {EVAttack:95s}
-scoreboard players add @s Temp 96 {EVAttack:96s}
-scoreboard players add @s Temp 97 {EVAttack:97s}
-scoreboard players add @s Temp 98 {EVAttack:98s}
-scoreboard players add @s Temp 99 {EVAttack:99s}
-scoreboard players add @s Temp 100 {EVAttack:100s}
-scoreboard players add @s Temp 101 {EVAttack:101s}
-scoreboard players add @s Temp 102 {EVAttack:102s}
-scoreboard players add @s Temp 103 {EVAttack:103s}
-scoreboard players add @s Temp 104 {EVAttack:104s}
-scoreboard players add @s Temp 105 {EVAttack:105s}
-scoreboard players add @s Temp 106 {EVAttack:106s}
-scoreboard players add @s Temp 107 {EVAttack:107s}
-scoreboard players add @s Temp 108 {EVAttack:108s}
-scoreboard players add @s Temp 109 {EVAttack:109s}
-scoreboard players add @s Temp 110 {EVAttack:110s}
-scoreboard players add @s Temp 111 {EVAttack:111s}
-scoreboard players add @s Temp 112 {EVAttack:112s}
-scoreboard players add @s Temp 113 {EVAttack:113s}
-scoreboard players add @s Temp 114 {EVAttack:114s}
-scoreboard players add @s Temp 115 {EVAttack:115s}
-scoreboard players add @s Temp 116 {EVAttack:116s}
-scoreboard players add @s Temp 117 {EVAttack:117s}
-scoreboard players add @s Temp 118 {EVAttack:118s}
-scoreboard players add @s Temp 119 {EVAttack:119s}
-scoreboard players add @s Temp 120 {EVAttack:120s}
-scoreboard players add @s Temp 121 {EVAttack:121s}
-scoreboard players add @s Temp 122 {EVAttack:122s}
-scoreboard players add @s Temp 123 {EVAttack:123s}
-scoreboard players add @s Temp 124 {EVAttack:124s}
-scoreboard players add @s Temp 125 {EVAttack:125s}
-scoreboard players add @s Temp 126 {EVAttack:126s}
-scoreboard players add @s Temp 127 {EVAttack:127s}
-scoreboard players add @s Temp 128 {EVAttack:128s}
-scoreboard players add @s Temp 129 {EVAttack:129s}
-scoreboard players add @s Temp 130 {EVAttack:130s}
-scoreboard players add @s Temp 131 {EVAttack:131s}
-scoreboard players add @s Temp 132 {EVAttack:132s}
-scoreboard players add @s Temp 133 {EVAttack:133s}
-scoreboard players add @s Temp 134 {EVAttack:134s}
-scoreboard players add @s Temp 135 {EVAttack:135s}
-scoreboard players add @s Temp 136 {EVAttack:136s}
-scoreboard players add @s Temp 137 {EVAttack:137s}
-scoreboard players add @s Temp 138 {EVAttack:138s}
-scoreboard players add @s Temp 139 {EVAttack:139s}
-scoreboard players add @s Temp 140 {EVAttack:140s}
-scoreboard players add @s Temp 141 {EVAttack:141s}
-scoreboard players add @s Temp 142 {EVAttack:142s}
-scoreboard players add @s Temp 143 {EVAttack:143s}
-scoreboard players add @s Temp 144 {EVAttack:144s}
-scoreboard players add @s Temp 145 {EVAttack:145s}
-scoreboard players add @s Temp 146 {EVAttack:146s}
-scoreboard players add @s Temp 147 {EVAttack:147s}
-scoreboard players add @s Temp 148 {EVAttack:148s}
-scoreboard players add @s Temp 149 {EVAttack:149s}
-scoreboard players add @s Temp 150 {EVAttack:150s}
-scoreboard players add @s Temp 151 {EVAttack:151s}
-scoreboard players add @s Temp 152 {EVAttack:152s}
-scoreboard players add @s Temp 153 {EVAttack:153s}
-scoreboard players add @s Temp 154 {EVAttack:154s}
-scoreboard players add @s Temp 155 {EVAttack:155s}
-scoreboard players add @s Temp 156 {EVAttack:156s}
-scoreboard players add @s Temp 157 {EVAttack:157s}
-scoreboard players add @s Temp 158 {EVAttack:158s}
-scoreboard players add @s Temp 159 {EVAttack:159s}
-scoreboard players add @s Temp 160 {EVAttack:160s}
-scoreboard players add @s Temp 161 {EVAttack:161s}
-scoreboard players add @s Temp 162 {EVAttack:162s}
-scoreboard players add @s Temp 163 {EVAttack:163s}
-scoreboard players add @s Temp 164 {EVAttack:164s}
-scoreboard players add @s Temp 165 {EVAttack:165s}
-scoreboard players add @s Temp 166 {EVAttack:166s}
-scoreboard players add @s Temp 167 {EVAttack:167s}
-scoreboard players add @s Temp 168 {EVAttack:168s}
-scoreboard players add @s Temp 169 {EVAttack:169s}
-scoreboard players add @s Temp 170 {EVAttack:170s}
-scoreboard players add @s Temp 171 {EVAttack:171s}
-scoreboard players add @s Temp 172 {EVAttack:172s}
-scoreboard players add @s Temp 173 {EVAttack:173s}
-scoreboard players add @s Temp 174 {EVAttack:174s}
-scoreboard players add @s Temp 175 {EVAttack:175s}
-scoreboard players add @s Temp 176 {EVAttack:176s}
-scoreboard players add @s Temp 177 {EVAttack:177s}
-scoreboard players add @s Temp 178 {EVAttack:178s}
-scoreboard players add @s Temp 179 {EVAttack:179s}
-scoreboard players add @s Temp 180 {EVAttack:180s}
-scoreboard players add @s Temp 181 {EVAttack:181s}
-scoreboard players add @s Temp 182 {EVAttack:182s}
-scoreboard players add @s Temp 183 {EVAttack:183s}
-scoreboard players add @s Temp 184 {EVAttack:184s}
-scoreboard players add @s Temp 185 {EVAttack:185s}
-scoreboard players add @s Temp 186 {EVAttack:186s}
-scoreboard players add @s Temp 187 {EVAttack:187s}
-scoreboard players add @s Temp 188 {EVAttack:188s}
-scoreboard players add @s Temp 189 {EVAttack:189s}
-scoreboard players add @s Temp 190 {EVAttack:190s}
-scoreboard players add @s Temp 191 {EVAttack:191s}
-scoreboard players add @s Temp 192 {EVAttack:192s}
-scoreboard players add @s Temp 193 {EVAttack:193s}
-scoreboard players add @s Temp 194 {EVAttack:194s}
-scoreboard players add @s Temp 195 {EVAttack:195s}
-scoreboard players add @s Temp 196 {EVAttack:196s}
-scoreboard players add @s Temp 197 {EVAttack:197s}
-scoreboard players add @s Temp 198 {EVAttack:198s}
-scoreboard players add @s Temp 199 {EVAttack:199s}
-scoreboard players add @s Temp 200 {EVAttack:200s}
-scoreboard players add @s Temp 201 {EVAttack:201s}
-scoreboard players add @s Temp 202 {EVAttack:202s}
-scoreboard players add @s Temp 203 {EVAttack:203s}
-scoreboard players add @s Temp 204 {EVAttack:204s}
-scoreboard players add @s Temp 205 {EVAttack:205s}
-scoreboard players add @s Temp 206 {EVAttack:206s}
-scoreboard players add @s Temp 207 {EVAttack:207s}
-scoreboard players add @s Temp 208 {EVAttack:208s}
-scoreboard players add @s Temp 209 {EVAttack:209s}
-scoreboard players add @s Temp 210 {EVAttack:210s}
-scoreboard players add @s Temp 211 {EVAttack:211s}
-scoreboard players add @s Temp 212 {EVAttack:212s}
-scoreboard players add @s Temp 213 {EVAttack:213s}
-scoreboard players add @s Temp 214 {EVAttack:214s}
-scoreboard players add @s Temp 215 {EVAttack:215s}
-scoreboard players add @s Temp 216 {EVAttack:216s}
-scoreboard players add @s Temp 217 {EVAttack:217s}
-scoreboard players add @s Temp 218 {EVAttack:218s}
-scoreboard players add @s Temp 219 {EVAttack:219s}
-scoreboard players add @s Temp 220 {EVAttack:220s}
-scoreboard players add @s Temp 221 {EVAttack:221s}
-scoreboard players add @s Temp 222 {EVAttack:222s}
-scoreboard players add @s Temp 223 {EVAttack:223s}
-scoreboard players add @s Temp 224 {EVAttack:224s}
-scoreboard players add @s Temp 225 {EVAttack:225s}
-scoreboard players add @s Temp 226 {EVAttack:226s}
-scoreboard players add @s Temp 227 {EVAttack:227s}
-scoreboard players add @s Temp 228 {EVAttack:228s}
-scoreboard players add @s Temp 229 {EVAttack:229s}
-scoreboard players add @s Temp 230 {EVAttack:230s}
-scoreboard players add @s Temp 231 {EVAttack:231s}
-scoreboard players add @s Temp 232 {EVAttack:232s}
-scoreboard players add @s Temp 233 {EVAttack:233s}
-scoreboard players add @s Temp 234 {EVAttack:234s}
-scoreboard players add @s Temp 235 {EVAttack:235s}
-scoreboard players add @s Temp 236 {EVAttack:236s}
-scoreboard players add @s Temp 237 {EVAttack:237s}
-scoreboard players add @s Temp 238 {EVAttack:238s}
-scoreboard players add @s Temp 239 {EVAttack:239s}
-scoreboard players add @s Temp 240 {EVAttack:240s}
-scoreboard players add @s Temp 241 {EVAttack:241s}
-scoreboard players add @s Temp 242 {EVAttack:242s}
-scoreboard players add @s Temp 243 {EVAttack:243s}
-scoreboard players add @s Temp 244 {EVAttack:244s}
-scoreboard players add @s Temp 245 {EVAttack:245s}
-scoreboard players add @s Temp 246 {EVAttack:246s}
-scoreboard players add @s Temp 247 {EVAttack:247s}
-scoreboard players add @s Temp 248 {EVAttack:248s}
-scoreboard players add @s Temp 249 {EVAttack:249s}
-scoreboard players add @s Temp 250 {EVAttack:250s}
-scoreboard players add @s Temp 251 {EVAttack:251s}
-scoreboard players add @s Temp 252 {EVAttack:252s}
+scoreboard players add @s[nbt={EVAttack:1s}] Temp 1
+scoreboard players add @s[nbt={EVAttack:2s}] Temp 2
+scoreboard players add @s[nbt={EVAttack:3s}] Temp 3
+scoreboard players add @s[nbt={EVAttack:4s}] Temp 4
+scoreboard players add @s[nbt={EVAttack:5s}] Temp 5
+scoreboard players add @s[nbt={EVAttack:6s}] Temp 6
+scoreboard players add @s[nbt={EVAttack:7s}] Temp 7
+scoreboard players add @s[nbt={EVAttack:8s}] Temp 8
+scoreboard players add @s[nbt={EVAttack:9s}] Temp 9
+scoreboard players add @s[nbt={EVAttack:10s}] Temp 10
+scoreboard players add @s[nbt={EVAttack:11s}] Temp 11
+scoreboard players add @s[nbt={EVAttack:12s}] Temp 12
+scoreboard players add @s[nbt={EVAttack:13s}] Temp 13
+scoreboard players add @s[nbt={EVAttack:14s}] Temp 14
+scoreboard players add @s[nbt={EVAttack:15s}] Temp 15
+scoreboard players add @s[nbt={EVAttack:16s}] Temp 16
+scoreboard players add @s[nbt={EVAttack:17s}] Temp 17
+scoreboard players add @s[nbt={EVAttack:18s}] Temp 18
+scoreboard players add @s[nbt={EVAttack:19s}] Temp 19
+scoreboard players add @s[nbt={EVAttack:20s}] Temp 20
+scoreboard players add @s[nbt={EVAttack:21s}] Temp 21
+scoreboard players add @s[nbt={EVAttack:22s}] Temp 22
+scoreboard players add @s[nbt={EVAttack:23s}] Temp 23
+scoreboard players add @s[nbt={EVAttack:24s}] Temp 24
+scoreboard players add @s[nbt={EVAttack:25s}] Temp 25
+scoreboard players add @s[nbt={EVAttack:26s}] Temp 26
+scoreboard players add @s[nbt={EVAttack:27s}] Temp 27
+scoreboard players add @s[nbt={EVAttack:28s}] Temp 28
+scoreboard players add @s[nbt={EVAttack:29s}] Temp 29
+scoreboard players add @s[nbt={EVAttack:30s}] Temp 30
+scoreboard players add @s[nbt={EVAttack:31s}] Temp 31
+scoreboard players add @s[nbt={EVAttack:32s}] Temp 32
+scoreboard players add @s[nbt={EVAttack:33s}] Temp 33
+scoreboard players add @s[nbt={EVAttack:34s}] Temp 34
+scoreboard players add @s[nbt={EVAttack:35s}] Temp 35
+scoreboard players add @s[nbt={EVAttack:36s}] Temp 36
+scoreboard players add @s[nbt={EVAttack:37s}] Temp 37
+scoreboard players add @s[nbt={EVAttack:38s}] Temp 38
+scoreboard players add @s[nbt={EVAttack:39s}] Temp 39
+scoreboard players add @s[nbt={EVAttack:40s}] Temp 40
+scoreboard players add @s[nbt={EVAttack:41s}] Temp 41
+scoreboard players add @s[nbt={EVAttack:42s}] Temp 42
+scoreboard players add @s[nbt={EVAttack:43s}] Temp 43
+scoreboard players add @s[nbt={EVAttack:44s}] Temp 44
+scoreboard players add @s[nbt={EVAttack:45s}] Temp 45
+scoreboard players add @s[nbt={EVAttack:46s}] Temp 46
+scoreboard players add @s[nbt={EVAttack:47s}] Temp 47
+scoreboard players add @s[nbt={EVAttack:48s}] Temp 48
+scoreboard players add @s[nbt={EVAttack:49s}] Temp 49
+scoreboard players add @s[nbt={EVAttack:50s}] Temp 50
+scoreboard players add @s[nbt={EVAttack:51s}] Temp 51
+scoreboard players add @s[nbt={EVAttack:52s}] Temp 52
+scoreboard players add @s[nbt={EVAttack:53s}] Temp 53
+scoreboard players add @s[nbt={EVAttack:54s}] Temp 54
+scoreboard players add @s[nbt={EVAttack:55s}] Temp 55
+scoreboard players add @s[nbt={EVAttack:56s}] Temp 56
+scoreboard players add @s[nbt={EVAttack:57s}] Temp 57
+scoreboard players add @s[nbt={EVAttack:58s}] Temp 58
+scoreboard players add @s[nbt={EVAttack:59s}] Temp 59
+scoreboard players add @s[nbt={EVAttack:60s}] Temp 60
+scoreboard players add @s[nbt={EVAttack:61s}] Temp 61
+scoreboard players add @s[nbt={EVAttack:62s}] Temp 62
+scoreboard players add @s[nbt={EVAttack:63s}] Temp 63
+scoreboard players add @s[nbt={EVAttack:64s}] Temp 64
+scoreboard players add @s[nbt={EVAttack:65s}] Temp 65
+scoreboard players add @s[nbt={EVAttack:66s}] Temp 66
+scoreboard players add @s[nbt={EVAttack:67s}] Temp 67
+scoreboard players add @s[nbt={EVAttack:68s}] Temp 68
+scoreboard players add @s[nbt={EVAttack:69s}] Temp 69
+scoreboard players add @s[nbt={EVAttack:70s}] Temp 70
+scoreboard players add @s[nbt={EVAttack:71s}] Temp 71
+scoreboard players add @s[nbt={EVAttack:72s}] Temp 72
+scoreboard players add @s[nbt={EVAttack:73s}] Temp 73
+scoreboard players add @s[nbt={EVAttack:74s}] Temp 74
+scoreboard players add @s[nbt={EVAttack:75s}] Temp 75
+scoreboard players add @s[nbt={EVAttack:76s}] Temp 76
+scoreboard players add @s[nbt={EVAttack:77s}] Temp 77
+scoreboard players add @s[nbt={EVAttack:78s}] Temp 78
+scoreboard players add @s[nbt={EVAttack:79s}] Temp 79
+scoreboard players add @s[nbt={EVAttack:80s}] Temp 80
+scoreboard players add @s[nbt={EVAttack:81s}] Temp 81
+scoreboard players add @s[nbt={EVAttack:82s}] Temp 82
+scoreboard players add @s[nbt={EVAttack:83s}] Temp 83
+scoreboard players add @s[nbt={EVAttack:84s}] Temp 84
+scoreboard players add @s[nbt={EVAttack:85s}] Temp 85
+scoreboard players add @s[nbt={EVAttack:86s}] Temp 86
+scoreboard players add @s[nbt={EVAttack:87s}] Temp 87
+scoreboard players add @s[nbt={EVAttack:88s}] Temp 88
+scoreboard players add @s[nbt={EVAttack:89s}] Temp 89
+scoreboard players add @s[nbt={EVAttack:90s}] Temp 90
+scoreboard players add @s[nbt={EVAttack:91s}] Temp 91
+scoreboard players add @s[nbt={EVAttack:92s}] Temp 92
+scoreboard players add @s[nbt={EVAttack:93s}] Temp 93
+scoreboard players add @s[nbt={EVAttack:94s}] Temp 94
+scoreboard players add @s[nbt={EVAttack:95s}] Temp 95
+scoreboard players add @s[nbt={EVAttack:96s}] Temp 96
+scoreboard players add @s[nbt={EVAttack:97s}] Temp 97
+scoreboard players add @s[nbt={EVAttack:98s}] Temp 98
+scoreboard players add @s[nbt={EVAttack:99s}] Temp 99
+scoreboard players add @s[nbt={EVAttack:100s}] Temp 100
+scoreboard players add @s[nbt={EVAttack:101s}] Temp 101
+scoreboard players add @s[nbt={EVAttack:102s}] Temp 102
+scoreboard players add @s[nbt={EVAttack:103s}] Temp 103
+scoreboard players add @s[nbt={EVAttack:104s}] Temp 104
+scoreboard players add @s[nbt={EVAttack:105s}] Temp 105
+scoreboard players add @s[nbt={EVAttack:106s}] Temp 106
+scoreboard players add @s[nbt={EVAttack:107s}] Temp 107
+scoreboard players add @s[nbt={EVAttack:108s}] Temp 108
+scoreboard players add @s[nbt={EVAttack:109s}] Temp 109
+scoreboard players add @s[nbt={EVAttack:110s}] Temp 110
+scoreboard players add @s[nbt={EVAttack:111s}] Temp 111
+scoreboard players add @s[nbt={EVAttack:112s}] Temp 112
+scoreboard players add @s[nbt={EVAttack:113s}] Temp 113
+scoreboard players add @s[nbt={EVAttack:114s}] Temp 114
+scoreboard players add @s[nbt={EVAttack:115s}] Temp 115
+scoreboard players add @s[nbt={EVAttack:116s}] Temp 116
+scoreboard players add @s[nbt={EVAttack:117s}] Temp 117
+scoreboard players add @s[nbt={EVAttack:118s}] Temp 118
+scoreboard players add @s[nbt={EVAttack:119s}] Temp 119
+scoreboard players add @s[nbt={EVAttack:120s}] Temp 120
+scoreboard players add @s[nbt={EVAttack:121s}] Temp 121
+scoreboard players add @s[nbt={EVAttack:122s}] Temp 122
+scoreboard players add @s[nbt={EVAttack:123s}] Temp 123
+scoreboard players add @s[nbt={EVAttack:124s}] Temp 124
+scoreboard players add @s[nbt={EVAttack:125s}] Temp 125
+scoreboard players add @s[nbt={EVAttack:126s}] Temp 126
+scoreboard players add @s[nbt={EVAttack:127s}] Temp 127
+scoreboard players add @s[nbt={EVAttack:128s}] Temp 128
+scoreboard players add @s[nbt={EVAttack:129s}] Temp 129
+scoreboard players add @s[nbt={EVAttack:130s}] Temp 130
+scoreboard players add @s[nbt={EVAttack:131s}] Temp 131
+scoreboard players add @s[nbt={EVAttack:132s}] Temp 132
+scoreboard players add @s[nbt={EVAttack:133s}] Temp 133
+scoreboard players add @s[nbt={EVAttack:134s}] Temp 134
+scoreboard players add @s[nbt={EVAttack:135s}] Temp 135
+scoreboard players add @s[nbt={EVAttack:136s}] Temp 136
+scoreboard players add @s[nbt={EVAttack:137s}] Temp 137
+scoreboard players add @s[nbt={EVAttack:138s}] Temp 138
+scoreboard players add @s[nbt={EVAttack:139s}] Temp 139
+scoreboard players add @s[nbt={EVAttack:140s}] Temp 140
+scoreboard players add @s[nbt={EVAttack:141s}] Temp 141
+scoreboard players add @s[nbt={EVAttack:142s}] Temp 142
+scoreboard players add @s[nbt={EVAttack:143s}] Temp 143
+scoreboard players add @s[nbt={EVAttack:144s}] Temp 144
+scoreboard players add @s[nbt={EVAttack:145s}] Temp 145
+scoreboard players add @s[nbt={EVAttack:146s}] Temp 146
+scoreboard players add @s[nbt={EVAttack:147s}] Temp 147
+scoreboard players add @s[nbt={EVAttack:148s}] Temp 148
+scoreboard players add @s[nbt={EVAttack:149s}] Temp 149
+scoreboard players add @s[nbt={EVAttack:150s}] Temp 150
+scoreboard players add @s[nbt={EVAttack:151s}] Temp 151
+scoreboard players add @s[nbt={EVAttack:152s}] Temp 152
+scoreboard players add @s[nbt={EVAttack:153s}] Temp 153
+scoreboard players add @s[nbt={EVAttack:154s}] Temp 154
+scoreboard players add @s[nbt={EVAttack:155s}] Temp 155
+scoreboard players add @s[nbt={EVAttack:156s}] Temp 156
+scoreboard players add @s[nbt={EVAttack:157s}] Temp 157
+scoreboard players add @s[nbt={EVAttack:158s}] Temp 158
+scoreboard players add @s[nbt={EVAttack:159s}] Temp 159
+scoreboard players add @s[nbt={EVAttack:160s}] Temp 160
+scoreboard players add @s[nbt={EVAttack:161s}] Temp 161
+scoreboard players add @s[nbt={EVAttack:162s}] Temp 162
+scoreboard players add @s[nbt={EVAttack:163s}] Temp 163
+scoreboard players add @s[nbt={EVAttack:164s}] Temp 164
+scoreboard players add @s[nbt={EVAttack:165s}] Temp 165
+scoreboard players add @s[nbt={EVAttack:166s}] Temp 166
+scoreboard players add @s[nbt={EVAttack:167s}] Temp 167
+scoreboard players add @s[nbt={EVAttack:168s}] Temp 168
+scoreboard players add @s[nbt={EVAttack:169s}] Temp 169
+scoreboard players add @s[nbt={EVAttack:170s}] Temp 170
+scoreboard players add @s[nbt={EVAttack:171s}] Temp 171
+scoreboard players add @s[nbt={EVAttack:172s}] Temp 172
+scoreboard players add @s[nbt={EVAttack:173s}] Temp 173
+scoreboard players add @s[nbt={EVAttack:174s}] Temp 174
+scoreboard players add @s[nbt={EVAttack:175s}] Temp 175
+scoreboard players add @s[nbt={EVAttack:176s}] Temp 176
+scoreboard players add @s[nbt={EVAttack:177s}] Temp 177
+scoreboard players add @s[nbt={EVAttack:178s}] Temp 178
+scoreboard players add @s[nbt={EVAttack:179s}] Temp 179
+scoreboard players add @s[nbt={EVAttack:180s}] Temp 180
+scoreboard players add @s[nbt={EVAttack:181s}] Temp 181
+scoreboard players add @s[nbt={EVAttack:182s}] Temp 182
+scoreboard players add @s[nbt={EVAttack:183s}] Temp 183
+scoreboard players add @s[nbt={EVAttack:184s}] Temp 184
+scoreboard players add @s[nbt={EVAttack:185s}] Temp 185
+scoreboard players add @s[nbt={EVAttack:186s}] Temp 186
+scoreboard players add @s[nbt={EVAttack:187s}] Temp 187
+scoreboard players add @s[nbt={EVAttack:188s}] Temp 188
+scoreboard players add @s[nbt={EVAttack:189s}] Temp 189
+scoreboard players add @s[nbt={EVAttack:190s}] Temp 190
+scoreboard players add @s[nbt={EVAttack:191s}] Temp 191
+scoreboard players add @s[nbt={EVAttack:192s}] Temp 192
+scoreboard players add @s[nbt={EVAttack:193s}] Temp 193
+scoreboard players add @s[nbt={EVAttack:194s}] Temp 194
+scoreboard players add @s[nbt={EVAttack:195s}] Temp 195
+scoreboard players add @s[nbt={EVAttack:196s}] Temp 196
+scoreboard players add @s[nbt={EVAttack:197s}] Temp 197
+scoreboard players add @s[nbt={EVAttack:198s}] Temp 198
+scoreboard players add @s[nbt={EVAttack:199s}] Temp 199
+scoreboard players add @s[nbt={EVAttack:200s}] Temp 200
+scoreboard players add @s[nbt={EVAttack:201s}] Temp 201
+scoreboard players add @s[nbt={EVAttack:202s}] Temp 202
+scoreboard players add @s[nbt={EVAttack:203s}] Temp 203
+scoreboard players add @s[nbt={EVAttack:204s}] Temp 204
+scoreboard players add @s[nbt={EVAttack:205s}] Temp 205
+scoreboard players add @s[nbt={EVAttack:206s}] Temp 206
+scoreboard players add @s[nbt={EVAttack:207s}] Temp 207
+scoreboard players add @s[nbt={EVAttack:208s}] Temp 208
+scoreboard players add @s[nbt={EVAttack:209s}] Temp 209
+scoreboard players add @s[nbt={EVAttack:210s}] Temp 210
+scoreboard players add @s[nbt={EVAttack:211s}] Temp 211
+scoreboard players add @s[nbt={EVAttack:212s}] Temp 212
+scoreboard players add @s[nbt={EVAttack:213s}] Temp 213
+scoreboard players add @s[nbt={EVAttack:214s}] Temp 214
+scoreboard players add @s[nbt={EVAttack:215s}] Temp 215
+scoreboard players add @s[nbt={EVAttack:216s}] Temp 216
+scoreboard players add @s[nbt={EVAttack:217s}] Temp 217
+scoreboard players add @s[nbt={EVAttack:218s}] Temp 218
+scoreboard players add @s[nbt={EVAttack:219s}] Temp 219
+scoreboard players add @s[nbt={EVAttack:220s}] Temp 220
+scoreboard players add @s[nbt={EVAttack:221s}] Temp 221
+scoreboard players add @s[nbt={EVAttack:222s}] Temp 222
+scoreboard players add @s[nbt={EVAttack:223s}] Temp 223
+scoreboard players add @s[nbt={EVAttack:224s}] Temp 224
+scoreboard players add @s[nbt={EVAttack:225s}] Temp 225
+scoreboard players add @s[nbt={EVAttack:226s}] Temp 226
+scoreboard players add @s[nbt={EVAttack:227s}] Temp 227
+scoreboard players add @s[nbt={EVAttack:228s}] Temp 228
+scoreboard players add @s[nbt={EVAttack:229s}] Temp 229
+scoreboard players add @s[nbt={EVAttack:230s}] Temp 230
+scoreboard players add @s[nbt={EVAttack:231s}] Temp 231
+scoreboard players add @s[nbt={EVAttack:232s}] Temp 232
+scoreboard players add @s[nbt={EVAttack:233s}] Temp 233
+scoreboard players add @s[nbt={EVAttack:234s}] Temp 234
+scoreboard players add @s[nbt={EVAttack:235s}] Temp 235
+scoreboard players add @s[nbt={EVAttack:236s}] Temp 236
+scoreboard players add @s[nbt={EVAttack:237s}] Temp 237
+scoreboard players add @s[nbt={EVAttack:238s}] Temp 238
+scoreboard players add @s[nbt={EVAttack:239s}] Temp 239
+scoreboard players add @s[nbt={EVAttack:240s}] Temp 240
+scoreboard players add @s[nbt={EVAttack:241s}] Temp 241
+scoreboard players add @s[nbt={EVAttack:242s}] Temp 242
+scoreboard players add @s[nbt={EVAttack:243s}] Temp 243
+scoreboard players add @s[nbt={EVAttack:244s}] Temp 244
+scoreboard players add @s[nbt={EVAttack:245s}] Temp 245
+scoreboard players add @s[nbt={EVAttack:246s}] Temp 246
+scoreboard players add @s[nbt={EVAttack:247s}] Temp 247
+scoreboard players add @s[nbt={EVAttack:248s}] Temp 248
+scoreboard players add @s[nbt={EVAttack:249s}] Temp 249
+scoreboard players add @s[nbt={EVAttack:250s}] Temp 250
+scoreboard players add @s[nbt={EVAttack:251s}] Temp 251
+scoreboard players add @s[nbt={EVAttack:252s}] Temp 252
 
 
 
-scoreboard players add @s Temp 1 {EVSpecialAttack:1s}
-scoreboard players add @s Temp 2 {EVSpecialAttack:2s}
-scoreboard players add @s Temp 3 {EVSpecialAttack:3s}
-scoreboard players add @s Temp 4 {EVSpecialAttack:4s}
-scoreboard players add @s Temp 5 {EVSpecialAttack:5s}
-scoreboard players add @s Temp 6 {EVSpecialAttack:6s}
-scoreboard players add @s Temp 7 {EVSpecialAttack:7s}
-scoreboard players add @s Temp 8 {EVSpecialAttack:8s}
-scoreboard players add @s Temp 9 {EVSpecialAttack:9s}
-scoreboard players add @s Temp 10 {EVSpecialAttack:10s}
-scoreboard players add @s Temp 11 {EVSpecialAttack:11s}
-scoreboard players add @s Temp 12 {EVSpecialAttack:12s}
-scoreboard players add @s Temp 13 {EVSpecialAttack:13s}
-scoreboard players add @s Temp 14 {EVSpecialAttack:14s}
-scoreboard players add @s Temp 15 {EVSpecialAttack:15s}
-scoreboard players add @s Temp 16 {EVSpecialAttack:16s}
-scoreboard players add @s Temp 17 {EVSpecialAttack:17s}
-scoreboard players add @s Temp 18 {EVSpecialAttack:18s}
-scoreboard players add @s Temp 19 {EVSpecialAttack:19s}
-scoreboard players add @s Temp 20 {EVSpecialAttack:20s}
-scoreboard players add @s Temp 21 {EVSpecialAttack:21s}
-scoreboard players add @s Temp 22 {EVSpecialAttack:22s}
-scoreboard players add @s Temp 23 {EVSpecialAttack:23s}
-scoreboard players add @s Temp 24 {EVSpecialAttack:24s}
-scoreboard players add @s Temp 25 {EVSpecialAttack:25s}
-scoreboard players add @s Temp 26 {EVSpecialAttack:26s}
-scoreboard players add @s Temp 27 {EVSpecialAttack:27s}
-scoreboard players add @s Temp 28 {EVSpecialAttack:28s}
-scoreboard players add @s Temp 29 {EVSpecialAttack:29s}
-scoreboard players add @s Temp 30 {EVSpecialAttack:30s}
-scoreboard players add @s Temp 31 {EVSpecialAttack:31s}
-scoreboard players add @s Temp 32 {EVSpecialAttack:32s}
-scoreboard players add @s Temp 33 {EVSpecialAttack:33s}
-scoreboard players add @s Temp 34 {EVSpecialAttack:34s}
-scoreboard players add @s Temp 35 {EVSpecialAttack:35s}
-scoreboard players add @s Temp 36 {EVSpecialAttack:36s}
-scoreboard players add @s Temp 37 {EVSpecialAttack:37s}
-scoreboard players add @s Temp 38 {EVSpecialAttack:38s}
-scoreboard players add @s Temp 39 {EVSpecialAttack:39s}
-scoreboard players add @s Temp 40 {EVSpecialAttack:40s}
-scoreboard players add @s Temp 41 {EVSpecialAttack:41s}
-scoreboard players add @s Temp 42 {EVSpecialAttack:42s}
-scoreboard players add @s Temp 43 {EVSpecialAttack:43s}
-scoreboard players add @s Temp 44 {EVSpecialAttack:44s}
-scoreboard players add @s Temp 45 {EVSpecialAttack:45s}
-scoreboard players add @s Temp 46 {EVSpecialAttack:46s}
-scoreboard players add @s Temp 47 {EVSpecialAttack:47s}
-scoreboard players add @s Temp 48 {EVSpecialAttack:48s}
-scoreboard players add @s Temp 49 {EVSpecialAttack:49s}
-scoreboard players add @s Temp 50 {EVSpecialAttack:50s}
-scoreboard players add @s Temp 51 {EVSpecialAttack:51s}
-scoreboard players add @s Temp 52 {EVSpecialAttack:52s}
-scoreboard players add @s Temp 53 {EVSpecialAttack:53s}
-scoreboard players add @s Temp 54 {EVSpecialAttack:54s}
-scoreboard players add @s Temp 55 {EVSpecialAttack:55s}
-scoreboard players add @s Temp 56 {EVSpecialAttack:56s}
-scoreboard players add @s Temp 57 {EVSpecialAttack:57s}
-scoreboard players add @s Temp 58 {EVSpecialAttack:58s}
-scoreboard players add @s Temp 59 {EVSpecialAttack:59s}
-scoreboard players add @s Temp 60 {EVSpecialAttack:60s}
-scoreboard players add @s Temp 61 {EVSpecialAttack:61s}
-scoreboard players add @s Temp 62 {EVSpecialAttack:62s}
-scoreboard players add @s Temp 63 {EVSpecialAttack:63s}
-scoreboard players add @s Temp 64 {EVSpecialAttack:64s}
-scoreboard players add @s Temp 65 {EVSpecialAttack:65s}
-scoreboard players add @s Temp 66 {EVSpecialAttack:66s}
-scoreboard players add @s Temp 67 {EVSpecialAttack:67s}
-scoreboard players add @s Temp 68 {EVSpecialAttack:68s}
-scoreboard players add @s Temp 69 {EVSpecialAttack:69s}
-scoreboard players add @s Temp 70 {EVSpecialAttack:70s}
-scoreboard players add @s Temp 71 {EVSpecialAttack:71s}
-scoreboard players add @s Temp 72 {EVSpecialAttack:72s}
-scoreboard players add @s Temp 73 {EVSpecialAttack:73s}
-scoreboard players add @s Temp 74 {EVSpecialAttack:74s}
-scoreboard players add @s Temp 75 {EVSpecialAttack:75s}
-scoreboard players add @s Temp 76 {EVSpecialAttack:76s}
-scoreboard players add @s Temp 77 {EVSpecialAttack:77s}
-scoreboard players add @s Temp 78 {EVSpecialAttack:78s}
-scoreboard players add @s Temp 79 {EVSpecialAttack:79s}
-scoreboard players add @s Temp 80 {EVSpecialAttack:80s}
-scoreboard players add @s Temp 81 {EVSpecialAttack:81s}
-scoreboard players add @s Temp 82 {EVSpecialAttack:82s}
-scoreboard players add @s Temp 83 {EVSpecialAttack:83s}
-scoreboard players add @s Temp 84 {EVSpecialAttack:84s}
-scoreboard players add @s Temp 85 {EVSpecialAttack:85s}
-scoreboard players add @s Temp 86 {EVSpecialAttack:86s}
-scoreboard players add @s Temp 87 {EVSpecialAttack:87s}
-scoreboard players add @s Temp 88 {EVSpecialAttack:88s}
-scoreboard players add @s Temp 89 {EVSpecialAttack:89s}
-scoreboard players add @s Temp 90 {EVSpecialAttack:90s}
-scoreboard players add @s Temp 91 {EVSpecialAttack:91s}
-scoreboard players add @s Temp 92 {EVSpecialAttack:92s}
-scoreboard players add @s Temp 93 {EVSpecialAttack:93s}
-scoreboard players add @s Temp 94 {EVSpecialAttack:94s}
-scoreboard players add @s Temp 95 {EVSpecialAttack:95s}
-scoreboard players add @s Temp 96 {EVSpecialAttack:96s}
-scoreboard players add @s Temp 97 {EVSpecialAttack:97s}
-scoreboard players add @s Temp 98 {EVSpecialAttack:98s}
-scoreboard players add @s Temp 99 {EVSpecialAttack:99s}
-scoreboard players add @s Temp 100 {EVSpecialAttack:100s}
-scoreboard players add @s Temp 101 {EVSpecialAttack:101s}
-scoreboard players add @s Temp 102 {EVSpecialAttack:102s}
-scoreboard players add @s Temp 103 {EVSpecialAttack:103s}
-scoreboard players add @s Temp 104 {EVSpecialAttack:104s}
-scoreboard players add @s Temp 105 {EVSpecialAttack:105s}
-scoreboard players add @s Temp 106 {EVSpecialAttack:106s}
-scoreboard players add @s Temp 107 {EVSpecialAttack:107s}
-scoreboard players add @s Temp 108 {EVSpecialAttack:108s}
-scoreboard players add @s Temp 109 {EVSpecialAttack:109s}
-scoreboard players add @s Temp 110 {EVSpecialAttack:110s}
-scoreboard players add @s Temp 111 {EVSpecialAttack:111s}
-scoreboard players add @s Temp 112 {EVSpecialAttack:112s}
-scoreboard players add @s Temp 113 {EVSpecialAttack:113s}
-scoreboard players add @s Temp 114 {EVSpecialAttack:114s}
-scoreboard players add @s Temp 115 {EVSpecialAttack:115s}
-scoreboard players add @s Temp 116 {EVSpecialAttack:116s}
-scoreboard players add @s Temp 117 {EVSpecialAttack:117s}
-scoreboard players add @s Temp 118 {EVSpecialAttack:118s}
-scoreboard players add @s Temp 119 {EVSpecialAttack:119s}
-scoreboard players add @s Temp 120 {EVSpecialAttack:120s}
-scoreboard players add @s Temp 121 {EVSpecialAttack:121s}
-scoreboard players add @s Temp 122 {EVSpecialAttack:122s}
-scoreboard players add @s Temp 123 {EVSpecialAttack:123s}
-scoreboard players add @s Temp 124 {EVSpecialAttack:124s}
-scoreboard players add @s Temp 125 {EVSpecialAttack:125s}
-scoreboard players add @s Temp 126 {EVSpecialAttack:126s}
-scoreboard players add @s Temp 127 {EVSpecialAttack:127s}
-scoreboard players add @s Temp 128 {EVSpecialAttack:128s}
-scoreboard players add @s Temp 129 {EVSpecialAttack:129s}
-scoreboard players add @s Temp 130 {EVSpecialAttack:130s}
-scoreboard players add @s Temp 131 {EVSpecialAttack:131s}
-scoreboard players add @s Temp 132 {EVSpecialAttack:132s}
-scoreboard players add @s Temp 133 {EVSpecialAttack:133s}
-scoreboard players add @s Temp 134 {EVSpecialAttack:134s}
-scoreboard players add @s Temp 135 {EVSpecialAttack:135s}
-scoreboard players add @s Temp 136 {EVSpecialAttack:136s}
-scoreboard players add @s Temp 137 {EVSpecialAttack:137s}
-scoreboard players add @s Temp 138 {EVSpecialAttack:138s}
-scoreboard players add @s Temp 139 {EVSpecialAttack:139s}
-scoreboard players add @s Temp 140 {EVSpecialAttack:140s}
-scoreboard players add @s Temp 141 {EVSpecialAttack:141s}
-scoreboard players add @s Temp 142 {EVSpecialAttack:142s}
-scoreboard players add @s Temp 143 {EVSpecialAttack:143s}
-scoreboard players add @s Temp 144 {EVSpecialAttack:144s}
-scoreboard players add @s Temp 145 {EVSpecialAttack:145s}
-scoreboard players add @s Temp 146 {EVSpecialAttack:146s}
-scoreboard players add @s Temp 147 {EVSpecialAttack:147s}
-scoreboard players add @s Temp 148 {EVSpecialAttack:148s}
-scoreboard players add @s Temp 149 {EVSpecialAttack:149s}
-scoreboard players add @s Temp 150 {EVSpecialAttack:150s}
-scoreboard players add @s Temp 151 {EVSpecialAttack:151s}
-scoreboard players add @s Temp 152 {EVSpecialAttack:152s}
-scoreboard players add @s Temp 153 {EVSpecialAttack:153s}
-scoreboard players add @s Temp 154 {EVSpecialAttack:154s}
-scoreboard players add @s Temp 155 {EVSpecialAttack:155s}
-scoreboard players add @s Temp 156 {EVSpecialAttack:156s}
-scoreboard players add @s Temp 157 {EVSpecialAttack:157s}
-scoreboard players add @s Temp 158 {EVSpecialAttack:158s}
-scoreboard players add @s Temp 159 {EVSpecialAttack:159s}
-scoreboard players add @s Temp 160 {EVSpecialAttack:160s}
-scoreboard players add @s Temp 161 {EVSpecialAttack:161s}
-scoreboard players add @s Temp 162 {EVSpecialAttack:162s}
-scoreboard players add @s Temp 163 {EVSpecialAttack:163s}
-scoreboard players add @s Temp 164 {EVSpecialAttack:164s}
-scoreboard players add @s Temp 165 {EVSpecialAttack:165s}
-scoreboard players add @s Temp 166 {EVSpecialAttack:166s}
-scoreboard players add @s Temp 167 {EVSpecialAttack:167s}
-scoreboard players add @s Temp 168 {EVSpecialAttack:168s}
-scoreboard players add @s Temp 169 {EVSpecialAttack:169s}
-scoreboard players add @s Temp 170 {EVSpecialAttack:170s}
-scoreboard players add @s Temp 171 {EVSpecialAttack:171s}
-scoreboard players add @s Temp 172 {EVSpecialAttack:172s}
-scoreboard players add @s Temp 173 {EVSpecialAttack:173s}
-scoreboard players add @s Temp 174 {EVSpecialAttack:174s}
-scoreboard players add @s Temp 175 {EVSpecialAttack:175s}
-scoreboard players add @s Temp 176 {EVSpecialAttack:176s}
-scoreboard players add @s Temp 177 {EVSpecialAttack:177s}
-scoreboard players add @s Temp 178 {EVSpecialAttack:178s}
-scoreboard players add @s Temp 179 {EVSpecialAttack:179s}
-scoreboard players add @s Temp 180 {EVSpecialAttack:180s}
-scoreboard players add @s Temp 181 {EVSpecialAttack:181s}
-scoreboard players add @s Temp 182 {EVSpecialAttack:182s}
-scoreboard players add @s Temp 183 {EVSpecialAttack:183s}
-scoreboard players add @s Temp 184 {EVSpecialAttack:184s}
-scoreboard players add @s Temp 185 {EVSpecialAttack:185s}
-scoreboard players add @s Temp 186 {EVSpecialAttack:186s}
-scoreboard players add @s Temp 187 {EVSpecialAttack:187s}
-scoreboard players add @s Temp 188 {EVSpecialAttack:188s}
-scoreboard players add @s Temp 189 {EVSpecialAttack:189s}
-scoreboard players add @s Temp 190 {EVSpecialAttack:190s}
-scoreboard players add @s Temp 191 {EVSpecialAttack:191s}
-scoreboard players add @s Temp 192 {EVSpecialAttack:192s}
-scoreboard players add @s Temp 193 {EVSpecialAttack:193s}
-scoreboard players add @s Temp 194 {EVSpecialAttack:194s}
-scoreboard players add @s Temp 195 {EVSpecialAttack:195s}
-scoreboard players add @s Temp 196 {EVSpecialAttack:196s}
-scoreboard players add @s Temp 197 {EVSpecialAttack:197s}
-scoreboard players add @s Temp 198 {EVSpecialAttack:198s}
-scoreboard players add @s Temp 199 {EVSpecialAttack:199s}
-scoreboard players add @s Temp 200 {EVSpecialAttack:200s}
-scoreboard players add @s Temp 201 {EVSpecialAttack:201s}
-scoreboard players add @s Temp 202 {EVSpecialAttack:202s}
-scoreboard players add @s Temp 203 {EVSpecialAttack:203s}
-scoreboard players add @s Temp 204 {EVSpecialAttack:204s}
-scoreboard players add @s Temp 205 {EVSpecialAttack:205s}
-scoreboard players add @s Temp 206 {EVSpecialAttack:206s}
-scoreboard players add @s Temp 207 {EVSpecialAttack:207s}
-scoreboard players add @s Temp 208 {EVSpecialAttack:208s}
-scoreboard players add @s Temp 209 {EVSpecialAttack:209s}
-scoreboard players add @s Temp 210 {EVSpecialAttack:210s}
-scoreboard players add @s Temp 211 {EVSpecialAttack:211s}
-scoreboard players add @s Temp 212 {EVSpecialAttack:212s}
-scoreboard players add @s Temp 213 {EVSpecialAttack:213s}
-scoreboard players add @s Temp 214 {EVSpecialAttack:214s}
-scoreboard players add @s Temp 215 {EVSpecialAttack:215s}
-scoreboard players add @s Temp 216 {EVSpecialAttack:216s}
-scoreboard players add @s Temp 217 {EVSpecialAttack:217s}
-scoreboard players add @s Temp 218 {EVSpecialAttack:218s}
-scoreboard players add @s Temp 219 {EVSpecialAttack:219s}
-scoreboard players add @s Temp 220 {EVSpecialAttack:220s}
-scoreboard players add @s Temp 221 {EVSpecialAttack:221s}
-scoreboard players add @s Temp 222 {EVSpecialAttack:222s}
-scoreboard players add @s Temp 223 {EVSpecialAttack:223s}
-scoreboard players add @s Temp 224 {EVSpecialAttack:224s}
-scoreboard players add @s Temp 225 {EVSpecialAttack:225s}
-scoreboard players add @s Temp 226 {EVSpecialAttack:226s}
-scoreboard players add @s Temp 227 {EVSpecialAttack:227s}
-scoreboard players add @s Temp 228 {EVSpecialAttack:228s}
-scoreboard players add @s Temp 229 {EVSpecialAttack:229s}
-scoreboard players add @s Temp 230 {EVSpecialAttack:230s}
-scoreboard players add @s Temp 231 {EVSpecialAttack:231s}
-scoreboard players add @s Temp 232 {EVSpecialAttack:232s}
-scoreboard players add @s Temp 233 {EVSpecialAttack:233s}
-scoreboard players add @s Temp 234 {EVSpecialAttack:234s}
-scoreboard players add @s Temp 235 {EVSpecialAttack:235s}
-scoreboard players add @s Temp 236 {EVSpecialAttack:236s}
-scoreboard players add @s Temp 237 {EVSpecialAttack:237s}
-scoreboard players add @s Temp 238 {EVSpecialAttack:238s}
-scoreboard players add @s Temp 239 {EVSpecialAttack:239s}
-scoreboard players add @s Temp 240 {EVSpecialAttack:240s}
-scoreboard players add @s Temp 241 {EVSpecialAttack:241s}
-scoreboard players add @s Temp 242 {EVSpecialAttack:242s}
-scoreboard players add @s Temp 243 {EVSpecialAttack:243s}
-scoreboard players add @s Temp 244 {EVSpecialAttack:244s}
-scoreboard players add @s Temp 245 {EVSpecialAttack:245s}
-scoreboard players add @s Temp 246 {EVSpecialAttack:246s}
-scoreboard players add @s Temp 247 {EVSpecialAttack:247s}
-scoreboard players add @s Temp 248 {EVSpecialAttack:248s}
-scoreboard players add @s Temp 249 {EVSpecialAttack:249s}
-scoreboard players add @s Temp 250 {EVSpecialAttack:250s}
-scoreboard players add @s Temp 251 {EVSpecialAttack:251s}
-scoreboard players add @s Temp 252 {EVSpecialAttack:252s}
+scoreboard players add @s[nbt={EVSpecialAttack:1s}] Temp 1
+scoreboard players add @s[nbt={EVSpecialAttack:2s}] Temp 2
+scoreboard players add @s[nbt={EVSpecialAttack:3s}] Temp 3
+scoreboard players add @s[nbt={EVSpecialAttack:4s}] Temp 4
+scoreboard players add @s[nbt={EVSpecialAttack:5s}] Temp 5
+scoreboard players add @s[nbt={EVSpecialAttack:6s}] Temp 6
+scoreboard players add @s[nbt={EVSpecialAttack:7s}] Temp 7
+scoreboard players add @s[nbt={EVSpecialAttack:8s}] Temp 8
+scoreboard players add @s[nbt={EVSpecialAttack:9s}] Temp 9
+scoreboard players add @s[nbt={EVSpecialAttack:10s}] Temp 10
+scoreboard players add @s[nbt={EVSpecialAttack:11s}] Temp 11
+scoreboard players add @s[nbt={EVSpecialAttack:12s}] Temp 12
+scoreboard players add @s[nbt={EVSpecialAttack:13s}] Temp 13
+scoreboard players add @s[nbt={EVSpecialAttack:14s}] Temp 14
+scoreboard players add @s[nbt={EVSpecialAttack:15s}] Temp 15
+scoreboard players add @s[nbt={EVSpecialAttack:16s}] Temp 16
+scoreboard players add @s[nbt={EVSpecialAttack:17s}] Temp 17
+scoreboard players add @s[nbt={EVSpecialAttack:18s}] Temp 18
+scoreboard players add @s[nbt={EVSpecialAttack:19s}] Temp 19
+scoreboard players add @s[nbt={EVSpecialAttack:20s}] Temp 20
+scoreboard players add @s[nbt={EVSpecialAttack:21s}] Temp 21
+scoreboard players add @s[nbt={EVSpecialAttack:22s}] Temp 22
+scoreboard players add @s[nbt={EVSpecialAttack:23s}] Temp 23
+scoreboard players add @s[nbt={EVSpecialAttack:24s}] Temp 24
+scoreboard players add @s[nbt={EVSpecialAttack:25s}] Temp 25
+scoreboard players add @s[nbt={EVSpecialAttack:26s}] Temp 26
+scoreboard players add @s[nbt={EVSpecialAttack:27s}] Temp 27
+scoreboard players add @s[nbt={EVSpecialAttack:28s}] Temp 28
+scoreboard players add @s[nbt={EVSpecialAttack:29s}] Temp 29
+scoreboard players add @s[nbt={EVSpecialAttack:30s}] Temp 30
+scoreboard players add @s[nbt={EVSpecialAttack:31s}] Temp 31
+scoreboard players add @s[nbt={EVSpecialAttack:32s}] Temp 32
+scoreboard players add @s[nbt={EVSpecialAttack:33s}] Temp 33
+scoreboard players add @s[nbt={EVSpecialAttack:34s}] Temp 34
+scoreboard players add @s[nbt={EVSpecialAttack:35s}] Temp 35
+scoreboard players add @s[nbt={EVSpecialAttack:36s}] Temp 36
+scoreboard players add @s[nbt={EVSpecialAttack:37s}] Temp 37
+scoreboard players add @s[nbt={EVSpecialAttack:38s}] Temp 38
+scoreboard players add @s[nbt={EVSpecialAttack:39s}] Temp 39
+scoreboard players add @s[nbt={EVSpecialAttack:40s}] Temp 40
+scoreboard players add @s[nbt={EVSpecialAttack:41s}] Temp 41
+scoreboard players add @s[nbt={EVSpecialAttack:42s}] Temp 42
+scoreboard players add @s[nbt={EVSpecialAttack:43s}] Temp 43
+scoreboard players add @s[nbt={EVSpecialAttack:44s}] Temp 44
+scoreboard players add @s[nbt={EVSpecialAttack:45s}] Temp 45
+scoreboard players add @s[nbt={EVSpecialAttack:46s}] Temp 46
+scoreboard players add @s[nbt={EVSpecialAttack:47s}] Temp 47
+scoreboard players add @s[nbt={EVSpecialAttack:48s}] Temp 48
+scoreboard players add @s[nbt={EVSpecialAttack:49s}] Temp 49
+scoreboard players add @s[nbt={EVSpecialAttack:50s}] Temp 50
+scoreboard players add @s[nbt={EVSpecialAttack:51s}] Temp 51
+scoreboard players add @s[nbt={EVSpecialAttack:52s}] Temp 52
+scoreboard players add @s[nbt={EVSpecialAttack:53s}] Temp 53
+scoreboard players add @s[nbt={EVSpecialAttack:54s}] Temp 54
+scoreboard players add @s[nbt={EVSpecialAttack:55s}] Temp 55
+scoreboard players add @s[nbt={EVSpecialAttack:56s}] Temp 56
+scoreboard players add @s[nbt={EVSpecialAttack:57s}] Temp 57
+scoreboard players add @s[nbt={EVSpecialAttack:58s}] Temp 58
+scoreboard players add @s[nbt={EVSpecialAttack:59s}] Temp 59
+scoreboard players add @s[nbt={EVSpecialAttack:60s}] Temp 60
+scoreboard players add @s[nbt={EVSpecialAttack:61s}] Temp 61
+scoreboard players add @s[nbt={EVSpecialAttack:62s}] Temp 62
+scoreboard players add @s[nbt={EVSpecialAttack:63s}] Temp 63
+scoreboard players add @s[nbt={EVSpecialAttack:64s}] Temp 64
+scoreboard players add @s[nbt={EVSpecialAttack:65s}] Temp 65
+scoreboard players add @s[nbt={EVSpecialAttack:66s}] Temp 66
+scoreboard players add @s[nbt={EVSpecialAttack:67s}] Temp 67
+scoreboard players add @s[nbt={EVSpecialAttack:68s}] Temp 68
+scoreboard players add @s[nbt={EVSpecialAttack:69s}] Temp 69
+scoreboard players add @s[nbt={EVSpecialAttack:70s}] Temp 70
+scoreboard players add @s[nbt={EVSpecialAttack:71s}] Temp 71
+scoreboard players add @s[nbt={EVSpecialAttack:72s}] Temp 72
+scoreboard players add @s[nbt={EVSpecialAttack:73s}] Temp 73
+scoreboard players add @s[nbt={EVSpecialAttack:74s}] Temp 74
+scoreboard players add @s[nbt={EVSpecialAttack:75s}] Temp 75
+scoreboard players add @s[nbt={EVSpecialAttack:76s}] Temp 76
+scoreboard players add @s[nbt={EVSpecialAttack:77s}] Temp 77
+scoreboard players add @s[nbt={EVSpecialAttack:78s}] Temp 78
+scoreboard players add @s[nbt={EVSpecialAttack:79s}] Temp 79
+scoreboard players add @s[nbt={EVSpecialAttack:80s}] Temp 80
+scoreboard players add @s[nbt={EVSpecialAttack:81s}] Temp 81
+scoreboard players add @s[nbt={EVSpecialAttack:82s}] Temp 82
+scoreboard players add @s[nbt={EVSpecialAttack:83s}] Temp 83
+scoreboard players add @s[nbt={EVSpecialAttack:84s}] Temp 84
+scoreboard players add @s[nbt={EVSpecialAttack:85s}] Temp 85
+scoreboard players add @s[nbt={EVSpecialAttack:86s}] Temp 86
+scoreboard players add @s[nbt={EVSpecialAttack:87s}] Temp 87
+scoreboard players add @s[nbt={EVSpecialAttack:88s}] Temp 88
+scoreboard players add @s[nbt={EVSpecialAttack:89s}] Temp 89
+scoreboard players add @s[nbt={EVSpecialAttack:90s}] Temp 90
+scoreboard players add @s[nbt={EVSpecialAttack:91s}] Temp 91
+scoreboard players add @s[nbt={EVSpecialAttack:92s}] Temp 92
+scoreboard players add @s[nbt={EVSpecialAttack:93s}] Temp 93
+scoreboard players add @s[nbt={EVSpecialAttack:94s}] Temp 94
+scoreboard players add @s[nbt={EVSpecialAttack:95s}] Temp 95
+scoreboard players add @s[nbt={EVSpecialAttack:96s}] Temp 96
+scoreboard players add @s[nbt={EVSpecialAttack:97s}] Temp 97
+scoreboard players add @s[nbt={EVSpecialAttack:98s}] Temp 98
+scoreboard players add @s[nbt={EVSpecialAttack:99s}] Temp 99
+scoreboard players add @s[nbt={EVSpecialAttack:100s}] Temp 100
+scoreboard players add @s[nbt={EVSpecialAttack:101s}] Temp 101
+scoreboard players add @s[nbt={EVSpecialAttack:102s}] Temp 102
+scoreboard players add @s[nbt={EVSpecialAttack:103s}] Temp 103
+scoreboard players add @s[nbt={EVSpecialAttack:104s}] Temp 104
+scoreboard players add @s[nbt={EVSpecialAttack:105s}] Temp 105
+scoreboard players add @s[nbt={EVSpecialAttack:106s}] Temp 106
+scoreboard players add @s[nbt={EVSpecialAttack:107s}] Temp 107
+scoreboard players add @s[nbt={EVSpecialAttack:108s}] Temp 108
+scoreboard players add @s[nbt={EVSpecialAttack:109s}] Temp 109
+scoreboard players add @s[nbt={EVSpecialAttack:110s}] Temp 110
+scoreboard players add @s[nbt={EVSpecialAttack:111s}] Temp 111
+scoreboard players add @s[nbt={EVSpecialAttack:112s}] Temp 112
+scoreboard players add @s[nbt={EVSpecialAttack:113s}] Temp 113
+scoreboard players add @s[nbt={EVSpecialAttack:114s}] Temp 114
+scoreboard players add @s[nbt={EVSpecialAttack:115s}] Temp 115
+scoreboard players add @s[nbt={EVSpecialAttack:116s}] Temp 116
+scoreboard players add @s[nbt={EVSpecialAttack:117s}] Temp 117
+scoreboard players add @s[nbt={EVSpecialAttack:118s}] Temp 118
+scoreboard players add @s[nbt={EVSpecialAttack:119s}] Temp 119
+scoreboard players add @s[nbt={EVSpecialAttack:120s}] Temp 120
+scoreboard players add @s[nbt={EVSpecialAttack:121s}] Temp 121
+scoreboard players add @s[nbt={EVSpecialAttack:122s}] Temp 122
+scoreboard players add @s[nbt={EVSpecialAttack:123s}] Temp 123
+scoreboard players add @s[nbt={EVSpecialAttack:124s}] Temp 124
+scoreboard players add @s[nbt={EVSpecialAttack:125s}] Temp 125
+scoreboard players add @s[nbt={EVSpecialAttack:126s}] Temp 126
+scoreboard players add @s[nbt={EVSpecialAttack:127s}] Temp 127
+scoreboard players add @s[nbt={EVSpecialAttack:128s}] Temp 128
+scoreboard players add @s[nbt={EVSpecialAttack:129s}] Temp 129
+scoreboard players add @s[nbt={EVSpecialAttack:130s}] Temp 130
+scoreboard players add @s[nbt={EVSpecialAttack:131s}] Temp 131
+scoreboard players add @s[nbt={EVSpecialAttack:132s}] Temp 132
+scoreboard players add @s[nbt={EVSpecialAttack:133s}] Temp 133
+scoreboard players add @s[nbt={EVSpecialAttack:134s}] Temp 134
+scoreboard players add @s[nbt={EVSpecialAttack:135s}] Temp 135
+scoreboard players add @s[nbt={EVSpecialAttack:136s}] Temp 136
+scoreboard players add @s[nbt={EVSpecialAttack:137s}] Temp 137
+scoreboard players add @s[nbt={EVSpecialAttack:138s}] Temp 138
+scoreboard players add @s[nbt={EVSpecialAttack:139s}] Temp 139
+scoreboard players add @s[nbt={EVSpecialAttack:140s}] Temp 140
+scoreboard players add @s[nbt={EVSpecialAttack:141s}] Temp 141
+scoreboard players add @s[nbt={EVSpecialAttack:142s}] Temp 142
+scoreboard players add @s[nbt={EVSpecialAttack:143s}] Temp 143
+scoreboard players add @s[nbt={EVSpecialAttack:144s}] Temp 144
+scoreboard players add @s[nbt={EVSpecialAttack:145s}] Temp 145
+scoreboard players add @s[nbt={EVSpecialAttack:146s}] Temp 146
+scoreboard players add @s[nbt={EVSpecialAttack:147s}] Temp 147
+scoreboard players add @s[nbt={EVSpecialAttack:148s}] Temp 148
+scoreboard players add @s[nbt={EVSpecialAttack:149s}] Temp 149
+scoreboard players add @s[nbt={EVSpecialAttack:150s}] Temp 150
+scoreboard players add @s[nbt={EVSpecialAttack:151s}] Temp 151
+scoreboard players add @s[nbt={EVSpecialAttack:152s}] Temp 152
+scoreboard players add @s[nbt={EVSpecialAttack:153s}] Temp 153
+scoreboard players add @s[nbt={EVSpecialAttack:154s}] Temp 154
+scoreboard players add @s[nbt={EVSpecialAttack:155s}] Temp 155
+scoreboard players add @s[nbt={EVSpecialAttack:156s}] Temp 156
+scoreboard players add @s[nbt={EVSpecialAttack:157s}] Temp 157
+scoreboard players add @s[nbt={EVSpecialAttack:158s}] Temp 158
+scoreboard players add @s[nbt={EVSpecialAttack:159s}] Temp 159
+scoreboard players add @s[nbt={EVSpecialAttack:160s}] Temp 160
+scoreboard players add @s[nbt={EVSpecialAttack:161s}] Temp 161
+scoreboard players add @s[nbt={EVSpecialAttack:162s}] Temp 162
+scoreboard players add @s[nbt={EVSpecialAttack:163s}] Temp 163
+scoreboard players add @s[nbt={EVSpecialAttack:164s}] Temp 164
+scoreboard players add @s[nbt={EVSpecialAttack:165s}] Temp 165
+scoreboard players add @s[nbt={EVSpecialAttack:166s}] Temp 166
+scoreboard players add @s[nbt={EVSpecialAttack:167s}] Temp 167
+scoreboard players add @s[nbt={EVSpecialAttack:168s}] Temp 168
+scoreboard players add @s[nbt={EVSpecialAttack:169s}] Temp 169
+scoreboard players add @s[nbt={EVSpecialAttack:170s}] Temp 170
+scoreboard players add @s[nbt={EVSpecialAttack:171s}] Temp 171
+scoreboard players add @s[nbt={EVSpecialAttack:172s}] Temp 172
+scoreboard players add @s[nbt={EVSpecialAttack:173s}] Temp 173
+scoreboard players add @s[nbt={EVSpecialAttack:174s}] Temp 174
+scoreboard players add @s[nbt={EVSpecialAttack:175s}] Temp 175
+scoreboard players add @s[nbt={EVSpecialAttack:176s}] Temp 176
+scoreboard players add @s[nbt={EVSpecialAttack:177s}] Temp 177
+scoreboard players add @s[nbt={EVSpecialAttack:178s}] Temp 178
+scoreboard players add @s[nbt={EVSpecialAttack:179s}] Temp 179
+scoreboard players add @s[nbt={EVSpecialAttack:180s}] Temp 180
+scoreboard players add @s[nbt={EVSpecialAttack:181s}] Temp 181
+scoreboard players add @s[nbt={EVSpecialAttack:182s}] Temp 182
+scoreboard players add @s[nbt={EVSpecialAttack:183s}] Temp 183
+scoreboard players add @s[nbt={EVSpecialAttack:184s}] Temp 184
+scoreboard players add @s[nbt={EVSpecialAttack:185s}] Temp 185
+scoreboard players add @s[nbt={EVSpecialAttack:186s}] Temp 186
+scoreboard players add @s[nbt={EVSpecialAttack:187s}] Temp 187
+scoreboard players add @s[nbt={EVSpecialAttack:188s}] Temp 188
+scoreboard players add @s[nbt={EVSpecialAttack:189s}] Temp 189
+scoreboard players add @s[nbt={EVSpecialAttack:190s}] Temp 190
+scoreboard players add @s[nbt={EVSpecialAttack:191s}] Temp 191
+scoreboard players add @s[nbt={EVSpecialAttack:192s}] Temp 192
+scoreboard players add @s[nbt={EVSpecialAttack:193s}] Temp 193
+scoreboard players add @s[nbt={EVSpecialAttack:194s}] Temp 194
+scoreboard players add @s[nbt={EVSpecialAttack:195s}] Temp 195
+scoreboard players add @s[nbt={EVSpecialAttack:196s}] Temp 196
+scoreboard players add @s[nbt={EVSpecialAttack:197s}] Temp 197
+scoreboard players add @s[nbt={EVSpecialAttack:198s}] Temp 198
+scoreboard players add @s[nbt={EVSpecialAttack:199s}] Temp 199
+scoreboard players add @s[nbt={EVSpecialAttack:200s}] Temp 200
+scoreboard players add @s[nbt={EVSpecialAttack:201s}] Temp 201
+scoreboard players add @s[nbt={EVSpecialAttack:202s}] Temp 202
+scoreboard players add @s[nbt={EVSpecialAttack:203s}] Temp 203
+scoreboard players add @s[nbt={EVSpecialAttack:204s}] Temp 204
+scoreboard players add @s[nbt={EVSpecialAttack:205s}] Temp 205
+scoreboard players add @s[nbt={EVSpecialAttack:206s}] Temp 206
+scoreboard players add @s[nbt={EVSpecialAttack:207s}] Temp 207
+scoreboard players add @s[nbt={EVSpecialAttack:208s}] Temp 208
+scoreboard players add @s[nbt={EVSpecialAttack:209s}] Temp 209
+scoreboard players add @s[nbt={EVSpecialAttack:210s}] Temp 210
+scoreboard players add @s[nbt={EVSpecialAttack:211s}] Temp 211
+scoreboard players add @s[nbt={EVSpecialAttack:212s}] Temp 212
+scoreboard players add @s[nbt={EVSpecialAttack:213s}] Temp 213
+scoreboard players add @s[nbt={EVSpecialAttack:214s}] Temp 214
+scoreboard players add @s[nbt={EVSpecialAttack:215s}] Temp 215
+scoreboard players add @s[nbt={EVSpecialAttack:216s}] Temp 216
+scoreboard players add @s[nbt={EVSpecialAttack:217s}] Temp 217
+scoreboard players add @s[nbt={EVSpecialAttack:218s}] Temp 218
+scoreboard players add @s[nbt={EVSpecialAttack:219s}] Temp 219
+scoreboard players add @s[nbt={EVSpecialAttack:220s}] Temp 220
+scoreboard players add @s[nbt={EVSpecialAttack:221s}] Temp 221
+scoreboard players add @s[nbt={EVSpecialAttack:222s}] Temp 222
+scoreboard players add @s[nbt={EVSpecialAttack:223s}] Temp 223
+scoreboard players add @s[nbt={EVSpecialAttack:224s}] Temp 224
+scoreboard players add @s[nbt={EVSpecialAttack:225s}] Temp 225
+scoreboard players add @s[nbt={EVSpecialAttack:226s}] Temp 226
+scoreboard players add @s[nbt={EVSpecialAttack:227s}] Temp 227
+scoreboard players add @s[nbt={EVSpecialAttack:228s}] Temp 228
+scoreboard players add @s[nbt={EVSpecialAttack:229s}] Temp 229
+scoreboard players add @s[nbt={EVSpecialAttack:230s}] Temp 230
+scoreboard players add @s[nbt={EVSpecialAttack:231s}] Temp 231
+scoreboard players add @s[nbt={EVSpecialAttack:232s}] Temp 232
+scoreboard players add @s[nbt={EVSpecialAttack:233s}] Temp 233
+scoreboard players add @s[nbt={EVSpecialAttack:234s}] Temp 234
+scoreboard players add @s[nbt={EVSpecialAttack:235s}] Temp 235
+scoreboard players add @s[nbt={EVSpecialAttack:236s}] Temp 236
+scoreboard players add @s[nbt={EVSpecialAttack:237s}] Temp 237
+scoreboard players add @s[nbt={EVSpecialAttack:238s}] Temp 238
+scoreboard players add @s[nbt={EVSpecialAttack:239s}] Temp 239
+scoreboard players add @s[nbt={EVSpecialAttack:240s}] Temp 240
+scoreboard players add @s[nbt={EVSpecialAttack:241s}] Temp 241
+scoreboard players add @s[nbt={EVSpecialAttack:242s}] Temp 242
+scoreboard players add @s[nbt={EVSpecialAttack:243s}] Temp 243
+scoreboard players add @s[nbt={EVSpecialAttack:244s}] Temp 244
+scoreboard players add @s[nbt={EVSpecialAttack:245s}] Temp 245
+scoreboard players add @s[nbt={EVSpecialAttack:246s}] Temp 246
+scoreboard players add @s[nbt={EVSpecialAttack:247s}] Temp 247
+scoreboard players add @s[nbt={EVSpecialAttack:248s}] Temp 248
+scoreboard players add @s[nbt={EVSpecialAttack:249s}] Temp 249
+scoreboard players add @s[nbt={EVSpecialAttack:250s}] Temp 250
+scoreboard players add @s[nbt={EVSpecialAttack:251s}] Temp 251
+scoreboard players add @s[nbt={EVSpecialAttack:252s}] Temp 252
 
 
 
-scoreboard players add @s Temp 1 {EVDefence:1s}
-scoreboard players add @s Temp 2 {EVDefence:2s}
-scoreboard players add @s Temp 3 {EVDefence:3s}
-scoreboard players add @s Temp 4 {EVDefence:4s}
-scoreboard players add @s Temp 5 {EVDefence:5s}
-scoreboard players add @s Temp 6 {EVDefence:6s}
-scoreboard players add @s Temp 7 {EVDefence:7s}
-scoreboard players add @s Temp 8 {EVDefence:8s}
-scoreboard players add @s Temp 9 {EVDefence:9s}
-scoreboard players add @s Temp 10 {EVDefence:10s}
-scoreboard players add @s Temp 11 {EVDefence:11s}
-scoreboard players add @s Temp 12 {EVDefence:12s}
-scoreboard players add @s Temp 13 {EVDefence:13s}
-scoreboard players add @s Temp 14 {EVDefence:14s}
-scoreboard players add @s Temp 15 {EVDefence:15s}
-scoreboard players add @s Temp 16 {EVDefence:16s}
-scoreboard players add @s Temp 17 {EVDefence:17s}
-scoreboard players add @s Temp 18 {EVDefence:18s}
-scoreboard players add @s Temp 19 {EVDefence:19s}
-scoreboard players add @s Temp 20 {EVDefence:20s}
-scoreboard players add @s Temp 21 {EVDefence:21s}
-scoreboard players add @s Temp 22 {EVDefence:22s}
-scoreboard players add @s Temp 23 {EVDefence:23s}
-scoreboard players add @s Temp 24 {EVDefence:24s}
-scoreboard players add @s Temp 25 {EVDefence:25s}
-scoreboard players add @s Temp 26 {EVDefence:26s}
-scoreboard players add @s Temp 27 {EVDefence:27s}
-scoreboard players add @s Temp 28 {EVDefence:28s}
-scoreboard players add @s Temp 29 {EVDefence:29s}
-scoreboard players add @s Temp 30 {EVDefence:30s}
-scoreboard players add @s Temp 31 {EVDefence:31s}
-scoreboard players add @s Temp 32 {EVDefence:32s}
-scoreboard players add @s Temp 33 {EVDefence:33s}
-scoreboard players add @s Temp 34 {EVDefence:34s}
-scoreboard players add @s Temp 35 {EVDefence:35s}
-scoreboard players add @s Temp 36 {EVDefence:36s}
-scoreboard players add @s Temp 37 {EVDefence:37s}
-scoreboard players add @s Temp 38 {EVDefence:38s}
-scoreboard players add @s Temp 39 {EVDefence:39s}
-scoreboard players add @s Temp 40 {EVDefence:40s}
-scoreboard players add @s Temp 41 {EVDefence:41s}
-scoreboard players add @s Temp 42 {EVDefence:42s}
-scoreboard players add @s Temp 43 {EVDefence:43s}
-scoreboard players add @s Temp 44 {EVDefence:44s}
-scoreboard players add @s Temp 45 {EVDefence:45s}
-scoreboard players add @s Temp 46 {EVDefence:46s}
-scoreboard players add @s Temp 47 {EVDefence:47s}
-scoreboard players add @s Temp 48 {EVDefence:48s}
-scoreboard players add @s Temp 49 {EVDefence:49s}
-scoreboard players add @s Temp 50 {EVDefence:50s}
-scoreboard players add @s Temp 51 {EVDefence:51s}
-scoreboard players add @s Temp 52 {EVDefence:52s}
-scoreboard players add @s Temp 53 {EVDefence:53s}
-scoreboard players add @s Temp 54 {EVDefence:54s}
-scoreboard players add @s Temp 55 {EVDefence:55s}
-scoreboard players add @s Temp 56 {EVDefence:56s}
-scoreboard players add @s Temp 57 {EVDefence:57s}
-scoreboard players add @s Temp 58 {EVDefence:58s}
-scoreboard players add @s Temp 59 {EVDefence:59s}
-scoreboard players add @s Temp 60 {EVDefence:60s}
-scoreboard players add @s Temp 61 {EVDefence:61s}
-scoreboard players add @s Temp 62 {EVDefence:62s}
-scoreboard players add @s Temp 63 {EVDefence:63s}
-scoreboard players add @s Temp 64 {EVDefence:64s}
-scoreboard players add @s Temp 65 {EVDefence:65s}
-scoreboard players add @s Temp 66 {EVDefence:66s}
-scoreboard players add @s Temp 67 {EVDefence:67s}
-scoreboard players add @s Temp 68 {EVDefence:68s}
-scoreboard players add @s Temp 69 {EVDefence:69s}
-scoreboard players add @s Temp 70 {EVDefence:70s}
-scoreboard players add @s Temp 71 {EVDefence:71s}
-scoreboard players add @s Temp 72 {EVDefence:72s}
-scoreboard players add @s Temp 73 {EVDefence:73s}
-scoreboard players add @s Temp 74 {EVDefence:74s}
-scoreboard players add @s Temp 75 {EVDefence:75s}
-scoreboard players add @s Temp 76 {EVDefence:76s}
-scoreboard players add @s Temp 77 {EVDefence:77s}
-scoreboard players add @s Temp 78 {EVDefence:78s}
-scoreboard players add @s Temp 79 {EVDefence:79s}
-scoreboard players add @s Temp 80 {EVDefence:80s}
-scoreboard players add @s Temp 81 {EVDefence:81s}
-scoreboard players add @s Temp 82 {EVDefence:82s}
-scoreboard players add @s Temp 83 {EVDefence:83s}
-scoreboard players add @s Temp 84 {EVDefence:84s}
-scoreboard players add @s Temp 85 {EVDefence:85s}
-scoreboard players add @s Temp 86 {EVDefence:86s}
-scoreboard players add @s Temp 87 {EVDefence:87s}
-scoreboard players add @s Temp 88 {EVDefence:88s}
-scoreboard players add @s Temp 89 {EVDefence:89s}
-scoreboard players add @s Temp 90 {EVDefence:90s}
-scoreboard players add @s Temp 91 {EVDefence:91s}
-scoreboard players add @s Temp 92 {EVDefence:92s}
-scoreboard players add @s Temp 93 {EVDefence:93s}
-scoreboard players add @s Temp 94 {EVDefence:94s}
-scoreboard players add @s Temp 95 {EVDefence:95s}
-scoreboard players add @s Temp 96 {EVDefence:96s}
-scoreboard players add @s Temp 97 {EVDefence:97s}
-scoreboard players add @s Temp 98 {EVDefence:98s}
-scoreboard players add @s Temp 99 {EVDefence:99s}
-scoreboard players add @s Temp 100 {EVDefence:100s}
-scoreboard players add @s Temp 101 {EVDefence:101s}
-scoreboard players add @s Temp 102 {EVDefence:102s}
-scoreboard players add @s Temp 103 {EVDefence:103s}
-scoreboard players add @s Temp 104 {EVDefence:104s}
-scoreboard players add @s Temp 105 {EVDefence:105s}
-scoreboard players add @s Temp 106 {EVDefence:106s}
-scoreboard players add @s Temp 107 {EVDefence:107s}
-scoreboard players add @s Temp 108 {EVDefence:108s}
-scoreboard players add @s Temp 109 {EVDefence:109s}
-scoreboard players add @s Temp 110 {EVDefence:110s}
-scoreboard players add @s Temp 111 {EVDefence:111s}
-scoreboard players add @s Temp 112 {EVDefence:112s}
-scoreboard players add @s Temp 113 {EVDefence:113s}
-scoreboard players add @s Temp 114 {EVDefence:114s}
-scoreboard players add @s Temp 115 {EVDefence:115s}
-scoreboard players add @s Temp 116 {EVDefence:116s}
-scoreboard players add @s Temp 117 {EVDefence:117s}
-scoreboard players add @s Temp 118 {EVDefence:118s}
-scoreboard players add @s Temp 119 {EVDefence:119s}
-scoreboard players add @s Temp 120 {EVDefence:120s}
-scoreboard players add @s Temp 121 {EVDefence:121s}
-scoreboard players add @s Temp 122 {EVDefence:122s}
-scoreboard players add @s Temp 123 {EVDefence:123s}
-scoreboard players add @s Temp 124 {EVDefence:124s}
-scoreboard players add @s Temp 125 {EVDefence:125s}
-scoreboard players add @s Temp 126 {EVDefence:126s}
-scoreboard players add @s Temp 127 {EVDefence:127s}
-scoreboard players add @s Temp 128 {EVDefence:128s}
-scoreboard players add @s Temp 129 {EVDefence:129s}
-scoreboard players add @s Temp 130 {EVDefence:130s}
-scoreboard players add @s Temp 131 {EVDefence:131s}
-scoreboard players add @s Temp 132 {EVDefence:132s}
-scoreboard players add @s Temp 133 {EVDefence:133s}
-scoreboard players add @s Temp 134 {EVDefence:134s}
-scoreboard players add @s Temp 135 {EVDefence:135s}
-scoreboard players add @s Temp 136 {EVDefence:136s}
-scoreboard players add @s Temp 137 {EVDefence:137s}
-scoreboard players add @s Temp 138 {EVDefence:138s}
-scoreboard players add @s Temp 139 {EVDefence:139s}
-scoreboard players add @s Temp 140 {EVDefence:140s}
-scoreboard players add @s Temp 141 {EVDefence:141s}
-scoreboard players add @s Temp 142 {EVDefence:142s}
-scoreboard players add @s Temp 143 {EVDefence:143s}
-scoreboard players add @s Temp 144 {EVDefence:144s}
-scoreboard players add @s Temp 145 {EVDefence:145s}
-scoreboard players add @s Temp 146 {EVDefence:146s}
-scoreboard players add @s Temp 147 {EVDefence:147s}
-scoreboard players add @s Temp 148 {EVDefence:148s}
-scoreboard players add @s Temp 149 {EVDefence:149s}
-scoreboard players add @s Temp 150 {EVDefence:150s}
-scoreboard players add @s Temp 151 {EVDefence:151s}
-scoreboard players add @s Temp 152 {EVDefence:152s}
-scoreboard players add @s Temp 153 {EVDefence:153s}
-scoreboard players add @s Temp 154 {EVDefence:154s}
-scoreboard players add @s Temp 155 {EVDefence:155s}
-scoreboard players add @s Temp 156 {EVDefence:156s}
-scoreboard players add @s Temp 157 {EVDefence:157s}
-scoreboard players add @s Temp 158 {EVDefence:158s}
-scoreboard players add @s Temp 159 {EVDefence:159s}
-scoreboard players add @s Temp 160 {EVDefence:160s}
-scoreboard players add @s Temp 161 {EVDefence:161s}
-scoreboard players add @s Temp 162 {EVDefence:162s}
-scoreboard players add @s Temp 163 {EVDefence:163s}
-scoreboard players add @s Temp 164 {EVDefence:164s}
-scoreboard players add @s Temp 165 {EVDefence:165s}
-scoreboard players add @s Temp 166 {EVDefence:166s}
-scoreboard players add @s Temp 167 {EVDefence:167s}
-scoreboard players add @s Temp 168 {EVDefence:168s}
-scoreboard players add @s Temp 169 {EVDefence:169s}
-scoreboard players add @s Temp 170 {EVDefence:170s}
-scoreboard players add @s Temp 171 {EVDefence:171s}
-scoreboard players add @s Temp 172 {EVDefence:172s}
-scoreboard players add @s Temp 173 {EVDefence:173s}
-scoreboard players add @s Temp 174 {EVDefence:174s}
-scoreboard players add @s Temp 175 {EVDefence:175s}
-scoreboard players add @s Temp 176 {EVDefence:176s}
-scoreboard players add @s Temp 177 {EVDefence:177s}
-scoreboard players add @s Temp 178 {EVDefence:178s}
-scoreboard players add @s Temp 179 {EVDefence:179s}
-scoreboard players add @s Temp 180 {EVDefence:180s}
-scoreboard players add @s Temp 181 {EVDefence:181s}
-scoreboard players add @s Temp 182 {EVDefence:182s}
-scoreboard players add @s Temp 183 {EVDefence:183s}
-scoreboard players add @s Temp 184 {EVDefence:184s}
-scoreboard players add @s Temp 185 {EVDefence:185s}
-scoreboard players add @s Temp 186 {EVDefence:186s}
-scoreboard players add @s Temp 187 {EVDefence:187s}
-scoreboard players add @s Temp 188 {EVDefence:188s}
-scoreboard players add @s Temp 189 {EVDefence:189s}
-scoreboard players add @s Temp 190 {EVDefence:190s}
-scoreboard players add @s Temp 191 {EVDefence:191s}
-scoreboard players add @s Temp 192 {EVDefence:192s}
-scoreboard players add @s Temp 193 {EVDefence:193s}
-scoreboard players add @s Temp 194 {EVDefence:194s}
-scoreboard players add @s Temp 195 {EVDefence:195s}
-scoreboard players add @s Temp 196 {EVDefence:196s}
-scoreboard players add @s Temp 197 {EVDefence:197s}
-scoreboard players add @s Temp 198 {EVDefence:198s}
-scoreboard players add @s Temp 199 {EVDefence:199s}
-scoreboard players add @s Temp 200 {EVDefence:200s}
-scoreboard players add @s Temp 201 {EVDefence:201s}
-scoreboard players add @s Temp 202 {EVDefence:202s}
-scoreboard players add @s Temp 203 {EVDefence:203s}
-scoreboard players add @s Temp 204 {EVDefence:204s}
-scoreboard players add @s Temp 205 {EVDefence:205s}
-scoreboard players add @s Temp 206 {EVDefence:206s}
-scoreboard players add @s Temp 207 {EVDefence:207s}
-scoreboard players add @s Temp 208 {EVDefence:208s}
-scoreboard players add @s Temp 209 {EVDefence:209s}
-scoreboard players add @s Temp 210 {EVDefence:210s}
-scoreboard players add @s Temp 211 {EVDefence:211s}
-scoreboard players add @s Temp 212 {EVDefence:212s}
-scoreboard players add @s Temp 213 {EVDefence:213s}
-scoreboard players add @s Temp 214 {EVDefence:214s}
-scoreboard players add @s Temp 215 {EVDefence:215s}
-scoreboard players add @s Temp 216 {EVDefence:216s}
-scoreboard players add @s Temp 217 {EVDefence:217s}
-scoreboard players add @s Temp 218 {EVDefence:218s}
-scoreboard players add @s Temp 219 {EVDefence:219s}
-scoreboard players add @s Temp 220 {EVDefence:220s}
-scoreboard players add @s Temp 221 {EVDefence:221s}
-scoreboard players add @s Temp 222 {EVDefence:222s}
-scoreboard players add @s Temp 223 {EVDefence:223s}
-scoreboard players add @s Temp 224 {EVDefence:224s}
-scoreboard players add @s Temp 225 {EVDefence:225s}
-scoreboard players add @s Temp 226 {EVDefence:226s}
-scoreboard players add @s Temp 227 {EVDefence:227s}
-scoreboard players add @s Temp 228 {EVDefence:228s}
-scoreboard players add @s Temp 229 {EVDefence:229s}
-scoreboard players add @s Temp 230 {EVDefence:230s}
-scoreboard players add @s Temp 231 {EVDefence:231s}
-scoreboard players add @s Temp 232 {EVDefence:232s}
-scoreboard players add @s Temp 233 {EVDefence:233s}
-scoreboard players add @s Temp 234 {EVDefence:234s}
-scoreboard players add @s Temp 235 {EVDefence:235s}
-scoreboard players add @s Temp 236 {EVDefence:236s}
-scoreboard players add @s Temp 237 {EVDefence:237s}
-scoreboard players add @s Temp 238 {EVDefence:238s}
-scoreboard players add @s Temp 239 {EVDefence:239s}
-scoreboard players add @s Temp 240 {EVDefence:240s}
-scoreboard players add @s Temp 241 {EVDefence:241s}
-scoreboard players add @s Temp 242 {EVDefence:242s}
-scoreboard players add @s Temp 243 {EVDefence:243s}
-scoreboard players add @s Temp 244 {EVDefence:244s}
-scoreboard players add @s Temp 245 {EVDefence:245s}
-scoreboard players add @s Temp 246 {EVDefence:246s}
-scoreboard players add @s Temp 247 {EVDefence:247s}
-scoreboard players add @s Temp 248 {EVDefence:248s}
-scoreboard players add @s Temp 249 {EVDefence:249s}
-scoreboard players add @s Temp 250 {EVDefence:250s}
-scoreboard players add @s Temp 251 {EVDefence:251s}
-scoreboard players add @s Temp 252 {EVDefence:252s}
+scoreboard players add @s[nbt={EVDefence:1s}] Temp 1
+scoreboard players add @s[nbt={EVDefence:2s}] Temp 2
+scoreboard players add @s[nbt={EVDefence:3s}] Temp 3
+scoreboard players add @s[nbt={EVDefence:4s}] Temp 4
+scoreboard players add @s[nbt={EVDefence:5s}] Temp 5
+scoreboard players add @s[nbt={EVDefence:6s}] Temp 6
+scoreboard players add @s[nbt={EVDefence:7s}] Temp 7
+scoreboard players add @s[nbt={EVDefence:8s}] Temp 8
+scoreboard players add @s[nbt={EVDefence:9s}] Temp 9
+scoreboard players add @s[nbt={EVDefence:10s}] Temp 10
+scoreboard players add @s[nbt={EVDefence:11s}] Temp 11
+scoreboard players add @s[nbt={EVDefence:12s}] Temp 12
+scoreboard players add @s[nbt={EVDefence:13s}] Temp 13
+scoreboard players add @s[nbt={EVDefence:14s}] Temp 14
+scoreboard players add @s[nbt={EVDefence:15s}] Temp 15
+scoreboard players add @s[nbt={EVDefence:16s}] Temp 16
+scoreboard players add @s[nbt={EVDefence:17s}] Temp 17
+scoreboard players add @s[nbt={EVDefence:18s}] Temp 18
+scoreboard players add @s[nbt={EVDefence:19s}] Temp 19
+scoreboard players add @s[nbt={EVDefence:20s}] Temp 20
+scoreboard players add @s[nbt={EVDefence:21s}] Temp 21
+scoreboard players add @s[nbt={EVDefence:22s}] Temp 22
+scoreboard players add @s[nbt={EVDefence:23s}] Temp 23
+scoreboard players add @s[nbt={EVDefence:24s}] Temp 24
+scoreboard players add @s[nbt={EVDefence:25s}] Temp 25
+scoreboard players add @s[nbt={EVDefence:26s}] Temp 26
+scoreboard players add @s[nbt={EVDefence:27s}] Temp 27
+scoreboard players add @s[nbt={EVDefence:28s}] Temp 28
+scoreboard players add @s[nbt={EVDefence:29s}] Temp 29
+scoreboard players add @s[nbt={EVDefence:30s}] Temp 30
+scoreboard players add @s[nbt={EVDefence:31s}] Temp 31
+scoreboard players add @s[nbt={EVDefence:32s}] Temp 32
+scoreboard players add @s[nbt={EVDefence:33s}] Temp 33
+scoreboard players add @s[nbt={EVDefence:34s}] Temp 34
+scoreboard players add @s[nbt={EVDefence:35s}] Temp 35
+scoreboard players add @s[nbt={EVDefence:36s}] Temp 36
+scoreboard players add @s[nbt={EVDefence:37s}] Temp 37
+scoreboard players add @s[nbt={EVDefence:38s}] Temp 38
+scoreboard players add @s[nbt={EVDefence:39s}] Temp 39
+scoreboard players add @s[nbt={EVDefence:40s}] Temp 40
+scoreboard players add @s[nbt={EVDefence:41s}] Temp 41
+scoreboard players add @s[nbt={EVDefence:42s}] Temp 42
+scoreboard players add @s[nbt={EVDefence:43s}] Temp 43
+scoreboard players add @s[nbt={EVDefence:44s}] Temp 44
+scoreboard players add @s[nbt={EVDefence:45s}] Temp 45
+scoreboard players add @s[nbt={EVDefence:46s}] Temp 46
+scoreboard players add @s[nbt={EVDefence:47s}] Temp 47
+scoreboard players add @s[nbt={EVDefence:48s}] Temp 48
+scoreboard players add @s[nbt={EVDefence:49s}] Temp 49
+scoreboard players add @s[nbt={EVDefence:50s}] Temp 50
+scoreboard players add @s[nbt={EVDefence:51s}] Temp 51
+scoreboard players add @s[nbt={EVDefence:52s}] Temp 52
+scoreboard players add @s[nbt={EVDefence:53s}] Temp 53
+scoreboard players add @s[nbt={EVDefence:54s}] Temp 54
+scoreboard players add @s[nbt={EVDefence:55s}] Temp 55
+scoreboard players add @s[nbt={EVDefence:56s}] Temp 56
+scoreboard players add @s[nbt={EVDefence:57s}] Temp 57
+scoreboard players add @s[nbt={EVDefence:58s}] Temp 58
+scoreboard players add @s[nbt={EVDefence:59s}] Temp 59
+scoreboard players add @s[nbt={EVDefence:60s}] Temp 60
+scoreboard players add @s[nbt={EVDefence:61s}] Temp 61
+scoreboard players add @s[nbt={EVDefence:62s}] Temp 62
+scoreboard players add @s[nbt={EVDefence:63s}] Temp 63
+scoreboard players add @s[nbt={EVDefence:64s}] Temp 64
+scoreboard players add @s[nbt={EVDefence:65s}] Temp 65
+scoreboard players add @s[nbt={EVDefence:66s}] Temp 66
+scoreboard players add @s[nbt={EVDefence:67s}] Temp 67
+scoreboard players add @s[nbt={EVDefence:68s}] Temp 68
+scoreboard players add @s[nbt={EVDefence:69s}] Temp 69
+scoreboard players add @s[nbt={EVDefence:70s}] Temp 70
+scoreboard players add @s[nbt={EVDefence:71s}] Temp 71
+scoreboard players add @s[nbt={EVDefence:72s}] Temp 72
+scoreboard players add @s[nbt={EVDefence:73s}] Temp 73
+scoreboard players add @s[nbt={EVDefence:74s}] Temp 74
+scoreboard players add @s[nbt={EVDefence:75s}] Temp 75
+scoreboard players add @s[nbt={EVDefence:76s}] Temp 76
+scoreboard players add @s[nbt={EVDefence:77s}] Temp 77
+scoreboard players add @s[nbt={EVDefence:78s}] Temp 78
+scoreboard players add @s[nbt={EVDefence:79s}] Temp 79
+scoreboard players add @s[nbt={EVDefence:80s}] Temp 80
+scoreboard players add @s[nbt={EVDefence:81s}] Temp 81
+scoreboard players add @s[nbt={EVDefence:82s}] Temp 82
+scoreboard players add @s[nbt={EVDefence:83s}] Temp 83
+scoreboard players add @s[nbt={EVDefence:84s}] Temp 84
+scoreboard players add @s[nbt={EVDefence:85s}] Temp 85
+scoreboard players add @s[nbt={EVDefence:86s}] Temp 86
+scoreboard players add @s[nbt={EVDefence:87s}] Temp 87
+scoreboard players add @s[nbt={EVDefence:88s}] Temp 88
+scoreboard players add @s[nbt={EVDefence:89s}] Temp 89
+scoreboard players add @s[nbt={EVDefence:90s}] Temp 90
+scoreboard players add @s[nbt={EVDefence:91s}] Temp 91
+scoreboard players add @s[nbt={EVDefence:92s}] Temp 92
+scoreboard players add @s[nbt={EVDefence:93s}] Temp 93
+scoreboard players add @s[nbt={EVDefence:94s}] Temp 94
+scoreboard players add @s[nbt={EVDefence:95s}] Temp 95
+scoreboard players add @s[nbt={EVDefence:96s}] Temp 96
+scoreboard players add @s[nbt={EVDefence:97s}] Temp 97
+scoreboard players add @s[nbt={EVDefence:98s}] Temp 98
+scoreboard players add @s[nbt={EVDefence:99s}] Temp 99
+scoreboard players add @s[nbt={EVDefence:100s}] Temp 100
+scoreboard players add @s[nbt={EVDefence:101s}] Temp 101
+scoreboard players add @s[nbt={EVDefence:102s}] Temp 102
+scoreboard players add @s[nbt={EVDefence:103s}] Temp 103
+scoreboard players add @s[nbt={EVDefence:104s}] Temp 104
+scoreboard players add @s[nbt={EVDefence:105s}] Temp 105
+scoreboard players add @s[nbt={EVDefence:106s}] Temp 106
+scoreboard players add @s[nbt={EVDefence:107s}] Temp 107
+scoreboard players add @s[nbt={EVDefence:108s}] Temp 108
+scoreboard players add @s[nbt={EVDefence:109s}] Temp 109
+scoreboard players add @s[nbt={EVDefence:110s}] Temp 110
+scoreboard players add @s[nbt={EVDefence:111s}] Temp 111
+scoreboard players add @s[nbt={EVDefence:112s}] Temp 112
+scoreboard players add @s[nbt={EVDefence:113s}] Temp 113
+scoreboard players add @s[nbt={EVDefence:114s}] Temp 114
+scoreboard players add @s[nbt={EVDefence:115s}] Temp 115
+scoreboard players add @s[nbt={EVDefence:116s}] Temp 116
+scoreboard players add @s[nbt={EVDefence:117s}] Temp 117
+scoreboard players add @s[nbt={EVDefence:118s}] Temp 118
+scoreboard players add @s[nbt={EVDefence:119s}] Temp 119
+scoreboard players add @s[nbt={EVDefence:120s}] Temp 120
+scoreboard players add @s[nbt={EVDefence:121s}] Temp 121
+scoreboard players add @s[nbt={EVDefence:122s}] Temp 122
+scoreboard players add @s[nbt={EVDefence:123s}] Temp 123
+scoreboard players add @s[nbt={EVDefence:124s}] Temp 124
+scoreboard players add @s[nbt={EVDefence:125s}] Temp 125
+scoreboard players add @s[nbt={EVDefence:126s}] Temp 126
+scoreboard players add @s[nbt={EVDefence:127s}] Temp 127
+scoreboard players add @s[nbt={EVDefence:128s}] Temp 128
+scoreboard players add @s[nbt={EVDefence:129s}] Temp 129
+scoreboard players add @s[nbt={EVDefence:130s}] Temp 130
+scoreboard players add @s[nbt={EVDefence:131s}] Temp 131
+scoreboard players add @s[nbt={EVDefence:132s}] Temp 132
+scoreboard players add @s[nbt={EVDefence:133s}] Temp 133
+scoreboard players add @s[nbt={EVDefence:134s}] Temp 134
+scoreboard players add @s[nbt={EVDefence:135s}] Temp 135
+scoreboard players add @s[nbt={EVDefence:136s}] Temp 136
+scoreboard players add @s[nbt={EVDefence:137s}] Temp 137
+scoreboard players add @s[nbt={EVDefence:138s}] Temp 138
+scoreboard players add @s[nbt={EVDefence:139s}] Temp 139
+scoreboard players add @s[nbt={EVDefence:140s}] Temp 140
+scoreboard players add @s[nbt={EVDefence:141s}] Temp 141
+scoreboard players add @s[nbt={EVDefence:142s}] Temp 142
+scoreboard players add @s[nbt={EVDefence:143s}] Temp 143
+scoreboard players add @s[nbt={EVDefence:144s}] Temp 144
+scoreboard players add @s[nbt={EVDefence:145s}] Temp 145
+scoreboard players add @s[nbt={EVDefence:146s}] Temp 146
+scoreboard players add @s[nbt={EVDefence:147s}] Temp 147
+scoreboard players add @s[nbt={EVDefence:148s}] Temp 148
+scoreboard players add @s[nbt={EVDefence:149s}] Temp 149
+scoreboard players add @s[nbt={EVDefence:150s}] Temp 150
+scoreboard players add @s[nbt={EVDefence:151s}] Temp 151
+scoreboard players add @s[nbt={EVDefence:152s}] Temp 152
+scoreboard players add @s[nbt={EVDefence:153s}] Temp 153
+scoreboard players add @s[nbt={EVDefence:154s}] Temp 154
+scoreboard players add @s[nbt={EVDefence:155s}] Temp 155
+scoreboard players add @s[nbt={EVDefence:156s}] Temp 156
+scoreboard players add @s[nbt={EVDefence:157s}] Temp 157
+scoreboard players add @s[nbt={EVDefence:158s}] Temp 158
+scoreboard players add @s[nbt={EVDefence:159s}] Temp 159
+scoreboard players add @s[nbt={EVDefence:160s}] Temp 160
+scoreboard players add @s[nbt={EVDefence:161s}] Temp 161
+scoreboard players add @s[nbt={EVDefence:162s}] Temp 162
+scoreboard players add @s[nbt={EVDefence:163s}] Temp 163
+scoreboard players add @s[nbt={EVDefence:164s}] Temp 164
+scoreboard players add @s[nbt={EVDefence:165s}] Temp 165
+scoreboard players add @s[nbt={EVDefence:166s}] Temp 166
+scoreboard players add @s[nbt={EVDefence:167s}] Temp 167
+scoreboard players add @s[nbt={EVDefence:168s}] Temp 168
+scoreboard players add @s[nbt={EVDefence:169s}] Temp 169
+scoreboard players add @s[nbt={EVDefence:170s}] Temp 170
+scoreboard players add @s[nbt={EVDefence:171s}] Temp 171
+scoreboard players add @s[nbt={EVDefence:172s}] Temp 172
+scoreboard players add @s[nbt={EVDefence:173s}] Temp 173
+scoreboard players add @s[nbt={EVDefence:174s}] Temp 174
+scoreboard players add @s[nbt={EVDefence:175s}] Temp 175
+scoreboard players add @s[nbt={EVDefence:176s}] Temp 176
+scoreboard players add @s[nbt={EVDefence:177s}] Temp 177
+scoreboard players add @s[nbt={EVDefence:178s}] Temp 178
+scoreboard players add @s[nbt={EVDefence:179s}] Temp 179
+scoreboard players add @s[nbt={EVDefence:180s}] Temp 180
+scoreboard players add @s[nbt={EVDefence:181s}] Temp 181
+scoreboard players add @s[nbt={EVDefence:182s}] Temp 182
+scoreboard players add @s[nbt={EVDefence:183s}] Temp 183
+scoreboard players add @s[nbt={EVDefence:184s}] Temp 184
+scoreboard players add @s[nbt={EVDefence:185s}] Temp 185
+scoreboard players add @s[nbt={EVDefence:186s}] Temp 186
+scoreboard players add @s[nbt={EVDefence:187s}] Temp 187
+scoreboard players add @s[nbt={EVDefence:188s}] Temp 188
+scoreboard players add @s[nbt={EVDefence:189s}] Temp 189
+scoreboard players add @s[nbt={EVDefence:190s}] Temp 190
+scoreboard players add @s[nbt={EVDefence:191s}] Temp 191
+scoreboard players add @s[nbt={EVDefence:192s}] Temp 192
+scoreboard players add @s[nbt={EVDefence:193s}] Temp 193
+scoreboard players add @s[nbt={EVDefence:194s}] Temp 194
+scoreboard players add @s[nbt={EVDefence:195s}] Temp 195
+scoreboard players add @s[nbt={EVDefence:196s}] Temp 196
+scoreboard players add @s[nbt={EVDefence:197s}] Temp 197
+scoreboard players add @s[nbt={EVDefence:198s}] Temp 198
+scoreboard players add @s[nbt={EVDefence:199s}] Temp 199
+scoreboard players add @s[nbt={EVDefence:200s}] Temp 200
+scoreboard players add @s[nbt={EVDefence:201s}] Temp 201
+scoreboard players add @s[nbt={EVDefence:202s}] Temp 202
+scoreboard players add @s[nbt={EVDefence:203s}] Temp 203
+scoreboard players add @s[nbt={EVDefence:204s}] Temp 204
+scoreboard players add @s[nbt={EVDefence:205s}] Temp 205
+scoreboard players add @s[nbt={EVDefence:206s}] Temp 206
+scoreboard players add @s[nbt={EVDefence:207s}] Temp 207
+scoreboard players add @s[nbt={EVDefence:208s}] Temp 208
+scoreboard players add @s[nbt={EVDefence:209s}] Temp 209
+scoreboard players add @s[nbt={EVDefence:210s}] Temp 210
+scoreboard players add @s[nbt={EVDefence:211s}] Temp 211
+scoreboard players add @s[nbt={EVDefence:212s}] Temp 212
+scoreboard players add @s[nbt={EVDefence:213s}] Temp 213
+scoreboard players add @s[nbt={EVDefence:214s}] Temp 214
+scoreboard players add @s[nbt={EVDefence:215s}] Temp 215
+scoreboard players add @s[nbt={EVDefence:216s}] Temp 216
+scoreboard players add @s[nbt={EVDefence:217s}] Temp 217
+scoreboard players add @s[nbt={EVDefence:218s}] Temp 218
+scoreboard players add @s[nbt={EVDefence:219s}] Temp 219
+scoreboard players add @s[nbt={EVDefence:220s}] Temp 220
+scoreboard players add @s[nbt={EVDefence:221s}] Temp 221
+scoreboard players add @s[nbt={EVDefence:222s}] Temp 222
+scoreboard players add @s[nbt={EVDefence:223s}] Temp 223
+scoreboard players add @s[nbt={EVDefence:224s}] Temp 224
+scoreboard players add @s[nbt={EVDefence:225s}] Temp 225
+scoreboard players add @s[nbt={EVDefence:226s}] Temp 226
+scoreboard players add @s[nbt={EVDefence:227s}] Temp 227
+scoreboard players add @s[nbt={EVDefence:228s}] Temp 228
+scoreboard players add @s[nbt={EVDefence:229s}] Temp 229
+scoreboard players add @s[nbt={EVDefence:230s}] Temp 230
+scoreboard players add @s[nbt={EVDefence:231s}] Temp 231
+scoreboard players add @s[nbt={EVDefence:232s}] Temp 232
+scoreboard players add @s[nbt={EVDefence:233s}] Temp 233
+scoreboard players add @s[nbt={EVDefence:234s}] Temp 234
+scoreboard players add @s[nbt={EVDefence:235s}] Temp 235
+scoreboard players add @s[nbt={EVDefence:236s}] Temp 236
+scoreboard players add @s[nbt={EVDefence:237s}] Temp 237
+scoreboard players add @s[nbt={EVDefence:238s}] Temp 238
+scoreboard players add @s[nbt={EVDefence:239s}] Temp 239
+scoreboard players add @s[nbt={EVDefence:240s}] Temp 240
+scoreboard players add @s[nbt={EVDefence:241s}] Temp 241
+scoreboard players add @s[nbt={EVDefence:242s}] Temp 242
+scoreboard players add @s[nbt={EVDefence:243s}] Temp 243
+scoreboard players add @s[nbt={EVDefence:244s}] Temp 244
+scoreboard players add @s[nbt={EVDefence:245s}] Temp 245
+scoreboard players add @s[nbt={EVDefence:246s}] Temp 246
+scoreboard players add @s[nbt={EVDefence:247s}] Temp 247
+scoreboard players add @s[nbt={EVDefence:248s}] Temp 248
+scoreboard players add @s[nbt={EVDefence:249s}] Temp 249
+scoreboard players add @s[nbt={EVDefence:250s}] Temp 250
+scoreboard players add @s[nbt={EVDefence:251s}] Temp 251
+scoreboard players add @s[nbt={EVDefence:252s}] Temp 252

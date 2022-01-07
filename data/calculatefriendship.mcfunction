@@ -1,300 +1,300 @@
-scoreboard players set @e Temp 1 {Friendship:1s}
-scoreboard players set @e Temp 2 {Friendship:2s}
-scoreboard players set @e Temp 3 {Friendship:3s}
-scoreboard players set @e Temp 4 {Friendship:4s}
-scoreboard players set @e Temp 5 {Friendship:5s}
-scoreboard players set @e Temp 6 {Friendship:6s}
-scoreboard players set @e Temp 7 {Friendship:7s}
-scoreboard players set @e Temp 8 {Friendship:8s}
-scoreboard players set @e Temp 9 {Friendship:9s}
-scoreboard players set @e Temp 10 {Friendship:10s}
-scoreboard players set @e Temp 11 {Friendship:11s}
-scoreboard players set @e Temp 12 {Friendship:12s}
-scoreboard players set @e Temp 13 {Friendship:13s}
-scoreboard players set @e Temp 14 {Friendship:14s}
-scoreboard players set @e Temp 15 {Friendship:15s}
-scoreboard players set @e Temp 16 {Friendship:16s}
-scoreboard players set @e Temp 17 {Friendship:17s}
-scoreboard players set @e Temp 18 {Friendship:18s}
-scoreboard players set @e Temp 19 {Friendship:19s}
-scoreboard players set @e Temp 20 {Friendship:20s}
-scoreboard players set @e Temp 21 {Friendship:21s}
-scoreboard players set @e Temp 22 {Friendship:22s}
-scoreboard players set @e Temp 23 {Friendship:23s}
-scoreboard players set @e Temp 24 {Friendship:24s}
-scoreboard players set @e Temp 25 {Friendship:25s}
-scoreboard players set @e Temp 26 {Friendship:26s}
-scoreboard players set @e Temp 27 {Friendship:27s}
-scoreboard players set @e Temp 28 {Friendship:28s}
-scoreboard players set @e Temp 29 {Friendship:29s}
-scoreboard players set @e Temp 30 {Friendship:30s}
-scoreboard players set @e Temp 31 {Friendship:31s}
-scoreboard players set @e Temp 32 {Friendship:32s}
-scoreboard players set @e Temp 33 {Friendship:33s}
-scoreboard players set @e Temp 34 {Friendship:34s}
-scoreboard players set @e Temp 35 {Friendship:35s}
-scoreboard players set @e Temp 36 {Friendship:36s}
-scoreboard players set @e Temp 37 {Friendship:37s}
-scoreboard players set @e Temp 38 {Friendship:38s}
-scoreboard players set @e Temp 39 {Friendship:39s}
-scoreboard players set @e Temp 40 {Friendship:40s}
-scoreboard players set @e Temp 41 {Friendship:41s}
-scoreboard players set @e Temp 42 {Friendship:42s}
-scoreboard players set @e Temp 43 {Friendship:43s}
-scoreboard players set @e Temp 44 {Friendship:44s}
-scoreboard players set @e Temp 45 {Friendship:45s}
-scoreboard players set @e Temp 46 {Friendship:46s}
-scoreboard players set @e Temp 47 {Friendship:47s}
-scoreboard players set @e Temp 48 {Friendship:48s}
-scoreboard players set @e Temp 49 {Friendship:49s}
-scoreboard players set @e Temp 50 {Friendship:50s}
-scoreboard players set @e Temp 51 {Friendship:51s}
-scoreboard players set @e Temp 52 {Friendship:52s}
-scoreboard players set @e Temp 53 {Friendship:53s}
-scoreboard players set @e Temp 54 {Friendship:54s}
-scoreboard players set @e Temp 55 {Friendship:55s}
-scoreboard players set @e Temp 56 {Friendship:56s}
-scoreboard players set @e Temp 57 {Friendship:57s}
-scoreboard players set @e Temp 58 {Friendship:58s}
-scoreboard players set @e Temp 59 {Friendship:59s}
-scoreboard players set @e Temp 60 {Friendship:60s}
-scoreboard players set @e Temp 61 {Friendship:61s}
-scoreboard players set @e Temp 62 {Friendship:62s}
-scoreboard players set @e Temp 63 {Friendship:63s}
-scoreboard players set @e Temp 64 {Friendship:64s}
-scoreboard players set @e Temp 65 {Friendship:65s}
-scoreboard players set @e Temp 66 {Friendship:66s}
-scoreboard players set @e Temp 67 {Friendship:67s}
-scoreboard players set @e Temp 68 {Friendship:68s}
-scoreboard players set @e Temp 69 {Friendship:69s}
-scoreboard players set @e Temp 70 {Friendship:70s}
-scoreboard players set @e Temp 71 {Friendship:71s}
-scoreboard players set @e Temp 72 {Friendship:72s}
-scoreboard players set @e Temp 73 {Friendship:73s}
-scoreboard players set @e Temp 74 {Friendship:74s}
-scoreboard players set @e Temp 75 {Friendship:75s}
-scoreboard players set @e Temp 76 {Friendship:76s}
-scoreboard players set @e Temp 77 {Friendship:77s}
-scoreboard players set @e Temp 78 {Friendship:78s}
-scoreboard players set @e Temp 79 {Friendship:79s}
-scoreboard players set @e Temp 80 {Friendship:80s}
-scoreboard players set @e Temp 81 {Friendship:81s}
-scoreboard players set @e Temp 82 {Friendship:82s}
-scoreboard players set @e Temp 83 {Friendship:83s}
-scoreboard players set @e Temp 84 {Friendship:84s}
-scoreboard players set @e Temp 85 {Friendship:85s}
-scoreboard players set @e Temp 86 {Friendship:86s}
-scoreboard players set @e Temp 87 {Friendship:87s}
-scoreboard players set @e Temp 88 {Friendship:88s}
-scoreboard players set @e Temp 89 {Friendship:89s}
-scoreboard players set @e Temp 90 {Friendship:90s}
-scoreboard players set @e Temp 91 {Friendship:91s}
-scoreboard players set @e Temp 92 {Friendship:92s}
-scoreboard players set @e Temp 93 {Friendship:93s}
-scoreboard players set @e Temp 94 {Friendship:94s}
-scoreboard players set @e Temp 95 {Friendship:95s}
-scoreboard players set @e Temp 96 {Friendship:96s}
-scoreboard players set @e Temp 97 {Friendship:97s}
-scoreboard players set @e Temp 98 {Friendship:98s}
-scoreboard players set @e Temp 99 {Friendship:99s}
-scoreboard players set @e Temp 100 {Friendship:100s}
-scoreboard players set @e Temp 101 {Friendship:101s}
-scoreboard players set @e Temp 102 {Friendship:102s}
-scoreboard players set @e Temp 103 {Friendship:103s}
-scoreboard players set @e Temp 104 {Friendship:104s}
-scoreboard players set @e Temp 105 {Friendship:105s}
-scoreboard players set @e Temp 106 {Friendship:106s}
-scoreboard players set @e Temp 107 {Friendship:107s}
-scoreboard players set @e Temp 108 {Friendship:108s}
-scoreboard players set @e Temp 109 {Friendship:109s}
-scoreboard players set @e Temp 110 {Friendship:110s}
-scoreboard players set @e Temp 111 {Friendship:111s}
-scoreboard players set @e Temp 112 {Friendship:112s}
-scoreboard players set @e Temp 113 {Friendship:113s}
-scoreboard players set @e Temp 114 {Friendship:114s}
-scoreboard players set @e Temp 115 {Friendship:115s}
-scoreboard players set @e Temp 116 {Friendship:116s}
-scoreboard players set @e Temp 117 {Friendship:117s}
-scoreboard players set @e Temp 118 {Friendship:118s}
-scoreboard players set @e Temp 119 {Friendship:119s}
-scoreboard players set @e Temp 120 {Friendship:120s}
-scoreboard players set @e Temp 121 {Friendship:121s}
-scoreboard players set @e Temp 122 {Friendship:122s}
-scoreboard players set @e Temp 123 {Friendship:123s}
-scoreboard players set @e Temp 124 {Friendship:124s}
-scoreboard players set @e Temp 125 {Friendship:125s}
-scoreboard players set @e Temp 126 {Friendship:126s}
-scoreboard players set @e Temp 127 {Friendship:127s}
-scoreboard players set @e Temp 128 {Friendship:128s}
-scoreboard players set @e Temp 129 {Friendship:129s}
-scoreboard players set @e Temp 130 {Friendship:130s}
-scoreboard players set @e Temp 131 {Friendship:131s}
-scoreboard players set @e Temp 132 {Friendship:132s}
-scoreboard players set @e Temp 133 {Friendship:133s}
-scoreboard players set @e Temp 134 {Friendship:134s}
-scoreboard players set @e Temp 135 {Friendship:135s}
-scoreboard players set @e Temp 136 {Friendship:136s}
-scoreboard players set @e Temp 137 {Friendship:137s}
-scoreboard players set @e Temp 138 {Friendship:138s}
-scoreboard players set @e Temp 139 {Friendship:139s}
-scoreboard players set @e Temp 140 {Friendship:140s}
-scoreboard players set @e Temp 141 {Friendship:141s}
-scoreboard players set @e Temp 142 {Friendship:142s}
-scoreboard players set @e Temp 143 {Friendship:143s}
-scoreboard players set @e Temp 144 {Friendship:144s}
-scoreboard players set @e Temp 145 {Friendship:145s}
-scoreboard players set @e Temp 146 {Friendship:146s}
-scoreboard players set @e Temp 147 {Friendship:147s}
-scoreboard players set @e Temp 148 {Friendship:148s}
-scoreboard players set @e Temp 149 {Friendship:149s}
-scoreboard players set @e Temp 150 {Friendship:150s}
-scoreboard players set @e Temp 151 {Friendship:151s}
-scoreboard players set @e Temp 152 {Friendship:152s}
-scoreboard players set @e Temp 153 {Friendship:153s}
-scoreboard players set @e Temp 154 {Friendship:154s}
-scoreboard players set @e Temp 155 {Friendship:155s}
-scoreboard players set @e Temp 156 {Friendship:156s}
-scoreboard players set @e Temp 157 {Friendship:157s}
-scoreboard players set @e Temp 158 {Friendship:158s}
-scoreboard players set @e Temp 159 {Friendship:159s}
-scoreboard players set @e Temp 160 {Friendship:160s}
-scoreboard players set @e Temp 161 {Friendship:161s}
-scoreboard players set @e Temp 162 {Friendship:162s}
-scoreboard players set @e Temp 163 {Friendship:163s}
-scoreboard players set @e Temp 164 {Friendship:164s}
-scoreboard players set @e Temp 165 {Friendship:165s}
-scoreboard players set @e Temp 166 {Friendship:166s}
-scoreboard players set @e Temp 167 {Friendship:167s}
-scoreboard players set @e Temp 168 {Friendship:168s}
-scoreboard players set @e Temp 169 {Friendship:169s}
-scoreboard players set @e Temp 170 {Friendship:170s}
-scoreboard players set @e Temp 171 {Friendship:171s}
-scoreboard players set @e Temp 172 {Friendship:172s}
-scoreboard players set @e Temp 173 {Friendship:173s}
-scoreboard players set @e Temp 174 {Friendship:174s}
-scoreboard players set @e Temp 175 {Friendship:175s}
-scoreboard players set @e Temp 176 {Friendship:176s}
-scoreboard players set @e Temp 177 {Friendship:177s}
-scoreboard players set @e Temp 178 {Friendship:178s}
-scoreboard players set @e Temp 179 {Friendship:179s}
-scoreboard players set @e Temp 180 {Friendship:180s}
-scoreboard players set @e Temp 181 {Friendship:181s}
-scoreboard players set @e Temp 182 {Friendship:182s}
-scoreboard players set @e Temp 183 {Friendship:183s}
-scoreboard players set @e Temp 184 {Friendship:184s}
-scoreboard players set @e Temp 185 {Friendship:185s}
-scoreboard players set @e Temp 186 {Friendship:186s}
-scoreboard players set @e Temp 187 {Friendship:187s}
-scoreboard players set @e Temp 188 {Friendship:188s}
-scoreboard players set @e Temp 189 {Friendship:189s}
-scoreboard players set @e Temp 190 {Friendship:190s}
-scoreboard players set @e Temp 191 {Friendship:191s}
-scoreboard players set @e Temp 192 {Friendship:192s}
-scoreboard players set @e Temp 193 {Friendship:193s}
-scoreboard players set @e Temp 194 {Friendship:194s}
-scoreboard players set @e Temp 195 {Friendship:195s}
-scoreboard players set @e Temp 196 {Friendship:196s}
-scoreboard players set @e Temp 197 {Friendship:197s}
-scoreboard players set @e Temp 198 {Friendship:198s}
-scoreboard players set @e Temp 199 {Friendship:199s}
-scoreboard players set @e Temp 200 {Friendship:200s}
-scoreboard players set @e Temp 201 {Friendship:201s}
-scoreboard players set @e Temp 202 {Friendship:202s}
-scoreboard players set @e Temp 203 {Friendship:203s}
-scoreboard players set @e Temp 204 {Friendship:204s}
-scoreboard players set @e Temp 205 {Friendship:205s}
-scoreboard players set @e Temp 206 {Friendship:206s}
-scoreboard players set @e Temp 207 {Friendship:207s}
-scoreboard players set @e Temp 208 {Friendship:208s}
-scoreboard players set @e Temp 209 {Friendship:209s}
-scoreboard players set @e Temp 210 {Friendship:210s}
-scoreboard players set @e Temp 211 {Friendship:211s}
-scoreboard players set @e Temp 212 {Friendship:212s}
-scoreboard players set @e Temp 213 {Friendship:213s}
-scoreboard players set @e Temp 214 {Friendship:214s}
-scoreboard players set @e Temp 215 {Friendship:215s}
-scoreboard players set @e Temp 216 {Friendship:216s}
-scoreboard players set @e Temp 217 {Friendship:217s}
-scoreboard players set @e Temp 218 {Friendship:218s}
-scoreboard players set @e Temp 219 {Friendship:219s}
-scoreboard players set @e Temp 220 {Friendship:220s}
-scoreboard players set @e Temp 221 {Friendship:221s}
-scoreboard players set @e Temp 222 {Friendship:222s}
-scoreboard players set @e Temp 223 {Friendship:223s}
-scoreboard players set @e Temp 224 {Friendship:224s}
-scoreboard players set @e Temp 225 {Friendship:225s}
-scoreboard players set @e Temp 226 {Friendship:226s}
-scoreboard players set @e Temp 227 {Friendship:227s}
-scoreboard players set @e Temp 228 {Friendship:228s}
-scoreboard players set @e Temp 229 {Friendship:229s}
-scoreboard players set @e Temp 230 {Friendship:230s}
-scoreboard players set @e Temp 231 {Friendship:231s}
-scoreboard players set @e Temp 232 {Friendship:232s}
-scoreboard players set @e Temp 233 {Friendship:233s}
-scoreboard players set @e Temp 234 {Friendship:234s}
-scoreboard players set @e Temp 235 {Friendship:235s}
-scoreboard players set @e Temp 236 {Friendship:236s}
-scoreboard players set @e Temp 237 {Friendship:237s}
-scoreboard players set @e Temp 238 {Friendship:238s}
-scoreboard players set @e Temp 239 {Friendship:239s}
-scoreboard players set @e Temp 240 {Friendship:240s}
-scoreboard players set @e Temp 241 {Friendship:241s}
-scoreboard players set @e Temp 242 {Friendship:242s}
-scoreboard players set @e Temp 243 {Friendship:243s}
-scoreboard players set @e Temp 244 {Friendship:244s}
-scoreboard players set @e Temp 245 {Friendship:245s}
-scoreboard players set @e Temp 246 {Friendship:246s}
-scoreboard players set @e Temp 247 {Friendship:247s}
-scoreboard players set @e Temp 248 {Friendship:248s}
-scoreboard players set @e Temp 249 {Friendship:249s}
-scoreboard players set @e Temp 250 {Friendship:250s}
-scoreboard players set @e Temp 251 {Friendship:251s}
-scoreboard players set @e Temp 252 {Friendship:252s}
-scoreboard players set @e Temp 253 {Friendship:253s}
-scoreboard players set @e Temp 254 {Friendship:254s}
-scoreboard players set @e Temp 255 {Friendship:255s}
-scoreboard players set @e Temp 256 {Friendship:256s}
-scoreboard players set @e Temp 257 {Friendship:257s}
-scoreboard players set @e Temp 258 {Friendship:258s}
-scoreboard players set @e Temp 259 {Friendship:259s}
-scoreboard players set @e Temp 260 {Friendship:260s}
-scoreboard players set @e Temp 261 {Friendship:261s}
-scoreboard players set @e Temp 262 {Friendship:262s}
-scoreboard players set @e Temp 263 {Friendship:263s}
-scoreboard players set @e Temp 264 {Friendship:264s}
-scoreboard players set @e Temp 265 {Friendship:265s}
-scoreboard players set @e Temp 266 {Friendship:266s}
-scoreboard players set @e Temp 267 {Friendship:267s}
-scoreboard players set @e Temp 268 {Friendship:268s}
-scoreboard players set @e Temp 269 {Friendship:269s}
-scoreboard players set @e Temp 270 {Friendship:270s}
-scoreboard players set @e Temp 271 {Friendship:271s}
-scoreboard players set @e Temp 272 {Friendship:272s}
-scoreboard players set @e Temp 273 {Friendship:273s}
-scoreboard players set @e Temp 274 {Friendship:274s}
-scoreboard players set @e Temp 275 {Friendship:275s}
-scoreboard players set @e Temp 276 {Friendship:276s}
-scoreboard players set @e Temp 277 {Friendship:277s}
-scoreboard players set @e Temp 278 {Friendship:278s}
-scoreboard players set @e Temp 279 {Friendship:279s}
-scoreboard players set @e Temp 280 {Friendship:280s}
-scoreboard players set @e Temp 281 {Friendship:281s}
-scoreboard players set @e Temp 282 {Friendship:282s}
-scoreboard players set @e Temp 283 {Friendship:283s}
-scoreboard players set @e Temp 284 {Friendship:284s}
-scoreboard players set @e Temp 285 {Friendship:285s}
-scoreboard players set @e Temp 286 {Friendship:286s}
-scoreboard players set @e Temp 287 {Friendship:287s}
-scoreboard players set @e Temp 288 {Friendship:288s}
-scoreboard players set @e Temp 289 {Friendship:289s}
-scoreboard players set @e Temp 290 {Friendship:290s}
-scoreboard players set @e Temp 291 {Friendship:291s}
-scoreboard players set @e Temp 292 {Friendship:292s}
-scoreboard players set @e Temp 293 {Friendship:293s}
-scoreboard players set @e Temp 294 {Friendship:294s}
-scoreboard players set @e Temp 295 {Friendship:295s}
-scoreboard players set @e Temp 296 {Friendship:296s}
-scoreboard players set @e Temp 297 {Friendship:297s}
-scoreboard players set @e Temp 298 {Friendship:298s}
-scoreboard players set @e Temp 299 {Friendship:299s}
-scoreboard players set @e Temp 300 {Friendship:300s}
+scoreboard players set @e[nbt={Friendship:1s}] Temp 1
+scoreboard players set @e[nbt={Friendship:2s}] Temp 2
+scoreboard players set @e[nbt={Friendship:3s}] Temp 3
+scoreboard players set @e[nbt={Friendship:4s}] Temp 4
+scoreboard players set @e[nbt={Friendship:5s}] Temp 5
+scoreboard players set @e[nbt={Friendship:6s}] Temp 6
+scoreboard players set @e[nbt={Friendship:7s}] Temp 7
+scoreboard players set @e[nbt={Friendship:8s}] Temp 8
+scoreboard players set @e[nbt={Friendship:9s}] Temp 9
+scoreboard players set @e[nbt={Friendship:10s}] Temp 10
+scoreboard players set @e[nbt={Friendship:11s}] Temp 11
+scoreboard players set @e[nbt={Friendship:12s}] Temp 12
+scoreboard players set @e[nbt={Friendship:13s}] Temp 13
+scoreboard players set @e[nbt={Friendship:14s}] Temp 14
+scoreboard players set @e[nbt={Friendship:15s}] Temp 15
+scoreboard players set @e[nbt={Friendship:16s}] Temp 16
+scoreboard players set @e[nbt={Friendship:17s}] Temp 17
+scoreboard players set @e[nbt={Friendship:18s}] Temp 18
+scoreboard players set @e[nbt={Friendship:19s}] Temp 19
+scoreboard players set @e[nbt={Friendship:20s}] Temp 20
+scoreboard players set @e[nbt={Friendship:21s}] Temp 21
+scoreboard players set @e[nbt={Friendship:22s}] Temp 22
+scoreboard players set @e[nbt={Friendship:23s}] Temp 23
+scoreboard players set @e[nbt={Friendship:24s}] Temp 24
+scoreboard players set @e[nbt={Friendship:25s}] Temp 25
+scoreboard players set @e[nbt={Friendship:26s}] Temp 26
+scoreboard players set @e[nbt={Friendship:27s}] Temp 27
+scoreboard players set @e[nbt={Friendship:28s}] Temp 28
+scoreboard players set @e[nbt={Friendship:29s}] Temp 29
+scoreboard players set @e[nbt={Friendship:30s}] Temp 30
+scoreboard players set @e[nbt={Friendship:31s}] Temp 31
+scoreboard players set @e[nbt={Friendship:32s}] Temp 32
+scoreboard players set @e[nbt={Friendship:33s}] Temp 33
+scoreboard players set @e[nbt={Friendship:34s}] Temp 34
+scoreboard players set @e[nbt={Friendship:35s}] Temp 35
+scoreboard players set @e[nbt={Friendship:36s}] Temp 36
+scoreboard players set @e[nbt={Friendship:37s}] Temp 37
+scoreboard players set @e[nbt={Friendship:38s}] Temp 38
+scoreboard players set @e[nbt={Friendship:39s}] Temp 39
+scoreboard players set @e[nbt={Friendship:40s}] Temp 40
+scoreboard players set @e[nbt={Friendship:41s}] Temp 41
+scoreboard players set @e[nbt={Friendship:42s}] Temp 42
+scoreboard players set @e[nbt={Friendship:43s}] Temp 43
+scoreboard players set @e[nbt={Friendship:44s}] Temp 44
+scoreboard players set @e[nbt={Friendship:45s}] Temp 45
+scoreboard players set @e[nbt={Friendship:46s}] Temp 46
+scoreboard players set @e[nbt={Friendship:47s}] Temp 47
+scoreboard players set @e[nbt={Friendship:48s}] Temp 48
+scoreboard players set @e[nbt={Friendship:49s}] Temp 49
+scoreboard players set @e[nbt={Friendship:50s}] Temp 50
+scoreboard players set @e[nbt={Friendship:51s}] Temp 51
+scoreboard players set @e[nbt={Friendship:52s}] Temp 52
+scoreboard players set @e[nbt={Friendship:53s}] Temp 53
+scoreboard players set @e[nbt={Friendship:54s}] Temp 54
+scoreboard players set @e[nbt={Friendship:55s}] Temp 55
+scoreboard players set @e[nbt={Friendship:56s}] Temp 56
+scoreboard players set @e[nbt={Friendship:57s}] Temp 57
+scoreboard players set @e[nbt={Friendship:58s}] Temp 58
+scoreboard players set @e[nbt={Friendship:59s}] Temp 59
+scoreboard players set @e[nbt={Friendship:60s}] Temp 60
+scoreboard players set @e[nbt={Friendship:61s}] Temp 61
+scoreboard players set @e[nbt={Friendship:62s}] Temp 62
+scoreboard players set @e[nbt={Friendship:63s}] Temp 63
+scoreboard players set @e[nbt={Friendship:64s}] Temp 64
+scoreboard players set @e[nbt={Friendship:65s}] Temp 65
+scoreboard players set @e[nbt={Friendship:66s}] Temp 66
+scoreboard players set @e[nbt={Friendship:67s}] Temp 67
+scoreboard players set @e[nbt={Friendship:68s}] Temp 68
+scoreboard players set @e[nbt={Friendship:69s}] Temp 69
+scoreboard players set @e[nbt={Friendship:70s}] Temp 70
+scoreboard players set @e[nbt={Friendship:71s}] Temp 71
+scoreboard players set @e[nbt={Friendship:72s}] Temp 72
+scoreboard players set @e[nbt={Friendship:73s}] Temp 73
+scoreboard players set @e[nbt={Friendship:74s}] Temp 74
+scoreboard players set @e[nbt={Friendship:75s}] Temp 75
+scoreboard players set @e[nbt={Friendship:76s}] Temp 76
+scoreboard players set @e[nbt={Friendship:77s}] Temp 77
+scoreboard players set @e[nbt={Friendship:78s}] Temp 78
+scoreboard players set @e[nbt={Friendship:79s}] Temp 79
+scoreboard players set @e[nbt={Friendship:80s}] Temp 80
+scoreboard players set @e[nbt={Friendship:81s}] Temp 81
+scoreboard players set @e[nbt={Friendship:82s}] Temp 82
+scoreboard players set @e[nbt={Friendship:83s}] Temp 83
+scoreboard players set @e[nbt={Friendship:84s}] Temp 84
+scoreboard players set @e[nbt={Friendship:85s}] Temp 85
+scoreboard players set @e[nbt={Friendship:86s}] Temp 86
+scoreboard players set @e[nbt={Friendship:87s}] Temp 87
+scoreboard players set @e[nbt={Friendship:88s}] Temp 88
+scoreboard players set @e[nbt={Friendship:89s}] Temp 89
+scoreboard players set @e[nbt={Friendship:90s}] Temp 90
+scoreboard players set @e[nbt={Friendship:91s}] Temp 91
+scoreboard players set @e[nbt={Friendship:92s}] Temp 92
+scoreboard players set @e[nbt={Friendship:93s}] Temp 93
+scoreboard players set @e[nbt={Friendship:94s}] Temp 94
+scoreboard players set @e[nbt={Friendship:95s}] Temp 95
+scoreboard players set @e[nbt={Friendship:96s}] Temp 96
+scoreboard players set @e[nbt={Friendship:97s}] Temp 97
+scoreboard players set @e[nbt={Friendship:98s}] Temp 98
+scoreboard players set @e[nbt={Friendship:99s}] Temp 99
+scoreboard players set @e[nbt={Friendship:100s}] Temp 100
+scoreboard players set @e[nbt={Friendship:101s}] Temp 101
+scoreboard players set @e[nbt={Friendship:102s}] Temp 102
+scoreboard players set @e[nbt={Friendship:103s}] Temp 103
+scoreboard players set @e[nbt={Friendship:104s}] Temp 104
+scoreboard players set @e[nbt={Friendship:105s}] Temp 105
+scoreboard players set @e[nbt={Friendship:106s}] Temp 106
+scoreboard players set @e[nbt={Friendship:107s}] Temp 107
+scoreboard players set @e[nbt={Friendship:108s}] Temp 108
+scoreboard players set @e[nbt={Friendship:109s}] Temp 109
+scoreboard players set @e[nbt={Friendship:110s}] Temp 110
+scoreboard players set @e[nbt={Friendship:111s}] Temp 111
+scoreboard players set @e[nbt={Friendship:112s}] Temp 112
+scoreboard players set @e[nbt={Friendship:113s}] Temp 113
+scoreboard players set @e[nbt={Friendship:114s}] Temp 114
+scoreboard players set @e[nbt={Friendship:115s}] Temp 115
+scoreboard players set @e[nbt={Friendship:116s}] Temp 116
+scoreboard players set @e[nbt={Friendship:117s}] Temp 117
+scoreboard players set @e[nbt={Friendship:118s}] Temp 118
+scoreboard players set @e[nbt={Friendship:119s}] Temp 119
+scoreboard players set @e[nbt={Friendship:120s}] Temp 120
+scoreboard players set @e[nbt={Friendship:121s}] Temp 121
+scoreboard players set @e[nbt={Friendship:122s}] Temp 122
+scoreboard players set @e[nbt={Friendship:123s}] Temp 123
+scoreboard players set @e[nbt={Friendship:124s}] Temp 124
+scoreboard players set @e[nbt={Friendship:125s}] Temp 125
+scoreboard players set @e[nbt={Friendship:126s}] Temp 126
+scoreboard players set @e[nbt={Friendship:127s}] Temp 127
+scoreboard players set @e[nbt={Friendship:128s}] Temp 128
+scoreboard players set @e[nbt={Friendship:129s}] Temp 129
+scoreboard players set @e[nbt={Friendship:130s}] Temp 130
+scoreboard players set @e[nbt={Friendship:131s}] Temp 131
+scoreboard players set @e[nbt={Friendship:132s}] Temp 132
+scoreboard players set @e[nbt={Friendship:133s}] Temp 133
+scoreboard players set @e[nbt={Friendship:134s}] Temp 134
+scoreboard players set @e[nbt={Friendship:135s}] Temp 135
+scoreboard players set @e[nbt={Friendship:136s}] Temp 136
+scoreboard players set @e[nbt={Friendship:137s}] Temp 137
+scoreboard players set @e[nbt={Friendship:138s}] Temp 138
+scoreboard players set @e[nbt={Friendship:139s}] Temp 139
+scoreboard players set @e[nbt={Friendship:140s}] Temp 140
+scoreboard players set @e[nbt={Friendship:141s}] Temp 141
+scoreboard players set @e[nbt={Friendship:142s}] Temp 142
+scoreboard players set @e[nbt={Friendship:143s}] Temp 143
+scoreboard players set @e[nbt={Friendship:144s}] Temp 144
+scoreboard players set @e[nbt={Friendship:145s}] Temp 145
+scoreboard players set @e[nbt={Friendship:146s}] Temp 146
+scoreboard players set @e[nbt={Friendship:147s}] Temp 147
+scoreboard players set @e[nbt={Friendship:148s}] Temp 148
+scoreboard players set @e[nbt={Friendship:149s}] Temp 149
+scoreboard players set @e[nbt={Friendship:150s}] Temp 150
+scoreboard players set @e[nbt={Friendship:151s}] Temp 151
+scoreboard players set @e[nbt={Friendship:152s}] Temp 152
+scoreboard players set @e[nbt={Friendship:153s}] Temp 153
+scoreboard players set @e[nbt={Friendship:154s}] Temp 154
+scoreboard players set @e[nbt={Friendship:155s}] Temp 155
+scoreboard players set @e[nbt={Friendship:156s}] Temp 156
+scoreboard players set @e[nbt={Friendship:157s}] Temp 157
+scoreboard players set @e[nbt={Friendship:158s}] Temp 158
+scoreboard players set @e[nbt={Friendship:159s}] Temp 159
+scoreboard players set @e[nbt={Friendship:160s}] Temp 160
+scoreboard players set @e[nbt={Friendship:161s}] Temp 161
+scoreboard players set @e[nbt={Friendship:162s}] Temp 162
+scoreboard players set @e[nbt={Friendship:163s}] Temp 163
+scoreboard players set @e[nbt={Friendship:164s}] Temp 164
+scoreboard players set @e[nbt={Friendship:165s}] Temp 165
+scoreboard players set @e[nbt={Friendship:166s}] Temp 166
+scoreboard players set @e[nbt={Friendship:167s}] Temp 167
+scoreboard players set @e[nbt={Friendship:168s}] Temp 168
+scoreboard players set @e[nbt={Friendship:169s}] Temp 169
+scoreboard players set @e[nbt={Friendship:170s}] Temp 170
+scoreboard players set @e[nbt={Friendship:171s}] Temp 171
+scoreboard players set @e[nbt={Friendship:172s}] Temp 172
+scoreboard players set @e[nbt={Friendship:173s}] Temp 173
+scoreboard players set @e[nbt={Friendship:174s}] Temp 174
+scoreboard players set @e[nbt={Friendship:175s}] Temp 175
+scoreboard players set @e[nbt={Friendship:176s}] Temp 176
+scoreboard players set @e[nbt={Friendship:177s}] Temp 177
+scoreboard players set @e[nbt={Friendship:178s}] Temp 178
+scoreboard players set @e[nbt={Friendship:179s}] Temp 179
+scoreboard players set @e[nbt={Friendship:180s}] Temp 180
+scoreboard players set @e[nbt={Friendship:181s}] Temp 181
+scoreboard players set @e[nbt={Friendship:182s}] Temp 182
+scoreboard players set @e[nbt={Friendship:183s}] Temp 183
+scoreboard players set @e[nbt={Friendship:184s}] Temp 184
+scoreboard players set @e[nbt={Friendship:185s}] Temp 185
+scoreboard players set @e[nbt={Friendship:186s}] Temp 186
+scoreboard players set @e[nbt={Friendship:187s}] Temp 187
+scoreboard players set @e[nbt={Friendship:188s}] Temp 188
+scoreboard players set @e[nbt={Friendship:189s}] Temp 189
+scoreboard players set @e[nbt={Friendship:190s}] Temp 190
+scoreboard players set @e[nbt={Friendship:191s}] Temp 191
+scoreboard players set @e[nbt={Friendship:192s}] Temp 192
+scoreboard players set @e[nbt={Friendship:193s}] Temp 193
+scoreboard players set @e[nbt={Friendship:194s}] Temp 194
+scoreboard players set @e[nbt={Friendship:195s}] Temp 195
+scoreboard players set @e[nbt={Friendship:196s}] Temp 196
+scoreboard players set @e[nbt={Friendship:197s}] Temp 197
+scoreboard players set @e[nbt={Friendship:198s}] Temp 198
+scoreboard players set @e[nbt={Friendship:199s}] Temp 199
+scoreboard players set @e[nbt={Friendship:200s}] Temp 200
+scoreboard players set @e[nbt={Friendship:201s}] Temp 201
+scoreboard players set @e[nbt={Friendship:202s}] Temp 202
+scoreboard players set @e[nbt={Friendship:203s}] Temp 203
+scoreboard players set @e[nbt={Friendship:204s}] Temp 204
+scoreboard players set @e[nbt={Friendship:205s}] Temp 205
+scoreboard players set @e[nbt={Friendship:206s}] Temp 206
+scoreboard players set @e[nbt={Friendship:207s}] Temp 207
+scoreboard players set @e[nbt={Friendship:208s}] Temp 208
+scoreboard players set @e[nbt={Friendship:209s}] Temp 209
+scoreboard players set @e[nbt={Friendship:210s}] Temp 210
+scoreboard players set @e[nbt={Friendship:211s}] Temp 211
+scoreboard players set @e[nbt={Friendship:212s}] Temp 212
+scoreboard players set @e[nbt={Friendship:213s}] Temp 213
+scoreboard players set @e[nbt={Friendship:214s}] Temp 214
+scoreboard players set @e[nbt={Friendship:215s}] Temp 215
+scoreboard players set @e[nbt={Friendship:216s}] Temp 216
+scoreboard players set @e[nbt={Friendship:217s}] Temp 217
+scoreboard players set @e[nbt={Friendship:218s}] Temp 218
+scoreboard players set @e[nbt={Friendship:219s}] Temp 219
+scoreboard players set @e[nbt={Friendship:220s}] Temp 220
+scoreboard players set @e[nbt={Friendship:221s}] Temp 221
+scoreboard players set @e[nbt={Friendship:222s}] Temp 222
+scoreboard players set @e[nbt={Friendship:223s}] Temp 223
+scoreboard players set @e[nbt={Friendship:224s}] Temp 224
+scoreboard players set @e[nbt={Friendship:225s}] Temp 225
+scoreboard players set @e[nbt={Friendship:226s}] Temp 226
+scoreboard players set @e[nbt={Friendship:227s}] Temp 227
+scoreboard players set @e[nbt={Friendship:228s}] Temp 228
+scoreboard players set @e[nbt={Friendship:229s}] Temp 229
+scoreboard players set @e[nbt={Friendship:230s}] Temp 230
+scoreboard players set @e[nbt={Friendship:231s}] Temp 231
+scoreboard players set @e[nbt={Friendship:232s}] Temp 232
+scoreboard players set @e[nbt={Friendship:233s}] Temp 233
+scoreboard players set @e[nbt={Friendship:234s}] Temp 234
+scoreboard players set @e[nbt={Friendship:235s}] Temp 235
+scoreboard players set @e[nbt={Friendship:236s}] Temp 236
+scoreboard players set @e[nbt={Friendship:237s}] Temp 237
+scoreboard players set @e[nbt={Friendship:238s}] Temp 238
+scoreboard players set @e[nbt={Friendship:239s}] Temp 239
+scoreboard players set @e[nbt={Friendship:240s}] Temp 240
+scoreboard players set @e[nbt={Friendship:241s}] Temp 241
+scoreboard players set @e[nbt={Friendship:242s}] Temp 242
+scoreboard players set @e[nbt={Friendship:243s}] Temp 243
+scoreboard players set @e[nbt={Friendship:244s}] Temp 244
+scoreboard players set @e[nbt={Friendship:245s}] Temp 245
+scoreboard players set @e[nbt={Friendship:246s}] Temp 246
+scoreboard players set @e[nbt={Friendship:247s}] Temp 247
+scoreboard players set @e[nbt={Friendship:248s}] Temp 248
+scoreboard players set @e[nbt={Friendship:249s}] Temp 249
+scoreboard players set @e[nbt={Friendship:250s}] Temp 250
+scoreboard players set @e[nbt={Friendship:251s}] Temp 251
+scoreboard players set @e[nbt={Friendship:252s}] Temp 252
+scoreboard players set @e[nbt={Friendship:253s}] Temp 253
+scoreboard players set @e[nbt={Friendship:254s}] Temp 254
+scoreboard players set @e[nbt={Friendship:255s}] Temp 255
+scoreboard players set @e[nbt={Friendship:256s}] Temp 256
+scoreboard players set @e[nbt={Friendship:257s}] Temp 257
+scoreboard players set @e[nbt={Friendship:258s}] Temp 258
+scoreboard players set @e[nbt={Friendship:259s}] Temp 259
+scoreboard players set @e[nbt={Friendship:260s}] Temp 260
+scoreboard players set @e[nbt={Friendship:261s}] Temp 261
+scoreboard players set @e[nbt={Friendship:262s}] Temp 262
+scoreboard players set @e[nbt={Friendship:263s}] Temp 263
+scoreboard players set @e[nbt={Friendship:264s}] Temp 264
+scoreboard players set @e[nbt={Friendship:265s}] Temp 265
+scoreboard players set @e[nbt={Friendship:266s}] Temp 266
+scoreboard players set @e[nbt={Friendship:267s}] Temp 267
+scoreboard players set @e[nbt={Friendship:268s}] Temp 268
+scoreboard players set @e[nbt={Friendship:269s}] Temp 269
+scoreboard players set @e[nbt={Friendship:270s}] Temp 270
+scoreboard players set @e[nbt={Friendship:271s}] Temp 271
+scoreboard players set @e[nbt={Friendship:272s}] Temp 272
+scoreboard players set @e[nbt={Friendship:273s}] Temp 273
+scoreboard players set @e[nbt={Friendship:274s}] Temp 274
+scoreboard players set @e[nbt={Friendship:275s}] Temp 275
+scoreboard players set @e[nbt={Friendship:276s}] Temp 276
+scoreboard players set @e[nbt={Friendship:277s}] Temp 277
+scoreboard players set @e[nbt={Friendship:278s}] Temp 278
+scoreboard players set @e[nbt={Friendship:279s}] Temp 279
+scoreboard players set @e[nbt={Friendship:280s}] Temp 280
+scoreboard players set @e[nbt={Friendship:281s}] Temp 281
+scoreboard players set @e[nbt={Friendship:282s}] Temp 282
+scoreboard players set @e[nbt={Friendship:283s}] Temp 283
+scoreboard players set @e[nbt={Friendship:284s}] Temp 284
+scoreboard players set @e[nbt={Friendship:285s}] Temp 285
+scoreboard players set @e[nbt={Friendship:286s}] Temp 286
+scoreboard players set @e[nbt={Friendship:287s}] Temp 287
+scoreboard players set @e[nbt={Friendship:288s}] Temp 288
+scoreboard players set @e[nbt={Friendship:289s}] Temp 289
+scoreboard players set @e[nbt={Friendship:290s}] Temp 290
+scoreboard players set @e[nbt={Friendship:291s}] Temp 291
+scoreboard players set @e[nbt={Friendship:292s}] Temp 292
+scoreboard players set @e[nbt={Friendship:293s}] Temp 293
+scoreboard players set @e[nbt={Friendship:294s}] Temp 294
+scoreboard players set @e[nbt={Friendship:295s}] Temp 295
+scoreboard players set @e[nbt={Friendship:296s}] Temp 296
+scoreboard players set @e[nbt={Friendship:297s}] Temp 297
+scoreboard players set @e[nbt={Friendship:298s}] Temp 298
+scoreboard players set @e[nbt={Friendship:299s}] Temp 299
+scoreboard players set @e[nbt={Friendship:300s}] Temp 300

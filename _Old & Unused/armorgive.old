@@ -1,0 +1,94 @@
+give @p leather_helmet 1 0 {display:{color:11751612}}
+give @p leather_chestplate 1 0 {display:{color:11751612}}
+give @p leather_leggings 1 0 {display:{color:11751612}}
+give @p leather_boots 1 0 {display:{color:11751612}}
+
+#Orange
+give @p leather_helmet 1 0 {display:{color:14384446}}
+give @p leather_chestplate1 0 {display:{color:14384446}}
+give @p leather_leggings1 0 {display:{color:14384446}}
+give @p leather_boots 1 0 {display:{color:14384446}}
+
+#Yellow
+give @p leather_helmet 1 0 {display:{color:11642407}}
+give @p leather_chestplate 1 0 {display:{color:11642407}}
+give @p leather_leggings 1 0 {display:{color:11642407}}
+give @p leather_boots 1 0 {display:{color:11642407}}
+
+#Lime
+give @p leather_helmet 1 0 {display:{color:4304440}}
+give @p leather_chestplate 1 0 {display:{color:4304440}}
+give @p leather_leggings 1 0 {display:{color:4304440}}
+give @p leather_boots 1 0 {display:{color:4304440}}
+
+#Green
+give @p leather_helmet 1 0 {display:{color:3491355}}
+give @p leather_chestplate 1 0 {display:{color:3491355}}
+give @p leather_leggings 1 0 {display:{color:3491355}}
+give @p leather_boots 1 0 {display:{color:3491355}}
+
+#Cyan
+give @p leather_helmet 1 0 {display:{color:3042953}}
+give @p leather_chestplate 1 0 {display:{color:3042953}}
+give @p leather_leggings 1 0 {display:{color:3042953}}
+give @p leather_boots 1 0 {display:{color:3042953}}
+
+#Light Blue
+give @p leather_helmet 1 0 {display:{color:7047881}}
+give @p leather_chestplate 1 0 {display:{color:7047881}}
+give @p leather_leggings 1 0 {display:{color:7047881}}
+give @p leather_boots 1 0 {display:{color:7047881}}
+
+#Blue
+give @p leather_helmet 1 0 {display:{color:3029133}}
+give @p leather_chestplate 1 0 {display:{color:3029133}}
+give @p leather_leggings 1 0 {display:{color:3029133}}
+give @p leather_boots 1 0 {display:{color:3029133}}
+
+#Purple
+give @p leather_helmet 1 0 {display:{color:8273333}}
+give @p leather_chestplate 1 0 {display:{color:8273333}}
+give @p leather_leggings 1 0 {display:{color:8273333}}
+give @p leather_boots 1 0 {display:{color:8273333}}
+
+#Magenta
+give @p leather_helmet 1 0 {display:{color:11751612}}
+give @p leather_chestplate 1 0 {display:{color:11751612}}
+give @p leather_leggings 1 0 {display:{color:11751612}}
+give @p leather_boots 1 0 {display:{color:11751612}}
+
+#Pink
+give @p leather_helmet 1 0 {display:{color:13665433}}
+give @p leather_chestplate 1 0 {display:{color:13665433}}
+give @p leather_leggings 1 0 {display:{color:13665433}}
+give @p leather_boots 1 0 {display:{color:13665433}}
+
+#White
+give @p leather_helmet 1 0 {display:{color:14540253}}
+give @p leather_chestplate 1 0 {display:{color:14540253}}
+give @p leather_leggings 1 0 {display:{color:14540253}}
+give @p leather_boots 1 0 {display:{color:14540253}}
+
+#Light Gray
+give @p leather_helmet 1 0 {display:{color:10133921}}
+give @p leather_chestplate 1 0 {display:{color:10133921}}
+give @p leather_leggings 1 0 {display:{color:10133921}}
+give @p leather_boots 1 0 {display:{color:10133921}}
+
+#Gray
+give @p leather_helmet 1 0 {display:{color:4210752}}
+give @p leather_chestplate 1 0 {display:{color:4210752}}
+give @p leather_leggings 1 0 {display:{color:4210752}}
+give @p leather_boots 1 0 {display:{color:4210752}}
+
+#Black
+give @p leather_helmet 1 0 {display:{color:1644054}}
+give @p leather_chestplate 1 0 {display:{color:1644054}}
+give @p leather_leggings 1 0 {display:{color:1644054}}
+give @p leather_boots 1 0 {display:{color:1644054}}
+
+#Brown
+give @p leather_helmet 1 0 {display:{color:5190175}}
+give @p leather_chestplate 1 0 {display:{color:5190175}}
+give @p leather_leggings 1 0 {display:{color:5190175}}
+give @p leather_boots 1 0 {display:{color:5190175}}

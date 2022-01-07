@@ -1,17 +1,17 @@
-scoreboard players tag @s add FlyVaniville
-scoreboard players tag @s add FlyKiloude
-scoreboard players tag @s add FlyAquacorde
-scoreboard players tag @s add FlySantalune
-scoreboard players tag @s add FlySnowbelle
-scoreboard players tag @s add FlyCouriway
-scoreboard players tag @s add FlyAnistar
-scoreboard players tag @s add FlyDendemille
-scoreboard players tag @s add FlyPokemonLeague
-scoreboard players tag @s add FlyLumiose
-scoreboard players tag @s add FlyLaverre
-scoreboard players tag @s add FlyAmbrette
-scoreboard players tag @s add FlyCamphrier
-scoreboard players tag @s add FlyCyllage
-scoreboard players tag @s add FlyGeosenge
-scoreboard players tag @s add FlyShalour
-scoreboard players tag @s add FlyCoumarine
+tag @s add FlyVaniville
+tag @s add FlyKiloude
+tag @s add FlyAquacorde
+tag @s add FlySantalune
+tag @s add FlySnowbelle
+tag @s add FlyCouriway
+tag @s add FlyAnistar
+tag @s add FlyDendemille
+tag @s add FlyPokemonLeague
+tag @s add FlyLumiose
+tag @s add FlyLaverre
+tag @s add FlyAmbrette
+tag @s add FlyCamphrier
+tag @s add FlyCyllage
+tag @s add FlyGeosenge
+tag @s add FlyShalour
+tag @s add FlyCoumarine

@@ -1,32 +1,32 @@
 tellraw @a[tag=!InitialTags] {"text":"Initial scoreboard values required to run the map not found. TPing to spawn...","italic":true,"color":"gray"}
-tp @a[type=player,tag=!InitialTags] -552 100 1257
+tp @a[tag=!InitialTags] -552 100 1257
 
 #Lobby to Sycamore Welcome scene
-execute @a[x=-764,y=102,z=1208,dy=3,dz=3,score_TalkTime=0,tag=!Dialogue266] ~ ~ ~ gamemode spectator @s
-execute @a[x=-764,y=102,z=1208,dy=3,dz=3,score_TalkTime=0,tag=!Dialogue266] ~ ~ ~ scoreboard players set @s DialogueTrigger 266
-tp @a[x=-764,y=102,z=1208,dy=3,dz=3,score_TalkTime=0,tag=!Dialogue266] -1009 125 1457 180 90
+execute as @a[x=-764,y=102,z=1208,dy=3,dz=3,scores={TalkTime=0},tag=!Dialogue266] run gamemode spectator @s
+execute as @a[x=-764,y=102,z=1208,dy=3,dz=3,scores={TalkTime=0},tag=!Dialogue266] run scoreboard players set @s DialogueTrigger 266
+tp @a[x=-764,y=102,z=1208,dy=3,dz=3,scores={TalkTime=0},tag=!Dialogue266] -1009 125 1457 180 90
 
 #Lobby to Vaniville
-scoreboard players set @a[x=-764,y=102,z=1208,dy=3,dz=3,score_TalkTime=0,tag=Dialogue266] click1
-tp @a[x=-764,y=102,z=1208,dy=3,dz=3,score_TalkTime=0,tag=Dialogue266] 506 118 1558 180 10
+scoreboard players set @a[x=-764,y=102,z=1208,dy=3,dz=3,scores={TalkTime=0},tag=Dialogue266] click1
+tp @a[x=-764,y=102,z=1208,dy=3,dz=3,scores={TalkTime=0},tag=Dialogue266] 506 118 1558 180 10
 
-tp @a[x=516,y=118,z=1549,dy=4,score_TalkTime=0] -783 102 1210.0 -90 13
+tp @a[x=516,y=118,z=1549,dy=4,scores={TalkTime=0}] -783 102 1210.0 -90 13
 
 #Gyms
 
 #Santalune City Gym
-scoreboard players set @a[x=310,y=102,z=383,dx=6,dy=5,dz=1,score_TalkTime=0] click1
-tp @a[x=310,y=102,z=383,dx=6,dy=5,dz=1,score_TalkTime=0] -1919 138 -1890
+scoreboard players set @a[x=310,y=102,z=383,dx=6,dy=5,dz=1,scores={TalkTime=0}] click1
+tp @a[x=310,y=102,z=383,dx=6,dy=5,dz=1,scores={TalkTime=0}] -1919 138 -1890
 
-scoreboard players set @a[x=-1922,y=138,z=-1889,dx=6,dy=5,score_TalkTime=0] click1
-tp @a[x=-1922,y=138,z=-1889,dx=6,dy=5,score_TalkTime=0] 313 102 385
+scoreboard players set @a[x=-1922,y=138,z=-1889,dx=6,dy=5,scores={TalkTime=0}] click1
+tp @a[x=-1922,y=138,z=-1889,dx=6,dy=5,scores={TalkTime=0}] 313 102 385
 
 tp @a[x=-1921,y=132,z=-1904,dx=4,dy=1,dz=5] -1937 115 -1847
 
 
 #Cyllage City Gym
-scoreboard players set @a[x=-1917,y=114,z=1,dx=11,dy=5,score_TalkTime=0] click1
-tp @a[x=-1917,y=114,z=1,dx=11,dy=5,score_TalkTime=0] -1677 102 -1866
+scoreboard players set @a[x=-1917,y=114,z=1,dx=11,dy=5,scores={TalkTime=0}] click1
+tp @a[x=-1917,y=114,z=1,dx=11,dy=5,scores={TalkTime=0}] -1677 102 -1866
 
 scoreboard players set @a[x=-1679,y=101,z=-1865,dx=5,dy=5] click1
 tp @a[x=-1679,y=101,z=-1865,dx=5,dy=5] -1912 114 2
@@ -34,8 +34,8 @@ tp @a[x=-1679,y=101,z=-1865,dx=5,dy=5] -1912 114 2
 
 #Shalour City Gym
 #Pre-Tower of Mastery Serena defeat
-scoreboard players set @a[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1,score_TalkTime=0,tag=!Dialogue61] DialogueTrigger 57
-tp @a[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1,score_TalkTime=0,tag=!Dialogue61] ~ ~ ~10
+scoreboard players set @a[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1,scores={TalkTime=0},tag=!Dialogue61] DialogueTrigger 57
+tp @a[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1,scores={TalkTime=0},tag=!Dialogue61] ~ ~ ~10
 
 scoreboard players set @a[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1] click1
 tp @a[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1] -1328 102 -1816
@@ -49,11 +49,11 @@ tp @a[x=-1659,y=91,z=-1101,dx=6,dy=5] -1656 91 -1107
 tp @a[x=-1659,y=91,z=-1105,dx=6,dy=5] -1656 91 -1099
 
 #Under Lucario Statue Room
-scoreboard players set @a[x=-1662,y=93,z=-1160,dx=6,dy=5,score_TalkTime=0,tag=!Dialogue59] DialogueTrigger 59
-tp @a[x=-1662,y=93,z=-1160,dx=6,dy=5,score_TalkTime=0] -1658 77 -1177
+scoreboard players set @a[x=-1662,y=93,z=-1160,dx=6,dy=5,scores={TalkTime=0},tag=!Dialogue59] DialogueTrigger 59
+tp @a[x=-1662,y=93,z=-1160,dx=6,dy=5,scores={TalkTime=0}] -1658 77 -1177
 
-scoreboard players set @a[x=-1661,y=77,z=-1176,dx=5,dy=5,score_TalkTime=0,tag=Dialogue59] DialogueTrigger 60
-tp @a[x=-1661,y=77,z=-1176,dx=5,dy=5,score_TalkTime=0] -1659 93 -1159
+scoreboard players set @a[x=-1661,y=77,z=-1176,dx=5,dy=5,scores={TalkTime=0},tag=Dialogue59] DialogueTrigger 60
+tp @a[x=-1661,y=77,z=-1176,dx=5,dy=5,scores={TalkTime=0}] -1659 93 -1159
 
 
 
@@ -80,7 +80,7 @@ tp @a[x=-1965,y=101,z=-1667,dx=6,dy=5] -93 100 -1460
 
 
 #Anistar City Gym
-tellraw @a[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=!Dialogue103,score_TalkTime=0] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Let's battle, "},{"selector":"@p[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=!Dialogue103]"},{"text":"!"}]
+tellraw @a[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=!Dialogue103,scores={TalkTime=0}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Let's battle, "},{"selector":"@p[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=!Dialogue103]"},{"text":"!"}]
 tp @a[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=!Dialogue103] ~ ~ ~10
 
 scoreboard players set @a[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=Dialogue103] click1
@@ -101,19 +101,19 @@ tp @a[x=-803,y=154,z=-1835,dx=6,dy=5] 1144 97 488
 
 #Santalune Pokemon Center
 scoreboard players set @a[x=295,y=68,z=486,dx=4,dy=5] click 1
-execute @a[x=295,y=68,z=486,dx=4,dy=5,score_TalkTime=0,tag=Birthday] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0,tag=!Dialogue265] DialogueTrigger 265
-execute @a[x=295,y=68,z=486,dx=4,dy=5,tag=!Dialogue9] ~ ~ ~ /tp @e[x=-504,y=120,z=1252,dy=3,type=pixelmon:npc_chatting] 308 68 481
+execute as @a[x=295,y=68,z=486,dx=4,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+execute as @a[x=295,y=68,z=486,dx=4,dy=5,tag=!Dialogue9] run tp @e[x=-504,y=120,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] 308 68 481
 spawnpoint @a[x=295,y=68,z=486,dx=4,dy=5] 297 68 482
 tp @a[x=295,y=68,z=486,dx=4,dy=5] 297 100 486
 
-execute @a[x=295,y=68,z=486,dx=4,dy=5,tag=Dialogue9] ~ ~ ~ /tp @e[x=308,y=67,z=481,dy=3,type=pixelmon:npc_chatting] -504 121 1252
-scoreboard players set @a[x=294,y=100,z=485,dx=5,dy=5,dy=5,score_TalkTime=0,tag=!Dialogue9] DialogueTrigger 9
+execute as @a[x=295,y=68,z=486,dx=4,dy=5,tag=Dialogue9] run tp @e[x=308,y=67,z=481,dy=3,nbt=!{pixelmon:npc_chatting}] -504 121 1252
+scoreboard players set @a[x=294,y=100,z=485,dx=5,dy=5,dz=5,scores={TalkTime=0},tag=!Dialogue9] DialogueTrigger 9
 scoreboard players set @a[x=294,y=100,z=485,dx=5,dy=5] click 1
 tp @a[x=294,y=100,z=485,dx=5,dy=5] 297 68 485
 
 
 #Camphrier Pokemon Center
-execute @a[x=-1016,y=100,z=10,dx=5,dy=5,score_TalkTime=0,tag=Birthday] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0,tag=!Dialogue265] DialogueTrigger 265
+execute as @a[x=-1016,y=100,z=10,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 scoreboard players set @a[x=-1016,y=100,z=10,dx=5,dy=5] click 1
 spawnpoint @a[x=-1016,y=100,z=10,dx=5,dy=5] -1013 80 6
 tp @a[x=-1016,y=100,z=10,dx=5,dy=5] -1013 80 9
@@ -123,7 +123,7 @@ tp @a[x=-1015,y=80,z=10,dx=4,dy=5] -1013 100 12
 
 
 #Cyllage Pokemon Center
-execute @a[x=-2039,y=104,z=-62,dx=5,dy=5,score_TalkTime=0,tag=Birthday] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0,tag=!Dialogue265] DialogueTrigger 265
+execute as @a[x=-2039,y=104,z=-62,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 scoreboard players set @a[x=-2039,y=104,z=-62,dx=5,dy=5] click 1
 spawnpoint @a[x=-2039,y=104,z=-62,dx=5,dy=5] -2036 78 -66
 tp @a[x=-2039,y=104,z=-62,dx=5,dy=5] -2036 78 -63
@@ -133,7 +133,7 @@ tp @a[x=-2038,y=78,z=-62,dx=4,dy=5] -2036 104 -60
 
 
 #Ambrette Pokemon Center
-execute @a[x=-1964,y=141,z=554,dx=5,dy=5,score_TalkTime=0,tag=Birthday] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0,tag=!Dialogue265] DialogueTrigger 265
+execute as @a[x=-1964,y=141,z=554,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 scoreboard players set @a[x=-1964,y=141,z=554,dx=5,dy=5] click 1
 spawnpoint @a[x=-1964,y=141,z=554,dx=5,dy=5] -1961 103 550
 tp @a[x=-1964,y=141,z=554,dx=5,dy=5] -1961 103 553
@@ -143,27 +143,27 @@ tp @a[x=-1963,y=103,z=554,dx=4,dy=5] -1961 141 556
 
 
 #Geosenge Pokemon Center (Ultimate Weapon Destroyed)
-execute @a[x=-444,y=109,z=2094,dx=4,dy=5,score_TalkTime=0,tag=Birthday] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0,tag=!Dialogue265] DialogueTrigger 265
+execute as @a[x=-444,y=109,z=2094,dx=4,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 scoreboard players set @a[x=-444,y=109,z=2094,dx=4,dy=5] click 1
 spawnpoint @a[x=-444,y=109,z=2094,dx=4,dy=5] -2241 79 -630
 tp @a[x=-444,y=109,z=2094,dx=4,dy=5] -2241 79 -627
 
-scoreboard players set @a[x=-2243,y=79,z=-626,dx=4,dy=5,score_Geosenge_min=2,score_Geosenge=2] click 1
-tp @a[x=-2243,y=79,z=-626,dx=4,dy=5,score_Geosenge_min=2,score_Geosenge=2] -441 109 2096
+scoreboard players set @a[x=-2243,y=79,z=-626,dx=4,dy=5,scores={Geosenge=2}] click 1
+tp @a[x=-2243,y=79,z=-626,dx=4,dy=5,scores={Geosenge=2}] -441 109 2096
 
 
 #Geosenge Pokemon Center (Ultimate Weapon)
-execute @a[x=-1164,y=104,z=2094,dx=4,dy=5,score_TalkTime=0,tag=Birthday] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0,tag=!Dialogue265] DialogueTrigger 265
+execute as @a[x=-1164,y=104,z=2094,dx=4,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 scoreboard players set @a[x=-1164,y=104,z=2094,dx=4,dy=5] click 1
 spawnpoint @a[x=-1164,y=104,z=2094,dx=4,dy=5] -2241 79 -630
 tp @a[x=-1164,y=104,z=2094,dx=4,dy=5] -2241 79 -627
 
-scoreboard players set @a[x=-2243,y=79,z=-626,dx=4,dy=5,score_Geosenge_min=1,score_Geosenge=1] click 1
-tp @a[x=-2243,y=79,z=-626,dx=4,dy=5,score_Geosenge_min=1,score_Geosenge=1] -1161 109 2095
+scoreboard players set @a[x=-2243,y=79,z=-626,dx=4,dy=5,scores={Geosenge=1}] click 1
+tp @a[x=-2243,y=79,z=-626,dx=4,dy=5,scores={Geosenge=1}] -1161 109 2095
 
 
 #Geosenge Pokemon Center (normal)
-execute @a[x=-2244,y=104,z=-626,dx=4,dy=5,score_TalkTime=0,tag=Birthday] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0,tag=!Dialogue265] DialogueTrigger 265
+execute as @a[x=-2244,y=104,z=-626,dx=4,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 scoreboard players set @a[x=-2244,y=104,z=-626,dx=4,dy=5] click 1
 spawnpoint @a[x=-2244,y=104,z=-626,dx=4,dy=5] -2241 79 -630
 tp @a[x=-2244,y=104,z=-626,dx=4,dy=5] -2241 79 -627
@@ -173,7 +173,7 @@ tp @a[x=-2243,y=79,z=-626,dx=4,dy=5] -2241 104 -624
 
 
 #Shalour City Pokemon Center
-execute @a[x=-1622,y=80,z=-819,dx=5,dy=5,score_TalkTime=0,tag=Birthday] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0,tag=!Dialogue265] DialogueTrigger 265
+execute as @a[x=-1622,y=80,z=-819,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 scoreboard players set @a[x=-1622,y=80,z=-819,dx=5,dy=5] click 1
 spawnpoint @a[x=-1622,y=80,z=-819,dx=5,dy=5] -1619 57 -823
 tp @a[x=-1622,y=80,z=-819,dx=5,dy=5] -1619 57 -820
@@ -183,7 +183,7 @@ tp @a[x=-1621,y=57,z=-819,dx=5,dy=5] -1619 80 -817
 
 
 #Courmarine Pokemon Center
-execute @a[x=-1029,y=115,z=-660,dx=5,dy=5,score_TalkTime=0,tag=Birthday] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0,tag=!Dialogue265] DialogueTrigger 265
+execute as @a[x=-1029,y=115,z=-660,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 scoreboard players set @a[x=-1029,y=115,z=-660,dx=5,dy=5] click 1
 spawnpoint @a[x=-1029,y=115,z=-660,dx=5,dy=5] -1026 89 -664
 tp @a[x=-1029,y=115,z=-660,dx=5,dy=5] -1026 89 -661
@@ -193,7 +193,7 @@ tp @a[x=-1028,y=89,z=-660,dx=4,dy=5] -1026 115 -658
 
 
 #Laverre Pokemon Center
-execute @a[x=-73,y=100,z=-1365,dx=5,dy=5,score_TalkTime=0,tag=Birthday] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0,tag=!Dialogue265] DialogueTrigger 265
+execute as @a[x=-73,y=100,z=-1365,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 scoreboard players set @a[x=-73,y=100,z=-1365,dx=5,dy=5] click 1
 spawnpoint @a[x=-73,y=100,z=-1365,dx=5,dy=5] -70 77 -1369
 tp @a[x=-73,y=100,z=-1365,dx=5,dy=5] -70 77 -1366
@@ -203,7 +203,7 @@ tp @a[x=-72,y=77,z=-1365,dx=4,dy=5] -70 100 -1363
 
 
 #Dendemille Pokemon Center
-execute @a[x=618,y=108,z=-375,dx=5,dy=5,score_TalkTime=0,tag=Birthday] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0,tag=!Dialogue265] DialogueTrigger 265
+execute as @a[x=618,y=108,z=-375,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 scoreboard players set @a[x=618,y=108,z=-375,dx=5,dy=5] click 1
 spawnpoint @a[x=618,y=108,z=-375,dx=5,dy=5] 621 87 -379
 tp @a[x=618,y=108,z=-375,dx=5,dy=5] 621 87 -376
@@ -213,7 +213,7 @@ tp @a[x=619,y=87,z=-375,dx=4,dy=5] 621 108 -373
 
 
 #Anistar Pokemon Center
-execute @a[x=1267,y=108,z=-197,dx=5,dy=5,score_TalkTime=0,tag=Birthday] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0,tag=!Dialogue265] DialogueTrigger 265
+execute as @a[x=1267,y=108,z=-197,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 scoreboard players set @a[x=1267,y=108,z=-197,dx=5,dy=5] click 1
 spawnpoint @a[x=1267,y=108,z=-197,dx=5,dy=5] 1270 80 -201
 tp @a[x=1267,y=108,z=-197,dx=5,dy=5] 1270 80 -198
@@ -223,7 +223,7 @@ tp @a[x=1268,y=80,z=-197,dx=4,dy=5] 1270 108 -195
 
 
 #Couriway Pokemon Center
-execute @a[x=1473,y=100,z=173,dx=5,dy=5,score_TalkTime=0,tag=Birthday] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0,tag=!Dialogue265] DialogueTrigger 265
+execute as @a[x=1473,y=100,z=173,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 scoreboard players set @a[x=1473,y=100,z=173,dx=5,dy=5] click 1
 spawnpoint @a[x=1473,y=100,z=173,dx=5,dy=5] 1476 79 169
 tp @a[x=1473,y=100,z=173,dx=5,dy=5] 1476 79 172
@@ -234,7 +234,7 @@ tp @a[x=1474,y=79,z=173,dx=5,dy=5] 1476 100 175
 
 
 #Snowbelle Pokemon Center
-execute @a[x=1215,y=105,z=503,dx=5,dy=5,score_TalkTime=0,tag=Birthday] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0,tag=!Dialogue265] DialogueTrigger 265
+execute as @a[x=1215,y=105,z=503,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 scoreboard players set @a[x=1215,y=105,z=503,dx=5,dy=5] click 1
 spawnpoint @a[x=1215,y=105,z=503,dx=5,dy=5] 1218 75 499
 tp @a[x=1215,y=105,z=503,dx=5,dy=5] 1218 75 502
@@ -245,7 +245,7 @@ tp @a[x=1216,y=75,z=503,dx=5,dy=5] 1218 105 505
 
 
 #Kiloude Pokemon Center
-execute @a[x=1177,y=101,z=1661,dx=5,dy=5,score_TalkTime=0,tag=Birthday] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0,tag=!Dialogue265] DialogueTrigger 265
+execute as @a[x=1177,y=101,z=1661,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 scoreboard players set @a[x=1177,y=101,z=1661,dx=5,dy=5] click 1
 spawnpoint @a[x=1177,y=101,z=1661,dx=5,dy=5] 1180 81 1657
 tp @a[x=1177,y=101,z=1661,dx=5,dy=5] 1180 81 1660
@@ -255,7 +255,7 @@ tp @a[x=1178,y=81,z=1661,dx=4,dy=5] 1180 101 1663
 
 
 #Pokemon League Pokemon Center
-execute @a[x=-1938,y=88,z=2278,dx=5,dy=5,score_TalkTime=0,tag=Birthday] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0,tag=!Dialogue265] DialogueTrigger 265
+execute as @a[x=-1938,y=88,z=2278,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 scoreboard players set @a[x=-1938,y=88,z=2278,dx=5,dy=5] click 1
 spawnpoint @a[x=-1938,y=88,z=2278,dx=5,dy=5] -1936 39 2274
 tp @a[x=-1938,y=88,z=2278,dx=5,dy=5] -1936 39 2277
@@ -267,11 +267,11 @@ tp @a[x=-1938,y=39,z=2278,dx=4,dy=5] -1936 88 2279
 
 
 #All Lumiose Pokemon Center Interiors removing Looker Cooldown tag
-scoreboard players tag @a[x=-487,y=100,z=456,dx=120,dy=5,tag=LookerCooldown] remove LookerCooldown
+tag @a[x=-487,y=100,z=456,dx=120,dy=5,tag=LookerCooldown] remove LookerCooldown
 
 
 #Lumiose Northern Pokemon Center
-execute @a[x=-151,y=101,z=-655,dx=5,dy=5,dz=3,score_TalkTime=0,tag=Birthday] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0,tag=!Dialogue265] DialogueTrigger 265
+execute as @a[x=-151,y=101,z=-655,dx=5,dy=5,dz=3,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 scoreboard players set @a[x=-151,y=101,z=-655,dx=5,dy=5,dz=3] click 1
 spawnpoint @a[x=-151,y=101,z=-655,dx=5,dy=5,dz=3] -486 101 452
 tp @a[x=-151,y=101,z=-655,dx=5,dy=5,dz=3] -486 101 455 180 ~
@@ -280,7 +280,7 @@ scoreboard players set @a[x=-488,y=101,z=456,dx=4,dy=5] click 1
 tp @a[x=-488,y=101,z=456,dx=4,dy=5] -148 101 -656 180 ~
 
 #Lumiose Middle Pokemon Center
-execute @a[x=-261,y=101,z=-403,dx=4,dy=5,dz=3,score_TalkTime=0,tag=Birthday] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0,tag=!Dialogue265] DialogueTrigger 265
+execute as @a[x=-261,y=101,z=-403,dx=4,dy=5,dz=3,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 scoreboard players set @a[x=-261,y=101,z=-403,dx=4,dy=5,dz=3] click 1
 spawnpoint @a[x=-261,y=101,z=-403,dx=4,dy=5,dz=3] -430 101 452
 tp @a[x=-261,y=101,z=-403,dx=4,dy=5,dz=3] -430 101 455 180 ~
@@ -289,10 +289,10 @@ scoreboard players set @a[x=-432,y=101,z=456,dx=4,dy=5] click 1
 tp @a[x=-432,y=101,z=456,dx=4,dy=5] -258 101 -404 180 ~
 
 #Lumiose South Pokemon Center
-execute @a[x=-228,y=101,z=-132,dx=3,dy=4,dz=2,score_TalkTime=0,tag=Birthday] ~ ~ ~ scoreboard players set @s[score_DialogueTrigger=0,tag=!Dialogue265] DialogueTrigger 265
-scoreboard players set @a[x=-228,y=101,z=-132,dx=3,dy=4,dz=2,score_TalkTime=0] click 1
-spawnpoint @a[x=-228,y=101,z=-132,dx=3,dy=4,dz=2,score_TalkTime=0] -375 101 452
-tp @a[x=-228,y=101,z=-132,dx=3,dy=4,dz=2,score_TalkTime=0] -375 101 455 180 ~
+execute as @a[x=-228,y=101,z=-132,dx=3,dy=4,dz=2,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+scoreboard players set @a[x=-228,y=101,z=-132,dx=3,dy=4,dz=2,scores={TalkTime=0}] click 1
+spawnpoint @a[x=-228,y=101,z=-132,dx=3,dy=4,dz=2,scores={TalkTime=0}] -375 101 452
+tp @a[x=-228,y=101,z=-132,dx=3,dy=4,dz=2,scores={TalkTime=0}] -375 101 455 180 ~
 
 scoreboard players set @a[x=-377,y=101,z=456,dx=4,dy=4] click 1
 tp @a[x=-377,y=101,z=456,dx=4,dy=4] -227 101 -129 26 ~
@@ -303,12 +303,12 @@ tp @a[x=-377,y=101,z=456,dx=4,dy=4] -227 101 -129 26 ~
 #Vaniville
 
 #Your home
-scoreboard players set @a[x=504,y=108,z=1576,dx=10,dy=5,score_StarterPick_min=1,tag=!Dialogue7,score_TalkTime=0] DialogueTrigger 7
-tp @a[x=504,y=108,z=1576,dx=10,dy=5,score_TalkTime=0] 506 108 1566
+scoreboard players set @a[x=504,y=108,z=1576,dx=10,dy=5,tag=!Dialogue7,scores={StarterPick=1..,TalkTime=0}] DialogueTrigger 7
+tp @a[x=504,y=108,z=1576,dx=10,dy=5,scores={TalkTime=0}] 506 108 1566
 
-scoreboard players set @a[x=503,y=108,z=1568,dx=5,dy=4,tag=Dialogue1,tag=!Dialogue2,score_TalkTime=0] DialogueTrigger 2
-scoreboard players set @a[x=503,y=108,z=1568,dx=5,dy=4,tag=Dialogue2,score_PokemonLeague_min=1,score_TalkTime=0] DialogueTrigger 158
-tp @a[x=503,y=108,z=1568,dx=5,dy=4,tag=Dialogue1,score_TalkTime=0] 509 108 1578
+scoreboard players set @a[x=503,y=108,z=1568,dx=5,dy=4,tag=Dialogue1,tag=!Dialogue2,scores={TalkTime=0}] DialogueTrigger 2
+scoreboard players set @a[x=503,y=108,z=1568,dx=5,dy=4,tag=Dialogue2,scores={TalkTime=0,PokemonLeague=1..}] DialogueTrigger 158
+tp @a[x=503,y=108,z=1568,dx=5,dy=4,tag=Dialogue1,scores={TalkTime=0}] 509 108 1578
 
 #Neighbor Home
 tp @a[x=550,y=108,z=1576,dx=10,dy=5] 555 108 1569
@@ -330,11 +330,11 @@ tp @a[x=319,y=87,z=484,dx=5,dy=5] 322 100 487
 
 
 #Lumiose Route 5 Connector
-scoreboard players set @a[x=-565,y=92,z=-166,dy=10,dz=14,score_TalkTime=0] click1
-tp @a[x=-565,y=92,z=-166,dy=10,dz=14,score_TalkTime=0] -386 101 -108 -144 ~
+scoreboard players set @a[x=-565,y=92,z=-166,dy=10,dz=14,scores={TalkTime=0}] click1
+tp @a[x=-565,y=92,z=-166,dy=10,dz=14,scores={TalkTime=0}] -386 101 -108 -144 ~
 
-scoreboard players set @a[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarters,tag=Dialogue22,score_TalkTime=0] click1
-tp @a[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarters,tag=Dialogue22,score_TalkTime=0] -567 92 -159 90 ~
+scoreboard players set @a[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarters,tag=Dialogue22,scores={TalkTime=0}] click1
+tp @a[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarters,tag=Dialogue22,scores={TalkTime=0}] -567 92 -159 90 ~
 
 tellraw @a[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=!KantoStarters] {"text":"You need to go see Professor Sycamore!","italic":true,"color":"gray"}
 tp @a[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=!KantoStarters] ~5 ~ ~-5
@@ -369,8 +369,8 @@ tp @a[x=-188,y=101,z=-754,dx=11,dy=5,tag=!Clemont] ~ ~ ~10
 scoreboard players set @a[x=-188,y=101,z=-754,dx=11,dy=5,tag=Clemont] click1
 tp @a[x=-188,y=101,z=-754,dx=11,dy=5,tag=Clemont] -183 100 -797
 
-scoreboard players set @a[x=-190,y=100,z=-795,dx=14,dy=5,score_TalkTime=0] click1
-tp @a[x=-190,y=100,z=-795,dx=14,dy=5,score_TalkTime=0] -183 101 -751
+scoreboard players set @a[x=-190,y=100,z=-795,dx=14,dy=5,scores={TalkTime=0}] click1
+tp @a[x=-190,y=100,z=-795,dx=14,dy=5,scores={TalkTime=0}] -183 101 -751
 
 
 #Lumiose Route 13 Connector
@@ -384,9 +384,9 @@ tp @a[x=-603,y=100,z=-475,dy=5,dz=14] -516 101 -498 -72 ~
 
 
 #Shabboneau Castle
-scoreboard players set @a[x=-1060,y=100,z=-102,dx=11,dy=5,tag=!Dialogue27,score_TalkTime=0] DialogueTrigger 27
-tp @a[x=-1060,y=100,z=-102,dx=11,dy=5,score_TalkTime=0] -1055 56 -104
-tp @a[x=-1058,y=56,z=-102,dx=5,dy=5,score_TalkTime=0] -1055 100 -100
+scoreboard players set @a[x=-1060,y=100,z=-102,dx=11,dy=5,tag=!Dialogue27,scores={TalkTime=0}] DialogueTrigger 27
+tp @a[x=-1060,y=100,z=-102,dx=11,dy=5,scores={TalkTime=0}] -1055 56 -104
+tp @a[x=-1058,y=56,z=-102,dx=5,dy=5,scores={TalkTime=0}] -1055 100 -100
 
 #Camphrier Town NPC Home Left
 tp @a[x=-1108,y=100,z=-42,dx=4,dy=5] -1107 84 -43
@@ -425,28 +425,28 @@ tp @a[x=-1877,y=154,z=93,dy=5,dz=9] -1853 56 105
 
 #Connecting Cave Route 7
 #South Gate
-scoreboard players set @a[x=-1741,y=44,z=104,dy=5,dz=5,score_TalkTime=0] click1
-scoreboard players set @a[x=-1741,y=44,z=104,dy=5,dz=5,score_TalkTime=0] EscapeRope 0
+scoreboard players set @a[x=-1741,y=44,z=104,dy=5,dz=5,scores={TalkTime=0}] click1
+scoreboard players set @a[x=-1741,y=44,z=104,dy=5,dz=5,scores={TalkTime=0}] EscapeRope 0
 tp @a[x=-1741,y=44,z=104,dy=5,dz=5] -1702 109 25
 
-scoreboard players set @a[x=-1704,y=109,z=21,dy=5,dz=5,score_TalkTime=0] click1
-scoreboard players set @a[x=-1704,y=109,z=21,dy=5,dz=5,score_TalkTime=0] EscapeRope 2
-tp @a[x=-1704,y=109,z=21,dy=5,dz=5,score_TalkTime=0] -1743 44 107
+scoreboard players set @a[x=-1704,y=109,z=21,dy=5,dz=5,scores={TalkTime=0}] click1
+scoreboard players set @a[x=-1704,y=109,z=21,dy=5,dz=5,scores={TalkTime=0}] EscapeRope 2
+tp @a[x=-1704,y=109,z=21,dy=5,dz=5,scores={TalkTime=0}] -1743 44 107
 
 #North Gate
 scoreboard players set @a[x=-1668,y=36,z=33,dy=5,dz=5] click1
 scoreboard players set @a[x=-1668,y=36,z=33,dy=5,dz=5] EscapeRope 0
 tp @a[x=-1668,y=36,z=33,dy=5,dz=5] -1642 103 -36
 
-scoreboard players set @a[x=-1644,y=103,z=-39,dy=5,dz=5,score_TalkTime=0,score_PhotoSpot_min=1] TalkTrigger 299
-scoreboard players set @a[x=-1644,y=103,z=-39,dy=5,dz=5,score_TalkTime=0,score_PhotoSpot=0] click 1
-scoreboard players set @a[x=-1644,y=103,z=-39,dy=5,dz=5,score_TalkTime=0,score_PhotoSpot=0] EscapeRope 1
-tp @a[x=-1644,y=103,z=-39,dy=5,dz=5,score_TalkTime=0,score_PhotoSpot=0] -1670 36 36
+scoreboard players set @a[x=-1644,y=103,z=-39,dy=5,dz=5,scores={TalkTime=0,PhotoSpot=1..}] TalkTrigger 299
+scoreboard players set @a[x=-1644,y=103,z=-39,dy=5,dz=5,scores={TalkTime=0,PhotoSpot=0}] click 1
+scoreboard players set @a[x=-1644,y=103,z=-39,dy=5,dz=5,scores={TalkTime=0,PhotoSpot=0}] EscapeRope 1
+tp @a[x=-1644,y=103,z=-39,dy=5,dz=5,scores={TalkTime=0,PhotoSpot=0}] -1670 36 36
 
 
 #Courmarine City Rail
 tp @a[x=-1007,y=116,z=-678,dx=2,dy=5,dz=2] -1037 80 -802
-tp @a[x=-1039,y=81,z=-791,dx=2,dy=5,dz=2,score_TalkTime=0] -1006 115 -665
+tp @a[x=-1039,y=81,z=-791,dx=2,dy=5,dz=2,scores={TalkTime=0}] -1006 115 -665
 
 
 
@@ -475,15 +475,15 @@ tp @a[x=-1976,y=118,z=-720,dx=7,dy=5] -1806 64 -310
 tellraw @a[x=-157,y=125,z=-1774,dx=6,dy=5,tag=!Dialogue86] {"text":"<Team Flare Grunt> Adults are talking inside. Scram, kid. Shoo! Shoo!"}
 tp @a[x=-157,y=125,z=-1774,dx=6,dy=5,tag=!Dialogue86] ~ ~ ~10
 
-execute @a[x=-157,y=125,z=-1774,dx=6,dy=5,tag=Dialogue86] ~ ~ ~ scoreboard players set @s[tag=!Dialogue87] DialogueTrigger 87
+execute as @a[x=-157,y=125,z=-1774,dx=6,dy=5,tag=Dialogue86] run scoreboard players set @s[tag=!Dialogue87] DialogueTrigger 87
 #Removes reverse tag in case player can't ride the left belt to the reverse button
-execute @a[x=-157,y=125,z=-1774,dx=6,dy=5,tag=Dialogue86] ~ ~ ~ scoreboard players tag @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] remove Reverse
+execute as @a[x=-157,y=125,z=-1774,dx=6,dy=5,tag=Dialogue86] run tag @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] remove Reverse
 tp @a[x=-157,y=125,z=-1774,dx=6,dy=5,tag=Dialogue86] -154 89 -1845
-tp @a[x=-158,y=89,z=-1843,dx=7,dy=5,score_TalkTime=0] -154 125 -1772
+tp @a[x=-158,y=89,z=-1843,dx=7,dy=5,scores={TalkTime=0}] -154 125 -1772
 
 
 #Laverre Gate
-tellraw @a[x=43,y=100,z=-1360,dy=5,dz=14,score_TalkTime=0,tag=!Dialogue90] {"text":"<Team Flare Grunt> Hey, hey! Stop right there. You want to go beyond this point? You\u2019ll have to join Team Flare! I\u2019ll let you in for a small fee... Let\u2019s say $5,000,000?"}
+tellraw @a[x=43,y=100,z=-1360,dy=5,dz=14,scores={TalkTime=0},tag=!Dialogue90] {"text":"<Team Flare Grunt> Hey, hey! Stop right there. You want to go beyond this point? You\u2019ll have to join Team Flare! I\u2019ll let you in for a small fee... Let\u2019s say $5,000,000?"}
 tp @a[x=43,y=100,z=-1360,dy=5,dz=14,tag=!Dialogue90] ~-10 ~ ~
 
 scoreboard players set @a[x=43,y=100,z=-1360,dy=5,dz=14,tag=Dialogue90] click1
@@ -531,10 +531,10 @@ tp @a[x=1653,y=70,z=74,dx=6,dy=5] 1533 110 7
 
 
 #Anistar Gym Interior Portals
-effect @a[x=-1057,y=101,z=-1720,dy=5,dz=1] minecraft:blindness 5 5 true
+effect give @a[x=-1057,y=101,z=-1720,dy=5,dz=1] minecraft:blindness 5 5 true
 tp @a[x=-1057,y=101,z=-1720,dy=5,dz=1] -1077 184 -1955 180 ~
 
-effect @a[x=-1077,y=183,z=-1953,dy=5,dz=1] minecraft:blindness 5 5 true
+effect give @a[x=-1077,y=183,z=-1953,dy=5,dz=1] minecraft:blindness 5 5 true
 tp @a[x=-1077,y=183,z=-1953,dy=5,dz=1] -1057 102 -1717 0 ~
 
 #Portal 1
@@ -628,21 +628,21 @@ tp @a[x=1043,y=100,z=819,dy=5,dz=5] 1091 100 822
 tp @a[x=1138,y=100,z=894,dy=5,dz=5] 1091 100 822
 
 #Portal 10
-tp @a[x=1093,z=100,z=819,dy=5,dz=5] 1163 100 821
+tp @a[x=1093,y=100,z=819,dy=5,dz=5] 1163 100 821
 
 #Route 20 & Pokemon Village
-scoreboard players set @a[x=1035,y=100,z=856,dy=5,dz=5,score_TalkTime=0] click1
-tp @a[x=1035,y=100,z=856,dy=5,dz=5,score_TalkTime=0] 966 93 663
+scoreboard players set @a[x=1035,y=100,z=856,dy=5,dz=5,scores={TalkTime=0}] click1
+tp @a[x=1035,y=100,z=856,dy=5,dz=5,scores={TalkTime=0}] 966 93 663
 
-scoreboard players set @a[x=968,y=93,z=660,dy=5,dz=5,score_TalkTime=0] click1
-tp @a[x=968,y=93,z=660,dy=5,dz=5,score_TalkTime=0] 1037 100 858
+scoreboard players set @a[x=968,y=93,z=660,dy=5,dz=5,scores={TalkTime=0}] click1
+tp @a[x=968,y=93,z=660,dy=5,dz=5,scores={TalkTime=0}] 1037 100 858
 
 
 #Unknown Dungeon
-scoreboard players set @a[x=841,y=95,z=608,dx=5,dy=5,score_PokemonLeague_min=1] click1
-tp @a[x=841,y=95,z=608,dx=5,dy=5,score_PokemonLeague_min=1] 845 75 606
+scoreboard players set @a[x=841,y=95,z=608,dx=5,dy=5,scores={PokemonLeague=1..}] click1
+tp @a[x=841,y=95,z=608,dx=5,dy=5,scores={PokemonLeague=1..}] 845 75 606
 
-tp @a[x=841,y=95,z=608,dx=5,dy=5,score_PokemonLeague=0] ~ ~ ~10
+tp @a[x=841,y=95,z=608,dx=5,dy=5,scores={PokemonLeague=0}] ~ ~ ~10
 
 scoreboard players set @a[x=842,y=75,z=608,dx=6,dy=5] click1
 tp @a[x=842,y=75,z=608,dx=6,dy=5] 844 95 610
@@ -658,13 +658,13 @@ tp @a[x=580,y=72,z=474,dx=6,dy=5] 585 91 475
 
 #Victory Road Entrance
 #Gives AllGyms check
-execute @a[tag=Viola] ~ ~ ~ /execute @s[tag=Grant] ~ ~ ~ /execute @s[tag=Korrina] ~ ~ ~ /execute @s[tag=Ramos] ~ ~ ~ /execute @s[tag=Clemont] ~ ~ ~ /execute @s[tag=Valerie] ~ ~ ~ /execute @s[tag=Olympia] ~ ~ ~ /execute @s[tag=Wulfric] ~ ~ ~ /scoreboard players tag @s[tag=!AllGyms] add AllGyms
-tellraw @a[x=688,y=117,z=312,dx=11,dy=5,tag=!AllGyms,score_TalkTime=0] {"text":"You haven't defeated all the gym leaders yet!","italic":true,"color":"gray"}
-tp @a[x=688,y=117,z=312,dx=11,dy=5,tag=!AllGyms,score_TalkTime=0] 694 108 328
+execute as @a[tag=Viola] run execute as @s[tag=Grant] run execute as @s[tag=Korrina] run execute as @s[tag=Ramos] run execute as @s[tag=Clemont] run execute as @s[tag=Valerie] run execute as @s[tag=Olympia] run execute as @s[tag=Wulfric] run tag @s[tag=!AllGyms] add AllGyms
+tellraw @a[x=688,y=117,z=312,dx=11,dy=5,tag=!AllGyms,scores={TalkTime=0}] {"text":"You haven't defeated all the gym leaders yet!","italic":true,"color":"gray"}
+tp @a[x=688,y=117,z=312,dx=11,dy=5,tag=!AllGyms,scores={TalkTime=0}] 694 108 328
 
-scoreboard players set @a[x=688,y=117,z=312,dx=11,dy=5,score_TalkTime=0,tag=AllGyms] click1
-scoreboard players set @a[x=688,y=117,z=312,dx=11,dy=5,score_TalkTime=0,tag=AllGyms] EscapeRope 7
-tp @a[x=688,y=117,z=312,dx=11,dy=5,score_TalkTime=0,tag=AllGyms] 700 85 182
+scoreboard players set @a[x=688,y=117,z=312,dx=11,dy=5,scores={TalkTime=0},tag=AllGyms] click1
+scoreboard players set @a[x=688,y=117,z=312,dx=11,dy=5,scores={TalkTime=0},tag=AllGyms] EscapeRope 7
+tp @a[x=688,y=117,z=312,dx=11,dy=5,scores={TalkTime=0},tag=AllGyms] 700 85 182
 
 scoreboard players set @a[x=695,y=84,z=183,dx=11,dy=6] EscapeRope 0
 tp @a[x=695,y=84,z=183,dx=11,dy=6] 693 117 313
@@ -691,11 +691,11 @@ tp @a[x=2011,y=175,z=2426,dy=5,dz=7] 2284 60 1644
 tp @a[x=1968,y=175,z=2187,dx=8,dy=5] 2200 76 1561
 tp @a[x=2197,y=76,z=1563,dx=7,dy=5] 1972 175 2189
 
-tp @a[x=2318,y=106,z=1322,dy=5,dz=6,score_TalkTime=0] 2137 175 2257
-tp @a[x=2135,y=175,z=2253,dy=5,dz=8,score_TalkTime=0] 2316 106 1325
+tp @a[x=2318,y=106,z=1322,dy=5,dz=6,scores={TalkTime=0}] 2137 175 2257
+tp @a[x=2135,y=175,z=2253,dy=5,dz=8,scores={TalkTime=0}] 2316 106 1325
 
-tp @a[x=2338,y=175,z=2254,dy=5,dz=6,score_TalkTime=0] 1764 72 1386
-tp @a[x=1762,y=72,z=1383,dy=5,dz=6,score_TalkTime=0] 2336 175 2257
+tp @a[x=2338,y=175,z=2254,dy=5,dz=6,scores={TalkTime=0}] 1764 72 1386
+tp @a[x=1762,y=72,z=1383,dy=5,dz=6,scores={TalkTime=0}] 2336 175 2257
 
 tp @a[x=1772,y=82,z=1440,dy=5,dz=6] 2389 190 2281
 tp @a[x=2391,y=190,z=2278,dy=5,dz=6] 1774 82 1443
@@ -726,7 +726,7 @@ tp @a[x=2037,y=175,z=2208,dx=6,dy=5] 2314 76 1608
 scoreboard players set @a[x=-186,y=105,z=-368,dx=10,dy=5,tag=LumiosePower] click1
 tp @a[x=-186,y=105,z=-368,dx=10,dy=5,tag=LumiosePower] -1823 100 -1670
 
-execute @a[x=-1826,y=100,z=-1668,dx=6,tag=Clemont] ~ ~ ~ scoreboard players set @s[tag=!Call6] HoloCall 6
+execute as @a[x=-1826,y=100,z=-1668,dx=6,tag=Clemont] run scoreboard players set @s[tag=!Call6] HoloCall 6
 scoreboard players set @a[x=-1826,y=100,z=-1668,dx=6,dy=5] click1
 tp @a[x=-1826,y=100,z=-1668,dx=6,dy=5] -181 105 -367
 
@@ -735,13 +735,13 @@ tp @a[x=-1826,y=100,z=-1668,dx=6,dy=5] -181 105 -367
 scoreboard players set @a[x=-203,y=105,z=-395,dy=5,dz=10,tag=LumiosePower] click1
 tp @a[x=-203,y=105,z=-395,dy=5,dz=10,tag=LumiosePower] -1858 100 -1705
 
-execute @a[x=-1860,y=100,z=-1708,dy=5,dz=6,tag=Clemont] ~ ~ ~ scoreboard players set @s[tag=!Call6] HoloCall 6
+execute as @a[x=-1860,y=100,z=-1708,dy=5,dz=6,tag=Clemont] run scoreboard players set @s[tag=!Call6] HoloCall 6
 scoreboard players set @a[x=-1860,y=100,z=-1708,dy=5,dz=6] click1
 tp @a[x=-1860,y=100,z=-1708,dy=5,dz=6] -204 105 -390
 
 
 #Prism Tower South Facing Door
-execute @a[x=-1826,y=100,z=-1742,dx=6,dy=5,tag=Clemont] ~ ~ ~ scoreboard players set @s[tag=!Call6] HoloCall 6
+execute as @a[x=-1826,y=100,z=-1742,dx=6,dy=5,tag=Clemont] run scoreboard players set @s[tag=!Call6] HoloCall 6
 scoreboard players set @a[x=-1826,y=100,z=-1742,dx=6,dy=5,tag=LumiosePower] click1
 tp @a[x=-1826,y=100,z=-1742,dx=6,dy=5,tag=LumiosePower] -181 105 -413
 
@@ -753,7 +753,7 @@ tp @a[x=-186,y=105,z=-412,dx=10,dy=5] -1823 100 -1740
 scoreboard players set @a[x=-159,y=105,z=-395,dy=5,dz=10,tag=LumiosePower] click1
 tp @a[x=-159,y=105,z=-395,dy=5,dz=10,tag=LumiosePower] -1788 100 -1705
 
-execute @a[x=-1786,y=100,z=-1708,dy=5,dz=6,tag=Clemont] ~ ~ ~ scoreboard players set @s[tag=!Call6] HoloCall 6
+execute as @a[x=-1786,y=100,z=-1708,dy=5,dz=6,tag=Clemont] run scoreboard players set @s[tag=!Call6] HoloCall 6
 scoreboard players set @a[x=-1786,y=100,z=-1708,dy=5,dz=6] click1
 tp @a[x=-1786,y=100,z=-1708,dy=5,dz=6] -158 105 -390
 
@@ -777,44 +777,44 @@ tp @a[x=1291,y=74,z=-324,dx=4,dy=5] 1294 108 -322
 
 
 #Camphrier Hotel
-execute @a[x=-1098,y=100,z=11,dx=6,dy=5,dz=2] ~ ~ ~ function custom:hotelguests
+execute as @a[x=-1098,y=100,z=11,dx=6,dy=5,dz=2] run function kalos:world/hotelguests
 tp @a[x=-1098,y=100,z=11,dx=6,dy=5,dz=2] -1095 72 11
 tp @a[x=-1098,y=72,z=13,dx=6,dy=5] -1096 100 15
 
 #Ambrette Hotel
-execute @a[x=-2001,y=128,z=657,dx=6,dy=5,dz=2] ~ ~ ~ function custom:hotelguests
+execute as @a[x=-2001,y=128,z=657,dx=6,dy=5,dz=2] run function kalos:world/hotelguests
 tp @a[x=-2001,y=128,z=657,dx=6,dy=5,dz=2] -1975 100 657
 tp @a[x=-1978,y=100,z=659,dx=6,dy=5] -1999 128 661
 
 #Cyllage Hotel
-execute @a[x=-2036,y=104,z=-143,dx=6,dy=5,dz=2] ~ ~ ~ function custom:hotelguests
+execute as @a[x=-2036,y=104,z=-143,dx=6,dy=5,dz=2] run function kalos:world/hotelguests
 tp @a[x=-2036,y=104,z=-143,dx=6,dy=5,dz=2] -2033 56 -143
 tp @a[x=-2036,y=56,z=-141,dx=6,dy=5] -2034 104 -139
 
 
 #Geosenge Hotel (Ultimate Weapon Destroyed)
 tp @a[x=-378,y=109,z=2094,dx=6,dy=5,dz=2] -2175 78 -626
-execute @a[x=-378,y=109,z=2094,dx=6,dy=5,dz=2] ~ ~ ~ function custom:hotelguests
-tp @a[x=-2178,y=78,z=-624,dx=6,dy=5,score_Geosenge_min=2,score_Geosenge=2] -376 109 2098
+execute as @a[x=-378,y=109,z=2094,dx=6,dy=5,dz=2] run function kalos:world/hotelguests
+tp @a[x=-2178,y=78,z=-624,dx=6,dy=5,scores={Geosenge=2}] -376 109 2098
 
 #Geosenge Hotel (Ultimate Weapon)
-execute @a[x=-1098,y=109,z=2094,dx=6,dy=5,dz=2] ~ ~ ~ function custom:hotelguests
+execute as @a[x=-1098,y=109,z=2094,dx=6,dy=5,dz=2] run function kalos:world/hotelguests
 tp @a[x=-1098,y=109,z=2094,dx=6,dy=5,dz=2] -2175 78 -626
-tp @a[x=-2178,y=78,z=-624,dx=6,dy=5,score_Geosenge_min=1,score_Geosenge=1] -1096 109 2097
+tp @a[x=-2178,y=78,z=-624,dx=6,dy=5,scores={Geosenge=1}] -1096 109 2097
 
 #Geosenge Hotel (normal)
-execute @a[x=-2178,y=104,z=-626,dx=6,dy=5,dz=2] ~ ~ ~ function custom:hotelguests
+execute as @a[x=-2178,y=104,z=-626,dx=6,dy=5,dz=2] run function kalos:world/hotelguests
 tp @a[x=-2178,y=104,z=-626,dx=6,dy=5,dz=2] -2175 78 -626
 tp @a[x=-2178,y=78,z=-624,dx=6,dy=5] -2176 104 -622
 
 
 #Coumarine Hotel
-execute @a[x=-1067,y=80,z=-840,dx=6,dy=5,dz=2] ~ ~ ~ function custom:hotelguests
+execute as @a[x=-1067,y=80,z=-840,dx=6,dy=5,dz=2] run function kalos:world/hotelguests
 tp @a[x=-1067,y=80,z=-840,dx=6,dy=5,dz=2] -1040 47 -800
 tp @a[x=-1043,y=47,z=-798,dx=6,dy=5] -1065 80 -836
 
 #Couriway Hotel
-execute @a[x=1571,y=115,z=277,dx=6,dy=5,dz=2] ~ ~ ~ function custom:hotelguests
+execute as @a[x=1571,y=115,z=277,dx=6,dy=5,dz=2] run function kalos:world/hotelguests
 tp @a[x=1571,y=115,z=277,dx=6,dy=5,dz=2] 1574 65 277
 tp @a[x=1571,y=65,z=279,dx=6,dy=5] 1573 115 281
 
@@ -841,14 +841,14 @@ tp @a[x=1313,y=61,z=-198,dx=5,dy=5] 1315 108 -197
 
 #Kiloude and Lumiose Rail
 scoreboard players set @a[x=935,y=105,z=1643,dx=1,dy=3,dz=1] click1
-playsound tmv ambient @a[x=935,y=105,z=1643,dx=1,dy=3,dz=1] ~ ~ ~ 1000 1 1
+playsound tmv ambient @a[x=935,y=105,z=1643,dx=1,dy=3,dz=1] ~ ~ ~ 1 1 1
 tp @a[x=935,y=105,z=1643,dx=1,dy=3,dz=1] 1053 105 1899 0 ~
 
 tellraw @a[x=1053,y=105,z=1893,dx=1,dy=3,dz=1,tag=!TMVPass] {"text":"A TMV Pass is required to ride on the train!","italic":true,"color":"gray"}
 tp @a[x=1053,y=105,z=1893,dx=1,dy=3,dz=1,tag=!TMVPass] ~ ~ ~10
 
 scoreboard players set @a[x=1053,y=105,z=1893,dx=1,dy=3,dz=1,tag=TMVPass] click1
-playsound tmv ambient @a[x=1053,y=105,z=1893,dx=1,dy=3,dz=1,tag=TMVPass] ~ ~ ~ 1000 1 1
+playsound tmv ambient @a[x=1053,y=105,z=1893,dx=1,dy=3,dz=1,tag=TMVPass] ~ ~ ~ 1 1 1
 tp @a[x=1053,y=105,z=1893,dx=1,dy=3,dz=1,tag=TMVPass] 942 105 1644 -90 ~
 
 
@@ -895,8 +895,8 @@ tp @a[x=1216,y=65,z=1604,dx=8,dy=5] 1220 106 1603
 #Lumiose City Station
 
 #Looker Chapter Active
-execute @a[x=141,y=101,z=-385,dy=5,dz=10,tag=Dialogue182] ~ ~ ~ tp @s[tag=!Dialogue184] 1016 105 2020 180 ~
-tp @a[x=1011,y=105,z=2021,dx=10,dy=5,score_TalkTime=0] 139 101 -380 90 ~
+execute as @a[x=141,y=101,z=-385,dy=5,dz=10,tag=Dialogue182] run tp @s[tag=!Dialogue184] 1016 105 2020 180 ~
+tp @a[x=1011,y=105,z=2021,dx=10,dy=5,scores={TalkTime=0}] 139 101 -380 90 ~
 
 tp @a[x=1011,y=105,z=1919,dx=10,dy=5] 139 101 -380 90 ~
 tp @a[x=141,y=101,z=-385,dy=5,dz=10] 1016 105 1917 180 ~
@@ -916,16 +916,16 @@ tp @a[x=-806,y=48,z=-352,dy=5,dz=6] -814 104 -304
 
 
 #Power Plant Interior room
-tp @a[x=-947,y=48,z=-367,dy=5,dz=5,score_TalkTime=0,tag=!Dialogue75] -949 75 -364
-tp @a[x=-947,y=48,z=-367,dy=5,dz=5,score_TalkTime=0,tag=Dialogue75] -949 63 -364
+tp @a[x=-947,y=48,z=-367,dy=5,dz=5,scores={TalkTime=0},tag=!Dialogue75] -949 75 -364
+tp @a[x=-947,y=48,z=-367,dy=5,dz=5,scores={TalkTime=0},tag=Dialogue75] -949 63 -364
 
 tp @a[x=-948,y=75,z=-367,dy=5,dz=5] -946 48 -364
 tp @a[x=-948,y=63,z=-367,dy=5,dz=5] -946 48 -364
 
 #Azure Bay Sea Spirit's Den
-execute @a[x=-1332,y=76,z=-1187,dx=5,dy=5,score_Articuno_min=5,score_Articuno=5,score_StarterPick_min=1,score_StarterPick=1,score_PokemonLeague_min=1] ~ ~ ~ /tp @e[x=-501,y=163,z=1238,dy=3,type=pixelmon:statue] -1335 22 -1252
-execute @a[x=-1332,y=76,z=-1187,dx=5,dy=5,score_Zapdos_min=5,score_Zapdos=5,score_StarterPick_min=2,score_StarterPick=2,score_PokemonLeague_min=1] ~ ~ ~ /tp @e[x=-501,y=172,z=1238,dy=3,type=pixelmon:statue] -1349 22 -1232
-execute @a[x=-1332,y=76,z=-1187,dx=5,dy=5,score_Moltres_min=5,score_Moltres=5,score_StarterPick_min=3,score_StarterPick=3,score_PokemonLeague_min=1] ~ ~ ~ /tp @e[x=-501,y=154,z=1238,dy=3,type=pixelmon:statue] -1313 22 -1232
+execute as @a[x=-1332,y=76,z=-1187,dx=5,dy=5,scores={Articuno=5,StarterPick=1,PokemonLeague=1..}] run tp @e[x=-501,y=163,z=1238,dy=3,nbt=!{pixelmon:statue}] -1335 22 -1252
+execute as @a[x=-1332,y=76,z=-1187,dx=5,dy=5,scores={Zapdos=5,StarterPick=2,PokemonLeague=1..}] run tp @e[x=-501,y=172,z=1238,dy=3,nbt=!{pixelmon:statue}] -1349 22 -1232
+execute as @a[x=-1332,y=76,z=-1187,dx=5,dy=5,scores={Moltres=5,StarterPick=3,PokemonLeague=1..}] run tp @e[x=-501,y=154,z=1238,dy=3,nbt=!{pixelmon:statue}] -1313 22 -1232
 scoreboard players set @a[x=-1332,y=76,z=-1187,dx=5,dy=5] click1
 tp @a[x=-1332,y=76,z=-1187,dx=5,dy=5] -1331 22 -1188
 
@@ -936,34 +936,34 @@ tp @a[x=-1334,y=22,z=-1187,dx=6,dy=5] -1329 76 -1186
 
 
 #Battle Chateau
-scoreboard teams join Default @a[x=-1535,y=65,z=-54,dx=5,dy=5,score_TalkTime=0]
-scoreboard players set @a[x=-1535,y=65,z=-54,dx=5,dy=5,score_TalkTime=0] click1
-tp @a[x=-1535,y=65,z=-54,dx=5,dy=5,score_TalkTime=0] -1534 102 -49
+team join Default @a[x=-1535,y=65,z=-54,dx=5,dy=5,scores={TalkTime=0}]
+scoreboard players set @a[x=-1535,y=65,z=-54,dx=5,dy=5,scores={TalkTime=0}] click1
+tp @a[x=-1535,y=65,z=-54,dx=5,dy=5,scores={TalkTime=0}] -1534 102 -49
 
 #Prompts the player to pick a gender if not present
-tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,score_Gender=0,score_TalkTime=0] ["",{"text":"Welcome to the Battle Chateau! For the purposes of nobility ranks, please choose a gender.","italic":true,"color":"gray"},{"text":"\n["},{"text":"Man","color":"blue","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 12"}},{"text":"] ["},{"text":"Woman","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 13"}},{"text":"]"}]
-scoreboard players enable @a[x=-1537,y=100,z=-53,dx=5,dy=7,score_Gender=0,score_TalkTime=0] TalkTrigger
+tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=0,TalkTime=0}] ["",{"text":"Welcome to the Battle Chateau! For the purposes of nobility ranks, please choose a gender.","italic":true,"color":"gray"},{"text":"\n["},{"text":"Man","color":"blue","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 12"}},{"text":"] ["},{"text":"Woman","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 13"}},{"text":"]"}]
+scoreboard players enable @a[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=0,TalkTime=0}] TalkTrigger
 
 #Welcomes the player using their rank
-tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,score_Gender_min=1,score_Gender=1,score_ChateauRank_min=1,score_ChateauRank=5,score_TalkTime=0] ["",{"text":"Welcome to the Battle Chateau, Baron "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,score_Gender_min=1,score_Gender=1,score_ChateauRank_min=6,score_ChateauRank=30,score_TalkTime=0] ["",{"text":"Welcome to the Battle Chateau, Viscount "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,score_Gender_min=1,score_Gender=1,score_ChateauRank_min=31,score_ChateauRank=98,score_TalkTime=0] ["",{"text":"Welcome to the Battle Chateau, Earl "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,score_Gender_min=1,score_Gender=1,score_ChateauRank_min=99,score_ChateauRank=295,score_TalkTime=0] ["",{"text":"Welcome to the Battle Chateau, Marquis "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,score_Gender_min=1,score_Gender=1,score_ChateauRank_min=296,tag=!GrandDuke,score_TalkTime=0] ["",{"text":"Welcome to the Battle Chateau, Duke "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,score_Gender_min=1,score_Gender=1,score_ChateauRank_min=296,tag=GrandDuke,score_TalkTime=0] ["",{"text":"Welcome to the Battle Chateau, Grand Duke "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=1..5,TalkTime=0}] ["",{"text":"Welcome to the Battle Chateau, Baron "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=6..30,TalkTime=0}] ["",{"text":"Welcome to the Battle Chateau, Viscount "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=31..98,TalkTime=0}] ["",{"text":"Welcome to the Battle Chateau, Earl "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=99..295,TalkTime=0}] ["",{"text":"Welcome to the Battle Chateau, Marquis "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=296..,TalkTime=0},tag=!GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Duke "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=296..,TalkTime=0},tag=GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Grand Duke "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
 
-tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,score_Gender_min=2,score_Gender=2,score_ChateauRank_min=1,score_ChateauRank=5,score_TalkTime=0] ["",{"text":"Welcome to the Battle Chateau, Baroness "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,score_Gender_min=2,score_Gender=2,score_ChateauRank_min=6,score_ChateauRank=30,score_TalkTime=0] ["",{"text":"Welcome to the Battle Chateau, Viscountess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,score_Gender_min=2,score_Gender=2,score_ChateauRank_min=31,score_ChateauRank=98,score_TalkTime=0] ["",{"text":"Welcome to the Battle Chateau, Countess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,score_Gender_min=2,score_Gender=2,score_ChateauRank_min=99,score_ChateauRank=295,score_TalkTime=0] ["",{"text":"Welcome to the Battle Chateau, Marchioness "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,score_Gender_min=2,score_Gender=2,score_ChateauRank_min=296,tag=!GrandDuke,score_TalkTime=0] ["",{"text":"Welcome to the Battle Chateau, Duchess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,score_Gender_min=2,score_Gender=2,score_ChateauRank_min=296,tag=GrandDuke,score_TalkTime=0] ["",{"text":"Welcome to the Battle Chateau, Grand Duchess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=1..5,TalkTime=0}] ["",{"text":"Welcome to the Battle Chateau, Baroness "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=6..30,TalkTime=0}] ["",{"text":"Welcome to the Battle Chateau, Viscountess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=31..98,TalkTime=0}] ["",{"text":"Welcome to the Battle Chateau, Countess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=99..295,TalkTime=0}] ["",{"text":"Welcome to the Battle Chateau, Marchioness "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=296,TalkTime=0},tag=!GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Duchess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @a[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=296,TalkTime=0},tag=GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Grand Duchess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
 
 
 #tps player
-scoreboard teams join Chateau @a[x=-1537,y=100,z=-53,dx=5,dy=7,score_TalkTime=0]
-scoreboard players set @a[x=-1537,y=100,z=-53,dx=5,dy=7,score_TalkTime=0] click1
-tp @a[x=-1537,y=100,z=-53,dx=5,dy=7,score_TalkTime=0] -1533 65 -56
+team join Chateau @a[x=-1537,y=100,z=-53,dx=5,dy=7,scores={TalkTime=0}]
+scoreboard players set @a[x=-1537,y=100,z=-53,dx=5,dy=7,scores={TalkTime=0}] click1
+tp @a[x=-1537,y=100,z=-53,dx=5,dy=7,scores={TalkTime=0}] -1533 65 -56
 
 
 
@@ -1032,8 +1032,8 @@ tp @a[x=1110,y=86,z=455,dx=5,dy=5] 1113 100 456
 
 
 #Route 18 Inver Home
-scoreboard players set @a[x=1474,y=110,z=-51,dx=3,dy=3,score_TalkTime=0,tag=!Dialogue267] DialogueTrigger 267
-tp @a[x=1474,y=110,z=-51,dx=3,dy=3,score_TalkTime=0] 1476 86 -52
+scoreboard players set @a[x=1474,y=110,z=-51,dx=3,dy=3,scores={TalkTime=0},tag=!Dialogue267] DialogueTrigger 267
+tp @a[x=1474,y=110,z=-51,dx=3,dy=3,scores={TalkTime=0}] 1476 86 -52
 
 tp @a[x=1473,y=86,z=-51,dx=5,dy=5] 1476 110 -50
 
@@ -1094,21 +1094,21 @@ tp @a[x=-43,y=86,z=-1509,dx=5,dy=5] -40 104 -1510
 
 #Route 14 Scary House
 #Interior Door
-execute @e[x=-233,y=87,z=-1225,dx=6,dy=5,score_TalkTime=0] ~ ~ ~ /tp @e[x=-230,y=88,z=-1242,dy=3,type=pixelmon:statue] -501 119 1238
-execute @e[x=-233,y=87,z=-1225,dx=6,dy=5,score_TalkTime=0] ~ ~ ~ /tp @e[x=-501,y=118,z=1238,dy=3,type=pixelmon:npc_chatting] -230 88 -1242
+execute as @e[x=-233,y=87,z=-1225,dx=6,dy=5,scores={TalkTime=0}] run tp @e[x=-230,y=88,z=-1242,dy=3,nbt=!{pixelmon:statue}] -501 119 1238
+execute as @e[x=-233,y=87,z=-1225,dx=6,dy=5,scores={TalkTime=0}] run tp @e[x=-501,y=118,z=1238,dy=3,nbt=!{pixelmon:npc_chatting}] -230 88 -1242
 
 scoreboard players set @a[x=-233,y=87,z=-1225,dx=6,dy=5,tag=Dialogue83] DialogueTrigger 84
-scoreboard players set @a[x=-233,y=87,z=-1225,dx=6,dy=5,score_TalkTime=0] click 1
-tp @a[x=-233,y=87,z=-1225,dx=6,dy=5,score_TalkTime=0] -231 100 -1224
+scoreboard players set @a[x=-233,y=87,z=-1225,dx=6,dy=5,scores={TalkTime=0}] click 1
+tp @a[x=-233,y=87,z=-1225,dx=6,dy=5,scores={TalkTime=0}] -231 100 -1224
 
 
 #Exterior Door
-execute @e[x=-233,y=100,z=-1225,dx=4,dy=5,score_Hoopa=0,score_PokemonLeague_min=1,score_TalkTime=0] ~ ~ ~ /tp @e[x=-501,y=118,z=1238,dy=3,type=pixelmon:statue] -230 88 -1242
-execute @e[x=-233,y=100,z=-1225,dx=4,dy=5,score_Hoopa=0,score_PokemonLeague_min=1,score_TalkTime=0] ~ ~ ~ /tp @e[x=-230,y=87,z=-1242,dy=3,type=pixelmon:npc_chatting] -501 119 1238
+execute as @e[x=-233,y=100,z=-1225,dx=4,dy=5,scores={Hoopa=0,PokemonLeague=1..,TalkTime=0}] run tp @e[x=-501,y=118,z=1238,dy=3,nbt=!{pixelmon:statue}] -230 88 -1242
+execute as @e[x=-233,y=100,z=-1225,dx=4,dy=5,scores={Hoopa=0,PokemonLeague=1..,TalkTime=0}] run tp @e[x=-230,y=87,z=-1242,dy=3,nbt=!{pixelmon:npc_chatting}] -501 119 1238
 
 scoreboard players set @a[x=-233,y=100,z=-1225,dx=4,dy=5,tag=Dialogue82] DialogueTrigger 83
-scoreboard players set @a[x=-233,y=100,z=-1225,dx=4,dy=5,score_TalkTime=0] click 1
-tp @a[x=-233,y=100,z=-1225,dx=4,dy=5,score_TalkTime=0] -231 87 -1226
+scoreboard players set @a[x=-233,y=100,z=-1225,dx=4,dy=5,scores={TalkTime=0}] click 1
+tp @a[x=-233,y=100,z=-1225,dx=4,dy=5,scores={TalkTime=0}] -231 87 -1226
 
 
 
@@ -1132,12 +1132,12 @@ tp @a[x=-135,y=101,z=108,dx=4,dy=5] -247 101 -76 -167 ~
 
 
 #Lumiose City Sycamore Pokemon Lab
-scoreboard players set @a[x=-184,y=104,z=-41,dx=6,dy=5,tag=!Dialogue17,score_TalkTime=0] DialogueTrigger 17
-scoreboard players set @a[x=-184,y=104,z=-41,dx=6,dy=5,score_TalkTime=0] click 1
-tp @a[x=-184,y=104,z=-41,dx=6,dy=5,score_TalkTime=0] -253 101 98 180 ~
+scoreboard players set @a[x=-184,y=104,z=-41,dx=6,dy=5,tag=!Dialogue17,scores={TalkTime=0}] DialogueTrigger 17
+scoreboard players set @a[x=-184,y=104,z=-41,dx=6,dy=5,scores={TalkTime=0}] click 1
+tp @a[x=-184,y=104,z=-41,dx=6,dy=5,scores={TalkTime=0}] -253 101 98 180 ~
 
-scoreboard players set @a[x=-256,y=101,z=100,dx=6,dy=5,score_TalkTime=0] click 1
-tp @a[x=-256,y=101,z=100,dx=6,dy=5,score_TalkTime=0] -181 104 -43 180 ~
+scoreboard players set @a[x=-256,y=101,z=100,dx=6,dy=5,scores={TalkTime=0}] click 1
+tp @a[x=-256,y=101,z=100,dx=6,dy=5,scores={TalkTime=0}] -181 104 -43 180 ~
 
 
 #Lumiose City Transportation Office
@@ -1161,11 +1161,11 @@ tp @a[x=-467,y=101,z=355,dx=6,dy=5] -11 101 -670 18 ~
 
 
 #Lumiose City Museum
-scoreboard players set @a[x=-105,y=101,z=-711,dx=8,dy=5,dz=3,score_TalkTime=0] click 1
-tp @a[x=-105,y=101,z=-711,dx=8,dy=5,dz=3,score_TalkTime=0] -83 77 357 180 ~
+scoreboard players set @a[x=-105,y=101,z=-711,dx=8,dy=5,dz=3,scores={TalkTime=0}] click 1
+tp @a[x=-105,y=101,z=-711,dx=8,dy=5,dz=3,scores={TalkTime=0}] -83 77 357 180 ~
 
-scoreboard players set @a[x=-86,y=77,z=358,dx=6,dy=5,score_TalkTime=0] click 1
-tp @a[x=-86,y=77,z=358,dx=6,dy=5,score_TalkTime=0] -102 101 -707 21 ~
+scoreboard players set @a[x=-86,y=77,z=358,dx=6,dy=5,scores={TalkTime=0}] click 1
+tp @a[x=-86,y=77,z=358,dx=6,dy=5,scores={TalkTime=0}] -102 101 -707 21 ~
 
 #Lumiose Fighting Dojo
 tp @a[x=-267,y=101,z=-704,dx=5,dy=5,dz=3] -158 101 225 180 ~
@@ -1214,11 +1214,11 @@ tp @a[x=-158,y=101,z=-221,dy=5,dz=8] -189 101 265 180 ~
 tp @a[x=-191,y=101,z=266,dx=4,dy=5] -159 101 -217 90 ~
 
 #Lumiose City Boutique Couture
-tellraw @a[x=-156,y=101,z=-192,dy=5,dz=7,score_Style_min=0,score_Style=14] {"text":"Only the most stylish Trainers may shop here!","italic":true,"color":"gray"}
-tp @a[x=-156,y=101,z=-192,dy=5,dz=7,score_Style_min=0,score_Style=14] ~-10 ~ ~
+tellraw @a[x=-156,y=101,z=-192,dy=5,dz=7,scores={Style=..14}] {"text":"Only the most stylish Trainers may shop here!","italic":true,"color":"gray"}
+tp @a[x=-156,y=101,z=-192,dy=5,dz=7,scores={Style=..14}] ~-10 ~ ~
 
-scoreboard players set @a[x=-156,y=101,z=-192,dy=5,dz=7,score_Style_min=15] click 1
-tp @a[x=-156,y=101,z=-192,dy=5,dz=7,dz=7,score_Style_min=15] -25 101 93 180 ~
+scoreboard players set @a[x=-156,y=101,z=-192,dy=5,dz=7,scores={Style=15..}] click 1
+tp @a[x=-156,y=101,z=-192,dy=5,dz=7,scores={Style=15..}] -25 101 93 180 ~
 
 scoreboard players set @a[x=-27,y=101,z=94,dx=5,dy=5] click 1
 tp @a[x=-27,y=101,z=94,dx=5,dy=5] -157 101 -188 90 ~
@@ -1235,8 +1235,8 @@ tp @a[x=-153,y=101,z=266,dx=5,dy=5] -55 101 -229 48 ~
 #Lumiose City Restaurant Le Nah
 tp @a[x=27,y=101,z=-237,dx=4,dy=5,dz=4] -193 101 185 180 ~
 
-tellraw @a[x=-196,y=101,z=186,dx=6,dy=5,score_RestaurantBattle_min=1] {"text":"<Server> Please come back to the table!"}
-tp @a[x=-196,y=101,z=186,dx=6,dy=5,score_RestaurantBattle_min=1] ~ ~ ~-5 ~ ~
+tellraw @a[x=-196,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] {"text":"<Server> Please come back to the table!"}
+tp @a[x=-196,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] ~ ~ ~-5 ~ ~
 tp @a[x=-196,y=101,z=186,dx=6,dy=5] 31 101 -232 -48 ~
 
 #Lumiose City Jaune Plaza NPC Home
@@ -1244,7 +1244,7 @@ tp @a[x=21,y=101,z=-445,dx=4,dy=5] -80 101 108 180 ~
 tp @a[x=-83,y=101,z=109,dx=6,dy=5] 23 101 -446 180 ~
 
 #Lumiose City Cafe Bataille
-tp @a[x=81,y=101,z=-403,dy=5,dz=8,dy=5] -267 101 265 180 ~
+tp @a[x=81,y=101,z=-403,dy=5,dz=8] -267 101 265 180 ~
 tp @a[x=-270,y=101,z=266,dx=5,dy=5] 82 101 -399 -90 ~
 
 #Lumiose City Cafe Action!
@@ -1263,16 +1263,16 @@ tp @a[x=-401,y=101,z=266,dx=5,dy=5] -59 101 -523 124 ~
 scoreboard players set @a[x=-170,y=101,z=-602,dy=5,dz=5] click 1
 tp @a[x=-170,y=101,z=-602,dy=5,dz=5] -489 101 185 180 ~
 
-tellraw @a[x=-492,y=101,z=186,dx=6,dy=5,score_RestaurantBattle_min=1] {"text":"<Server> Please come back to the table!"}
-tp @a[x=-492,y=101,z=186,dx=6,dy=5,score_RestaurantBattle_min=1] ~ ~ ~-5 ~ ~
+tellraw @a[x=-492,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] {"text":"<Server> Please come back to the table!"}
+tp @a[x=-492,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] ~ ~ ~-5 ~ ~
 scoreboard players set @a[x=-492,y=101,z=186,dx=6,dy=5] click 1
 tp @a[x=-492,y=101,z=186,dx=6,dy=5] -171 101 -600 90 ~
 
 #Lumiose City Restaurant Le Wow
 tp @a[x=-102,y=101,z=-544,dx=3,dy=5,dz=5] -295 101 185 180 ~
 
-tellraw @a[x=-298,y=101,z=186,dx=6,dy=5,score_RestaurantBattle_min=1] {"text":"<Server> Please come back to the table!"}
-tp @a[x=-298,y=101,z=186,dx=6,dy=5,score_RestaurantBattle_min=1] ~ ~ ~-5 ~ ~
+tellraw @a[x=-298,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] {"text":"<Server> Please come back to the table!"}
+tp @a[x=-298,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] ~ ~ ~-5 ~ ~
 tp @a[x=-298,y=101,z=186,dx=6,dy=5] -98 101 -539 -70 ~
 
 #Lumiose City Poke Ball Boutique
@@ -1289,8 +1289,8 @@ tp @a[x=-446,y=101,z=266,dx=5,dy=5] -324 101 -552 -131 ~
 #Lumiose City Restaurant Le Yeah
 tp @a[x=-267,y=100,z=-551,dx=4,dy=5,dz=4] -402 101 185 180 ~
 
-tellraw @a[x=-405,y=101,z=186,dx=6,dy=5,score_RestaurantBattle_min=1] {"text":"<Server> Please come back to the table!"}
-tp @a[x=-405,y=101,z=186,dx=6,dy=5,score_RestaurantBattle_min=1] ~ ~ ~-5 ~ ~
+tellraw @a[x=-405,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] {"text":"<Server> Please come back to the table!"}
+tp @a[x=-405,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] ~ ~ ~-5 ~ ~
 tp @a[x=-405,y=101,z=186,dx=6,dy=5] -268 101 -547 62 ~
 
 #Lumiose City Juice Shoppe
@@ -1307,9 +1307,9 @@ tp @a[x=-329,y=101,z=226,dx=5,dy=5] -255 101 -528 69 ~
 
 
 
-execute @a[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,score_TalkTime=0,tag=Call21] ~ ~ ~ execute @s[tag=!Dialogue217] ~ ~ ~ scoreboard players set @s DialogueTrigger 217
-execute @a[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,score_TalkTime=0,tag=Call21] ~ ~ ~ execute @s[tag=!Dialogue217] ~ ~ ~ scoreboard players set @s click 1
-execute @a[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,score_TalkTime=0,tag=Call21] ~ ~ ~ execute @s[tag=!Dialogue217] ~ ~ ~ tp @s -296 108 451 180 ~
+execute as @a[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,scores={TalkTime=0},tag=Call21] run execute as @s[tag=!Dialogue217] run scoreboard players set @s DialogueTrigger 217
+execute as @a[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,scores={TalkTime=0},tag=Call21] run execute as @s[tag=!Dialogue217] run scoreboard players set @s click 1
+execute as @a[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,scores={TalkTime=0},tag=Call21] run execute as @s[tag=!Dialogue217] run tp @s -296 108 451 180 ~
 
 #With Labs entrance but no Flare:
 scoreboard players set @a[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,tag=Dialogue133] click 1
@@ -1322,57 +1322,57 @@ tp @a[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,tag=Olympia] -296 133 451 180 ~
 
 
 #Only storefront:
-execute @a[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,score_TalkTime=0,tag=Clemont] ~ ~ ~ scoreboard players set @s[tag=!Dialogue79] DialogueTrigger 79
-tp @a[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,score_TalkTime=0] -296 121 451 180 ~
+execute as @a[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,scores={TalkTime=0},tag=Clemont] run scoreboard players set @s[tag=!Dialogue79] DialogueTrigger 79
+tp @a[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,scores={TalkTime=0}] -296 121 451 180 ~
 
 #Return TP
-scoreboard players set @a[x=-298,y=133,z=452,dx=5,dy=60,score_TalkTime=0] click 1
-tp @a[x=-298,y=80,z=452,dx=5,dy=60,score_TalkTime=0] -298 101 -481 -43 ~
+scoreboard players set @a[x=-298,y=133,z=452,dx=5,dy=60,scores={TalkTime=0}] click 1
+tp @a[x=-298,y=80,z=452,dx=5,dy=60,scores={TalkTime=0}] -298 101 -481 -43 ~
 
 
 #----------------------------------Looker Bureau--------------------------------------------------
 
-execute @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call13,score_DialogueTrigger=0] ~ ~ ~ scoreboard players set @s[tag=!Dialogue172] DialogueTrigger 172
-execute @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call14,score_DialogueTrigger=0] ~ ~ ~ scoreboard players set @s[tag=!Dialogue176] DialogueTrigger 176
-execute @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call15,score_DialogueTrigger=0] ~ ~ ~ scoreboard players set @s[tag=!Dialogue182] DialogueTrigger 179
-execute @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call16,score_DialogueTrigger=0] ~ ~ ~ scoreboard players set @s[tag=!Dialogue185] DialogueTrigger 185
-execute @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call18,score_DialogueTrigger=0] ~ ~ ~ scoreboard players set @s[tag=!Dialogue188] DialogueTrigger 188
-execute @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call19,score_DialogueTrigger=0] ~ ~ ~ scoreboard players set @s[tag=!Dialogue194] DialogueTrigger 193
-execute @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call20,score_DialogueTrigger=0] ~ ~ ~ scoreboard players set @s[tag=!Dialogue214] DialogueTrigger 214
-execute @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Dialogue217,score_DialogueTrigger=0] ~ ~ ~ execute @s[tag=!LookerCooldown] ~ ~ ~ scoreboard players set @s[tag=!Dialogue226] DialogueTrigger 226
+execute as @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call13,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue172] DialogueTrigger 172
+execute as @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call14,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue176] DialogueTrigger 176
+execute as @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call15,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue182] DialogueTrigger 179
+execute as @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call16,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue185] DialogueTrigger 185
+execute as @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call18,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue188] DialogueTrigger 188
+execute as @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call19,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue194] DialogueTrigger 193
+execute as @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call20,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue214] DialogueTrigger 214
+execute as @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Dialogue217,scores={DialogueTrigger=0},tag=!LookerCooldown] run scoreboard players set @s[tag=!Dialogue226] DialogueTrigger 226
 
 
-execute @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Dialogue217,score_TalkTime=0] ~ ~ ~ execute @s[tag=!LookerCooldown] ~ ~ ~ tp @s[tag=!Dialogue227] -1 101 397 180 ~
-execute @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Dialogue217,score_TalkTime=0] ~ ~ ~ tp @s -26 101 397 180 ~
-execute @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call20,score_TalkTime=0] ~ ~ ~ tp @s -51 101 397 180 ~
-execute @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call19,score_TalkTime=0] ~ ~ ~ tp @s -76 101 397 180 ~
-execute @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=!Call19,score_TalkTime=0] ~ ~ ~ execute @s[tag=Dialogue192] ~ ~ ~ tellraw @s[tag=!Dialogue225] {"text":"Mimi appears to be holding a note...","italic":true,"color":"gray"}
-execute @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=!Call19,score_TalkTime=0] ~ ~ ~ tp @s[tag=Dialogue192] -101 101 397 180 ~
-execute @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call18,score_TalkTime=0] ~ ~ ~ tp @s -177 101 397 180 ~
-execute @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call16,score_TalkTime=0] ~ ~ ~ tp @s -126 101 397 180 ~
-execute @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call15,score_TalkTime=0] ~ ~ ~ tp @s -151 101 397 180 ~
-execute @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call14,score_TalkTime=0] ~ ~ ~ tp @s -177 101 397 180 ~
-execute @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call13,score_TalkTime=0] ~ ~ ~ tp @s -177 101 397 180 ~
+execute as @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Dialogue217,scores={TalkTime=0}] run execute as @s[tag=!LookerCooldown] run tp @s[tag=!Dialogue227] -1 101 397 180 ~
+execute as @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Dialogue217,scores={TalkTime=0}] run tp @s -26 101 397 180 ~
+execute as @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call20,scores={TalkTime=0}] run tp @s -51 101 397 180 ~
+execute as @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call19,scores={TalkTime=0}] run tp @s -76 101 397 180 ~
+execute as @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=!Call19,scores={TalkTime=0}] run execute as @s[tag=Dialogue192] run tellraw @s[tag=!Dialogue225] {"text":"Mimi appears to be holding a note...","italic":true,"color":"gray"}
+execute as @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=!Call19,scores={TalkTime=0}] run tp @s[tag=Dialogue192] -101 101 397 180 ~
+execute as @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call18,scores={TalkTime=0}] run tp @s -177 101 397 180 ~
+execute as @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call16,scores={TalkTime=0}] run tp @s -126 101 397 180 ~
+execute as @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call15,scores={TalkTime=0}] run tp @s -151 101 397 180 ~
+execute as @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call14,scores={TalkTime=0}] run tp @s -177 101 397 180 ~
+execute as @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call13,scores={TalkTime=0}] run tp @s -177 101 397 180 ~
 
 
-tp @a[x=-4,y=101,z=398,dx=5,dy=3,score_TalkTime=0] -190 101 -634 -90 ~
-tp @a[x=-29,y=101,z=398,dx=5,dy=3,score_TalkTime=0] -190 101 -634 -90 ~
-tp @a[x=-79,y=101,z=398,dx=5,dy=3,score_TalkTime=0] -190 101 -634 -90 ~
-tp @a[x=-104,y=101,z=398,dx=5,dy=3,score_TalkTime=0] -190 101 -634 -90 ~
-tp @a[x=-129,y=101,z=398,dx=5,dy=3,score_TalkTime=0] -190 101 -634 -90 ~
-tp @a[x=-179,y=101,z=398,dx=5,dy=3,score_TalkTime=0] -190 101 -634 -90 ~
-tp @a[x=-154,y=101,z=398,dx=5,dy=3,score_TalkTime=0] -190 101 -634 -90 ~
+tp @a[x=-4,y=101,z=398,dx=5,dy=3,scores={TalkTime=0}] -190 101 -634 -90 ~
+tp @a[x=-29,y=101,z=398,dx=5,dy=3,scores={TalkTime=0}] -190 101 -634 -90 ~
+tp @a[x=-79,y=101,z=398,dx=5,dy=3,scores={TalkTime=0}] -190 101 -634 -90 ~
+tp @a[x=-104,y=101,z=398,dx=5,dy=3,scores={TalkTime=0}] -190 101 -634 -90 ~
+tp @a[x=-129,y=101,z=398,dx=5,dy=3,scores={TalkTime=0}] -190 101 -634 -90 ~
+tp @a[x=-179,y=101,z=398,dx=5,dy=3,scores={TalkTime=0}] -190 101 -634 -90 ~
+tp @a[x=-154,y=101,z=398,dx=5,dy=3,scores={TalkTime=0}] -190 101 -634 -90 ~
 
 
 
-execute @a[x=-54,y=101,z=398,dx=5,dy=3,score_TalkTime=0,tag=Dialogue214] ~ ~ ~ scoreboard players set @s[tag=!Dialogue215] DialogueTrigger 215
-tp @a[x=-54,y=101,z=398,dx=5,dy=3,score_DialogueTrigger=0] -190 101 -634 -90 ~
+execute as @a[x=-54,y=101,z=398,dx=5,dy=3,scores={TalkTime=0},tag=Dialogue214] run scoreboard players set @s[tag=!Dialogue215] DialogueTrigger 215
+tp @a[x=-54,y=101,z=398,dx=5,dy=3,scores={DialogueTrigger=0}] -190 101 -634 -90 ~
 
 
 
 #Lumiose Looker Looker Bureau Empty, pre-chapters
-tp @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=!Call13,score_TalkTime=0] -226 101 225 180 ~
-tp @a[x=-228,y=101,z=226,dx=5,dy=5,tag=!Call13,score_TalkTime=0] -190 101 -634 -90 ~
+tp @a[x=-191,y=101,z=-637,dy=5,dz=6,tag=!Call13,scores={TalkTime=0}] -226 101 225 180 ~
+tp @a[x=-228,y=101,z=226,dx=5,dy=5,tag=!Call13,scores={TalkTime=0}] -190 101 -634 -90 ~
 
 #--------------------------------------------------------------------------------------------------
 
@@ -1403,16 +1403,16 @@ tp @a[x=-490,y=102,z=226,dx=5,dy=5] -353 101 -311 180 ~
 
 
 #Lumiose City Lumiose Press
-execute @a[x=-323,y=101,z=-320,dx=3,dy=5,dz=2,tag=VolcanionCatch] ~ ~ ~ tp @e[x=-442,y=100,z=210,dy=3,type=pixelmon:npc_chatting] -504 211 1286
-execute @a[x=-323,y=101,z=-320,dx=3,dy=5,dz=2,tag=VolcanionCatch] ~ ~ ~ tp @e[x=-504,y=210,z=1288,dy=3,type=pixelmon:npc_chatting] -443 101 210
-execute @a[x=-323,y=101,z=-320,dx=3,dy=5,dz=2,tag=VolcanionCatch] ~ ~ ~ tp @e[x=-504,y=210,z=1284,dy=3,type=pixelmon:npc_chatting] -444 101 206
+execute as @a[x=-323,y=101,z=-320,dx=3,dy=5,dz=2,tag=VolcanionCatch] run tp @e[x=-442,y=100,z=210,dy=3,nbt=!{pixelmon:npc_chatting}] -504 211 1286
+execute as @a[x=-323,y=101,z=-320,dx=3,dy=5,dz=2,tag=VolcanionCatch] run tp @e[x=-504,y=210,z=1288,dy=3,nbt=!{pixelmon:npc_chatting}] -443 101 210
+execute as @a[x=-323,y=101,z=-320,dx=3,dy=5,dz=2,tag=VolcanionCatch] run tp @e[x=-504,y=210,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] -444 101 206
 tp @a[x=-323,y=101,z=-320,dx=3,dy=5,dz=2] -449 101 225 180 ~
 
 
-execute @a[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch,score_TalkTime=0] ~ ~ ~ tp @e[x=-443,y=100,z=210,dy=3,type=pixelmon:npc_chatting] -504 211 1288
-execute @a[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch,score_TalkTime=0] ~ ~ ~ tp @e[x=-504,y=210,z=1286,dy=3,type=pixelmon:npc_chatting] -442 101 210
-execute @a[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch,score_TalkTime=0] ~ ~ ~ tp @e[x=-444,y=100,z=206,dy=3,type=pixelmon:npc_chatting] -504 211 1284
-tp @a[x=-451,y=101,z=226,dx=5,dy=5,score_TalkTime=0] -322 101 -321 180 ~
+execute as @a[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch,scores={TalkTime=0}] run tp @e[x=-443,y=100,z=210,dy=3,nbt=!{pixelmon:npc_chatting}] -504 211 1288
+execute as @a[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch,scores={TalkTime=0}] run tp @e[x=-504,y=210,z=1286,dy=3,nbt=!{pixelmon:npc_chatting}] -442 101 210
+execute as @a[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch,scores={TalkTime=0}] run tp @e[x=-444,y=100,z=206,dy=3,nbt=!{pixelmon:npc_chatting}] -504 211 1284
+tp @a[x=-451,y=101,z=226,dx=5,dy=5,scores={TalkTime=0}] -322 101 -321 180 ~
 
 #Lumiose City Shutterbug Cafe
 tp @a[x=-415,y=101,z=-268,dx=3,dy=5,dz=3] -67 101 224 180 ~
@@ -1421,7 +1421,7 @@ tp @a[x=-70,y=101,z=225,dx=5,dy=5] -415 101 -264 43 ~
 #Lumiose City Cafe Solelli
 scoreboard players set @a[x=-388,y=101,z=-230,dx=4,dy=5,dz=6,tag=KantoStarters] DialogueTrigger 22
 tp @a[x=-388,y=101,z=-230,dx=4,dy=5,dz=6] -491 101 265 180 ~
-tp @a[x=-494,y=101,z=266,dx=5,dy=5,score_TalkTime=0] -389 101 -225 43 ~
+tp @a[x=-494,y=101,z=266,dx=5,dy=5,scores={TalkTime=0}] -389 101 -225 43 ~
 
 #Lumiose City Coiffure Clips
 scoreboard players set @a[x=-365,y=101,z=-199,dx=4,dy=5,dz=4] click 1
@@ -1516,7 +1516,7 @@ tp @a[x=-231,y=29,z=337,dx=2,dy=2,dz=2] -307 29 378 180 ~
 
 #Warp Pad F
 tp @a[x=-243,y=29,z=323,dx=2,dy=2,dz=2] -295 29 330 180 ~
-tp @a[x=-296,y=29,z=332,dx=2,dy=2,dz=2,score_TalkTime=0] -239 29 324 -90 ~
+tp @a[x=-296,y=29,z=332,dx=2,dy=2,dz=2,scores={TalkTime=0}] -239 29 324 -90 ~
 
 #Warp Pad G
 tp @a[x=-268,y=29,z=374,dx=2,dy=2,dz=2] -332 29 356 0 ~
@@ -1561,7 +1561,7 @@ tp @a[x=-1948,y=101,z=-1685,dx=1,dy=3,dz=1] -1934 101 -1705 45 ~
 
 #8
 tp @a[x=-1933,y=101,z=-1692,dx=1,dy=3,dz=1] -1990 101 -1715 -135 ~
-tp @a[x=-1992,dy=101,z=-1714,dx=1,dy=3,dz=1] -1934 101 -1693 135 ~
+tp @a[x=-1992,y=101,z=-1714,dx=1,dy=3,dz=1] -1934 101 -1693 135 ~
 
 #9
 tp @a[x=-1977,y=101,z=-1729,dx=1,dy=3,dz=1] -1990 101 -1693 -135 ~
@@ -1590,8 +1590,8 @@ tp @a[x=-1970,y=102,z=-1725,dx=1,dy=3,dz=1] -1962 102 -1678 0 ~
 #Geosenge Flare HQ
 
 #Geosenge to Elevator
-scoreboard players set @a[x=-1258,y=109,z=1794,dx=4,dy=5,score_TalkTime=0] click1
-tp @a[x=-1258,y=109,z=1794,dx=4,dy=5,score_TalkTime=0] -2336 30 -922
+scoreboard players set @a[x=-1258,y=109,z=1794,dx=4,dy=5,scores={TalkTime=0}] click1
+tp @a[x=-1258,y=109,z=1794,dx=4,dy=5,scores={TalkTime=0}] -2336 30 -922
 
 scoreboard players set @a[x=-2338,y=30,z=-921,dx=5,dy=5] click1
 tp @a[x=-2338,y=30,z=-921,dx=5,dy=5] -1255 109 1796
@@ -1601,14 +1601,14 @@ tp @a[x=-2341,y=66,z=-921,dx=10,dy=5] -2336 16 -922 180 ~
 tp @a[x=-2338,y=16,z=-921,dx=5,dy=5] -2336 66 -923 180 ~
 
 #Legend Chamber Door
-scoreboard players set @a[x=-2432,y=28,z=-955,dx=9,dy=5,score_TalkTime=0,tag=!Dialogue129] DialogueTrigger 129
-#execute @a[x=-2432,y=28,z=-955,dx=9,dy=5,score_Xerneas_min=1,score_Xerneas=1,c=1,score_TalkTime=0] ~ ~ ~ /summon armor_stand -2336 49 -1022 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:47s}],DisabledSlots:2039327}
-#execute @a[x=-2432,y=28,z=-955,dx=9,dy=5,score_Yveltal_min=1,score_Yveltal=1,c=1,score_TalkTime=0] ~ ~ ~ /summon armor_stand -2336 50.5 -1022 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:48s}],DisabledSlots:2039327,NoGravity:1b}
-tp @a[x=-2432,y=28,z=-955,dx=9,dy=5,score_TalkTime=0] -2336 42 -995
+scoreboard players set @a[x=-2432,y=28,z=-955,dx=9,dy=5,scores={TalkTime=0},tag=!Dialogue129] DialogueTrigger 129
+#execute as @a[x=-2432,y=28,z=-955,dx=9,dy=5,score_Xerneas_min=1,score_Xerneas=1,c=1,scores={TalkTime=0}] run summon armor_stand -2336 49 -1022 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:47s}],DisabledSlots:2039327}
+#execute as @a[x=-2432,y=28,z=-955,dx=9,dy=5,score_Yveltal_min=1,score_Yveltal=1,c=1,scores={TalkTime=0}] run summon armor_stand -2336 50.5 -1022 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:48s}],DisabledSlots:2039327,NoGravity:1b}
+tp @a[x=-2432,y=28,z=-955,dx=9,dy=5,scores={TalkTime=0}] -2336 42 -995
 
-#execute @a[x=-2341,y=42,z=-994,dx=10,dy=5,score_Xerneas_min=1,score_Xerneas=1,c=1] ~ ~ ~ /kill @e[x=-2336,y=49,z=-1022,r=3,type=armor_stand]
-#execute @a[x=-2341,y=42,z=-994,dx=10,dy=5,score_Yveltal_min=1,score_Yveltal=1,c=1] ~ ~ ~ /kill @e[x=-2336,y=49,z=-1022,r=3,type=armor_stand]
-tp @a[x=-2341,y=42,z=-994,dx=10,dy=5,score_TalkTime=0] -2427 28 -954
+#execute as @a[x=-2341,y=42,z=-994,dx=10,dy=5,score_Xerneas_min=1,score_Xerneas=1,c=1] run kill @e[x=-2336,y=49,z=-1022,r=3,type=armor_stand]
+#execute as @a[x=-2341,y=42,z=-994,dx=10,dy=5,score_Yveltal_min=1,score_Yveltal=1,c=1] run kill @e[x=-2336,y=49,z=-1022,r=3,type=armor_stand]
+tp @a[x=-2341,y=42,z=-994,dx=10,dy=5,scores={TalkTime=0}] -2427 28 -954
 
 
 #Tower of Mastery
@@ -1620,18 +1620,18 @@ tp @a[x=-1637,y=154,z=-1187,dy=3] -1685 130 -1187
 scoreboard players set @a[x=-1670,y=154,z=-1187,dy=3,tag=!Dialogue63] DialogueTrigger 63
 tp @a[x=-1670,y=154,z=-1187,dy=3] -1647 187 -1200 -41 ~
 
-tp @a[x=-1650,y=187,z=-1201,dx=1,dy=3,dz=1,score_TalkTime=0] -1672 154 -1187 90 ~
+tp @a[x=-1650,y=187,z=-1201,dx=1,dy=3,dz=1,scores={TalkTime=0}] -1672 154 -1187 90 ~
 
 
 
 #Parfum Palace
 #Main Entrance
-tp @a[x=-1384,y=63,z=-376,dy=5,dz=7,score_TalkTime=0] -1385 100 -374
-scoreboard players set @a[x=-1386,y=100,z=-378,dy=5,dz=7,tag=!Dialogue29,score_TalkTime=0] DialogueTrigger 29
+tp @a[x=-1384,y=63,z=-376,dy=5,dz=7,scores={TalkTime=0}] -1385 100 -374
+scoreboard players set @a[x=-1386,y=100,z=-378,dy=5,dz=7,tag=!Dialogue29,scores={TalkTime=0}] DialogueTrigger 29
 tp @a[x=-1386,y=100,z=-378,dy=5,dz=7] -1385 63 -372
 
 #Garden Door
-tp @a[x=-1426,y=63,z=-377,dy=5,dz=10,score_TalkTime=0] -1435 100 -374
+tp @a[x=-1426,y=63,z=-377,dy=5,dz=10,scores={TalkTime=0}] -1435 100 -374
 tp @a[x=-1434,y=100,z=-379,dy=5,dz=10] -1425 63 -372
 
 
@@ -1673,11 +1673,11 @@ tp @a[x=-1370,y=31,z=-376,dy=5,dz=7] -1424 74 -420
 
 #Balcony South
 tp @a[x=-1425,y=74,z=-352,dx=15,dy=5] -1413 111 -345
-tp @a[x=-1420,y=111,z=-344,dx=14,dy=5,score_TalkTime=0] -1418 74 -351
+tp @a[x=-1420,y=111,z=-344,dx=14,dy=5,scores={TalkTime=0}] -1418 74 -351
 
 #Balcony North
 tp @a[x=-1425,y=74,z=-392,dx=15,dy=5] -1413 111 -403
-tp @a[x=-1420,y=111,z=-404,dx=14,dy=5,score_TalkTime=0] -1417 74 -393
+tp @a[x=-1420,y=111,z=-404,dx=14,dy=5,scores={TalkTime=0}] -1417 74 -393
 
 
 #Lumiose City Gym
@@ -1690,28 +1690,28 @@ tp @a[x=-1823,y=100,z=-1705,dy=5,tag=!Clemont] -1823 110 -1706
 
 #Floor 2 to Floor 3
 tellraw @a[x=-1811,y=109,z=-1741,dy=3] {"text":"Quiz time!"}
-execute @a[x=-1811,y=109,z=-1741,dy=3] ~ ~ ~ /fill -1810 110 -1738 -1812 112 -1738 minecraft:stained_glass 3
+execute as @a[x=-1811,y=109,z=-1741,dy=3] run fill -1810 110 -1738 -1812 112 -1738 minecraft:light_blue_stained_glass
 tp @a[x=-1811,y=109,z=-1741,dy=3] -1823 125 -1706
 
 #Floor 3 to 4
 tellraw @a[x=-1835,y=125,z=-1741,dy=3] {"text":"Quiz time!"}
-execute @a[x=-1835,y=125,z=-1741,dy=3] ~ ~ ~ /fill -1834 125 -1738 -1836 127 -1738 minecraft:stained_glass 3
+execute as @a[x=-1835,y=125,z=-1741,dy=3] run fill -1834 125 -1738 -1836 127 -1738 minecraft:light_blue_stained_glass
 tp @a[x=-1835,y=125,z=-1741,dy=3] -1823 140 -1706
 
 #Floor 4 to 5
 tellraw @a[x=-1811,y=140,z=-1741,dy=3] {"text":"Quiz time!"}
-execute @a[x=-1811,y=140,z=-1741,dy=3] ~ ~ ~ /fill -1810 140 -1738 -1812 142 -1738 minecraft:stained_glass 3
+execute as @a[x=-1811,y=140,z=-1741,dy=3] run fill -1810 140 -1738 -1812 142 -1738 minecraft:light_blue_stained_glass
 tp @a[x=-1811,y=140,z=-1741,dy=3] -1823 155 -1706
 
 #Floor 5 to 6 (gym leader)
-execute @a[x=-1823,y=155,z=-1741,dy=3] ~ ~ ~ /fill -1822 155 -1738 -1824 157 -1738 minecraft:stained_glass 3
+execute as @a[x=-1823,y=155,z=-1741,dy=3] run fill -1822 155 -1738 -1824 157 -1738 minecraft:light_blue_stained_glass
 tp @a[x=-1823,y=155,z=-1741,dy=3] -1823 170 -1706
 
 
 
 #Return to gym lobby
-execute @a[x=-1823,y=125,z=-1705,dy=65] ~ ~ ~ /tellraw @s ["",{"text":"Would you like to return to the lobby?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 3"}},{"text":"]"}]
-execute @a[x=-1823,y=125,z=-1705,dy=65] ~ ~ ~ /scoreboard players enable @s TalkTrigger
+execute as @a[x=-1823,y=125,z=-1705,dy=65] run tellraw @s ["",{"text":"Would you like to return to the lobby?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 3"}},{"text":"]"}]
+execute as @a[x=-1823,y=125,z=-1705,dy=65] run scoreboard players enable @s TalkTrigger
 tp @a[x=-1823,y=125,z=-1705,dy=65] ~ ~ ~-3
 
 tp @a[x=-1823,y=110,z=-1705,dy=3] -1823 100 -1703 0 ~
@@ -1727,91 +1727,91 @@ tp @a[x=-1910,y=31,z=2242,dx=10,dy=5] -1906 100 2075
 tp @a[x=-1915,y=100,z=2073,dx=18,dy=5] -1907 31 2240
 
 #Right Entrance to E4
-scoreboard players tag @a[x=-1880,y=31,z=2105,dx=11,dy=5] remove Diantha
-scoreboard players tag @a[x=-1880,y=31,z=2105,dx=11,dy=5] remove Malva
-scoreboard players tag @a[x=-1880,y=31,z=2105,dx=11,dy=5] remove Drasna
-scoreboard players tag @a[x=-1880,y=31,z=2105,dx=11,dy=5] remove Wikstrom
-scoreboard players tag @a[x=-1880,y=31,z=2105,dx=11,dy=5] remove Siebold
-scoreboard players tag @a[x=-1880,y=31,z=2105,dx=11,dy=5] remove Dialogue151
-scoreboard players tag @a[x=-1880,y=31,z=2105,dx=11,dy=5] remove Dialogue153
-scoreboard players tag @a[x=-1880,y=31,z=2105,dx=11,dy=5] remove Dialogue154
+tag @a[x=-1880,y=31,z=2105,dx=11,dy=5] remove Diantha
+tag @a[x=-1880,y=31,z=2105,dx=11,dy=5] remove Malva
+tag @a[x=-1880,y=31,z=2105,dx=11,dy=5] remove Drasna
+tag @a[x=-1880,y=31,z=2105,dx=11,dy=5] remove Wikstrom
+tag @a[x=-1880,y=31,z=2105,dx=11,dy=5] remove Siebold
+tag @a[x=-1880,y=31,z=2105,dx=11,dy=5] remove Dialogue151
+tag @a[x=-1880,y=31,z=2105,dx=11,dy=5] remove Dialogue153
+tag @a[x=-1880,y=31,z=2105,dx=11,dy=5] remove Dialogue154
 tp @a[x=-1880,y=31,z=2105,dx=11,dy=5] -1896 32 2108 27 ~
 
-execute @a[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4,tag=!Diantha] ~ ~ ~ /execute @s[tag=!Malva] ~ ~ ~ /execute @s[tag=!Siebold] ~ ~ ~ /execute @s[tag=!Drasna] ~ ~ ~ /execute @s[tag=!Wikstrom] ~ ~ ~ /tp @s[score_TalkTime=0] -1875 31 2107 0 ~
+execute as @a[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4,tag=!Diantha,tag=!Malva,tag=!Siebold,tag=!Drasna,tag=!Wikstrom] run tp @s[scores={TalkTime=0}] -1875 31 2107 0 ~
 
-tellraw @a[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4,score_TalkTime=0] ["",{"text":"Would you like to leave the Elite Four challenge? Your battle progress will be reset. ","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 4"}},{"text":"]","color":"white"}]
-scoreboard players enable @a[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4,score_TalkTime=0] TalkTrigger
-tp @a[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4,score_TalkTime=0] ~-4 ~ ~4
+tellraw @a[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] ["",{"text":"Would you like to leave the Elite Four challenge? Your battle progress will be reset. ","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 4"}},{"text":"]","color":"white"}]
+scoreboard players enable @a[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] TalkTrigger
+tp @a[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] ~-4 ~ ~4
 
 
 
 #Left Entrance to E4
-scoreboard players tag @a[x=-1944,y=31,z=2105,dx=11,dy=5] remove Diantha
-scoreboard players tag @a[x=-1944,y=31,z=2105,dx=11,dy=5] remove Malva
-scoreboard players tag @a[x=-1944,y=31,z=2105,dx=11,dy=5] remove Drasna
-scoreboard players tag @a[x=-1944,y=31,z=2105,dx=11,dy=5] remove Wikstrom
-scoreboard players tag @a[x=-1944,y=31,z=2105,dx=11,dy=5] remove Siebold
-scoreboard players tag @a[x=-1944,y=31,z=2105,dx=11,dy=5] remove Dialogue151
-scoreboard players tag @a[x=-1944,y=31,z=2105,dx=11,dy=5] remove Dialogue153
-scoreboard players tag @a[x=-1944,y=31,z=2105,dx=11,dy=5] remove Dialogue154
+tag @a[x=-1944,y=31,z=2105,dx=11,dy=5] remove Diantha
+tag @a[x=-1944,y=31,z=2105,dx=11,dy=5] remove Malva
+tag @a[x=-1944,y=31,z=2105,dx=11,dy=5] remove Drasna
+tag @a[x=-1944,y=31,z=2105,dx=11,dy=5] remove Wikstrom
+tag @a[x=-1944,y=31,z=2105,dx=11,dy=5] remove Siebold
+tag @a[x=-1944,y=31,z=2105,dx=11,dy=5] remove Dialogue151
+tag @a[x=-1944,y=31,z=2105,dx=11,dy=5] remove Dialogue153
+tag @a[x=-1944,y=31,z=2105,dx=11,dy=5] remove Dialogue154
 tp @a[x=-1944,y=31,z=2105,dx=11,dy=5] -1918 32 2108 -27 ~
 
 
-execute @a[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4,tag=!Diantha] ~ ~ ~ /execute @s[tag=!Malva] ~ ~ ~ /execute @s[tag=!Siebold] ~ ~ ~ /execute @s[tag=!Drasna] ~ ~ ~ /execute @s[tag=!Wikstrom] ~ ~ ~ /tp @s[score_TalkTime=0] -1939 31 2107 0 ~
+execute as @a[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4,tag=!Diantha] run execute as @s[tag=!Malva] run execute as @s[tag=!Siebold] run execute as @s[tag=!Drasna] run execute as @s[tag=!Wikstrom] run tp @s[scores={TalkTime=0}] -1939 31 2107 0 ~
 
-tellraw @a[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4,score_TalkTime=0] ["",{"text":"Would you like to leave the Elite Four challenge? Your battle progress will be reset. ","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 5"}},{"text":"]","color":"white"}]
-scoreboard players enable @a[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4,score_TalkTime=0] TalkTrigger
-tp @a[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4,score_TalkTime=0] ~4 ~ ~4
+tellraw @a[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] ["",{"text":"Would you like to leave the Elite Four challenge? Your battle progress will be reset. ","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 5"}},{"text":"]","color":"white"}]
+scoreboard players enable @a[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] TalkTrigger
+tp @a[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] ~4 ~ ~4
 
 
 #Blazing Chamber Hallway
-title @a[x=-1888,y=32,z=2121,dy=5,dz=6,score_TalkTime=0] actionbar {"text":"Blazing Chamber","color":"red"}
-tp @a[x=-1888,y=32,z=2121,dy=5,dz=6,score_TalkTime=0] -2026 7 2180 180 ~
+title @a[x=-1888,y=32,z=2121,dy=5,dz=6,scores={TalkTime=0}] actionbar {"text":"Blazing Chamber","color":"red"}
+tp @a[x=-1888,y=32,z=2121,dy=5,dz=6,scores={TalkTime=0}] -2026 7 2180 180 ~
 tp @a[x=-2029,y=7,z=2181,dx=6,dy=5] -1889 32 2125 90 ~
 
 #Flooded Chamber Hallway
-title @a[x=-1888,y=32,z=2150,dy=5,dz=6,score_TalkTime=0] actionbar {"text":"Flood Chamber","color":"blue"}
-tp @a[x=-1888,y=32,z=2150,dy=5,dz=6,score_TalkTime=0] -1970 7 2178 180 ~
+title @a[x=-1888,y=32,z=2150,dy=5,dz=6,scores={TalkTime=0}] actionbar {"text":"Flood Chamber","color":"blue"}
+tp @a[x=-1888,y=32,z=2150,dy=5,dz=6,scores={TalkTime=0}] -1970 7 2178 180 ~
 tp @a[x=-1973,y=7,z=2179,dx=6,dy=5] -1889 32 2153 90 ~
 
 #Ironworks Chamber Hallway
-title @a[x=-1926,y=32,z=2121,dy=5,dz=6,score_TalkTime=0] actionbar {"text":"Ironworks Chamber","color":"white"}
-tp @a[x=-1926,y=32,z=2121,dy=5,dz=6,score_TalkTime=0] -1837 7 2179 180 ~
+title @a[x=-1926,y=32,z=2121,dy=5,dz=6,scores={TalkTime=0}] actionbar {"text":"Ironworks Chamber","color":"white"}
+tp @a[x=-1926,y=32,z=2121,dy=5,dz=6,scores={TalkTime=0}] -1837 7 2179 180 ~
 tp @a[x=-1840,y=7,z=2180,dx=6,dy=5] -1925 32 2125 -90 ~
 
 
 #Dragonmark Chamber Hallway
-title @a[x=-1926,y=32,z=2150,dy=5,dz=6,score_TalkTime=0] actionbar {"text":"Dragonmark Chamber","color":"light_purple"}
-tp @a[x=-1926,y=32,z=2150,dy=5,dz=6,score_TalkTime=0] -1784 7 2179 180 ~
+title @a[x=-1926,y=32,z=2150,dy=5,dz=6,scores={TalkTime=0}] actionbar {"text":"Dragonmark Chamber","color":"light_purple"}
+tp @a[x=-1926,y=32,z=2150,dy=5,dz=6,scores={TalkTime=0}] -1784 7 2179 180 ~
 tp @a[x=-1787,y=7,z=2180,dx=6,dy=5] -1925 32 2153 -90 ~
 
 
 #Radiant Chamber
-execute @a[x=-1909,y=33,z=2101,dx=4,dy=5,tag=Malva] ~ ~ ~ /execute @s[tag=Siebold] ~ ~ ~ /execute @s[tag=Drasna] ~ ~ ~ /execute @s[tag=Wikstrom] ~ ~ ~ /scoreboard players set @s[tag=!Dialogue149,score_PokemonLeague=0] DialogueTrigger 149
-execute @a[x=-1909,y=33,z=2101,dx=4,dy=5,tag=Malva] ~ ~ ~ /execute @s[tag=Siebold] ~ ~ ~ /execute @s[tag=Drasna] ~ ~ ~ /execute @s[tag=Wikstrom] ~ ~ ~ /scoreboard players set @s[score_PokemonLeague_min=1,score_TalkTime=0] DialogueTrigger 151
-execute @a[x=-1909,y=33,z=2101,dx=4,dy=5,tag=Malva] ~ ~ ~ /execute @s[tag=Siebold] ~ ~ ~ /execute @s[tag=Drasna] ~ ~ ~ /execute @s[tag=Wikstrom] ~ ~ ~ /title @s actionbar {"text":"Radiant Chamber"}
-execute @a[x=-1909,y=33,z=2101,dx=4,dy=5,tag=Malva] ~ ~ ~ /execute @s[tag=Siebold] ~ ~ ~ /execute @s[tag=Drasna] ~ ~ ~ /execute @s[tag=Wikstrom] ~ ~ ~ /tp @s[score_TalkTime=0] -1906 22 1978
+execute as @a[x=-1909,y=33,z=2101,dx=4,dy=5,tag=Malva,tag=Siebold,tag=Drasna,tag=Wikstrom] run scoreboard players set @s[tag=!Dialogue149,scores={PokemonLeague=0}] DialogueTrigger 149
+execute as @a[x=-1909,y=33,z=2101,dx=4,dy=5,tag=Malva,tag=Siebold,tag=Drasna,tag=Wikstrom] run scoreboard players set @s[scores={PokemonLeague=1..,TalkTime=0}] DialogueTrigger 151
+execute as @a[x=-1909,y=33,z=2101,dx=4,dy=5,tag=Malva,tag=Siebold,tag=Drasna,tag=Wikstrom] run title @s actionbar {"text":"Radiant Chamber"}
+execute as @a[x=-1909,y=33,z=2101,dx=4,dy=5,tag=Malva,tag=Siebold,tag=Drasna,tag=Wikstrom] run tp @s[scores={TalkTime=0}] -1906 22 1978
 
-tellraw @a[x=-1909,y=33,z=2101,dx=4,dy=5,score_TalkTime=0] {"text":"You still need to beat the following Elite Four members:","italic":true,"color":"gray"}
-tellraw @a[x=-1909,y=33,z=2101,dx=4,dy=5,score_TalkTime=0,tag=!Malva] {"text":"Malva","italic":true,"color":"gray"}
-tellraw @a[x=-1909,y=33,z=2101,dx=4,dy=5,score_TalkTime=0,tag=!Siebold] {"text":"Siebold","italic":true,"color":"gray"}
-tellraw @a[x=-1909,y=33,z=2101,dx=4,dy=5,score_TalkTime=0,tag=!Wikstrom] {"text":"Wikstrom","italic":true,"color":"gray"}
-tellraw @a[x=-1909,y=33,z=2101,dx=4,dy=5,score_TalkTime=0,tag=!Drasna] {"text":"Drasna","italic":true,"color":"gray"}
-tp @a[x=-1909,y=33,z=2101,dx=4,dy=5,score_TalkTime=0] ~ ~ ~4
+tellraw @a[x=-1909,y=33,z=2101,dx=4,dy=5,scores={TalkTime=0}] {"text":"You still need to beat the following Elite Four members:","italic":true,"color":"gray"}
+tellraw @a[x=-1909,y=33,z=2101,dx=4,dy=5,scores={TalkTime=0},tag=!Malva] {"text":"Malva","italic":true,"color":"gray"}
+tellraw @a[x=-1909,y=33,z=2101,dx=4,dy=5,scores={TalkTime=0},tag=!Siebold] {"text":"Siebold","italic":true,"color":"gray"}
+tellraw @a[x=-1909,y=33,z=2101,dx=4,dy=5,scores={TalkTime=0},tag=!Wikstrom] {"text":"Wikstrom","italic":true,"color":"gray"}
+tellraw @a[x=-1909,y=33,z=2101,dx=4,dy=5,scores={TalkTime=0},tag=!Drasna] {"text":"Drasna","italic":true,"color":"gray"}
+tp @a[x=-1909,y=33,z=2101,dx=4,dy=5,scores={TalkTime=0}] ~ ~ ~4
 
 #tp out of radiant chamber
-tp @a[x=-1915,y=22,z=1979,dx=17,dy=5,score_TalkTime=0] -1907 32 2103
+tp @a[x=-1915,y=22,z=1979,dx=17,dy=5,scores={TalkTime=0}] -1907 32 2103
 
 
 #Hall of Fame
-tellraw @a[x=-1915,y=22,z=1873,dx=17,dy=5,tag=!Diantha,score_TalkTime=0] {"text":"Beat Champion Diantha to proceed!","italic":true,"color":"gray"}
-tp @a[x=-1915,y=22,z=1873,dx=17,dy=5,tag=!Diantha,score_TalkTime=0] ~ ~ ~4
+tellraw @a[x=-1915,y=22,z=1873,dx=17,dy=5,tag=!Diantha,scores={TalkTime=0}] {"text":"Beat Champion Diantha to proceed!","italic":true,"color":"gray"}
+tp @a[x=-1915,y=22,z=1873,dx=17,dy=5,tag=!Diantha,scores={TalkTime=0}] ~ ~ ~4
 
-execute @a[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,score_PokemonLeague=0,score_TalkTime=0] ~ ~ ~ scoreboard players set @s[tag=!Dialogue152] DialogueTrigger 152
-execute @a[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,score_PokemonLeague_min=1,score_TalkTime=0] ~ ~ ~ scoreboard players set @s DialogueTrigger 153
-scoreboard players add @a[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,score_TalkTime=0] Grass 0
-scoreboard players add @a[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,score_TalkTime=0] PokemonLeague 1
-tp @a[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,score_TalkTime=0] -1998 8 1964
+execute as @a[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,scores={PokemonLeague=0,TalkTime=0}] run scoreboard players set @s[tag=!Dialogue152] DialogueTrigger 152
+execute as @a[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,scores={PokemonLeague=1..,TalkTime=0}] run scoreboard players set @s DialogueTrigger 153
+scoreboard players add @a[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,scores={TalkTime=0}] Grass 0
+scoreboard players add @a[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,scores={TalkTime=0}] PokemonLeague 1
+tp @a[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,scores={TalkTime=0}] -1998 8 1964
 
 
 #Return from chamber commands
@@ -1853,7 +1853,7 @@ tp @a[x=-1773,y=30,z=2050,dy=5] -1925 32 2153 -90 ~
 
 
 #Volcanion Power Plant Chamber
-execute @a[x=-821,y=105,z=-672,dx=1,dy=2,dz=1,score_Volcanion=0] ~ ~ ~ /tp @e[x=-501,y=136,z=1238,dy=4,type=pixelmon:statue] -859 61 -690
+execute as @a[x=-821,y=105,z=-672,dx=1,dy=2,dz=1,scores={Volcanion=0}] run tp @e[x=-501,y=136,z=1238,dy=4,nbt=!{pixelmon:statue}] -859 61 -690
 scoreboard players set @a[x=-821,y=105,z=-672,dx=1,dy=2,dz=1] click1
 tp @a[x=-821,y=105,z=-672,dx=1,dy=2,dz=1] -659 51 -703 90 ~
 
