@@ -178,53 +178,53 @@ particle cloud 1215 75 1545 2 2 2 1 100
 
 #Tps out the Chatelaines
 #Singles
-execute as @s[scores={BattleMaison=1,BattleStreak=20}] run tp @e[x=1215,y=74,z=1545,dy=3,nbt=!{pixelmon:npc_trainer},name=Nita,tag=!Super] 1227 66 1548
-execute as @s[scores={BattleMaison=2,BattleStreak=50}] run tp @e[x=1215,y=74,z=1545,dy=3,nbt=!{pixelmon:npc_trainer},name=Nita,tag=Super] 1227 66 1550
+execute as @s[scores={BattleMaison=1,BattleStreak=20}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,name=Nita,tag=!Super] 1227 66 1548
+execute as @s[scores={BattleMaison=2,BattleStreak=50}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,name=Nita,tag=Super] 1227 66 1550
 
 #Doubles
-execute as @s[scores={BattleMaison=3,BattleStreak=20}] run tp @e[x=1215,y=74,z=1545,dy=3,nbt=!{pixelmon:npc_trainer},name=Evelyn,tag=!Super] 1227 66 1543
-execute as @s[scores={BattleMaison=4,BattleStreak=50}] run tp @e[x=1215,y=74,z=1545,dy=3,nbt=!{pixelmon:npc_trainer},name=Evelyn,tag=Super] 1227 66 1545
+execute as @s[scores={BattleMaison=3,BattleStreak=20}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,name=Evelyn,tag=!Super] 1227 66 1543
+execute as @s[scores={BattleMaison=4,BattleStreak=50}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,name=Evelyn,tag=Super] 1227 66 1545
 
 #tps back in respective randomized npc
-execute as @s[scores={BattleMaison=1,BattleStreak=20}] run tp @e[x=1213,y=65,z=1549,dy=3,nbt=!{pixelmon:npc_trainer}] 1215 75 1545
-execute as @s[scores={BattleMaison=2,BattleStreak=50}] run tp @e[x=1213,y=65,z=1549,dy=3,nbt=!{pixelmon:npc_trainer}] 1215 75 1545
+execute as @s[scores={BattleMaison=1,BattleStreak=20}] run tp @e[x=1213,y=65,z=1549,dy=3,type=pixelmon:npc_trainer] 1215 75 1545
+execute as @s[scores={BattleMaison=2,BattleStreak=50}] run tp @e[x=1213,y=65,z=1549,dy=3,type=pixelmon:npc_trainer] 1215 75 1545
 
-execute as @s[scores={BattleMaison=3,BattleStreak=20}] run tp @e[x=1213,y=65,z=1544,dy=3,nbt=!{pixelmon:npc_trainer}] 1215 75 1545
-execute as @s[scores={BattleMaison=4,BattleStreak=50}] run tp @e[x=1213,y=65,z=1544,dy=3,nbt=!{pixelmon:npc_trainer}] 1215 75 1545
+execute as @s[scores={BattleMaison=3,BattleStreak=20}] run tp @e[x=1213,y=65,z=1544,dy=3,type=pixelmon:npc_trainer] 1215 75 1545
+execute as @s[scores={BattleMaison=4,BattleStreak=50}] run tp @e[x=1213,y=65,z=1544,dy=3,type=pixelmon:npc_trainer] 1215 75 1545
 
 
 
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #tp returns the trainer if it is a Chatelaine
-execute as @s[scores={BattleMaison=1..2,BattleStreak=19}] run tp @e[x=1215,y=74,z=1545,dy=3,nbt=!{pixelmon:npc_trainer},tag=Single] 1213 66 1549
-execute as @s[scores={BattleMaison=2,BattleStreak=49}] run tp @e[x=1215,y=74,z=1545,dy=3,nbt=!{pixelmon:npc_trainer},tag=Single] 1213 66 1549
+execute as @s[scores={BattleMaison=1..2,BattleStreak=19}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,tag=Single] 1213 66 1549
+execute as @s[scores={BattleMaison=2,BattleStreak=49}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,tag=Single] 1213 66 1549
 
-execute as @s[scores={BattleMaison=3,BattleStreak=19}] run tp @e[x=1215,y=74,z=1545,dy=3,nbt=!{pixelmon:npc_trainer},tag=Double] 1213 66 1544
-execute as @s[scores={BattleMaison=4,BattleStreak=49}] run tp @e[x=1215,y=74,z=1545,dy=3,nbt=!{pixelmon:npc_trainer},tag=Double] 1213 66 1544
+execute as @s[scores={BattleMaison=3,BattleStreak=19}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,tag=Double] 1213 66 1544
+execute as @s[scores={BattleMaison=4,BattleStreak=49}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,tag=Double] 1213 66 1544
 
 
 #tps in the Chatelaine boss
 #Single (Nita)
-execute as @s[scores={BattleMaison=1,BattleStreak=19}] run tp @e[x=1227,y=65,z=1548,dy=3,nbt=!{pixelmon:npc_trainer}] 1215 75 1545
+execute as @s[scores={BattleMaison=1,BattleStreak=19}] run tp @e[x=1227,y=65,z=1548,dy=3,type=pixelmon:npc_trainer] 1215 75 1545
 execute as @s[scores={BattleMaison=1,BattleStreak=19}] run tag @s remove Dialogue230
 execute as @s[scores={BattleMaison=1,BattleStreak=19}] run tag @s remove Dialogue231
 execute as @s[scores={BattleMaison=1,BattleStreak=19}] run scoreboard players set @s DialogueTrigger 230
 
 #Single Super (Nita)
-execute as @s[scores={BattleMaison=2,BattleStreak=49}] run tp @e[x=1227,y=65,z=1550,dy=3,nbt=!{pixelmon:npc_trainer}] 1215 75 1545
+execute as @s[scores={BattleMaison=2,BattleStreak=49}] run tp @e[x=1227,y=65,z=1550,dy=3,type=pixelmon:npc_trainer] 1215 75 1545
 execute as @s[scores={BattleMaison=2,BattleStreak=49}] run tag @s remove Dialogue234
 execute as @s[scores={BattleMaison=2,BattleStreak=49}] run tag @s remove Dialogue235
 execute as @s[scores={BattleMaison=2,BattleStreak=49}] run scoreboard players set @s DialogueTrigger 234
 
 #Double (Evelyn)
-execute as @s[scores={BattleMaison=3,BattleStreak=19}] run tp @e[x=1227,y=65,z=1543,dy=3,nbt=!{pixelmon:npc_trainer}] 1215 75 1545
+execute as @s[scores={BattleMaison=3,BattleStreak=19}] run tp @e[x=1227,y=65,z=1543,dy=3,type=pixelmon:npc_trainer] 1215 75 1545
 execute as @s[scores={BattleMaison=3,BattleStreak=19}] run tag @s remove Dialogue232
 execute as @s[scores={BattleMaison=3,BattleStreak=19}] run tag @s remove Dialogue233
 execute as @s[scores={BattleMaison=3,BattleStreak=19}] run scoreboard players set @s DialogueTrigger 232
 
 #Double Super (Evelyn)
-execute as @s[scores={BattleMaison=4,BattleStreak=49}] run tp @e[x=1227,y=65,z=1545,dy=3,nbt=!{pixelmon:npc_trainer}] 1215 75 1545
+execute as @s[scores={BattleMaison=4,BattleStreak=49}] run tp @e[x=1227,y=65,z=1545,dy=3,type=pixelmon:npc_trainer] 1215 75 1545
 execute as @s[scores={BattleMaison=4,BattleStreak=49}] run tag @s remove Dialogue236
 execute as @s[scores={BattleMaison=4,BattleStreak=49}] run tag @s remove Dialogue237
 execute as @s[scores={BattleMaison=4,BattleStreak=49}] run scoreboard players set @s DialogueTrigger 236
@@ -270,7 +270,7 @@ playsound minecraft:entity.player.levelup ambient @s ~ ~ ~ 100 1 1
 
 
 #Rotates the trainer
-data modify entity @e[limit=1,x=1215,y=75,z=1545,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[-90.0f,0.0f]}
+data modify entity @e[limit=1,x=1215,y=75,z=1545,dy=3,type=pixelmon:npc_trainer] {Rotation:[-90.0f,0.0f]}
 
 tag @s remove MaisonWin
 

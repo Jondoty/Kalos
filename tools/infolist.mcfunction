@@ -36,7 +36,7 @@ tp @e[x=-504,y=101,z=1229,dy=3,type=!player] ~ ~-500 ~
 
 
 #Tests for a Pixelmon statue, ensures Pixelmon is installed
-execute as @e[x=-498,y=101,z=1229,distance=..3,nbt=!{pixelmon:statue}] run tag @a[tag=infoverify] add skip
+execute as @e[x=-498,y=101,z=1229,distance=..3,type=pixelmon:statue] run tag @a[tag=infoverify] add skip
 
 execute as @s[tag=skip] run tellraw @s[tag=infoverify] ["",{"text":"4) "},{"text":"Pixelmon statue found.","color":"green"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"Ensures the Pixelmon mod is being used with the map."}},{"text":"]"}]
 execute as @s[tag=!skip] run tellraw @s[tag=!verify2] ["",{"text":"4) "},{"text":"Pixelmon statue NOT found.","color":"red"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"This map requires Pixelmon Reforged, from https://reforged.gg. Please ensure this is in your mods folder when you open the world. If condition #2 is green, this save must be DELETED if loaded without the mod even once. It may be possible to port player data to another save."}},{"text":"]"}]

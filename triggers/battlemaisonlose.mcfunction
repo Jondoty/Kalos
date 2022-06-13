@@ -15,19 +15,19 @@ particle cloud 1215 75 1545 2 2 2 1 100
 
 #Tps out the Chatelaines
 #Singles
-execute as @s[scores={BattleMaison=1,BattleStreak=19}] run tp @e[x=1215,y=74,z=1545,dy=3,nbt=!{pixelmon:npc_trainer},name=Nita,tag=!Super] 1227 66 1548
-execute as @s[scores={BattleMaison=2,BattleStreak=49}] run tp @e[x=1215,y=74,z=1545,dy=3,nbt=!{pixelmon:npc_trainer},name=Nita,tag=Super] 1227 66 1550
+execute as @s[scores={BattleMaison=1,BattleStreak=19}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,name=Nita,tag=!Super] 1227 66 1548
+execute as @s[scores={BattleMaison=2,BattleStreak=49}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,name=Nita,tag=Super] 1227 66 1550
 
 #Doubles
-execute as @s[scores={BattleMaison=3,BattleStreak=19}] run tp @e[x=1215,y=74,z=1545,dy=3,nbt=!{pixelmon:npc_trainer},name=Evelyn,tag=!Super] 1227 66 1543
-execute as @s[scores={BattleMaison=4,BattleStreak=49}] run tp @e[x=1215,y=74,z=1545,dy=3,nbt=!{pixelmon:npc_trainer},name=Evelyn,tag=Super] 1227 66 1545
+execute as @s[scores={BattleMaison=3,BattleStreak=19}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,name=Evelyn,tag=!Super] 1227 66 1543
+execute as @s[scores={BattleMaison=4,BattleStreak=49}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,name=Evelyn,tag=Super] 1227 66 1545
 
 #tps back in respective randomized npc
-execute as @s[scores={BattleMaison=1,BattleStreak=19}] run tp @e[x=1213,y=65,z=1549,dy=3,nbt=!{pixelmon:npc_trainer}] 1215 75 1545
-execute as @s[scores={BattleMaison=2,BattleStreak=49}] run tp @e[x=1213,y=65,z=1549,dy=3,nbt=!{pixelmon:npc_trainer}] 1215 75 1545
+execute as @s[scores={BattleMaison=1,BattleStreak=19}] run tp @e[x=1213,y=65,z=1549,dy=3,type=pixelmon:npc_trainer] 1215 75 1545
+execute as @s[scores={BattleMaison=2,BattleStreak=49}] run tp @e[x=1213,y=65,z=1549,dy=3,type=pixelmon:npc_trainer] 1215 75 1545
 
-execute as @s[scores={BattleMaison=3,BattleStreak=19}] run tp @e[x=1213,y=65,z=1544,dy=3,nbt=!{pixelmon:npc_trainer}] 1215 75 1545
-execute as @s[scores={BattleMaison=4,BattleStreak=49}] run tp @e[x=1213,y=65,z=1544,dy=3,nbt=!{pixelmon:npc_trainer}] 1215 75 1545
+execute as @s[scores={BattleMaison=3,BattleStreak=19}] run tp @e[x=1213,y=65,z=1544,dy=3,type=pixelmon:npc_trainer] 1215 75 1545
+execute as @s[scores={BattleMaison=4,BattleStreak=49}] run tp @e[x=1213,y=65,z=1544,dy=3,type=pixelmon:npc_trainer] 1215 75 1545
 
 
 #------------------------------------------------------------------------------------------------------
@@ -73,7 +73,7 @@ tag @s remove MaisonLoss
 
 
 #Rotates the trainer
-data modify entity @e[limit=1,x=1215,y=75,z=1545,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[-90.0f,0.0f]}
+data modify entity @e[limit=1,x=1215,y=75,z=1545,dy=3,type=pixelmon:npc_trainer] {Rotation:[-90.0f,0.0f]}
 
 
 

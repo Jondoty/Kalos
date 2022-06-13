@@ -102,11 +102,11 @@ tp @a[x=-803,y=154,z=-1835,dx=6,dy=5] 1144 97 488
 #Santalune Pokemon Center
 scoreboard players set @a[x=295,y=68,z=486,dx=4,dy=5] click 1
 execute as @a[x=295,y=68,z=486,dx=4,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
-execute as @a[x=295,y=68,z=486,dx=4,dy=5,tag=!Dialogue9] run tp @e[x=-504,y=120,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] 308 68 481
+execute as @a[x=295,y=68,z=486,dx=4,dy=5,tag=!Dialogue9] run tp @e[x=-504,y=120,z=1252,dy=3,type=pixelmon:npc_chatting] 308 68 481
 spawnpoint @a[x=295,y=68,z=486,dx=4,dy=5] 297 68 482
 tp @a[x=295,y=68,z=486,dx=4,dy=5] 297 100 486
 
-execute as @a[x=295,y=68,z=486,dx=4,dy=5,tag=Dialogue9] run tp @e[x=308,y=67,z=481,dy=3,nbt=!{pixelmon:npc_chatting}] -504 121 1252
+execute as @a[x=295,y=68,z=486,dx=4,dy=5,tag=Dialogue9] run tp @e[x=308,y=67,z=481,dy=3,type=pixelmon:npc_chatting] -504 121 1252
 scoreboard players set @a[x=294,y=100,z=485,dx=5,dy=5,dz=5,scores={TalkTime=0},tag=!Dialogue9] DialogueTrigger 9
 scoreboard players set @a[x=294,y=100,z=485,dx=5,dy=5] click 1
 tp @a[x=294,y=100,z=485,dx=5,dy=5] 297 68 485
@@ -923,9 +923,9 @@ tp @a[x=-948,y=75,z=-367,dy=5,dz=5] -946 48 -364
 tp @a[x=-948,y=63,z=-367,dy=5,dz=5] -946 48 -364
 
 #Azure Bay Sea Spirit's Den
-execute as @a[x=-1332,y=76,z=-1187,dx=5,dy=5,scores={Articuno=5,StarterPick=1,PokemonLeague=1..}] run tp @e[x=-501,y=163,z=1238,dy=3,nbt=!{pixelmon:statue}] -1335 22 -1252
-execute as @a[x=-1332,y=76,z=-1187,dx=5,dy=5,scores={Zapdos=5,StarterPick=2,PokemonLeague=1..}] run tp @e[x=-501,y=172,z=1238,dy=3,nbt=!{pixelmon:statue}] -1349 22 -1232
-execute as @a[x=-1332,y=76,z=-1187,dx=5,dy=5,scores={Moltres=5,StarterPick=3,PokemonLeague=1..}] run tp @e[x=-501,y=154,z=1238,dy=3,nbt=!{pixelmon:statue}] -1313 22 -1232
+execute as @a[x=-1332,y=76,z=-1187,dx=5,dy=5,scores={Articuno=5,StarterPick=1,PokemonLeague=1..}] run tp @e[x=-501,y=163,z=1238,dy=3,type=pixelmon:statue] -1335 22 -1252
+execute as @a[x=-1332,y=76,z=-1187,dx=5,dy=5,scores={Zapdos=5,StarterPick=2,PokemonLeague=1..}] run tp @e[x=-501,y=172,z=1238,dy=3,type=pixelmon:statue] -1349 22 -1232
+execute as @a[x=-1332,y=76,z=-1187,dx=5,dy=5,scores={Moltres=5,StarterPick=3,PokemonLeague=1..}] run tp @e[x=-501,y=154,z=1238,dy=3,type=pixelmon:statue] -1313 22 -1232
 scoreboard players set @a[x=-1332,y=76,z=-1187,dx=5,dy=5] click1
 tp @a[x=-1332,y=76,z=-1187,dx=5,dy=5] -1331 22 -1188
 
@@ -1094,8 +1094,8 @@ tp @a[x=-43,y=86,z=-1509,dx=5,dy=5] -40 104 -1510
 
 #Route 14 Scary House
 #Interior Door
-execute as @e[x=-233,y=87,z=-1225,dx=6,dy=5,scores={TalkTime=0}] run tp @e[x=-230,y=88,z=-1242,dy=3,nbt=!{pixelmon:statue}] -501 119 1238
-execute as @e[x=-233,y=87,z=-1225,dx=6,dy=5,scores={TalkTime=0}] run tp @e[x=-501,y=118,z=1238,dy=3,nbt=!{pixelmon:npc_chatting}] -230 88 -1242
+execute as @e[x=-233,y=87,z=-1225,dx=6,dy=5,scores={TalkTime=0}] run tp @e[x=-230,y=88,z=-1242,dy=3,type=pixelmon:statue] -501 119 1238
+execute as @e[x=-233,y=87,z=-1225,dx=6,dy=5,scores={TalkTime=0}] run tp @e[x=-501,y=118,z=1238,dy=3,type=pixelmon:npc_chatting] -230 88 -1242
 
 scoreboard players set @a[x=-233,y=87,z=-1225,dx=6,dy=5,tag=Dialogue83] DialogueTrigger 84
 scoreboard players set @a[x=-233,y=87,z=-1225,dx=6,dy=5,scores={TalkTime=0}] click 1
@@ -1103,8 +1103,8 @@ tp @a[x=-233,y=87,z=-1225,dx=6,dy=5,scores={TalkTime=0}] -231 100 -1224
 
 
 #Exterior Door
-execute as @e[x=-233,y=100,z=-1225,dx=4,dy=5,scores={Hoopa=0,PokemonLeague=1..,TalkTime=0}] run tp @e[x=-501,y=118,z=1238,dy=3,nbt=!{pixelmon:statue}] -230 88 -1242
-execute as @e[x=-233,y=100,z=-1225,dx=4,dy=5,scores={Hoopa=0,PokemonLeague=1..,TalkTime=0}] run tp @e[x=-230,y=87,z=-1242,dy=3,nbt=!{pixelmon:npc_chatting}] -501 119 1238
+execute as @e[x=-233,y=100,z=-1225,dx=4,dy=5,scores={Hoopa=0,PokemonLeague=1..,TalkTime=0}] run tp @e[x=-501,y=118,z=1238,dy=3,type=pixelmon:statue] -230 88 -1242
+execute as @e[x=-233,y=100,z=-1225,dx=4,dy=5,scores={Hoopa=0,PokemonLeague=1..,TalkTime=0}] run tp @e[x=-230,y=87,z=-1242,dy=3,type=pixelmon:npc_chatting] -501 119 1238
 
 scoreboard players set @a[x=-233,y=100,z=-1225,dx=4,dy=5,tag=Dialogue82] DialogueTrigger 83
 scoreboard players set @a[x=-233,y=100,z=-1225,dx=4,dy=5,scores={TalkTime=0}] click 1
@@ -1403,15 +1403,15 @@ tp @a[x=-490,y=102,z=226,dx=5,dy=5] -353 101 -311 180 ~
 
 
 #Lumiose City Lumiose Press
-execute as @a[x=-323,y=101,z=-320,dx=3,dy=5,dz=2,tag=VolcanionCatch] run tp @e[x=-442,y=100,z=210,dy=3,nbt=!{pixelmon:npc_chatting}] -504 211 1286
-execute as @a[x=-323,y=101,z=-320,dx=3,dy=5,dz=2,tag=VolcanionCatch] run tp @e[x=-504,y=210,z=1288,dy=3,nbt=!{pixelmon:npc_chatting}] -443 101 210
-execute as @a[x=-323,y=101,z=-320,dx=3,dy=5,dz=2,tag=VolcanionCatch] run tp @e[x=-504,y=210,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] -444 101 206
+execute as @a[x=-323,y=101,z=-320,dx=3,dy=5,dz=2,tag=VolcanionCatch] run tp @e[x=-442,y=100,z=210,dy=3,type=pixelmon:npc_chatting] -504 211 1286
+execute as @a[x=-323,y=101,z=-320,dx=3,dy=5,dz=2,tag=VolcanionCatch] run tp @e[x=-504,y=210,z=1288,dy=3,type=pixelmon:npc_chatting] -443 101 210
+execute as @a[x=-323,y=101,z=-320,dx=3,dy=5,dz=2,tag=VolcanionCatch] run tp @e[x=-504,y=210,z=1284,dy=3,type=pixelmon:npc_chatting] -444 101 206
 tp @a[x=-323,y=101,z=-320,dx=3,dy=5,dz=2] -449 101 225 180 ~
 
 
-execute as @a[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch,scores={TalkTime=0}] run tp @e[x=-443,y=100,z=210,dy=3,nbt=!{pixelmon:npc_chatting}] -504 211 1288
-execute as @a[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch,scores={TalkTime=0}] run tp @e[x=-504,y=210,z=1286,dy=3,nbt=!{pixelmon:npc_chatting}] -442 101 210
-execute as @a[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch,scores={TalkTime=0}] run tp @e[x=-444,y=100,z=206,dy=3,nbt=!{pixelmon:npc_chatting}] -504 211 1284
+execute as @a[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch,scores={TalkTime=0}] run tp @e[x=-443,y=100,z=210,dy=3,type=pixelmon:npc_chatting] -504 211 1288
+execute as @a[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch,scores={TalkTime=0}] run tp @e[x=-504,y=210,z=1286,dy=3,type=pixelmon:npc_chatting] -442 101 210
+execute as @a[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch,scores={TalkTime=0}] run tp @e[x=-444,y=100,z=206,dy=3,type=pixelmon:npc_chatting] -504 211 1284
 tp @a[x=-451,y=101,z=226,dx=5,dy=5,scores={TalkTime=0}] -322 101 -321 180 ~
 
 #Lumiose City Shutterbug Cafe
@@ -1853,7 +1853,7 @@ tp @a[x=-1773,y=30,z=2050,dy=5] -1925 32 2153 -90 ~
 
 
 #Volcanion Power Plant Chamber
-execute as @a[x=-821,y=105,z=-672,dx=1,dy=2,dz=1,scores={Volcanion=0}] run tp @e[x=-501,y=136,z=1238,dy=4,nbt=!{pixelmon:statue}] -859 61 -690
+execute as @a[x=-821,y=105,z=-672,dx=1,dy=2,dz=1,scores={Volcanion=0}] run tp @e[x=-501,y=136,z=1238,dy=4,type=pixelmon:statue] -859 61 -690
 scoreboard players set @a[x=-821,y=105,z=-672,dx=1,dy=2,dz=1] click1
 tp @a[x=-821,y=105,z=-672,dx=1,dy=2,dz=1] -659 51 -703 90 ~
 

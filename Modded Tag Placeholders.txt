@@ -1,4 +1,4 @@
-nbt=!{pixelmon:statue}
+type=pixelmon:statue
 
 becomes
 
@@ -8,7 +8,7 @@ type=pixelmon:statue
 
 
 
-nbt=!{pixelmon:npc_trainer}
+type=pixelmon:npc_trainer
 
 becomes
 
@@ -18,7 +18,7 @@ type=pixelmon:npc_trainer
 
 
 
-nbt=!{pixelmon:npc_chatting}
+type=pixelmon:npc_chatting
 
 becomes
 
@@ -27,7 +27,7 @@ type=pixelmon:npc_chatting
 
 
 
-nbt=!{pixelmon:bike}
+type=pixelmon:bike
 
 becomes
 
@@ -37,7 +37,7 @@ type=pixelmon:bike
 
 
 
-nbt=!{pixelmon:pixelmon}
+type=pixelmon:pixelmon
 
 becomes
 
@@ -48,7 +48,7 @@ type=pixelmon:pixelmon
 
 
 
-nbt=!{pixelmon:npc_shopkeeper}
+type=pixelmon:npc_shopkeeper
 
 becomes
 
@@ -58,7 +58,7 @@ type=pixelmon:npc_shopkeeper
 
 
 
-nbt=!{pixelmon:npc_trader}
+type=pixelmon:npc_trader
 
 becomes
 

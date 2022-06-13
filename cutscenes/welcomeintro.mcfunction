@@ -325,12 +325,12 @@ tp @s[scores={TalkTime=281..430}] -1008.5 101 1462.5 -180 5
 
 #Pans over to Skiddo's view
 ###execute as @s[scores={TalkTime=473}] run summon pixelmon:empty_pokeball -1009 102.5 1457 {Motion:[-0.4415312881559602d,-0.10030448410882663d,0.7322497531618284d],shake:0b,xTile:-1,UUIDLeast:-5641490288952635308L,inGround:0b,Invulnerable:0b,Air:300s,OnGround:0b,Dimension:0,PortalCooldown:0,Rotation:[107.359215f,2.301107f],UpdateBlocked:0b,FallDistance:0.0f,inTile:"minecraft:air",UUIDMost:-8701294600814571740L,ownerName:"Jond",Pos:[-726.0530610355996d,102.68774595421591d,1285.1004139254171d],zTile:-1,Fire:-1s,yTile:-1}
-execute as @s[scores={TalkTime=480}] run tp @e[x=-1016,y=126,z=1458,dy=3,nbt=!{pixelmon:statue}] -1012 101 1461
+execute as @s[scores={TalkTime=480}] run tp @e[x=-1016,y=126,z=1458,dy=3,type=pixelmon:statue] -1012 101 1461
 execute as @s[scores={TalkTime=480}] run particle cloud -1012 101 1461 2 2 2 1 100
 playsound pixelmon:pixelmon.block.pokeballrelease ambient @s[scores={TalkTime=480}] ~ ~ ~ 10 1 1
 
-###execute as @s[scores={TalkTime=431}] run replaceitem entity @e[x=-1009,y=100,z=1457,dy=3,nbt=!{pixelmon:npc_chatting}] weapon.mainhand pixelmon:poke_ball
-execute as @s[scores={TalkTime=470}] run replaceitem entity @e[x=-1009,y=100,z=1457,dy=3,nbt=!{pixelmon:npc_chatting}] weapon.mainhand minecraft:air
+###execute as @s[scores={TalkTime=431}] run replaceitem entity @e[x=-1009,y=100,z=1457,dy=3,type=pixelmon:npc_chatting] weapon.mainhand pixelmon:poke_ball
+execute as @s[scores={TalkTime=470}] run replaceitem entity @e[x=-1009,y=100,z=1457,dy=3,type=pixelmon:npc_chatting] weapon.mainhand minecraft:air
 
 
 #-1008.5 101 1462.5 -180 5
@@ -802,7 +802,7 @@ tp @s[scores={TalkTime=1060}] -1019.981667 101 1464.000 -180 5
 #-1020 101 1464.000 90 5
 
 #tps in second Sycamore
-execute as @s[scores={TalkTime=1060}] run tp @e[x=-1014,y=126,z=1462,dy=3,nbt=!{pixelmon:npc_chatting}] -1022 101 1464.0
+execute as @s[scores={TalkTime=1060}] run tp @e[x=-1014,y=126,z=1462,dy=3,type=pixelmon:npc_chatting] -1022 101 1464.0
 
 tp @s[scores={TalkTime=1061}] -1020.000 101 1464.000 180 5
 tp @s[scores={TalkTime=1062}] -1020.000 101 1464.000 178.875 5
@@ -888,7 +888,7 @@ tp @s[scores={TalkTime=1140}] -1020.000 101 1464.000 91.125 5
 tp @s[scores={TalkTime=1141..1449}] -1020.000 101 1464.000 90 5
 
 #tps in third Sycamore at door
-execute as @s[scores={TalkTime=1445}] run tp @e[x=-1010,y=126,z=1449,dy=3,nbt=!{pixelmon:npc_chatting}] -1010 101 1442
+execute as @s[scores={TalkTime=1445}] run tp @e[x=-1010,y=126,z=1449,dy=3,type=pixelmon:npc_chatting] -1010 101 1442
 execute as @s[scores={TalkTime=1445}] run clone -1019 129 1439 -1015 133 1440 -1011 100 1434
 
 
@@ -1328,16 +1328,16 @@ tp @s[scores={TalkTime=1868}] -1009 101 1435.214118 180 5
 
 
 #tp Skiddo out
-execute as @s[scores={TalkTime=1874}] run tp @e[x=-1012,y=100,z=1461,dy=3,nbt=!{pixelmon:statue}] -1016 127 1458
+execute as @s[scores={TalkTime=1874}] run tp @e[x=-1012,y=100,z=1461,dy=3,type=pixelmon:statue] -1016 127 1458
 
 execute as @s[scores={TalkTime=1874}] run kill @e[x=-1018,y=102,z=1463,distance=..4,type=item_frame]
 execute as @s[scores={TalkTime=1874}] run kill @e[x=-1018,y=102,z=1463,distance=..4,type=item]
 execute as @s[scores={TalkTime=1874}] run fill -1015 101 1462 -1021 103 1462 minecraft:air
 
 #tp second sycamore out
-execute as @s[scores={TalkTime=1874}] run tp @e[x=-1022,y=100,z=1465,distance=..3,nbt=!{pixelmon:npc_chatting}] -1014 127 1462
+execute as @s[scores={TalkTime=1874}] run tp @e[x=-1022,y=100,z=1465,distance=..3,type=pixelmon:npc_chatting] -1014 127 1462
 
 
 #tps third Sycamore out
 execute as @s[scores={TalkTime=1874}] run fill -1011 100 1434 -1007 104 1435 air
-execute as @s[scores={TalkTime=1874}] run tp @e[x=-1010,y=100,z=1442,dy=3,nbt=!{pixelmon:npc_chatting}] -1010 127 1449
+execute as @s[scores={TalkTime=1874}] run tp @e[x=-1010,y=100,z=1442,dy=3,type=pixelmon:npc_chatting] -1010 127 1449

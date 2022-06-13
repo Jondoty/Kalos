@@ -38,25 +38,25 @@
 #x=-1589,y=60,z=-140,dx=104,dy=19,dz=97
 
 #Baron/Baroness trainers only
-#x=-1561,y=52,z=-85,dx=30,dy=3,nbt=!{pixelmon:npc_trainer}
+#x=-1561,y=52,z=-85,dx=30,dy=3,type=pixelmon:npc_trainer
 
 #Viscount/Viscountess trainers only
-#x=-1561,y=52,z=-79,dx=30,dy=3,nbt=!{pixelmon:npc_trainer}
+#x=-1561,y=52,z=-79,dx=30,dy=3,type=pixelmon:npc_trainer
 
 #Countress/Earl trainers only
-#x=-1561,y=52,z=-73,dx=30,dy=3,nbt=!{pixelmon:npc_trainer}
+#x=-1561,y=52,z=-73,dx=30,dy=3,type=pixelmon:npc_trainer
 
 #Marquises/Marchioness trainers only
-#x=-1561,y=52,z=-67,dx=30,dy=3,nbt=!{pixelmon:npc_trainer}
+#x=-1561,y=52,z=-67,dx=30,dy=3,type=pixelmon:npc_trainer
 
 #Marquises/Marchioness Gym Leaders
-#x=-1561,y=52,z=-61,dx=30,dy=3,nbt=!{pixelmon:npc_trainer}
+#x=-1561,y=52,z=-61,dx=30,dy=3,type=pixelmon:npc_trainer
 
 #Duke/Duchess trainers only
-#x=-1561,y=52,z=-55,dx=30,dy=3,dz=7,nbt=!{pixelmon:npc_trainer}
+#x=-1561,y=52,z=-55,dx=30,dy=3,dz=7,type=pixelmon:npc_trainer
 
 #Duke/Duchess gym leaders/Diantha, when champion.
-#x=-1561,y=52,z=-49,dx=30,dy=3,nbt=!{pixelmon:npc_trainer}
+#x=-1561,y=52,z=-49,dx=30,dy=3,type=pixelmon:npc_trainer
 
 #Armor stand to manage the Battle Chateau
 #x=-687,y=100,z=1384,dy=3,type=armor_stand
@@ -77,19 +77,19 @@
 #Adds Skips for when necessary
 
 #Adds skips to trainers next to Pokemon for no mid-battle tps
-execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,nbt=!{pixelmon:pixelmon}] run tag @e[distance=..5,nbt=!{pixelmon:npc_trainer}] add Skip
+execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,type=pixelmon:pixelmon] run tag @e[distance=..5,type=pixelmon:npc_trainer] add Skip
 
 #Adds skips to armor stands with trainers standing on them
-execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,nbt=!{pixelmon:npc_trainer}] run tag @e[distance=..2,name=trainer,type=armor_stand] add Skip
+execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,type=pixelmon:npc_trainer] run tag @e[distance=..2,name=trainer,type=armor_stand] add Skip
 
 #------------
 
 #Return-tps all trainers who aren't skipped via Pokemon
-execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,nbt=!{pixelmon:npc_trainer},tag=!Skip] run function kalos:triggers/chateaureturntp
+execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,type=pixelmon:npc_trainer,tag=!Skip] run function kalos:triggers/chateaureturntp
 
 #------------
 #Counts current trainers to not go over
-#execute @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,nbt=!{pixelmon:npc_trainer}] ~ ~ ~ scoreboard players add @e[x=-687,y=100,z=1384,dy=3,type=armor_stand] TrainerCount 1
+#execute @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,type=pixelmon:npc_trainer] ~ ~ ~ scoreboard players add @e[x=-687,y=100,z=1384,dy=3,type=armor_stand] TrainerCount 1
 
 #------------
 
@@ -158,59 +158,59 @@ scoreboard players remove @e[x=-1589,y=53,z=-140,dx=104,dy=19,dz=97,scores={Chat
 #tps in new trainers depending on player's rank
 
 #Baron/Baroness
-execute as @a[limit=1,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=1..5}] run tp @e[limit=1,sort=random,x=-1561,y=52,z=-85,dx=30,dy=3,nbt=!{pixelmon:npc_trainer},scores={ChateauCD=0}] @e[limit=1,sort=random,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,type=armor_stand,tag=!Skip]
+execute as @a[limit=1,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=1..5}] run tp @e[limit=1,sort=random,x=-1561,y=52,z=-85,dx=30,dy=3,type=pixelmon:npc_trainer,scores={ChateauCD=0}] @e[limit=1,sort=random,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,type=armor_stand,tag=!Skip]
 
 #Viscount/Viscountess
-execute as @a[limit=1,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=6..30}] run tp @e[limit=1,sort=random,x=-1561,y=52,z=-85,dx=30,dy=3,dz=6,nbt=!{pixelmon:npc_trainer},scores={ChateauCD=0}] @e[limit=1,sort=random,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,type=armor_stand,tag=!Skip]
+execute as @a[limit=1,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=6..30}] run tp @e[limit=1,sort=random,x=-1561,y=52,z=-85,dx=30,dy=3,dz=6,type=pixelmon:npc_trainer,scores={ChateauCD=0}] @e[limit=1,sort=random,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,type=armor_stand,tag=!Skip]
 
 
 
 #Marquises/Marchioness
-execute as @a[limit=1,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=31..98}] run tp @e[limit=1,sort=random,x=-1561,y=52,z=-85,dx=30,dy=3,dz=12,nbt=!{pixelmon:npc_trainer},scores={ChateauCD=0}] @e[limit=1,sort=random,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,type=armor_stand,tag=!Skip]
+execute as @a[limit=1,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=31..98}] run tp @e[limit=1,sort=random,x=-1561,y=52,z=-85,dx=30,dy=3,dz=12,type=pixelmon:npc_trainer,scores={ChateauCD=0}] @e[limit=1,sort=random,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,type=armor_stand,tag=!Skip]
 
 #Duke/Duchess
-execute as @a[limit=1,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=99..295}] run tp @e[limit=1,sort=random,x=-1561,y=52,z=-85,dx=30,dy=3,dz=18,nbt=!{pixelmon:npc_trainer},scores={ChateauCD=0}] @e[limit=1,sort=random,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,type=armor_stand,tag=!Skip]
+execute as @a[limit=1,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=99..295}] run tp @e[limit=1,sort=random,x=-1561,y=52,z=-85,dx=30,dy=3,dz=18,type=pixelmon:npc_trainer,scores={ChateauCD=0}] @e[limit=1,sort=random,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,type=armor_stand,tag=!Skip]
 
 #Duke/Duchess gym leaders without Diantha
-execute as @a[limit=1,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=296..},tag=!GrandDuke] run tp @e[limit=1,sort=random,x=-1560,y=52,z=-49,dx=30,dy=3,nbt=!{pixelmon:npc_trainer},name=!Diantha,scores={ChateauCD=0}] @e[limit=1,sort=random,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,type=armor_stand,tag=!Skip]
+execute as @a[limit=1,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=296..},tag=!GrandDuke] run tp @e[limit=1,sort=random,x=-1560,y=52,z=-49,dx=30,dy=3,type=pixelmon:npc_trainer,name=!Diantha,scores={ChateauCD=0}] @e[limit=1,sort=random,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,type=armor_stand,tag=!Skip]
 
 #With Diantha, after player has beaten other royal members
-execute as @a[limit=1,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=296..,PokemonLeague=1..},tag=!GrandDuke] run execute as @s[tag=GDTrainer1] run execute as @s[tag=GDTrainer2] run execute as @s[tag=GDTrainer3] run execute as @s[tag=GDTrainer4] run execute as @s[tag=GDTrainer5] run execute as @s[tag=GDTrainer6] run execute as @s[tag=GDTrainer7] run execute as @s[tag=GDTrainer8] run execute as @s[tag=GDTrainer9] run execute as @s[tag=GDTrainer10] run execute as @s[tag=GDTrainer11] run execute as @s[tag=GDTrainer12] run tp @e[x=-1535,y=51,z=-49,dy=3,nbt=!{pixelmon:npc_trainer}] @e[limit=1,sort=random,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,type=armor_stand,tag=!Skip]
+execute as @a[limit=1,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=296..,PokemonLeague=1..},tag=!GrandDuke] run execute as @s[tag=GDTrainer1] run execute as @s[tag=GDTrainer2] run execute as @s[tag=GDTrainer3] run execute as @s[tag=GDTrainer4] run execute as @s[tag=GDTrainer5] run execute as @s[tag=GDTrainer6] run execute as @s[tag=GDTrainer7] run execute as @s[tag=GDTrainer8] run execute as @s[tag=GDTrainer9] run execute as @s[tag=GDTrainer10] run execute as @s[tag=GDTrainer11] run execute as @s[tag=GDTrainer12] run tp @e[x=-1535,y=51,z=-49,dy=3,type=pixelmon:npc_trainer] @e[limit=1,sort=random,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,type=armor_stand,tag=!Skip]
 
 
 #Everything (active after player becomes the Grant Duke/Duchess)
-execute as @a[limit=1,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=296..},tag=GrandDuke] run tp @e[limit=1,sort=random,x=-1560,y=52,z=-86,dx=28,dy=3,dz=38,nbt=!{pixelmon:npc_trainer}] @e[limit=1,sort=random,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,type=armor_stand,tag=!Skip]
+execute as @a[limit=1,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=296..},tag=GrandDuke] run tp @e[limit=1,sort=random,x=-1560,y=52,z=-86,dx=28,dy=3,dz=38,type=pixelmon:npc_trainer] @e[limit=1,sort=random,x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,type=armor_stand,tag=!Skip]
 
 
 #Tags armor stand for which trainer is spawning in
-execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,nbt=!{pixelmon:npc_trainer},tag=!Skip,tag=Baron] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Baron"}
-execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,nbt=!{pixelmon:npc_trainer},tag=!Skip,tag=Baroness] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Baroness"}
+execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,type=pixelmon:npc_trainer,tag=!Skip,tag=Baron] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Baron"}
+execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,type=pixelmon:npc_trainer,tag=!Skip,tag=Baroness] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Baroness"}
 
-execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,nbt=!{pixelmon:npc_trainer},tag=!Skip,tag=Viscount] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Viscount"}
-execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,nbt=!{pixelmon:npc_trainer},tag=!Skip,tag=Viscountess] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Viscountess"}
+execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,type=pixelmon:npc_trainer,tag=!Skip,tag=Viscount] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Viscount"}
+execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,type=pixelmon:npc_trainer,tag=!Skip,tag=Viscountess] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Viscountess"}
 
-execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,nbt=!{pixelmon:npc_trainer},tag=!Skip,tag=Earl] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Earl"}
-execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,nbt=!{pixelmon:npc_trainer},tag=!Skip,tag=Countess] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Countess"}
+execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,type=pixelmon:npc_trainer,tag=!Skip,tag=Earl] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Earl"}
+execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,type=pixelmon:npc_trainer,tag=!Skip,tag=Countess] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Countess"}
 
-execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,nbt=!{pixelmon:npc_trainer},tag=!Skip,tag=Marquises] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Marquises"}
-execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,nbt=!{pixelmon:npc_trainer},tag=!Skip,tag=Marchioness] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Marchioness"}
+execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,type=pixelmon:npc_trainer,tag=!Skip,tag=Marquises] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Marquises"}
+execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,type=pixelmon:npc_trainer,tag=!Skip,tag=Marchioness] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Marchioness"}
 
-execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,nbt=!{pixelmon:npc_trainer},tag=!Skip,tag=Duke] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Duke"}
-execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,nbt=!{pixelmon:npc_trainer},tag=!Skip,tag=Duchess] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Duchess"}
+execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,type=pixelmon:npc_trainer,tag=!Skip,tag=Duke] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Duke"}
+execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,type=pixelmon:npc_trainer,tag=!Skip,tag=Duchess] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Duchess"}
 
-execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,nbt=!{pixelmon:npc_trainer},tag=!Skip,tag=GrandDuchess] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Grand Duchess"}
+execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,type=pixelmon:npc_trainer,tag=!Skip,tag=GrandDuchess] run data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Grand Duchess"}
 
 
 #Tags the location of the trainer depending on which armor stand they spawn to
-execute as @e[x=-1569,y=64,z=-92,dx=9,dy=5,dz=33,limit=1,nbt=!{pixelmon:npc_trainer},tag=!Skip] run data modify entity @e[limit=1,x=-685,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"West hallway"}
-execute as @e[x=-1505,y=63,z=-94,dx=10,dy=5,dz=35,limit=1,nbt=!{pixelmon:npc_trainer},tag=!Skip] run data modify entity @e[limit=1,x=-685,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"East hallway"}
-execute as @e[x=-1512,y=65,z=-132,dx=25,dy=5,dz=27,limit=1,nbt=!{pixelmon:npc_trainer},tag=!Skip] run data modify entity @e[limit=1,x=-685,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"back room"}
-execute as @e[x=-1547,y=64,z=-78,dx=28,dy=5,dz=10,limit=1,nbt=!{pixelmon:npc_trainer},tag=!Skip] run data modify entity @e[limit=1,x=-685,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"front entrance"}
-execute as @e[x=-1587,y=65,z=-134,dx=25,dy=5,dz=26,limit=1,nbt=!{pixelmon:npc_trainer},tag=!Skip] run data modify entity @e[limit=1,x=-685,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"left room"}
-execute as @e[x=-1544,y=65,z=-134,dx=25,dy=5,dz=26,limit=1,nbt=!{pixelmon:npc_trainer},tag=!Skip] run data modify entity @e[limit=1,x=-685,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"right room"}
+execute as @e[x=-1569,y=64,z=-92,dx=9,dy=5,dz=33,limit=1,type=pixelmon:npc_trainer,tag=!Skip] run data modify entity @e[limit=1,x=-685,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"West hallway"}
+execute as @e[x=-1505,y=63,z=-94,dx=10,dy=5,dz=35,limit=1,type=pixelmon:npc_trainer,tag=!Skip] run data modify entity @e[limit=1,x=-685,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"East hallway"}
+execute as @e[x=-1512,y=65,z=-132,dx=25,dy=5,dz=27,limit=1,type=pixelmon:npc_trainer,tag=!Skip] run data modify entity @e[limit=1,x=-685,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"back room"}
+execute as @e[x=-1547,y=64,z=-78,dx=28,dy=5,dz=10,limit=1,type=pixelmon:npc_trainer,tag=!Skip] run data modify entity @e[limit=1,x=-685,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"front entrance"}
+execute as @e[x=-1587,y=65,z=-134,dx=25,dy=5,dz=26,limit=1,type=pixelmon:npc_trainer,tag=!Skip] run data modify entity @e[limit=1,x=-685,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"left room"}
+execute as @e[x=-1544,y=65,z=-134,dx=25,dy=5,dz=26,limit=1,type=pixelmon:npc_trainer,tag=!Skip] run data modify entity @e[limit=1,x=-685,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"right room"}
 
 
-tellraw @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=1..}] ["",{"text":"Now entering, "},{"selector":"@e[x=-687,y=100,z=1384,dy=3,type=armor_stand]"},{"text":" "},{"selector":"@e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,nbt=!{pixelmon:npc_trainer},tag=!Skip]"},{"text":", in the "},{"selector":"@e[x=-685,y=100,z=1384,dy=3,type=armor_stand]"},{"text":"."}]
+tellraw @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=1..}] ["",{"text":"Now entering, "},{"selector":"@e[x=-687,y=100,z=1384,dy=3,type=armor_stand]"},{"text":" "},{"selector":"@e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1,type=pixelmon:npc_trainer,tag=!Skip]"},{"text":", in the "},{"selector":"@e[x=-685,y=100,z=1384,dy=3,type=armor_stand]"},{"text":"."}]
 
 #------------
 
@@ -219,23 +219,23 @@ tellraw @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=1..}] ["",
 #Swaps out the Writ Shopkeeper to the rank of the closest player
 
 #tps out
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau] run tp @e[x=-1525,y=64,z=-58,dy=3,nbt=!{pixelmon:npc_shopkeeper},tag=Baroness] -1559 53 -91
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau] run tp @e[x=-1525,y=64,z=-58,dy=3,nbt=!{pixelmon:npc_shopkeeper},tag=Viscountess] -1557 53 -91
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau] run tp @e[x=-1525,y=64,z=-58,dy=3,nbt=!{pixelmon:npc_shopkeeper},tag=Countess] -1555 53 -91
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau] run tp @e[x=-1525,y=64,z=-58,dy=3,nbt=!{pixelmon:npc_shopkeeper},tag=Marchioness] -1553 53 -91
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau] run tp @e[x=-1525,y=64,z=-58,dy=3,nbt=!{pixelmon:npc_shopkeeper},tag=Duchess] -1551 53 -91
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau] run tp @e[x=-1525,y=64,z=-58,dy=3,nbt=!{pixelmon:npc_shopkeeper},tag=GrandDuchess] -1549 53 -91
+execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau] run tp @e[x=-1525,y=64,z=-58,dy=3,type=pixelmon:npc_shopkeeper,tag=Baroness] -1559 53 -91
+execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau] run tp @e[x=-1525,y=64,z=-58,dy=3,type=pixelmon:npc_shopkeeper,tag=Viscountess] -1557 53 -91
+execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau] run tp @e[x=-1525,y=64,z=-58,dy=3,type=pixelmon:npc_shopkeeper,tag=Countess] -1555 53 -91
+execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau] run tp @e[x=-1525,y=64,z=-58,dy=3,type=pixelmon:npc_shopkeeper,tag=Marchioness] -1553 53 -91
+execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau] run tp @e[x=-1525,y=64,z=-58,dy=3,type=pixelmon:npc_shopkeeper,tag=Duchess] -1551 53 -91
+execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau] run tp @e[x=-1525,y=64,z=-58,dy=3,type=pixelmon:npc_shopkeeper,tag=GrandDuchess] -1549 53 -91
 
 
 #tps in
 #-1525 65 -58
 
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau,scores={ChateauRank=0..5}] run tp @e[x=-1559,y=52,z=-91,dy=3,nbt=!{pixelmon:npc_shopkeeper}] -1525 65 -58
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau,scores={ChateauRank=6..30}] run tp @e[x=-1557,y=52,z=-91,dy=3,nbt=!{pixelmon:npc_shopkeeper}] -1525 65 -58
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau,scores={ChateauRank=31..98}] run tp @e[x=-1555,y=52,z=-91,dy=3,nbt=!{pixelmon:npc_shopkeeper}] -1525 65 -58
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau,scores={ChateauRank=99..295}] run tp @e[x=-1553,y=52,z=-91,dy=3,nbt=!{pixelmon:npc_shopkeeper}] -1525 65 -58
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau,scores={ChateauRank=296..},tag=Duke,tag=!GrandDuke] run tp @e[x=-1551,y=52,z=-91,dy=3,nbt=!{pixelmon:npc_shopkeeper}] -1525 65 -58
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau,scores={ChateauRank=296..},tag=GrandDuke] run tp @e[x=-1549,y=52,z=-91,dy=3,nbt=!{pixelmon:npc_shopkeeper}] -1525 65 -58
+execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau,scores={ChateauRank=0..5}] run tp @e[x=-1559,y=52,z=-91,dy=3,type=pixelmon:npc_shopkeeper] -1525 65 -58
+execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau,scores={ChateauRank=6..30}] run tp @e[x=-1557,y=52,z=-91,dy=3,type=pixelmon:npc_shopkeeper] -1525 65 -58
+execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau,scores={ChateauRank=31..98}] run tp @e[x=-1555,y=52,z=-91,dy=3,type=pixelmon:npc_shopkeeper] -1525 65 -58
+execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau,scores={ChateauRank=99..295}] run tp @e[x=-1553,y=52,z=-91,dy=3,type=pixelmon:npc_shopkeeper] -1525 65 -58
+execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau,scores={ChateauRank=296..},tag=Duke,tag=!GrandDuke] run tp @e[x=-1551,y=52,z=-91,dy=3,type=pixelmon:npc_shopkeeper] -1525 65 -58
+execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau,scores={ChateauRank=296..},tag=GrandDuke] run tp @e[x=-1549,y=52,z=-91,dy=3,type=pixelmon:npc_shopkeeper] -1525 65 -58
 
 
 

@@ -6,7 +6,7 @@
 #scoreboard objectives add RibbonApplyCalc dummy
 
 #To apply a ribbon, give a Pokemon a specific score for a corresponding ribbon
-#scoreboard players set @e[nbt=!{pixelmon:pixelmon},r=10] RibbonApply 11
+#scoreboard players set @e[type=pixelmon:pixelmon,r=10] RibbonApply 11
 
 #1 -	KALOS_CHAMPION
 #2 -	TRAINING
@@ -25,23 +25,23 @@
 
 
 #Sets to 0 if score present before
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApplyCalc=1..}] RibbonApplyCalc 0
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApplyCalc=1..}] RibbonApplyCalc 0
 
 #Marks Ribbons Pokemon currently has
-tag @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},nbt={ribbons:["KALOS_CHAMPION"]}] add Ribbon1
-tag @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},nbt={ribbons:["TRAINING"]}] add Ribbon2
-tag @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},nbt={ribbons:["SKILLFUL_BATTLER"]}] add Ribbon3
-tag @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},nbt={ribbons:["EXPERT_BATTLER"]}] add Ribbon4
-tag @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},nbt={ribbons:["BEST_FRIENDS"]}] add Ribbon5
-tag @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},nbt={ribbons:["EFFORT"]}] add Ribbon6
-tag @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},nbt={ribbons:["FOOTPRINT"]}] add Ribbon7
-tag @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},nbt={ribbons:["ALERT"]}] add Ribbon8
-tag @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},nbt={ribbons:["SHOCK"]}] add Ribbon9
-tag @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},nbt={ribbons:["DOWNCAST"]}] add Ribbon10
-tag @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},nbt={ribbons:["CARELESS"]}] add Ribbon11
-tag @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},nbt={ribbons:["RELAX"]}] add Ribbon12
-tag @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},nbt={ribbons:["SNOOZE"]}] add Ribbon13
-tag @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},nbt={ribbons:["SMILE"]}] add Ribbon14
+tag @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},nbt={ribbons:["KALOS_CHAMPION"]}] add Ribbon1
+tag @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},nbt={ribbons:["TRAINING"]}] add Ribbon2
+tag @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},nbt={ribbons:["SKILLFUL_BATTLER"]}] add Ribbon3
+tag @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},nbt={ribbons:["EXPERT_BATTLER"]}] add Ribbon4
+tag @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},nbt={ribbons:["BEST_FRIENDS"]}] add Ribbon5
+tag @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},nbt={ribbons:["EFFORT"]}] add Ribbon6
+tag @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},nbt={ribbons:["FOOTPRINT"]}] add Ribbon7
+tag @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},nbt={ribbons:["ALERT"]}] add Ribbon8
+tag @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},nbt={ribbons:["SHOCK"]}] add Ribbon9
+tag @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},nbt={ribbons:["DOWNCAST"]}] add Ribbon10
+tag @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},nbt={ribbons:["CARELESS"]}] add Ribbon11
+tag @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},nbt={ribbons:["RELAX"]}] add Ribbon12
+tag @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},nbt={ribbons:["SNOOZE"]}] add Ribbon13
+tag @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},nbt={ribbons:["SMILE"]}] add Ribbon14
 
 
 #Calculates the Pokemon's new Ribbon score, with ribbon being applied
@@ -49,36 +49,36 @@ tag @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},nbt={ribbons:["SMILE"]}
 #Logically, each ribbon is assigned a score using power of 2 and when added creates a unique number for each possible combination of ribbons Pokemon may already have plus the target ribbon
 
 #Ribbons that the Pokemon is obtaining. Must not already have to be under the !Ribbon criteria
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1},tag=!Ribbon1] RibbonApplyCalc 1
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=2},tag=!Ribbon2] RibbonApplyCalc 2
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=3},tag=!Ribbon3] RibbonApplyCalc 4
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=4},tag=!Ribbon4] RibbonApplyCalc 8
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=5},tag=!Ribbon5] RibbonApplyCalc 16
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=6},tag=!Ribbon6] RibbonApplyCalc 32
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=7},tag=!Ribbon7] RibbonApplyCalc 64
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=8},tag=!Ribbon8] RibbonApplyCalc 128
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=9},tag=!Ribbon9] RibbonApplyCalc 256
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=10},tag=!Ribbon10] RibbonApplyCalc 512
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=11},tag=!Ribbon11] RibbonApplyCalc 1024
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=12},tag=!Ribbon12] RibbonApplyCalc 2048
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=13},tag=!Ribbon13] RibbonApplyCalc 4096
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=14},tag=!Ribbon14] RibbonApplyCalc 8192
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=1},tag=!Ribbon1] RibbonApplyCalc 1
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=2},tag=!Ribbon2] RibbonApplyCalc 2
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=3},tag=!Ribbon3] RibbonApplyCalc 4
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=4},tag=!Ribbon4] RibbonApplyCalc 8
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=5},tag=!Ribbon5] RibbonApplyCalc 16
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=6},tag=!Ribbon6] RibbonApplyCalc 32
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=7},tag=!Ribbon7] RibbonApplyCalc 64
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=8},tag=!Ribbon8] RibbonApplyCalc 128
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=9},tag=!Ribbon9] RibbonApplyCalc 256
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=10},tag=!Ribbon10] RibbonApplyCalc 512
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=11},tag=!Ribbon11] RibbonApplyCalc 1024
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=12},tag=!Ribbon12] RibbonApplyCalc 2048
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=13},tag=!Ribbon13] RibbonApplyCalc 4096
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=14},tag=!Ribbon14] RibbonApplyCalc 8192
 
 #Adds what Ribbons the Pokemon already has regardless of Ribbon being obtained
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},tag=Ribbon1] RibbonApplyCalc 1
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},tag=Ribbon2] RibbonApplyCalc 2
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},tag=Ribbon3] RibbonApplyCalc 4
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},tag=Ribbon4] RibbonApplyCalc 8
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},tag=Ribbon5] RibbonApplyCalc 16
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},tag=Ribbon6] RibbonApplyCalc 32
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},tag=Ribbon7] RibbonApplyCalc 64
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},tag=Ribbon8] RibbonApplyCalc 128
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},tag=Ribbon9] RibbonApplyCalc 256
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},tag=Ribbon10] RibbonApplyCalc 512
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},tag=Ribbon11] RibbonApplyCalc 1024
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},tag=Ribbon12] RibbonApplyCalc 2048
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},tag=Ribbon13] RibbonApplyCalc 4096
-scoreboard players add @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..},tag=Ribbon14] RibbonApplyCalc 8192
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},tag=Ribbon1] RibbonApplyCalc 1
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},tag=Ribbon2] RibbonApplyCalc 2
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},tag=Ribbon3] RibbonApplyCalc 4
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},tag=Ribbon4] RibbonApplyCalc 8
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},tag=Ribbon5] RibbonApplyCalc 16
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},tag=Ribbon6] RibbonApplyCalc 32
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},tag=Ribbon7] RibbonApplyCalc 64
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},tag=Ribbon8] RibbonApplyCalc 128
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},tag=Ribbon9] RibbonApplyCalc 256
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},tag=Ribbon10] RibbonApplyCalc 512
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},tag=Ribbon11] RibbonApplyCalc 1024
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},tag=Ribbon12] RibbonApplyCalc 2048
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},tag=Ribbon13] RibbonApplyCalc 4096
+scoreboard players add @e[type=pixelmon:pixelmon,scores={RibbonApply=1..},tag=Ribbon14] RibbonApplyCalc 8192
 
 
 
@@ -16477,19 +16477,19 @@ data modify entity @e[limit=1,scores={RibbonApply=1..,RibbonApplyCalc=16382}] {r
 data modify entity @e[limit=1,scores={RibbonApply=1..,RibbonApplyCalc=16383}] {ribbons:["KALOS_CHAMPION", "TRAINING", "SKILLFUL_BATTLER", "EXPERT_BATTLER", "BEST_FRIENDS", "EFFORT", "FOOTPRINT", "ALERT", "SHOCK", "DOWNCAST", "CARELESS", "RELAX", "SNOOZE", "SMILE"]}
 
 
-execute at @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..}] run tellraw @a[distance=..10] ["",{"selector":"@e[nbt=!{pixelmon:pixelmon},score_RibbonApply_min=1]","italic":true,"color":"gray"},{"text":" was given a ribbon! You may need to relog to see it!","italic":true,"color":"gray"}]
-execute at @e[nbt=!{pixelmon:pixelmon},scores={RibbonApply=1..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @a[distance=..10] ~ ~ ~ 1 1
+execute at @e[type=pixelmon:pixelmon,scores={RibbonApply=1..}] run tellraw @a[distance=..10] ["",{"selector":"@e[type=pixelmon:pixelmon,score_RibbonApply_min=1]","italic":true,"color":"gray"},{"text":" was given a ribbon! You may need to relog to see it!","italic":true,"color":"gray"}]
+execute at @e[type=pixelmon:pixelmon,scores={RibbonApply=1..}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @a[distance=..10] ~ ~ ~ 1 1
 
 
 #Footprint Ribbon output
-execute at @e[x=-1700,y=80,z=-827,distance=..10,nbt=!{pixelmon:pixelmon},scores={Temp=70..}] run tellraw @a[x=-1700,y=80,z=-827,distance=..10] {"text":"<Ace Trainer> You walk to raise your Pokémon! This is a token of gratitude for showing me your great love for your Pokémon!"}
+execute at @e[x=-1700,y=80,z=-827,distance=..10,type=pixelmon:pixelmon,scores={Temp=70..}] run tellraw @a[x=-1700,y=80,z=-827,distance=..10] {"text":"<Ace Trainer> You walk to raise your Pokémon! This is a token of gratitude for showing me your great love for your Pokémon!"}
 
 #Bonnie's Friendship Ribbon
-execute at @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,nbt=!{pixelmon:pixelmon},scores={Temp=255}] run tellraw @a[distance=..10] {"text":"<Bonnie> Really, really good friends! I can tell you’ve poured your love into it so much! How wonderful!"}
+execute at @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,type=pixelmon:pixelmon,scores={Temp=255}] run tellraw @a[distance=..10] {"text":"<Bonnie> Really, really good friends! I can tell you’ve poured your love into it so much! How wonderful!"}
 
 
 #Effort Value Ribbon Success
-execute at @e[x=-201,y=89,z=-1520,distance=..10,nbt=!{pixelmon:pixelmon},scores={Temp=510}] run tellraw @a[distance=..10] {"text":"<Fan Club Head> It has made a positively tremendous effort! It would look just stunning if you gave it this Effort Ribbon to wear as a reward!"}
+execute at @e[x=-201,y=89,z=-1520,distance=..10,type=pixelmon:pixelmon,scores={Temp=510}] run tellraw @a[distance=..10] {"text":"<Fan Club Head> It has made a positively tremendous effort! It would look just stunning if you gave it this Effort Ribbon to wear as a reward!"}
 
 
 

@@ -923,20 +923,20 @@ execute as @a[scores={TalkTrigger=297,PhotoSpot=14}] run particle cloud -1892 88
 
 
 #tps in Phil depending on the player's location
-execute as @a[scores={TalkTrigger=297,PhotoSpot=1}] run tp @e[x=-477,y=100,z=1243,dy=3,nbt=!{pixelmon:npc_chatting}] 516 100 1289
-execute as @a[scores={TalkTrigger=297,PhotoSpot=2}] run tp @e[x=-477,y=100,z=1245,dy=3,nbt=!{pixelmon:npc_chatting}] -163 102 -358
-execute as @a[scores={TalkTrigger=297,PhotoSpot=3}] run tp @e[x=-477,y=100,z=1247,dy=3,nbt=!{pixelmon:npc_chatting}] -1299 100 -387
-execute as @a[scores={TalkTrigger=297,PhotoSpot=4}] run tp @e[x=-477,y=100,z=1249,dy=3,nbt=!{pixelmon:npc_chatting}] -1631 103 -51
-execute as @a[scores={TalkTrigger=297,PhotoSpot=5}] run tp @e[x=-477,y=100,z=1251,dy=3,nbt=!{pixelmon:npc_chatting}] -1073 109 2014
-execute as @a[scores={TalkTrigger=297,PhotoSpot=6}] run tp @e[x=-477,y=100,z=1253,dy=3,nbt=!{pixelmon:npc_chatting}] -353 109 2014
-execute as @a[scores={TalkTrigger=297,PhotoSpot=7}] run tp @e[x=-477,y=100,z=1255,dy=3,nbt=!{pixelmon:npc_chatting}] -2153 104 -706
-execute as @a[scores={TalkTrigger=297,PhotoSpot=8}] run tp @e[x=-473,y=100,z=1243,dy=3,nbt=!{pixelmon:npc_chatting}] -1625 76 -944
-#execute as @a[score_TalkTrigger_min=297,score_TalkTrigger=297,score_PhotoSpot_min=9,score_PhotoSpot=9] run tp @e[x=-473,y=100,z=1245,dy=3,nbt=!{pixelmon:npc_chatting}]
-execute as @a[scores={TalkTrigger=297,PhotoSpot=10}] run tp @e[x=-473,y=100,z=1247,dy=3,nbt=!{pixelmon:npc_chatting}] 655 120 -781
-execute as @a[scores={TalkTrigger=297,PhotoSpot=11}] run tp @e[x=-473,y=100,z=1249,dy=3,nbt=!{pixelmon:npc_chatting}] 1195 108 -308
-execute as @a[scores={TalkTrigger=297,PhotoSpot=12}] run tp @e[x=-473,y=100,z=1251,dy=3,nbt=!{pixelmon:npc_chatting}] 1551 115 278
-execute as @a[scores={TalkTrigger=297,PhotoSpot=13}] run tp @e[x=-473,y=100,z=1253,dy=3,nbt=!{pixelmon:npc_chatting}] 1152 102 532
-execute as @a[scores={TalkTrigger=297,PhotoSpot=14}] run tp @e[x=-473,y=100,z=1255,dy=3,nbt=!{pixelmon:npc_chatting}] -1892 88 2257
+execute as @a[scores={TalkTrigger=297,PhotoSpot=1}] run tp @e[x=-477,y=100,z=1243,dy=3,type=pixelmon:npc_chatting] 516 100 1289
+execute as @a[scores={TalkTrigger=297,PhotoSpot=2}] run tp @e[x=-477,y=100,z=1245,dy=3,type=pixelmon:npc_chatting] -163 102 -358
+execute as @a[scores={TalkTrigger=297,PhotoSpot=3}] run tp @e[x=-477,y=100,z=1247,dy=3,type=pixelmon:npc_chatting] -1299 100 -387
+execute as @a[scores={TalkTrigger=297,PhotoSpot=4}] run tp @e[x=-477,y=100,z=1249,dy=3,type=pixelmon:npc_chatting] -1631 103 -51
+execute as @a[scores={TalkTrigger=297,PhotoSpot=5}] run tp @e[x=-477,y=100,z=1251,dy=3,type=pixelmon:npc_chatting] -1073 109 2014
+execute as @a[scores={TalkTrigger=297,PhotoSpot=6}] run tp @e[x=-477,y=100,z=1253,dy=3,type=pixelmon:npc_chatting] -353 109 2014
+execute as @a[scores={TalkTrigger=297,PhotoSpot=7}] run tp @e[x=-477,y=100,z=1255,dy=3,type=pixelmon:npc_chatting] -2153 104 -706
+execute as @a[scores={TalkTrigger=297,PhotoSpot=8}] run tp @e[x=-473,y=100,z=1243,dy=3,type=pixelmon:npc_chatting] -1625 76 -944
+#execute as @a[score_TalkTrigger_min=297,score_TalkTrigger=297,score_PhotoSpot_min=9,score_PhotoSpot=9] run tp @e[x=-473,y=100,z=1245,dy=3,type=pixelmon:npc_chatting]
+execute as @a[scores={TalkTrigger=297,PhotoSpot=10}] run tp @e[x=-473,y=100,z=1247,dy=3,type=pixelmon:npc_chatting] 655 120 -781
+execute as @a[scores={TalkTrigger=297,PhotoSpot=11}] run tp @e[x=-473,y=100,z=1249,dy=3,type=pixelmon:npc_chatting] 1195 108 -308
+execute as @a[scores={TalkTrigger=297,PhotoSpot=12}] run tp @e[x=-473,y=100,z=1251,dy=3,type=pixelmon:npc_chatting] 1551 115 278
+execute as @a[scores={TalkTrigger=297,PhotoSpot=13}] run tp @e[x=-473,y=100,z=1253,dy=3,type=pixelmon:npc_chatting] 1152 102 532
+execute as @a[scores={TalkTrigger=297,PhotoSpot=14}] run tp @e[x=-473,y=100,z=1255,dy=3,type=pixelmon:npc_chatting] -1892 88 2257
 
 execute as @a[scores={TalkTrigger=297,PhotoSpot=1..}] run tellraw @s {"text":"<Phil> Hey! What do you want to do?"}
 execute as @a[scores={TalkTrigger=297,PhotoSpot=1..}] run scoreboard players enable @s TalkTrigger
@@ -977,20 +977,20 @@ execute as @a[scores={TalkTrigger=299,PhotoSpot=14}] run particle cloud -1892 88
 
 
 #tps Phil out
-execute as @a[scores={TalkTrigger=299,PhotoSpot=1}] run tp @e[x=516,y=100,z=1289,dy=3,nbt=!{pixelmon:npc_chatting}] -477 101 1243
-execute as @a[scores={TalkTrigger=299,PhotoSpot=2}] run tp @e[x=-163,y=102,z=-358,dy=3,nbt=!{pixelmon:npc_chatting}] -477 101 1245
-execute as @a[scores={TalkTrigger=299,PhotoSpot=3}] run tp @e[x=-1299,y=100,z=-387,dy=3,nbt=!{pixelmon:npc_chatting}] -477 101 1247
-execute as @a[scores={TalkTrigger=299,PhotoSpot=4}] run tp @e[x=-1631,y=103,z=-51,dy=3,nbt=!{pixelmon:npc_chatting}] -477 101 1249
-execute as @a[scores={TalkTrigger=299,PhotoSpot=5}] run tp @e[x=-1073,y=109,z=2014,dy=3,nbt=!{pixelmon:npc_chatting}] -477 101 1251
-execute as @a[scores={TalkTrigger=299,PhotoSpot=6}] run tp @e[x=-353,y=109,z=2014,dy=3,nbt=!{pixelmon:npc_chatting}] -477 101 1253
-execute as @a[scores={TalkTrigger=299,PhotoSpot=7}] run tp @e[x=-2153,y=104,z=-706,dy=3,nbt=!{pixelmon:npc_chatting}] -477 101 1255
-execute as @a[scores={TalkTrigger=299,PhotoSpot=8}] run tp @e[x=-1625,y=76,z=-944,dy=3,nbt=!{pixelmon:npc_chatting}] -473 101 1243
+execute as @a[scores={TalkTrigger=299,PhotoSpot=1}] run tp @e[x=516,y=100,z=1289,dy=3,type=pixelmon:npc_chatting] -477 101 1243
+execute as @a[scores={TalkTrigger=299,PhotoSpot=2}] run tp @e[x=-163,y=102,z=-358,dy=3,type=pixelmon:npc_chatting] -477 101 1245
+execute as @a[scores={TalkTrigger=299,PhotoSpot=3}] run tp @e[x=-1299,y=100,z=-387,dy=3,type=pixelmon:npc_chatting] -477 101 1247
+execute as @a[scores={TalkTrigger=299,PhotoSpot=4}] run tp @e[x=-1631,y=103,z=-51,dy=3,type=pixelmon:npc_chatting] -477 101 1249
+execute as @a[scores={TalkTrigger=299,PhotoSpot=5}] run tp @e[x=-1073,y=109,z=2014,dy=3,type=pixelmon:npc_chatting] -477 101 1251
+execute as @a[scores={TalkTrigger=299,PhotoSpot=6}] run tp @e[x=-353,y=109,z=2014,dy=3,type=pixelmon:npc_chatting] -477 101 1253
+execute as @a[scores={TalkTrigger=299,PhotoSpot=7}] run tp @e[x=-2153,y=104,z=-706,dy=3,type=pixelmon:npc_chatting] -477 101 1255
+execute as @a[scores={TalkTrigger=299,PhotoSpot=8}] run tp @e[x=-1625,y=76,z=-944,dy=3,type=pixelmon:npc_chatting] -473 101 1243
 #
-execute as @a[scores={TalkTrigger=299,PhotoSpot=10}] run tp @e[x=655,y=120,z=-781,dy=3,nbt=!{pixelmon:npc_chatting}] -473 101 1247
-execute as @a[scores={TalkTrigger=299,PhotoSpot=11}] run tp @e[x=1195,y=108,z=-308,dy=3,nbt=!{pixelmon:npc_chatting}] -473 101 1249
-execute as @a[scores={TalkTrigger=299,PhotoSpot=12}] run tp @e[x=1551,y=115,z=278,dy=3,nbt=!{pixelmon:npc_chatting}] -473 101 1251
-execute as @a[scores={TalkTrigger=299,PhotoSpot=13}] run tp @e[x=1152,y=102,z=532,dy=3,nbt=!{pixelmon:npc_chatting}] -473 101 1253
-execute as @a[scores={TalkTrigger=299,PhotoSpot=14}] run tp @e[x=-1892,y=88,z=2257,dy=3,nbt=!{pixelmon:npc_chatting}] -473 101 1255
+execute as @a[scores={TalkTrigger=299,PhotoSpot=10}] run tp @e[x=655,y=120,z=-781,dy=3,type=pixelmon:npc_chatting] -473 101 1247
+execute as @a[scores={TalkTrigger=299,PhotoSpot=11}] run tp @e[x=1195,y=108,z=-308,dy=3,type=pixelmon:npc_chatting] -473 101 1249
+execute as @a[scores={TalkTrigger=299,PhotoSpot=12}] run tp @e[x=1551,y=115,z=278,dy=3,type=pixelmon:npc_chatting] -473 101 1251
+execute as @a[scores={TalkTrigger=299,PhotoSpot=13}] run tp @e[x=1152,y=102,z=532,dy=3,type=pixelmon:npc_chatting] -473 101 1253
+execute as @a[scores={TalkTrigger=299,PhotoSpot=14}] run tp @e[x=-1892,y=88,z=2257,dy=3,type=pixelmon:npc_chatting] -473 101 1255
 
 #Kills armor stand
 execute as @a[scores={TalkTrigger=299,PhotoSpot=1}] run kill @e[x=513,y=100,z=1289,distance=..2,type=armor_stand]

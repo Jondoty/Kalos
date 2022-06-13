@@ -11,13 +11,13 @@
 #function custom:berrytags if @a[score_CutUse_min=1]
 
 #Shiny Particles
-#execute @e[x=-685,y=100,z=1388,dy=3,tag=Particles,type=armor_stand] ~ ~ ~ execute @e[tag=Shiny,nbt=!{pixelmon:pixelmon}] ~ ~ ~ /particle reddust ~ ~ ~ 0 10 0 1 10 force @a[r=50]
+#execute @e[x=-685,y=100,z=1388,dy=3,tag=Particles,type=armor_stand] ~ ~ ~ execute @e[tag=Shiny,type=pixelmon:pixelmon] ~ ~ ~ /particle reddust ~ ~ ~ 0 10 0 1 10 force @a[r=50]
 
 #Restaurant Battle Start Timer
 #execute @a[x=-514,y=0,z=64,dx=526,dy=256,dz=436,tag=RunTimer,score_RestaurantBattle_min=1] ~ ~ ~ function custom:restauranttimer
 
 #Mamoswine Route Removes Snow
-#execute @e[x=828,y=108,z=-318,dx=150,dy=10,dz=150,tag=Dialogue100] ~ ~-0.5 ~ /execute @e[nbt=!{pixelmon:pixelmon},name=Mamoswine,distance=..2] ~ ~ ~ /fill ~-3 108 ~-3 ~2 112 ~3 air 0 replace minecraft:snow
+#execute @e[x=828,y=108,z=-318,dx=150,dy=10,dz=150,tag=Dialogue100] ~ ~-0.5 ~ /execute @e[type=pixelmon:pixelmon,name=Mamoswine,distance=..2] ~ ~ ~ /fill ~-3 108 ~-3 ~2 112 ~3 air 0 replace minecraft:snow
 
 #---------------------------------------------------------
 #Important triggers for functions of map
@@ -44,10 +44,10 @@ execute at @e[type=armor_stand,tag=PhotoSpot] run execute as @a[distance=20..50,
 execute as @a[tag=RandomizerTemp,limit=1] run function kalos:randomizer/tpscript
 
 #Randomizer trainers function
-execute at @e[x=-688,y=100,z=1136,dy=3,tag=Randomizer] run execute at @a run execute as @e[tag=!Randomized,nbt=!{pixelmon:npc_trainer},distance=..30,limit=1] run function kalos:randomizer/trainers
+execute at @e[x=-688,y=100,z=1136,dy=3,tag=Randomizer] run execute at @a run execute as @e[tag=!Randomized,type=pixelmon:npc_trainer,distance=..30,limit=1] run function kalos:randomizer/trainers
 
 #Randomize evolutions function
-execute at @e[x=-688,y=100,z=1136,dy=3,tag=Randomizer] run execute at @s[tag=Evolutions] run execute at @a run execute as @e[distance=..15,nbt=!{pixelmon:pixelmon}] run function kalos:randomizer/speciescheck
+execute at @e[x=-688,y=100,z=1136,dy=3,tag=Randomizer] run execute at @s[tag=Evolutions] run execute at @a run execute as @e[distance=..15,type=pixelmon:pixelmon] run function kalos:randomizer/speciescheck
 
 
 
@@ -179,10 +179,10 @@ execute at @e[type=armor_stand,name=StrengthPit] run execute at @a[dx=6,dy=3,dz=
 execute as @a[scores={StrengthTrigger=1..}] run function kalos:hms/strength
 
 #Adds Shiny Particles tag
-execute at @a run tag @e[distance=..50,nbt=!{pixelmon:pixelmon},nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute at @a run tag @e[distance=..50,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
 
 #Particles:
-#/execute @e[x=-685,y=100,z=1388,dy=3,tag=Particles,type=armor_stand] ~ ~ ~ execute @e[tag=Shiny,nbt=!{pixelmon:pixelmon}] ~ ~ ~ /particle reddust ~ ~ ~ 0 10 0 1 10 force @a[r=50]
+#/execute @e[x=-685,y=100,z=1388,dy=3,tag=Particles,type=armor_stand] ~ ~ ~ execute @e[tag=Shiny,type=pixelmon:pixelmon] ~ ~ ~ /particle reddust ~ ~ ~ 0 10 0 1 10 force @a[r=50]
 
 #Battle Maison Wins and Loss Functions
 execute as @a[x=1225,y=76,z=1545,distance=..40,tag=MaisonLoss] run function kalos:triggers/battlemaisonlose
@@ -247,13 +247,13 @@ tag @a[x=-2115,y=0,z=504,dx=240,dy=256,dz=258,scores={TalkTime=0},tag=!FlyAmbret
 execute as @a[tag=LegendActivate] run function kalos:triggers/legendspawn
 
 #Resets Mewtwo
-execute at @e[x=-501,y=101,z=1238,distance=..2,nbt=!{pixelmon:statue}] run execute as @a[x=809,y=74,z=525,dx=66,dy=14,dz=92,scores={Mewtwo=0}] run tp @e[x=-501,y=101,z=1238,distance=..2,nbt=!{pixelmon:statue}] 845 75 559
+execute at @e[x=-501,y=101,z=1238,distance=..2,type=pixelmon:statue] run execute as @a[x=809,y=74,z=525,dx=66,dy=14,dz=92,scores={Mewtwo=0}] run tp @e[x=-501,y=101,z=1238,distance=..2,type=pixelmon:statue] 845 75 559
 
 #Zygarde
-execute at @e[x=-501,y=110,z=1238,distance=..2,nbt=!{pixelmon:statue}] run execute as @a[x=2015,y=61,z=-176,distance=..50,scores={Zygarde=0}] run tp @e[x=-501,y=110,z=1238,distance=..2,nbt=!{pixelmon:statue}] 2015 61 -174
+execute at @e[x=-501,y=110,z=1238,distance=..2,type=pixelmon:statue] run execute as @a[x=2015,y=61,z=-176,distance=..50,scores={Zygarde=0}] run tp @e[x=-501,y=110,z=1238,distance=..2,type=pixelmon:statue] 2015 61 -174
 
 #Diancie
-execute at @e[x=-501,y=128,z=1238,distance=..2,nbt=!{pixelmon:statue}] run execute as @a[x=-1707,y=2,z=-437,distance=..50,scores={Diancie=0}] run tp @e[x=-501,y=128,z=1238,distance=..2,nbt=!{pixelmon:statue}] -1707 2 -437
+execute at @e[x=-501,y=128,z=1238,distance=..2,type=pixelmon:statue] run execute as @a[x=-1707,y=2,z=-437,distance=..50,scores={Diancie=0}] run tp @e[x=-501,y=128,z=1238,distance=..2,type=pixelmon:statue] -1707 2 -437
 
 #----------
 
@@ -390,9 +390,9 @@ scoreboard players set @a[x=440,y=108,z=1372,distance=..10,scores={TalkTime=0,St
 #Dialogue5
 #Aquacorde Shauna wants to Battle
 scoreboard players set @a[x=456,y=107,z=1408,dx=28,dy=5,dz=10,scores={TalkTime=0},tag=!Dialogue5,tag=Dialogue4] DialogueTrigger 5
-execute at @a[x=471,y=108,z=1401,distance=..10,scores={StarterPick=1,TalkTime=0},tag=Dialogue5,tag=!Dialogue6] run tp @e[x=-504,y=110,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] 471 108 1401
-execute at @a[x=471,y=108,z=1401,distance=..10,scores={StarterPick=2,TalkTime=0},tag=Dialogue5,tag=!Dialogue6] run tp @e[x=-504,y=110,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] 471 108 1401
-execute at @a[x=471,y=108,z=1401,distance=..10,scores={StarterPick=3,TalkTime=0},tag=Dialogue5,tag=!Dialogue6] run tp @e[x=-504,y=110,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] 471 108 1401
+execute at @a[x=471,y=108,z=1401,distance=..10,scores={StarterPick=1,TalkTime=0},tag=Dialogue5,tag=!Dialogue6] run tp @e[x=-504,y=110,z=1252,dy=3,type=pixelmon:npc_trainer] 471 108 1401
+execute at @a[x=471,y=108,z=1401,distance=..10,scores={StarterPick=2,TalkTime=0},tag=Dialogue5,tag=!Dialogue6] run tp @e[x=-504,y=110,z=1254,dy=3,type=pixelmon:npc_trainer] 471 108 1401
+execute at @a[x=471,y=108,z=1401,distance=..10,scores={StarterPick=3,TalkTime=0},tag=Dialogue5,tag=!Dialogue6] run tp @e[x=-504,y=110,z=1256,dy=3,type=pixelmon:npc_trainer] 471 108 1401
 
 #Dialogue 8
 #Route 3 Friends and adventure rules
@@ -434,8 +434,8 @@ scoreboard players set @a[x=-270,y=120,z=82,dx=10,dy=10,dz=16,scores={TalkTime=0
 
 #Dialogue 19
 #Sycamore Lab Switching NPCs
-execute as @a[x=-265,y=120,z=91,distance=..10,scores={TalkTime=0},tag=!Dialogue19,tag=Dialogue18] run tp @e[x=-265,y=120,z=91,dy=3,nbt=!{pixelmon:npc_chatting}] -504 136 1252
-execute as @a[x=-265,y=120,z=91,distance=..10,scores={TalkTime=0},tag=!Dialogue19,tag=Dialogue18] run tp @e[x=-504,y=135,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] -265 121 91
+execute as @a[x=-265,y=120,z=91,distance=..10,scores={TalkTime=0},tag=!Dialogue19,tag=Dialogue18] run tp @e[x=-265,y=120,z=91,dy=3,type=pixelmon:npc_chatting] -504 136 1252
+execute as @a[x=-265,y=120,z=91,distance=..10,scores={TalkTime=0},tag=!Dialogue19,tag=Dialogue18] run tp @e[x=-504,y=135,z=1254,dy=3,type=pixelmon:npc_trainer] -265 121 91
 
 #Dialogue 21
 #Sycamore Lab Lysandre first meeting
@@ -448,7 +448,7 @@ scoreboard players set @a[x=-624,y=90,z=-172,dx=8,dy=10,dz=25,scores={TalkTime=0
 #Dialogue 24
 #Route 5 Trevor and Tierno pre-battle
 scoreboard players set @a[x=-757,y=99,z=-134,distance=..10,tag=!Dialogue24,scores={TalkTime=0}] DialogueTrigger 24
-execute at @e[x=-504,y=155,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] run execute as @a[x=-766,y=100,z=-134,distance=..6,tag=Dialogue24,tag=!Dialogue25] run tp @e[x=-504,y=155,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] -766 100 -134
+execute at @e[x=-504,y=155,z=1254,dy=3,type=pixelmon:npc_trainer] run execute as @a[x=-766,y=100,z=-134,distance=..6,tag=Dialogue24,tag=!Dialogue25] run tp @e[x=-504,y=155,z=1254,dy=3,type=pixelmon:npc_trainer] -766 100 -134
 
 #Dialogue 26
 #Camphrier Town West Block until seeing castle
@@ -466,11 +466,11 @@ scoreboard players set @a[x=-1623,y=100,z=-319,distance=..15,tag=!Dialogue30,sco
 #Dialogue 31
 #Parfum Palace Finding Furfrou
 scoreboard players set @a[x=-1691,y=100,z=-317,dx=14,dy=5,dz=7,tag=!Dialogue31,scores={TalkTime=0}] DialogueTrigger 31
-execute as @a[x=-1679,y=100,z=-314,distance=..30,scores={TalkTime=0},tag=!Dialogue31] run tp @e[x=-501,y=181,z=1238,dy=3,nbt=!{pixelmon:statue}] -1679 100 -314
+execute as @a[x=-1679,y=100,z=-314,distance=..30,scores={TalkTime=0},tag=!Dialogue31] run tp @e[x=-501,y=181,z=1238,dy=3,type=pixelmon:statue] -1679 100 -314
 
 #Dialogue 32
 #Parfum Palace Firework Show and Flute
-execute as @a[x=-1434,y=111,z=-374,distance=..30,tag=!Dialogue32] run tp @e[x=-504,y=175,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -1434 111 -374
+execute as @a[x=-1434,y=111,z=-374,distance=..30,tag=!Dialogue32] run tp @e[x=-504,y=175,z=1252,dy=3,type=pixelmon:npc_chatting] -1434 111 -374
 execute as @a[x=-1436,y=110,z=-401,dx=15,dy=10,dz=54,scores={TalkTime=0},tag=Dialogue31] run scoreboard players set @s[tag=!Dialogue32] DialogueTrigger 32
 
 #Dialogue 33
@@ -484,12 +484,12 @@ execute as @a[x=-1293,y=100,z=-36,distance=..20,tag=Dialogue33] run scoreboard p
 #Dialogue 35
 #Route 7 Friends Double Battle
 scoreboard players set @a[x=-1591,y=100,z=-36,distance=..20,tag=!Dialogue35,scores={TalkTime=0}] DialogueTrigger 35
-execute as @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,distance=..20,tag=!Dialogue36] run tp @e[x=-504,y=180,z=1258,dy=3,nbt=!{pixelmon:npc_trainer}] -1590 100 -34
-execute as @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,distance=..20,tag=!Dialogue36] run tp @e[x=-504,y=180,z=1260,dy=3,nbt=!{pixelmon:npc_trainer}] -1593 100 -34
+execute as @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,distance=..20,tag=!Dialogue36] run tp @e[x=-504,y=180,z=1258,dy=3,type=pixelmon:npc_trainer] -1590 100 -34
+execute as @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,distance=..20,tag=!Dialogue36] run tp @e[x=-504,y=180,z=1260,dy=3,type=pixelmon:npc_trainer] -1593 100 -34
 
-execute as @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,distance=..20,tag=!Dialogue36,scores={StarterPick=1}] run tp @e[x=-504,y=180,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] -1593 100 -39
-execute as @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,distance=..20,tag=!Dialogue36,scores={StarterPick=2}] run tp @e[x=-504,y=180,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] -1593 100 -39
-execute as @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,distance=..20,tag=!Dialogue36,scores={StarterPick=3}] run tp @e[x=-504,y=180,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] -1593 100 -39
+execute as @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,distance=..20,tag=!Dialogue36,scores={StarterPick=1}] run tp @e[x=-504,y=180,z=1252,dy=3,type=pixelmon:npc_trainer] -1593 100 -39
+execute as @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,distance=..20,tag=!Dialogue36,scores={StarterPick=2}] run tp @e[x=-504,y=180,z=1254,dy=3,type=pixelmon:npc_trainer] -1593 100 -39
+execute as @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,distance=..20,tag=!Dialogue36,scores={StarterPick=3}] run tp @e[x=-504,y=180,z=1256,dy=3,type=pixelmon:npc_trainer] -1593 100 -39
 
 #Dialogue 36
 #Route 7 friends 2v2 post-battle
@@ -510,16 +510,16 @@ scoreboard players set @a[x=-1949,y=140,z=579,dx=23,dy=10,dz=26,tag=!Dialogue39,
 #Dialogue 40
 #Glittering Cave First Flare encounter
 scoreboard players set @a[x=-1437,y=148,z=322,distance=..15,tag=!Dialogue40,scores={TalkTime=0}] DialogueTrigger 40
-execute as @e[x=-504,y=195,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] run execute as @e[x=-1437,y=148,z=322,distance=..20,tag=Dialogue40] run execute as @s[tag=!Dialogue41] run tp @e[x=-504,y=195,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] -1437 148 322
+execute as @e[x=-504,y=195,z=1252,dy=3,type=pixelmon:npc_trainer] run execute as @e[x=-1437,y=148,z=322,distance=..20,tag=Dialogue40] run execute as @s[tag=!Dialogue41] run tp @e[x=-504,y=195,z=1252,dy=3,type=pixelmon:npc_trainer] -1437 148 322
 
 #Dialogue 42
 #Glittering Cave Serena and Flare double battle
 scoreboard players set @a[x=-1434,y=148,z=273,distance=..10,tag=!Dialogue42,scores={TalkTime=0}] DialogueTrigger 42
-execute at @e[x=-504,y=195,z=1262,dy=3,nbt=!{pixelmon:npc_trainer}] run execute at @e[x=-1434,y=148,z=273,distance=..10,tag=!Dialogue42] run tp @e[x=-504,y=195,z=1262,dy=3,nbt=!{pixelmon:npc_trainer}] -1437 148 275
-execute at @e[x=-504,y=195,z=1262,dy=3,nbt=!{pixelmon:npc_trainer}] run execute at @e[x=-1434,y=148,z=273,distance=..10,tag=!Dialogue42] run tp @e[x=-504,y=195,z=1264,dy=3,nbt=!{pixelmon:npc_trainer}] -1437 148 271
-execute at @e[x=-504,y=195,z=1262,dy=3,nbt=!{pixelmon:npc_trainer}] run execute at @e[x=-1434,y=148,z=273,distance=..10,tag=!Dialogue42,scores={StarterPick=1}] run tp @e[x=-504,y=195,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] -1431 148 271
-execute at @e[x=-504,y=195,z=1262,dy=3,nbt=!{pixelmon:npc_trainer}] run execute at @e[x=-1434,y=148,z=273,distance=..10,tag=!Dialogue42,scores={StarterPick=2}] run tp @e[x=-504,y=195,z=1258,dy=3,nbt=!{pixelmon:npc_trainer}] -1431 148 271
-execute at @e[x=-504,y=195,z=1262,dy=3,nbt=!{pixelmon:npc_trainer}] run execute at @e[x=-1434,y=148,z=273,distance=..10,tag=!Dialogue42,scores={StarterPick=3}] run tp @e[x=-504,y=195,z=1260,dy=3,nbt=!{pixelmon:npc_trainer}] -1431 148 271
+execute at @e[x=-504,y=195,z=1262,dy=3,type=pixelmon:npc_trainer] run execute at @e[x=-1434,y=148,z=273,distance=..10,tag=!Dialogue42] run tp @e[x=-504,y=195,z=1262,dy=3,type=pixelmon:npc_trainer] -1437 148 275
+execute at @e[x=-504,y=195,z=1262,dy=3,type=pixelmon:npc_trainer] run execute at @e[x=-1434,y=148,z=273,distance=..10,tag=!Dialogue42] run tp @e[x=-504,y=195,z=1264,dy=3,type=pixelmon:npc_trainer] -1437 148 271
+execute at @e[x=-504,y=195,z=1262,dy=3,type=pixelmon:npc_trainer] run execute at @e[x=-1434,y=148,z=273,distance=..10,tag=!Dialogue42,scores={StarterPick=1}] run tp @e[x=-504,y=195,z=1256,dy=3,type=pixelmon:npc_trainer] -1431 148 271
+execute at @e[x=-504,y=195,z=1262,dy=3,type=pixelmon:npc_trainer] run execute at @e[x=-1434,y=148,z=273,distance=..10,tag=!Dialogue42,scores={StarterPick=2}] run tp @e[x=-504,y=195,z=1258,dy=3,type=pixelmon:npc_trainer] -1431 148 271
+execute at @e[x=-504,y=195,z=1262,dy=3,type=pixelmon:npc_trainer] run execute at @e[x=-1434,y=148,z=273,distance=..10,tag=!Dialogue42,scores={StarterPick=3}] run tp @e[x=-504,y=195,z=1260,dy=3,type=pixelmon:npc_trainer] -1431 148 271
 
 #Dialogue 43
 #Glittering Cave Double Battle tp away
@@ -527,7 +527,7 @@ scoreboard players set @a[x=-1434,y=148,z=273,distance=..10,tag=!Dialogue43,scor
 
 #Dialogue 44 & 45
 #Glittering Cave Fossil Prompt
-execute as @a[x=-1471,y=147,z=303,distance=..20,tag=!Dialogue44] run tp @e[x=-504,y=200,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] -1469 148 305
+execute as @a[x=-1471,y=147,z=303,distance=..20,tag=!Dialogue44] run tp @e[x=-504,y=200,z=1254,dy=3,type=pixelmon:npc_chatting] -1469 148 305
 scoreboard players set @a[x=-1471,y=147,z=303,dx=6,dy=5,dz=11,tag=Dialogue44,tag=!Dialogue44,scores={TalkTime=0}] DialogueTrigger 44
 
 #Dialogue 46
@@ -540,9 +540,9 @@ execute at @a[x=-2208,y=104,z=-450,distance=..20,scores={TalkTime=0},tag=Grant] 
 
 #Dialogues 48-50
 #Route 10 tp in grunts
-execute at @e[x=-504,y=210,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] run execute as @a[x=-2208,y=104,z=-450,distance=..20,tag=!Dialogue48,tag=Grant,tag=Dialogue47] run tp @e[x=-504,y=210,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] -2208 104 -450
-execute at @e[x=-504,y=210,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] run execute as @a[x=-2190,y=104,z=-522,distance=..20,tag=!Dialogue49,tag=Grant] run tp @e[x=-504,y=210,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] -2190 104 -522
-execute at @e[x=-504,y=210,z=1258,dy=3,nbt=!{pixelmon:npc_trainer}] run execute as @a[x=-2227,y=104,z=-558,distance=..20,tag=!Dialogue50,tag=Grant] run tp @e[x=-504,y=210,z=1258,dy=3,nbt=!{pixelmon:npc_trainer}] -2227 104 -558
+execute at @e[x=-504,y=210,z=1252,dy=3,type=pixelmon:npc_trainer] run execute as @a[x=-2208,y=104,z=-450,distance=..20,tag=!Dialogue48,tag=Grant,tag=Dialogue47] run tp @e[x=-504,y=210,z=1252,dy=3,type=pixelmon:npc_trainer] -2208 104 -450
+execute at @e[x=-504,y=210,z=1256,dy=3,type=pixelmon:npc_trainer] run execute as @a[x=-2190,y=104,z=-522,distance=..20,tag=!Dialogue49,tag=Grant] run tp @e[x=-504,y=210,z=1256,dy=3,type=pixelmon:npc_trainer] -2190 104 -522
+execute at @e[x=-504,y=210,z=1258,dy=3,type=pixelmon:npc_trainer] run execute as @a[x=-2227,y=104,z=-558,distance=..20,tag=!Dialogue50,tag=Grant] run tp @e[x=-504,y=210,z=1258,dy=3,type=pixelmon:npc_trainer] -2227 104 -558
 
 #Dialogue 51
 #Geosenge first Flare encounter 1
@@ -555,13 +555,13 @@ execute as @a[x=-2278,y=104,z=-815,distance=..25,scores={TalkTime=0},tag=Dialogu
 #Dialogue 53
 #Geosenge Town Korrina battle
 scoreboard players set @a[x=-2109,y=103,z=-703,dx=10,dy=10,dz=26,scores={TalkTime=0},tag=!Dialogue53] DialogueTrigger 53
-execute as @e[x=-504,y=220,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] run execute as @a[x=-2105,y=104,z=-691,distance=..20,tag=Dialogue53,tag=!Dialogue54] run tp @e[x=-504,y=220,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] -2105 104 -691
-execute as @a[x=-2105,y=104,z=-691,distance=..20,tag=Dialogue53,tag=TrainerBattleMusic] run execute as @s[tag=!Dialogue54] run effect give @e[distance=..20,name=Lucario,nbt=!{pixelmon:statue}] minecraft:invisibility 2 1 true
+execute as @e[x=-504,y=220,z=1252,dy=3,type=pixelmon:npc_trainer] run execute as @a[x=-2105,y=104,z=-691,distance=..20,tag=Dialogue53,tag=!Dialogue54] run tp @e[x=-504,y=220,z=1252,dy=3,type=pixelmon:npc_trainer] -2105 104 -691
+execute as @a[x=-2105,y=104,z=-691,distance=..20,tag=Dialogue53,tag=TrainerBattleMusic] run execute as @s[tag=!Dialogue54] run effect give @e[distance=..20,name=Lucario,type=pixelmon:statue] minecraft:invisibility 2 1 true
 
 #Dialogue 55
 #Reflection Cave Tierno giving Flash
 scoreboard players set @a[x=-1580,y=35,z=-220,dx=12,dy=10,dz=17,scores={TalkTime=0},tag=!Dialogue55] DialogueTrigger 55
-execute as @a[x=-1580,y=35,z=-220,distance=..40,tag=!Dialogue55] run tp @e[x=-504,y=225,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -1575 35 -205
+execute as @a[x=-1580,y=35,z=-220,distance=..40,tag=!Dialogue55] run tp @e[x=-504,y=225,z=1252,dy=3,type=pixelmon:npc_chatting] -1575 35 -205
 
 #Dialogue 56
 #Shalour City Trevor and Tierno
@@ -569,8 +569,8 @@ scoreboard players set @a[x=-1671,y=79,z=-837,dx=23,dy=10,dz=10,scores={TalkTime
 
 #Dialogue 57
 #Shalour City Gym Guide
-execute as @a[x=-1770,y=84,z=-898,distance=..30,tag=Dialogue61] run tp @e[x=-1770,y=84,z=-898,dy=3,nbt=!{pixelmon:npc_chatting}] -504 231 1258
-execute as @a[x=-1770,y=84,z=-898,distance=..30,tag=!Dialogue61] run tp @e[x=-504,y=230,z=1258,dy=3,nbt=!{pixelmon:npc_chatting}] -1770 85 -898
+execute as @a[x=-1770,y=84,z=-898,distance=..30,tag=Dialogue61] run tp @e[x=-1770,y=84,z=-898,dy=3,type=pixelmon:npc_chatting] -504 231 1258
+execute as @a[x=-1770,y=84,z=-898,distance=..30,tag=!Dialogue61] run tp @e[x=-504,y=230,z=1258,dy=3,type=pixelmon:npc_chatting] -1770 85 -898
 
 #Dialogue 58
 #Shalour City Tierno giving Intriguing Stone
@@ -578,15 +578,15 @@ scoreboard players set @a[x=-1694,y=76,z=-925,dx=75,dy=10,dz=20,scores={TalkTime
 
 #Dialogue 61
 #Tower of Mastery Serena
-execute as @a[x=-1661,y=91,z=-1150,distance=..30,tag=Dialogue60,tag=!Dialogue61,scores={StarterPick=1,DialogueTrigger=0}] run tp @e[x=-504,y=245,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] -1662 92 -1146
-execute as @a[x=-1661,y=91,z=-1150,distance=..30,tag=Dialogue60,tag=!Dialogue61,scores={StarterPick=2,DialogueTrigger=0}] run tp @e[x=-504,y=245,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] -1662 92 -1146
-execute as @a[x=-1661,y=91,z=-1150,distance=..30,tag=Dialogue60,tag=!Dialogue61,scores={StarterPick=3,DialogueTrigger=0}] run tp @e[x=-504,y=245,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] -1662 92 -1146
+execute as @a[x=-1661,y=91,z=-1150,distance=..30,tag=Dialogue60,tag=!Dialogue61,scores={StarterPick=1,DialogueTrigger=0}] run tp @e[x=-504,y=245,z=1252,dy=3,type=pixelmon:npc_trainer] -1662 92 -1146
+execute as @a[x=-1661,y=91,z=-1150,distance=..30,tag=Dialogue60,tag=!Dialogue61,scores={StarterPick=2,DialogueTrigger=0}] run tp @e[x=-504,y=245,z=1254,dy=3,type=pixelmon:npc_trainer] -1662 92 -1146
+execute as @a[x=-1661,y=91,z=-1150,distance=..30,tag=Dialogue60,tag=!Dialogue61,scores={StarterPick=3,DialogueTrigger=0}] run tp @e[x=-504,y=245,z=1256,dy=3,type=pixelmon:npc_trainer] -1662 92 -1146
 
 #Dialogue 64
 #Tower of Mastery tp in Korrina
-execute as @a[x=-1635,y=187,z=-1186,distance=..30,tag=Dialogue63,tag=!Dialogue64,scores={DialogueTrigger=0}] run tp @e[x=-504,y=250,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] -1635 187.5 -1180
-execute as @a[x=-1635,y=187,z=-1186,distance=..30,tag=Dialogue63,tag=!Dialogue64,scores={DialogueTrigger=0}] run tp @e[x=-1635,y=187,z=-1180,dy=3,nbt=!{pixelmon:npc_chatting}] -504 251 1254
-execute as @a[x=-1635,y=187,z=-1186,distance=..30,tag=KorrinaBattleMusic] run effect give @e[distance=..30,name=Lucario,nbt=!{pixelmon:statue}] minecraft:invisibility 2 1 true
+execute as @a[x=-1635,y=187,z=-1186,distance=..30,tag=Dialogue63,tag=!Dialogue64,scores={DialogueTrigger=0}] run tp @e[x=-504,y=250,z=1252,dy=3,type=pixelmon:npc_trainer] -1635 187.5 -1180
+execute as @a[x=-1635,y=187,z=-1186,distance=..30,tag=Dialogue63,tag=!Dialogue64,scores={DialogueTrigger=0}] run tp @e[x=-1635,y=187,z=-1180,dy=3,type=pixelmon:npc_chatting] -504 251 1254
+execute as @a[x=-1635,y=187,z=-1186,distance=..30,tag=KorrinaBattleMusic] run effect give @e[distance=..30,name=Lucario,type=pixelmon:statue] minecraft:invisibility 2 1 true
 
 #Dialogue 65
 #Shalour City Serena giving Surf
@@ -599,9 +599,9 @@ scoreboard players set @a[x=-1059,y=79,z=-799,dx=14,dy=10,dz=14,scores={TalkTime
 #Dialogue 67
 #Courmarine Serena outside of Gym
 scoreboard players set @a[x=-1092,y=120,z=-713,dx=35,dy=10,dz=14,scores={TalkTime=0},tag=!Dialogue67] DialogueTrigger 67
-execute as @a[x=-1092,y=120,z=-713,dx=35,dy=10,dz=14,tag=Dialogue67,tag=!Dialogue68,scores={StarterPick=1,TalkTime=0}] run tp @e[x=-504,y=110,z=1268,dy=3,nbt=!{pixelmon:npc_trainer}] -1078 121 -709
-execute as @a[x=-1092,y=120,z=-713,dx=35,dy=10,dz=14,tag=Dialogue67,tag=!Dialogue68,scores={StarterPick=2,TalkTime=0}] run tp @e[x=-504,y=110,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -1078 121 -709
-execute as @a[x=-1092,y=120,z=-713,dx=35,dy=10,dz=14,tag=Dialogue67,tag=!Dialogue68,scores={StarterPick=3,TalkTime=0}] run tp @e[x=-504,y=110,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] -1078 121 -709
+execute as @a[x=-1092,y=120,z=-713,dx=35,dy=10,dz=14,tag=Dialogue67,tag=!Dialogue68,scores={StarterPick=1,TalkTime=0}] run tp @e[x=-504,y=110,z=1268,dy=3,type=pixelmon:npc_trainer] -1078 121 -709
+execute as @a[x=-1092,y=120,z=-713,dx=35,dy=10,dz=14,tag=Dialogue67,tag=!Dialogue68,scores={StarterPick=2,TalkTime=0}] run tp @e[x=-504,y=110,z=1270,dy=3,type=pixelmon:npc_trainer] -1078 121 -709
+execute as @a[x=-1092,y=120,z=-713,dx=35,dy=10,dz=14,tag=Dialogue67,tag=!Dialogue68,scores={StarterPick=3,TalkTime=0}] run tp @e[x=-504,y=110,z=1272,dy=3,type=pixelmon:npc_trainer] -1078 121 -709
 
 #Dialogue 69
 #Courmarine Dexio and Sina
@@ -609,7 +609,7 @@ scoreboard players set @a[x=-1085,y=114,z=-579,dx=20,dy=10,dz=20,tag=!Dialogue69
 
 #Dialogue 70
 #Route 13 Flare Grunt
-execute as @a[x=-772,y=104,z=-330,distance=..30,tag=!Dialogue70,tag=Ramos] run tp @e[x=-504,y=120,z=1268,dy=3,nbt=!{pixelmon:npc_trainer}] -772 104 -330
+execute as @a[x=-772,y=104,z=-330,distance=..30,tag=!Dialogue70,tag=Ramos] run tp @e[x=-504,y=120,z=1268,dy=3,type=pixelmon:npc_trainer] -772 104 -330
 
 #Hidden Power Plant Pass give
 #execute @a[x=-779,y=103,z=-347,distance=..30,tag=Dialogue70,tag=!PowerPlantPass] ~ ~ ~ /execute @e[x=-779,y=102,z=-347,dy=3,type=armor_stand] ~ ~ ~ /particle fireworksSpark ~ ~ ~ 1 2 1 0.1 2 normal @a[tag=!PowerPlantPass]
@@ -621,27 +621,27 @@ execute as @a[x=-772,y=104,z=-330,distance=..30,tag=!Dialogue70,tag=Ramos] run t
 #Dialogue 71
 #Power Plant Flare Grunts first
 scoreboard players set @a[x=-954,y=47,z=-361,dx=22,dy=10,dz=16,scores={TalkTime=0},tag=!Dialogue71] DialogueTrigger 71
-execute as @a[x=-954,y=47,z=-361,dx=22,dy=10,dz=16,tag=Dialogue71,tag=!Dialogue72] run tp @e[x=-504,y=125,z=1268,dy=3,nbt=!{pixelmon:npc_trainer}] -949 48 -350
+execute as @a[x=-954,y=47,z=-361,dx=22,dy=10,dz=16,tag=Dialogue71,tag=!Dialogue72] run tp @e[x=-504,y=125,z=1268,dy=3,type=pixelmon:npc_trainer] -949 48 -350
 
 #Power Plant tps in grunts to generator room
-execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1268,dy=3,nbt=!{pixelmon:npc_trainer}] -982 54 -346
-execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -992 54 -310
-execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] -1029 54 -293
-execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] -1076 54 -336
-execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1276,dy=3,nbt=!{pixelmon:npc_trainer}] -1069 54 -363
-execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1278,dy=3,nbt=!{pixelmon:npc_trainer}] -1029 54 -380
-execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=135,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -1013 58 -335
-execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=135,z=1272,dy=3,nbt=!{pixelmon:npc_chatting}] -1013 58 -339
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1268,dy=3,type=pixelmon:npc_trainer] -982 54 -346
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1270,dy=3,type=pixelmon:npc_trainer] -992 54 -310
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1272,dy=3,type=pixelmon:npc_trainer] -1029 54 -293
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1274,dy=3,type=pixelmon:npc_trainer] -1076 54 -336
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1276,dy=3,type=pixelmon:npc_trainer] -1069 54 -363
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1278,dy=3,type=pixelmon:npc_trainer] -1029 54 -380
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=135,z=1268,dy=3,type=pixelmon:npc_chatting] -1013 58 -335
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=135,z=1272,dy=3,type=pixelmon:npc_chatting] -1013 58 -339
 
 #Dialogue 73
 #Power Plant Admin and Aliana
 scoreboard players set @a[x=-1007,y=57,z=-340,dx=14,dy=5,dz=6,scores={TalkTime=0},tag=!Dialogue73] DialogueTrigger 73
-execute as @a[x=-1013,y=57,z=-339,distance=..10,tag=Dialogue73,scores={TalkTime=0},tag=!Dialogue74] run tp @e[x=-504,y=135,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -1013 58 -335
-execute as @a[x=-1013,y=57,z=-339,distance=..10,tag=Dialogue74,scores={TalkTime=0},tag=!Dialogue75] run tp @e[x=-504,y=135,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] -1013 58 -339
+execute as @a[x=-1013,y=57,z=-339,distance=..10,tag=Dialogue73,scores={TalkTime=0},tag=!Dialogue74] run tp @e[x=-504,y=135,z=1270,dy=3,type=pixelmon:npc_trainer] -1013 58 -335
+execute as @a[x=-1013,y=57,z=-339,distance=..10,tag=Dialogue74,scores={TalkTime=0},tag=!Dialogue75] run tp @e[x=-504,y=135,z=1274,dy=3,type=pixelmon:npc_trainer] -1013 58 -339
 
 #Route 76
 #Route 13 Az
-execute as @a[x=-709,y=100,z=-468,distance=..30,tag=!Dialogue76,tag=Dialogue75] run tp @e[x=-504,y=140,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -709 100 -468
+execute as @a[x=-709,y=100,z=-468,distance=..30,tag=!Dialogue76,tag=Dialogue75] run tp @e[x=-504,y=140,z=1268,dy=3,type=pixelmon:npc_chatting] -709 100 -468
 scoreboard players set @a[x=-719,y=99,z=-474,dx=7,dy=10,dz=12,scores={TalkTime=0},tag=!Dialogue76] DialogueTrigger 76
 
 #Dialogue 77
@@ -655,9 +655,9 @@ scoreboard players set @a[x=-236,y=100,z=-418,dx=15,dy=10,dz=27,scores={TalkTime
 #Dialogue 80
 #Route 14 South Friends
 scoreboard players set @a[x=-194,y=99,z=-899,dx=30,dy=5,dz=53,scores={TalkTime=0},tag=!Dialogue80] DialogueTrigger 80
-execute as @a[x=-175,y=100,z=-884,distance=..15,tag=Dialogue80,scores={TalkTime=0,StarterPick=1},tag=!Dialogue81] run tp @e[x=-504,y=155,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -174 100 -887
-execute as @a[x=-175,y=100,z=-884,distance=..15,tag=Dialogue80,scores={TalkTime=0,StarterPick=2},tag=!Dialogue81] run tp @e[x=-504,y=155,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] -174 100 -887
-execute as @a[x=-175,y=100,z=-884,distance=..15,tag=Dialogue80,scores={TalkTime=0,StarterPick=3},tag=!Dialogue81] run tp @e[x=-504,y=155,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] -174 100 -887
+execute as @a[x=-175,y=100,z=-884,distance=..15,tag=Dialogue80,scores={TalkTime=0,StarterPick=1},tag=!Dialogue81] run tp @e[x=-504,y=155,z=1270,dy=3,type=pixelmon:npc_trainer] -174 100 -887
+execute as @a[x=-175,y=100,z=-884,distance=..15,tag=Dialogue80,scores={TalkTime=0,StarterPick=2},tag=!Dialogue81] run tp @e[x=-504,y=155,z=1272,dy=3,type=pixelmon:npc_trainer] -174 100 -887
+execute as @a[x=-175,y=100,z=-884,distance=..15,tag=Dialogue80,scores={TalkTime=0,StarterPick=3},tag=!Dialogue81] run tp @e[x=-504,y=155,z=1274,dy=3,type=pixelmon:npc_trainer] -174 100 -887
 
 #Dialogue 82
 #Scary House opening
@@ -670,31 +670,31 @@ execute as @a[x=-93,y=100,z=-1458,distance=..10,scores={TalkTime=0},tag=Valerie,
 #Dialogue 86
 #Factory Stairs grunt chasing friends
 execute as @a[x=-172,y=117,z=-1643,distance=..5,scores={TalkTime=0},tag=Valerie,tag=!Dialogue86] run scoreboard players set @s DialogueTrigger 86
-execute as @a[x=-172,y=117,z=-1643,distance=..30,tag=Valerie,scores={TalkTime=0},tag=!Dialogue86] run tp @e[x=-504,y=170,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -172 117 -1642
-execute as @a[x=-172,y=117,z=-1643,distance=..30,tag=Valerie,scores={TalkTime=0},tag=!Dialogue86] run tp @e[x=-504,y=170,z=1270,dy=3,nbt=!{pixelmon:npc_chatting}] -172 117 -1645
+execute as @a[x=-172,y=117,z=-1643,distance=..30,tag=Valerie,scores={TalkTime=0},tag=!Dialogue86] run tp @e[x=-504,y=170,z=1268,dy=3,type=pixelmon:npc_chatting] -172 117 -1642
+execute as @a[x=-172,y=117,z=-1643,distance=..30,tag=Valerie,scores={TalkTime=0},tag=!Dialogue86] run tp @e[x=-504,y=170,z=1270,dy=3,type=pixelmon:npc_chatting] -172 117 -1645
 
 #Door guard
-execute as @p[x=-155,y=125,z=-1715,distance=..30,tag=Dialogue86] run tp @e[x=-158,y=124,z=-1771,dy=3,nbt=!{pixelmon:npc_chatting}] -504 166 1280
-execute as @p[x=-155,y=125,z=-1715,distance=..30,tag=!Dialogue86] run tp @e[x=-504,y=165,z=1280,dy=3,nbt=!{pixelmon:npc_chatting}] -158 125 -1771
+execute as @p[x=-155,y=125,z=-1715,distance=..30,tag=Dialogue86] run tp @e[x=-158,y=124,z=-1771,dy=3,type=pixelmon:npc_chatting] -504 166 1280
+execute as @p[x=-155,y=125,z=-1715,distance=..30,tag=!Dialogue86] run tp @e[x=-504,y=165,z=1280,dy=3,type=pixelmon:npc_chatting] -158 125 -1771
 
 #Dialogue 87
 #Factory Floor Serena and Grunt at door
 execute as @a[x=-157,y=125,z=-1774,dx=6,dy=5,scores={TalkTime=0},tag=Dialogue86,tag=!Dialogue87,] run scoreboard players set @s DialogueTrigger 87
 
-execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue88,scores={TalkTime=0}] run tp @e[x=-504,y=180,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -80 104 -2012
-execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue88,scores={TalkTime=0}] run tp @e[x=-504,y=180,z=1272,dy=3,nbt=!{pixelmon:npc_chatting}] -83 104 -2010
-execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue88,scores={TalkTime=0}] run tp @e[x=-504,y=180,z=1276,dy=3,nbt=!{pixelmon:npc_chatting}] -77 104 -2010
+execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue88,scores={TalkTime=0}] run tp @e[x=-504,y=180,z=1268,dy=3,type=pixelmon:npc_chatting] -80 104 -2012
+execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue88,scores={TalkTime=0}] run tp @e[x=-504,y=180,z=1272,dy=3,type=pixelmon:npc_chatting] -83 104 -2010
+execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue88,scores={TalkTime=0}] run tp @e[x=-504,y=180,z=1276,dy=3,type=pixelmon:npc_chatting] -77 104 -2010
 
 #Sets up Factory NPCs
-execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,scores={TalkTime=0}] run tp @e[x=-504,y=175,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] -134 95 -1919
-execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,scores={TalkTime=0}] run tp @e[x=-504,y=175,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] -209 89 -1938
-execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,scores={TalkTime=0}] run tp @e[x=-504,y=175,z=1276,dy=3,nbt=!{pixelmon:npc_trainer}] -148 89 -1965
-execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,scores={TalkTime=0}] run tp @e[x=-504,y=175,z=1278,dy=3,nbt=!{pixelmon:npc_trainer}] -135 104 -1996
+execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,scores={TalkTime=0}] run tp @e[x=-504,y=175,z=1272,dy=3,type=pixelmon:npc_trainer] -134 95 -1919
+execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,scores={TalkTime=0}] run tp @e[x=-504,y=175,z=1274,dy=3,type=pixelmon:npc_trainer] -209 89 -1938
+execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,scores={TalkTime=0}] run tp @e[x=-504,y=175,z=1276,dy=3,type=pixelmon:npc_trainer] -148 89 -1965
+execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,scores={TalkTime=0}] run tp @e[x=-504,y=175,z=1278,dy=3,type=pixelmon:npc_trainer] -135 104 -1996
 
 #Dialogue 88
 #Factory Admin and Scientists in Presidential building
 scoreboard players set @a[x=-92,y=102,z=-2020,dx=24,dy=5,dz=16,scores={TalkTime=0},tag=!Dialogue88] DialogueTrigger 88
-execute as @a[x=-92,y=102,z=-2020,dx=24,dy=5,dz=16,tag=!Dialogue89,scores={TalkTime=0},tag=Dialogue88] run tp @e[x=-504,y=180,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -80 104 -2012
+execute as @a[x=-92,y=102,z=-2020,dx=24,dy=5,dz=16,tag=!Dialogue89,scores={TalkTime=0},tag=Dialogue88] run tp @e[x=-504,y=180,z=1270,dy=3,type=pixelmon:npc_trainer] -80 104 -2012
 
 #Dialogue 90
 #Factory post-double battle
@@ -705,10 +705,10 @@ execute as @a[x=-92,y=102,z=-2020,dx=24,dy=5,dz=16,tag=Dialogue89,scores={MusicS
 execute as @a[x=-154,y=89,z=-1852,distance=..20,tag=Dialogue90,tag=!Dialogue93,scores={TalkTime=0}] run scoreboard players set @s DialogueTrigger 93
 
 #Route 15 Gate Flare Grunts
-execute as @p[x=-27,y=100,z=-1353,distance=..30,tag=Dialogue90] run tp @e[x=41,y=98,z=-1357,dy=3,nbt=!{pixelmon:npc_chatting}] -504 196 1268
-execute as @p[x=-27,y=100,z=-1353,distance=..30,tag=Dialogue90] run tp @e[x=41,y=98,z=-1349,dy=3,nbt=!{pixelmon:npc_chatting}] -504 196 1270
-execute as @p[x=-27,y=100,z=-1353,distance=..30,tag=!Dialogue90] run tp @e[x=-504,y=195,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] 41 100 -1357
-execute as @p[x=-27,y=100,z=-1353,distance=..30,tag=!Dialogue90] run tp @e[x=-504,y=195,z=1270,dy=3,nbt=!{pixelmon:npc_chatting}] 41 100 -1349
+execute as @p[x=-27,y=100,z=-1353,distance=..30,tag=Dialogue90] run tp @e[x=41,y=98,z=-1357,dy=3,type=pixelmon:npc_chatting] -504 196 1268
+execute as @p[x=-27,y=100,z=-1353,distance=..30,tag=Dialogue90] run tp @e[x=41,y=98,z=-1349,dy=3,type=pixelmon:npc_chatting] -504 196 1270
+execute as @p[x=-27,y=100,z=-1353,distance=..30,tag=!Dialogue90] run tp @e[x=-504,y=195,z=1268,dy=3,type=pixelmon:npc_chatting] 41 100 -1357
+execute as @p[x=-27,y=100,z=-1353,distance=..30,tag=!Dialogue90] run tp @e[x=-504,y=195,z=1270,dy=3,type=pixelmon:npc_chatting] 41 100 -1349
 
 #Dialogue 94
 #Dendemille Sycamore and Dexio
@@ -717,21 +717,21 @@ scoreboard players set @a[x=638,y=107,z=-431,dx=15,dy=5,dz=17,tag=!Dialogue94,sc
 #Dialogue 95
 #Frost Cavern ext Mamoswine has a bad feeling
 scoreboard players set @a[x=717,y=117,z=-682,dx=24,dy=10,dz=20,scores={TalkTime=0},tag=!Dialogue95] DialogueTrigger 95
-execute as @p[x=733,y=119,z=-646,distance=..20,tag=!Dialogue95,tag=!Dialogue98] run tp @e[x=-504,y=205,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] 725 118 -665
-execute as @p[x=733,y=119,z=-646,distance=..20,tag=!Dialogue95,tag=!Dialogue98] run tp @e[x=-501,y=190,z=1238,dy=3,nbt=!{pixelmon:statue}] 722 118 -666
-execute as @p[x=719,y=117,z=-682,distance=..30,tag=Dialogue98] run tp @e[x=725,y=117,z=-665,dy=3,nbt=!{pixelmon:npc_chatting}] -504 206 1268
-execute as @p[x=719,y=117,z=-682,distance=..30,tag=Dialogue98] run tp @e[x=722,y=117,z=-666,dy=3,nbt=!{pixelmon:statue}] -501 191 1238
+execute as @p[x=733,y=119,z=-646,distance=..20,tag=!Dialogue95,tag=!Dialogue98] run tp @e[x=-504,y=205,z=1268,dy=3,type=pixelmon:npc_chatting] 725 118 -665
+execute as @p[x=733,y=119,z=-646,distance=..20,tag=!Dialogue95,tag=!Dialogue98] run tp @e[x=-501,y=190,z=1238,dy=3,type=pixelmon:statue] 722 118 -666
+execute as @p[x=719,y=117,z=-682,distance=..30,tag=Dialogue98] run tp @e[x=725,y=117,z=-665,dy=3,type=pixelmon:npc_chatting] -504 206 1268
+execute as @p[x=719,y=117,z=-682,distance=..30,tag=Dialogue98] run tp @e[x=722,y=117,z=-666,dy=3,type=pixelmon:statue] -501 191 1238
 
 #Dialogue 96
 #Frost Cavern Team Flare
 scoreboard players set @a[x=672,y=84,z=-1299,dx=18,dy=6,dz=11,scores={TalkTime=0},tag=!Dialogue96] DialogueTrigger 96
-execute as @a[x=676,y=85,z=-1359,distance=..10,scores={TalkTime=0},tag=Dialogue96,tag=!Dialogue97] run tp @e[x=-504,y=210,z=1280,dy=3,nbt=!{pixelmon:npc_trainer}] 679 85 -1358
-execute as @a[x=676,y=85,z=-1359,distance=..10,scores={TalkTime=0},tag=Dialogue97,tag=!Dialogue98] run tp @e[x=-504,y=210,z=1278,dy=3,nbt=!{pixelmon:npc_trainer}] 676 85 -1361
+execute as @a[x=676,y=85,z=-1359,distance=..10,scores={TalkTime=0},tag=Dialogue96,tag=!Dialogue97] run tp @e[x=-504,y=210,z=1280,dy=3,type=pixelmon:npc_trainer] 679 85 -1358
+execute as @a[x=676,y=85,z=-1359,distance=..10,scores={TalkTime=0},tag=Dialogue97,tag=!Dialogue98] run tp @e[x=-504,y=210,z=1278,dy=3,type=pixelmon:npc_trainer] 676 85 -1361
 
 #Dialogue 99
 #Route 13 Mamoswine is gone if went to here first
 execute as @a[x=837,y=108,z=-335,distance=..10,tag=!Dialogue99,scores={TalkTime=0},tag=!Dialogue98] run scoreboard players set @s DialogueTrigger 99
-execute as @a[x=801,y=107,z=-340,dx=50,dy=10,dz=30,tag=!Dialogue98] run effect give @e[nbt=!{pixelmon:statue},name=Mamoswine] minecraft:invisibility 5 5 true
+execute as @a[x=801,y=107,z=-340,dx=50,dy=10,dz=30,tag=!Dialogue98] run effect give @e[type=pixelmon:statue,name=Mamoswine] minecraft:invisibility 5 5 true
 
 #Dialogue 100
 #Route 17 Mamoswine has returned
@@ -744,44 +744,44 @@ scoreboard players set @a[x=1187,y=107,z=-196,dx=16,dy=5,dz=17,tag=!Dialogue101,
 #Dialogue 102
 #Anistar Serena Battle
 scoreboard players set @a[x=1308,y=107,z=-286,dx=12,dy=5,dz=25,tag=!Dialogue102,scores={TalkTime=0}] DialogueTrigger 102
-execute as @a[x=1308,y=107,z=-286,dx=12,dy=5,dz=25,tag=!Dialogue103,scores={TalkTime=0,StarterPick=1},tag=Dialogue102] run tp @e[x=-504,y=215,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] 1325 108 -277
-execute as @a[x=1308,y=107,z=-286,dx=12,dy=5,dz=25,tag=!Dialogue103,scores={TalkTime=0,StarterPick=2},tag=Dialogue102] run tp @e[x=-504,y=215,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] 1325 108 -277
-execute as @a[x=1308,y=107,z=-286,dx=12,dy=5,dz=25,tag=!Dialogue103,scores={TalkTime=0,StarterPick=3},tag=Dialogue102] run tp @e[x=-504,y=215,z=1276,dy=3,nbt=!{pixelmon:npc_trainer}] 1325 108 -277
+execute as @a[x=1308,y=107,z=-286,dx=12,dy=5,dz=25,tag=!Dialogue103,scores={TalkTime=0,StarterPick=1},tag=Dialogue102] run tp @e[x=-504,y=215,z=1272,dy=3,type=pixelmon:npc_trainer] 1325 108 -277
+execute as @a[x=1308,y=107,z=-286,dx=12,dy=5,dz=25,tag=!Dialogue103,scores={TalkTime=0,StarterPick=2},tag=Dialogue102] run tp @e[x=-504,y=215,z=1274,dy=3,type=pixelmon:npc_trainer] 1325 108 -277
+execute as @a[x=1308,y=107,z=-286,dx=12,dy=5,dz=25,tag=!Dialogue103,scores={TalkTime=0,StarterPick=3},tag=Dialogue102] run tp @e[x=-504,y=215,z=1276,dy=3,type=pixelmon:npc_trainer] 1325 108 -277
 
 #Dialogue 104
 #Anistar City Serena gets Lysandre's doom call
 execute as @a[x=1328,y=108,z=-281,distance=..20,scores={TalkTime=0},tag=Olympia,tag=!Dialogue104] run scoreboard players set @s DialogueTrigger 104
 
 #Hint-giving grunts
-execute as @p[x=1303,y=108,z=-267,distance=..20,tag=Dialogue133] run tp @e[x=1353,y=107,z=-283,dy=3,nbt=!{pixelmon:npc_chatting}] -504 221 1272
-execute as @p[x=1303,y=108,z=-267,distance=..20,tag=Dialogue133] run tp @e[x=1357,y=107,z=-283,dy=3,nbt=!{pixelmon:npc_chatting}] -504 221 1274
+execute as @p[x=1303,y=108,z=-267,distance=..20,tag=Dialogue133] run tp @e[x=1353,y=107,z=-283,dy=3,type=pixelmon:npc_chatting] -504 221 1272
+execute as @p[x=1303,y=108,z=-267,distance=..20,tag=Dialogue133] run tp @e[x=1357,y=107,z=-283,dy=3,type=pixelmon:npc_chatting] -504 221 1274
 
 #Dialogue 107
 #Lysandre Labs two Waiters
 execute as @a[x=-307,y=80,z=425,dx=23,dy=100,dz=28,scores={TalkTime=0},tag=Dialogue105,tag=Dialogue106] run scoreboard players set @s[tag=!Dialogue107] DialogueTrigger 107
-execute as @a[x=-307,y=132,z=427,dx=23,dy=9,dz=26,tag=Olympia] run tp @e[x=-504,y=225,z=1268,dy=3,nbt=!{pixelmon:npc_trainer}] -298 133 442
-execute as @a[x=-307,y=132,z=427,dx=23,dy=9,dz=26,tag=Olympia] run tp @e[x=-504,y=225,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -294 133 431
+execute as @a[x=-307,y=132,z=427,dx=23,dy=9,dz=26,tag=Olympia] run tp @e[x=-504,y=225,z=1268,dy=3,type=pixelmon:npc_trainer] -298 133 442
+execute as @a[x=-307,y=132,z=427,dx=23,dy=9,dz=26,tag=Olympia] run tp @e[x=-504,y=225,z=1270,dy=3,type=pixelmon:npc_trainer] -294 133 431
 
 #Dialogue 108 & 109
 #Lysandre Labs Lysandre first floor encounter
 scoreboard players set @a[x=-304,y=140,z=388,dx=16,dy=5,dz=12,scores={TalkTime=0},tag=!Dialogue108] DialogueTrigger 108
-execute as @a[x=-304,y=140,z=388,dx=16,dy=5,dz=12,tag=!Dialogue109,scores={TalkTime=0},tag=Dialogue108] run tp @e[x=-504,y=230,z=1268,dy=3,nbt=!{pixelmon:npc_trainer}] -296 141 393
+execute as @a[x=-304,y=140,z=388,dx=16,dy=5,dz=12,tag=!Dialogue109,scores={TalkTime=0},tag=Dialogue108] run tp @e[x=-504,y=230,z=1268,dy=3,type=pixelmon:npc_trainer] -296 141 393
 
 #Sets up Team Flare in Lysandre Labs
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -321 141 382
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] -333 141 336
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] -318 141 356
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1276,dy=3,nbt=!{pixelmon:npc_trainer}] -301 141 346
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1278,dy=3,nbt=!{pixelmon:npc_trainer}] -254 141 340
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1280,dy=3,nbt=!{pixelmon:npc_trainer}] -256 141 397
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=235,z=1268,dy=3,nbt=!{pixelmon:npc_trainer}] -275 141 364
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=235,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -233 141 325
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=235,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] -355 141 330
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!Dialogue111,scores={TalkTime=0}] run tp @e[x=-504,y=240,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -264 141 311
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!Dialogue111,scores={TalkTime=0}] run tp @e[x=-504,y=240,z=1270,dy=3,nbt=!{pixelmon:npc_chatting}] -260 141 311
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!Dialogue114,scores={TalkTime=0}] run tp @e[x=-504,y=240,z=1280,dy=3,nbt=!{pixelmon:npc_chatting}] -216 141 347
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!Dialogue110] run tp @e[x=-504,y=245,z=1276,dy=3,nbt=!{pixelmon:npc_chatting}] -327 141 302
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!Dialogue110] run tp @e[x=-504,y=245,z=1278,dy=3,nbt=!{pixelmon:npc_chatting}] -331 141 302
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1270,dy=3,type=pixelmon:npc_trainer] -321 141 382
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1272,dy=3,type=pixelmon:npc_trainer] -333 141 336
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1274,dy=3,type=pixelmon:npc_trainer] -318 141 356
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1276,dy=3,type=pixelmon:npc_trainer] -301 141 346
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1278,dy=3,type=pixelmon:npc_trainer] -254 141 340
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1280,dy=3,type=pixelmon:npc_trainer] -256 141 397
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=235,z=1268,dy=3,type=pixelmon:npc_trainer] -275 141 364
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=235,z=1270,dy=3,type=pixelmon:npc_trainer] -233 141 325
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=235,z=1272,dy=3,type=pixelmon:npc_trainer] -355 141 330
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!Dialogue111,scores={TalkTime=0}] run tp @e[x=-504,y=240,z=1268,dy=3,type=pixelmon:npc_chatting] -264 141 311
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!Dialogue111,scores={TalkTime=0}] run tp @e[x=-504,y=240,z=1270,dy=3,type=pixelmon:npc_chatting] -260 141 311
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!Dialogue114,scores={TalkTime=0}] run tp @e[x=-504,y=240,z=1280,dy=3,type=pixelmon:npc_chatting] -216 141 347
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!Dialogue110] run tp @e[x=-504,y=245,z=1276,dy=3,type=pixelmon:npc_chatting] -327 141 302
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!Dialogue110] run tp @e[x=-504,y=245,z=1278,dy=3,type=pixelmon:npc_chatting] -331 141 302
 
 #Dialogue 110
 #Lysandre Labs Heroes talk
@@ -790,26 +790,26 @@ scoreboard players set @a[x=-339,y=140,z=311,dx=20,dy=10,dz=8,scores={TalkTime=0
 #Dialogue 111-113
 #Lysandre Lavs Celosia and Bryony
 scoreboard players set @a[x=-272,y=140,z=312,dx=20,dy=10,dz=10,scores={TalkTime=0},tag=!Dialogue111] DialogueTrigger 111
-execute as @a[x=-272,y=140,z=312,dx=20,dy=10,dz=10,tag=Dialogue111,scores={TalkTime=0},tag=!Dialogue112] run tp @e[x=-504,y=235,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] -264 141 311
-execute as @a[x=-272,y=140,z=312,dx=20,dy=10,dz=10,tag=Dialogue112,scores={TalkTime=0},tag=!Dialogue113] run tp @e[x=-504,y=235,z=1276,dy=3,nbt=!{pixelmon:npc_trainer}] -260 141 311
+execute as @a[x=-272,y=140,z=312,dx=20,dy=10,dz=10,tag=Dialogue111,scores={TalkTime=0},tag=!Dialogue112] run tp @e[x=-504,y=235,z=1274,dy=3,type=pixelmon:npc_trainer] -264 141 311
+execute as @a[x=-272,y=140,z=312,dx=20,dy=10,dz=10,tag=Dialogue112,scores={TalkTime=0},tag=!Dialogue113] run tp @e[x=-504,y=235,z=1276,dy=3,type=pixelmon:npc_trainer] -260 141 311
 
 #Dialogue 114 & 115
 #Lysandre Labs Mable
 scoreboard players set @a[x=-225,y=140,z=348,dx=17,dy=10,dz=10,scores={TalkTime=0},tag=!Dialogue114] DialogueTrigger 114
-execute as @a[x=-225,y=140,z=348,dx=17,dy=10,dz=10,tag=Dialogue114,scores={TalkTime=0},tag=!Dialogue115] run tp @e[x=-504,y=235,z=1278,dy=3,nbt=!{pixelmon:npc_trainer}] -216 141 347
+execute as @a[x=-225,y=140,z=348,dx=17,dy=10,dz=10,tag=Dialogue114,scores={TalkTime=0},tag=!Dialogue115] run tp @e[x=-504,y=235,z=1278,dy=3,type=pixelmon:npc_trainer] -216 141 347
 
 #Dialogue 116
 #Lysandre Labs Lysandre and AZ
 scoreboard players set @a[x=-395,y=110,z=392,dx=18,dy=10,dz=11,scores={TalkTime=0},tag=!Dialogue116] DialogueTrigger 116
-execute as @a[x=-376,y=110,z=396,dx=41,dy=10,dz=7,tag=!Dialogue116] run tp @e[x=-504,y=240,z=1274,dy=3,nbt=!{pixelmon:npc_chatting}] -386 111 390
-execute as @a[x=-376,y=110,z=396,dx=41,dy=10,dz=7,tag=!Dialogue116] run tp @e[x=-504,y=240,z=1276,dy=3,nbt=!{pixelmon:npc_chatting}] -388 111 394
+execute as @a[x=-376,y=110,z=396,dx=41,dy=10,dz=7,tag=!Dialogue116] run tp @e[x=-504,y=240,z=1274,dy=3,type=pixelmon:npc_chatting] -386 111 390
+execute as @a[x=-376,y=110,z=396,dx=41,dy=10,dz=7,tag=!Dialogue116] run tp @e[x=-504,y=240,z=1276,dy=3,type=pixelmon:npc_chatting] -388 111 394
 
 #Dialogue 117
 #Lysandre Labs B3F Xerosic and Lysandre
 scoreboard players set @a[x=-319,y=106,z=349,dx=17,dy=5,dz=10,scores={TalkTime=0},tag=!Dialogue117] DialogueTrigger 117
-execute as @a[x=-311,y=110,z=390,distance=..20,tag=!Dialogue117,scores={TalkTime=0}] run tp @e[x=-504,y=245,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -312 107 326
-execute as @a[x=-311,y=110,z=390,distance=..20,tag=!Dialogue117,scores={TalkTime=0}] run tp @e[x=-504,y=245,z=1270,dy=3,nbt=!{pixelmon:npc_chatting}] -308 107 326
-execute as @a[x=-308,y=107,z=326,distance=..10,tag=!Dialogue118,scores={TalkTime=0},tag=Dialogue117] run tp @e[x=-504,y=245,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] -308 107 326
+execute as @a[x=-311,y=110,z=390,distance=..20,tag=!Dialogue117,scores={TalkTime=0}] run tp @e[x=-504,y=245,z=1268,dy=3,type=pixelmon:npc_chatting] -312 107 326
+execute as @a[x=-311,y=110,z=390,distance=..20,tag=!Dialogue117,scores={TalkTime=0}] run tp @e[x=-504,y=245,z=1270,dy=3,type=pixelmon:npc_chatting] -308 107 326
+execute as @a[x=-308,y=107,z=326,distance=..10,tag=!Dialogue118,scores={TalkTime=0},tag=Dialogue117] run tp @e[x=-504,y=245,z=1272,dy=3,type=pixelmon:npc_trainer] -308 107 326
 
 #Dialogue 121
 #Geosenge Serena pre-Flare HQ
@@ -818,7 +818,7 @@ scoreboard players set @a[x=-1255,y=109,z=1807,distance=..10,scores={TalkTime=0}
 #Dialogue 122-123
 #Flare HQ Lysandre first battle
 scoreboard players set @a[x=-2359,y=69,z=-992,dx=46,dy=10,dz=15,scores={TalkTime=0},tag=!Dialogue122] DialogueTrigger 122
-execute as @a[x=-2359,y=69,z=-992,dx=46,dy=10,dz=15,tag=!Dialogue123,scores={TalkTime=0},tag=Dialogue122] run tp @e[x=-504,y=100,z=1292,dy=3,nbt=!{pixelmon:npc_trainer}] -2336 70 -990
+execute as @a[x=-2359,y=69,z=-992,dx=46,dy=10,dz=15,tag=!Dialogue123,scores={TalkTime=0},tag=Dialogue122] run tp @e[x=-504,y=100,z=1292,dy=3,type=pixelmon:npc_trainer] -2336 70 -990
 
 #Dialogue 124
 #Flare HQ Double Battle No 1
@@ -843,14 +843,14 @@ scoreboard players set @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue128,
 #Dialogue 130
 #Flare HQ post-Four admins in chamber
 execute as @a[x=-2526,y=0,z=-1074,dx=232,dy=95,dz=167,scores={TalkTime=0},tag=Admin1,tag=Admin3,tag=Admin4,tag=Admin6] run scoreboard players set @s[tag=!Dialogue130] DialogueTrigger 130
-execute as @a[x=-2336,y=42,z=-1007,distance=..15,tag=Dialogue129,scores={TalkTime=0},tag=!Dialogue130] run tp @e[x=-504,y=125,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] -2342 42 -1007
-execute as @a[x=-2336,y=42,z=-1007,distance=..15,tag=Dialogue129,scores={TalkTime=0},tag=!Dialogue130] run tp @e[x=-504,y=125,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] -2336 42 -1012
-execute as @a[x=-2336,y=42,z=-1007,distance=..15,tag=Dialogue129,scores={TalkTime=0},tag=!Dialogue130] run tp @e[x=-504,y=125,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] -2336 42 -1007
-execute as @a[x=-2336,y=42,z=-1007,distance=..15,tag=Dialogue129,scores={TalkTime=0},tag=!Dialogue130] run tp @e[x=-504,y=125,z=1290,dy=3,nbt=!{pixelmon:npc_trainer}] -2330 42 -1007
+execute as @a[x=-2336,y=42,z=-1007,distance=..15,tag=Dialogue129,scores={TalkTime=0},tag=!Dialogue130] run tp @e[x=-504,y=125,z=1284,dy=3,type=pixelmon:npc_trainer] -2342 42 -1007
+execute as @a[x=-2336,y=42,z=-1007,distance=..15,tag=Dialogue129,scores={TalkTime=0},tag=!Dialogue130] run tp @e[x=-504,y=125,z=1286,dy=3,type=pixelmon:npc_trainer] -2336 42 -1012
+execute as @a[x=-2336,y=42,z=-1007,distance=..15,tag=Dialogue129,scores={TalkTime=0},tag=!Dialogue130] run tp @e[x=-504,y=125,z=1288,dy=3,type=pixelmon:npc_trainer] -2336 42 -1007
+execute as @a[x=-2336,y=42,z=-1007,distance=..15,tag=Dialogue129,scores={TalkTime=0},tag=!Dialogue130] run tp @e[x=-504,y=125,z=1290,dy=3,type=pixelmon:npc_trainer] -2330 42 -1007
 
 #Dialogue 133
 #Flare HQ Chamber Respawns Lysandre trainer
-execute as @a[x=-2336,y=42,z=-997,distance=..20,scores={TalkTime=0},tag=!Dialogue133,tag=Dialogue132] run tp @e[x=-504,y=130,z=1290,dy=3,nbt=!{pixelmon:npc_trainer}] -2336 42 -997
+execute as @a[x=-2336,y=42,z=-997,distance=..20,scores={TalkTime=0},tag=!Dialogue133,tag=Dialogue132] run tp @e[x=-504,y=130,z=1290,dy=3,type=pixelmon:npc_trainer] -2336 42 -997
 
 #Dialogue 134
 #Geosenge Town post-destruction with friends
@@ -859,7 +859,7 @@ scoreboard players set @a[x=-410,y=109,z=2014,distance=..20,tag=!Dialogue134,sco
 #Dialogue 135 & 136
 #Couriway Town Sycamore Battle
 scoreboard players set @a[x=1501,y=101,z=253,distance=..10,scores={TalkTime=0},tag=!Dialogue135] DialogueTrigger 135
-execute as @a[x=1501,y=101,z=253,distance=..10,tag=Dialogue135,tag=!Dialogue136,scores={TalkTime=0}] run tp @e[x=-504,y=140,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] 1501 101 253
+execute as @a[x=1501,y=101,z=253,distance=..10,tag=Dialogue135,tag=!Dialogue136,scores={TalkTime=0}] run tp @e[x=-504,y=140,z=1286,dy=3,type=pixelmon:npc_trainer] 1501 101 253
 
 #Camphrier Town Sycamore's Note
 #execute @a[x=1568,y=119,z=163,distance=..30,tag=Dialogue136,tag=!SycamoresNote] ~ ~ ~ /execute @e[x=1568,y=119,z=163,dy=3,type=armor_stand] ~ ~ ~ /particle fireworksSpark ~ ~ ~ 1 2 1 0.1 2 normal @a[tag=!SycamoresNote]
@@ -871,19 +871,19 @@ execute as @a[x=1501,y=101,z=253,distance=..10,tag=Dialogue135,tag=!Dialogue136,
 #Dialogue 137-140
 #Route 19 Friends on bridge
 scoreboard players set @a[x=1452,y=97,z=489,dx=11,dy=10,dz=6,scores={TalkTime=0},tag=!Dialogue137] DialogueTrigger 137
-execute as @e[x=1448,y=98,z=492,distance=..10,scores={TalkTime=0,StarterPick=1},tag=Dialogue137,tag=!Dialogue138] run tp @e[x=-504,y=145,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] 1448 98 492
-execute as @e[x=1448,y=98,z=492,distance=..10,scores={TalkTime=0,StarterPick=2},tag=Dialogue137,tag=!Dialogue138] run tp @e[x=-504,y=145,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] 1448 98 492
-execute as @e[x=1448,y=98,z=492,distance=..10,scores={TalkTime=0,StarterPick=3},tag=Dialogue137,tag=!Dialogue138] run tp @e[x=-504,y=145,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] 1448 98 492
-execute as @e[x=1448,y=98,z=492,distance=..10,scores={TalkTime=0},tag=Dialogue138,tag=!Dialogue139] run tp @e[x=-504,y=145,z=1292,dy=3,nbt=!{pixelmon:npc_trainer}] 1451 98 494
-execute as @e[x=1448,y=98,z=492,distance=..10,scores={TalkTime=0},tag=Dialogue139,tag=!Dialogue140] run tp @e[x=-504,y=145,z=1290,dy=3,nbt=!{pixelmon:npc_trainer}] 1451 98 490
+execute as @e[x=1448,y=98,z=492,distance=..10,scores={TalkTime=0,StarterPick=1},tag=Dialogue137,tag=!Dialogue138] run tp @e[x=-504,y=145,z=1284,dy=3,type=pixelmon:npc_trainer] 1448 98 492
+execute as @e[x=1448,y=98,z=492,distance=..10,scores={TalkTime=0,StarterPick=2},tag=Dialogue137,tag=!Dialogue138] run tp @e[x=-504,y=145,z=1286,dy=3,type=pixelmon:npc_trainer] 1448 98 492
+execute as @e[x=1448,y=98,z=492,distance=..10,scores={TalkTime=0,StarterPick=3},tag=Dialogue137,tag=!Dialogue138] run tp @e[x=-504,y=145,z=1288,dy=3,type=pixelmon:npc_trainer] 1448 98 492
+execute as @e[x=1448,y=98,z=492,distance=..10,scores={TalkTime=0},tag=Dialogue138,tag=!Dialogue139] run tp @e[x=-504,y=145,z=1292,dy=3,type=pixelmon:npc_trainer] 1451 98 494
+execute as @e[x=1448,y=98,z=492,distance=..10,scores={TalkTime=0},tag=Dialogue139,tag=!Dialogue140] run tp @e[x=-504,y=145,z=1290,dy=3,type=pixelmon:npc_trainer] 1451 98 490
 
 #Dialogue 141
 #Pokemon Village Wulfric
 execute as @a[x=951,y=93,z=664,distance=..20,scores={TalkTime=0},tag=!Wulfric] run scoreboard players set @s[tag=Dialogue140] DialogueTrigger 141
 
 #Pokemon Village block Mewtwo unless beaten ELite Four
-execute as @p[x=825,y=95,z=624,distance=..20,scores={PokemonLeague=0}] run tp @e[x=-504,y=150,z=1288,dy=3,nbt=!{pixelmon:npc_chatting}] 844 95 610
-execute as @p[x=825,y=95,z=624,distance=..20,scores={PokemonLeague=1..}] run tp @e[x=844,y=94,z=610,dy=3,nbt=!{pixelmon:npc_chatting}] -504 151 1288
+execute as @p[x=825,y=95,z=624,distance=..20,scores={PokemonLeague=0}] run tp @e[x=-504,y=150,z=1288,dy=3,type=pixelmon:npc_chatting] 844 95 610
+execute as @p[x=825,y=95,z=624,distance=..20,scores={PokemonLeague=1..}] run tp @e[x=844,y=94,z=610,dy=3,type=pixelmon:npc_chatting] -504 151 1288
 
 #Dialogue 143
 #Snowbelle Wulfric and Gym Guy
@@ -892,14 +892,14 @@ execute as @a[x=1144,y=95,z=492,distance=..20,tag=!Dialogue143,scores={TalkTime=
 #Dialogue 144-145
 #Victory Road gate Ace Trainer battle
 execute as @a[x=686,y=105,z=379,dx=15,dy=10,dz=25,tag=!Dialogue144,tag=Viola,tag=Grant,tag=Korrina,tag=Ramos,tag=Clemont,tag=Valerie,tag=Olympia,tag=Wulfric] run scoreboard players set @s DialogueTrigger 144
-execute as @a[x=686,y=105,z=379,dx=15,dy=10,dz=25,tag=Dialogue144,scores={TalkTime=0},tag=!Dialogue145] run tp @e[x=-504,y=160,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] 694 106 396
+execute as @a[x=686,y=105,z=379,dx=15,dy=10,dz=25,tag=Dialogue144,scores={TalkTime=0},tag=!Dialogue145] run tp @e[x=-504,y=160,z=1286,dy=3,type=pixelmon:npc_trainer] 694 106 396
 
 #Dialogue 146
 #Victory Road Serena 5th battle
 scoreboard players set @a[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,scores={TalkTime=0},tag=!Dialogue146] DialogueTrigger 146
-execute as @a[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=Dialogue146,tag=!Dialogue147,scores={TalkTime=0,StarterPick=1}] run tp @e[x=-504,y=165,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] 2294 175 2184
-execute as @a[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=Dialogue146,tag=!Dialogue147,scores={TalkTime=0,StarterPick=2}] run tp @e[x=-504,y=165,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] 2294 175 2184
-execute as @a[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=Dialogue146,tag=!Dialogue147,scores={TalkTime=0,StarterPick=3}] run tp @e[x=-504,y=165,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] 2294 175 2184
+execute as @a[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=Dialogue146,tag=!Dialogue147,scores={TalkTime=0,StarterPick=1}] run tp @e[x=-504,y=165,z=1284,dy=3,type=pixelmon:npc_trainer] 2294 175 2184
+execute as @a[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=Dialogue146,tag=!Dialogue147,scores={TalkTime=0,StarterPick=2}] run tp @e[x=-504,y=165,z=1286,dy=3,type=pixelmon:npc_trainer] 2294 175 2184
+execute as @a[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=Dialogue146,tag=!Dialogue147,scores={TalkTime=0,StarterPick=3}] run tp @e[x=-504,y=165,z=1288,dy=3,type=pixelmon:npc_trainer] 2294 175 2184
 
 #Dialogue 149
 #Pokemon League Malva Introduction
@@ -908,7 +908,7 @@ scoreboard players set @a[x=-1907,y=32,z=2117,distance=..20,tag=!Dialogue148,sco
 #Dialogue 155-156
 #Lumiose Parade AZ
 scoreboard players set @a[x=1488,y=137,z=-1900,distance=..20,scores={TalkTime=0},tag=!Dialogue155] DialogueTrigger 155
-execute as @a[x=1469,y=101,z=-1954,distance=..20,tag=!Dialogue156,scores={TalkTime=0},tag=Dialogue155] run tp @e[x=-504,y=175,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] 1469 101 -1954
+execute as @a[x=1469,y=101,z=-1954,distance=..20,tag=!Dialogue156,scores={TalkTime=0},tag=Dialogue155] run tp @e[x=-504,y=175,z=1284,dy=3,type=pixelmon:npc_trainer] 1469 101 -1954
 
 #Dialogue 157
 #Vaniville Town Mom post-League
@@ -921,15 +921,15 @@ scoreboard players set @a[x=1017,y=105,z=1908,distance=..20,scores={PokemonLeagu
 #Dialogue 160
 #Lumiose Station Sycamore
 scoreboard players set @a[x=1029,y=105,z=1893,distance=..6,tag=!Dialogue160,scores={TalkTime=0,PokemonLeague=1..}] DialogueTrigger 160
-execute as @a[x=1017,y=105,z=1908,distance=..20,tag=!Dialogue160,scores={PokemonLeague=1..}] run tp @e[x=-504,y=185,z=1290,dy=3,nbt=!{pixelmon:npc_chatting}] 1029 105 1893
+execute as @a[x=1017,y=105,z=1908,distance=..20,tag=!Dialogue160,scores={PokemonLeague=1..}] run tp @e[x=-504,y=185,z=1290,dy=3,type=pixelmon:npc_chatting] 1029 105 1893
 
 #Dialogue 161
 #Kilouce City Serena battle
 scoreboard players set @a[x=1229,y=119,z=1461,distance=..6,scores={TalkTime=0},tag=!Dialogue161] DialogueTrigger 161
-execute as @a[x=1229,y=119,z=1461,distance=..15,scores={TalkTime=0,StarterPick=1},tag=Dialogue161,tag=!Dialogue162] run tp @e[x=-504,y=190,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] 1229 119 1461
-execute as @a[x=1229,y=119,z=1461,distance=..15,scores={TalkTime=0,StarterPick=2},tag=Dialogue161,tag=!Dialogue162] run tp @e[x=-504,y=190,z=1290,dy=3,nbt=!{pixelmon:npc_trainer}] 1229 119 1461
-execute as @a[x=1229,y=119,z=1461,distance=..15,scores={TalkTime=0,StarterPick=3},tag=Dialogue161,tag=!Dialogue162] run tp @e[x=-504,y=190,z=1292,dy=3,nbt=!{pixelmon:npc_trainer}] 1229 119 1461
-execute as @a[x=1221,y=119,z=1497,distance=..20,tag=!Dialogue161] run tp @e[x=-504,y=190,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] 1229 119 1461
+execute as @a[x=1229,y=119,z=1461,distance=..15,scores={TalkTime=0,StarterPick=1},tag=Dialogue161,tag=!Dialogue162] run tp @e[x=-504,y=190,z=1288,dy=3,type=pixelmon:npc_trainer] 1229 119 1461
+execute as @a[x=1229,y=119,z=1461,distance=..15,scores={TalkTime=0,StarterPick=2},tag=Dialogue161,tag=!Dialogue162] run tp @e[x=-504,y=190,z=1290,dy=3,type=pixelmon:npc_trainer] 1229 119 1461
+execute as @a[x=1229,y=119,z=1461,distance=..15,scores={TalkTime=0,StarterPick=3},tag=Dialogue161,tag=!Dialogue162] run tp @e[x=-504,y=190,z=1292,dy=3,type=pixelmon:npc_trainer] 1229 119 1461
+execute as @a[x=1221,y=119,z=1497,distance=..20,tag=!Dialogue161] run tp @e[x=-504,y=190,z=1284,dy=3,type=pixelmon:npc_chatting] 1229 119 1461
 
 #Dialogue 163
 #Anistar City Sycamore upgrading Mega Ring
@@ -950,7 +950,7 @@ scoreboard players set @a[x=-1533,y=65,z=-68,distance=..20,tag=!Dialogue166,scor
 #Dialogue 168
 #Lumiose Press Volcanion Memo Start
 execute as @a[x=-444,y=101,z=206,distance=..6,scores={TalkTime=0},tag=VolcanionCatch] run scoreboard players set @s[tag=!Dialogue168] DialogueTrigger 168
-execute as @a[x=-449,y=101,z=215,distance=..10,scores={TalkTime=0},tag=VolcanionCatch] run tp @e[x=-442,y=100,z=210,dy=3,nbt=!{pixelmon:npc_chatting}] -504 211 1286
+execute as @a[x=-449,y=101,z=215,distance=..10,scores={TalkTime=0},tag=VolcanionCatch] run tp @e[x=-442,y=100,z=210,dy=3,type=pixelmon:npc_chatting] -504 211 1286
 
 #----------
 #Looker Chapters
@@ -980,10 +980,10 @@ execute as @e[x=-439,y=100,z=439,dy=3,type=armor_stand] run execute as @a[distan
 scoreboard players set @a[x=-176,y=100,z=387,distance=..7,scores={TalkTime=0,LookerTickets=5..},tag=!Dialogue175] DialogueTrigger 175
 
 #Set's up Emma's first alley finding her in
-execute as @a[x=-373,y=101,z=-307,distance=..40,scores={TalkTime=0},tag=Dialogue176,tag=!Dialogue177] run tp @e[x=-504,y=220,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] -375 101 -299
-execute as @a[x=-373,y=101,z=-307,distance=..40,scores={TalkTime=0},tag=Dialogue176,tag=!Dialogue177] run tp @e[x=-504,y=220,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] -369 101 -297
-execute as @a[x=-373,y=101,z=-307,distance=..40,scores={TalkTime=0},tag=Dialogue176,tag=!Dialogue177] run tp @e[x=-504,y=220,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] -372 101 -291
-execute as @a[x=-373,y=101,z=-307,distance=..40,scores={TalkTime=0},tag=Dialogue176,tag=!Dialogue177] run tp @e[x=-504,y=220,z=1290,dy=3,nbt=!{pixelmon:npc_trainer}] -366 101 -288
+execute as @a[x=-373,y=101,z=-307,distance=..40,scores={TalkTime=0},tag=Dialogue176,tag=!Dialogue177] run tp @e[x=-504,y=220,z=1284,dy=3,type=pixelmon:npc_trainer] -375 101 -299
+execute as @a[x=-373,y=101,z=-307,distance=..40,scores={TalkTime=0},tag=Dialogue176,tag=!Dialogue177] run tp @e[x=-504,y=220,z=1286,dy=3,type=pixelmon:npc_trainer] -369 101 -297
+execute as @a[x=-373,y=101,z=-307,distance=..40,scores={TalkTime=0},tag=Dialogue176,tag=!Dialogue177] run tp @e[x=-504,y=220,z=1288,dy=3,type=pixelmon:npc_trainer] -372 101 -291
+execute as @a[x=-373,y=101,z=-307,distance=..40,scores={TalkTime=0},tag=Dialogue176,tag=!Dialogue177] run tp @e[x=-504,y=220,z=1290,dy=3,type=pixelmon:npc_trainer] -366 101 -288
 
 #Dialogue 177
 #Finding Emma
@@ -992,7 +992,7 @@ execute as @a[x=-374,y=101,z=-280,distance=..6,tag=Dialogue176,tag=!Dialogue177,
 #Dialogue 178
 #Player finding Mimi
 execute as @a[x=-428,y=101,z=-363,distance=..7,scores={TalkTime=0},tag=Dialogue177] run scoreboard players set @s[tag=!Dialogue178] DialogueTrigger 178
-execute as @a[x=-405,y=101,z=-370,distance=..20,tag=Dialogue177,tag=!Dialogue178] run tp @e[x=-504,y=226,z=1284,dy=3,nbt=!{pixelmon:statue}] -428 101 -363
+execute as @a[x=-405,y=101,z=-370,distance=..20,tag=Dialogue177,tag=!Dialogue178] run tp @e[x=-504,y=226,z=1284,dy=3,type=pixelmon:statue] -428 101 -363
 
 #Dialogue 182
 #Looker Chapter 3 start
@@ -1002,11 +1002,11 @@ execute as @a[x=-161,y=100,z=375,dx=19,dy=15,dz=23,scores={TalkTime=0},tag=Dialo
 #Dialogue 183
 #Lumiose Station pre-Nix Battle
 scoreboard players set @a[x=1103,y=105,z=2007,distance=..10,scores={TalkTime=0},tag=!Dialogue183] DialogueTrigger 183
-execute as @a[x=1103,y=105,z=2007,distance=..50,scores={TalkTime=0},tag=!Dialogue183] run tp @e[x=-504,y=235,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] 1119 105 2007
-execute as @a[x=1103,y=105,z=2007,distance=..50,scores={TalkTime=0},tag=!Dialogue183] run tp @e[x=-504,y=235,z=1286,dy=3,nbt=!{pixelmon:npc_chatting}] 1124 105 2003
-execute as @a[x=1103,y=105,z=2007,distance=..50,scores={TalkTime=0},tag=!Dialogue183] run tp @e[x=-504,y=235,z=1288,dy=3,nbt=!{pixelmon:npc_chatting}] 1130 105 2009
-execute as @a[x=1103,y=105,z=2007,distance=..50,scores={TalkTime=0},tag=!Dialogue183] run tp @e[x=-504,y=235,z=1290,dy=3,nbt=!{pixelmon:npc_chatting}] 1131 105 2005
-execute as @a[x=1131,y=105,z=2005,distance=..20,scores={TalkTime=0},tag=Dialogue183,tag=!Dialogue184] run tp @e[x=-504,y=235,z=1296,dy=3,nbt=!{pixelmon:npc_trainer}] 1131 105 2005
+execute as @a[x=1103,y=105,z=2007,distance=..50,scores={TalkTime=0},tag=!Dialogue183] run tp @e[x=-504,y=235,z=1284,dy=3,type=pixelmon:npc_chatting] 1119 105 2007
+execute as @a[x=1103,y=105,z=2007,distance=..50,scores={TalkTime=0},tag=!Dialogue183] run tp @e[x=-504,y=235,z=1286,dy=3,type=pixelmon:npc_chatting] 1124 105 2003
+execute as @a[x=1103,y=105,z=2007,distance=..50,scores={TalkTime=0},tag=!Dialogue183] run tp @e[x=-504,y=235,z=1288,dy=3,type=pixelmon:npc_chatting] 1130 105 2009
+execute as @a[x=1103,y=105,z=2007,distance=..50,scores={TalkTime=0},tag=!Dialogue183] run tp @e[x=-504,y=235,z=1290,dy=3,type=pixelmon:npc_chatting] 1131 105 2005
+execute as @a[x=1131,y=105,z=2005,distance=..20,scores={TalkTime=0},tag=Dialogue183,tag=!Dialogue184] run tp @e[x=-504,y=235,z=1296,dy=3,type=pixelmon:npc_trainer] 1131 105 2005
 
 #Dialogue 186
 #Museum learning about art piece
@@ -1023,28 +1023,28 @@ execute as @a[x=-80,y=100,z=327,dx=9,dy=6,dz=7,scores={TalkTime=0},tag=Dialogue1
 
 #Dialogue 189
 #Lumiose Alley #1 trainer
-execute as @a[x=-221,y=101,z=-618,distance=..20,scores={TalkTime=0},tag=Dialogue188,tag=!Dialogue189] run tp @e[x=-504,y=245,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] -269 101 -619
+execute as @a[x=-221,y=101,z=-618,distance=..20,scores={TalkTime=0},tag=Dialogue188,tag=!Dialogue189] run tp @e[x=-504,y=245,z=1284,dy=3,type=pixelmon:npc_trainer] -269 101 -619
 
 #Dialogue 190
 #Alley #2 trainer
-execute as @a[x=-122,y=101,z=-608,distance=..20,scores={TalkTime=0},tag=Dialogue189,tag=!Dialogue190] run tp @e[x=-504,y=245,z=1292,dy=3,nbt=!{pixelmon:npc_trainer}] -95 101 -609
+execute as @a[x=-122,y=101,z=-608,distance=..20,scores={TalkTime=0},tag=Dialogue189,tag=!Dialogue190] run tp @e[x=-504,y=245,z=1292,dy=3,type=pixelmon:npc_trainer] -95 101 -609
 
 #Dialogue 191
 #Alley #3 Looker & Black Belt
 execute as @a[x=11,y=101,z=-533,distance=..7,scores={TalkTime=0},tag=Dialogue190,tag=!Dialogue191] run scoreboard players set @s DialogueTrigger 191
-execute as @a[x=11,y=101,z=-533,distance=..30,scores={TalkTime=0},tag=Dialogue190,tag=!Dialogue191] run tp @e[x=-504,y=250,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] 11 101 -533
+execute as @a[x=11,y=101,z=-533,distance=..30,scores={TalkTime=0},tag=Dialogue190,tag=!Dialogue191] run tp @e[x=-504,y=250,z=1284,dy=3,type=pixelmon:npc_chatting] 11 101 -533
 
 #Alley #4 Trainer
-execute as @a[x=-391,y=101,z=-275,distance=..30,scores={TalkTime=0},tag=Dialogue191,tag=!Dialogue192] run tp @e[x=-504,y=250,z=1290,dy=3,nbt=!{pixelmon:npc_trainer}] -391 101 -275
+execute as @a[x=-391,y=101,z=-275,distance=..30,scores={TalkTime=0},tag=Dialogue191,tag=!Dialogue192] run tp @e[x=-504,y=250,z=1290,dy=3,type=pixelmon:npc_trainer] -391 101 -275
 
 #Dialogue 194
 #Looker Bureau return Butler
-execute as @a[x=-77,y=100,z=394,distance=..10,scores={TalkTime=0},tag=Dialogue193,tag=!Dialogue194] run tp @e[x=-504,y=100,z=1302,dy=3,nbt=!{pixelmon:npc_trainer}] -77 101 394
+execute as @a[x=-77,y=100,z=394,distance=..10,scores={TalkTime=0},tag=Dialogue193,tag=!Dialogue194] run tp @e[x=-504,y=100,z=1302,dy=3,type=pixelmon:npc_trainer] -77 101 394
 
 #Dialogue 195
 #Hotel Richissime Malva
 execute as @a[x=-494,y=143,z=325,dx=6,dy=5,dz=8,scores={TalkTime=0},tag=Dialogue194,tag=!Dialogue195] run scoreboard players set @s DialogueTrigger 195
-execute as @a[x=-490,y=144,z=336,distance=..20,tag=!Dialogue195,tag=Dialogue194] run tp @e[x=-504,y=100,z=1306,dy=3,nbt=!{pixelmon:npc_trainer}] -491 144 316
+execute as @a[x=-490,y=144,z=336,distance=..20,tag=!Dialogue195,tag=Dialogue194] run tp @e[x=-504,y=100,z=1306,dy=3,type=pixelmon:npc_trainer] -491 144 316
 
 #Dialogue 197
 #Lysandre Labs Malva
@@ -1054,7 +1054,7 @@ execute as @a[x=-295,y=89,z=393,distance=..8,scores={TalkTime=0},tag=Dialogue197
 #Dialogue 199
 #Lysandre Labs Nix pre-battle
 scoreboard players set @a[x=-299,y=28,z=328,dx=7,dy=5,dz=9,scores={TalkTime=0},tag=!Dialogue199] DialogueTrigger 199
-execute as @a[x=-299,y=28,z=328,dx=7,dy=5,dz=9,scores={TalkTime=0},tag=!Dialogue200] run tp @e[x=-504,y=105,z=1300,dy=3,nbt=!{pixelmon:npc_trainer}] -296 29 328
+execute as @a[x=-299,y=28,z=328,dx=7,dy=5,dz=9,scores={TalkTime=0},tag=!Dialogue200] run tp @e[x=-504,y=105,z=1300,dy=3,type=pixelmon:npc_trainer] -296 29 328
 
 #Dialogue 201
 #Lysandre Labs Nix talking about Xerosic Notes
@@ -1070,7 +1070,7 @@ execute as @a[x=-305,y=28,z=318,dx=20,dy=5,dz=10,scores={TalkTime=0},tag=Dialogu
 
 #Dialogue 213
 #Lysandre Labs final Essentia tp in if needed
-execute as @a[x=-295,y=32,z=297,distance=..15,scores={TalkTime=0},tag=Dialogue212,tag=!Dialogue213] run tp @e[x=-504,y=110,z=1306,dy=3,nbt=!{pixelmon:npc_trainer}] -295 32 297
+execute as @a[x=-295,y=32,z=297,distance=..15,scores={TalkTime=0},tag=Dialogue212,tag=!Dialogue213] run tp @e[x=-504,y=110,z=1306,dy=3,type=pixelmon:npc_trainer] -295 32 297
 
 #Dialogue 216
 #Museum artist follow-up
@@ -1090,10 +1090,10 @@ scoreboard players set @a[x=-1563,y=84,z=-844,distance=..7,scores={TalkTime=0},t
 
 #---------------------------------------------------------
 #Ribbons
-#/scoreboard players set @e[nbt=!{pixelmon:pixelmon},distance=..10] RibbonApply 11
+#/scoreboard players set @e[type=pixelmon:pixelmon,distance=..10] RibbonApply 11
 
 #Ribbon Application functions (runs on Pokemon if obtained a RibbonApply score to add new ribbons and keep existing)
-execute at @a run execute as @e[nbt=!{pixelmon:pixelmon},distance=..10,scores={RibbonApply=1..}] run function world:ribbonapply
+execute at @a run execute as @e[type=pixelmon:pixelmon,distance=..10,scores={RibbonApply=1..}] run function world:ribbonapply
 
 
 #scoreboard objectives add RibbonApply dummy
@@ -1116,45 +1116,45 @@ execute at @a run execute as @e[nbt=!{pixelmon:pixelmon},distance=..10,scores={R
 
 
 #Pokemon League Hall of Fame Room
-scoreboard players set @e[x=-2032,y=5,z=1910,dx=68,dy=50,dz=68,nbt=!{pixelmon:pixelmon}] RibbonApply 1
+scoreboard players set @e[x=-2032,y=5,z=1910,dx=68,dy=50,dz=68,type=pixelmon:pixelmon] RibbonApply 1
 
 #Footprint Ribbon
-execute as @e[x=-1700,y=80,z=-827,distance=..10,nbt=!{pixelmon:pixelmon}] run function kalos:data/calculatelevels
-execute as @e[x=-1700,y=80,z=-827,distance=..10,nbt=!{pixelmon:pixelmon},scores={Temp=0..30}] run tellraw @a[distance=..10] {"text":"<Ace Trainer> ...Hmmm. It's hard to tell..."}
-execute as @e[x=-1700,y=80,z=-827,distance=..10,nbt=!{pixelmon:pixelmon},scores={Temp=31..50}] run tellraw @a[distance=..10] {"text":"<Ace Trainer> if you travel with your Pokémon from now on, I’m sure it will grow!"}
-execute as @e[x=-1700,y=80,z=-827,distance=..10,nbt=!{pixelmon:pixelmon},scores={Temp=51..69}] run tellraw @a {"text":"<Ace Trainer> You've raised it quite well. I feel your love for this Pokémon."}
+execute as @e[x=-1700,y=80,z=-827,distance=..10,type=pixelmon:pixelmon] run function kalos:data/calculatelevels
+execute as @e[x=-1700,y=80,z=-827,distance=..10,type=pixelmon:pixelmon,scores={Temp=0..30}] run tellraw @a[distance=..10] {"text":"<Ace Trainer> ...Hmmm. It's hard to tell..."}
+execute as @e[x=-1700,y=80,z=-827,distance=..10,type=pixelmon:pixelmon,scores={Temp=31..50}] run tellraw @a[distance=..10] {"text":"<Ace Trainer> if you travel with your Pokémon from now on, I’m sure it will grow!"}
+execute as @e[x=-1700,y=80,z=-827,distance=..10,type=pixelmon:pixelmon,scores={Temp=51..69}] run tellraw @a {"text":"<Ace Trainer> You've raised it quite well. I feel your love for this Pokémon."}
 #Applies ribbon if high-enough level
-scoreboard players set @e[x=-1700,y=80,z=-827,distance=..10,nbt=!{pixelmon:pixelmon},scores={Temp=70..}] RibbonApply 7
+scoreboard players set @e[x=-1700,y=80,z=-827,distance=..10,type=pixelmon:pixelmon,scores={Temp=70..}] RibbonApply 7
 #Returns to Poke Ball if under level 70
-execute as @e[x=-1700,y=80,z=-827,distance=..10,nbt=!{pixelmon:pixelmon},scores={Temp=0..69}] run data modify entity @s {Dimension:1}
+execute as @e[x=-1700,y=80,z=-827,distance=..10,type=pixelmon:pixelmon,scores={Temp=0..69}] run data modify entity @s {Dimension:1}
 
 
 
 #Best Friends Ribbon, Lumiose Gym
-scoreboard players set @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,nbt=!{pixelmon:pixelmon},scores={Temp=1..}] Temp 0
-execute as @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,nbt=!{pixelmon:pixelmon}] run function kalos:data/calculatefriendship
+scoreboard players set @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,type=pixelmon:pixelmon,scores={Temp=1..}] Temp 0
+execute as @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,type=pixelmon:pixelmon] run function kalos:data/calculatefriendship
 
-execute as @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,nbt=!{pixelmon:pixelmon},scores={Temp=0..50}] run tellraw @a[distance=..10] {"text":"<Bonnie> Sort of friends, perhaps? Am I right?"}
-execute as @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,nbt=!{pixelmon:pixelmon},scores={Temp=51..100}] run tellraw @a[distance=..10] {"text":"<Bonnie> Becoming good friends! I can tell!"}
-execute as @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,nbt=!{pixelmon:pixelmon},scores={Temp=101..150}] run tellraw @a[distance=..10] {"text":"<Bonnie> Pretty good friends! Can I pet it?"}
-execute as @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,nbt=!{pixelmon:pixelmon},scores={Temp=151..200}] run tellraw @a[distance=..10] {"text":"<Bonnie> Really good friends! I want to play with it!"}
-execute as @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,nbt=!{pixelmon:pixelmon},scores={Temp=200..254}] run tellraw @a[distance=..10] {"text":"<Bonnie> Really, really good friends! I want to give it Poké Puffs and play with it!"}
-scoreboard players set @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,nbt=!{pixelmon:pixelmon},scores={Temp=255}] RibbonApply 5
+execute as @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,type=pixelmon:pixelmon,scores={Temp=0..50}] run tellraw @a[distance=..10] {"text":"<Bonnie> Sort of friends, perhaps? Am I right?"}
+execute as @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,type=pixelmon:pixelmon,scores={Temp=51..100}] run tellraw @a[distance=..10] {"text":"<Bonnie> Becoming good friends! I can tell!"}
+execute as @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,type=pixelmon:pixelmon,scores={Temp=101..150}] run tellraw @a[distance=..10] {"text":"<Bonnie> Pretty good friends! Can I pet it?"}
+execute as @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,type=pixelmon:pixelmon,scores={Temp=151..200}] run tellraw @a[distance=..10] {"text":"<Bonnie> Really good friends! I want to play with it!"}
+execute as @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,type=pixelmon:pixelmon,scores={Temp=200..254}] run tellraw @a[distance=..10] {"text":"<Bonnie> Really, really good friends! I want to give it Poké Puffs and play with it!"}
+scoreboard players set @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,type=pixelmon:pixelmon,scores={Temp=255}] RibbonApply 5
 
-execute as @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,nbt=!{pixelmon:pixelmon},scores={Temp=0..254}] run data modify entity @s {Dimension:1}
+execute as @e[x=-1827,y=99,z=-1705,dx=23,dy=8,dz=20,type=pixelmon:pixelmon,scores={Temp=0..254}] run data modify entity @s {Dimension:1}
 
 
 
 
 #Effort Ribbon, Laverre Town
 
-scoreboard players set @e[x=-201,y=89,z=-1520,distance=..10,nbt=!{pixelmon:pixelmon},scores={Temp=1..}] Temp 0
-execute as @e[x=-201,y=89,z=-1520,distance=..10,nbt=!{pixelmon:pixelmon}] run function kalos:data/calculateevtotal
+scoreboard players set @e[x=-201,y=89,z=-1520,distance=..10,type=pixelmon:pixelmon,scores={Temp=1..}] Temp 0
+execute as @e[x=-201,y=89,z=-1520,distance=..10,type=pixelmon:pixelmon] run function kalos:data/calculateevtotal
 
-execute as @e[x=-201,y=89,z=-1520,distance=..10,nbt=!{pixelmon:pixelmon},scores={Temp=0..509}] run tellraw @a[distance=..10] {"text":"<Fan Club Head> Mm-hmm! It is definitely making an effort! However, it will have to work a little harder if it wants to get a special something from me!"}
-scoreboard players set @e[x=-201,y=89,z=-1520,distance=..10,nbt=!{pixelmon:pixelmon},scores={Temp=510..510}] RibbonApply 6
+execute as @e[x=-201,y=89,z=-1520,distance=..10,type=pixelmon:pixelmon,scores={Temp=0..509}] run tellraw @a[distance=..10] {"text":"<Fan Club Head> Mm-hmm! It is definitely making an effort! However, it will have to work a little harder if it wants to get a special something from me!"}
+scoreboard players set @e[x=-201,y=89,z=-1520,distance=..10,type=pixelmon:pixelmon,scores={Temp=510..510}] RibbonApply 6
 
-execute as @e[x=-201,y=89,z=-1520,distance=..10,nbt=!{pixelmon:pixelmon},scores={Temp=0..509}] run data modify entity @s {Dimension:1}
+execute as @e[x=-201,y=89,z=-1520,distance=..10,type=pixelmon:pixelmon,scores={Temp=0..509}] run data modify entity @s {Dimension:1}
 
 
 
@@ -1172,95 +1172,95 @@ execute as @e[x=-201,y=89,z=-1520,distance=..10,nbt=!{pixelmon:pixelmon},scores=
 #Ambrette Town Ribbon Tourist (Monday)
 #Room x=-1980,y=108,z=640,dx=16,dy=6,dz=16
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] run tag @a[x=-1980,y=108,z=640,dx=16,dy=6,dz=16,tag=Dialouge269,tag=!Dialogue270,scores={TalkTime=0}] add Temp
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] run execute as @a[tag=Temp] run execute as @e[x=-1980,y=108,z=640,dx=16,dy=6,dz=16,nbt=!{pixelmon:pixelmon}] run scoreboard players set @a[tag=Temp] DialogueTrigger 270
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] run execute as @a[tag=Temp] run scoreboard players set @e[x=-1980,y=108,z=640,dx=16,dy=6,dz=16,nbt=!{pixelmon:pixelmon}] RibbonApply 8
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] run execute as @a[tag=Temp] run execute as @e[x=-1980,y=108,z=640,dx=16,dy=6,dz=16,type=pixelmon:pixelmon] run scoreboard players set @a[tag=Temp] DialogueTrigger 270
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] run execute as @a[tag=Temp] run scoreboard players set @e[x=-1980,y=108,z=640,dx=16,dy=6,dz=16,type=pixelmon:pixelmon] RibbonApply 8
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] run tag @a[tag=Temp] remove Temp
 
 #tps NPC
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] run tp @e[x=-477,y=100,z=1296,dy=3,nbt=!{pixelmon:npc_chatting}] -1970 109 647
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2..}] run tp @e[x=-1970,y=108,z=647,dy=3,nbt=!{pixelmon:npc_chatting}] -477 101 1296
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] run tp @e[x=-477,y=100,z=1296,dy=3,type=pixelmon:npc_chatting] -1970 109 647
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2..}] run tp @e[x=-1970,y=108,z=647,dy=3,type=pixelmon:npc_chatting] -477 101 1296
 
 
 
 #Camphrier Town Ribbon Tourist (Tuesday)
 #Room x=-1100,y=80,z=-6,dx=16,dy=6,dz=16
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] run tag @a[x=-1100,y=80,z=-6,dx=16,dy=6,dz=16,tag=Dialouge271,tag=!Dialogue272,scores={TalkTime=0}] add Temp
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] run execute as @a[tag=Temp] run execute as @e[x=-1100,y=80,z=-6,dx=16,dy=6,dz=16,nbt=!{pixelmon:pixelmon}] run scoreboard players set @a[tag=Temp] DialogueTrigger 272
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] run execute as @a[tag=Temp] run scoreboard players set @e[x=-1100,y=80,z=-6,dx=16,dy=6,dz=16,nbt=!{pixelmon:pixelmon}] RibbonApply 9
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] run execute as @a[tag=Temp] run execute as @e[x=-1100,y=80,z=-6,dx=16,dy=6,dz=16,type=pixelmon:pixelmon] run scoreboard players set @a[tag=Temp] DialogueTrigger 272
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] run execute as @a[tag=Temp] run scoreboard players set @e[x=-1100,y=80,z=-6,dx=16,dy=6,dz=16,type=pixelmon:pixelmon] RibbonApply 9
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] run tag @a[tag=Temp] remove Temp
 
 #tps NPC
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] run tp @e[x=-475,y=100,z=1296,dy=3,nbt=!{pixelmon:npc_chatting}] -1090 81 1
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] run tp @e[x=-1090,y=80,z=1,dy=3,nbt=!{pixelmon:npc_chatting}] -475 101 1296
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3..}] run tp @e[x=-1090,y=80,z=1,dy=3,nbt=!{pixelmon:npc_chatting}] -475 101 1296
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] run tp @e[x=-475,y=100,z=1296,dy=3,type=pixelmon:npc_chatting] -1090 81 1
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] run tp @e[x=-1090,y=80,z=1,dy=3,type=pixelmon:npc_chatting] -475 101 1296
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3..}] run tp @e[x=-1090,y=80,z=1,dy=3,type=pixelmon:npc_chatting] -475 101 1296
 
 
 
 #Geosenge Town Ribbon Tourist (Wednesday)
 #Room x=-2180,y=86,z=-643,dx=16,dy=6,dz=16
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] run tag @a[x=-2180,y=86,z=-643,dx=16,dy=6,dz=16,tag=Dialouge273,tag=!Dialogue274,scores={TalkTime=0}] add Temp
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] run execute as @a[tag=Temp] run execute as @e[x=-2180,y=86,z=-643,dx=16,dy=6,dz=16,nbt=!{pixelmon:pixelmon}] run scoreboard players set @a[tag=Temp] DialogueTrigger 274
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] run execute as @a[tag=Temp] run scoreboard players set @e[x=-2180,y=86,z=-643,dx=16,dy=6,dz=16,nbt=!{pixelmon:pixelmon}] RibbonApply 10
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] run execute as @a[tag=Temp] run execute as @e[x=-2180,y=86,z=-643,dx=16,dy=6,dz=16,type=pixelmon:pixelmon] run scoreboard players set @a[tag=Temp] DialogueTrigger 274
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] run execute as @a[tag=Temp] run scoreboard players set @e[x=-2180,y=86,z=-643,dx=16,dy=6,dz=16,type=pixelmon:pixelmon] RibbonApply 10
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] run tag @a[tag=Temp] remove Temp
 
 #tps NPC
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] run tp @e[x=-473,y=100,z=1296,dy=3,nbt=!{pixelmon:npc_chatting}] -2170 87 -636
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1..2}] run tp @e[x=-2170,y=86,z=-636,dy=3,nbt=!{pixelmon:npc_chatting}] -473 101 1296
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4..}] run tp @e[x=-2170,y=86,z=-636,dy=3,nbt=!{pixelmon:npc_chatting}] -473 101 1296
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] run tp @e[x=-473,y=100,z=1296,dy=3,type=pixelmon:npc_chatting] -2170 87 -636
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1..2}] run tp @e[x=-2170,y=86,z=-636,dy=3,type=pixelmon:npc_chatting] -473 101 1296
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4..}] run tp @e[x=-2170,y=86,z=-636,dy=3,type=pixelmon:npc_chatting] -473 101 1296
 
 
 
 #Coumarine Town Ribbon Tourist (Thursday)
 #Room x=-1045,y=55,z=-817,dx=16,dy=6,dz=16
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] run tag @a[x=-1045,y=55,z=-817,dx=16,dy=6,dz=16,tag=Dialouge275,tag=!Dialogue276,scores={TalkTime=0}] add Temp
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] run execute as @a[tag=Temp] run execute as @e[x=-1045,y=55,z=-817,dx=16,dy=6,dz=16,nbt=!{pixelmon:pixelmon}] run scoreboard players set @a[tag=Temp] DialogueTrigger 276
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] run execute as @a[tag=Temp] run scoreboard players set @e[x=-1045,y=55,z=-817,dx=16,dy=6,dz=16,nbt=!{pixelmon:pixelmon}] RibbonApply 11
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] run execute as @a[tag=Temp] run execute as @e[x=-1045,y=55,z=-817,dx=16,dy=6,dz=16,type=pixelmon:pixelmon] run scoreboard players set @a[tag=Temp] DialogueTrigger 276
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] run execute as @a[tag=Temp] run scoreboard players set @e[x=-1045,y=55,z=-817,dx=16,dy=6,dz=16,type=pixelmon:pixelmon] RibbonApply 11
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] run tag @a[tag=Temp] remove Temp
 
 #tps NPC
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] run tp @e[x=-471,y=100,z=1296,dy=3,nbt=!{pixelmon:npc_chatting},tag=Thursday] -1035 56 -810
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1..3}] run tp @e[x=-1035,y=55,z=-810,dy=3,nbt=!{pixelmon:npc_chatting},tag=Thursday] -471 101 1296
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] run tp @e[x=-1035,y=55,z=-810,dy=3,nbt=!{pixelmon:npc_chatting},tag=Thursday] -471 101 1296
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] run tp @e[x=-471,y=100,z=1296,dy=3,type=pixelmon:npc_chatting,tag=Thursday] -1035 56 -810
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1..3}] run tp @e[x=-1035,y=55,z=-810,dy=3,type=pixelmon:npc_chatting,tag=Thursday] -471 101 1296
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] run tp @e[x=-1035,y=55,z=-810,dy=3,type=pixelmon:npc_chatting,tag=Thursday] -471 101 1296
 
 
 
 #Couriway Town Ribbon Tourist (Friday)
 #Room x=1569,y=73,z=260,dx=16,dy=6,dz=16
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] run tag @a[x=1569,y=73,z=260,dx=16,dy=6,dz=16,tag=Dialouge277,tag=!Dialogue278,scores={TalkTime=0}] add Temp
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] run execute as @a[tag=Temp] run execute as @e[x=1569,y=73,z=260,dx=16,dy=6,dz=16,nbt=!{pixelmon:pixelmon}] run scoreboard players set @a[tag=Temp] DialogueTrigger 278
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] run execute as @a[tag=Temp] run scoreboard players set @e[x=1569,y=73,z=260,dx=16,dy=6,dz=16,nbt=!{pixelmon:pixelmon}] RibbonApply 12
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] run execute as @a[tag=Temp] run execute as @e[x=1569,y=73,z=260,dx=16,dy=6,dz=16,type=pixelmon:pixelmon] run scoreboard players set @a[tag=Temp] DialogueTrigger 278
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] run execute as @a[tag=Temp] run scoreboard players set @e[x=1569,y=73,z=260,dx=16,dy=6,dz=16,type=pixelmon:pixelmon] RibbonApply 12
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] run tag @a[tag=Temp] remove Temp
 
 #tps NPC
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] run tp @e[x=-469,y=100,z=1296,dy=3,nbt=!{pixelmon:npc_chatting}] 1579 74 267
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1..4}] run tp @e[x=1579,y=73,z=267,dy=3,nbt=!{pixelmon:npc_chatting}] -469 101 1296
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6..}] run tp @e[x=1579,y=73,z=267,dy=3,nbt=!{pixelmon:npc_chatting}] -469 101 1296
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] run tp @e[x=-469,y=100,z=1296,dy=3,type=pixelmon:npc_chatting] 1579 74 267
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1..4}] run tp @e[x=1579,y=73,z=267,dy=3,type=pixelmon:npc_chatting] -469 101 1296
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6..}] run tp @e[x=1579,y=73,z=267,dy=3,type=pixelmon:npc_chatting] -469 101 1296
 
 
 
 #Cyllage Town Ribbon Tourist (Saturday)
 #Room x=-2038,y=64,z=-160,dx=16,dy=6,dz=16
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] run tag @a[x=-2038,y=64,z=-160,dx=16,dy=6,dz=16,tag=Dialouge279,tag=!Dialogue280,scores={TalkTime=0}] add Temp
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] run execute as @a[tag=Temp] run execute as @e[x=-2038,y=64,z=-160,dx=16,dy=6,dz=16,nbt=!{pixelmon:pixelmon}] run scoreboard players set @a[tag=Temp] DialogueTrigger 280
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] run execute as @a[tag=Temp] run scoreboard players set @e[x=-2038,y=64,z=-160,dx=16,dy=6,dz=16,nbt=!{pixelmon:pixelmon}] RibbonApply 13
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] run execute as @a[tag=Temp] run execute as @e[x=-2038,y=64,z=-160,dx=16,dy=6,dz=16,type=pixelmon:pixelmon] run scoreboard players set @a[tag=Temp] DialogueTrigger 280
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] run execute as @a[tag=Temp] run scoreboard players set @e[x=-2038,y=64,z=-160,dx=16,dy=6,dz=16,type=pixelmon:pixelmon] RibbonApply 13
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] run tag @a[tag=Temp] remove Temp
 
 #tps NPC
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] run tp @e[x=-467,y=100,z=1296,dy=3,nbt=!{pixelmon:npc_chatting}] -2028 65 -153
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1..5}] run tp @e[x=-2028,y=65,z=-153,dy=3,nbt=!{pixelmon:npc_chatting}] -467 101 1296
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] run tp @e[x=-2028,y=65,z=-153,dy=3,nbt=!{pixelmon:npc_chatting}] -467 101 1296
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] run tp @e[x=-467,y=100,z=1296,dy=3,type=pixelmon:npc_chatting] -2028 65 -153
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1..5}] run tp @e[x=-2028,y=65,z=-153,dy=3,type=pixelmon:npc_chatting] -467 101 1296
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] run tp @e[x=-2028,y=65,z=-153,dy=3,type=pixelmon:npc_chatting] -467 101 1296
 
 
 #Coumarine Town Ribbon Tourist (Sunday)
 #Room x=-1045,y=55,z=-817,dx=16,dy=6,dz=16
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] run tag @a[x=-1045,y=55,z=-817,dx=16,dy=6,dz=16,tag=Dialouge281,tag=!Dialogue282,scores={TalkTime=0}] add Temp
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] run execute as @a[tag=Temp] run execute as @e[x=-1045,y=55,z=-817,dx=16,dy=6,dz=16,nbt=!{pixelmon:pixelmon}] run scoreboard players set @a[tag=Temp] DialogueTrigger 282
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] run execute as @a[tag=Temp] run scoreboard players set @e[x=-1045,y=55,z=-817,dx=16,dy=6,dz=16,nbt=!{pixelmon:pixelmon}] RibbonApply 14
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] run execute as @a[tag=Temp] run execute as @e[x=-1045,y=55,z=-817,dx=16,dy=6,dz=16,type=pixelmon:pixelmon] run scoreboard players set @a[tag=Temp] DialogueTrigger 282
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] run execute as @a[tag=Temp] run scoreboard players set @e[x=-1045,y=55,z=-817,dx=16,dy=6,dz=16,type=pixelmon:pixelmon] RibbonApply 14
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] run tag @a[tag=Temp] remove Temp
 
 #tps NPC
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] run tp @e[x=-465,y=100,z=1296,dy=3,nbt=!{pixelmon:npc_chatting},tag=Sunday] -1035 56 -810
-execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1..6}] run tp @e[x=-1035,y=55,z=-810,dy=3,nbt=!{pixelmon:npc_chatting},tag=Sunday] -465 101 1296
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] run tp @e[x=-465,y=100,z=1296,dy=3,type=pixelmon:npc_chatting,tag=Sunday] -1035 56 -810
+execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1..6}] run tp @e[x=-1035,y=55,z=-810,dy=3,type=pixelmon:npc_chatting,tag=Sunday] -465 101 1296
 
 
 
@@ -1397,19 +1397,19 @@ tp @a[x=1627,y=100,z=2415,dx=22,dy=156,dz=36] ~ ~ ~-10
 
 #Geosenge Town Eastern block until talk with Team Flare grunt twice
 tp @a[x=-2116,y=103,z=-702,dx=10,dy=10,dz=23,tag=!Dialogue52] ~-10 ~ ~
-execute as @a[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,nbt=!{pixelmon:npc_chatting},limit=1] -2116 104 -698
-execute as @a[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,nbt=!{pixelmon:npc_chatting},limit=1] -2116 104 -696
-execute as @a[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,nbt=!{pixelmon:npc_chatting},limit=1] -2116 104 -694
-execute as @a[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,nbt=!{pixelmon:npc_chatting},limit=1] -2116 104 -692
-execute as @a[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,nbt=!{pixelmon:npc_chatting},limit=1] -2116 104 -689
-execute as @a[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,nbt=!{pixelmon:npc_chatting},limit=1] -2116 104 -687
-execute as @a[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,nbt=!{pixelmon:npc_chatting},limit=1] -2116 104 -685
-execute as @a[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,nbt=!{pixelmon:npc_chatting},limit=1] -2116 104 -683
-execute as @a[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -2120 104 -690.0
+execute as @a[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,type=pixelmon:npc_chatting,limit=1] -2116 104 -698
+execute as @a[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,type=pixelmon:npc_chatting,limit=1] -2116 104 -696
+execute as @a[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,type=pixelmon:npc_chatting,limit=1] -2116 104 -694
+execute as @a[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,type=pixelmon:npc_chatting,limit=1] -2116 104 -692
+execute as @a[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,type=pixelmon:npc_chatting,limit=1] -2116 104 -689
+execute as @a[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,type=pixelmon:npc_chatting,limit=1] -2116 104 -687
+execute as @a[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,type=pixelmon:npc_chatting,limit=1] -2116 104 -685
+execute as @a[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,type=pixelmon:npc_chatting,limit=1] -2116 104 -683
+execute as @a[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1252,dy=3,type=pixelmon:npc_chatting] -2120 104 -690.0
 execute as @a[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @a[x=-2116,y=103,z=-702,dx=10,dy=10,dz=23,tag=!Dialogue52] ~-10 ~ ~
 
-execute as @a[x=-2124,y=104,z=-691,distance=..30,tag=Dialogue52] run tp @e[x=-2120,y=103,z=-691,dy=3,dz=1,nbt=!{pixelmon:npc_chatting}] -504 216 1252
-execute as @a[x=-2124,y=104,z=-691,distance=..30,tag=Dialogue52] run tp @e[x=-2116,y=103,z=-699,dy=3,dz=17,nbt=!{pixelmon:npc_chatting}] -504 216 1254
+execute as @a[x=-2124,y=104,z=-691,distance=..30,tag=Dialogue52] run tp @e[x=-2120,y=103,z=-691,dy=3,dz=1,type=pixelmon:npc_chatting] -504 216 1252
+execute as @a[x=-2124,y=104,z=-691,distance=..30,tag=Dialogue52] run tp @e[x=-2116,y=103,z=-699,dy=3,dz=17,type=pixelmon:npc_chatting] -504 216 1254
 
 #Route 12 block pre-Surf
 tellraw @a[x=-1423,y=71,z=-850,dx=20,dy=20,dz=41,tag=!Korrina] {"text":"You need the Rumble Badge to use Surf outside of battle!","italic":true,"color":"gray"}
@@ -1445,35 +1445,35 @@ tp @a[x=-2372,y=69,z=-987,dx=13,dy=5,dz=4,tag=!Dialogue123] ~10 ~ ~
 #Geosenge version portal managers
 
 #C-K
-execute as @a[x=-2130,y=103,z=-702,dx=14,dy=10,dz=23,scores={Geosenge=2}] run tp @e[distance=..3,nbt=!{pixelmon:bike}] -317 109 2030
+execute as @a[x=-2130,y=103,z=-702,dx=14,dy=10,dz=23,scores={Geosenge=2}] run tp @e[distance=..3,type=pixelmon:bike] -317 109 2030
 tp @a[x=-2130,y=103,z=-702,dx=14,dy=10,dz=23,scores={Geosenge=2}] -317 109 2030
 
 #A-I
-execute as @a[x=-2224,y=103,z=-612,dx=26,dy=10,dz=13,scores={Geosenge=2}] run tp @e[distance=..3,nbt=!{pixelmon:bike}] -411 109 2118
+execute as @a[x=-2224,y=103,z=-612,dx=26,dy=10,dz=13,scores={Geosenge=2}] run tp @e[distance=..3,type=pixelmon:bike] -411 109 2118
 tp @a[x=-2224,y=103,z=-612,dx=26,dy=10,dz=13,scores={Geosenge=2}] -411 109 2118
 
 #J-B
-execute as @a[x=-423,y=108,z=2123,dx=25,dy=10,dz=15,scores={Geosenge=2}] run tp @e[distance=..3,nbt=!{pixelmon:bike}] -2210 104 -593
+execute as @a[x=-423,y=108,z=2123,dx=25,dy=10,dz=15,scores={Geosenge=2}] run tp @e[distance=..3,type=pixelmon:bike] -2210 104 -593
 tp @a[x=-423,y=108,z=2123,dx=25,dy=10,dz=15,scores={Geosenge=2}] -2210 104 -593
 
 #L-D
-execute as @a[x=-314,y=108,z=2018,dx=18,dy=10,dz=23,scores={Geosenge=2}] run tp @e[distance=..3,nbt=!{pixelmon:bike}] -2112 104 -690
+execute as @a[x=-314,y=108,z=2018,dx=18,dy=10,dz=23,scores={Geosenge=2}] run tp @e[distance=..3,type=pixelmon:bike] -2112 104 -690
 tp @a[x=-314,y=108,z=2018,dx=18,dy=10,dz=23,scores={Geosenge=2}] -2112 104 -690
 
 #C-G
-execute as @a[x=-2130,y=103,z=-702,dx=14,dy=10,dz=23,scores={Geosenge=1}] run tp @e[distance=..3,nbt=!{pixelmon:bike}] -1040 109 2030
+execute as @a[x=-2130,y=103,z=-702,dx=14,dy=10,dz=23,scores={Geosenge=1}] run tp @e[distance=..3,type=pixelmon:bike] -1040 109 2030
 tp @a[x=-2130,y=103,z=-702,dx=14,dy=10,dz=23,scores={Geosenge=1}] -1040 109 2030
 
 #A-E
-execute as @a[x=-2224,y=103,z=-612,dx=26,dy=10,dz=13,scores={Geosenge=1}] run tp @e[distance=..3,nbt=!{pixelmon:bike}] -1131 109 2117
+execute as @a[x=-2224,y=103,z=-612,dx=26,dy=10,dz=13,scores={Geosenge=1}] run tp @e[distance=..3,type=pixelmon:bike] -1131 109 2117
 tp @a[x=-2224,y=103,z=-612,dx=26,dy=10,dz=13,scores={Geosenge=1}] -1131 109 2117
 
 #F-B
-execute as @a[x=-1143,y=108,z=2123,dx=25,dy=10,dz=15,scores={Geosenge=1}] run tp @e[distance=..3,nbt=!{pixelmon:bike}] -2210 104 -593
+execute as @a[x=-1143,y=108,z=2123,dx=25,dy=10,dz=15,scores={Geosenge=1}] run tp @e[distance=..3,type=pixelmon:bike] -2210 104 -593
 tp @a[x=-1143,y=108,z=2123,dx=25,dy=10,dz=15,scores={Geosenge=1}] -2210 104 -593
 
 #H-D
-execute as @a[x=-1034,y=108,z=2018,dx=18,dy=10,dz=23,scores={Geosenge=1}] run tp @e[distance=..3,nbt=!{pixelmon:bike}] -2112 104 -690
+execute as @a[x=-1034,y=108,z=2018,dx=18,dy=10,dz=23,scores={Geosenge=1}] run tp @e[distance=..3,type=pixelmon:bike] -2112 104 -690
 tp @a[x=-1034,y=108,z=2018,dx=18,dy=10,dz=23,scores={Geosenge=1}] -2112 104 -690
 
 

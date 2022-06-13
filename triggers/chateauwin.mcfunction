@@ -24,7 +24,7 @@ scoreboard players add @a[scores={ChateauWin=5}] ChateauRank 5
 
 
 #Adds Battled tag so NPC will return to underground
-execute as @a[scores={ChateauWin=1..}] run tag @e[limit=1,nbt=!{pixelmon:npc_trainer}] add Battled
+execute as @a[scores={ChateauWin=1..}] run tag @e[limit=1,type=pixelmon:npc_trainer] add Battled
 
 
 

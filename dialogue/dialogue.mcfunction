@@ -28,9 +28,9 @@ scoreboard players set @s[tag=Dialogue1] DialogueTrigger 0
 #scoreboard players set @a[x=503,y=108,z=1568,dx=5,dy=4,tag=Dialogue1] DialogueTrigger 2
 
 #Serena npc
-execute as @s[scores={DialogueTrigger=2,TalkTime=1}] run tp @e[x=-504,y=100,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] 512 108 1588
+execute as @s[scores={DialogueTrigger=2,TalkTime=1}] run tp @e[x=-504,y=100,z=1252,dy=3,type=pixelmon:npc_chatting] 512 108 1588
 #Shauna npc
-execute as @s[scores={DialogueTrigger=2,TalkTime=1}] run tp @e[x=-504,y=100,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] 506 108 1588
+execute as @s[scores={DialogueTrigger=2,TalkTime=1}] run tp @e[x=-504,y=100,z=1254,dy=3,type=pixelmon:npc_chatting] 506 108 1588
 
 tellraw @s[scores={DialogueTrigger=2,TalkTime=3}] ["",{"text":"<"},{"text":"...","color":"gold"},{"text":"> Welcome to Vaniville Town!"}]
 tellraw @s[scores={DialogueTrigger=2,TalkTime=7}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> My name's Serena. I'm your neighbor."}]
@@ -44,16 +44,16 @@ tellraw @s[scores={DialogueTrigger=2,TalkTime=60}] ["",{"text":"<"},{"text":"Sha
 tellraw @s[scores={DialogueTrigger=2,TalkTime=65}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> C'mon! Hurry! Let's go!"}]
 
 #Character Introduction particles
-execute as @s[scores={DialogueTrigger=2,TalkTime=13}] run execute at @e[x=512,y=107,z=1588,dy=3,nbt=!{pixelmon:npc_chatting}] run particle minecraft:end_rod ~ ~4 ~ 0 0.5 0 0.001 10
-execute as @s[scores={DialogueTrigger=2,TalkTime=19}] run execute at @e[x=506,y=107,z=1588,dy=3,nbt=!{pixelmon:npc_chatting}] run particle minecraft:end_rod ~ ~4 ~ 0 0.5 0 0.001 10
+execute as @s[scores={DialogueTrigger=2,TalkTime=13}] run execute at @e[x=512,y=107,z=1588,dy=3,type=pixelmon:npc_chatting] run particle minecraft:end_rod ~ ~4 ~ 0 0.5 0 0.001 10
+execute as @s[scores={DialogueTrigger=2,TalkTime=19}] run execute at @e[x=506,y=107,z=1588,dy=3,type=pixelmon:npc_chatting] run particle minecraft:end_rod ~ ~4 ~ 0 0.5 0 0.001 10
 
 execute as @s[scores={DialogueTrigger=2,TalkTime=67}] run particle cloud 512 108 1588 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=2,TalkTime=67}] run particle cloud 506 108 1588 2 2 2 1 100
 
 #Serena npc
-execute as @s[scores={DialogueTrigger=2,score_TalkTime=67..}] run tp @e[x=512,y=107,z=1588,dy=3,nbt=!{pixelmon:npc_chatting}] -504 101 1252
+execute as @s[scores={DialogueTrigger=2,score_TalkTime=67..}] run tp @e[x=512,y=107,z=1588,dy=3,type=pixelmon:npc_chatting] -504 101 1252
 #Shauna npc
-execute as @s[scores={DialogueTrigger=2,score_TalkTime=67..}] run tp @e[x=506,y=107,z=1588,dy=3,nbt=!{pixelmon:npc_chatting}] -504 101 1254
+execute as @s[scores={DialogueTrigger=2,score_TalkTime=67..}] run tp @e[x=506,y=107,z=1588,dy=3,type=pixelmon:npc_chatting] -504 101 1254
 
 tag @s[scores={DialogueTrigger=2,TalkTime=67..}] add Dialogue2
 scoreboard players set @s[tag=Dialogue2] TalkTime 0
@@ -81,15 +81,15 @@ tellraw @s[scores={DialogueTrigger=3,TalkTime=92}] ["",{"text":"<"},{"text":"Tie
 
 execute as @s[scores={DialogueTrigger=3,TalkTime=99..}] run tp @s -1078 101 1211 180 5
 
-execute as @s[scores={DialogueTrigger=3,TalkTime=41}] run execute at @e[x=437,y=107,z=1371,dy=3,nbt=!{pixelmon:npc_chatting}] run particle minecraft:end_rod ~ ~4 ~ 0 0.5 0 0.001 10
-execute as @s[scores={DialogueTrigger=3,TalkTime=59}] run execute at @e[x=437,y=107,z=1373,dy=3,nbt=!{pixelmon:npc_chatting}] run particle minecraft:end_rod ~ ~4 ~ 0 0.5 0 0.001 10
+execute as @s[scores={DialogueTrigger=3,TalkTime=41}] run execute at @e[x=437,y=107,z=1371,dy=3,type=pixelmon:npc_chatting] run particle minecraft:end_rod ~ ~4 ~ 0 0.5 0 0.001 10
+execute as @s[scores={DialogueTrigger=3,TalkTime=59}] run execute at @e[x=437,y=107,z=1373,dy=3,type=pixelmon:npc_chatting] run particle minecraft:end_rod ~ ~4 ~ 0 0.5 0 0.001 10
 
 #Trevor npc
-execute as @s[scores={DialogueTrigger=3,TalkTime=1}] run tp @e[x=-504,y=105,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] 437 108 1373
+execute as @s[scores={DialogueTrigger=3,TalkTime=1}] run tp @e[x=-504,y=105,z=1252,dy=3,type=pixelmon:npc_chatting] 437 108 1373
 #Tierno npc
-execute as @s[scores={DialogueTrigger=3,TalkTime=1}] run tp @e[x=-504,y=105,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] 437 108 1371
+execute as @s[scores={DialogueTrigger=3,TalkTime=1}] run tp @e[x=-504,y=105,z=1254,dy=3,type=pixelmon:npc_chatting] 437 108 1371
 #Shauna
-execute as @s[scores={DialogueTrigger=3,TalkTime=1}] run tp @e[x=-504,y=105,z=1256,dy=3,nbt=!{pixelmon:npc_chatting}] 439 108 1375
+execute as @s[scores={DialogueTrigger=3,TalkTime=1}] run tp @e[x=-504,y=105,z=1256,dy=3,type=pixelmon:npc_chatting] 439 108 1375
 
 tag @s[scores={DialogueTrigger=3,TalkTime=92..}] add Dialogue3
 scoreboard players set @s[tag=Dialogue3] TalkTime 0
@@ -134,11 +134,11 @@ execute as @s[scores={DialogueTrigger=4,TalkTime=130}] run particle cloud 437 10
 execute as @s[scores={DialogueTrigger=4,TalkTime=130}] run particle cloud 437 108 1371 2 2 2 1 100
 
 #Trevor npc
-execute as @s[scores={DialogueTrigger=4,TalkTime=130}] run tp @e[x=437,y=107,z=1373,dy=3,nbt=!{pixelmon:npc_chatting}] -504 106 1252
-execute as @s[scores={DialogueTrigger=4,TalkTime=1}] run tp @e[x=-504,y=105,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] 437 108 1373
+execute as @s[scores={DialogueTrigger=4,TalkTime=130}] run tp @e[x=437,y=107,z=1373,dy=3,type=pixelmon:npc_chatting] -504 106 1252
+execute as @s[scores={DialogueTrigger=4,TalkTime=1}] run tp @e[x=-504,y=105,z=1252,dy=3,type=pixelmon:npc_chatting] 437 108 1373
 #Tierno npc
-execute as @s[scores={DialogueTrigger=4,TalkTime=130}] run tp @e[x=437,y=107,z=1371,dy=3,nbt=!{pixelmon:npc_chatting}] -504 106 1254
-execute as @s[scores={DialogueTrigger=4,TalkTime=1}] run tp @e[x=-504,y=105,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] 437 108 1371
+execute as @s[scores={DialogueTrigger=4,TalkTime=130}] run tp @e[x=437,y=107,z=1371,dy=3,type=pixelmon:npc_chatting] -504 106 1254
+execute as @s[scores={DialogueTrigger=4,TalkTime=1}] run tp @e[x=-504,y=105,z=1254,dy=3,type=pixelmon:npc_chatting] 437 108 1371
 
 tag @s[scores={DialogueTrigger=4,TalkTime=140..}] add Dialogue4
 scoreboard players set @s[tag=Dialogue4] TalkTime 0
@@ -150,9 +150,9 @@ scoreboard players set @s[tag=Dialogue4] DialogueTrigger 0
 #Shauna wants to battle, Aquacorde
 #scoreboard players set @a[x=456,y=107,z=1408,dx=28,dy=5,dz=10,score_DialogueTrigger=0,tag=!Dialogue5,tag=Dialogue4,rx=-90,rxm=90] DialogueTrigger 5
 
-execute as @s[scores={DialogueTrigger=5,TalkTime=1}] run scoreboard players set @e[x=-504,y=110,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 1
-execute as @s[scores={DialogueTrigger=5,TalkTime=1}] run scoreboard players set @e[x=-504,y=110,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 2
-execute as @s[scores={DialogueTrigger=5,TalkTime=1}] run scoreboard players set @e[x=-504,y=110,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 3
+execute as @s[scores={DialogueTrigger=5,TalkTime=1}] run scoreboard players set @e[x=-504,y=110,z=1252,dy=3,type=pixelmon:npc_trainer] StarterPick 1
+execute as @s[scores={DialogueTrigger=5,TalkTime=1}] run scoreboard players set @e[x=-504,y=110,z=1254,dy=3,type=pixelmon:npc_trainer] StarterPick 2
+execute as @s[scores={DialogueTrigger=5,TalkTime=1}] run scoreboard players set @e[x=-504,y=110,z=1256,dy=3,type=pixelmon:npc_trainer] StarterPick 3
 
 tellraw @s[scores={DialogueTrigger=5,TalkTime=1}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> "},{"selector":"@s"},{"text":", wait!"}]
 tellraw @s[scores={DialogueTrigger=5,TalkTime=7}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> You're gonna be my opponent in my Pokemon-battling debut!"}]
@@ -162,10 +162,10 @@ tellraw @s[scores={DialogueTrigger=5,TalkTime=15,StarterPick=1}] ["",{"text":"<"
 tellraw @s[scores={DialogueTrigger=5,TalkTime=23}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Let's win it with style!"}]
 
 #tp in NPC depending on player's StarterPick score
-execute as @s[scores={DialogueTrigger=5,TalkTime=1}] run tp @e[x=439,y=107,z=1375,dy=3,nbt=!{pixelmon:npc_chatting}] -504 106 1256
-execute as @s[scores={DialogueTrigger=5,StarterPick=1}] run tp @e[x=-504,y=110,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] 471 108 1401
-execute as @s[scores={DialogueTrigger=5,StarterPick=2}] run tp @e[x=-504,y=110,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] 471 108 1401
-execute as @s[scores={DialogueTrigger=5,StarterPick=3}] run tp @e[x=-504,y=110,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] 471 108 1401
+execute as @s[scores={DialogueTrigger=5,TalkTime=1}] run tp @e[x=439,y=107,z=1375,dy=3,type=pixelmon:npc_chatting] -504 106 1256
+execute as @s[scores={DialogueTrigger=5,StarterPick=1}] run tp @e[x=-504,y=110,z=1252,dy=3,type=pixelmon:npc_trainer] 471 108 1401
+execute as @s[scores={DialogueTrigger=5,StarterPick=2}] run tp @e[x=-504,y=110,z=1254,dy=3,type=pixelmon:npc_trainer] 471 108 1401
+execute as @s[scores={DialogueTrigger=5,StarterPick=3}] run tp @e[x=-504,y=110,z=1256,dy=3,type=pixelmon:npc_trainer] 471 108 1401
 
 tag @s[scores={DialogueTrigger=5,TalkTime=23..}] add Dialogue5
 scoreboard players set @s[tag=Dialogue5] TalkTime 0
@@ -179,18 +179,18 @@ scoreboard players set @s[tag=Dialogue5] DialogueTrigger 0
 #/tedit add WIN /scoreboard players set @pl DialogueTrigger 6
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
 #/tedit add WIN /scoreboard players set @pl TalkTime 0
-#execute as @s[x=471,y=108,z=1401,r=10,score_StarterPick_min=1,score_StarterPick=1,score_TalkTime=0,tag=Dialogue5] run execute as @s[tag=!Dialogue6] run tp @e[x=-504,y=110,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] 471 108 1401
-#execute as @s[x=471,y=108,z=1401,r=10,score_StarterPick_min=2,score_StarterPick=2,score_TalkTime=0,tag=Dialogue5] run execute as @s[tag=!Dialogue6] run tp @e[x=-504,y=110,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] 471 108 1401
-#execute as @s[x=471,y=108,z=1401,r=10,score_StarterPick_min=3,score_StarterPick=3,score_TalkTime=0,tag=Dialogue5] run execute as @s[tag=!Dialogue6] run tp @e[x=-504,y=110,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] 471 108 1401
+#execute as @s[x=471,y=108,z=1401,r=10,score_StarterPick_min=1,score_StarterPick=1,score_TalkTime=0,tag=Dialogue5] run execute as @s[tag=!Dialogue6] run tp @e[x=-504,y=110,z=1252,dy=3,type=pixelmon:npc_trainer] 471 108 1401
+#execute as @s[x=471,y=108,z=1401,r=10,score_StarterPick_min=2,score_StarterPick=2,score_TalkTime=0,tag=Dialogue5] run execute as @s[tag=!Dialogue6] run tp @e[x=-504,y=110,z=1254,dy=3,type=pixelmon:npc_trainer] 471 108 1401
+#execute as @s[x=471,y=108,z=1401,r=10,score_StarterPick_min=3,score_StarterPick=3,score_TalkTime=0,tag=Dialogue5] run execute as @s[tag=!Dialogue6] run tp @e[x=-504,y=110,z=1256,dy=3,type=pixelmon:npc_trainer] 471 108 1401
 
 tellraw @s[scores={DialogueTrigger=6,TalkTime=6}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> You're amazing, "},{"selector":"@s"},{"text":"! Here! Let me fix up your Pokémon!"}]
 ###execute as @s[scores={DialogueTrigger=6,TalkTime=10}] run pokeheal @s
 tellraw @s[scores={DialogueTrigger=6,TalkTime=17}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Say hi to your mom for me!"}]
 
 execute as @s[scores={DialogueTrigger=6,TalkTime=23}] run particle cloud 471 108 1401 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=6,StarterPick=1,TalkTime=23}] run tp @e[x=471,y=108,z=1401,distance=..3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=1}] -504 111 1252
-execute as @s[scores={DialogueTrigger=6,StarterPick=2,TalkTime=23}] run tp @e[x=471,y=108,z=1401,distance=..3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=2}] -504 111 1254
-execute as @s[scores={DialogueTrigger=6,StarterPick=3,TalkTime=23}] run tp @e[x=471,y=108,z=1401,distance=..3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=3}] -504 111 1256
+execute as @s[scores={DialogueTrigger=6,StarterPick=1,TalkTime=23}] run tp @e[x=471,y=108,z=1401,distance=..3,type=pixelmon:npc_trainer,scores={StarterPick=1}] -504 111 1252
+execute as @s[scores={DialogueTrigger=6,StarterPick=2,TalkTime=23}] run tp @e[x=471,y=108,z=1401,distance=..3,type=pixelmon:npc_trainer,scores={StarterPick=2}] -504 111 1254
+execute as @s[scores={DialogueTrigger=6,StarterPick=3,TalkTime=23}] run tp @e[x=471,y=108,z=1401,distance=..3,type=pixelmon:npc_trainer,scores={StarterPick=3}] -504 111 1256
 
 tag @s[scores={DialogueTrigger=6,TalkTime=23..}] add Dialogue6
 scoreboard players set @s[tag=Dialogue6] TalkTime 0
@@ -245,10 +245,10 @@ execute as @s[scores={DialogueTrigger=8,TalkTime=1}] run particle cloud 389 100 
 execute as @s[scores={DialogueTrigger=8,TalkTime=1}] run particle cloud 395 100 659 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=8,TalkTime=1}] run particle cloud 395 100 663 2 2 2 1 100
 
-execute as @s[scores={DialogueTrigger=8,TalkTime=1}] run tp @e[x=-504,y=115,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] 395 100 663
-execute as @s[scores={DialogueTrigger=8,TalkTime=1}] run tp @e[x=-504,y=115,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] 395 100 659
-execute as @s[scores={DialogueTrigger=8,TalkTime=1}] run tp @e[x=-504,y=115,z=1256,dy=3,nbt=!{pixelmon:npc_chatting}] 389 100 663
-execute as @s[scores={DialogueTrigger=8,TalkTime=1}] run tp @e[x=-504,y=115,z=1258,dy=3,nbt=!{pixelmon:npc_chatting}] 389 100 659
+execute as @s[scores={DialogueTrigger=8,TalkTime=1}] run tp @e[x=-504,y=115,z=1252,dy=3,type=pixelmon:npc_chatting] 395 100 663
+execute as @s[scores={DialogueTrigger=8,TalkTime=1}] run tp @e[x=-504,y=115,z=1254,dy=3,type=pixelmon:npc_chatting] 395 100 659
+execute as @s[scores={DialogueTrigger=8,TalkTime=1}] run tp @e[x=-504,y=115,z=1256,dy=3,type=pixelmon:npc_chatting] 389 100 663
+execute as @s[scores={DialogueTrigger=8,TalkTime=1}] run tp @e[x=-504,y=115,z=1258,dy=3,type=pixelmon:npc_chatting] 389 100 659
 
 tellraw @s[scores={DialogueTrigger=8,TalkTime=5}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> What are you all going to do?"}]
 tellraw @s[scores={DialogueTrigger=8,TalkTime=11}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> Why, look for Pokemon, or course!"}]
@@ -268,7 +268,7 @@ tellraw @s[scores={DialogueTrigger=8,TalkTime=109}] ["",{"text":"<"},{"text":"Se
 
 
 #Serena tp
-execute as @s[scores={DialogueTrigger=8,TalkTime=116}] run tp @e[x=389,y=99,z=659,dy=3,nbt=!{pixelmon:npc_chatting}] -504 116 1258
+execute as @s[scores={DialogueTrigger=8,TalkTime=116}] run tp @e[x=389,y=99,z=659,dy=3,type=pixelmon:npc_chatting] -504 116 1258
 execute as @s[scores={DialogueTrigger=8,TalkTime=116}] run particle cloud 389 100 659 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=8,TalkTime=120}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Oh, this is great!"}]
@@ -279,9 +279,9 @@ tellraw @s[scores={DialogueTrigger=8,TalkTime=132}] ["",{"text":"<"},{"text":"Sh
 
 
 #Teleports gang
-execute as @s[scores={DialogueTrigger=8,TalkTime=140}] run tp @e[x=389,y=99,z=663,dy=3,nbt=!{pixelmon:npc_chatting}] -504 116 1256
-execute as @s[scores={DialogueTrigger=8,TalkTime=140}] run tp @e[x=395,y=99,z=659,dy=3,nbt=!{pixelmon:npc_chatting}] -504 116 1254
-execute as @s[scores={DialogueTrigger=8,TalkTime=140}] run tp @e[x=395,y=99,z=663,dy=3,nbt=!{pixelmon:npc_chatting}] -504 116 1252
+execute as @s[scores={DialogueTrigger=8,TalkTime=140}] run tp @e[x=389,y=99,z=663,dy=3,type=pixelmon:npc_chatting] -504 116 1256
+execute as @s[scores={DialogueTrigger=8,TalkTime=140}] run tp @e[x=395,y=99,z=659,dy=3,type=pixelmon:npc_chatting] -504 116 1254
+execute as @s[scores={DialogueTrigger=8,TalkTime=140}] run tp @e[x=395,y=99,z=663,dy=3,type=pixelmon:npc_chatting] -504 116 1252
 
 execute as @s[scores={DialogueTrigger=8,TalkTime=140}] run particle cloud 389 100 663 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=8,TalkTime=140}] run particle cloud 395 100 659 2 2 2 1 100
@@ -373,8 +373,8 @@ scoreboard players set @s[tag=Dialogue13] DialogueTrigger 0
 #Dexio and Sina before Lumiose Gate
 #scoreboard players set @a[x=179,y=100,z=-58,r=10,tag=!Dialogue14] DialogueTrigger 14
 
-execute as @s[scores={DialogueTrigger=14,TalkTime=1}] run tp @e[x=-504,y=125,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] 177 100 -58
-execute as @s[scores={DialogueTrigger=14,TalkTime=1}] run tp @e[x=-504,y=125,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] 180 100 -58
+execute as @s[scores={DialogueTrigger=14,TalkTime=1}] run tp @e[x=-504,y=125,z=1252,dy=3,type=pixelmon:npc_chatting] 177 100 -58
+execute as @s[scores={DialogueTrigger=14,TalkTime=1}] run tp @e[x=-504,y=125,z=1254,dy=3,type=pixelmon:npc_chatting] 180 100 -58
 execute as @s[scores={DialogueTrigger=14,TalkTime=1}] run particle cloud 177 100 -58 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=14,TalkTime=1}] run particle cloud 180 100 -58 2 2 2 1 100
 
@@ -391,13 +391,13 @@ tellraw @s[scores={DialogueTrigger=14,TalkTime=55}] ["",{"text":"<"},{"text":"De
 tellraw @s[scores={DialogueTrigger=14,TalkTime=63}] ["",{"text":"<"},{"text":"Dexio","color":"aqua"},{"text":"> You could call me a Pokémon-voyage veteran."}]
 tellraw @s[scores={DialogueTrigger=14,TalkTime=70}] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> If you'd like, I'll show you the way to the lab. So, come along now!"}]
 
-execute as @s[scores={DialogueTrigger=14,TalkTime=80}] run tp @e[x=177,y=99,z=-58,dy=3,nbt=!{pixelmon:npc_chatting}] -504 126 1252
-execute as @s[scores={DialogueTrigger=14,TalkTime=80}] run tp @e[x=180,y=99,z=-58,dy=3,nbt=!{pixelmon:npc_chatting}] -504 126 1254
+execute as @s[scores={DialogueTrigger=14,TalkTime=80}] run tp @e[x=177,y=99,z=-58,dy=3,type=pixelmon:npc_chatting] -504 126 1252
+execute as @s[scores={DialogueTrigger=14,TalkTime=80}] run tp @e[x=180,y=99,z=-58,dy=3,type=pixelmon:npc_chatting] -504 126 1254
 execute as @s[scores={DialogueTrigger=14,TalkTime=80}] run particle cloud 177 100 -58 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=14,TalkTime=80}] run particle cloud 180 100 -58 2 2 2 1 100
 
-execute as @s[scores={DialogueTrigger=14,TalkTime=80}] run tp @e[x=-504,y=125,z=1256,dy=3,nbt=!{pixelmon:npc_chatting}] 177 100 -116
-execute as @s[scores={DialogueTrigger=14,TalkTime=80}] run tp @e[x=-504,y=125,z=1258,dy=3,nbt=!{pixelmon:npc_chatting}] 180 100 -116
+execute as @s[scores={DialogueTrigger=14,TalkTime=80}] run tp @e[x=-504,y=125,z=1256,dy=3,type=pixelmon:npc_chatting] 177 100 -116
+execute as @s[scores={DialogueTrigger=14,TalkTime=80}] run tp @e[x=-504,y=125,z=1258,dy=3,type=pixelmon:npc_chatting] 180 100 -116
 execute as @s[scores={DialogueTrigger=14,TalkTime=80}] run particle cloud 177 100 -116 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=14,TalkTime=80}] run particle cloud 180 100 -116 2 2 2 1 100
 
@@ -410,8 +410,8 @@ scoreboard players set @s[tag=Dialogue14] DialogueTrigger 0
 #Dexio and Sina in Lumiose Gate
 #scoreboard players set @a[x=179,y=100,z=-115,r=10,tag=Dialogue14] DialogueTrigger 15
 
-execute as @s[scores={DialogueTrigger=15,TalkTime=1}] run tp @e[x=-504,y=125,z=1256,dy=3,nbt=!{pixelmon:npc_chatting}] 177 100 -116
-execute as @s[scores={DialogueTrigger=15,TalkTime=1}] run tp @e[x=-504,y=125,z=1258,dy=3,nbt=!{pixelmon:npc_chatting}] 180 100 -116
+execute as @s[scores={DialogueTrigger=15,TalkTime=1}] run tp @e[x=-504,y=125,z=1256,dy=3,type=pixelmon:npc_chatting] 177 100 -116
+execute as @s[scores={DialogueTrigger=15,TalkTime=1}] run tp @e[x=-504,y=125,z=1258,dy=3,type=pixelmon:npc_chatting] 180 100 -116
 tellraw @s[scores={DialogueTrigger=15,TalkTime=2}] ["",{"text":"<"},{"text":"Dexio","color":"aqua"},{"text":"> So, how are you and your Pokémon getting along?"}]
 tellraw @s[scores={DialogueTrigger=15,TalkTime=10}] ["",{"text":"<"},{"text":"Dexio","color":"aqua"},{"text":"> The more you walk around with your Pokémon, the stronger your friendship will become."}]
 tellraw @s[scores={DialogueTrigger=15,TalkTime=20}] ["",{"text":"<"},{"text":"Dexio","color":"aqua"},{"text":"> Here! This is the TM for Return."}]
@@ -420,8 +420,8 @@ execute as @s[scores={DialogueTrigger=15,TalkTime=22}] run playsound pixelmon:pi
 tellraw @s[scores={DialogueTrigger=15,TalkTime=29}] ["",{"text":"<"},{"text":"Dexio","color":"aqua"},{"text":"> This is a move that gets more powerful when your friendship with the Pokémon using it is strong."}]
 tellraw @s[scores={DialogueTrigger=15,TalkTime=39}] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> Right through this gate, and you'll be in Lumiose City! Go on already!"}]
 
-execute as @s[scores={DialogueTrigger=15,TalkTime=49}] run tp @e[x=177,y=99,z=-116,dy=3,nbt=!{pixelmon:npc_chatting}] -504 126 1256
-execute as @s[scores={DialogueTrigger=15,TalkTime=49}] run tp @e[x=180,y=99,z=-116,dy=3,nbt=!{pixelmon:npc_chatting}] -504 126 1258
+execute as @s[scores={DialogueTrigger=15,TalkTime=49}] run tp @e[x=177,y=99,z=-116,dy=3,type=pixelmon:npc_chatting] -504 126 1256
+execute as @s[scores={DialogueTrigger=15,TalkTime=49}] run tp @e[x=180,y=99,z=-116,dy=3,type=pixelmon:npc_chatting] -504 126 1258
 execute as @s[scores={DialogueTrigger=15,TalkTime=49}] run particle cloud 177 100 -116 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=15,TalkTime=49}] run particle cloud 180 100 -116 2 2 2 1 100
 
@@ -434,16 +434,16 @@ scoreboard players set @s[tag=Dialogue15] DialogueTrigger 0
 #Dexio and Sina in Lumiose City
 #scoreboard players set @a[x=-15,y=101,z=-135,dx=44,dy=10,dz=23,tag=!Dialogue16] DialogueTrigger 16
 
-execute as @s[scores={DialogueTrigger=16,TalkTime=1}] run tp @e[x=-504,y=130,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -14 101 -128
-execute as @s[scores={DialogueTrigger=16,TalkTime=1}] run tp @e[x=-504,y=130,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] -12 101 -124
+execute as @s[scores={DialogueTrigger=16,TalkTime=1}] run tp @e[x=-504,y=130,z=1252,dy=3,type=pixelmon:npc_chatting] -14 101 -128
+execute as @s[scores={DialogueTrigger=16,TalkTime=1}] run tp @e[x=-504,y=130,z=1254,dy=3,type=pixelmon:npc_chatting] -12 101 -124
 execute as @s[scores={DialogueTrigger=16,TalkTime=1}] run particle cloud -12 101 -124 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=16,TalkTime=1}] run particle cloud -14 101 -128 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=16,TalkTime=6}] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> I'll go ahead and wait in Sycamore's lab!"}]
 tellraw @s[scores={DialogueTrigger=16,TalkTime=15}] ["",{"text":"<"},{"text":"Dexio","color":"aqua"},{"text":"> Head this way to the lab! Look for the Poke Ball statues on the left!"}]
 
-execute as @s[scores={DialogueTrigger=16,TalkTime=11}] run tp @e[x=-12,y=100,z=-124,dy=3,nbt=!{pixelmon:npc_chatting}] -504 131 1254
-execute as @s[scores={DialogueTrigger=16,TalkTime=25}] run tp @e[x=-14,y=100,z=-128,dy=3,nbt=!{pixelmon:npc_chatting}] -504 131 1252
+execute as @s[scores={DialogueTrigger=16,TalkTime=11}] run tp @e[x=-12,y=100,z=-124,dy=3,type=pixelmon:npc_chatting] -504 131 1254
+execute as @s[scores={DialogueTrigger=16,TalkTime=25}] run tp @e[x=-14,y=100,z=-128,dy=3,type=pixelmon:npc_chatting] -504 131 1252
 execute as @s[scores={DialogueTrigger=16,TalkTime=11}] run particle cloud -12 101 -124 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=16,TalkTime=25}] run particle cloud -14 101 -128 2 2 2 1 100
 
@@ -456,10 +456,10 @@ scoreboard players set @s[tag=Dialogue16] DialogueTrigger 0
 #Sina in Sycamore's Lab
 #scoreboard players set @a[x=-184,y=104,z=-41,dx=6,dy=5,tag=!Dialogue17] DialogueTrigger 17
 
-execute as @s[scores={DialogueTrigger=17,TalkTime=1}] run tp @e[x=-504,y=130,z=1256,dy=3,nbt=!{pixelmon:npc_chatting}] -251 101 91
+execute as @s[scores={DialogueTrigger=17,TalkTime=1}] run tp @e[x=-504,y=130,z=1256,dy=3,type=pixelmon:npc_chatting] -251 101 91
 tellraw @s[scores={DialogueTrigger=17,TalkTime=2}] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> You've traveled a long way from Vaniville Town, but you're finally here!"}]
 tellraw @s[scores={DialogueTrigger=17,TalkTime=13}] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> The professor can't wait to meet you. You can find him on the third floor, so hop in the elevator!"}]
-execute as @s[scores={DialogueTrigger=17,TalkTime=20}] run tp @e[x=-251,y=100,z=91,dy=3,nbt=!{pixelmon:npc_chatting}] -504 131 1256
+execute as @s[scores={DialogueTrigger=17,TalkTime=20}] run tp @e[x=-251,y=100,z=91,dy=3,type=pixelmon:npc_chatting] -504 131 1256
 
 tag @s[scores={DialogueTrigger=17,TalkTime=20..}] add Dialogue17
 scoreboard players set @s[tag=Dialogue17] TalkTime 0
@@ -487,8 +487,8 @@ tellraw @s[scores={DialogueTrigger=18,TalkTime=93}] {"text":"<Sycamore> Then it 
 tellraw @s[scores={DialogueTrigger=18,TalkTime=100}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Hi, Professor! It's Shauna."}]
 
 #Shauna and Serena
-execute as @s[scores={DialogueTrigger=18,TalkTime=105}] run tp @e[x=-504,y=135,z=1258,dy=3,nbt=!{pixelmon:npc_chatting}] -261 121 97
-execute as @s[scores={DialogueTrigger=18,TalkTime=105}] run tp @e[x=-504,y=135,z=1256,dy=3,nbt=!{pixelmon:npc_chatting}] -263 121 97
+execute as @s[scores={DialogueTrigger=18,TalkTime=105}] run tp @e[x=-504,y=135,z=1258,dy=3,type=pixelmon:npc_chatting] -261 121 97
+execute as @s[scores={DialogueTrigger=18,TalkTime=105}] run tp @e[x=-504,y=135,z=1256,dy=3,type=pixelmon:npc_chatting] -263 121 97
 execute as @s[scores={DialogueTrigger=18,TalkTime=105}] run particle cloud -261 121 97 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=18,TalkTime=105}] run particle cloud -263 121 97 2 2 2 1 100
 
@@ -497,16 +497,16 @@ tellraw @s[scores={DialogueTrigger=18,TalkTime=115}] {"text":"<Sycamore> Fantast
 tellraw @s[scores={DialogueTrigger=18,TalkTime=122}] {"text":"<Sycamore> Your opponent shall be me!"}
 
 #Sycamore NPC and Trainer Swap
-execute as @s[scores={DialogueTrigger=18,TalkTime=123}] run tp @e[x=-504,y=135,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] -265 121 91
-execute as @s[scores={DialogueTrigger=18,TalkTime=123}] run tp @e[x=-265,y=120,z=91,dy=3,nbt=!{pixelmon:npc_chatting}] -504 136 1252
+execute as @s[scores={DialogueTrigger=18,TalkTime=123}] run tp @e[x=-504,y=135,z=1254,dy=3,type=pixelmon:npc_trainer] -265 121 91
+execute as @s[scores={DialogueTrigger=18,TalkTime=123}] run tp @e[x=-265,y=120,z=91,dy=3,type=pixelmon:npc_chatting] -504 136 1252
 
 tag @s[scores={DialogueTrigger=18,TalkTime=123..}] add Dialogue18
 scoreboard players set @s[tag=Dialogue18] TalkTime 0
 scoreboard players set @s[tag=Dialogue18] DialogueTrigger 0
 
 #Swaps NPCS
-#execute as @s[x=-265,y=120,z=91,r=10,score_TalkTime=0,tag=!Dialogue19] run execute as @s[tag=Dialogue18] run tp @e[x=-504,y=135,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] -265 121 91
-#execute as @s[x=-265,y=120,z=91,r=10,score_TalkTime=0,tag=!Dialogue19] run execute as @s[tag=Dialogue18] run tp @e[x=-265,y=120,z=91,dy=3,nbt=!{pixelmon:npc_chatting}] -504 136 1252
+#execute as @s[x=-265,y=120,z=91,r=10,score_TalkTime=0,tag=!Dialogue19] run execute as @s[tag=Dialogue18] run tp @e[x=-504,y=135,z=1254,dy=3,type=pixelmon:npc_trainer] -265 121 91
+#execute as @s[x=-265,y=120,z=91,r=10,score_TalkTime=0,tag=!Dialogue19] run execute as @s[tag=Dialogue18] run tp @e[x=-265,y=120,z=91,dy=3,type=pixelmon:npc_chatting] -504 136 1252
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -515,7 +515,7 @@ scoreboard players set @s[tag=Dialogue18] DialogueTrigger 0
 #/tedit add WIN /scoreboard players set @pl DialogueTrigger 19
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
 #/tedit add WIN /scoreboard players set @pl TalkTime 0
-#execute as @s[x=-265,y=120,z=91,r=10,score_TalkTime=0,tag=!Dialogue19] run execute as @s[tag=Dialogue18] run tp @e[x=-504,y=135,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] -265 121 91
+#execute as @s[x=-265,y=120,z=91,r=10,score_TalkTime=0,tag=!Dialogue19] run execute as @s[tag=Dialogue18] run tp @e[x=-504,y=135,z=1254,dy=3,type=pixelmon:npc_trainer] -265 121 91
 
 tellraw @s[scores={DialogueTrigger=19,TalkTime=3}] {"text":"<Sycamore> I think I've about figured it out!"}
 tellraw @s[scores={DialogueTrigger=19,TalkTime=10}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Figured what out?"}]
@@ -541,8 +541,8 @@ tellraw @s[scores={DialogueTrigger=20,TalkTime=25}] ["",{"text":"<"},{"text":"Se
 tellraw @s[scores={DialogueTrigger=20,TalkTime=33}] {"text":"<Sycamore> Well, I've got a feeling everyone else will show up soon."}
 
 #tps in Trevor and Tierno}
-execute as @s[scores={DialogueTrigger=20,TalkTime=35}] run tp @e[x=-504,y=135,z=1260,dy=3,nbt=!{pixelmon:npc_chatting}] -268 121 97
-execute as @s[scores={DialogueTrigger=20,TalkTime=35}] run tp @e[x=-504,y=135,z=1262,dy=3,nbt=!{pixelmon:npc_chatting}] -266 121 97
+execute as @s[scores={DialogueTrigger=20,TalkTime=35}] run tp @e[x=-504,y=135,z=1260,dy=3,type=pixelmon:npc_chatting] -268 121 97
+execute as @s[scores={DialogueTrigger=20,TalkTime=35}] run tp @e[x=-504,y=135,z=1262,dy=3,type=pixelmon:npc_chatting] -266 121 97
 execute as @s[scores={DialogueTrigger=20,TalkTime=35}] run particle cloud -268 121 97 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=20,TalkTime=35}] run particle cloud -266 121 97 2 2 2 1 100
 
@@ -568,12 +568,12 @@ tellraw @s[scores={DialogueTrigger=20,TalkTime=194}] ["",{"text":"<"},{"text":"S
 tellraw @s[scores={DialogueTrigger=20,TalkTime=203}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Mastering Mega Evolution will definitely set me apart from other Trainers!"}]
 
 #tps gang and Sycamore trainer to spawn, return Sycamore chatting
-execute as @s[scores={DialogueTrigger=20,TalkTime=213}] run tp @e[x=-504,y=135,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -265 121 91
-execute as @s[scores={DialogueTrigger=20,TalkTime=213}] run tp @e[x=-265,y=120,z=91,dy=3,nbt=!{pixelmon:npc_trainer}] -504 136 1254
-execute as @s[scores={DialogueTrigger=20,TalkTime=213}] run tp @e[x=-268,y=120,z=97,dy=3,nbt=!{pixelmon:npc_chatting}] -504 136 1260
-execute as @s[scores={DialogueTrigger=20,TalkTime=213}] run tp @e[x=-266,y=120,z=97,dy=3,nbt=!{pixelmon:npc_chatting}] -504 136 1262
-execute as @s[scores={DialogueTrigger=20,TalkTime=213}] run tp @e[x=-263,y=120,z=97,dy=3,nbt=!{pixelmon:npc_chatting}] -504 136 1258
-execute as @s[scores={DialogueTrigger=20,TalkTime=213}] run tp @e[x=-261,y=120,z=97,dy=3,nbt=!{pixelmon:npc_chatting}] -504 136 1256
+execute as @s[scores={DialogueTrigger=20,TalkTime=213}] run tp @e[x=-504,y=135,z=1252,dy=3,type=pixelmon:npc_chatting] -265 121 91
+execute as @s[scores={DialogueTrigger=20,TalkTime=213}] run tp @e[x=-265,y=120,z=91,dy=3,type=pixelmon:npc_trainer] -504 136 1254
+execute as @s[scores={DialogueTrigger=20,TalkTime=213}] run tp @e[x=-268,y=120,z=97,dy=3,type=pixelmon:npc_chatting] -504 136 1260
+execute as @s[scores={DialogueTrigger=20,TalkTime=213}] run tp @e[x=-266,y=120,z=97,dy=3,type=pixelmon:npc_chatting] -504 136 1262
+execute as @s[scores={DialogueTrigger=20,TalkTime=213}] run tp @e[x=-263,y=120,z=97,dy=3,type=pixelmon:npc_chatting] -504 136 1258
+execute as @s[scores={DialogueTrigger=20,TalkTime=213}] run tp @e[x=-261,y=120,z=97,dy=3,type=pixelmon:npc_chatting] -504 136 1256
 execute as @s[scores={DialogueTrigger=20,TalkTime=213}] run particle cloud -268 121 97 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=20,TalkTime=213}] run particle cloud -266 121 97 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=20,TalkTime=213}] run particle cloud -263 121 97 2 2 2 1 100
@@ -589,8 +589,8 @@ scoreboard players set @s[tag=Dialogue20] DialogueTrigger 0
 #scoreboard players set @a[x=-271,y=99,z=64,dx=36,dy=7,dz=37,tag=!Dialogue21,tag=KantoStarters] DialogueTrigger 21
 
 #tps in Lysandre and Sina
-execute as @s[scores={DialogueTrigger=21,TalkTime=1}] run tp @e[x=-504,y=140,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -258 101 91
-execute as @s[scores={DialogueTrigger=21,TalkTime=1}] run tp @e[x=-504,y=140,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] -257 101 93
+execute as @s[scores={DialogueTrigger=21,TalkTime=1}] run tp @e[x=-504,y=140,z=1252,dy=3,type=pixelmon:npc_chatting] -258 101 91
+execute as @s[scores={DialogueTrigger=21,TalkTime=1}] run tp @e[x=-504,y=140,z=1254,dy=3,type=pixelmon:npc_chatting] -257 101 93
 
 tellraw @s[scores={DialogueTrigger=21,TalkTime=3}] ["",{"text":"<"},{"text":"...","color":"dark_red"},{"text":"> So, I will be able to meet them soon, then."}]
 tellraw @s[scores={DialogueTrigger=21,TalkTime=10}] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> Yes."}]
@@ -608,7 +608,7 @@ tellraw @s[scores={DialogueTrigger=21,TalkTime=98}] ["",{"text":"<"},{"text":"Ly
 tellraw @s[scores={DialogueTrigger=21,TalkTime=107}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> My desire...it is for a more beautiful world!"}]
 
 #Lysandre tps off
-execute as @s[scores={DialogueTrigger=21,TalkTime=112}] run tp @e[x=-258,y=100,z=91,dy=3,nbt=!{pixelmon:npc_chatting}] -504 141 1252
+execute as @s[scores={DialogueTrigger=21,TalkTime=112}] run tp @e[x=-258,y=100,z=91,dy=3,type=pixelmon:npc_chatting] -504 141 1252
 execute as @s[scores={DialogueTrigger=21,TalkTime=112}] run particle cloud -258 101 91 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=21,TalkTime=115}] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> Still... I wonder what kind of beautiful world Lysandre desires..."}]
@@ -616,10 +616,10 @@ tellraw @s[scores={DialogueTrigger=21,TalkTime=123}] ["",{"text":"<"},{"text":"S
 tellraw @s[scores={DialogueTrigger=21,TalkTime=131}] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> I hope getting a Pokédex gives you a chance to learn about them."}]
 
 #gang tps down from upper floor
-execute as @s[scores={DialogueTrigger=21,TalkTime=136}] run tp @e[x=-504,y=140,z=1256,dy=3,nbt=!{pixelmon:npc_chatting}] -254 101 86
-execute as @s[scores={DialogueTrigger=21,TalkTime=136}] run tp @e[x=-504,y=140,z=1258,dy=3,nbt=!{pixelmon:npc_chatting}] -250 101 86
-execute as @s[scores={DialogueTrigger=21,TalkTime=136}] run tp @e[x=-504,y=140,z=1260,dy=3,nbt=!{pixelmon:npc_chatting}] -252 101 84
-execute as @s[scores={DialogueTrigger=21,TalkTime=136}] run tp @e[x=-504,y=140,z=1262,dy=3,nbt=!{pixelmon:npc_chatting}] -256 101 84
+execute as @s[scores={DialogueTrigger=21,TalkTime=136}] run tp @e[x=-504,y=140,z=1256,dy=3,type=pixelmon:npc_chatting] -254 101 86
+execute as @s[scores={DialogueTrigger=21,TalkTime=136}] run tp @e[x=-504,y=140,z=1258,dy=3,type=pixelmon:npc_chatting] -250 101 86
+execute as @s[scores={DialogueTrigger=21,TalkTime=136}] run tp @e[x=-504,y=140,z=1260,dy=3,type=pixelmon:npc_chatting] -252 101 84
+execute as @s[scores={DialogueTrigger=21,TalkTime=136}] run tp @e[x=-504,y=140,z=1262,dy=3,type=pixelmon:npc_chatting] -256 101 84
 execute as @s[scores={DialogueTrigger=21,TalkTime=136}] run particle cloud -254 101 86 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=21,TalkTime=136}] run particle cloud -250 101 86 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=21,TalkTime=136}] run particle cloud -252 101 84 2 2 2 1 100
@@ -630,13 +630,13 @@ tellraw @s[scores={DialogueTrigger=21,TalkTime=140}] ["",{"text":"<"},{"text":"S
 tellraw @s[scores={DialogueTrigger=21,TalkTime=148}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> So, I'll see you around!"}]
 
 #Shauna tps off
-execute as @s[scores={DialogueTrigger=21,TalkTime=152}] run tp @e[x=-250,y=100,z=86,dy=3,nbt=!{pixelmon:npc_chatting}] -504 141 1258
+execute as @s[scores={DialogueTrigger=21,TalkTime=152}] run tp @e[x=-250,y=100,z=86,dy=3,type=pixelmon:npc_chatting] -504 141 1258
 execute as @s[scores={DialogueTrigger=21,TalkTime=152}] run particle cloud -250 101 86 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=21,TalkTime=156}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> There's something I want to talk to you about. I'll be waiting for you in Café Soleil, neighbor!"}]
 
 #Serena tps off
-execute as @s[scores={DialogueTrigger=21,TalkTime=160}] run tp @e[x=-254,y=100,z=86,dy=3,nbt=!{pixelmon:npc_chatting}] -504 141 1256
+execute as @s[scores={DialogueTrigger=21,TalkTime=160}] run tp @e[x=-254,y=100,z=86,dy=3,type=pixelmon:npc_chatting] -504 141 1256
 execute as @s[scores={DialogueTrigger=21,TalkTime=160}] run particle cloud -254 101 86 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=21,TalkTime=164}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> I wonder what Serena wants to talk about. Why couldn't she just use the Holo Caster?"}]
@@ -646,9 +646,9 @@ tellraw @s[scores={DialogueTrigger=21,TalkTime=190}] ["",{"text":"<"},{"text":"T
 tellraw @s[scores={DialogueTrigger=21,TalkTime=200}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> That Café Soleil Serena was talking about is over that way, too."}]
 
 #Tps Trevor, Tierno and Sina
-execute as @s[scores={DialogueTrigger=21,TalkTime=210}] run tp @e[x=-257,y=100,z=93,dy=3,nbt=!{pixelmon:npc_chatting}] -504 141 1254
-execute as @s[scores={DialogueTrigger=21,TalkTime=210}] run tp @e[x=-256,y=100,z=84,dy=3,nbt=!{pixelmon:npc_chatting}] -504 141 1262
-execute as @s[scores={DialogueTrigger=21,TalkTime=210}] run tp @e[x=-252,y=100,z=84,dy=3,nbt=!{pixelmon:npc_chatting}] -504 141 1260
+execute as @s[scores={DialogueTrigger=21,TalkTime=210}] run tp @e[x=-257,y=100,z=93,dy=3,type=pixelmon:npc_chatting] -504 141 1254
+execute as @s[scores={DialogueTrigger=21,TalkTime=210}] run tp @e[x=-256,y=100,z=84,dy=3,type=pixelmon:npc_chatting] -504 141 1262
+execute as @s[scores={DialogueTrigger=21,TalkTime=210}] run tp @e[x=-252,y=100,z=84,dy=3,type=pixelmon:npc_chatting] -504 141 1260
 execute as @s[scores={DialogueTrigger=21,TalkTime=210}] run particle cloud -256 101 84 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=21,TalkTime=210}] run particle cloud -252 101 84 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=21,TalkTime=210}] run particle cloud -257 101 93 2 2 2 1 100
@@ -664,9 +664,9 @@ scoreboard players set @s[tag=Dialogue21] DialogueTrigger 0
 #scoreboard players set @a[x=-388,y=101,z=-230,dx=4,dy=5,dz=6,tag=!Dialogue22,tag=Dialogue21] DialogueTrigger 22
 
 #Tp in Serena, Diantha, and Lysandre
-execute as @s[scores={DialogueTrigger=22,TalkTime=2}] run tp @e[x=-504,y=145,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -490 101 245
-execute as @s[scores={DialogueTrigger=22,TalkTime=2}] run tp @e[x=-504,y=145,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] -492 101 245
-execute as @s[scores={DialogueTrigger=22,TalkTime=2}] run tp @e[x=-504,y=145,z=1256,dy=3,nbt=!{pixelmon:npc_chatting}] -490 101 258
+execute as @s[scores={DialogueTrigger=22,TalkTime=2}] run tp @e[x=-504,y=145,z=1252,dy=3,type=pixelmon:npc_chatting] -490 101 245
+execute as @s[scores={DialogueTrigger=22,TalkTime=2}] run tp @e[x=-504,y=145,z=1254,dy=3,type=pixelmon:npc_chatting] -492 101 245
+execute as @s[scores={DialogueTrigger=22,TalkTime=2}] run tp @e[x=-504,y=145,z=1256,dy=3,type=pixelmon:npc_chatting] -490 101 258
 
 execute as @s[scores={DialogueTrigger=22,TalkTime=40}] run scoreboard players set @s click 1
 execute as @s[scores={DialogueTrigger=22,TalkTime=175}] run scoreboard players set @s click 1
@@ -696,7 +696,7 @@ tellraw @s[scores={DialogueTrigger=22,TalkTime=151}] ["",{"text":"<"},{"text":"L
 tellraw @s[scores={DialogueTrigger=22,TalkTime=160}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> Oh! If only everyone were like her-- what a beautiful world this would be!"}]
 tellraw @s[scores={DialogueTrigger=22,TalkTime=169}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> If you'll excuse me."}]
 #Lysandre tps away
-execute as @s[scores={DialogueTrigger=22,TalkTime=174}] run tp @e[x=-490,y=100,z=245,dy=3,nbt=!{pixelmon:npc_chatting}] -504 146 1252
+execute as @s[scores={DialogueTrigger=22,TalkTime=174}] run tp @e[x=-490,y=100,z=245,dy=3,type=pixelmon:npc_chatting] -504 146 1252
 execute as @s[scores={DialogueTrigger=22,TalkTime=174}] run particle cloud -490 101 245 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=22,TalkTime=178}] {"text":"<Diantha> And who are you two?"}
@@ -706,7 +706,7 @@ tellraw @s[scores={DialogueTrigger=22,TalkTime=197}] {"text":"<Diantha> You both
 tellraw @s[scores={DialogueTrigger=22,TalkTime=205}] {"text":"<Diantha> Don't your Pokémon look happy?"}
 tellraw @s[scores={DialogueTrigger=22,TalkTime=211}] {"text":"<Diantha> I'm a Trainer myself, in my off time. I look forward to us battling someday!"}
 #Diantha tping away
-execute as @s[scores={DialogueTrigger=22,TalkTime=218}] run tp @e[x=-492,y=100,z=245,dy=3,nbt=!{pixelmon:npc_chatting}] -504 146 1254
+execute as @s[scores={DialogueTrigger=22,TalkTime=218}] run tp @e[x=-492,y=100,z=245,dy=3,type=pixelmon:npc_chatting] -504 146 1254
 execute as @s[scores={DialogueTrigger=22,TalkTime=218}] run particle cloud -492 101 245 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=22,TalkTime=221}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Hmm... I guess if you're a Pokémon Trainer, you battle everyone, no matter who they are."}]
@@ -716,7 +716,7 @@ tellraw @s[scores={DialogueTrigger=22,TalkTime=250}] ["",{"text":"<"},{"text":"S
 tellraw @s[scores={DialogueTrigger=22,TalkTime=260}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> But we are neighbors, and I think it would be fun to have a competition with you."}]
 tellraw @s[scores={DialogueTrigger=22,TalkTime=270}]  ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Just so you know, I won't lose though."}]
 #Serena tps away
-execute as @s[scores={DialogueTrigger=22,TalkTime=278}] run tp @e[x=-490,y=100,z=258,dy=3,nbt=!{pixelmon:npc_chatting}] -504 146 1256
+execute as @s[scores={DialogueTrigger=22,TalkTime=278}] run tp @e[x=-490,y=100,z=258,dy=3,type=pixelmon:npc_chatting] -504 146 1256
 execute as @s[scores={DialogueTrigger=22,TalkTime=278}] run particle cloud -490 101 258 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=22,TalkTime=278..}] add Dialogue22
@@ -728,15 +728,15 @@ scoreboard players set @s[tag=Dialogue22] DialogueTrigger 0
 #scoreboard players set @a[x=-624,y=90,z=-172,dx=8,dy=10,dz=25,tag=!Dialogue23] DialogueTrigger 23
 
 #Lucario tps in
-execute as @s[scores={DialogueTrigger=23,TalkTime=2}] run tp @e[x=-504,y=150,z=1252,dy=3,nbt=!{pixelmon:statue}] -627 92 -159
+execute as @s[scores={DialogueTrigger=23,TalkTime=2}] run tp @e[x=-504,y=150,z=1252,dy=3,type=pixelmon:statue] -627 92 -159
 execute as @s[scores={DialogueTrigger=23,TalkTime=2}] run particle cloud -627 92 -159 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=23,TalkTime=5}] run playsound pixelmon:pixelmon.mob.lucario hostile @s ~ ~ ~ 10 1 1
 tellraw @s[scores={DialogueTrigger=23,TalkTime=6}]  {"text":"Carrrr!","italic":true}
 
 tellraw @s[scores={DialogueTrigger=23,TalkTime=10}] {"text":"<...> Wait! Lucario!!!"}
 #Korrina tps in
-execute as @s[scores={DialogueTrigger=23,TalkTime=15}] run tp @e[x=-504,y=150,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] -631 92 -159
-execute as @s[scores={DialogueTrigger=23,TalkTime=15}] run tp @e[x=-504,y=150,z=1256,dy=3,nbt=!{pixelmon:statue}] -633 92 -161
+execute as @s[scores={DialogueTrigger=23,TalkTime=15}] run tp @e[x=-504,y=150,z=1254,dy=3,type=pixelmon:npc_chatting] -631 92 -159
+execute as @s[scores={DialogueTrigger=23,TalkTime=15}] run tp @e[x=-504,y=150,z=1256,dy=3,type=pixelmon:statue] -633 92 -161
 execute as @s[scores={DialogueTrigger=23,TalkTime=15}] run particle cloud -631 92 -159 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=23,TalkTime=15}] run particle cloud -633 92 -161 2 2 2 1 100
 
@@ -756,13 +756,13 @@ tellraw @s[scores={DialogueTrigger=23,TalkTime=106}] {"text":"<Korrina> I'm Korr
 tellraw @s[scores={DialogueTrigger=23,TalkTime=113}] {"text":"<Korrina> If you're collecting Gym Badges, I'm sure we'll be battling sooner or later!"}
 tellraw @s[scores={DialogueTrigger=23,TalkTime=122}] {"text":"<Korrina> I'll be looking forward to it. I hope you know how to roll with the punches!"}
 #tps Korrina and second Lucario
-execute as @s[scores={DialogueTrigger=23,TalkTime=130}] run tp @e[x=-631,y=92,z=-159,dy=3,nbt=!{pixelmon:npc_chatting}] -504 151 1254
-execute as @s[scores={DialogueTrigger=23,TalkTime=130}] run tp @e[x=-633,y=92,z=-161,dy=3,nbt=!{pixelmon:statue}] -504 151 1256
+execute as @s[scores={DialogueTrigger=23,TalkTime=130}] run tp @e[x=-631,y=92,z=-159,dy=3,type=pixelmon:npc_chatting] -504 151 1254
+execute as @s[scores={DialogueTrigger=23,TalkTime=130}] run tp @e[x=-633,y=92,z=-161,dy=3,type=pixelmon:statue] -504 151 1256
 execute as @s[scores={DialogueTrigger=23,TalkTime=130}] run particle cloud -631 92 -159 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=23,TalkTime=130}] run particle cloud -633 92 -161 2 2 2 1 100
 
 #Main Lucario tps away shortly after
-execute as @s[scores={DialogueTrigger=23,TalkTime=135}] run tp @e[x=-627,y=91,z=-159,dy=3,nbt=!{pixelmon:statue}] -504 151 1252
+execute as @s[scores={DialogueTrigger=23,TalkTime=135}] run tp @e[x=-627,y=91,z=-159,dy=3,type=pixelmon:statue] -504 151 1252
 execute as @s[scores={DialogueTrigger=23,TalkTime=135}] run particle cloud -627 92 -159 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=23,TalkTime=135..}] add Dialogue23
@@ -774,8 +774,8 @@ scoreboard players set @s[tag=Dialogue23] DialogueTrigger 0
 #Route 5 Tierno and Trevor
 #scoreboard players set @a[x=-757,y=99,z=-134,r=10,tag=!Dialogue24,score_TalkTime=0] DialogueTrigger 24
 
-execute as @s[scores={DialogueTrigger=24,TalkTime=1}] run tp @e[x=-504,y=155,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -769 100 -136
-execute as @s[scores={DialogueTrigger=24,TalkTime=1}] run tp @e[x=-504,y=155,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] -766 100 -134
+execute as @s[scores={DialogueTrigger=24,TalkTime=1}] run tp @e[x=-504,y=155,z=1252,dy=3,type=pixelmon:npc_chatting] -769 100 -136
+execute as @s[scores={DialogueTrigger=24,TalkTime=1}] run tp @e[x=-504,y=155,z=1254,dy=3,type=pixelmon:npc_trainer] -766 100 -134
 execute as @s[scores={DialogueTrigger=24,TalkTime=1}] run particle cloud -631 92 -159 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=24,TalkTime=1}] run particle cloud -633 92 -161 2 2 2 1 100
 
@@ -797,7 +797,7 @@ scoreboard players set @s[tag=Dialogue24] DialogueTrigger 0
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 25
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
 #/tedit add WIN /scoreboard players set @pl TalkTime 0
-#execute as @e[x=-504,y=155,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] run execute as @a[x=-766,y=100,z=-134,r=6,tag=Dialogue24,tag=!Dialogue25] run tp @e[x=-504,y=155,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] -766 100 -134
+#execute as @e[x=-504,y=155,z=1254,dy=3,type=pixelmon:npc_trainer] run execute as @a[x=-766,y=100,z=-134,r=6,tag=Dialogue24,tag=!Dialogue25] run tp @e[x=-504,y=155,z=1254,dy=3,type=pixelmon:npc_trainer] -766 100 -134
 
 tellraw @s[scores={DialogueTrigger=25,TalkTime=3}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> Good to see you, "},{"selector":"@s"},{"text":"... It really does seem as though Tierno can only think about dancing and moves."}]
 tellraw @s[scores={DialogueTrigger=25,TalkTime=13}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> When a horde of Pokémon popped out, he just stood there watching them..."}]
@@ -812,8 +812,8 @@ tellraw @s[scores={DialogueTrigger=25,TalkTime=75}] ["",{"text":"<"},{"text":"Tr
 tellraw @s[scores={DialogueTrigger=25,TalkTime=83}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> Though if you are going to challenge a whole horde... A lot of Pokémon will spawn!"}]
 
 #Trevor and Tierno tp away
-execute as @s[scores={DialogueTrigger=25,TalkTime=91}] run tp @e[x=-769,y=99,z=-136,dy=3,nbt=!{pixelmon:npc_chatting}] -504 156 1252
-execute as @s[scores={DialogueTrigger=25,TalkTime=91}] run tp @e[x=-766,y=99,z=-134,dy=3,nbt=!{pixelmon:npc_trainer}] -504 156 1254
+execute as @s[scores={DialogueTrigger=25,TalkTime=91}] run tp @e[x=-769,y=99,z=-136,dy=3,type=pixelmon:npc_chatting] -504 156 1252
+execute as @s[scores={DialogueTrigger=25,TalkTime=91}] run tp @e[x=-766,y=99,z=-134,dy=3,type=pixelmon:npc_trainer] -504 156 1254
 execute as @s[scores={DialogueTrigger=25,TalkTime=91}] run particle cloud -766 100 -134 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=25,TalkTime=91}] run particle cloud -769 100 -136 2 2 2 1 100
 
@@ -840,8 +840,8 @@ scoreboard players set @s[tag=Dialogue26] DialogueTrigger 0
 #Shabboneau Castle Shauna
 #scoreboard players set @a[x=-1060,y=100,z=-102,dx=11,dy=5,tag=!Dialogue27,score_TalkTime=0] DialogueTrigger 27
 
-execute as @s[scores={DialogueTrigger=27,TalkTime=2}] run tp @e[x=-504,y=160,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -1052 56 -107
-execute as @s[scores={DialogueTrigger=27,TalkTime=2}] run tp @e[x=-504,y=160,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] -1055 56 -109
+execute as @s[scores={DialogueTrigger=27,TalkTime=2}] run tp @e[x=-504,y=160,z=1252,dy=3,type=pixelmon:npc_chatting] -1052 56 -107
+execute as @s[scores={DialogueTrigger=27,TalkTime=2}] run tp @e[x=-504,y=160,z=1254,dy=3,type=pixelmon:npc_chatting] -1055 56 -109
 execute as @s[scores={DialogueTrigger=27,TalkTime=2}] run particle cloud -1055 56 -109 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=27,TalkTime=2}] run particle cloud -1052 56 -107 2 2 2 1 100
 
@@ -856,7 +856,7 @@ tellraw @s[scores={DialogueTrigger=27,TalkTime=68}] {"text":"<Castle Guide> That
 tellraw @s[scores={DialogueTrigger=27,TalkTime=75}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> ..."}]
 
 #tp in groom npc
-execute as @s[scores={DialogueTrigger=27,TalkTime=80}] run tp @e[x=-504,y=160,z=1256,dy=3,nbt=!{pixelmon:npc_chatting}] -1055 56 -104
+execute as @s[scores={DialogueTrigger=27,TalkTime=80}] run tp @e[x=-504,y=160,z=1256,dy=3,type=pixelmon:npc_chatting] -1055 56 -104
 execute as @s[scores={DialogueTrigger=27,TalkTime=80}] run particle cloud -1055 56 -104 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=27,TalkTime=83}] {"text":"<...> Sir! It's back again."}
@@ -864,8 +864,8 @@ tellraw @s[scores={DialogueTrigger=27,TalkTime=90}] {"text":"<Castle Guide> Is i
 tellraw @s[scores={DialogueTrigger=27,TalkTime=100}] {"text":"<Castle Guide> I need to go to Route 7, but please take your time and have a look around."}
 
 #Guide and groom tp out
-execute as @s[scores={DialogueTrigger=27,TalkTime=107}] run tp @e[x=-1055,y=55,z=-104,dy=3,nbt=!{pixelmon:npc_chatting}] -504 161 1256
-execute as @s[scores={DialogueTrigger=27,TalkTime=107}] run tp @e[x=-1055,y=55,z=-109,dy=3,nbt=!{pixelmon:npc_chatting}] -504 161 1254
+execute as @s[scores={DialogueTrigger=27,TalkTime=107}] run tp @e[x=-1055,y=55,z=-104,dy=3,type=pixelmon:npc_chatting] -504 161 1256
+execute as @s[scores={DialogueTrigger=27,TalkTime=107}] run tp @e[x=-1055,y=55,z=-109,dy=3,type=pixelmon:npc_chatting] -504 161 1254
 execute as @s[scores={DialogueTrigger=27,TalkTime=107}] run particle cloud -1055 56 -104 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=27,TalkTime=107}] run particle cloud -1055 56 -109 2 2 2 1 100
 
@@ -873,7 +873,7 @@ execute as @s[scores={DialogueTrigger=27,TalkTime=107}] run particle cloud -1055
 tellraw @s[scores={DialogueTrigger=27,TalkTime=110}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> I wonder what that's about."}]
 tellraw @s[scores={DialogueTrigger=27,TalkTime=117}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Why don't we go to Route 7, too?"}]
 #Shauna tps out
-execute as @s[scores={DialogueTrigger=27,TalkTime=125}] run tp @e[x=-1052,y=55,z=-107,dy=3,nbt=!{pixelmon:npc_chatting}] -504 161 1252
+execute as @s[scores={DialogueTrigger=27,TalkTime=125}] run tp @e[x=-1052,y=55,z=-107,dy=3,type=pixelmon:npc_chatting] -504 161 1252
 execute as @s[scores={DialogueTrigger=27,TalkTime=125}] run particle cloud -1052 56 -107 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=27,TalkTime=125..}] add Dialogue27
@@ -886,10 +886,10 @@ scoreboard players set @s[tag=Dialogue27] DialogueTrigger 0
 #scoreboard players set @a[x=-1293,y=100,z=-36,r=20,tag=!Dialogue28,score_TalkTime=0] DialogueTrigger 28
 
 #tp in everyone and Snorlax statue
-execute as @s[scores={DialogueTrigger=28,TalkTime=1}] run tp @e[x=-501,y=145,z=1238,dy=3,nbt=!{pixelmon:statue}] -1301 101 -36
-execute as @s[scores={DialogueTrigger=28,TalkTime=1}] run tp @e[x=-504,y=165,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -1289 100 -39
-execute as @s[scores={DialogueTrigger=28,TalkTime=1}] run tp @e[x=-504,y=165,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] -1296 101 -37
-execute as @s[scores={DialogueTrigger=28,TalkTime=1}] run tp @e[x=-504,y=165,z=1256,dy=3,nbt=!{pixelmon:npc_chatting}] -1298 101 -34
+execute as @s[scores={DialogueTrigger=28,TalkTime=1}] run tp @e[x=-501,y=145,z=1238,dy=3,type=pixelmon:statue] -1301 101 -36
+execute as @s[scores={DialogueTrigger=28,TalkTime=1}] run tp @e[x=-504,y=165,z=1252,dy=3,type=pixelmon:npc_chatting] -1289 100 -39
+execute as @s[scores={DialogueTrigger=28,TalkTime=1}] run tp @e[x=-504,y=165,z=1254,dy=3,type=pixelmon:npc_chatting] -1296 101 -37
+execute as @s[scores={DialogueTrigger=28,TalkTime=1}] run tp @e[x=-504,y=165,z=1256,dy=3,type=pixelmon:npc_chatting] -1298 101 -34
 
 tellraw @s[scores={DialogueTrigger=28,TalkTime=5}] {"text":"<Castle Guide> Here we go again. It's sleeping so soundly, the end of the world wouldn't wake it."}
 tellraw @s[scores={DialogueTrigger=28,TalkTime=15}] ["",{"text":"<"},{"text":"Castle Worker","color":"gray"},{"text":"> Look! It's practically a mountain, right? It's blocking the road completely."}]
@@ -904,7 +904,7 @@ tellraw @s[scores={DialogueTrigger=28,TalkTime=77}] ["",{"text":"<"},{"text":"Sh
 tellraw @s[scores={DialogueTrigger=28,TalkTime=85}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> C'mon, "},{"selector":"@p"},{"text":"! Let's go! The Parfum Palace is just past Route 6!"}]
 tellraw @s[scores={DialogueTrigger=28,TalkTime=95}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> And maybe at a place like that, we might learn something about Mega Evolution!"}]
 #Shauna teleports
-execute as @s[scores={DialogueTrigger=28,TalkTime=103}] run tp @e[x=-1289,y=99,z=-39,dy=3,nbt=!{pixelmon:npc_chatting}] -504 166 1252
+execute as @s[scores={DialogueTrigger=28,TalkTime=103}] run tp @e[x=-1289,y=99,z=-39,dy=3,type=pixelmon:npc_chatting] -504 166 1252
 execute as @s[scores={DialogueTrigger=28,TalkTime=103}] run particle cloud -1289 100 -39 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=28,TalkTime=130..}] add Dialogue28
@@ -916,8 +916,8 @@ scoreboard players set @s[tag=Dialogue28] DialogueTrigger 0
 #scoreboard players set @a[x=-1386,y=100,z=-378,dy=5,dz=7,tag=!Dialogue29,score_TalkTime=0] DialogueTrigger 29
 
 #tp in
-execute as @s[scores={DialogueTrigger=29,TalkTime=1}] run tp @e[x=-504,y=170,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -1390 63 -375
-execute as @s[scores={DialogueTrigger=29,TalkTime=1}] run tp @e[x=-504,y=170,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] -1397 63 -372
+execute as @s[scores={DialogueTrigger=29,TalkTime=1}] run tp @e[x=-504,y=170,z=1252,dy=3,type=pixelmon:npc_chatting] -1390 63 -375
+execute as @s[scores={DialogueTrigger=29,TalkTime=1}] run tp @e[x=-504,y=170,z=1254,dy=3,type=pixelmon:npc_chatting] -1397 63 -372
 
 tellraw @s[scores={DialogueTrigger=29,TalkTime=3}] {"text":"<...> Where is it?"}
 tellraw @s[scores={DialogueTrigger=29,TalkTime=8}] {"text":"<...> Where could it be?!"}
@@ -927,7 +927,7 @@ tellraw @s[scores={DialogueTrigger=29,TalkTime=29}] ["",{"text":"<"},{"text":"Sh
 tellraw @s[scores={DialogueTrigger=29,TalkTime=37}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> We should help look! I mean, if my... If my Pokémon was missing, I'd be sick with worry!"}]
 tellraw @s[scores={DialogueTrigger=29,TalkTime=47}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> I'll have a look in back!"}]
 #Shauna tp out
-execute as @s[scores={DialogueTrigger=29,TalkTime=53}] run tp @e[x=-1390,y=62,z=-375,dy=3,nbt=!{pixelmon:npc_chatting}] -504 171 1252
+execute as @s[scores={DialogueTrigger=29,TalkTime=53}] run tp @e[x=-1390,y=62,z=-375,dy=3,type=pixelmon:npc_chatting] -504 171 1252
 execute as @s[scores={DialogueTrigger=29,TalkTime=53}] run particle cloud -1390 63 -375 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=29,TalkTime=53..}] add Dialogue29
@@ -938,13 +938,13 @@ scoreboard players set @s[tag=Dialogue29] DialogueTrigger 0
 #Shauna pointing player to Furfrou
 #scoreboard players set @a[x=-1623,y=100,z=-319,r=15,tag=!Dialogue30,score_TalkTime=0] DialogueTrigger 30
 
-execute as @s[scores={DialogueTrigger=30,TalkTime=1}] run tp @e[x=-504,y=170,z=1256,dy=3,nbt=!{pixelmon:npc_chatting}] -1623 100 -319
+execute as @s[scores={DialogueTrigger=30,TalkTime=1}] run tp @e[x=-504,y=170,z=1256,dy=3,type=pixelmon:npc_chatting] -1623 100 -319
 execute as @s[scores={DialogueTrigger=30,TalkTime=1}] run particle cloud -1623 100 -319 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=30,TalkTime=3}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> "},{"selector":"@s"},{"text":"! I think I saw the Furfrou go in here!"}]
 tellraw @s[scores={DialogueTrigger=30,TalkTime=12}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Why don't you go get it? I'll make sure it can't escape!"}]
 
-execute as @s[scores={DialogueTrigger=30,TalkTime=20}] run tp @e[x=-1623,y=99,z=-319,dy=3,nbt=!{pixelmon:npc_chatting}] -504 171 1256
+execute as @s[scores={DialogueTrigger=30,TalkTime=20}] run tp @e[x=-1623,y=99,z=-319,dy=3,type=pixelmon:npc_chatting] -504 171 1256
 execute as @s[scores={DialogueTrigger=30,TalkTime=20}] run particle cloud -1623 100 -319 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=30,TalkTime=20..}] add Dialogue30
@@ -956,15 +956,15 @@ scoreboard players set @s[tag=Dialogue30] DialogueTrigger 0
 #scoreboard players set @a[x=-1691,y=100,z=-317,dx=14,dy=5,dz=7,tag=!Dialogue31,score_TalkTime=0] DialogueTrigger 31
 
 #tps in Statue if needed for dialogue
-#execute as @s[x=-1679,y=100,z=-314,r=30,score_TalkTime=0,tag=!Dialogue31] run tp @e[x=-501,y=181,z=1238,dy=3,nbt=!{pixelmon:statue}] -1679 100 -314
+#execute as @s[x=-1679,y=100,z=-314,r=30,score_TalkTime=0,tag=!Dialogue31] run tp @e[x=-501,y=181,z=1238,dy=3,type=pixelmon:statue] -1679 100 -314
 
 #tps in Shauna
-execute as @s[scores={DialogueTrigger=31,TalkTime=1}] run tp @e[x=-504,y=170,z=1260,dy=3,nbt=!{pixelmon:npc_chatting}] -1687 100 -315
+execute as @s[scores={DialogueTrigger=31,TalkTime=1}] run tp @e[x=-504,y=170,z=1260,dy=3,type=pixelmon:npc_chatting] -1687 100 -315
 execute as @s[scores={DialogueTrigger=31,TalkTime=1}] run particle cloud -1687 100 -315 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=31,TalkTime=3}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Phew! Well done! We finally caught it!"}]
 #Furfrou guy tps in
-execute as @s[scores={DialogueTrigger=31,TalkTime=10}] run tp @e[x=-504,y=170,z=1262,dy=3,nbt=!{pixelmon:npc_chatting}] -1682 100 -314
+execute as @s[scores={DialogueTrigger=31,TalkTime=10}] run tp @e[x=-504,y=170,z=1262,dy=3,type=pixelmon:npc_chatting] -1682 100 -314
 execute as @s[scores={DialogueTrigger=31,TalkTime=10}] run particle cloud -1682 100 -314 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=31,TalkTime=13}] {"text":"<Palace Owner> Oh! My dear Furfrou! My beloved Furfrou!"}
@@ -977,15 +977,15 @@ tellraw @s[scores={DialogueTrigger=31,TalkTime=66}] {"text":"<Palace Owner> And 
 tellraw @s[scores={DialogueTrigger=31,TalkTime=77}] {"text":"<Palace Owner> Do you understand? Ren-dez-vous."}
 tellraw @s[scores={DialogueTrigger=31,TalkTime=85}] {"text":"<Palace Owner> You can reach the balcony from the hall with mirrors on the second floor."}
 #tp Furfrou and guy
-execute as @s[scores={DialogueTrigger=31,TalkTime=92}] run tp @e[x=-1682,y=99,z=-314,dy=3,nbt=!{pixelmon:npc_chatting}] -504 171 1262
-execute as @s[scores={DialogueTrigger=31,TalkTime=92}] run tp @e[x=-1679,y=99,z=-314,dy=3,nbt=!{pixelmon:statue}] -501 182 1238
+execute as @s[scores={DialogueTrigger=31,TalkTime=92}] run tp @e[x=-1682,y=99,z=-314,dy=3,type=pixelmon:npc_chatting] -504 171 1262
+execute as @s[scores={DialogueTrigger=31,TalkTime=92}] run tp @e[x=-1679,y=99,z=-314,dy=3,type=pixelmon:statue] -501 182 1238
 execute as @s[scores={DialogueTrigger=31,TalkTime=92}] run particle cloud -1682 100 -314 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=31,TalkTime=96}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Maybe Furfrou would've been better off if we hadn't found it..."}]
 tellraw @s[scores={DialogueTrigger=31,TalkTime=105}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> If I were a Pokémon, I'd hate to have a Trainer like that!"}]
 tellraw @s[scores={DialogueTrigger=31,TalkTime=114}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> But I really love fireworks, so let's make the best of it!"}]
 #tps Shauna
-execute as @s[scores={DialogueTrigger=31,TalkTime=120}] run tp @e[x=-1687,y=99,z=-315,dy=3,nbt=!{pixelmon:npc_chatting}] -504 171 1260
+execute as @s[scores={DialogueTrigger=31,TalkTime=120}] run tp @e[x=-1687,y=99,z=-315,dy=3,type=pixelmon:npc_chatting] -504 171 1260
 execute as @s[scores={DialogueTrigger=31,TalkTime=120}] run particle cloud -1687 100 -315 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=31,TalkTime=120..}] add Dialogue31
@@ -997,7 +997,7 @@ scoreboard players set @s[tag=Dialogue31] DialogueTrigger 0
 #execute as @s[x=-1436,y=110,z=-401,dx=15,dy=10,dz=54,score_TalkTime=0,tag=Dialogue31] run scoreboard players set @s[tag=!Dialogue32] DialogueTrigger 32
 
 #Tps Shauna in before Dialogue starts
-#execute as @s[x=-1434,y=111,z=-374,r=30,tag=!Dialogue32] run tp @e[x=-504,y=175,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -1434 111 -374
+#execute as @s[x=-1434,y=111,z=-374,r=30,tag=!Dialogue32] run tp @e[x=-504,y=175,z=1252,dy=3,type=pixelmon:npc_chatting] -1434 111 -374
 
 execute as @s[scores={DialogueTrigger=32,TalkTime=1}] run scoreboard players set @s click 1
 execute as @s[scores={DialogueTrigger=32,TalkTime=34}] run scoreboard players set @s click 1
@@ -1062,19 +1062,19 @@ execute as @s[scores={DialogueTrigger=32,TalkTime=97}] run execute as @r[x=-1450
 execute as @s[scores={DialogueTrigger=32,TalkTime=98}] run execute as @r[x=-1450,y=112,z=-393,dy=5,dz=40,limit=5] run summon minecraft:firework_rocket ~ ~1 ~ {LifeTime:20,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:4,Flicker:1,Trail:1,Colors:[I;4312372,15435844],FadeColors:[I;11743532]}]}}}}
 execute as @s[scores={DialogueTrigger=32,TalkTime=99}] run execute as @r[x=-1450,y=112,z=-393,dy=5,dz=40,limit=1] run summon minecraft:firework_rocket ~ ~1 ~ {LifeTime:15,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:1,Flicker:1,Trail:1,Colors:[I;11743532,2437522],FadeColors:[I;3887386,2437522]},{Type:2,Flicker:1,Trail:1,Colors:[I;2651799,15790320],FadeColors:[I;8073150,14602026]}]}}}}
 
-execute as @s[scores={DialogueTrigger=32,TalkTime=35}] run data modify entity @e[limit=1,x=-1434,y=110,z=-374,dy=3,nbt=!{pixelmon:npc_chatting}] {NoAI:1b}
-execute as @s[scores={DialogueTrigger=32,TalkTime=35}] run data modify entity @e[limit=1,x=-1434,y=110,z=-374,dy=3,nbt=!{pixelmon:npc_chatting}] {Rotation:[90.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=32,TalkTime=35}] run data modify entity @e[limit=1,x=-1434,y=110,z=-374,dy=3,type=pixelmon:npc_chatting] {NoAI:1b}
+execute as @s[scores={DialogueTrigger=32,TalkTime=35}] run data modify entity @e[limit=1,x=-1434,y=110,z=-374,dy=3,type=pixelmon:npc_chatting] {Rotation:[90.0f,0.0f]}
 #End of firework show
 
-execute as @s[scores={DialogueTrigger=32,TalkTime=101}] run data modify entity @e[limit=1,x=-1434,y=110,z=-374,dy=3,nbt=!{pixelmon:npc_chatting}] {NoAI:0b}
-execute as @s[scores={DialogueTrigger=32,TalkTime=101}] run data modify entity @e[limit=1,x=-1434,y=110,z=-374,dy=3,nbt=!{pixelmon:npc_chatting}] {Rotation:[-90.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=32,TalkTime=101}] run data modify entity @e[limit=1,x=-1434,y=110,z=-374,dy=3,type=pixelmon:npc_chatting] {NoAI:0b}
+execute as @s[scores={DialogueTrigger=32,TalkTime=101}] run data modify entity @e[limit=1,x=-1434,y=110,z=-374,dy=3,type=pixelmon:npc_chatting] {Rotation:[-90.0f,0.0f]}
 tellraw @s[scores={DialogueTrigger=32,TalkTime=105}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> ... Wow!"}]
 tellraw @s[scores={DialogueTrigger=32,TalkTime=110}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> That. Was. AMAZING!"}]
 tellraw @s[scores={DialogueTrigger=32,TalkTime=115}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> I never ever want to forget this, so I'll keep this memory in an album in my heart!"}]
 
 #Owner and Butler show up
-execute as @s[scores={DialogueTrigger=32,TalkTime=123}] run tp @e[x=-504,y=175,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] -1430 111 -378
-execute as @s[scores={DialogueTrigger=32,TalkTime=123}] run tp @e[x=-504,y=175,z=1256,dy=3,nbt=!{pixelmon:npc_chatting}] -1427 111 -377
+execute as @s[scores={DialogueTrigger=32,TalkTime=123}] run tp @e[x=-504,y=175,z=1254,dy=3,type=pixelmon:npc_chatting] -1430 111 -378
+execute as @s[scores={DialogueTrigger=32,TalkTime=123}] run tp @e[x=-504,y=175,z=1256,dy=3,type=pixelmon:npc_chatting] -1427 111 -377
 execute as @s[scores={DialogueTrigger=32,TalkTime=123}] run particle cloud -1430 111 -378 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=32,TalkTime=123}] run particle cloud -1427 111 -377 2 2 2 1 100
 
@@ -1088,26 +1088,26 @@ tellraw @s[scores={DialogueTrigger=32,TalkTime=157}] {"text":"<Palace Owner> Sig
 tellraw @s[scores={DialogueTrigger=32,TalkTime=163}] {"text":"<Palace Owner> Go get it."}
 
 #Groom teleports away
-execute as @s[scores={DialogueTrigger=32,TalkTime=167}] run tp @e[x=-1427,y=110,z=-377,dy=3,nbt=!{pixelmon:npc_chatting}] -504 176 1256
+execute as @s[scores={DialogueTrigger=32,TalkTime=167}] run tp @e[x=-1427,y=110,z=-377,dy=3,type=pixelmon:npc_chatting] -504 176 1256
 execute as @s[scores={DialogueTrigger=32,TalkTime=167}] run particle cloud -1427 111 -377 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=32,TalkTime=170}] {"text":"<Palace Owner> It was Shabboneau Castle's treasure, but I took it as payment for a loan."}
 tellraw @s[scores={DialogueTrigger=32,TalkTime=179}] {"text":"<Palace Owner> A rich guy like me and a common person like that just didn't go together."}
 
 #Groom teleports back
-execute as @s[scores={DialogueTrigger=32,TalkTime=185}] run tp @e[x=-504,y=175,z=1256,dy=3,nbt=!{pixelmon:npc_chatting}] -1427 111 -377
+execute as @s[scores={DialogueTrigger=32,TalkTime=185}] run tp @e[x=-504,y=175,z=1256,dy=3,type=pixelmon:npc_chatting] -1427 111 -377
 execute as @s[scores={DialogueTrigger=32,TalkTime=185}] run particle cloud -1427 111 -377 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=32,TalkTime=186}] run replaceitem entity @e[x=-1427,y=110,z=-377,dy=3,nbt=!{pixelmon:npc_chatting}] weapon.mainhand minecraft:wooden_hoe
+execute as @s[scores={DialogueTrigger=32,TalkTime=186}] run replaceitem entity @e[x=-1427,y=110,z=-377,dy=3,type=pixelmon:npc_chatting] weapon.mainhand minecraft:wooden_hoe
 
 tellraw @s[scores={DialogueTrigger=32,TalkTime=190}] {"text":"<Palace Owner> Give it to them."}
 tellraw @s[scores={DialogueTrigger=32,TalkTime=196}] ["",{"text":"<"},{"text":"Butler","color":"gray"},{"text":"> Here is the Poké Flute."}]
 execute as @s[scores={DialogueTrigger=32,TalkTime=198}] run give @s minecraft:wooden_hoe{display:{Lore:["A flute which can play with such","a beautiful tone that even sleeping","Pokémon find themselves roused."]},HideFlags:6}
 execute as @s[scores={DialogueTrigger=32,TalkTime=198}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
-execute as @s[scores={DialogueTrigger=32,TalkTime=199}] run replaceitem entity @e[x=-1427,y=110,z=-377,dy=3,nbt=!{pixelmon:npc_chatting}] weapon.mainhand minecraft:air
+execute as @s[scores={DialogueTrigger=32,TalkTime=199}] run replaceitem entity @e[x=-1427,y=110,z=-377,dy=3,type=pixelmon:npc_chatting] weapon.mainhand minecraft:air
 tellraw @s[scores={DialogueTrigger=32,TalkTime=204}] {"text":"<Palace Owner> Listen well, you two! Always return what you borrow. That's very important."}
 
 #Owner tps off
-execute as @s[scores={DialogueTrigger=32,TalkTime=212}] run tp @e[x=-1430,y=110,z=-378,dy=3,nbt=!{pixelmon:npc_chatting}] -504 176 1254
+execute as @s[scores={DialogueTrigger=32,TalkTime=212}] run tp @e[x=-1430,y=110,z=-378,dy=3,type=pixelmon:npc_chatting] -504 176 1254
 execute as @s[scores={DialogueTrigger=32,TalkTime=212}] run particle cloud -1430 111 -378 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=32,TalkTime=215}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> I want to make lots of memories on my journey..."}]
@@ -1125,7 +1125,7 @@ tellraw @s[scores={DialogueTrigger=32,TalkTime=292}] ["",{"text":"<"},{"text":"B
 tellraw @s[scores={DialogueTrigger=32,TalkTime=300}] ["",{"text":"<"},{"text":"Butler","color":"gray"},{"text":"> If you will excuse me. I shall take my leave."}]
 
 #Butler tps away
-execute as @s[scores={DialogueTrigger=32,TalkTime=306}] run tp @e[x=-1427,y=110,z=-377,dy=3,nbt=!{pixelmon:npc_chatting}] -504 176 1256
+execute as @s[scores={DialogueTrigger=32,TalkTime=306}] run tp @e[x=-1427,y=110,z=-377,dy=3,type=pixelmon:npc_chatting] -504 176 1256
 execute as @s[scores={DialogueTrigger=32,TalkTime=306}] run particle cloud -1427 111 -377 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=32,TalkTime=310}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> The owner of Shabboneau Castle used to be friends with that guy! "}]
@@ -1133,7 +1133,7 @@ tellraw @s[scores={DialogueTrigger=32,TalkTime=318}] ["",{"text":"<"},{"text":"S
 tellraw @s[scores={DialogueTrigger=32,TalkTime=326}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> We have to be sure to give that flute back after we wake up Snorlax..."}]
 
 #Shauna tps away
-execute as @s[scores={DialogueTrigger=32,TalkTime=334}] run tp @e[x=-1434,y=110,z=-374,dy=3,nbt=!{pixelmon:npc_chatting}] -504 176 1252
+execute as @s[scores={DialogueTrigger=32,TalkTime=334}] run tp @e[x=-1434,y=110,z=-374,dy=3,type=pixelmon:npc_chatting] -504 176 1252
 execute as @s[scores={DialogueTrigger=32,TalkTime=334}] run particle cloud -1434 111 -374 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=33,TalkTime=334..}] add Dialogue33
@@ -1145,15 +1145,15 @@ scoreboard players set @s[tag=Dialogue33] DialogueTrigger 0
 #execute as @s[x=-1293,y=100,z=-36,r=20,tag=!Dialogue33] run scoreboard players set @s[tag=Dialogue32,score_TalkTime=0] DialogueTrigger 33
 
 #tp in everyone and Snorlax statue
-execute as @s[scores={DialogueTrigger=33,TalkTime=1}] run tp @e[x=-501,y=145,z=1238,dy=3,nbt=!{pixelmon:statue}] -1301 101 -36
-execute as @s[scores={DialogueTrigger=33,TalkTime=1}] run tp @e[x=-504,y=165,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -1289 100 -39
-execute as @s[scores={DialogueTrigger=33,TalkTime=1}] run tp @e[x=-504,y=165,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] -1296 101 -37
-execute as @s[scores={DialogueTrigger=33,TalkTime=1}] run tp @e[x=-504,y=165,z=1256,dy=3,nbt=!{pixelmon:npc_chatting}] -1298 101 -34
+execute as @s[scores={DialogueTrigger=33,TalkTime=1}] run tp @e[x=-501,y=145,z=1238,dy=3,type=pixelmon:statue] -1301 101 -36
+execute as @s[scores={DialogueTrigger=33,TalkTime=1}] run tp @e[x=-504,y=165,z=1252,dy=3,type=pixelmon:npc_chatting] -1289 100 -39
+execute as @s[scores={DialogueTrigger=33,TalkTime=1}] run tp @e[x=-504,y=165,z=1254,dy=3,type=pixelmon:npc_chatting] -1296 101 -37
+execute as @s[scores={DialogueTrigger=33,TalkTime=1}] run tp @e[x=-504,y=165,z=1256,dy=3,type=pixelmon:npc_chatting] -1298 101 -34
 
 tellraw @s[scores={DialogueTrigger=33,TalkTime=4}] {"text":"<Castle Guide> Oh, it's you two."}
 tellraw @s[scores={DialogueTrigger=33,TalkTime=12}] {"text":"<Castle Guide> Did you actually manage to borrow the Poké Flute?"}
 execute as @s[scores={DialogueTrigger=33,TalkTime=19}] run clear @s minecraft:wooden_hoe
-execute as @s[scores={DialogueTrigger=33,TalkTime=19}] run replaceitem entity @e[x=-1296,y=100,z=-37,dy=3,nbt=!{pixelmon:npc_chatting}] weapon.mainhand minecraft:wooden_hoe
+execute as @s[scores={DialogueTrigger=33,TalkTime=19}] run replaceitem entity @e[x=-1296,y=100,z=-37,dy=3,type=pixelmon:npc_chatting] weapon.mainhand minecraft:wooden_hoe
 tellraw @s[scores={DialogueTrigger=33,TalkTime=19}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" handed over the Poké Flute!","italic":true,"color":"gray"}]
 tellraw @s[scores={DialogueTrigger=33,TalkTime=26}] {"text":"<Castle Guide> Thanks!"}
 tellraw @s[scores={DialogueTrigger=33,TalkTime=33}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Well, you're the only one who can play it, right?"}]
@@ -1165,7 +1165,7 @@ execute as @s[scores={DialogueTrigger=33,TalkTime=61}] run playsound pokeflute r
 execute as @s[scores={DialogueTrigger=33,TalkTime=73}] run particle note -1296 103 -37 0 0 0 1 1 normal
 
 #tp Snorlax out
-execute as @s[scores={DialogueTrigger=33,TalkTime=73}] run tp @e[x=-1301,y=100,z=-36,dy=3,nbt=!{pixelmon:statue}] -501 146 1238
+execute as @s[scores={DialogueTrigger=33,TalkTime=73}] run tp @e[x=-1301,y=100,z=-36,dy=3,type=pixelmon:statue] -501 146 1238
 execute as @s[scores={DialogueTrigger=33,TalkTime=73}] run playsound pixelmon:pixelmon.mob.snorlax hostile @s ~ ~ ~ 10 1 1
 execute as @s[scores={DialogueTrigger=33,TalkTime=73}] run particle cloud -1301 101 -36 2 2 2 1 100
 
@@ -1190,8 +1190,8 @@ scoreboard players set @s[tag=Dialogue33] DialogueTrigger 0
 tellraw @s[scores={DialogueTrigger=34,TalkTime=2}] {"text":"<Furfrou> Grrr! Ouaf!"}
 execute as @s[scores={DialogueTrigger=34,TalkTime=2}] run playsound pixelmon:pixelmon.mob.furfrou ambient @s ~ ~ ~ 10 1 1
 #Palace Owner and Furfrou tp in
-execute as @s[scores={DialogueTrigger=34,TalkTime=5}] run tp @e[x=-504,y=166,z=1263,dy=3,nbt=!{pixelmon:statue}] -1286 100 -34
-execute as @s[scores={DialogueTrigger=34,TalkTime=5}] run tp @e[x=-504,y=165,z=1260,dy=3,nbt=!{pixelmon:npc_chatting}] -1286 100 -37
+execute as @s[scores={DialogueTrigger=34,TalkTime=5}] run tp @e[x=-504,y=166,z=1263,dy=3,type=pixelmon:statue] -1286 100 -34
+execute as @s[scores={DialogueTrigger=34,TalkTime=5}] run tp @e[x=-504,y=165,z=1260,dy=3,type=pixelmon:npc_chatting] -1286 100 -37
 execute as @s[scores={DialogueTrigger=34,TalkTime=5}] run particle cloud -1286 100 -37 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=34,TalkTime=5}] run particle cloud -1286 100 -34 2 2 2 1 100
 
@@ -1205,15 +1205,15 @@ tellraw @s[scores={DialogueTrigger=34,TalkTime=54}] {"text":"<Palace Owner> Stil
 tellraw @s[scores={DialogueTrigger=34,TalkTime=62}] {"text":"<Palace Owner> I'll let you take care of that flute, so be sure to practice more."}
 
 #Owner and Furfrou tp away
-execute as @s[scores={DialogueTrigger=34,TalkTime=70}] run tp @e[x=-1286,y=99,z=-34,dy=3,nbt=!{pixelmon:statue}] -504 167 1263
-execute as @s[scores={DialogueTrigger=34,TalkTime=70}] run tp @e[x=-1286,y=99,z=-37,dy=3,nbt=!{pixelmon:npc_chatting}] -504 166 1260
+execute as @s[scores={DialogueTrigger=34,TalkTime=70}] run tp @e[x=-1286,y=99,z=-34,dy=3,type=pixelmon:statue] -504 167 1263
+execute as @s[scores={DialogueTrigger=34,TalkTime=70}] run tp @e[x=-1286,y=99,z=-37,dy=3,type=pixelmon:npc_chatting] -504 166 1260
 execute as @s[scores={DialogueTrigger=34,TalkTime=70}] run particle cloud -1286 100 -37 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=34,TalkTime=70}] run particle cloud -1286 100 -34 2 2 2 1 100
 
 #Guide and other guy tp away
-execute as @s[scores={DialogueTrigger=34,TalkTime=75}] run replaceitem entity @e[x=-1296,y=100,z=-37,dy=3,nbt=!{pixelmon:npc_chatting}] weapon.mainhand minecraft:air
-execute as @s[scores={DialogueTrigger=34,TalkTime=75}] run tp @e[x=-1296,y=100,z=-37,dy=3,nbt=!{pixelmon:npc_chatting}] -504 166 1254
-execute as @s[scores={DialogueTrigger=34,TalkTime=75}] run tp @e[x=-1298,y=100,z=-34,dy=3,nbt=!{pixelmon:npc_chatting}] -504 166 1256
+execute as @s[scores={DialogueTrigger=34,TalkTime=75}] run replaceitem entity @e[x=-1296,y=100,z=-37,dy=3,type=pixelmon:npc_chatting] weapon.mainhand minecraft:air
+execute as @s[scores={DialogueTrigger=34,TalkTime=75}] run tp @e[x=-1296,y=100,z=-37,dy=3,type=pixelmon:npc_chatting] -504 166 1254
+execute as @s[scores={DialogueTrigger=34,TalkTime=75}] run tp @e[x=-1298,y=100,z=-34,dy=3,type=pixelmon:npc_chatting] -504 166 1256
 execute as @s[scores={DialogueTrigger=34,TalkTime=75}] run particle cloud -1296 101 -37 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=34,TalkTime=75}] run particle cloud -1298 101 -34 2 2 2 1 100
 
@@ -1221,7 +1221,7 @@ tellraw @s[scores={DialogueTrigger=34,TalkTime=80}] ["",{"text":"<"},{"text":"Sh
 tellraw @s[scores={DialogueTrigger=34,TalkTime=87}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Well, whatever! All's well that ends well. "}]
 tellraw @s[scores={DialogueTrigger=34,TalkTime=95}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> I wonder what lies past where Snorlax was sleeping."}]
 #Shauna tps away
-execute as @s[scores={DialogueTrigger=34,TalkTime=102}] run tp @e[x=-1289,y=99,z=-39,dy=3,nbt=!{pixelmon:npc_chatting}] -504 166 1252
+execute as @s[scores={DialogueTrigger=34,TalkTime=102}] run tp @e[x=-1289,y=99,z=-39,dy=3,type=pixelmon:npc_chatting] -504 166 1252
 execute as @s[scores={DialogueTrigger=34,TalkTime=102}] run particle cloud -1289 100 -39 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=34,TalkTime=102..}] add Dialogue34
@@ -1234,16 +1234,16 @@ scoreboard players set @s[tag=Dialogue34] DialogueTrigger 0
 #scoreboard players set @a[x=-1591,y=100,z=-36,r=20,tag=!Dialogue35,score_TalkTime=0] DialogueTrigger 35
 
 #Tags Serena based on StarterPick
-execute as @s[scores={DialogueTrigger=35,TalkTime=1}] run scoreboard players set @e[x=-504,y=180,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 1
-execute as @s[scores={DialogueTrigger=35,TalkTime=1}] run scoreboard players set @e[x=-504,y=180,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 2
-execute as @s[scores={DialogueTrigger=35,TalkTime=1}] run scoreboard players set @e[x=-504,y=180,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 3
+execute as @s[scores={DialogueTrigger=35,TalkTime=1}] run scoreboard players set @e[x=-504,y=180,z=1252,dy=3,type=pixelmon:npc_trainer] StarterPick 1
+execute as @s[scores={DialogueTrigger=35,TalkTime=1}] run scoreboard players set @e[x=-504,y=180,z=1254,dy=3,type=pixelmon:npc_trainer] StarterPick 2
+execute as @s[scores={DialogueTrigger=35,TalkTime=1}] run scoreboard players set @e[x=-504,y=180,z=1256,dy=3,type=pixelmon:npc_trainer] StarterPick 3
 
 #tp in Serena, Tierno and Trevor
-execute as @s[scores={DialogueTrigger=35,TalkTime=2,StarterPick=1}] run tp @e[x=-504,y=180,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] -1593 100 -39
-execute as @s[scores={DialogueTrigger=35,TalkTime=2,StarterPick=2}] run tp @e[x=-504,y=180,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] -1593 100 -39
-execute as @s[scores={DialogueTrigger=35,TalkTime=2,StarterPick=3}] run tp @e[x=-504,y=180,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] -1593 100 -39
-execute as @s[scores={DialogueTrigger=35,TalkTime=2}] run tp @e[x=-504,y=180,z=1258,dy=3,nbt=!{pixelmon:npc_trainer}] -1590 100 -34
-execute as @s[scores={DialogueTrigger=35,TalkTime=2}] run tp @e[x=-504,y=180,z=1260,dy=3,nbt=!{pixelmon:npc_trainer}] -1593 100 -34
+execute as @s[scores={DialogueTrigger=35,TalkTime=2,StarterPick=1}] run tp @e[x=-504,y=180,z=1252,dy=3,type=pixelmon:npc_trainer] -1593 100 -39
+execute as @s[scores={DialogueTrigger=35,TalkTime=2,StarterPick=2}] run tp @e[x=-504,y=180,z=1254,dy=3,type=pixelmon:npc_trainer] -1593 100 -39
+execute as @s[scores={DialogueTrigger=35,TalkTime=2,StarterPick=3}] run tp @e[x=-504,y=180,z=1256,dy=3,type=pixelmon:npc_trainer] -1593 100 -39
+execute as @s[scores={DialogueTrigger=35,TalkTime=2}] run tp @e[x=-504,y=180,z=1258,dy=3,type=pixelmon:npc_trainer] -1590 100 -34
+execute as @s[scores={DialogueTrigger=35,TalkTime=2}] run tp @e[x=-504,y=180,z=1260,dy=3,type=pixelmon:npc_trainer] -1593 100 -34
 execute as @s[scores={DialogueTrigger=35,TalkTime=2}] run particle cloud -1593 100 -39 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=35,TalkTime=2}] run particle cloud -1593 100 -34 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=35,TalkTime=2}] run particle cloud -1590 100 -34 2 2 2 1 100
@@ -1275,11 +1275,11 @@ scoreboard players set @s[tag=Dialogue35] DialogueTrigger 0
 #/tedit add WIN /scoreboard players set @pl DialogueTrigger 36
 #scoreboard players set @a[x=-1591,y=100,z=-36,r=20,tag=Dialogue36,tag=!Dialogue36,score_MusicSteps_min=1,score_TalkTime=0] DialogueTrigger 36
 
-#execute as @s[x=-1591,y=100,z=-36,r=20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,r=20,tag=!Dialogue36] run tp @e[x=-504,y=180,z=1258,dy=3,nbt=!{pixelmon:npc_trainer}] -1590 100 -34
-#execute as @s[x=-1591,y=100,z=-36,r=20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,r=20,tag=!Dialogue36] run tp @e[x=-504,y=180,z=1260,dy=3,nbt=!{pixelmon:npc_trainer}] -1593 100 -34
-#execute as @s[x=-1591,y=100,z=-36,r=20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,r=20,tag=!Dialogue36,score_StarterPick_min=1,score_StarterPick=1] run tp @e[x=-504,y=180,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] -1593 100 -39
-#execute as @s[x=-1591,y=100,z=-36,r=20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,r=20,tag=!Dialogue36,score_StarterPick_min=2,score_StarterPick=2] run tp @e[x=-504,y=180,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] -1593 100 -39
-#execute as @s[x=-1591,y=100,z=-36,r=20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,r=20,tag=!Dialogue36,score_StarterPick_min=3,score_StarterPick=3] run tp @e[x=-504,y=180,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] -1593 100 -39
+#execute as @s[x=-1591,y=100,z=-36,r=20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,r=20,tag=!Dialogue36] run tp @e[x=-504,y=180,z=1258,dy=3,type=pixelmon:npc_trainer] -1590 100 -34
+#execute as @s[x=-1591,y=100,z=-36,r=20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,r=20,tag=!Dialogue36] run tp @e[x=-504,y=180,z=1260,dy=3,type=pixelmon:npc_trainer] -1593 100 -34
+#execute as @s[x=-1591,y=100,z=-36,r=20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,r=20,tag=!Dialogue36,score_StarterPick_min=1,score_StarterPick=1] run tp @e[x=-504,y=180,z=1252,dy=3,type=pixelmon:npc_trainer] -1593 100 -39
+#execute as @s[x=-1591,y=100,z=-36,r=20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,r=20,tag=!Dialogue36,score_StarterPick_min=2,score_StarterPick=2] run tp @e[x=-504,y=180,z=1254,dy=3,type=pixelmon:npc_trainer] -1593 100 -39
+#execute as @s[x=-1591,y=100,z=-36,r=20,tag=Dialogue35] run execute as @s[x=-1591,y=100,z=-36,r=20,tag=!Dialogue36,score_StarterPick_min=3,score_StarterPick=3] run tp @e[x=-504,y=180,z=1256,dy=3,type=pixelmon:npc_trainer] -1593 100 -39
 
 execute as @s[scores={DialogueTrigger=36,TalkTime=1}] run tag @s[tag=FriendBattleMusic] remove FriendBattleMusic
 execute as @s[scores={DialogueTrigger=36,TalkTime=1}] run scoreboard players set @s click 1
@@ -1289,11 +1289,11 @@ tellraw @s[scores={DialogueTrigger=36,TalkTime=12}] ["",{"text":"<"},{"text":"Se
 
 #Gang tps out
 execute as @s[scores={DialogueTrigger=36,TalkTime=17}] run particle cloud -1593 100 -39 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=36,TalkTime=17}] run tp @e[x=-1593,y=99,z=-39,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=1}] -504 181 1252
-execute as @s[scores={DialogueTrigger=36,TalkTime=17}] run tp @e[x=-1593,y=99,z=-39,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=2}] -504 181 1254
-execute as @s[scores={DialogueTrigger=36,TalkTime=17}] run tp @e[x=-1593,y=99,z=-39,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=3}] -504 181 1256
-execute as @s[scores={DialogueTrigger=36,TalkTime=17}] run tp @e[x=-1590,y=99,z=-34,dy=3,nbt=!{pixelmon:npc_trainer}] -504 181 1258
-execute as @s[scores={DialogueTrigger=36,TalkTime=17}] run tp @e[x=-1593,y=99,z=-34,dy=3,nbt=!{pixelmon:npc_trainer}] -504 181 1260
+execute as @s[scores={DialogueTrigger=36,TalkTime=17}] run tp @e[x=-1593,y=99,z=-39,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=1}] -504 181 1252
+execute as @s[scores={DialogueTrigger=36,TalkTime=17}] run tp @e[x=-1593,y=99,z=-39,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=2}] -504 181 1254
+execute as @s[scores={DialogueTrigger=36,TalkTime=17}] run tp @e[x=-1593,y=99,z=-39,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=3}] -504 181 1256
+execute as @s[scores={DialogueTrigger=36,TalkTime=17}] run tp @e[x=-1590,y=99,z=-34,dy=3,type=pixelmon:npc_trainer] -504 181 1258
+execute as @s[scores={DialogueTrigger=36,TalkTime=17}] run tp @e[x=-1593,y=99,z=-34,dy=3,type=pixelmon:npc_trainer] -504 181 1260
 execute as @s[scores={DialogueTrigger=36,TalkTime=17}] run particle cloud -1593 100 -34 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=36,TalkTime=17}] run particle cloud -1590 100 -34 2 2 2 1 100
 
@@ -1308,8 +1308,8 @@ scoreboard players set @s[tag=Dialogue36] DialogueTrigger 0
 tellraw @s[scores={DialogueTrigger=37,TalkTime=1}] {"text":"<...> Stop right there!"}
 
 #Sina and Dexio tp in
-execute as @s[scores={DialogueTrigger=37,TalkTime=7}] run tp @e[x=-504,y=185,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] -1942 151 96
-execute as @s[scores={DialogueTrigger=37,TalkTime=7}] run tp @e[x=-504,y=185,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -1942 151 100
+execute as @s[scores={DialogueTrigger=37,TalkTime=7}] run tp @e[x=-504,y=185,z=1254,dy=3,type=pixelmon:npc_chatting] -1942 151 96
+execute as @s[scores={DialogueTrigger=37,TalkTime=7}] run tp @e[x=-504,y=185,z=1252,dy=3,type=pixelmon:npc_chatting] -1942 151 100
 execute as @s[scores={DialogueTrigger=37,TalkTime=7}] run particle cloud -1942 151 100 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=37,TalkTime=7}] run particle cloud -1942 151 96 2 2 2 1 100
 
@@ -1320,8 +1320,8 @@ tellraw @s[scores={DialogueTrigger=37,TalkTime=40}] ["",{"text":"<"},{"text":"Si
 tellraw @s[scores={DialogueTrigger=37,TalkTime=50}] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> We'll be taking our leave now! Bon voyage!"}]
 
 #Dexio and Sina tp away
-execute as @s[scores={DialogueTrigger=37,TalkTime=57}] run tp @e[x=-1942,y=150,z=100,dy=3,nbt=!{pixelmon:npc_chatting}] -504 186 1252
-execute as @s[scores={DialogueTrigger=37,TalkTime=57}] run tp @e[x=-1942,y=150,z=96,dy=3,nbt=!{pixelmon:npc_chatting}] -504 186 1254
+execute as @s[scores={DialogueTrigger=37,TalkTime=57}] run tp @e[x=-1942,y=150,z=100,dy=3,type=pixelmon:npc_chatting] -504 186 1252
+execute as @s[scores={DialogueTrigger=37,TalkTime=57}] run tp @e[x=-1942,y=150,z=96,dy=3,type=pixelmon:npc_chatting] -504 186 1254
 execute as @s[scores={DialogueTrigger=37,TalkTime=57}] run particle cloud -1942 151 100 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=37,TalkTime=57}] run particle cloud -1942 151 96 2 2 2 1 100
 
@@ -1336,7 +1336,7 @@ scoreboard players set @s[tag=Dialogue37] DialogueTrigger 0
 tellraw @s[scores={DialogueTrigger=38,TalkTime=1}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Hi there, neighbor!"}]
 
 #tp Serena in
-execute as @s[scores={DialogueTrigger=38,TalkTime=7}] run tp @e[x=-504,y=185,z=1258,dy=3,nbt=!{pixelmon:npc_chatting}] -1930 151 567
+execute as @s[scores={DialogueTrigger=38,TalkTime=7}] run tp @e[x=-504,y=185,z=1258,dy=3,type=pixelmon:npc_chatting] -1930 151 567
 execute as @s[scores={DialogueTrigger=38,TalkTime=7}] run particle cloud -1930 151 567 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=38,TalkTime=11}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> This is Ambrette Town. You just go through the aquarium to get to Cyllage City, but..."}]
@@ -1344,7 +1344,7 @@ tellraw @s[scores={DialogueTrigger=38,TalkTime=21}] ["",{"text":"<"},{"text":"Se
 tellraw @s[scores={DialogueTrigger=38,TalkTime=31}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> We might even learn something about those mysterious stones related to Mega Evolution."}]
 
 #tp Serena out
-execute as @s[scores={DialogueTrigger=38,TalkTime=40}] run tp @e[x=-1930,y=150,z=567,dy=3,nbt=!{pixelmon:npc_chatting}] -504 186 1258
+execute as @s[scores={DialogueTrigger=38,TalkTime=40}] run tp @e[x=-1930,y=150,z=567,dy=3,type=pixelmon:npc_chatting] -504 186 1258
 execute as @s[scores={DialogueTrigger=38,TalkTime=40}] run particle cloud -1930 151 567 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=38,TalkTime=40..}] add Dialogue38
@@ -1357,11 +1357,11 @@ scoreboard players set @s[tag=Dialogue38] DialogueTrigger 0
 #scoreboard players set @a[x=-1949,y=140,z=579,dx=23,dy=10,dz=26,tag=!Dialogue39,score_TalkTime=0] DialogueTrigger 39
 
 #tp Scientist behind the counter
-execute as @s[scores={DialogueTrigger=39,TalkTime=1}] run tp @e[x=-1936,y=140,z=588,dy=3,nbt=!{pixelmon:npc_chatting}] -504 191 1254
+execute as @s[scores={DialogueTrigger=39,TalkTime=1}] run tp @e[x=-1936,y=140,z=588,dy=3,type=pixelmon:npc_chatting] -504 191 1254
 
 tellraw @s[scores={DialogueTrigger=39,TalkTime=3}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Wait for me."}]
 #tp Serena in
-execute as @s[scores={DialogueTrigger=39,TalkTime=6}] run tp @e[x=-504,y=190,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -1933 141 594
+execute as @s[scores={DialogueTrigger=39,TalkTime=6}] run tp @e[x=-504,y=190,z=1252,dy=3,type=pixelmon:npc_chatting] -1933 141 594
 execute as @s[scores={DialogueTrigger=39,TalkTime=6}] run particle cloud -1933 141 594 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=39,TalkTime=10}] {"text":"<Scientist> Welcome, future archaeologists! You were drawn here by the mystique of Fossils no doubt!"}
@@ -1382,7 +1382,7 @@ tellraw @s[scores={DialogueTrigger=39,TalkTime=137}] ["",{"text":"<"},{"text":"S
 tellraw @s[scores={DialogueTrigger=39,TalkTime=147}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Are you going to Glittering Cave, "},{"selector":"@s"},{"text":"?"}]
 
 #tp Serena out
-execute as @s[scores={DialogueTrigger=39,TalkTime=155}] run tp @e[x=-1933,y=140,z=594,dy=3,nbt=!{pixelmon:npc_chatting}] -504 191 1252
+execute as @s[scores={DialogueTrigger=39,TalkTime=155}] run tp @e[x=-1933,y=140,z=594,dy=3,type=pixelmon:npc_chatting] -504 191 1252
 execute as @s[scores={DialogueTrigger=39,TalkTime=155}] run particle cloud -1933 141 594 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=39,TalkTime=155..}] add Dialogue39
@@ -1394,7 +1394,7 @@ scoreboard players set @s[tag=Dialogue39] DialogueTrigger 0
 #scoreboard players set @a[x=-1437,y=148,z=322,r=15,tag=!Dialogue40,score_TalkTime=0] DialogueTrigger 40
 
 #tp grunt in
-execute as @s[scores={DialogueTrigger=40,TalkTime=1}] run tp @e[x=-504,y=195,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] -1437 148 322
+execute as @s[scores={DialogueTrigger=40,TalkTime=1}] run tp @e[x=-504,y=195,z=1252,dy=3,type=pixelmon:npc_trainer] -1437 148 322
 execute as @s[scores={DialogueTrigger=40,TalkTime=1}] run particle cloud -1437 148 322 2 2 2 1 100
 
 execute as @s[scores={DialogueTrigger=40,TalkTime=1}] run scoreboard players set @s click 1
@@ -1418,7 +1418,7 @@ scoreboard players set @s[tag=Dialogue40] DialogueTrigger 0
 #Glittering Cave Flare Grunt 1 battle end
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 41
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
-#execute as @e[x=-504,y=195,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] run execute as @e[x=-1437,y=148,z=322,r=20,tag=Dialogue40] run execute as @s[tag=!Dialogue41] run tp @e[x=-504,y=195,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] -1437 148 322
+#execute as @e[x=-504,y=195,z=1252,dy=3,type=pixelmon:npc_trainer] run execute as @e[x=-1437,y=148,z=322,r=20,tag=Dialogue40] run execute as @s[tag=!Dialogue41] run tp @e[x=-504,y=195,z=1252,dy=3,type=pixelmon:npc_trainer] -1437 148 322
 
 #Sets Dialogue40 score if player defeats trainer too quickly
 scoreboard players set @a[scores={DialogueTrigger=41},tag=!Dialogue40] TalkTime 0
@@ -1427,12 +1427,12 @@ tag @s[scores={DialogueTrigger=41},tag=!Dialogue40] add Dialogue40
 tellraw @s[scores={DialogueTrigger=41,TalkTime=1}] {"text":"<Team Flare Grunt> What's this? You're a pretty tough Pokémon Trainer, for a kid."}
 tellraw @s[scores={DialogueTrigger=41,TalkTime=10}] {"text":"<Team Flare Grunt> But watch yourself! I'm not the only member of Team Flare."}
 #Grunt tps off
-execute as @s[scores={DialogueTrigger=41,TalkTime=17}] run tp @e[x=-1437,y=147,z=322,dy=3,nbt=!{pixelmon:npc_trainer}] -504 196 1252
+execute as @s[scores={DialogueTrigger=41,TalkTime=17}] run tp @e[x=-1437,y=147,z=322,dy=3,type=pixelmon:npc_trainer] -504 196 1252
 execute as @s[scores={DialogueTrigger=41,TalkTime=17}] run particle cloud -1437 148 322 2 2 2 1 100
 
 
 #tps other grunt in
-execute as @s[scores={DialogueTrigger=41,TalkTime=1}] run tp @e[x=-504,y=195,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] -1404 148 311
+execute as @s[scores={DialogueTrigger=41,TalkTime=1}] run tp @e[x=-504,y=195,z=1254,dy=3,type=pixelmon:npc_trainer] -1404 148 311
 
 tag @s[scores={DialogueTrigger=41,TalkTime=17..}] add Dialogue41
 scoreboard players set @s[tag=Dialogue41] TalkTime 0
@@ -1441,24 +1441,24 @@ scoreboard players set @s[tag=Dialogue41] DialogueTrigger 0
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Team Flare and Serena Glittering Cave Double Battle
 #scoreboard players set @a[x=-1434,y=148,z=273,r=10,tag=!Dialogue42,score_TalkTime=0] DialogueTrigger 42
-#execute as @e[x=-504,y=195,z=1262,dy=3,nbt=!{pixelmon:npc_trainer}] run execute as @e[x=-1434,y=148,z=273,r=10,tag=!Dialogue42] run tp @e[x=-504,y=195,z=1262,dy=3,nbt=!{pixelmon:npc_trainer}] -1437 148 275
-#execute as @e[x=-504,y=195,z=1262,dy=3,nbt=!{pixelmon:npc_trainer}] run execute as @e[x=-1434,y=148,z=273,r=10,tag=!Dialogue42] run tp @e[x=-504,y=195,z=1264,dy=3,nbt=!{pixelmon:npc_trainer}] -1437 148 271
-#execute as @e[x=-504,y=195,z=1262,dy=3,nbt=!{pixelmon:npc_trainer}] run execute as @e[x=-1434,y=148,z=273,r=10,tag=!Dialogue42,score_StarterPick_min=1,score_StarterPick=1] run tp @e[x=-504,y=195,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] -1431 148 271
-#execute as @e[x=-504,y=195,z=1262,dy=3,nbt=!{pixelmon:npc_trainer}] run execute as @e[x=-1434,y=148,z=273,r=10,tag=!Dialogue42,score_StarterPick_min=2,score_StarterPick=2] run tp @e[x=-504,y=195,z=1258,dy=3,nbt=!{pixelmon:npc_trainer}] -1431 148 271
-#execute as @e[x=-504,y=195,z=1262,dy=3,nbt=!{pixelmon:npc_trainer}] run execute as @e[x=-1434,y=148,z=273,r=10,tag=!Dialogue42,score_StarterPick_min=3,score_StarterPick=3] run tp @e[x=-504,y=195,z=1260,dy=3,nbt=!{pixelmon:npc_trainer}] -1431 148 271
+#execute as @e[x=-504,y=195,z=1262,dy=3,type=pixelmon:npc_trainer] run execute as @e[x=-1434,y=148,z=273,r=10,tag=!Dialogue42] run tp @e[x=-504,y=195,z=1262,dy=3,type=pixelmon:npc_trainer] -1437 148 275
+#execute as @e[x=-504,y=195,z=1262,dy=3,type=pixelmon:npc_trainer] run execute as @e[x=-1434,y=148,z=273,r=10,tag=!Dialogue42] run tp @e[x=-504,y=195,z=1264,dy=3,type=pixelmon:npc_trainer] -1437 148 271
+#execute as @e[x=-504,y=195,z=1262,dy=3,type=pixelmon:npc_trainer] run execute as @e[x=-1434,y=148,z=273,r=10,tag=!Dialogue42,score_StarterPick_min=1,score_StarterPick=1] run tp @e[x=-504,y=195,z=1256,dy=3,type=pixelmon:npc_trainer] -1431 148 271
+#execute as @e[x=-504,y=195,z=1262,dy=3,type=pixelmon:npc_trainer] run execute as @e[x=-1434,y=148,z=273,r=10,tag=!Dialogue42,score_StarterPick_min=2,score_StarterPick=2] run tp @e[x=-504,y=195,z=1258,dy=3,type=pixelmon:npc_trainer] -1431 148 271
+#execute as @e[x=-504,y=195,z=1262,dy=3,type=pixelmon:npc_trainer] run execute as @e[x=-1434,y=148,z=273,r=10,tag=!Dialogue42,score_StarterPick_min=3,score_StarterPick=3] run tp @e[x=-504,y=195,z=1260,dy=3,type=pixelmon:npc_trainer] -1431 148 271
 
-execute as @s[scores={DialogueTrigger=42,TalkTime=1}] run scoreboard players set @e[x=-504,y=195,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 1
-execute as @s[scores={DialogueTrigger=42,TalkTime=1}] run scoreboard players set @e[x=-504,y=195,z=1258,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 2
-execute as @s[scores={DialogueTrigger=42,TalkTime=1}] run scoreboard players set @e[x=-504,y=195,z=1260,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 3
+execute as @s[scores={DialogueTrigger=42,TalkTime=1}] run scoreboard players set @e[x=-504,y=195,z=1256,dy=3,type=pixelmon:npc_trainer] StarterPick 1
+execute as @s[scores={DialogueTrigger=42,TalkTime=1}] run scoreboard players set @e[x=-504,y=195,z=1258,dy=3,type=pixelmon:npc_trainer] StarterPick 2
+execute as @s[scores={DialogueTrigger=42,TalkTime=1}] run scoreboard players set @e[x=-504,y=195,z=1260,dy=3,type=pixelmon:npc_trainer] StarterPick 3
 
 execute as @s[scores={DialogueTrigger=42,TalkTime=1}] run scoreboard players set @s click 1
 
 #tp in Grunts and Serena
-execute as @s[scores={DialogueTrigger=42,TalkTime=1,StarterPick=1}] run tp @e[x=-504,y=195,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] -1431 148 271
-execute as @s[scores={DialogueTrigger=42,TalkTime=1,StarterPick=2}] run tp @e[x=-504,y=195,z=1258,dy=3,nbt=!{pixelmon:npc_trainer}] -1431 148 271
-execute as @s[scores={DialogueTrigger=42,TalkTime=1,StarterPick=3}] run tp @e[x=-504,y=195,z=1260,dy=3,nbt=!{pixelmon:npc_trainer}] -1431 148 271
-execute as @s[scores={DialogueTrigger=42,TalkTime=1}] run tp @e[x=-504,y=195,z=1262,dy=3,nbt=!{pixelmon:npc_trainer}] -1437 148 275
-execute as @s[scores={DialogueTrigger=42,TalkTime=1}] run tp @e[x=-504,y=195,z=1264,dy=3,nbt=!{pixelmon:npc_trainer}] -1437 148 271
+execute as @s[scores={DialogueTrigger=42,TalkTime=1,StarterPick=1}] run tp @e[x=-504,y=195,z=1256,dy=3,type=pixelmon:npc_trainer] -1431 148 271
+execute as @s[scores={DialogueTrigger=42,TalkTime=1,StarterPick=2}] run tp @e[x=-504,y=195,z=1258,dy=3,type=pixelmon:npc_trainer] -1431 148 271
+execute as @s[scores={DialogueTrigger=42,TalkTime=1,StarterPick=3}] run tp @e[x=-504,y=195,z=1260,dy=3,type=pixelmon:npc_trainer] -1431 148 271
+execute as @s[scores={DialogueTrigger=42,TalkTime=1}] run tp @e[x=-504,y=195,z=1262,dy=3,type=pixelmon:npc_trainer] -1437 148 275
+execute as @s[scores={DialogueTrigger=42,TalkTime=1}] run tp @e[x=-504,y=195,z=1264,dy=3,type=pixelmon:npc_trainer] -1437 148 271
 execute as @s[scores={DialogueTrigger=42,TalkTime=1}] run particle cloud -1431 148 271 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=42,TalkTime=1}] run particle cloud -1437 148 275 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=42,TalkTime=1}] run particle cloud -1437 148 271 2 2 2 1 100
@@ -1496,11 +1496,11 @@ execute as @s[scores={DialogueTrigger=43,TalkTime=1}] run scoreboard players set
 tellraw @s[scores={DialogueTrigger=43,TalkTime=1}] {"text":"<Team Flare Grunt> Oh man! My favorite, fashionable Team Flare suit is filthy!"}
 tellraw @s[scores={DialogueTrigger=43,TalkTime=10}] ["",{"text":"<"},{"text":"Team Flare Grunt","color":"red"},{"text":"> If we can restore Fossils, we can make some good money!"}]
 
-execute as @s[scores={DialogueTrigger=43,TalkTime=20}] run tp @e[x=-1431,y=147,z=271,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=1}] -504 196 1256
-execute as @s[scores={DialogueTrigger=43,TalkTime=20}] run tp @e[x=-1431,y=147,z=271,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=2}] -504 196 1258
-execute as @s[scores={DialogueTrigger=43,TalkTime=20}] run tp @e[x=-1431,y=147,z=271,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=3}] -504 196 1260
-execute as @s[scores={DialogueTrigger=43,TalkTime=20}] run tp @e[x=-1437,y=147,z=275,dy=3,nbt=!{pixelmon:npc_trainer}] -504 196 1262
-execute as @s[scores={DialogueTrigger=43,TalkTime=20}] run tp @e[x=-1437,y=147,z=271,dy=3,nbt=!{pixelmon:npc_trainer}] -504 196 1264
+execute as @s[scores={DialogueTrigger=43,TalkTime=20}] run tp @e[x=-1431,y=147,z=271,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=1}] -504 196 1256
+execute as @s[scores={DialogueTrigger=43,TalkTime=20}] run tp @e[x=-1431,y=147,z=271,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=2}] -504 196 1258
+execute as @s[scores={DialogueTrigger=43,TalkTime=20}] run tp @e[x=-1431,y=147,z=271,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=3}] -504 196 1260
+execute as @s[scores={DialogueTrigger=43,TalkTime=20}] run tp @e[x=-1437,y=147,z=275,dy=3,type=pixelmon:npc_trainer] -504 196 1262
+execute as @s[scores={DialogueTrigger=43,TalkTime=20}] run tp @e[x=-1437,y=147,z=271,dy=3,type=pixelmon:npc_trainer] -504 196 1264
 
 execute as @s[scores={DialogueTrigger=43,TalkTime=20}] run particle cloud -1437 148 271 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=43,TalkTime=20}] run particle cloud -1437 148 275 2 2 2 1 100
@@ -1513,11 +1513,11 @@ scoreboard players set @s[tag=Dialogue43] DialogueTrigger 0
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Glittering Cave Scientist
 #scoreboard players set @a[x=-1471,y=147,z=303,dx=6,dy=5,dz=11,tag=Dialogue44,tag=!Dialogue44,score_TalkTime=0] DialogueTrigger 44
-#execute as @s[x=-1471,y=147,z=303,r=20,tag=!Dialogue44] run tp @e[x=-504,y=200,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] -1469 148 305
+#execute as @s[x=-1471,y=147,z=303,r=20,tag=!Dialogue44] run tp @e[x=-504,y=200,z=1254,dy=3,type=pixelmon:npc_chatting] -1469 148 305
 
 #Serena tps in
 execute as @s[scores={DialogueTrigger=44,TalkTime=1}] run particle cloud -1467 148 313 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=44,TalkTime=1}] run tp @e[x=-504,y=200,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -1467 148 313
+execute as @s[scores={DialogueTrigger=44,TalkTime=1}] run tp @e[x=-504,y=200,z=1252,dy=3,type=pixelmon:npc_chatting] -1467 148 313
 
 tellraw @s[scores={DialogueTrigger=44,TalkTime=4}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Did you find him?"}]
 tellraw @s[scores={DialogueTrigger=44,TalkTime=10}] {"text":"<Researcher> Why, hello! Here to look for Fossils as well?"}
@@ -1545,7 +1545,7 @@ tellraw @s[scores={DialogueTrigger=45,TalkTime=13}] {"text":"<Researcher> We can
 
 #Researcher tps out
 execute as @s[scores={DialogueTrigger=45,TalkTime=20}] run particle cloud -1469 148 305 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=45,TalkTime=20}] run tp @e[x=-1469,y=147,z=305,dy=3,nbt=!{pixelmon:npc_chatting}] -504 201 1254
+execute as @s[scores={DialogueTrigger=45,TalkTime=20}] run tp @e[x=-1469,y=147,z=305,dy=3,type=pixelmon:npc_chatting] -504 201 1254
 
 tellraw @s[scores={DialogueTrigger=45,TalkTime=23}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Well, we went looking for the assistant, and we found that suspicious group called Team Flare as well..."}]
 tellraw @s[scores={DialogueTrigger=45,TalkTime=33}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> I guess I should train more so I can travel safely with those Team Flare people running around."}]
@@ -1553,12 +1553,12 @@ tellraw @s[scores={DialogueTrigger=45,TalkTime=43}] ["",{"text":"<"},{"text":"Se
 
 #tps Serena out
 execute as @s[scores={DialogueTrigger=45,TalkTime=50}] run particle cloud -1467 148 313 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=45,TalkTime=50}] run tp @e[x=-1467,y=147,z=313,dy=3,nbt=!{pixelmon:npc_chatting}] -504 201 1252
+execute as @s[scores={DialogueTrigger=45,TalkTime=50}] run tp @e[x=-1467,y=147,z=313,dy=3,type=pixelmon:npc_chatting] -504 201 1252
 
 execute as @s[scores={DialogueTrigger=45,TalkTime=50}] run advancement grant @s only kalos:flare1
 
 #tps Hallway grunt
-execute as @s[scores={DialogueTrigger=45,TalkTime=20..21}] run tp @e[x=-1404,y=147,z=311,dy=3,nbt=!{pixelmon:npc_trainer}] -504 196 1254
+execute as @s[scores={DialogueTrigger=45,TalkTime=20..21}] run tp @e[x=-1404,y=147,z=311,dy=3,type=pixelmon:npc_trainer] -504 196 1254
 
 tag @s[scores={DialogueTrigger=45,TalkTime=21..}] add Dialogue45
 scoreboard players set @s[tag=Dialogue45] TalkTime 0
@@ -1569,7 +1569,7 @@ scoreboard players set @s[tag=Dialogue45] DialogueTrigger 0
 #scoreboard players set @a[x=-1938,y=113,z=2,dx=18,dy=10,dz=17,tag=!Dialogue46] DialogueTrigger 46
 
 #tp grant
-execute as @s[scores={DialogueTrigger=46,TalkTime=3}] run tp @e[x=-504,y=205,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -1922 114 16
+execute as @s[scores={DialogueTrigger=46,TalkTime=3}] run tp @e[x=-504,y=205,z=1252,dy=3,type=pixelmon:npc_chatting] -1922 114 16
 execute as @s[scores={DialogueTrigger=46,TalkTime=3}] run particle cloud -1922 114 16 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=46,TalkTime=6}] {"text":"<...> Oh dear... If you're here for the Bicycle race, I'm afraid you're too late."}
@@ -1580,7 +1580,7 @@ tellraw @s[scores={DialogueTrigger=46,TalkTime=32}] {"text":"<...> If one of you
 tellraw @s[scores={DialogueTrigger=46,TalkTime=41}] {"text":"<Grant> However, if you want to use the move outside of battle, you'll first need a Badge from the Gym I run in this city."}
 tellraw @s[scores={DialogueTrigger=46,TalkTime=53}] {"text":"<Grant> On that note, I'll be waiting for you in the Gym. Come challenge me at your leisure."}
 
-execute as @s[scores={DialogueTrigger=46,TalkTime=60}] run tp @e[x=-1922,y=113,z=16,dy=3,nbt=!{pixelmon:npc_chatting}] -504 206 1252
+execute as @s[scores={DialogueTrigger=46,TalkTime=60}] run tp @e[x=-1922,y=113,z=16,dy=3,type=pixelmon:npc_chatting] -504 206 1252
 execute as @s[scores={DialogueTrigger=46,TalkTime=60}] run particle cloud -1922 114 16 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=46,TalkTime=60..}] add Dialogue46
@@ -1594,7 +1594,7 @@ scoreboard players set @s[tag=Dialogue46] DialogueTrigger 0
 execute as @s[scores={DialogueTrigger=47,TalkTime=1}] run scoreboard players set @s click 1
 
 #tp Grunt in
-execute as @s[scores={DialogueTrigger=47,TalkTime=1}] run tp @e[x=-504,y=210,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] -2208 104 -450
+execute as @s[scores={DialogueTrigger=47,TalkTime=1}] run tp @e[x=-504,y=210,z=1252,dy=3,type=pixelmon:npc_trainer] -2208 104 -450
 execute as @s[scores={DialogueTrigger=47,TalkTime=1}] run particle cloud -2208 104 -450 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=47,TalkTime=3}] {"text":"<Team Flare Grunt> Stop right there! I remember you!"}
@@ -1615,7 +1615,7 @@ scoreboard players set @s[tag=Dialogue47] DialogueTrigger 0
 #Team Flare Grunt on Route 10 battle end
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 48
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
-#execute as @e[x=-504,y=210,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] run execute as @e[x=-2208,y=104,z=-450,r=20,tag=!Dialogue48] run execute as @s[tag=Dialogue47] run execute as @s[tag=Grant] run tp @e[x=-504,y=210,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] -2208 104 -450
+#execute as @e[x=-504,y=210,z=1252,dy=3,type=pixelmon:npc_trainer] run execute as @e[x=-2208,y=104,z=-450,r=20,tag=!Dialogue48] run execute as @s[tag=Dialogue47] run execute as @s[tag=Grant] run tp @e[x=-504,y=210,z=1252,dy=3,type=pixelmon:npc_trainer] -2208 104 -450
 
 tellraw @s[scores={DialogueTrigger=48,TalkTime=4}] {"text":"<Team Flare Grunt> What the... How could I lose again to a little punk like you?"}
 tellraw @s[scores={DialogueTrigger=48,TalkTime=13}] {"text":"<Team Flare Grunt> What are you, some kind of Trainer prodigy or something?"}
@@ -1625,7 +1625,7 @@ tellraw @s[scores={DialogueTrigger=48,TalkTime=33}] {"text":"<Team Flare Grunt> 
 tellraw @s[scores={DialogueTrigger=48,TalkTime=44}] {"text":"<Team Flare Grunt> Whoever thought this thing up must have been one truly stylish individual, too!"}
 tellraw @s[scores={DialogueTrigger=48,TalkTime=53}] {"text":"<Team Flare Grunt> And on that note, it's time for me to scram... with style!"}
 
-execute as @s[scores={DialogueTrigger=48,TalkTime=60}] run tp @e[x=-2208,y=103,z=-450,dy=3,nbt=!{pixelmon:npc_trainer}] -504 211 1252
+execute as @s[scores={DialogueTrigger=48,TalkTime=60}] run tp @e[x=-2208,y=103,z=-450,dy=3,type=pixelmon:npc_trainer] -504 211 1252
 execute as @s[scores={DialogueTrigger=48,TalkTime=60}] run particle cloud -2208 104 -450 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=48,TalkTime=60..}] add Dialogue48
@@ -1635,9 +1635,9 @@ scoreboard players set @s[tag=Dialogue48] DialogueTrigger 0
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Route 10 Flare Grunt 2
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 49
-#execute as @e[x=-504,y=210,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] run execute as @a[x=-2190,y=104,z=-522,r=20,tag=!Dialogue49] run execute as @s[tag=Grant] run tp @e[x=-504,y=210,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] -2190 104 -522
+#execute as @e[x=-504,y=210,z=1256,dy=3,type=pixelmon:npc_trainer] run execute as @a[x=-2190,y=104,z=-522,r=20,tag=!Dialogue49] run execute as @s[tag=Grant] run tp @e[x=-504,y=210,z=1256,dy=3,type=pixelmon:npc_trainer] -2190 104 -522
 
-execute as @s[scores={DialogueTrigger=49,TalkTime=5}] run tp @e[x=-2190,y=103,z=-522,dy=3,nbt=!{pixelmon:npc_trainer}] -504 211 1256
+execute as @s[scores={DialogueTrigger=49,TalkTime=5}] run tp @e[x=-2190,y=103,z=-522,dy=3,type=pixelmon:npc_trainer] -504 211 1256
 execute as @s[scores={DialogueTrigger=49,TalkTime=5}] run particle cloud -2190 104 -522 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=49,TalkTime=5..}] add Dialogue49
@@ -1647,9 +1647,9 @@ scoreboard players set @s[tag=Dialogue49] DialogueTrigger 0
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Route 10 Flare Grunt 3
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 50
-#execute as @e[x=-504,y=210,z=1258,dy=3,nbt=!{pixelmon:npc_trainer}] run execute as @a[x=-2227,y=104,z=-558,r=20,tag=!Dialogue50] run execute as @s[tag=Grant] run tp @e[x=-504,y=210,z=1258,dy=3,nbt=!{pixelmon:npc_trainer}] -2227 104 -558
+#execute as @e[x=-504,y=210,z=1258,dy=3,type=pixelmon:npc_trainer] run execute as @a[x=-2227,y=104,z=-558,r=20,tag=!Dialogue50] run execute as @s[tag=Grant] run tp @e[x=-504,y=210,z=1258,dy=3,type=pixelmon:npc_trainer] -2227 104 -558
 
-execute as @s[scores={DialogueTrigger=50,TalkTime=5}] run tp @e[x=-2227,y=103,z=-558,dy=3,nbt=!{pixelmon:npc_trainer}] -504 211 1258
+execute as @s[scores={DialogueTrigger=50,TalkTime=5}] run tp @e[x=-2227,y=103,z=-558,dy=3,type=pixelmon:npc_trainer] -504 211 1258
 execute as @s[scores={DialogueTrigger=50,TalkTime=5}] run particle cloud -2227 104 -558 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=50,TalkTime=5..}] add Dialogue50
@@ -1661,19 +1661,19 @@ scoreboard players set @s[tag=Dialogue50] DialogueTrigger 0
 #execute as @s[x=-2210,y=104,z=-693,r=30,tag=Grant] run scoreboard players set @s[tag=!Dialogue51] DialogueTrigger 51
 
 #tps grunt in
-execute as @s[scores={DialogueTrigger=51,TalkTime=2}] run data modify entity @e[limit=1,x=-504,y=215,z=1258,dy=3,nbt=!{pixelmon:npc_chatting}] {Rotation:[180.0f,0.0f]}
-execute as @s[scores={DialogueTrigger=51,TalkTime=2}] run tp @e[x=-504,y=215,z=1258,dy=3,nbt=!{pixelmon:npc_chatting}] -2210 104 -693
+execute as @s[scores={DialogueTrigger=51,TalkTime=2}] run data modify entity @e[limit=1,x=-504,y=215,z=1258,dy=3,type=pixelmon:npc_chatting] {Rotation:[180.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=51,TalkTime=2}] run tp @e[x=-504,y=215,z=1258,dy=3,type=pixelmon:npc_chatting] -2210 104 -693
 execute as @s[scores={DialogueTrigger=51,TalkTime=2}] run particle cloud -2210 104 -693 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=51,TalkTime=6}] {"text":"<Team Flare Grunt> Geosenge Town is the town of stones! \u266a"}
 
 #Walks left, then tps
 execute as @s[scores={DialogueTrigger=51,TalkTime=10}] run setblock -674 100 1366 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=51,TalkTime=10}] run data modify entity @e[limit=1,x=-2210,y=104,z=-693,distance=..45,nbt=!{pixelmon:npc_chatting},name=Grunt51] {Rotation:[90.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=51,TalkTime=10}] run data modify entity @e[limit=1,x=-2210,y=104,z=-693,distance=..45,type=pixelmon:npc_chatting,name=Grunt51] {Rotation:[90.0f,0.0f]}
 execute as @s[scores={DialogueTrigger=51,TalkTime=15..16}] run setblock -674 100 1366 minecraft:iron_block
 
-execute as @s[scores={DialogueTrigger=51,TalkTime=15}] run execute as @e[x=-2210,y=104,z=-693,distance=..45,nbt=!{pixelmon:npc_chatting},name=Grunt51] run particle cloud ~ ~ ~ 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=51,TalkTime=15}] run tp @e[nbt=!{pixelmon:npc_chatting},name=Grunt51] -504 216 1258
+execute as @s[scores={DialogueTrigger=51,TalkTime=15}] run execute as @e[x=-2210,y=104,z=-693,distance=..45,type=pixelmon:npc_chatting,name=Grunt51] run particle cloud ~ ~ ~ 2 2 2 1 100
+execute as @s[scores={DialogueTrigger=51,TalkTime=15}] run tp @e[type=pixelmon:npc_chatting,name=Grunt51] -504 216 1258
 
 tag @s[scores={DialogueTrigger=51,TalkTime=15..}] add Dialogue51
 scoreboard players set @s[tag=Dialogue51] TalkTime 0
@@ -1684,22 +1684,22 @@ scoreboard players set @s[tag=Dialogue51] DialogueTrigger 0
 #execute as @s[x=-2278,y=104,z=-815,r=25,tag=Dialogue51] run scoreboard players set @s[tag=!Dialogue52] DialogueTrigger 52
 
 #tps Grunt in
-execute as @s[scores={DialogueTrigger=52,TalkTime=2}] run tp @e[x=-504,y=215,z=1262,dy=3,nbt=!{pixelmon:npc_chatting}] -2283 104 -823
+execute as @s[scores={DialogueTrigger=52,TalkTime=2}] run tp @e[x=-504,y=215,z=1262,dy=3,type=pixelmon:npc_chatting] -2283 104 -823
 execute as @s[scores={DialogueTrigger=52,TalkTime=2}] run particle cloud -2283 104 -823 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=52,TalkTime=2}] run data modify entity @e[limit=1,x=-2283,y=103,z=-823,dy=3,nbt=!{pixelmon:npc_chatting}] {Rotation:[-23.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=52,TalkTime=2}] run data modify entity @e[limit=1,x=-2283,y=103,z=-823,dy=3,type=pixelmon:npc_chatting] {Rotation:[-23.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=52,TalkTime=5}] {"text":"<Team Flare Grunt> Hear this, pip-squeak!"}
 tellraw @s[scores={DialogueTrigger=52,TalkTime=11}] {"text":"<Team Flare Grunt> Team Flare is gonna use the stones on Route 10 and a fantastic treasure to make everyone on our team happy!"}
 tellraw @s[scores={DialogueTrigger=52,TalkTime=22}] {"text":"<Team Flare Grunt> In this world, the ones who have power are the ones who win with flair!"}
 
 #tps away
-execute as @s[scores={DialogueTrigger=52,TalkTime=31}] run tp @e[x=-2283,y=103,z=-823,dy=3,nbt=!{pixelmon:npc_chatting}] -504 216 1262
+execute as @s[scores={DialogueTrigger=52,TalkTime=31}] run tp @e[x=-2283,y=103,z=-823,dy=3,type=pixelmon:npc_chatting] -504 216 1262
 execute as @s[scores={DialogueTrigger=52,TalkTime=31}] run particle cloud -2283 104 -823 2 2 2 1 100
 
 #Serena tps in
-execute as @s[scores={DialogueTrigger=52,TalkTime=35}] run tp @e[x=-504,y=215,z=1260,dy=3,nbt=!{pixelmon:npc_chatting}] -2280 104 -802
+execute as @s[scores={DialogueTrigger=52,TalkTime=35}] run tp @e[x=-504,y=215,z=1260,dy=3,type=pixelmon:npc_chatting] -2280 104 -802
 execute as @s[scores={DialogueTrigger=52,TalkTime=35}] run particle cloud -2280 104 -802 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=52,TalkTime=35}] run data modify entity @e[limit=1,x=-2280,y=103,z=-802,dy=3,nbt=!{pixelmon:npc_chatting}] {Rotation:[180.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=52,TalkTime=35}] run data modify entity @e[limit=1,x=-2280,y=103,z=-802,dy=3,type=pixelmon:npc_chatting] {Rotation:[180.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=52,TalkTime=37}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> "},{"selector":"@s"},{"text":", was someone from Team Flare here just now?"}]
 tellraw @s[scores={DialogueTrigger=52,TalkTime=46}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> He was here... But he isn't anymore, is he?"}]
@@ -1707,12 +1707,12 @@ tellraw @s[scores={DialogueTrigger=52,TalkTime=53}] ["",{"text":"<"},{"text":"Se
 tellraw @s[scores={DialogueTrigger=52,TalkTime=60}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> There's something very weird about Team Flare..."}]
 
 #Serena tps out
-execute as @s[scores={DialogueTrigger=52,TalkTime=68}] run tp @e[x=-2280,y=103,z=-802,dy=3,nbt=!{pixelmon:npc_chatting}] -504 216 1260
+execute as @s[scores={DialogueTrigger=52,TalkTime=68}] run tp @e[x=-2280,y=103,z=-802,dy=3,type=pixelmon:npc_chatting] -504 216 1260
 execute as @s[scores={DialogueTrigger=52,TalkTime=68}] run particle cloud -2280 104 -802 2 2 2 1 100
 
 #gets rid of backpackers still if loaded
-execute as @s[scores={DialogueTrigger=52,TalkTime=68}] run tp @e[x=-2120,y=103,z=-691,dy=3,dz=1,nbt=!{pixelmon:npc_chatting}] -504 216 1252
-execute as @s[scores={DialogueTrigger=52,TalkTime=68}] run tp @e[x=-2116,y=103,z=-699,dy=3,dz=17,nbt=!{pixelmon:npc_chatting}] -504 216 1254
+execute as @s[scores={DialogueTrigger=52,TalkTime=68}] run tp @e[x=-2120,y=103,z=-691,dy=3,dz=1,type=pixelmon:npc_chatting] -504 216 1252
+execute as @s[scores={DialogueTrigger=52,TalkTime=68}] run tp @e[x=-2116,y=103,z=-699,dy=3,dz=17,type=pixelmon:npc_chatting] -504 216 1254
 
 tag @s[scores={DialogueTrigger=52,TalkTime=68..}] add Dialogue52
 scoreboard players set @s[tag=Dialogue52] TalkTime 0
@@ -1725,9 +1725,9 @@ scoreboard players set @s[tag=Dialogue52] DialogueTrigger 0
 tellraw @s[scores={DialogueTrigger=53,TalkTime=2}] {"text":"<...> Lucario! What are you doing?"}
 
 #tp in Lucario x2 and Korrina
-execute as @s[scores={DialogueTrigger=53,TalkTime=7}] run tp @e[x=-504,y=220,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] -2105 104 -691
-execute as @s[scores={DialogueTrigger=53,TalkTime=7}] run tp @e[x=-504,y=220,z=1255,dy=3,nbt=!{pixelmon:statue}] -2107 104 -689
-execute as @s[scores={DialogueTrigger=53,TalkTime=7}] run tp @e[x=-504,y=220,z=1258,dy=3,nbt=!{pixelmon:statue}] -2107 104 -693
+execute as @s[scores={DialogueTrigger=53,TalkTime=7}] run tp @e[x=-504,y=220,z=1252,dy=3,type=pixelmon:npc_trainer] -2105 104 -691
+execute as @s[scores={DialogueTrigger=53,TalkTime=7}] run tp @e[x=-504,y=220,z=1255,dy=3,type=pixelmon:statue] -2107 104 -689
+execute as @s[scores={DialogueTrigger=53,TalkTime=7}] run tp @e[x=-504,y=220,z=1258,dy=3,type=pixelmon:statue] -2107 104 -693
 execute as @s[scores={DialogueTrigger=53,TalkTime=7}] run particle cloud -2105 104 -691 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=53,TalkTime=7}] run particle cloud -2107 104 -693 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=53,TalkTime=7}] run particle cloud -2107 104 -689 2 2 2 1 100
@@ -1748,8 +1748,8 @@ scoreboard players set @s[tag=Dialogue53] DialogueTrigger 0
 #Korrina at East side of Geosenge post-battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 54
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
-#execute as @e[x=-504,y=220,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] run execute as @a[x=-2105,y=104,z=-691,r=20,tag=!Dialogue54] run execute as @s[tag=Dialogue53] run tp @e[x=-504,y=220,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] -2105 104 -691
-#execute as @s[x=-2105,y=104,z=-691,r=20,tag=Dialogue53,tag=TrainerBattleMusic] run execute as @s[tag=!Dialogue54] run effect @e[r=20,name=Lucario,nbt=!{pixelmon:statue}] minecraft:invisibility 2 1 true
+#execute as @e[x=-504,y=220,z=1252,dy=3,type=pixelmon:npc_trainer] run execute as @a[x=-2105,y=104,z=-691,r=20,tag=!Dialogue54] run execute as @s[tag=Dialogue53] run tp @e[x=-504,y=220,z=1252,dy=3,type=pixelmon:npc_trainer] -2105 104 -691
+#execute as @s[x=-2105,y=104,z=-691,r=20,tag=Dialogue53,tag=TrainerBattleMusic] run execute as @s[tag=!Dialogue54] run effect @e[r=20,name=Lucario,type=pixelmon:statue] minecraft:invisibility 2 1 true
 
 tellraw @s[scores={DialogueTrigger=54,TalkTime=5}] {"text":"<Korrina> OK! Now I get it! I see why Lucario likes you so much!"}
 tellraw @s[scores={DialogueTrigger=54,TalkTime=13}] {"text":"<Korrina> So! Do you remember that I'm the Gym Leader in Shalour City?"}
@@ -1757,9 +1757,9 @@ tellraw @s[scores={DialogueTrigger=54,TalkTime=20}] {"text":"<Korrina> Once you 
 tellraw @s[scores={DialogueTrigger=54,TalkTime=30}] {"text":"<Korrina> You'd better have come here prepared! Both you and your Pokémon!"}
 
 #Korrina and Lucario tp away
-execute as @s[scores={DialogueTrigger=54,TalkTime=40}] run tp @e[x=-2105,y=103,z=-691,dy=3,nbt=!{pixelmon:npc_trainer}] -504 221 1252
-execute as @s[scores={DialogueTrigger=54,TalkTime=40}] run tp @e[x=-2107,y=103,z=-689,dy=3,nbt=!{pixelmon:statue}] -504 222 1255
-execute as @s[scores={DialogueTrigger=54,TalkTime=40}] run tp @e[x=-2107,y=103,z=-693,dy=3,nbt=!{pixelmon:statue}] -504 222 1258
+execute as @s[scores={DialogueTrigger=54,TalkTime=40}] run tp @e[x=-2105,y=103,z=-691,dy=3,type=pixelmon:npc_trainer] -504 221 1252
+execute as @s[scores={DialogueTrigger=54,TalkTime=40}] run tp @e[x=-2107,y=103,z=-689,dy=3,type=pixelmon:statue] -504 222 1255
+execute as @s[scores={DialogueTrigger=54,TalkTime=40}] run tp @e[x=-2107,y=103,z=-693,dy=3,type=pixelmon:statue] -504 222 1258
 execute as @s[scores={DialogueTrigger=54,TalkTime=40}] run particle cloud -2105 104 -691 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=54,TalkTime=40}] run particle cloud -2107 104 -693 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=54,TalkTime=40}] run particle cloud -2107 104 -689 2 2 2 1 100
@@ -1772,9 +1772,9 @@ scoreboard players set @s[tag=Dialogue54] DialogueTrigger 0
 
 #Tierno in Reflection Cave
 #scoreboard players set @a[x=-1580,y=35,z=-220,dx=12,dy=10,dz=17,tag=!Dialogue55] DialogueTrigger 55
-#execute as @s[x=-1580,y=35,z=-220,r=40,tag=!Dialogue55] run tp @e[x=-504,y=225,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -1575 35 -205
+#execute as @s[x=-1580,y=35,z=-220,r=40,tag=!Dialogue55] run tp @e[x=-504,y=225,z=1252,dy=3,type=pixelmon:npc_chatting] -1575 35 -205
 
-execute as @s[scores={DialogueTrigger=55,TalkTime=14}] run data modify entity @e[limit=1,x=-1575,y=34,z=-205,dy=3,nbt=!{pixelmon:npc_chatting}] {Rotation:[180.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=55,TalkTime=14}] run data modify entity @e[limit=1,x=-1575,y=34,z=-205,dy=3,type=pixelmon:npc_chatting] {Rotation:[180.0f,0.0f]}
 tellraw @s[scores={DialogueTrigger=55,TalkTime=3}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> Hey, "},{"selector":"@s"},{"text":"!"}]
 tellraw @s[scores={DialogueTrigger=55,TalkTime=9}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> If you use the move Flash, not as many wild Pokémon will turn up."}]
 ###execute as @s[scores={DialogueTrigger=55,TalkTime=14}] run give pixelmon:tm_gen6{tm:70}
@@ -1784,7 +1784,7 @@ tellraw @s[scores={DialogueTrigger=55,TalkTime=26}] ["",{"text":"<"},{"text":"Ti
 tellraw @s[scores={DialogueTrigger=55,TalkTime=35}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> I sure wish I could be as good as you."}]
 
 #tp Tierno away
-execute as @s[scores={DialogueTrigger=55,TalkTime=42}] run tp @e[x=-1575,y=34,z=-205,dy=3,nbt=!{pixelmon:npc_chatting}] -504 226 1252
+execute as @s[scores={DialogueTrigger=55,TalkTime=42}] run tp @e[x=-1575,y=34,z=-205,dy=3,type=pixelmon:npc_chatting] -504 226 1252
 execute as @s[scores={DialogueTrigger=55,TalkTime=42}] run particle cloud -1575 35 -205 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=55,TalkTime=42..}] add Dialogue55
@@ -1796,8 +1796,8 @@ scoreboard players set @s[tag=Dialogue55] DialogueTrigger 0
 #scoreboard players set @a[x=-1671,y=79,z=-837,dx=23,dy=10,dz=10,tag=!Dialogue56] DialogueTrigger 56
 
 #Tp Trevor and Tierno in
-execute as @s[scores={DialogueTrigger=56,TalkTime=1}] run tp @e[x=-504,y=230,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -1654 80 -824
-execute as @s[scores={DialogueTrigger=56,TalkTime=1}] run tp @e[x=-504,y=230,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] -1658 80 -824
+execute as @s[scores={DialogueTrigger=56,TalkTime=1}] run tp @e[x=-504,y=230,z=1252,dy=3,type=pixelmon:npc_chatting] -1654 80 -824
+execute as @s[scores={DialogueTrigger=56,TalkTime=1}] run tp @e[x=-504,y=230,z=1254,dy=3,type=pixelmon:npc_chatting] -1658 80 -824
 execute as @s[scores={DialogueTrigger=56,TalkTime=1}] run particle cloud -1658 80 -824 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=56,TalkTime=1}] run particle cloud -1654 80 -824 2 2 2 1 100
 
@@ -1818,8 +1818,8 @@ tellraw @s[scores={DialogueTrigger=56,TalkTime=94}] ["",{"text":"<"},{"text":"Tr
 #tp Trevor and Tierno
 execute as @s[scores={DialogueTrigger=56,TalkTime=104}] run particle cloud -1658 80 -824 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=56,TalkTime=104}] run particle cloud -1654 80 -824 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=56,TalkTime=104}] run tp @e[x=-1654,y=79,z=-824,dy=3,nbt=!{pixelmon:npc_chatting}] -504 231 1252
-execute as @s[scores={DialogueTrigger=56,TalkTime=104}] run tp @e[x=-1658,y=79,z=-824,dy=3,nbt=!{pixelmon:npc_chatting}] -504 231 1254
+execute as @s[scores={DialogueTrigger=56,TalkTime=104}] run tp @e[x=-1654,y=79,z=-824,dy=3,type=pixelmon:npc_chatting] -504 231 1252
+execute as @s[scores={DialogueTrigger=56,TalkTime=104}] run tp @e[x=-1658,y=79,z=-824,dy=3,type=pixelmon:npc_chatting] -504 231 1254
 
 tag @s[scores={DialogueTrigger=56,TalkTime=104..}] add Dialogue56
 scoreboard players set @s[tag=Dialogue56] TalkTime 0
@@ -1829,8 +1829,8 @@ scoreboard players set @s[tag=Dialogue56] DialogueTrigger 0
 #Gym Guy blocking until after Tower of Mastery
 #scoreboard players set @a[,tag=!Dialogue57,tag=!Dialogue61] DialogueTrigger 57
 
-#execute as @s[x=-1770,y=84,z=-898,r=30,tag=Dialogue61] run tp @e[x=-1770,y=84,z=-898,dy=3,nbt=!{pixelmon:npc_chatting}] -504 231 1258
-#execute as @s[x=-1770,y=84,z=-898,r=30,!tag=Dialogue61] run p @e[x=-504,y=230,z=1258,dy=3,nbt=!{pixelmon:npc_chatting}] -1770 85 -898
+#execute as @s[x=-1770,y=84,z=-898,r=30,tag=Dialogue61] run tp @e[x=-1770,y=84,z=-898,dy=3,type=pixelmon:npc_chatting] -504 231 1258
+#execute as @s[x=-1770,y=84,z=-898,r=30,!tag=Dialogue61] run p @e[x=-504,y=230,z=1258,dy=3,type=pixelmon:npc_chatting] -1770 85 -898
 
 tellraw @s[scores={DialogueTrigger=57,TalkTime=1}] {"text":"<Gym Guide> The Leader, Korrina, is in the Tower of Mastery doing some intensive training."}
 
@@ -1844,7 +1844,7 @@ scoreboard players set @s[tag=Dialogue57] DialogueTrigger 0
 
 #Tierno tps in
 execute as @s[scores={DialogueTrigger=58,TalkTime=1}] run particle cloud -1656 76 -917 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=58,TalkTime=1}] run tp @e[x=-504,y=230,z=1262,dy=3,nbt=!{pixelmon:npc_chatting}] -1656 76 -917
+execute as @s[scores={DialogueTrigger=58,TalkTime=1}] run tp @e[x=-504,y=230,z=1262,dy=3,type=pixelmon:npc_chatting] -1656 76 -917
 
 tellraw @s[scores={DialogueTrigger=58,TalkTime=3}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> "},{"selector":"@s"},{"text":", check this out!"}]
 tellraw @s[scores={DialogueTrigger=58,TalkTime=10}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> Isn't this stone cool? I got it from this person called the wandering stone collector for showing off my dance moves!"}]
@@ -1857,7 +1857,7 @@ tellraw @s[scores={DialogueTrigger=58,TalkTime=50}] ["",{"text":"<"},{"text":"Ti
 
 #Tierno tps out
 execute as @s[scores={DialogueTrigger=58,TalkTime=55}] run particle cloud -1656 76 -917 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=58,TalkTime=55}] run tp @e[x=-1656,y=75,z=-917,dy=3,nbt=!{pixelmon:npc_chatting}] -504 231 1262
+execute as @s[scores={DialogueTrigger=58,TalkTime=55}] run tp @e[x=-1656,y=75,z=-917,dy=3,type=pixelmon:npc_chatting] -504 231 1262
 
 tag @s[scores={DialogueTrigger=58,TalkTime=55..}] add Dialogue58
 scoreboard players set @s[tag=Dialogue58] TalkTime 0
@@ -1868,8 +1868,8 @@ scoreboard players set @s[tag=Dialogue58] DialogueTrigger 0
 #Mega Evolution Guru, Korrina and Friends in Lucario statue room
 #scoreboard players set @a[x=-1662,y=93,z=-1160,dx=6,dy=5,score_TalkTime=0,tag=!Dialogue59] DialogueTrigger 59
 
-execute as @s[scores={DialogueTrigger=59,TalkTime=1}] run tp @e[x=-504,y=235,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -1658 77 -1189
-execute as @s[scores={DialogueTrigger=59,TalkTime=1}] run tp @e[x=-504,y=235,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] -1654 77 -1189
+execute as @s[scores={DialogueTrigger=59,TalkTime=1}] run tp @e[x=-504,y=235,z=1252,dy=3,type=pixelmon:npc_chatting] -1658 77 -1189
+execute as @s[scores={DialogueTrigger=59,TalkTime=1}] run tp @e[x=-504,y=235,z=1254,dy=3,type=pixelmon:npc_chatting] -1654 77 -1189
 execute as @s[scores={DialogueTrigger=59,TalkTime=1}] run particle cloud -1658 77 -1189 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=59,TalkTime=1}] run particle cloud -1654 77 -1189 2 2 2 1 100
 
@@ -1883,8 +1883,8 @@ tellraw @s[scores={DialogueTrigger=59,TalkTime=45}] ["",{"text":"<"},{"text":"Me
 tellraw @s[scores={DialogueTrigger=59,TalkTime=51}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> Oh!"}]
 
 #tp Tierno and Trev in
-execute as @s[scores={DialogueTrigger=59,TalkTime=53}] run tp @e[x=-504,y=235,z=1256,dy=3,nbt=!{pixelmon:npc_chatting}] -1654 77 -1180
-execute as @s[scores={DialogueTrigger=59,TalkTime=53}] run tp @e[x=-504,y=235,z=1258,dy=3,nbt=!{pixelmon:npc_chatting}] -1658 77 -1180
+execute as @s[scores={DialogueTrigger=59,TalkTime=53}] run tp @e[x=-504,y=235,z=1256,dy=3,type=pixelmon:npc_chatting] -1654 77 -1180
+execute as @s[scores={DialogueTrigger=59,TalkTime=53}] run tp @e[x=-504,y=235,z=1258,dy=3,type=pixelmon:npc_chatting] -1658 77 -1180
 execute as @s[scores={DialogueTrigger=59,TalkTime=53}] run particle cloud -1658 77 -1180 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=59,TalkTime=53}] run particle cloud -1654 77 -1180 2 2 2 1 100
 
@@ -1904,16 +1904,16 @@ tellraw @s[scores={DialogueTrigger=59,TalkTime=148}] ["",{"text":"<"},{"text":"M
 
 #Mega Evolution Guru tps out
 execute as @s[scores={DialogueTrigger=59,TalkTime=153}] run particle cloud -1654 77 -1189 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=59,TalkTime=153}] run tp @e[x=-1654,y=76,z=-1189,dy=3,nbt=!{pixelmon:npc_chatting}] -504 236 1254
+execute as @s[scores={DialogueTrigger=59,TalkTime=153}] run tp @e[x=-1654,y=76,z=-1189,dy=3,type=pixelmon:npc_chatting] -504 236 1254
 
 tellraw @s[scores={DialogueTrigger=59,TalkTime=157}] {"text":"<Korrina> Hey there! So you made it to Shalour City!"}
 tellraw @s[scores={DialogueTrigger=59,TalkTime=164}] {"text":"<Korrina> Lucario is in its Poké Ball, but it's really happy to see you!"}
 tellraw @s[scores={DialogueTrigger=59,TalkTime=172}] {"text":"<Korrina> Well, we should go see what's going on, too!"}
 
 #Korrina and everyone tps out
-execute as @s[scores={DialogueTrigger=59,TalkTime=178}] run tp @e[x=-1654,y=76,z=-1180,dy=3,nbt=!{pixelmon:npc_chatting}] -504 236 1256
-execute as @s[scores={DialogueTrigger=59,TalkTime=178}] run tp @e[x=-1658,y=76,z=-1180,dy=3,nbt=!{pixelmon:npc_chatting}] -504 236 1258
-execute as @s[scores={DialogueTrigger=59,TalkTime=178}] run tp @e[x=-1658,y=76,z=-1189,dy=3,nbt=!{pixelmon:npc_chatting}] -504 236 1252
+execute as @s[scores={DialogueTrigger=59,TalkTime=178}] run tp @e[x=-1654,y=76,z=-1180,dy=3,type=pixelmon:npc_chatting] -504 236 1256
+execute as @s[scores={DialogueTrigger=59,TalkTime=178}] run tp @e[x=-1658,y=76,z=-1180,dy=3,type=pixelmon:npc_chatting] -504 236 1258
+execute as @s[scores={DialogueTrigger=59,TalkTime=178}] run tp @e[x=-1658,y=76,z=-1189,dy=3,type=pixelmon:npc_chatting] -504 236 1252
 execute as @s[scores={DialogueTrigger=59,TalkTime=178}] run particle cloud -1658 77 -1189 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=59,TalkTime=178}] run particle cloud -1658 77 -1180 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=59,TalkTime=178}] run particle cloud -1654 77 -1180 2 2 2 1 100
@@ -1930,12 +1930,12 @@ scoreboard players set @s[tag=Dialogue59] DialogueTrigger 0
 execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run particle cloud -1654 92 -1151 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run particle cloud -1662 92 -1148 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run particle cloud -1665 92 -1153 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run tp @e[x=-504,y=240,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -1654 92 -1149
-execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run tp @e[x=-504,y=240,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] -1653 92 -1153
-execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run tp @e[x=-504,y=240,z=1256,dy=3,nbt=!{pixelmon:npc_chatting}] -1662 92 -1146
-execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run tp @e[x=-504,y=240,z=1258,dy=3,nbt=!{pixelmon:npc_chatting}] -1664 92 -1149
-execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run tp @e[x=-504,y=240,z=1260,dy=3,nbt=!{pixelmon:npc_chatting}] -1665 92 -1152
-execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run tp @e[x=-504,y=240,z=1262,dy=3,nbt=!{pixelmon:npc_chatting}] -1664 92 -1155
+execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run tp @e[x=-504,y=240,z=1252,dy=3,type=pixelmon:npc_chatting] -1654 92 -1149
+execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run tp @e[x=-504,y=240,z=1254,dy=3,type=pixelmon:npc_chatting] -1653 92 -1153
+execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run tp @e[x=-504,y=240,z=1256,dy=3,type=pixelmon:npc_chatting] -1662 92 -1146
+execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run tp @e[x=-504,y=240,z=1258,dy=3,type=pixelmon:npc_chatting] -1664 92 -1149
+execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run tp @e[x=-504,y=240,z=1260,dy=3,type=pixelmon:npc_chatting] -1665 92 -1152
+execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run tp @e[x=-504,y=240,z=1262,dy=3,type=pixelmon:npc_chatting] -1664 92 -1155
 
 tellraw @s[scores={DialogueTrigger=60,TalkTime=3}] ["",{"text":"<"},{"text":"Mega Evolution Guru","color":"gray"},{"text":"> Hmm! Looks like everyone is finally here."}]
 tellraw @s[scores={DialogueTrigger=60,TalkTime=9}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> "},{"selector":"@s"},{"text":"!"}]
@@ -1990,15 +1990,15 @@ tellraw @s[scores={DialogueTrigger=60,TalkTime=414}] ["",{"text":"<"},{"text":"S
 tellraw @s[scores={DialogueTrigger=60,TalkTime=424}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> But I will not lose. No... I'm going to win!"}]
 
 #Tags StarterPick Serena
-execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run scoreboard players set @e[x=-504,y=245,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 1
-execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run scoreboard players set @e[x=-504,y=245,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 2
-execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run scoreboard players set @e[x=-504,y=245,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 3
+execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run scoreboard players set @e[x=-504,y=245,z=1252,dy=3,type=pixelmon:npc_trainer] StarterPick 1
+execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run scoreboard players set @e[x=-504,y=245,z=1254,dy=3,type=pixelmon:npc_trainer] StarterPick 2
+execute as @s[scores={DialogueTrigger=60,TalkTime=1}] run scoreboard players set @e[x=-504,y=245,z=1256,dy=3,type=pixelmon:npc_trainer] StarterPick 3
 
 #Switches Serena npc_chatting for Serena trainer
-execute as @s[scores={DialogueTrigger=60,TalkTime=426}] run tp @e[x=-1662,y=91,z=-1146,dy=3,nbt=!{pixelmon:npc_chatting}] -504 241 1256
-execute as @s[scores={DialogueTrigger=60,TalkTime=426,StarterPick=1}] run tp @e[x=-504,y=245,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] -1662 92 -1146
-execute as @s[scores={DialogueTrigger=60,TalkTime=426,StarterPick=2}] run tp @e[x=-504,y=245,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] -1662 92 -1146
-execute as @s[scores={DialogueTrigger=60,TalkTime=426,StarterPick=3}] run tp @e[x=-504,y=245,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] -1662 92 -1146
+execute as @s[scores={DialogueTrigger=60,TalkTime=426}] run tp @e[x=-1662,y=91,z=-1146,dy=3,type=pixelmon:npc_chatting] -504 241 1256
+execute as @s[scores={DialogueTrigger=60,TalkTime=426,StarterPick=1}] run tp @e[x=-504,y=245,z=1252,dy=3,type=pixelmon:npc_trainer] -1662 92 -1146
+execute as @s[scores={DialogueTrigger=60,TalkTime=426,StarterPick=2}] run tp @e[x=-504,y=245,z=1254,dy=3,type=pixelmon:npc_trainer] -1662 92 -1146
+execute as @s[scores={DialogueTrigger=60,TalkTime=426,StarterPick=3}] run tp @e[x=-504,y=245,z=1256,dy=3,type=pixelmon:npc_trainer] -1662 92 -1146
 
 tag @s[scores={DialogueTrigger=60,TalkTime=426..}] add Dialogue60
 scoreboard players set @s[tag=Dialogue60] TalkTime 0
@@ -2011,21 +2011,21 @@ scoreboard players set @s[tag=Dialogue60] DialogueTrigger 0
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
 #/tedit add WIN /scoreboard players set @pl TalkTime 0
 
-#execute as @s[x=-1661,y=91,z=-1150,r=30,tag=Dialogue60,score_StarterPick_min=1,score_StarterPick=1] run execute as @s[tag=!Dialogue61,score_DialogueTrigger=0] run tp @e[x=-504,y=245,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] -1662 92 -1146
-#execute as @s[x=-1661,y=91,z=-1150,r=30,tag=Dialogue60,score_StarterPick_min=2,score_StarterPick=2] run execute as @s[tag=!Dialogue61,score_DialogueTrigger=0] run tp @e[x=-504,y=245,z=1254,dy=3,nbt=!{pixelmon:npc_trainer}] -1662 92 -1146
-#execute as @s[x=-1661,y=91,z=-1150,r=30,tag=Dialogue60,score_StarterPick_min=3,score_StarterPick=3] run execute as @s[tag=!Dialogue61,score_DialogueTrigger=0] run tp @e[x=-504,y=245,z=1256,dy=3,nbt=!{pixelmon:npc_trainer}] -1662 92 -1146
+#execute as @s[x=-1661,y=91,z=-1150,r=30,tag=Dialogue60,score_StarterPick_min=1,score_StarterPick=1] run execute as @s[tag=!Dialogue61,score_DialogueTrigger=0] run tp @e[x=-504,y=245,z=1252,dy=3,type=pixelmon:npc_trainer] -1662 92 -1146
+#execute as @s[x=-1661,y=91,z=-1150,r=30,tag=Dialogue60,score_StarterPick_min=2,score_StarterPick=2] run execute as @s[tag=!Dialogue61,score_DialogueTrigger=0] run tp @e[x=-504,y=245,z=1254,dy=3,type=pixelmon:npc_trainer] -1662 92 -1146
+#execute as @s[x=-1661,y=91,z=-1150,r=30,tag=Dialogue60,score_StarterPick_min=3,score_StarterPick=3] run execute as @s[tag=!Dialogue61,score_DialogueTrigger=0] run tp @e[x=-504,y=245,z=1256,dy=3,type=pixelmon:npc_trainer] -1662 92 -1146
 
 
 #tps in NPCs if needed, switches Trainer Serena for regular Serena
-execute as @s[scores={DialogueTrigger=61,TalkTime=3}] run tp @e[x=-504,y=240,z=1252,dy=3,nbt=!{pixelmon:npc_chatting}] -1654 92 -1149
-execute as @s[scores={DialogueTrigger=61,TalkTime=3}] run tp @e[x=-504,y=240,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] -1653 92 -1153
-execute as @s[scores={DialogueTrigger=61,TalkTime=3}] run tp @e[x=-504,y=240,z=1256,dy=3,nbt=!{pixelmon:npc_chatting}] -1662 92 -1146
-execute as @s[scores={DialogueTrigger=61,TalkTime=3}] run tp @e[x=-504,y=240,z=1258,dy=3,nbt=!{pixelmon:npc_chatting}] -1664 92 -1149
-execute as @s[scores={DialogueTrigger=61,TalkTime=3}] run tp @e[x=-504,y=240,z=1260,dy=3,nbt=!{pixelmon:npc_chatting}] -1665 92 -1152
-execute as @s[scores={DialogueTrigger=61,TalkTime=3}] run tp @e[x=-504,y=240,z=1262,dy=3,nbt=!{pixelmon:npc_chatting}] -1664 92 -1155
-execute as @s[scores={DialogueTrigger=61,TalkTime=3}] run tp @e[x=-1662,y=91,z=-1146,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=1}] -504 246 1252
-execute as @s[scores={DialogueTrigger=61,TalkTime=3}] run tp @e[x=-1662,y=91,z=-1146,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=2}] -504 246 1254
-execute as @s[scores={DialogueTrigger=61,TalkTime=3}] run tp @e[x=-1662,y=91,z=-1146,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=3}] -504 246 1256
+execute as @s[scores={DialogueTrigger=61,TalkTime=3}] run tp @e[x=-504,y=240,z=1252,dy=3,type=pixelmon:npc_chatting] -1654 92 -1149
+execute as @s[scores={DialogueTrigger=61,TalkTime=3}] run tp @e[x=-504,y=240,z=1254,dy=3,type=pixelmon:npc_chatting] -1653 92 -1153
+execute as @s[scores={DialogueTrigger=61,TalkTime=3}] run tp @e[x=-504,y=240,z=1256,dy=3,type=pixelmon:npc_chatting] -1662 92 -1146
+execute as @s[scores={DialogueTrigger=61,TalkTime=3}] run tp @e[x=-504,y=240,z=1258,dy=3,type=pixelmon:npc_chatting] -1664 92 -1149
+execute as @s[scores={DialogueTrigger=61,TalkTime=3}] run tp @e[x=-504,y=240,z=1260,dy=3,type=pixelmon:npc_chatting] -1665 92 -1152
+execute as @s[scores={DialogueTrigger=61,TalkTime=3}] run tp @e[x=-504,y=240,z=1262,dy=3,type=pixelmon:npc_chatting] -1664 92 -1155
+execute as @s[scores={DialogueTrigger=61,TalkTime=3}] run tp @e[x=-1662,y=91,z=-1146,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=1}] -504 246 1252
+execute as @s[scores={DialogueTrigger=61,TalkTime=3}] run tp @e[x=-1662,y=91,z=-1146,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=2}] -504 246 1254
+execute as @s[scores={DialogueTrigger=61,TalkTime=3}] run tp @e[x=-1662,y=91,z=-1146,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=3}] -504 246 1256
 
 tellraw @s[scores={DialogueTrigger=61,TalkTime=4}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> It was so strong! I could feel how powerful the bond between you and your partners is."}]
 tellraw @s[scores={DialogueTrigger=61,TalkTime=14}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Losing is frustrating, but... You will definitely be able to Mega Evolve your Pokémon!"}]
@@ -2043,14 +2043,14 @@ tellraw @s[scores={DialogueTrigger=61,TalkTime=109}] {"text":"<Korrina> Oh, the 
 
 #Korrina tps away
 execute as @s[scores={DialogueTrigger=61,TalkTime=115}] run particle cloud -1654 92 -1149 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=61,TalkTime=115}] run tp @e[x=-1654,y=91,z=-1149,dy=3,nbt=!{pixelmon:npc_chatting}] -504 241 1252
+execute as @s[scores={DialogueTrigger=61,TalkTime=115}] run tp @e[x=-1654,y=91,z=-1149,dy=3,type=pixelmon:npc_chatting] -504 241 1252
 
 tellraw @s[scores={DialogueTrigger=61,TalkTime=119}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> I'll bet the professor will be happy if you master Mega Evolution."}]
 tellraw @s[scores={DialogueTrigger=61,TalkTime=128}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> That's one way you can show mastery as a Trainer."}]
 
 #Serena tps away
 execute as @s[scores={DialogueTrigger=61,TalkTime=133}] run particle cloud -1662 92 -1146 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=61,TalkTime=133}] run tp @e[x=-1662,y=91,z=-1146,dy=3,nbt=!{pixelmon:npc_chatting}] -504 241 1256
+execute as @s[scores={DialogueTrigger=61,TalkTime=133}] run tp @e[x=-1662,y=91,z=-1146,dy=3,type=pixelmon:npc_chatting] -504 241 1256
 
 tellraw @s[scores={DialogueTrigger=61,TalkTime=137}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Well, that's what the professor wanted us to do, after all!"}]
 tellraw @s[scores={DialogueTrigger=61,TalkTime=145}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> He said we should aim to be the best Trainers we can be and enjoy our journey!"}]
@@ -2061,8 +2061,8 @@ tellraw @s[scores={DialogueTrigger=61,TalkTime=170}] ["",{"text":"<"},{"text":"T
 #Trevor and Tierno tp away
 execute as @s[scores={DialogueTrigger=61,TalkTime=175}] run particle cloud -1665 92 -1152 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=61,TalkTime=175}] run particle cloud -1664 92 -1155 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=61,TalkTime=175}] run tp @e[x=-1665,y=91,z=-1152,dy=3,nbt=!{pixelmon:npc_chatting}] -504 241 1260
-execute as @s[scores={DialogueTrigger=61,TalkTime=175}] run tp @e[x=-1664,y=91,z=-1155,dy=3,nbt=!{pixelmon:npc_chatting}] -504 241 1262
+execute as @s[scores={DialogueTrigger=61,TalkTime=175}] run tp @e[x=-1665,y=91,z=-1152,dy=3,type=pixelmon:npc_chatting] -504 241 1260
+execute as @s[scores={DialogueTrigger=61,TalkTime=175}] run tp @e[x=-1664,y=91,z=-1155,dy=3,type=pixelmon:npc_chatting] -504 241 1262
 
 tellraw @s[scores={DialogueTrigger=61,TalkTime=180}] ["",{"text":"<"},{"text":"Mega Evolution Guru","color":"gray"},{"text":"> You don't really need to go to all the trouble of comparing--every living creature is unique."}]
 tellraw @s[scores={DialogueTrigger=61,TalkTime=191}] ["",{"text":"<"},{"text":"Mega Evolution Guru","color":"gray"},{"text":"> But still, having someone to compete against and aim for greater heights with is a very fine thing."}]
@@ -2072,8 +2072,8 @@ tellraw @s[scores={DialogueTrigger=61,TalkTime=213}] ["",{"text":"<"},{"text":"S
 #Shauna and Guru tp away
 execute as @s[scores={DialogueTrigger=61,TalkTime=220}] run particle cloud -1653 92 -1153 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=61,TalkTime=220}] run particle cloud -1664 92 -1149 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=61,TalkTime=220}] run tp @e[x=-1653,y=91,z=-1153,dy=3,nbt=!{pixelmon:npc_chatting}] -504 241 1254
-execute as @s[scores={DialogueTrigger=61,TalkTime=220}] run tp @e[x=-1664,y=91,z=-1149,dy=3,nbt=!{pixelmon:npc_chatting}] -504 241 1258
+execute as @s[scores={DialogueTrigger=61,TalkTime=220}] run tp @e[x=-1653,y=91,z=-1153,dy=3,type=pixelmon:npc_chatting] -504 241 1254
+execute as @s[scores={DialogueTrigger=61,TalkTime=220}] run tp @e[x=-1664,y=91,z=-1149,dy=3,type=pixelmon:npc_chatting] -504 241 1258
 
 tag @s[scores={DialogueTrigger=61,TalkTime=220..}] add Dialogue61
 scoreboard players set @s[tag=Dialogue61] TalkTime 0
@@ -2103,11 +2103,11 @@ scoreboard players set @s[tag=Dialogue62] DialogueTrigger 0
 
 #tps Korrina npc and two Lucario in
 execute as @s[scores={DialogueTrigger=63,TalkTime=1}] run particle cloud -1635 188 -1180 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=63,TalkTime=1}] run tp @e[x=-504,y=250,z=1254,dy=3,nbt=!{pixelmon:npc_chatting}] -1635 188 -1180
-execute as @s[scores={DialogueTrigger=63,TalkTime=1}] run tp @e[x=-504,y=251,z=1257,dy=3,nbt=!{pixelmon:statue}] -1638 187.5 -1180
-execute as @s[scores={DialogueTrigger=63,TalkTime=1}] run tp @e[x=-504,y=251,z=1260,dy=3,nbt=!{pixelmon:statue}] -1632 187.5 -1181
+execute as @s[scores={DialogueTrigger=63,TalkTime=1}] run tp @e[x=-504,y=250,z=1254,dy=3,type=pixelmon:npc_chatting] -1635 188 -1180
+execute as @s[scores={DialogueTrigger=63,TalkTime=1}] run tp @e[x=-504,y=251,z=1257,dy=3,type=pixelmon:statue] -1638 187.5 -1180
+execute as @s[scores={DialogueTrigger=63,TalkTime=1}] run tp @e[x=-504,y=251,z=1260,dy=3,type=pixelmon:statue] -1632 187.5 -1181
 #tps Trainer Korrina if present
-execute as @s[scores={DialogueTrigger=63,TalkTime=1}] run tp @e[x=-1635,y=187,z=-1180,dy=3,nbt=!{pixelmon:npc_trainer}] -504 251 1252
+execute as @s[scores={DialogueTrigger=63,TalkTime=1}] run tp @e[x=-1635,y=187,z=-1180,dy=3,type=pixelmon:npc_trainer] -504 251 1252
 
 
 tellraw @s[scores={DialogueTrigger=63,TalkTime=5}] {"text":"<Korrina> I really love this place! When I'm here with my Pokémon, looking at the wide-open sky above,"}
@@ -2126,12 +2126,12 @@ tellraw @s[scores={DialogueTrigger=63,TalkTime=76}] ["",{"text":"<Lucario> "},{"
 execute as @s[scores={DialogueTrigger=63,TalkTime=76}] run playsound pixelmon:pixelmon.mob.lucario hostile @s ~ ~ ~ 10 1 1
 
 #Lucario tps next to player
-execute as @s[scores={DialogueTrigger=63,TalkTime=80}] run tp @e[x=-1632,y=187,z=-1181,dy=3,nbt=!{pixelmon:statue}] -504 252 1260
-execute as @s[scores={DialogueTrigger=63,TalkTime=80}] run tag @e[x=-504,y=215,z=1263,dy=3,nbt=!{pixelmon:statue}] add Players
+execute as @s[scores={DialogueTrigger=63,TalkTime=80}] run tp @e[x=-1632,y=187,z=-1181,dy=3,type=pixelmon:statue] -504 252 1260
+execute as @s[scores={DialogueTrigger=63,TalkTime=80}] run tag @e[x=-504,y=215,z=1263,dy=3,type=pixelmon:statue] add Players
 
-execute as @s[scores={DialogueTrigger=63,TalkTime=80}] run execute as @e[x=-504,y=251,z=1263,dy=3,nbt=!{pixelmon:statue}] at @a[scores={DialogueTrigger=63,TalkTime=81}] positioned ^ ^ ^2 run tp @s ~ ~ ~
-#execute as @s[scores={DialogueTrigger=63,TalkTime=80}] run tp @e[x=-504,y=251,z=1263,dy=3,nbt=!{pixelmon:statue}] @s
-execute as @s[scores={DialogueTrigger=63,TalkTime=81}] run tp @e[distance=..2,nbt=!{pixelmon:statue},tag=Players,name=Lucario] ~2 ~ ~
+execute as @s[scores={DialogueTrigger=63,TalkTime=80}] run execute as @e[x=-504,y=251,z=1263,dy=3,type=pixelmon:statue] at @a[scores={DialogueTrigger=63,TalkTime=81}] positioned ^ ^ ^2 run tp @s ~ ~ ~
+#execute as @s[scores={DialogueTrigger=63,TalkTime=80}] run tp @e[x=-504,y=251,z=1263,dy=3,type=pixelmon:statue] @s
+execute as @s[scores={DialogueTrigger=63,TalkTime=81}] run tp @e[distance=..2,type=pixelmon:statue,tag=Players,name=Lucario] ~2 ~ ~
 
 tellraw @s[scores={DialogueTrigger=63,TalkTime=84}] {"text":"<Korrina> Lucario, are you sure? You want to battle alongside that Trainer?"}
 tellraw @s[scores={DialogueTrigger=63,TalkTime=91}] ["",{"text":"<Lucario> "},{"text":"Grrrooof!","italic":true}]
@@ -2142,7 +2142,7 @@ tellraw @s[scores={DialogueTrigger=63,TalkTime=113}] {"text":"<Korrina> Haha! We
 tellraw @s[scores={DialogueTrigger=63,TalkTime=120}] {"text":"<Korrina> So, whaddya say, Trainer? Will you and Lucario battle against me and my Lucario?"}
 
 ###execute as @s[scores={DialogueTrigger=63,TalkTime=128}] run pokegive @s Lucario lvl:32 ab:Stradyfast gr:6 ivhp:26+ ivatk:29+ ivdef:26+ ivspatk:26+ ivspdef:26+ ivhp:26+
-execute as @s[scores={DialogueTrigger=63,TalkTime=128}] run tp @e[x=-1635,y=187,z=-1186,distance=..30,nbt=!{pixelmon:statue},tag=Players] -504 252 1263
+execute as @s[scores={DialogueTrigger=63,TalkTime=128}] run tp @e[x=-1635,y=187,z=-1186,distance=..30,type=pixelmon:statue,tag=Players] -504 252 1263
 
 tellraw @s[scores={DialogueTrigger=63,TalkTime=130}] {"text":"<Korrina> A Lucario-on-Lucario battle! It will be nothing short of riveting."}
 tellraw @s[scores={DialogueTrigger=63,TalkTime=139}] {"text":"<Korrina> How about we get this show on the road? Have your Lucario hold this Lucarionite for it to Mega Evolve!"}
@@ -2153,11 +2153,11 @@ tellraw @s[scores={DialogueTrigger=63,TalkTime=166}] {"text":"<Korrina> Ready, L
 
 
 #tp npc Korrina to trainer Korrina
-execute as @s[scores={DialogueTrigger=63,TalkTime=172}] run tp @e[x=-504,y=250,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] -1635 187.5 -1180
-execute as @s[scores={DialogueTrigger=63,TalkTime=172}] run tp @e[x=-1635,y=187,z=-1180,dy=3,nbt=!{pixelmon:npc_chatting}] -504 251 1254
+execute as @s[scores={DialogueTrigger=63,TalkTime=172}] run tp @e[x=-504,y=250,z=1252,dy=3,type=pixelmon:npc_trainer] -1635 187.5 -1180
+execute as @s[scores={DialogueTrigger=63,TalkTime=172}] run tp @e[x=-1635,y=187,z=-1180,dy=3,type=pixelmon:npc_chatting] -504 251 1254
 
 #turns Korrina's Lucarios invisible when player has KorrinaBattleMusic tag
-#execute as @s[x=-1635,y=187,z=-1186,r=30,tag=KorrinaBattleMusic] run effect @e[r=30,name=Lucario,nbt=!{pixelmon:statue}] minecraft:invisibility 2 1 true
+#execute as @s[x=-1635,y=187,z=-1186,r=30,tag=KorrinaBattleMusic] run effect @e[r=30,name=Lucario,type=pixelmon:statue] minecraft:invisibility 2 1 true
 
 tag @s[scores={DialogueTrigger=63,TalkTime=172..}] add Dialogue63
 scoreboard players set @s[tag=Dialogue63] TalkTime 0
@@ -2167,12 +2167,12 @@ scoreboard players set @s[tag=Dialogue63] DialogueTrigger 0
 
 #Korrina post-battle at the top of the Tower of Mastery
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 64
-#execute as @s[x=-1635,y=187,z=-1186,r=30,tag=Dialogue63] run execute as @s[tag=!Dialogue64,score_DialogueTrigger=0] run tp @e[x=-504,y=250,z=1252,dy=3,nbt=!{pixelmon:npc_trainer}] -1635 187.5 -1180
-#execute as @s[x=-1635,y=187,z=-1186,r=30,tag=Dialogue63] run execute as @s[tag=!Dialogue64,score_DialogueTrigger=0] run tp @e[x=-1635,y=187,z=-1180,dy=3,nbt=!{pixelmon:npc_chatting}] -504 251 1254
+#execute as @s[x=-1635,y=187,z=-1186,r=30,tag=Dialogue63] run execute as @s[tag=!Dialogue64,score_DialogueTrigger=0] run tp @e[x=-504,y=250,z=1252,dy=3,type=pixelmon:npc_trainer] -1635 187.5 -1180
+#execute as @s[x=-1635,y=187,z=-1186,r=30,tag=Dialogue63] run execute as @s[tag=!Dialogue64,score_DialogueTrigger=0] run tp @e[x=-1635,y=187,z=-1180,dy=3,type=pixelmon:npc_chatting] -504 251 1254
 
 #Gives Luario certain moves
-#execute as @e[x=-1635,y=187,z=-1186,r=30,nbt=!{pixelmon:pixelmon},name=Lucario] run execute as @a[r=5,tag=KorrinaBattleMusic,type=player] run execute as @s[tag=!Dialogue64] run execute as @s[tag=!LucarioMoves] run entitydata @e[r=5,nbt=!{pixelmon:pixelmon},name=Lucario] {Moveset:[{MoveID:35s,MovePP:20b},{MoveID:610s,MovePP:20b},{MoveID:376s,MovePP:40b},{MoveID:294s,MovePP:10b}],CaughtBall:24b,HeldItemStack:{id:"pixelmon:lucarionite",Count:1b,Damage:0s},originalTrainer:"Korrina"}
-#execute as @e[x=-1635,y=187,z=-1186,r=30,nbt=!{pixelmon:pixelmon},name=Lucario] run execute as @a[r=5,tag=KorrinaBattleMusic,type=player] run execute as @s[tag=!Dialogue64] run execute as @s[tag=!LucarioMoves] run tag @s add LucarioMoves
+#execute as @e[x=-1635,y=187,z=-1186,r=30,type=pixelmon:pixelmon,name=Lucario] run execute as @a[r=5,tag=KorrinaBattleMusic,type=player] run execute as @s[tag=!Dialogue64] run execute as @s[tag=!LucarioMoves] run entitydata @e[r=5,type=pixelmon:pixelmon,name=Lucario] {Moveset:[{MoveID:35s,MovePP:20b},{MoveID:610s,MovePP:20b},{MoveID:376s,MovePP:40b},{MoveID:294s,MovePP:10b}],CaughtBall:24b,HeldItemStack:{id:"pixelmon:lucarionite",Count:1b,Damage:0s},originalTrainer:"Korrina"}
+#execute as @e[x=-1635,y=187,z=-1186,r=30,type=pixelmon:pixelmon,name=Lucario] run execute as @a[r=5,tag=KorrinaBattleMusic,type=player] run execute as @s[tag=!Dialogue64] run execute as @s[tag=!LucarioMoves] run tag @s add LucarioMoves
 
 tellraw @s[scores={DialogueTrigger=64,TalkTime=5}] {"text":"<Korrina> What an explosive battle! I could tell that both Mega Lucario didn't hold anything back!"}
 tellraw @s[scores={DialogueTrigger=64,TalkTime=15}] {"text":"<Korrina> With strong bonds like that, you shouldn't have any trouble triggering your Pokémon's Mega Evolution!"}
@@ -2186,8 +2186,8 @@ tellraw @s[scores={DialogueTrigger=64,TalkTime=66}] ["",{"text":"<Lucario> "},{"
 execute as @s[scores={DialogueTrigger=64,TalkTime=66}] run playsound pixelmon:pixelmon.mob.lucario hostile @s ~ ~ ~ 10 1 1
 
 #Tp Korrina and Lucario out
-execute as @s[scores={DialogueTrigger=64,TalkTime=70}] run tp @e[x=-1635,y=187,z=-1180,dy=3,nbt=!{pixelmon:npc_trainer}] -504 251 1252
-execute as @s[scores={DialogueTrigger=64,TalkTime=70}] run tp @e[x=-1638,y=187,z=-1180,dy=3,nbt=!{pixelmon:statue}] -504 252 1257
+execute as @s[scores={DialogueTrigger=64,TalkTime=70}] run tp @e[x=-1635,y=187,z=-1180,dy=3,type=pixelmon:npc_trainer] -504 251 1252
+execute as @s[scores={DialogueTrigger=64,TalkTime=70}] run tp @e[x=-1638,y=187,z=-1180,dy=3,type=pixelmon:statue] -504 252 1257
 execute as @s[scores={DialogueTrigger=64,TalkTime=70}] run particle cloud -1635 188 -1180 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=64,TalkTime=70}] run particle cloud -1638 188 -1180 2 2 2 1 100
 
@@ -2200,7 +2200,7 @@ scoreboard players set @s[tag=Dialogue64] DialogueTrigger 0
 #execute as @s[x=-1528,y=79,z=-817,dx=15,dy=10,dz=14,tag=Dialogue64] run scoreboard players set @s[tag=!Dialogue65] DialogueTrigger 65
 
 #tp Serena in
-execute as @s[scores={DialogueTrigger=65,TalkTime=1}] run tp @e[x=-504,y=100,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -1517 80 -808
+execute as @s[scores={DialogueTrigger=65,TalkTime=1}] run tp @e[x=-504,y=100,z=1268,dy=3,type=pixelmon:npc_chatting] -1517 80 -808
 execute as @s[scores={DialogueTrigger=65,TalkTime=1}] run particle cloud -1517 80 -808 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=65,TalkTime=5}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Here, neighbor. You should use this."}]
@@ -2210,7 +2210,7 @@ tellraw @s[scores={DialogueTrigger=65,TalkTime=22}] ["",{"text":"<"},{"text":"Se
 tellraw @s[scores={DialogueTrigger=65,TalkTime=33}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> It's like destiny in a way."}]
 
 #tp Serena away
-execute as @s[scores={DialogueTrigger=65,TalkTime=40}] run tp @e[x=-1517,y=79,z=-808,dy=3,nbt=!{pixelmon:npc_chatting}] -504 101 1268
+execute as @s[scores={DialogueTrigger=65,TalkTime=40}] run tp @e[x=-1517,y=79,z=-808,dy=3,type=pixelmon:npc_chatting] -504 101 1268
 execute as @s[scores={DialogueTrigger=65,TalkTime=40}] run particle cloud -1517 80 -808 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=65,TalkTime=40..}] add Dialogue65
@@ -2223,8 +2223,8 @@ scoreboard players set @s[tag=Dialogue65] DialogueTrigger 0
 #scoreboard players set @a[x=-1059,y=79,z=-799,dx=14,dy=10,dz=14,tag=!Dialogue66] DialogueTrigger 66
 
 #Tp Sycamore and Diantha in
-execute as @s[scores={DialogueTrigger=66,TalkTime=1}] run tp @e[x=-504,y=105,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -1055 80 -794
-execute as @s[scores={DialogueTrigger=66,TalkTime=1}] run tp @e[x=-504,y=105,z=1270,dy=3,nbt=!{pixelmon:npc_chatting}] -1052 80 -794
+execute as @s[scores={DialogueTrigger=66,TalkTime=1}] run tp @e[x=-504,y=105,z=1268,dy=3,type=pixelmon:npc_chatting] -1055 80 -794
+execute as @s[scores={DialogueTrigger=66,TalkTime=1}] run tp @e[x=-504,y=105,z=1270,dy=3,type=pixelmon:npc_chatting] -1052 80 -794
 execute as @s[scores={DialogueTrigger=66,TalkTime=1}] run particle cloud -1055 80 -794 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=66,TalkTime=1}] run particle cloud -1052 80 -794 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=66,TalkTime=1}] run scoreboard players set @s click 1
@@ -2252,7 +2252,7 @@ tellraw @s[scores={DialogueTrigger=66,TalkTime=128}] ["",{"text":"<"},{"text":"S
 
 #Sycamore tps out
 execute as @s[scores={DialogueTrigger=66,TalkTime=133}] run particle cloud -1055 80 -794 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=66,TalkTime=133}] run tp @e[x=-1055,y=79,z=-794,dy=3,nbt=!{pixelmon:npc_chatting}] -504 106 1268
+execute as @s[scores={DialogueTrigger=66,TalkTime=133}] run tp @e[x=-1055,y=79,z=-794,dy=3,type=pixelmon:npc_chatting] -504 106 1268
 
 #End Sycamore's theme music
 execute as @s[scores={DialogueTrigger=66,TalkTime=134}] run scoreboard players set @s click 1
@@ -2267,7 +2267,7 @@ tellraw @s[scores={DialogueTrigger=66,TalkTime=190}] {"text":"<Diantha> Let's ha
 
 #Diantha tps away
 execute as @s[scores={DialogueTrigger=66,TalkTime=198}] run particle cloud -1052 80 -794 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=66,TalkTime=198}] run tp @e[x=-1052,y=79,z=-794,dy=3,nbt=!{pixelmon:npc_chatting}] -504 106 1270
+execute as @s[scores={DialogueTrigger=66,TalkTime=198}] run tp @e[x=-1052,y=79,z=-794,dy=3,type=pixelmon:npc_chatting] -504 106 1270
 
 tag @s[scores={DialogueTrigger=66,TalkTime=198..}] add Dialogue66
 scoreboard players set @s[tag=Dialogue66] TalkTime 0
@@ -2278,15 +2278,15 @@ scoreboard players set @s[tag=Dialogue66] DialogueTrigger 0
 #scoreboard players set @a[x=-1092,y=120,z=-713,dx=35,dy=10,dz=14,tag=!Dialogue67] DialogueTrigger 67
 
 #Tags Serena NPC
-execute as @s[scores={DialogueTrigger=67,TalkTime=1}] run scoreboard players set @e[x=-504,y=110,z=1268,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 1
-execute as @s[scores={DialogueTrigger=67,TalkTime=1}] run scoreboard players set @e[x=-504,y=110,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 2
-execute as @s[scores={DialogueTrigger=67,TalkTime=1}] run scoreboard players set @e[x=-504,y=110,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 3
+execute as @s[scores={DialogueTrigger=67,TalkTime=1}] run scoreboard players set @e[x=-504,y=110,z=1268,dy=3,type=pixelmon:npc_trainer] StarterPick 1
+execute as @s[scores={DialogueTrigger=67,TalkTime=1}] run scoreboard players set @e[x=-504,y=110,z=1270,dy=3,type=pixelmon:npc_trainer] StarterPick 2
+execute as @s[scores={DialogueTrigger=67,TalkTime=1}] run scoreboard players set @e[x=-504,y=110,z=1272,dy=3,type=pixelmon:npc_trainer] StarterPick 3
 
 #tp Serena in
 execute as @s[scores={DialogueTrigger=67,TalkTime=2}] run particle cloud -1078 121 -709 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=67,TalkTime=2,StarterPick=1}] run tp @e[x=-504,y=110,z=1268,dy=3,nbt=!{pixelmon:npc_trainer}] -1078 121 -709
-execute as @s[scores={DialogueTrigger=67,TalkTime=2,StarterPick=2}] run tp @e[x=-504,y=110,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -1078 121 -709
-execute as @s[scores={DialogueTrigger=67,TalkTime=2,StarterPick=3}] run tp @e[x=-504,y=110,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] -1078 121 -709
+execute as @s[scores={DialogueTrigger=67,TalkTime=2,StarterPick=1}] run tp @e[x=-504,y=110,z=1268,dy=3,type=pixelmon:npc_trainer] -1078 121 -709
+execute as @s[scores={DialogueTrigger=67,TalkTime=2,StarterPick=2}] run tp @e[x=-504,y=110,z=1270,dy=3,type=pixelmon:npc_trainer] -1078 121 -709
+execute as @s[scores={DialogueTrigger=67,TalkTime=2,StarterPick=3}] run tp @e[x=-504,y=110,z=1272,dy=3,type=pixelmon:npc_trainer] -1078 121 -709
 
 tellraw @s[scores={DialogueTrigger=67,TalkTime=3}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> I'm sorry I'm late!"}]
 tellraw @s[scores={DialogueTrigger=67,TalkTime=10}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> So, could you show me Mega Evolution?"}]
@@ -2302,9 +2302,9 @@ scoreboard players set @s[tag=Dialogue67] DialogueTrigger 0
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 68
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
 
-#execute as @s[x=-1092,y=120,z=-713,dx=35,dy=10,dz=14,tag=Dialogue67,score_StarterPick_min=1,score_StarterPick=1] run execute as @s[tag=!Dialogue68,score_TalkTime=0] run tp @e[x=-504,y=110,z=1268,dy=3,nbt=!{pixelmon:npc_trainer}] -1078 121 -709
-#execute as @s[x=-1092,y=120,z=-713,dx=35,dy=10,dz=14,tag=Dialogue67,score_StarterPick_min=2,score_StarterPick=2] run execute as @s[tag=!Dialogue68,score_TalkTime=0] run tp @e[x=-504,y=110,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -1078 121 -709
-#execute as @s[x=-1092,y=120,z=-713,dx=35,dy=10,dz=14,tag=Dialogue67,score_StarterPick_min=3,score_StarterPick=3] run execute as @s[tag=!Dialogue68,score_TalkTime=0] run tp @e[x=-504,y=110,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] -1078 121 -709
+#execute as @s[x=-1092,y=120,z=-713,dx=35,dy=10,dz=14,tag=Dialogue67,score_StarterPick_min=1,score_StarterPick=1] run execute as @s[tag=!Dialogue68,score_TalkTime=0] run tp @e[x=-504,y=110,z=1268,dy=3,type=pixelmon:npc_trainer] -1078 121 -709
+#execute as @s[x=-1092,y=120,z=-713,dx=35,dy=10,dz=14,tag=Dialogue67,score_StarterPick_min=2,score_StarterPick=2] run execute as @s[tag=!Dialogue68,score_TalkTime=0] run tp @e[x=-504,y=110,z=1270,dy=3,type=pixelmon:npc_trainer] -1078 121 -709
+#execute as @s[x=-1092,y=120,z=-713,dx=35,dy=10,dz=14,tag=Dialogue67,score_StarterPick_min=3,score_StarterPick=3] run execute as @s[tag=!Dialogue68,score_TalkTime=0] run tp @e[x=-504,y=110,z=1272,dy=3,type=pixelmon:npc_trainer] -1078 121 -709
 
 tellraw @s[scores={DialogueTrigger=68,TalkTime=4}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Even though we set off from Vaniville Town at the same time, you somehow became stronger than I am."}]
 tellraw @s[scores={DialogueTrigger=68,TalkTime=15}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> What could be so different about us?"}]
@@ -2312,9 +2312,9 @@ tellraw @s[scores={DialogueTrigger=68,TalkTime=23}] ["",{"text":"<"},{"text":"Se
 
 #tp Serena out
 execute as @s[scores={DialogueTrigger=68,TalkTime=28}] run particle cloud -1078 121 -709 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=68,TalkTime=28}] run tp @e[x=-1078,y=120,z=-709,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=1}] -504 111 1268
-execute as @s[scores={DialogueTrigger=68,TalkTime=28}] run tp @e[x=-1078,y=120,z=-709,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=2}] -504 111 1270
-execute as @s[scores={DialogueTrigger=68,TalkTime=28}] run tp @e[x=-1078,y=120,z=-709,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=3}] -504 111 1272
+execute as @s[scores={DialogueTrigger=68,TalkTime=28}] run tp @e[x=-1078,y=120,z=-709,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=1}] -504 111 1268
+execute as @s[scores={DialogueTrigger=68,TalkTime=28}] run tp @e[x=-1078,y=120,z=-709,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=2}] -504 111 1270
+execute as @s[scores={DialogueTrigger=68,TalkTime=28}] run tp @e[x=-1078,y=120,z=-709,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=3}] -504 111 1272
 
 tag @s[scores={DialogueTrigger=68,TalkTime=28..}] add Dialogue68
 scoreboard players set @s[tag=Dialogue68] TalkTime 0
@@ -2327,8 +2327,8 @@ scoreboard players set @s[tag=Dialogue68] DialogueTrigger 0
 tellraw @s[scores={DialogueTrigger=69,TalkTime=1}] ["",{"text":"<"},{"text":"...","color":"aqua"},{"text":"> How dare you keep us waiting!"}]
 
 #Dexio and Sina tp in
-execute as @s[scores={DialogueTrigger=69,TalkTime=5}] run tp @e[x=-504,y=115,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -1073 115 -568
-execute as @s[scores={DialogueTrigger=69,TalkTime=5}] run tp @e[x=-504,y=115,z=1270,dy=3,nbt=!{pixelmon:npc_chatting}] -1077 115 -568
+execute as @s[scores={DialogueTrigger=69,TalkTime=5}] run tp @e[x=-504,y=115,z=1268,dy=3,type=pixelmon:npc_chatting] -1073 115 -568
+execute as @s[scores={DialogueTrigger=69,TalkTime=5}] run tp @e[x=-504,y=115,z=1270,dy=3,type=pixelmon:npc_chatting] -1077 115 -568
 execute as @s[scores={DialogueTrigger=69,TalkTime=5}] run particle cloud -1073 115 -568 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=69,TalkTime=5}] run particle cloud -1077 115 -568 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=69,TalkTime=5}] run scoreboard players set @s click 1
@@ -2346,8 +2346,8 @@ tellraw @s[scores={DialogueTrigger=69,TalkTime=82}] ["",{"text":"<"},{"text":"Si
 tellraw @s[scores={DialogueTrigger=69,TalkTime=90}] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> I'll be taking my leave now! Bon voyage!"}]
 
 #tp Dexio and Sina out
-execute as @s[scores={DialogueTrigger=69,TalkTime=97}] run tp @e[x=-1073,y=113,z=-568,dy=3,nbt=!{pixelmon:npc_chatting}] -504 116 1268
-execute as @s[scores={DialogueTrigger=69,TalkTime=97}] run tp @e[x=-1077,y=113,z=-568,dy=3,nbt=!{pixelmon:npc_chatting}] -504 116 1270
+execute as @s[scores={DialogueTrigger=69,TalkTime=97}] run tp @e[x=-1073,y=113,z=-568,dy=3,type=pixelmon:npc_chatting] -504 116 1268
+execute as @s[scores={DialogueTrigger=69,TalkTime=97}] run tp @e[x=-1077,y=113,z=-568,dy=3,type=pixelmon:npc_chatting] -504 116 1270
 execute as @s[scores={DialogueTrigger=69,TalkTime=97}] run particle cloud -1073 115 -568 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=69,TalkTime=97}] run particle cloud -1077 115 -568 2 2 2 1 100
 
@@ -2357,7 +2357,7 @@ scoreboard players set @s[tag=Dialogue69] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Route 13 Team Flare Grunt outside post-battle
-#execute as @s[x=-772,y=104,z=-330,r=30,tag=!Dialogue70] run execute as @s[tag=Ramos] run tp @e[x=-504,y=120,z=1268,dy=3,nbt=!{pixelmon:npc_trainer}] -772 104 -330
+#execute as @s[x=-772,y=104,z=-330,r=30,tag=!Dialogue70] run execute as @s[tag=Ramos] run tp @e[x=-504,y=120,z=1268,dy=3,type=pixelmon:npc_trainer] -772 104 -330
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 70
 
 tellraw @s[scores={DialogueTrigger=70,TalkTime=5}] {"text":"<Team Flare Grunt> And now, I'll stylishly run away!"}
@@ -2370,7 +2370,7 @@ tellraw @s[scores={DialogueTrigger=70,TalkTime=48}] {"text":"<Team Flare Grunt> 
 
 #tp Grunt away
 execute as @s[scores={DialogueTrigger=70,TalkTime=56}] run particle cloud -772 104 -330 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=70,TalkTime=56}] run tp @e[x=-772,y=103,z=-330,dy=3,nbt=!{pixelmon:npc_trainer}] -504 121 1268
+execute as @s[scores={DialogueTrigger=70,TalkTime=56}] run tp @e[x=-772,y=103,z=-330,dy=3,type=pixelmon:npc_trainer] -504 121 1268
 
 tag @s[scores={DialogueTrigger=70,TalkTime=56..}] add Dialogue70
 scoreboard players set @s[tag=Dialogue70] TalkTime 0
@@ -2396,9 +2396,9 @@ tellraw @s[scores={DialogueTrigger=71,TalkTime=2}] ["",{"text":"<"},{"text":"...
 
 #tp in
 execute as @s[scores={DialogueTrigger=71,TalkTime=5}] run particle cloud -949 48 -350 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=71,TalkTime=5}] run tp @e[x=-504,y=125,z=1268,dy=3,nbt=!{pixelmon:npc_trainer}] -949 48 -350
-execute as @s[scores={DialogueTrigger=71,TalkTime=5}] run tp @e[x=-504,y=125,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -962 54 -336
-execute as @s[scores={DialogueTrigger=71,TalkTime=6}] run data modify entity @e[limit=1,x=-949,y=47,z=-350,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[270.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=71,TalkTime=5}] run tp @e[x=-504,y=125,z=1268,dy=3,type=pixelmon:npc_trainer] -949 48 -350
+execute as @s[scores={DialogueTrigger=71,TalkTime=5}] run tp @e[x=-504,y=125,z=1270,dy=3,type=pixelmon:npc_trainer] -962 54 -336
+execute as @s[scores={DialogueTrigger=71,TalkTime=6}] run data modify entity @e[limit=1,x=-949,y=47,z=-350,dy=3,type=pixelmon:npc_trainer] {Rotation:[270.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=71,TalkTime=9}] ["",{"text":"<"},{"text":"Team Flare Grunt","color":"red"},{"text":"> Knock, knock. Who you?"}]
 tellraw @s[scores={DialogueTrigger=71,TalkTime=14}] ["",{"text":"<"},{"text":"Team Flare Grunt","color":"red"},{"text":"> Knock, knock. You who?"}]
@@ -2414,7 +2414,7 @@ scoreboard players set @s[tag=Dialogue71] DialogueTrigger 0
 #Power Plant Grunt 1 post-battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 72
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
-#execute as @s[x=-954,y=47,z=-361,dx=22,dy=10,dz=16,tag=Dialogue71] run execute as @s[tag=!Dialogue72] run tp @e[x=-504,y=125,z=1268,dy=3,nbt=!{pixelmon:npc_trainer}] -949 48 -350
+#execute as @s[x=-954,y=47,z=-361,dx=22,dy=10,dz=16,tag=Dialogue71] run execute as @s[tag=!Dialogue72] run tp @e[x=-504,y=125,z=1268,dy=3,type=pixelmon:npc_trainer] -949 48 -350
 
 tellraw @s[scores={DialogueTrigger=72,TalkTime=4}] ["",{"text":"<"},{"text":"Team Flare Grunt","color":"red"},{"text":"> Who do you think you are?"}]
 tellraw @s[scores={DialogueTrigger=72,TalkTime=11}] ["",{"text":"<"},{"text":"Team Flare Grunt","color":"red"},{"text":"> Team Flare is busy...redirecting...the power that's supposed to go to Lumiose City, see?"}]
@@ -2440,30 +2440,30 @@ tellraw @s[scores={DialogueTrigger=73,TalkTime=43}] {"text":"<...> What's this?"
 tellraw @s[scores={DialogueTrigger=73,TalkTime=48}] {"text":"<...> I didn't think anyone remained here after we dealt with the workers."}
 
 #Swap out Admin NPC and Admin Trainer
-execute as @s[scores={DialogueTrigger=73,TalkTime=48}] run tp @e[x=-1013,y=57,z=-335,dy=3,nbt=!{pixelmon:npc_chatting}] -504 136 1268
-execute as @s[scores={DialogueTrigger=73,TalkTime=48}] run tp @e[x=-504,y=135,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -1013 58 -335
+execute as @s[scores={DialogueTrigger=73,TalkTime=48}] run tp @e[x=-1013,y=57,z=-335,dy=3,type=pixelmon:npc_chatting] -504 136 1268
+execute as @s[scores={DialogueTrigger=73,TalkTime=48}] run tp @e[x=-504,y=135,z=1270,dy=3,type=pixelmon:npc_trainer] -1013 58 -335
 
 tag @s[scores={DialogueTrigger=73,TalkTime=48..}] add Dialogue73
 scoreboard players set @s[tag=Dialogue73] TalkTime 0
 scoreboard players set @s[tag=Dialogue73] DialogueTrigger 0
 
 #tps in all Grunts and Admins to start in Power Plant Room
-#execute as @s[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1268,dy=3,nbt=!{pixelmon:npc_trainer}] -982 54 -346
-#execute as @s[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -992 54 -310
-#execute as @s[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] -1029 54 -293
-#execute as @s[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] -1076 54 -336
-#execute as @s[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1276,dy=3,nbt=!{pixelmon:npc_trainer}] -1069 54 -363
-#execute as @s[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1278,dy=3,nbt=!{pixelmon:npc_trainer}] -1029 54 -380
+#execute as @s[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1268,dy=3,type=pixelmon:npc_trainer] -982 54 -346
+#execute as @s[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1270,dy=3,type=pixelmon:npc_trainer] -992 54 -310
+#execute as @s[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1272,dy=3,type=pixelmon:npc_trainer] -1029 54 -293
+#execute as @s[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1274,dy=3,type=pixelmon:npc_trainer] -1076 54 -336
+#execute as @s[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1276,dy=3,type=pixelmon:npc_trainer] -1069 54 -363
+#execute as @s[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1278,dy=3,type=pixelmon:npc_trainer] -1029 54 -380
 #Admin
-#execute as @s[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=135,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -1013 58 -335
+#execute as @s[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=135,z=1268,dy=3,type=pixelmon:npc_chatting] -1013 58 -335
 #Aliana
-#execute as @s[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=135,z=1272,dy=3,nbt=!{pixelmon:npc_chatting}] -1013 58 -339
+#execute as @s[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=135,z=1272,dy=3,type=pixelmon:npc_chatting] -1013 58 -339
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Flare Admin Power Plant post-battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 74
-#execute as @s[x=-1013,y=57,z=-339,r=10,tag=Dialogue73,score_TalkTime=0] run execute as @s[tag=!Dialogue74] run tp @e[x=-504,y=135,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -1013 58 -335
+#execute as @s[x=-1013,y=57,z=-339,r=10,tag=Dialogue73,score_TalkTime=0] run execute as @s[tag=!Dialogue74] run tp @e[x=-504,y=135,z=1270,dy=3,type=pixelmon:npc_trainer] -1013 58 -335
 
 tellraw @s[scores={DialogueTrigger=74,TalkTime=4}] {"text":"<Team Flare Admin> Scientist, take care of this pesky intruder!"}
 tellraw @s[scores={DialogueTrigger=74,TalkTime=12}] ["",{"text":"<"},{"text":"...","color":"red"},{"text":"> Ah ha ha! It would be my pleasure!"}]
@@ -2474,8 +2474,8 @@ tellraw @s[scores={DialogueTrigger=74,TalkTime=43}] ["",{"text":"<"},{"text":"Te
 tellraw @s[scores={DialogueTrigger=74,TalkTime=52}] ["",{"text":"<"},{"text":"Team Flare Aliana","color":"red"},{"text":"> Unfortunately for you, I've been charged with the simple task of your elimination."}]
 
 #Swap Team Flare Aliana NPC and Trainer
-execute as @s[scores={DialogueTrigger=74,TalkTime=52}] run tp @e[x=-1013,y=57,z=-339,dy=3,nbt=!{pixelmon:npc_chatting}] -504 136 1272
-execute as @s[scores={DialogueTrigger=74,TalkTime=52}] run tp @e[x=-504,y=135,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] -1013 58 -339
+execute as @s[scores={DialogueTrigger=74,TalkTime=52}] run tp @e[x=-1013,y=57,z=-339,dy=3,type=pixelmon:npc_chatting] -504 136 1272
+execute as @s[scores={DialogueTrigger=74,TalkTime=52}] run tp @e[x=-504,y=135,z=1274,dy=3,type=pixelmon:npc_trainer] -1013 58 -339
 
 tag @s[scores={DialogueTrigger=74,TalkTime=52..}] add Dialogue74
 scoreboard players set @s[tag=Dialogue74] TalkTime 0
@@ -2484,7 +2484,7 @@ scoreboard players set @s[tag=Dialogue74] DialogueTrigger 0
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Team Flare Alinia Power Plant post-battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 75
-#execute as @s[x=-1013,y=57,z=-339,r=10,tag=Dialogue74,score_TalkTime=0] run execute as @s[tag=!Dialogue75] run tp @e[x=-504,y=135,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] -1013 58 -339
+#execute as @s[x=-1013,y=57,z=-339,r=10,tag=Dialogue74,score_TalkTime=0] run execute as @s[tag=!Dialogue75] run tp @e[x=-504,y=135,z=1274,dy=3,type=pixelmon:npc_trainer] -1013 58 -339
 
 tellraw @s[scores={DialogueTrigger=75,TalkTime=5}] ["",{"text":"<"},{"text":"Team Flare Aliana","color":"red"},{"text":"> Ah ha ha! "}]
 tellraw @s[scores={DialogueTrigger=75,TalkTime=11}] ["",{"text":"<"},{"text":"Team Flare Aliana","color":"red"},{"text":"> Well, I certainly didn't expect you to be so interesting! I do hope we can meet again!"}]
@@ -2493,25 +2493,25 @@ tellraw @s[scores={DialogueTrigger=75,TalkTime=11}] ["",{"text":"<"},{"text":"Te
 execute as @s[scores={DialogueTrigger=75,TalkTime=19}] run particle cloud -1013 58 -335 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=75,TalkTime=19}] run particle cloud -1013 58 -339 2 2 2 1 100
 #Aliana
-execute as @s[scores={DialogueTrigger=75,TalkTime=19}] run tp @e[x=-1013,y=57,z=-339,dy=3,nbt=!{pixelmon:npc_trainer}] -504 136 1274
+execute as @s[scores={DialogueTrigger=75,TalkTime=19}] run tp @e[x=-1013,y=57,z=-339,dy=3,type=pixelmon:npc_trainer] -504 136 1274
 #Admin
-execute as @s[scores={DialogueTrigger=75,TalkTime=19}] run tp @e[x=-1013,y=57,z=-335,dy=3,nbt=!{pixelmon:npc_trainer}] -504 136 1270
+execute as @s[scores={DialogueTrigger=75,TalkTime=19}] run tp @e[x=-1013,y=57,z=-335,dy=3,type=pixelmon:npc_trainer] -504 136 1270
 
 #tps rest of Team Flare from Power Plant
-execute as @s[scores={DialogueTrigger=75,TalkTime=19..20}] run tp @e[x=-982,y=53,z=-346,dy=3,nbt=!{pixelmon:npc_trainer}] -504 131 1268
-execute as @s[scores={DialogueTrigger=75,TalkTime=19..20}] run tp @e[x=-992,y=53,z=-310,dy=3,nbt=!{pixelmon:npc_trainer}] -504 131 1270
-execute as @s[scores={DialogueTrigger=75,TalkTime=19..20}] run tp @e[x=-1029,y=53,z=-293,dy=3,nbt=!{pixelmon:npc_trainer}] -504 131 1272
-execute as @s[scores={DialogueTrigger=75,TalkTime=19..20}] run tp @e[x=-1076,y=53,z=-336,dy=3,nbt=!{pixelmon:npc_trainer}] -504 131 1274
-execute as @s[scores={DialogueTrigger=75,TalkTime=19..20}] run tp @e[x=-1069,y=53,z=-363,dy=3,nbt=!{pixelmon:npc_trainer}] -504 131 1276
-execute as @s[scores={DialogueTrigger=75,TalkTime=19..20}] run tp @e[x=-1029,y=53,z=-380,dy=3,nbt=!{pixelmon:npc_trainer}] -504 131 1278
-execute as @s[scores={DialogueTrigger=75,TalkTime=19..20}] run tp @e[x=-962,y=53,z=-336,dy=3,nbt=!{pixelmon:npc_trainer}] -504 126 1270
-execute as @s[scores={DialogueTrigger=75,TalkTime=19..20}] run tp @e[x=-949,y=47,z=-350,dy=3,nbt=!{pixelmon:npc_trainer}] -504 126 1268
+execute as @s[scores={DialogueTrigger=75,TalkTime=19..20}] run tp @e[x=-982,y=53,z=-346,dy=3,type=pixelmon:npc_trainer] -504 131 1268
+execute as @s[scores={DialogueTrigger=75,TalkTime=19..20}] run tp @e[x=-992,y=53,z=-310,dy=3,type=pixelmon:npc_trainer] -504 131 1270
+execute as @s[scores={DialogueTrigger=75,TalkTime=19..20}] run tp @e[x=-1029,y=53,z=-293,dy=3,type=pixelmon:npc_trainer] -504 131 1272
+execute as @s[scores={DialogueTrigger=75,TalkTime=19..20}] run tp @e[x=-1076,y=53,z=-336,dy=3,type=pixelmon:npc_trainer] -504 131 1274
+execute as @s[scores={DialogueTrigger=75,TalkTime=19..20}] run tp @e[x=-1069,y=53,z=-363,dy=3,type=pixelmon:npc_trainer] -504 131 1276
+execute as @s[scores={DialogueTrigger=75,TalkTime=19..20}] run tp @e[x=-1029,y=53,z=-380,dy=3,type=pixelmon:npc_trainer] -504 131 1278
+execute as @s[scores={DialogueTrigger=75,TalkTime=19..20}] run tp @e[x=-962,y=53,z=-336,dy=3,type=pixelmon:npc_trainer] -504 126 1270
+execute as @s[scores={DialogueTrigger=75,TalkTime=19..20}] run tp @e[x=-949,y=47,z=-350,dy=3,type=pixelmon:npc_trainer] -504 126 1268
 
 #tp Super Heros Sina and Dexio in
 execute as @s[scores={DialogueTrigger=75,TalkTime=23}] run particle cloud -1000 58 -335 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=75,TalkTime=23}] run particle cloud -1000 58 -339 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=75,TalkTime=23}] run tp @e[x=-504,y=135,z=1278,dy=3,nbt=!{pixelmon:npc_chatting}] -1000 58 -335
-execute as @s[scores={DialogueTrigger=75,TalkTime=23}] run tp @e[x=-504,y=135,z=1280,dy=3,nbt=!{pixelmon:npc_chatting}] -1000 58 -339
+execute as @s[scores={DialogueTrigger=75,TalkTime=23}] run tp @e[x=-504,y=135,z=1278,dy=3,type=pixelmon:npc_chatting] -1000 58 -335
+execute as @s[scores={DialogueTrigger=75,TalkTime=23}] run tp @e[x=-504,y=135,z=1280,dy=3,type=pixelmon:npc_chatting] -1000 58 -339
 
 tellraw @s[scores={DialogueTrigger=75,TalkTime=26}] ["",{"text":"<"},{"text":"...","color":"red"},{"text":"> Oh my!"}]
 tellraw @s[scores={DialogueTrigger=75,TalkTime=31}] ["",{"text":"<"},{"text":"...","color":"red"},{"text":"> You chased off that mysterious bunch before we could even get here?"}]
@@ -2526,8 +2526,8 @@ tellraw @s[scores={DialogueTrigger=75,TalkTime=83}] ["",{"text":"<"},{"text":"..
 tellraw @s[scores={DialogueTrigger=75,TalkTime=90}] ["",{"text":"<"},{"text":"...","color":"red"},{"text":"> I leave before being left. I decide. Au revoir!"}]
 
 #tp heroes Sina and Dexio out
-execute as @s[scores={DialogueTrigger=75,TalkTime=97}] run tp @e[x=-1000,y=57,z=-335,dy=3,nbt=!{pixelmon:npc_chatting}] -504 136 1278
-execute as @s[scores={DialogueTrigger=75,TalkTime=97}] run tp @e[x=-1000,y=57,z=-339,dy=3,nbt=!{pixelmon:npc_chatting}] -504 136 1280
+execute as @s[scores={DialogueTrigger=75,TalkTime=97}] run tp @e[x=-1000,y=57,z=-335,dy=3,type=pixelmon:npc_chatting] -504 136 1278
+execute as @s[scores={DialogueTrigger=75,TalkTime=97}] run tp @e[x=-1000,y=57,z=-339,dy=3,type=pixelmon:npc_chatting] -504 136 1280
 execute as @s[scores={DialogueTrigger=75,TalkTime=97}] run particle cloud -1000 58 -339 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=75,TalkTime=97}] run particle cloud -1000 58 -335 2 2 2 1 100
 
@@ -2540,14 +2540,14 @@ scoreboard players set @s[tag=Dialogue75] DialogueTrigger 0
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Az Route 13 First Encounter
 #scoreboard players set @a[x=-719,y=99,z=-474,dx=7,dy=10,dz=12,tag=!Dialogue76] DialogueTrigger 76
-#execute as @s[x=-709,y=100,z=-468,r=30,tag=!Dialogue76] run execute as @s[tag=Dialogue75] run tp @e[x=-504,y=140,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -709 100 -468
+#execute as @s[x=-709,y=100,z=-468,r=30,tag=!Dialogue76] run execute as @s[tag=Dialogue75] run tp @e[x=-504,y=140,z=1268,dy=3,type=pixelmon:npc_chatting] -709 100 -468
 
 execute as @s[scores={DialogueTrigger=76,TalkTime=1}] run scoreboard players set @s click 1
 tellraw @s[scores={DialogueTrigger=76,TalkTime=3}] {"text":"<...> The Pokémon... The flower Pokémon..."}
 tellraw @s[scores={DialogueTrigger=76,TalkTime=10}] {"text":"<...> The Pokémon that was given eternal life..."}
 
 #az tps away
-execute as @s[scores={DialogueTrigger=76,TalkTime=16}] run tp @e[x=-709,y=99,z=-468,dy=3,nbt=!{pixelmon:npc_chatting}] -504 141 1268
+execute as @s[scores={DialogueTrigger=76,TalkTime=16}] run tp @e[x=-709,y=99,z=-468,dy=3,type=pixelmon:npc_chatting] -504 141 1268
 execute as @s[scores={DialogueTrigger=76,TalkTime=16}] run particle cloud -709 100 -468 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=76,TalkTime=16..}] add Dialogue76
@@ -2561,7 +2561,7 @@ scoreboard players set @s[tag=Dialogue76] DialogueTrigger 0
 tellraw @s[scores={DialogueTrigger=77,TalkTime=3}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> "},{"selector":"@s"},{"text":"! \u266a"}]
 
 #tp Shauna in
-execute as @s[scores={DialogueTrigger=77,TalkTime=6}] run tp @e[x=-504,y=145,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -503 101 -494
+execute as @s[scores={DialogueTrigger=77,TalkTime=6}] run tp @e[x=-504,y=145,z=1268,dy=3,type=pixelmon:npc_chatting] -503 101 -494
 execute as @s[scores={DialogueTrigger=77,TalkTime=6}] run particle cloud -503 101 -494 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=77,TalkTime=10}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> I ran after you like crazy when I spotted you up ahead!"}]
@@ -2575,7 +2575,7 @@ tellraw @s[scores={DialogueTrigger=77,TalkTime=65}] ["",{"text":"<"},{"text":"Sh
 tellraw @s[scores={DialogueTrigger=77,TalkTime=75}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Straight into the center of city you'll run smack into Prism Tower! \u266a"}]
 
 #Tp Shauna out
-execute as @s[scores={DialogueTrigger=77,TalkTime=83}] run tp @e[x=-503,y=100,z=-494,dy=3,nbt=!{pixelmon:npc_chatting}] -504 146 1268
+execute as @s[scores={DialogueTrigger=77,TalkTime=83}] run tp @e[x=-503,y=100,z=-494,dy=3,type=pixelmon:npc_chatting] -504 146 1268
 execute as @s[scores={DialogueTrigger=77,TalkTime=83}] run particle cloud -503 101 -494 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=77,TalkTime=83..}] add Dialogue77
@@ -2592,9 +2592,9 @@ execute as @s[scores={DialogueTrigger=78,TalkTime=1}] run execute as @e[x=-154,y
 execute as @s[scores={DialogueTrigger=78,TalkTime=1}] run execute as @e[x=-181,y=114,z=-417,distance=..3,type=armor_stand] run data modify entity @s {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:52s}]}
 
 #tp Shauna, Bonnie and Clemont
-execute as @s[scores={DialogueTrigger=78,TalkTime=1}] run tp @e[x=-504,y=145,z=1272,dy=3,nbt=!{pixelmon:npc_chatting}] -226 102 -395
-execute as @s[scores={DialogueTrigger=78,TalkTime=1}] run tp @e[x=-504,y=145,z=1274,dy=3,nbt=!{pixelmon:npc_chatting}] -214 102 -391
-execute as @s[scores={DialogueTrigger=78,TalkTime=1}] run tp @e[x=-504,y=145,z=1276,dy=3,nbt=!{pixelmon:npc_chatting}] -214 102 -389
+execute as @s[scores={DialogueTrigger=78,TalkTime=1}] run tp @e[x=-504,y=145,z=1272,dy=3,type=pixelmon:npc_chatting] -226 102 -395
+execute as @s[scores={DialogueTrigger=78,TalkTime=1}] run tp @e[x=-504,y=145,z=1274,dy=3,type=pixelmon:npc_chatting] -214 102 -391
+execute as @s[scores={DialogueTrigger=78,TalkTime=1}] run tp @e[x=-504,y=145,z=1276,dy=3,type=pixelmon:npc_chatting] -214 102 -389
 execute as @s[scores={DialogueTrigger=78,TalkTime=1}] run particle cloud -226 102 -395 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=78,TalkTime=1}] run particle cloud -214 102 -389 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=78,TalkTime=1}] run particle cloud -214 102 -391 2 2 2 1 100
@@ -2628,8 +2628,8 @@ tellraw @s[scores={DialogueTrigger=78,TalkTime=123}] {"text":"<Bonnie> Yeah. Rig
 tellraw @s[scores={DialogueTrigger=78,TalkTime=131}] {"text":"<Bonnie> Prism Tower itself is Lumiose City's Pokémon Gym!"}
 
 #Bonnie and Clemont tp away
-execute as @s[scores={DialogueTrigger=78,TalkTime=137}] run tp @e[x=-214,y=101,z=-391,dy=3,nbt=!{pixelmon:npc_chatting}] -504 146 1274
-execute as @s[scores={DialogueTrigger=78,TalkTime=137}] run tp @e[x=-214,y=101,z=-389,dy=3,nbt=!{pixelmon:npc_chatting}] -504 146 1276
+execute as @s[scores={DialogueTrigger=78,TalkTime=137}] run tp @e[x=-214,y=101,z=-391,dy=3,type=pixelmon:npc_chatting] -504 146 1274
+execute as @s[scores={DialogueTrigger=78,TalkTime=137}] run tp @e[x=-214,y=101,z=-389,dy=3,type=pixelmon:npc_chatting] -504 146 1276
 execute as @s[scores={DialogueTrigger=78,TalkTime=137}] run particle cloud -214 102 -391 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=78,TalkTime=137}] run particle cloud -214 102 -389 2 2 2 1 100
 
@@ -2641,7 +2641,7 @@ tellraw @s[scores={DialogueTrigger=78,TalkTime=158}] ["",{"text":"<"},{"text":"S
 execute as @s[scores={DialogueTrigger=78,TalkTime=163}] run tag @s add LumiosePower
 
 #Shauna tps away
-execute as @s[scores={DialogueTrigger=78,TalkTime=163}] run tp @e[x=-226,y=101,z=-395,dy=3,nbt=!{pixelmon:npc_chatting}] -504 146 1272
+execute as @s[scores={DialogueTrigger=78,TalkTime=163}] run tp @e[x=-226,y=101,z=-395,dy=3,type=pixelmon:npc_chatting] -504 146 1272
 execute as @s[scores={DialogueTrigger=78,TalkTime=163}] run particle cloud -226 102 -395 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=78,TalkTime=163..}] add Dialogue78
@@ -2653,8 +2653,8 @@ scoreboard players set @s[tag=Dialogue78] DialogueTrigger 0
 #execute as @s[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,tag=Clemont] run scoreboard players set @s[tag=!Dialogue79] DialogueTrigger 79
 
 #tp two in
-execute as @s[scores={DialogueTrigger=79,TalkTime=4}] run tp @e[x=-504,y=150,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -296 121 433
-execute as @s[scores={DialogueTrigger=79,TalkTime=4}] run tp @e[x=-504,y=150,z=1270,dy=3,nbt=!{pixelmon:npc_chatting}] -293 121 433
+execute as @s[scores={DialogueTrigger=79,TalkTime=4}] run tp @e[x=-504,y=150,z=1268,dy=3,type=pixelmon:npc_chatting] -296 121 433
+execute as @s[scores={DialogueTrigger=79,TalkTime=4}] run tp @e[x=-504,y=150,z=1270,dy=3,type=pixelmon:npc_chatting] -293 121 433
 execute as @s[scores={DialogueTrigger=79,TalkTime=3}] run particle cloud -296 121 433 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=79,TalkTime=3}] run particle cloud -293 121 433 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=79,TalkTime=4}] run scoreboard players set @s click 1
@@ -2691,7 +2691,7 @@ tellraw @s[scores={DialogueTrigger=79,TalkTime=206}] ["",{"text":"<"},{"text":"L
 tellraw @s[scores={DialogueTrigger=79,TalkTime=216}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> Thank you for listening. Take that as an apology for my taking up your time."}]
 
 #tp Lysandre out
-execute as @s[scores={DialogueTrigger=79,TalkTime=225}] run tp @e[x=-293,y=120,z=433,dy=3,nbt=!{pixelmon:npc_chatting}] -504 151 1270
+execute as @s[scores={DialogueTrigger=79,TalkTime=225}] run tp @e[x=-293,y=120,z=433,dy=3,type=pixelmon:npc_chatting] -504 151 1270
 execute as @s[scores={DialogueTrigger=79,TalkTime=225}] run particle cloud -293 121 433 2 2 2 1 100
 
 
@@ -2703,7 +2703,7 @@ tellraw @s[scores={DialogueTrigger=79,TalkTime=264}] ["",{"text":"<"},{"text":"S
 tellraw @s[scores={DialogueTrigger=79,TalkTime=274}] ["",{"text":"<"},{"text":"Sycamore","color":"aqua"},{"text":"> Treasure these moments spent traveling the Kalos region with your Pokémon!"}]
 
 #tp Sycamore out
-execute as @s[scores={DialogueTrigger=79,TalkTime=282}] run tp @e[x=-296,y=120,z=433,dy=3,nbt=!{pixelmon:npc_chatting}] -504 151 1268
+execute as @s[scores={DialogueTrigger=79,TalkTime=282}] run tp @e[x=-296,y=120,z=433,dy=3,type=pixelmon:npc_chatting] -504 151 1268
 execute as @s[scores={DialogueTrigger=79,TalkTime=282}] run particle cloud -296 121 433 2 2 2 1 100
 
 execute as @s[scores={DialogueTrigger=79,TalkTime=285}] run scoreboard players set @s click 1
@@ -2717,15 +2717,15 @@ scoreboard players set @s[tag=Dialogue79] DialogueTrigger 0
 #scoreboard players set @a[x=-194,y=99,z=-899,dx=30,dy=5,dz=53,tag=!Dialogue80] DialogueTrigger 80
 
 #Tags Serena NPCs
-execute as @s[scores={DialogueTrigger=80,TalkTime=2}] run scoreboard players set @e[x=-504,y=155,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 1
-execute as @s[scores={DialogueTrigger=80,TalkTime=2}] run scoreboard players set @e[x=-504,y=155,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 2
-execute as @s[scores={DialogueTrigger=80,TalkTime=2}] run scoreboard players set @e[x=-504,y=155,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 3
+execute as @s[scores={DialogueTrigger=80,TalkTime=2}] run scoreboard players set @e[x=-504,y=155,z=1270,dy=3,type=pixelmon:npc_trainer] StarterPick 1
+execute as @s[scores={DialogueTrigger=80,TalkTime=2}] run scoreboard players set @e[x=-504,y=155,z=1272,dy=3,type=pixelmon:npc_trainer] StarterPick 2
+execute as @s[scores={DialogueTrigger=80,TalkTime=2}] run scoreboard players set @e[x=-504,y=155,z=1274,dy=3,type=pixelmon:npc_trainer] StarterPick 3
 
 #tp Trevor and Serena in
-execute as @s[scores={DialogueTrigger=80,TalkTime=3}] run tp @e[x=-504,y=155,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -171 100 -885
-execute as @s[scores={DialogueTrigger=80,TalkTime=3,StarterPick=1}] run tp @e[x=-504,y=155,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -174 100 -887
-execute as @s[scores={DialogueTrigger=80,TalkTime=3,StarterPick=2}] run tp @e[x=-504,y=155,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] -174 100 -887
-execute as @s[scores={DialogueTrigger=80,TalkTime=3,StarterPick=3}] run tp @e[x=-504,y=155,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] -174 100 -887
+execute as @s[scores={DialogueTrigger=80,TalkTime=3}] run tp @e[x=-504,y=155,z=1268,dy=3,type=pixelmon:npc_chatting] -171 100 -885
+execute as @s[scores={DialogueTrigger=80,TalkTime=3,StarterPick=1}] run tp @e[x=-504,y=155,z=1270,dy=3,type=pixelmon:npc_trainer] -174 100 -887
+execute as @s[scores={DialogueTrigger=80,TalkTime=3,StarterPick=2}] run tp @e[x=-504,y=155,z=1272,dy=3,type=pixelmon:npc_trainer] -174 100 -887
+execute as @s[scores={DialogueTrigger=80,TalkTime=3,StarterPick=3}] run tp @e[x=-504,y=155,z=1274,dy=3,type=pixelmon:npc_trainer] -174 100 -887
 execute as @s[scores={DialogueTrigger=80,TalkTime=3}] run particle cloud -174 100 -887 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=80,TalkTime=3}] run particle cloud -171 100 -885 2 2 2 1 100
 
@@ -2748,12 +2748,12 @@ scoreboard players set @s[tag=Dialogue80] DialogueTrigger 0
 #The gang post-battle on Route 14 south
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 81
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
-#execute as @s[x=-175,y=100,z=-884,r=15,tag=Dialogue80,score_TalkTime=0,score_StarterPick_min=1,score_StarterPick=1] run execute as @s[tag=!Dialogue81] run tp @e[x=-504,y=155,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -174 100 -887
-#execute as @s[x=-175,y=100,z=-884,r=15,tag=Dialogue80,score_TalkTime=0,score_StarterPick_min=2,score_StarterPick=2] run execute as @s[tag=!Dialogue81] run tp @e[x=-504,y=155,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] -174 100 -887
-#execute as @s[x=-175,y=100,z=-884,r=15,tag=Dialogue80,score_TalkTime=0,score_StarterPick_min=3,score_StarterPick=3] run execute as @s[tag=!Dialogue81] run tp @e[x=-504,y=155,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] -174 100 -887
+#execute as @s[x=-175,y=100,z=-884,r=15,tag=Dialogue80,score_TalkTime=0,score_StarterPick_min=1,score_StarterPick=1] run execute as @s[tag=!Dialogue81] run tp @e[x=-504,y=155,z=1270,dy=3,type=pixelmon:npc_trainer] -174 100 -887
+#execute as @s[x=-175,y=100,z=-884,r=15,tag=Dialogue80,score_TalkTime=0,score_StarterPick_min=2,score_StarterPick=2] run execute as @s[tag=!Dialogue81] run tp @e[x=-504,y=155,z=1272,dy=3,type=pixelmon:npc_trainer] -174 100 -887
+#execute as @s[x=-175,y=100,z=-884,r=15,tag=Dialogue80,score_TalkTime=0,score_StarterPick_min=3,score_StarterPick=3] run execute as @s[tag=!Dialogue81] run tp @e[x=-504,y=155,z=1274,dy=3,type=pixelmon:npc_trainer] -174 100 -887
 
 #tp Shauna in
-execute as @s[scores={DialogueTrigger=81,TalkTime=2}] run tp @e[x=-504,y=155,z=1278,dy=3,nbt=!{pixelmon:npc_chatting}] -180 100 -884
+execute as @s[scores={DialogueTrigger=81,TalkTime=2}] run tp @e[x=-504,y=155,z=1278,dy=3,type=pixelmon:npc_chatting] -180 100 -884
 execute as @s[scores={DialogueTrigger=81,TalkTime=2}] run particle cloud -180 100 -884 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=81,TalkTime=5}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Wow! That was a really intense battle! \u266a"}]
@@ -2764,7 +2764,7 @@ tellraw @s[scores={DialogueTrigger=81,TalkTime=32}] ["",{"text":"<"},{"text":"Sh
 tellraw @s[scores={DialogueTrigger=81,TalkTime=37}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> Sorry I'm late, everybody!"}]
 
 #tp Tierno in
-execute as @s[scores={DialogueTrigger=81,TalkTime=40}] run tp @e[x=-504,y=155,z=1280,dy=3,nbt=!{pixelmon:npc_chatting}] -177 100 -878
+execute as @s[scores={DialogueTrigger=81,TalkTime=40}] run tp @e[x=-504,y=155,z=1280,dy=3,type=pixelmon:npc_chatting] -177 100 -878
 execute as @s[scores={DialogueTrigger=81,TalkTime=40}] run particle cloud -177 100 -878 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=81,TalkTime=44}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> I was having so much fun with a sparring dance that I totally lost track of time!"}]
@@ -2779,9 +2779,9 @@ tellraw @s[scores={DialogueTrigger=81,TalkTime=109}] ["",{"text":"<"},{"text":"S
 
 #Serena tps off
 execute as @s[scores={DialogueTrigger=81,TalkTime=117}] run particle cloud -174 100 -887 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=81,TalkTime=117}] run tp @e[x=-174,y=99,z=-887,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=1}] -504 156 1270
-execute as @s[scores={DialogueTrigger=81,TalkTime=117}] run tp @e[x=-174,y=99,z=-887,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=2}] -504 156 1272
-execute as @s[scores={DialogueTrigger=81,TalkTime=117}] run tp @e[x=-174,y=99,z=-887,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=3}] -504 156 1274
+execute as @s[scores={DialogueTrigger=81,TalkTime=117}] run tp @e[x=-174,y=99,z=-887,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=1}] -504 156 1270
+execute as @s[scores={DialogueTrigger=81,TalkTime=117}] run tp @e[x=-174,y=99,z=-887,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=2}] -504 156 1272
+execute as @s[scores={DialogueTrigger=81,TalkTime=117}] run tp @e[x=-174,y=99,z=-887,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=3}] -504 156 1274
 
 tellraw @s[scores={DialogueTrigger=81,TalkTime=120}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> Oh! Uh, OK, bye!"}]
 tellraw @s[scores={DialogueTrigger=81,TalkTime=126}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> So... Is it really that scary?"}]
@@ -2791,8 +2791,8 @@ tellraw @s[scores={DialogueTrigger=81,TalkTime=140}] ["",{"text":"<"},{"text":"T
 #Trevor and Tierno tp out
 execute as @s[scores={DialogueTrigger=81,TalkTime=146}] run particle cloud -171 100 -885 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=81,TalkTime=146}] run particle cloud -177 100 -878 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=81,TalkTime=146}] run tp @e[x=-171,y=99,z=-885,dy=3,nbt=!{pixelmon:npc_chatting}] -504 156 1268
-execute as @s[scores={DialogueTrigger=81,TalkTime=146}] run tp @e[x=-177,y=99,z=-878,dy=3,nbt=!{pixelmon:npc_chatting}] -504 156 1280
+execute as @s[scores={DialogueTrigger=81,TalkTime=146}] run tp @e[x=-171,y=99,z=-885,dy=3,type=pixelmon:npc_chatting] -504 156 1268
+execute as @s[scores={DialogueTrigger=81,TalkTime=146}] run tp @e[x=-177,y=99,z=-878,dy=3,type=pixelmon:npc_chatting] -504 156 1280
 
 tellraw @s[scores={DialogueTrigger=81,TalkTime=150}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Sigh..."}]
 tellraw @s[scores={DialogueTrigger=81,TalkTime=155}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Why are you traveling, "},{"selector":"@s"},{"text":"?"}]
@@ -2801,7 +2801,7 @@ tellraw @s[scores={DialogueTrigger=81,TalkTime=170}] ["",{"text":"<"},{"text":"S
 tellraw @s[scores={DialogueTrigger=81,TalkTime=177}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Just kidding! \u266a"}]
 
 #Shauna tps off
-execute as @s[scores={DialogueTrigger=81,TalkTime=184}] run tp @e[x=-180,y=99,z=-884,dy=3,nbt=!{pixelmon:npc_chatting}] -504 156 1278
+execute as @s[scores={DialogueTrigger=81,TalkTime=184}] run tp @e[x=-180,y=99,z=-884,dy=3,type=pixelmon:npc_chatting] -504 156 1278
 execute as @s[scores={DialogueTrigger=81,TalkTime=184}] run particle cloud -180 100 -884 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=81,TalkTime=184..}] add Dialogue81
@@ -2813,9 +2813,9 @@ scoreboard players set @s[tag=Dialogue81] DialogueTrigger 0
 #scoreboard players set @a[x=-231,y=100,z=-1217,r=15,tag=!Dialogue82] DialogueTrigger 82
 
 #tp gang in
-execute as @s[scores={DialogueTrigger=82,TalkTime=1}] run tp @e[x=-504,y=160,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -231 100 -1220
-execute as @s[scores={DialogueTrigger=82,TalkTime=1}] run tp @e[x=-504,y=160,z=1270,dy=3,nbt=!{pixelmon:npc_chatting}] -229 100 -1214
-execute as @s[scores={DialogueTrigger=82,TalkTime=1}] run tp @e[x=-504,y=160,z=1272,dy=3,nbt=!{pixelmon:npc_chatting}] -234 100 -1214
+execute as @s[scores={DialogueTrigger=82,TalkTime=1}] run tp @e[x=-504,y=160,z=1268,dy=3,type=pixelmon:npc_chatting] -231 100 -1220
+execute as @s[scores={DialogueTrigger=82,TalkTime=1}] run tp @e[x=-504,y=160,z=1270,dy=3,type=pixelmon:npc_chatting] -229 100 -1214
+execute as @s[scores={DialogueTrigger=82,TalkTime=1}] run tp @e[x=-504,y=160,z=1272,dy=3,type=pixelmon:npc_chatting] -234 100 -1214
 execute as @s[scores={DialogueTrigger=82,TalkTime=1}] run particle cloud -231 100 -1220 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=82,TalkTime=1}] run particle cloud -229 100 -1214 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=82,TalkTime=1}] run particle cloud -234 100 -1214 2 2 2 1 100
@@ -2831,9 +2831,9 @@ tellraw @s[scores={DialogueTrigger=82,TalkTime=49}] ["",{"text":"<"},{"text":"Sh
 execute as @s[scores={DialogueTrigger=82,TalkTime=54}] run particle cloud -231 100 -1220 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=82,TalkTime=54}] run particle cloud -229 100 -1214 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=82,TalkTime=54}] run particle cloud -234 100 -1214 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=82,TalkTime=54}] run tp @e[x=-234,y=99,z=-1214,dy=3,nbt=!{pixelmon:npc_chatting}] -504 161 1272
-execute as @s[scores={DialogueTrigger=82,TalkTime=54}] run tp @e[x=-229,y=99,z=-1214,dy=3,nbt=!{pixelmon:npc_chatting}] -504 161 1270
-execute as @s[scores={DialogueTrigger=82,TalkTime=54}] run tp @e[x=-231,y=99,z=-1220,dy=3,nbt=!{pixelmon:npc_chatting}] -504 161 1268
+execute as @s[scores={DialogueTrigger=82,TalkTime=54}] run tp @e[x=-234,y=99,z=-1214,dy=3,type=pixelmon:npc_chatting] -504 161 1272
+execute as @s[scores={DialogueTrigger=82,TalkTime=54}] run tp @e[x=-229,y=99,z=-1214,dy=3,type=pixelmon:npc_chatting] -504 161 1270
+execute as @s[scores={DialogueTrigger=82,TalkTime=54}] run tp @e[x=-231,y=99,z=-1220,dy=3,type=pixelmon:npc_chatting] -504 161 1268
 
 tag @s[scores={DialogueTrigger=82,TalkTime=54..}] add Dialogue82
 scoreboard players set @s[tag=Dialogue82] TalkTime 0
@@ -2844,9 +2844,9 @@ scoreboard players set @s[tag=Dialogue82] DialogueTrigger 0
 #scoreboard players set @a[x=-233,y=100,z=-1225,dx=4,dy=5,tag=Dialogue82] DialogueTrigger 83
 
 #tp gang in
-execute as @s[scores={DialogueTrigger=83,TalkTime=1}] run tp @e[x=-504,y=160,z=1276,dy=3,nbt=!{pixelmon:npc_chatting}] -229 88 -1238
-execute as @s[scores={DialogueTrigger=83,TalkTime=1}] run tp @e[x=-504,y=160,z=1278,dy=3,nbt=!{pixelmon:npc_chatting}] -232 88 -1238
-execute as @s[scores={DialogueTrigger=83,TalkTime=1}] run tp @e[x=-504,y=160,z=1280,dy=3,nbt=!{pixelmon:npc_chatting}] -233 88 -1236
+execute as @s[scores={DialogueTrigger=83,TalkTime=1}] run tp @e[x=-504,y=160,z=1276,dy=3,type=pixelmon:npc_chatting] -229 88 -1238
+execute as @s[scores={DialogueTrigger=83,TalkTime=1}] run tp @e[x=-504,y=160,z=1278,dy=3,type=pixelmon:npc_chatting] -232 88 -1238
+execute as @s[scores={DialogueTrigger=83,TalkTime=1}] run tp @e[x=-504,y=160,z=1280,dy=3,type=pixelmon:npc_chatting] -233 88 -1236
 
 tellraw @s[scores={DialogueTrigger=83,TalkTime=5}] {"text":"<...> Let's get started, then..."}
 tellraw @s[scores={DialogueTrigger=83,TalkTime=12}] {"text":"<...> It was a dark and stormy night many years ago."}
@@ -2875,9 +2875,9 @@ tellraw @s[scores={DialogueTrigger=83,TalkTime=183}] ["",{"text":"<"},{"text":"T
 tellraw @s[scores={DialogueTrigger=83,TalkTime=190}] {"text":"<...> Some things are best left unknown... The truth is best carried to the grave..."}
 
 #tp the gang out
-execute as @s[scores={DialogueTrigger=83,TalkTime=200}] run tp @e[x=-229,y=87,z=-1238,dy=3,nbt=!{pixelmon:npc_chatting}] -504 161 1276
-execute as @s[scores={DialogueTrigger=83,TalkTime=200}] run tp @e[x=-232,y=87,z=-1238,dy=3,nbt=!{pixelmon:npc_chatting}] -504 161 1278
-execute as @s[scores={DialogueTrigger=83,TalkTime=200}] run tp @e[x=-233,y=87,z=-1236,dy=3,nbt=!{pixelmon:npc_chatting}] -504 161 1280
+execute as @s[scores={DialogueTrigger=83,TalkTime=200}] run tp @e[x=-229,y=87,z=-1238,dy=3,type=pixelmon:npc_chatting] -504 161 1276
+execute as @s[scores={DialogueTrigger=83,TalkTime=200}] run tp @e[x=-232,y=87,z=-1238,dy=3,type=pixelmon:npc_chatting] -504 161 1278
+execute as @s[scores={DialogueTrigger=83,TalkTime=200}] run tp @e[x=-233,y=87,z=-1236,dy=3,type=pixelmon:npc_chatting] -504 161 1280
 execute as @s[scores={DialogueTrigger=83,TalkTime=200}] run particle cloud -229 88 -1238 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=83,TalkTime=200}] run particle cloud -232 88 -1238 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=83,TalkTime=200}] run particle cloud -233 88 -1236 2 2 2 1 100
@@ -2890,9 +2890,9 @@ scoreboard players set @s[tag=Dialogue83] DialogueTrigger 0
 #Scary House Exterior post-story
 #DialogueTrigger 84
 #tp gang in
-execute as @s[scores={DialogueTrigger=84,TalkTime=1}] run tp @e[x=-504,y=160,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -231 100 -1220
-execute as @s[scores={DialogueTrigger=84,TalkTime=1}] run tp @e[x=-504,y=160,z=1270,dy=3,nbt=!{pixelmon:npc_chatting}] -229 100 -1214
-execute as @s[scores={DialogueTrigger=84,TalkTime=1}] run tp @e[x=-504,y=160,z=1272,dy=3,nbt=!{pixelmon:npc_chatting}] -234 100 -1214
+execute as @s[scores={DialogueTrigger=84,TalkTime=1}] run tp @e[x=-504,y=160,z=1268,dy=3,type=pixelmon:npc_chatting] -231 100 -1220
+execute as @s[scores={DialogueTrigger=84,TalkTime=1}] run tp @e[x=-504,y=160,z=1270,dy=3,type=pixelmon:npc_chatting] -229 100 -1214
+execute as @s[scores={DialogueTrigger=84,TalkTime=1}] run tp @e[x=-504,y=160,z=1272,dy=3,type=pixelmon:npc_chatting] -234 100 -1214
 execute as @s[scores={DialogueTrigger=84,TalkTime=1}] run particle cloud -231 100 -1220 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=84,TalkTime=1}] run particle cloud -229 100 -1214 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=84,TalkTime=1}] run particle cloud -234 100 -1214 2 2 2 1 100
@@ -2904,7 +2904,7 @@ tellraw @s[scores={DialogueTrigger=84,TalkTime=27}] ["",{"text":"<"},{"text":"Ti
 tellraw @s[scores={DialogueTrigger=84,TalkTime=35}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> I'd rather rehearse my dances. I'll see you all later!"}]
 
 #Tierno tps out
-execute as @s[scores={DialogueTrigger=84,TalkTime=40}] run tp @e[x=-234,y=99,z=-1214,dy=3,nbt=!{pixelmon:npc_chatting}] -504 161 1272
+execute as @s[scores={DialogueTrigger=84,TalkTime=40}] run tp @e[x=-234,y=99,z=-1214,dy=3,type=pixelmon:npc_chatting] -504 161 1272
 execute as @s[scores={DialogueTrigger=84,TalkTime=40}] run particle cloud -234 100 -1214 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=84,TalkTime=44}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> What should I do next? I guess I'll go to Laverre City! \u266a"}]
@@ -2913,8 +2913,8 @@ tellraw @s[scores={DialogueTrigger=84,TalkTime=52}] ["",{"text":"<"},{"text":"Tr
 #Shauna and Trevor tp out
 execute as @s[scores={DialogueTrigger=84,TalkTime=59}] run particle cloud -231 100 -1220 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=84,TalkTime=59}] run particle cloud -229 100 -1214 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=84,TalkTime=59}] run tp @e[x=-229,y=99,z=-1214,dy=3,nbt=!{pixelmon:npc_chatting}] -504 161 1270
-execute as @s[scores={DialogueTrigger=84,TalkTime=59}] run tp @e[x=-231,y=99,z=-1220,dy=3,nbt=!{pixelmon:npc_chatting}] -504 161 1268
+execute as @s[scores={DialogueTrigger=84,TalkTime=59}] run tp @e[x=-229,y=99,z=-1214,dy=3,type=pixelmon:npc_chatting] -504 161 1270
+execute as @s[scores={DialogueTrigger=84,TalkTime=59}] run tp @e[x=-231,y=99,z=-1220,dy=3,type=pixelmon:npc_chatting] -504 161 1268
 
 tag @s[scores={DialogueTrigger=84,TalkTime=59..}] add Dialogue84
 scoreboard players set @s[tag=Dialogue84] TalkTime 0
@@ -2927,8 +2927,8 @@ scoreboard players set @s[tag=Dialogue84] DialogueTrigger 0
 tellraw @s[scores={DialogueTrigger=85,TalkTime=1}] ["",{"text":"<...> Hi, "},{"selector":"s"},{"text":"!"}]
 
 #tp Shauna and Trevor in
-execute as @s[scores={DialogueTrigger=85,TalkTime=5}] run tp @e[x=-504,y=165,z=1270,dy=3,nbt=!{pixelmon:npc_chatting}] -95 100 -1454
-execute as @s[scores={DialogueTrigger=85,TalkTime=5}] run tp @e[x=-504,y=165,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -91 100 -1454
+execute as @s[scores={DialogueTrigger=85,TalkTime=5}] run tp @e[x=-504,y=165,z=1270,dy=3,type=pixelmon:npc_chatting] -95 100 -1454
+execute as @s[scores={DialogueTrigger=85,TalkTime=5}] run tp @e[x=-504,y=165,z=1268,dy=3,type=pixelmon:npc_chatting] -91 100 -1454
 execute as @s[scores={DialogueTrigger=85,TalkTime=5}] run particle cloud -95 100 -1454 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=85,TalkTime=5}] run particle cloud -91 100 -1454 2 2 2 1 100
 
@@ -2938,8 +2938,8 @@ tellraw @s[scores={DialogueTrigger=85,TalkTime=26}] ["",{"text":"<"},{"text":"Tr
 tellraw @s[scores={DialogueTrigger=85,TalkTime=35}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> To put it another way, I'm utterly fascinated by them!"}]
 
 #tp Shauna and Trevor out
-execute as @s[scores={DialogueTrigger=85,TalkTime=42}] run tp @e[x=-91,y=99,z=-1454,dy=3,nbt=!{pixelmon:npc_chatting}] -504 166 1268
-execute as @s[scores={DialogueTrigger=85,TalkTime=42}] run tp @e[x=-95,y=99,z=-1454,dy=3,nbt=!{pixelmon:npc_chatting}] -504 166 1270
+execute as @s[scores={DialogueTrigger=85,TalkTime=42}] run tp @e[x=-91,y=99,z=-1454,dy=3,type=pixelmon:npc_chatting] -504 166 1268
+execute as @s[scores={DialogueTrigger=85,TalkTime=42}] run tp @e[x=-95,y=99,z=-1454,dy=3,type=pixelmon:npc_chatting] -504 166 1270
 execute as @s[scores={DialogueTrigger=85,TalkTime=42}] run particle cloud -95 100 -1454 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=85,TalkTime=42}] run particle cloud -91 100 -1454 2 2 2 1 100
 
@@ -2952,8 +2952,8 @@ scoreboard players set @s[tag=Dialogue85] DialogueTrigger 0
 #execute as @s[x=-172,y=117,z=-1643,r=5,tag=Valerie] run scoreboard players set @s[tag=!Dialogue86] DialogueTrigger 86
 
 #tp Trevor and Shauna in separately, smaller DialogueTrigger radius
-#execute as @s[x=-172,y=117,z=-1643,r=30,tag=Valerie,score_TalkTime=0] run execute as @s[tag=!Dialogue86] run tp @e[x=-504,y=170,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -172 117 -1642
-#execute as @s[x=-172,y=117,z=-1643,r=30,tag=Valerie,score_TalkTime=0] run execute as @s[tag=!Dialogue86] run tp @e[x=-504,y=170,z=1270,dy=3,nbt=!{pixelmon:npc_chatting}] -172 117 -1645
+#execute as @s[x=-172,y=117,z=-1643,r=30,tag=Valerie,score_TalkTime=0] run execute as @s[tag=!Dialogue86] run tp @e[x=-504,y=170,z=1268,dy=3,type=pixelmon:npc_chatting] -172 117 -1642
+#execute as @s[x=-172,y=117,z=-1643,r=30,tag=Valerie,score_TalkTime=0] run execute as @s[tag=!Dialogue86] run tp @e[x=-504,y=170,z=1270,dy=3,type=pixelmon:npc_chatting] -172 117 -1645
 
 
 #tps player back to same stair plane
@@ -2961,7 +2961,7 @@ execute as @s[x=-189,y=115,z=-1678,dx=70,dy=10,dz=20,scores={DialogueTrigger=86,
 execute as @s[x=-189,y=115,z=-1636,dx=70,dy=10,dz=20,scores={DialogueTrigger=86,TalkTime=1..100}] run tp @s ~ 117 ~-10
 
 #Motion data
-#entitydata @e[x=-158,y=111,z=-1685,dx=6,dy=13,dz=100,nbt=!{pixelmon:npc_chatting}] {Motion:[0.0d,-0.3d,0.5d]}
+#entitydata @e[x=-158,y=111,z=-1685,dx=6,dy=13,dz=100,type=pixelmon:npc_chatting] {Motion:[0.0d,-0.3d,0.5d]}
 
 #tp return area
 #x=-163,y=107,z=-1698,dx=19,dy=20,dz=125
@@ -2971,17 +2971,17 @@ tellraw @s[scores={DialogueTrigger=86,TalkTime=9}] ["",{"text":"<"},{"text":"Sha
 
 #tp Shauna off
 execute as @s[scores={DialogueTrigger=86,TalkTime=16}] run particle cloud -172 117 -1642 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=86,TalkTime=16}] run tp @e[x=-172,y=116,z=-1642,dy=3,nbt=!{pixelmon:npc_chatting}] -504 171 1268
+execute as @s[scores={DialogueTrigger=86,TalkTime=16}] run tp @e[x=-172,y=116,z=-1642,dy=3,type=pixelmon:npc_chatting] -504 171 1268
 
 tellraw @s[scores={DialogueTrigger=86,TalkTime=18}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> Shauna! Wait!"}]
 
 #tp Trevor off
 execute as @s[scores={DialogueTrigger=86,TalkTime=23}] run particle cloud -172 117 -1645 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=86,TalkTime=23}] run tp @e[x=-172,y=116,z=-1645,dy=3,nbt=!{pixelmon:npc_chatting}] -504 171 1270
+execute as @s[scores={DialogueTrigger=86,TalkTime=23}] run tp @e[x=-172,y=116,z=-1645,dy=3,type=pixelmon:npc_chatting] -504 171 1270
 
 #Tp Serena and Tierno in
-execute as @s[scores={DialogueTrigger=86,TalkTime=26}] run tp @e[x=-504,y=170,z=1274,dy=3,nbt=!{pixelmon:npc_chatting}] -169 117 -1641
-execute as @s[scores={DialogueTrigger=86,TalkTime=26}] run tp @e[x=-504,y=170,z=1272,dy=3,nbt=!{pixelmon:npc_chatting}] -169 117 -1638
+execute as @s[scores={DialogueTrigger=86,TalkTime=26}] run tp @e[x=-504,y=170,z=1274,dy=3,type=pixelmon:npc_chatting] -169 117 -1641
+execute as @s[scores={DialogueTrigger=86,TalkTime=26}] run tp @e[x=-504,y=170,z=1272,dy=3,type=pixelmon:npc_chatting] -169 117 -1638
 execute as @s[scores={DialogueTrigger=86,TalkTime=26}] run particle cloud -169 117 -1641 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=86,TalkTime=26}] run particle cloud -169 117 -1638 2 2 2 1 100
 
@@ -2994,22 +2994,22 @@ tellraw @s[scores={DialogueTrigger=86,TalkTime=38}] ["",{"text":"<"},{"text":"Se
 execute as @s[scores={DialogueTrigger=86,TalkTime=42}] run setblock -674 101 1366 minecraft:redstone_block
 
 #tp Shauna to running spot
-execute as @s[scores={DialogueTrigger=86,TalkTime=42}] run tp @e[x=-504,y=170,z=1276,dy=3,nbt=!{pixelmon:npc_chatting}] -155 121 -1683
+execute as @s[scores={DialogueTrigger=86,TalkTime=42}] run tp @e[x=-504,y=170,z=1276,dy=3,type=pixelmon:npc_chatting] -155 121 -1683
 tellraw @s[scores={DialogueTrigger=86,TalkTime=45}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> "},{"text":"Eeeeek","italic":true},{"text":"!"}]
 
 #tp Trevor to running spot
-execute as @s[scores={DialogueTrigger=86,TalkTime=48}] run tp @e[x=-504,y=170,z=1278,dy=3,nbt=!{pixelmon:npc_chatting}] -155 121 -1683
+execute as @s[scores={DialogueTrigger=86,TalkTime=48}] run tp @e[x=-504,y=170,z=1278,dy=3,type=pixelmon:npc_chatting] -155 121 -1683
 tellraw @s[scores={DialogueTrigger=86,TalkTime=51}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> Shaunee, wait!"}]
 
 #tp grunt to running spot
-execute as @s[scores={DialogueTrigger=86,TalkTime=54}] run tp @e[x=-504,y=170,z=1280,dy=3,nbt=!{pixelmon:npc_chatting}] -155 121 -1683
+execute as @s[scores={DialogueTrigger=86,TalkTime=54}] run tp @e[x=-504,y=170,z=1280,dy=3,type=pixelmon:npc_chatting] -155 121 -1683
 tellraw @s[scores={DialogueTrigger=86,TalkTime=57}] {"text":"<Team Flare Grunt> Stop!"}
 
 tellraw @s[scores={DialogueTrigger=86,TalkTime=62}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> Huh? Hm? What's going on?"}]
 tellraw @s[scores={DialogueTrigger=86,TalkTime=69}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> W-well, I guess I'll go help them!"}]
 
 #Tierno tps away
-execute as @s[scores={DialogueTrigger=86,TalkTime=73}] run tp @e[x=-169,y=116,z=-1638,dy=3,nbt=!{pixelmon:npc_chatting}] -504 171 1272
+execute as @s[scores={DialogueTrigger=86,TalkTime=73}] run tp @e[x=-169,y=116,z=-1638,dy=3,type=pixelmon:npc_chatting] -504 171 1272
 execute as @s[scores={DialogueTrigger=86,TalkTime=73}] run particle cloud -169 117 -1638 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=86,TalkTime=76}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Team Flare? There might be something happening inside."}]
@@ -3017,30 +3017,30 @@ tellraw @s[scores={DialogueTrigger=86,TalkTime=84}] ["",{"text":"<"},{"text":"Se
 
 #Serena tps away
 execute as @s[scores={DialogueTrigger=86,TalkTime=91}] run particle cloud -169 117 -1641 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=86,TalkTime=91}] run tp @e[x=-169,y=116,z=-1641,dy=3,nbt=!{pixelmon:npc_chatting}] -504 171 1274
+execute as @s[scores={DialogueTrigger=86,TalkTime=91}] run tp @e[x=-169,y=116,z=-1641,dy=3,type=pixelmon:npc_chatting] -504 171 1274
 
 #disables motion data
 execute as @s[scores={DialogueTrigger=86,TalkTime=90..91}] run setblock -674 101 1366 minecraft:iron_block
 
 
-execute as @s[scores={DialogueTrigger=86,TalkTime=58}] run tp @e[x=-163,y=107,z=-1698,dx=19,dy=20,dz=125,name=Shauna,nbt=!{pixelmon:npc_chatting}] -504 171 1276
-execute as @s[scores={DialogueTrigger=86,TalkTime=63}] run tp @e[x=-163,y=107,z=-1698,dx=19,dy=20,dz=125,name=Trevor,nbt=!{pixelmon:npc_chatting}] -504 171 1278
-execute as @s[scores={DialogueTrigger=86,TalkTime=70}] run tp @e[x=-163,y=107,z=-1698,dx=19,dy=20,dz=125,name=RunningGrunt,nbt=!{pixelmon:npc_chatting}] -504 171 1280
+execute as @s[scores={DialogueTrigger=86,TalkTime=58}] run tp @e[x=-163,y=107,z=-1698,dx=19,dy=20,dz=125,name=Shauna,type=pixelmon:npc_chatting] -504 171 1276
+execute as @s[scores={DialogueTrigger=86,TalkTime=63}] run tp @e[x=-163,y=107,z=-1698,dx=19,dy=20,dz=125,name=Trevor,type=pixelmon:npc_chatting] -504 171 1278
+execute as @s[scores={DialogueTrigger=86,TalkTime=70}] run tp @e[x=-163,y=107,z=-1698,dx=19,dy=20,dz=125,name=RunningGrunt,type=pixelmon:npc_chatting] -504 171 1280
 
 tag @s[scores={DialogueTrigger=86,TalkTime=70..}] add Dialogue86
 scoreboard players set @s[tag=Dialogue86] TalkTime 0
 scoreboard players set @s[tag=Dialogue86] DialogueTrigger 0
 
 #tps Grunt guarding the Factory Door
-#execute as @p[x=-155,y=125,z=-1715,r=30,tag=Dialogue86] run tp @e[x=-158,y=124,z=-1771,dy=3,nbt=!{pixelmon:npc_chatting}] -504 166 1280
-#execute as @p[x=-155,y=125,z=-1715,r=30,tag=!Dialogue86] run tp @e[x=-504,y=165,z=1280,dy=3,nbt=!{pixelmon:npc_chatting}] -158 125 -1771
+#execute as @p[x=-155,y=125,z=-1715,r=30,tag=Dialogue86] run tp @e[x=-158,y=124,z=-1771,dy=3,type=pixelmon:npc_chatting] -504 166 1280
+#execute as @p[x=-155,y=125,z=-1715,r=30,tag=!Dialogue86] run tp @e[x=-504,y=165,z=1280,dy=3,type=pixelmon:npc_chatting] -158 125 -1771
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Poke Ball Factory first Grunt and Serena
 #execute as @s[x=-157,y=125,z=-1774,dx=6,dy=5,tag=Dialogue86] run scoreboard players set @s[tag=!Dialogue87] DialogueTrigger 87
 
 #tps grunt in
-execute as @s[scores={DialogueTrigger=87,TalkTime=2..3}] run tp @e[x=-504,y=175,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -154 89 -1859
+execute as @s[scores={DialogueTrigger=87,TalkTime=2..3}] run tp @e[x=-504,y=175,z=1268,dy=3,type=pixelmon:npc_chatting] -154 89 -1859
 execute as @s[scores={DialogueTrigger=87,TalkTime=2}] run particle cloud -154 89 -1859 2 2 2 1 100
 
 #play flareappears music
@@ -3050,7 +3050,7 @@ tellraw @s[scores={DialogueTrigger=87,TalkTime=5}] {"text":"<Team Flare Grunt> C
 tellraw @s[scores={DialogueTrigger=87,TalkTime=12}] {"text":"<Team Flare Grunt> So sorry, but we're not offering tours right now."}
 
 #Serena tp in
-execute as @s[scores={DialogueTrigger=87,TalkTime=16}] run tp @e[x=-504,y=175,z=1270,dy=3,nbt=!{pixelmon:npc_chatting}] -154 89 -1849
+execute as @s[scores={DialogueTrigger=87,TalkTime=16}] run tp @e[x=-504,y=175,z=1270,dy=3,type=pixelmon:npc_chatting] -154 89 -1849
 execute as @s[scores={DialogueTrigger=87,TalkTime=16}] run particle cloud -154 89 -1849 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=87,TalkTime=21}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> With a red suit like that, you must be a member of Team Flare, right?"}]
@@ -3082,8 +3082,8 @@ tellraw @s[scores={DialogueTrigger=88,TalkTime=75}] ["",{"text":"<"},{"text":"..
 tellraw @s[scores={DialogueTrigger=88,TalkTime=83}] ["",{"text":"<"},{"text":"...","color":"red"},{"text":"> Well, I guess I'll just have to extinguish your little glimmer of hope."}]
 
 #swap npcs
-execute as @s[scores={DialogueTrigger=88,TalkTime=84}] run tp @e[x=-80,y=103,z=-2012,dy=3,nbt=!{pixelmon:npc_chatting}] -504 181 1268
-execute as @s[scores={DialogueTrigger=88,TalkTime=84}] run tp @e[x=-504,y=180,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -80 104 -2012
+execute as @s[scores={DialogueTrigger=88,TalkTime=84}] run tp @e[x=-80,y=103,z=-2012,dy=3,type=pixelmon:npc_chatting] -504 181 1268
+execute as @s[scores={DialogueTrigger=88,TalkTime=84}] run tp @e[x=-504,y=180,z=1270,dy=3,type=pixelmon:npc_trainer] -80 104 -2012
 
 tag @s[scores={DialogueTrigger=88,TalkTime=84..}] add Dialogue88
 scoreboard players set @s[tag=Dialogue88] TalkTime 0
@@ -3092,12 +3092,12 @@ scoreboard players set @s[tag=Dialogue88] DialogueTrigger 0
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Poke Ball Factory admin loss, double battle with scientists and Serena
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 89
-#execute as @s[x=-92,y=102,z=-2020,dx=24,dy=5,dz=16,tag=!Dialogue89,score_TalkTime=0] run execute as @s[tag=Dialogue88] run tp @e[x=-504,y=180,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -80 104 -2012
+#execute as @s[x=-92,y=102,z=-2020,dx=24,dy=5,dz=16,tag=!Dialogue89,score_TalkTime=0] run execute as @s[tag=Dialogue88] run tp @e[x=-504,y=180,z=1270,dy=3,type=pixelmon:npc_trainer] -80 104 -2012
 
 #Scores Serena NPCs
-execute as @s[scores={DialogueTrigger=89,TalkTime=2}] run scoreboard players set @e[x=-504,y=185,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 1
-execute as @s[scores={DialogueTrigger=89,TalkTime=2}] run scoreboard players set @e[x=-504,y=185,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 2
-execute as @s[scores={DialogueTrigger=89,TalkTime=2}] run scoreboard players set @e[x=-504,y=185,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 3
+execute as @s[scores={DialogueTrigger=89,TalkTime=2}] run scoreboard players set @e[x=-504,y=185,z=1270,dy=3,type=pixelmon:npc_trainer] StarterPick 1
+execute as @s[scores={DialogueTrigger=89,TalkTime=2}] run scoreboard players set @e[x=-504,y=185,z=1272,dy=3,type=pixelmon:npc_trainer] StarterPick 2
+execute as @s[scores={DialogueTrigger=89,TalkTime=2}] run scoreboard players set @e[x=-504,y=185,z=1274,dy=3,type=pixelmon:npc_trainer] StarterPick 3
 
 tellraw @s[scores={DialogueTrigger=89,TalkTime=5}] ["",{"text":"<"},{"text":"Team Flare Admin","color":"red"},{"text":"> C-come on! You didn't have to go all out for a pitiful president like him!"}]
 tellraw @s[scores={DialogueTrigger=89,TalkTime=14}] ["",{"text":"<"},{"text":"...","color":"light_purple"},{"text":"> So lame! That's just embarrassing from an admin!"}]
@@ -3106,19 +3106,19 @@ tellraw @s[scores={DialogueTrigger=89,TalkTime=32}] ["",{"text":"<"},{"text":"..
 
 #tp Serena in
 execute as @s[scores={DialogueTrigger=89,TalkTime=38}] run particle cloud -77 104 -2006 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=89,TalkTime=38,StarterPick=1}] run tp @e[x=-504,y=185,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -77 104 -2006
-execute as @s[scores={DialogueTrigger=89,TalkTime=38,StarterPick=2}] run tp @e[x=-504,y=185,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] -77 104 -2006
-execute as @s[scores={DialogueTrigger=89,TalkTime=38,StarterPick=3}] run tp @e[x=-504,y=185,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] -77 104 -2006
+execute as @s[scores={DialogueTrigger=89,TalkTime=38,StarterPick=1}] run tp @e[x=-504,y=185,z=1270,dy=3,type=pixelmon:npc_trainer] -77 104 -2006
+execute as @s[scores={DialogueTrigger=89,TalkTime=38,StarterPick=2}] run tp @e[x=-504,y=185,z=1272,dy=3,type=pixelmon:npc_trainer] -77 104 -2006
+execute as @s[scores={DialogueTrigger=89,TalkTime=38,StarterPick=3}] run tp @e[x=-504,y=185,z=1274,dy=3,type=pixelmon:npc_trainer] -77 104 -2006
 
 tellraw @s[scores={DialogueTrigger=89,TalkTime=42}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> We'll see about that!"}]
 tellraw @s[scores={DialogueTrigger=89,TalkTime=47}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Sorry I'm late!"}]
 tellraw @s[scores={DialogueTrigger=89,TalkTime=53}] ["",{"text":"<"},{"text":"...","color":"dark_green"},{"text":"> There's another one?"}]
 tellraw @s[scores={DialogueTrigger=89,TalkTime=58}] ["",{"text":"<"},{"text":"...","color":"light_purple"},{"text":"> One kid or two, it doesn't make a lot of difference."}]
 
-execute as @s[scores={DialogueTrigger=89,TalkTime=70}] run tp @e[x=-77,y=103,z=-2010,dy=3,nbt=!{pixelmon:npc_chatting}] -504 181 1276
-execute as @s[scores={DialogueTrigger=89,TalkTime=70}] run tp @e[x=-504,y=180,z=1278,dy=3,nbt=!{pixelmon:npc_trainer}] -77 104 -2010
-execute as @s[scores={DialogueTrigger=89,TalkTime=70}] run tp @e[x=-83,y=103,z=-2010,dy=3,nbt=!{pixelmon:npc_chatting}] -504 181 1272
-execute as @s[scores={DialogueTrigger=89,TalkTime=70}] run tp @e[x=-504,y=180,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] -83 104 -2010
+execute as @s[scores={DialogueTrigger=89,TalkTime=70}] run tp @e[x=-77,y=103,z=-2010,dy=3,type=pixelmon:npc_chatting] -504 181 1276
+execute as @s[scores={DialogueTrigger=89,TalkTime=70}] run tp @e[x=-504,y=180,z=1278,dy=3,type=pixelmon:npc_trainer] -77 104 -2010
+execute as @s[scores={DialogueTrigger=89,TalkTime=70}] run tp @e[x=-83,y=103,z=-2010,dy=3,type=pixelmon:npc_chatting] -504 181 1272
+execute as @s[scores={DialogueTrigger=89,TalkTime=70}] run tp @e[x=-504,y=180,z=1274,dy=3,type=pixelmon:npc_trainer] -83 104 -2010
 
 tellraw @s[scores={DialogueTrigger=89,TalkTime=65}] ["",{"text":"<"},{"text":"...","color":"light_purple"},{"text":"> When we're the ones fighting together, our odds of victory increase exponentially!"}]
 
@@ -3142,8 +3142,8 @@ scoreboard players set @s[tag=Dialogue89] DialogueTrigger 0
 #Poke Ball Factory post-double-battle
 #execute as @s[x=-92,y=102,z=-2020,dx=24,dy=5,dz=16,tag=Dialogue89,score_MusicSteps_min=1,score_TalkTime=0] run scoreboard players set @s[tag=!Dialogue90] DialogueTrigger 90
 
-#execute as @s[x=-92,y=102,z=-2020,dx=24,dy=5,dz=16,tag=Dialogue89,score_TalkTime=0] run execute as @s[tag=!Dialogue90] run tp @e[x=-504,y=180,z=1278,dy=3,nbt=!{pixelmon:npc_trainer}] -77 104 -2010
-#execute as @s[x=-92,y=102,z=-2020,dx=24,dy=5,dz=16,tag=Dialogue89,score_TalkTime=0] run execute as @s[tag=!Dialogue90] run tp @e[x=-504,y=180,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] -83 104 -2010
+#execute as @s[x=-92,y=102,z=-2020,dx=24,dy=5,dz=16,tag=Dialogue89,score_TalkTime=0] run execute as @s[tag=!Dialogue90] run tp @e[x=-504,y=180,z=1278,dy=3,type=pixelmon:npc_trainer] -77 104 -2010
+#execute as @s[x=-92,y=102,z=-2020,dx=24,dy=5,dz=16,tag=Dialogue89,score_TalkTime=0] run execute as @s[tag=!Dialogue90] run tp @e[x=-504,y=180,z=1274,dy=3,type=pixelmon:npc_trainer] -83 104 -2010
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 90
 
 execute as @s[scores={DialogueTrigger=90,TalkTime=1}] run tag @s remove FlareBattleMusic
@@ -3155,24 +3155,24 @@ tellraw @s[scores={DialogueTrigger=90,TalkTime=18}] ["",{"text":"<"},{"text":"Te
 tellraw @s[scores={DialogueTrigger=90,TalkTime=28}] ["",{"text":"<"},{"text":"Team Flare Admin","color":"red"},{"text":"> Let's call it good and leave."}]
 
 #tps admins and scientists out
-execute as @s[scores={DialogueTrigger=90,TalkTime=34}] run tp @e[x=-83,y=103,z=-2010,dy=3,nbt=!{pixelmon:npc_trainer}] -504 181 1274
-execute as @s[scores={DialogueTrigger=90,TalkTime=34}] run tp @e[x=-80,y=103,z=-2012,dy=3,nbt=!{pixelmon:npc_trainer}] -504 181 1270
-execute as @s[scores={DialogueTrigger=90,TalkTime=34}] run tp @e[x=-77,y=103,z=-2010,dy=3,nbt=!{pixelmon:npc_trainer}] -504 181 1278
-execute as @s[scores={DialogueTrigger=90,TalkTime=34}] run tp @e[x=-77,y=103,z=-2006,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=1}] -504 186 1270
-execute as @s[scores={DialogueTrigger=90,TalkTime=34}] run tp @e[x=-77,y=103,z=-2006,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=2}] -504 186 1272
-execute as @s[scores={DialogueTrigger=90,TalkTime=34}] run tp @e[x=-77,y=103,z=-2006,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=3}] -504 186 1274
+execute as @s[scores={DialogueTrigger=90,TalkTime=34}] run tp @e[x=-83,y=103,z=-2010,dy=3,type=pixelmon:npc_trainer] -504 181 1274
+execute as @s[scores={DialogueTrigger=90,TalkTime=34}] run tp @e[x=-80,y=103,z=-2012,dy=3,type=pixelmon:npc_trainer] -504 181 1270
+execute as @s[scores={DialogueTrigger=90,TalkTime=34}] run tp @e[x=-77,y=103,z=-2010,dy=3,type=pixelmon:npc_trainer] -504 181 1278
+execute as @s[scores={DialogueTrigger=90,TalkTime=34}] run tp @e[x=-77,y=103,z=-2006,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=1}] -504 186 1270
+execute as @s[scores={DialogueTrigger=90,TalkTime=34}] run tp @e[x=-77,y=103,z=-2006,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=2}] -504 186 1272
+execute as @s[scores={DialogueTrigger=90,TalkTime=34}] run tp @e[x=-77,y=103,z=-2006,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=3}] -504 186 1274
 execute as @s[scores={DialogueTrigger=90,TalkTime=34}] run particle cloud -77 104 -2010 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=90,TalkTime=34}] run particle cloud -80 104 -2012 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=90,TalkTime=34}] run particle cloud -83 104 -2010 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=90,TalkTime=34}] run tp @e[x=-504,y=185,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -77 104 -2006
+execute as @s[scores={DialogueTrigger=90,TalkTime=34}] run tp @e[x=-504,y=185,z=1268,dy=3,type=pixelmon:npc_chatting] -77 104 -2006
 
 #clears the rest of Team Flare npcs
-execute as @s[scores={DialogueTrigger=90,TalkTime=36}] run tp @e[x=-134,y=94,z=-1919,dy=3,nbt=!{pixelmon:npc_trainer}] -504 176 1272
-execute as @s[scores={DialogueTrigger=90,TalkTime=36}] run tp @e[x=-209,y=88,z=-1938,dy=3,nbt=!{pixelmon:npc_trainer}] -504 176 1274
-execute as @s[scores={DialogueTrigger=90,TalkTime=36}] run tp @e[x=-148,y=89,z=-1965,dy=3,nbt=!{pixelmon:npc_trainer}] -504 176 1276
-execute as @s[scores={DialogueTrigger=90,TalkTime=36}] run tp @e[x=-135,y=103,z=-1996,dy=3,nbt=!{pixelmon:npc_trainer}] -504 176 1278
-execute as @s[scores={DialogueTrigger=90,TalkTime=36}] run tp @e[x=-154,y=88,z=-1849,dy=3,nbt=!{pixelmon:npc_chatting}] -504 176 1270
-execute as @s[scores={DialogueTrigger=90,TalkTime=36}] run tp @e[x=-154,y=88,z=-1859,dy=3,nbt=!{pixelmon:npc_chatting}] -504 176 1268
+execute as @s[scores={DialogueTrigger=90,TalkTime=36}] run tp @e[x=-134,y=94,z=-1919,dy=3,type=pixelmon:npc_trainer] -504 176 1272
+execute as @s[scores={DialogueTrigger=90,TalkTime=36}] run tp @e[x=-209,y=88,z=-1938,dy=3,type=pixelmon:npc_trainer] -504 176 1274
+execute as @s[scores={DialogueTrigger=90,TalkTime=36}] run tp @e[x=-148,y=89,z=-1965,dy=3,type=pixelmon:npc_trainer] -504 176 1276
+execute as @s[scores={DialogueTrigger=90,TalkTime=36}] run tp @e[x=-135,y=103,z=-1996,dy=3,type=pixelmon:npc_trainer] -504 176 1278
+execute as @s[scores={DialogueTrigger=90,TalkTime=36}] run tp @e[x=-154,y=88,z=-1849,dy=3,type=pixelmon:npc_chatting] -504 176 1270
+execute as @s[scores={DialogueTrigger=90,TalkTime=36}] run tp @e[x=-154,y=88,z=-1859,dy=3,type=pixelmon:npc_chatting] -504 176 1268
 
 tellraw @s[scores={DialogueTrigger=90,TalkTime=39}] {"text":"<Factory President> You saved us! Thank you so much!"}
 tellraw @s[scores={DialogueTrigger=90,TalkTime=45}] {"text":"<Factory President> You're astounding Pokémon Trainers for being so young."}
@@ -3207,7 +3207,7 @@ tellraw @s[scores={DialogueTrigger=92,TalkTime=61}] {"text":"<Factory President>
 
 #tp out Serena
 execute as @s[scores={DialogueTrigger=92,TalkTime=70}] run particle cloud -77 104 -2006 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=92,TalkTime=70}] run tp @e[x=-77,y=103,z=-2006,dy=3,nbt=!{pixelmon:npc_chatting}] -504 186 1268
+execute as @s[scores={DialogueTrigger=92,TalkTime=70}] run tp @e[x=-77,y=103,z=-2006,dy=3,type=pixelmon:npc_chatting] -504 186 1268
 
 execute as @s[scores={DialogueTrigger=92,TalkTime=70}] run advancement grant @s only kalos:flare3
 
@@ -3223,15 +3223,15 @@ scoreboard players set @s[tag=Dialogue92] DialogueTrigger 0
 execute as @s[scores={DialogueTrigger=93,TalkTime=1}] run particle cloud -157 89 -1853 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=93,TalkTime=1}] run particle cloud -154 89 -1852 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=93,TalkTime=1}] run particle cloud -151 89 -1853 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=93,TalkTime=1}] run tp @e[x=-504,y=190,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -157 89 -1853
-execute as @s[scores={DialogueTrigger=93,TalkTime=1}] run tp @e[x=-504,y=190,z=1270,dy=3,nbt=!{pixelmon:npc_chatting}] -154 89 -1852
-execute as @s[scores={DialogueTrigger=93,TalkTime=1}] run tp @e[x=-504,y=190,z=1272,dy=3,nbt=!{pixelmon:npc_chatting}] -151 89 -1853
+execute as @s[scores={DialogueTrigger=93,TalkTime=1}] run tp @e[x=-504,y=190,z=1268,dy=3,type=pixelmon:npc_chatting] -157 89 -1853
+execute as @s[scores={DialogueTrigger=93,TalkTime=1}] run tp @e[x=-504,y=190,z=1270,dy=3,type=pixelmon:npc_chatting] -154 89 -1852
+execute as @s[scores={DialogueTrigger=93,TalkTime=1}] run tp @e[x=-504,y=190,z=1272,dy=3,type=pixelmon:npc_chatting] -151 89 -1853
 
 tellraw @s[scores={DialogueTrigger=93,TalkTime=4}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Hey, do you think it's OK to go have a look around now?"}]
 
 #Serena tps in
 execute as @s[scores={DialogueTrigger=93,TalkTime=10}] run particle cloud -148 89 -1857 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=93,TalkTime=10}] run tp @e[x=-504,y=190,z=1274,dy=3,nbt=!{pixelmon:npc_chatting}] -148 89 -1857
+execute as @s[scores={DialogueTrigger=93,TalkTime=10}] run tp @e[x=-504,y=190,z=1274,dy=3,type=pixelmon:npc_chatting] -148 89 -1857
 
 tellraw @s[scores={DialogueTrigger=93,TalkTime=13}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> I'm sorry... Team Flare messed everything up. It's not a good time right now."}]
 tellraw @s[scores={DialogueTrigger=93,TalkTime=23}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Team Flare? Have I heard that name somewhere?"}]
@@ -3246,8 +3246,8 @@ tellraw @s[scores={DialogueTrigger=93,TalkTime=75}] ["",{"text":"<"},{"text":"Ti
 #Trevor and Tierno tp out
 execute as @s[scores={DialogueTrigger=93,TalkTime=83}] run particle cloud -151 89 -1853 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=93,TalkTime=83}] run particle cloud -154 89 -1852 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=93,TalkTime=83}] run tp @e[x=-151,y=88,z=-1853,dy=3,nbt=!{pixelmon:npc_chatting}] -504 191 1272
-execute as @s[scores={DialogueTrigger=93,TalkTime=83}] run tp @e[x=-154,y=88,z=-1852,dy=3,nbt=!{pixelmon:npc_chatting}] -504 191 1270
+execute as @s[scores={DialogueTrigger=93,TalkTime=83}] run tp @e[x=-151,y=88,z=-1853,dy=3,type=pixelmon:npc_chatting] -504 191 1272
+execute as @s[scores={DialogueTrigger=93,TalkTime=83}] run tp @e[x=-154,y=88,z=-1852,dy=3,type=pixelmon:npc_chatting] -504 191 1270
 
 tellraw @s[scores={DialogueTrigger=93,TalkTime=86}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> "},{"selector":"@s"},{"text":"! You and Serena are really awesome!"}]
 tellraw @s[scores={DialogueTrigger=93,TalkTime=93}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> You're way stronger than those bad guys!"}]
@@ -3255,7 +3255,7 @@ tellraw @s[scores={DialogueTrigger=93,TalkTime=100}] ["",{"text":"<"},{"text":"S
 
 #tp Shauna out
 execute as @s[scores={DialogueTrigger=93,TalkTime=107}] run particle cloud -157 89 -1853 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=93,TalkTime=107}] run tp @e[x=-157,y=88,z=-1853,dy=3,nbt=!{pixelmon:npc_chatting}] -504 191 1268
+execute as @s[scores={DialogueTrigger=93,TalkTime=107}] run tp @e[x=-157,y=88,z=-1853,dy=3,type=pixelmon:npc_chatting] -504 191 1268
 
 tellraw @s[scores={DialogueTrigger=93,TalkTime=110}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Thank you."}]
 tellraw @s[scores={DialogueTrigger=93,TalkTime=115}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Everyone's OK, thanks to you!"}]
@@ -3263,7 +3263,7 @@ tellraw @s[scores={DialogueTrigger=93,TalkTime=122}] ["",{"text":"<"},{"text":"S
 
 #tp Serena out
 execute as @s[scores={DialogueTrigger=93,TalkTime=130}] run particle cloud -148 89 -1857 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=93,TalkTime=130}] run tp @e[x=-148,y=88,z=-1857,dy=3,nbt=!{pixelmon:npc_chatting}] -504 191 1274
+execute as @s[scores={DialogueTrigger=93,TalkTime=130}] run tp @e[x=-148,y=88,z=-1857,dy=3,type=pixelmon:npc_chatting] -504 191 1274
 
 tag @s[scores={DialogueTrigger=93,TalkTime=130..}] add Dialogue93
 scoreboard players set @s[tag=Dialogue93] TalkTime 0
@@ -3272,22 +3272,22 @@ scoreboard players set @s[tag=Dialogue93] DialogueTrigger 0
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Team Flare Poke Ball Factory tps
 #tp in
-#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,score_TalkTime=0] run tp @e[x=-504,y=175,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] -134 95 -1919
-#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,score_TalkTime=0] run tp @e[x=-504,y=175,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] -209 89 -1938
-#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,score_TalkTime=0] run tp @e[x=-504,y=175,z=1276,dy=3,nbt=!{pixelmon:npc_trainer}] -148 89 -1965
-#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,score_TalkTime=0] run tp @e[x=-504,y=175,z=1278,dy=3,nbt=!{pixelmon:npc_trainer}] -135 104 -1996
+#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,score_TalkTime=0] run tp @e[x=-504,y=175,z=1272,dy=3,type=pixelmon:npc_trainer] -134 95 -1919
+#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,score_TalkTime=0] run tp @e[x=-504,y=175,z=1274,dy=3,type=pixelmon:npc_trainer] -209 89 -1938
+#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,score_TalkTime=0] run tp @e[x=-504,y=175,z=1276,dy=3,type=pixelmon:npc_trainer] -148 89 -1965
+#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,score_TalkTime=0] run tp @e[x=-504,y=175,z=1278,dy=3,type=pixelmon:npc_trainer] -135 104 -1996
 
-#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue88,score_TalkTime=0] run tp @e[x=-504,y=180,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -80 104 -2012
-#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue88,score_TalkTime=0] run tp @e[x=-504,y=180,z=1272,dy=3,nbt=!{pixelmon:npc_chatting}] -83 104 -2010
-#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue88,score_TalkTime=0] run tp @e[x=-504,y=180,z=1276,dy=3,nbt=!{pixelmon:npc_chatting}] -77 104 -2010
+#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue88,score_TalkTime=0] run tp @e[x=-504,y=180,z=1268,dy=3,type=pixelmon:npc_chatting] -80 104 -2012
+#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue88,score_TalkTime=0] run tp @e[x=-504,y=180,z=1272,dy=3,type=pixelmon:npc_chatting] -83 104 -2010
+#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue88,score_TalkTime=0] run tp @e[x=-504,y=180,z=1276,dy=3,type=pixelmon:npc_chatting] -77 104 -2010
 
 #tp out
-#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90,score_TalkTime=0] run tp @e[x=-134,y=94,z=-1919,dy=3,nbt=!{pixelmon:npc_trainer}] -504 176 1272
-#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90,score_TalkTime=0] run tp @e[x=-209,y=88,z=-1938,dy=3,nbt=!{pixelmon:npc_trainer}] -504 176 1274
-#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90,score_TalkTime=0] run tp @e[x=-148,y=89,z=-1965,dy=3,nbt=!{pixelmon:npc_trainer}] -504 176 1276
-#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90,score_TalkTime=0] run tp @e[x=-135,y=103,z=-1996,dy=3,nbt=!{pixelmon:npc_trainer}] -504 176 1278
-#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90,score_TalkTime=0] run tp @e[x=-154,y=88,z=-1849,dy=3,nbt=!{pixelmon:npc_chatting}] -504 176 1270
-#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90,score_TalkTime=0] run tp @e[x=-154,y=88,z=-1859,dy=3,nbt=!{pixelmon:npc_chatting}] -504 176 1268
+#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90,score_TalkTime=0] run tp @e[x=-134,y=94,z=-1919,dy=3,type=pixelmon:npc_trainer] -504 176 1272
+#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90,score_TalkTime=0] run tp @e[x=-209,y=88,z=-1938,dy=3,type=pixelmon:npc_trainer] -504 176 1274
+#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90,score_TalkTime=0] run tp @e[x=-148,y=89,z=-1965,dy=3,type=pixelmon:npc_trainer] -504 176 1276
+#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90,score_TalkTime=0] run tp @e[x=-135,y=103,z=-1996,dy=3,type=pixelmon:npc_trainer] -504 176 1278
+#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90,score_TalkTime=0] run tp @e[x=-154,y=88,z=-1849,dy=3,type=pixelmon:npc_chatting] -504 176 1270
+#execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90,score_TalkTime=0] run tp @e[x=-154,y=88,z=-1859,dy=3,type=pixelmon:npc_chatting] -504 176 1268
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Dendemille Sycamore and Dexio
@@ -3296,8 +3296,8 @@ scoreboard players set @s[tag=Dialogue93] DialogueTrigger 0
 #tps in Sycamore and Dexio
 execute as @s[scores={DialogueTrigger=94,TalkTime=1}] run particle cloud 645 108 -420 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=94,TalkTime=1}] run particle cloud 645 108 -424 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=94,TalkTime=1}] run tp @e[x=-504,y=200,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] 645 108 -424
-execute as @s[scores={DialogueTrigger=94,TalkTime=1}] run tp @e[x=-504,y=200,z=1270,dy=3,nbt=!{pixelmon:npc_chatting}] 645 108 -420
+execute as @s[scores={DialogueTrigger=94,TalkTime=1}] run tp @e[x=-504,y=200,z=1268,dy=3,type=pixelmon:npc_chatting] 645 108 -424
+execute as @s[scores={DialogueTrigger=94,TalkTime=1}] run tp @e[x=-504,y=200,z=1270,dy=3,type=pixelmon:npc_chatting] 645 108 -420
 
 execute as @s[scores={DialogueTrigger=94,TalkTime=4}] run scoreboard players set @s click 1
 tellraw @s[scores={DialogueTrigger=94,TalkTime=4}] ["",{"text":"<"},{"text":"Dexio","color":"aqua"},{"text":"> Why hello, "},{"selector":"@s"},{"text":"!"}]
@@ -3328,13 +3328,13 @@ tellraw @s[scores={DialogueTrigger=94,TalkTime=193}] {"text":"<Sycamore> But you
 #Sycamore and Dexio tp out
 execute as @s[scores={DialogueTrigger=94,TalkTime=204}] run particle cloud 645 108 -420 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=94,TalkTime=204}] run particle cloud 645 108 -424 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=94,TalkTime=204}] run tp @e[x=645,y=107,z=-424,dy=3,nbt=!{pixelmon:npc_chatting}] -504 201 1268
-execute as @s[scores={DialogueTrigger=94,TalkTime=204}] run tp @e[x=645,y=107,z=-420,dy=3,nbt=!{pixelmon:npc_chatting}] -504 201 1270
+execute as @s[scores={DialogueTrigger=94,TalkTime=204}] run tp @e[x=645,y=107,z=-424,dy=3,type=pixelmon:npc_chatting] -504 201 1268
+execute as @s[scores={DialogueTrigger=94,TalkTime=204}] run tp @e[x=645,y=107,z=-420,dy=3,type=pixelmon:npc_chatting] -504 201 1270
 execute as @s[scores={DialogueTrigger=94,TalkTime=204}] run scoreboard players set @s click 1
 
 #Trevor tps in
 execute as @s[scores={DialogueTrigger=94,TalkTime=207}] run particle cloud 642 108 -422 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=94,TalkTime=207}] run tp @e[x=-504,y=200,z=1272,dy=3,nbt=!{pixelmon:npc_chatting}] 642 108 -422
+execute as @s[scores={DialogueTrigger=94,TalkTime=207}] run tp @e[x=-504,y=200,z=1272,dy=3,type=pixelmon:npc_chatting] 642 108 -422
 
 tellraw @s[scores={DialogueTrigger=94,TalkTime=210}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> Um... Is the Professor gone already?"}]
 tellraw @s[scores={DialogueTrigger=94,TalkTime=217}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> I was hoping to have him have a look at my Pokédex in person."}]
@@ -3343,7 +3343,7 @@ tellraw @s[scores={DialogueTrigger=94,TalkTime=233}] ["",{"text":"<"},{"text":"T
 
 #Trevor tp out
 execute as @s[scores={DialogueTrigger=94,TalkTime=243}] run particle cloud 642 108 -422 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=94,TalkTime=243}] run tp @e[x=642,y=107,z=-422,dy=3,nbt=!{pixelmon:npc_chatting}] -504 201 1272
+execute as @s[scores={DialogueTrigger=94,TalkTime=243}] run tp @e[x=642,y=107,z=-422,dy=3,type=pixelmon:npc_chatting] -504 201 1272
 
 tag @s[scores={DialogueTrigger=94,TalkTime=243..}] add Dialogue94
 scoreboard players set @s[tag=Dialogue94] TalkTime 0
@@ -3354,11 +3354,11 @@ scoreboard players set @s[tag=Dialogue94] DialogueTrigger 0
 #scoreboard players set @a[x=717,y=117,z=-682,dx=24,dy=10,dz=20,tag=!Dialogue95] DialogueTrigger 95
 
 #tp in Ace Trainer and Mamoswine Separately
-#execute as @p[x=733,y=119,z=-646,r=20,tag=!Dialogue95] run execute as @s[tag=!Dialogue98] run tp @e[x=-504,y=205,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] 725 118 -665
-#execute as @p[x=733,y=119,z=-646,r=20,tag=!Dialogue95] run execute as @s[tag=!Dialogue98] run tp @e[x=-501,y=190,z=1238,dy=3,nbt=!{pixelmon:statue}] 722 118 -666
+#execute as @p[x=733,y=119,z=-646,r=20,tag=!Dialogue95] run execute as @s[tag=!Dialogue98] run tp @e[x=-504,y=205,z=1268,dy=3,type=pixelmon:npc_chatting] 725 118 -665
+#execute as @p[x=733,y=119,z=-646,r=20,tag=!Dialogue95] run execute as @s[tag=!Dialogue98] run tp @e[x=-501,y=190,z=1238,dy=3,type=pixelmon:statue] 722 118 -666
 
-#execute as @p[x=719,y=117,z=-682,r=30,tag=Dialogue98] run tp @e[x=725,y=117,z=-665,dy=3,nbt=!{pixelmon:npc_chatting}] -504 206 1268
-#execute as @p[x=719,y=117,z=-682,r=30,tag=Dialogue98] run tp @e[x=722,y=117,z=-666,dy=3,nbt=!{pixelmon:statue}] -501 191 1238
+#execute as @p[x=719,y=117,z=-682,r=30,tag=Dialogue98] run tp @e[x=725,y=117,z=-665,dy=3,type=pixelmon:npc_chatting] -504 206 1268
+#execute as @p[x=719,y=117,z=-682,r=30,tag=Dialogue98] run tp @e[x=722,y=117,z=-666,dy=3,type=pixelmon:statue] -501 191 1238
 
 tellraw @s[scores={DialogueTrigger=95,TalkTime=1}] {"text":"<Ace Trainer> ??"}
 tellraw @s[scores={DialogueTrigger=95,TalkTime=5}] {"text":"<Ace Trainer> Is something wrong in the Frost Cavern, Mamoswine?"}
@@ -3370,7 +3370,7 @@ tellraw @s[scores={DialogueTrigger=95,TalkTime=32}] {"text":"<Ace Trainer> These
 
 #Trevor tps in on bridge
 execute as @s[scores={DialogueTrigger=95,TalkTime=37}] run particle cloud 733 119 -660 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=95,TalkTime=37}] run tp @e[x=-504,y=205,z=1270,dy=3,nbt=!{pixelmon:npc_chatting}] 733 119 -660
+execute as @s[scores={DialogueTrigger=95,TalkTime=37}] run tp @e[x=-504,y=205,z=1270,dy=3,type=pixelmon:npc_chatting] 733 119 -660
 
 tellraw @s[scores={DialogueTrigger=95,TalkTime=40}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> Mamoswine is a Pokémon that loves cold climates."}]
 tellraw @s[scores={DialogueTrigger=95,TalkTime=47}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> So, maybe it has sensed something amiss in the Frost Cavern."}]
@@ -3383,7 +3383,7 @@ tellraw @s[scores={DialogueTrigger=95,TalkTime=91}] ["",{"text":"<"},{"text":"Tr
 
 #tp Trevor out
 execute as @s[scores={DialogueTrigger=95,TalkTime=98}] run particle cloud 733 119 -660 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=95,TalkTime=98}] run tp @e[x=733,y=118,z=-660,dy=3,nbt=!{pixelmon:npc_chatting}] -504 206 1270
+execute as @s[scores={DialogueTrigger=95,TalkTime=98}] run tp @e[x=733,y=118,z=-660,dy=3,type=pixelmon:npc_chatting] -504 206 1270
 
 tag @s[scores={DialogueTrigger=95,TalkTime=98..}] add Dialogue95
 scoreboard players set @s[tag=Dialogue95] TalkTime 0
@@ -3394,13 +3394,13 @@ scoreboard players set @s[tag=Dialogue95] DialogueTrigger 0
 #scoreboard players set @a[x=672,y=84,z=-1299,dx=18,dy=6,dz=11,tag=!Dialogue96] DialogueTrigger 96
 
 #tps Team Flare in ahead
-execute as @s[scores={DialogueTrigger=96,TalkTime=1..3}] run tp @e[x=-504,y=210,z=1272,dy=3,nbt=!{pixelmon:npc_chatting}] 676 85 -1361
-execute as @s[scores={DialogueTrigger=96,TalkTime=1..3}] run tp @e[x=-504,y=210,z=1274,dy=3,nbt=!{pixelmon:npc_chatting}] 673 85 -1358
-execute as @s[scores={DialogueTrigger=96,TalkTime=1..3}] run tp @e[x=-504,y=210,z=1276,dy=3,nbt=!{pixelmon:npc_chatting}] 679 85 -1358
+execute as @s[scores={DialogueTrigger=96,TalkTime=1..3}] run tp @e[x=-504,y=210,z=1272,dy=3,type=pixelmon:npc_chatting] 676 85 -1361
+execute as @s[scores={DialogueTrigger=96,TalkTime=1..3}] run tp @e[x=-504,y=210,z=1274,dy=3,type=pixelmon:npc_chatting] 673 85 -1358
+execute as @s[scores={DialogueTrigger=96,TalkTime=1..3}] run tp @e[x=-504,y=210,z=1276,dy=3,type=pixelmon:npc_chatting] 679 85 -1358
 
 #tps Trevor in
 execute as @s[scores={DialogueTrigger=96,TalkTime=1}] run particle cloud 676 85 -1297 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=96,TalkTime=1}] run tp @e[x=-504,y=210,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] 676 85 -1297
+execute as @s[scores={DialogueTrigger=96,TalkTime=1}] run tp @e[x=-504,y=210,z=1268,dy=3,type=pixelmon:npc_chatting] 676 85 -1297
 
 
 tellraw @s[scores={DialogueTrigger=96,TalkTime=3}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> It's really cold in here, isn't it, "},{"selector":"@s"},{"text":"?"}]
@@ -3417,8 +3417,8 @@ tellraw @s[scores={DialogueTrigger=96,TalkTime=47}] ["",{"text":"<"},{"text":"Tr
 #tp trevor closer
 execute as @s[scores={DialogueTrigger=96,TalkTime=50}] run particle cloud 676 85 -1297 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=96,TalkTime=50}] run particle cloud 673 85 -1353 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=96,TalkTime=50}] run tp @e[x=676,y=84,z=-1297,dy=3,nbt=!{pixelmon:npc_chatting}] -504 211 1268
-execute as @s[scores={DialogueTrigger=96,TalkTime=50}] run tp @e[x=-504,y=210,z=1270,dy=3,nbt=!{pixelmon:npc_chatting}] 673 85 -1353
+execute as @s[scores={DialogueTrigger=96,TalkTime=50}] run tp @e[x=676,y=84,z=-1297,dy=3,type=pixelmon:npc_chatting] -504 211 1268
+execute as @s[scores={DialogueTrigger=96,TalkTime=50}] run tp @e[x=-504,y=210,z=1270,dy=3,type=pixelmon:npc_chatting] 673 85 -1353
 
 tellraw @s[scores={DialogueTrigger=96,TalkTime=55}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> Hey, you Poké Ball thieves! What are you doing here?!"}]
 tellraw @s[scores={DialogueTrigger=96,TalkTime=63}] ["",{"text":"<"},{"text":"...","color":"dark_aqua"},{"text":"> What does it look like? We're catching Pokémon. Why else would we have grabbed all of those Poké Balls?"}]
@@ -3438,8 +3438,8 @@ tellraw @s[scores={DialogueTrigger=96,TalkTime=176}] {"text":"<Team Flare Grunt>
 tellraw @s[scores={DialogueTrigger=96,TalkTime=185}] ["",{"text":"<"},{"text":"Team Flare Grunt","color":"red"},{"text":"> Let's go! Team Flare! This is the trademark pose of Team Flare! It's the very definition of fashionable!"}]
 
 #swap out Grunt to battle
-execute as @s[scores={DialogueTrigger=96,TalkTime=185}] run tp @e[x=679,y=84,z=-1358,dy=3,nbt=!{pixelmon:npc_chatting}] -504 211 1276
-execute as @s[scores={DialogueTrigger=96,TalkTime=185}] run tp @e[x=-504,y=210,z=1280,dy=3,nbt=!{pixelmon:npc_trainer}] 679 85 -1358
+execute as @s[scores={DialogueTrigger=96,TalkTime=185}] run tp @e[x=679,y=84,z=-1358,dy=3,type=pixelmon:npc_chatting] -504 211 1276
+execute as @s[scores={DialogueTrigger=96,TalkTime=185}] run tp @e[x=-504,y=210,z=1280,dy=3,type=pixelmon:npc_trainer] 679 85 -1358
 
 tag @s[scores={DialogueTrigger=96,TalkTime=185..}] add Dialogue96
 scoreboard players set @s[tag=Dialogue96] TalkTime 0
@@ -3448,15 +3448,15 @@ scoreboard players set @s[tag=Dialogue96] DialogueTrigger 0
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Frost Cavern Team Flare Grunt post-battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 97
-#execute as @s[x=676,y=85,z=-1359,r=10,score_TalkTime=0,tag=Dialogue96] run execute as @s[tag=!Dialogue97] run tp @e[x=-504,y=210,z=1280,dy=3,nbt=!{pixelmon:npc_trainer}] 679 85 -1358
+#execute as @s[x=676,y=85,z=-1359,r=10,score_TalkTime=0,tag=Dialogue96] run execute as @s[tag=!Dialogue97] run tp @e[x=-504,y=210,z=1280,dy=3,type=pixelmon:npc_trainer] 679 85 -1358
 
 tellraw @s[scores={DialogueTrigger=97,TalkTime=5}] ["",{"text":"<"},{"text":"Team Flare Grunt","color":"red"},{"text":"> I may have lost... I may have lost, but... Isn't this winter wonderland beautiful?"}]
 tellraw @s[scores={DialogueTrigger=97,TalkTime=15}] ["",{"text":"<"},{"text":"Team Flare Grunt","color":"red"},{"text":"> Almost as beautiful as the Team Flare pose..."}]
 tellraw @s[scores={DialogueTrigger=97,TalkTime=23}] ["",{"text":"<"},{"text":"...","color":"dark_aqua"},{"text":"> Hmm... You're more powerful than you look. I wonder how much energy there is inside you."}]
 
 #switches out Mable trainer
-execute as @s[scores={DialogueTrigger=97,TalkTime=23}] run tp @e[x=676,y=84,z=-1361,dy=3,nbt=!{pixelmon:npc_chatting}] -504 211 1272
-execute as @s[scores={DialogueTrigger=97,TalkTime=23}] run tp @e[x=-504,y=210,z=1278,dy=3,nbt=!{pixelmon:npc_trainer}] 676 85 -1361
+execute as @s[scores={DialogueTrigger=97,TalkTime=23}] run tp @e[x=676,y=84,z=-1361,dy=3,type=pixelmon:npc_chatting] -504 211 1272
+execute as @s[scores={DialogueTrigger=97,TalkTime=23}] run tp @e[x=-504,y=210,z=1278,dy=3,type=pixelmon:npc_trainer] 676 85 -1361
 
 tag @s[scores={DialogueTrigger=97,TalkTime=23..}] add Dialogue97
 scoreboard players set @s[tag=Dialogue97] TalkTime 0
@@ -3465,7 +3465,7 @@ scoreboard players set @s[tag=Dialogue97] DialogueTrigger 0
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Frost Cavern post-Mable battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 98
-#execute as @s[x=676,y=85,z=-1359,r=10,score_TalkTime=0,tag=Dialogue97] run execute as @s[tag=!Dialogue98] run tp @e[x=-504,y=210,z=1278,dy=3,nbt=!{pixelmon:npc_trainer}] 676 85 -1361
+#execute as @s[x=676,y=85,z=-1359,r=10,score_TalkTime=0,tag=Dialogue97] run execute as @s[tag=!Dialogue98] run tp @e[x=-504,y=210,z=1278,dy=3,type=pixelmon:npc_trainer] 676 85 -1361
 
 tellraw @s[scores={DialogueTrigger=98,TalkTime=5}] ["",{"text":"<"},{"text":"Team Flare Mable","color":"dark_aqua"},{"text":"> Hrmph! I've no patience for losing."}]
 tellraw @s[scores={DialogueTrigger=98,TalkTime=12}] ["",{"text":"<"},{"text":"Team Flare Mable","color":"dark_aqua"},{"text":"> Let's get out of here!"}]
@@ -3474,9 +3474,9 @@ tellraw @s[scores={DialogueTrigger=98,TalkTime=12}] ["",{"text":"<"},{"text":"Te
 execute as @s[scores={DialogueTrigger=98,TalkTime=17}] run particle cloud 676 85 -1361 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=98,TalkTime=17}] run particle cloud 673 85 -1358 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=98,TalkTime=17}] run particle cloud 679 85 -1358 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=98,TalkTime=17}] run tp @e[x=673,y=84,z=-1358,dy=3,nbt=!{pixelmon:npc_chatting}] -504 211 1274
-execute as @s[scores={DialogueTrigger=98,TalkTime=17}] run tp @e[x=676,y=84,z=-1361,dy=3,nbt=!{pixelmon:npc_trainer}] -504 211 1278
-execute as @s[scores={DialogueTrigger=98,TalkTime=17}] run tp @e[x=679,y=84,z=-1358,dy=3,nbt=!{pixelmon:npc_trainer}] -504 211 1280
+execute as @s[scores={DialogueTrigger=98,TalkTime=17}] run tp @e[x=673,y=84,z=-1358,dy=3,type=pixelmon:npc_chatting] -504 211 1274
+execute as @s[scores={DialogueTrigger=98,TalkTime=17}] run tp @e[x=676,y=84,z=-1361,dy=3,type=pixelmon:npc_trainer] -504 211 1278
+execute as @s[scores={DialogueTrigger=98,TalkTime=17}] run tp @e[x=679,y=84,z=-1358,dy=3,type=pixelmon:npc_trainer] -504 211 1280
 
 tellraw @s[scores={DialogueTrigger=98,TalkTime=21}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> Doesn't battling with Team Flare scare you, "},{"selector":"@s"},{"text":"?"}]
 tellraw @s[scores={DialogueTrigger=98,TalkTime=28}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> I'll admit it scares me. I don't like battling them..."}]
@@ -3485,7 +3485,7 @@ tellraw @s[scores={DialogueTrigger=98,TalkTime=44}] ["",{"text":"<"},{"text":"Tr
 tellraw @s[scores={DialogueTrigger=98,TalkTime=54}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> Mamoswine doesn't have to worry about Abomasnow anymore, and that's what matters. All's well that ends well!"}]
 
 #Trevor tps out
-execute as @s[scores={DialogueTrigger=98,TalkTime=63}] run tp @e[x=673,y=84,z=-1353,dy=3,nbt=!{pixelmon:npc_chatting}] -504 211 1270
+execute as @s[scores={DialogueTrigger=98,TalkTime=63}] run tp @e[x=673,y=84,z=-1353,dy=3,type=pixelmon:npc_chatting] -504 211 1270
 execute as @s[scores={DialogueTrigger=98,TalkTime=63}] run particle cloud 673 85 -1353 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=98,TalkTime=66}] ["",{"text":"<Abomasnow> "},{"text":"Snooowww!","italic":true}]
@@ -3537,7 +3537,7 @@ scoreboard players set @s[tag=Dialogue100] DialogueTrigger 0
 #scoreboard players set @a[x=1187,y=107,z=-196,dx=16,dy=5,dz=17,tag=!Dialogue101,score_TalkTime=0] DialogueTrigger 101
 
 #tp Sina in
-execute as @s[scores={DialogueTrigger=101,TalkTime=1}] run tp @e[x=-504,y=215,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] 1207 108 -188
+execute as @s[scores={DialogueTrigger=101,TalkTime=1}] run tp @e[x=-504,y=215,z=1268,dy=3,type=pixelmon:npc_chatting] 1207 108 -188
 execute as @s[scores={DialogueTrigger=101,TalkTime=1}] run particle cloud 1207 108 -188 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=101,TalkTime=5}] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> You there!"}]
@@ -3550,7 +3550,7 @@ tellraw @s[scores={DialogueTrigger=101,TalkTime=45}] ["",{"text":"<"},{"text":"S
 
 #tp Sina in
 execute as @s[scores={DialogueTrigger=101,TalkTime=55}] run particle cloud 1207 108 -188 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=101,TalkTime=55}] run tp @e[x=1207,y=107,z=-188,dy=3,nbt=!{pixelmon:npc_chatting}] -504 216 1268
+execute as @s[scores={DialogueTrigger=101,TalkTime=55}] run tp @e[x=1207,y=107,z=-188,dy=3,type=pixelmon:npc_chatting] -504 216 1268
 
 tag @s[scores={DialogueTrigger=101,TalkTime=55..}] add Dialogue101
 scoreboard players set @s[tag=Dialogue101] TalkTime 0
@@ -3561,15 +3561,15 @@ scoreboard players set @s[tag=Dialogue101] DialogueTrigger 0
 #scoreboard players set @a[x=1308,y=107,z=-286,dx=12,dy=5,dz=25,tag=!Dialogue102,score_TalkTime=0] DialogueTrigger 102
 
 #Tags Serena NPCs
-execute as @s[scores={DialogueTrigger=102,TalkTime=2}] run scoreboard players set @e[x=-504,y=215,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 1
-execute as @s[scores={DialogueTrigger=102,TalkTime=2}] run scoreboard players set @e[x=-504,y=215,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 2
-execute as @s[scores={DialogueTrigger=102,TalkTime=2}] run scoreboard players set @e[x=-504,y=215,z=1276,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 3
+execute as @s[scores={DialogueTrigger=102,TalkTime=2}] run scoreboard players set @e[x=-504,y=215,z=1272,dy=3,type=pixelmon:npc_trainer] StarterPick 1
+execute as @s[scores={DialogueTrigger=102,TalkTime=2}] run scoreboard players set @e[x=-504,y=215,z=1274,dy=3,type=pixelmon:npc_trainer] StarterPick 2
+execute as @s[scores={DialogueTrigger=102,TalkTime=2}] run scoreboard players set @e[x=-504,y=215,z=1276,dy=3,type=pixelmon:npc_trainer] StarterPick 3
 
 
 #Tps Serena in
-execute as @s[scores={DialogueTrigger=102,TalkTime=3,StarterPick=1}] run tp @e[x=-504,y=215,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] 1325 108 -277
-execute as @s[scores={DialogueTrigger=102,TalkTime=3,StarterPick=2}] run tp @e[x=-504,y=215,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] 1325 108 -277
-execute as @s[scores={DialogueTrigger=102,TalkTime=3,StarterPick=3}] run tp @e[x=-504,y=215,z=1276,dy=3,nbt=!{pixelmon:npc_trainer}] 1325 108 -277
+execute as @s[scores={DialogueTrigger=102,TalkTime=3,StarterPick=1}] run tp @e[x=-504,y=215,z=1272,dy=3,type=pixelmon:npc_trainer] 1325 108 -277
+execute as @s[scores={DialogueTrigger=102,TalkTime=3,StarterPick=2}] run tp @e[x=-504,y=215,z=1274,dy=3,type=pixelmon:npc_trainer] 1325 108 -277
+execute as @s[scores={DialogueTrigger=102,TalkTime=3,StarterPick=3}] run tp @e[x=-504,y=215,z=1276,dy=3,type=pixelmon:npc_trainer] 1325 108 -277
 execute as @s[scores={DialogueTrigger=102,TalkTime=2}] run particle cloud 1325 108 -277 2 2 2 1 100
 
 
@@ -3585,9 +3585,9 @@ scoreboard players set @s[tag=Dialogue102] DialogueTrigger 0
 #Serena Anistar City Gym post-battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 103
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
-#execute as @s[x=1308,y=107,z=-286,dx=12,dy=5,dz=25,tag=!Dialogue103,score_TalkTime=0,score_StarterPick_min=1,score_StarterPick=1] run execute as @s[tag=Dialogue102] run tp @e[x=-504,y=215,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] 1325 108 -277
-#execute as @s[x=1308,y=107,z=-286,dx=12,dy=5,dz=25,tag=!Dialogue103,score_TalkTime=0,score_StarterPick_min=2,score_StarterPick=2] run execute as @s[tag=Dialogue102] run tp @e[x=-504,y=215,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] 1325 108 -277
-#execute as @s[x=1308,y=107,z=-286,dx=12,dy=5,dz=25,tag=!Dialogue103,score_TalkTime=0,score_StarterPick_min=3,score_StarterPick=3] run execute as @s[tag=Dialogue102] run tp @e[x=-504,y=215,z=1276,dy=3,nbt=!{pixelmon:npc_trainer}] 1325 108 -277
+#execute as @s[x=1308,y=107,z=-286,dx=12,dy=5,dz=25,tag=!Dialogue103,score_TalkTime=0,score_StarterPick_min=1,score_StarterPick=1] run execute as @s[tag=Dialogue102] run tp @e[x=-504,y=215,z=1272,dy=3,type=pixelmon:npc_trainer] 1325 108 -277
+#execute as @s[x=1308,y=107,z=-286,dx=12,dy=5,dz=25,tag=!Dialogue103,score_TalkTime=0,score_StarterPick_min=2,score_StarterPick=2] run execute as @s[tag=Dialogue102] run tp @e[x=-504,y=215,z=1274,dy=3,type=pixelmon:npc_trainer] 1325 108 -277
+#execute as @s[x=1308,y=107,z=-286,dx=12,dy=5,dz=25,tag=!Dialogue103,score_TalkTime=0,score_StarterPick_min=3,score_StarterPick=3] run execute as @s[tag=Dialogue102] run tp @e[x=-504,y=215,z=1276,dy=3,type=pixelmon:npc_trainer] 1325 108 -277
 
 tellraw @s[scores={DialogueTrigger=103,TalkTime=5}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> My Pokémon are so much stronger now, but you and your Pokémon are still one step ahead of us..."}]
 tellraw @s[scores={DialogueTrigger=103,TalkTime=15}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Anyway, I'll heal your Pokémon. Here."}]
@@ -3596,9 +3596,9 @@ tellraw @s[scores={DialogueTrigger=103,TalkTime=22}] ["",{"text":"<"},{"text":"S
 
 #tp Serena out
 execute as @s[scores={DialogueTrigger=103,TalkTime=29}] run particle cloud 1325 108 -277 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=103,TalkTime=29}] run tp @e[x=1325,y=107,z=-277,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=1}] -504 216 1272
-execute as @s[scores={DialogueTrigger=103,TalkTime=29}] run tp @e[x=1325,y=107,z=-277,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=2}] -504 216 1274
-execute as @s[scores={DialogueTrigger=103,TalkTime=29}] run tp @e[x=1325,y=107,z=-277,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=3}] -504 216 1276
+execute as @s[scores={DialogueTrigger=103,TalkTime=29}] run tp @e[x=1325,y=107,z=-277,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=1}] -504 216 1272
+execute as @s[scores={DialogueTrigger=103,TalkTime=29}] run tp @e[x=1325,y=107,z=-277,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=2}] -504 216 1274
+execute as @s[scores={DialogueTrigger=103,TalkTime=29}] run tp @e[x=1325,y=107,z=-277,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=3}] -504 216 1276
 
 tag @s[scores={DialogueTrigger=103,TalkTime=29..}] add Dialogue103
 scoreboard players set @s[tag=Dialogue103] TalkTime 0
@@ -3609,11 +3609,11 @@ scoreboard players set @s[tag=Dialogue103] DialogueTrigger 0
 #execute as @s[x=1328,y=108,z=-281,r=20,tag=Olympia] run scoreboard players set @s[tag=!Dialogue104] DialogueTrigger 104
 
 #tps background grunts
-execute as @s[scores={DialogueTrigger=104,TalkTime=2}] run tp @e[x=-504,y=220,z=1272,dy=3,nbt=!{pixelmon:npc_chatting}] 1353 108 -283
-execute as @s[scores={DialogueTrigger=104,TalkTime=2}] run tp @e[x=-504,y=220,z=1274,dy=3,nbt=!{pixelmon:npc_chatting}] 1357 108 -283
+execute as @s[scores={DialogueTrigger=104,TalkTime=2}] run tp @e[x=-504,y=220,z=1272,dy=3,type=pixelmon:npc_chatting] 1353 108 -283
+execute as @s[scores={DialogueTrigger=104,TalkTime=2}] run tp @e[x=-504,y=220,z=1274,dy=3,type=pixelmon:npc_chatting] 1357 108 -283
 
 #tp Serena in
-execute as @s[scores={DialogueTrigger=104,TalkTime=2}] run tp @e[x=-504,y=220,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] 1318 108 -278
+execute as @s[scores={DialogueTrigger=104,TalkTime=2}] run tp @e[x=-504,y=220,z=1268,dy=3,type=pixelmon:npc_chatting] 1318 108 -278
 execute as @s[scores={DialogueTrigger=104,TalkTime=2}] run particle cloud 1318 108 -278 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=104,TalkTime=4}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> I'm sure getting the Psychic Badge wasn't too much trouble for you. Right, "},{"selector":"@s"},{"text":"?"}]
@@ -3621,13 +3621,13 @@ tellraw @s[scores={DialogueTrigger=104,TalkTime=14}] ["",{"text":"<"},{"text":"S
 tellraw @s[scores={DialogueTrigger=104,TalkTime=25}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Let's have a rematch! Battling tough Trainers is the best way to get stronger, after all!"}]
 tellraw @s[scores={DialogueTrigger=104,TalkTime=35}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Hm? What could this be?"}]
 
-execute as @s[scores={DialogueTrigger=104,TalkTime=32}] run replaceitem entity @e[x=1318,y=107,z=-278,dy=3,nbt=!{pixelmon:npc_chatting}] weapon.mainhand minecraft:carrot_on_a_stick
-execute as @s[scores={DialogueTrigger=104,TalkTime=102}] run replaceitem entity @e[x=1318,y=107,z=-278,dy=3,nbt=!{pixelmon:npc_chatting}] weapon.mainhand minecraft:air
+execute as @s[scores={DialogueTrigger=104,TalkTime=32}] run replaceitem entity @e[x=1318,y=107,z=-278,dy=3,type=pixelmon:npc_chatting] weapon.mainhand minecraft:carrot_on_a_stick
+execute as @s[scores={DialogueTrigger=104,TalkTime=102}] run replaceitem entity @e[x=1318,y=107,z=-278,dy=3,type=pixelmon:npc_chatting] weapon.mainhand minecraft:air
 
 #Summon Lysandre Holo NPC
 execute as @s[scores={DialogueTrigger=104,TalkTime=40}] run summon armor_stand 1318 108.25 -276 {Rotation:[180.0f,0.0f],Invisible:1b,Invulnerable:1b,NoGravity:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"carrot_on_a_stick",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:2s}],HandItems:[{},{}],DisabledSlots:2039327}
 execute as @s[scores={DialogueTrigger=104,TalkTime=40}] run scoreboard players set @s click 1
-execute as @s[scores={DialogueTrigger=104,TalkTime=40}] run data modify entity @e[limit=1,x=1318,y=107,z=-278,dy=3,nbt=!{pixelmon:npc_chatting}] {Rotation:[0.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=104,TalkTime=40}] run data modify entity @e[limit=1,x=1318,y=107,z=-278,dy=3,type=pixelmon:npc_chatting] {Rotation:[0.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=104,TalkTime=43}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> Pokémon Trainers. I come to you by the Holo Caster to make an important announcement."}]
 tellraw @s[scores={DialogueTrigger=104,TalkTime=52}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> Listen well. Team Flare will revive the ultimate weapon, eliminate everyone who isn't in our group, and return the world to a beautiful, natural state."}]
@@ -3646,7 +3646,7 @@ tellraw @s[scores={DialogueTrigger=104,TalkTime=128}] ["",{"text":"<"},{"text":"
 
 #tp Serena out
 execute as @s[scores={DialogueTrigger=104,TalkTime=138}] run particle cloud 1318 108 -278 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=104,TalkTime=138}] run tp @e[x=1318,y=107,z=-278,dy=3,nbt=!{pixelmon:npc_chatting}] -504 221 1268
+execute as @s[scores={DialogueTrigger=104,TalkTime=138}] run tp @e[x=1318,y=107,z=-278,dy=3,type=pixelmon:npc_chatting] -504 221 1268
 
 execute as @s[scores={DialogueTrigger=104,TalkTime=138}] run advancement grant @s only kalos:flare5
 
@@ -3655,14 +3655,14 @@ scoreboard players set @s[tag=Dialogue104] TalkTime 0
 scoreboard players set @s[tag=Dialogue104] DialogueTrigger 0
 
 #Return tps the grunts outside the gym
-#execute as @p[x=1303,y=108,z=-267,r=20,tag=Dialogue133] run tp @e[x=1353,y=107,z=-283,dy=3,nbt=!{pixelmon:npc_chatting}] -504 221 1272
-#execute as @p[x=1303,y=108,z=-267,r=20,tag=Dialogue133] run tp @e[x=1357,y=107,z=-283,dy=3,nbt=!{pixelmon:npc_chatting}] -504 221 1274
+#execute as @p[x=1303,y=108,z=-267,r=20,tag=Dialogue133] run tp @e[x=1353,y=107,z=-283,dy=3,type=pixelmon:npc_chatting] -504 221 1272
+#execute as @p[x=1303,y=108,z=-267,r=20,tag=Dialogue133] run tp @e[x=1357,y=107,z=-283,dy=3,type=pixelmon:npc_chatting] -504 221 1274
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Lumiose Cafe Waiter
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 105
-#execute as @s[x=-307,y=132,z=427,dx=23,dy=9,dz=26,tag=Olympia] run execute as @s ~ ~ ~ /tp @e[x=-504,y=225,z=1268,dy=3,nbt=!{pixelmon:npc_trainer}] -298 133 442
-#execute as @s[x=-307,y=132,z=427,dx=23,dy=9,dz=26,tag=Olympia] run execute as @s ~ ~ ~ /tp @e[x=-504,y=225,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -294 133 431
+#execute as @s[x=-307,y=132,z=427,dx=23,dy=9,dz=26,tag=Olympia] run execute as @s ~ ~ ~ /tp @e[x=-504,y=225,z=1268,dy=3,type=pixelmon:npc_trainer] -298 133 442
+#execute as @s[x=-307,y=132,z=427,dx=23,dy=9,dz=26,tag=Olympia] run execute as @s ~ ~ ~ /tp @e[x=-504,y=225,z=1270,dy=3,type=pixelmon:npc_trainer] -294 133 431
 
 tellraw @s[scores={DialogueTrigger=105,TalkTime=5}] {"text":"<Waiter> Oh no! they'll find out the password to the hidden door in this café is \u201copen sesame\u201d!"}
 
@@ -3701,7 +3701,7 @@ scoreboard players set @s[tag=Dialogue107] DialogueTrigger 0
 
 #tp Lysandre in
 execute as @s[scores={DialogueTrigger=108,TalkTime=1}] run particle cloud -296 141 393 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=108,TalkTime=1}] run tp @e[x=-504,y=230,z=1268,dy=3,nbt=!{pixelmon:npc_trainer}] -296 141 393
+execute as @s[scores={DialogueTrigger=108,TalkTime=1}] run tp @e[x=-504,y=230,z=1268,dy=3,type=pixelmon:npc_trainer] -296 141 393
 
 tellraw @s[scores={DialogueTrigger=108,TalkTime=1}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> Welcome."}]
 tellraw @s[scores={DialogueTrigger=108,TalkTime=6}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> This world will eventually reach the point of no return..."}]
@@ -3718,7 +3718,7 @@ scoreboard players set @s[tag=Dialogue108] DialogueTrigger 0
 #Lysandre's Labs Lysandre post-battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 109
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
-#execute as @s[x=-304,y=140,z=388,dx=16,dy=5,dz=12,tag=!Dialogue109,score_TalkTime=0] run execute as @s[tag=Dialogue108] run tp @e[x=-504,y=230,z=1268,dy=3,nbt=!{pixelmon:npc_trainer}] -296 141 393
+#execute as @s[x=-304,y=140,z=388,dx=16,dy=5,dz=12,tag=!Dialogue109,score_TalkTime=0] run execute as @s[tag=Dialogue108] run tp @e[x=-504,y=230,z=1268,dy=3,type=pixelmon:npc_trainer] -296 141 393
 
 #Lose dialogue:
 #Excellent! I can feel the fire of your convictions burning deep within your heart!
@@ -3737,7 +3737,7 @@ tellraw @s[scores={DialogueTrigger=109,TalkTime=96}] ["",{"text":"<"},{"text":"L
 
 #Lysandre tps off
 execute as @s[scores={DialogueTrigger=109,TalkTime=105}] run particle cloud -296 141 393 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=109,TalkTime=105}] run tp @e[x=-296,y=140,z=393,dy=3,nbt=!{pixelmon:npc_trainer}] -504 231 1268
+execute as @s[scores={DialogueTrigger=109,TalkTime=105}] run tp @e[x=-296,y=140,z=393,dy=3,type=pixelmon:npc_trainer] -504 231 1268
 
 tag @s[scores={DialogueTrigger=109,TalkTime=105..}] add Dialogue109
 scoreboard players set @s[tag=Dialogue109] TalkTime 0
@@ -3745,21 +3745,21 @@ scoreboard players set @s[tag=Dialogue109] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #team Flare Labs tp in
-#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -321 141 382
-#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] -333 141 336
-#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] -318 141 356
-#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1276,dy=3,nbt=!{pixelmon:npc_trainer}] -301 141 346
-#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1278,dy=3,nbt=!{pixelmon:npc_trainer}] -254 141 340
-#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1280,dy=3,nbt=!{pixelmon:npc_trainer}] -256 141 397
-#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!ElevatorKey] run tp @e[x=-504,y=235,z=1268,dy=3,nbt=!{pixelmon:npc_trainer}] -275 141 364
-#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!ElevatorKey] run tp @e[x=-504,y=235,z=1270,dy=3,nbt=!{pixelmon:npc_trainer}] -233 141 325
-#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!ElevatorKey] run tp @e[x=-504,y=235,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] -355 141 330
-#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,score_TalkTime=0] run execute as @s[tag=!Dialogue111] run tp @e[x=-504,y=240,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -264 141 311
-#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,score_TalkTime=0] run execute as @s[tag=!Dialogue111] run tp @e[x=-504,y=240,z=1270,dy=3,nbt=!{pixelmon:npc_chatting}] -260 141 311
-#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,score_TalkTime=0] run execute as @s[tag=!Dialogue114] run tp @e[x=-504,y=240,z=1280,dy=3,nbt=!{pixelmon:npc_chatting}] -216 141 347
+#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1270,dy=3,type=pixelmon:npc_trainer] -321 141 382
+#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1272,dy=3,type=pixelmon:npc_trainer] -333 141 336
+#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1274,dy=3,type=pixelmon:npc_trainer] -318 141 356
+#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1276,dy=3,type=pixelmon:npc_trainer] -301 141 346
+#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1278,dy=3,type=pixelmon:npc_trainer] -254 141 340
+#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1280,dy=3,type=pixelmon:npc_trainer] -256 141 397
+#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!ElevatorKey] run tp @e[x=-504,y=235,z=1268,dy=3,type=pixelmon:npc_trainer] -275 141 364
+#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!ElevatorKey] run tp @e[x=-504,y=235,z=1270,dy=3,type=pixelmon:npc_trainer] -233 141 325
+#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!ElevatorKey] run tp @e[x=-504,y=235,z=1272,dy=3,type=pixelmon:npc_trainer] -355 141 330
+#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,score_TalkTime=0] run execute as @s[tag=!Dialogue111] run tp @e[x=-504,y=240,z=1268,dy=3,type=pixelmon:npc_chatting] -264 141 311
+#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,score_TalkTime=0] run execute as @s[tag=!Dialogue111] run tp @e[x=-504,y=240,z=1270,dy=3,type=pixelmon:npc_chatting] -260 141 311
+#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,score_TalkTime=0] run execute as @s[tag=!Dialogue114] run tp @e[x=-504,y=240,z=1280,dy=3,type=pixelmon:npc_chatting] -216 141 347
 
-#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!Dialogue110] run tp @e[x=-504,y=245,z=1276,dy=3,nbt=!{pixelmon:npc_chatting}] -327 141 302
-#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!Dialogue110] run tp @e[x=-504,y=245,z=1278,dy=3,nbt=!{pixelmon:npc_chatting}] -331 141 302
+#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!Dialogue110] run tp @e[x=-504,y=245,z=1276,dy=3,type=pixelmon:npc_chatting] -327 141 302
+#execute as @s[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109] run execute as @s[tag=!Dialogue110] run tp @e[x=-504,y=245,z=1278,dy=3,type=pixelmon:npc_chatting] -331 141 302
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Lysandre's Lab Sina and Dexio
@@ -3781,8 +3781,8 @@ tellraw @s[scores={DialogueTrigger=110,TalkTime=85}] ["",{"text":"<"},{"text":".
 #tp npcs out
 execute as @s[scores={DialogueTrigger=110,TalkTime=92}] run particle cloud -327 141 302 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=110,TalkTime=92}] run particle cloud -331 141 302 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=110,TalkTime=92}] run tp @e[x=-327,y=140,z=302,dy=3,nbt=!{pixelmon:npc_chatting}] -504 246 1276
-execute as @s[scores={DialogueTrigger=110,TalkTime=92}] run tp @e[x=-331,y=140,z=302,dy=3,nbt=!{pixelmon:npc_chatting}] -504 246 1278
+execute as @s[scores={DialogueTrigger=110,TalkTime=92}] run tp @e[x=-327,y=140,z=302,dy=3,type=pixelmon:npc_chatting] -504 246 1276
+execute as @s[scores={DialogueTrigger=110,TalkTime=92}] run tp @e[x=-331,y=140,z=302,dy=3,type=pixelmon:npc_chatting] -504 246 1278
 
 tag @s[scores={DialogueTrigger=110,TalkTime=92..}] add Dialogue110
 scoreboard players set @s[tag=Dialogue110] TalkTime 0
@@ -3803,8 +3803,8 @@ tellraw @s[scores={DialogueTrigger=111,TalkTime=28}] ["",{"text":"<"},{"text":"T
 tellraw @s[scores={DialogueTrigger=111,TalkTime=38}] ["",{"text":"<"},{"text":"Team Flare Celosia","color":"dark_purple"},{"text":"> Yup. That sounds good to me. Then I'll get in the first blow!"}]
 
 #swaps out npc
-execute as @s[scores={DialogueTrigger=111,TalkTime=42}] run tp @e[x=-264,y=140,z=311,dy=3,nbt=!{pixelmon:npc_chatting}] -504 241 1268
-execute as @s[scores={DialogueTrigger=111,TalkTime=42}] run tp @e[x=-504,y=235,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] -264 141 311
+execute as @s[scores={DialogueTrigger=111,TalkTime=42}] run tp @e[x=-264,y=140,z=311,dy=3,type=pixelmon:npc_chatting] -504 241 1268
+execute as @s[scores={DialogueTrigger=111,TalkTime=42}] run tp @e[x=-504,y=235,z=1274,dy=3,type=pixelmon:npc_trainer] -264 141 311
 
 tag @s[scores={DialogueTrigger=111,TalkTime=42..}] add Dialogue111
 scoreboard players set @s[tag=Dialogue111] TalkTime 0
@@ -3813,13 +3813,13 @@ scoreboard players set @s[tag=Dialogue111] DialogueTrigger 0
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Post-Celosia battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 112
-#execute as @s[x=-272,y=140,z=312,dx=20,dy=10,dz=10,tag=Dialogue111,score_TalkTime=0] run execute as @s[tag=!Dialogue112] run tp @e[x=-504,y=235,z=1274,dy=3,nbt=!{pixelmon:npc_trainer}] -264 141 311
+#execute as @s[x=-272,y=140,z=312,dx=20,dy=10,dz=10,tag=Dialogue111,score_TalkTime=0] run execute as @s[tag=!Dialogue112] run tp @e[x=-504,y=235,z=1274,dy=3,type=pixelmon:npc_trainer] -264 141 311
 
 tellraw @s[scores={DialogueTrigger=112,TalkTime=5}] ["",{"text":"<"},{"text":"Team Flare Bryony","color":"dark_green"},{"text":"> Oh! What a brute! Look at poor Celosia!"}]
 
 #swaps out Bryony npc
-execute as @s[scores={DialogueTrigger=112,TalkTime=8}] run tp @e[x=-260,y=140,z=311,dy=3,nbt=!{pixelmon:npc_chatting}] -504 241 1270
-execute as @s[scores={DialogueTrigger=112,TalkTime=8}] run tp @e[x=-504,y=235,z=1276,dy=3,nbt=!{pixelmon:npc_trainer}] -260 141 311
+execute as @s[scores={DialogueTrigger=112,TalkTime=8}] run tp @e[x=-260,y=140,z=311,dy=3,type=pixelmon:npc_chatting] -504 241 1270
+execute as @s[scores={DialogueTrigger=112,TalkTime=8}] run tp @e[x=-504,y=235,z=1276,dy=3,type=pixelmon:npc_trainer] -260 141 311
 
 tag @s[scores={DialogueTrigger=112,TalkTime=8..}] add Dialogue112
 scoreboard players set @s[tag=Dialogue112] TalkTime 0
@@ -3828,7 +3828,7 @@ scoreboard players set @s[tag=Dialogue112] DialogueTrigger 0
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Post-Bryony battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 113
-#execute as @s[x=-272,y=140,z=312,dx=20,dy=10,dz=10,tag=Dialogue112,score_TalkTime=0] run execute as @s[tag=!Dialogue113] run tp @e[x=-504,y=235,z=1276,dy=3,nbt=!{pixelmon:npc_trainer}] -260 141 311
+#execute as @s[x=-272,y=140,z=312,dx=20,dy=10,dz=10,tag=Dialogue112,score_TalkTime=0] run execute as @s[tag=!Dialogue113] run tp @e[x=-504,y=235,z=1276,dy=3,type=pixelmon:npc_trainer] -260 141 311
 
 tellraw @s[scores={DialogueTrigger=113,TalkTime=5}] ["",{"text":"<"},{"text":"Team Flare Celosia","color":"dark_purple"},{"text":"> What's this?! Who would have thought a child like you could beat us both?"}]
 tellraw @s[scores={DialogueTrigger=113,TalkTime=14}] ["",{"text":"<"},{"text":"Team Flare Celosia","color":"dark_purple"},{"text":"> You and your Pokémon were utterly in sync in that battle, and I know why."}]
@@ -3850,8 +3850,8 @@ tellraw @s[scores={DialogueTrigger=113,TalkTime=127}] ["",{"text":"<"},{"text":"
 #tp npcs out
 execute as @s[scores={DialogueTrigger=113,TalkTime=137}] run particle cloud -260 141 311 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=113,TalkTime=137}] run particle cloud -264 141 311 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=113,TalkTime=137}] run tp @e[x=-264,y=140,z=311,dy=3,nbt=!{pixelmon:npc_trainer}] -504 236 1274
-execute as @s[scores={DialogueTrigger=113,TalkTime=137}] run tp @e[x=-260,y=140,z=311,dy=3,nbt=!{pixelmon:npc_trainer}] -504 236 1276
+execute as @s[scores={DialogueTrigger=113,TalkTime=137}] run tp @e[x=-264,y=140,z=311,dy=3,type=pixelmon:npc_trainer] -504 236 1274
+execute as @s[scores={DialogueTrigger=113,TalkTime=137}] run tp @e[x=-260,y=140,z=311,dy=3,type=pixelmon:npc_trainer] -504 236 1276
 
 tag @s[scores={DialogueTrigger=113,TalkTime=137..}] add Dialogue113
 scoreboard players set @s[tag=Dialogue113] TalkTime 0
@@ -3869,8 +3869,8 @@ tellraw @s[scores={DialogueTrigger=114,TalkTime=32}] ["",{"text":"<"},{"text":"T
 tellraw @s[scores={DialogueTrigger=114,TalkTime=41}] ["",{"text":"<"},{"text":"Team Flare Mable","color":"dark_aqua"},{"text":"> Heheh... Looks like you and me are practically after the same thing, yeah?"}]
 
 #swap out NPC
-execute as @s[scores={DialogueTrigger=114,TalkTime=44}] run tp @e[x=-504,y=235,z=1278,dy=3,nbt=!{pixelmon:npc_trainer}] -216 141 347
-execute as @s[scores={DialogueTrigger=114,TalkTime=44}] run tp @e[x=-216,y=140,z=347,dy=3,nbt=!{pixelmon:npc_chatting}] -504 241 1280
+execute as @s[scores={DialogueTrigger=114,TalkTime=44}] run tp @e[x=-504,y=235,z=1278,dy=3,type=pixelmon:npc_trainer] -216 141 347
+execute as @s[scores={DialogueTrigger=114,TalkTime=44}] run tp @e[x=-216,y=140,z=347,dy=3,type=pixelmon:npc_chatting] -504 241 1280
 
 tag @s[scores={DialogueTrigger=114,TalkTime=44..}] add Dialogue114
 scoreboard players set @s[tag=Dialogue114] TalkTime 0
@@ -3881,7 +3881,7 @@ scoreboard players set @s[tag=Dialogue114] DialogueTrigger 0
 #Mable post-battle dialogue
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 115
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
-#execute as @s[x=-225,y=140,z=348,dx=17,dy=10,dz=10,tag=Dialogue114,score_TalkTime=0] run execute as @s[tag=!Dialogue115] run tp @e[x=-504,y=235,z=1278,dy=3,nbt=!{pixelmon:npc_trainer}] -216 141 347
+#execute as @s[x=-225,y=140,z=348,dx=17,dy=10,dz=10,tag=Dialogue114,score_TalkTime=0] run execute as @s[tag=!Dialogue115] run tp @e[x=-504,y=235,z=1278,dy=3,type=pixelmon:npc_trainer] -216 141 347
 
 tellraw @s[scores={DialogueTrigger=115,TalkTime=5}] ["",{"text":"<"},{"text":"Team Flare Mable","color":"dark_aqua"},{"text":"> Ding-ding-ding! Yup, you did it!"}]
 tellraw @s[scores={DialogueTrigger=115,TalkTime=12}] ["",{"text":"<"},{"text":"Team Flare Mable","color":"dark_aqua"},{"text":"> To the victor goes the spoils! Here! An elevator key for you!"}]
@@ -3894,7 +3894,7 @@ tellraw @s[scores={DialogueTrigger=115,TalkTime=44}] ["",{"text":"<"},{"text":"T
 tellraw @s[scores={DialogueTrigger=115,TalkTime=55}] ["",{"text":"<"},{"text":"Team Flare Mable","color":"dark_aqua"},{"text":"> What d'you think will happen to the world if we fuel the ultimate weapon with something like that?"}]
 
 #tp Mable out
-execute as @s[scores={DialogueTrigger=115,TalkTime=66}] run tp @e[x=-216,y=140,z=347,dy=3,nbt=!{pixelmon:npc_trainer}] -504 236 1278
+execute as @s[scores={DialogueTrigger=115,TalkTime=66}] run tp @e[x=-216,y=140,z=347,dy=3,type=pixelmon:npc_trainer] -504 236 1278
 execute as @s[scores={DialogueTrigger=115,TalkTime=66}] run particle cloud -216 141 347 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=115,TalkTime=66..}] add Dialogue115
@@ -3904,8 +3904,8 @@ scoreboard players set @s[tag=Dialogue115] DialogueTrigger 0
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Lysandre and Az imprisoned
 #scoreboard players set @a[x=-395,y=110,z=392,dx=18,dy=10,dz=11,tag=!Dialogue116] DialogueTrigger 116
-#execute as @s[x=-376,y=110,z=396,dx=41,dy=10,dz=7,tag=!Dialogue116] run tp @e[x=-504,y=240,z=1274,dy=3,nbt=!{pixelmon:npc_chatting}] -386 111 390
-#execute as @s[x=-376,y=110,z=396,dx=41,dy=10,dz=7,tag=!Dialogue116] run tp @e[x=-504,y=240,z=1276,dy=3,nbt=!{pixelmon:npc_chatting}] -388 111 394
+#execute as @s[x=-376,y=110,z=396,dx=41,dy=10,dz=7,tag=!Dialogue116] run tp @e[x=-504,y=240,z=1274,dy=3,type=pixelmon:npc_chatting] -386 111 390
+#execute as @s[x=-376,y=110,z=396,dx=41,dy=10,dz=7,tag=!Dialogue116] run tp @e[x=-504,y=240,z=1276,dy=3,type=pixelmon:npc_chatting] -388 111 394
 
 tellraw @s[scores={DialogueTrigger=116,TalkTime=3}] {"text":"<...> Listen, one who will face Lysandre."}
 
@@ -3971,7 +3971,7 @@ tellraw @s[scores={DialogueTrigger=116,TalkTime=230}] ["",{"text":"<"},{"text":"
 tellraw @s[scores={DialogueTrigger=116,TalkTime=241}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> It's finally time. Follow me to my chambers, just one floor below."}]
 
 #lysandre tps away
-execute as @s[scores={DialogueTrigger=116,TalkTime=250}] run tp @e[x=-388,y=110,z=394,dy=3,nbt=!{pixelmon:npc_chatting}] -504 241 1276
+execute as @s[scores={DialogueTrigger=116,TalkTime=250}] run tp @e[x=-388,y=110,z=394,dy=3,type=pixelmon:npc_chatting] -504 241 1276
 execute as @s[scores={DialogueTrigger=116,TalkTime=250}] run particle cloud -388 111 394 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=116,TalkTime=250..}] add Dialogue116
@@ -3982,8 +3982,8 @@ scoreboard players set @s[tag=Dialogue116] DialogueTrigger 0
 #Lysandre and Xerosic pre-battle
 #scoreboard players set @a[x=-319,y=106,z=349,dx=17,dy=5,dz=10,tag=!Dialogue117] DialogueTrigger 117
 #tp Lysandre and Xerosic in separately
-#execute as @s[x=-311,y=110,z=390,r=20,tag=!Dialogue117,score_TalkTime=0] run tp @e[x=-504,y=245,z=1268,dy=3,nbt=!{pixelmon:npc_chatting}] -312 107 326
-#execute as @s[x=-311,y=110,z=390,r=20,tag=!Dialogue117,score_TalkTime=0] run tp @e[x=-504,y=245,z=1270,dy=3,nbt=!{pixelmon:npc_chatting}] -308 107 326
+#execute as @s[x=-311,y=110,z=390,r=20,tag=!Dialogue117,score_TalkTime=0] run tp @e[x=-504,y=245,z=1268,dy=3,type=pixelmon:npc_chatting] -312 107 326
+#execute as @s[x=-311,y=110,z=390,r=20,tag=!Dialogue117,score_TalkTime=0] run tp @e[x=-504,y=245,z=1270,dy=3,type=pixelmon:npc_chatting] -308 107 326
 
 #sets screen to base Geosenge
 execute as @s[scores={DialogueTrigger=117,TalkTime=1}] run data modify entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{id:"minecraft:diamond_hoe",Count:1b,Damage:101s}}
@@ -3996,7 +3996,7 @@ tellraw @s[scores={DialogueTrigger=117,TalkTime=40}] ["",{"text":"<"},{"text":"L
 tellraw @s[scores={DialogueTrigger=117,TalkTime=50}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> Whether we activate the ultimate weapon or leave it safely underground will rest upon if you actually have this potential or not."}]
 
 #Lysandre tps out
-execute as @s[scores={DialogueTrigger=117,TalkTime=58}] run tp @e[x=-312,y=106,z=326,dy=3,nbt=!{pixelmon:npc_chatting}] -504 246 1268
+execute as @s[scores={DialogueTrigger=117,TalkTime=58}] run tp @e[x=-312,y=106,z=326,dy=3,type=pixelmon:npc_chatting] -504 246 1268
 execute as @s[scores={DialogueTrigger=117,TalkTime=58}] run particle cloud -312 107 326 2 2 2 1 100
 
 execute as @s[scores={DialogueTrigger=117,TalkTime=59}] run scoreboard players set @s click 1
@@ -4005,8 +4005,8 @@ tellraw @s[scores={DialogueTrigger=117,TalkTime=70}] {"text":"<...> I've been wa
 tellraw @s[scores={DialogueTrigger=117,TalkTime=77}] {"text":"<...> I need to do a little research on you! Come, let us begin!"}
 
 #swap npcs
-execute as @s[scores={DialogueTrigger=117,TalkTime=81}] run tp @e[x=-308,y=106,z=326,dy=3,nbt=!{pixelmon:npc_chatting}] -504 246 1270
-execute as @s[scores={DialogueTrigger=117,TalkTime=81}] run tp @e[x=-504,y=245,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] -308 107 326
+execute as @s[scores={DialogueTrigger=117,TalkTime=81}] run tp @e[x=-308,y=106,z=326,dy=3,type=pixelmon:npc_chatting] -504 246 1270
+execute as @s[scores={DialogueTrigger=117,TalkTime=81}] run tp @e[x=-504,y=245,z=1272,dy=3,type=pixelmon:npc_trainer] -308 107 326
 
 tag @s[scores={DialogueTrigger=117,TalkTime=81..}] add Dialogue117
 scoreboard players set @s[tag=Dialogue117] TalkTime 0
@@ -4016,7 +4016,7 @@ scoreboard players set @s[tag=Dialogue117] DialogueTrigger 0
 #Xerosic post-battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 118
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
-#execute as @s[x=-308,y=107,z=326,r=10,tag=!Dialogue118,score_TalkTime=0] run execute as @s[tag=Dialogue117] run tp @e[x=-504,y=245,z=1272,dy=3,nbt=!{pixelmon:npc_trainer}] -308 107 326
+#execute as @s[x=-308,y=107,z=326,r=10,tag=!Dialogue118,score_TalkTime=0] run execute as @s[tag=Dialogue117] run tp @e[x=-504,y=245,z=1272,dy=3,type=pixelmon:npc_trainer] -308 107 326
 
 tellraw @s[scores={DialogueTrigger=118,TalkTime=5}] {"text":"<Team Flare Xerosic> Wonderful! Amazing! You have tremendous skill and bravery!"}
 tellraw @s[scores={DialogueTrigger=118,TalkTime=13}] {"text":"<Team Flare Xerosic> When you add that up, it means I will tell you something very interesting."}
@@ -4117,7 +4117,7 @@ tellraw @s[scores={DialogueTrigger=119..120,TalkTime=113}] {"text":"<Team Flare 
 tellraw @s[scores={DialogueTrigger=119..120,TalkTime=120}] {"text":"<Team Flare Xerosic> Add it all up, and it equals... a victory for our SCIENCE!"}
 
 #tp Xerosic out
-execute as @s[scores={DialogueTrigger=119..120,TalkTime=129}] run tp @e[x=-308,y=106,z=326,dy=3,nbt=!{pixelmon:npc_trainer}] -504 246 1272
+execute as @s[scores={DialogueTrigger=119..120,TalkTime=129}] run tp @e[x=-308,y=106,z=326,dy=3,type=pixelmon:npc_trainer] -504 246 1272
 execute as @s[scores={DialogueTrigger=119..120,TalkTime=129}] run particle cloud -308 107 326 2 2 2 1 100
 
 execute as @s[scores={DialogueTrigger=119..120,TalkTime=128..129}] run scoreboard players set @s Geosenge 1
@@ -4134,7 +4134,7 @@ scoreboard players set @s[tag=Dialogue120] DialogueTrigger 0
 tellraw @s[scores={DialogueTrigger=121,TalkTime=1}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> "},{"selector":"@s"},{"text":", I'm coming with you!"}]
 
 #tp Serena in
-execute as @s[scores={DialogueTrigger=121,TalkTime=5}] run tp @e[x=-504,y=100,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] -1255 109 1812
+execute as @s[scores={DialogueTrigger=121,TalkTime=5}] run tp @e[x=-504,y=100,z=1284,dy=3,type=pixelmon:npc_chatting] -1255 109 1812
 execute as @s[scores={DialogueTrigger=121,TalkTime=5}] run particle cloud -1255 109 1812 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=121,TalkTime=8}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> When I was in Lysandre's lab, the masked heroes told me what is going on."}]
@@ -4144,7 +4144,7 @@ tellraw @s[scores={DialogueTrigger=121,TalkTime=32}] ["",{"text":"<"},{"text":"S
 tellraw @s[scores={DialogueTrigger=121,TalkTime=40}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> The world isn't corrupt enough to give up on yet!"}]
 
 #tp Serena out
-execute as @s[scores={DialogueTrigger=121,TalkTime=42}] run tp @e[x=-1255,y=108,z=1812,dy=3,nbt=!{pixelmon:npc_chatting}] -504 101 1284
+execute as @s[scores={DialogueTrigger=121,TalkTime=42}] run tp @e[x=-1255,y=108,z=1812,dy=3,type=pixelmon:npc_chatting] -504 101 1284
 execute as @s[scores={DialogueTrigger=121,TalkTime=42}] run particle cloud -1255 109 1812 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=121,TalkTime=42..}] add Dialogue121
@@ -4158,8 +4158,8 @@ scoreboard players set @s[tag=Dialogue121] DialogueTrigger 0
 #tp Lysandre and Serena in
 execute as @s[scores={DialogueTrigger=122,TalkTime=2}] run particle cloud -2336 70 -990 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=122,TalkTime=2}] run particle cloud -2331 70 -980 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=122,TalkTime=2}] run tp @e[x=-504,y=100,z=1288,dy=3,nbt=!{pixelmon:npc_chatting}] -2331 70 -980
-execute as @s[scores={DialogueTrigger=122,TalkTime=2}] run tp @e[x=-504,y=100,z=1290,dy=3,nbt=!{pixelmon:npc_chatting}] -2336 70 -990
+execute as @s[scores={DialogueTrigger=122,TalkTime=2}] run tp @e[x=-504,y=100,z=1288,dy=3,type=pixelmon:npc_chatting] -2331 70 -980
+execute as @s[scores={DialogueTrigger=122,TalkTime=2}] run tp @e[x=-504,y=100,z=1290,dy=3,type=pixelmon:npc_chatting] -2336 70 -990
 
 tellraw @s[scores={DialogueTrigger=122,TalkTime=5}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> The ultimate weapon's flower has finally bloomed above the soil."}]
 tellraw @s[scores={DialogueTrigger=122,TalkTime=12}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> Don't you find its beauty captivating?"}]
@@ -4178,7 +4178,7 @@ tellraw @s[scores={DialogueTrigger=122,TalkTime=109}] ["",{"text":"<"},{"text":"
 tellraw @s[scores={DialogueTrigger=122,TalkTime=118}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> a world without conflict or theft, is to reduce the number of living things."}]
 tellraw @s[scores={DialogueTrigger=122,TalkTime=128}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> What about Pokémon?"}]
 tellraw @s[scores={DialogueTrigger=122,TalkTime=135}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> ..."}]
-execute as @s[scores={DialogueTrigger=122,TalkTime=137}] run execute at @e[x=-2336,y=69,z=-990,dy=3,nbt=!{pixelmon:npc_chatting}] run particle minecraft:dripping_water ~0.15 ~1.55 ~0.5 0 0 0 3 1 normal
+execute as @s[scores={DialogueTrigger=122,TalkTime=137}] run execute at @e[x=-2336,y=69,z=-990,dy=3,type=pixelmon:npc_chatting] run particle minecraft:dripping_water ~0.15 ~1.55 ~0.5 0 0 0 3 1 normal
 tellraw @s[scores={DialogueTrigger=122,TalkTime=139}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Tears... Why?!"}]
 tellraw @s[scores={DialogueTrigger=122,TalkTime=145}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> Pokémon..."}]
 tellraw @s[scores={DialogueTrigger=122,TalkTime=150}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> Shall no longer exist."}]
@@ -4189,8 +4189,8 @@ tellraw @s[scores={DialogueTrigger=122,TalkTime=183}] ["",{"text":"<"},{"text":"
 tellraw @s[scores={DialogueTrigger=122,TalkTime=192}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> So, I will keep you busy for just a moment..."}]
 
 #Swap out Lysandre npc
-execute as @s[scores={DialogueTrigger=122,TalkTime=195}] run tp @e[x=-2336,y=69,z=-990,dy=3,nbt=!{pixelmon:npc_chatting}] -504 101 1290
-execute as @s[scores={DialogueTrigger=122,TalkTime=195}] run tp @e[x=-504,y=100,z=1292,dy=3,nbt=!{pixelmon:npc_trainer}] -2336 70 -990
+execute as @s[scores={DialogueTrigger=122,TalkTime=195}] run tp @e[x=-2336,y=69,z=-990,dy=3,type=pixelmon:npc_chatting] -504 101 1290
+execute as @s[scores={DialogueTrigger=122,TalkTime=195}] run tp @e[x=-504,y=100,z=1292,dy=3,type=pixelmon:npc_trainer] -2336 70 -990
 
 ###execute as @a[scores={DialogueTrigger=122,TalkTime=196}] run pokebattle @s Lysandre122
 
@@ -4203,14 +4203,14 @@ scoreboard players set @s[tag=Dialogue122] DialogueTrigger 0
 #Lysandre standing in front of chamber post-battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 123
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
-#execute as @s[x=-2359,y=69,z=-992,dx=46,dy=10,dz=15,tag=!Dialogue123,score_TalkTime=0] run execute as @s[tag=Dialogue122] run tp @e[x=-504,y=100,z=1292,dy=3,nbt=!{pixelmon:npc_trainer}] -2336 70 -990
+#execute as @s[x=-2359,y=69,z=-992,dx=46,dy=10,dz=15,tag=!Dialogue123,score_TalkTime=0] run execute as @s[tag=Dialogue122] run tp @e[x=-504,y=100,z=1292,dy=3,type=pixelmon:npc_trainer] -2336 70 -990
 
 tellraw @s[scores={DialogueTrigger=123,TalkTime=5}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> You're as strong as ever."}]
 tellraw @s[scores={DialogueTrigger=123,TalkTime=12}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> But... It's too late! There's no hope for you now!"}]
 tellraw @s[scores={DialogueTrigger=123,TalkTime=21}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> Go down to the lowest floor, and see for yourself!"}]
 
 #tp Lysandre out
-execute as @s[scores={DialogueTrigger=123,TalkTime=27}] run tp @e[x=-2336,y=69,z=-990,dy=3,nbt=!{pixelmon:npc_trainer}] -504 101 1292
+execute as @s[scores={DialogueTrigger=123,TalkTime=27}] run tp @e[x=-2336,y=69,z=-990,dy=3,type=pixelmon:npc_trainer] -504 101 1292
 execute as @s[scores={DialogueTrigger=123,TalkTime=27}] run particle cloud -2336 70 -990 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=123,TalkTime=31}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> It's not over yet!"}]
@@ -4220,7 +4220,7 @@ tellraw @s[scores={DialogueTrigger=123,TalkTime=53}] ["",{"text":"<"},{"text":"S
 
 #tp Serena out
 execute as @s[scores={DialogueTrigger=123,TalkTime=60}] run particle cloud -2331 70 -980 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=123,TalkTime=60}] run tp @e[x=-2331,y=69,z=-980,dy=3,nbt=!{pixelmon:npc_chatting}] -504 101 1288
+execute as @s[scores={DialogueTrigger=123,TalkTime=60}] run tp @e[x=-2331,y=69,z=-980,dy=3,type=pixelmon:npc_chatting] -504 101 1288
 
 tag @s[scores={DialogueTrigger=123,TalkTime=60..}] add Dialogue123
 scoreboard players set @s[tag=Dialogue123] TalkTime 0
@@ -4233,14 +4233,14 @@ scoreboard players set @s[tag=Dialogue123] DialogueTrigger 0
 execute as @s[scores={DialogueTrigger=124,TalkTime=1}] run scoreboard players set @s click 1
 
 #Tags Serena NPCs
-execute as @s[scores={DialogueTrigger=124,TalkTime=1}] run scoreboard players set @e[x=-504,y=105,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 1
-execute as @s[scores={DialogueTrigger=124,TalkTime=1}] run scoreboard players set @e[x=-504,y=105,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 2
-execute as @s[scores={DialogueTrigger=124,TalkTime=1}] run scoreboard players set @e[x=-504,y=105,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 3
+execute as @s[scores={DialogueTrigger=124,TalkTime=1}] run scoreboard players set @e[x=-504,y=105,z=1284,dy=3,type=pixelmon:npc_trainer] StarterPick 1
+execute as @s[scores={DialogueTrigger=124,TalkTime=1}] run scoreboard players set @e[x=-504,y=105,z=1286,dy=3,type=pixelmon:npc_trainer] StarterPick 2
+execute as @s[scores={DialogueTrigger=124,TalkTime=1}] run scoreboard players set @e[x=-504,y=105,z=1288,dy=3,type=pixelmon:npc_trainer] StarterPick 3
 
 #tps Serena in
-execute as @s[scores={DialogueTrigger=124,TalkTime=2,StarterPick=1}] run tp @e[x=-504,y=105,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] -2396 62 -961
-execute as @s[scores={DialogueTrigger=124,TalkTime=2,StarterPick=2}] run tp @e[x=-504,y=105,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] -2396 62 -961
-execute as @s[scores={DialogueTrigger=124,TalkTime=2,StarterPick=3}] run tp @e[x=-504,y=105,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] -2396 62 -961
+execute as @s[scores={DialogueTrigger=124,TalkTime=2,StarterPick=1}] run tp @e[x=-504,y=105,z=1284,dy=3,type=pixelmon:npc_trainer] -2396 62 -961
+execute as @s[scores={DialogueTrigger=124,TalkTime=2,StarterPick=2}] run tp @e[x=-504,y=105,z=1286,dy=3,type=pixelmon:npc_trainer] -2396 62 -961
+execute as @s[scores={DialogueTrigger=124,TalkTime=2,StarterPick=3}] run tp @e[x=-504,y=105,z=1288,dy=3,type=pixelmon:npc_trainer] -2396 62 -961
 
 tellraw @s[scores={DialogueTrigger=124,TalkTime=2}] {"text":"<Team Flare Admin> I'm afraid we're going to have to ask you to turn back."}
 tellraw @s[scores={DialogueTrigger=124,TalkTime=10}] {"text":"<Team Flare Admin> The Legendary Pokémon IS at the end of this chamber, after all."}
@@ -4254,9 +4254,9 @@ scoreboard players set @s[tag=Dialogue124] TalkTime 0
 scoreboard players set @s[tag=Dialogue124] DialogueTrigger 0
 
 #Return Tps (when player leaves room)
-#tp @e[x=-2396,y=61,z=-961,dy=3,nbt=!{pixelmon:npc_trainer},score_StarterPick_min=1,score_StarterPick=1] -504 106 1284
-#tp @e[x=-2396,y=61,z=-961,dy=3,nbt=!{pixelmon:npc_trainer},score_StarterPick_min=2,score_StarterPick=2] -504 106 1286
-#tp @e[x=-2396,y=61,z=-961,dy=3,nbt=!{pixelmon:npc_trainer},score_StarterPick_min=3,score_StarterPick=3] -504 106 1288
+#tp @e[x=-2396,y=61,z=-961,dy=3,type=pixelmon:npc_trainer,score_StarterPick_min=1,score_StarterPick=1] -504 106 1284
+#tp @e[x=-2396,y=61,z=-961,dy=3,type=pixelmon:npc_trainer,score_StarterPick_min=2,score_StarterPick=2] -504 106 1286
+#tp @e[x=-2396,y=61,z=-961,dy=3,type=pixelmon:npc_trainer,score_StarterPick_min=3,score_StarterPick=3] -504 106 1288
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Second admin and Grunt double battle
@@ -4265,14 +4265,14 @@ scoreboard players set @s[tag=Dialogue124] DialogueTrigger 0
 execute as @s[scores={DialogueTrigger=125,TalkTime=1}] run scoreboard players set @s click 1
 
 #Tags Serena NPCs
-execute as @s[scores={DialogueTrigger=125,TalkTime=1}] run scoreboard players set @e[x=-504,y=105,z=1292,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 1
-execute as @s[scores={DialogueTrigger=125,TalkTime=1}] run scoreboard players set @e[x=-504,y=105,z=1294,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 2
-execute as @s[scores={DialogueTrigger=125,TalkTime=1}] run scoreboard players set @e[x=-504,y=105,z=1296,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 3
+execute as @s[scores={DialogueTrigger=125,TalkTime=1}] run scoreboard players set @e[x=-504,y=105,z=1292,dy=3,type=pixelmon:npc_trainer] StarterPick 1
+execute as @s[scores={DialogueTrigger=125,TalkTime=1}] run scoreboard players set @e[x=-504,y=105,z=1294,dy=3,type=pixelmon:npc_trainer] StarterPick 2
+execute as @s[scores={DialogueTrigger=125,TalkTime=1}] run scoreboard players set @e[x=-504,y=105,z=1296,dy=3,type=pixelmon:npc_trainer] StarterPick 3
 
 #tps Serena in
-execute as @s[scores={DialogueTrigger=125,TalkTime=2,StarterPick=1}] run tp @e[x=-504,y=105,z=1292,dy=3,nbt=!{pixelmon:npc_trainer}] -2447 74 -980
-execute as @s[scores={DialogueTrigger=125,TalkTime=2,StarterPick=2}] run tp @e[x=-504,y=105,z=1294,dy=3,nbt=!{pixelmon:npc_trainer}] -2447 74 -980
-execute as @s[scores={DialogueTrigger=125,TalkTime=2,StarterPick=3}] run tp @e[x=-504,y=105,z=1296,dy=3,nbt=!{pixelmon:npc_trainer}] -2447 74 -980
+execute as @s[scores={DialogueTrigger=125,TalkTime=2,StarterPick=1}] run tp @e[x=-504,y=105,z=1292,dy=3,type=pixelmon:npc_trainer] -2447 74 -980
+execute as @s[scores={DialogueTrigger=125,TalkTime=2,StarterPick=2}] run tp @e[x=-504,y=105,z=1294,dy=3,type=pixelmon:npc_trainer] -2447 74 -980
+execute as @s[scores={DialogueTrigger=125,TalkTime=2,StarterPick=3}] run tp @e[x=-504,y=105,z=1296,dy=3,type=pixelmon:npc_trainer] -2447 74 -980
 
 tellraw @s[scores={DialogueTrigger=125,TalkTime=1}] ["",{"text":"<"},{"text":"Team Flare Grunt","color":"red"},{"text":"> Even if things are just as we heard, I can't believe they're sending smart guys like us to run off some little \u201cRattata\u201d that wandered in."}]
 tellraw @s[scores={DialogueTrigger=125,TalkTime=10}] {"text":"<Team Flare Admin> We won't lose! You won't get one step farther!"}
@@ -4286,9 +4286,9 @@ scoreboard players set @s[tag=Dialogue125] TalkTime 0
 scoreboard players set @s[tag=Dialogue125] DialogueTrigger 0
 
 #Return Tps (when player leaves room)
-#tp @e[x=-2447,y=73,z=-980,dy=3,nbt=!{pixelmon:npc_trainer},score_StarterPick_min=1,score_StarterPick=1] -504 106 1292
-#tp @e[x=-2447,y=73,z=-980,dy=3,nbt=!{pixelmon:npc_trainer},score_StarterPick_min=2,score_StarterPick=2] -504 106 1294
-#tp @e[x=-2447,y=73,z=-980,dy=3,nbt=!{pixelmon:npc_trainer},score_StarterPick_min=3,score_StarterPick=3] -504 106 1296
+#tp @e[x=-2447,y=73,z=-980,dy=3,type=pixelmon:npc_trainer,score_StarterPick_min=1,score_StarterPick=1] -504 106 1292
+#tp @e[x=-2447,y=73,z=-980,dy=3,type=pixelmon:npc_trainer,score_StarterPick_min=2,score_StarterPick=2] -504 106 1294
+#tp @e[x=-2447,y=73,z=-980,dy=3,type=pixelmon:npc_trainer,score_StarterPick_min=3,score_StarterPick=3] -504 106 1296
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Friends at Flare Secret middle
@@ -4299,13 +4299,13 @@ execute as @s[scores={DialogueTrigger=126,TalkTime=1..}] run tp @e[x=-2478,y=70,
 
 #tp Serena in
 execute as @s[scores={DialogueTrigger=126,TalkTime=1}] run particle cloud -2471 78 -998 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=126,TalkTime=1}] run tp @e[x=-504,y=110,z=1294,dy=3,nbt=!{pixelmon:npc_chatting}] -2471 78 -998
+execute as @s[scores={DialogueTrigger=126,TalkTime=1}] run tp @e[x=-504,y=110,z=1294,dy=3,type=pixelmon:npc_chatting] -2471 78 -998
 
 tellraw @s[scores={DialogueTrigger=126,TalkTime=3}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> "},{"selector":"@s"},{"text":"! Serena!"}]
 
 #tp Shauna in
 execute as @s[scores={DialogueTrigger=126,TalkTime=5}] run particle cloud -2466 78 -1004 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=126,TalkTime=5}] run tp @e[x=-504,y=110,z=1292,dy=3,nbt=!{pixelmon:npc_chatting}] -2466 78 -1004
+execute as @s[scores={DialogueTrigger=126,TalkTime=5}] run tp @e[x=-504,y=110,z=1292,dy=3,type=pixelmon:npc_chatting] -2466 78 -1004
 
 tellraw @s[scores={DialogueTrigger=126,TalkTime=8}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> I don't believe it... What are you doing here?"}]
 tellraw @s[scores={DialogueTrigger=126,TalkTime=15}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> I'm sorry... I know..."}]
@@ -4324,8 +4324,8 @@ tellraw @s[scores={DialogueTrigger=126,TalkTime=92}] ["",{"text":"<"},{"text":"S
 #tp Shauna and Serena out
 execute as @s[scores={DialogueTrigger=126,TalkTime=96}] run particle cloud -2471 78 -998 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=126,TalkTime=96}] run particle cloud -2466 78 -1004 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=126,TalkTime=96}] run tp @e[x=-2466,y=77,z=-1004,dy=3,nbt=!{pixelmon:npc_chatting}] -504 111 1292
-execute as @s[scores={DialogueTrigger=126,TalkTime=96}] run tp @e[x=-2471,y=77,z=-998,dy=3,nbt=!{pixelmon:npc_chatting}] -504 111 1294
+execute as @s[scores={DialogueTrigger=126,TalkTime=96}] run tp @e[x=-2466,y=77,z=-1004,dy=3,type=pixelmon:npc_chatting] -504 111 1292
+execute as @s[scores={DialogueTrigger=126,TalkTime=96}] run tp @e[x=-2471,y=77,z=-998,dy=3,type=pixelmon:npc_chatting] -504 111 1294
 
 tag @s[scores={DialogueTrigger=126,TalkTime=96..}] add Dialogue126
 scoreboard players set @s[tag=Dialogue126] TalkTime 0
@@ -4338,14 +4338,14 @@ scoreboard players set @s[tag=Dialogue126] DialogueTrigger 0
 execute as @s[scores={DialogueTrigger=127,TalkTime=1}] run scoreboard players set @s click 1
 
 #Tags Serena NPCs
-execute as @s[scores={DialogueTrigger=127,TalkTime=1}] run scoreboard players set @e[x=-504,y=110,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 1
-execute as @s[scores={DialogueTrigger=127,TalkTime=1}] run scoreboard players set @e[x=-504,y=110,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 2
-execute as @s[scores={DialogueTrigger=127,TalkTime=1}] run scoreboard players set @e[x=-504,y=110,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 3
+execute as @s[scores={DialogueTrigger=127,TalkTime=1}] run scoreboard players set @e[x=-504,y=110,z=1284,dy=3,type=pixelmon:npc_trainer] StarterPick 1
+execute as @s[scores={DialogueTrigger=127,TalkTime=1}] run scoreboard players set @e[x=-504,y=110,z=1286,dy=3,type=pixelmon:npc_trainer] StarterPick 2
+execute as @s[scores={DialogueTrigger=127,TalkTime=1}] run scoreboard players set @e[x=-504,y=110,z=1288,dy=3,type=pixelmon:npc_trainer] StarterPick 3
 
 #tps Serena in
-execute as @s[scores={DialogueTrigger=127,TalkTime=2,StarterPick=1}] run tp @e[x=-504,y=110,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] -2477 48 -940
-execute as @s[scores={DialogueTrigger=127,TalkTime=2,StarterPick=2}] run tp @e[x=-504,y=110,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] -2477 48 -940
-execute as @s[scores={DialogueTrigger=127,TalkTime=2,StarterPick=3}] run tp @e[x=-504,y=110,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] -2477 48 -940
+execute as @s[scores={DialogueTrigger=127,TalkTime=2,StarterPick=1}] run tp @e[x=-504,y=110,z=1284,dy=3,type=pixelmon:npc_trainer] -2477 48 -940
+execute as @s[scores={DialogueTrigger=127,TalkTime=2,StarterPick=2}] run tp @e[x=-504,y=110,z=1286,dy=3,type=pixelmon:npc_trainer] -2477 48 -940
+execute as @s[scores={DialogueTrigger=127,TalkTime=2,StarterPick=3}] run tp @e[x=-504,y=110,z=1288,dy=3,type=pixelmon:npc_trainer] -2477 48 -940
 
 tellraw @s[scores={DialogueTrigger=127,TalkTime=3}] {"text":"<Team Flare Admin> Our plans haven't succeeded just yet! We cannot afford any careless mistakes!"}
 tellraw @s[scores={DialogueTrigger=127,TalkTime=12}] ["",{"text":"<"},{"text":"Team Flare Grunt","color":"red"},{"text":"> Who's got that flair? Team Flare! Yeah, we've got that flair! Team Flare!"}]
@@ -4359,9 +4359,9 @@ scoreboard players set @s[tag=Dialogue127] DialogueTrigger 0
 
 
 #Return Tps (when player leaves room)
-#tp @e[x=-2477,y=47,z=-940,dy=3,nbt=!{pixelmon:npc_trainer},score_StarterPick_min=1,score_StarterPick=1] -504 111 1284
-#tp @e[x=-2477,y=47,z=-940,dy=3,nbt=!{pixelmon:npc_trainer},score_StarterPick_min=2,score_StarterPick=2] -504 111 1286
-#tp @e[x=-2477,y=47,z=-940,dy=3,nbt=!{pixelmon:npc_trainer},score_StarterPick_min=3,score_StarterPick=3] -504 111 1288
+#tp @e[x=-2477,y=47,z=-940,dy=3,type=pixelmon:npc_trainer,score_StarterPick_min=1,score_StarterPick=1] -504 111 1284
+#tp @e[x=-2477,y=47,z=-940,dy=3,type=pixelmon:npc_trainer,score_StarterPick_min=2,score_StarterPick=2] -504 111 1286
+#tp @e[x=-2477,y=47,z=-940,dy=3,type=pixelmon:npc_trainer,score_StarterPick_min=3,score_StarterPick=3] -504 111 1288
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Shauna and Serean at door to Legendary Room
 #scoreboard players set @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue128,score_TalkTime=0] DialogueTrigger 128
@@ -4369,8 +4369,8 @@ scoreboard players set @s[tag=Dialogue127] DialogueTrigger 0
 #tp Serena and Shauna to door
 execute as @s[scores={DialogueTrigger=128,TalkTime=1}] run particle cloud -2424 28 -944 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=128,TalkTime=1}] run particle cloud -2431 28 -944 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=128,TalkTime=1}] run tp @e[x=-504,y=115,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] -2431 28 -944
-execute as @s[scores={DialogueTrigger=128,TalkTime=1}] run tp @e[x=-504,y=115,z=1288,dy=3,nbt=!{pixelmon:npc_chatting}] -2424 28 -944
+execute as @s[scores={DialogueTrigger=128,TalkTime=1}] run tp @e[x=-504,y=115,z=1284,dy=3,type=pixelmon:npc_chatting] -2431 28 -944
+execute as @s[scores={DialogueTrigger=128,TalkTime=1}] run tp @e[x=-504,y=115,z=1288,dy=3,type=pixelmon:npc_chatting] -2424 28 -944
 
 tellraw @s[scores={DialogueTrigger=128,TalkTime=5}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> It's an electronic lock. What should we do?"}]
 tellraw @s[scores={DialogueTrigger=128,TalkTime=12}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> This might help! It's a device that helps you when you're stuck on a puzzle."}]
@@ -4378,8 +4378,8 @@ tellraw @s[scores={DialogueTrigger=128,TalkTime=12}] ["",{"text":"<"},{"text":"S
 #tp Shauna to computer
 execute as @s[scores={DialogueTrigger=128,TalkTime=17}] run particle cloud -2431 28 -944 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=128,TalkTime=17}] run particle cloud -2434 28 -953 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=128,TalkTime=17}] run tp @e[x=-2431,y=27,z=-944,dy=3,nbt=!{pixelmon:npc_chatting}] -504 116 1284
-execute as @s[scores={DialogueTrigger=128,TalkTime=17}] run tp @e[x=-504,y=115,z=1286,dy=3,nbt=!{pixelmon:npc_chatting}] -2434 28 -953
+execute as @s[scores={DialogueTrigger=128,TalkTime=17}] run tp @e[x=-2431,y=27,z=-944,dy=3,type=pixelmon:npc_chatting] -504 116 1284
+execute as @s[scores={DialogueTrigger=128,TalkTime=17}] run tp @e[x=-504,y=115,z=1286,dy=3,type=pixelmon:npc_chatting] -2434 28 -953
 
 tellraw @s[scores={DialogueTrigger=128,TalkTime=21}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Clemont gave it to me!"}]
 tellraw @s[scores={DialogueTrigger=128,TalkTime=27}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> An electronic lock and a puzzle are the same sort of thing, right? \u266a"}]
@@ -4392,8 +4392,8 @@ tellraw @s[scores={DialogueTrigger=128,TalkTime=58}] ["",{"text":"<"},{"text":"S
 tellraw @s[scores={DialogueTrigger=128,TalkTime=66}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> The Legendary Pokémon is inside. Let's go help it!"}]
 
 #tp Shauna and Serena out
-execute as @s[scores={DialogueTrigger=128,TalkTime=75}] run tp @e[x=-2434,y=27,z=-953,dy=3,nbt=!{pixelmon:npc_chatting}] -504 116 1286
-execute as @s[scores={DialogueTrigger=128,TalkTime=75}] run tp @e[x=-2424,y=27,z=-944,dy=3,nbt=!{pixelmon:npc_chatting}] -504 116 1288
+execute as @s[scores={DialogueTrigger=128,TalkTime=75}] run tp @e[x=-2434,y=27,z=-953,dy=3,type=pixelmon:npc_chatting] -504 116 1286
+execute as @s[scores={DialogueTrigger=128,TalkTime=75}] run tp @e[x=-2424,y=27,z=-944,dy=3,type=pixelmon:npc_chatting] -504 116 1288
 execute as @s[scores={DialogueTrigger=128,TalkTime=75}] run particle cloud -2424 28 -944 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=128,TalkTime=75}] run particle cloud -2434 28 -953 2 2 2 1 100
 
@@ -4408,8 +4408,8 @@ scoreboard players set @s[tag=Dialogue128] DialogueTrigger 0
 #tp Shauna and Serena in
 execute as @s[scores={DialogueTrigger=129,TalkTime=1}] run particle cloud -2333 42 -998 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=129,TalkTime=1}] run particle cloud -2339 42 -998 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=129,TalkTime=1}] run tp @e[x=-504,y=125,z=1296,dy=3,nbt=!{pixelmon:npc_chatting}] -2333 42 -998
-execute as @s[scores={DialogueTrigger=129,TalkTime=1}] run tp @e[x=-504,y=125,z=1294,dy=3,nbt=!{pixelmon:npc_chatting}] -2339 42 -998
+execute as @s[scores={DialogueTrigger=129,TalkTime=1}] run tp @e[x=-504,y=125,z=1296,dy=3,type=pixelmon:npc_chatting] -2333 42 -998
+execute as @s[scores={DialogueTrigger=129,TalkTime=1}] run tp @e[x=-504,y=125,z=1294,dy=3,type=pixelmon:npc_chatting] -2339 42 -998
 
 #Spawns in Cacoon or Tree
 execute as @s[scores={DialogueTrigger=129,TalkTime=1,Xerneas=1..}] run summon armor_stand -2336 49 -1022 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:47s}],DisabledSlots:2039327}
@@ -4421,12 +4421,12 @@ tellraw @s[scores={DialogueTrigger=129,TalkTime=17,Xerneas=1..}] ["",{"text":"<"
 tellraw @s[scores={DialogueTrigger=129,TalkTime=17,Yveltal=1..}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Hey... Is that thing that looks like a cocoon the Legendary Pokémon? It doesn't look like it's alive, but..."}]
 
 #6 Team Flare Admins tp in
-execute as @s[scores={DialogueTrigger=129,TalkTime=26}] run tp @e[x=-504,y=120,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] -2342 42 -1007
-execute as @s[scores={DialogueTrigger=129,TalkTime=26}] run tp @e[x=-504,y=120,z=1286,dy=3,nbt=!{pixelmon:npc_chatting}] -2339 42 -1004
-execute as @s[scores={DialogueTrigger=129,TalkTime=26}] run tp @e[x=-504,y=120,z=1288,dy=3,nbt=!{pixelmon:npc_chatting}] -2336 42 -1012
-execute as @s[scores={DialogueTrigger=129,TalkTime=26}] run tp @e[x=-504,y=120,z=1290,dy=3,nbt=!{pixelmon:npc_chatting}] -2336 42 -1007
-execute as @s[scores={DialogueTrigger=129,TalkTime=26}] run tp @e[x=-504,y=120,z=1292,dy=3,nbt=!{pixelmon:npc_chatting}] -2333 42 -1004
-execute as @s[scores={DialogueTrigger=129,TalkTime=26}] run tp @e[x=-504,y=120,z=1294,dy=3,nbt=!{pixelmon:npc_chatting}] -2330 42 -1007
+execute as @s[scores={DialogueTrigger=129,TalkTime=26}] run tp @e[x=-504,y=120,z=1284,dy=3,type=pixelmon:npc_chatting] -2342 42 -1007
+execute as @s[scores={DialogueTrigger=129,TalkTime=26}] run tp @e[x=-504,y=120,z=1286,dy=3,type=pixelmon:npc_chatting] -2339 42 -1004
+execute as @s[scores={DialogueTrigger=129,TalkTime=26}] run tp @e[x=-504,y=120,z=1288,dy=3,type=pixelmon:npc_chatting] -2336 42 -1012
+execute as @s[scores={DialogueTrigger=129,TalkTime=26}] run tp @e[x=-504,y=120,z=1290,dy=3,type=pixelmon:npc_chatting] -2336 42 -1007
+execute as @s[scores={DialogueTrigger=129,TalkTime=26}] run tp @e[x=-504,y=120,z=1292,dy=3,type=pixelmon:npc_chatting] -2333 42 -1004
+execute as @s[scores={DialogueTrigger=129,TalkTime=26}] run tp @e[x=-504,y=120,z=1294,dy=3,type=pixelmon:npc_chatting] -2330 42 -1007
 
 execute as @s[scores={DialogueTrigger=129,TalkTime=25}] run particle cloud -2340 42 -1005 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=129,TalkTime=25}] run particle cloud -2332 42 -1005 2 2 2 1 100
@@ -4440,18 +4440,18 @@ tellraw @s[scores={DialogueTrigger=129,TalkTime=53}] ["",{"text":"<"},{"text":"S
 
 #Shauna tps out
 execute as @s[scores={DialogueTrigger=129,TalkTime=57}] run particle cloud -2339 42 -998 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=129,TalkTime=57}] run tp @e[x=-2339,y=41,z=-998,dy=3,nbt=!{pixelmon:npc_chatting}] -504 126 1294
+execute as @s[scores={DialogueTrigger=129,TalkTime=57}] run tp @e[x=-2339,y=41,z=-998,dy=3,type=pixelmon:npc_chatting] -504 126 1294
 
 #Leftmost Flare admin tps out
 execute as @s[scores={DialogueTrigger=129,TalkTime=60}] run particle cloud -2339 42 -1004 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=129,TalkTime=60}] run tp @e[x=-2339,y=41,z=-1004,dy=3,nbt=!{pixelmon:npc_chatting}] -504 121 1286
+execute as @s[scores={DialogueTrigger=129,TalkTime=60}] run tp @e[x=-2339,y=41,z=-1004,dy=3,type=pixelmon:npc_chatting] -504 121 1286
 
 tellraw @s[scores={DialogueTrigger=129,TalkTime=63}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Oh, Shauna... This again?"}]
 tellraw @s[scores={DialogueTrigger=129,TalkTime=70}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> "},{"selector":"@s"},{"text":"! You take care of things here! I'll protect Shauna!"}]
 
 #Serena tps out
 execute as @s[scores={DialogueTrigger=129,TalkTime=75}] run particle cloud -2333 42 -998 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=129,TalkTime=75}] run tp @e[x=-2333,y=41,z=-998,dy=3,nbt=!{pixelmon:npc_chatting}] -504 126 1296
+execute as @s[scores={DialogueTrigger=129,TalkTime=75}] run tp @e[x=-2333,y=41,z=-998,dy=3,type=pixelmon:npc_chatting] -504 126 1296
 
 tellraw @s[scores={DialogueTrigger=129,TalkTime=78}] ["",{"text":"<"},{"text":"Team Flare Admin","color":"red"},{"text":"> Make sure to take care of those runts that ran away!"}]
 tellraw @s[scores={DialogueTrigger=129,TalkTime=85}] ["",{"text":"<"},{"text":"Team Flare Admin","color":"red"},{"text":"> I should've expected as much from kids who made it clear down here."}]
@@ -4459,20 +4459,20 @@ tellraw @s[scores={DialogueTrigger=129,TalkTime=94}] ["",{"text":"<"},{"text":"T
 
 #Right Team Flare Grunt tps out
 execute as @s[scores={DialogueTrigger=129,TalkTime=100}] run particle cloud -2333 42 -1004 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=129,TalkTime=100}] run tp @e[x=-2333,y=41,z=-1004,dy=3,nbt=!{pixelmon:npc_chatting}] -504 121 1292
+execute as @s[scores={DialogueTrigger=129,TalkTime=100}] run tp @e[x=-2333,y=41,z=-1004,dy=3,type=pixelmon:npc_chatting] -504 121 1292
 
 tellraw @s[scores={DialogueTrigger=129,TalkTime=104}] ["",{"text":"<"},{"text":"Team Flare Admin","color":"red"},{"text":"> So, you really think you can beat us?"}]
 
 #swap in all four trainer admins, player can battle in any order
-execute as @s[scores={DialogueTrigger=129,TalkTime=107}] run tp @e[x=-2342,y=41,z=-1007,dy=3,nbt=!{pixelmon:npc_chatting}] -504 121 1284
-execute as @s[scores={DialogueTrigger=129,TalkTime=107}] run tp @e[x=-2336,y=41,z=-1012,dy=3,nbt=!{pixelmon:npc_chatting}] -504 121 1288
-execute as @s[scores={DialogueTrigger=129,TalkTime=107}] run tp @e[x=-2336,y=41,z=-1007,dy=3,nbt=!{pixelmon:npc_chatting}] -504 121 1290
-execute as @s[scores={DialogueTrigger=129,TalkTime=107}] run tp @e[x=-2330,y=41,z=-1007,dy=3,nbt=!{pixelmon:npc_chatting}] -504 121 1294
+execute as @s[scores={DialogueTrigger=129,TalkTime=107}] run tp @e[x=-2342,y=41,z=-1007,dy=3,type=pixelmon:npc_chatting] -504 121 1284
+execute as @s[scores={DialogueTrigger=129,TalkTime=107}] run tp @e[x=-2336,y=41,z=-1012,dy=3,type=pixelmon:npc_chatting] -504 121 1288
+execute as @s[scores={DialogueTrigger=129,TalkTime=107}] run tp @e[x=-2336,y=41,z=-1007,dy=3,type=pixelmon:npc_chatting] -504 121 1290
+execute as @s[scores={DialogueTrigger=129,TalkTime=107}] run tp @e[x=-2330,y=41,z=-1007,dy=3,type=pixelmon:npc_chatting] -504 121 1294
 
-execute as @s[scores={DialogueTrigger=129,TalkTime=107}] run tp @e[x=-504,y=125,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] -2342 42 -1007
-execute as @s[scores={DialogueTrigger=129,TalkTime=107}] run tp @e[x=-504,y=125,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] -2336 42 -1012
-execute as @s[scores={DialogueTrigger=129,TalkTime=107}] run tp @e[x=-504,y=125,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] -2336 42 -1007
-execute as @s[scores={DialogueTrigger=129,TalkTime=107}] run tp @e[x=-504,y=125,z=1290,dy=3,nbt=!{pixelmon:npc_trainer}] -2330 42 -1007
+execute as @s[scores={DialogueTrigger=129,TalkTime=107}] run tp @e[x=-504,y=125,z=1284,dy=3,type=pixelmon:npc_trainer] -2342 42 -1007
+execute as @s[scores={DialogueTrigger=129,TalkTime=107}] run tp @e[x=-504,y=125,z=1286,dy=3,type=pixelmon:npc_trainer] -2336 42 -1012
+execute as @s[scores={DialogueTrigger=129,TalkTime=107}] run tp @e[x=-504,y=125,z=1288,dy=3,type=pixelmon:npc_trainer] -2336 42 -1007
+execute as @s[scores={DialogueTrigger=129,TalkTime=107}] run tp @e[x=-504,y=125,z=1290,dy=3,type=pixelmon:npc_trainer] -2330 42 -1007
 
 tag @s[scores={DialogueTrigger=129,TalkTime=107..}] add Dialogue129
 scoreboard players set @s[tag=Dialogue129] TalkTime 0
@@ -4487,20 +4487,20 @@ scoreboard players set @s[tag=Dialogue129] DialogueTrigger 0
 #/tedit add LOSS /tag @pl add Admin4
 #/tedit add LOSS /tag @pl add Admin6
 
-#execute as @s[x=-2336,y=42,z=-1007,r=15,tag=Dialogue129,score_TalkTime=0] run execute as @s[tag=!Dialogue130] run tp @e[x=-504,y=125,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] -2342 42 -1007
-#execute as @s[x=-2336,y=42,z=-1007,r=15,tag=Dialogue129,score_TalkTime=0] run execute as @s[tag=!Dialogue130] run tp @e[x=-504,y=125,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] -2336 42 -1012
-#execute as @s[x=-2336,y=42,z=-1007,r=15,tag=Dialogue129,score_TalkTime=0] run execute as @s[tag=!Dialogue130] run tp @e[x=-504,y=125,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] -2336 42 -1007
-#execute as @s[x=-2336,y=42,z=-1007,r=15,tag=Dialogue129,score_TalkTime=0] run execute as @s[tag=!Dialogue130] run tp @e[x=-504,y=125,z=1290,dy=3,nbt=!{pixelmon:npc_trainer}] -2330 42 -1007
+#execute as @s[x=-2336,y=42,z=-1007,r=15,tag=Dialogue129,score_TalkTime=0] run execute as @s[tag=!Dialogue130] run tp @e[x=-504,y=125,z=1284,dy=3,type=pixelmon:npc_trainer] -2342 42 -1007
+#execute as @s[x=-2336,y=42,z=-1007,r=15,tag=Dialogue129,score_TalkTime=0] run execute as @s[tag=!Dialogue130] run tp @e[x=-504,y=125,z=1286,dy=3,type=pixelmon:npc_trainer] -2336 42 -1012
+#execute as @s[x=-2336,y=42,z=-1007,r=15,tag=Dialogue129,score_TalkTime=0] run execute as @s[tag=!Dialogue130] run tp @e[x=-504,y=125,z=1288,dy=3,type=pixelmon:npc_trainer] -2336 42 -1007
+#execute as @s[x=-2336,y=42,z=-1007,r=15,tag=Dialogue129,score_TalkTime=0] run execute as @s[tag=!Dialogue130] run tp @e[x=-504,y=125,z=1290,dy=3,type=pixelmon:npc_trainer] -2330 42 -1007
 
 tellraw @s[scores={DialogueTrigger=130,TalkTime=6}] ["",{"text":"<"},{"text":"Team Flare Admin","color":"red"},{"text":"> No way! This puts the \u201cno\u201d in no way!"}]
 tellraw @s[scores={DialogueTrigger=130,TalkTime=13}] ["",{"text":"<"},{"text":"Team Flare Admin","color":"red"},{"text":"> Contact Lysandre!"}]
 tellraw @s[scores={DialogueTrigger=130,TalkTime=19}] ["",{"text":"<"},{"text":"Team Flare Admin","color":"red"},{"text":"> Call for reinforcements!"}]
 
 #tp admins out of room
-execute as @s[scores={DialogueTrigger=130,TalkTime=25}] run tp @e[x=-2342,y=41,z=-1007,dy=3,nbt=!{pixelmon:npc_trainer}] -504 126 1284
-execute as @s[scores={DialogueTrigger=130,TalkTime=25}] run tp @e[x=-2336,y=41,z=-1012,dy=3,nbt=!{pixelmon:npc_trainer}] -504 126 1286
-execute as @s[scores={DialogueTrigger=130,TalkTime=25}] run tp @e[x=-2336,y=41,z=-1007,dy=3,nbt=!{pixelmon:npc_trainer}] -504 126 1288
-execute as @s[scores={DialogueTrigger=130,TalkTime=25}] run tp @e[x=-2330,y=41,z=-1007,dy=3,nbt=!{pixelmon:npc_trainer}] -504 126 1290
+execute as @s[scores={DialogueTrigger=130,TalkTime=25}] run tp @e[x=-2342,y=41,z=-1007,dy=3,type=pixelmon:npc_trainer] -504 126 1284
+execute as @s[scores={DialogueTrigger=130,TalkTime=25}] run tp @e[x=-2336,y=41,z=-1012,dy=3,type=pixelmon:npc_trainer] -504 126 1286
+execute as @s[scores={DialogueTrigger=130,TalkTime=25}] run tp @e[x=-2336,y=41,z=-1007,dy=3,type=pixelmon:npc_trainer] -504 126 1288
+execute as @s[scores={DialogueTrigger=130,TalkTime=25}] run tp @e[x=-2330,y=41,z=-1007,dy=3,type=pixelmon:npc_trainer] -504 126 1290
 
 execute as @s[scores={DialogueTrigger=130,TalkTime=24}] run particle cloud -2342 42 -1007 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=130,TalkTime=24}] run particle cloud -2336 42 -1012 2 2 2 1 100
@@ -4578,8 +4578,8 @@ execute as @s[scores={DialogueTrigger=132,TalkTime=1,Yveltal=1..}] run advanceme
 #tp Shauna and Serena in
 execute as @s[scores={DialogueTrigger=132,TalkTime=5}] run particle cloud -2333 42 -1008 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=132,TalkTime=5}] run particle cloud -2339 42 -1008 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=132,TalkTime=5}] run tp @e[x=-504,y=130,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] -2339 42 -1008
-execute as @s[scores={DialogueTrigger=132,TalkTime=5}] run tp @e[x=-504,y=130,z=1286,dy=3,nbt=!{pixelmon:npc_chatting}] -2333 42 -1008
+execute as @s[scores={DialogueTrigger=132,TalkTime=5}] run tp @e[x=-504,y=130,z=1284,dy=3,type=pixelmon:npc_chatting] -2339 42 -1008
+execute as @s[scores={DialogueTrigger=132,TalkTime=5}] run tp @e[x=-504,y=130,z=1286,dy=3,type=pixelmon:npc_chatting] -2333 42 -1008
 
 execute as @s[scores={DialogueTrigger=132,TalkTime=5}] run scoreboard players set @s click 1
 tellraw @s[scores={DialogueTrigger=132,TalkTime=7}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> What a relief... Now they can't use the ultimate weapon."}]
@@ -4589,7 +4589,7 @@ tellraw @s[scores={DialogueTrigger=132,TalkTime=33}] ["",{"text":"<"},{"text":".
 
 #tp Lysandre in
 execute as @s[scores={DialogueTrigger=132,TalkTime=40}] run particle cloud -2336 42 -997 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=132,TalkTime=40}] run tp @e[x=-504,y=130,z=1288,dy=3,nbt=!{pixelmon:npc_chatting}] -2336 42 -997
+execute as @s[scores={DialogueTrigger=132,TalkTime=40}] run tp @e[x=-504,y=130,z=1288,dy=3,type=pixelmon:npc_chatting] -2336 42 -997
 
 
 tellraw @s[scores={DialogueTrigger=132,TalkTime=43,Xerneas=1..}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> So THIS is the mighty Xerneas?!"}]
@@ -4604,8 +4604,8 @@ tellraw @s[scores={DialogueTrigger=132,TalkTime=98}] ["",{"text":"<"},{"text":"L
 tellraw @s[scores={DialogueTrigger=132,TalkTime=104}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> I, too, shall use the Mega Ring and Mega Stone that you researched during your travels."}]
 
 #Swap NPC
-execute as @s[scores={DialogueTrigger=132,TalkTime=111}] run tp @e[x=-2336,y=42,z=-997,dy=3,nbt=!{pixelmon:npc_chatting}] -504 131 1288
-execute as @s[scores={DialogueTrigger=132,TalkTime=111}] run tp @e[x=-504,y=130,z=1290,dy=3,nbt=!{pixelmon:npc_trainer}] -2336 42 -997
+execute as @s[scores={DialogueTrigger=132,TalkTime=111}] run tp @e[x=-2336,y=42,z=-997,dy=3,type=pixelmon:npc_chatting] -504 131 1288
+execute as @s[scores={DialogueTrigger=132,TalkTime=111}] run tp @e[x=-504,y=130,z=1290,dy=3,type=pixelmon:npc_trainer] -2336 42 -997
 
 ###execute as @a[scores={DialogueTrigger=132,TalkTime=112}] run pokebattle @s Lysandre132
 
@@ -4617,7 +4617,7 @@ scoreboard players set @s[tag=Dialogue132] DialogueTrigger 0
 #Lysandre Post-final-battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 133
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
-#execute as @s[x=-2336,y=42,z=-997,r=20,score_TalkTime=0,tag=!Dialogue133] run execute as @s[tag=Dialogue132] run tp @e[x=-504,y=130,z=1290,dy=3,nbt=!{pixelmon:npc_trainer}] -2336 42 -997
+#execute as @s[x=-2336,y=42,z=-997,r=20,score_TalkTime=0,tag=!Dialogue133] run execute as @s[tag=Dialogue132] run tp @e[x=-504,y=130,z=1290,dy=3,type=pixelmon:npc_trainer] -2336 42 -997
 
 tellraw @s[scores={DialogueTrigger=133,TalkTime=5}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> "},{"text":"Whaugh!","bold":true,"italic":true}]
 tellraw @s[scores={DialogueTrigger=133,TalkTime=11}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Um... Know what I think?"}]
@@ -4654,15 +4654,15 @@ tellraw @s[scores={DialogueTrigger=133,TalkTime=175}] ["",{"text":"<"},{"text":"
 #tp Serena and Shauna out
 execute as @s[scores={DialogueTrigger=133,TalkTime=180}] run particle cloud -2333 42 -1008 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=133,TalkTime=180}] run particle cloud -2339 42 -1008 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=133,TalkTime=180}] run tp @e[x=-2339,y=41,z=-1008,dy=3,nbt=!{pixelmon:npc_chatting}] -504 131 1284
-execute as @s[scores={DialogueTrigger=133,TalkTime=180}] run tp @e[x=-2333,y=41,z=-1008,dy=3,nbt=!{pixelmon:npc_chatting}] -504 131 1286
+execute as @s[scores={DialogueTrigger=133,TalkTime=180}] run tp @e[x=-2339,y=41,z=-1008,dy=3,type=pixelmon:npc_chatting] -504 131 1284
+execute as @s[scores={DialogueTrigger=133,TalkTime=180}] run tp @e[x=-2333,y=41,z=-1008,dy=3,type=pixelmon:npc_chatting] -504 131 1286
 
 #blinds player
 execute as @s[scores={DialogueTrigger=133,TalkTime=185}] run effect give @s minecraft:blindness 10 1 true
 execute as @s[scores={DialogueTrigger=133,TalkTime=185}] run playsound minecraft:entity.enderdragon.death ambient @s ~ ~ ~ 1000 1 1
 
 #tp Lysandre out
-execute as @s[scores={DialogueTrigger=133,TalkTime=186}] run tp @e[x=-2336,y=41,z=-997,dy=3,nbt=!{pixelmon:npc_trainer}] -504 131 1290
+execute as @s[scores={DialogueTrigger=133,TalkTime=186}] run tp @e[x=-2336,y=41,z=-997,dy=3,type=pixelmon:npc_trainer] -504 131 1290
 
 #tps player to Geosenge Town
 execute as @s[scores={DialogueTrigger=133,TalkTime=190}] run tp @s -410 109 2014 180 11
@@ -4679,12 +4679,12 @@ scoreboard players set @s[tag=Dialogue133] DialogueTrigger 0
 #scoreboard players set @a[x=-410,y=109,z=2014,r=20,tag=!Dialogue134,score_TalkTime=0] DialogueTrigger 134
 
 #tp in everyone
-execute as @s[scores={DialogueTrigger=134,TalkTime=1}] run tp @e[x=-504,y=135,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] -415 109 2012
-execute as @s[scores={DialogueTrigger=134,TalkTime=1}] run tp @e[x=-504,y=135,z=1286,dy=3,nbt=!{pixelmon:npc_chatting}] -417 109 2015
-execute as @s[scores={DialogueTrigger=134,TalkTime=1}] run tp @e[x=-504,y=135,z=1288,dy=3,nbt=!{pixelmon:npc_chatting}] -404 109 2018
-execute as @s[scores={DialogueTrigger=134,TalkTime=1}] run tp @e[x=-504,y=135,z=1290,dy=3,nbt=!{pixelmon:npc_chatting}] -413 109 2020
-execute as @s[scores={DialogueTrigger=134,TalkTime=1}] run tp @e[x=-504,y=135,z=1292,dy=3,nbt=!{pixelmon:npc_chatting}] -404 109 2015
-execute as @s[scores={DialogueTrigger=134,TalkTime=1}] run tp @e[x=-504,y=135,z=1294,dy=3,nbt=!{pixelmon:npc_chatting}] -407 109 2019
+execute as @s[scores={DialogueTrigger=134,TalkTime=1}] run tp @e[x=-504,y=135,z=1284,dy=3,type=pixelmon:npc_chatting] -415 109 2012
+execute as @s[scores={DialogueTrigger=134,TalkTime=1}] run tp @e[x=-504,y=135,z=1286,dy=3,type=pixelmon:npc_chatting] -417 109 2015
+execute as @s[scores={DialogueTrigger=134,TalkTime=1}] run tp @e[x=-504,y=135,z=1288,dy=3,type=pixelmon:npc_chatting] -404 109 2018
+execute as @s[scores={DialogueTrigger=134,TalkTime=1}] run tp @e[x=-504,y=135,z=1290,dy=3,type=pixelmon:npc_chatting] -413 109 2020
+execute as @s[scores={DialogueTrigger=134,TalkTime=1}] run tp @e[x=-504,y=135,z=1292,dy=3,type=pixelmon:npc_chatting] -404 109 2015
+execute as @s[scores={DialogueTrigger=134,TalkTime=1}] run tp @e[x=-504,y=135,z=1294,dy=3,type=pixelmon:npc_chatting] -407 109 2019
 
 tellraw @s[scores={DialogueTrigger=134,TalkTime=4}] ["",{"text":"<"},{"text":"...","color":"red"},{"text":"> Phew... I'm so glad you're all safe!"}]
 tellraw @s[scores={DialogueTrigger=134,TalkTime=12}] ["",{"text":"<"},{"text":"...","color":"red"},{"text":"> I really respect the courage and kindness all of you showed."}]
@@ -4702,11 +4702,11 @@ tellraw @s[scores={DialogueTrigger=134,TalkTime=107}] ["",{"text":"<"},{"text":"
 tellraw @s[scores={DialogueTrigger=134,TalkTime=116}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Let's go back to Anistar City and start over from where we left off!"}]
 
 #everyone but Serena tps out
-execute as @s[scores={DialogueTrigger=134,TalkTime=123}] run tp @e[x=-415,y=108,z=2012,dy=3,nbt=!{pixelmon:npc_chatting}] -504 136 1284
-execute as @s[scores={DialogueTrigger=134,TalkTime=123}] run tp @e[x=-417,y=108,z=2015,dy=3,nbt=!{pixelmon:npc_chatting}] -504 136 1286
-execute as @s[scores={DialogueTrigger=134,TalkTime=123}] run tp @e[x=-404,y=108,z=2018,dy=3,nbt=!{pixelmon:npc_chatting}] -504 136 1288
-execute as @s[scores={DialogueTrigger=134,TalkTime=123}] run tp @e[x=-404,y=108,z=2015,dy=3,nbt=!{pixelmon:npc_chatting}] -504 136 1292
-execute as @s[scores={DialogueTrigger=134,TalkTime=123}] run tp @e[x=-407,y=108,z=2019,dy=3,nbt=!{pixelmon:npc_chatting}] -504 136 1294
+execute as @s[scores={DialogueTrigger=134,TalkTime=123}] run tp @e[x=-415,y=108,z=2012,dy=3,type=pixelmon:npc_chatting] -504 136 1284
+execute as @s[scores={DialogueTrigger=134,TalkTime=123}] run tp @e[x=-417,y=108,z=2015,dy=3,type=pixelmon:npc_chatting] -504 136 1286
+execute as @s[scores={DialogueTrigger=134,TalkTime=123}] run tp @e[x=-404,y=108,z=2018,dy=3,type=pixelmon:npc_chatting] -504 136 1288
+execute as @s[scores={DialogueTrigger=134,TalkTime=123}] run tp @e[x=-404,y=108,z=2015,dy=3,type=pixelmon:npc_chatting] -504 136 1292
+execute as @s[scores={DialogueTrigger=134,TalkTime=123}] run tp @e[x=-407,y=108,z=2019,dy=3,type=pixelmon:npc_chatting] -504 136 1294
 
 execute as @s[scores={DialogueTrigger=134,TalkTime=123}] run particle cloud -415 109 2012 2 2 2 1 50
 execute as @s[scores={DialogueTrigger=134,TalkTime=123}] run particle cloud -417 109 2015 2 2 2 1 50
@@ -4720,11 +4720,11 @@ tellraw @s[scores={DialogueTrigger=134,TalkTime=145}] ["",{"text":"<"},{"text":"
 
 #Serena tps out
 execute as @s[scores={DialogueTrigger=134,TalkTime=150}] run particle cloud -413 109 2020 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=134,TalkTime=150}] run tp @e[x=-413,y=108,z=2020,dy=3,nbt=!{pixelmon:npc_chatting}] -504 136 1290
+execute as @s[scores={DialogueTrigger=134,TalkTime=150}] run tp @e[x=-413,y=108,z=2020,dy=3,type=pixelmon:npc_chatting] -504 136 1290
 
 #Az tps in
 execute as @s[scores={DialogueTrigger=134,TalkTime=153}] run particle cloud -410 109 2007 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=134,TalkTime=153}] run tp @e[x=-504,y=135,z=1296,dy=3,nbt=!{pixelmon:npc_chatting}] -410 109 2007
+execute as @s[scores={DialogueTrigger=134,TalkTime=153}] run tp @e[x=-504,y=135,z=1296,dy=3,type=pixelmon:npc_chatting] -410 109 2007
 
 tellraw @s[scores={DialogueTrigger=134,TalkTime=156}] {"text":"<Az> A long, long time ago. A very long time ago."}
 tellraw @s[scores={DialogueTrigger=134,TalkTime=163}] {"text":"<Az> The man made an ultimate weapon."}
@@ -4740,7 +4740,7 @@ tellraw @s[scores={DialogueTrigger=134,TalkTime=226}] {"text":"<Az> Where is it 
 
 #tps Az out
 execute as @s[scores={DialogueTrigger=134,TalkTime=233}] run particle cloud -410 109 2007 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=134,TalkTime=233}] run tp @e[x=-410,y=108,z=2007,dy=3,nbt=!{pixelmon:npc_chatting}] -504 136 1296
+execute as @s[scores={DialogueTrigger=134,TalkTime=233}] run tp @e[x=-410,y=108,z=2007,dy=3,type=pixelmon:npc_chatting] -504 136 1296
 
 tag @s[scores={DialogueTrigger=134,TalkTime=233..}] add Dialogue134
 scoreboard players set @s[tag=Dialogue134] TalkTime 0
@@ -4749,13 +4749,13 @@ scoreboard players set @s[tag=Dialogue134] DialogueTrigger 0
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Commands that reset the legendary if not caught
 #execute as @s[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue132] run testfor @s[tag=Dialogue131]
-#!testfor @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,nbt=!{pixelmon:pixelmon}] {OwnerUUID:""}
+#!testfor @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,type=pixelmon:pixelmon] {OwnerUUID:""}
 
 #execute as @s[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue132] run tellraw @s[tag=Dialogue131] {"text":"Legendary Pokemon has been reset! Catch it to continue the story!","italic":true,"color":"gray"}
 #execute as @s[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue132] run tag @s[tag=Dialogue131] remove Dialogue131
 
 #tells a message if player is in the outside of chamber
-#testfor @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,nbt=!{pixelmon:pixelmon}] {OwnerUUID:""}
+#testfor @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,type=pixelmon:pixelmon] {OwnerUUID:""}
 #execute as @s[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue132] run testfor @s[tag=Dialogue131]
 
 #execute as @s[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=Dialogue131] run tellraw @s[tag=!Dialogue132] {"text":"Legendary detected in the chamber! Catch it to continue the story!","italic":true,"color":"gray"}
@@ -4767,7 +4767,7 @@ scoreboard players set @s[tag=Dialogue134] DialogueTrigger 0
 tellraw @s[scores={DialogueTrigger=135,TalkTime=1}] ["",{"text":"<"},{"text":"...","color":"aqua"},{"text":"> Hello..."}]
 
 #Sycamore tps in
-execute as @s[scores={DialogueTrigger=135,TalkTime=4}] run tp @e[x=-504,y=140,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] 1501 101 253
+execute as @s[scores={DialogueTrigger=135,TalkTime=4}] run tp @e[x=-504,y=140,z=1284,dy=3,type=pixelmon:npc_chatting] 1501 101 253
 execute as @s[scores={DialogueTrigger=135,TalkTime=4}] run particle cloud 1501 101 253 2 2 2 1 100
 
 execute as @s[scores={DialogueTrigger=135,TalkTime=4}] run scoreboard players set @s click 1
@@ -4787,8 +4787,8 @@ tellraw @s[scores={DialogueTrigger=135,TalkTime=113}] ["",{"text":"<"},{"text":"
 tellraw @s[scores={DialogueTrigger=135,TalkTime=120}] ["",{"text":"<"},{"text":"Sycamore","color":"aqua"},{"text":"> I want you and your Pokémon to take everything you learned from your journey and hit me with your very best shot!"}]
 
 #Swap out Sycamore NPC
-execute as @s[scores={DialogueTrigger=135,TalkTime=125}] run tp @e[x=-504,y=140,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] 1501 101 253
-execute as @s[scores={DialogueTrigger=135,TalkTime=125}] run tp @e[x=1501,y=100,z=253,dy=3,nbt=!{pixelmon:npc_chatting}] -504 141 1284
+execute as @s[scores={DialogueTrigger=135,TalkTime=125}] run tp @e[x=-504,y=140,z=1286,dy=3,type=pixelmon:npc_trainer] 1501 101 253
+execute as @s[scores={DialogueTrigger=135,TalkTime=125}] run tp @e[x=1501,y=100,z=253,dy=3,type=pixelmon:npc_chatting] -504 141 1284
 
 ###execute as @a[scores={DialogueTrigger=135,TalkTime=131}] run pokebattle @s Sycamore135
 
@@ -4800,7 +4800,7 @@ scoreboard players set @s[tag=Dialogue135] DialogueTrigger 0
 #Sycamore Couriway trainer post-battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 136
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
-#execute as @s[x=1501,y=101,z=253,r=10,tag=Dialogue135,score_TalkTime=0] run execute as @s[tag=Dialogue!136] run tp @e[x=-504,y=140,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] 1501 101 253
+#execute as @s[x=1501,y=101,z=253,r=10,tag=Dialogue135,score_TalkTime=0] run execute as @s[tag=Dialogue!136] run tp @e[x=-504,y=140,z=1286,dy=3,type=pixelmon:npc_trainer] 1501 101 253
 
 #Resume Sycamore's theme
 tellraw @s[scores={DialogueTrigger=136,TalkTime=5}] ["",{"text":"<"},{"text":"Sycamore","color":"aqua"},{"text":"> The strength you've found is simply marvelous! And..."}]
@@ -4810,7 +4810,7 @@ tellraw @s[scores={DialogueTrigger=136,TalkTime=27}] ["",{"text":"<"},{"text":"S
 tellraw @s[scores={DialogueTrigger=136,TalkTime=35}] ["",{"text":"<"},{"text":"Sycamore","color":"aqua"},{"text":"> Well, I'll be off then! I have many preparations I must attend to!"}]
 tellraw @s[scores={DialogueTrigger=136,TalkTime=44}] ["",{"text":"<"},{"text":"Sycamore","color":"aqua"},{"text":"> I have a little surprise planned for all of you to thank you for fighting Team Flare and saving Kalos!"}]
 
-execute as @s[scores={DialogueTrigger=136,TalkTime=55}] run tp @e[x=1501,y=100,z=253,dy=3,nbt=!{pixelmon:npc_trainer}] -504 141 1286
+execute as @s[scores={DialogueTrigger=136,TalkTime=55}] run tp @e[x=1501,y=100,z=253,dy=3,type=pixelmon:npc_trainer] -504 141 1286
 execute as @s[scores={DialogueTrigger=136,TalkTime=55}] run particle cloud 1501 101 253 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=136,TalkTime=55}] run scoreboard players set @s click 1
 
@@ -4836,17 +4836,17 @@ scoreboard players set @s[tag=Dialogue136] DialogueTrigger 0
 #scoreboard players set @a[x=1452,y=97,z=489,dx=11,dy=10,dz=6,tag=!Dialogue137] DialogueTrigger 137
 
 #Tags Shauna NPCs
-execute as @s[scores={DialogueTrigger=137,TalkTime=2}] run scoreboard players set @e[x=-504,y=145,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 1
-execute as @s[scores={DialogueTrigger=137,TalkTime=2}] run scoreboard players set @e[x=-504,y=145,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 2
-execute as @s[scores={DialogueTrigger=137,TalkTime=2}] run scoreboard players set @e[x=-504,y=145,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 3
+execute as @s[scores={DialogueTrigger=137,TalkTime=2}] run scoreboard players set @e[x=-504,y=145,z=1284,dy=3,type=pixelmon:npc_trainer] StarterPick 1
+execute as @s[scores={DialogueTrigger=137,TalkTime=2}] run scoreboard players set @e[x=-504,y=145,z=1286,dy=3,type=pixelmon:npc_trainer] StarterPick 2
+execute as @s[scores={DialogueTrigger=137,TalkTime=2}] run scoreboard players set @e[x=-504,y=145,z=1288,dy=3,type=pixelmon:npc_trainer] StarterPick 3
 
 tellraw @s[scores={DialogueTrigger=137,TalkTime=1}] ["",{"text":"<"},{"text":"...","color":"light_purple"},{"text":"> "},{"selector":"@s"},{"text":"!"}]
 
 #tps Shauna in
 execute as @s[scores={DialogueTrigger=137,TalkTime=3}] run particle cloud 1448 98 492 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=137,TalkTime=3,StarterPick=1}] run tp @e[x=-504,y=145,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] 1448 98 492
-execute as @s[scores={DialogueTrigger=137,TalkTime=3,StarterPick=2}] run tp @e[x=-504,y=145,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] 1448 98 492
-execute as @s[scores={DialogueTrigger=137,TalkTime=3,StarterPick=3}] run tp @e[x=-504,y=145,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] 1448 98 492
+execute as @s[scores={DialogueTrigger=137,TalkTime=3,StarterPick=1}] run tp @e[x=-504,y=145,z=1284,dy=3,type=pixelmon:npc_trainer] 1448 98 492
+execute as @s[scores={DialogueTrigger=137,TalkTime=3,StarterPick=2}] run tp @e[x=-504,y=145,z=1286,dy=3,type=pixelmon:npc_trainer] 1448 98 492
+execute as @s[scores={DialogueTrigger=137,TalkTime=3,StarterPick=3}] run tp @e[x=-504,y=145,z=1288,dy=3,type=pixelmon:npc_trainer] 1448 98 492
 
 tellraw @s[scores={DialogueTrigger=137,TalkTime=6}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Hey, do you know what's about to happen?"}]
 tellraw @s[scores={DialogueTrigger=137,TalkTime=14}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> We're going to battle, silly! We ARE Pokémon Trainers, after all! \u266a"}]
@@ -4863,9 +4863,9 @@ scoreboard players set @s[tag=Dialogue137] DialogueTrigger 0
 #Shauna Route 19 bridge post-battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 138
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
-#execute as @e[x=1448,y=98,z=492,r=10,score_TalkTime=0,score_StarterPick_min=1,score_StarterPick=1,tag=Dialogue137] run execute as @s[tag=!Dialogue138] run tp @e[x=-504,y=145,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] 1448 98 492
-#execute as @e[x=1448,y=98,z=492,r=10,score_TalkTime=0,score_StarterPick_min=2,score_StarterPick=2,tag=Dialogue137] run execute as @s[tag=!Dialogue138] run tp @e[x=-504,y=145,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] 1448 98 492
-#execute as @e[x=1448,y=98,z=492,r=10,score_TalkTime=0,score_StarterPick_min=3,score_StarterPick=3,tag=Dialogue137] run execute as @s[tag=!Dialogue138] run tp @e[x=-504,y=145,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] 1448 98 492
+#execute as @e[x=1448,y=98,z=492,r=10,score_TalkTime=0,score_StarterPick_min=1,score_StarterPick=1,tag=Dialogue137] run execute as @s[tag=!Dialogue138] run tp @e[x=-504,y=145,z=1284,dy=3,type=pixelmon:npc_trainer] 1448 98 492
+#execute as @e[x=1448,y=98,z=492,r=10,score_TalkTime=0,score_StarterPick_min=2,score_StarterPick=2,tag=Dialogue137] run execute as @s[tag=!Dialogue138] run tp @e[x=-504,y=145,z=1286,dy=3,type=pixelmon:npc_trainer] 1448 98 492
+#execute as @e[x=1448,y=98,z=492,r=10,score_TalkTime=0,score_StarterPick_min=3,score_StarterPick=3,tag=Dialogue137] run execute as @s[tag=!Dialogue138] run tp @e[x=-504,y=145,z=1288,dy=3,type=pixelmon:npc_trainer] 1448 98 492
 
 tellraw @s[scores={DialogueTrigger=138,TalkTime=5}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> That reminded me of our battle in Aquacorde Town!"}]
 tellraw @s[scores={DialogueTrigger=138,TalkTime=13}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> That was the first time for both of us to battle with our Pokémon!"}]
@@ -4874,8 +4874,8 @@ tellraw @s[scores={DialogueTrigger=138,TalkTime=21}] ["",{"text":"<...> Hello, "
 #tp Trevor and Tierno in
 execute as @s[scores={DialogueTrigger=138,TalkTime=24}] run particle cloud 1451 98 490 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=138,TalkTime=24}] run particle cloud 1451 98 494 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=138,TalkTime=24}] run tp @e[x=-504,y=145,z=1294,dy=3,nbt=!{pixelmon:npc_chatting}] 1451 98 490
-execute as @s[scores={DialogueTrigger=138,TalkTime=24}] run tp @e[x=-504,y=145,z=1296,dy=3,nbt=!{pixelmon:npc_chatting}] 1451 98 494
+execute as @s[scores={DialogueTrigger=138,TalkTime=24}] run tp @e[x=-504,y=145,z=1294,dy=3,type=pixelmon:npc_chatting] 1451 98 490
+execute as @s[scores={DialogueTrigger=138,TalkTime=24}] run tp @e[x=-504,y=145,z=1296,dy=3,type=pixelmon:npc_chatting] 1451 98 494
 
 tellraw @s[scores={DialogueTrigger=138,TalkTime=28}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> What are you two up to?"}]
 tellraw @s[scores={DialogueTrigger=138,TalkTime=35}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Nothing big. How about you guys?"}]
@@ -4885,8 +4885,8 @@ tellraw @s[scores={DialogueTrigger=138,TalkTime=59}] ["",{"text":"<"},{"text":"T
 tellraw @s[scores={DialogueTrigger=138,TalkTime=66}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> Oh, uh...sorry to just throw that at you..."}]
 
 #swap out Tierno npc for Tierno trainer
-execute as @s[scores={DialogueTrigger=138,TalkTime=71}] run tp @e[x=1451,y=97,z=494,dy=3,nbt=!{pixelmon:npc_chatting}] -504 146 1296
-execute as @s[scores={DialogueTrigger=138,TalkTime=71}] run tp @e[x=-504,y=145,z=1292,dy=3,nbt=!{pixelmon:npc_trainer}] 1451 98 494
+execute as @s[scores={DialogueTrigger=138,TalkTime=71}] run tp @e[x=1451,y=97,z=494,dy=3,type=pixelmon:npc_chatting] -504 146 1296
+execute as @s[scores={DialogueTrigger=138,TalkTime=71}] run tp @e[x=-504,y=145,z=1292,dy=3,type=pixelmon:npc_trainer] 1451 98 494
 ###execute as @a[scores={DialogueTrigger=138,TalkTime=71}] run pokebattle @s Tierno138
 
 tag @s[scores={DialogueTrigger=138,TalkTime=71..}] add Dialogue138
@@ -4897,7 +4897,7 @@ scoreboard players set @s[tag=Dialogue138] DialogueTrigger 0
 #Friends Route 19 bridge post-Tierno-battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 139
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
-#execute as @e[x=1448,y=98,z=492,r=10,score_TalkTime=0,tag=Dialogue138] run execute as @s[tag=!Dialogue139] run tp @e[x=-504,y=145,z=1292,dy=3,nbt=!{pixelmon:npc_trainer}] 1451 98 494
+#execute as @e[x=1448,y=98,z=492,r=10,score_TalkTime=0,tag=Dialogue138] run execute as @s[tag=!Dialogue139] run tp @e[x=-504,y=145,z=1292,dy=3,type=pixelmon:npc_trainer] 1451 98 494
 
 tellraw @s[scores={DialogueTrigger=139,TalkTime=5}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Wow! Tierny asking someone to battle? What's up with that?"}]
 tellraw @s[scores={DialogueTrigger=139,TalkTime=13}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> Geosenge Town made me think..."}]
@@ -4912,8 +4912,8 @@ tellraw @s[scores={DialogueTrigger=139,TalkTime=75}] ["",{"text":"<"},{"text":"T
 tellraw @s[scores={DialogueTrigger=139,TalkTime=83}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> But this time, it won't be about the Pokédex. It will be a Pokémon battle!"}]
 
 #Swap out trevor npc for trevor trainer
-execute as @s[scores={DialogueTrigger=139,TalkTime=85}] run tp @e[x=1451,y=97,z=490,dy=3,nbt=!{pixelmon:npc_chatting}] -504 146 1294
-execute as @s[scores={DialogueTrigger=139,TalkTime=85}] run tp @e[x=-504,y=145,z=1290,dy=3,nbt=!{pixelmon:npc_trainer}] 1451 98 490
+execute as @s[scores={DialogueTrigger=139,TalkTime=85}] run tp @e[x=1451,y=97,z=490,dy=3,type=pixelmon:npc_chatting] -504 146 1294
+execute as @s[scores={DialogueTrigger=139,TalkTime=85}] run tp @e[x=-504,y=145,z=1290,dy=3,type=pixelmon:npc_trainer] 1451 98 490
 ###execute as @a[scores={DialogueTrigger=139,TalkTime=90}] run pokebattle @s Trevor139
 
 tag @s[scores={DialogueTrigger=139,TalkTime=90..}] add Dialogue139
@@ -4924,7 +4924,7 @@ scoreboard players set @s[tag=Dialogue139] DialogueTrigger 0
 #Friends Route 19 bridge post-Trevor-battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 140
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
-#execute as @e[x=1448,y=98,z=492,r=10,score_TalkTime=0,tag=Dialogue139] run execute as @s[tag=!Dialogue140] run tp @e[x=-504,y=145,z=1290,dy=3,nbt=!{pixelmon:npc_trainer}] 1451 98 490
+#execute as @e[x=1448,y=98,z=492,r=10,score_TalkTime=0,tag=Dialogue139] run execute as @s[tag=!Dialogue140] run tp @e[x=-504,y=145,z=1290,dy=3,type=pixelmon:npc_trainer] 1451 98 490
 
 #play friendsforever music
 
@@ -4940,8 +4940,8 @@ tellraw @s[scores={DialogueTrigger=140,TalkTime=68}] ["",{"text":"<"},{"text":"T
 #Trevor and Tierno tp out
 execute as @s[scores={DialogueTrigger=140,TalkTime=75}] run particle cloud 1451 98 490 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=140,TalkTime=75}] run particle cloud 1451 98 494 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=140,TalkTime=75}] run tp @e[x=1451,y=97,z=494,dy=3,nbt=!{pixelmon:npc_trainer}] -504 146 1292
-execute as @s[scores={DialogueTrigger=140,TalkTime=75}] run tp @e[x=1451,y=97,z=490,dy=3,nbt=!{pixelmon:npc_trainer}] -504 146 1290
+execute as @s[scores={DialogueTrigger=140,TalkTime=75}] run tp @e[x=1451,y=97,z=494,dy=3,type=pixelmon:npc_trainer] -504 146 1292
+execute as @s[scores={DialogueTrigger=140,TalkTime=75}] run tp @e[x=1451,y=97,z=490,dy=3,type=pixelmon:npc_trainer] -504 146 1290
 
 tellraw @s[scores={DialogueTrigger=140,TalkTime=78}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> I'm so glad I went on a journey."}]
 tellraw @s[scores={DialogueTrigger=140,TalkTime=85}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> I made some great friends."}]
@@ -4956,9 +4956,9 @@ tellraw @s[scores={DialogueTrigger=140,TalkTime=129}] ["",{"text":"<"},{"text":"
 
 #tp Shauna off
 execute as @s[scores={DialogueTrigger=140,TalkTime=135}] run particle cloud 1448 98 492 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=140,TalkTime=135}] run tp @e[x=1448,y=97,z=492,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=1}] -504 146 1284
-execute as @s[scores={DialogueTrigger=140,TalkTime=135}] run tp @e[x=1448,y=97,z=492,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=2}] -504 146 1286
-execute as @s[scores={DialogueTrigger=140,TalkTime=135}] run tp @e[x=1448,y=97,z=492,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=3}] -504 146 1288
+execute as @s[scores={DialogueTrigger=140,TalkTime=135}] run tp @e[x=1448,y=97,z=492,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=1}] -504 146 1284
+execute as @s[scores={DialogueTrigger=140,TalkTime=135}] run tp @e[x=1448,y=97,z=492,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=2}] -504 146 1286
+execute as @s[scores={DialogueTrigger=140,TalkTime=135}] run tp @e[x=1448,y=97,z=492,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=3}] -504 146 1288
 execute as @s[scores={DialogueTrigger=140,TalkTime=135}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=140,TalkTime=135..}] add Dialogue140
@@ -4970,7 +4970,7 @@ scoreboard players set @s[tag=Dialogue140] DialogueTrigger 0
 #execute as @s[x=951,y=93,z=664,r=20,tag=!Wulfric] run scoreboard players set @s[tag=Dialogue140] DialogueTrigger 141
 
 #tp Wulfric in
-execute as @s[scores={DialogueTrigger=141,TalkTime=1}] run tp @e[x=-504,y=150,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] 951 93 664
+execute as @s[scores={DialogueTrigger=141,TalkTime=1}] run tp @e[x=-504,y=150,z=1284,dy=3,type=pixelmon:npc_chatting] 951 93 664
 execute as @s[scores={DialogueTrigger=141,TalkTime=1}] run particle cloud 951 93 664 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=141,TalkTime=3}] {"text":"<...> You know what this place is?"}
@@ -4989,7 +4989,7 @@ tellraw @s[scores={DialogueTrigger=141,TalkTime=100}] {"text":"<Wulfric> I'll be
 tellraw @s[scores={DialogueTrigger=141,TalkTime=107}] {"text":"<Wulfric> Before you come by, I think it would do you good to spend some time with the Pokémon here."}
 
 #tp Wulfric out
-execute as @s[scores={DialogueTrigger=141,TalkTime=117}] run tp @e[x=951,y=92,z=664,dy=3,nbt=!{pixelmon:npc_chatting}] -504 151 1284
+execute as @s[scores={DialogueTrigger=141,TalkTime=117}] run tp @e[x=951,y=92,z=664,dy=3,type=pixelmon:npc_chatting] -504 151 1284
 execute as @s[scores={DialogueTrigger=141,TalkTime=117}] run particle cloud 951 93 664 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=141,TalkTime=117..}] add Dialogue141
@@ -5002,7 +5002,7 @@ scoreboard players set @s[tag=Dialogue141] DialogueTrigger 0
 
 #tp Gym Guide
 execute as @s[scores={DialogueTrigger=143,TalkTime=1}] run particle cloud 1143 96 490 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=143,TalkTime=1}] run tp @e[x=-504,y=155,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] 1143 96 490
+execute as @s[scores={DialogueTrigger=143,TalkTime=1}] run tp @e[x=-504,y=155,z=1284,dy=3,type=pixelmon:npc_chatting] 1143 96 490
 
 tellraw @s[scores={DialogueTrigger=143,TalkTime=3}] ["",{"text":"<"},{"text":"Gym Guide","color":"gray"},{"text":"> There's the future Champ I know and love!"}]
 tellraw @s[scores={DialogueTrigger=143,TalkTime=10}] ["",{"text":"<"},{"text":"Gym Guide","color":"gray"},{"text":"> Looks like you trumped our ol' Gym Leader!"}]
@@ -5012,7 +5012,7 @@ tellraw @s[scores={DialogueTrigger=143,TalkTime=31}] ["",{"text":"<"},{"text":"G
 
 #Wulfric tps in
 execute as @s[scores={DialogueTrigger=143,TalkTime=38}] run particle cloud 1146 96 490 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=143,TalkTime=38}] run tp @e[x=-504,y=155,z=1286,dy=3,nbt=!{pixelmon:npc_chatting}] 1146 96 490
+execute as @s[scores={DialogueTrigger=143,TalkTime=38}] run tp @e[x=-504,y=155,z=1286,dy=3,type=pixelmon:npc_chatting] 1146 96 490
 
 tellraw @s[scores={DialogueTrigger=143,TalkTime=41}] {"text":"<Wulfric> You know what? You have all the Gym Badges now, so there's really only one thing left to do..."}
 tellraw @s[scores={DialogueTrigger=143,TalkTime=51}] {"text":"<Wulfric> It's time you headed off to the Pokémon League!"}
@@ -5021,8 +5021,8 @@ tellraw @s[scores={DialogueTrigger=143,TalkTime=58}] {"text":"<Wulfric> Listen u
 #tp Wulfric and Gym Guy out
 execute as @s[scores={DialogueTrigger=143,TalkTime=68}] run particle cloud 1143 96 490 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=143,TalkTime=68}] run particle cloud 1146 96 490 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=143,TalkTime=68}] run tp @e[x=1143,y=95,z=490,dy=3,nbt=!{pixelmon:npc_chatting}] -504 156 1284
-execute as @s[scores={DialogueTrigger=143,TalkTime=68}] run tp @e[x=1146,y=95,z=490,dy=3,nbt=!{pixelmon:npc_chatting}] -504 156 1286
+execute as @s[scores={DialogueTrigger=143,TalkTime=68}] run tp @e[x=1143,y=95,z=490,dy=3,type=pixelmon:npc_chatting] -504 156 1284
+execute as @s[scores={DialogueTrigger=143,TalkTime=68}] run tp @e[x=1146,y=95,z=490,dy=3,type=pixelmon:npc_chatting] -504 156 1286
 
 tag @s[scores={DialogueTrigger=143,TalkTime=68..}] add Dialogue143
 scoreboard players set @s[tag=Dialogue143] TalkTime 0
@@ -5039,8 +5039,8 @@ tellraw @s[scores={DialogueTrigger=144,TalkTime=19}] {"text":"<Ace Trainer> Your
 tellraw @s[scores={DialogueTrigger=144,TalkTime=29}] {"text":"<Ace Trainer> Well then, allow me to test your abilities."}
 
 #Swap NPCs
-execute as @s[scores={DialogueTrigger=144,TalkTime=34}] run tp @e[x=-504,y=160,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] 694 106 396
-execute as @s[scores={DialogueTrigger=144,TalkTime=34}] run tp @e[x=694,y=105,z=396,dy=3,nbt=!{pixelmon:npc_chatting}] -504 161 1284
+execute as @s[scores={DialogueTrigger=144,TalkTime=34}] run tp @e[x=-504,y=160,z=1286,dy=3,type=pixelmon:npc_trainer] 694 106 396
+execute as @s[scores={DialogueTrigger=144,TalkTime=34}] run tp @e[x=694,y=105,z=396,dy=3,type=pixelmon:npc_chatting] -504 161 1284
 ###execute as @a[scores={DialogueTrigger=144,TalkTime=36}] run pokebattle @s AceTrainerRobbie
 
 tag @s[scores={DialogueTrigger=144,TalkTime=36..}] add Dialogue144
@@ -5051,14 +5051,14 @@ scoreboard players set @s[tag=Dialogue144] DialogueTrigger 0
 #Victory Road Ace Trainer post-battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 145
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
-#execute as @s[x=686,y=105,z=379,dx=15,dy=10,dz=25,tag=Dialogue144,score_TalkTime=0] run execute as @s[tag=!Dialogue145] run tp @e[x=-504,y=160,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] 694 106 396
+#execute as @s[x=686,y=105,z=379,dx=15,dy=10,dz=25,tag=Dialogue144,score_TalkTime=0] run execute as @s[tag=!Dialogue145] run tp @e[x=-504,y=160,z=1286,dy=3,type=pixelmon:npc_trainer] 694 106 396
 
 tellraw @s[scores={DialogueTrigger=145,TalkTime=6}] {"text":"<Ace Trainer> Fantastic! Please allow me to say it once more: fantastic!"}
 tellraw @s[scores={DialogueTrigger=145,TalkTime=16}] {"text":"<Ace Trainer> May the road you and your Pokémon follow be filled with joy and success."}
 
 #Swap back npc from trainer
-execute as @s[scores={DialogueTrigger=145,TalkTime=19}] run tp @e[x=694,y=105,z=396,dy=3,nbt=!{pixelmon:npc_trainer}] -504 161 1286
-execute as @s[scores={DialogueTrigger=145,TalkTime=19}] run tp @e[x=-504,y=160,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] 694 106 396
+execute as @s[scores={DialogueTrigger=145,TalkTime=19}] run tp @e[x=694,y=105,z=396,dy=3,type=pixelmon:npc_trainer] -504 161 1286
+execute as @s[scores={DialogueTrigger=145,TalkTime=19}] run tp @e[x=-504,y=160,z=1284,dy=3,type=pixelmon:npc_chatting] 694 106 396
 
 tag @s[scores={DialogueTrigger=145,TalkTime=19..}] add Dialogue145
 scoreboard players set @s[tag=Dialogue145] TalkTime 0
@@ -5069,15 +5069,15 @@ scoreboard players set @s[tag=Dialogue145] DialogueTrigger 0
 #scoreboard players set @a[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=!Dialogue146] DialogueTrigger 146
 
 #tags Serena Trainers
-execute as @s[scores={DialogueTrigger=146,TalkTime=2}] run scoreboard players set @e[x=-504,y=165,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 1
-execute as @s[scores={DialogueTrigger=146,TalkTime=2}] run scoreboard players set @e[x=-504,y=165,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 2
-execute as @s[scores={DialogueTrigger=146,TalkTime=2}] run scoreboard players set @e[x=-504,y=165,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 3
+execute as @s[scores={DialogueTrigger=146,TalkTime=2}] run scoreboard players set @e[x=-504,y=165,z=1284,dy=3,type=pixelmon:npc_trainer] StarterPick 1
+execute as @s[scores={DialogueTrigger=146,TalkTime=2}] run scoreboard players set @e[x=-504,y=165,z=1286,dy=3,type=pixelmon:npc_trainer] StarterPick 2
+execute as @s[scores={DialogueTrigger=146,TalkTime=2}] run scoreboard players set @e[x=-504,y=165,z=1288,dy=3,type=pixelmon:npc_trainer] StarterPick 3
 
 tellraw @s[scores={DialogueTrigger=146,TalkTime=2}] ["",{"text":"<"},{"text":"...","color":"gold"},{"text":"> "},{"selector":"@s"},{"text":"! Wait a second!"}]
 
 #tp Serena in
 execute as @s[scores={DialogueTrigger=146,TalkTime=5}] run particle cloud 2294 175 2184 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=146,TalkTime=5}] run tp @e[x=-504,y=165,z=1290,dy=3,nbt=!{pixelmon:npc_chatting}] 2294 175 2184
+execute as @s[scores={DialogueTrigger=146,TalkTime=5}] run tp @e[x=-504,y=165,z=1290,dy=3,type=pixelmon:npc_chatting] 2294 175 2184
 
 tellraw @s[scores={DialogueTrigger=146,TalkTime=8}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> I've been thinking ever since all that trouble in Geosenge."}]
 tellraw @s[scores={DialogueTrigger=146,TalkTime=16}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Lysandre chose only Team Flare. You and I chose everyone but Team Flare."}]
@@ -5089,10 +5089,10 @@ tellraw @s[scores={DialogueTrigger=146,TalkTime=53}] ["",{"text":"<"},{"text":"S
 tellraw @s[scores={DialogueTrigger=146,TalkTime=63}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> That's the kind of Pokémon Battle I'm going to have with you right now!"}]
 
 #swap NPCs
-execute as @s[scores={DialogueTrigger=146,TalkTime=66}] run tp @e[x=2294,y=174,z=2184,dy=3,nbt=!{pixelmon:npc_chatting}] -504 166 1290
-execute as @s[scores={DialogueTrigger=146,TalkTime=66,StarterPick=1}] run tp @e[x=-504,y=165,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] 2294 175 2184
-execute as @s[scores={DialogueTrigger=146,TalkTime=66,StarterPick=2}] run tp @e[x=-504,y=165,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] 2294 175 2184
-execute as @s[scores={DialogueTrigger=146,TalkTime=66,StarterPick=3}] run tp @e[x=-504,y=165,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] 2294 175 2184
+execute as @s[scores={DialogueTrigger=146,TalkTime=66}] run tp @e[x=2294,y=174,z=2184,dy=3,type=pixelmon:npc_chatting] -504 166 1290
+execute as @s[scores={DialogueTrigger=146,TalkTime=66,StarterPick=1}] run tp @e[x=-504,y=165,z=1284,dy=3,type=pixelmon:npc_trainer] 2294 175 2184
+execute as @s[scores={DialogueTrigger=146,TalkTime=66,StarterPick=2}] run tp @e[x=-504,y=165,z=1286,dy=3,type=pixelmon:npc_trainer] 2294 175 2184
+execute as @s[scores={DialogueTrigger=146,TalkTime=66,StarterPick=3}] run tp @e[x=-504,y=165,z=1288,dy=3,type=pixelmon:npc_trainer] 2294 175 2184
 
 #pokebattle Sernea
 ###execute as @a[scores={DialogueTrigger=146,TalkTime=70,StarterPick=1}] run pokebattle @s Serena1461
@@ -5107,9 +5107,9 @@ scoreboard players set @s[tag=Dialogue146] DialogueTrigger 0
 #Serena Victory Road post-battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 147
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
-#execute as @s[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=Dialogue146,score_Talk=0] run execute as @s[tag=Dialogue!147,score_StarterPick_min=1,score_StarterPick=1] run tp @e[x=-504,y=165,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] 2294 175 2184
-#execute as @s[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=Dialogue146,score_Talk=0] run execute as @s[tag=Dialogue!147,score_StarterPick_min=2,score_StarterPick=2] run tp @e[x=-504,y=165,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] 2294 175 2184
-#execute as @s[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=Dialogue146,score_Talk=0] run execute as @s[tag=Dialogue!147,score_StarterPick_min=3,score_StarterPick=3] run tp @e[x=-504,y=165,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] 2294 175 2184
+#execute as @s[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=Dialogue146,score_Talk=0] run execute as @s[tag=Dialogue!147,score_StarterPick_min=1,score_StarterPick=1] run tp @e[x=-504,y=165,z=1284,dy=3,type=pixelmon:npc_trainer] 2294 175 2184
+#execute as @s[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=Dialogue146,score_Talk=0] run execute as @s[tag=Dialogue!147,score_StarterPick_min=2,score_StarterPick=2] run tp @e[x=-504,y=165,z=1286,dy=3,type=pixelmon:npc_trainer] 2294 175 2184
+#execute as @s[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=Dialogue146,score_Talk=0] run execute as @s[tag=Dialogue!147,score_StarterPick_min=3,score_StarterPick=3] run tp @e[x=-504,y=165,z=1288,dy=3,type=pixelmon:npc_trainer] 2294 175 2184
 
 tellraw @s[scores={DialogueTrigger=147,TalkTime=8}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> It's hard to put a finger on it exactly, but I feel like you and I are alike."}]
 tellraw @s[scores={DialogueTrigger=147,TalkTime=17}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> And that's why I didn't want to lose to you."}]
@@ -5124,9 +5124,9 @@ tellraw @s[scores={DialogueTrigger=147,TalkTime=78}] ["",{"text":"<"},{"text":"S
 
 #Serena tps off
 execute as @s[scores={DialogueTrigger=147,TalkTime=88}] run particle cloud 2294 175 2184 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=147,TalkTime=89}] run tp @e[x=2294,y=174,z=2184,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=1}] -504 166 1284
-execute as @s[scores={DialogueTrigger=147,TalkTime=89}] run tp @e[x=2294,y=174,z=2184,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=2}] -504 166 1286
-execute as @s[scores={DialogueTrigger=147,TalkTime=89}] run tp @e[x=2294,y=174,z=2184,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=3}] -504 166 1288
+execute as @s[scores={DialogueTrigger=147,TalkTime=89}] run tp @e[x=2294,y=174,z=2184,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=1}] -504 166 1284
+execute as @s[scores={DialogueTrigger=147,TalkTime=89}] run tp @e[x=2294,y=174,z=2184,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=2}] -504 166 1286
+execute as @s[scores={DialogueTrigger=147,TalkTime=89}] run tp @e[x=2294,y=174,z=2184,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=3}] -504 166 1288
 
 tag @s[scores={DialogueTrigger=147,TalkTime=89..}] add Dialogue147
 scoreboard players set @s[tag=Dialogue147] TalkTime 0
@@ -5138,7 +5138,7 @@ scoreboard players set @s[tag=Dialogue147] DialogueTrigger 0
 
 #tp Malva in
 execute as @s[scores={DialogueTrigger=148,TalkTime=2}] run particle cloud -1907 33 2117 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=148,TalkTime=2}] run tp @e[x=-504,y=170,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] -1907 33 2117
+execute as @s[scores={DialogueTrigger=148,TalkTime=2}] run tp @e[x=-504,y=170,z=1284,dy=3,type=pixelmon:npc_chatting] -1907 33 2117
 
 tellraw @s[scores={DialogueTrigger=148,TalkTime=4}] ["",{"text":"<...> You're the illustrious "},{"selector":"@s"},{"text":", are you? Welcome at last to the Pokémon League."}]
 tellraw @s[scores={DialogueTrigger=148,TalkTime=12}] {"text":"<Malva> I am one of the Elite Four. People know me as the Fire-type-Pokémon user, Malva."}
@@ -5149,7 +5149,7 @@ tellraw @s[scores={DialogueTrigger=148,TalkTime=52}] {"text":"<Malva> But it sho
 tellraw @s[scores={DialogueTrigger=148,TalkTime=60}] {"text":"<Malva> The \u201chero\u201d who destroyed big, bad Team Flare."}
 
 #Malva tps off
-execute as @s[scores={DialogueTrigger=148,TalkTime=67}] run tp @e[x=-1907,y=31,z=2117,dy=3,nbt=!{pixelmon:npc_chatting}] -504 171 1284
+execute as @s[scores={DialogueTrigger=148,TalkTime=67}] run tp @e[x=-1907,y=31,z=2117,dy=3,type=pixelmon:npc_chatting] -504 171 1284
 execute as @s[scores={DialogueTrigger=148,TalkTime=67}] run particle cloud -1907 33 2117 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=148,TalkTime=67..}] add Dialogue148
@@ -5259,42 +5259,42 @@ execute as @s[scores={DialogueTrigger=154,TalkTime=55}] run advancement grant @s
 
 #Resets legendaries if not caught but encountered
 
-execute as @s[scores={DialogueTrigger=154,TalkTime=55,Mewtwo=1..}] run execute as @e[x=809,y=74,z=525,dx=66,dy=14,dz=92,nbt=!{pixelmon:pixelmon},name=Mewtwo] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
+execute as @s[scores={DialogueTrigger=154,TalkTime=55,Mewtwo=1..}] run execute as @e[x=809,y=74,z=525,dx=66,dy=14,dz=92,type=pixelmon:pixelmon,name=Mewtwo] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
 execute as @s[scores={DialogueTrigger=154,TalkTime=55,Mewtwo=1..}] run tellraw @s[tag=!MewtwoCatch] {"text":"You can now re-encounter Mewtwo!","italic":true,"color":"gray"}
 execute as @s[scores={DialogueTrigger=154,TalkTime=55,Mewtwo=1..}] run scoreboard players set @s[tag=!MewtwoCatch] Mewtwo 0
 execute as @s[scores={DialogueTrigger=154,TalkTime=55}] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
-execute as @s[scores={DialogueTrigger=154,TalkTime=56,Zygarde=1..}] run execute as @e[x=1720,y=0,z=-232,dx=421,dy=100,dz=324,nbt=!{pixelmon:pixelmon},name=Zygarde] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
+execute as @s[scores={DialogueTrigger=154,TalkTime=56,Zygarde=1..}] run execute as @e[x=1720,y=0,z=-232,dx=421,dy=100,dz=324,type=pixelmon:pixelmon,name=Zygarde] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
 execute as @s[scores={DialogueTrigger=154,TalkTime=56,Zygarde=1..}] run tellraw @s[tag=!ZygardeCatch] {"text":"You can now re-encounter Zygarde!","italic":true,"color":"gray"}
 execute as @s[scores={DialogueTrigger=154,TalkTime=56,Zygarde=1..}] run scoreboard players set @s[tag=!ZygardeCatch] Zygarde 0
 execute as @s[scores={DialogueTrigger=154,TalkTime=56}] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
-execute as @s[scores={DialogueTrigger=154,TalkTime=57,Diancie=1..}] run execute as @e[x=-1847,y=0,z=-675,dx=414,dy=89,dz=507,nbt=!{pixelmon:pixelmon},name=Diancie] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
+execute as @s[scores={DialogueTrigger=154,TalkTime=57,Diancie=1..}] run execute as @e[x=-1847,y=0,z=-675,dx=414,dy=89,dz=507,type=pixelmon:pixelmon,name=Diancie] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
 execute as @s[scores={DialogueTrigger=154,TalkTime=57,Diancie=1..}] run tellraw @s[tag=!DiancieCatch] {"text":"You can now re-encounter Diancie!","italic":true,"color":"gray"}
 execute as @s[scores={DialogueTrigger=154,TalkTime=57,Diancie=1..}] run scoreboard players set @s[tag=!DiancieCatch] Diancie 0
 execute as @s[scores={DialogueTrigger=154,TalkTime=57}] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
-execute as @s[scores={DialogueTrigger=154,TalkTime=58,Hoopa=1..}] run execute as @e[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28,nbt=!{pixelmon:pixelmon},name=Hoopa] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
+execute as @s[scores={DialogueTrigger=154,TalkTime=58,Hoopa=1..}] run execute as @e[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28,type=pixelmon:pixelmon,name=Hoopa] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
 execute as @s[scores={DialogueTrigger=154,TalkTime=58,Hoopa=1..}] run tellraw @s[tag=!HoopaCatch] {"text":"You can now re-encounter Hoopa!","italic":true,"color":"gray"}
 execute as @s[scores={DialogueTrigger=154,TalkTime=58,Hoopa=1..}] run scoreboard players set @s[tag=!HoopaCatch] Hoopa 0
 execute as @s[scores={DialogueTrigger=154,TalkTime=58}] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
-execute as @s[scores={DialogueTrigger=154,TalkTime=59,Volcanion=1..}] run execute as @e[x=-937,y=36,z=-742,dx=280,dy=40,dz=117,nbt=!{pixelmon:pixelmon},name=Volcanion] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
+execute as @s[scores={DialogueTrigger=154,TalkTime=59,Volcanion=1..}] run execute as @e[x=-937,y=36,z=-742,dx=280,dy=40,dz=117,type=pixelmon:pixelmon,name=Volcanion] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
 execute as @s[scores={DialogueTrigger=154,TalkTime=59,Volcanion=1..}] run tellraw @s[tag=!VolcanionCatch] {"text":"You can now re-encounter Volcanion!","italic":true,"color":"gray"}
 execute as @s[scores={DialogueTrigger=154,TalkTime=59,Volcanion=1..}] run scoreboard players set @s[tag=!VolcanionCatch] Volcanion 0
 execute as @s[scores={DialogueTrigger=154,TalkTime=59}] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
-execute as @s[scores={DialogueTrigger=154,TalkTime=60,Zapdos=6..}] run execute as @e[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83,nbt=!{pixelmon:pixelmon},name=Zapdos] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
+execute as @s[scores={DialogueTrigger=154,TalkTime=60,Zapdos=6..}] run execute as @e[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83,type=pixelmon:pixelmon,name=Zapdos] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
 execute as @s[scores={DialogueTrigger=154,TalkTime=60,Zapdos=6..}] run tellraw @s[tag=!ZapdosCatch] {"text":"You can now re-encounter Zapdos!","italic":true,"color":"gray"}
 execute as @s[scores={DialogueTrigger=154,TalkTime=60,Zapdos=6..}] run scoreboard players set @s[tag=!ZapdosCatch] Zapdos 5
 execute as @s[scores={DialogueTrigger=154,TalkTime=60}] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
-execute as @s[scores={DialogueTrigger=154,TalkTime=61,Moltres=6..}] run execute as @e[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83,nbt=!{pixelmon:pixelmon},name=Moltres] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
+execute as @s[scores={DialogueTrigger=154,TalkTime=61,Moltres=6..}] run execute as @e[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83,type=pixelmon:pixelmon,name=Moltres] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
 execute as @s[scores={DialogueTrigger=154,TalkTime=61,Moltres=6..}] run tellraw @s[tag=!MoltresCatch] {"text":"You can now re-encounter Moltres!","italic":true,"color":"gray"}
 execute as @s[scores={DialogueTrigger=154,TalkTime=61,Moltres=6..}] run scoreboard players set @s[tag=!MoltresCatch] Moltres 5
 execute as @s[scores={DialogueTrigger=154,TalkTime=61}] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
-execute as @s[scores={DialogueTrigger=154,TalkTime=62,Articuno=6..}] run execute as @e[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83,nbt=!{pixelmon:pixelmon},name=Articuno] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
+execute as @s[scores={DialogueTrigger=154,TalkTime=62,Articuno=6..}] run execute as @e[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83,type=pixelmon:pixelmon,name=Articuno] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
 execute as @s[scores={DialogueTrigger=154,TalkTime=62,Articuno=6..}] run tellraw @s[tag=!ArticunoCatch] {"text":"You can now re-encounter Articuno!","italic":true,"color":"gray"}
 execute as @s[scores={DialogueTrigger=154,TalkTime=62,Articuno=6..}] run scoreboard players set @s[tag=!ArticunoCatch] Articuno 5
 execute as @s[scores={DialogueTrigger=154,TalkTime=62}] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
@@ -5347,8 +5347,8 @@ execute as @s[scores={DialogueTrigger=155,TalkTime=73}] run summon minecraft:fir
 
 #Az tps in on the red carpet
 execute as @s[scores={DialogueTrigger=155,TalkTime=83}] run particle cloud 1469 101 -1954 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=155,TalkTime=83}] run tp @e[x=-504,y=175,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] 1469 101 -1954
-execute as @s[scores={DialogueTrigger=155,TalkTime=84}] run data modify entity @e[limit=1,x=1469,y=100,z=-1954,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[-180.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=155,TalkTime=83}] run tp @e[x=-504,y=175,z=1284,dy=3,type=pixelmon:npc_trainer] 1469 101 -1954
+execute as @s[scores={DialogueTrigger=155,TalkTime=84}] run data modify entity @e[limit=1,x=1469,y=100,z=-1954,dy=3,type=pixelmon:npc_trainer] {Rotation:[-180.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=155,TalkTime=90}] {"text":"<Az> Battle with me."}
 tellraw @s[scores={DialogueTrigger=155,TalkTime=97}] {"text":"<Az> I want to know what a \u201cTrainer\u201d is."}
@@ -5363,7 +5363,7 @@ scoreboard players set @s[tag=Dialogue155] DialogueTrigger 0
 #/tedit add WIN /scoreboard players set @pl DialogueTrigger 156
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
 #/tedit add WIN /scoreboard players set @pl TalkTime 0
-#execute as @s[x=1469,y=101,z=-1954,r=20,tag=!Dialogue156,score_TalkTime=0] run execute as @s[tag=Dialogue155] run tp @e[x=-504,y=175,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] 1469 101 -1954
+#execute as @s[x=1469,y=101,z=-1954,r=20,tag=!Dialogue156,score_TalkTime=0] run execute as @s[tag=Dialogue155] run tp @e[x=-504,y=175,z=1284,dy=3,type=pixelmon:npc_trainer] 1469 101 -1954
 
 #Music is 29. The Sun Shines Down
 
@@ -5374,12 +5374,12 @@ tellraw @s[scores={DialogueTrigger=156,TalkTime=30}] {"text":"<Az> Free from the
 tellraw @s[scores={DialogueTrigger=156,TalkTime=40}] {"text":"<Az> the part of me that built the ultimate weapon..."}
 
 #Eternal Floette floats down
-execute as @s[scores={DialogueTrigger=156,TalkTime=33}] run tp @e[x=-504,y=176,z=1287,dy=3,nbt=!{pixelmon:statue}] 1469 130 -1957
+execute as @s[scores={DialogueTrigger=156,TalkTime=33}] run tp @e[x=-504,y=176,z=1287,dy=3,type=pixelmon:statue] 1469 130 -1957
 execute as @s[scores={DialogueTrigger=156,TalkTime=33}] run particle cloud 1469 130 -1954 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=156,TalkTime=33}] run setblock -674 100 1362 minecraft:redstone_block
 
 #Motion data
-#entitydata @e[x=1469,y=102,z=-1957,dy=40,nbt=!{pixelmon:statue}] {Motion:[0.0d,-0.1d,0.0d]}
+#entitydata @e[x=1469,y=102,z=-1957,dy=40,type=pixelmon:statue] {Motion:[0.0d,-0.1d,0.0d]}
 
 tellraw @s[scores={DialogueTrigger=156,TalkTime=60}] {"text":"<Az> Floette..."}
 tellraw @s[scores={DialogueTrigger=156,TalkTime=70}] {"text":"<Az> It's been 3,000 years..."}
@@ -5399,8 +5399,8 @@ execute as @s[scores={DialogueTrigger=156,TalkTime=150..152}] run setblock -674 
 execute as @s[scores={DialogueTrigger=156,TalkTime=165}] run effect give @s minecraft:blindness 10 1 true
 
 #tp Floette and Az back
-execute as @s[scores={DialogueTrigger=156,TalkTime=167..168}] run tp @e[x=1469,y=100,z=-1957,dy=40,nbt=!{pixelmon:statue}] -504 177 1287
-execute as @s[scores={DialogueTrigger=156,TalkTime=167..168}] run tp @e[x=1469,y=100,z=-1954,dy=3,nbt=!{pixelmon:npc_trainer}] -504 176 1284
+execute as @s[scores={DialogueTrigger=156,TalkTime=167..168}] run tp @e[x=1469,y=100,z=-1957,dy=40,type=pixelmon:statue] -504 177 1287
+execute as @s[scores={DialogueTrigger=156,TalkTime=167..168}] run tp @e[x=1469,y=100,z=-1954,dy=3,type=pixelmon:npc_trainer] -504 176 1284
 
 #tp to Vaniville Home
 execute as @s[scores={DialogueTrigger=156,TalkTime=169}] run tp @s 506 118 1558 180 10
@@ -5431,7 +5431,7 @@ scoreboard players set @s[tag=Dialogue157] DialogueTrigger 0
 #scoreboard players set @a[x=503,y=108,z=1568,dx=5,dy=4,tag=Dialogue2,score_PokemonLeague_min=1,score_TalkTime=0] DialogueTrigger 158
 
 #tp Shauna in
-execute as @s[scores={DialogueTrigger=158,TalkTime=1}] run tp @e[x=-504,y=180,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] 509 108 1586
+execute as @s[scores={DialogueTrigger=158,TalkTime=1}] run tp @e[x=-504,y=180,z=1284,dy=3,type=pixelmon:npc_chatting] 509 108 1586
 execute as @s[scores={DialogueTrigger=158,TalkTime=1}] run particle cloud 509 108 1586 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=158,TalkTime=4}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> "},{"selector":"@s"},{"text":"! That parade was so great!"}]
@@ -5451,7 +5451,7 @@ tellraw @s[scores={DialogueTrigger=158,TalkTime=52}] ["",{"text":"<"},{"text":"S
 
 #tp Shauna out
 execute as @s[scores={DialogueTrigger=158,TalkTime=60}] run particle cloud 509 108 1586 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=158,TalkTime=60}] run tp @e[x=509,y=108,z=1586,dy=3,nbt=!{pixelmon:npc_chatting}] -504 181 1284
+execute as @s[scores={DialogueTrigger=158,TalkTime=60}] run tp @e[x=509,y=108,z=1586,dy=3,type=pixelmon:npc_chatting] -504 181 1284
 
 tag @s[scores={DialogueTrigger=158,TalkTime=60..}] add Dialogue158
 scoreboard players set @s[tag=Dialogue158] TalkTime 0
@@ -5465,8 +5465,8 @@ tellraw @s[scores={DialogueTrigger=159,TalkTime=2}] {"text":"<...> Stop right th
 
 #tp Sina and Dexio in
 execute as @s[scores={DialogueTrigger=159,TalkTime=5}] run scoreboard players set @s click 1
-execute as @s[scores={DialogueTrigger=159,TalkTime=5}] run tp @e[x=-504,y=185,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] 1014 105 1909
-execute as @s[scores={DialogueTrigger=159,TalkTime=5}] run tp @e[x=-504,y=185,z=1286,dy=3,nbt=!{pixelmon:npc_chatting}] 1018 105 1909
+execute as @s[scores={DialogueTrigger=159,TalkTime=5}] run tp @e[x=-504,y=185,z=1284,dy=3,type=pixelmon:npc_chatting] 1014 105 1909
+execute as @s[scores={DialogueTrigger=159,TalkTime=5}] run tp @e[x=-504,y=185,z=1286,dy=3,type=pixelmon:npc_chatting] 1018 105 1909
 execute as @s[scores={DialogueTrigger=159,TalkTime=5}] run particle cloud 1014 105 1909 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=159,TalkTime=5}] run particle cloud 1018 105 1909 2 2 2 1 100
 
@@ -5479,8 +5479,8 @@ tellraw @s[scores={DialogueTrigger=159,TalkTime=56}] ["",{"text":"<"},{"text":"S
 tellraw @s[scores={DialogueTrigger=159,TalkTime=66}] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> This precious time that you fought for..."}]
 
 #tp Sina and Dexio out
-execute as @s[scores={DialogueTrigger=159,TalkTime=73}] run tp @e[x=1014,y=105,z=1909,dy=3,nbt=!{pixelmon:npc_chatting}] -504 186 1284
-execute as @s[scores={DialogueTrigger=159,TalkTime=73}] run tp @e[x=1018,y=105,z=1909,dy=3,nbt=!{pixelmon:npc_chatting}] -504 186 1286
+execute as @s[scores={DialogueTrigger=159,TalkTime=73}] run tp @e[x=1014,y=105,z=1909,dy=3,type=pixelmon:npc_chatting] -504 186 1284
+execute as @s[scores={DialogueTrigger=159,TalkTime=73}] run tp @e[x=1018,y=105,z=1909,dy=3,type=pixelmon:npc_chatting] -504 186 1286
 execute as @s[scores={DialogueTrigger=159,TalkTime=73}] run particle cloud 1014 105 1909 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=159,TalkTime=73}] run particle cloud 1018 105 1909 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=159,TalkTime=73}] run scoreboard players set @s click 1
@@ -5493,7 +5493,7 @@ scoreboard players set @s[tag=Dialogue159] DialogueTrigger 0
 #Sycamore in Lumiose Station
 #scoreboard players set @a[x=1029,y=105,z=1893,r=6,score_TalkTime=0,tag=!Dialogue160,score_PokemonLeague_min=1] DialogueTrigger 160
 #tp Sycamore in separately
-#execute as @s[x=1017,y=105,z=1908,r=20,tag=!Dialogue160,score_PokemonLeague_min=1] run tp @e[x=-504,y=185,z=1290,dy=3,nbt=!{pixelmon:npc_chatting}] 1029 105 1893
+#execute as @s[x=1017,y=105,z=1908,r=20,tag=!Dialogue160,score_PokemonLeague_min=1] run tp @e[x=-504,y=185,z=1290,dy=3,type=pixelmon:npc_chatting] 1029 105 1893
 
 execute as @s[scores={DialogueTrigger=160,TalkTime=1}] run scoreboard players set @s click 1
 tellraw @s[scores={DialogueTrigger=160,TalkTime=3}] ["",{"text":"<"},{"text":"Sycamore","color":"aqua"},{"text":"> How did you like your parade, "},{"selector":"@s"},{"text":"?"}]
@@ -5510,7 +5510,7 @@ tellraw @s[scores={DialogueTrigger=160,TalkTime=67}] ["",{"text":"<"},{"text":"S
 
 #tp Sycamore out
 execute as @s[scores={DialogueTrigger=160,TalkTime=73}] run particle cloud 1029 105 1893 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=160,TalkTime=73}] run tp @e[x=1029,y=105,z=1893,dy=3,nbt=!{pixelmon:npc_chatting}] -504 186 1290
+execute as @s[scores={DialogueTrigger=160,TalkTime=73}] run tp @e[x=1029,y=105,z=1893,dy=3,type=pixelmon:npc_chatting] -504 186 1290
 
 execute as @s[scores={DialogueTrigger=160,TalkTime=73}] run scoreboard players set @s click 1
 
@@ -5522,21 +5522,21 @@ scoreboard players set @s[tag=Dialogue160] DialogueTrigger 0
 #Serena post-game in Kiloude City pre-battle
 #scoreboard players set @a[x=1229,y=119,z=1461,r=6,tag=!Dialogue161] DialogueTrigger 161
 #tp Serena npc in separately
-#execute as @s[x=1221,y=119,z=1497,r=20,tag=!Dialogue161] run  tp @e[x=-504,y=190,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] 1229 119 1461
+#execute as @s[x=1221,y=119,z=1497,r=20,tag=!Dialogue161] run  tp @e[x=-504,y=190,z=1284,dy=3,type=pixelmon:npc_chatting] 1229 119 1461
 
 tellraw @s[scores={DialogueTrigger=161,TalkTime=3}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Hey, "},{"selector":"@s"},{"text":"? Will you have a battle with me? I think you're in for a surprise!"}]
 tellraw @s[scores={DialogueTrigger=161,TalkTime=14}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> My Pokémon and I will show you what makes us special!"}]
 
 #Tags Serena Trainers
-execute as @s[scores={DialogueTrigger=161,TalkTime=11}] run scoreboard players set @e[x=-504,y=190,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 1
-execute as @s[scores={DialogueTrigger=161,TalkTime=11}] run scoreboard players set @e[x=-504,y=190,z=1290,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 2
-execute as @s[scores={DialogueTrigger=161,TalkTime=11}] run scoreboard players set @e[x=-504,y=190,z=1292,dy=3,nbt=!{pixelmon:npc_trainer}] StarterPick 3
+execute as @s[scores={DialogueTrigger=161,TalkTime=11}] run scoreboard players set @e[x=-504,y=190,z=1288,dy=3,type=pixelmon:npc_trainer] StarterPick 1
+execute as @s[scores={DialogueTrigger=161,TalkTime=11}] run scoreboard players set @e[x=-504,y=190,z=1290,dy=3,type=pixelmon:npc_trainer] StarterPick 2
+execute as @s[scores={DialogueTrigger=161,TalkTime=11}] run scoreboard players set @e[x=-504,y=190,z=1292,dy=3,type=pixelmon:npc_trainer] StarterPick 3
 
 #swap Serena NPC and Serena trainer
-execute as @s[scores={DialogueTrigger=161,TalkTime=15}] run tp @e[x=1229,y=118,z=1461,dy=3,nbt=!{pixelmon:npc_chatting}] -504 191 1284
-execute as @s[scores={DialogueTrigger=161,TalkTime=15,StarterPick=1}] run tp @e[x=-504,y=190,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] 1229 119 1461
-execute as @s[scores={DialogueTrigger=161,TalkTime=15,StarterPick=2}] run tp @e[x=-504,y=190,z=1290,dy=3,nbt=!{pixelmon:npc_trainer}] 1229 119 1461
-execute as @s[scores={DialogueTrigger=161,TalkTime=15,StarterPick=3}] run tp @e[x=-504,y=190,z=1292,dy=3,nbt=!{pixelmon:npc_trainer}] 1229 119 1461
+execute as @s[scores={DialogueTrigger=161,TalkTime=15}] run tp @e[x=1229,y=118,z=1461,dy=3,type=pixelmon:npc_chatting] -504 191 1284
+execute as @s[scores={DialogueTrigger=161,TalkTime=15,StarterPick=1}] run tp @e[x=-504,y=190,z=1288,dy=3,type=pixelmon:npc_trainer] 1229 119 1461
+execute as @s[scores={DialogueTrigger=161,TalkTime=15,StarterPick=2}] run tp @e[x=-504,y=190,z=1290,dy=3,type=pixelmon:npc_trainer] 1229 119 1461
+execute as @s[scores={DialogueTrigger=161,TalkTime=15,StarterPick=3}] run tp @e[x=-504,y=190,z=1292,dy=3,type=pixelmon:npc_trainer] 1229 119 1461
 
 #Losing dialogue:
 #I'll think about what you did well and use this loss to make me better!
@@ -5549,9 +5549,9 @@ scoreboard players set @s[tag=Dialogue161] DialogueTrigger 0
 #Serena post-game in Kiloude City post-battle
 #/tedit add LOSS /scoreboard players set @pl DialogueTrigger 162
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
-#execute as @s[x=1229,y=119,z=1461,r=15,score_TalkTime=0,score_StarterPick_min=1,score_StarterPick=1,tag=!Dialogue162] run execute as @s[tag=Dialogue161] run tp @e[x=-504,y=190,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] 1229 119 1461
-#execute as @s[x=1229,y=119,z=1461,r=15,score_TalkTime=0,score_StarterPick_min=2,score_StarterPick=2,tag=!Dialogue162] run execute as @s[tag=Dialogue161] run tp @e[x=-504,y=190,z=1290,dy=3,nbt=!{pixelmon:npc_trainer}] 1229 119 1461
-#execute as @s[x=1229,y=119,z=1461,r=15,score_TalkTime=0,score_StarterPick_min=3,score_StarterPick=3,tag=!Dialogue162] run execute as @s[tag=Dialogue161] run tp @e[x=-504,y=190,z=1292,dy=3,nbt=!{pixelmon:npc_trainer}] 1229 119 1461
+#execute as @s[x=1229,y=119,z=1461,r=15,score_TalkTime=0,score_StarterPick_min=1,score_StarterPick=1,tag=!Dialogue162] run execute as @s[tag=Dialogue161] run tp @e[x=-504,y=190,z=1288,dy=3,type=pixelmon:npc_trainer] 1229 119 1461
+#execute as @s[x=1229,y=119,z=1461,r=15,score_TalkTime=0,score_StarterPick_min=2,score_StarterPick=2,tag=!Dialogue162] run execute as @s[tag=Dialogue161] run tp @e[x=-504,y=190,z=1290,dy=3,type=pixelmon:npc_trainer] 1229 119 1461
+#execute as @s[x=1229,y=119,z=1461,r=15,score_TalkTime=0,score_StarterPick_min=3,score_StarterPick=3,tag=!Dialogue162] run execute as @s[tag=Dialogue161] run tp @e[x=-504,y=190,z=1292,dy=3,type=pixelmon:npc_trainer] 1229 119 1461
 
 tellraw @s[scores={DialogueTrigger=162,TalkTime=6}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> "},{"selector":"@s"},{"text":", this is for you!"}]
 ###execute as @a[scores={DialogueTrigger=162,TalkTime=11}] run give @s pixelmon:absolite
@@ -5563,9 +5563,9 @@ tellraw @s[scores={DialogueTrigger=162,TalkTime=50}] ["",{"text":"<"},{"text":"S
 
 #Serena tps out
 execute as @s[scores={DialogueTrigger=162,TalkTime=58}] run particle cloud 1229 119 1461 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=162,TalkTime=58}] run tp @e[x=1229,y=118,z=1461,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=1}] -504 191 1288
-execute as @s[scores={DialogueTrigger=162,TalkTime=58}] run tp @e[x=1229,y=118,z=1461,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=2}] -504 191 1290
-execute as @s[scores={DialogueTrigger=162,TalkTime=58}] run tp @e[x=1229,y=118,z=1461,dy=3,nbt=!{pixelmon:npc_trainer},scores={StarterPick=3}] -504 191 1292
+execute as @s[scores={DialogueTrigger=162,TalkTime=58}] run tp @e[x=1229,y=118,z=1461,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=1}] -504 191 1288
+execute as @s[scores={DialogueTrigger=162,TalkTime=58}] run tp @e[x=1229,y=118,z=1461,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=2}] -504 191 1290
+execute as @s[scores={DialogueTrigger=162,TalkTime=58}] run tp @e[x=1229,y=118,z=1461,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=3}] -504 191 1292
 
 tag @s[scores={DialogueTrigger=162,TalkTime=58..}] add Dialogue162
 scoreboard players set @s[tag=Dialogue162] TalkTime 0
@@ -5576,7 +5576,7 @@ scoreboard players set @s[tag=Dialogue162] DialogueTrigger 0
 #execute as @s[x=1179,y=110,z=-276,r=20,tag=Dialogue162] run scoreboard players set @s[tag=!Dialogue163] DialogueTrigger 163
 
 #tp Sycamore in
-execute as @s[scores={DialogueTrigger=163,TalkTime=1}] run tp @e[x=-504,y=195,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] 1179 110 -276
+execute as @s[scores={DialogueTrigger=163,TalkTime=1}] run tp @e[x=-504,y=195,z=1284,dy=3,type=pixelmon:npc_chatting] 1179 110 -276
 execute as @s[scores={DialogueTrigger=163,TalkTime=1}] run particle cloud 1179 110 -276 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=163,TalkTime=4}] ["",{"text":"<"},{"text":"Sycamore","color":"aqua"},{"text":"> Why, hello, "},{"selector":"@s"},{"text":"!"}]
@@ -5609,7 +5609,7 @@ tellraw @s[scores={DialogueTrigger=163,TalkTime=184}] ["",{"text":"<"},{"text":"
 
 #tp Sycamore out
 execute as @s[scores={DialogueTrigger=163,TalkTime=194}] run particle cloud 1179 110 -276 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=163,TalkTime=194}] run tp @e[x=1179,y=109,z=-276,dy=3,nbt=!{pixelmon:npc_chatting}] -504 196 1284
+execute as @s[scores={DialogueTrigger=163,TalkTime=194}] run tp @e[x=1179,y=109,z=-276,dy=3,type=pixelmon:npc_chatting] -504 196 1284
 
 #Enables player to find Mega Stones in the evenings
 execute as @s[scores={DialogueTrigger=163,TalkTime=201}] run scoreboard players set @s MegaStones 1
@@ -5644,7 +5644,7 @@ scoreboard players set @s[tag=Dialogue163] DialogueTrigger 0
 #scoreboard players set @a[x=-495,y=100,z=256,r=15,tag=!Dialogue164,score_TalkTime=0,score_PokemonLeague_min=1] DialogueTrigger 164
 
 #Diantha tp in
-execute as @s[scores={DialogueTrigger=164,TalkTime=2}] run tp @e[x=-504,y=200,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] -495 101 256
+execute as @s[scores={DialogueTrigger=164,TalkTime=2}] run tp @e[x=-504,y=200,z=1284,dy=3,type=pixelmon:npc_chatting] -495 101 256
 execute as @s[scores={DialogueTrigger=164,TalkTime=2}] run particle cloud -495 101 256 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=164,TalkTime=5}] {"text":"<Diantha> Oh, why hello there!"}
@@ -5660,7 +5660,7 @@ tellraw @s[scores={DialogueTrigger=164,TalkTime=42}] {"text":"<Diantha> Please t
 tellraw @s[scores={DialogueTrigger=164,TalkTime=50}] {"text":"<Diantha> I'm sure we'll both continue to become even better Trainers as we keep battling and growing!"}
 
 #Diantha tp out
-execute as @s[scores={DialogueTrigger=164,TalkTime=61}] run tp @e[x=-495,y=100,z=256,dy=3,nbt=!{pixelmon:npc_chatting}] -504 201 1284
+execute as @s[scores={DialogueTrigger=164,TalkTime=61}] run tp @e[x=-495,y=100,z=256,dy=3,type=pixelmon:npc_chatting] -504 201 1284
 execute as @s[scores={DialogueTrigger=164,TalkTime=60}] run particle cloud -495 101 256 2 2 2 1 100
 
 tag @s[scores={DialogueTrigger=164,TalkTime=60..}] add Dialogue164
@@ -5678,7 +5678,7 @@ execute as @s[scores={DialogueTrigger=165,TalkTime=1}] run scoreboard players se
 execute as @s[scores={DialogueTrigger=165,TalkTime=2}] run effect give @s minecraft:blindness 4 1 true
 
 #tp girl in
-execute as @s[scores={DialogueTrigger=165,TalkTime=2}] run tp @e[x=-158,y=125,z=193,dy=5,nbt=!{pixelmon:npc_chatting}] -158 111 195
+execute as @s[scores={DialogueTrigger=165,TalkTime=2}] run tp @e[x=-158,y=125,z=193,dy=5,type=pixelmon:npc_chatting] -158 111 195
 
 #slows player (repeated)
 execute as @s[scores={DialogueTrigger=165,TalkTime=2}] run setblock -674 102 1360 minecraft:redstone_block
@@ -5690,7 +5690,7 @@ execute as @s[scores={DialogueTrigger=165,TalkTime=2}] run setblock -674 100 136
 
 #Ghost Girl movement (repeated)
 execute as @s[scores={DialogueTrigger=165,TalkTime=12}] run setblock -674 101 1360 minecraft:redstone_block
-#tp @e[x=-159,y=110,z=193,dx=2,dy=3,dz=12,nbt=!{pixelmon:npc_chatting}] run0.1
+#tp @e[x=-159,y=110,z=193,dx=2,dy=3,dz=12,type=pixelmon:npc_chatting] run0.1
 
 tellraw @s[scores={DialogueTrigger=165,TalkTime=25}] {"text":"<...> No, you're not the one..."}
 
@@ -5698,7 +5698,7 @@ tellraw @s[scores={DialogueTrigger=165,TalkTime=25}] {"text":"<...> No, you're n
 execute as @s[scores={DialogueTrigger=165,TalkTime=35}] run effect give @s minecraft:blindness 5 1 true
 
 #return TP
-execute as @s[scores={DialogueTrigger=165,TalkTime=37}] run tp @e[x=-175,y=110,z=195,dx=30,dy=5,dz=31,nbt=!{pixelmon:npc_chatting}] -158 126 193
+execute as @s[scores={DialogueTrigger=165,TalkTime=37}] run tp @e[x=-175,y=110,z=195,dx=30,dy=5,dz=31,type=pixelmon:npc_chatting] -158 126 193
 
 #Disables repeated commands
 execute as @s[scores={DialogueTrigger=165,TalkTime=37..39}] run fill -674 100 1360 -674 103 1360 minecraft:iron_block
@@ -5714,8 +5714,8 @@ scoreboard players set @s[tag=Dialogue165] DialogueTrigger 0
 #scoreboard players set @a[x=-1533,y=65,z=-68,r=20,score_Gender_min=1,tag=!Dialogue166,score_TalkTime=0] DialogueTrigger 166
 
 #tp Viola and Hennessy in
-execute as @s[scores={DialogueTrigger=166,TalkTime=1}] run tp @e[x=-504,y=205,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] -1534 65 -65
-execute as @s[scores={DialogueTrigger=166,TalkTime=1}] run tp @e[x=-504,y=205,z=1286,dy=3,nbt=!{pixelmon:npc_chatting}] -1531 65 -65
+execute as @s[scores={DialogueTrigger=166,TalkTime=1}] run tp @e[x=-504,y=205,z=1284,dy=3,type=pixelmon:npc_chatting] -1534 65 -65
+execute as @s[scores={DialogueTrigger=166,TalkTime=1}] run tp @e[x=-504,y=205,z=1286,dy=3,type=pixelmon:npc_chatting] -1531 65 -65
 execute as @s[scores={DialogueTrigger=166,TalkTime=1}] run particle cloud -1534 65 -65 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=166,TalkTime=1}] run particle cloud -1531 65 -65 2 2 2 1 100
 
@@ -5759,13 +5759,13 @@ tellraw @s[scores={DialogueTrigger=166,TalkTime=188,Gender=2}] ["",{"text":"<Hen
 
 #Hennessy tps away
 execute as @s[scores={DialogueTrigger=166,TalkTime=196}] run particle cloud -1534 65 -65 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=166,TalkTime=197}] run tp @e[x=-1531,y=64,z=-65,dy=3,nbt=!{pixelmon:npc_chatting}] -504 206 1286
+execute as @s[scores={DialogueTrigger=166,TalkTime=197}] run tp @e[x=-1531,y=64,z=-65,dy=3,type=pixelmon:npc_chatting] -504 206 1286
 
 tellraw @s[scores={DialogueTrigger=166,TalkTime=199}] ["",{"text":"<"},{"text":"Viola","color":"green"},{"text":"> I'm also a member of the nobility, so let's battle again if we get the chance!"}]
 
 #Viola tps away
 execute as @s[scores={DialogueTrigger=166,TalkTime=206}] run particle cloud -1531 65 -65 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=166,TalkTime=206}] run tp @e[x=-1534,y=64,z=-65,dy=3,nbt=!{pixelmon:npc_chatting}] -504 206 1284
+execute as @s[scores={DialogueTrigger=166,TalkTime=206}] run tp @e[x=-1534,y=64,z=-65,dy=3,type=pixelmon:npc_chatting] -504 206 1284
 
 execute as @s[scores={DialogueTrigger=166,TalkTime=206}] run scoreboard players add @s ChateauRank 1
 
@@ -5784,14 +5784,14 @@ scoreboard players set @s[tag=Dialogue166] DialogueTrigger 0
 #scoreboard players set @a[score_PokemonLeague_min=1,tag=!Dialogue167] Grass 0
 
 #Adds tag to statues in case missing
-execute as @s[scores={DialogueTrigger=167,TalkTime=1..2}] run tag @e[x=-505,y=199,z=1234,dx=8,dy=25,dz=8,nbt=!{pixelmon:statue}] add Roaming
+execute as @s[scores={DialogueTrigger=167,TalkTime=1..2}] run tag @e[x=-505,y=199,z=1234,dx=8,dy=25,dz=8,type=pixelmon:statue] add Roaming
 
 #tps statue above player
-execute as @s[scores={DialogueTrigger=167,TalkTime=3,StarterPick=1}] run tp @e[x=-501,y=200,z=1238,distance=..3,nbt=!{pixelmon:statue}] @s
-execute as @s[scores={DialogueTrigger=167,TalkTime=3,StarterPick=2}] run tp @e[x=-501,y=209,z=1238,distance=..3,nbt=!{pixelmon:statue}] @s
-execute as @s[scores={DialogueTrigger=167,TalkTime=3,StarterPick=3}] run tp @e[x=-501,y=218,z=1238,distance=..3,nbt=!{pixelmon:statue}] @s
-execute as @s[scores={DialogueTrigger=167,TalkTime=3}] run execute as @e[distance=..20,nbt=!{pixelmon:statue},tag=Roaming] run tp @s ~ ~5 ~
-execute as @s[scores={DialogueTrigger=167,TalkTime=3}] run execute as @e[distance=..20,nbt=!{pixelmon:statue},tag=Roaming] run particle cloud ~ ~ ~ 2 2 2 1 100
+execute as @s[scores={DialogueTrigger=167,TalkTime=3,StarterPick=1}] run tp @e[x=-501,y=200,z=1238,distance=..3,type=pixelmon:statue] @s
+execute as @s[scores={DialogueTrigger=167,TalkTime=3,StarterPick=2}] run tp @e[x=-501,y=209,z=1238,distance=..3,type=pixelmon:statue] @s
+execute as @s[scores={DialogueTrigger=167,TalkTime=3,StarterPick=3}] run tp @e[x=-501,y=218,z=1238,distance=..3,type=pixelmon:statue] @s
+execute as @s[scores={DialogueTrigger=167,TalkTime=3}] run execute as @e[distance=..20,type=pixelmon:statue,tag=Roaming] run tp @s ~ ~5 ~
+execute as @s[scores={DialogueTrigger=167,TalkTime=3}] run execute as @e[distance=..20,type=pixelmon:statue,tag=Roaming] run particle cloud ~ ~ ~ 2 2 2 1 100
 
 #Switches music to legendary encounter music
 execute as @s[scores={DialogueTrigger=167,TalkTime=3}] run scoreboard players set @s click 1
@@ -5809,10 +5809,10 @@ execute as @s[scores={DialogueTrigger=167,TalkTime=20,StarterPick=2}] run playso
 execute as @s[scores={DialogueTrigger=167,TalkTime=20,StarterPick=3}] run playsound moltres hostile @s ~ ~ ~ 100 1 1
 
 #tps statue back to spawn
-execute as @s[scores={DialogueTrigger=167,TalkTime=25}] run execute as @e[distance=..20,nbt=!{pixelmon:statue},tag=Roaming] run particle cloud ~ ~ ~ 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=167,TalkTime=25,StarterPick=1}] run tp @e[nbt=!{pixelmon:statue},tag=Roaming,name=Articuno] -501 200 1238
-execute as @s[scores={DialogueTrigger=167,TalkTime=25,StarterPick=2}] run tp @e[nbt=!{pixelmon:statue},tag=Roaming,name=Zapdos] -501 209 1238
-execute as @s[scores={DialogueTrigger=167,TalkTime=25,StarterPick=3}] run tp @e[nbt=!{pixelmon:statue},tag=Roaming,name=Moltres] -501 218 1238
+execute as @s[scores={DialogueTrigger=167,TalkTime=25}] run execute as @e[distance=..20,type=pixelmon:statue,tag=Roaming] run particle cloud ~ ~ ~ 2 2 2 1 100
+execute as @s[scores={DialogueTrigger=167,TalkTime=25,StarterPick=1}] run tp @e[type=pixelmon:statue,tag=Roaming,name=Articuno] -501 200 1238
+execute as @s[scores={DialogueTrigger=167,TalkTime=25,StarterPick=2}] run tp @e[type=pixelmon:statue,tag=Roaming,name=Zapdos] -501 209 1238
+execute as @s[scores={DialogueTrigger=167,TalkTime=25,StarterPick=3}] run tp @e[type=pixelmon:statue,tag=Roaming,name=Moltres] -501 218 1238
 
 #tellraw
 tellraw @s[scores={DialogueTrigger=167,TalkTime=27,StarterPick=1,Articuno=0..3}] {"text":"Articuno fled!","italic":true,"color":"gray"}
@@ -5837,13 +5837,13 @@ scoreboard players set @s[tag=Dialogue167] DialogueTrigger 0
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Lumiose Press Volcanion EIC after catching
 #execute as @s[x=-444,y=101,z=206,r=6,tag=VolcanionCatch] run scoreboard players set @s[tag=!Dialogue168] DialogueTrigger 168
-#execute as @s[x=-323,y=101,z=-320,dx=3,dy=5,dz=2,tag=VolcanionCatch] run tp @e[x=-442,y=100,z=210,dy=3,nbt=!{pixelmon:npc_chatting}] -504 211 1286
-#execute as @s[x=-323,y=101,z=-320,dx=3,dy=5,dz=2,tag=VolcanionCatch] run tp @e[x=-504,y=210,z=1288,dy=3,nbt=!{pixelmon:npc_chatting}] -443 101 210
-#execute as @s[x=-323,y=101,z=-320,dx=3,dy=5,dz=2,tag=VolcanionCatch] run tp @e[x=-504,y=210,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] -444 101 206
+#execute as @s[x=-323,y=101,z=-320,dx=3,dy=5,dz=2,tag=VolcanionCatch] run tp @e[x=-442,y=100,z=210,dy=3,type=pixelmon:npc_chatting] -504 211 1286
+#execute as @s[x=-323,y=101,z=-320,dx=3,dy=5,dz=2,tag=VolcanionCatch] run tp @e[x=-504,y=210,z=1288,dy=3,type=pixelmon:npc_chatting] -443 101 210
+#execute as @s[x=-323,y=101,z=-320,dx=3,dy=5,dz=2,tag=VolcanionCatch] run tp @e[x=-504,y=210,z=1284,dy=3,type=pixelmon:npc_chatting] -444 101 206
 
-#execute as @s[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch] run tp @e[x=-443,y=100,z=210,dy=3,nbt=!{pixelmon:npc_chatting}] -504 211 1288
-#execute as @s[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch] run tp @e[x=-504,y=210,z=1286,dy=3,nbt=!{pixelmon:npc_chatting}] -442 101 210
-#execute as @s[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch] run tp @e[x=-444,y=100,z=206,dy=3,nbt=!{pixelmon:npc_chatting}] -504 211 1284
+#execute as @s[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch] run tp @e[x=-443,y=100,z=210,dy=3,type=pixelmon:npc_chatting] -504 211 1288
+#execute as @s[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch] run tp @e[x=-504,y=210,z=1286,dy=3,type=pixelmon:npc_chatting] -442 101 210
+#execute as @s[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch] run tp @e[x=-444,y=100,z=206,dy=3,type=pixelmon:npc_chatting] -504 211 1284
 
 tellraw @s[scores={DialogueTrigger=168,TalkTime=1}] {"text":"<Editor-in-chief> Whoa!"}
 tellraw @s[scores={DialogueTrigger=168,TalkTime=6}] {"text":"<Editor-in-chief> S-sorry! I was so surprised!"}
@@ -5916,7 +5916,7 @@ scoreboard players set @s[tag=Dialogue171] DialogueTrigger 0
 #execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call13] run scoreboard players set @s[tag=!Dialogue172] DialogueTrigger 172
 
 #tp Looker in
-execute as @s[scores={DialogueTrigger=172,TalkTime=2}] run tp @e[x=-504,y=215,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] -176 101 387
+execute as @s[scores={DialogueTrigger=172,TalkTime=2}] run tp @e[x=-504,y=215,z=1284,dy=3,type=pixelmon:npc_chatting] -176 101 387
 
 tellraw @s[scores={DialogueTrigger=172,TalkTime=5}] ["",{"text":"<"},{"text":"...","color":"gray"},{"text":"> It was good of you to come."}]
 tellraw @s[scores={DialogueTrigger=172,TalkTime=11}] ["",{"text":"<"},{"text":"...","color":"gray"},{"text":"> Yes... I need 30 seconds of your time. Or--three minutes only. Thirty minutes, maybe."}]
@@ -6133,17 +6133,17 @@ scoreboard players set @s[tag=Dialogue176] DialogueTrigger 0
 #execute as @s[tag=Dialogue176,score_TalkTime=0] run scoreboard players set @a[x=-374,y=101,z=-280,r=6,tag=!Dialogue177] DialogueTrigger 177
 
 #Tp in the trainers separately
-#execute as @s[x=-373,y=101,z=-307,r=40,score_TalkTime=0,tag=Dialogue176] run execute as @s[tag=!Dialogue177] run tp @e[x=-504,y=220,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] -375 101 -299
-#execute as @s[x=-373,y=101,z=-307,r=40,score_TalkTime=0,tag=Dialogue176] run execute as @s[tag=!Dialogue177] run tp @e[x=-504,y=220,z=1286,dy=3,nbt=!{pixelmon:npc_trainer}] -369 101 -297
-#execute as @s[x=-373,y=101,z=-307,r=40,score_TalkTime=0,tag=Dialogue176] run execute as @s[tag=!Dialogue177] run tp @e[x=-504,y=220,z=1288,dy=3,nbt=!{pixelmon:npc_trainer}] -372 101 -291
-#execute as @s[x=-373,y=101,z=-307,r=40,score_TalkTime=0,tag=Dialogue176] run execute as @s[tag=!Dialogue177] run tp @e[x=-504,y=220,z=1290,dy=3,nbt=!{pixelmon:npc_trainer}] -366 101 -288
+#execute as @s[x=-373,y=101,z=-307,r=40,score_TalkTime=0,tag=Dialogue176] run execute as @s[tag=!Dialogue177] run tp @e[x=-504,y=220,z=1284,dy=3,type=pixelmon:npc_trainer] -375 101 -299
+#execute as @s[x=-373,y=101,z=-307,r=40,score_TalkTime=0,tag=Dialogue176] run execute as @s[tag=!Dialogue177] run tp @e[x=-504,y=220,z=1286,dy=3,type=pixelmon:npc_trainer] -369 101 -297
+#execute as @s[x=-373,y=101,z=-307,r=40,score_TalkTime=0,tag=Dialogue176] run execute as @s[tag=!Dialogue177] run tp @e[x=-504,y=220,z=1288,dy=3,type=pixelmon:npc_trainer] -372 101 -291
+#execute as @s[x=-373,y=101,z=-307,r=40,score_TalkTime=0,tag=Dialogue176] run execute as @s[tag=!Dialogue177] run tp @e[x=-504,y=220,z=1290,dy=3,type=pixelmon:npc_trainer] -366 101 -288
 
 #Keeps the player from wandering
 execute as @s[scores={DialogueTrigger=177,TalkTime=1..541}] run tp @s[x=-378,y=100,z=-307,dx=10,dy=10,dz=8] -372 101 -298 -18 ~
 
 #tp Looker in
 execute as @s[scores={DialogueTrigger=177,TalkTime=3}] run particle cloud -374 101 -280 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=177,TalkTime=3}] run tp @e[x=-504,y=215,z=1289,dy=3,nbt=!{pixelmon:npc_chatting}] -374 101 -280
+execute as @s[scores={DialogueTrigger=177,TalkTime=3}] run tp @e[x=-504,y=215,z=1289,dy=3,type=pixelmon:npc_chatting] -374 101 -280
 
 tellraw @s[scores={DialogueTrigger=177,TalkTime=5}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Pardon, pardon. It took a while to find you!"}]
 tellraw @s[scores={DialogueTrigger=177,TalkTime=12}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> \u0020How's the investigation going, "},{"selector":"@s"},{"text":"? Do you have news to report?"}]
@@ -6155,7 +6155,7 @@ tellraw @s[scores={DialogueTrigger=177,TalkTime=32}] ["",{"text":"<"},{"text":".
 
 #Expurr tps in
 execute as @s[scores={DialogueTrigger=177,TalkTime=35}] run particle cloud -376 101 -276 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=177,TalkTime=35}] run tp @e[x=-504,y=216,z=1296,dy=3,nbt=!{pixelmon:statue}] -376 101 -276
+execute as @s[scores={DialogueTrigger=177,TalkTime=35}] run tp @e[x=-504,y=216,z=1296,dy=3,type=pixelmon:statue] -376 101 -276
 
 tellraw @s[scores={DialogueTrigger=177,TalkTime=38}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Why, it's a Pokémon! But to threaten humans like that, it is apparently none too gentle..."}]
 tellraw @s[scores={DialogueTrigger=177,TalkTime=48}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> It may consider this area its territory."}]
@@ -6165,8 +6165,8 @@ tellraw @s[scores={DialogueTrigger=177,TalkTime=62}] ["",{"text":"<"},{"text":"L
 #tp Emma and little girl in
 execute as @s[scores={DialogueTrigger=177,TalkTime=65}] run particle cloud -378 101 -278 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=177,TalkTime=65}] run particle cloud -378 101 -280 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=177,TalkTime=65}] run tp @e[x=-504,y=215,z=1291,dy=3,nbt=!{pixelmon:npc_chatting}] -378 101 -278
-execute as @s[scores={DialogueTrigger=177,TalkTime=65}] run tp @e[x=-504,y=215,z=1293,dy=3,nbt=!{pixelmon:npc_chatting}] -378 101 -280
+execute as @s[scores={DialogueTrigger=177,TalkTime=65}] run tp @e[x=-504,y=215,z=1291,dy=3,type=pixelmon:npc_chatting] -378 101 -278
+execute as @s[scores={DialogueTrigger=177,TalkTime=65}] run tp @e[x=-504,y=215,z=1293,dy=3,type=pixelmon:npc_chatting] -378 101 -280
 
 tellraw @s[scores={DialogueTrigger=177,TalkTime=68}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> Oh, nobody special. But this little sweetie right here is Mimi."}]
 tellraw @s[scores={DialogueTrigger=177,TalkTime=76}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> That's what I named it, anyway."}]
@@ -6221,7 +6221,7 @@ execute as @s[scores={DialogueTrigger=177,TalkTime=410}] run playsound espurr ho
 
 #Espurr tps off
 execute as @s[scores={DialogueTrigger=177,TalkTime=415}] run particle cloud -376 101 -276 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=177,TalkTime=415}] run tp @e[x=-376,y=100,z=-276,dy=3,nbt=!{pixelmon:statue}] -504 217 1296
+execute as @s[scores={DialogueTrigger=177,TalkTime=415}] run tp @e[x=-376,y=100,z=-276,dy=3,type=pixelmon:statue] -504 217 1296
 
 tellraw @s[scores={DialogueTrigger=177,TalkTime=420}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Wh-what? Why did Mimi run off?"}]
 tellraw @s[scores={DialogueTrigger=177,TalkTime=427}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> Mimi gets scared pretty easy. Afraid of humans, I guess. Especially grown-ups."}]
@@ -6246,18 +6246,18 @@ tellraw @s[scores={DialogueTrigger=177,TalkTime=530}] ["",{"text":"<"},{"text":"
 #Emma and friend
 execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run particle cloud -378 101 -278 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run particle cloud -378 101 -280 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-378,y=100,z=-278,dy=3,nbt=!{pixelmon:npc_chatting}] -504 216 1291
-execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-378,y=100,z=-280,dy=3,nbt=!{pixelmon:npc_chatting}] -504 216 1293
+execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-378,y=100,z=-278,dy=3,type=pixelmon:npc_chatting] -504 216 1291
+execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-378,y=100,z=-280,dy=3,type=pixelmon:npc_chatting] -504 216 1293
 
 #Looker
 execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run particle cloud -374 101 -280 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-374,y=100,z=-280,dy=3,nbt=!{pixelmon:npc_chatting}] -504 216 1289
+execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-374,y=100,z=-280,dy=3,type=pixelmon:npc_chatting] -504 216 1289
 
 #Kid Trainers
-execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-375,y=100,z=-299,dy=3,nbt=!{pixelmon:npc_trainer}] -504 221 1284
-execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-369,y=100,z=-297,dy=3,nbt=!{pixelmon:npc_trainer}] -504 221 1286
-execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-372,y=100,z=-291,dy=3,nbt=!{pixelmon:npc_trainer}] -504 221 1288
-execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-366,y=100,z=-288,dy=3,nbt=!{pixelmon:npc_trainer}] -504 221 1290
+execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-375,y=100,z=-299,dy=3,type=pixelmon:npc_trainer] -504 221 1284
+execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-369,y=100,z=-297,dy=3,type=pixelmon:npc_trainer] -504 221 1286
+execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-372,y=100,z=-291,dy=3,type=pixelmon:npc_trainer] -504 221 1288
+execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-366,y=100,z=-288,dy=3,type=pixelmon:npc_trainer] -504 221 1290
 
 execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run scoreboard players set @s click 1
 
@@ -6271,7 +6271,7 @@ scoreboard players set @s[tag=Dialogue177] DialogueTrigger 0
 #Finding Espurr in Alley:
 
 #tp Espurr in Separately
-#execute as @s[x=-405,y=101,z=-370,r=20,tag=Dialogue177] run execute as @s[tag=!Dialogue178] run tp @e[x=-504,y=226,z=1284,dy=3,nbt=!{pixelmon:statue}] -428 101 -363
+#execute as @s[x=-405,y=101,z=-370,r=20,tag=Dialogue177] run execute as @s[tag=!Dialogue178] run tp @e[x=-504,y=226,z=1284,dy=3,type=pixelmon:statue] -428 101 -363
 
 tellraw @s[scores={DialogueTrigger=178,TalkTime=3}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Murrr... Mrrrawwwr..."}]
 execute as @s[scores={DialogueTrigger=178,TalkTime=3}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
@@ -6282,8 +6282,8 @@ execute as @s[scores={DialogueTrigger=178,TalkTime=17}] run playsound espurr hos
 #Looker and Emma tp in
 execute as @s[scores={DialogueTrigger=178,TalkTime=21}] run particle cloud -431 101 -365 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=178,TalkTime=21}] run particle cloud -428 101 -366 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=178,TalkTime=21}] run tp @e[x=-504,y=225,z=1286,dy=3,nbt=!{pixelmon:npc_chatting}] -431 101 -365
-execute as @s[scores={DialogueTrigger=178,TalkTime=21}] run tp @e[x=-504,y=225,z=1288,dy=3,nbt=!{pixelmon:npc_chatting}] -428 101 -366
+execute as @s[scores={DialogueTrigger=178,TalkTime=21}] run tp @e[x=-504,y=225,z=1286,dy=3,type=pixelmon:npc_chatting] -431 101 -365
+execute as @s[scores={DialogueTrigger=178,TalkTime=21}] run tp @e[x=-504,y=225,z=1288,dy=3,type=pixelmon:npc_chatting] -428 101 -366
 
 tellraw @s[scores={DialogueTrigger=178,TalkTime=24}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Murrrmurrr-mrrrawwwr!"}]
 execute as @s[scores={DialogueTrigger=178,TalkTime=24}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
@@ -6303,9 +6303,9 @@ tellraw @s[scores={DialogueTrigger=178,TalkTime=107}] ["",{"text":"<"},{"text":"
 #tps player to Looker Bureau
 
 execute as @s[scores={DialogueTrigger=178,TalkTime=117}] run effect give @s minecraft:blindness 5 1 true
-execute as @s[scores={DialogueTrigger=178,TalkTime=119}] run tp @e[x=-428,y=100,z=-363,dy=3,nbt=!{pixelmon:statue}] -504 227 1284
-execute as @s[scores={DialogueTrigger=178,TalkTime=119}] run tp @e[x=-431,y=100,z=-365,dy=3,nbt=!{pixelmon:npc_chatting}] -504 226 1286
-execute as @s[scores={DialogueTrigger=178,TalkTime=119}] run tp @e[x=-428,y=100,z=-366,dy=3,nbt=!{pixelmon:npc_chatting}] -504 226 1288
+execute as @s[scores={DialogueTrigger=178,TalkTime=119}] run tp @e[x=-428,y=100,z=-363,dy=3,type=pixelmon:statue] -504 227 1284
+execute as @s[scores={DialogueTrigger=178,TalkTime=119}] run tp @e[x=-431,y=100,z=-365,dy=3,type=pixelmon:npc_chatting] -504 226 1286
+execute as @s[scores={DialogueTrigger=178,TalkTime=119}] run tp @e[x=-428,y=100,z=-366,dy=3,type=pixelmon:npc_chatting] -504 226 1288
 execute as @s[scores={DialogueTrigger=178,TalkTime=120}] run tp @s -147 101 437 115 14
 
 
@@ -6363,7 +6363,7 @@ scoreboard players set @s[tag=Dialogue178] DialogueTrigger 0
 #execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call15,score_TalkTime=0] run scoreboard players set @s[tag=!Dialogue179] DialogueTrigger 179
 
 #Tp Looker in if needed
-execute as @s[scores={DialogueTrigger=179,TalkTime=1}] run tp @e[x=-504,y=230,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] -151 101 382
+execute as @s[scores={DialogueTrigger=179,TalkTime=1}] run tp @e[x=-504,y=230,z=1284,dy=3,type=pixelmon:npc_chatting] -151 101 382
 
 tellraw @s[scores={DialogueTrigger=179,TalkTime=2}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> You're here, "},{"selector":"@s"},{"text":"! That is good. I need 30 seconds of your time, no more."}]
 tellraw @s[scores={DialogueTrigger=179,TalkTime=12}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> It is about our new friend, Emma."}]
@@ -6408,7 +6408,7 @@ scoreboard players set @s[tag=Dialogue181] DialogueTrigger 0
 #execute as @s[x=-161,y=100,z=375,dx=19,dy=15,dz=23,tag=Dialogue181] run scoreboard players set @s[tag=!Dialogue182] DialogueTrigger 182
 
 #tp Looker in if gone
-execute as @s[scores={DialogueTrigger=182,TalkTime=1}] run tp @e[x=-504,y=230,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] -151 101 382
+execute as @s[scores={DialogueTrigger=182,TalkTime=1}] run tp @e[x=-504,y=230,z=1284,dy=3,type=pixelmon:npc_chatting] -151 101 382
 
 execute as @s[scores={DialogueTrigger=182,TalkTime=1}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=182,TalkTime=1}] run title @s times 20 100 20
@@ -6418,7 +6418,7 @@ execute as @s[scores={DialogueTrigger=182,TalkTime=1}] run scoreboard players se
 
 #Woman (tourist skin) tps in
 execute as @s[scores={DialogueTrigger=182,TalkTime=10}] run particle cloud -149 101 387 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=182,TalkTime=10}] run tp @e[x=-504,y=230,z=1288,dy=3,nbt=!{pixelmon:npc_chatting}] -149 101 387
+execute as @s[scores={DialogueTrigger=182,TalkTime=10}] run tp @e[x=-504,y=230,z=1288,dy=3,type=pixelmon:npc_chatting] -149 101 387
 
 tellraw @s[scores={DialogueTrigger=182,TalkTime=13}] {"text":"<...> \u304a\u306d\u304c\u3044\u3067\u3059\uff01 \u305f\u3059\u3051\u3066\u304f\u3060\u3055\u3044\uff01"}
 tellraw @s[scores={DialogueTrigger=182,TalkTime=20}] {"text":"<...> \u305f\u3044\u305b\u3064\u306a \u30dd\u30b1\u30e2\u30f3\u3061\u3083\u3093\u304c \u306c\u3059\u307e\u308c\u3066 \u3057\u307e\u3063\u305f\u3093\u3067\u3059\uff01"}
@@ -6444,7 +6444,7 @@ tellraw @s[scores={DialogueTrigger=182,TalkTime=207}] ["",{"text":"<"},{"text":"
 
 #Looker tps out
 execute as @s[scores={DialogueTrigger=182,TalkTime=216}] run particle cloud -151 101 382 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=182,TalkTime=216}] run tp @e[x=-151,y=100,z=382,dy=3,nbt=!{pixelmon:npc_chatting}] -504 231 1284
+execute as @s[scores={DialogueTrigger=182,TalkTime=216}] run tp @e[x=-151,y=100,z=382,dy=3,type=pixelmon:npc_chatting] -504 231 1284
 
 tellraw @s[scores={DialogueTrigger=182,TalkTime=219}] {"text":"<...> \u3061\u3087\u3063\u3068 \u306a\u3093\u306a\u306e\u3088\uff01 \u3042\u306e \u3072\u3068\uff01\uff01"}
 tellraw @s[scores={DialogueTrigger=182,TalkTime=227}] {"text":"<...> \u305c\u3093\u305c\u3093 \u308f\u304b\u3063\u3066\u306a\u3044\u3058\u3083\u306a\u3044\uff01 \u308f\u305f\u3057\u306f \u306e\u3093\u304d\u306b \u304a\u3061\u3083 \u306a\u3093\u3066 \u306e\u3093\u3067\u308b \u3070\u3042\u3044\u3067\u306f \u306a\u3044\u3093\u3067\u3059\uff01"}
@@ -6456,8 +6456,8 @@ execute as @s[scores={DialogueTrigger=182,TalkTime=252}] run playsound espurr ho
 #tp Mimi and Emma in
 execute as @s[scores={DialogueTrigger=182,TalkTime=255}] run particle cloud -151 101 391 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=182,TalkTime=255}] run particle cloud -149 101 391 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=182,TalkTime=255}] run tp @e[x=-504,y=230,z=1286,dy=3,nbt=!{pixelmon:npc_chatting}] -149 101 391
-execute as @s[scores={DialogueTrigger=182,TalkTime=255}] run tp @e[x=-504,y=230,z=1291,dy=3,nbt=!{pixelmon:statue}] -151 101 391
+execute as @s[scores={DialogueTrigger=182,TalkTime=255}] run tp @e[x=-504,y=230,z=1286,dy=3,type=pixelmon:npc_chatting] -149 101 391
+execute as @s[scores={DialogueTrigger=182,TalkTime=255}] run tp @e[x=-504,y=230,z=1291,dy=3,type=pixelmon:statue] -151 101 391
 
 tellraw @s[scores={DialogueTrigger=182,TalkTime=260}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Oh! "},{"selector":"@s"},{"text":"! Welcome back!"}]
 tellraw @s[scores={DialogueTrigger=182,TalkTime=267}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Is Mr. Looker out? And who's this old lady?"}]
@@ -6492,7 +6492,7 @@ tellraw @s[scores={DialogueTrigger=182,TalkTime=512}] {"text":"... ... ... It se
 
 #Looker tps in
 execute as @s[scores={DialogueTrigger=182,TalkTime=519}] run particle cloud -151 101 382 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=182,TalkTime=519}] run tp @e[x=-504,y=230,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] -151 101 382
+execute as @s[scores={DialogueTrigger=182,TalkTime=519}] run tp @e[x=-504,y=230,z=1284,dy=3,type=pixelmon:npc_chatting] -151 101 382
 
 tellraw @s[scores={DialogueTrigger=182,TalkTime=522}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I return! My apologies for the delay."}]
 tellraw @s[scores={DialogueTrigger=182,TalkTime=530}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I have obtained the finest quality tea, since our guest obviously has exquisite taste!"}]
@@ -6533,7 +6533,7 @@ tellraw @s[scores={DialogueTrigger=182,TalkTime=793}] ["",{"text":"<"},{"text":"
 
 #tp Looker out
 execute as @s[scores={DialogueTrigger=182,TalkTime=798}] run particle cloud -151 101 382 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=182,TalkTime=798}] run tp @e[x=-151,y=100,z=382,dy=3,nbt=!{pixelmon:npc_chatting}] -504 231 1284
+execute as @s[scores={DialogueTrigger=182,TalkTime=798}] run tp @e[x=-151,y=100,z=382,dy=3,type=pixelmon:npc_chatting] -504 231 1284
 
 tellraw @s[scores={DialogueTrigger=182,TalkTime=801}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> "},{"selector":"@s"},{"text":", help Mr. Looker! Please! He doesn't even have a Pokémon!"}]
 tellraw @s[scores={DialogueTrigger=182,TalkTime=811}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> H-he once said something... A long time ago, he had a Pokémon."}]
@@ -6554,9 +6554,9 @@ execute as @s[scores={DialogueTrigger=182,TalkTime=910}] run playsound espurr ho
 execute as @s[scores={DialogueTrigger=182,TalkTime=915}] run particle cloud -149 101 387 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=182,TalkTime=915}] run particle cloud -149 101 391 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=182,TalkTime=915}] run particle cloud -151 101 391 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=182,TalkTime=915}] run tp @e[x=-151,y=100,z=391,dy=3,nbt=!{pixelmon:statue}] -504 232 1291
-execute as @s[scores={DialogueTrigger=182,TalkTime=915}] run tp @e[x=-149,y=100,z=391,dy=3,nbt=!{pixelmon:npc_chatting}] -504 231 1286
-execute as @s[scores={DialogueTrigger=182,TalkTime=915}] run tp @e[x=-149,y=100,z=387,dy=3,nbt=!{pixelmon:npc_chatting}] -504 231 1288
+execute as @s[scores={DialogueTrigger=182,TalkTime=915}] run tp @e[x=-151,y=100,z=391,dy=3,type=pixelmon:statue] -504 232 1291
+execute as @s[scores={DialogueTrigger=182,TalkTime=915}] run tp @e[x=-149,y=100,z=391,dy=3,type=pixelmon:npc_chatting] -504 231 1286
+execute as @s[scores={DialogueTrigger=182,TalkTime=915}] run tp @e[x=-149,y=100,z=387,dy=3,type=pixelmon:npc_chatting] -504 231 1288
 
 execute as @s[scores={DialogueTrigger=182,TalkTime=916}] run scoreboard players set @s click 1
 
@@ -6570,10 +6570,10 @@ scoreboard players set @s[tag=Dialogue182] DialogueTrigger 0
 #scoreboard players set @a[x=1103,y=105,z=2007,r=10,score_TalkTime=0,tag=!Dialogue183] DialogueTrigger 183
 
 #TP in gang NPCs before dialogue
-#execute as @s[x=1103,y=105,z=2007,r=50,score_TalkTime=0,tag=!Dialogue183] run tp @e[x=-504,y=235,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] 1119 105 2007
-#execute as @s[x=1103,y=105,z=2007,r=50,score_TalkTime=0,tag=!Dialogue183] run tp @e[x=-504,y=235,z=1286,dy=3,nbt=!{pixelmon:npc_chatting}] 1124 105 2003
-#execute as @s[x=1103,y=105,z=2007,r=50,score_TalkTime=0,tag=!Dialogue183] run tp @e[x=-504,y=235,z=1288,dy=3,nbt=!{pixelmon:npc_chatting}] 1130 105 2009
-#execute as @s[x=1103,y=105,z=2007,r=50,score_TalkTime=0,tag=!Dialogue183] run tp @e[x=-504,y=235,z=1290,dy=3,nbt=!{pixelmon:npc_chatting}] 1131 105 2005
+#execute as @s[x=1103,y=105,z=2007,r=50,score_TalkTime=0,tag=!Dialogue183] run tp @e[x=-504,y=235,z=1284,dy=3,type=pixelmon:npc_chatting] 1119 105 2007
+#execute as @s[x=1103,y=105,z=2007,r=50,score_TalkTime=0,tag=!Dialogue183] run tp @e[x=-504,y=235,z=1286,dy=3,type=pixelmon:npc_chatting] 1124 105 2003
+#execute as @s[x=1103,y=105,z=2007,r=50,score_TalkTime=0,tag=!Dialogue183] run tp @e[x=-504,y=235,z=1288,dy=3,type=pixelmon:npc_chatting] 1130 105 2009
+#execute as @s[x=1103,y=105,z=2007,r=50,score_TalkTime=0,tag=!Dialogue183] run tp @e[x=-504,y=235,z=1290,dy=3,type=pixelmon:npc_chatting] 1131 105 2005
 
 tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] ["",{"text":"<"},{"text":"Punk Girl","color":"light_purple"},{"text":"> Hey, hey, hey! Wotcher doin' here, old man?"}]
 tellraw @s[scores={DialogueTrigger=183,TalkTime=10}] ["",{"text":"<"},{"text":"Punk Girl","color":"light_purple"},{"text":"> You wander in here by mistake or what?"}]
@@ -6612,13 +6612,13 @@ tellraw @s[scores={DialogueTrigger=183,TalkTime=269}] ["",{"text":"<"},{"text":"
 tellraw @s[scores={DialogueTrigger=183,TalkTime=278}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> "},{"selector":"@s"},{"text":", my friend... I'm afraid this is all I can do for you."}]
 
 #replace punk npcs with trainers
-execute as @s[scores={DialogueTrigger=183,TalkTime=279}] run tp @e[x=1124,y=104,z=2003,dy=3,nbt=!{pixelmon:npc_chatting}] -504 236 1286
-execute as @s[scores={DialogueTrigger=183,TalkTime=279}] run tp @e[x=1130,y=104,z=2009,dy=3,nbt=!{pixelmon:npc_chatting}] -504 236 1288
-execute as @s[scores={DialogueTrigger=183,TalkTime=279}] run tp @e[x=1131,y=104,z=2005,dy=3,nbt=!{pixelmon:npc_chatting}] -504 236 1290
+execute as @s[scores={DialogueTrigger=183,TalkTime=279}] run tp @e[x=1124,y=104,z=2003,dy=3,type=pixelmon:npc_chatting] -504 236 1286
+execute as @s[scores={DialogueTrigger=183,TalkTime=279}] run tp @e[x=1130,y=104,z=2009,dy=3,type=pixelmon:npc_chatting] -504 236 1288
+execute as @s[scores={DialogueTrigger=183,TalkTime=279}] run tp @e[x=1131,y=104,z=2005,dy=3,type=pixelmon:npc_chatting] -504 236 1290
 
-execute as @s[scores={DialogueTrigger=183,TalkTime=279}] run tp @e[x=-504,y=235,z=1292,dy=3,nbt=!{pixelmon:npc_trainer}] 1124 105 2003
-execute as @s[scores={DialogueTrigger=183,TalkTime=279}] run tp @e[x=-504,y=235,z=1294,dy=3,nbt=!{pixelmon:npc_trainer}] 1130 105 2009
-execute as @s[scores={DialogueTrigger=183,TalkTime=279}] run tp @e[x=-504,y=235,z=1296,dy=3,nbt=!{pixelmon:npc_trainer}] 1131 105 2005
+execute as @s[scores={DialogueTrigger=183,TalkTime=279}] run tp @e[x=-504,y=235,z=1292,dy=3,type=pixelmon:npc_trainer] 1124 105 2003
+execute as @s[scores={DialogueTrigger=183,TalkTime=279}] run tp @e[x=-504,y=235,z=1294,dy=3,type=pixelmon:npc_trainer] 1130 105 2009
+execute as @s[scores={DialogueTrigger=183,TalkTime=279}] run tp @e[x=-504,y=235,z=1296,dy=3,type=pixelmon:npc_trainer] 1131 105 2005
 
 tag @s[scores={DialogueTrigger=183,TalkTime=278..}] add Dialogue183
 scoreboard players set @s[tag=Dialogue183] TalkTime 0
@@ -6631,11 +6631,11 @@ scoreboard players set @s[tag=Dialogue183] DialogueTrigger 0
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
 
 #Respawn Nix trainer if needed
-#execute as @s[x=1131,y=105,z=2005,r=20,score_TalkTime=0,tag=!Dialogue184] run execute as @s[tag=Dialogue183] run tp @e[x=-504,y=235,z=1296,dy=3,nbt=!{pixelmon:npc_trainer}] 1131 105 2005
+#execute as @s[x=1131,y=105,z=2005,r=20,score_TalkTime=0,tag=!Dialogue184] run execute as @s[tag=Dialogue183] run tp @e[x=-504,y=235,z=1296,dy=3,type=pixelmon:npc_trainer] 1131 105 2005
 
 #Emma tps in
 execute as @s[scores={DialogueTrigger=184,TalkTime=5}] run particle cloud 1124 105 2009 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=184,TalkTime=5}] run tp @e[x=-504,y=240,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] 1124 105 2009
+execute as @s[scores={DialogueTrigger=184,TalkTime=5}] run tp @e[x=-504,y=240,z=1284,dy=3,type=pixelmon:npc_chatting] 1124 105 2009
 
 tellraw @s[scores={DialogueTrigger=184,TalkTime=5}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Stop it, all of you!"}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=10}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Emma!"}]
@@ -6687,16 +6687,16 @@ tellraw @s[scores={DialogueTrigger=184,TalkTime=295}] ["",{"text":"<"},{"text":"
 execute as @s[scores={DialogueTrigger=184,TalkTime=302}] run effect give @s minecraft:blindness 5 1 true
 
 #Emma
-execute as @s[scores={DialogueTrigger=184,TalkTime=302}] run tp @e[x=1124,y=104,z=2009,dy=3,nbt=!{pixelmon:npc_chatting}] -504 241 1284
+execute as @s[scores={DialogueTrigger=184,TalkTime=302}] run tp @e[x=1124,y=104,z=2009,dy=3,type=pixelmon:npc_chatting] -504 241 1284
 
 #Punks
-execute as @s[scores={DialogueTrigger=184,TalkTime=302}] run tp @e[x=1124,y=104,z=2003,dy=3,nbt=!{pixelmon:npc_trainer}] -504 236 1292
-execute as @s[scores={DialogueTrigger=184,TalkTime=302}] run tp @e[x=1130,y=104,z=2009,dy=3,nbt=!{pixelmon:npc_trainer}] -504 236 1294
-execute as @s[scores={DialogueTrigger=184,TalkTime=302}] run tp @e[x=1131,y=104,z=2005,dy=3,nbt=!{pixelmon:npc_trainer}] -504 236 1296
+execute as @s[scores={DialogueTrigger=184,TalkTime=302}] run tp @e[x=1124,y=104,z=2003,dy=3,type=pixelmon:npc_trainer] -504 236 1292
+execute as @s[scores={DialogueTrigger=184,TalkTime=302}] run tp @e[x=1130,y=104,z=2009,dy=3,type=pixelmon:npc_trainer] -504 236 1294
+execute as @s[scores={DialogueTrigger=184,TalkTime=302}] run tp @e[x=1131,y=104,z=2005,dy=3,type=pixelmon:npc_trainer] -504 236 1296
 
-execute as @s[scores={DialogueTrigger=184,TalkTime=302}] run tp @e[x=-504,y=235,z=1286,dy=3,nbt=!{pixelmon:npc_chatting}] 1124 105 2003
-execute as @s[scores={DialogueTrigger=184,TalkTime=302}] run tp @e[x=-504,y=235,z=1288,dy=3,nbt=!{pixelmon:npc_chatting}] 1130 105 2009
-execute as @s[scores={DialogueTrigger=184,TalkTime=302}] run tp @e[x=-504,y=235,z=1290,dy=3,nbt=!{pixelmon:npc_chatting}] 1131 105 2005
+execute as @s[scores={DialogueTrigger=184,TalkTime=302}] run tp @e[x=-504,y=235,z=1286,dy=3,type=pixelmon:npc_chatting] 1124 105 2003
+execute as @s[scores={DialogueTrigger=184,TalkTime=302}] run tp @e[x=-504,y=235,z=1288,dy=3,type=pixelmon:npc_chatting] 1130 105 2009
+execute as @s[scores={DialogueTrigger=184,TalkTime=302}] run tp @e[x=-504,y=235,z=1290,dy=3,type=pixelmon:npc_chatting] 1131 105 2005
 
 execute as @s[scores={DialogueTrigger=184,TalkTime=303}] run tp @s -73 101 437 155 8
 execute as @s[scores={DialogueTrigger=184,TalkTime=303}] run scoreboard players set @s click 1
@@ -6711,7 +6711,7 @@ tellraw @s[scores={DialogueTrigger=184,TalkTime=356}] ["",{"text":"<"},{"text":"
 tellraw @s[scores={DialogueTrigger=184,TalkTime=367}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> It was all their idea, not mine!"}]
 
 #Punk guy tps in
-execute as @s[scores={DialogueTrigger=184,TalkTime=374}] run tp @e[x=-504,y=240,z=1286,dy=3,nbt=!{pixelmon:npc_chatting}] -76 101 442
+execute as @s[scores={DialogueTrigger=184,TalkTime=374}] run tp @e[x=-504,y=240,z=1286,dy=3,type=pixelmon:npc_chatting] -76 101 442
 execute as @s[scores={DialogueTrigger=184,TalkTime=374}] run particle cloud -76 101 442 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=184,TalkTime=378}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> She may look like a cute kid, but Emma is crazy strong!"}]
@@ -6729,7 +6729,7 @@ tellraw @s[scores={DialogueTrigger=184,TalkTime=472}] ["",{"text":"<"},{"text":"
 tellraw @s[scores={DialogueTrigger=184,TalkTime=481}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> Yeah, that's right, then. See yer later, eh, Emma?"}]
 
 #tps Nix out
-execute as @s[scores={DialogueTrigger=184,TalkTime=486}] run tp @e[x=-76,y=100,z=442,dy=3,nbt=!{pixelmon:npc_chatting}] -504 241 1286
+execute as @s[scores={DialogueTrigger=184,TalkTime=486}] run tp @e[x=-76,y=100,z=442,dy=3,type=pixelmon:npc_chatting] -504 241 1286
 execute as @s[scores={DialogueTrigger=184,TalkTime=486}] run particle cloud -76 101 442 2 2 2 1 100
 
 execute as @s[scores={DialogueTrigger=184,TalkTime=487}] run scoreboard players set @s click 1
@@ -6827,8 +6827,8 @@ execute as @s[scores={DialogueTrigger=185,TalkTime=63}] run title @s title {"tex
 #Summon Malva Holo Call next to Looker
 
 execute as @s[scores={DialogueTrigger=185,TalkTime=65}] run summon armor_stand -123 101.25 379 {Rotation:[90.0f,0.0f],Invisible:1b,Invulnerable:1b,NoGravity:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"carrot_on_a_stick",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:7s}],HandItems:[{},{}],DisabledSlots:2039327}
-execute as @s[scores={DialogueTrigger=185,TalkTime=65}] run data modify entity @e[limit=1,x=-126,y=100,z=379,dy=3,nbt=!{pixelmon:npc_chatting}] {Rotation:[-90.0f,0.0f]}
-execute as @s[scores={DialogueTrigger=185,TalkTime=65}] run replaceitem entity @e[x=-126,y=100,z=379,dy=3,nbt=!{pixelmon:npc_chatting}] weapon.offhand minecraft:carrot_on_a_stick
+execute as @s[scores={DialogueTrigger=185,TalkTime=65}] run data modify entity @e[limit=1,x=-126,y=100,z=379,dy=3,type=pixelmon:npc_chatting] {Rotation:[-90.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=185,TalkTime=65}] run replaceitem entity @e[x=-126,y=100,z=379,dy=3,type=pixelmon:npc_chatting] weapon.offhand minecraft:carrot_on_a_stick
 
 tellraw @s[scores={DialogueTrigger=185,TalkTime=71}] {"text":"Newscast: We bring you a special bulletin..."}
 tellraw @s[scores={DialogueTrigger=185,TalkTime=78}] {"text":"Newscast: Late last night, an intruder broke into the Lumiose Museum and damaged a painting."}
@@ -6836,7 +6836,7 @@ tellraw @s[scores={DialogueTrigger=185,TalkTime=88}] {"text":"Newscast: Museum s
 
 #kill armor stand
 execute as @s[scores={DialogueTrigger=185,TalkTime=98}] run kill @e[x=-123,y=100,z=379,dy=3,type=armor_stand]
-execute as @s[scores={DialogueTrigger=185,TalkTime=98}] run replaceitem entity @e[x=-126,y=100,z=379,dy=3,nbt=!{pixelmon:npc_chatting}] weapon.offhand air
+execute as @s[scores={DialogueTrigger=185,TalkTime=98}] run replaceitem entity @e[x=-126,y=100,z=379,dy=3,type=pixelmon:npc_chatting] weapon.offhand air
 
 tellraw @s[scores={DialogueTrigger=185,TalkTime=101}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Did you see that, "},{"selector":"@s"},{"text":"?! Where trouble goes, Looker must follow!"}]
 tellraw @s[scores={DialogueTrigger=185,TalkTime=111}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I am on my way to the Lumiose Museum to begin my investigations! Most urgently!"}]
@@ -6950,7 +6950,7 @@ scoreboard players set @s[tag=Dialogue188] DialogueTrigger 0
 #/tedit add WIN /scoreboard players set @pl DialogueTrigger 189
 
 #tp NPC in
-#execute as @s[x=-221,y=101,z=-618,r=20,score_TalkTime=0,tag=Dialogue188] run execute as @s[tag=!Dialogue189] run tp @e[x=-504,y=245,z=1284,dy=3,nbt=!{pixelmon:npc_trainer}] -269 101 -619
+#execute as @s[x=-221,y=101,z=-618,r=20,score_TalkTime=0,tag=Dialogue188] run execute as @s[tag=!Dialogue189] run tp @e[x=-504,y=245,z=1284,dy=3,type=pixelmon:npc_trainer] -269 101 -619
 
 #Prevents skipping ahead by ending dialogue if player hasn't heard the Looker dialogue prior
 scoreboard players set @a[tag=!Dialogue188,scores={DialogueTrigger=189}] DialogueTrigger 0
@@ -6960,28 +6960,28 @@ tellraw @s[scores={DialogueTrigger=189,TalkTime=13}] {"text":"<Suspicious Woman 
 tellraw @s[scores={DialogueTrigger=189,TalkTime=20}] {"text":"<Suspicious Woman \"???\"> giving them all to me!"}
 
 #tp Essentia in
-execute as @s[scores={DialogueTrigger=189,TalkTime=26}] run tp @e[x=-504,y=245,z=1286,dy=3,nbt=!{pixelmon:npc_chatting}] -258 130 -619
-execute as @s[scores={DialogueTrigger=189,TalkTime=26}] run data modify entity @e[limit=1,x=-258,y=100,z=-619,dy=100,nbt=!{pixelmon:npc_chatting},name=Essentia] {Rotation:[90.0f,0.0f]}
-execute as @s[scores={DialogueTrigger=189,TalkTime=26}] run execute as @e[x=-258,y=100,z=-619,dy=100,nbt=!{pixelmon:npc_chatting},name=Essentia] run particle cloud ~ ~ ~ 2 2 2 1 100
+execute as @s[scores={DialogueTrigger=189,TalkTime=26}] run tp @e[x=-504,y=245,z=1286,dy=3,type=pixelmon:npc_chatting] -258 130 -619
+execute as @s[scores={DialogueTrigger=189,TalkTime=26}] run data modify entity @e[limit=1,x=-258,y=100,z=-619,dy=100,type=pixelmon:npc_chatting,name=Essentia] {Rotation:[90.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=189,TalkTime=26}] run execute as @e[x=-258,y=100,z=-619,dy=100,type=pixelmon:npc_chatting,name=Essentia] run particle cloud ~ ~ ~ 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=189,TalkTime=28}] ["",{"text":"<"},{"text":"...","color":"gold"},{"text":"> Stop right there!"}]
 
 #tp Looker in
 execute as @s[scores={DialogueTrigger=189,TalkTime=32}] run particle cloud -250 101 -621 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=189,TalkTime=32}] run tp @e[x=-504,y=245,z=1288,dy=3,nbt=!{pixelmon:npc_chatting}] -250 101 -621
+execute as @s[scores={DialogueTrigger=189,TalkTime=32}] run tp @e[x=-504,y=245,z=1288,dy=3,type=pixelmon:npc_chatting] -250 101 -621
 execute as @s[scores={DialogueTrigger=189,TalkTime=32}] run scoreboard players set @s click 1
 
 tellraw @s[scores={DialogueTrigger=189,TalkTime=36}] ["",{"text":"<"},{"text":"...","color":"gold"},{"text":"> OBSTRUCTION DETECTED. PROCESS JEOPARDIZED."}]
 tellraw @s[scores={DialogueTrigger=189,TalkTime=42}] ["",{"text":"<"},{"text":"...","color":"gold"},{"text":"> RELOCATE HUNTING GROUND."}]
 
 #tp Essentia out
-execute as @s[scores={DialogueTrigger=189,TalkTime=48}] run data modify entity @e[limit=1,x=-258,y=100,z=-619,dy=100,nbt=!{pixelmon:npc_chatting},name=Essentia] {Motion:[0.0,3.0,0.0]}
-execute as @s[scores={DialogueTrigger=189,TalkTime=50}] run execute as @e[x=-258,y=100,z=-619,dy=100,nbt=!{pixelmon:npc_chatting},name=Essentia] run particle cloud ~ ~ ~ 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=189,TalkTime=50}] run tp @e[x=-258,y=100,z=-619,dy=100,nbt=!{pixelmon:npc_chatting},name=Essentia] -504 246 1286
+execute as @s[scores={DialogueTrigger=189,TalkTime=48}] run data modify entity @e[limit=1,x=-258,y=100,z=-619,dy=100,type=pixelmon:npc_chatting,name=Essentia] {Motion:[0.0,3.0,0.0]}
+execute as @s[scores={DialogueTrigger=189,TalkTime=50}] run execute as @e[x=-258,y=100,z=-619,dy=100,type=pixelmon:npc_chatting,name=Essentia] run particle cloud ~ ~ ~ 2 2 2 1 100
+execute as @s[scores={DialogueTrigger=189,TalkTime=50}] run tp @e[x=-258,y=100,z=-619,dy=100,type=pixelmon:npc_chatting,name=Essentia] -504 246 1286
 
 #tp woman out
 execute as @s[scores={DialogueTrigger=189,TalkTime=47}] run particle cloud -269 101 -619 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=189,TalkTime=47}] run tp @e[x=-269,y=100,z=-619,dy=3,nbt=!{pixelmon:npc_trainer}] -504 246 1284
+execute as @s[scores={DialogueTrigger=189,TalkTime=47}] run tp @e[x=-269,y=100,z=-619,dy=3,type=pixelmon:npc_trainer] -504 246 1284
 
 tellraw @s[scores={DialogueTrigger=189,TalkTime=54}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Wha--?! What is that woman?! She's no Pokémon, yet she can use Transform?"}]
 tellraw @s[scores={DialogueTrigger=189,TalkTime=63}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Oh, what am I doing? This is not a time to stand around being shocked!"}]
@@ -6995,7 +6995,7 @@ tellraw @s[scores={DialogueTrigger=189,TalkTime=120}] ["",{"text":"<"},{"text":"
 
 #tp Looker out
 execute as @s[scores={DialogueTrigger=189,TalkTime=128}] run particle cloud -250 101 -621 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=189,TalkTime=128}] run tp @e[x=-250,y=100,z=-621,dy=3,nbt=!{pixelmon:npc_chatting}] -504 246 1288
+execute as @s[scores={DialogueTrigger=189,TalkTime=128}] run tp @e[x=-250,y=100,z=-621,dy=3,type=pixelmon:npc_chatting] -504 246 1288
 execute as @s[scores={DialogueTrigger=189,TalkTime=128}] run scoreboard players set @s click 1
 
 #Keeps player from leaving alley while dialogue active
@@ -7013,7 +7013,7 @@ scoreboard players set @s[tag=Dialogue189] DialogueTrigger 0
 #/tedit add WIN /scoreboard players set @pl DialogueTrigger 190
 
 #tp Trainer in
-#execute as @s[x=-122,y=101,z=-608,r=20,score_TalkTime=0,tag=Dialogue189] run execute as @s[tag=!Dialogue190] run tp @e[x=-504,y=245,z=1292,dy=3,nbt=!{pixelmon:npc_trainer}] -95 101 -609
+#execute as @s[x=-122,y=101,z=-608,r=20,score_TalkTime=0,tag=Dialogue189] run execute as @s[tag=!Dialogue190] run tp @e[x=-504,y=245,z=1292,dy=3,type=pixelmon:npc_trainer] -95 101 -609
 
 
 #Prevents skipping ahead by ending dialogue if player hasn't heard the Looker dialogue prior
@@ -7025,28 +7025,28 @@ tellraw @s[scores={DialogueTrigger=190,TalkTime=22}] {"text":"<Suspicious Child 
 
 #Essentia tps in
 
-execute as @s[scores={DialogueTrigger=190,TalkTime=26}] run tp @e[x=-504,y=245,z=1294,dy=3,nbt=!{pixelmon:npc_chatting}] -104 130 -609
-execute as @s[scores={DialogueTrigger=190,TalkTime=27}] run data modify entity @e[limit=1,x=-104,y=100,z=-609,dy=100,nbt=!{pixelmon:npc_chatting},name=Essentia] {Rotation:[-90.0f,0.0f]}
-execute as @s[scores={DialogueTrigger=190,TalkTime=26}] run execute as @e[x=-104,y=100,z=-609,dy=100,nbt=!{pixelmon:npc_chatting},name=Essentia] run particle cloud ~ ~ ~ 2 2 2 1 100
+execute as @s[scores={DialogueTrigger=190,TalkTime=26}] run tp @e[x=-504,y=245,z=1294,dy=3,type=pixelmon:npc_chatting] -104 130 -609
+execute as @s[scores={DialogueTrigger=190,TalkTime=27}] run data modify entity @e[limit=1,x=-104,y=100,z=-609,dy=100,type=pixelmon:npc_chatting,name=Essentia] {Rotation:[-90.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=190,TalkTime=26}] run execute as @e[x=-104,y=100,z=-609,dy=100,type=pixelmon:npc_chatting,name=Essentia] run particle cloud ~ ~ ~ 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=190,TalkTime=29}] ["",{"text":"<"},{"text":"...","color":"gold"},{"text":"> Not today, you crook! I will not allow it!"}]
 
 #tp looker in
 execute as @s[scores={DialogueTrigger=190,TalkTime=36}] run particle cloud -95 101 -609 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=190,TalkTime=36}] run tp @e[x=-504,y=245,z=1296,dy=3,nbt=!{pixelmon:npc_chatting}] -112 101 -608
-execute as @s[scores={DialogueTrigger=190,TalkTime=37}] run data modify entity @e[limit=1,x=-504,y=245,z=1296,dy=3,nbt=!{pixelmon:npc_chatting}] {Rotation:[-90.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=190,TalkTime=36}] run tp @e[x=-504,y=245,z=1296,dy=3,type=pixelmon:npc_chatting] -112 101 -608
+execute as @s[scores={DialogueTrigger=190,TalkTime=37}] run data modify entity @e[limit=1,x=-504,y=245,z=1296,dy=3,type=pixelmon:npc_chatting] {Rotation:[-90.0f,0.0f]}
 execute as @s[scores={DialogueTrigger=190,TalkTime=36}] run scoreboard players set @s click 1
 
 tellraw @s[scores={DialogueTrigger=190,TalkTime=39}] ["",{"text":"<"},{"text":"...","color":"gold"},{"text":"> RECURRENT INTERFERENCE."}]
 
 #tp Essentia off
-execute as @s[scores={DialogueTrigger=190,TalkTime=45}] run data modify entity @e[limit=1,x=-104,y=100,z=-609,dy=100,nbt=!{pixelmon:npc_chatting},name=Essentia] {Motion:[0.0,3.0,0.0]}
-execute as @s[scores={DialogueTrigger=190,TalkTime=47}] run execute as @e[x=-104,y=100,z=-609,dy=100,nbt=!{pixelmon:npc_chatting},name=Essentia] run particle cloud ~ ~ ~ 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=190,TalkTime=47}] run tp @e[x=-104,y=100,z=-609,dy=100,nbt=!{pixelmon:npc_chatting},name=Essentia] -504 246 1294
+execute as @s[scores={DialogueTrigger=190,TalkTime=45}] run data modify entity @e[limit=1,x=-104,y=100,z=-609,dy=100,type=pixelmon:npc_chatting,name=Essentia] {Motion:[0.0,3.0,0.0]}
+execute as @s[scores={DialogueTrigger=190,TalkTime=47}] run execute as @e[x=-104,y=100,z=-609,dy=100,type=pixelmon:npc_chatting,name=Essentia] run particle cloud ~ ~ ~ 2 2 2 1 100
+execute as @s[scores={DialogueTrigger=190,TalkTime=47}] run tp @e[x=-104,y=100,z=-609,dy=100,type=pixelmon:npc_chatting,name=Essentia] -504 246 1294
 
 #tp girl out
 execute as @s[scores={DialogueTrigger=190,TalkTime=47}] run particle cloud -95 101 -609 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=190,TalkTime=47}] run tp @e[x=-95,y=100,z=-609,dy=3,nbt=!{pixelmon:npc_trainer}] -504 246 1292
+execute as @s[scores={DialogueTrigger=190,TalkTime=47}] run tp @e[x=-95,y=100,z=-609,dy=3,type=pixelmon:npc_trainer] -504 246 1292
 
 tellraw @s[scores={DialogueTrigger=190,TalkTime=49}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Argh! She has run off on us again! Is she really not a Pokémon?"}]
 tellraw @s[scores={DialogueTrigger=190,TalkTime=58}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I've never seen a human jump like that... Oh, what am I doing?"}]
@@ -7060,7 +7060,7 @@ tellraw @s[scores={DialogueTrigger=190,TalkTime=114}] ["",{"text":"<"},{"text":"
 
 #tp Looker out
 execute as @s[scores={DialogueTrigger=190,TalkTime=122}] run particle cloud -112 101 -608 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=190,TalkTime=122}] run tp @e[x=-112,y=100,z=-608,dy=3,nbt=!{pixelmon:npc_chatting}] -504 246 1296
+execute as @s[scores={DialogueTrigger=190,TalkTime=122}] run tp @e[x=-112,y=100,z=-608,dy=3,type=pixelmon:npc_chatting] -504 246 1296
 execute as @s[scores={DialogueTrigger=190,TalkTime=122}] run scoreboard players set @s click 1
 
 
@@ -7077,13 +7077,13 @@ scoreboard players set @s[tag=Dialogue190] DialogueTrigger 0
 #execute as @s[x=11,y=101,z=-533,r=7,score_TalkTime=0,tag=Dialogue190] run scoreboard players set @s[tag=!Dialogue191] DialogueTrigger 191
 
 #TP in Black Belt
-#execute as @s[x=11,y=101,z=-533,r=30,score_TalkTime=0,tag=Dialogue190] run execute as @s[tag=!Dialogue191] run tp @e[x=-504,y=250,z=1284,dy=3,nbt=!{pixelmon:npc_chatting}] 11 101 -533
+#execute as @s[x=11,y=101,z=-533,r=30,score_TalkTime=0,tag=Dialogue190] run execute as @s[tag=!Dialogue191] run tp @e[x=-504,y=250,z=1284,dy=3,type=pixelmon:npc_chatting] 11 101 -533
 
 tellraw @s[scores={DialogueTrigger=191,TalkTime=3}] {"text":"<Black Belt> Ahhh... This pain in my chest... Is this what a broken heart feels like?"}
 
 #tp Looker in
 execute as @s[scores={DialogueTrigger=191,TalkTime=8}] run particle cloud 5 101 -528 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=191,TalkTime=8}] run tp @e[x=-504,y=250,z=1286,dy=3,nbt=!{pixelmon:npc_chatting}] 5 101 -528
+execute as @s[scores={DialogueTrigger=191,TalkTime=8}] run tp @e[x=-504,y=250,z=1286,dy=3,type=pixelmon:npc_chatting] 5 101 -528
 
 tellraw @s[scores={DialogueTrigger=191,TalkTime=13}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> What is it? What has happened? "},{"selector":"@s"},{"text":", my friend!"}]
 tellraw @s[scores={DialogueTrigger=191,TalkTime=22}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Come now... Young man... What has happened to you?"}]
@@ -7107,8 +7107,8 @@ tellraw @s[scores={DialogueTrigger=191,TalkTime=141}] ["",{"text":"<"},{"text":"
 #tp Looker and Blackbelt out
 execute as @s[scores={DialogueTrigger=191,TalkTime=150}] run particle cloud 5 101 -528 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=191,TalkTime=150}] run particle cloud 11 101 -533 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=191,TalkTime=150}] run tp @e[x=11,y=100,z=-533,dy=3,nbt=!{pixelmon:npc_chatting}] -504 251 1284
-execute as @s[scores={DialogueTrigger=191,TalkTime=150}] run tp @e[x=5,y=100,z=-528,dy=3,nbt=!{pixelmon:npc_chatting}] -504 251 1286
+execute as @s[scores={DialogueTrigger=191,TalkTime=150}] run tp @e[x=11,y=100,z=-533,dy=3,type=pixelmon:npc_chatting] -504 251 1284
+execute as @s[scores={DialogueTrigger=191,TalkTime=150}] run tp @e[x=5,y=100,z=-528,dy=3,type=pixelmon:npc_chatting] -504 251 1286
 execute as @s[scores={DialogueTrigger=191,TalkTime=150}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=191,TalkTime=150..}] add Dialogue191
@@ -7122,7 +7122,7 @@ scoreboard players set @s[tag=Dialogue191] DialogueTrigger 0
 #/tedit add WIN /scoreboard players set @pl DialogueTrigger 192
 
 #Tps trainer in
-#execute as @s[x=-391,y=101,z=-275,r=30,score_TalkTime=0,tag=Dialogue191] run execute as @s[tag=!Dialogue192] run tp @e[x=-504,y=250,z=1290,dy=3,nbt=!{pixelmon:npc_trainer}] -391 101 -275
+#execute as @s[x=-391,y=101,z=-275,r=30,score_TalkTime=0,tag=Dialogue191] run execute as @s[tag=!Dialogue192] run tp @e[x=-504,y=250,z=1290,dy=3,type=pixelmon:npc_trainer] -391 101 -275
 
 #Prevents skipping ahead by ending dialogue if player hasn't heard the Looker dialogue prior
 scoreboard players set @a[tag=!Dialogue191,scores={DialogueTrigger=192}] DialogueTrigger 0
@@ -7131,9 +7131,9 @@ tellraw @s[scores={DialogueTrigger=192,TalkTime=5}] {"text":"<Suspicious Woman \
 tellraw @s[scores={DialogueTrigger=192,TalkTime=13}] {"text":"<Suspicious Woman \"???\"> So why not give up already and hand them over to me?"}
 
 #tp Essentia in
-execute as @s[scores={DialogueTrigger=192,TalkTime=17}] run tp @e[x=-504,y=250,z=1292,dy=3,nbt=!{pixelmon:npc_chatting}] -382 130 -277
-execute as @s[scores={DialogueTrigger=192,TalkTime=18}] run data modify entity @e[limit=1,x=-382,y=100,z=-277,dy=100,nbt=!{pixelmon:npc_chatting},name=Essentia] {Rotation:[-77.0f,0.0f]}
-execute as @s[scores={DialogueTrigger=192,TalkTime=17}] run execute as @e[x=-382,y=100,z=-277,dy=100,nbt=!{pixelmon:npc_chatting}] run particle cloud ~ ~ ~ 2 2 2 1 100
+execute as @s[scores={DialogueTrigger=192,TalkTime=17}] run tp @e[x=-504,y=250,z=1292,dy=3,type=pixelmon:npc_chatting] -382 130 -277
+execute as @s[scores={DialogueTrigger=192,TalkTime=18}] run data modify entity @e[limit=1,x=-382,y=100,z=-277,dy=100,type=pixelmon:npc_chatting,name=Essentia] {Rotation:[-77.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=192,TalkTime=17}] run execute as @e[x=-382,y=100,z=-277,dy=100,type=pixelmon:npc_chatting] run particle cloud ~ ~ ~ 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=192,TalkTime=20}] ["",{"text":"<"},{"text":"...","color":"gold"},{"text":"> RELINQUISH EVERY POKÉMON YOU POSSESS. COOPERATE OR I WILL TAKE THEM BY FORCE."}]
 tellraw @s[scores={DialogueTrigger=192,TalkTime=29}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Freeze!"}]
@@ -7144,11 +7144,11 @@ execute as @s[scores={DialogueTrigger=192,TalkTime=29}] run scoreboard players s
 
 #tp Looker in
 execute as @s[scores={DialogueTrigger=192,TalkTime=32}] run particle cloud -380 101 -278 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=192,TalkTime=32}] run tp @e[x=-504,y=250,z=1294,dy=3,nbt=!{pixelmon:npc_chatting}] -380 101 -278
+execute as @s[scores={DialogueTrigger=192,TalkTime=32}] run tp @e[x=-504,y=250,z=1294,dy=3,type=pixelmon:npc_chatting] -380 101 -278
 
 #tp woman out
 execute as @s[scores={DialogueTrigger=192,TalkTime=32}] run particle cloud -391 101 -275 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=192,TalkTime=32}] run tp @e[x=-391,y=100,z=-275,dy=3,nbt=!{pixelmon:npc_trainer}] -504 251 1290
+execute as @s[scores={DialogueTrigger=192,TalkTime=32}] run tp @e[x=-391,y=100,z=-275,dy=3,type=pixelmon:npc_trainer] -504 251 1290
 
 tellraw @s[scores={DialogueTrigger=192,TalkTime=35}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Pokémon thief! I will not let you lay a finger on my partner!"}]
 tellraw @s[scores={DialogueTrigger=192,TalkTime=44}] ["",{"text":"<"},{"text":"...","color":"gold"},{"text":"> DO NOT OBSTRUCT ME. I WILL ERADICATE YOU."}]
@@ -7158,7 +7158,7 @@ tellraw @s[scores={DialogueTrigger=192,TalkTime=69}] ["",{"text":"<"},{"text":"L
 
 #Espurr tps in
 execute as @s[scores={DialogueTrigger=192,TalkTime=75}] run particle cloud -378 101 -275 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=192,TalkTime=75}] run tp @e[x=-504,y=251,z=1296,dy=3,nbt=!{pixelmon:statue}] -378 101 -275
+execute as @s[scores={DialogueTrigger=192,TalkTime=75}] run tp @e[x=-504,y=251,z=1296,dy=3,type=pixelmon:statue] -378 101 -275
 
 tellraw @s[scores={DialogueTrigger=192,TalkTime=78}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mrrraaawwwr!"}]
 execute as @s[scores={DialogueTrigger=192,TalkTime=78}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
@@ -7223,9 +7223,9 @@ tellraw @s[scores={DialogueTrigger=192,TalkTime=332}] ["",{"text":"<"},{"text":"
 tellraw @s[scores={DialogueTrigger=192,TalkTime=339}] ["",{"text":"<"},{"text":"Essentia","color":"gold"},{"text":"> MUST...DISCONTINUE..."}]
 
 #Essentia tps away
-execute as @s[scores={DialogueTrigger=192,TalkTime=346}] run data modify entity @e[limit=1,x=-382,y=100,z=-277,dy=100,nbt=!{pixelmon:npc_chatting},name=Essentia] {Motion:[0.0,3.0,0.0]}
-execute as @s[scores={DialogueTrigger=192,TalkTime=348}] run execute as @e[x=-382,y=100,z=-277,dy=100,nbt=!{pixelmon:npc_chatting},name=Essentia] run particle cloud ~ ~ ~ 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=192,TalkTime=348}] run tp @e[x=-382,y=100,z=-277,dy=100,nbt=!{pixelmon:npc_chatting},name=Essentia] -504 251 1292
+execute as @s[scores={DialogueTrigger=192,TalkTime=346}] run data modify entity @e[limit=1,x=-382,y=100,z=-277,dy=100,type=pixelmon:npc_chatting,name=Essentia] {Motion:[0.0,3.0,0.0]}
+execute as @s[scores={DialogueTrigger=192,TalkTime=348}] run execute as @e[x=-382,y=100,z=-277,dy=100,type=pixelmon:npc_chatting,name=Essentia] run particle cloud ~ ~ ~ 2 2 2 1 100
+execute as @s[scores={DialogueTrigger=192,TalkTime=348}] run tp @e[x=-382,y=100,z=-277,dy=100,type=pixelmon:npc_chatting,name=Essentia] -504 251 1292
 
 tellraw @s[scores={DialogueTrigger=192,TalkTime=350}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Emma!"}]
 tellraw @s[scores={DialogueTrigger=192,TalkTime=355}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mrrr-mrrrawwwrrrr!"}]
@@ -7242,9 +7242,9 @@ tellraw @s[scores={DialogueTrigger=192,TalkTime=383}] ["",{"text":"<"},{"text":"
 
 execute as @s[scores={DialogueTrigger=192,TalkTime=390}] run effect give @s minecraft:blindness 5 1 true
 
-execute as @s[scores={DialogueTrigger=192,TalkTime=391}] run tp @e[x=-378,y=100,z=-275,dy=3,nbt=!{pixelmon:statue}] -504 252 1296
-execute as @s[scores={DialogueTrigger=192,TalkTime=391}] run tp @e[x=-380,y=100,z=-278,dy=3,nbt=!{pixelmon:npc_chatting}] -504 251 1294
-execute as @s[scores={DialogueTrigger=192,TalkTime=391}] run tp @e[x=-391,y=100,z=-275,dy=3,nbt=!{pixelmon:npc_trainer}] -504 251 1290
+execute as @s[scores={DialogueTrigger=192,TalkTime=391}] run tp @e[x=-378,y=100,z=-275,dy=3,type=pixelmon:statue] -504 252 1296
+execute as @s[scores={DialogueTrigger=192,TalkTime=391}] run tp @e[x=-380,y=100,z=-278,dy=3,type=pixelmon:npc_chatting] -504 251 1294
+execute as @s[scores={DialogueTrigger=192,TalkTime=391}] run tp @e[x=-391,y=100,z=-275,dy=3,type=pixelmon:npc_trainer] -504 251 1290
 
 execute as @s[scores={DialogueTrigger=192,TalkTime=392}] run tp @s -50 101 434 180 8
 
@@ -7322,7 +7322,7 @@ scoreboard players set @s[tag=Dialogue225] DialogueTrigger 0
 #execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call19,score_DialogueTrigger=0] run scoreboard players set @s[tag=!Dialogue194] DialogueTrigger 193
 
 #tp in Emma if gone
-execute as @s[scores={DialogueTrigger=193,TalkTime=1}] run tp @e[x=-504,y=100,z=1300,dy=3,nbt=!{pixelmon:npc_chatting}] -77 101 383
+execute as @s[scores={DialogueTrigger=193,TalkTime=1}] run tp @e[x=-504,y=100,z=1300,dy=3,type=pixelmon:npc_chatting] -77 101 383
 
 tellraw @s[scores={DialogueTrigger=193,TalkTime=3}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> Oh! You actually showed up!"}]
 tellraw @s[scores={DialogueTrigger=193,TalkTime=10}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> Hey, "},{"selector":"@s"},{"text":", I was hoping to find Mr. Looker."}]
@@ -7335,14 +7335,14 @@ tellraw @s[scores={DialogueTrigger=193,TalkTime=63}] ["",{"text":"<"},{"text":"E
 
 #Emma tps out
 execute as @s[scores={DialogueTrigger=193,TalkTime=70}] run particle cloud -77 101 383 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=193,TalkTime=70}] run tp @e[x=-77,y=100,z=383,dy=3,nbt=!{pixelmon:npc_chatting}] -504 101 1300
+execute as @s[scores={DialogueTrigger=193,TalkTime=70}] run tp @e[x=-77,y=100,z=383,dy=3,type=pixelmon:npc_chatting] -504 101 1300
 
 tellraw @s[scores={DialogueTrigger=193,TalkTime=73}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Murrr-murrrawr!"}]
 execute as @s[scores={DialogueTrigger=193,TalkTime=73}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
 
 #Butler tps in
 execute as @s[scores={DialogueTrigger=193,TalkTime=78}] run particle cloud -77 101 394 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=193,TalkTime=78}] run tp @e[x=-504,y=100,z=1302,dy=3,nbt=!{pixelmon:npc_trainer}] -77 101 394
+execute as @s[scores={DialogueTrigger=193,TalkTime=78}] run tp @e[x=-504,y=100,z=1302,dy=3,type=pixelmon:npc_trainer] -77 101 394
 
 tellraw @s[scores={DialogueTrigger=193,TalkTime=81}] {"text":"<...> Please pardon my intrusion..."}
 tellraw @s[scores={DialogueTrigger=193,TalkTime=88}] ["",{"text":"<...> Would I be correct to assume that this is the Looker Bureau and that you might be "},{"selector":"@s"},{"text":"?"}]
@@ -7359,7 +7359,7 @@ scoreboard players set @s[tag=Dialogue193] DialogueTrigger 0
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
 
 #Return TP if needed
-#execute as @s[x=-77,y=100,z=394,r=10,score_TalkTime=0,tag=Dialogue193] run execute as @s[tag=!Dialogue194] run tp @e[x=-504,y=100,z=1302,dy=3,nbt=!{pixelmon:npc_trainer}] -77 101 394
+#execute as @s[x=-77,y=100,z=394,r=10,score_TalkTime=0,tag=Dialogue193] run execute as @s[tag=!Dialogue194] run tp @e[x=-504,y=100,z=1302,dy=3,type=pixelmon:npc_trainer] -77 101 394
 
 tellraw @s[scores={DialogueTrigger=194,TalkTime=5}] {"text":"<Butler Chalmers> Yes, as I suspected..."}
 tellraw @s[scores={DialogueTrigger=194,TalkTime=13}] ["",{"text":"<Butler Chalmers> Your abilities and strength are without peer, "},{"selector":"@s"},{"text":"."}]
@@ -7379,7 +7379,7 @@ execute as @s[scores={DialogueTrigger=194,TalkTime=89}] run title @s subtitle {"
 execute as @s[scores={DialogueTrigger=194,TalkTime=89}] run title @s title {"text":"Chapter 5"}
 
 #Butler tps out
-execute as @s[scores={DialogueTrigger=194,TalkTime=90}] run tp @e[x=-77,y=100,z=394,dy=3,nbt=!{pixelmon:npc_trainer}] -504 101 1302
+execute as @s[scores={DialogueTrigger=194,TalkTime=90}] run tp @e[x=-77,y=100,z=394,dy=3,type=pixelmon:npc_trainer] -504 101 1302
 
 tag @s[scores={DialogueTrigger=194,TalkTime=90..}] add Dialogue194
 scoreboard players set @s[tag=Dialogue194] TalkTime 0
@@ -7391,7 +7391,7 @@ scoreboard players set @s[tag=Dialogue194] DialogueTrigger 0
 #execute as @s[x=-494,y=143,z=325,dx=6,dy=5,dz=8,tag=!Dialogue195] run scoreboard players set @s[tag=Dialogue194] DialogueTrigger 195
 
 #tps Malva in
-#execute as @s[x=-490,y=144,z=336,r=20,tag=!Dialogue195] run execute as @s[tag=Dialogue194] run tp @e[x=-504,y=100,z=1306,dy=3,nbt=!{pixelmon:npc_trainer}] -491 144 316
+#execute as @s[x=-490,y=144,z=336,r=20,tag=!Dialogue195] run execute as @s[tag=Dialogue194] run tp @e[x=-504,y=100,z=1306,dy=3,type=pixelmon:npc_trainer] -491 144 316
 
 tellraw @s[scores={DialogueTrigger=195,TalkTime=3}] ["",{"text":"<Malva> Took you long enough, "},{"selector":"@s"},{"text":"."}]
 tellraw @s[scores={DialogueTrigger=195,TalkTime=10}] {"text":"<Malva> It may happen that I have need of your services,"}
@@ -7432,7 +7432,7 @@ tellraw @s[scores={DialogueTrigger=196,TalkTime=140}] {"text":"<Malva> Prepare w
 
 #tp Malva out
 execute as @s[scores={DialogueTrigger=196,TalkTime=147}] run particle cloud -491 144 316 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=196,TalkTime=147}] run tp @e[x=-491,y=143,z=316,dy=3,nbt=!{pixelmon:npc_trainer}] -504 101 1306
+execute as @s[scores={DialogueTrigger=196,TalkTime=147}] run tp @e[x=-491,y=143,z=316,dy=3,type=pixelmon:npc_trainer] -504 101 1306
 
 tag @s[scores={DialogueTrigger=196,TalkTime=147..}] add Dialogue196
 scoreboard players set @s[tag=Dialogue196] TalkTime 0
@@ -7445,17 +7445,17 @@ scoreboard players set @s[tag=Dialogue196] DialogueTrigger 0
 
 #tp Malva in
 execute as @s[scores={DialogueTrigger=197,TalkTime=2}] run particle cloud -296 81 443 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=197,TalkTime=2}] run tp @e[x=-504,y=100,z=1310,dy=3,nbt=!{pixelmon:npc_chatting}] -296 81 443
+execute as @s[scores={DialogueTrigger=197,TalkTime=2}] run tp @e[x=-504,y=100,z=1310,dy=3,type=pixelmon:npc_chatting] -296 81 443
 
 tellraw @s[scores={DialogueTrigger=197,TalkTime=3}] {"text":"<Malva> Oh my. Aren't you a speedy one? Score one for you."}
 tellraw @s[scores={DialogueTrigger=197,TalkTime=10}] {"text":"<Malva> I do so hate to be kept waiting. Come on. I'll show you the way."}
 
 #tp Malva out
 execute as @s[scores={DialogueTrigger=197,TalkTime=20}] run particle cloud -296 81 443 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=197,TalkTime=20}] run tp @e[x=-296,y=80,z=443,dy=3,nbt=!{pixelmon:npc_chatting}] -504 101 1310
+execute as @s[scores={DialogueTrigger=197,TalkTime=20}] run tp @e[x=-296,y=80,z=443,dy=3,type=pixelmon:npc_chatting] -504 101 1310
 
 #tps Malva in for next dialogue
-execute as @s[scores={DialogueTrigger=197,TalkTime=20}] run tp @e[x=-504,y=100,z=1312,dy=3,nbt=!{pixelmon:npc_chatting}] -295 89 393
+execute as @s[scores={DialogueTrigger=197,TalkTime=20}] run tp @e[x=-504,y=100,z=1312,dy=3,type=pixelmon:npc_chatting] -295 89 393
 
 #Keeps player from running ahead into the lab
 execute as @s[scores={DialogueTrigger=197,TalkTime=1..20}] run tp @s[x=-298,y=80,z=419,dx=5,dy=5,dz=9] run6
@@ -7470,7 +7470,7 @@ scoreboard players set @s[tag=Dialogue197] DialogueTrigger 0
 #execute as @s[x=-295,y=89,z=393,r=8,tag=Dialogue197] run scoreboard players set @s[tag=!Dialogue198] DialogueTrigger 198
 
 #tp Malva in in case the last dialogue didn't
-execute as @s[scores={DialogueTrigger=198,TalkTime=1}] run tp @e[x=-504,y=100,z=1312,dy=3,nbt=!{pixelmon:npc_chatting}] -295 89 393
+execute as @s[scores={DialogueTrigger=198,TalkTime=1}] run tp @e[x=-504,y=100,z=1312,dy=3,type=pixelmon:npc_chatting] -295 89 393
 
 tellraw @s[scores={DialogueTrigger=198,TalkTime=3}] {"text":"<Malva> You'll find Xerosic in the lab."}
 tellraw @s[scores={DialogueTrigger=198,TalkTime=10}] {"text":"<Malva> It's a secret floor that only certain admins know about."}
@@ -7487,7 +7487,7 @@ tellraw @s[scores={DialogueTrigger=198,TalkTime=87}] {"text":"<Malva> And he sho
 
 #tp Malva out
 execute as @s[scores={DialogueTrigger=198,TalkTime=97}] run particle cloud -295 89 393 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=198,TalkTime=97}] run tp @e[x=-295,y=88,z=393,dy=3,nbt=!{pixelmon:npc_chatting}] -504 101 1312
+execute as @s[scores={DialogueTrigger=198,TalkTime=97}] run tp @e[x=-295,y=88,z=393,dy=3,type=pixelmon:npc_chatting] -504 101 1312
 
 tag @s[scores={DialogueTrigger=198,TalkTime=97..}] add Dialogue198
 scoreboard players set @s[tag=Dialogue198] TalkTime 0
@@ -7502,7 +7502,7 @@ scoreboard players set @s[tag=Dialogue198] DialogueTrigger 0
 #tp @s[x=-305,y=28,z=318,dx=20,dy=5,dz=10,tag=!Dialogue200] -297 29 331
 
 #tp trainer if not standing guard
-#execute as @s[,r=20,score_TalkTime=0,tag=!Dialogue200] run tp @e[x=-504,y=105,z=1300,dy=3,nbt=!{pixelmon:npc_trainer}] -296 29 328
+#execute as @s[,r=20,score_TalkTime=0,tag=!Dialogue200] run tp @e[x=-504,y=105,z=1300,dy=3,type=pixelmon:npc_trainer] -296 29 328
 
 tellraw @s[scores={DialogueTrigger=199,TalkTime=3}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> If it ain't "},{"selector":"@s"},{"text":"! What's cookin'? Eh? That's yer line?"}]
 tellraw @s[scores={DialogueTrigger=199,TalkTime=13}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> Heh. Well, I got onto a part-time job as a security guard. See?"}]
@@ -7525,7 +7525,7 @@ scoreboard players set @s[tag=Dialogue199] DialogueTrigger 0
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
 
 #tps in Nix if needed
-#execute as @s[x=-299,y=28,z=328,dx=7,dy=5,dz=9,score_TalkTime=0,tag=!Dialogue200] run tp @e[x=-504,y=105,z=1300,dy=3,nbt=!{pixelmon:npc_trainer}] -296 29 328
+#execute as @s[x=-299,y=28,z=328,dx=7,dy=5,dz=9,score_TalkTime=0,tag=!Dialogue200] run tp @e[x=-504,y=105,z=1300,dy=3,type=pixelmon:npc_trainer] -296 29 328
 
 tellraw @s[scores={DialogueTrigger=200,TalkTime=5}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> Man, I lost in no time flat! Yer somethin', that's for true."}]
 tellraw @s[scores={DialogueTrigger=200,TalkTime=14}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> It was fun while it lasted, but it's still a long grind till my shift ends, y'know?"}]
@@ -7533,10 +7533,10 @@ tellraw @s[scores={DialogueTrigger=200,TalkTime=24}] ["",{"text":"<"},{"text":"P
 
 #tp Punk guy into room
 execute as @s[scores={DialogueTrigger=200,TalkTime=30}] run particle cloud -296 29 328 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=200,TalkTime=30}] run tp @e[x=-296,y=28,z=328,dy=3,nbt=!{pixelmon:npc_trainer}] -504 106 1300
+execute as @s[scores={DialogueTrigger=200,TalkTime=30}] run tp @e[x=-296,y=28,z=328,dy=3,type=pixelmon:npc_trainer] -504 106 1300
 
 execute as @s[scores={DialogueTrigger=200,TalkTime=30}] run particle cloud -295 29 310 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=200,TalkTime=30}] run tp @e[x=-504,y=105,z=1302,dy=3,nbt=!{pixelmon:npc_chatting}] -295 29 310
+execute as @s[scores={DialogueTrigger=200,TalkTime=30}] run tp @e[x=-504,y=105,z=1302,dy=3,type=pixelmon:npc_chatting] -295 29 310
 
 tag @s[scores={DialogueTrigger=200,TalkTime=30..}] add Dialogue200
 scoreboard players set @s[tag=Dialogue200] TalkTime 0
@@ -7711,7 +7711,7 @@ tellraw @s[scores={DialogueTrigger=208,TalkTime=54}] ["",{"text":"<"},{"text":"P
 
 #Punk Guy tps out
 execute as @s[scores={DialogueTrigger=208,TalkTime=62}] run particle cloud -295 29 310 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=208,TalkTime=62}] run tp @e[x=-295,y=29,z=310,dy=3,nbt=!{pixelmon:npc_chatting}] -504 106 1302
+execute as @s[scores={DialogueTrigger=208,TalkTime=62}] run tp @e[x=-295,y=29,z=310,dy=3,type=pixelmon:npc_chatting] -504 106 1302
 
 #Keeps player from leaving room
 execute as @s[scores={DialogueTrigger=208,TalkTime=1..62}] run tp @s[x=-305,y=28,z=318,dx=20,dy=5,dz=10] -295 29 316
@@ -7728,7 +7728,7 @@ scoreboard players set @s[tag=Dialogue208] DialogueTrigger 0
 
 #tp Xerosic in
 execute as @s[scores={DialogueTrigger=209,TalkTime=1}] run particle cloud -296 29 326 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=209,TalkTime=1}] run tp @e[x=-504,y=105,z=1306,dy=3,nbt=!{pixelmon:npc_chatting}] -296 29 326
+execute as @s[scores={DialogueTrigger=209,TalkTime=1}] run tp @e[x=-504,y=105,z=1306,dy=3,type=pixelmon:npc_chatting] -296 29 326
 execute as @s[scores={DialogueTrigger=209,TalkTime=1}] run data modify entity @e[limit=1,x=-296,y=29,z=326,dy=3] {Rotation:[180.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=209,TalkTime=5}] {"text":"<Team Flare Xerosic> Hmm..."}
@@ -7736,10 +7736,10 @@ tellraw @s[scores={DialogueTrigger=209,TalkTime=10}] {"text":"<Team Flare Xerosi
 
 #tp Xerosic to upper stair part
 execute as @s[scores={DialogueTrigger=209,TalkTime=15}] run particle cloud -296 29 326 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=209,TalkTime=15}] run tp @e[x=-296,y=28,z=326,dy=3,nbt=!{pixelmon:npc_chatting}] -504 106 1306
+execute as @s[scores={DialogueTrigger=209,TalkTime=15}] run tp @e[x=-296,y=28,z=326,dy=3,type=pixelmon:npc_chatting] -504 106 1306
 
 execute as @s[scores={DialogueTrigger=209,TalkTime=15}] run particle cloud -298 32 300 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=209,TalkTime=15}] run tp @e[x=-504,y=105,z=1308,dy=3,nbt=!{pixelmon:npc_chatting}] -298 32 300
+execute as @s[scores={DialogueTrigger=209,TalkTime=15}] run tp @e[x=-504,y=105,z=1308,dy=3,type=pixelmon:npc_chatting] -298 32 300
 execute as @s[scores={DialogueTrigger=209,TalkTime=16}] run data modify entity @e[limit=1,x=-295,y=32,z=300,dy=3] {Rotation:[0.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=209,TalkTime=20}] {"text":"<Team Flare Xerosic> Do I need to do more than simply put her in a state of sleep"}
@@ -7753,7 +7753,7 @@ tellraw @s[scores={DialogueTrigger=209,TalkTime=74}] {"text":"<Team Flare Xerosi
 
 #tp Essentia in
 execute as @s[scores={DialogueTrigger=209,TalkTime=82}] run particle cloud -295 32 297 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=209,TalkTime=82}] run tp @e[x=-504,y=110,z=1300,dy=3,nbt=!{pixelmon:npc_trainer}] -295 32 297
+execute as @s[scores={DialogueTrigger=209,TalkTime=82}] run tp @e[x=-504,y=110,z=1300,dy=3,type=pixelmon:npc_trainer] -295 32 297
 execute as @s[scores={DialogueTrigger=209,TalkTime=83}] run data modify entity @e[limit=1,x=-295,y=32,z=297,dy=3] {Rotation:[0.0f,0.0f]}
 execute as @s[scores={DialogueTrigger=209,TalkTime=82}] run scoreboard players set @s click 1
 
@@ -7780,10 +7780,10 @@ tellraw @s[scores={DialogueTrigger=210,TalkTime=23}] ["",{"text":"<"},{"text":"E
 
 #swap out 4th battle Essentia for 5th battle Essentia
 execute as @s[scores={DialogueTrigger=210,TalkTime=26}] run particle cloud -295 32 297 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=210,TalkTime=26}] run tp @e[x=-295,y=31,z=297,dy=3,nbt=!{pixelmon:npc_trainer},name=Essentia4] -504 111 1300
-execute as @s[scores={DialogueTrigger=210,TalkTime=26}] run tp @e[x=-295,y=31,z=297,dy=3,nbt=!{pixelmon:npc_trainer},name=Essentia6] -504 111 1304
-execute as @s[scores={DialogueTrigger=210,TalkTime=26}] run tp @e[x=-295,y=31,z=297,dy=3,nbt=!{pixelmon:npc_trainer},name=Essentia7] -504 111 1306
-execute as @s[scores={DialogueTrigger=210,TalkTime=26}] run tp @e[x=-504,y=110,z=1302,dy=3,nbt=!{pixelmon:npc_trainer}] -295 32 297
+execute as @s[scores={DialogueTrigger=210,TalkTime=26}] run tp @e[x=-295,y=31,z=297,dy=3,type=pixelmon:npc_trainer,name=Essentia4] -504 111 1300
+execute as @s[scores={DialogueTrigger=210,TalkTime=26}] run tp @e[x=-295,y=31,z=297,dy=3,type=pixelmon:npc_trainer,name=Essentia6] -504 111 1304
+execute as @s[scores={DialogueTrigger=210,TalkTime=26}] run tp @e[x=-295,y=31,z=297,dy=3,type=pixelmon:npc_trainer,name=Essentia7] -504 111 1306
+execute as @s[scores={DialogueTrigger=210,TalkTime=26}] run tp @e[x=-504,y=110,z=1302,dy=3,type=pixelmon:npc_trainer] -295 32 297
 execute as @s[scores={DialogueTrigger=210,TalkTime=27}] run data modify entity @e[limit=1,x=-295,y=31,z=297,dy=3] {Rotation:[0.0f,0.0f]}
 
 #Lose: ... ... ...
@@ -7804,10 +7804,10 @@ tellraw @s[scores={DialogueTrigger=211,TalkTime=23}] ["",{"text":"<"},{"text":"E
 #swap out
 #5th battle Essentia for 6th battle Essentia
 execute as @s[scores={DialogueTrigger=211,TalkTime=26}] run particle cloud -295 32 297 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=211,TalkTime=26}] run tp @e[x=-295,y=31,z=297,dy=3,nbt=!{pixelmon:npc_trainer},name=Essentia4] -504 111 1300
-execute as @s[scores={DialogueTrigger=211,TalkTime=26}] run tp @e[x=-295,y=31,z=297,dy=3,nbt=!{pixelmon:npc_trainer},name=Essentia5] -504 111 1302
-execute as @s[scores={DialogueTrigger=211,TalkTime=26}] run tp @e[x=-295,y=31,z=297,dy=3,nbt=!{pixelmon:npc_trainer},name=Essentia7] -504 111 1306
-execute as @s[scores={DialogueTrigger=211,TalkTime=26}] run tp @e[x=-504,y=110,z=1304,dy=3,nbt=!{pixelmon:npc_trainer}] -295 32 297
+execute as @s[scores={DialogueTrigger=211,TalkTime=26}] run tp @e[x=-295,y=31,z=297,dy=3,type=pixelmon:npc_trainer,name=Essentia4] -504 111 1300
+execute as @s[scores={DialogueTrigger=211,TalkTime=26}] run tp @e[x=-295,y=31,z=297,dy=3,type=pixelmon:npc_trainer,name=Essentia5] -504 111 1302
+execute as @s[scores={DialogueTrigger=211,TalkTime=26}] run tp @e[x=-295,y=31,z=297,dy=3,type=pixelmon:npc_trainer,name=Essentia7] -504 111 1306
+execute as @s[scores={DialogueTrigger=211,TalkTime=26}] run tp @e[x=-504,y=110,z=1304,dy=3,type=pixelmon:npc_trainer] -295 32 297
 execute as @s[scores={DialogueTrigger=211,TalkTime=27}] run data modify entity @e[limit=1,x=-295,y=31,z=297,dy=3] {Rotation:[0.0f,0.0f]}
 
 #Lose: ... ... ...
@@ -7835,10 +7835,10 @@ execute as @s[scores={DialogueTrigger=212,TalkTime=37}] run scoreboard players s
 #Mimi and Looker tp in
 execute as @s[scores={DialogueTrigger=212,TalkTime=38}] run particle cloud -297 29 308 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=212,TalkTime=38}] run particle cloud -293 29 308 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=212,TalkTime=38}] run tp @e[x=-504,y=110,z=1310,dy=3,nbt=!{pixelmon:npc_chatting}] -297 29 308
-execute as @s[scores={DialogueTrigger=212,TalkTime=38}] run tp @e[x=-505,y=111,z=1312,dy=3,nbt=!{pixelmon:statue}] -293 29 308
+execute as @s[scores={DialogueTrigger=212,TalkTime=38}] run tp @e[x=-504,y=110,z=1310,dy=3,type=pixelmon:npc_chatting] -297 29 308
+execute as @s[scores={DialogueTrigger=212,TalkTime=38}] run tp @e[x=-505,y=111,z=1312,dy=3,type=pixelmon:statue] -293 29 308
 
-execute as @s[scores={DialogueTrigger=212,TalkTime=39}] run data modify entity @e[limit=1,x=-297,y=29,z=308,dy=3,nbt=!{pixelmon:npc_chatting}] {Rotation:[180.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=212,TalkTime=39}] run data modify entity @e[limit=1,x=-297,y=29,z=308,dy=3,type=pixelmon:npc_chatting] {Rotation:[180.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=212,TalkTime=40}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> That is enough."}]
 tellraw @s[scores={DialogueTrigger=212,TalkTime=46}] {"text":"<Team Flare Xerosic> What?!"}
@@ -7866,8 +7866,8 @@ tellraw @s[scores={DialogueTrigger=212,TalkTime=207}] {"text":"<Team Flare Xeros
 tellraw @s[scores={DialogueTrigger=212,TalkTime=215}] {"text":"<Team Flare Xerosic> There's no way she will hear you now!"}
 
 #Espurr tps next to Essentia
-execute as @s[scores={DialogueTrigger=212,TalkTime=222}] run tp @e[x=-293,y=28,z=308,dy=3,nbt=!{pixelmon:statue}] -505 112 1312
-execute as @s[scores={DialogueTrigger=212,TalkTime=222}] run tp @e[x=-503,y=111,z=1312,dy=3,nbt=!{pixelmon:statue}] -293 32 299
+execute as @s[scores={DialogueTrigger=212,TalkTime=222}] run tp @e[x=-293,y=28,z=308,dy=3,type=pixelmon:statue] -505 112 1312
+execute as @s[scores={DialogueTrigger=212,TalkTime=222}] run tp @e[x=-503,y=111,z=1312,dy=3,type=pixelmon:statue] -293 32 299
 
 tellraw @s[scores={DialogueTrigger=212,TalkTime=224}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Murrr-mrrraaawr!! Murrr-mrrraaawr!!"}]
 execute as @s[scores={DialogueTrigger=212,TalkTime=224}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
@@ -7887,10 +7887,10 @@ tellraw @s[scores={DialogueTrigger=212,TalkTime=283}] ["",{"text":"<"},{"text":"
 
 #Swap Essentia 6th battle trainer for 7th
 execute as @s[scores={DialogueTrigger=212,TalkTime=290}] run particle cloud -295 32 297 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=212,TalkTime=290}] run tp @e[x=-295,y=31,z=297,dy=3,nbt=!{pixelmon:npc_trainer},name=Essentia4] -504 111 1300
-execute as @s[scores={DialogueTrigger=212,TalkTime=290}] run tp @e[x=-295,y=31,z=297,dy=3,nbt=!{pixelmon:npc_trainer},name=Essentia5] -504 111 1302
-execute as @s[scores={DialogueTrigger=212,TalkTime=290}] run tp @e[x=-295,y=31,z=297,dy=3,nbt=!{pixelmon:npc_trainer},name=Essentia6] -504 111 1304
-execute as @s[scores={DialogueTrigger=212,TalkTime=290}] run tp @e[x=-504,y=110,z=1306,dy=3,nbt=!{pixelmon:npc_trainer}] -295 32 297
+execute as @s[scores={DialogueTrigger=212,TalkTime=290}] run tp @e[x=-295,y=31,z=297,dy=3,type=pixelmon:npc_trainer,name=Essentia4] -504 111 1300
+execute as @s[scores={DialogueTrigger=212,TalkTime=290}] run tp @e[x=-295,y=31,z=297,dy=3,type=pixelmon:npc_trainer,name=Essentia5] -504 111 1302
+execute as @s[scores={DialogueTrigger=212,TalkTime=290}] run tp @e[x=-295,y=31,z=297,dy=3,type=pixelmon:npc_trainer,name=Essentia6] -504 111 1304
+execute as @s[scores={DialogueTrigger=212,TalkTime=290}] run tp @e[x=-504,y=110,z=1306,dy=3,type=pixelmon:npc_trainer] -295 32 297
 execute as @s[scores={DialogueTrigger=212,TalkTime=291}] run data modify entity @e[limit=1,x=-295,y=31,z=297,dy=3] {Rotation:[0.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=212,TalkTime=293}] ["",{"text":"<"},{"text":"Essentia","color":"gold"},{"text":"> Uwaugh!!!"}]
@@ -7908,10 +7908,10 @@ scoreboard players set @s[tag=Dialogue212] DialogueTrigger 0
 #/tedit add LOSS /scoreboard players set @pl TalkTime 0
 
 #tp in final Essentia if gone
-#/execute as @s[x=-295,y=32,z=297,r=15,score_TalkTime=0,tag=Dialogue212] run execute as @s[tag=!Dialogue213] run tp @e[x=-504,y=110,z=1306,dy=3,nbt=!{pixelmon:npc_trainer}] -295 32 297
+#/execute as @s[x=-295,y=32,z=297,r=15,score_TalkTime=0,tag=Dialogue212] run execute as @s[tag=!Dialogue213] run tp @e[x=-504,y=110,z=1306,dy=3,type=pixelmon:npc_trainer] -295 32 297
 
 #tps in Xerosic if gone
-execute as @s[scores={DialogueTrigger=213,TalkTime=1}] run tp @e[x=-504,y=105,z=1308,dy=3,nbt=!{pixelmon:npc_chatting}] -298 32 300
+execute as @s[scores={DialogueTrigger=213,TalkTime=1}] run tp @e[x=-504,y=105,z=1308,dy=3,type=pixelmon:npc_chatting] -298 32 300
 
 #Emma Particles
 execute as @s[scores={DialogueTrigger=213,TalkTime=5..59}] run particle minecraft:angry_villager -295 33 297 0.5 1 0.5 1 1 normal
@@ -7963,11 +7963,11 @@ tellraw @s[scores={DialogueTrigger=213,TalkTime=324}] ["",{"text":"<"},{"text":"
 #blinds player
 #tp Mimi and Essentia/Emma out
 execute as @s[scores={DialogueTrigger=213,TalkTime=332}] run effect give @s minecraft:blindness 5 1 true
-execute as @s[scores={DialogueTrigger=213,TalkTime=333}] run tp @e[x=-295,y=31,z=297,dy=3,nbt=!{pixelmon:npc_trainer},name=Essentia4] -504 111 1300
-execute as @s[scores={DialogueTrigger=213,TalkTime=333}] run tp @e[x=-295,y=31,z=297,dy=3,nbt=!{pixelmon:npc_trainer},name=Essentia5] -504 111 1302
-execute as @s[scores={DialogueTrigger=213,TalkTime=333}] run tp @e[x=-295,y=31,z=297,dy=3,nbt=!{pixelmon:npc_trainer},name=Essentia6] -504 111 1304
-execute as @s[scores={DialogueTrigger=213,TalkTime=333}] run tp @e[x=-295,y=31,z=297,dy=3,nbt=!{pixelmon:npc_trainer},name=Essentia7] -504 111 1306
-execute as @s[scores={DialogueTrigger=213,TalkTime=333}] run tp @e[x=-293,y=31,z=299,dy=3,nbt=!{pixelmon:statue}] -503 112 1312
+execute as @s[scores={DialogueTrigger=213,TalkTime=333}] run tp @e[x=-295,y=31,z=297,dy=3,type=pixelmon:npc_trainer,name=Essentia4] -504 111 1300
+execute as @s[scores={DialogueTrigger=213,TalkTime=333}] run tp @e[x=-295,y=31,z=297,dy=3,type=pixelmon:npc_trainer,name=Essentia5] -504 111 1302
+execute as @s[scores={DialogueTrigger=213,TalkTime=333}] run tp @e[x=-295,y=31,z=297,dy=3,type=pixelmon:npc_trainer,name=Essentia6] -504 111 1304
+execute as @s[scores={DialogueTrigger=213,TalkTime=333}] run tp @e[x=-295,y=31,z=297,dy=3,type=pixelmon:npc_trainer,name=Essentia7] -504 111 1306
+execute as @s[scores={DialogueTrigger=213,TalkTime=333}] run tp @e[x=-293,y=31,z=299,dy=3,type=pixelmon:statue] -503 112 1312
 
 #player's fly on the wall perspective
 execute as @s[scores={DialogueTrigger=213,TalkTime=335}] run gamemode spectator @s
@@ -7986,8 +7986,8 @@ tellraw @s[scores={DialogueTrigger=213,TalkTime=362}] {"text":"<Team Flare Xeros
 #tps in Looker and Xerosic
 
 execute as @s[scores={DialogueTrigger=213,TalkTime=371}] run effect give @s minecraft:blindness 5 1 true
-execute as @s[scores={DialogueTrigger=213,TalkTime=372}] run tp @e[x=-297,y=28,z=308,dy=3,nbt=!{pixelmon:npc_chatting}] -504 111 1310
-execute as @s[scores={DialogueTrigger=213,TalkTime=372}] run tp @e[x=-298,y=31,z=300,dy=3,nbt=!{pixelmon:npc_chatting}] -504 106 1308
+execute as @s[scores={DialogueTrigger=213,TalkTime=372}] run tp @e[x=-297,y=28,z=308,dy=3,type=pixelmon:npc_chatting] -504 111 1310
+execute as @s[scores={DialogueTrigger=213,TalkTime=372}] run tp @e[x=-298,y=31,z=300,dy=3,type=pixelmon:npc_chatting] -504 106 1308
 
 #Keeps positions
 execute as @s[scores={DialogueTrigger=213,TalkTime=374}] run tp @s -5 102 434 -153 18
@@ -8052,7 +8052,7 @@ scoreboard players set @s[tag=Dialogue213] DialogueTrigger 0
 #execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call20,score_DialogueTrigger=0] run scoreboard players set @s[tag=!Dialogue214] DialogueTrigger 214
 
 #tp Emma in
-execute as @s[scores={DialogueTrigger=214,TalkTime=1}] run tp @e[x=-504,y=115,z=1300,dy=3,nbt=!{pixelmon:npc_chatting}] -51 101 385
+execute as @s[scores={DialogueTrigger=214,TalkTime=1}] run tp @e[x=-504,y=115,z=1300,dy=3,type=pixelmon:npc_chatting] -51 101 385
 
 tellraw @s[scores={DialogueTrigger=214,TalkTime=3}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> Finally, "},{"selector":"@s"},{"text":"! What took you so long?"}]
 tellraw @s[scores={DialogueTrigger=214,TalkTime=10}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> Guess what! Mr. Looker is getting out of the hospital! Finally!"}]
@@ -8060,7 +8060,7 @@ tellraw @s[scores={DialogueTrigger=214,TalkTime=20}] ["",{"text":"<"},{"text":"E
 
 #Mimi tps in
 execute as @s[scores={DialogueTrigger=214,TalkTime=27}] run particle cloud -49 101 387 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=214,TalkTime=27}] run tp @e[x=-504,y=116,z=1302,dy=3,nbt=!{pixelmon:statue}] -49 101 387
+execute as @s[scores={DialogueTrigger=214,TalkTime=27}] run tp @e[x=-504,y=116,z=1302,dy=3,type=pixelmon:statue] -49 101 387
 
 tellraw @s[scores={DialogueTrigger=214,TalkTime=30}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Murrr-murrrrrr..."}]
 execute as @s[scores={DialogueTrigger=214,TalkTime=30}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
@@ -8070,7 +8070,7 @@ execute as @s[scores={DialogueTrigger=214,TalkTime=45}] run playsound espurr hos
 tellraw @s[scores={DialogueTrigger=214,TalkTime=51}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> Huh? What's wrong with Mimi? I think it's holding something..."}]
 tellraw @s[scores={DialogueTrigger=214,TalkTime=60}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mrrrawr!"}]
 execute as @s[scores={DialogueTrigger=214,TalkTime=60}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
-execute as @s[scores={DialogueTrigger=214,TalkTime=63}] run replaceitem entity @e[x=-51,y=100,z=385,dy=3,nbt=!{pixelmon:npc_chatting}] weapon.mainhand minecraft:paper
+execute as @s[scores={DialogueTrigger=214,TalkTime=63}] run replaceitem entity @e[x=-51,y=100,z=385,dy=3,type=pixelmon:npc_chatting] weapon.mainhand minecraft:paper
 tellraw @s[scores={DialogueTrigger=214,TalkTime=65}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> It's...a letter? It's from Mr. Looker."}]
 tellraw @s[scores={DialogueTrigger=214,TalkTime=73}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> "},{"selector":"@s"},{"text":"... I'll read it out loud, OK?"}]
 execute as @s[scores={DialogueTrigger=214,TalkTime=78}] run scoreboard players set @s click 1
@@ -8094,7 +8094,7 @@ tellraw @s[scores={DialogueTrigger=214,TalkTime=230}] ["",{"text":"<"},{"text":"
 tellraw @s[scores={DialogueTrigger=214,TalkTime=242}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> "},{"text":"And for Emma and Mimi... To the two of you, I leave the Looker Bureau.","italic":true}]
 tellraw @s[scores={DialogueTrigger=214,TalkTime=251}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> "},{"text":"I purchased the whole building, so never again will you have to worry about rent.","italic":true}]
 tellraw @s[scores={DialogueTrigger=214,TalkTime=261}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> "},{"text":"It is now yours to do with as you will.\u201d","italic":true}]
-execute as @s[scores={DialogueTrigger=214,TalkTime=267}] run replaceitem entity @e[x=-51,y=100,z=385,dy=3,nbt=!{pixelmon:npc_chatting}] weapon.mainhand minecraft:air
+execute as @s[scores={DialogueTrigger=214,TalkTime=267}] run replaceitem entity @e[x=-51,y=100,z=385,dy=3,type=pixelmon:npc_chatting] weapon.mainhand minecraft:air
 execute as @s[scores={DialogueTrigger=214,TalkTime=267}] run scoreboard players set @s click 1
 tellraw @s[scores={DialogueTrigger=214,TalkTime=269}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> Wh-what is this... Is he joking? What's this \u201cInternational Police\u201d?"}]
 tellraw @s[scores={DialogueTrigger=214,TalkTime=279}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> H-he wouldn't go and leave us, would he? Why...?"}]
@@ -8105,14 +8105,14 @@ tellraw @s[scores={DialogueTrigger=214,TalkTime=311}] ["",{"text":"<"},{"text":"
 
 #Emma tps out
 execute as @s[scores={DialogueTrigger=214,TalkTime=319}] run particle cloud -51 101 385 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=214,TalkTime=319}] run tp @e[x=-51,y=100,z=385,dy=3,nbt=!{pixelmon:npc_chatting}] -504 116 1300
+execute as @s[scores={DialogueTrigger=214,TalkTime=319}] run tp @e[x=-51,y=100,z=385,dy=3,type=pixelmon:npc_chatting] -504 116 1300
 
 tellraw @s[scores={DialogueTrigger=214,TalkTime=323}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mrrraaawwwrrr!!!"}]
 execute as @s[scores={DialogueTrigger=214,TalkTime=323}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
 
 #Espurr tps out
 execute as @s[scores={DialogueTrigger=214,TalkTime=328}] run particle cloud -49 101 387 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=214,TalkTime=328}] run tp @e[x=-49,y=100,z=387,dy=3,nbt=!{pixelmon:statue}] -504 117 1302
+execute as @s[scores={DialogueTrigger=214,TalkTime=328}] run tp @e[x=-49,y=100,z=387,dy=3,type=pixelmon:statue] -504 117 1302
 execute as @s[scores={DialogueTrigger=214,TalkTime=330}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=214,TalkTime=330..}] add Dialogue214
@@ -8128,8 +8128,8 @@ execute as @s[scores={DialogueTrigger=215,TalkTime=1}] run tp @s[x=-54,y=101,z=3
 
 #Punk Guy tps in
 execute as @s[scores={DialogueTrigger=215,TalkTime=2}] run particle cloud -51 101 397 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=215,TalkTime=2}] run tp @e[x=-504,y=115,z=1305,dy=3,nbt=!{pixelmon:npc_chatting}] -51 101 397
-execute as @s[scores={DialogueTrigger=215,TalkTime=3}] run data modify entity @e[limit=1,x=-51,y=100,z=397,dy=3,nbt=!{pixelmon:npc_chatting}] {Rotation:[180.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=215,TalkTime=2}] run tp @e[x=-504,y=115,z=1305,dy=3,type=pixelmon:npc_chatting] -51 101 397
+execute as @s[scores={DialogueTrigger=215,TalkTime=3}] run data modify entity @e[limit=1,x=-51,y=100,z=397,dy=3,type=pixelmon:npc_chatting] {Rotation:[180.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=215,TalkTime=4}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> Wotcher! How's it going, "},{"selector":"@s"},{"text":"?"}]
 tellraw @s[scores={DialogueTrigger=215,TalkTime=12}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> I was bored, so I came over!"}]
@@ -8143,7 +8143,7 @@ tellraw @s[scores={DialogueTrigger=215,TalkTime=72}] ["",{"text":"<"},{"text":"P
 
 #Punk Guy tps out
 execute as @s[scores={DialogueTrigger=215,TalkTime=80}] run particle cloud -51 101 397 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=215,TalkTime=80}] run tp @e[x=-51,y=100,z=397,dy=3,nbt=!{pixelmon:npc_chatting}] -504 116 1305
+execute as @s[scores={DialogueTrigger=215,TalkTime=80}] run tp @e[x=-51,y=100,z=397,dy=3,type=pixelmon:npc_chatting] -504 116 1305
 
 tag @s[scores={DialogueTrigger=215,TalkTime=80..}] add Dialogue215
 scoreboard players set @s[tag=Dialogue215] TalkTime 0
@@ -8170,8 +8170,8 @@ scoreboard players set @s[tag=Dialogue216] DialogueTrigger 0
 #execute as @a[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,score_TalkTime=0,tag=Call21] run execute as @s[tag=!Dialogue217] run scoreboard players set @s DialogueTrigger 217
 
 #tp Xerosic and Looker in
-execute as @s[scores={DialogueTrigger=217,TalkTime=1}] run tp @e[x=-504,y=120,z=1300,dy=4,nbt=!{pixelmon:npc_chatting}] -297 108 440
-execute as @s[scores={DialogueTrigger=217,TalkTime=1}] run tp @e[x=-504,y=120,z=1302,dy=4,nbt=!{pixelmon:npc_chatting}] -294 108 440
+execute as @s[scores={DialogueTrigger=217,TalkTime=1}] run tp @e[x=-504,y=120,z=1300,dy=4,type=pixelmon:npc_chatting] -297 108 440
+execute as @s[scores={DialogueTrigger=217,TalkTime=1}] run tp @e[x=-504,y=120,z=1302,dy=4,type=pixelmon:npc_chatting] -294 108 440
 
 tellraw @s[scores={DialogueTrigger=217,TalkTime=2}] {"text":"<Team Flare Xerosic> I'm telling you I gave them back! Every last one of them!"}
 tellraw @s[scores={DialogueTrigger=217,TalkTime=11}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> ...Fine. If you really say that you returned all the Poké Balls that Essentia stole..."}]
@@ -8189,8 +8189,8 @@ tellraw @s[scores={DialogueTrigger=217,TalkTime=79}] ["",{"text":"<"},{"text":".
 #tp Emma and Mimi in
 execute as @s[scores={DialogueTrigger=217,TalkTime=85}] run particle cloud -294 108 443 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=217,TalkTime=85}] run particle cloud -296 108 444 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=217,TalkTime=85}] run tp @e[x=-504,y=120,z=1304,dy=4,nbt=!{pixelmon:npc_chatting}] -294 108 443
-execute as @s[scores={DialogueTrigger=217,TalkTime=85}] run tp @e[x=-504,y=121,z=1306,dy=4,nbt=!{pixelmon:statue}] -296 108 444
+execute as @s[scores={DialogueTrigger=217,TalkTime=85}] run tp @e[x=-504,y=120,z=1304,dy=4,type=pixelmon:npc_chatting] -294 108 443
+execute as @s[scores={DialogueTrigger=217,TalkTime=85}] run tp @e[x=-504,y=121,z=1306,dy=4,type=pixelmon:statue] -296 108 444
 
 tellraw @s[scores={DialogueTrigger=217,TalkTime=88}] {"text":"<Team Flare Xerosic> Good timing, Emma!"}
 
@@ -8261,8 +8261,8 @@ tellraw @s[scores={DialogueTrigger=217,TalkTime=572}] ["",{"text":"<"},{"text":"
 #tp Looker and Xerosic out
 execute as @s[scores={DialogueTrigger=217,TalkTime=582}] run particle cloud -297 108 440 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=217,TalkTime=582}] run particle cloud -294 108 440 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=217,TalkTime=582}] run tp @e[x=-297,y=107,z=440,dy=3,nbt=!{pixelmon:npc_chatting}] -504 121 1300
-execute as @s[scores={DialogueTrigger=217,TalkTime=582}] run tp @e[x=-294,y=107,z=440,dy=3,nbt=!{pixelmon:npc_chatting}] -504 121 1302
+execute as @s[scores={DialogueTrigger=217,TalkTime=582}] run tp @e[x=-297,y=107,z=440,dy=3,type=pixelmon:npc_chatting] -504 121 1300
+execute as @s[scores={DialogueTrigger=217,TalkTime=582}] run tp @e[x=-294,y=107,z=440,dy=3,type=pixelmon:npc_chatting] -504 121 1302
 
 tellraw @s[scores={DialogueTrigger=217,TalkTime=586}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> Thank you... And good-bye..."}]
 
@@ -8277,8 +8277,8 @@ execute as @s[scores={DialogueTrigger=217,TalkTime=596}] run effect give @s mine
 
 execute as @s[scores={DialogueTrigger=217,TalkTime=597}] run gamemode spectator @s
 execute as @s[scores={DialogueTrigger=217,TalkTime=597}] run scoreboard players set @s click 1
-execute as @s[scores={DialogueTrigger=217,TalkTime=597}] run tp @e[x=-294,y=107,z=443,dy=3,nbt=!{pixelmon:npc_chatting}] -504 121 1304
-execute as @s[scores={DialogueTrigger=217,TalkTime=597}] run tp @e[x=-296,y=107,z=444,dy=3,nbt=!{pixelmon:statue}] -504 122 1306
+execute as @s[scores={DialogueTrigger=217,TalkTime=597}] run tp @e[x=-294,y=107,z=443,dy=3,type=pixelmon:npc_chatting] -504 121 1304
+execute as @s[scores={DialogueTrigger=217,TalkTime=597}] run tp @e[x=-296,y=107,z=444,dy=3,type=pixelmon:statue] -504 122 1306
 
 
 execute as @s[scores={DialogueTrigger=217,TalkTime=598}] run tp @s -100 105 438 160 43
@@ -8877,18 +8877,18 @@ tellraw @s[scores={DialogueTrigger=242,TalkTime=2}] {"text":"<Restaurant Owner> 
 #tp in owner skin
 execute as @s[scores={DialogueTrigger=242,TalkTime=8}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=242,TalkTime=10}] run tp @s -189 101 157 0 ~
-execute as @s[scores={DialogueTrigger=242,TalkTime=12}] run tp @e[x=-504,y=125,z=1300,dy=3,nbt=!{pixelmon:npc_chatting}] -185 101 158
+execute as @s[scores={DialogueTrigger=242,TalkTime=12}] run tp @e[x=-504,y=125,z=1300,dy=3,type=pixelmon:npc_chatting] -185 101 158
 
 tellraw @s[scores={DialogueTrigger=242,TalkTime=13}] {"text":"<Restaurant Owner> Thank you for dining with us. Your waiter will be with you shortly."}
 
 #tp owner out
 execute as @s[scores={DialogueTrigger=242,TalkTime=22}] run particle cloud -185 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=242,TalkTime=22}] run tp @e[x=-185,y=100,z=158,dy=3,nbt=!{pixelmon:npc_chatting}] -504 126 1300
+execute as @s[scores={DialogueTrigger=242,TalkTime=22}] run tp @e[x=-185,y=100,z=158,dy=3,type=pixelmon:npc_chatting] -504 126 1300
 
 #tp waiter in
 execute as @s[scores={DialogueTrigger=242,TalkTime=31}] run particle cloud -185 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=242,TalkTime=31}] run tp @e[x=-504,y=125,z=1302,dy=3,nbt=!{pixelmon:npc_trainer}] -185 101 158
-execute as @s[scores={DialogueTrigger=242,TalkTime=32}] run data modify entity @e[limit=1,x=-185,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=242,TalkTime=31}] run tp @e[x=-504,y=125,z=1302,dy=3,type=pixelmon:npc_trainer] -185 101 158
+execute as @s[scores={DialogueTrigger=242,TalkTime=32}] run data modify entity @e[limit=1,x=-185,y=100,z=158,dy=3,type=pixelmon:npc_trainer] {Rotation:[116.0f,0.0f]}
 #execute as @s[score_DialogueTrigger_min=242,score_DialogueTrigger=242,tag=!Dialogue242,score_TalkTime_min=33,score_TalkTime=33] run data modify entity @e[limit=1,x=-189,y=100,z=158,dy=3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:20s}]}
 
 tellraw @s[scores={DialogueTrigger=242,TalkTime=33}] {"text":"<Waiter Roger> Your entrée today... Enjoy a handpicked salad, fresh from the garden."}
@@ -8917,7 +8917,7 @@ tellraw @s[scores={DialogueTrigger=243,TalkTime=5}] {"text":"<Waiter Roger> I ho
 
 #tp waiter out
 execute as @s[scores={DialogueTrigger=243,TalkTime=11}] run particle cloud -185 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=243,TalkTime=11}] run tp @e[x=-185,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] -504 126 1302
+execute as @s[scores={DialogueTrigger=243,TalkTime=11}] run tp @e[x=-185,y=100,z=158,dy=3,type=pixelmon:npc_trainer] -504 126 1302
 
 #Dining
 execute as @s[scores={DialogueTrigger=243,TalkTime=17}] run effect give @s minecraft:blindness 5 1 true
@@ -8927,8 +8927,8 @@ execute as @s[scores={DialogueTrigger=243,TalkTime=18}] run playsound pixelmon:p
 
 #tp Waiter in
 execute as @s[scores={DialogueTrigger=243,TalkTime=25}] run particle cloud -185 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=243,TalkTime=25}] run tp @e[x=-504,y=125,z=1304,dy=3,nbt=!{pixelmon:npc_trainer}] -185 101 158
-execute as @s[scores={DialogueTrigger=243,TalkTime=26}] run data modify entity @e[limit=1,x=-185,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=243,TalkTime=25}] run tp @e[x=-504,y=125,z=1304,dy=3,type=pixelmon:npc_trainer] -185 101 158
+execute as @s[scores={DialogueTrigger=243,TalkTime=26}] run data modify entity @e[limit=1,x=-185,y=100,z=158,dy=3,type=pixelmon:npc_trainer] {Rotation:[116.0f,0.0f]}
 #execute as @s[score_DialogueTrigger_min=243,score_DialogueTrigger=243,tag=!Dialogue243,score_TalkTime_min=27,score_TalkTime=27] run data modify entity @e[limit=1,x=-189,y=100,z=158,dy=3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:20s}]}
 
 tellraw @s[scores={DialogueTrigger=243,TalkTime=27}] {"text":"<Waiter Roger> Your soup..."}
@@ -8958,7 +8958,7 @@ tellraw @s[scores={DialogueTrigger=244,TalkTime=5}] {"text":"<Waiter Roger> I ho
 
 #tp waiter out
 execute as @s[scores={DialogueTrigger=244,TalkTime=11}] run particle cloud -185 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=244,TalkTime=11}] run tp @e[x=-185,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] -504 126 1304
+execute as @s[scores={DialogueTrigger=244,TalkTime=11}] run tp @e[x=-185,y=100,z=158,dy=3,type=pixelmon:npc_trainer] -504 126 1304
 
 #Dining
 execute as @s[scores={DialogueTrigger=244,TalkTime=17}] run effect give @s minecraft:blindness 5 1 true
@@ -8968,8 +8968,8 @@ execute as @s[scores={DialogueTrigger=244,TalkTime=18}] run playsound pixelmon:p
 
 #tp Waiter in
 execute as @s[scores={DialogueTrigger=244,TalkTime=25}] run particle cloud -185 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=244,TalkTime=25}] run tp @e[x=-504,y=125,z=1306,dy=3,nbt=!{pixelmon:npc_trainer}] -185 101 158
-execute as @s[scores={DialogueTrigger=244,TalkTime=26}] run data modify entity @e[limit=1,x=-185,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=244,TalkTime=25}] run tp @e[x=-504,y=125,z=1306,dy=3,type=pixelmon:npc_trainer] -185 101 158
+execute as @s[scores={DialogueTrigger=244,TalkTime=26}] run data modify entity @e[limit=1,x=-185,y=100,z=158,dy=3,type=pixelmon:npc_trainer] {Rotation:[116.0f,0.0f]}
 #execute as @s[score_DialogueTrigger_min=244,score_DialogueTrigger=244,tag=!Dialogue244,score_TalkTime_min=27,score_TalkTime=27] run data modify entity @e[limit=1,x=-189,y=100,z=158,dy=3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:20s}]}
 
 tellraw @s[scores={DialogueTrigger=244,TalkTime=27}] {"text":"<Waiter Roger> Your main course..."}
@@ -8999,7 +8999,7 @@ tellraw @s[scores={DialogueTrigger=245,TalkTime=5}] {"text":"<Waiter Roger> I ho
 
 #tp waiter out
 execute as @s[scores={DialogueTrigger=245,TalkTime=11}] run particle cloud -185 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=245,TalkTime=11}] run tp @e[x=-185,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] -504 126 1306
+execute as @s[scores={DialogueTrigger=245,TalkTime=11}] run tp @e[x=-185,y=100,z=158,dy=3,type=pixelmon:npc_trainer] -504 126 1306
 
 execute as @s[scores={DialogueTrigger=245,TalkTime=17}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=245,TalkTime=18}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
@@ -9008,8 +9008,8 @@ execute as @s[scores={DialogueTrigger=245,TalkTime=18}] run playsound pixelmon:p
 
 #tp Owner in
 execute as @s[scores={DialogueTrigger=245,TalkTime=25}] run particle cloud -185 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=245,TalkTime=25}] run tp @e[x=-504,y=125,z=1300,dy=3,nbt=!{pixelmon:npc_chatting}] -185 101 158
-execute as @s[scores={DialogueTrigger=245,TalkTime=26}] run data modify entity @e[limit=1,x=-185,y=100,z=158,dy=3,nbt=!{pixelmon:npc_chatting}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=245,TalkTime=25}] run tp @e[x=-504,y=125,z=1300,dy=3,type=pixelmon:npc_chatting] -185 101 158
+execute as @s[scores={DialogueTrigger=245,TalkTime=26}] run data modify entity @e[limit=1,x=-185,y=100,z=158,dy=3,type=pixelmon:npc_chatting] {Rotation:[116.0f,0.0f]}
 #execute as @s[score_DialogueTrigger_min=245,score_DialogueTrigger=245,tag=!Dialogue245,score_TalkTime_min=27,score_TalkTime=27] run data modify entity @e[limit=1,x=-189,y=100,z=158,dy=3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:20s}]}
 
 
@@ -9024,7 +9024,7 @@ tellraw @s[scores={DialogueTrigger=245,TalkTime=56}] {"text":"<Restaurant Owner>
 
 #tp owner out
 execute as @s[scores={DialogueTrigger=245,TalkTime=62}] run particle cloud -185 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=245,TalkTime=62}] run tp @e[x=-185,y=100,z=158,dy=3,nbt=!{pixelmon:npc_chatting}] -504 126 1300
+execute as @s[scores={DialogueTrigger=245,TalkTime=62}] run tp @e[x=-185,y=100,z=158,dy=3,type=pixelmon:npc_chatting] -504 126 1300
 
 
 execute as @s[scores={DialogueTrigger=245,TalkTime=63}] run scoreboard players set @s RestaurantBattle 0
@@ -9056,8 +9056,8 @@ execute as @s[scores={DialogueTrigger=246,TalkTime=14}] run tp @s -398 101 157 0
 
 #tp waitress in
 execute as @s[scores={DialogueTrigger=246,TalkTime=21}] run particle cloud -394 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=246,TalkTime=21}] run tp @e[x=-504,y=130,z=1300,dy=3,nbt=!{pixelmon:npc_trainer}] -394 101 158
-execute as @s[scores={DialogueTrigger=246,TalkTime=22}] run data modify entity @e[limit=1,x=-394,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=246,TalkTime=21}] run tp @e[x=-504,y=130,z=1300,dy=3,type=pixelmon:npc_trainer] -394 101 158
+execute as @s[scores={DialogueTrigger=246,TalkTime=22}] run data modify entity @e[limit=1,x=-394,y=100,z=158,dy=3,type=pixelmon:npc_trainer] {Rotation:[116.0f,0.0f]}
 #execute as @s[score_DialogueTrigger_min=246,score_DialogueTrigger=246,tag=!Dialogue246,score_TalkTime_min=22,score_TalkTime=22] run
 
 tellraw @s[scores={DialogueTrigger=246,TalkTime=22}] {"text":"<Waitress Talia> I apologize for any wait. Here is your entrée."}
@@ -9090,7 +9090,7 @@ tellraw @s[scores={DialogueTrigger=247,TalkTime=15}] {"text":"<Waitress Talia> P
 
 #tp waitress out
 execute as @s[scores={DialogueTrigger=247,TalkTime=22}] run particle cloud -394 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=247,TalkTime=22}] run tp @e[x=-394,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] -504 131 1300
+execute as @s[scores={DialogueTrigger=247,TalkTime=22}] run tp @e[x=-394,y=100,z=158,dy=3,type=pixelmon:npc_trainer] -504 131 1300
 
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=247,TalkTime=30}] run effect give @s minecraft:blindness 5 1 true
@@ -9100,8 +9100,8 @@ execute as @s[scores={DialogueTrigger=247,TalkTime=31}] run playsound pixelmon:p
 
 #tp Waiter in
 execute as @s[scores={DialogueTrigger=247,TalkTime=39}] run particle cloud -394 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=247,TalkTime=39}] run tp @e[x=-504,y=130,z=1302,dy=3,nbt=!{pixelmon:npc_trainer}] -394 101 158
-execute as @s[scores={DialogueTrigger=247,TalkTime=40}] run data modify entity @e[limit=1,x=-394,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=247,TalkTime=39}] run tp @e[x=-504,y=130,z=1302,dy=3,type=pixelmon:npc_trainer] -394 101 158
+execute as @s[scores={DialogueTrigger=247,TalkTime=40}] run data modify entity @e[limit=1,x=-394,y=100,z=158,dy=3,type=pixelmon:npc_trainer] {Rotation:[116.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=247,TalkTime=41}] {"text":"<Garçon Georges> Excuse the intrusion... Here is your hot-soup course."}
 tellraw @s[scores={DialogueTrigger=247,TalkTime=50}] {"text":"<Garçon Georges> This pottage of sorrowful Custap Berry is topped with Mirror Coat and contains 108 different herbs."}
@@ -9134,7 +9134,7 @@ tellraw @s[scores={DialogueTrigger=248,TalkTime=15}] {"text":"<Garçon Georges> 
 
 #tp Waiter out
 execute as @s[scores={DialogueTrigger=248,TalkTime=22}] run particle cloud -394 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=248,TalkTime=22}] run tp @e[x=-394,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] -504 131 1302
+execute as @s[scores={DialogueTrigger=248,TalkTime=22}] run tp @e[x=-394,y=100,z=158,dy=3,type=pixelmon:npc_trainer] -504 131 1302
 
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=248,TalkTime=30}] run effect give @s minecraft:blindness 5 1 true
@@ -9144,8 +9144,8 @@ execute as @s[scores={DialogueTrigger=248,TalkTime=31}] run playsound pixelmon:p
 
 #tp Owner in
 execute as @s[scores={DialogueTrigger=248,TalkTime=39}] run particle cloud -394 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=248,TalkTime=39}] run tp @e[x=-504,y=130,z=1304,dy=3,nbt=!{pixelmon:npc_trainer}] -394 101 158
-execute as @s[scores={DialogueTrigger=248,TalkTime=40}] run data modify entity @e[limit=1,x=-394,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=248,TalkTime=39}] run tp @e[x=-504,y=130,z=1304,dy=3,type=pixelmon:npc_trainer] -394 101 158
+execute as @s[scores={DialogueTrigger=248,TalkTime=40}] run data modify entity @e[limit=1,x=-394,y=100,z=158,dy=3,type=pixelmon:npc_trainer] {Rotation:[116.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=248,TalkTime=41}] {"text":"<Owner Yannick> Excuse the intrusion, but I am one of the Owners of this fine restaurant."}
 tellraw @s[scores={DialogueTrigger=248,TalkTime=50}] {"text":"<Owner Yannick> How are you enjoying your meal so far? I hope it's to your liking."}
@@ -9182,7 +9182,7 @@ tellraw @s[scores={DialogueTrigger=249,TalkTime=25}] {"text":"<Owner Yannick> Pl
 
 #tp owner out
 execute as @s[scores={DialogueTrigger=249,TalkTime=32}] run particle cloud -394 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=249,TalkTime=32}] run tp @e[x=-394,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] -504 131 1304
+execute as @s[scores={DialogueTrigger=249,TalkTime=32}] run tp @e[x=-394,y=100,z=158,dy=3,type=pixelmon:npc_trainer] -504 131 1304
 
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=249,TalkTime=40}] run effect give @s minecraft:blindness 5 1 true
@@ -9192,8 +9192,8 @@ execute as @s[scores={DialogueTrigger=249,TalkTime=41}] run playsound pixelmon:p
 
 #tp chef in
 execute as @s[scores={DialogueTrigger=249,TalkTime=49}] run particle cloud -394 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=249,TalkTime=49}] run tp @e[x=-504,y=130,z=1306,dy=3,nbt=!{pixelmon:npc_trainer}] -394 101 158
-execute as @s[scores={DialogueTrigger=249,TalkTime=50}] run data modify entity @e[limit=1,x=-394,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=249,TalkTime=49}] run tp @e[x=-504,y=130,z=1306,dy=3,type=pixelmon:npc_trainer] -394 101 158
+execute as @s[scores={DialogueTrigger=249,TalkTime=50}] run data modify entity @e[limit=1,x=-394,y=100,z=158,dy=3,type=pixelmon:npc_trainer] {Rotation:[116.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=249,TalkTime=51}] {"text":"<Chef Albern> Excuse the interruption, but I am the \u201cchef de cuisine\u201d and one of the Owners here at Restaurant Le Yeah."}
 tellraw @s[scores={DialogueTrigger=249,TalkTime=63}] {"text":"<Chef Albern> I wished to step out and thank you in person for dining with us today."}
@@ -9229,7 +9229,7 @@ tellraw @s[scores={DialogueTrigger=250,TalkTime=15}] {"text":"<Chef Albern> For 
 
 #tp chef out
 execute as @s[scores={DialogueTrigger=250,TalkTime=23}] run particle cloud -394 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=250,TalkTime=23}] run tp @e[x=-394,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] -504 131 1306
+execute as @s[scores={DialogueTrigger=250,TalkTime=23}] run tp @e[x=-394,y=100,z=158,dy=3,type=pixelmon:npc_trainer] -504 131 1306
 
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=250,TalkTime=33}] run effect give @s minecraft:blindness 5 1 true
@@ -9239,8 +9239,8 @@ execute as @s[scores={DialogueTrigger=250,TalkTime=34}] run playsound pixelmon:p
 
 #tp owner in
 execute as @s[scores={DialogueTrigger=250,TalkTime=43}] run particle cloud -394 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=250,TalkTime=43}] run tp @e[x=-504,y=130,z=1308,dy=3,nbt=!{pixelmon:npc_chatting}] -394 101 158
-execute as @s[scores={DialogueTrigger=250,TalkTime=44}] run data modify entity @e[limit=1,x=-394,y=100,z=158,dy=3,nbt=!{pixelmon:npc_chatting}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=250,TalkTime=43}] run tp @e[x=-504,y=130,z=1308,dy=3,type=pixelmon:npc_chatting] -394 101 158
+execute as @s[scores={DialogueTrigger=250,TalkTime=44}] run data modify entity @e[limit=1,x=-394,y=100,z=158,dy=3,type=pixelmon:npc_chatting] {Rotation:[116.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=250,TalkTime=44}] {"text":"<Owner Yannick> How was your meal? It really hit the spot, yeah?"}
 tellraw @s[scores={DialogueTrigger=250,TalkTime=52}] {"text":"<Owner Yannick> Here is a little dessert to cleanse your palate:"}
@@ -9258,7 +9258,7 @@ tellraw @s[scores={DialogueTrigger=250,TalkTime=102}] {"text":"<Owner Yannick> T
 
 #tp owner out
 execute as @s[scores={DialogueTrigger=250,TalkTime=110}] run particle cloud -394 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=250,TalkTime=110}] run tp @e[x=-394,y=100,z=158,dy=3,nbt=!{pixelmon:npc_chatting}] -504 131 1308
+execute as @s[scores={DialogueTrigger=250,TalkTime=110}] run tp @e[x=-394,y=100,z=158,dy=3,type=pixelmon:npc_chatting] -504 131 1308
 
 execute as @s[scores={DialogueTrigger=250,TalkTime=112}] run scoreboard players set @s RestaurantBattle 0
 execute as @s[scores={DialogueTrigger=250,TalkTime=112}] run scoreboard players set @s RestaurantTotal 0
@@ -9291,8 +9291,8 @@ execute as @s[scores={DialogueTrigger=251,TalkTime=13}] run tp @s -291 101 157 0
 
 #tp owner in
 execute as @s[scores={DialogueTrigger=251,TalkTime=20}] run particle cloud -287 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=251,TalkTime=20}] run tp @e[x=-504,y=135,z=1300,dy=3,nbt=!{pixelmon:npc_trainer}] -287 101 158
-execute as @s[scores={DialogueTrigger=251,TalkTime=21}] run data modify entity @e[limit=1,x=-287,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=251,TalkTime=20}] run tp @e[x=-504,y=135,z=1300,dy=3,type=pixelmon:npc_trainer] -287 101 158
+execute as @s[scores={DialogueTrigger=251,TalkTime=21}] run data modify entity @e[limit=1,x=-287,y=100,z=158,dy=3,type=pixelmon:npc_trainer] {Rotation:[116.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=251,TalkTime=21}] {"text":"<Owner Christophe> Thank you for your patience. I am the Owner of Restaurant Le Wow."}
 tellraw @s[scores={DialogueTrigger=251,TalkTime=30}] {"text":"<Owner Christophe> Your entrée today will be the ultimate terrine. And here you are."}
@@ -9327,7 +9327,7 @@ tellraw @s[scores={DialogueTrigger=252,TalkTime=6}] {"text":"<Owner Christophe> 
 
 #tp owner out
 execute as @s[scores={DialogueTrigger=252,TalkTime=15}] run particle cloud -287 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=252,TalkTime=15}] run tp @e[x=-287,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] -504 136 1300
+execute as @s[scores={DialogueTrigger=252,TalkTime=15}] run tp @e[x=-287,y=100,z=158,dy=3,type=pixelmon:npc_trainer] -504 136 1300
 
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=252,TalkTime=25}] run effect give @s minecraft:blindness 5 1 true
@@ -9336,8 +9336,8 @@ execute as @s[scores={DialogueTrigger=252,TalkTime=26}] run playsound pixelmon:p
 
 #tp owner in
 execute as @s[scores={DialogueTrigger=252,TalkTime=35}] run particle cloud -287 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=252,TalkTime=35}] run tp @e[x=-504,y=135,z=1302,dy=3,nbt=!{pixelmon:npc_trainer}] -287 101 158
-execute as @s[scores={DialogueTrigger=252,TalkTime=36}] run data modify entity @e[limit=1,x=-287,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=252,TalkTime=35}] run tp @e[x=-504,y=135,z=1302,dy=3,type=pixelmon:npc_trainer] -287 101 158
+execute as @s[scores={DialogueTrigger=252,TalkTime=36}] run data modify entity @e[limit=1,x=-287,y=100,z=158,dy=3,type=pixelmon:npc_trainer] {Rotation:[116.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=252,TalkTime=36}] {"text":"<Owner Christophe> Thank you for your patience. I'm sorry to interrupt you once again."}
 tellraw @s[scores={DialogueTrigger=252,TalkTime=45}] {"text":"<Owner Christophe> For you, I have the soup of the day, a sumptuous consommé."}
@@ -9374,7 +9374,7 @@ tellraw @s[scores={DialogueTrigger=253,TalkTime=33}] {"text":"<Owner Christophe>
 
 #tp owner out
 execute as @s[scores={DialogueTrigger=253,TalkTime=43}] run particle cloud -287 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=253,TalkTime=43}] run tp @e[x=-287,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] -504 136 1302
+execute as @s[scores={DialogueTrigger=253,TalkTime=43}] run tp @e[x=-287,y=100,z=158,dy=3,type=pixelmon:npc_trainer] -504 136 1302
 
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=253,TalkTime=53}] run effect give @s minecraft:blindness 5 1 true
@@ -9384,8 +9384,8 @@ execute as @s[scores={DialogueTrigger=253,TalkTime=54}] run playsound pixelmon:p
 
 #tp waiter in
 execute as @s[scores={DialogueTrigger=253,TalkTime=64}] run particle cloud -287 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=253,TalkTime=64}] run tp @e[x=-504,y=135,z=1304,dy=3,nbt=!{pixelmon:npc_trainer}] -287 101 158
-execute as @s[scores={DialogueTrigger=253,TalkTime=65}] run data modify entity @e[limit=1,x=-287,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=253,TalkTime=64}] run tp @e[x=-504,y=135,z=1304,dy=3,type=pixelmon:npc_trainer] -287 101 158
+execute as @s[scores={DialogueTrigger=253,TalkTime=65}] run data modify entity @e[limit=1,x=-287,y=100,z=158,dy=3,type=pixelmon:npc_trainer] {Rotation:[116.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=253,TalkTime=66}] {"text":"<Garçon Morris> Thank you for your patience."}
 tellraw @s[scores={DialogueTrigger=253,TalkTime=73}] {"text":"<Garçon Morris> The Owner has had to respond to an emergency, but I hope I might serve you in his absence."}
@@ -9420,7 +9420,7 @@ tellraw @s[scores={DialogueTrigger=254,TalkTime=14}] {"text":"<Garçon Morris> I
 
 #tp waiter out
 execute as @s[scores={DialogueTrigger=254,TalkTime=24}] run particle cloud -287 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=254,TalkTime=24}] run tp @e[x=-287,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] -504 136 1304
+execute as @s[scores={DialogueTrigger=254,TalkTime=24}] run tp @e[x=-287,y=100,z=158,dy=3,type=pixelmon:npc_trainer] -504 136 1304
 
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=254,TalkTime=32}] run effect give @s minecraft:blindness 5 1 true
@@ -9430,8 +9430,8 @@ execute as @s[scores={DialogueTrigger=254,TalkTime=33}] run playsound pixelmon:p
 
 #tp waiter in
 execute as @s[scores={DialogueTrigger=254,TalkTime=42}] run particle cloud -287 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=254,TalkTime=42}] run tp @e[x=-504,y=135,z=1306,dy=3,nbt=!{pixelmon:npc_trainer}] -287 101 158
-execute as @s[scores={DialogueTrigger=254,TalkTime=43}] run data modify entity @e[limit=1,x=-287,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=254,TalkTime=42}] run tp @e[x=-504,y=135,z=1306,dy=3,type=pixelmon:npc_trainer] -287 101 158
+execute as @s[scores={DialogueTrigger=254,TalkTime=43}] run data modify entity @e[limit=1,x=-287,y=100,z=158,dy=3,type=pixelmon:npc_trainer] {Rotation:[116.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=254,TalkTime=45}] {"text":"<Garçon Morris> I've brought the viande course. Today is a fantastically finished roast."}
 tellraw @s[scores={DialogueTrigger=254,TalkTime=55}] {"text":"<Garçon Morris> I hope that you will not hold back but will devour it as your primal instincts urge you to."}
@@ -9465,7 +9465,7 @@ tellraw @s[scores={DialogueTrigger=255,TalkTime=14}] {"text":"<Garçon Morris> T
 
 #tp waiter out
 execute as @s[scores={DialogueTrigger=255,TalkTime=24}] run particle cloud -287 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=255,TalkTime=24}] run tp @e[x=-287,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] -504 136 1306
+execute as @s[scores={DialogueTrigger=255,TalkTime=24}] run tp @e[x=-287,y=100,z=158,dy=3,type=pixelmon:npc_trainer] -504 136 1306
 
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=255,TalkTime=32}] run effect give @s minecraft:blindness 5 1 true
@@ -9475,7 +9475,7 @@ execute as @s[scores={DialogueTrigger=255,TalkTime=33}] run playsound pixelmon:p
 
 #tp skiddo in
 execute as @s[scores={DialogueTrigger=255,TalkTime=43}] run particle cloud -287 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=255,TalkTime=43}] run tp @e[x=-504,y=136,z=1311,dy=3,nbt=!{pixelmon:statue}] -287 101 158
+execute as @s[scores={DialogueTrigger=255,TalkTime=43}] run tp @e[x=-504,y=136,z=1311,dy=3,type=pixelmon:statue] -287 101 158
 
 tellraw @s[scores={DialogueTrigger=255,TalkTime=45}] ["",{"text":"\u201c"},{"text":"Thank you for your patience. May I present the day's fromage?","italic":true},{"text":"\u201d"}]
 tellraw @s[scores={DialogueTrigger=255,TalkTime=55}] ["",{"text":"\u201c"},{"text":"This sublime Tomme cheese has been made using the milk of the Skiddo before you.","italic":true},{"text":"\u201d"}]
@@ -9484,7 +9484,7 @@ tellraw @s[scores={DialogueTrigger=255,TalkTime=75}] {"text":"That's what it say
 
 #waitress tps in, battles
 execute as @s[scores={DialogueTrigger=255,TalkTime=85}] run particle cloud -287 101 157 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=255,TalkTime=85}] run tp @e[x=-504,y=135,z=1308,dy=3,nbt=!{pixelmon:npc_trainer}] -287 101 157
+execute as @s[scores={DialogueTrigger=255,TalkTime=85}] run tp @e[x=-504,y=135,z=1308,dy=3,type=pixelmon:npc_trainer] -287 101 157
 ###execute as @s[scores={DialogueTrigger=255,TalkTime=86}] run tp @s Paula
 
 tag @s[scores={DialogueTrigger=255,TalkTime=86..}] add Dialogue255
@@ -9514,8 +9514,8 @@ tellraw @s[scores={DialogueTrigger=256,TalkTime=23}] {"text":"<Waitress Paula> P
 #tp waitress and Skiddo out
 execute as @s[scores={DialogueTrigger=256,TalkTime=30}] run particle cloud -288 101 158 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=256,TalkTime=30}] run particle cloud -287 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=256,TalkTime=30}] run tp @e[x=-287,y=100,z=158,dy=3,nbt=!{pixelmon:statue}] -504 137 1311
-execute as @s[scores={DialogueTrigger=256,TalkTime=30}] run tp @e[x=-287,y=100,z=157,dy=3,nbt=!{pixelmon:npc_trainer}] -504 136 1308
+execute as @s[scores={DialogueTrigger=256,TalkTime=30}] run tp @e[x=-287,y=100,z=158,dy=3,type=pixelmon:statue] -504 137 1311
+execute as @s[scores={DialogueTrigger=256,TalkTime=30}] run tp @e[x=-287,y=100,z=157,dy=3,type=pixelmon:npc_trainer] -504 136 1308
 
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=256,TalkTime=37}] run effect give @s minecraft:blindness 5 1 true
@@ -9525,8 +9525,8 @@ execute as @s[scores={DialogueTrigger=256,TalkTime=38}] run playsound pixelmon:p
 
 #tp waitress in
 execute as @s[scores={DialogueTrigger=256,TalkTime=47}] run particle cloud -287 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=256,TalkTime=47}] run tp @e[x=-504,y=135,z=1308,dy=3,nbt=!{pixelmon:npc_trainer}] -287 101 158
-execute as @s[scores={DialogueTrigger=256,TalkTime=48}] run data modify entity @e[limit=1,x=-287,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=256,TalkTime=47}] run tp @e[x=-504,y=135,z=1308,dy=3,type=pixelmon:npc_trainer] -287 101 158
+execute as @s[scores={DialogueTrigger=256,TalkTime=48}] run data modify entity @e[limit=1,x=-287,y=100,z=158,dy=3,type=pixelmon:npc_trainer] {Rotation:[116.0f,0.0f]}
 
 
 tellraw @s[scores={DialogueTrigger=256,TalkTime=48}] {"text":"<Waitress Paula> This dessert will be your final course today..."}
@@ -9545,7 +9545,7 @@ tellraw @s[scores={DialogueTrigger=256,TalkTime=117}] {"text":"<Waitress Paula> 
 
 #tp waitress out
 execute as @s[scores={DialogueTrigger=256,TalkTime=126}] run particle cloud -287 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=256,TalkTime=126}] run tp @e[x=-287,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] -504 136 1308
+execute as @s[scores={DialogueTrigger=256,TalkTime=126}] run tp @e[x=-287,y=100,z=158,dy=3,type=pixelmon:npc_trainer] -504 136 1308
 
 execute as @s[scores={DialogueTrigger=256,TalkTime=127}] run scoreboard players set @s RestaurantBattle 0
 execute as @s[scores={DialogueTrigger=256,TalkTime=127}] run scoreboard players set @s RestaurantTotal 0
@@ -9573,8 +9573,8 @@ execute as @s[scores={DialogueTrigger=257,TalkTime=12}] run tp @s -485 101 157 0
 
 #tp Furisode Girl no 1 in
 execute as @s[scores={DialogueTrigger=257,TalkTime=20}] run particle cloud -481 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=257,TalkTime=20}] run tp @e[x=-504,y=140,z=1300,dy=3,nbt=!{pixelmon:npc_trainer}] -481 101 158
-execute as @s[scores={DialogueTrigger=257,TalkTime=21}] run data modify entity @e[limit=1,x=-481,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=257,TalkTime=20}] run tp @e[x=-504,y=140,z=1300,dy=3,type=pixelmon:npc_trainer] -481 101 158
+execute as @s[scores={DialogueTrigger=257,TalkTime=21}] run data modify entity @e[limit=1,x=-481,y=100,z=158,dy=3,type=pixelmon:npc_trainer] {Rotation:[116.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=257,TalkTime=21}] {"text":"<Furisode Girl Gwyneth> Hey! Thanks for waitin'! Here's your nigiri sushi!"}
 tellraw @s[scores={DialogueTrigger=257,TalkTime=30}] ["",{"text":"<Furisode Girl Gwyneth> The taste'll blow your mind after "},{"text":"90 seconds","color":"gray"},{"text":"!"}]
@@ -9605,7 +9605,7 @@ tellraw @s[scores={DialogueTrigger=258,TalkTime=6}] {"text":"<Furisode Girl Gwyn
 
 #tp Furisode Girl no 1 out
 execute as @s[scores={DialogueTrigger=258,TalkTime=16}] run particle cloud -481 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=258,TalkTime=16}] run tp @e[x=-481,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] -504 141 1300
+execute as @s[scores={DialogueTrigger=258,TalkTime=16}] run tp @e[x=-481,y=100,z=158,dy=3,type=pixelmon:npc_trainer] -504 141 1300
 
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=258,TalkTime=25}] run effect give @s minecraft:blindness 5 1 true
@@ -9615,8 +9615,8 @@ execute as @s[scores={DialogueTrigger=258,TalkTime=26}] run playsound pixelmon:p
 
 #tp Furisode Girl no 2 in
 execute as @s[scores={DialogueTrigger=258,TalkTime=35}] run particle cloud -481 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=258,TalkTime=35}] run tp @e[x=-504,y=140,z=1302,dy=3,nbt=!{pixelmon:npc_trainer}] -481 101 158
-execute as @s[scores={DialogueTrigger=258,TalkTime=36}] run data modify entity @e[limit=1,x=-481,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=258,TalkTime=35}] run tp @e[x=-504,y=140,z=1302,dy=3,type=pixelmon:npc_trainer] -481 101 158
+execute as @s[scores={DialogueTrigger=258,TalkTime=36}] run data modify entity @e[limit=1,x=-481,y=100,z=158,dy=3,type=pixelmon:npc_trainer] {Rotation:[116.0f,0.0f]}
 
 
 tellraw @s[scores={DialogueTrigger=258,TalkTime=36}] {"text":"<Furisode Girl Cliantha> Hi! Thank you for waiting! Here's your temaki sushi!"}
@@ -9648,7 +9648,7 @@ tellraw @s[scores={DialogueTrigger=259,TalkTime=6}] {"text":"<Furisode Girl Clia
 
 #tp Furisode Girl no 2 out
 execute as @s[scores={DialogueTrigger=259,TalkTime=16}] run particle cloud -481 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=259,TalkTime=16}] run tp @e[x=-481,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] -504 141 1302
+execute as @s[scores={DialogueTrigger=259,TalkTime=16}] run tp @e[x=-481,y=100,z=158,dy=3,type=pixelmon:npc_trainer] -504 141 1302
 
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=259,TalkTime=25}] run effect give @s minecraft:blindness 5 1 true
@@ -9658,8 +9658,8 @@ execute as @s[scores={DialogueTrigger=259,TalkTime=26}] run playsound pixelmon:p
 
 #tp Furisode Girl no 3 in
 execute as @s[scores={DialogueTrigger=259,TalkTime=35}] run particle cloud -481 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=259,TalkTime=35}] run tp @e[x=-504,y=140,z=1304,dy=3,nbt=!{pixelmon:npc_trainer}] -481 101 158
-execute as @s[scores={DialogueTrigger=259,TalkTime=36}] run data modify entity @e[limit=1,x=-481,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=259,TalkTime=35}] run tp @e[x=-504,y=140,z=1304,dy=3,type=pixelmon:npc_trainer] -481 101 158
+execute as @s[scores={DialogueTrigger=259,TalkTime=36}] run data modify entity @e[limit=1,x=-481,y=100,z=158,dy=3,type=pixelmon:npc_trainer] {Rotation:[116.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=259,TalkTime=36}] {"text":"<Furisode Girl Thalassa> ...My apologies for the wait. This is our prized oshizushi."}
 tellraw @s[scores={DialogueTrigger=259,TalkTime=46}] ["",{"text":"<Furisode Girl Thalassa> It should ideally be consumed after "},{"text":"90 seconds","color":"gray"},{"text":"."}]
@@ -9690,7 +9690,7 @@ tellraw @s[scores={DialogueTrigger=260,TalkTime=6}] {"text":"<Furisode Girl Thal
 
 #tp Furisode Girl no 3 out
 execute as @s[scores={DialogueTrigger=260,TalkTime=16}] run particle cloud -481 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=260,TalkTime=16}] run tp @e[x=-481,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] -504 141 1304
+execute as @s[scores={DialogueTrigger=260,TalkTime=16}] run tp @e[x=-481,y=100,z=158,dy=3,type=pixelmon:npc_trainer] -504 141 1304
 
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=260,TalkTime=25}] run effect give @s minecraft:blindness 5 1 true
@@ -9700,8 +9700,8 @@ execute as @s[scores={DialogueTrigger=260,TalkTime=26}] run playsound pixelmon:p
 
 #tp Furisode Girl no 4 in
 execute as @s[scores={DialogueTrigger=260,TalkTime=35}] run particle cloud -481 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=260,TalkTime=35}] run tp @e[x=-504,y=140,z=1306,dy=3,nbt=!{pixelmon:npc_trainer}] -481 101 158
-execute as @s[scores={DialogueTrigger=260,TalkTime=36}] run data modify entity @e[limit=1,x=-481,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=260,TalkTime=35}] run tp @e[x=-504,y=140,z=1306,dy=3,type=pixelmon:npc_trainer] -481 101 158
+execute as @s[scores={DialogueTrigger=260,TalkTime=36}] run data modify entity @e[limit=1,x=-481,y=100,z=158,dy=3,type=pixelmon:npc_trainer] {Rotation:[116.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=260,TalkTime=36}] {"text":"<Furisode Girl Nerissa> Thank you for your patience, good customer."}
 tellraw @s[scores={DialogueTrigger=260,TalkTime=43}] {"text":"<Furisode Girl Nerissa> I am delighted to present you with your chirashizushi course."}
@@ -9733,7 +9733,7 @@ tellraw @s[scores={DialogueTrigger=261,TalkTime=6}] {"text":"<Furisode Girl Neri
 
 #tp Furisode Girl no 4 out
 execute as @s[scores={DialogueTrigger=261,TalkTime=16}] run particle cloud -481 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=261,TalkTime=16}] run tp @e[x=-481,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] -504 141 1306
+execute as @s[scores={DialogueTrigger=261,TalkTime=16}] run tp @e[x=-481,y=100,z=158,dy=3,type=pixelmon:npc_trainer] -504 141 1306
 
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=261,TalkTime=25}] run effect give @s minecraft:blindness 5 1 true
@@ -9743,8 +9743,8 @@ execute as @s[scores={DialogueTrigger=261,TalkTime=26}] run playsound pixelmon:p
 
 #tp owner in
 execute as @s[scores={DialogueTrigger=261,TalkTime=35}] run particle cloud -481 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=261,TalkTime=35}] run tp @e[x=-504,y=140,z=1308,dy=3,nbt=!{pixelmon:npc_trainer}] -481 101 158
-execute as @s[scores={DialogueTrigger=261,TalkTime=36}] run data modify entity @e[limit=1,x=-481,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=261,TalkTime=35}] run tp @e[x=-504,y=140,z=1308,dy=3,type=pixelmon:npc_trainer] -481 101 158
+execute as @s[scores={DialogueTrigger=261,TalkTime=36}] run data modify entity @e[limit=1,x=-481,y=100,z=158,dy=3,type=pixelmon:npc_trainer] {Rotation:[116.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=261,TalkTime=36}] {"text":"<Owner Kazu> Welcome, friend! Thanks for joining us. Are ya stuffed yet?"}
 tellraw @s[scores={DialogueTrigger=261,TalkTime=45}] {"text":"<Owner Kazu> I'm basically the boss 'round here. I own the joint, y'see."}
@@ -9777,7 +9777,7 @@ tellraw @s[scores={DialogueTrigger=262,TalkTime=6}] {"text":"<Owner Kazu> Eh, I 
 
 #tp owner trainer out
 execute as @s[scores={DialogueTrigger=262,TalkTime=16}] run particle cloud -481 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=262,TalkTime=16}] run tp @e[x=-481,y=100,z=158,dy=3,nbt=!{pixelmon:npc_trainer}] -504 141 1308
+execute as @s[scores={DialogueTrigger=262,TalkTime=16}] run tp @e[x=-481,y=100,z=158,dy=3,type=pixelmon:npc_trainer] -504 141 1308
 
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=262,TalkTime=25}] run effect give @s minecraft:blindness 5 1 true
@@ -9787,8 +9787,8 @@ execute as @s[scores={DialogueTrigger=262,TalkTime=26}] run playsound pixelmon:p
 
 #tp owner npc in
 execute as @s[scores={DialogueTrigger=262,TalkTime=35}] run particle cloud -481 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=262,TalkTime=35}] run tp @e[x=-504,y=140,z=1310,dy=3,nbt=!{pixelmon:npc_chatting}] -481 101 158
-execute as @s[scores={DialogueTrigger=262,TalkTime=36}] run data modify entity @e[limit=1,x=-481,y=100,z=158,dy=3,nbt=!{pixelmon:npc_chatting}] {Rotation:[116.0f,0.0f]}
+execute as @s[scores={DialogueTrigger=262,TalkTime=35}] run tp @e[x=-504,y=140,z=1310,dy=3,type=pixelmon:npc_chatting] -481 101 158
+execute as @s[scores={DialogueTrigger=262,TalkTime=36}] run data modify entity @e[limit=1,x=-481,y=100,z=158,dy=3,type=pixelmon:npc_chatting] {Rotation:[116.0f,0.0f]}
 
 tellraw @s[scores={DialogueTrigger=262,TalkTime=36}] {"text":"<Owner Kazu> So, how's it been going? Before ya go, have a bit of inarizushi, won't ya?"}
 tellraw @s[scores={DialogueTrigger=262,TalkTime=45}] {"text":"<Owner Kazu> Just for you, we've gone all out an' made tegonezushi. That's how much we like ya!"}
@@ -9803,7 +9803,7 @@ tellraw @s[scores={DialogueTrigger=262,TalkTime=84}] {"text":"<Owner Kazu> Thank
 
 #tp owner npc out
 execute as @s[scores={DialogueTrigger=262,TalkTime=93}] run particle cloud -481 101 158 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=262,TalkTime=93}] run tp @e[x=-481,y=100,z=158,dy=3,nbt=!{pixelmon:npc_chatting}] -504 141 1310
+execute as @s[scores={DialogueTrigger=262,TalkTime=93}] run tp @e[x=-481,y=100,z=158,dy=3,type=pixelmon:npc_chatting] -504 141 1310
 
 execute as @s[scores={DialogueTrigger=262,TalkTime=93}] run advancement grant @s only kalos:adventurer1
 execute as @s[scores={DialogueTrigger=262,TalkTime=93}] run scoreboard players set @s RestaurantBattle 0
@@ -9822,7 +9822,7 @@ scoreboard players set @s[tag=Dialogue262] DialogueTrigger 0
 tellraw @s[scores={DialogueTrigger=263,TalkTime=1}] {"text":"<Phil> All right. I'll take a great photo! Let's move to the shooting location!"}
 
 execute as @s[scores={DialogueTrigger=263,TalkTime=11..11}] run effect give @s minecraft:blindness 5 1 true
-execute as @s[scores={DialogueTrigger=263,TalkTime=13..28}] run effect give @e[distance=..50,name=Phil,nbt=!{pixelmon:npc_chatting}] minecraft:invisibility 5 1 true
+execute as @s[scores={DialogueTrigger=263,TalkTime=13..28}] run effect give @e[distance=..50,name=Phil,type=pixelmon:npc_chatting] minecraft:invisibility 5 1 true
 
 
 #TPs the player to their photo location
@@ -9843,20 +9843,20 @@ execute as @s[scores={DialogueTrigger=263,TalkTime=13..29,PhotoSpot=14}] run tp 
 
 
 #tps in the Phil taking the photograph
-execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=1}] run tp @e[x=-475,y=100,z=1243,dy=3,nbt=!{pixelmon:npc_chatting}] 471 108 1434
-execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=2}] run tp @e[x=-475,y=100,z=1245,dy=3,nbt=!{pixelmon:npc_chatting}] -181 102 -340
-execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=3}] run tp @e[x=-475,y=100,z=1247,dy=3,nbt=!{pixelmon:npc_chatting}] -1323 100 -374
-execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=4}] run tp @e[x=-475,y=100,z=1249,dy=3,nbt=!{pixelmon:npc_chatting}] -1534 100 -26
-execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=5}] run tp @e[x=-475,y=100,z=1251,dy=3,nbt=!{pixelmon:npc_chatting}] -1130 109 2044
-execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=6}] run tp @e[x=-475,y=100,z=1253,dy=3,nbt=!{pixelmon:npc_chatting}] -411 109 2041
-execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=7}] run tp @e[x=-475,y=100,z=1255,dy=3,nbt=!{pixelmon:npc_chatting}] -2209 104 -675
-execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=8}] run tp @e[x=-471,y=100,z=1243,dy=3,nbt=!{pixelmon:npc_chatting}] -1656 76 -947
+execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=1}] run tp @e[x=-475,y=100,z=1243,dy=3,type=pixelmon:npc_chatting] 471 108 1434
+execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=2}] run tp @e[x=-475,y=100,z=1245,dy=3,type=pixelmon:npc_chatting] -181 102 -340
+execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=3}] run tp @e[x=-475,y=100,z=1247,dy=3,type=pixelmon:npc_chatting] -1323 100 -374
+execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=4}] run tp @e[x=-475,y=100,z=1249,dy=3,type=pixelmon:npc_chatting] -1534 100 -26
+execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=5}] run tp @e[x=-475,y=100,z=1251,dy=3,type=pixelmon:npc_chatting] -1130 109 2044
+execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=6}] run tp @e[x=-475,y=100,z=1253,dy=3,type=pixelmon:npc_chatting] -411 109 2041
+execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=7}] run tp @e[x=-475,y=100,z=1255,dy=3,type=pixelmon:npc_chatting] -2209 104 -675
+execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=8}] run tp @e[x=-471,y=100,z=1243,dy=3,type=pixelmon:npc_chatting] -1656 76 -947
 
-execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=10}] run tp @e[x=-471,y=100,z=1247,dy=3,nbt=!{pixelmon:npc_chatting}] 675 120 -831
-execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=11}] run tp @e[x=-471,y=100,z=1249,dy=3,nbt=!{pixelmon:npc_chatting}] 1230 107.5 -276
-execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=12}] run tp @e[x=-471,y=100,z=1251,dy=3,nbt=!{pixelmon:npc_chatting}] 1602 115 247
-execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=13}] run tp @e[x=-471,y=100,z=1253,dy=3,nbt=!{pixelmon:npc_chatting}] 1115 100 505
-execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=14}] run tp @e[x=-471,y=100,z=1255,dy=3,nbt=!{pixelmon:npc_chatting}] -1906 100 2155
+execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=10}] run tp @e[x=-471,y=100,z=1247,dy=3,type=pixelmon:npc_chatting] 675 120 -831
+execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=11}] run tp @e[x=-471,y=100,z=1249,dy=3,type=pixelmon:npc_chatting] 1230 107.5 -276
+execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=12}] run tp @e[x=-471,y=100,z=1251,dy=3,type=pixelmon:npc_chatting] 1602 115 247
+execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=13}] run tp @e[x=-471,y=100,z=1253,dy=3,type=pixelmon:npc_chatting] 1115 100 505
+execute as @s[scores={DialogueTrigger=263,TalkTime=14..15,PhotoSpot=14}] run tp @e[x=-471,y=100,z=1255,dy=3,type=pixelmon:npc_chatting] -1906 100 2155
 
 
 
@@ -9889,20 +9889,20 @@ execute as @s[scores={DialogueTrigger=263,TalkTime=32}] run effect give @s minec
 
 
 #tps the photographer phils back
-execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=1}] run tp @e[x=471,y=108,z=1434,dy=3,nbt=!{pixelmon:npc_chatting}] -475 101 1243
-execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=2}] run tp @e[x=-181,y=102,z=-340,dy=3,nbt=!{pixelmon:npc_chatting}] -475 101 1245
-execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=3}] run tp @e[x=-1323,y=100,z=-374,dy=3,nbt=!{pixelmon:npc_chatting}] -475 101 1247
-execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=4}] run tp @e[x=-1534,y=100,z=-26,dy=3,nbt=!{pixelmon:npc_chatting}] -475 101 1249
-execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=5}] run tp @e[x=-1130,y=109,z=2044,dy=3,nbt=!{pixelmon:npc_chatting}] -475 101 1251
-execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=6}] run tp @e[x=-411,y=109,z=2041,dy=3,nbt=!{pixelmon:npc_chatting}] -475 101 1253
-execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=7}] run tp @e[x=-2209,y=104,z=-675,dy=3,nbt=!{pixelmon:npc_chatting}] -475 101 1255
-execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=8}] run tp @e[x=-1656,y=76,z=-947,dy=3,nbt=!{pixelmon:npc_chatting}] -471 101 1243
+execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=1}] run tp @e[x=471,y=108,z=1434,dy=3,type=pixelmon:npc_chatting] -475 101 1243
+execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=2}] run tp @e[x=-181,y=102,z=-340,dy=3,type=pixelmon:npc_chatting] -475 101 1245
+execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=3}] run tp @e[x=-1323,y=100,z=-374,dy=3,type=pixelmon:npc_chatting] -475 101 1247
+execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=4}] run tp @e[x=-1534,y=100,z=-26,dy=3,type=pixelmon:npc_chatting] -475 101 1249
+execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=5}] run tp @e[x=-1130,y=109,z=2044,dy=3,type=pixelmon:npc_chatting] -475 101 1251
+execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=6}] run tp @e[x=-411,y=109,z=2041,dy=3,type=pixelmon:npc_chatting] -475 101 1253
+execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=7}] run tp @e[x=-2209,y=104,z=-675,dy=3,type=pixelmon:npc_chatting] -475 101 1255
+execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=8}] run tp @e[x=-1656,y=76,z=-947,dy=3,type=pixelmon:npc_chatting] -471 101 1243
 
-execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=10}] run tp @e[x=675,y=120,z=-831,dy=3,nbt=!{pixelmon:npc_chatting}] -471 101 1247
-execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=11}] run tp @e[x=1230,y=107.5,z=-276,dy=3,nbt=!{pixelmon:npc_chatting}] -471 101 1249
-execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=12}] run tp @e[x=1602,y=115,z=247,dy=3,nbt=!{pixelmon:npc_chatting}] -471 101 1251
-execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=13}] run tp @e[x=1115,y=100,z=505,dy=3,nbt=!{pixelmon:npc_chatting}] -471 101 1253
-execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=14}] run tp @e[x=-1906,y=100,z=2155,dy=3,nbt=!{pixelmon:npc_chatting}] -471 101 1255
+execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=10}] run tp @e[x=675,y=120,z=-831,dy=3,type=pixelmon:npc_chatting] -471 101 1247
+execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=11}] run tp @e[x=1230,y=107.5,z=-276,dy=3,type=pixelmon:npc_chatting] -471 101 1249
+execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=12}] run tp @e[x=1602,y=115,z=247,dy=3,type=pixelmon:npc_chatting] -471 101 1251
+execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=13}] run tp @e[x=1115,y=100,z=505,dy=3,type=pixelmon:npc_chatting] -471 101 1253
+execute as @s[scores={DialogueTrigger=263,TalkTime=32..33,PhotoSpot=14}] run tp @e[x=-1906,y=100,z=2155,dy=3,type=pixelmon:npc_chatting] -471 101 1255
 
 
 #tp player back to near the sign
