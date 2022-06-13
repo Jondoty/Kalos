@@ -91,8 +91,8 @@ execute as @a[scores={TalkTrigger=8,StarterPick=1..}] run scoreboard players set
 
 
 #Bulbasaur
-###give @a[scores={TalkTrigger=9},tag=!KantoStarters] pixelmon:venusaurite
-###execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[scores={TalkTrigger=9},tag=!KantoStarters] Bulbasaur lvl:10 gr:7
+give @a[scores={TalkTrigger=9},tag=!KantoStarters] pixelmon:venusaurite
+execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[scores={TalkTrigger=9},tag=!KantoStarters] Bulbasaur lvl:10 gr:7
 tag @a[scores={TalkTrigger=9},tag=!KantoStarters] add KantoStarters
 scoreboard players set @a[scores={TalkTrigger=9}] DialogueTrigger 20
 execute as @a[scores={TalkTrigger=9},tag=KantoStarters] run tp @s -265 121.15 96 180 8
@@ -101,9 +101,9 @@ execute as @a[scores={TalkTrigger=9},tag=KantoStarters] run scoreboard players s
 
 
 #Charmander
-###give @a[scores={TalkTrigger=10},tag=!KantoStarters] pixelmon:charizardite_y
-###give @a[scores={TalkTrigger=10},tag=!KantoStarters] pixelmon:charizardite_x
-###execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[scores={TalkTrigger=10},tag=!KantoStarters] Charmander lvl:10 gr:7
+give @a[scores={TalkTrigger=10},tag=!KantoStarters] pixelmon:charizardite_y
+give @a[scores={TalkTrigger=10},tag=!KantoStarters] pixelmon:charizardite_x
+execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[scores={TalkTrigger=10},tag=!KantoStarters] Charmander lvl:10 gr:7
 tag @a[scores={TalkTrigger=10},tag=!KantoStarters] add KantoStarters
 scoreboard players set @a[scores={TalkTrigger=10}] DialogueTrigger 20
 execute as @a[scores={TalkTrigger=10},tag=KantoStarters] run tp @s -265 121.15 96 180 8
@@ -113,8 +113,8 @@ execute as @a[scores={TalkTrigger=10},tag=KantoStarters] run scoreboard players 
 
 
 #Squirtle
-###give @a[scores={TalkTrigger=11},tag=!KantoStarters] pixelmon:blastoisinite
-###execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[scores={TalkTrigger=11},tag=!KantoStarters] Squirtle lvl:10 gr:7
+give @a[scores={TalkTrigger=11},tag=!KantoStarters] pixelmon:blastoisinite
+execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[scores={TalkTrigger=11},tag=!KantoStarters] Squirtle lvl:10 gr:7
 tag @a[scores={TalkTrigger=11},tag=!KantoStarters] add KantoStarters
 scoreboard players set @a[scores={TalkTrigger=11}] DialogueTrigger 20
 execute as @a[scores={TalkTrigger=11},tag=KantoStarters] run tp @s -265 121.15 96 180 8
@@ -126,13 +126,13 @@ execute as @a[scores={TalkTrigger=11},tag=KantoStarters] run scoreboard players 
 
 
 #Jaw Fossil - 14
-###give @a[scores={TalkTrigger=14}] pixelmon:jaw_fossil
+give @a[scores={TalkTrigger=14}] pixelmon:jaw_fossil
 scoreboard players set @a[scores={TalkTrigger=14}] DialogueTrigger 45
 execute as @a[scores={TalkTrigger=14}] run scoreboard players set @s TalkTrigger 0
 
 
 #Sail Fossil - 15
-###give @a[scores={TalkTrigger=15}] pixelmon:sail_fossil
+give @a[scores={TalkTrigger=15}] pixelmon:sail_fossil
 scoreboard players set @a[scores={TalkTrigger=15}] DialogueTrigger 45
 execute as @a[scores={TalkTrigger=15}] run scoreboard players set @s TalkTrigger 0
 
@@ -704,7 +704,7 @@ execute as @a[scores={TalkTrigger=286,BattlePoint=..1}] run scoreboard players e
 execute as @a[scores={TalkTrigger=286,BattlePoint=..1}] run scoreboard players set @s TalkTrigger 0
 
 execute as @a[scores={TalkTrigger=286,BattlePoint=2..}] run playsound minecraft:block.note.bell ambient @s ~ ~ ~ 100 1 1
-###execute as @a[scores={TalkTrigger=286,BattlePoint=2..}] run give @s pixelmon:ruby{display:{Name:"Battle Point",Lore:["Used to exchange for items in the","Battle Maison in Kiloude City."]}} 2
+execute as @a[scores={TalkTrigger=286,BattlePoint=2..}] run give @s pixelmon:ruby{display:{Name:"Battle Point",Lore:["Used to exchange for items in the","Battle Maison in Kiloude City."]}} 2
 execute as @a[scores={TalkTrigger=286,BattlePoint=2..}] run scoreboard players remove @s BattlePoint 2
 
 
@@ -714,7 +714,7 @@ execute as @a[scores={TalkTrigger=287,BattlePoint=0..7}] run scoreboard players 
 execute as @a[scores={TalkTrigger=287,BattlePoint=0..7}] run scoreboard players set @s TalkTrigger 0
 
 execute as @a[scores={TalkTrigger=287,BattlePoint=8..}] run playsound minecraft:block.note.bell ambient @s ~ ~ ~ 100 1 1
-###execute as @a[scores={TalkTrigger=287,BattlePoint=8..}] run give @s pixelmon:ruby{display:{Name:"Battle Point",Lore:["Used to exchange for items in the","Battle Maison in Kiloude City."]}} 8
+execute as @a[scores={TalkTrigger=287,BattlePoint=8..}] run give @s pixelmon:ruby{display:{Name:"Battle Point",Lore:["Used to exchange for items in the","Battle Maison in Kiloude City."]}} 8
 execute as @a[scores={TalkTrigger=287,BattlePoint=8..}] run scoreboard players remove @s BattlePoint 8
 
 
@@ -724,7 +724,7 @@ execute as @a[scores={TalkTrigger=288,BattlePoint=0..15}] run scoreboard players
 execute as @a[scores={TalkTrigger=288,BattlePoint=0..15}] run scoreboard players set @s TalkTrigger 0
 
 execute as @a[scores={TalkTrigger=288,BattlePoint=16..}] run playsound minecraft:block.note.bell ambient @s ~ ~ ~ 100 1 1
-###execute as @a[scores={TalkTrigger=288,BattlePoint=16..}] run give @s pixelmon:ruby{display:{Name:"Battle Point",Lore:["Used to exchange for items in the","Battle Maison in Kiloude City."]}} 16
+execute as @a[scores={TalkTrigger=288,BattlePoint=16..}] run give @s pixelmon:ruby{display:{Name:"Battle Point",Lore:["Used to exchange for items in the","Battle Maison in Kiloude City."]}} 16
 execute as @a[scores={TalkTrigger=288,BattlePoint=16..}] run scoreboard players remove @s BattlePoint 16
 
 
@@ -734,7 +734,7 @@ execute as @a[scores={TalkTrigger=289,BattlePoint=0..31}] run scoreboard players
 execute as @a[scores={TalkTrigger=289,BattlePoint=0..31}] run scoreboard players set @s TalkTrigger 0
 
 execute as @a[scores={TalkTrigger=289,BattlePoint=32..}] run playsound minecraft:block.note.bell ambient @s ~ ~ ~ 100 1 1
-###execute as @a[scores={TalkTrigger=289,BattlePoint=32..}] run give @s pixelmon:ruby{display:{Name:"Battle Point",Lore:["Used to exchange for items in the","Battle Maison in Kiloude City."]}} 32
+execute as @a[scores={TalkTrigger=289,BattlePoint=32..}] run give @s pixelmon:ruby{display:{Name:"Battle Point",Lore:["Used to exchange for items in the","Battle Maison in Kiloude City."]}} 32
 execute as @a[scores={TalkTrigger=289,BattlePoint=32..}] run scoreboard players remove @s BattlePoint 32
 
 
@@ -744,7 +744,7 @@ execute as @a[scores={TalkTrigger=290,BattlePoint=0..47}] run scoreboard players
 execute as @a[scores={TalkTrigger=290,BattlePoint=0..47}] run scoreboard players set @s TalkTrigger 0
 
 execute as @a[scores={TalkTrigger=290,BattlePoint=48..}] run playsound minecraft:block.note.bell ambient @s ~ ~ ~ 100 1 1
-###execute as @a[scores={TalkTrigger=290,BattlePoint=48..}] run give @s pixelmon:ruby{display:{Name:"Battle Point",Lore:["Used to exchange for items in the","Battle Maison in Kiloude City."]}} 48
+execute as @a[scores={TalkTrigger=290,BattlePoint=48..}] run give @s pixelmon:ruby{display:{Name:"Battle Point",Lore:["Used to exchange for items in the","Battle Maison in Kiloude City."]}} 48
 execute as @a[scores={TalkTrigger=290,BattlePoint=48..}] run scoreboard players remove @s BattlePoint 48
 
 
@@ -754,7 +754,7 @@ execute as @a[scores={TalkTrigger=291,BattlePoint=0..63}] run scoreboard players
 execute as @a[scores={TalkTrigger=291,BattlePoint=0..63}] run scoreboard players set @s TalkTrigger 0
 
 execute as @a[scores={TalkTrigger=291,BattlePoint=64..}] run playsound minecraft:block.note.bell ambient @s ~ ~ ~ 100 1 1
-###execute as @a[scores={TalkTrigger=291,BattlePoint=64..}] run give @s pixelmon:ruby{display:{Name:"Battle Point",Lore:["Used to exchange for items in the","Battle Maison in Kiloude City."]}} 64
+execute as @a[scores={TalkTrigger=291,BattlePoint=64..}] run give @s pixelmon:ruby{display:{Name:"Battle Point",Lore:["Used to exchange for items in the","Battle Maison in Kiloude City."]}} 64
 execute as @a[scores={TalkTrigger=291,BattlePoint=64..}] run scoreboard players remove @s BattlePoint 64
 
 
@@ -1332,7 +1332,7 @@ execute as @a[scores={TalkTrigger=317}] run scoreboard players set @s TalkTrigge
 #318 - Shalour Hiker stone prompt
 
 execute as @a[scores={TalkTrigger=318},nbt={Inventory:[{id:"minecraft:prismarine_crystals"}]}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 10 1 1
-###execute as @a[scores={TalkTrigger=318},nbt={Inventory:[{id:"minecraft:prismarine_crystals"}]}] run give @s pixelmon:sun_stone
+execute as @a[scores={TalkTrigger=318},nbt={Inventory:[{id:"minecraft:prismarine_crystals"}]}] run give @s pixelmon:sun_stone
 execute as @a[scores={TalkTrigger=318},nbt={Inventory:[{id:"minecraft:prismarine_crystals"}]}] run tellraw @s {"text":"<Hiker> It's a funny thing. You tend to come across rare stones in Shalour City. I'll bet the Mega Evolution guru'll be really happy if this is a Mega Stone."}
 execute as @a[scores={TalkTrigger=318},nbt={Inventory:[{id:"minecraft:prismarine_crystals"}]}] run clear @s minecraft:prismarine_crystals
 execute as @a[scores={TalkTrigger=318}] run scoreboard players set @s TalkTrigger 0
@@ -1467,7 +1467,7 @@ execute as @a[scores={TalkTrigger=340}] run tellraw @s ["",{"text":"["},{"text":
 
 #Quiz1 Right
 execute as @a[scores={TalkTrigger=341}] run tellraw @s {"text":"Correct, correct, CORRECT! As I promised, I’ll give you a TM! I don’t have to explain what kind of move this is, correct? Please come again tomorrow. If you give me a correct answer, I’ll give you another TM."}
-###execute as @a[scores={TalkTrigger=341}] run give @s pixelmon:tm_gen6{tm:100}
+execute as @a[scores={TalkTrigger=341}] run give @s pixelmon:tm_gen6{tm:100}
 execute as @a[scores={TalkTrigger=341}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 10 1 1
 execute as @a[scores={TalkTrigger=341}] run tag @s add TMQuiz1
 execute as @a[scores={TalkTrigger=341}] run tag @s add QuizCooldown
@@ -1483,7 +1483,7 @@ execute as @a[scores={TalkTrigger=342}] run tellraw @s ["",{"text":"["},{"text":
 
 #Quiz2 Right
 execute as @a[scores={TalkTrigger=343}] run tellraw @s {"text":"Correct, correct, CORRECT! As I promised, I’ll give you a TM! I don’t have to explain what kind of move this is, correct? Please come again tomorrow. If you give me a correct answer, I’ll give you another TM."}
-###execute as @a[scores={TalkTrigger=343}] run give @s pixelmon:tm_gen6{tm:62}
+execute as @a[scores={TalkTrigger=343}] run give @s pixelmon:tm_gen6{tm:62}
 execute as @a[scores={TalkTrigger=343}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 10 1 1
 execute as @a[scores={TalkTrigger=343}] run tag @s add TMQuiz2
 execute as @a[scores={TalkTrigger=343}] run tag @s add QuizCooldown
@@ -1498,7 +1498,7 @@ execute as @a[scores={TalkTrigger=344}] run tellraw @s ["",{"text":"["},{"text":
 
 #Quiz3 Right
 execute as @a[scores={TalkTrigger=345}] run tellraw @s {"text":"Correct, correct, CORRECT! As I promised, I’ll give you a TM! I don’t have to explain what kind of move this is, correct? Please come again tomorrow. If you give me a correct answer, I’ll give you another TM."}
-###execute as @a[scores={TalkTrigger=345}] run give @s pixelmon:tm_gen6{tm:63}
+execute as @a[scores={TalkTrigger=345}] run give @s pixelmon:tm_gen6{tm:63}
 execute as @a[scores={TalkTrigger=345}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 10 1 1
 execute as @a[scores={TalkTrigger=345}] run tag @s add TMQuiz3
 execute as @a[scores={TalkTrigger=345}] run tag @s add QuizCooldown
@@ -1513,7 +1513,7 @@ execute as @a[scores={TalkTrigger=346}] run tellraw @s ["",{"text":"["},{"text":
 
 #Quiz3 Right
 execute as @a[scores={TalkTrigger=347}] run tellraw @s {"text":"Correct, correct, CORRECT! As I promised, I’ll give you a TM! I don’t have to explain what kind of move this is, correct?"}
-###execute as @a[scores={TalkTrigger=347}] run give @s pixelmon:tm_gen6{tm:92}
+execute as @a[scores={TalkTrigger=347}] run give @s pixelmon:tm_gen6{tm:92}
 execute as @a[scores={TalkTrigger=347}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 10 1 1
 execute as @a[scores={TalkTrigger=347}] run tag @s add TMQuiz4
 execute as @a[scores={TalkTrigger=347}] run tag @s add QuizCooldown

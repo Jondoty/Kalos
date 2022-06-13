@@ -1,33 +1,33 @@
 #Important Items
 #Town Map
-###give @s minecraft:diamond_hoe{display:{Name:"Town Map",Lore:["A map of the Kalos region."]},HideFlags:6,Unbreakable:1,Damage:1s}
-###give @s pixelmon:exp_all 1
-###give @s pixelmon:tm_gen6{tm:27}
-###give @s pixelmon:tm_gen6{tm:17}
-###give @s pixelmon:jaw_fossil
-###give @s pixelmon:sail_fossil
-###give @s pixelmon:hm4
-###give @s pixelmon:tm_gen6{tm:70}
-###function kalos:spawn/flashhm
-###give @s minecraft:prismarine_crystals{display:{Lore:["A rather curious stone that","might appear to be valuable","to some. It's all in the","eye of the beholder."]},HideFlags:6}
-###execute at @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run megaring @a[tag=Temp]
-###execute at @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[tag=Temp] Lucario lvl:32 ab:Stradyfast gr:6 ivhp:26+ ivatk:29+ ivdef:26+ ivspatk:26+ ivspdef:26+ ivhp:26+
-###give @s pixelmon:lucarionite
-###give @s pixelmon:hm3
-###function kalos:spawn/flyhm
-###give @s pixelmon:full_restore 2
-###give @s pixelmon:kings_rock
-###give @s pixelmon:master_ball
-###give @s pixelmon:big_nugget
-###give @s pixelmon:abomasite
-###execute at @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[tag=Temp] Mamoswine lvl:35 untradeable gr:7
-###give @s pixelmon:repeat_ball 10
-###give @s pixelmon:revive 3
-###give @s minecraft:iron_horse_armor{display:{Lore:["A card key that activates the","elevator in Lysandre Labs.","It is emblazoned with Team","Flare's logo."]},HideFlags:6}
-###give @s pixelmon:hm7
-###give @s minecraft:diamond_horse_armor{display:{Lore:["A precious symbol that is awarded","only to an individual who has done","great things for the Kalos region."]},HideFlags:6}
-###give @s minecraft:golden_horse_armor{display:{Lore:["A commuter pass that allows","the holder to ride the TMV","between Lumiose City and","Kiloude City at any time."]},HideFlags:6}
-###give @s pixelmon:absolite
+give @s minecraft:diamond_hoe{display:{Name:"Town Map",Lore:["A map of the Kalos region."]},HideFlags:6,Unbreakable:1,Damage:1s}
+give @s pixelmon:exp_all 1
+give @s pixelmon:tm_gen6{tm:27}
+give @s pixelmon:tm_gen6{tm:17}
+give @s pixelmon:jaw_fossil
+give @s pixelmon:sail_fossil
+give @s pixelmon:hm4
+give @s pixelmon:tm_gen6{tm:70}
+function kalos:spawn/flashhm
+give @s minecraft:prismarine_crystals{display:{Lore:["A rather curious stone that","might appear to be valuable","to some. It's all in the","eye of the beholder."]},HideFlags:6}
+execute at @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run megaring @a[tag=Temp]
+execute at @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[tag=Temp] Lucario lvl:32 ab:Stradyfast gr:6 ivhp:26+ ivatk:29+ ivdef:26+ ivspatk:26+ ivspdef:26+ ivhp:26+
+give @s pixelmon:lucarionite
+give @s pixelmon:hm3
+function kalos:spawn/flyhm
+give @s pixelmon:full_restore 2
+give @s pixelmon:kings_rock
+give @s pixelmon:master_ball
+give @s pixelmon:big_nugget
+give @s pixelmon:abomasite
+execute at @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[tag=Temp] Mamoswine lvl:35 untradeable gr:7
+give @s pixelmon:repeat_ball 10
+give @s pixelmon:revive 3
+give @s minecraft:iron_horse_armor{display:{Lore:["A card key that activates the","elevator in Lysandre Labs.","It is emblazoned with Team","Flare's logo."]},HideFlags:6}
+give @s pixelmon:hm7
+give @s minecraft:diamond_horse_armor{display:{Lore:["A precious symbol that is awarded","only to an individual who has done","great things for the Kalos region."]},HideFlags:6}
+give @s minecraft:golden_horse_armor{display:{Lore:["A commuter pass that allows","the holder to ride the TMV","between Lumiose City and","Kiloude City at any time."]},HideFlags:6}
+give @s pixelmon:absolite
 
 
 

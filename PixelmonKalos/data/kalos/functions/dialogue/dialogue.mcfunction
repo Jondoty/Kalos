@@ -184,7 +184,7 @@ scoreboard players set @s[tag=Dialogue5] DialogueTrigger 0
 #execute as @s[x=471,y=108,z=1401,r=10,score_StarterPick_min=3,score_StarterPick=3,score_TalkTime=0,tag=Dialogue5] run execute as @s[tag=!Dialogue6] run tp @e[x=-504,y=110,z=1256,dy=3,type=pixelmon:npc_trainer] 471 108 1401
 
 tellraw @s[scores={DialogueTrigger=6,TalkTime=6}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> You're amazing, "},{"selector":"@s"},{"text":"! Here! Let me fix up your Pokémon!"}]
-###execute as @s[scores={DialogueTrigger=6,TalkTime=10}] run pokeheal @s
+execute as @s[scores={DialogueTrigger=6,TalkTime=10}] run pokeheal @s
 tellraw @s[scores={DialogueTrigger=6,TalkTime=17}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Say hi to your mom for me!"}]
 
 execute as @s[scores={DialogueTrigger=6,TalkTime=23}] run particle cloud 471 108 1401 2 2 2 1 100
@@ -330,7 +330,7 @@ tellraw @s[scores={DialogueTrigger=11,TalkTime=10}] {"text":"<...> To beat Viola
 tellraw @s[scores={DialogueTrigger=11,TalkTime=18}] {"text":"<Alexa> Oh! Sorry, I never did introduce myself, did I? I'm Alexa."}
 tellraw @s[scores={DialogueTrigger=11,TalkTime=27}] {"text":"<Alexa> The Gym Leader you just faced, Viola, is my younger sister. I work as a journalist myself."}
 tellraw @s[scores={DialogueTrigger=11,TalkTime=36}] {"text":"<Alexa> Here, why don't you take this to celebrate getting your first Badge!"}
-###execute as @s[scores={DialogueTrigger=11,TalkTime=39}] run give @s pixelmon:exp_all 1
+execute as @s[scores={DialogueTrigger=11,TalkTime=39}] run give @s pixelmon:exp_all 1
 tellraw @s[scores={DialogueTrigger=11,TalkTime=45}] {"text":"<Alexa> If you have an Exp. Share and you turn it on, all of the Pokémon on your team get Exp. Points, even if they don't ever appear in battle."}
 tellraw @s[scores={DialogueTrigger=11,TalkTime=55}] {"text":"<Alexa> I hope it helps you with your training! I work at the big publishing house up in Lumiose City."}
 tellraw @s[scores={DialogueTrigger=11,TalkTime=65}] {"text":"<Alexa> Feel free to stop by anytime if you have the next big scoop to share with me!"}
@@ -415,7 +415,7 @@ execute as @s[scores={DialogueTrigger=15,TalkTime=1}] run tp @e[x=-504,y=125,z=1
 tellraw @s[scores={DialogueTrigger=15,TalkTime=2}] ["",{"text":"<"},{"text":"Dexio","color":"aqua"},{"text":"> So, how are you and your Pokémon getting along?"}]
 tellraw @s[scores={DialogueTrigger=15,TalkTime=10}] ["",{"text":"<"},{"text":"Dexio","color":"aqua"},{"text":"> The more you walk around with your Pokémon, the stronger your friendship will become."}]
 tellraw @s[scores={DialogueTrigger=15,TalkTime=20}] ["",{"text":"<"},{"text":"Dexio","color":"aqua"},{"text":"> Here! This is the TM for Return."}]
-###execute as @s[scores={DialogueTrigger=15,TalkTime=22}] give @s pixelmon:tm_gen6{tm:27}
+execute as @s[scores={DialogueTrigger=15,TalkTime=22}] give @s pixelmon:tm_gen6{tm:27}
 execute as @s[scores={DialogueTrigger=15,TalkTime=22}] run playsound pixelmon:pixelmon.block.pokelootobtained block @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=15,TalkTime=29}] ["",{"text":"<"},{"text":"Dexio","color":"aqua"},{"text":"> This is a move that gets more powerful when your friendship with the Pokémon using it is strong."}]
 tellraw @s[scores={DialogueTrigger=15,TalkTime=39}] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> Right through this gate, and you'll be in Lumiose City! Go on already!"}]
@@ -1118,7 +1118,7 @@ tellraw @s[scores={DialogueTrigger=32,TalkTime=244}] ["",{"text":"<"},{"text":"S
 tellraw @s[scores={DialogueTrigger=32,TalkTime=256}] ["",{"text":"<"},{"text":"Butler","color":"gray"},{"text":"> I remember reading a book on that subject in the palace library. "}]
 tellraw @s[scores={DialogueTrigger=32,TalkTime=264}] ["",{"text":"<"},{"text":"Butler","color":"gray"},{"text":"> It had something to do with what you'd now call a Trainer holding a mysterious stone high and making Pokémon evolve even further. "}]
 tellraw @s[scores={DialogueTrigger=32,TalkTime=276}] ["",{"text":"<"},{"text":"Butler","color":"gray"},{"text":"> Also, it's not much, but I would like you to have this."}]
-###execute as @s[scores={DialogueTrigger=32,TalkTime=278}] run give @s pixelmon:tm_gen6{tm:17}
+execute as @s[scores={DialogueTrigger=32,TalkTime=278}] run give @s pixelmon:tm_gen6{tm:17}
 execute as @s[scores={DialogueTrigger=32,TalkTime=278}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=32,TalkTime=284}] ["",{"text":"<"},{"text":"Butler","color":"gray"},{"text":"> Protect blocks opposing Pokémon's moves. "}]
 tellraw @s[scores={DialogueTrigger=32,TalkTime=292}] ["",{"text":"<"},{"text":"Butler","color":"gray"},{"text":"> But if you use it many times in a row, the chances of it not working increase."}]
@@ -1170,7 +1170,7 @@ execute as @s[scores={DialogueTrigger=33,TalkTime=73}] run playsound pixelmon:pi
 execute as @s[scores={DialogueTrigger=33,TalkTime=73}] run particle cloud -1301 101 -36 2 2 2 1 100
 
 
-###execute as @s[scores={DialogueTrigger=33,TalkTime=73}] run pokebattle @s Snorlax,lvl:15,gr:7
+execute as @s[scores={DialogueTrigger=33,TalkTime=73}] run pokebattle @s Snorlax,lvl:15,gr:7
 execute as @s[scores={DialogueTrigger=33,TalkTime=73}] run scoreboard players set @a MusicSteps 0
 execute as @s[scores={DialogueTrigger=33,TalkTime=73}] run team join Default @e[distance=..4]
 
@@ -1253,11 +1253,11 @@ tellraw @s[scores={DialogueTrigger=35,TalkTime=11}] ["",{"text":"<"},{"text":"Se
 tellraw @s[scores={DialogueTrigger=35,TalkTime=20}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Now, how should we pair up? Hmm..."}]
 tellraw @s[scores={DialogueTrigger=35,TalkTime=28}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Let's go with Tierno and Trevor against "},{"selector":"@a[score_DialogueTrigger_min=35,score_DialogueTrigger=35,tag=!Dialogue35,score_TalkTime_min=28,score_TalkTime=28]"},{"text":" and me."}]
 tellraw @s[scores={DialogueTrigger=35,TalkTime=36}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Since we're neighbors, we might as well battle together, right?"}]
-###execute as @s[scores={DialogueTrigger=35,TalkTime=40}] run endbattle @s
-###execute as @s[scores={DialogueTrigger=35,TalkTime=42}] run pokeheal @s
-###execute as @s[scores={DialogueTrigger=35,TalkTime=42,StarterPick=1}] run pokebattle @s Serena361 Tierno36 Trevor36
-###execute as @s[scores={DialogueTrigger=35,TalkTime=42,StarterPick=2}] run pokebattle @s Serena362 Tierno36 Trevor36
-###execute as @s[scores={DialogueTrigger=35,TalkTime=42,StarterPick=3}] run pokebattle @s Serena363 Tierno36 Trevor36
+execute as @s[scores={DialogueTrigger=35,TalkTime=40}] run endbattle @s
+execute as @s[scores={DialogueTrigger=35,TalkTime=42}] run pokeheal @s
+execute as @s[scores={DialogueTrigger=35,TalkTime=42,StarterPick=1}] run pokebattle @s Serena361 Tierno36 Trevor36
+execute as @s[scores={DialogueTrigger=35,TalkTime=42,StarterPick=2}] run pokebattle @s Serena362 Tierno36 Trevor36
+execute as @s[scores={DialogueTrigger=35,TalkTime=42,StarterPick=3}] run pokebattle @s Serena363 Tierno36 Trevor36
 
 execute as @s[scores={DialogueTrigger=35,TalkTime=42}] run scoreboard players set @s MusicSteps 0
 execute as @s[scores={DialogueTrigger=35,TalkTime=42}] run tag @s add FriendBattleMusic
@@ -1471,16 +1471,16 @@ tellraw @s[scores={DialogueTrigger=42,TalkTime=35}] ["",{"text":"<"},{"text":"Se
 tellraw @s[scores={DialogueTrigger=42,TalkTime=45}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> If you just want to make people in Team Flare happy, why don't you just do that?"}]
 tellraw @s[scores={DialogueTrigger=42,TalkTime=55}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> But if you're going to go around threatening other people, we won't let you get away with it!"}]
 
-###execute as @s[scores={DialogueTrigger=42,TalkTime=65}] run endbattle @s
-###execute as @s[scores={DialogueTrigger=42,TalkTime=65}] run pokeheal @s
+execute as @s[scores={DialogueTrigger=42,TalkTime=65}] run endbattle @s
+execute as @s[scores={DialogueTrigger=42,TalkTime=65}] run pokeheal @s
 execute as @s[scores={DialogueTrigger=42,TalkTime=65}] run tag @s add FlareBattleMusic
 execute as @s[scores={DialogueTrigger=42,TalkTime=65}] run scoreboard players set @s click 1
 execute as @s[scores={DialogueTrigger=42,TalkTime=65}] run team join Default @e[distance=..4]
 execute as @s[scores={DialogueTrigger=42,TalkTime=65}] run scoreboard players set @a MusicSteps 0
 execute as @s[scores={DialogueTrigger=42,TalkTime=65}] run team join Default @e[distance=..4]
-###execute as @s[scores={DialogueTrigger=42,TalkTime=65,StarterPick=1}] run pokebattle @s Serena421 Grunt421 Grunt422
-###execute as @s[scores={DialogueTrigger=42,TalkTime=65,StarterPick=2}] run pokebattle @s Serena422 Grunt421 Grunt422
-###execute as @s[scores={DialogueTrigger=42,TalkTime=65,StarterPick=3}] run pokebattle @s Serena423 Grunt421 Grunt422
+execute as @s[scores={DialogueTrigger=42,TalkTime=65,StarterPick=1}] run pokebattle @s Serena421 Grunt421 Grunt422
+execute as @s[scores={DialogueTrigger=42,TalkTime=65,StarterPick=2}] run pokebattle @s Serena422 Grunt421 Grunt422
+execute as @s[scores={DialogueTrigger=42,TalkTime=65,StarterPick=3}] run pokebattle @s Serena423 Grunt421 Grunt422
 
 tag @s[scores={DialogueTrigger=42,TalkTime=65..}] add Dialogue42
 scoreboard players set @s[tag=Dialogue42] TalkTime 0
@@ -1575,7 +1575,7 @@ execute as @s[scores={DialogueTrigger=46,TalkTime=3}] run particle cloud -1922 1
 tellraw @s[scores={DialogueTrigger=46,TalkTime=6}] {"text":"<...> Oh dear... If you're here for the Bicycle race, I'm afraid you're too late."}
 tellraw @s[scores={DialogueTrigger=46,TalkTime=15}] {"text":"<...> The race is over, and I took first place."}
 tellraw @s[scores={DialogueTrigger=46,TalkTime=22}] {"text":"<...> I feel bad that you missed it. Here--allow me to give you this Strength HM in consolation."}
-###execute as @s[scores={DialogueTrigger=46,TalkTime=26}] run give @s pixelmon:hm4
+execute as @s[scores={DialogueTrigger=46,TalkTime=26}] run give @s pixelmon:hm4
 tellraw @s[scores={DialogueTrigger=46,TalkTime=32}] {"text":"<...> If one of your Pokémon uses the move, it will be able to push large rocks around."}
 tellraw @s[scores={DialogueTrigger=46,TalkTime=41}] {"text":"<Grant> However, if you want to use the move outside of battle, you'll first need a Badge from the Gym I run in this city."}
 tellraw @s[scores={DialogueTrigger=46,TalkTime=53}] {"text":"<Grant> On that note, I'll be waiting for you in the Gym. Come challenge me at your leisure."}
@@ -1604,8 +1604,8 @@ tellraw @s[scores={DialogueTrigger=47,TalkTime=30}] {"text":"<Team Flare Grunt> 
 tellraw @s[scores={DialogueTrigger=47,TalkTime=42}] {"text":"<Team Flare Grunt> Wait, what does it say? Oh, whatever!"}
 tellraw @s[scores={DialogueTrigger=47,TalkTime=50}] {"text":"<Team Flare Grunt> Who cares about all of that? It's time for me to get some sweet revenge...with style!"}
 
-###execute as @s[scores={DialogueTrigger=47,TalkTime=60}] run endbattle @s
-###execute as @s[scores={DialogueTrigger=47,TalkTime=60}] run pokebattle @s Grunt47
+execute as @s[scores={DialogueTrigger=47,TalkTime=60}] run endbattle @s
+execute as @s[scores={DialogueTrigger=47,TalkTime=60}] run pokebattle @s Grunt47
 
 tag @s[scores={DialogueTrigger=47,TalkTime=60..}] add Dialogue47
 scoreboard players set @s[tag=Dialogue47] TalkTime 0
@@ -1738,7 +1738,7 @@ execute as @s[scores={DialogueTrigger=53,TalkTime=17}] run playsound pixelmon:pi
 tellraw @s[scores={DialogueTrigger=53,TalkTime=24}] {"text":"<Korrina> I'm not exactly sure, but I think Lucario is saying it wants to battle with you. Would you battle with us?"}
 tellraw @s[scores={DialogueTrigger=53,TalkTime=35}] {"text":"<Korrina> So, I have two Lucario..."}
 tellraw @s[scores={DialogueTrigger=53,TalkTime=42}] {"text":"<Korrina> But do you know which is the one that has taken a shine to you?"}
-###execute as @s[scores={DialogueTrigger=53,TalkTime=50}] run pokebattle @s Korrina53
+execute as @s[scores={DialogueTrigger=53,TalkTime=50}] run pokebattle @s Korrina53
 
 tag @s[scores={DialogueTrigger=53,TalkTime=50..}] add Dialogue53
 scoreboard players set @s[tag=Dialogue53] TalkTime 0
@@ -1777,7 +1777,7 @@ scoreboard players set @s[tag=Dialogue54] DialogueTrigger 0
 execute as @s[scores={DialogueTrigger=55,TalkTime=14}] run data modify entity @e[limit=1,x=-1575,y=34,z=-205,dy=3,type=pixelmon:npc_chatting] {Rotation:[180.0f,0.0f]}
 tellraw @s[scores={DialogueTrigger=55,TalkTime=3}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> Hey, "},{"selector":"@s"},{"text":"!"}]
 tellraw @s[scores={DialogueTrigger=55,TalkTime=9}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> If you use the move Flash, not as many wild Pokémon will turn up."}]
-###execute as @s[scores={DialogueTrigger=55,TalkTime=14}] run give pixelmon:tm_gen6{tm:70}
+execute as @s[scores={DialogueTrigger=55,TalkTime=14}] run give pixelmon:tm_gen6{tm:70}
 execute as @s[scores={DialogueTrigger=55,TalkTime=14}] run function kalos:spawn/flashhm
 tellraw @s[scores={DialogueTrigger=55,TalkTime=19}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> I kinda depend on Flash."}]
 tellraw @s[scores={DialogueTrigger=55,TalkTime=26}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> I'm still not very good at battling, so I keep running into trouble..."}]
@@ -2117,7 +2117,7 @@ tellraw @s[scores={DialogueTrigger=63,TalkTime=29}] {"text":"<Korrina> It was de
 tellraw @s[scores={DialogueTrigger=63,TalkTime=38}] {"text":"<Korrina> Something about making sure we never forget to set our sights as high as the sky."}
 tellraw @s[scores={DialogueTrigger=63,TalkTime=47}] {"text":"<Korrina> And here it is--your very own Mega Ring!"}
 tellraw @s[scores={DialogueTrigger=63,TalkTime=54}] {"text":"<Korrina> It's in the shape of a bracelet, so it's super easy to wear!"}
-###execute as @s[scores={DialogueTrigger=63,TalkTime=56}] run megaring @s
+execute as @s[scores={DialogueTrigger=63,TalkTime=56}] run megaring @s
 execute as @s[scores={DialogueTrigger=63,TalkTime=56}] run advancement grant @s only kalos:mega1
 
 tellraw @s[scores={DialogueTrigger=63,TalkTime=62}] {"text":"<Korrina> Give your Pokémon the right Mega Stone, and try battling with it! Your Pokémon will surely answer the call of the Mega Ring!"}
@@ -2141,12 +2141,12 @@ tellraw @s[scores={DialogueTrigger=63,TalkTime=103}] {"text":"<Korrina> I'm a bi
 tellraw @s[scores={DialogueTrigger=63,TalkTime=113}] {"text":"<Korrina> Haha! Well, you must be something special!"}
 tellraw @s[scores={DialogueTrigger=63,TalkTime=120}] {"text":"<Korrina> So, whaddya say, Trainer? Will you and Lucario battle against me and my Lucario?"}
 
-###execute as @s[scores={DialogueTrigger=63,TalkTime=128}] run pokegive @s Lucario lvl:32 ab:Stradyfast gr:6 ivhp:26+ ivatk:29+ ivdef:26+ ivspatk:26+ ivspdef:26+ ivhp:26+
+execute as @s[scores={DialogueTrigger=63,TalkTime=128}] run pokegive @s Lucario lvl:32 ab:Stradyfast gr:6 ivhp:26+ ivatk:29+ ivdef:26+ ivspatk:26+ ivspdef:26+ ivhp:26+
 execute as @s[scores={DialogueTrigger=63,TalkTime=128}] run tp @e[x=-1635,y=187,z=-1186,distance=..30,type=pixelmon:statue,tag=Players] -504 252 1263
 
 tellraw @s[scores={DialogueTrigger=63,TalkTime=130}] {"text":"<Korrina> A Lucario-on-Lucario battle! It will be nothing short of riveting."}
 tellraw @s[scores={DialogueTrigger=63,TalkTime=139}] {"text":"<Korrina> How about we get this show on the road? Have your Lucario hold this Lucarionite for it to Mega Evolve!"}
-###execute as @s[scores={DialogueTrigger=63,TalkTime=142}] run give @s pixelmon:lucarionite
+execute as @s[scores={DialogueTrigger=63,TalkTime=142}] run give @s pixelmon:lucarionite
 tellraw @s[scores={DialogueTrigger=63,TalkTime=149}] {"text":"<Korrina> I can feel Lucario's passion."}
 tellraw @s[scores={DialogueTrigger=63,TalkTime=156}] {"text":"<Korrina> Perhaps it's just that it doesn't want to lose to the other Lucario, but it may be that it's just on the same wavelength as you..."}
 tellraw @s[scores={DialogueTrigger=63,TalkTime=166}] {"text":"<Korrina> Ready, Lucario?"}
@@ -2204,7 +2204,7 @@ execute as @s[scores={DialogueTrigger=65,TalkTime=1}] run tp @e[x=-504,y=100,z=1
 execute as @s[scores={DialogueTrigger=65,TalkTime=1}] run particle cloud -1517 80 -808 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=65,TalkTime=5}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Here, neighbor. You should use this."}]
-###execute as @s[scores={DialogueTrigger=65,TalkTime=10}] run give @s pixelmon:hm3
+execute as @s[scores={DialogueTrigger=65,TalkTime=10}] run give @s pixelmon:hm3
 tellraw @s[scores={DialogueTrigger=65,TalkTime=14}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> If you use the HM Surf, you can travel over the water."}]
 tellraw @s[scores={DialogueTrigger=65,TalkTime=22}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> When I think about it, it's kind of amazing how a person like you came to Kalos and ended up traveling with me."}]
 tellraw @s[scores={DialogueTrigger=65,TalkTime=33}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> It's like destiny in a way."}]
@@ -2516,10 +2516,10 @@ execute as @s[scores={DialogueTrigger=75,TalkTime=23}] run tp @e[x=-504,y=135,z=
 tellraw @s[scores={DialogueTrigger=75,TalkTime=26}] ["",{"text":"<"},{"text":"...","color":"red"},{"text":"> Oh my!"}]
 tellraw @s[scores={DialogueTrigger=75,TalkTime=31}] ["",{"text":"<"},{"text":"...","color":"red"},{"text":"> You chased off that mysterious bunch before we could even get here?"}]
 tellraw @s[scores={DialogueTrigger=75,TalkTime=39}] ["",{"text":"<"},{"text":"...","color":"red"},{"text":"> Well, I guess there's always room for more defenders of Kalos! Let me heal your Pokémon as thanks!"}]
-###execute as @s[scores={DialogueTrigger=75,TalkTime=43}] run pokeheal @s
+execute as @s[scores={DialogueTrigger=75,TalkTime=43}] run pokeheal @s
 tellraw @s[scores={DialogueTrigger=75,TalkTime=50}] ["",{"text":"<"},{"text":"...","color":"aqua"},{"text":"> You and your Pokémon are the ultimate team! No doubt about it!"}]
 tellraw @s[scores={DialogueTrigger=75,TalkTime=58}] ["",{"text":"<"},{"text":"...","color":"aqua"},{"text":"> But don't push yourself too hard. Here. Take these."}]
-###execute as @a[scores={DialogueTrigger=75,TalkTime=62}] run give @s pixelmon:full_restore 2
+execute as @a[scores={DialogueTrigger=75,TalkTime=62}] run give @s pixelmon:full_restore 2
 tellraw @s[scores={DialogueTrigger=75,TalkTime=66}] ["",{"text":"<"},{"text":"...","color":"aqua"},{"text":"> Thanks to you, the power is back on in Lumiose City."}]
 tellraw @s[scores={DialogueTrigger=75,TalkTime=74}] ["",{"text":"<"},{"text":"...","color":"aqua"},{"text":"> Now people can pass through the gate connecting Route 13 to Lumiose City again."}]
 tellraw @s[scores={DialogueTrigger=75,TalkTime=83}] ["",{"text":"<"},{"text":"...","color":"red"},{"text":"> Well, I think us mysterious people will be off now!"}]
@@ -2687,7 +2687,7 @@ tellraw @s[scores={DialogueTrigger=79,TalkTime=182}] ["",{"text":"<"},{"text":"L
 tellraw @s[scores={DialogueTrigger=79,TalkTime=190}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> You can't be sure each day will be like the one before."}]
 tellraw @s[scores={DialogueTrigger=79,TalkTime=198}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> What the king of Kalos did was reprehensible, but..."}]
 tellraw @s[scores={DialogueTrigger=79,TalkTime=206}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> The ultimate weapon did manage to wash the world clean of that era's filth."}]
-###execute as @a[scores={DialogueTrigger=79,TalkTime=214}] run give @s pixelmon:kings_rock
+execute as @a[scores={DialogueTrigger=79,TalkTime=214}] run give @s pixelmon:kings_rock
 tellraw @s[scores={DialogueTrigger=79,TalkTime=216}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> Thank you for listening. Take that as an apology for my taking up your time."}]
 
 #tp Lysandre out
@@ -3124,10 +3124,10 @@ tellraw @s[scores={DialogueTrigger=89,TalkTime=65}] ["",{"text":"<"},{"text":"..
 
 tellraw @s[scores={DialogueTrigger=89,TalkTime=75}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> You might want to check your numbers. Are you really even scientists?"}]
 
-###execute as @a[scores={DialogueTrigger=89,TalkTime=80}] run endbattle @s
-###execute as @a[scores={DialogueTrigger=89,TalkTime=82,StarterPick=1}] run pokebattle @s Serena891 Celosia89 Bryony89
-###execute as @a[scores={DialogueTrigger=89,TalkTime=82,StarterPick=2}] run pokebattle @s Serena892 Celosia89 Bryony89
-###execute as @a[scores={DialogueTrigger=89,TalkTime=82,StarterPick=3}] run pokebattle @s Serena893 Celosia89 Bryony89
+execute as @a[scores={DialogueTrigger=89,TalkTime=80}] run endbattle @s
+execute as @a[scores={DialogueTrigger=89,TalkTime=82,StarterPick=1}] run pokebattle @s Serena891 Celosia89 Bryony89
+execute as @a[scores={DialogueTrigger=89,TalkTime=82,StarterPick=2}] run pokebattle @s Serena892 Celosia89 Bryony89
+execute as @a[scores={DialogueTrigger=89,TalkTime=82,StarterPick=3}] run pokebattle @s Serena893 Celosia89 Bryony89
 
 execute as @s[scores={DialogueTrigger=89,TalkTime=82}] run scoreboard players set @s MusicSteps 0
 execute as @s[scores={DialogueTrigger=89,TalkTime=82}] run tag @s add FlareBattleMusic
@@ -3192,11 +3192,11 @@ scoreboard players set @s[tag=Dialogue90] DialogueTrigger 0
 #DialogueTrigger 91 & 92 (only variant being the item picked)
 
 tellraw @s[scores={DialogueTrigger=92,TalkTime=1}] {"text":"<Factory President> And here you go!"}
-###execute as @a[scores={DialogueTrigger=91,TalkTime=5}] run give @s pixelmon:master_ball
-###execute as @a[scores={DialogueTrigger=92,TalkTime=5}] run give @s pixelmon:big_nugget
+execute as @a[scores={DialogueTrigger=91,TalkTime=5}] run give @s pixelmon:master_ball
+execute as @a[scores={DialogueTrigger=92,TalkTime=5}] run give @s pixelmon:big_nugget
 tellraw @s[scores={DialogueTrigger=92,TalkTime=9}] {"text":"<Factory President> And as a bonus, you can have the one you didn't pick as well!"}
-###execute as @a[scores={DialogueTrigger=91,TalkTime=12}] run give @s pixelmon:big_nugget
-###execute as @a[scores={DialogueTrigger=92,TalkTime=12}] run give @s pixelmon:master_ball
+execute as @a[scores={DialogueTrigger=91,TalkTime=12}] run give @s pixelmon:big_nugget
+execute as @a[scores={DialogueTrigger=92,TalkTime=12}] run give @s pixelmon:master_ball
 tellraw @s[scores={DialogueTrigger=92,TalkTime=17}] {"text":"<Factory President> And for you, too, of course!"}
 tellraw @s[scores={DialogueTrigger=92,TalkTime=24}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Th-thank you! This seems like a lot..."}]
 tellraw @s[scores={DialogueTrigger=92,TalkTime=31}] {"text":"<Factory President> I just have a feeling you two will put them to great use."}
@@ -3493,7 +3493,7 @@ execute as @s[scores={DialogueTrigger=98,TalkTime=66}] run playsound pixelmon:pi
 tellraw @s[scores={DialogueTrigger=98,TalkTime=70}] {"text":"What's this? It looks like Abomasnow wants to give you something...","italic":true,"color":"gray"}
 tellraw @s[scores={DialogueTrigger=98,TalkTime=77}] ["",{"text":"<Abomasnow> "},{"text":"Snowww!","italic":true}]
 execute as @s[scores={DialogueTrigger=98,TalkTime=77}] run playsound pixelmon:pixelmon.mob.abomasnow hostile @s ~ ~ ~ 10 1 1
-###execute as @a[scores={DialogueTrigger=98,TalkTime=80}] run give @s pixelmon:abomasite
+execute as @a[scores={DialogueTrigger=98,TalkTime=80}] run give @s pixelmon:abomasite
 
 execute as @s[scores={DialogueTrigger=98,TalkTime=80}] run advancement grant @s only kalos:flare4
 
@@ -3525,7 +3525,7 @@ tellraw @s[scores={DialogueTrigger=100,TalkTime=29}] {"text":"<Ace Trainer> I wo
 tellraw @s[scores={DialogueTrigger=100,TalkTime=39}] {"text":"<Ace Trainer> See, a few years back, an Abomasnow came into town carrying a Mamoswine that was all beat up and injured from something..."}
 tellraw @s[scores={DialogueTrigger=100,TalkTime=50}] {"text":"<Ace Trainer> I wonder if Mamoswine was worried about its pal..."}
 tellraw @s[scores={DialogueTrigger=100,TalkTime=57}] {"text":"<Ace Trainer> Trainer, you should ride on Mamoswine's back to the other side!"}
-###execute as @a[scores={DialogueTrigger=100,TalkTime=60}] run pokegive @s Mamoswine lvl:35 untradeable gr:7
+execute as @a[scores={DialogueTrigger=100,TalkTime=60}] run pokegive @s Mamoswine lvl:35 untradeable gr:7
 tellraw @s[scores={DialogueTrigger=100,TalkTime=67}] {"text":"<Ace Trainer> This deep snow and all the rocks along the path are nothing against Mamoswine's strength!"}
 
 tag @s[scores={DialogueTrigger=100,TalkTime=67..}] add Dialogue100
@@ -3544,7 +3544,7 @@ tellraw @s[scores={DialogueTrigger=101,TalkTime=5}] ["",{"text":"<"},{"text":"Si
 tellraw @s[scores={DialogueTrigger=101,TalkTime=10}] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> I came in place of Dexio to tell you something."}]
 tellraw @s[scores={DialogueTrigger=101,TalkTime=17}] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> There's a person here in Anistar City who knows about the Legendary Pokémon."}]
 tellraw @s[scores={DialogueTrigger=101,TalkTime=26}] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> Oh, I almost forgot! I brought you some gifts! Put them to good use!"}]
-###execute as @a[scores={DialogueTrigger=101,TalkTime=31}] run give @s pixelmon:repeat_ball 10
+execute as @a[scores={DialogueTrigger=101,TalkTime=31}] run give @s pixelmon:repeat_ball 10
 tellraw @s[scores={DialogueTrigger=101,TalkTime=35}] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> Repeat Balls make it easier to catch kinds of Pokémon that you've caught before!"}]
 tellraw @s[scores={DialogueTrigger=101,TalkTime=45}] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> Even though they're the same species, the strengths and Natures of individual Pokémon can be really different."}]
 
@@ -3591,7 +3591,7 @@ scoreboard players set @s[tag=Dialogue102] DialogueTrigger 0
 
 tellraw @s[scores={DialogueTrigger=103,TalkTime=5}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> My Pokémon are so much stronger now, but you and your Pokémon are still one step ahead of us..."}]
 tellraw @s[scores={DialogueTrigger=103,TalkTime=15}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Anyway, I'll heal your Pokémon. Here."}]
-###execute as @a[scores={DialogueTrigger=103,TalkTime=17}] run pokeheal @s
+execute as @a[scores={DialogueTrigger=103,TalkTime=17}] run pokeheal @s
 tellraw @s[scores={DialogueTrigger=103,TalkTime=22}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> You and your Pokémon are good enough to beat the Gym Leader. Go for it!"}]
 
 #tp Serena out
@@ -3688,7 +3688,7 @@ tellraw @s[scores={DialogueTrigger=107,TalkTime=5}] {"text":"The piece of furnit
 tellraw @s[scores={DialogueTrigger=107,TalkTime=14}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" said the password in front of the hidden door. \u201cOpen sesame\u201d!","italic":true,"color":"gray"}]
 
 execute as @s[scores={DialogueTrigger=107,TalkTime=23}] run fill -294 137 429 -297 133 429 air
-###execute as @a[scores={DialogueTrigger=107,TalkTime=23}] run fill -292 136 429 -289 133 429 minecraft:spruce_stairs 7
+execute as @a[scores={DialogueTrigger=107,TalkTime=23}] run fill -292 136 429 -289 133 429 minecraft:spruce_stairs 7
 execute as @s[scores={DialogueTrigger=107,TalkTime=23}] run fill -292 137 429 -289 137 429 minecraft:flower_pot
 
 tag @s[scores={DialogueTrigger=107,TalkTime=23..}] add Dialogue107
@@ -3707,8 +3707,8 @@ tellraw @s[scores={DialogueTrigger=108,TalkTime=1}] ["",{"text":"<"},{"text":"Ly
 tellraw @s[scores={DialogueTrigger=108,TalkTime=6}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> This world will eventually reach the point of no return..."}]
 tellraw @s[scores={DialogueTrigger=108,TalkTime=13}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> Saving the lives of all is impossible. Only the chosen ones will obtain a ticket to tomorrow."}]
 tellraw @s[scores={DialogueTrigger=108,TalkTime=24}] ["",{"text":"<"},{"text":"Lysandre","color":"dark_red"},{"text":"> Do you want to have a ticket? Or, do you want to stop me? Show me in battle."}]
-###execute as @a[scores={DialogueTrigger=108,TalkTime=33}] run endbattle @s
-###execute as @a[scores={DialogueTrigger=108,TalkTime=34}] run pokebattle @s Lysandre108
+execute as @a[scores={DialogueTrigger=108,TalkTime=33}] run endbattle @s
+execute as @a[scores={DialogueTrigger=108,TalkTime=34}] run pokebattle @s Lysandre108
 
 tag @s[scores={DialogueTrigger=108,TalkTime=34..}] add Dialogue108
 scoreboard players set @s[tag=Dialogue108] TalkTime 0
@@ -3772,7 +3772,7 @@ tellraw @s[scores={DialogueTrigger=110,TalkTime=24}] ["",{"text":"<"},{"text":".
 tellraw @s[scores={DialogueTrigger=110,TalkTime=33}] ["",{"text":"<"},{"text":"...","color":"aqua"},{"text":"> We received some intelligence that Team Flare is also trying to find him for some reason."}]
 tellraw @s[scores={DialogueTrigger=110,TalkTime=43}] ["",{"text":"<"},{"text":"...","color":"red"},{"text":"> His relationship to Team Flare is still a mystery, but..."}]
 tellraw @s[scores={DialogueTrigger=110,TalkTime=51}] ["",{"text":"<"},{"text":"...","color":"red"},{"text":"> Oh, by the way, I've got something for you. Take these with you, "},{"selector":"@s"},{"text":"."}]
-###execute as @a[scores={DialogueTrigger=110,TalkTime=55}] run give @s pixelmon:revive 3
+execute as @a[scores={DialogueTrigger=110,TalkTime=55}] run give @s pixelmon:revive 3
 tellraw @s[scores={DialogueTrigger=110,TalkTime=61}] ["",{"text":"<"},{"text":"...","color":"red"},{"text":"> Oh, wait! We met some time ago, but I didn't get your name then!"}]
 tellraw @s[scores={DialogueTrigger=110,TalkTime=69}] ["",{"text":"<"},{"text":"...","color":"red"},{"text":"> I've never heard your name before! Not once!"}]
 tellraw @s[scores={DialogueTrigger=110,TalkTime=76}] ["",{"text":"<"},{"text":"...","color":"aqua"},{"text":"> Uh... Anyway... We came here--at a certain professor's request--to stop Team Flare!"}]
@@ -4192,7 +4192,7 @@ tellraw @s[scores={DialogueTrigger=122,TalkTime=192}] ["",{"text":"<"},{"text":"
 execute as @s[scores={DialogueTrigger=122,TalkTime=195}] run tp @e[x=-2336,y=69,z=-990,dy=3,type=pixelmon:npc_chatting] -504 101 1290
 execute as @s[scores={DialogueTrigger=122,TalkTime=195}] run tp @e[x=-504,y=100,z=1292,dy=3,type=pixelmon:npc_trainer] -2336 70 -990
 
-###execute as @a[scores={DialogueTrigger=122,TalkTime=196}] run pokebattle @s Lysandre122
+execute as @a[scores={DialogueTrigger=122,TalkTime=196}] run pokebattle @s Lysandre122
 
 tag @s[scores={DialogueTrigger=122,TalkTime=196..}] add Dialogue122
 scoreboard players set @s[tag=Dialogue122] TalkTime 0
@@ -4245,9 +4245,9 @@ execute as @s[scores={DialogueTrigger=124,TalkTime=2,StarterPick=3}] run tp @e[x
 tellraw @s[scores={DialogueTrigger=124,TalkTime=2}] {"text":"<Team Flare Admin> I'm afraid we're going to have to ask you to turn back."}
 tellraw @s[scores={DialogueTrigger=124,TalkTime=10}] {"text":"<Team Flare Admin> The Legendary Pokémon IS at the end of this chamber, after all."}
 tellraw @s[scores={DialogueTrigger=124,TalkTime=17}] ["",{"text":"<"},{"text":"Team Flare Grunt","color":"red"},{"text":"> Why did you tell them that?! Who would even do something like that?!"}]
-###execute as @a[scores={DialogueTrigger=124,TalkTime=20,StarterPick=1}] run pokebattle @s Serena1241 TeamFlareGrunt124 TeamFlareAdmin124
-###execute as @a[scores={DialogueTrigger=124,TalkTime=20,StarterPick=2}] run pokebattle @s Serena1242 TeamFlareGrunt124 TeamFlareAdmin124
-###execute as @a[scores={DialogueTrigger=124,TalkTime=20,StarterPick=3}] run pokebattle @s Serena1243 TeamFlareGrunt124 TeamFlareAdmin124
+execute as @a[scores={DialogueTrigger=124,TalkTime=20,StarterPick=1}] run pokebattle @s Serena1241 TeamFlareGrunt124 TeamFlareAdmin124
+execute as @a[scores={DialogueTrigger=124,TalkTime=20,StarterPick=2}] run pokebattle @s Serena1242 TeamFlareGrunt124 TeamFlareAdmin124
+execute as @a[scores={DialogueTrigger=124,TalkTime=20,StarterPick=3}] run pokebattle @s Serena1243 TeamFlareGrunt124 TeamFlareAdmin124
 
 tag @s[scores={DialogueTrigger=124,TalkTime=20..}] add Dialogue124
 scoreboard players set @s[tag=Dialogue124] TalkTime 0
@@ -4277,9 +4277,9 @@ execute as @s[scores={DialogueTrigger=125,TalkTime=2,StarterPick=3}] run tp @e[x
 tellraw @s[scores={DialogueTrigger=125,TalkTime=1}] ["",{"text":"<"},{"text":"Team Flare Grunt","color":"red"},{"text":"> Even if things are just as we heard, I can't believe they're sending smart guys like us to run off some little \u201cRattata\u201d that wandered in."}]
 tellraw @s[scores={DialogueTrigger=125,TalkTime=10}] {"text":"<Team Flare Admin> We won't lose! You won't get one step farther!"}
 tellraw @s[scores={DialogueTrigger=125,TalkTime=17}] {"text":"<Team Flare Admin> The Trainers moving on to the next level will be Team Flare!"}
-###execute as @a[scores={DialogueTrigger=125,TalkTime=20,StarterPick=1}] run pokebattle @s Serena1251 TeamFlareGrunt125 TeamFlareAdmin125
-###execute as @a[scores={DialogueTrigger=125,TalkTime=20,StarterPick=2}] run pokebattle @s Serena1252 TeamFlareGrunt125 TeamFlareAdmin125
-###execute as @a[scores={DialogueTrigger=125,TalkTime=20,StarterPick=3}] run pokebattle @s Serena1253 TeamFlareGrunt125 TeamFlareAdmin125
+execute as @a[scores={DialogueTrigger=125,TalkTime=20,StarterPick=1}] run pokebattle @s Serena1251 TeamFlareGrunt125 TeamFlareAdmin125
+execute as @a[scores={DialogueTrigger=125,TalkTime=20,StarterPick=2}] run pokebattle @s Serena1252 TeamFlareGrunt125 TeamFlareAdmin125
+execute as @a[scores={DialogueTrigger=125,TalkTime=20,StarterPick=3}] run pokebattle @s Serena1253 TeamFlareGrunt125 TeamFlareAdmin125
 
 tag @s[scores={DialogueTrigger=125,TalkTime=20..}] add Dialogue125
 scoreboard players set @s[tag=Dialogue125] TalkTime 0
@@ -4349,9 +4349,9 @@ execute as @s[scores={DialogueTrigger=127,TalkTime=2,StarterPick=3}] run tp @e[x
 
 tellraw @s[scores={DialogueTrigger=127,TalkTime=3}] {"text":"<Team Flare Admin> Our plans haven't succeeded just yet! We cannot afford any careless mistakes!"}
 tellraw @s[scores={DialogueTrigger=127,TalkTime=12}] ["",{"text":"<"},{"text":"Team Flare Grunt","color":"red"},{"text":"> Who's got that flair? Team Flare! Yeah, we've got that flair! Team Flare!"}]
-###execute as @a[scores={DialogueTrigger=127,TalkTime=15,StarterPick=1}] run pokebattle @s Serena1271 TeamFlareGrunt127 TeamFlareAdmin127
-###execute as @a[scores={DialogueTrigger=127,TalkTime=15,StarterPick=2}] run pokebattle @s Serena1272 TeamFlareGrunt127 TeamFlareAdmin127
-###execute as @a[scores={DialogueTrigger=127,TalkTime=15,StarterPick=3}] run pokebattle @s Serena1273 TeamFlareGrunt127 TeamFlareAdmin127
+execute as @a[scores={DialogueTrigger=127,TalkTime=15,StarterPick=1}] run pokebattle @s Serena1271 TeamFlareGrunt127 TeamFlareAdmin127
+execute as @a[scores={DialogueTrigger=127,TalkTime=15,StarterPick=2}] run pokebattle @s Serena1272 TeamFlareGrunt127 TeamFlareAdmin127
+execute as @a[scores={DialogueTrigger=127,TalkTime=15,StarterPick=3}] run pokebattle @s Serena1273 TeamFlareGrunt127 TeamFlareAdmin127
 
 tag @s[scores={DialogueTrigger=127,TalkTime=15..}] add Dialogue127
 scoreboard players set @s[tag=Dialogue127] TalkTime 0
@@ -4549,8 +4549,8 @@ execute as @s[scores={DialogueTrigger=131,TalkTime=89,Xerneas=1..}] run summon a
 execute as @s[scores={DialogueTrigger=131,TalkTime=89,Yveltal=1..}] run summon armor_stand -2336 50.5 -1022 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:48s}],DisabledSlots:2039327,NoGravity:1b}
 
 execute as @s[scores={DialogueTrigger=131,TalkTime=90}] run execute at @e[x=-2336,y=49,z=-1022,distance=..3,type=armor_stand] run particle minecraft:explosion ~ ~ ~ 2 2 2 2 30
-###execute as @a[scores={DialogueTrigger=131,TalkTime=90,Xerneas=1..}] run execute at @e[limit=1,x=-2336,y=49,z=-1022,distance=..3,type=armor_stand] run pokespawn Xerneas lvl:50 gr:7
-###execute as @a[scores={DialogueTrigger=131,TalkTime=90,Yveltal=1..}] run execute at @e[limit=1,x=-2336,y=49,z=-1022,distance=..3,type=armor_stand] run pokespawn Yveltal lvl:50 gr:7
+execute as @a[scores={DialogueTrigger=131,TalkTime=90,Xerneas=1..}] run execute at @e[limit=1,x=-2336,y=49,z=-1022,distance=..3,type=armor_stand] run pokespawn Xerneas lvl:50 gr:7
+execute as @a[scores={DialogueTrigger=131,TalkTime=90,Yveltal=1..}] run execute at @e[limit=1,x=-2336,y=49,z=-1022,distance=..3,type=armor_stand] run pokespawn Yveltal lvl:50 gr:7
 
 execute as @s[scores={DialogueTrigger=131,TalkTime=90,Xerneas=1..}] run playsound xerneas hostile @s ~ ~ ~ 100 1 1
 execute as @s[scores={DialogueTrigger=131,TalkTime=90,Yveltal=1..}] run playsound yveltal hostile @s ~ ~ ~ 100 1 1
@@ -4607,7 +4607,7 @@ tellraw @s[scores={DialogueTrigger=132,TalkTime=104}] ["",{"text":"<"},{"text":"
 execute as @s[scores={DialogueTrigger=132,TalkTime=111}] run tp @e[x=-2336,y=42,z=-997,dy=3,type=pixelmon:npc_chatting] -504 131 1288
 execute as @s[scores={DialogueTrigger=132,TalkTime=111}] run tp @e[x=-504,y=130,z=1290,dy=3,type=pixelmon:npc_trainer] -2336 42 -997
 
-###execute as @a[scores={DialogueTrigger=132,TalkTime=112}] run pokebattle @s Lysandre132
+execute as @a[scores={DialogueTrigger=132,TalkTime=112}] run pokebattle @s Lysandre132
 
 tag @s[scores={DialogueTrigger=132,TalkTime=112..}] add Dialogue132
 scoreboard players set @s[tag=Dialogue132] TalkTime 0
@@ -4790,7 +4790,7 @@ tellraw @s[scores={DialogueTrigger=135,TalkTime=120}] ["",{"text":"<"},{"text":"
 execute as @s[scores={DialogueTrigger=135,TalkTime=125}] run tp @e[x=-504,y=140,z=1286,dy=3,type=pixelmon:npc_trainer] 1501 101 253
 execute as @s[scores={DialogueTrigger=135,TalkTime=125}] run tp @e[x=1501,y=100,z=253,dy=3,type=pixelmon:npc_chatting] -504 141 1284
 
-###execute as @a[scores={DialogueTrigger=135,TalkTime=131}] run pokebattle @s Sycamore135
+execute as @a[scores={DialogueTrigger=135,TalkTime=131}] run pokebattle @s Sycamore135
 
 tag @s[scores={DialogueTrigger=135,TalkTime=131..}] add Dialogue135
 scoreboard players set @s[tag=Dialogue135] TalkTime 0
@@ -4851,9 +4851,9 @@ execute as @s[scores={DialogueTrigger=137,TalkTime=3,StarterPick=3}] run tp @e[x
 tellraw @s[scores={DialogueTrigger=137,TalkTime=6}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Hey, do you know what's about to happen?"}]
 tellraw @s[scores={DialogueTrigger=137,TalkTime=14}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> We're going to battle, silly! We ARE Pokémon Trainers, after all! \u266a"}]
 
-###execute as @a[scores={DialogueTrigger=137,TalkTime=20,StarterPick=1}] run pokebattle @s Shauna1371
-###execute as @a[scores={DialogueTrigger=137,TalkTime=20,StarterPick=2}] run pokebattle @s Shauna1372
-###execute as @a[scores={DialogueTrigger=137,TalkTime=20,StarterPick=3}] run pokebattle @s Shauna1373
+execute as @a[scores={DialogueTrigger=137,TalkTime=20,StarterPick=1}] run pokebattle @s Shauna1371
+execute as @a[scores={DialogueTrigger=137,TalkTime=20,StarterPick=2}] run pokebattle @s Shauna1372
+execute as @a[scores={DialogueTrigger=137,TalkTime=20,StarterPick=3}] run pokebattle @s Shauna1373
 
 tag @s[scores={DialogueTrigger=137,TalkTime=20..}] add Dialogue137
 scoreboard players set @s[tag=Dialogue137] TalkTime 0
@@ -4887,7 +4887,7 @@ tellraw @s[scores={DialogueTrigger=138,TalkTime=66}] ["",{"text":"<"},{"text":"T
 #swap out Tierno npc for Tierno trainer
 execute as @s[scores={DialogueTrigger=138,TalkTime=71}] run tp @e[x=1451,y=97,z=494,dy=3,type=pixelmon:npc_chatting] -504 146 1296
 execute as @s[scores={DialogueTrigger=138,TalkTime=71}] run tp @e[x=-504,y=145,z=1292,dy=3,type=pixelmon:npc_trainer] 1451 98 494
-###execute as @a[scores={DialogueTrigger=138,TalkTime=71}] run pokebattle @s Tierno138
+execute as @a[scores={DialogueTrigger=138,TalkTime=71}] run pokebattle @s Tierno138
 
 tag @s[scores={DialogueTrigger=138,TalkTime=71..}] add Dialogue138
 scoreboard players set @s[tag=Dialogue138] TalkTime 0
@@ -4907,14 +4907,14 @@ tellraw @s[scores={DialogueTrigger=139,TalkTime=40}] ["",{"text":"<"},{"text":"T
 tellraw @s[scores={DialogueTrigger=139,TalkTime=50}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> Tierno... It's great when Pokémon Trainers like us can understand the hearts and minds of other Trainers and their Pokémon through battle."}]
 tellraw @s[scores={DialogueTrigger=139,TalkTime=60}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> But before we do anything else, we should heal your Pokémon."}]
 tellraw @s[scores={DialogueTrigger=139,TalkTime=67}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> Now it's your turn, "},{"selector":"@s"},{"text":"."}]
-###execute as @a[scores={DialogueTrigger=139,TalkTime=75}] run pokeheal @s
+execute as @a[scores={DialogueTrigger=139,TalkTime=75}] run pokeheal @s
 tellraw @s[scores={DialogueTrigger=139,TalkTime=75}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> I think I will follow the crowd and be your opponent as well."}]
 tellraw @s[scores={DialogueTrigger=139,TalkTime=83}] ["",{"text":"<"},{"text":"Trevor","color":"green"},{"text":"> But this time, it won't be about the Pokédex. It will be a Pokémon battle!"}]
 
 #Swap out trevor npc for trevor trainer
 execute as @s[scores={DialogueTrigger=139,TalkTime=85}] run tp @e[x=1451,y=97,z=490,dy=3,type=pixelmon:npc_chatting] -504 146 1294
 execute as @s[scores={DialogueTrigger=139,TalkTime=85}] run tp @e[x=-504,y=145,z=1290,dy=3,type=pixelmon:npc_trainer] 1451 98 490
-###execute as @a[scores={DialogueTrigger=139,TalkTime=90}] run pokebattle @s Trevor139
+execute as @a[scores={DialogueTrigger=139,TalkTime=90}] run pokebattle @s Trevor139
 
 tag @s[scores={DialogueTrigger=139,TalkTime=90..}] add Dialogue139
 scoreboard players set @s[tag=Dialogue139] TalkTime 0
@@ -4950,7 +4950,7 @@ tellraw @s[scores={DialogueTrigger=140,TalkTime=92,StarterPick=1}] ["",{"text":"
 tellraw @s[scores={DialogueTrigger=140,TalkTime=92,StarterPick=2}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> And thanks to my Li'l Chespin that I met before we left,"}]
 tellraw @s[scores={DialogueTrigger=140,TalkTime=100}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> I was able to visit many places, meet a lot of nice people, and make many wonderful memories! \u266a"}]
 tellraw @s[scores={DialogueTrigger=140,TalkTime=110}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> "},{"selector":"@s"},{"text":"... This is from us."}]
-###execute as @a[scores={DialogueTrigger=140,TalkTime=115}] run give @s pixelmon:hm7
+execute as @a[scores={DialogueTrigger=140,TalkTime=115}] run give @s pixelmon:hm7
 tellraw @s[scores={DialogueTrigger=140,TalkTime=119}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Even if you're battling without the Badge from Snowbelle City Gym, you can use Waterfall!"}]
 tellraw @s[scores={DialogueTrigger=140,TalkTime=129}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> I've gotta get going! See you!"}]
 
@@ -5041,7 +5041,7 @@ tellraw @s[scores={DialogueTrigger=144,TalkTime=29}] {"text":"<Ace Trainer> Well
 #Swap NPCs
 execute as @s[scores={DialogueTrigger=144,TalkTime=34}] run tp @e[x=-504,y=160,z=1286,dy=3,type=pixelmon:npc_trainer] 694 106 396
 execute as @s[scores={DialogueTrigger=144,TalkTime=34}] run tp @e[x=694,y=105,z=396,dy=3,type=pixelmon:npc_chatting] -504 161 1284
-###execute as @a[scores={DialogueTrigger=144,TalkTime=36}] run pokebattle @s AceTrainerRobbie
+execute as @a[scores={DialogueTrigger=144,TalkTime=36}] run pokebattle @s AceTrainerRobbie
 
 tag @s[scores={DialogueTrigger=144,TalkTime=36..}] add Dialogue144
 scoreboard players set @s[tag=Dialogue144] TalkTime 0
@@ -5095,9 +5095,9 @@ execute as @s[scores={DialogueTrigger=146,TalkTime=66,StarterPick=2}] run tp @e[
 execute as @s[scores={DialogueTrigger=146,TalkTime=66,StarterPick=3}] run tp @e[x=-504,y=165,z=1288,dy=3,type=pixelmon:npc_trainer] 2294 175 2184
 
 #pokebattle Sernea
-###execute as @a[scores={DialogueTrigger=146,TalkTime=70,StarterPick=1}] run pokebattle @s Serena1461
-###execute as @a[scores={DialogueTrigger=146,TalkTime=70,StarterPick=2}] run pokebattle @s Serena1462
-###execute as @a[scores={DialogueTrigger=146,TalkTime=70,StarterPick=3}] run pokebattle @s Serena1463
+execute as @a[scores={DialogueTrigger=146,TalkTime=70,StarterPick=1}] run pokebattle @s Serena1461
+execute as @a[scores={DialogueTrigger=146,TalkTime=70,StarterPick=2}] run pokebattle @s Serena1462
+execute as @a[scores={DialogueTrigger=146,TalkTime=70,StarterPick=3}] run pokebattle @s Serena1463
 
 tag @s[scores={DialogueTrigger=146,TalkTime=70..}] add Dialogue146
 scoreboard players set @s[tag=Dialogue146] TalkTime 0
@@ -5115,7 +5115,7 @@ tellraw @s[scores={DialogueTrigger=147,TalkTime=8}] ["",{"text":"<"},{"text":"Se
 tellraw @s[scores={DialogueTrigger=147,TalkTime=17}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> And that's why I didn't want to lose to you."}]
 tellraw @s[scores={DialogueTrigger=147,TalkTime=25}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> But I think the reason we're so alike is because we have so many things in common."}]
 tellraw @s[scores={DialogueTrigger=147,TalkTime=35}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> I'm really happy that we're friends..."}]
-###execute as @a[scores={DialogueTrigger=147,TalkTime=40}] run give @s pixelmon:max_revive 2
+execute as @a[scores={DialogueTrigger=147,TalkTime=40}] run give @s pixelmon:max_revive 2
 tellraw @s[scores={DialogueTrigger=147,TalkTime=43}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> I'm renewing my rivalry with you!"}]
 tellraw @s[scores={DialogueTrigger=147,TalkTime=50}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Since you're my rival, I want you to become a stronger and stronger Pokémon Trainer."}]
 tellraw @s[scores={DialogueTrigger=147,TalkTime=60}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> We'll keep getting stronger, too, of course!"}]
@@ -5336,7 +5336,7 @@ tellraw @s[scores={DialogueTrigger=155,TalkTime=25}] ["",{"text":"<"},{"text":"S
 tellraw @s[scores={DialogueTrigger=155,TalkTime=35}] ["",{"text":"<"},{"text":"Sycamore","color":"aqua"},{"text":"> I'd like to present you with the Honor of Kalos for the bravery you showed battling Team Flare!"}]
 execute as @s[scores={DialogueTrigger=155,TalkTime=40}] run give @s minecraft:diamond_horse_armor{display:{Lore:["A precious symbol that is awarded","only to an individual who has done","great things for the Kalos region."]},HideFlags:6}
 tellraw @s[scores={DialogueTrigger=155,TalkTime=45}] ["",{"text":"<"},{"text":"Sycamore","color":"aqua"},{"text":"> I'd also like to give you this Shiny Charm, for all your work on the Pokédex!"}]
-###execute as @a[scores={DialogueTrigger=155,TalkTime=50}] run shinycharm @s
+execute as @a[scores={DialogueTrigger=155,TalkTime=50}] run shinycharm @s
 tellraw @s[scores={DialogueTrigger=155,TalkTime=55}] ["",{"text":"<"},{"text":"Sycamore","color":"aqua"},{"text":"> I'm so proud of you all!"}]
 tellraw @s[scores={DialogueTrigger=155,TalkTime=64}] ["",{"text":"<"},{"text":"Sycamore","color":"aqua"},{"text":"> On behalf of the entire Kalos region, I'd like to say..."}]
 tellraw @s[scores={DialogueTrigger=155,TalkTime=73}] ["",{"text":"<"},{"text":"Sycamore","color":"aqua"},{"text":"> Thank you!"}]
@@ -5443,9 +5443,9 @@ tellraw @s[scores={DialogueTrigger=158,TalkTime=35,StarterPick=2}] ["",{"text":"
 tellraw @s[scores={DialogueTrigger=158,TalkTime=35,StarterPick=3}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> I'll give you this Fennekin!"}]
 tellraw @s[scores={DialogueTrigger=158,TalkTime=42}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> I found it in an Egg! \u266a"}]
 
-###execute as @a[scores={DialogueTrigger=158,TalkTime=46,StarterPick=1}] run pokegive @s Froakie lvl:5
-###execute as @a[scores={DialogueTrigger=158,TalkTime=46,StarterPick=3}] run pokegive @s Fennekin lvl:5
-###execute as @a[scores={DialogueTrigger=158,TalkTime=46,StarterPick=2}] run pokegive @s Chespin lvl:5
+execute as @a[scores={DialogueTrigger=158,TalkTime=46,StarterPick=1}] run pokegive @s Froakie lvl:5
+execute as @a[scores={DialogueTrigger=158,TalkTime=46,StarterPick=3}] run pokegive @s Fennekin lvl:5
+execute as @a[scores={DialogueTrigger=158,TalkTime=46,StarterPick=2}] run pokegive @s Chespin lvl:5
 
 tellraw @s[scores={DialogueTrigger=158,TalkTime=52}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Of course, each and every Pokémon is special!"}]
 
@@ -5554,7 +5554,7 @@ scoreboard players set @s[tag=Dialogue161] DialogueTrigger 0
 #execute as @s[x=1229,y=119,z=1461,r=15,score_TalkTime=0,score_StarterPick_min=3,score_StarterPick=3,tag=!Dialogue162] run execute as @s[tag=Dialogue161] run tp @e[x=-504,y=190,z=1292,dy=3,type=pixelmon:npc_trainer] 1229 119 1461
 
 tellraw @s[scores={DialogueTrigger=162,TalkTime=6}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> "},{"selector":"@s"},{"text":", this is for you!"}]
-###execute as @a[scores={DialogueTrigger=162,TalkTime=11}] run give @s pixelmon:absolite
+execute as @a[scores={DialogueTrigger=162,TalkTime=11}] run give @s pixelmon:absolite
 tellraw @s[scores={DialogueTrigger=162,TalkTime=15}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> That's right. I found two Absolite! I wanted to share one with you..."}]
 tellraw @s[scores={DialogueTrigger=162,TalkTime=24}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Maybe it will help show Lysandre there's something to be hopeful for."}]
 tellraw @s[scores={DialogueTrigger=162,TalkTime=33}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> I have a message from Professor Sycamore."}]
@@ -5653,8 +5653,8 @@ tellraw @s[scores={DialogueTrigger=164,TalkTime=15}] ["",{"text":"<Diantha> This
 tellraw @s[scores={DialogueTrigger=164,TalkTime=23}] {"text":"<Diantha> You know, I'd really love to learn more about how a strong Trainer like you raises your Pokémon."}
 tellraw @s[scores={DialogueTrigger=164,TalkTime=33}] {"text":"<Diantha> This probably seems a bit sudden, but how would you feel about taking my Ralts here?"}
 
-###execute as @a[scores={DialogueTrigger=164,TalkTime=37}] run pokegive @s Ralts lvl:5 g:female gr:6 n:Modest ab:Synchronize ba:24 ivhp:20 ivatk:20 ivdef:20 ivspatk:31 ivspdef:20 ivspd:31 ot:Diantha
-###execute as @a[scores={DialogueTrigger=164,TalkTime=37}] run give @s pixelmon:gardevoirite 1
+execute as @a[scores={DialogueTrigger=164,TalkTime=37}] run pokegive @s Ralts lvl:5 g:female gr:6 n:Modest ab:Synchronize ba:24 ivhp:20 ivatk:20 ivdef:20 ivspatk:31 ivspdef:20 ivspd:31 ot:Diantha
+execute as @a[scores={DialogueTrigger=164,TalkTime=37}] run give @s pixelmon:gardevoirite 1
 
 tellraw @s[scores={DialogueTrigger=164,TalkTime=42}] {"text":"<Diantha> Please take very good care of Ralts. I'm sure you will!"}
 tellraw @s[scores={DialogueTrigger=164,TalkTime=50}] {"text":"<Diantha> I'm sure we'll both continue to become even better Trainers as we keep battling and growing!"}
@@ -6991,7 +6991,7 @@ tellraw @s[scores={DialogueTrigger=189,TalkTime=91}] ["",{"text":"<"},{"text":"L
 tellraw @s[scores={DialogueTrigger=189,TalkTime=103}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Please go ahead without me!"}]
 tellraw @s[scores={DialogueTrigger=189,TalkTime=110}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I will be right behind you, just as soon as I have checked this place for clues!"}]
 tellraw @s[scores={DialogueTrigger=189,TalkTime=120}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> But wait! One minute of your time! The great Looker will restore your Pokémon before you go!"}]
-###execute as @a[scores={DialogueTrigger=189,TalkTime=123}] run pokeheal @s
+execute as @a[scores={DialogueTrigger=189,TalkTime=123}] run pokeheal @s
 
 #tp Looker out
 execute as @s[scores={DialogueTrigger=189,TalkTime=128}] run particle cloud -250 101 -621 2 2 2 1 100
@@ -7056,7 +7056,7 @@ tellraw @s[scores={DialogueTrigger=190,TalkTime=85}] ["",{"text":"<"},{"text":"L
 tellraw @s[scores={DialogueTrigger=190,TalkTime=95}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Go ahead without me! I will follow close behind you, just as soon as I have checked this place for clues!"}]
 tellraw @s[scores={DialogueTrigger=190,TalkTime=105}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> No, wait! Thirty seconds! How could I forget twice?!"}]
 tellraw @s[scores={DialogueTrigger=190,TalkTime=114}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Let me just restore your Pokémon before you go!"}]
-###execute as @a[scores={DialogueTrigger=190,TalkTime=120}] run pokeheal @s
+execute as @a[scores={DialogueTrigger=190,TalkTime=120}] run pokeheal @s
 
 #tp Looker out
 execute as @s[scores={DialogueTrigger=190,TalkTime=122}] run particle cloud -112 101 -608 2 2 2 1 100
@@ -8338,7 +8338,7 @@ tellraw @s[scores={DialogueTrigger=218,TalkTime=1,TrainerLoot102=2}] {"text":"<M
 tellraw @s[scores={DialogueTrigger=218,TalkTime=1,TrainerLoot102=3}] {"text":"<Maid> I'd so very like to trade Pokémon with you!"}
 
 tellraw @s[scores={DialogueTrigger=218,TalkTime=1,TrainerLoot102=4}] {"text":"<Maid> I'd so very like to give you this Eevee that I brought all the way from the Sinnoh region!"}
-###execute as @a[scores={DialogueTrigger=218,TalkTime=4,TrainerLoot102=4}] run pokegive @s Eevee lvl:5 ball:cherish
+execute as @a[scores={DialogueTrigger=218,TalkTime=4,TrainerLoot102=4}] run pokegive @s Eevee lvl:5 ball:cherish
 execute as @s[scores={DialogueTrigger=218,TalkTime=4,TrainerLoot102=4}] run scoreboard players add @s TrainerLoot102 1
 
 tellraw @s[scores={DialogueTrigger=218,TalkTime=1,TrainerLoot102=5..}] {"text":"<Maid> The time has come for Mr. Backlot's Pokémon to shine in the Kalos region!"}
@@ -8361,7 +8361,7 @@ tellraw @s[scores={DialogueTrigger=219,TalkTime=1,TrainerLoot104=3}] {"text":"<B
 tellraw @s[scores={DialogueTrigger=219,TalkTime=11,TrainerLoot104=3}] {"text":"<Backpacker> Our Champion is really something else, I tell you... Ah, never mind. You'll find out in due time."}
 
 tellraw @s[scores={DialogueTrigger=219,TalkTime=1,TrainerLoot104=4}] {"text":"<Backpacker> The Kalos region is nice and all, but let me share something with you from my region. It's really special!"}
-###execute as @a[scores={DialogueTrigger=219,TalkTime=12,TrainerLoot104=4}] run give @s pixelmon:strange_souvenir
+execute as @a[scores={DialogueTrigger=219,TalkTime=12,TrainerLoot104=4}] run give @s pixelmon:strange_souvenir
 execute as @s[scores={DialogueTrigger=219,TalkTime=12,TrainerLoot104=4}] run scoreboard players add @s TrainerLoot104 1
 
 tellraw @s[scores={DialogueTrigger=219,TalkTime=1,score_TrainerLoot104=5..}] {"text":"<Backpacker> The Kalos region is nice and all, but you've really got to check out my region!"}
@@ -8434,7 +8434,7 @@ execute as @s[scores={DialogueTrigger=222,TalkTime=1,TrainerLoot105=3}] run scor
 
 tellraw @s[scores={DialogueTrigger=222,TalkTime=1,TrainerLoot105=4}] {"text":"<Hiker> You know what? I'd really like to have something to remember my trip to Kalos by."}
 tellraw @s[scores={DialogueTrigger=222,TalkTime=10,TrainerLoot105=4}] {"text":"<Hiker> How about this? I've got a special offer just for you! I'm willing to give my super-secret Magikarp here! Whaddaya say?"}
-###execute as @a[scores={DialogueTrigger=222,TalkTime=15,TrainerLoot105=4}] run pokegive @s Magikarp lvl:5 ball:cherish
+execute as @a[scores={DialogueTrigger=222,TalkTime=15,TrainerLoot105=4}] run pokegive @s Magikarp lvl:5 ball:cherish
 execute as @s[scores={DialogueTrigger=222,TalkTime=15,TrainerLoot105=4}] run scoreboard players add @s TrainerLoot105 1
 
 tellraw @s[scores={DialogueTrigger=222,TalkTime=1,TrainerLoot105=5..}] {"text":"<Hiker> How is my little Magikarp doing?"}
@@ -8454,7 +8454,7 @@ tellraw @s[scores={DialogueTrigger=223,TalkTime=1,TrainerLoot106=2}] {"text":"<W
 tellraw @s[scores={DialogueTrigger=223,TalkTime=1,TrainerLoot106=3}] {"text":"<Waiter> Phew! How electrifying!"}
 
 tellraw @s[scores={DialogueTrigger=223,TalkTime=1,TrainerLoot106=4}] {"text":"<Waiter> Ohh... I can't help but sigh. I'm cheering for you, you know? Come on--take this!"}
-###execute as @a[scores={DialogueTrigger=223,TalkTime=4,TrainerLoot106=4}] run give @s pixelmon:rage_candy_bar
+execute as @a[scores={DialogueTrigger=223,TalkTime=4,TrainerLoot106=4}] run give @s pixelmon:rage_candy_bar
 execute as @s[scores={DialogueTrigger=223,TalkTime=4,TrainerLoot106=4}] run scoreboard players add @s TrainerLoot106 1
 
 tellraw @s[scores={DialogueTrigger=223,TalkTime=1,TrainerLoot106=5..}] {"text":"<Waiter> I'm going to be keeping an eye on you! I have a feeling you'll do great things!"}
@@ -8474,7 +8474,7 @@ tellraw @s[scores={DialogueTrigger=224,TalkTime=1,TrainerLoot107=2}] {"text":"<M
 tellraw @s[scores={DialogueTrigger=224,TalkTime=1,TrainerLoot107=3}] {"text":"<Madame> Riding the monorail here reminded me of taking the cable car on Mt. Chimney!"}
 
 tellraw @s[scores={DialogueTrigger=224,TalkTime=1,TrainerLoot107=4}] {"text":"<Madame> Here--I'll share some with you!"}
-###execute as @a[scores={DialogueTrigger=224,TalkTime=4,TrainerLoot107=4}] run give @s pixelmon:lava_cookie
+execute as @a[scores={DialogueTrigger=224,TalkTime=4,TrainerLoot107=4}] run give @s pixelmon:lava_cookie
 execute as @s[scores={DialogueTrigger=224,TalkTime=4,TrainerLoot107=4}] run scoreboard players add @s TrainerLoot107 1
 
 tellraw @s[scores={DialogueTrigger=224,TalkTime=1,TrainerLoot107=5..}] {"text":"<Madame> This is my first vacation in such a long time!"}
@@ -8738,8 +8738,8 @@ tellraw @s[scores={DialogueTrigger=238,TalkTime=17,Style=0..14}] {"text":"<Cab D
 tellraw @s[scores={DialogueTrigger=238,TalkTime=17,Style=15..}] {"text":"<Cab Driver> Let's see... Your total should be $710... But since you look so stylish today... Let's just say $355 and call it good!"}
 
 execute as @s[scores={DialogueTrigger=238,TalkTime=25}] run data modify entity @e[limit=1,x=-683,y=100,z=1388,dy=3,type=armor_stand] {CustomName:"Cab Driver"}
-###execute as @a[scores={DialogueTrigger=238,TalkTime=25,Style=0..14}] run execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run givemoney @a[scores={DialogueTrigger=238,TalkTime=25,Style=0..14}] -710
-###execute as @a[scores={DialogueTrigger=238,TalkTime=25,Style=15..}] run execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run givemoney @a[scores={DialogueTrigger=238,TalkTime=25,Style=15..}] -355
+execute as @a[scores={DialogueTrigger=238,TalkTime=25,Style=0..14}] run execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run givemoney @a[scores={DialogueTrigger=238,TalkTime=25,Style=0..14}] -710
+execute as @a[scores={DialogueTrigger=238,TalkTime=25,Style=15..}] run execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run givemoney @a[scores={DialogueTrigger=238,TalkTime=25,Style=15..}] -355
 execute as @s[scores={DialogueTrigger=238,TalkTime=25}] run data modify entity @e[limit=1,x=-683,y=100,z=1388,dy=3,type=armor_stand] {CustomName:"Pixelmon Kalos"}
 
 tellraw @s[scores={DialogueTrigger=238,TalkTime=32}] {"text":"<Cab Driver> Call us anytime!"}
@@ -8820,19 +8820,19 @@ execute as @s[scores={DialogueTrigger=240,TalkTime=23}] run scoreboard players o
 tellraw @s[scores={DialogueTrigger=240,TalkTime=26,rng=0..40}] {"text":"<Loto-ID Clerk> I'm sorry. You didn't get a match..."}
 
 tellraw @s[scores={DialogueTrigger=240,TalkTime=26,rng=41..72}] {"text":"<Loto-ID Clerk> OK. One digit matched. Your luck is OK, I guess! You've won the fourth prize, a Moomoo Milk!"}
-###execute as @a[scores={DialogueTrigger=240,TalkTime=26,rng=41..72}] run give @s pixelmon:moomoo_milk
+execute as @a[scores={DialogueTrigger=240,TalkTime=26,rng=41..72}] run give @s pixelmon:moomoo_milk
 
 tellraw @s[scores={DialogueTrigger=240,TalkTime=26,rng=73..98}] {"text":"<Loto-ID Clerk> Two digits matched! You have good luck! You've won the third prize, a PP Up!"}
-###execute as @a[scores={DialogueTrigger=240,TalkTime=26,rng=73..98}] run give @s pixelmon:pp_up
+execute as @a[scores={DialogueTrigger=240,TalkTime=26,rng=73..98}] run give @s pixelmon:pp_up
 
 tellraw @s[scores={DialogueTrigger=240,TalkTime=26,rng=99..111}] {"text":"<Loto-ID Clerk> Oh! Three digits matched! Your luck is really special! You've won the second prize, a PP Max!"}
-###execute as @a[scores={DialogueTrigger=240,TalkTime=26,rng=99..111}] run give @s pixelmon:pp_max
+execute as @a[scores={DialogueTrigger=240,TalkTime=26,rng=99..111}] run give @s pixelmon:pp_max
 
 tellraw @s[scores={DialogueTrigger=240,TalkTime=26,rng=112..124}] {"text":"<Loto-ID Clerk> Great! Four digits matched! You have excellent luck! You've won the first prize, a Rare Candy!"}
-###execute as @a[scores={DialogueTrigger=240,TalkTime=26,rng=112..124}] run give @s pixelmon:rare_candy
+execute as @a[scores={DialogueTrigger=240,TalkTime=26,rng=112..124}] run give @s pixelmon:rare_candy
 
 tellraw @s[scores={DialogueTrigger=240,TalkTime=26,rng=125..127}] {"text":"<Loto-ID Clerk> Oh my goodness, all five digits matched! You have incredible luck! You've won the jackpot prize, a Master Ball!"}
-###execute as @a[scores={DialogueTrigger=240,TalkTime=26,rng=125..127}] run give @s pixelmon:master_ball
+execute as @a[scores={DialogueTrigger=240,TalkTime=26,rng=125..127}] run give @s pixelmon:master_ball
 
 execute as @s[scores={DialogueTrigger=240,TalkTime=26,rng=41..127}] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @s ~ ~ ~ 10 1 1
 
@@ -8893,7 +8893,7 @@ execute as @s[scores={DialogueTrigger=242,TalkTime=32}] run data modify entity @
 
 tellraw @s[scores={DialogueTrigger=242,TalkTime=33}] {"text":"<Waiter Roger> Your entrée today... Enjoy a handpicked salad, fresh from the garden."}
 tellraw @s[scores={DialogueTrigger=242,TalkTime=43}] ["",{"text":"<Waiter Roger> We recommend that you begin eating it in "},{"text":"60 seconds","color":"gray"},{"text":"."}]
-###execute as @a[scores={DialogueTrigger=242,TalkTime=50}] run pokebattle @s Roger1
+execute as @a[scores={DialogueTrigger=242,TalkTime=50}] run pokebattle @s Roger1
 
 tag @s[scores={DialogueTrigger=242,TalkTime=50..}] add Dialogue242
 scoreboard players set @s[tag=Dialogue242] TalkTime 0
@@ -8922,7 +8922,7 @@ execute as @s[scores={DialogueTrigger=243,TalkTime=11}] run tp @e[x=-185,y=100,z
 #Dining
 execute as @s[scores={DialogueTrigger=243,TalkTime=17}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=243,TalkTime=18}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-###execute as @a[scores={DialogueTrigger=243,TalkTime=18}] run pokeheal @s
+execute as @a[scores={DialogueTrigger=243,TalkTime=18}] run pokeheal @s
 #execute as @s[score_DialogueTrigger_min=243,score_DialogueTrigger=243,tag=!Dialogue243,score_TalkTime_min=20,score_TalkTime=20] run data modify entity @e[limit=1,x=-189,y=100,z=158,dy=3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:1s}]}
 
 #tp Waiter in
@@ -8934,7 +8934,7 @@ execute as @s[scores={DialogueTrigger=243,TalkTime=26}] run data modify entity @
 tellraw @s[scores={DialogueTrigger=243,TalkTime=27}] {"text":"<Waiter Roger> Your soup..."}
 tellraw @s[scores={DialogueTrigger=243,TalkTime=34}] {"text":"<Waiter Roger> Condiments were added with great restraint so that you could truly savor its natural flavor."}
 tellraw @s[scores={DialogueTrigger=243,TalkTime=44}] ["",{"text":"<Waiter Roger> We recommend that you begin eating it in "},{"text":"60 seconds","color":"gray"},{"text":"."}]
-###execute as @a[scores={DialogueTrigger=243,TalkTime=53}] run pokebattle @s Roger2
+execute as @a[scores={DialogueTrigger=243,TalkTime=53}] run pokebattle @s Roger2
 
 tag @s[scores={DialogueTrigger=243,TalkTime=53..}] add Dialogue243
 scoreboard players set @s[tag=Dialogue243] TalkTime 0
@@ -8963,7 +8963,7 @@ execute as @s[scores={DialogueTrigger=244,TalkTime=11}] run tp @e[x=-185,y=100,z
 #Dining
 execute as @s[scores={DialogueTrigger=244,TalkTime=17}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=244,TalkTime=18}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-###execute as @a[scores={DialogueTrigger=244,TalkTime=18}] run pokeheal @s
+execute as @a[scores={DialogueTrigger=244,TalkTime=18}] run pokeheal @s
 #execute as @s[score_DialogueTrigger_min=244,score_DialogueTrigger=244,tag=!Dialogue244,score_TalkTime_min=20,score_TalkTime=20] run data modify entity @e[limit=1,x=-189,y=100,z=158,dy=3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:1s}]}
 
 #tp Waiter in
@@ -8975,7 +8975,7 @@ execute as @s[scores={DialogueTrigger=244,TalkTime=26}] run data modify entity @
 tellraw @s[scores={DialogueTrigger=244,TalkTime=27}] {"text":"<Waiter Roger> Your main course..."}
 tellraw @s[scores={DialogueTrigger=244,TalkTime=34}] {"text":"<Waiter Roger> The fish was caught just this morning and has been delicately breaded and panfried."}
 tellraw @s[scores={DialogueTrigger=244,TalkTime=44}] ["",{"text":"<Waiter Roger> We recommend that you begin eating it in "},{"text":"60 seconds","color":"gray"},{"text":"."}]
-###execute as @a[scores={DialogueTrigger=244,TalkTime=53}] run pokebattle @s Roger3
+execute as @a[scores={DialogueTrigger=244,TalkTime=53}] run pokebattle @s Roger3
 
 tag @s[scores={DialogueTrigger=244,TalkTime=53..}] add Dialogue244
 scoreboard players set @s[tag=Dialogue244] TalkTime 0
@@ -9003,7 +9003,7 @@ execute as @s[scores={DialogueTrigger=245,TalkTime=11}] run tp @e[x=-185,y=100,z
 
 execute as @s[scores={DialogueTrigger=245,TalkTime=17}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=245,TalkTime=18}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-###execute as @a[scores={DialogueTrigger=245,TalkTime=18}] run pokeheal @s
+execute as @a[scores={DialogueTrigger=245,TalkTime=18}] run pokeheal @s
 #execute as @s[score_DialogueTrigger_min=245,score_DialogueTrigger=245,tag=!Dialogue245,score_TalkTime_min=20,score_TalkTime=20] run data modify entity @e[limit=1,x=-189,y=100,z=158,dy=3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:1s}]}
 
 #tp Owner in
@@ -9064,7 +9064,7 @@ tellraw @s[scores={DialogueTrigger=246,TalkTime=22}] {"text":"<Waitress Talia> I
 tellraw @s[scores={DialogueTrigger=246,TalkTime=30}] {"text":"<Waitress Talia> This sprightly Pecha pâté has been likened to a Madame masquerading as a maiden."}
 tellraw @s[scores={DialogueTrigger=246,TalkTime=40}] ["",{"text":"<Waitress Talia> We recommend that you begin eating in precisely "},{"text":"90 seconds","color":"gray"},{"text":"."}]
 tellraw @s[scores={DialogueTrigger=246,TalkTime=50}] {"text":"<Waitress Talia> To keep you entertained until then, please join me in battle."}
-###execute as @a[scores={DialogueTrigger=246,TalkTime=58}] run pokebattle @s Talia
+execute as @a[scores={DialogueTrigger=246,TalkTime=58}] run pokebattle @s Talia
 
 tag @s[scores={DialogueTrigger=246,TalkTime=58..}] add Dialogue246
 scoreboard players set @s[tag=Dialogue246] TalkTime 0
@@ -9095,7 +9095,7 @@ execute as @s[scores={DialogueTrigger=247,TalkTime=22}] run tp @e[x=-394,y=100,z
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=247,TalkTime=30}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=247,TalkTime=31}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-###execute as @a[scores={DialogueTrigger=247,TalkTime=31}] run pokeheal @s
+execute as @a[scores={DialogueTrigger=247,TalkTime=31}] run pokeheal @s
 #execute as @s[score_DialogueTrigger_min=247,score_DialogueTrigger=247,tag=!Dialogue247,score_TalkTime_min=32,score_TalkTime=32] run
 
 #tp Waiter in
@@ -9107,7 +9107,7 @@ tellraw @s[scores={DialogueTrigger=247,TalkTime=41}] {"text":"<Garçon Georges> 
 tellraw @s[scores={DialogueTrigger=247,TalkTime=50}] {"text":"<Garçon Georges> This pottage of sorrowful Custap Berry is topped with Mirror Coat and contains 108 different herbs."}
 tellraw @s[scores={DialogueTrigger=247,TalkTime=62}] ["",{"text":"<Garçon Georges> We recommend that you begin eating it in precisely "},{"text":"90 seconds","color":"gray"},{"text":"."}]
 tellraw @s[scores={DialogueTrigger=247,TalkTime=72}] {"text":"<Garçon Georges> To keep you entertained until then, please join me in a Pokémon battle."}
-###execute as @a[scores={DialogueTrigger=247,TalkTime=80}] run pokebattle @s Georges
+execute as @a[scores={DialogueTrigger=247,TalkTime=80}] run pokebattle @s Georges
 
 tag @s[scores={DialogueTrigger=247,TalkTime=80..}] add Dialogue247
 scoreboard players set @s[tag=Dialogue247] TalkTime 0
@@ -9139,7 +9139,7 @@ execute as @s[scores={DialogueTrigger=248,TalkTime=22}] run tp @e[x=-394,y=100,z
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=248,TalkTime=30}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=248,TalkTime=31}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-###execute as @a[scores={DialogueTrigger=248,TalkTime=31}] run pokeheal @s
+execute as @a[scores={DialogueTrigger=248,TalkTime=31}] run pokeheal @s
 #execute as @s[score_DialogueTrigger_min=248,score_DialogueTrigger=248,tag=!Dialogue248,score_TalkTime_min=32,score_TalkTime=32] run
 
 #tp Owner in
@@ -9155,7 +9155,7 @@ tellraw @s[scores={DialogueTrigger=248,TalkTime=76}] {"text":"<Owner Yannick> It
 tellraw @s[scores={DialogueTrigger=248,TalkTime=86}] {"text":"<Owner Yannick> and has been described as the gastronomical equivalent of a Gastly glaring at a Hex Maniac."}
 tellraw @s[scores={DialogueTrigger=248,TalkTime=96}] ["",{"text":"<Owner Yannick> We recommend that you begin eating it in precisely "},{"text":"120 seconds","color":"gray"},{"text":"."}]
 tellraw @s[scores={DialogueTrigger=248,TalkTime=106}] {"text":"<Owner Yannick> To keep you entertained until then, please join me in a Pokémon battle."}
-###execute as @a[scores={DialogueTrigger=248,TalkTime=114}] run pokebattle @s Yannick
+execute as @a[scores={DialogueTrigger=248,TalkTime=114}] run pokebattle @s Yannick
 
 tag @s[scores={DialogueTrigger=248,TalkTime=114..}] add Dialogue248
 scoreboard players set @s[tag=Dialogue248] TalkTime 0
@@ -9187,7 +9187,7 @@ execute as @s[scores={DialogueTrigger=249,TalkTime=32}] run tp @e[x=-394,y=100,z
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=249,TalkTime=40}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=249,TalkTime=41}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-###execute as @a[scores={DialogueTrigger=249,TalkTime=41}] run pokeheal @s
+execute as @a[scores={DialogueTrigger=249,TalkTime=41}] run pokeheal @s
 #execute as @s[score_DialogueTrigger_min=249,score_DialogueTrigger=249,tag=!Dialogue249,score_TalkTime_min=42,score_TalkTime=42] run
 
 #tp chef in
@@ -9203,7 +9203,7 @@ tellraw @s[scores={DialogueTrigger=249,TalkTime=90}] {"text":"<Chef Albern> Simp
 tellraw @s[scores={DialogueTrigger=249,TalkTime=102}] {"text":"<Chef Albern> Enjoy our washed-rind cheese made using a female Arbok's Toxic poison!"}
 tellraw @s[scores={DialogueTrigger=249,TalkTime=112}] ["",{"text":"<Chef Albern> We recommend that you begin eating in precisely "},{"text":"90 seconds","color":"gray"},{"text":"."}]
 tellraw @s[scores={DialogueTrigger=249,TalkTime=121}] {"text":"<Chef Albern> Please join me in an entertaining battle until then, won't you?"}
-###execute as @a[scores={DialogueTrigger=249,TalkTime=130}] run pokebattle @s Albern
+execute as @a[scores={DialogueTrigger=249,TalkTime=130}] run pokebattle @s Albern
 
 tag @s[scores={DialogueTrigger=249,TalkTime=130..}] add Dialogue249
 scoreboard players set @s[tag=Dialogue249] TalkTime 0
@@ -9234,7 +9234,7 @@ execute as @s[scores={DialogueTrigger=250,TalkTime=23}] run tp @e[x=-394,y=100,z
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=250,TalkTime=33}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=250,TalkTime=34}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-###execute as @a[scores={DialogueTrigger=250,TalkTime=34}] run pokeheal @s
+execute as @a[scores={DialogueTrigger=250,TalkTime=34}] run pokeheal @s
 #execute as @s[score_DialogueTrigger_min=250,score_DialogueTrigger=250,tag=!Dialogue250,score_TalkTime_min=35,score_TalkTime=35] run
 
 #tp owner in
@@ -9300,7 +9300,7 @@ tellraw @s[scores={DialogueTrigger=251,TalkTime=39}] {"text":"<Owner Christophe>
 tellraw @s[scores={DialogueTrigger=251,TalkTime=49}] {"text":"<Owner Christophe> quickly flambéed with a supereffective Flame Burst to bring out the full and native deliciousness of the Berries with a delicate, silky texture."}
 tellraw @s[scores={DialogueTrigger=251,TalkTime=62}] ["",{"text":"<Owner Christophe> It takes precisely "},{"text":"60 seconds","color":"gray"},{"text":" for it to be in the absolute prime state for eating."}]
 tellraw @s[scores={DialogueTrigger=251,TalkTime=72}] {"text":"<Owner Christophe> Might I suggest a battle in the meantime?"}
-###execute as @a[scores={DialogueTrigger=251,TalkTime=80}] run pokebattle @s Christophe1
+execute as @a[scores={DialogueTrigger=251,TalkTime=80}] run pokebattle @s Christophe1
 
 
 tag @s[scores={DialogueTrigger=251,TalkTime=112..}] add Dialogue251
@@ -9332,7 +9332,7 @@ execute as @s[scores={DialogueTrigger=252,TalkTime=15}] run tp @e[x=-287,y=100,z
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=252,TalkTime=25}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=252,TalkTime=26}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-###execute as @a[score_DialogueTrigger_min=252,score_DialogueTrigger=252,tag=!Dialogue252,score_TalkTime_min=26,score_TalkTime=26] run pokeheal @s
+execute as @a[score_DialogueTrigger_min=252,score_DialogueTrigger=252,tag=!Dialogue252,score_TalkTime_min=26,score_TalkTime=26] run pokeheal @s
 
 #tp owner in
 execute as @s[scores={DialogueTrigger=252,TalkTime=35}] run particle cloud -287 101 158 2 2 2 1 100
@@ -9345,7 +9345,7 @@ tellraw @s[scores={DialogueTrigger=252,TalkTime=54}] {"text":"<Owner Christophe>
 tellraw @s[scores={DialogueTrigger=252,TalkTime=67}] {"text":"<Owner Christophe> This allows us to extract every last essence of flavor from its core."}
 tellraw @s[scores={DialogueTrigger=252,TalkTime=76}] ["",{"text":"<Owner Christophe> It takes precisely "},{"text":"60 seconds","color":"gray"},{"text":" to bring it to the prime state for eating."}]
 tellraw @s[scores={DialogueTrigger=252,TalkTime=77}] {"text":"<Owner Christophe> Might I suggest a battle?"}
-###execute as @a[score_DialogueTrigger_min=252,score_DialogueTrigger=252,tag=!Dialogue252,score_TalkTime_min=85,score_TalkTime=85] run pokebattle @s Christophe2
+execute as @a[score_DialogueTrigger_min=252,score_DialogueTrigger=252,tag=!Dialogue252,score_TalkTime_min=85,score_TalkTime=85] run pokebattle @s Christophe2
 
 tag @s[scores={DialogueTrigger=252,TalkTime=85..}] add Dialogue252
 scoreboard players set @s[tag=Dialogue252] TalkTime 0
@@ -9379,7 +9379,7 @@ execute as @s[scores={DialogueTrigger=253,TalkTime=43}] run tp @e[x=-287,y=100,z
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=253,TalkTime=53}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=253,TalkTime=54}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-###execute as @s[score_DialogueTrigger_min=253,score_DialogueTrigger=253,tag=!Dialogue253,score_TalkTime_min=54,score_TalkTime=54] run pokeheal @s
+execute as @s[score_DialogueTrigger_min=253,score_DialogueTrigger=253,tag=!Dialogue253,score_TalkTime_min=54,score_TalkTime=54] run pokeheal @s
 #execute as @s[score_DialogueTrigger_min=253,score_DialogueTrigger=253,tag=!Dialogue253,score_TalkTime_min=55,score_TalkTime=55] run
 
 #tp waiter in
@@ -9393,7 +9393,7 @@ tellraw @s[scores={DialogueTrigger=253,TalkTime=83}] {"text":"<Garçon Morris> A
 tellraw @s[scores={DialogueTrigger=253,TalkTime=94}] {"text":"<Garçon Morris> harvested from the coastal ocean near Cyllage City and boiled in the salt water of its sea environment so gently that it barely bubbles in the pot."}
 tellraw @s[scores={DialogueTrigger=253,TalkTime=107}] ["",{"text":"<Garçon Morris> It will take "},{"text":"90 seconds","color":"gray"},{"text":" for the heat to spread evenly throughout the dish."}]
 tellraw @s[scores={DialogueTrigger=253,TalkTime=117}] {"text":"<Garçon Morris> Would you care for a battle to help pass the time?"}
-###execute as @s[score_DialogueTrigger_min=253,score_DialogueTrigger=253,tag=!Dialogue253,score_TalkTime_min=125,score_TalkTime=125] run pokebattle @s Morris1
+execute as @s[score_DialogueTrigger_min=253,score_DialogueTrigger=253,tag=!Dialogue253,score_TalkTime_min=125,score_TalkTime=125] run pokebattle @s Morris1
 
 tag @s[scores={DialogueTrigger=253,TalkTime=125..}] add Dialogue253
 scoreboard players set @s[tag=Dialogue253] TalkTime 0
@@ -9425,7 +9425,7 @@ execute as @s[scores={DialogueTrigger=254,TalkTime=24}] run tp @e[x=-287,y=100,z
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=254,TalkTime=32}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=254,TalkTime=33}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-###execute as @s[scores={DialogueTrigger=254,TalkTime=33}] run pokeheal @s
+execute as @s[scores={DialogueTrigger=254,TalkTime=33}] run pokeheal @s
 #execute as @s[score_DialogueTrigger_min=254,score_DialogueTrigger=254,tag=!Dialogue254,score_TalkTime_min=34,score_TalkTime=34] run
 
 #tp waiter in
@@ -9438,7 +9438,7 @@ tellraw @s[scores={DialogueTrigger=254,TalkTime=55}] {"text":"<Garçon Morris> I
 tellraw @s[scores={DialogueTrigger=254,TalkTime=65}] {"text":"<Garçon Morris> It is just moments from being ready. I could not possibly serve an overcooked meal."}
 tellraw @s[scores={DialogueTrigger=254,TalkTime=75}] ["",{"text":"<Garçon Morris> You will need to wait "},{"text":"60 seconds","color":"gray"},{"text":" if you wish to begin it with perfect timing..."}]
 tellraw @s[scores={DialogueTrigger=254,TalkTime=85}] {"text":"<Garçon Morris> So...shall we begin?"}
-###execute as @s[scores={DialogueTrigger=254,TalkTime=85}] run pokebattle @s Morris2
+execute as @s[scores={DialogueTrigger=254,TalkTime=85}] run pokebattle @s Morris2
 
 tag @s[scores={DialogueTrigger=254,TalkTime=85..}] add Dialogue254
 scoreboard players set @s[tag=Dialogue254] TalkTime 0
@@ -9470,7 +9470,7 @@ execute as @s[scores={DialogueTrigger=255,TalkTime=24}] run tp @e[x=-287,y=100,z
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=255,TalkTime=32}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=255,TalkTime=33}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-###execute as @s[scores={DialogueTrigger=255,TalkTime=33}] run pokeheal @s
+execute as @s[scores={DialogueTrigger=255,TalkTime=33}] run pokeheal @s
 #execute as @s[score_DialogueTrigger_min=255,score_DialogueTrigger=255,tag=!Dialogue255,score_TalkTime_min=34,score_TalkTime=34] run
 
 #tp skiddo in
@@ -9485,7 +9485,7 @@ tellraw @s[scores={DialogueTrigger=255,TalkTime=75}] {"text":"That's what it say
 #waitress tps in, battles
 execute as @s[scores={DialogueTrigger=255,TalkTime=85}] run particle cloud -287 101 157 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=255,TalkTime=85}] run tp @e[x=-504,y=135,z=1308,dy=3,type=pixelmon:npc_trainer] -287 101 157
-###execute as @s[scores={DialogueTrigger=255,TalkTime=86}] run tp @s Paula
+execute as @s[scores={DialogueTrigger=255,TalkTime=86}] run tp @s Paula
 
 tag @s[scores={DialogueTrigger=255,TalkTime=86..}] add Dialogue255
 scoreboard players set @s[tag=Dialogue255] TalkTime 0
@@ -9520,7 +9520,7 @@ execute as @s[scores={DialogueTrigger=256,TalkTime=30}] run tp @e[x=-287,y=100,z
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=256,TalkTime=37}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=256,TalkTime=38}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-###execute as @s[scores={DialogueTrigger=256,TalkTime=38}] run pokeheal @s
+execute as @s[scores={DialogueTrigger=256,TalkTime=38}] run pokeheal @s
 #execute as @s[score_DialogueTrigger_min=256,score_DialogueTrigger=256,tag=!Dialogue256,score_TalkTime_min=39,score_TalkTime=39] run
 
 #tp waitress in
@@ -9579,7 +9579,7 @@ execute as @s[scores={DialogueTrigger=257,TalkTime=21}] run data modify entity @
 tellraw @s[scores={DialogueTrigger=257,TalkTime=21}] {"text":"<Furisode Girl Gwyneth> Hey! Thanks for waitin'! Here's your nigiri sushi!"}
 tellraw @s[scores={DialogueTrigger=257,TalkTime=30}] ["",{"text":"<Furisode Girl Gwyneth> The taste'll blow your mind after "},{"text":"90 seconds","color":"gray"},{"text":"!"}]
 tellraw @s[scores={DialogueTrigger=257,TalkTime=40}] {"text":"<Furisode Girl Gwyneth> No complaints. Let's get straight to battle!"}
-###execute as @s[scores={DialogueTrigger=257,TalkTime=47}] run pokebattle @s Gwyneth
+execute as @s[scores={DialogueTrigger=257,TalkTime=47}] run pokebattle @s Gwyneth
 
 tag @s[scores={DialogueTrigger=257,TalkTime=47..}] add Dialogue257
 scoreboard players set @s[tag=Dialogue257] TalkTime 0
@@ -9610,7 +9610,7 @@ execute as @s[scores={DialogueTrigger=258,TalkTime=16}] run tp @e[x=-481,y=100,z
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=258,TalkTime=25}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=258,TalkTime=26}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-###execute as @s[scores={DialogueTrigger=258,TalkTime=26}] run pokeheal @s
+execute as @s[scores={DialogueTrigger=258,TalkTime=26}] run pokeheal @s
 #execute as @s[score_DialogueTrigger_min=258,score_DialogueTrigger=258,tag=!Dialogue258,score_TalkTime_min=27,score_TalkTime=27] run
 
 #tp Furisode Girl no 2 in
@@ -9622,7 +9622,7 @@ execute as @s[scores={DialogueTrigger=258,TalkTime=36}] run data modify entity @
 tellraw @s[scores={DialogueTrigger=258,TalkTime=36}] {"text":"<Furisode Girl Cliantha> Hi! Thank you for waiting! Here's your temaki sushi!"}
 tellraw @s[scores={DialogueTrigger=258,TalkTime=45}] ["",{"text":"<Furisode Girl Cliantha> Lemme think... This should be eaten after, um, "},{"text":"90 seconds","color":"gray"},{"text":"...I guess?"}]
 tellraw @s[scores={DialogueTrigger=258,TalkTime=55}] {"text":"<Furisode Girl Cliantha> So I suppose I've gotta keep you busy till then!"}
-###execute as @s[scores={DialogueTrigger=258,TalkTime=63}] run pokebattle @s Cliantha
+execute as @s[scores={DialogueTrigger=258,TalkTime=63}] run pokebattle @s Cliantha
 
 tag @s[scores={DialogueTrigger=258,TalkTime=63..}] add Dialogue258
 scoreboard players set @s[tag=Dialogue258] TalkTime 0
@@ -9653,7 +9653,7 @@ execute as @s[scores={DialogueTrigger=259,TalkTime=16}] run tp @e[x=-481,y=100,z
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=259,TalkTime=25}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=259,TalkTime=26}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-###execute as @s[scores={DialogueTrigger=259,TalkTime=26}] run pokeheal @s
+execute as @s[scores={DialogueTrigger=259,TalkTime=26}] run pokeheal @s
 #execute as @s[score_DialogueTrigger_min=259,score_DialogueTrigger=259,tag=!Dialogue259,score_TalkTime_min=27,score_TalkTime=27] run
 
 #tp Furisode Girl no 3 in
@@ -9664,7 +9664,7 @@ execute as @s[scores={DialogueTrigger=259,TalkTime=36}] run data modify entity @
 tellraw @s[scores={DialogueTrigger=259,TalkTime=36}] {"text":"<Furisode Girl Thalassa> ...My apologies for the wait. This is our prized oshizushi."}
 tellraw @s[scores={DialogueTrigger=259,TalkTime=46}] ["",{"text":"<Furisode Girl Thalassa> It should ideally be consumed after "},{"text":"90 seconds","color":"gray"},{"text":"."}]
 tellraw @s[scores={DialogueTrigger=259,TalkTime=55}] {"text":"<Furisode Girl Thalassa> So I suppose...that I should now work to keep you busy until that time."}
-###execute as @s[scores={DialogueTrigger=259,TalkTime=63}] run pokebattle @s Thalassa
+execute as @s[scores={DialogueTrigger=259,TalkTime=63}] run pokebattle @s Thalassa
 
 tag @s[scores={DialogueTrigger=259,TalkTime=63..}] add Dialogue259
 scoreboard players set @s[tag=Dialogue259] TalkTime 0
@@ -9695,7 +9695,7 @@ execute as @s[scores={DialogueTrigger=260,TalkTime=16}] run tp @e[x=-481,y=100,z
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=260,TalkTime=25}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=260,TalkTime=26}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-###execute as @s[scores={DialogueTrigger=260,TalkTime=26}] run pokeheal @s
+execute as @s[scores={DialogueTrigger=260,TalkTime=26}] run pokeheal @s
 #execute as @s[score_DialogueTrigger_min=260,score_DialogueTrigger=260,tag=!Dialogue260,score_TalkTime_min=27,score_TalkTime=27] run
 
 #tp Furisode Girl no 4 in
@@ -9707,7 +9707,7 @@ tellraw @s[scores={DialogueTrigger=260,TalkTime=36}] {"text":"<Furisode Girl Ner
 tellraw @s[scores={DialogueTrigger=260,TalkTime=43}] {"text":"<Furisode Girl Nerissa> I am delighted to present you with your chirashizushi course."}
 tellraw @s[scores={DialogueTrigger=260,TalkTime=52}] ["",{"text":"<Furisode Girl Nerissa> I believe you will find it most pleasing to you in "},{"text":"90 seconds","color":"gray"},{"text":"."}]
 tellraw @s[scores={DialogueTrigger=260,TalkTime=62}] {"text":"<Furisode Girl Nerissa> Shall I engage you in battle? My only wish is to serve you."}
-###execute as @s[scores={DialogueTrigger=260,TalkTime=70}] run pokebattle @s Nerissa
+execute as @s[scores={DialogueTrigger=260,TalkTime=70}] run pokebattle @s Nerissa
 
 tag @s[scores={DialogueTrigger=260,TalkTime=70..}] add Dialogue260
 scoreboard players set @s[tag=Dialogue260] TalkTime 0
@@ -9738,7 +9738,7 @@ execute as @s[scores={DialogueTrigger=261,TalkTime=16}] run tp @e[x=-481,y=100,z
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=261,TalkTime=25}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=261,TalkTime=26}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-###execute as @s[scores={DialogueTrigger=261,TalkTime=26}] run pokeheal @s
+execute as @s[scores={DialogueTrigger=261,TalkTime=26}] run pokeheal @s
 #execute as @s[score_DialogueTrigger_min=261,score_DialogueTrigger=261,tag=!Dialogue261,score_TalkTime_min=27,score_TalkTime=27] run
 
 #tp owner in
@@ -9751,7 +9751,7 @@ tellraw @s[scores={DialogueTrigger=261,TalkTime=45}] {"text":"<Owner Kazu> I'm b
 tellraw @s[scores={DialogueTrigger=261,TalkTime=54}] {"text":"<Owner Kazu> The next course'll really take ya back, I promise! It's some good ol' narezushi."}
 tellraw @s[scores={DialogueTrigger=261,TalkTime=64}] ["",{"text":"<Owner Kazu> Basically you'll wanna start this one in about "},{"text":"90 seconds","color":"gray"},{"text":"."}]
 tellraw @s[scores={DialogueTrigger=261,TalkTime=74}] {"text":"<Owner Kazu> So, y'know, you gotta wait till then. So, y'know, let's battle!"}
-###execute as @s[scores={DialogueTrigger=261,TalkTime=82}] run pokebattle @s Kazu
+execute as @s[scores={DialogueTrigger=261,TalkTime=82}] run pokebattle @s Kazu
 
 tag @s[scores={DialogueTrigger=261,TalkTime=82..}] add Dialogue261
 scoreboard players set @s[tag=Dialogue261] TalkTime 0
@@ -9782,7 +9782,7 @@ execute as @s[scores={DialogueTrigger=262,TalkTime=16}] run tp @e[x=-481,y=100,z
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=262,TalkTime=25}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=262,TalkTime=26}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-###execute as @s[scores={DialogueTrigger=262,TalkTime=26}] run pokeheal @s
+execute as @s[scores={DialogueTrigger=262,TalkTime=26}] run pokeheal @s
 #execute as @s[score_DialogueTrigger_min=262,score_DialogueTrigger=262,tag=!Dialogue262,score_TalkTime_min=27,score_TalkTime=27] run
 
 #tp owner npc in
@@ -10196,7 +10196,7 @@ scoreboard players set @s[tag=Dialogue282] DialogueTrigger 0
 
 #EndBattles with slight delay
 
-###execute as @a[scores={DialogueTrigger=999,TalkTime=5}] run endbattle
+execute as @a[scores={DialogueTrigger=999,TalkTime=5}] run endbattle
 
 tag @s[scores={DialogueTrigger=999,TalkTime=5..}] add Dialogue999
 scoreboard players set @s[tag=Dialogue999] TalkTime 0

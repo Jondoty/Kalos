@@ -324,12 +324,12 @@ tp @s[scores={TalkTime=281..430}] -1008.5 101 1462.5 -180 5
 
 
 #Pans over to Skiddo's view
-###execute as @s[scores={TalkTime=473}] run summon pixelmon:empty_pokeball -1009 102.5 1457 {Motion:[-0.4415312881559602d,-0.10030448410882663d,0.7322497531618284d],shake:0b,xTile:-1,UUIDLeast:-5641490288952635308L,inGround:0b,Invulnerable:0b,Air:300s,OnGround:0b,Dimension:0,PortalCooldown:0,Rotation:[107.359215f,2.301107f],UpdateBlocked:0b,FallDistance:0.0f,inTile:"minecraft:air",UUIDMost:-8701294600814571740L,ownerName:"Jond",Pos:[-726.0530610355996d,102.68774595421591d,1285.1004139254171d],zTile:-1,Fire:-1s,yTile:-1}
+execute as @s[scores={TalkTime=473}] run summon pixelmon:empty_pokeball -1009 102.5 1457 {Motion:[-0.4415312881559602d,-0.10030448410882663d,0.7322497531618284d],shake:0b,xTile:-1,UUIDLeast:-5641490288952635308L,inGround:0b,Invulnerable:0b,Air:300s,OnGround:0b,Dimension:0,PortalCooldown:0,Rotation:[107.359215f,2.301107f],UpdateBlocked:0b,FallDistance:0.0f,inTile:"minecraft:air",UUIDMost:-8701294600814571740L,ownerName:"Jond",Pos:[-726.0530610355996d,102.68774595421591d,1285.1004139254171d],zTile:-1,Fire:-1s,yTile:-1}
 execute as @s[scores={TalkTime=480}] run tp @e[x=-1016,y=126,z=1458,dy=3,type=pixelmon:statue] -1012 101 1461
 execute as @s[scores={TalkTime=480}] run particle cloud -1012 101 1461 2 2 2 1 100
 playsound pixelmon:pixelmon.block.pokeballrelease ambient @s[scores={TalkTime=480}] ~ ~ ~ 10 1 1
 
-###execute as @s[scores={TalkTime=431}] run replaceitem entity @e[x=-1009,y=100,z=1457,dy=3,type=pixelmon:npc_chatting] weapon.mainhand pixelmon:poke_ball
+execute as @s[scores={TalkTime=431}] run replaceitem entity @e[x=-1009,y=100,z=1457,dy=3,type=pixelmon:npc_chatting] weapon.mainhand pixelmon:poke_ball
 execute as @s[scores={TalkTime=470}] run replaceitem entity @e[x=-1009,y=100,z=1457,dy=3,type=pixelmon:npc_chatting] weapon.mainhand minecraft:air
 
 
