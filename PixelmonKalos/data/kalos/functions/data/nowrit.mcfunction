@@ -1,0 +1,184 @@
+#No Writ, default trainer values
+
+data modify entity @e[limit=1,x=-1559,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:1800}
+data modify entity @e[limit=1,x=-1557,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:960}
+data modify entity @e[limit=1,x=-1555,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:1800}
+data modify entity @e[limit=1,x=-1553,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:1800}
+data modify entity @e[limit=1,x=-1551,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:1800}
+data modify entity @e[limit=1,x=-1549,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:1800}
+data modify entity @e[limit=1,x=-1547,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:3000}
+data modify entity @e[limit=1,x=-1545,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:3000}
+data modify entity @e[limit=1,x=-1543,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:1800}
+data modify entity @e[limit=1,x=-1541,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:1800}
+data modify entity @e[limit=1,x=-1539,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:1800}
+data modify entity @e[limit=1,x=-1537,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:1800}
+data modify entity @e[limit=1,x=-1535,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:1200}
+data modify entity @e[limit=1,x=-1533,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {WinMoney:1800}
+
+data modify entity @e[limit=1,x=-1559,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:2400}
+data modify entity @e[limit=1,x=-1557,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:4000}
+data modify entity @e[limit=1,x=-1555,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:2400}
+data modify entity @e[limit=1,x=-1553,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:2400}
+data modify entity @e[limit=1,x=-1551,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:1920}
+data modify entity @e[limit=1,x=-1549,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:4000}
+data modify entity @e[limit=1,x=-1547,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:4000}
+data modify entity @e[limit=1,x=-1545,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:1600}
+data modify entity @e[limit=1,x=-1543,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:2400}
+data modify entity @e[limit=1,x=-1541,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:4000}
+data modify entity @e[limit=1,x=-1539,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:2400}
+data modify entity @e[limit=1,x=-1537,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:2400}
+data modify entity @e[limit=1,x=-1535,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:4000}
+data modify entity @e[limit=1,x=-1533,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {WinMoney:4000}
+
+data modify entity @e[limit=1,x=-1559,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:5000}
+data modify entity @e[limit=1,x=-1557,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:3000}
+data modify entity @e[limit=1,x=-1555,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:5000}
+data modify entity @e[limit=1,x=-1553,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:5000}
+data modify entity @e[limit=1,x=-1551,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:1600}
+data modify entity @e[limit=1,x=-1549,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:5000}
+data modify entity @e[limit=1,x=-1547,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:5000}
+data modify entity @e[limit=1,x=-1545,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:2000}
+data modify entity @e[limit=1,x=-1543,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:5000}
+data modify entity @e[limit=1,x=-1541,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:5000}
+data modify entity @e[limit=1,x=-1539,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:5000}
+data modify entity @e[limit=1,x=-1537,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:5000}
+data modify entity @e[limit=1,x=-1535,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:3000}
+data modify entity @e[limit=1,x=-1533,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {WinMoney:5000}
+
+data modify entity @e[limit=1,x=-1559,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:4200}
+data modify entity @e[limit=1,x=-1557,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:7000}
+data modify entity @e[limit=1,x=-1555,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:2240}
+data modify entity @e[limit=1,x=-1553,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:2520}
+data modify entity @e[limit=1,x=-1551,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:2520}
+data modify entity @e[limit=1,x=-1549,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:2520}
+data modify entity @e[limit=1,x=-1547,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:2520}
+data modify entity @e[limit=1,x=-1545,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:2800}
+data modify entity @e[limit=1,x=-1543,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:4200}
+data modify entity @e[limit=1,x=-1541,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {WinMoney:10500}
+
+data modify entity @e[limit=1,x=-1559,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:2880}
+data modify entity @e[limit=1,x=-1557,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:3240}
+data modify entity @e[limit=1,x=-1555,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:3240}
+data modify entity @e[limit=1,x=-1553,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:9000}
+data modify entity @e[limit=1,x=-1551,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:5400}
+data modify entity @e[limit=1,x=-1549,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:3240}
+data modify entity @e[limit=1,x=-1547,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:3240}
+data modify entity @e[limit=1,x=-1545,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:12000}
+data modify entity @e[limit=1,x=-1543,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:5400}
+data modify entity @e[limit=1,x=-1541,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {WinMoney:5400}
+
+data modify entity @e[limit=1,x=-1559,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {WinMoney:6400}
+data modify entity @e[limit=1,x=-1557,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {WinMoney:6400}
+data modify entity @e[limit=1,x=-1555,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {WinMoney:6400}
+data modify entity @e[limit=1,x=-1553,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {WinMoney:6400}
+data modify entity @e[limit=1,x=-1551,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {WinMoney:6400}
+data modify entity @e[limit=1,x=-1549,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {WinMoney:6400}
+data modify entity @e[limit=1,x=-1547,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {WinMoney:6400}
+data modify entity @e[limit=1,x=-1545,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {WinMoney:6400}
+
+data modify entity @e[limit=1,x=-1559,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:8000}
+data modify entity @e[limit=1,x=-1557,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:8000}
+data modify entity @e[limit=1,x=-1555,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:8000}
+data modify entity @e[limit=1,x=-1553,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:8000}
+data modify entity @e[limit=1,x=-1551,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:8000}
+data modify entity @e[limit=1,x=-1549,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:8000}
+data modify entity @e[limit=1,x=-1547,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:8000}
+data modify entity @e[limit=1,x=-1545,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:8000}
+data modify entity @e[limit=1,x=-1543,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:11000}
+data modify entity @e[limit=1,x=-1541,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:11000}
+data modify entity @e[limit=1,x=-1539,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:11000}
+data modify entity @e[limit=1,x=-1537,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:11000}
+data modify entity @e[limit=1,x=-1535,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {WinMoney:14400}
+
+
+
+#Pokemon Levels
+data modify entity @e[limit=1,x=-1559,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:15}}}
+data modify entity @e[limit=1,x=-1557,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:15}}}
+data modify entity @e[limit=1,x=-1555,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:15}}}
+data modify entity @e[limit=1,x=-1553,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:15}}}
+data modify entity @e[limit=1,x=-1551,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:15}}}
+data modify entity @e[limit=1,x=-1549,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:15}}}
+data modify entity @e[limit=1,x=-1547,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:15}}}
+data modify entity @e[limit=1,x=-1545,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:15}}}
+data modify entity @e[limit=1,x=-1543,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:15}}}
+data modify entity @e[limit=1,x=-1541,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:15}}}
+data modify entity @e[limit=1,x=-1539,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:15}}}
+data modify entity @e[limit=1,x=-1537,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:15}}}
+data modify entity @e[limit=1,x=-1535,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:15}}}
+data modify entity @e[limit=1,x=-1533,y=54,z=-85,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:15}}}
+
+data modify entity @e[limit=1,x=-1559,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:20}}}
+data modify entity @e[limit=1,x=-1557,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:20}}}
+data modify entity @e[limit=1,x=-1555,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:20}}}
+data modify entity @e[limit=1,x=-1553,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:20}}}
+data modify entity @e[limit=1,x=-1551,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:20}}}
+data modify entity @e[limit=1,x=-1549,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:20}}}
+data modify entity @e[limit=1,x=-1547,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:20}}}
+data modify entity @e[limit=1,x=-1545,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:20}}}
+data modify entity @e[limit=1,x=-1543,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:20}}}
+data modify entity @e[limit=1,x=-1541,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:20}}}
+data modify entity @e[limit=1,x=-1539,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:20}}}
+data modify entity @e[limit=1,x=-1537,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:20}}}
+data modify entity @e[limit=1,x=-1535,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:20}}}
+data modify entity @e[limit=1,x=-1533,y=54,z=-79,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party0:{Level:20}}}
+
+data modify entity @e[limit=1,x=-1559,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:25},party0:{Level:25}}}
+data modify entity @e[limit=1,x=-1557,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:25},party0:{Level:25}}}
+data modify entity @e[limit=1,x=-1555,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:25},party0:{Level:25}}}
+data modify entity @e[limit=1,x=-1553,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:25},party0:{Level:25}}}
+data modify entity @e[limit=1,x=-1551,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:25},party0:{Level:25}}}
+data modify entity @e[limit=1,x=-1549,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:25},party0:{Level:25}}}
+data modify entity @e[limit=1,x=-1547,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:25},party0:{Level:25}}}
+data modify entity @e[limit=1,x=-1545,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:25},party0:{Level:25}}}
+data modify entity @e[limit=1,x=-1543,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:25},party0:{Level:25}}}
+data modify entity @e[limit=1,x=-1541,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:25},party0:{Level:25}}}
+data modify entity @e[limit=1,x=-1539,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:25},party0:{Level:25}}}
+data modify entity @e[limit=1,x=-1537,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:25},party0:{Level:25}}}
+data modify entity @e[limit=1,x=-1535,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:25},party0:{Level:25}}}
+data modify entity @e[limit=1,x=-1533,y=54,z=-73,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:25},party0:{Level:25}}}
+
+data modify entity @e[limit=1,x=-1559,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:35},party0:{Level:35}}}
+data modify entity @e[limit=1,x=-1557,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:35},party0:{Level:35}}}
+data modify entity @e[limit=1,x=-1555,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:35},party0:{Level:35}}}
+data modify entity @e[limit=1,x=-1553,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:35},party0:{Level:35}}}
+data modify entity @e[limit=1,x=-1551,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:35},party0:{Level:35}}}
+data modify entity @e[limit=1,x=-1549,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:35},party0:{Level:35}}}
+data modify entity @e[limit=1,x=-1547,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:35},party0:{Level:35}}}
+data modify entity @e[limit=1,x=-1545,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:35},party0:{Level:35}}}
+data modify entity @e[limit=1,x=-1543,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:35},party0:{Level:35}}}
+data modify entity @e[limit=1,x=-1541,y=54,z=-67,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:35},party0:{Level:35}}}
+
+data modify entity @e[limit=1,x=-1559,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:45},party0:{Level:45},party2:{Level:45}}}
+data modify entity @e[limit=1,x=-1557,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:45},party0:{Level:45},party2:{Level:45}}}
+data modify entity @e[limit=1,x=-1555,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:45},party0:{Level:45},party2:{Level:45}}}
+data modify entity @e[limit=1,x=-1553,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:45},party0:{Level:45},party2:{Level:45}}}
+data modify entity @e[limit=1,x=-1551,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:45},party0:{Level:45},party2:{Level:45}}}
+data modify entity @e[limit=1,x=-1549,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:45},party0:{Level:45},party2:{Level:45}}}
+data modify entity @e[limit=1,x=-1547,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:45},party0:{Level:45},party2:{Level:45}}}
+data modify entity @e[limit=1,x=-1545,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:45},party0:{Level:45},party2:{Level:45}}}
+data modify entity @e[limit=1,x=-1543,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:45},party0:{Level:45},party2:{Level:45}}}
+data modify entity @e[limit=1,x=-1541,y=54,z=-55,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:45},party0:{Level:45},party2:{Level:45}}}
+
+data modify entity @e[limit=1,x=-1559,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:40},party0:{Level:40}}}
+data modify entity @e[limit=1,x=-1557,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:40},party0:{Level:40}}}
+data modify entity @e[limit=1,x=-1555,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:40},party0:{Level:40}}}
+data modify entity @e[limit=1,x=-1553,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:40},party0:{Level:40}}}
+data modify entity @e[limit=1,x=-1551,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:40},party0:{Level:40}}}
+data modify entity @e[limit=1,x=-1549,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:40},party0:{Level:40}}}
+data modify entity @e[limit=1,x=-1547,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:40},party0:{Level:40}}}
+data modify entity @e[limit=1,x=-1545,y=54,z=-61,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:40},party0:{Level:40}}}
+
+data modify entity @e[limit=1,x=-1559,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:50},party0:{Level:50}}}
+data modify entity @e[limit=1,x=-1557,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:50},party0:{Level:50}}}
+data modify entity @e[limit=1,x=-1555,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:50},party0:{Level:50}}}
+data modify entity @e[limit=1,x=-1553,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:50},party0:{Level:50}}}
+data modify entity @e[limit=1,x=-1551,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:50},party0:{Level:50}}}
+data modify entity @e[limit=1,x=-1549,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:50},party0:{Level:50}}}
+data modify entity @e[limit=1,x=-1547,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:50},party0:{Level:50}}}
+data modify entity @e[limit=1,x=-1545,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:50},party0:{Level:50}}}
+data modify entity @e[limit=1,x=-1543,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:55},party0:{Level:55},party2:{Level:55}}}
+data modify entity @e[limit=1,x=-1541,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:55},party0:{Level:55},party2:{Level:55}}}
+data modify entity @e[limit=1,x=-1539,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:55},party0:{Level:55},party2:{Level:55}}}
+data modify entity @e[limit=1,x=-1537,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:55},party0:{Level:55},party2:{Level:55}}}
+data modify entity @e[limit=1,x=-1535,y=54,z=-49,dy=3,type=pixelmon:npc_trainer] {pokeStore:{party1:{Level:60},party0:{Level:60},party2:{Level:60},party3:{Level:60}}}
