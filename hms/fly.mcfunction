@@ -47,6 +47,11 @@ tellraw @s[x=-792,y=100,z=1196,dx=38,dy=20,dz=47,scores={Fly=1..}] ["",{"text":"
 scoreboard players set @s[x=-792,y=100,z=1196,dx=38,dy=20,dz=47,scores={Fly=1..}] Fly 0
 
 
+#Lumiose City Parade area
+tellraw @a[x=1469,y=101,z=-1954,distance=..150,scores={Fly=1..}] ["",{"text":"Mom's words echoed... ","italic":true,"color":"gray"},{"selector":"@p[score_Fly_min=1]","italic":true,"color":"gray"},{"text":"! There's a time and place for everything! But not now.","italic":true,"color":"gray"}]
+scoreboard players set @a[x=1469,y=101,z=-1954,distance=..150,scores={Fly=1..}] Fly 0
+
+
 
 
 
