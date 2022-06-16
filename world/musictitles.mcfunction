@@ -513,14 +513,14 @@ scoreboard players set @s[x=-342,y=0,z=-1302,dx=432,dy=256,dz=508] MusicCheck 51
 title @s[x=212,y=95,z=-695,dx=369,dy=156,dz=292,scores={MusicCheck=1..51}] actionbar {"text":"Route 15"}
 title @s[x=212,y=95,z=-695,dx=369,dy=156,dz=292,scores={MusicCheck=53..}] actionbar {"text":"Route 15"}
 scoreboard players set @s[x=212,y=95,z=-695,dx=369,dy=156,dz=292,scores={MusicCheck=1..51,MusicCooldown=1..}] click 1
-scoreboard players set @s[x=212,y=95,z=-695,dx=369,dy=156,dz=292,scores={MusicCheck=53..,MusicCooldown=1..}] click 1
+scoreboard players set @s[x=212,y=95,z=-695,dx=369,dy=156,dz=292,scores={MusicCheck=54..,MusicCooldown=1..}] click 1
 scoreboard players set @s[x=212,y=95,z=-695,dx=369,dy=156,dz=292] MusicCheck 52
 
 
 #Route 16 - 53
 title @s[x=212,y=95,z=-402,dx=369,dy=160,dz=273,scores={MusicCheck=1..52}] actionbar {"text":"Route 16"}
 title @s[x=212,y=95,z=-402,dx=369,dy=160,dz=273,scores={MusicCheck=54..}] actionbar {"text":"Route 16"}
-scoreboard players set @s[x=212,y=95,z=-402,dx=369,dy=160,dz=273,scores={MusicCheck=1..52,MusicCooldown=1..}] click 1
+scoreboard players set @s[x=212,y=95,z=-402,dx=369,dy=160,dz=273,scores={MusicCheck=1..51,MusicCooldown=1..}] click 1
 scoreboard players set @s[x=212,y=95,z=-402,dx=369,dy=160,dz=273,scores={MusicCheck=54..,MusicCooldown=1..}] click 1
 scoreboard players set @s[x=212,y=95,z=-402,dx=369,dy=160,dz=273] MusicCheck 53
 
