@@ -1,0 +1,25 @@
+{
+  "id": "Geodude",
+  "spawnInfos": [
+    {
+      "spec": "species:Geodude",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 23,
+      "maxLevel": 27,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:ever_stone",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+          "minX": -650, "maxX": -535, "minZ": -298, "maxZ": 95,
+          "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Le Nah Server"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome to Restaurant Le Nah. Please review our recommendations for today.",
+      "goodbye": "We’re always waiting for your next visit."
+    }
+  ],
+  "items": [
+    {
+      "name": "LeNah1",
+      "variation": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "Donphan",
+  "spawnInfos": [
+    {
+      "spec": "species:Donphan"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 39,
+      "maxLevel": 43,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": -1188, "maxX": -906, "minZ": -11, "maxZ": 84,
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

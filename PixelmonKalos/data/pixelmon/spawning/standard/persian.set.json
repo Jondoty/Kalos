@@ -1,0 +1,25 @@
+{
+  "id": "Persian",
+  "spawnInfos": [
+    {
+      "spec": "species:Persian",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 15,
+      "maxLevel": 19,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:quick_claw",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "minX": -2611, "maxX": -2570, "minZ": 349, "maxZ": 379,
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

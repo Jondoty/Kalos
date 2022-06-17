@@ -1,0 +1,20 @@
+{
+  "id": "Weepinbell",
+  "spawnInfos": [
+    {
+      "spec": "species:Weepinbell"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 22,
+      "maxLevel": 26,
+      "typeID": "pokemon",
+      "condition": {
+          "minX": -406, "maxX": -351, "minZ": 177, "maxZ": 202,
+          "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

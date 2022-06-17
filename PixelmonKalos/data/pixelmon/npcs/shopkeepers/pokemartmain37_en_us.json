@@ -1,0 +1,71 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "lass2.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Boutique Employee"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome to the Anistar Boutique! Would you like to purchase any clothing?",
+      "goodbye": "It’s OK. Take your time."
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:fire_stone_boots",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:fire_stone_helm",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:fire_stone_legs",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:fire_stone_plate",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:leaf_stone_boots",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:leaf_stone_helm",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:leaf_stone_legs",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:leaf_stone_plate",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:water_stone_boots",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:water_stone_helm",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:water_stone_legs",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:water_stone_plate",
+      "variation": false
+    }
+  ]
+}

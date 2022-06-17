@@ -1,0 +1,27 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "breedergreen_f.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Daycare Worker"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome to the Pokemon Daycare! Would you like to buy a ranch block to start breeding?",
+      "goodbye": "Please come again!"
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:ranch",
+      "variation": false
+    }
+  ]
+}

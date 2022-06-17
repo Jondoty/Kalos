@@ -1,0 +1,26 @@
+{
+  "id": "Vulpix",
+  "spawnInfos": [
+    {
+      "spec": "species:Vulpix",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 12,
+      "maxLevel": 15,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:charcoal",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "minX": 371, "maxX": 406, "minZ": -46, "maxZ": -27,
+        "times": [ "DAWN", "DUSK", "NIGHT" ],
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

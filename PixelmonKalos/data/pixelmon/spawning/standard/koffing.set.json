@@ -1,0 +1,27 @@
+{
+  "id": "Koffing",
+  "spawnInfos": [
+    {
+      "spec": "species:Koffing"
+      ,
+      "stringLocationTypes": [
+        "Land",
+        "Underground"
+      ],
+      "minLevel": 14,
+      "maxLevel": 16,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:smoke_ball",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "minX": 432, "maxX": 452, "minY": 63, "maxY": 70, "minZ": 309, "maxZ": 329,
+        "neededNearbyBlocks": ["minecraft:planks"]
+      },
+      "rarity": 0
+    }
+  ]
+}

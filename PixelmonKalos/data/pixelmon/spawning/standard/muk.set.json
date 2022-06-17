@@ -1,0 +1,26 @@
+{
+  "id": "Muk",
+  "spawnInfos": [
+    {
+      "spec": "species:Muk",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 26,
+      "maxLevel": 30,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:black_sludge",
+          "percentChance": 50
+        }
+      ],
+      "condition": {
+        "minX": -2212, "maxX": -2182, "minZ": -580, "maxZ": -561,
+        "times": [ "DAWN", "DUSK", "DAY" ],
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

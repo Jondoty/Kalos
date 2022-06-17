@@ -1,0 +1,115 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Poke Mart Clerk"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome to the Stone Emporium. We sell various stones.",
+      "goodbye": "We appreciate your patronage. Please come again."
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:altarianite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:audinite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:beedrillite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:blastoisinite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:blazikenite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:cameruptite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:charizardite_x",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:charizardite_y",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:galladite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:glalitite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:latiasite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:latiosite",
+      "variation": false
+    },
+	{
+      "name": "pixelmon:lopunnite",
+      "variation": false
+    },
+	{
+      "name": "pixelmon:metagrossite",
+      "variation": false
+    },
+	{
+      "name": "pixelmon:pidgeotite",
+      "variation": false
+    },
+	{
+      "name": "pixelmon:sablenite",
+      "variation": false
+    },
+	{
+      "name": "pixelmon:salamencite",
+      "variation": false
+    },
+    {
+        "name": "pixelmon:sceptilite",
+        "variation": false
+      },
+	{
+      "name": "pixelmon:sharpedonite",
+      "variation": false
+    },
+	{
+      "name": "pixelmon:slowbronite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:steelixite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:swampertite",
+      "variation": false
+    },
+    {
+      "name": "pixelmon:venusaurite",
+      "variation": false
+    }
+  ]
+}

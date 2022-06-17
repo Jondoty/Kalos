@@ -1,0 +1,25 @@
+{
+  "id": "Poliwhirl",
+  "spawnInfos": [
+    {
+      "spec": "species:Poliwhirl"
+      ,
+      "stringLocationTypes": [
+        "Water"
+      ],
+      "minLevel": 3,
+      "maxLevel": 5,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:kings_rock",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "minX": -243, "maxX": -223, "minZ": -413, "maxZ": -381
+      },
+      "rarity": 0
+    }
+  ]
+}

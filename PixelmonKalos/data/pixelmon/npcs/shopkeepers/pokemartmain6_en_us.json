@@ -1,0 +1,43 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Poke Mart Clerk"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome to the Poke Mart! May I help you?",
+      "goodbye": "Please come again!"
+    }
+  ],
+  "items": [
+    {
+      "name": "Kalos: Bulldoze",
+      "variation": false
+    },
+    {
+      "name": "Kalos: Struggle Bug",
+      "variation": false
+    },
+    {
+      "name": "Kalos: Swords Dance",
+      "variation": false
+    },
+    {
+      "name": "Kalos: Sunny Day",
+      "variation": false
+    },
+    {
+      "name": "Kalos: Rain Dance",
+      "variation": false
+    }
+  ]
+}

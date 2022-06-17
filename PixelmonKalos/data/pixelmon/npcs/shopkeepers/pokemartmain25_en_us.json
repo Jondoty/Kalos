@@ -1,0 +1,43 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Poke Mart Clerk"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome to the Poke Mart! May I help you?",
+      "goodbye": "Please come again!"
+    }
+  ],
+  "items": [
+    {
+      "name": "Kalos: Dig",
+      "variation": false
+    },
+    {
+      "name": "Kalos: Poison Jab",
+      "variation": false
+    },
+    {
+      "name": "Kalos: Safeguard",
+      "variation": false
+    },
+    {
+      "name": "Kalos: Hail",
+      "variation": false
+    },
+    {
+      "name": "Kalos: Sandstorm",
+      "variation": false
+    }
+  ]
+}

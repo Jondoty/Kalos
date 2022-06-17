@@ -1,0 +1,26 @@
+{
+  "id": "Fearow",
+  "spawnInfos": [
+    {
+      "spec": "species:Fearow"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 31,
+      "maxLevel": 35,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:sharp_beak",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "minX": 1406, "maxX": 1436, "minZ": -373, "maxZ": -349,
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

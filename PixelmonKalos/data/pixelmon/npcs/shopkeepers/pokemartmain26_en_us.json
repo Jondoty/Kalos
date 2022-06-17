@@ -1,0 +1,27 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "richboy.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Water Salesman"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "How about Couriway Town's famous Fresh Waer? It's 300 a bottle!",
+      "goodbye": "Couriway Town's Fresh Water! Only a pro can tell the difference in taste!"
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:fresh_water",
+      "variation": false
+    }
+  ]
+}

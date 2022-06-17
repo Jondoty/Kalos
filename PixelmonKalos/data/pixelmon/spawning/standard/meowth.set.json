@@ -1,0 +1,26 @@
+{
+  "id": "Meowth",
+  "spawnInfos": [
+    {
+      "spec": "species:Meowth",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 13,
+      "maxLevel": 16,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:quick_claw",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "minX": 489, "maxX": 703, "minZ": 178, "maxZ": 292,
+        "times": [ "DAWN", "DUSK", "DAY" ],
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

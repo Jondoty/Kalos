@@ -1,0 +1,27 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "blackbelt.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Sushi High Roller Server"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome, welcome, step right in! This is the one restaurant in town that’ll really move you! Welcome to Sushi High Roller! So what can I do you for?",
+      "goodbye": "Come back soon!"
+    }
+  ],
+  "items": [
+    {
+      "name": "HighRoller1",
+      "variation": false
+    }
+  ]
+}

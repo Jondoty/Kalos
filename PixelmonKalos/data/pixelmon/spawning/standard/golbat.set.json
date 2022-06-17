@@ -1,0 +1,19 @@
+{
+  "id": "Golbat",
+  "spawnInfos": [
+    {
+      "spec": "species:Golbat",
+      "stringLocationTypes": [
+        "Underground"
+      ],
+      "minLevel": 5,
+      "maxLevel": 8,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": 231, "maxX": 327, "minY": 16, "maxY": 35, "minZ": -731, "maxZ": -647,
+        "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
+      },
+      "rarity": 0.0
+    }
+  ]
+}

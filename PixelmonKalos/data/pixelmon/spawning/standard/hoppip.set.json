@@ -1,0 +1,21 @@
+{
+  "id": "Hoppip",
+  "spawnInfos": [
+    {
+      "spec": "species:Hoppip"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 4,
+      "maxLevel": 6,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": 80, "maxX": 203, "minZ": -548, "maxZ": -232,
+        "times": [ "DAWN", "DUSK", "DAY" ],
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

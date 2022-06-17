@@ -1,0 +1,21 @@
+{
+  "id": "Metapod",
+  "spawnInfos": [
+    {
+      "spec": "species:Metapod"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 3,
+      "maxLevel": 4,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": -263, "maxX": -137, "minZ": -458, "maxZ": -188,
+        "times": [ "DAWN", "DUSK" ],
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

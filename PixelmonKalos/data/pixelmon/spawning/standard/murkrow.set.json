@@ -1,0 +1,21 @@
+{
+  "id": "Murkrow",
+  "spawnInfos": [
+    {
+      "spec": "species:Murkrow"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 27,
+      "maxLevel": 30,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": -2197, "maxX": -2145, "minZ": 338, "maxZ": 368,
+        "times": [ "NIGHT" ],
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

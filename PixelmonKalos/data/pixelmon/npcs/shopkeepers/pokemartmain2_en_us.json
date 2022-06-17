@@ -1,0 +1,27 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "shopman.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Poke Mart Clerk"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome! This is a specialized shop that sells only Poke Balls.",
+      "goodbye": "Please come again!"
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:poke_ball",
+      "variation": false
+    }
+  ]
+}

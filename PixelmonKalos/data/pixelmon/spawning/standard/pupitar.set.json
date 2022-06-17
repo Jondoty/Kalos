@@ -1,0 +1,19 @@
+{
+  "id": "Pupitar",
+  "spawnInfos": [
+{
+      "spec": "species:Pupitar"
+      ,
+      "stringLocationTypes": [
+        "Underground"
+      ],
+      "minLevel": 30,
+      "maxLevel": 54,
+      "typeID": "pokemon",
+      "condition": {
+        "maxY": 50
+      },
+      "rarity": 0
+    }
+  ]
+}

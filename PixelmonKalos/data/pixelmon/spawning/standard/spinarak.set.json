@@ -1,0 +1,21 @@
+{
+  "id": "Spinarak",
+  "spawnInfos": [
+    {
+      "spec": "species:Spinarak"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 2,
+      "maxLevel": 4,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": -263, "maxX": -137, "minZ": -458, "maxZ": -188,
+        "times": [ "NIGHT" ],
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

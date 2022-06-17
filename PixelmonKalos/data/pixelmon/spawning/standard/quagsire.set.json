@@ -1,0 +1,19 @@
+{
+  "id": "Quagsire",
+  "spawnInfos": [
+    {
+      "spec": "species:Quagsire"
+      ,
+      "stringLocationTypes": [
+        "Water"
+      ],
+      "minLevel": 4,
+      "maxLevel": 6,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": 103, "maxX": 183, "minZ": -509, "maxZ": -390
+      },
+      "rarity": 0
+    }
+  ]
+}

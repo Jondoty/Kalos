@@ -1,0 +1,20 @@
+{
+  "id": "Ekans",
+  "spawnInfos": [
+    {
+      "spec": "species:Ekans"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 4,
+      "maxLevel": 6,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": 80, "maxX": 203, "minZ": -548, "maxZ": -232,
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

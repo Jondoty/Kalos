@@ -1,0 +1,27 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "hexmaniac.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Hex Maniac"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome... Moomoo Milk is just 500 a bottle. How about some for your journey?",
+      "goodbye": "Please buy some another time!"
+    }
+  ],
+  "items": [
+    {
+      "name": "pixelmon:moomoo_milk",
+      "variation": false
+    }
+  ]
+}

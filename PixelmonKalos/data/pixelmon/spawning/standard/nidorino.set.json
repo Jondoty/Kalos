@@ -1,0 +1,20 @@
+{
+  "id": "Nidorino",
+  "spawnInfos": [
+    {
+      "spec": "species:Nidorino"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 22,
+      "maxLevel": 25,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": -3290, "maxX": -3198, "minZ": -354, "maxZ": -258,
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

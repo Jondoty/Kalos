@@ -1,0 +1,26 @@
+{
+  "id": "Sandslash",
+  "spawnInfos": [
+    {
+      "spec": "species:Sandslash",
+      "stringLocationTypes": [
+        "Land",
+        "Sweet Scent"
+      ],
+      "minLevel": 28,
+      "maxLevel": 32,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:quick_claw",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "minX": -1088, "maxX": -1015, "minZ": -528, "maxZ": -482,
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

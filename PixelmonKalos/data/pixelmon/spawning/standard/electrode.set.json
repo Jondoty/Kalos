@@ -1,0 +1,21 @@
+{
+  "id": "Electrode",
+  "spawnInfos": [
+    {
+      "spec": "species:Electrode"
+      ,
+      "stringLocationTypes": [
+        "Land",
+        "Underground"
+      ],
+      "minLevel": 38,
+      "maxLevel": 40,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": -2667, "maxX": -2535, "minY": 62, "maxY": 71, "minZ": 822, "maxZ": 897,
+        "neededNearbyBlocks": ["minecraft:stone", "minecraft:cobblestone"]
+      },
+      "rarity": 0
+    }
+  ]
+}

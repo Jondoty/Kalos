@@ -1,0 +1,21 @@
+{
+  "id": "Spearow",
+  "spawnInfos": [
+    {
+      "spec": "species:Spearow"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 6,
+      "maxLevel": 8,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": 125, "maxX": 227, "minZ": -787, "maxZ": -688,
+        "times": [ "DAWN", "DUSK", "DAY" ],
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

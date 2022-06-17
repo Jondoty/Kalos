@@ -1,0 +1,19 @@
+{
+  "id": "Golduck",
+  "spawnInfos": [
+    {
+      "spec": "species:Golduck"
+      ,
+      "stringLocationTypes": [
+        "Water"
+      ],
+      "minLevel": 12,
+      "maxLevel": 14,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": 488, "maxX": 509, "minZ": -248, "maxZ": -200
+      },
+      "rarity": 0
+    }
+  ]
+}

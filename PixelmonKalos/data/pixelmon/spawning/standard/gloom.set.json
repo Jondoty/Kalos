@@ -1,0 +1,20 @@
+{
+  "id": "Gloom",
+  "spawnInfos": [
+    {
+      "spec": "species:Gloom"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 31,
+      "maxLevel": 35,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": 1406, "maxX": 1436, "minZ": -373, "maxZ": -349,
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

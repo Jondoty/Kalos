@@ -1,0 +1,25 @@
+{
+  "id": "Wobbuffet",
+  "spawnInfos": [
+    {
+      "spec": "species:Wobbuffet",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 23,
+      "maxLevel": 25,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:ever_stone",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+          "minX": -437, "maxX": -280, "minZ": -10, "maxZ": 128,
+          "neededNearbyBlocks": ["minecraft:stained_hardened_clay", "minecraft:hardened_clay"]
+      },
+      "rarity": 0
+    }
+  ]
+}

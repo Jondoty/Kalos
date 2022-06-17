@@ -1,0 +1,19 @@
+{
+  "id": "Poliwag",
+  "spawnInfos": [
+    {
+      "spec": "species:Poliwag"
+      ,
+      "stringLocationTypes": [
+        "Water"
+      ],
+      "minLevel": 3,
+      "maxLevel": 5,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": -243, "maxX": -223, "minZ": -413, "maxZ": -381
+      },
+      "rarity": 0
+    }
+  ]
+}

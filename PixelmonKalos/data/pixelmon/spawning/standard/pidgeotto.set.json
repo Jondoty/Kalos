@@ -1,0 +1,19 @@
+{
+  "id": "Pidgeotto",
+  "spawnInfos": [
+    {
+      "spec": "species:Pidgeotto"
+      ,
+      "stringLocationTypes": [ "Land" ],
+      "minLevel": 12,
+      "maxLevel": 15,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": 313, "maxX": 400, "minZ": 29, "maxZ": 135,
+        "times": [ "DAY" ],
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

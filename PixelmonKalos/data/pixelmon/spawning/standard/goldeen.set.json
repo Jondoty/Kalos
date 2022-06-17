@@ -1,0 +1,19 @@
+{
+  "id": "Goldeen",
+  "spawnInfos": [
+    {
+      "spec": "species:Goldeen"
+      ,
+      "stringLocationTypes": [
+        "Water"
+      ],
+      "minLevel": 14,
+      "maxLevel": 16,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": 6, "maxX": 188, "minZ": 140, "maxZ": 216
+      },
+      "rarity": 0
+    }
+  ]
+}

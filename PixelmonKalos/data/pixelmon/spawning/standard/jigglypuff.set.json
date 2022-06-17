@@ -1,0 +1,20 @@
+{
+  "id": "Jigglypuff",
+  "spawnInfos": [
+    {
+      "spec": "species:Jigglypuff"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 5,
+      "maxLevel": 10,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": -2211, "maxX": -1961, "minZ": 581, "maxZ": 690,
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

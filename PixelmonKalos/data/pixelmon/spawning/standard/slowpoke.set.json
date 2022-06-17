@@ -1,0 +1,25 @@
+{
+  "id": "Slowpoke",
+  "spawnInfos": [
+    {
+      "spec": "species:Slowpoke",
+      "stringLocationTypes": [
+        "Underground"
+      ],
+      "minLevel": 5,
+      "maxLevel": 8,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:lagging_tail",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "minX": 231, "maxX": 327, "minY": 16, "maxY": 54, "minZ": -731, "maxZ": -647,
+        "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
+      },
+      "rarity": 0
+    }
+  ]
+}

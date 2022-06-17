@@ -1,0 +1,20 @@
+{
+  "id": "Ditto",
+  "spawnInfos": [
+    {
+      "spec": "species:Ditto"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 10,
+      "maxLevel": 13,
+      "typeID": "pokemon",
+      "condition": {
+          "minX": 422, "maxX": 512, "minZ": -721, "maxZ": -488,
+          "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

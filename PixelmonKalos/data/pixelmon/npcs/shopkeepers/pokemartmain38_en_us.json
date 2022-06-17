@@ -1,0 +1,103 @@
+{
+  "data": {
+    "type": "PokemartMain"
+  },
+  "textures": [
+    {
+      "name": "lass2.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Boutique Employee"
+    }
+  ],
+  "chat": [
+    {
+      "hello": "Welcome to the Cyllage Boutique! Would you like to purchase any clothing?",
+      "goodbye": "It’s OK. Take your time."
+    }
+  ],
+  "items": [
+    {
+      "name": "minecraft:chainmail_boots",
+      "variation": false
+    },
+    {
+      "name": "minecraft:chainmail_chestplate",
+      "variation": false
+    },
+    {
+      "name": "minecraft:chainmail_helmet",
+      "variation": false
+    },
+    {
+      "name": "minecraft:chainmail_leggings",
+      "variation": false
+    },
+    {
+      "name": "minecraft:diamond_boots",
+      "variation": false
+    },
+    {
+      "name": "minecraft:diamond_chestplate",
+      "variation": false
+    },
+    {
+      "name": "minecraft:diamond_helmet",
+      "variation": false
+    },
+    {
+      "name": "minecraft:diamond_leggings",
+      "variation": false
+    },
+    {
+      "name": "minecraft:golden_boots",
+      "variation": false
+    },
+    {
+      "name": "minecraft:golden_chestplate",
+      "variation": false
+    },
+    {
+      "name": "minecraft:golden_helmet",
+      "variation": false
+    },
+    {
+      "name": "minecraft:golden_leggings",
+      "variation": false
+    },
+    {
+      "name": "minecraft:iron_boots",
+      "variation": false
+    },
+    {
+      "name": "minecraft:iron_chestplate",
+      "variation": false
+    },
+    {
+      "name": "minecraft:iron_helmet",
+      "variation": false
+    },
+    {
+      "name": "minecraft:iron_leggings",
+      "variation": false
+    },
+    {
+      "name": "minecraft:leather_boots",
+      "variation": false
+    },
+    {
+      "name": "minecraft:leather_chestplate",
+      "variation": false
+    },
+    {
+      "name": "minecraft:leather_helmet",
+      "variation": false
+    },
+    {
+      "name": "minecraft:leather_leggings",
+      "variation": false
+    }
+  ]
+}

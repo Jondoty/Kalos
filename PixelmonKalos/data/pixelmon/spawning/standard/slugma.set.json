@@ -1,0 +1,20 @@
+{
+  "id": "Slugma",
+  "spawnInfos": [
+    {
+      "spec": "species:Slugma"
+      ,
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 27,
+      "maxLevel": 32,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": -2212, "maxX": -2182, "minZ": -580, "maxZ": -561,
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

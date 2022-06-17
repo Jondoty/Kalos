@@ -1,0 +1,28 @@
+{
+  "id": "Machoke",
+  "spawnInfos": [
+    {
+      "spec": "species:Machoke"
+      ,
+      "stringLocationTypes": [
+        "Land",
+        "Underground"
+      ],
+      "minLevel": 38,
+      "maxLevel": 40,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:focus_band",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "minX": -2667, "maxX": -2535, "minY": 62, "maxY": 71, "minZ": 822, "maxZ": 897,
+        "times": [ "DAWN", "DUSK", "DAY" ],
+        "neededNearbyBlocks": ["minecraft:stone", "minecraft:cobblestone"]
+      },
+      "rarity": 0
+    }
+  ]
+}

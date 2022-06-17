@@ -1,0 +1,19 @@
+{
+  "id": "Onix",
+  "spawnInfos": [
+    {
+      "spec": "species:Onix",
+      "stringLocationTypes": [
+        "Underground"
+      ],
+      "minLevel": 4,
+      "maxLevel": 6,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": 233, "maxX": 322, "minZ": -639, "maxZ": -478,
+        "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
+      },
+      "rarity": 0
+    }
+  ]
+}

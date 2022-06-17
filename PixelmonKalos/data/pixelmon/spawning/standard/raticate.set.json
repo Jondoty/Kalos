@@ -1,0 +1,25 @@
+{
+  "id": "Raticate",
+  "spawnInfos": [
+    {
+      "spec": "species:Raticate",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 13,
+      "maxLevel": 16,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:chilan_berry",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "minX": 489, "maxX": 703, "minZ": 178, "maxZ": 292,
+        "neededNearbyBlocks": ["minecraft:grass"]
+      },
+      "rarity": 0
+    }
+  ]
+}

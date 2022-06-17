@@ -1,0 +1,21 @@
+{
+  "id": "Magmar",
+  "spawnInfos": [
+    {
+      "spec": "species:Magmar"
+      ,
+      "stringLocationTypes": [
+        "Underground"
+      ],
+      "minLevel": 14,
+      "maxLevel": 16,
+      "typeID": "pokemon",
+      "condition": {
+        "minX": 432, "maxX": 452, "minY": 56, "maxY": 62, "minZ": 309, "maxZ": 329,
+        "times": [ "DAWN", "DUSK", "NIGHT" ],
+        "neededNearbyBlocks": ["minecraft:stone"]
+      },
+      "rarity": 0
+    }
+  ]
+}
