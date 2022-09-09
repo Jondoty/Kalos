@@ -42,6 +42,31 @@
         "maxY": 70
       },
       "rarity": 0
+    },
+    {
+      "spec": "species:Nosepass",
+      "stringLocationTypes": [
+        "Land",
+        "Manmade"
+      ],
+      "minLevel": 10,
+      "maxLevel": 50,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:magnet",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "structures": [
+          "pixelmon:land_chalice"
+        ],
+        "stringBiomes": [
+          "mountainous"
+        ]
+      },
+      "rarity": 0
     }
   ]
 }

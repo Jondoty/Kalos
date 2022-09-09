@@ -2,18 +2,22 @@
   "id": "Delibird",
   "spawnInfos": [
     {
-      "spec": "species:Delibird"
-      ,
+      "spec": "species:Delibird",
       "stringLocationTypes": [
-        "Underground",
         "Land"
       ],
-      "minLevel": 22,
-      "maxLevel": 24,
+      "minLevel": 10,
+      "maxLevel": 55,
       "typeID": "pokemon",
       "condition": {
-        "minX": -872, "maxX": -587, "maxY": 59, "minZ": 299, "maxZ": 469,
-        "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "freezing mountains",
+          "mountainous"
+        ],
+        "minY": 120
       },
       "rarity": 0
     }

@@ -2,13 +2,12 @@
   "id": "Seadra",
   "spawnInfos": [
     {
-      "spec": "species:Seadra"
-      ,
+      "spec": "species:Seadra",
       "stringLocationTypes": [
-        "Underground Water"
+        "Water"
       ],
-      "minLevel": 15,
-      "maxLevel": 25,
+      "minLevel": 32,
+      "maxLevel": 40,
       "typeID": "pokemon",
       "heldItems": [
         {
@@ -17,8 +16,27 @@
         }
       ],
       "condition": {
-        "minX": 1219, "maxX": 1270, "minY": 25, "maxY": 39, "minZ": 164, "maxZ": 197
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "minecraft:ocean",
+          "minecraft:warm_ocean",
+          "minecraft:lukewarm_ocean",
+          "byg:coral_mangroves",
+          "terraforged:warm_beach"
+        ]
       },
+      "rarityMultipliers": [
+        {
+          "multiplier": 2.5,
+          "condition": {
+            "weathers": [
+              "RAIN"
+            ]
+          }
+        }
+      ],
       "rarity": 0
     }
   ]

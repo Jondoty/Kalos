@@ -2,17 +2,18 @@
   "id": "Teddiursa",
   "spawnInfos": [
     {
-      "spec": "species:Teddiursa"
-      ,
+      "spec": "species:Teddiursa",
       "stringLocationTypes": [
-        "Land"
+        "Land",
+        "Sweet Scent"
       ],
-      "minLevel": 23,
-      "maxLevel": 27,
+      "minLevel": 5,
+      "maxLevel": 29,
       "typeID": "pokemon",
       "condition": {
-        "minX": -650, "maxX": -535, "minZ": -298, "maxZ": 95,
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "stringBiomes": [
+          "all forests"
+        ]
       },
       "rarity": 0
     }

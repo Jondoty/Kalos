@@ -43,7 +43,7 @@
         "stringBiomes": [
           "minecraft:nether_wastes",
           "minecraft:basalt_deltas",
-          "niomesoplenty:crystalline_chasm",
+          "biomesoplenty:crystalline_chasm",
           "byg:warped_desert",
           "byg:wailing_garth"
         ]

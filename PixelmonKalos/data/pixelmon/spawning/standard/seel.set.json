@@ -2,16 +2,28 @@
   "id": "Seel",
   "spawnInfos": [
     {
-      "spec": "species:Seel"
-      ,
+      "spec": "species:Seel",
       "stringLocationTypes": [
-        "Water"
+        "Water",
+        "Land"
       ],
       "minLevel": 15,
-      "maxLevel": 25,
+      "maxLevel": 34,
       "typeID": "pokemon",
       "condition": {
-        "minX": 1320, "maxX": 1695, "minZ": -521, "maxZ": -218
+        "times": [
+          "DAWN",
+          "DAY"
+        ],
+        "stringBiomes": [
+          "minecraft:frozen_ocean",
+          "minecraft:deep_frozen_ocean",
+          "minecraft:snowy_beach",
+          "byg:snowy_rocky_black_beach",
+          "byg:snowy_black_beach",
+          "byg:frozen_lake",
+          "terraforged:frozen_lake"
+        ]
       },
       "rarity": 0
     }

@@ -9,6 +9,12 @@
       "minLevel": 45,
       "maxLevel": 50,
       "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:lustrous_globe",
+          "percentChance": 5
+        }
+      ],
       "condition": {
         "neededNearbyBlocks": [
           "pixelmon:ice_rock"

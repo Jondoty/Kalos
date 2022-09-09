@@ -75,6 +75,30 @@
         }
       ],
       "rarity": 0
+    },
+    {
+      "spec": "species:Bronzor",
+      "stringLocationTypes": [
+        "Manmade"
+      ],
+      "minLevel": 20,
+      "maxLevel": 30,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:metal_coat",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "structures": [
+          "pixelmon:spear_pillar"
+        ],
+        "stringBiomes": [
+          "arid"
+        ]
+      },
+      "rarity": 0
     }
   ]
 }

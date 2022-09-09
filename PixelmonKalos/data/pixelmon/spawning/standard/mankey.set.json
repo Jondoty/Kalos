@@ -2,17 +2,35 @@
   "id": "Mankey",
   "spawnInfos": [
     {
-      "spec": "species:Mankey"
-      ,
+      "spec": "species:Mankey",
       "stringLocationTypes": [
-        "Land"
+        "Tree Top",
+        "Headbutt"
       ],
-      "minLevel": 14,
-      "maxLevel": 16,
+      "minLevel": 10,
+      "maxLevel": 28,
       "typeID": "pokemon",
       "condition": {
-          "minX": -59, "maxX": -4, "minZ": 154, "maxZ": 177,
-          "neededNearbyBlocks": ["minecraft:grass"]
+        "stringBiomes": [
+          "jungles",
+          "byg:crag_gardens"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Mankey palette:pink",
+      "stringLocationTypes": [
+        "Tree Top"
+      ],
+      "minLevel": 10,
+      "maxLevel": 28,
+      "typeID": "pokemon",
+      "condition": {
+        "stringBiomes": [
+          "jungles",
+          "byg:crag_gardens"
+        ]
       },
       "rarity": 0
     }

@@ -2,17 +2,70 @@
   "id": "Arbok",
   "spawnInfos": [
     {
-      "spec": "species:Arbok"
-      ,
+      "spec": "species:Arbok",
       "stringLocationTypes": [
         "Land"
       ],
-      "minLevel": 28,
-      "maxLevel": 32,
+      "minLevel": 22,
+      "maxLevel": 50,
       "typeID": "pokemon",
       "condition": {
-        "minX": -1088, "maxX": -1015, "minZ": -528, "maxZ": -482,
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "stringBiomes": [
+          "plains",
+          "savannas",
+          "swamps",
+          "evil"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Arbok palette:main_circular",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 22,
+      "maxLevel": 50,
+      "typeID": "pokemon",
+      "condition": {
+        "stringBiomes": [
+          "savannas"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Arbok palette:secondary_circular",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 22,
+      "maxLevel": 50,
+      "typeID": "pokemon",
+      "condition": {
+        "stringBiomes": [
+          "swamps"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Arbok palette:dark",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 22,
+      "maxLevel": 50,
+      "typeID": "pokemon",
+      "condition": {
+        "stringBiomes": [
+          "evil",
+          "minecraft:crimson_forest",
+          "minecraft:warped_forest",
+          "biomesoplenty:undergrowth",
+          "byg:crimson_gardens",
+          "byg:withering_woods"
+        ]
       },
       "rarity": 0
     }

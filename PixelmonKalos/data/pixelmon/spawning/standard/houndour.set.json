@@ -2,18 +2,38 @@
   "id": "Houndour",
   "spawnInfos": [
     {
-      "spec": "species:Houndour"
-      ,
+      "spec": "species:Houndour",
       "stringLocationTypes": [
         "Land"
       ],
-      "minLevel": 15,
-      "maxLevel": 19,
+      "minLevel": 5,
+      "maxLevel": 23,
       "typeID": "pokemon",
       "condition": {
-        "minX": -2611, "maxX": -2570, "minZ": 349, "maxZ": 379,
-        "times": [ "NIGHT" ],
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "arid",
+          "mesas",
+          "biomesoplenty:volcano",
+          "biomesoplenty:volcanic_plains"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Houndour",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 5,
+      "maxLevel": 23,
+      "typeID": "pokemon",
+      "condition": {
+        "stringBiomes": [
+          "hellish"
+        ]
       },
       "rarity": 0
     }

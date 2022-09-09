@@ -18,7 +18,8 @@
           "minecraft:lukewarm_ocean",
           "minecraft:deep_lukewarm_ocean",
           "minecraft:river",
-          "lakes"
+          "lakes",
+          "terraforged:warm_beach"
         ]
       },
       "rarity": 0

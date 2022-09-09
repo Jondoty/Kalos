@@ -51,6 +51,71 @@
         ]
       },
       "rarity": 0
+    },
+    {
+      "spec": "species:Aegislash",
+      "stringLocationTypes": [
+        "Indoors",
+        "Land"
+      ],
+      "minLevel": 50,
+      "maxLevel": 62,
+      "typeID": "pokemon",
+      "condition": {
+        "structures": [
+          "pixelmon:haunted_tower"
+        ],
+        "times": [
+          "MIDNIGHT"
+        ],
+        "stringBiomes": [
+          "roofed"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Aegislash boss:haunted",
+      "stringLocationTypes": [
+        "Indoors",
+        "Land"
+      ],
+      "minLevel": 50,
+      "maxLevel": 62,
+      "typeID": "pokemon",
+      "condition": {
+        "structures": [
+          "pixelmon:haunted_tower"
+        ],
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "roofed"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Aegislash",
+      "stringLocationTypes": [
+        "Manmade"
+      ],
+      "minLevel": 50,
+      "maxLevel": 62,
+      "typeID": "pokemon",
+      "condition": {
+        "structures": [
+          "pixelmon:land_chalice"
+        ],
+        "times": [
+          "MIDNIGHT"
+        ],
+        "stringBiomes": [
+          "mountainous"
+        ]
+      },
+      "rarity": 0
     }
   ]
 }

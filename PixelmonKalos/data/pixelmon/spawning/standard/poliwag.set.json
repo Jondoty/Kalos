@@ -2,16 +2,50 @@
   "id": "Poliwag",
   "spawnInfos": [
     {
-      "spec": "species:Poliwag"
-      ,
+      "spec": "species:Poliwag",
       "stringLocationTypes": [
         "Water"
       ],
-      "minLevel": 3,
-      "maxLevel": 5,
+      "minLevel": 10,
+      "maxLevel": 25,
       "typeID": "pokemon",
       "condition": {
-        "minX": -243, "maxX": -223, "minZ": -413, "maxZ": -381
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "swamps",
+          "minecraft:river",
+          "lakes"
+        ]
+      },
+      "rarityMultipliers": [
+        {
+          "multiplier": 2,
+          "condition": {
+            "weathers": [
+              "RAIN"
+            ]
+          }
+        }
+      ],
+      "rarity": 0
+    },
+    {
+      "spec": "species:Poliwag palette:valencian",
+      "stringLocationTypes": [
+        "Water"
+      ],
+      "minLevel": 10,
+      "maxLevel": 25,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "jungles"
+        ]
       },
       "rarity": 0
     }

@@ -6,8 +6,8 @@
       "stringLocationTypes": [
         "Land"
       ],
-      "minLevel": 13,
-      "maxLevel": 16,
+      "minLevel": 10,
+      "maxLevel": 28,
       "typeID": "pokemon",
       "heldItems": [
         {
@@ -16,10 +16,97 @@
         }
       ],
       "condition": {
-        "minX": 489, "maxX": 703, "minZ": 178, "maxZ": 292,
-        "times": [ "DAWN", "DUSK", "DAY" ],
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "DAWN",
+          "DAY"
+        ],
+        "stringBiomes": [
+          "plains"
+        ]
       },
+      "rarityMultipliers": [
+        {
+          "multiplier": 1.5,
+          "condition": {
+            "neededNearbyBlocks": [
+              "minecraft:grass_path"
+            ]
+          }
+        }
+      ],
+      "rarity": 0
+    },
+    {
+      "spec": "species:Meowth form:alolan",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 10,
+      "maxLevel": 28,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:quick_claw",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "times": [
+          "DUSK",
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "plains"
+        ]
+      },
+      "rarityMultipliers": [
+        {
+          "multiplier": 1.5,
+          "condition": {
+            "neededNearbyBlocks": [
+              "minecraft:grass_path"
+            ]
+          }
+        }
+      ],
+      "rarity": 0
+    },
+    {
+      "spec": "species:Meowth form:galarian",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 10,
+      "maxLevel": 28,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:quick_claw",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "minecraft:snowy_tundra",
+          "freezing mountains",
+          "biomesoplenty:tundra",
+          "biomesoplenty:tundra_basin",
+          "biomesoplenty:tundra_bog"
+        ]
+      },
+      "rarityMultipliers": [
+        {
+          "multiplier": 1.5,
+          "condition": {
+            "neededNearbyBlocks": [
+              "minecraft:grass_path"
+            ]
+          }
+        }
+      ],
       "rarity": 0
     }
   ]

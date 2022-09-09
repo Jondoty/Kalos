@@ -7,18 +7,52 @@
         "Land",
         "Sweet Scent"
       ],
-      "minLevel": 28,
-      "maxLevel": 32,
+      "minLevel": 22,
+      "maxLevel": 50,
       "typeID": "pokemon",
       "heldItems": [
         {
-          "itemID": "pixelmon:quick_claw",
+          "itemID": "pixelmon:grip_claw",
           "percentChance": 5
         }
       ],
       "condition": {
-        "minX": -1088, "maxX": -1015, "minZ": -528, "maxZ": -482,
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "arid",
+          "mesas"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Sandslash form:alolan",
+      "stringLocationTypes": [
+        "Land",
+        "Sweet Scent"
+      ],
+      "minLevel": 22,
+      "maxLevel": 50,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:grip_claw",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "freezing mountains",
+          "minecraft:snowy_tundra",
+          "minecraft:ice_spikes",
+          "biomesoplenty:cold_desert",
+          "byg:shattered_glacier"
+        ]
       },
       "rarity": 0
     }

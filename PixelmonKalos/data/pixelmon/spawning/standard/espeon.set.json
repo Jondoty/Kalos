@@ -9,6 +9,12 @@
       "minLevel": 35,
       "maxLevel": 50,
       "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:lustrous_globe",
+          "percentChance": 5
+        }
+      ],
       "condition": {
         "times": [
           "MORNING"
@@ -28,6 +34,12 @@
       "minLevel": 35,
       "maxLevel": 50,
       "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:lustrous_globe",
+          "percentChance": 5
+        }
+      ],
       "condition": {
         "times": [
           "NIGHT"

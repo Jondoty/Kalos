@@ -74,6 +74,34 @@
         ]
       },
       "rarity": 0
+    },
+    {
+      "spec": "species:Metagross",
+      "stringLocationTypes": [
+        "Land",
+        "Manmade"
+      ],
+      "minLevel": 50,
+      "maxLevel": 60,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:metal_coat",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "structures": [
+          "pixelmon:land_chalice"
+        ],
+        "times": [
+          "MIDDAY"
+        ],
+        "stringBiomes": [
+          "mountainous"
+        ]
+      },
+      "rarity": 0
     }
   ]
 }

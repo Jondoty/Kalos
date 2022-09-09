@@ -1,17 +1,58 @@
 {
   "id": "Sandshrew",
   "spawnInfos": [
-{
+    {
       "spec": "species:Sandshrew",
       "stringLocationTypes": [
-        "Underground"
+        "Land",
+        "Sweet Scent"
       ],
-      "minLevel": 6,
-      "maxLevel": 12,
+      "minLevel": 12,
+      "maxLevel": 22,
       "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:grip_claw",
+          "percentChance": 5
+        }
+      ],
       "condition": {
-        "minX": -2261, "maxX": -2159, "minZ": 769, "maxZ": 853,
-        "neededNearbyBlocks": ["minecraft:stone", "minecraft:sand"]
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "arid",
+          "mesas"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Sandshrew form:alolan",
+      "stringLocationTypes": [
+        "Land",
+        "Sweet Scent"
+      ],
+      "minLevel": 12,
+      "maxLevel": 22,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:grip_claw",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "freezing mountains",
+          "minecraft:snowy_tundra",
+          "minecraft:ice_spikes",
+          "biomesoplenty:cold_desert",
+          "byg:shattered_glacier"
+        ]
       },
       "rarity": 0
     }

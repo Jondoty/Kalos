@@ -2,18 +2,23 @@
   "id": "Spinarak",
   "spawnInfos": [
     {
-      "spec": "species:Spinarak"
-      ,
+      "spec": "species:Spinarak",
       "stringLocationTypes": [
-        "Land"
+        "Land",
+        "Headbutt"
       ],
-      "minLevel": 2,
-      "maxLevel": 4,
+      "minLevel": 5,
+      "maxLevel": 21,
       "typeID": "pokemon",
       "condition": {
-        "minX": -263, "maxX": -137, "minZ": -458, "maxZ": -188,
-        "times": [ "NIGHT" ],
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "all forests",
+          "evil",
+          "byg:crag_gardens"
+        ]
       },
       "rarity": 0
     }

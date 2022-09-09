@@ -72,6 +72,34 @@
         ]
       },
       "rarity": 0
+    },
+    {
+      "spec": "species:Metang",
+      "stringLocationTypes": [
+        "Land",
+        "Manmade"
+      ],
+      "minLevel": 20,
+      "maxLevel": 44,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:metal_coat",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "structures": [
+          "pixelmon:land_chalice"
+        ],
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "mountainous"
+        ]
+      },
+      "rarity": 0
     }
   ]
 }

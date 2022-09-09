@@ -28,6 +28,30 @@
     {
       "spec": "species:Golett",
       "stringLocationTypes": [
+        "Manmade"
+      ],
+      "minLevel": 10,
+      "maxLevel": 43,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:light_clay",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "structures": [
+          "pixelmon:spear_pillar"
+        ],
+        "stringBiomes": [
+          "arid"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Golett",
+      "stringLocationTypes": [
         "Underground"
       ],
       "minLevel": 10,

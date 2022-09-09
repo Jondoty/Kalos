@@ -37,6 +37,28 @@
         ]
       },
       "rarity": 0
+    },
+    {
+      "spec": "species:Sigilyph",
+      "stringLocationTypes": [
+        "Manmade"
+      ],
+      "minLevel": 25,
+      "maxLevel": 40,
+      "typeID": "pokemon",
+      "condition": {
+        "structures": [
+          "pixelmon:spear_pillar"
+        ],
+        "times": [
+          "DAWN",
+          "DUSK"
+        ],
+        "stringBiomes": [
+          "arid"
+        ]
+      },
+      "rarity": 0
     }
   ]
 }

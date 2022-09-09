@@ -24,7 +24,8 @@
         "stringBiomes": [
           "minecraft:warm_ocean",
           "minecraft:lukewarm_ocean",
-          "byg:coral_mangroves"
+          "byg:coral_mangroves",
+          "terraforged:warm_beach"
         ]
       },
       "rarity": 0

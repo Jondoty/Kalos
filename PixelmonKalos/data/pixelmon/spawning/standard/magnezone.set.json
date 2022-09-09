@@ -36,6 +36,34 @@
         }
       ],
       "rarity": 0
+    },
+    {
+      "spec": "species:Magnezone",
+      "stringLocationTypes": [
+        "Land",
+        "Manmade"
+      ],
+      "minLevel": 35,
+      "maxLevel": 50,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:metal_coat",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "structures": [
+          "pixelmon:land_chalice"
+        ],
+        "times": [
+          "MIDDAY"
+        ],
+        "stringBiomes": [
+          "mountainous"
+        ]
+      },
+      "rarity": 0
     }
   ]
 }

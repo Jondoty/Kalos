@@ -22,6 +22,25 @@
         "maxY": 40
       },
       "rarity": 0
+    },
+    {
+      "spec": "species:Skrelp",
+      "stringLocationTypes": [
+        "Water",
+        "Underground Water"
+      ],
+      "minLevel": 33,
+      "maxLevel": 47,
+      "typeID": "pokemon",
+      "condition": {
+        "structures": [
+          "pixelmon:water_chalice"
+        ],
+        "stringBiomes": [
+          "oceanic"
+        ]
+      },
+      "rarity": 0
     }
   ]
 }

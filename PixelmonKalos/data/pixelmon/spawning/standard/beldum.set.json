@@ -49,7 +49,7 @@
         ],
         "minY": 90
       },
-      "rarity": 0
+      "rarity": 9.0
     },
     {
       "spec": "species:Beldum",
@@ -71,7 +71,7 @@
           "minecraft:end_barrens"
         ]
       },
-      "rarity": 0
+      "rarity": 9.0
     },
     {
       "spec": "species:Beldum",
@@ -89,6 +89,31 @@
       ],
       "condition": {
         "maxY": 40
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Beldum",
+      "stringLocationTypes": [
+        "Land",
+        "Manmade"
+      ],
+      "minLevel": 5,
+      "maxLevel": 20,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:metal_coat",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "structures": [
+          "pixelmon:land_chalice"
+        ],
+        "stringBiomes": [
+          "mountainous"
+        ]
       },
       "rarity": 0
     }

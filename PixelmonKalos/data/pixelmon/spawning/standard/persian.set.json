@@ -6,8 +6,8 @@
       "stringLocationTypes": [
         "Land"
       ],
-      "minLevel": 15,
-      "maxLevel": 19,
+      "minLevel": 28,
+      "maxLevel": 50,
       "typeID": "pokemon",
       "heldItems": [
         {
@@ -16,9 +16,59 @@
         }
       ],
       "condition": {
-        "minX": -2611, "maxX": -2570, "minZ": 349, "maxZ": 379,
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "DAWN",
+          "DAY"
+        ],
+        "stringBiomes": [
+          "plains"
+        ]
       },
+      "rarityMultipliers": [
+        {
+          "multiplier": 1.5,
+          "condition": {
+            "neededNearbyBlocks": [
+              "minecraft:grass_path"
+            ]
+          }
+        }
+      ],
+      "rarity": 0
+    },
+    {
+      "spec": "species:Persian form:alolan",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 28,
+      "maxLevel": 50,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:quick_claw",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "times": [
+          "DUSK",
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "plains"
+        ]
+      },
+      "rarityMultipliers": [
+        {
+          "multiplier": 1.5,
+          "condition": {
+            "neededNearbyBlocks": [
+              "minecraft:grass_path"
+            ]
+          }
+        }
+      ],
       "rarity": 0
     }
   ]

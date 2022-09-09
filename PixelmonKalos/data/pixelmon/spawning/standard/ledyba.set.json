@@ -2,18 +2,25 @@
   "id": "Ledyba",
   "spawnInfos": [
     {
-      "spec": "species:Ledyba"
-      ,
+      "spec": "species:Ledyba",
       "stringLocationTypes": [
-        "Land"
+        "Air",
+        "Headbutt",
+        "Sweet Scent"
       ],
-      "minLevel": 2,
-      "maxLevel": 4,
+      "minLevel": 5,
+      "maxLevel": 17,
       "typeID": "pokemon",
       "condition": {
-        "minX": -263, "maxX": -137, "minZ": -458, "maxZ": -188,
-        "times": [ "DAWN", "DUSK" ],
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "MORNING"
+        ],
+        "stringBiomes": [
+          "forests",
+          "birches",
+          "flowery",
+          "magical"
+        ]
       },
       "rarity": 0
     }

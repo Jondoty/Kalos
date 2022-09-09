@@ -18,7 +18,8 @@
           "minecraft:lukewarm_ocean",
           "minecraft:deep_lukewarm_ocean",
           "beaches",
-          "byg:coral_mangroves"
+          "byg:coral_mangroves",
+          "terraforged:warm_beach"
         ]
       },
       "rarity": 0

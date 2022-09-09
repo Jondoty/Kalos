@@ -2,14 +2,12 @@
   "id": "Machoke",
   "spawnInfos": [
     {
-      "spec": "species:Machoke"
-      ,
+      "spec": "species:Machoke",
       "stringLocationTypes": [
-        "Land",
-        "Underground"
+        "Land"
       ],
-      "minLevel": 38,
-      "maxLevel": 40,
+      "minLevel": 28,
+      "maxLevel": 39,
       "typeID": "pokemon",
       "heldItems": [
         {
@@ -18,9 +16,13 @@
         }
       ],
       "condition": {
-        "minX": -2667, "maxX": -2535, "minY": 62, "maxY": 71, "minZ": 822, "maxZ": 897,
-        "times": [ "DAWN", "DUSK", "DAY" ],
-        "neededNearbyBlocks": ["minecraft:stone", "minecraft:cobblestone"]
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "mountainous"
+        ],
+        "maxY": 80
       },
       "rarity": 0
     }

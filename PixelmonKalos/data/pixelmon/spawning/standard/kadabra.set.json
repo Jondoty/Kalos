@@ -2,13 +2,12 @@
   "id": "Kadabra",
   "spawnInfos": [
     {
-      "spec": "species:Kadabra"
-      ,
+      "spec": "species:Kadabra",
       "stringLocationTypes": [
         "Land"
       ],
-      "minLevel": 15,
-      "maxLevel": 19,
+      "minLevel": 16,
+      "maxLevel": 26,
       "typeID": "pokemon",
       "heldItems": [
         {
@@ -17,8 +16,10 @@
         }
       ],
       "condition": {
-        "minX": -3103, "maxX": -3034, "minZ": 293, "maxZ": 344,
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "stringBiomes": [
+          "forests",
+          "end"
+        ]
       },
       "rarity": 0
     }

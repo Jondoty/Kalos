@@ -2,17 +2,59 @@
   "id": "Nidorina",
   "spawnInfos": [
     {
-      "spec": "species:Nidorina"
-      ,
+      "spec": "species:Nidorina",
       "stringLocationTypes": [
         "Land"
       ],
-      "minLevel": 22,
+      "minLevel": 16,
       "maxLevel": 25,
       "typeID": "pokemon",
       "condition": {
-        "minX": -3290, "maxX": -3198, "minZ": -354, "maxZ": -258,
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "AFTERNOON",
+          "DUSK"
+        ],
+        "stringBiomes": [
+          "savannas"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Nidorina palette:valencian",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 16,
+      "maxLevel": 25,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "AFTERNOON",
+          "DUSK"
+        ],
+        "stringBiomes": [
+          "jungles"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Nidorina palette:pink",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 16,
+      "maxLevel": 25,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "AFTERNOON",
+          "DUSK"
+        ],
+        "stringBiomes": [
+          "savannas"
+        ]
       },
       "rarity": 0
     }

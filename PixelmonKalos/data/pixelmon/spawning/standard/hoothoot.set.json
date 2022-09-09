@@ -2,18 +2,50 @@
   "id": "Hoothoot",
   "spawnInfos": [
     {
-      "spec": "species:Hoothoot"
-      ,
+      "spec": "species:Hoothoot",
       "stringLocationTypes": [
-        "Land"
+        "Tree Top",
+        "Headbutt",
+        "Sweet Scent"
       ],
-      "minLevel": 2,
-      "maxLevel": 4,
+      "minLevel": 5,
+      "maxLevel": 19,
       "typeID": "pokemon",
       "condition": {
-        "minX": -623, "maxX": -324, "minZ": -583, "maxZ": -477,
-        "times": [ "NIGHT" ],
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "all forests",
+          "freezing forests",
+          "magical",
+          "biomesoplenty:tundra",
+          "biomesoplenty:tundra_basin",
+          "biomesoplenty:tundra_bog"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Hoothoot",
+      "stringLocationTypes": [
+        "Air"
+      ],
+      "minLevel": 5,
+      "maxLevel": 19,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "all forests",
+          "freezing forests",
+          "magical",
+          "biomesoplenty:tundra",
+          "biomesoplenty:tundra_basin",
+          "biomesoplenty:tundra_bog"
+        ]
       },
       "rarity": 0
     }

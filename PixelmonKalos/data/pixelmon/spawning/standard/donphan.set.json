@@ -2,17 +2,24 @@
   "id": "Donphan",
   "spawnInfos": [
     {
-      "spec": "species:Donphan"
-      ,
+      "spec": "species:Donphan",
       "stringLocationTypes": [
-        "Land"
+        "Land",
+        "Sweet Scent"
       ],
-      "minLevel": 39,
-      "maxLevel": 43,
+      "minLevel": 25,
+      "maxLevel": 50,
       "typeID": "pokemon",
       "condition": {
-        "minX": -1188, "maxX": -906, "minZ": -11, "maxZ": 84,
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "mountainous",
+          "minecraft:shattered_savanna",
+          "minecraft:shattered_savanna_plateau"
+        ],
+        "maxY": 100
       },
       "rarity": 0
     }

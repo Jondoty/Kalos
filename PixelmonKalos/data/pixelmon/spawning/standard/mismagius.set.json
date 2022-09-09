@@ -47,6 +47,50 @@
         ]
       },
       "rarity": 0
+    },
+    {
+      "spec": "species:Mismagius",
+      "stringLocationTypes": [
+        "Indoors",
+        "Land"
+      ],
+      "minLevel": 31,
+      "maxLevel": 55,
+      "typeID": "pokemon",
+      "condition": {
+        "structures": [
+          "pixelmon:haunted_tower"
+        ],
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "roofed"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Mismagius boss:haunted",
+      "stringLocationTypes": [
+        "Indoors",
+        "Land"
+      ],
+      "minLevel": 31,
+      "maxLevel": 55,
+      "typeID": "pokemon",
+      "condition": {
+        "structures": [
+          "pixelmon:haunted_tower"
+        ],
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "roofed"
+        ]
+      },
+      "rarity": 0
     }
   ]
 }

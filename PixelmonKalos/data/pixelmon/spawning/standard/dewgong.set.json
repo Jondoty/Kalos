@@ -2,18 +2,28 @@
   "id": "Dewgong",
   "spawnInfos": [
     {
-      "spec": "species:Dewgong"
-      ,
+      "spec": "species:Dewgong",
       "stringLocationTypes": [
-        "Land",
-        "Underground"
+        "Water",
+        "Land"
       ],
-      "minLevel": 31,
-      "maxLevel": 36,
+      "minLevel": 34,
+      "maxLevel": 50,
       "typeID": "pokemon",
       "condition": {
-        "minX": -2128, "maxX": -2022, "minY": 25, "maxY": 32, "minZ": -889, "maxZ": -825,
-        "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
+        "times": [
+          "DAWN",
+          "DAY"
+        ],
+        "stringBiomes": [
+          "minecraft:frozen_ocean",
+          "minecraft:deep_frozen_ocean",
+          "minecraft:snowy_beach",
+          "byg:snowy_rocky_black_beach",
+          "byg:snowy_black_beach",
+          "byg:frozen_lake",
+          "terraforged:frozen_lake"
+        ]
       },
       "rarity": 0
     }

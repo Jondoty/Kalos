@@ -65,6 +65,25 @@
         ]
       },
       "rarity": 0
+    },
+    {
+      "spec": "species:Gyarados",
+      "stringLocationTypes": [
+        "Water",
+        "Underground Water"
+      ],
+      "minLevel": 20,
+      "maxLevel": 50,
+      "typeID": "pokemon",
+      "condition": {
+        "structures": [
+          "pixelmon:water_chalice"
+        ],
+        "stringBiomes": [
+          "oceanic"
+        ]
+      },
+      "rarity": 0
     }
   ]
 }

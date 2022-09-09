@@ -2,17 +2,26 @@
   "id": "Ekans",
   "spawnInfos": [
     {
-      "spec": "species:Ekans"
-      ,
+      "spec": "species:Ekans",
       "stringLocationTypes": [
-        "Land"
+        "Land",
+        "Headbutt"
       ],
-      "minLevel": 4,
-      "maxLevel": 6,
+      "minLevel": 10,
+      "maxLevel": 22,
       "typeID": "pokemon",
       "condition": {
-        "minX": 80, "maxX": 203, "minZ": -548, "maxZ": -232,
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "stringBiomes": [
+          "plains",
+          "savannas",
+          "swamps",
+          "evil",
+          "minecraft:crimson_forest",
+          "minecraft:warped_forest",
+          "biomesoplenty:undergrowth",
+          "byg:crimson_gardens",
+          "byg:withering_woods"
+        ]
       },
       "rarity": 0
     }

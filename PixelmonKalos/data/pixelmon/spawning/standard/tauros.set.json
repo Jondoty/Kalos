@@ -2,17 +2,22 @@
   "id": "Tauros",
   "spawnInfos": [
     {
-      "spec": "species:Tauros"
-      ,
+      "spec": "species:Tauros",
       "stringLocationTypes": [
         "Land"
       ],
       "minLevel": 15,
-      "maxLevel": 20,
+      "maxLevel": 50,
       "typeID": "pokemon",
       "condition": {
-        "minX": 489, "maxX": 703, "minZ": 178, "maxZ": 292,
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "DAWN",
+          "MORNING"
+        ],
+        "stringBiomes": [
+          "savannas",
+          "plains"
+        ]
       },
       "rarity": 0
     }

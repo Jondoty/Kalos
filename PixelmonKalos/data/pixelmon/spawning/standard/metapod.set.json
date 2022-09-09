@@ -2,18 +2,74 @@
   "id": "Metapod",
   "spawnInfos": [
     {
-      "spec": "species:Metapod"
-      ,
+      "spec": "species:Metapod",
       "stringLocationTypes": [
-        "Land"
+        "Land",
+        "Headbutt",
+        "Tree Top"
       ],
-      "minLevel": 3,
-      "maxLevel": 4,
+      "minLevel": 7,
+      "maxLevel": 10,
       "typeID": "pokemon",
       "condition": {
-        "minX": -263, "maxX": -137, "minZ": -458, "maxZ": -188,
-        "times": [ "DAWN", "DUSK" ],
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "DAWN",
+          "MORNING"
+        ],
+        "stringBiomes": [
+          "forests",
+          "roofed",
+          "birches",
+          "flowery",
+          "jungles",
+          "byg:crag_gardens",
+          "magical"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Metapod palette:pink",
+      "stringLocationTypes": [
+        "Land",
+        "Tree Top"
+      ],
+      "minLevel": 7,
+      "maxLevel": 10,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "DAWN",
+          "MORNING"
+        ],
+        "stringBiomes": [
+          "forests",
+          "roofed",
+          "birches",
+          "flowery",
+          "byg:crag_gardens",
+          "magical"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Metapod palette:valencian",
+      "stringLocationTypes": [
+        "Land",
+        "Tree Top"
+      ],
+      "minLevel": 7,
+      "maxLevel": 10,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "DAWN",
+          "MORNING"
+        ],
+        "stringBiomes": [
+          "jungles"
+        ]
       },
       "rarity": 0
     }

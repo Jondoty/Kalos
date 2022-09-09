@@ -35,6 +35,24 @@
         ]
       },
       "rarity": 0
+    },
+    {
+      "spec": "species:Unown",
+      "stringLocationTypes": [
+        "Manmade"
+      ],
+      "minLevel": 5,
+      "maxLevel": 50,
+      "typeID": "pokemon",
+      "condition": {
+        "structures": [
+          "pixelmon:spear_pillar"
+        ],
+        "stringBiomes": [
+          "arid"
+        ]
+      },
+      "rarity": 0
     }
   ]
 }

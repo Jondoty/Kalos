@@ -2,13 +2,12 @@
   "id": "Dodrio",
   "spawnInfos": [
     {
-      "spec": "species:Dodrio"
-      ,
+      "spec": "species:Dodrio",
       "stringLocationTypes": [
         "Land"
       ],
-      "minLevel": 28,
-      "maxLevel": 32,
+      "minLevel": 31,
+      "maxLevel": 50,
       "typeID": "pokemon",
       "heldItems": [
         {
@@ -17,9 +16,38 @@
         }
       ],
       "condition": {
-        "minX": -1088, "maxX": -1015, "minZ": -528, "maxZ": -482,
-        "times": [ "DAWN", "DUSK", "DAY" ],
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "DAY",
+          "DAWN"
+        ],
+        "stringBiomes": [
+          "savannas"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Dodrio palette:pink",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 31,
+      "maxLevel": 50,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:sharp_beak",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "times": [
+          "DAY",
+          "DAWN"
+        ],
+        "stringBiomes": [
+          "savannas"
+        ]
       },
       "rarity": 0
     }

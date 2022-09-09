@@ -2,17 +2,33 @@
   "id": "Psyduck",
   "spawnInfos": [
     {
-      "spec": "species:Psyduck"
-      ,
+      "spec": "species:Psyduck",
       "stringLocationTypes": [
-        "Water"
+        "Land"
       ],
-      "minLevel": 12,
-      "maxLevel": 14,
+      "minLevel": 5,
+      "maxLevel": 33,
       "typeID": "pokemon",
       "condition": {
-        "minX": 488, "maxX": 509, "minZ": -248, "maxZ": -200
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "swamps",
+          "minecraft:river",
+          "lakes"
+        ]
       },
+      "rarityMultipliers": [
+        {
+          "multiplier": 1.5,
+          "condition": {
+            "weathers": [
+              "RAIN"
+            ]
+          }
+        }
+      ],
       "rarity": 0
     }
   ]

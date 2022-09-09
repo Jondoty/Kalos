@@ -29,11 +29,36 @@
           "multiplier": 1.5,
           "condition": {
             "neededNearbyBlocks": [
-              "minecraft:tall_grass_path"
+              "minecraft:grass_path"
             ]
           }
         }
       ],
+      "rarity": 0
+    },
+    {
+      "spec": "species:Shuppet",
+      "stringLocationTypes": [
+        "Indoors",
+        "Land"
+      ],
+      "minLevel": 15,
+      "maxLevel": 31,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:spell_tag",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "structures": [
+          "pixelmon:haunted_tower"
+        ],
+        "stringBiomes": [
+          "roofed"
+        ]
+      },
       "rarity": 0
     }
   ]

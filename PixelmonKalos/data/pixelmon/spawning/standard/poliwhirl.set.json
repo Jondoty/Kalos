@@ -2,13 +2,12 @@
   "id": "Poliwhirl",
   "spawnInfos": [
     {
-      "spec": "species:Poliwhirl"
-      ,
+      "spec": "species:Poliwhirl",
       "stringLocationTypes": [
-        "Water"
+        "Land"
       ],
-      "minLevel": 3,
-      "maxLevel": 5,
+      "minLevel": 25,
+      "maxLevel": 45,
       "typeID": "pokemon",
       "heldItems": [
         {
@@ -17,8 +16,25 @@
         }
       ],
       "condition": {
-        "minX": -243, "maxX": -223, "minZ": -413, "maxZ": -381
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "swamps",
+          "minecraft:river",
+          "lakes"
+        ]
       },
+      "rarityMultipliers": [
+        {
+          "multiplier": 2,
+          "condition": {
+            "weathers": [
+              "RAIN"
+            ]
+          }
+        }
+      ],
       "rarity": 0
     }
   ]

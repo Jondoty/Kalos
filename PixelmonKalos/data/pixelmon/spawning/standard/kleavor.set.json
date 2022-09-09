@@ -9,6 +9,12 @@
       "minLevel": 30,
       "maxLevel": 50,
       "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:black_augurite",
+          "percentChance": 5
+        }
+      ],
       "condition": {
         "times": [
           "MORNING"

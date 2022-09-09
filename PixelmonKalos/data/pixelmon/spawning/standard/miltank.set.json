@@ -2,13 +2,12 @@
   "id": "Miltank",
   "spawnInfos": [
     {
-      "spec": "species:Miltank"
-      ,
+      "spec": "species:Miltank",
       "stringLocationTypes": [
         "Land"
       ],
-      "minLevel": 13,
-      "maxLevel": 16,
+      "minLevel": 5,
+      "maxLevel": 15,
       "typeID": "pokemon",
       "heldItems": [
         {
@@ -17,8 +16,14 @@
         }
       ],
       "condition": {
-        "minX": 489, "maxX": 703, "minZ": 178, "maxZ": 292,
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "DAWN",
+          "DAY",
+          "DUSK"
+        ],
+        "stringBiomes": [
+          "plains"
+        ]
       },
       "rarity": 0
     }

@@ -2,13 +2,12 @@
   "id": "Tentacool",
   "spawnInfos": [
     {
-      "spec": "species:Tentacool"
-      ,
+      "spec": "species:Tentacool",
       "stringLocationTypes": [
         "Water"
       ],
-      "minLevel": 1,
-      "maxLevel": 3,
+      "minLevel": 8,
+      "maxLevel": 30,
       "typeID": "pokemon",
       "heldItems": [
         {
@@ -17,7 +16,14 @@
         }
       ],
       "condition": {
-        "minX": -898, "maxX": -747, "minZ": -560, "maxZ": -483
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "oceanic",
+          "terraforged:warm_beach"
+        ],
+        "minY": 50
       },
       "rarity": 0
     }

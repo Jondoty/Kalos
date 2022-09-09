@@ -2,18 +2,76 @@
   "id": "Caterpie",
   "spawnInfos": [
     {
-      "spec": "species:Caterpie"
-      ,
+      "spec": "species:Caterpie",
       "stringLocationTypes": [
-        "Land"
+        "Land",
+        "Headbutt",
+        "Sweet Scent",
+        "Tree Top",
+        "Forage"
       ],
-      "minLevel": 3,
-      "maxLevel": 4,
+      "minLevel": 2,
+      "maxLevel": 7,
       "typeID": "pokemon",
       "condition": {
-        "minX": -263, "maxX": -137, "minZ": -458, "maxZ": -188,
-        "times": [ "DAWN", "DUSK" ],
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "DAWN",
+          "MORNING"
+        ],
+        "stringBiomes": [
+          "forests",
+          "roofed",
+          "birches",
+          "flowery",
+          "jungles",
+          "byg:crag_gardens",
+          "magical"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Caterpie palette:pink",
+      "stringLocationTypes": [
+        "Land",
+        "Tree Top"
+      ],
+      "minLevel": 2,
+      "maxLevel": 7,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "DAWN",
+          "MORNING"
+        ],
+        "stringBiomes": [
+          "forests",
+          "roofed",
+          "birches",
+          "flowery",
+          "byg:crag_gardens",
+          "magical"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Caterpie palette:valencian",
+      "stringLocationTypes": [
+        "Land",
+        "Tree Top"
+      ],
+      "minLevel": 2,
+      "maxLevel": 7,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "DAWN",
+          "MORNING"
+        ],
+        "stringBiomes": [
+          "jungles"
+        ]
       },
       "rarity": 0
     }

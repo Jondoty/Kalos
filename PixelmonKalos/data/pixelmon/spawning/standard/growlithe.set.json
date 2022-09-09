@@ -2,18 +2,47 @@
   "id": "Growlithe",
   "spawnInfos": [
     {
-      "spec": "species:Growlithe"
-      ,
+      "spec": "species:Growlithe",
       "stringLocationTypes": [
         "Land"
       ],
-      "minLevel": 12,
-      "maxLevel": 15,
+      "minLevel": 5,
+      "maxLevel": 17,
       "typeID": "pokemon",
       "condition": {
-        "minX": 371, "maxX": 406, "minZ": -46, "maxZ": -27,
-        "times": [ "DAWN", "DUSK", "NIGHT" ],
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "AFTERNOON"
+        ],
+        "weathers": [
+          "CLEAR"
+        ],
+        "stringBiomes": [
+          "savannas",
+          "biomesoplenty:burnt_forest"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Growlithe form:hisuian",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 5,
+      "maxLevel": 17,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "AFTERNOON"
+        ],
+        "weathers": [
+          "CLEAR"
+        ],
+        "stringBiomes": [
+          "minecraft:savanna_plateau",
+          "minecraft:shattered_savanna",
+          "minecraft:shattered_savanna_plateau"
+        ]
       },
       "rarity": 0
     }

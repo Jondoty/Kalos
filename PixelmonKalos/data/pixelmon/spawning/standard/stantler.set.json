@@ -2,17 +2,24 @@
   "id": "Stantler",
   "spawnInfos": [
     {
-      "spec": "species:Stantler"
-      ,
+      "spec": "species:Stantler",
       "stringLocationTypes": [
-        "Land"
+        "Land",
+        "Sweet Scent"
       ],
-      "minLevel": 12,
-      "maxLevel": 15,
+      "minLevel": 15,
+      "maxLevel": 30,
       "typeID": "pokemon",
       "condition": {
-        "minX": 371, "maxX": 406, "minZ": -46, "maxZ": -27,
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "DAWN",
+          "DUSK"
+        ],
+        "stringBiomes": [
+          "hills",
+          "freezing forests"
+        ],
+        "minY": 70
       },
       "rarity": 0
     }

@@ -2,13 +2,13 @@
   "id": "Venomoth",
   "spawnInfos": [
     {
-      "spec": "species:Venomoth"
-      ,
+      "spec": "species:Venomoth",
       "stringLocationTypes": [
-        "Land"
+        "Air",
+        "Sweet Scent"
       ],
-      "minLevel": 8,
-      "maxLevel": 12,
+      "minLevel": 31,
+      "maxLevel": 50,
       "typeID": "pokemon",
       "heldItems": [
         {
@@ -17,8 +17,42 @@
         }
       ],
       "condition": {
-        "minX": -2724, "maxX": -2700, "minZ": 862, "maxZ": 930,
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "DUSK",
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "swamps",
+          "jungles",
+          "byg:crag_gardens"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Venomoth palette:pink",
+      "stringLocationTypes": [
+        "Air"
+      ],
+      "minLevel": 31,
+      "maxLevel": 50,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:shed_shell",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "times": [
+          "DUSK",
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "swamps",
+          "jungles",
+          "byg:crag_gardens"
+        ]
       },
       "rarity": 0
     }

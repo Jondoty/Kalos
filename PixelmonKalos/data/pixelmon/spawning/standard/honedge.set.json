@@ -51,6 +51,43 @@
         ]
       },
       "rarity": 0
+    },
+    {
+      "spec": "species:Honedge",
+      "stringLocationTypes": [
+        "Indoors",
+        "Land"
+      ],
+      "minLevel": 21,
+      "maxLevel": 34,
+      "typeID": "pokemon",
+      "condition": {
+        "structures": [
+          "pixelmon:haunted_tower"
+        ],
+        "stringBiomes": [
+          "roofed"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Honedge",
+      "stringLocationTypes": [
+        "Manmade"
+      ],
+      "minLevel": 21,
+      "maxLevel": 34,
+      "typeID": "pokemon",
+      "condition": {
+        "structures": [
+          "pixelmon:land_chalice"
+        ],
+        "stringBiomes": [
+          "mountainous"
+        ]
+      },
+      "rarity": 0
     }
   ]
 }

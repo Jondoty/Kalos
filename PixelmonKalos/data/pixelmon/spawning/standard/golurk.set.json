@@ -24,6 +24,33 @@
         ]
       },
       "rarity": 0
+    },
+    {
+      "spec": "species:Golurk",
+      "stringLocationTypes": [
+        "Manmade"
+      ],
+      "minLevel": 43,
+      "maxLevel": 55,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:light_clay",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "structures": [
+          "pixelmon:spear_pillar"
+        ],
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "arid"
+        ]
+      },
+      "rarity": 0
     }
   ]
 }

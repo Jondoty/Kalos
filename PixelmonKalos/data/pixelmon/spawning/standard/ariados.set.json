@@ -2,19 +2,23 @@
   "id": "Ariados",
   "spawnInfos": [
     {
-      "spec": "species:Ariados"
-      ,
+      "spec": "species:Ariados",
       "stringLocationTypes": [
         "Land",
         "Headbutt"
       ],
-      "minLevel": 3,
-      "maxLevel": 7,
+      "minLevel": 22,
+      "maxLevel": 50,
       "typeID": "pokemon",
       "condition": {
-        "minX": -1682, "maxX": -1639, "minZ": 484, "maxZ": 530,
-        "times": [ "NIGHT" ],
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "all forests",
+          "evil",
+          "byg:crag_gardens"
+        ]
       },
       "rarity": 0
     }

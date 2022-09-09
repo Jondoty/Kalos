@@ -2,14 +2,12 @@
   "id": "Machop",
   "spawnInfos": [
     {
-      "spec": "species:Machop"
-      ,
+      "spec": "species:Machop",
       "stringLocationTypes": [
-        "Underground",
         "Land"
       ],
-      "minLevel": 14,
-      "maxLevel": 16,
+      "minLevel": 5,
+      "maxLevel": 28,
       "typeID": "pokemon",
       "heldItems": [
         {
@@ -18,8 +16,13 @@
         }
       ],
       "condition": {
-        "minX": -22, "maxX": 206, "minY": 42, "maxY": 66, "minZ": 217, "maxZ": 301,
-        "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "mountainous"
+        ],
+        "maxY": 80
       },
       "rarity": 0
     }

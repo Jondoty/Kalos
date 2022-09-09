@@ -2,13 +2,12 @@
   "id": "Fearow",
   "spawnInfos": [
     {
-      "spec": "species:Fearow"
-      ,
+      "spec": "species:Fearow",
       "stringLocationTypes": [
-        "Land"
+        "Air"
       ],
-      "minLevel": 31,
-      "maxLevel": 35,
+      "minLevel": 20,
+      "maxLevel": 50,
       "typeID": "pokemon",
       "heldItems": [
         {
@@ -17,8 +16,17 @@
         }
       ],
       "condition": {
-        "minX": 1406, "maxX": 1436, "minZ": -373, "maxZ": -349,
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "hills",
+          "mountainous",
+          "mesas",
+          "biomesoplenty:burnt_forest",
+          "biomesoplenty:volcano",
+          "biomesoplenty:volcanic_plains"
+        ]
       },
       "rarity": 0
     }

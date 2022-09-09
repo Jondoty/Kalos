@@ -2,19 +2,34 @@
   "id": "Wooper",
   "spawnInfos": [
     {
-      "spec": "species:Wooper"
-      ,
+      "spec": "species:Wooper",
       "stringLocationTypes": [
         "Land"
       ],
-      "minLevel": 4,
-      "maxLevel": 6,
+      "minLevel": 5,
+      "maxLevel": 19,
       "typeID": "pokemon",
       "condition": {
-        "minX": 106, "maxX": 203, "minZ": -548, "maxZ": -232,
-        "times": [ "NIGHT" ],
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "DAY",
+          "DUSK"
+        ],
+        "stringBiomes": [
+          "swamps",
+          "minecraft:river",
+          "lakes"
+        ]
       },
+      "rarityMultipliers": [
+        {
+          "multiplier": 1.5,
+          "condition": {
+            "weathers": [
+              "RAIN"
+            ]
+          }
+        }
+      ],
       "rarity": 0
     }
   ]

@@ -2,14 +2,12 @@
   "id": "Magneton",
   "spawnInfos": [
     {
-      "spec": "species:Magneton"
-      ,
+      "spec": "species:Magneton",
       "stringLocationTypes": [
-        "Land",
-        "Underground"
+        "Land"
       ],
-      "minLevel": 38,
-      "maxLevel": 40,
+      "minLevel": 30,
+      "maxLevel": 50,
       "typeID": "pokemon",
       "heldItems": [
         {
@@ -18,9 +16,49 @@
         }
       ],
       "condition": {
-        "minX": -2667, "maxX": -2535, "minY": 62, "maxY": 71, "minZ": 822, "maxZ": 897,
-        "times": [ "DAWN", "DUSK", "DAY" ],
-        "neededNearbyBlocks": ["minecraft:stone", "minecraft:cobblestone"]
+        "times": [
+          "AFTERNOON",
+          "DUSK"
+        ],
+        "stringBiomes": [
+          "minecraft:snowy_mountains",
+          "minecraft:gravelly_mountains"
+        ]
+      },
+      "rarityMultipliers": [
+        {
+          "multiplier": 2,
+          "condition": {
+            "weathers": [
+              "STORM"
+            ]
+          }
+        }
+      ],
+      "rarity": 0
+    },
+    {
+      "spec": "species:Magneton",
+      "stringLocationTypes": [
+        "Land",
+        "Manmade"
+      ],
+      "minLevel": 30,
+      "maxLevel": 50,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:metal_coat",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "structures": [
+          "pixelmon:land_chalice"
+        ],
+        "stringBiomes": [
+          "mountainous"
+        ]
       },
       "rarity": 0
     }

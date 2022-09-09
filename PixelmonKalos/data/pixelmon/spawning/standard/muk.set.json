@@ -6,8 +6,8 @@
       "stringLocationTypes": [
         "Land"
       ],
-      "minLevel": 26,
-      "maxLevel": 30,
+      "minLevel": 38,
+      "maxLevel": 50,
       "typeID": "pokemon",
       "heldItems": [
         {
@@ -16,9 +16,42 @@
         }
       ],
       "condition": {
-        "minX": -2212, "maxX": -2182, "minZ": -580, "maxZ": -561,
-        "times": [ "DAWN", "DUSK", "DAY" ],
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "swamps",
+          "evil",
+          "pixelmon:ultra_deep_sea",
+          "byg:polluted_lake"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Muk form:alolan",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 38,
+      "maxLevel": 50,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:black_sludge",
+          "percentChance": 50
+        }
+      ],
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "swamps",
+          "evil",
+          "pixelmon:ultra_deep_sea",
+          "byg:polluted_lake"
+        ]
       },
       "rarity": 0
     }

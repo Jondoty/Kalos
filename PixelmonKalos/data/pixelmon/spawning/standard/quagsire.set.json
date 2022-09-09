@@ -2,17 +2,34 @@
   "id": "Quagsire",
   "spawnInfos": [
     {
-      "spec": "species:Quagsire"
-      ,
+      "spec": "species:Quagsire",
       "stringLocationTypes": [
-        "Water"
+        "Land"
       ],
-      "minLevel": 4,
-      "maxLevel": 6,
+      "minLevel": 20,
+      "maxLevel": 50,
       "typeID": "pokemon",
       "condition": {
-        "minX": 103, "maxX": 183, "minZ": -509, "maxZ": -390
+        "times": [
+          "DAY",
+          "DUSK"
+        ],
+        "stringBiomes": [
+          "swamps",
+          "minecraft:river",
+          "lakes"
+        ]
       },
+      "rarityMultipliers": [
+        {
+          "multiplier": 1.5,
+          "condition": {
+            "weathers": [
+              "RAIN"
+            ]
+          }
+        }
+      ],
       "rarity": 0
     }
   ]

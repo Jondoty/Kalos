@@ -4,10 +4,11 @@
     {
       "spec": "species:Slowpoke",
       "stringLocationTypes": [
-        "Underground"
+        "Land",
+        "Sweet Scent"
       ],
-      "minLevel": 5,
-      "maxLevel": 8,
+      "minLevel": 15,
+      "maxLevel": 37,
       "typeID": "pokemon",
       "heldItems": [
         {
@@ -16,8 +17,43 @@
         }
       ],
       "condition": {
-        "minX": 231, "maxX": 327, "minY": 16, "maxY": 54, "minZ": -731, "maxZ": -647,
-        "neededNearbyBlocks": ["minecraft:stained_hardened_clay"]
+        "times": [
+          "AFTERNOON",
+          "DUSK"
+        ],
+        "stringBiomes": [
+          "minecraft:river",
+          "beaches",
+          "lakes"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Slowpoke form:galarian",
+      "stringLocationTypes": [
+        "Land",
+        "Sweet Scent"
+      ],
+      "minLevel": 15,
+      "maxLevel": 37,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:lagging_tail",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "times": [
+          "DAWN",
+          "MORNING"
+        ],
+        "stringBiomes": [
+          "minecraft:river",
+          "beaches",
+          "lakes"
+        ]
       },
       "rarity": 0
     }

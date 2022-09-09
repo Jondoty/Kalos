@@ -14,7 +14,8 @@
           "NIGHT"
         ],
         "stringBiomes": [
-          "oceanic"
+          "oceanic",
+          "terraforged:warm_beach"
         ],
         "maxY": 50
       },

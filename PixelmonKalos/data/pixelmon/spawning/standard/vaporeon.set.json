@@ -9,11 +9,17 @@
       "minLevel": 35,
       "maxLevel": 50,
       "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:adamant_crystal",
+          "percentChance": 5
+        }
+      ],
       "condition": {
         "times": [
           "DAY"
         ],
-        "neededNearbyBlocks": [
+        "baseBlocks": [
           "beach"
         ],
         "stringBiomes": [
@@ -34,6 +40,12 @@
       "minLevel": 35,
       "maxLevel": 50,
       "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:adamant_crystal",
+          "percentChance": 5
+        }
+      ],
       "condition": {
         "times": [
           "NIGHT"
@@ -41,7 +53,7 @@
         "weathers": [
           "STORM"
         ],
-        "neededNearbyBlocks": [
+        "baseBlocks": [
           "beach"
         ],
         "stringBiomes": [

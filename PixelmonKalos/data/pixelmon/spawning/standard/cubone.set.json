@@ -2,14 +2,12 @@
   "id": "Cubone",
   "spawnInfos": [
     {
-      "spec": "species:Cubone"
-      ,
+      "spec": "species:Cubone",
       "stringLocationTypes": [
-        "Land",
-        "Underground"
+        "Land"
       ],
       "minLevel": 10,
-      "maxLevel": 13,
+      "maxLevel": 28,
       "typeID": "pokemon",
       "heldItems": [
         {
@@ -18,8 +16,14 @@
         }
       ],
       "condition": {
-        "minX": -3401, "maxX": -3191, "minY": 28, "maxY": 54, "minZ": 528, "maxZ": 701,
-        "neededNearbyBlocks": ["minecraft:dirt", "minecraft:soul_sand"]
+        "times": [
+          "DUSK",
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "arid",
+          "mesas"
+        ]
       },
       "rarity": 0
     }

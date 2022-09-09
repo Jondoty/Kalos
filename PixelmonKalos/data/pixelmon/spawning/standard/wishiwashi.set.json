@@ -11,7 +11,8 @@
       "typeID": "pokemon",
       "condition": {
         "stringBiomes": [
-          "oceanic"
+          "oceanic",
+          "terraforged:warm_beach"
         ],
         "minY": 50
       },

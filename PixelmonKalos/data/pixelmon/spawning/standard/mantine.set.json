@@ -17,7 +17,8 @@
           "minecraft:ocean",
           "minecraft:warm_ocean",
           "minecraft:lukewarm_ocean",
-          "minecraft:cold_ocean"
+          "minecraft:cold_ocean",
+          "terraforged:warm_beach"
         ],
         "minY": 55
       },

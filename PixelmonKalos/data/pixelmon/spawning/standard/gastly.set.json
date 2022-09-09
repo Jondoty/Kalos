@@ -2,18 +2,79 @@
   "id": "Gastly",
   "spawnInfos": [
     {
-      "spec": "species:Gastly"
-      ,
+      "spec": "species:Gastly",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 8,
+      "maxLevel": 25,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "taigas",
+          "roofed",
+          "evil"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Gastly",
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 8,
+      "maxLevel": 25,
+      "typeID": "pokemon",
+      "condition": {
+        "stringBiomes": [
+          "hellish"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Gastly",
       "stringLocationTypes": [
         "Underground"
       ],
-      "minLevel": 5,
-      "maxLevel": 6,
+      "minLevel": 8,
+      "maxLevel": 25,
       "typeID": "pokemon",
       "condition": {
-        "minX": 45, "maxX": 74, "minY": 83, "maxY": 110, "minZ": 5, "maxZ": 34,
-        "times": [ "NIGHT" ],
-        "neededNearbyBlocks": ["minecraft:planks"]
+        "maxLightLevel": 0
+      },
+      "rarityMultipliers": [
+        {
+          "multiplier": 2,
+          "condition": {
+            "neededNearbyBlocks": [
+              "minecraft:oak_planks"
+            ]
+          }
+        }
+      ],
+      "rarity": 0
+    },
+    {
+      "spec": "species:Gastly",
+      "stringLocationTypes": [
+        "Indoors",
+        "Land"
+      ],
+      "minLevel": 8,
+      "maxLevel": 25,
+      "typeID": "pokemon",
+      "condition": {
+        "structures": [
+          "pixelmon:haunted_tower"
+        ],
+        "stringBiomes": [
+          "roofed"
+        ]
       },
       "rarity": 0
     }

@@ -14,7 +14,12 @@
           "AFTERNOON"
         ],
         "stringBiomes": [
-          "roofed"
+          "beaches"
+        ]
+      },
+      "anticondition": {
+        "stringBiomes": [
+          "freezing"
         ]
       },
       "rarity": 0

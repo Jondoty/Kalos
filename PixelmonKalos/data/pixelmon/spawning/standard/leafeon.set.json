@@ -9,6 +9,12 @@
       "minLevel": 45,
       "maxLevel": 50,
       "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:adamant_crystal",
+          "percentChance": 5
+        }
+      ],
       "condition": {
         "neededNearbyBlocks": [
           "pixelmon:moss_rock"
@@ -29,6 +35,12 @@
       "minLevel": 45,
       "maxLevel": 50,
       "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:adamant_crystal",
+          "percentChance": 5
+        }
+      ],
       "condition": {
         "times": [
           "NIGHT"

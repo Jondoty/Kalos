@@ -46,8 +46,36 @@
         "stringBiomes": [
           "minecraft:soul_sand_valley",
           "minecraft:warped_forest",
-          "biomesoplenty:witheed_abyss",
+          "biomesoplenty:withered_abyss",
           "byg:wailing_garth"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Dusclops",
+      "stringLocationTypes": [
+        "Indoors",
+        "Land"
+      ],
+      "minLevel": 38,
+      "maxLevel": 51,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:kasib_berry",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "structures": [
+          "pixelmon:haunted_tower"
+        ],
+        "times": [
+          "NIGHT"
+        ],
+        "stringBiomes": [
+          "roofed"
         ]
       },
       "rarity": 0

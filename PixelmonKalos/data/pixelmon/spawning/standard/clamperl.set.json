@@ -21,7 +21,8 @@
       ],
       "condition": {
         "stringBiomes": [
-          "oceanic"
+          "oceanic",
+          "terraforged:warm_beach"
         ]
       },
       "rarity": 0

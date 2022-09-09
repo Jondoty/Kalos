@@ -2,16 +2,43 @@
   "id": "Pidgeotto",
   "spawnInfos": [
     {
-      "spec": "species:Pidgeotto"
-      ,
-      "stringLocationTypes": [ "Land" ],
-      "minLevel": 12,
-      "maxLevel": 15,
+      "spec": "species:Pidgeotto",
+      "stringLocationTypes": [
+        "Air",
+        "Headbutt"
+      ],
+      "minLevel": 16,
+      "maxLevel": 36,
       "typeID": "pokemon",
       "condition": {
-        "minX": 313, "maxX": 400, "minZ": 29, "maxZ": 135,
-        "times": [ "DAY" ],
-        "neededNearbyBlocks": ["minecraft:grass"]
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "forests",
+          "plains",
+          "taigas"
+        ]
+      },
+      "rarity": 0
+    },
+    {
+      "spec": "species:Pidgeotto palette:pink",
+      "stringLocationTypes": [
+        "Air"
+      ],
+      "minLevel": 16,
+      "maxLevel": 36,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "forests",
+          "plains",
+          "taigas"
+        ]
       },
       "rarity": 0
     }

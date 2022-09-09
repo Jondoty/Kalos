@@ -75,6 +75,33 @@
         }
       ],
       "rarity": 0
+    },
+    {
+      "spec": "species:Bronzong",
+      "stringLocationTypes": [
+        "Manmade"
+      ],
+      "minLevel": 40,
+      "maxLevel": 50,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:metal_coat",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "structures": [
+          "pixelmon:spear_pillar"
+        ],
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "arid"
+        ]
+      },
+      "rarity": 0
     }
   ]
 }
