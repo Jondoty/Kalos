@@ -7,25 +7,6 @@
 tag @e[tag=!1.12.2Trainer,type=pixelmon:npc_trainer] add 1.12.2Trainer
 execute at @e[tag=1.12.2Trainer,type=pixelmon:npc_trainer] run particle minecraft:end_rod ~ ~5 ~ 0 10 0 0.001 10 force @a
 
-
-#---------------------------------------------------------
-#List of 20tps commands for reference
-
-#Portals
-#execute @a ~ ~ ~ detect ~ ~ ~ pixelmon:warp_plate 0 function world:portals
-
-#Cut Function for sound and kills items
-#function custom:berrytags if @a[score_CutUse_min=1]
-
-#Shiny Particles
-#execute @e[x=-685,y=100,z=1388,dy=3,tag=Particles,type=armor_stand] ~ ~ ~ execute @e[tag=Shiny,type=pixelmon:pixelmon] ~ ~ ~ /particle reddust ~ ~ ~ 0 10 0 1 10 force @a[r=50]
-
-#Restaurant Battle Start Timer
-#execute @a[x=-514,y=0,z=64,dx=526,dy=256,dz=436,tag=RunTimer,score_RestaurantBattle_min=1] ~ ~ ~ function custom:restauranttimer
-
-#Mamoswine Route Removes Snow
-#execute @e[x=828,y=108,z=-318,dx=150,dy=10,dz=150,tag=Dialogue100] ~ ~-0.5 ~ /execute @e[type=pixelmon:pixelmon,name=Mamoswine,distance=..2] ~ ~ ~ /fill ~-3 108 ~-3 ~2 112 ~3 air 0 replace minecraft:snow
-
 #---------------------------------------------------------
 #Important triggers for functions of map
 
@@ -44,6 +25,9 @@ execute as @a[scores={relog=1..}] run function kalos:triggers/relog
 #Photo-Spot Dismissal if player walks away
 execute at @e[type=armor_stand,tag=PhotoSpot] run execute as @a[distance=20..50,scores={DialogueTrigger=0,PhotoSpot=1..}] run scoreboard players set @s TalkTrigger 299
 
+
+#Signs players click on to read
+execute as @a[scores={SignRead=..1}] run function kalos:dialogue/signtexts
 
 #---------------------------
 
