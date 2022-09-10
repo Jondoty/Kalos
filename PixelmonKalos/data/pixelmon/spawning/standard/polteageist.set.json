@@ -18,7 +18,7 @@
           "evil"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Polteageist palette:phony",
@@ -40,7 +40,7 @@
           "roofed"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Polteageist palette:authentic",
@@ -59,7 +59,7 @@
           "evil"
         ]
       },
-      "rarity": 4.0
+      "rarity": 0.0
     },
     {
       "spec": "species:Polteageist palette:authentic",
@@ -81,7 +81,7 @@
           "roofed"
         ]
       },
-      "rarity": 4.0
+      "rarity": 0.0
     },
     {
       "spec": "species:Polteageist boss:haunted",
@@ -103,7 +103,7 @@
           "roofed"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

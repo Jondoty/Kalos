@@ -19,7 +19,7 @@
           "byg:weeping_witch_clearing"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Gothorita",
@@ -42,7 +42,7 @@
           "byg:ethereal_clearing"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

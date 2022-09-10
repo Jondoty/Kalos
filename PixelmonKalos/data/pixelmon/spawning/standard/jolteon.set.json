@@ -17,7 +17,7 @@
           "savannas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Jolteon palette:strike",
@@ -38,7 +38,7 @@
           "savannas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

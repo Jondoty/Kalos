@@ -24,7 +24,7 @@
           "evil"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Sinistea palette:phony",
@@ -49,7 +49,7 @@
           "roofed"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Sinistea palette:authentic",
@@ -74,7 +74,7 @@
           "evil"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Sinistea palette:authentic",
@@ -99,7 +99,7 @@
           "roofed"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

@@ -15,7 +15,7 @@
           "birches"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Sawsbuck form:summer",
@@ -32,7 +32,7 @@
           "magical"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Sawsbuck form:autumn",
@@ -48,7 +48,7 @@
           "taigas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Sawsbuck form:winter",
@@ -63,7 +63,7 @@
           "freezing forests"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

@@ -24,7 +24,7 @@
           "jungles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Chatot",
@@ -48,7 +48,7 @@
           "jungles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

@@ -22,7 +22,7 @@
           "evil"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Raticate form:alolan",
@@ -48,7 +48,7 @@
           "evil"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Raticate form:base palette:valencian",
@@ -72,7 +72,7 @@
           "jungles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Raticate form:base palette:pink",
@@ -97,7 +97,7 @@
           "forests"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

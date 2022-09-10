@@ -26,7 +26,7 @@
           "biomesoplenty:volcanic_plains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Carkol",
@@ -62,7 +62,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

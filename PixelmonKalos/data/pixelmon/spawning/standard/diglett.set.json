@@ -24,7 +24,7 @@
         ],
         "maxY": 70
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Diglett form:alolan",
@@ -52,7 +52,7 @@
         ],
         "maxY": 70
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Diglett",
@@ -71,7 +71,7 @@
       "condition": {
         "maxY": 50
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Diglett form:alolan",
@@ -90,7 +90,7 @@
       "condition": {
         "maxY": 50
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Diglett form:base palette:pink",
@@ -113,7 +113,7 @@
         ],
         "maxY": 70
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Diglett form:base palette:pink",
@@ -132,7 +132,7 @@
       "condition": {
         "maxY": 50
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

@@ -19,7 +19,7 @@
           "evil"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Haunter",
@@ -34,7 +34,7 @@
           "hellish"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Haunter",
@@ -57,7 +57,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Haunter",
@@ -79,7 +79,7 @@
           "roofed"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

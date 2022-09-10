@@ -28,7 +28,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Sableye",
@@ -50,7 +50,7 @@
           "pixelmon:ultra_deep_sea"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Sableye palette:drowned",
@@ -71,7 +71,7 @@
           "pixelmon:infinite_ocean"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

@@ -34,7 +34,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Meowth form:alolan",
@@ -69,7 +69,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Meowth form:galarian",
@@ -107,7 +107,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

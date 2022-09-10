@@ -17,7 +17,7 @@
           "oceanic"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Dhelmise",
@@ -32,7 +32,7 @@
           "byg:dead_sea"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Dhelmise",
@@ -51,7 +51,7 @@
           "oceanic"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

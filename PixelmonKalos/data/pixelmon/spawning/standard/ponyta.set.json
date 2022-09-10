@@ -21,7 +21,7 @@
           "savannas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Ponyta form:galarian",
@@ -43,7 +43,7 @@
           "magical"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

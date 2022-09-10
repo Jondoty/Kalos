@@ -28,7 +28,7 @@
           "biomesoplenty:tundra_bog"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Pidove",
@@ -56,7 +56,7 @@
           "biomesoplenty:tundra_bog"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

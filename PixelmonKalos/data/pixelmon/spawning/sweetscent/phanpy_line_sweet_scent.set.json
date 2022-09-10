@@ -19,7 +19,7 @@
           "minecraft:shattered_savanna_plateau"
         ]
       },
-      "rarity": 0
+      "rarity": 100.0
     },
     {
       "spec": "species:Donphan",
@@ -39,7 +39,7 @@
           "minecraft:shattered_savanna_plateau"
         ]
       },
-      "rarity": 0
+      "rarity": 20.0
     }
   ]
 }

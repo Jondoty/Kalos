@@ -18,7 +18,7 @@
           "evil"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Misdreavus palette:pink",
@@ -36,7 +36,7 @@
           "roofed"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Misdreavus",
@@ -55,7 +55,7 @@
           "roofed"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

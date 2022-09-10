@@ -20,7 +20,7 @@
           "byg:crag_gardens"
         ]
       },
-      "rarity": 0
+      "rarity": 120.0
     },
     {
       "spec": "species:Venomoth",
@@ -41,7 +41,7 @@
           "byg:crag_gardens"
         ]
       },
-      "rarity": 0
+      "rarity": 10.0
     }
   ]
 }

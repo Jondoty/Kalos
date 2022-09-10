@@ -23,7 +23,7 @@
           "mesas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Bagon palette:alter",
@@ -47,7 +47,7 @@
           "mesas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

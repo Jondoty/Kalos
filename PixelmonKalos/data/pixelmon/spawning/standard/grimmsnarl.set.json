@@ -23,7 +23,7 @@
           "byg:weeping_witch_clearing"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Grimmsnarl",
@@ -43,7 +43,7 @@
           "byg:withering_woods"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

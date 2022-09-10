@@ -24,10 +24,10 @@
           "mesas"
         ]
       },
-      "rarity": 0
+      "rarity": 130.0
     },
     {
-      "spec": "species:Sandshrew",
+      "spec": "species:Sandshrew form:alolan",
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -49,7 +49,7 @@
           "minecraft:snowy_tundra"
         ]
       },
-      "rarity": 0
+      "rarity": 40.0
     },
     {
       "spec": "species:Sandslash",
@@ -74,10 +74,10 @@
           "mesas"
         ]
       },
-      "rarity": 0
+      "rarity": 40.0
     },
     {
-      "spec": "species:Sandslash",
+      "spec": "species:Sandslash form:alolan",
       "stringLocationTypes": [
         "Sweet Scent"
       ],
@@ -99,7 +99,7 @@
           "minecraft:snowy_tundra"
         ]
       },
-      "rarity": 0
+      "rarity": 5.0
     }
   ]
 }

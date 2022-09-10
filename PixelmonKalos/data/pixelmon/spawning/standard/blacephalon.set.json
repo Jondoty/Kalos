@@ -20,7 +20,7 @@
           "pixelmon:ultra_space"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Blacephalon",
@@ -41,7 +41,7 @@
           "pixelmon:ultra_space"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

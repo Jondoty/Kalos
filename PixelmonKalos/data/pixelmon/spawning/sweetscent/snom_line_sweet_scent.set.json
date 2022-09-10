@@ -20,7 +20,7 @@
           "freezing forests"
         ]
       },
-      "rarity": 0
+      "rarity": 100.0
     },
     {
       "spec": "species:Frosmoth",
@@ -38,7 +38,7 @@
           "freezing forests"
         ]
       },
-      "rarity": 0
+      "rarity": 20.0
     }
   ]
 }

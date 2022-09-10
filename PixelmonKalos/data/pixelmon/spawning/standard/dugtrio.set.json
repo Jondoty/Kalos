@@ -23,7 +23,7 @@
         ],
         "maxY": 70
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Dugtrio form:alolan",
@@ -50,7 +50,7 @@
         ],
         "maxY": 70
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Dugtrio",
@@ -69,7 +69,7 @@
       "condition": {
         "maxY": 50
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Dugtrio form:alolan",
@@ -88,7 +88,7 @@
       "condition": {
         "maxY": 50
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Dugtrio form:base palette:pink",
@@ -111,7 +111,7 @@
         ],
         "maxY": 70
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Dugtrio form:base palette:pink",
@@ -130,7 +130,7 @@
       "condition": {
         "maxY": 50
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

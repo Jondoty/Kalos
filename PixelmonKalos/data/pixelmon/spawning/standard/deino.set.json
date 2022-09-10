@@ -18,7 +18,7 @@
           "pixelmon:ultra_deep_sea"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Deino",
@@ -34,7 +34,7 @@
         ],
         "maxLightLevel": 0
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

@@ -29,7 +29,7 @@
           "biomesoplenty:volcanic_plains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Spearow",
@@ -58,7 +58,7 @@
           "biomesoplenty:volcanic_plains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

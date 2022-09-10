@@ -33,7 +33,7 @@
           "beaches"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Shellder palette:valencian",
@@ -62,7 +62,7 @@
           "jungles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

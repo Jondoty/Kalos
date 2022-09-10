@@ -27,7 +27,7 @@
         ],
         "maxY": 32
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Relicanth",
@@ -48,7 +48,7 @@
           "pixelmon:infinite_ocean"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Relicanth palette:drowned",
@@ -69,7 +69,7 @@
           "pixelmon:infinite_ocean"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Relicanth",
@@ -96,7 +96,7 @@
           "oceanic"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

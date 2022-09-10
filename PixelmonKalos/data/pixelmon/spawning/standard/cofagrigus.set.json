@@ -33,7 +33,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Cofagrigus",
@@ -67,7 +67,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Cofagrigus",
@@ -93,7 +93,7 @@
           "byg:quartz_desert"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

@@ -21,7 +21,7 @@
           "jungles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Carvanha",
@@ -46,7 +46,7 @@
           "oceanic"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

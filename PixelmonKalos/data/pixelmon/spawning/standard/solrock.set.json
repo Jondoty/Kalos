@@ -28,7 +28,7 @@
           "minecraft:wooded_badlands_plateau"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Solrock",
@@ -53,7 +53,7 @@
           "end"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Solrock",
@@ -76,7 +76,7 @@
       "condition": {
         "maxY": 70
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

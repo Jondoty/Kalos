@@ -26,7 +26,7 @@
           "jungles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Golbat",
@@ -39,7 +39,7 @@
       "condition": {
         "maxLightLevel": 0
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Golbat palette:strike",
@@ -66,7 +66,7 @@
           "jungles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

@@ -30,7 +30,7 @@
           "biomesoplenty:burnt_forest"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Ninetales form:alolan",
@@ -54,7 +54,7 @@
           "freezing forests"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Ninetales form:base palette:strike",
@@ -78,7 +78,7 @@
           "byg:seasonal_forest_hills"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

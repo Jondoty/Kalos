@@ -19,7 +19,7 @@
           "taigas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Talonflame palette:ashen",
@@ -42,7 +42,7 @@
           "taigas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

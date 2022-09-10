@@ -18,7 +18,7 @@
           "magical"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Hatterene",
@@ -39,7 +39,7 @@
           "byg:ethereal_clearing"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

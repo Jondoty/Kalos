@@ -28,7 +28,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Whismur",
@@ -51,7 +51,7 @@
         }
       ],
       "typeID": "pokemon",
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

@@ -25,7 +25,7 @@
           "arid"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Claydol",
@@ -49,7 +49,7 @@
           "byg:cryptic_wastes"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Claydol palette:alter",
@@ -74,7 +74,7 @@
           "arid"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Claydol palette:drowned",
@@ -95,7 +95,7 @@
           "pixelmon:infinite_ocean"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

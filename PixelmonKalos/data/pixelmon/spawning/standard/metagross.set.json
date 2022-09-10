@@ -25,7 +25,7 @@
         ],
         "minY": 90
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Metagross",
@@ -51,7 +51,7 @@
         ],
         "minY": 90
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Metagross",
@@ -73,7 +73,7 @@
           "minecraft:end_barrens"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Metagross",
@@ -101,7 +101,7 @@
           "mountainous"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

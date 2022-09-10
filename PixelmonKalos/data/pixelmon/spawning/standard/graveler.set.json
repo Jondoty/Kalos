@@ -30,7 +30,7 @@
         ],
         "maxY": 80
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Graveler form:alolan",
@@ -55,7 +55,7 @@
           "pixelmon:ultra_deep_sea"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Graveler",
@@ -74,7 +74,7 @@
       "condition": {
         "maxY": 70
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Graveler form:alolan",
@@ -98,7 +98,7 @@
         ],
         "maxY": 70
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

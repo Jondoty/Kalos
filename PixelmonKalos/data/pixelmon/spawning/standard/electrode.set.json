@@ -17,7 +17,7 @@
           "plains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Electrode form:hisuian",
@@ -35,7 +35,7 @@
           "savannas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Electrode palette:summer",
@@ -56,7 +56,7 @@
           "plains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

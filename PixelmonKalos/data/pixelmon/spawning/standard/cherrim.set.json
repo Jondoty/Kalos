@@ -29,7 +29,7 @@
           "birches"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Cherrim form:sunshine",
@@ -58,7 +58,7 @@
           "birches"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

@@ -20,7 +20,7 @@
           "jungles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Bellsprout palette:valencian",
@@ -39,7 +39,7 @@
           "jungles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Bellsprout palette:pink",
@@ -59,7 +59,7 @@
           "roofed"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

@@ -26,7 +26,7 @@
           "jungles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Crobat palette:strike",
@@ -53,7 +53,7 @@
           "jungles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Crobat",
@@ -66,7 +66,7 @@
       "condition": {
         "maxLightLevel": 0
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

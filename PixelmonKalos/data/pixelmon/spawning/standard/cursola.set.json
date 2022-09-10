@@ -18,7 +18,7 @@
           "oceanic"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Cursola",
@@ -33,7 +33,7 @@
           "byg:dead_sea"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

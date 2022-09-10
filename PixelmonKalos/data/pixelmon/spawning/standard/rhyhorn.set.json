@@ -18,7 +18,7 @@
           "savannas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Rhyhorn palette:pink",
@@ -37,7 +37,7 @@
           "savannas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

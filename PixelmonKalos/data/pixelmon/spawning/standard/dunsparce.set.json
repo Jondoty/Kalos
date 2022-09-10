@@ -19,7 +19,7 @@
           "arid"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Dunsparce",
@@ -32,7 +32,7 @@
       "condition": {
         "maxY": 70
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

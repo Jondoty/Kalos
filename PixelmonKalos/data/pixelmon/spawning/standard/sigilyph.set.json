@@ -19,7 +19,7 @@
           "minecraft:badlands_plateau"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Sigilyph",
@@ -36,7 +36,7 @@
           "byg:shattered_desert_isles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Sigilyph",
@@ -58,7 +58,7 @@
           "arid"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

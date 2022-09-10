@@ -28,7 +28,7 @@
           "biomesoplenty:tropic_beach"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Exeggcute palette:pink",
@@ -56,7 +56,7 @@
           "biomesoplenty:tropic_beach"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

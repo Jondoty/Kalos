@@ -19,7 +19,7 @@
           "savannas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Nidoranmale palette:valencian",
@@ -38,7 +38,7 @@
           "jungles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Nidoranmale palette:pink",
@@ -57,7 +57,7 @@
           "savannas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

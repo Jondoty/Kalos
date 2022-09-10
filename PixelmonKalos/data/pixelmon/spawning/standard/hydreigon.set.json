@@ -18,7 +18,7 @@
           "pixelmon:ultra_deep_sea"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Hydreigon palette:ashen",
@@ -40,7 +40,7 @@
           "pixelmon:ultra_deep_sea"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

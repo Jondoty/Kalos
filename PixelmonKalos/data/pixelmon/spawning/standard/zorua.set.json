@@ -17,7 +17,7 @@
           "plains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Zorua form:hisuian",
@@ -36,7 +36,7 @@
           "minecraft:ice_spikes"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Zorua palette:alter",
@@ -54,7 +54,7 @@
           "plains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

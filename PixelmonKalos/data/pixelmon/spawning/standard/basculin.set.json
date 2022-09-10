@@ -24,7 +24,7 @@
           "byg:crag_gardens"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Basculin palette:blue_stripe",
@@ -49,7 +49,7 @@
           "byg:crag_gardens"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Basculin form:white_stripe",
@@ -65,7 +65,7 @@
           "lakes"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

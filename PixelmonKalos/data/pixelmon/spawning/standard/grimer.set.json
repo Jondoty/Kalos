@@ -27,7 +27,7 @@
           "byg:polluted_lake"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Grimer form:alolan",
@@ -54,7 +54,7 @@
           "byg:polluted_lake"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

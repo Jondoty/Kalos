@@ -22,7 +22,7 @@
           "byg:snowy_evergreen_hills"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Lycanroc form:midnight",
@@ -45,7 +45,7 @@
           "byg:snowy_evergreen_hills"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Lycanroc form:dusk",
@@ -68,7 +68,7 @@
           "byg:snowy_evergreen_hills"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

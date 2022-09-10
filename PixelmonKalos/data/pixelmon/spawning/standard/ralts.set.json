@@ -19,7 +19,7 @@
           "birches"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Ralts palette:strike",
@@ -40,7 +40,7 @@
           "birches"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

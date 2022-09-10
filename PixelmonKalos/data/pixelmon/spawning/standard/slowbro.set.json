@@ -27,7 +27,7 @@
           "lakes"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Slowbro form:galarian",
@@ -55,7 +55,7 @@
           "lakes"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

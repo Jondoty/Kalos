@@ -23,7 +23,7 @@
           "minecraft:desert_hills"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Golurk",
@@ -50,7 +50,7 @@
           "arid"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

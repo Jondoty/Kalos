@@ -23,7 +23,7 @@
           "freezing forests"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Wobbuffet",
@@ -44,7 +44,7 @@
           "end"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

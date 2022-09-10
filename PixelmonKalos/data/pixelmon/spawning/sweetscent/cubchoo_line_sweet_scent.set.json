@@ -17,7 +17,7 @@
           "biomesoplenty:tundra_bog"
         ]
       },
-      "rarity": 0
+      "rarity": 100.0
     },
     {
       "spec": "species:Beartic",
@@ -35,7 +35,7 @@
           "biomesoplenty:tundra_bog"
         ]
       },
-      "rarity": 0
+      "rarity": 7.0
     }
   ]
 }

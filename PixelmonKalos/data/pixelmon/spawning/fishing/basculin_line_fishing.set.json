@@ -1,0 +1,134 @@
+{
+  "id": "Basculin Line Fishing",
+  "spawnInfos": [
+    {
+      "spec": "species:Basculin palette:red_stripe",
+      "stringLocationTypes": [
+        "Good Rod"
+      ],
+      "minLevel": 22,
+      "maxLevel": 35,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:deep_sea_tooth",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "stringBiomes": [
+          "minecraft:river",
+          "jungles",
+          "swamps",
+          "lakes"
+        ]
+      },
+      "rarity": 60.0
+    },
+    {
+      "spec": "species:Basculin palette:red_stripe",
+      "stringLocationTypes": [
+        "Super Rod"
+      ],
+      "minLevel": 22,
+      "maxLevel": 35,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:deep_sea_tooth",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "stringBiomes": [
+          "minecraft:river",
+          "jungles",
+          "swamps",
+          "lakes"
+        ]
+      },
+      "rarity": 100.0
+    },
+    {
+      "spec": "species:Basculin palette:blue_stripe",
+      "stringLocationTypes": [
+        "Good Rod"
+      ],
+      "minLevel": 22,
+      "maxLevel": 35,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:deep_sea_scale",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "stringBiomes": [
+          "minecraft:river",
+          "jungles",
+          "swamps",
+          "lakes"
+        ]
+      },
+      "rarity": 60.0
+    },
+    {
+      "spec": "species:Basculin palette:blue_stripe",
+      "stringLocationTypes": [
+        "Super Rod"
+      ],
+      "minLevel": 22,
+      "maxLevel": 35,
+      "typeID": "pokemon",
+      "heldItems": [
+        {
+          "itemID": "pixelmon:deep_sea_scale",
+          "percentChance": 5
+        }
+      ],
+      "condition": {
+        "stringBiomes": [
+          "minecraft:river",
+          "jungles",
+          "swamps",
+          "lakes"
+        ]
+      },
+      "rarity": 100.0
+    },
+    {
+      "spec": "species:Basculin form:white_stripe",
+      "stringLocationTypes": [
+        "Super Rod"
+      ],
+      "minLevel": 22,
+      "maxLevel": 35,
+      "typeID": "pokemon",
+      "condition": {
+        "stringBiomes": [
+          "minecraft:river",
+          "lakes"
+        ]
+      },
+      "rarity": 10.0
+    },
+    {
+      "spec": "species:Basculegion",
+      "stringLocationTypes": [
+        "Super Rod"
+      ],
+      "minLevel": 30,
+      "maxLevel": 50,
+      "typeID": "pokemon",
+      "condition": {
+        "stringBiomes": [
+          "minecraft:river",
+          "lakes",
+          "byg:dead_sea"
+        ]
+      },
+      "rarity": 0.05
+    }
+  ]
+}

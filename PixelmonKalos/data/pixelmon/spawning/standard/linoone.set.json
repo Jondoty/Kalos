@@ -31,7 +31,7 @@
           "biomesoplenty:tundra_bog"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Linoone form:galarian",
@@ -63,7 +63,7 @@
           "biomesoplenty:tundra_bog"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

@@ -21,7 +21,7 @@
           "pixelmon:ultra_deep_sea"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Probopass",
@@ -40,7 +40,7 @@
       "condition": {
         "maxY": 80
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Probopass",
@@ -65,7 +65,7 @@
           "mountainous"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

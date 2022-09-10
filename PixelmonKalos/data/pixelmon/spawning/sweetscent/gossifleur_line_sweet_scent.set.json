@@ -18,7 +18,7 @@
           "minecraft:sunflower_plains"
         ]
       },
-      "rarity": 0
+      "rarity": 100.0
     },
     {
       "spec": "species:Eldegoss",
@@ -37,7 +37,7 @@
           "minecraft:sunflower_plains"
         ]
       },
-      "rarity": 0
+      "rarity": 7.0
     }
   ]
 }

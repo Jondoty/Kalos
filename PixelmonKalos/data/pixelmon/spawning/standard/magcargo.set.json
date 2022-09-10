@@ -24,7 +24,7 @@
           "biomesoplenty:volcanic_plains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Magcargo",
@@ -47,7 +47,7 @@
           "byg:subzero_hypogeal"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Magcargo",
@@ -57,7 +57,7 @@
       "minLevel": 38,
       "maxLevel": 60,
       "typeID": "pokemon",
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

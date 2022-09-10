@@ -32,7 +32,7 @@
           "magical"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Butterfree palette:pink",
@@ -62,7 +62,7 @@
           "byg:crag_gardens"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Butterfree palette:valencian",
@@ -87,7 +87,7 @@
           "jungles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

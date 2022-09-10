@@ -26,7 +26,7 @@
         ],
         "minY": 50
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Remoraid palette:drowned",
@@ -41,7 +41,7 @@
           "pixelmon:infinite_ocean"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

@@ -24,7 +24,7 @@
           "magical"
         ]
       },
-      "rarity": 0
+      "rarity": 130.0
     },
     {
       "spec": "species:Metapod",
@@ -49,7 +49,7 @@
           "magical"
         ]
       },
-      "rarity": 0
+      "rarity": 100.0
     },
     {
       "spec": "species:Butterfree",
@@ -74,7 +74,7 @@
           "magical"
         ]
       },
-      "rarity": 0
+      "rarity": 40.0
     }
   ]
 }

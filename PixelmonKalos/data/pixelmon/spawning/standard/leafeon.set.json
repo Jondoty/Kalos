@@ -25,7 +25,7 @@
           "roofed"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Leafeon palette:strike",
@@ -57,7 +57,7 @@
           "roofed"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

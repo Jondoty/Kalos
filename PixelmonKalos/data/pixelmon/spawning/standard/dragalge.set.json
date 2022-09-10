@@ -21,7 +21,7 @@
         ],
         "maxY": 40
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Dragalge",
@@ -43,7 +43,7 @@
           "oceanic"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

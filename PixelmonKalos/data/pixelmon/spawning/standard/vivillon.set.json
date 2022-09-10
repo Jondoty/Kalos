@@ -17,7 +17,7 @@
           "mushroom"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vivillon palette:continental",
@@ -35,7 +35,7 @@
           "mesas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vivillon palette:elegant",
@@ -53,7 +53,7 @@
           "roofed"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vivillon palette:garden",
@@ -71,7 +71,7 @@
           "birches"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vivillon palette:high_plains",
@@ -89,7 +89,7 @@
           "redwoods"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vivillon palette:icy_snow",
@@ -107,7 +107,7 @@
           "freezing forests"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vivillon palette:jungle",
@@ -125,7 +125,7 @@
           "jungles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vivillon palette:marine",
@@ -143,7 +143,7 @@
           "beaches"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vivillon palette:meadow",
@@ -161,7 +161,7 @@
           "minecraft:flower_forest"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vivillon palette:modern",
@@ -179,7 +179,7 @@
           "mountainous"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vivillon palette:monsoon",
@@ -197,7 +197,7 @@
           "swamps"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vivillon palette:ocean",
@@ -218,7 +218,7 @@
           "minecraft:deep_warm_ocean"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vivillon palette:polar",
@@ -239,7 +239,7 @@
           "byg:shattered_glacier"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vivillon palette:river",
@@ -258,7 +258,7 @@
           "lakes"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vivillon palette:sandstorm",
@@ -281,7 +281,7 @@
           "minecraft:desert_lakes"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vivillon palette:savanna",
@@ -299,7 +299,7 @@
           "savannas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vivillon palette:sun",
@@ -317,7 +317,7 @@
           "minecraft:sunflower_plains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vivillon palette:tundra",
@@ -339,7 +339,7 @@
           "biomesoplenty:tundra_bog"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vivillon palette:fancy",
@@ -357,7 +357,7 @@
           "plains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vivillon palette:strike",
@@ -378,7 +378,7 @@
           "flowery"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

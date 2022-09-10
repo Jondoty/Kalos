@@ -27,7 +27,7 @@
         ],
         "maxY": 40
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Huntail",
@@ -52,7 +52,7 @@
           "oceanic"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

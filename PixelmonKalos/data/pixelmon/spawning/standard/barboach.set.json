@@ -17,7 +17,7 @@
           "byg:polluted_lake"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Barboach",
@@ -32,7 +32,7 @@
           "pixelmon:infinite_ocean"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

@@ -18,7 +18,7 @@
           "swamps"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Greninja palette:alter",
@@ -37,7 +37,7 @@
           "swamps"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Greninja palette:alter ability:BattleBond",
@@ -56,7 +56,7 @@
           "swamps"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

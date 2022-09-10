@@ -17,7 +17,7 @@
           "plains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Voltorb form:hisuian",
@@ -35,7 +35,7 @@
           "savannas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

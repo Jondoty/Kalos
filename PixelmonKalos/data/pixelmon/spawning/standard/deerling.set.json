@@ -15,7 +15,7 @@
           "birches"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Deerling form:summer",
@@ -32,7 +32,7 @@
           "magical"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Deerling form:autumn",
@@ -48,7 +48,7 @@
           "taigas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Deerling form:winter",
@@ -63,7 +63,7 @@
           "freezing forests"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

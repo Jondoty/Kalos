@@ -18,7 +18,7 @@
         ],
         "maxY": 80
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Gabite",
@@ -37,7 +37,7 @@
           "biomesoplenty:volcanic_plains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Gabite",
@@ -53,7 +53,7 @@
         ],
         "maxY": 70
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

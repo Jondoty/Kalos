@@ -17,7 +17,7 @@
           "redwoods"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Elgyem",
@@ -39,7 +39,7 @@
           "byg:shattered_viscal_isles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

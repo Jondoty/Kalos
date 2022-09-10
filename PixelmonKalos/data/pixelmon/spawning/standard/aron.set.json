@@ -21,7 +21,7 @@
           "mesas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Aron",
@@ -50,7 +50,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

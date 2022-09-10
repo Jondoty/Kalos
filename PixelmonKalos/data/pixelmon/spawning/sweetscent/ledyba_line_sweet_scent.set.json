@@ -19,7 +19,7 @@
           "magical"
         ]
       },
-      "rarity": 0
+      "rarity": 100.0
     },
     {
       "spec": "species:Ledian",
@@ -39,7 +39,7 @@
           "magical"
         ]
       },
-      "rarity": 0
+      "rarity": 40.0
     }
   ]
 }

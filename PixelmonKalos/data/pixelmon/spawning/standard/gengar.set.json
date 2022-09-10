@@ -14,7 +14,7 @@
           "minecraft:soul_sand_valley"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Gengar palette:ashen",
@@ -29,7 +29,7 @@
           "minecraft:soul_sand_valley"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Gengar",
@@ -51,7 +51,7 @@
           "roofed"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Gengar boss:haunted",
@@ -73,7 +73,7 @@
           "roofed"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

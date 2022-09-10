@@ -24,7 +24,7 @@
           "lakes"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Azumarill palette:alter",
@@ -49,7 +49,7 @@
           "lakes"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

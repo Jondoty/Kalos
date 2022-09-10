@@ -20,7 +20,7 @@
           "taigas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Fletchling",
@@ -40,7 +40,7 @@
           "taigas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

@@ -40,7 +40,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Torkoal",
@@ -62,7 +62,7 @@
           "minecraft:basalt_deltas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Torkoal",
@@ -78,7 +78,7 @@
           "percentChance": 5
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

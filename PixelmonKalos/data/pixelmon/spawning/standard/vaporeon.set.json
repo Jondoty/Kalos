@@ -30,7 +30,7 @@
           "terraforged:warm_beach"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vaporeon palette:strike",
@@ -64,7 +64,7 @@
           "terraforged:warm_beach"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

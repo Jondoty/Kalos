@@ -21,7 +21,7 @@
           "savannas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Rapidash form:galarian",
@@ -43,7 +43,7 @@
           "magical"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Rapidash form:base palette:drowned",
@@ -58,7 +58,7 @@
           "pixelmon:infinite_ocean"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

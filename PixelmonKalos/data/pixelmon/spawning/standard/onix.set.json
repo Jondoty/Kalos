@@ -24,7 +24,7 @@
         ],
         "maxY": 90
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Onix",
@@ -37,7 +37,7 @@
       "condition": {
         "maxY": 50
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Onix palette:crystal",
@@ -61,7 +61,7 @@
         ],
         "maxY": 90
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Onix palette:crystal",
@@ -74,7 +74,7 @@
       "condition": {
         "maxY": 50
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

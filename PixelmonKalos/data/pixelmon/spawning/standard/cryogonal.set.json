@@ -27,7 +27,7 @@
           "freezing"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Cryogonal",
@@ -56,7 +56,7 @@
         ],
         "minY": 150
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

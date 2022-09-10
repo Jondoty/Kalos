@@ -27,7 +27,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Raichu form:alolan",
@@ -58,7 +58,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Raichu form:alolan palette:summer",
@@ -83,7 +83,7 @@
           "byg:rocky_beach"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

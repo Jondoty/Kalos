@@ -19,7 +19,7 @@
         ],
         "maxY": 50
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Jellicent",
@@ -34,7 +34,7 @@
           "byg:dead_sea"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

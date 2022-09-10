@@ -35,7 +35,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Poliwrath palette:strike",
@@ -64,7 +64,7 @@
           "lakes"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

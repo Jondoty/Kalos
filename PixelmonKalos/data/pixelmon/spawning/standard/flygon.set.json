@@ -21,7 +21,7 @@
           "byg:mojave_desert"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Flygon palette:drowned",
@@ -36,7 +36,7 @@
           "pixelmon:infinite_ocean"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

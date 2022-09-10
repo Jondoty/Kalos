@@ -14,7 +14,7 @@
           "byg:dead_sea"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Basculegion",
@@ -33,7 +33,7 @@
           "lakes"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Basculegion",
@@ -55,7 +55,7 @@
           "oceanic"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

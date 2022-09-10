@@ -29,7 +29,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Pawniard",
@@ -48,7 +48,7 @@
           "byg:wailing_garth"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

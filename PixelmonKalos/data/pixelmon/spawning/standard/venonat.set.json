@@ -22,7 +22,7 @@
           "byg:crag_gardens"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Venonat palette:pink",
@@ -43,7 +43,7 @@
           "byg:crag_gardens"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

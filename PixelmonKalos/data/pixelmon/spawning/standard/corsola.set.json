@@ -28,7 +28,7 @@
           "terraforged:warm_beach"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Corsola form:galarian",
@@ -54,7 +54,7 @@
           "oceanic"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Corsola form:galarian",
@@ -75,7 +75,7 @@
           "byg:dead_sea"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

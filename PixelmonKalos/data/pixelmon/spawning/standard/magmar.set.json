@@ -25,7 +25,7 @@
           "biomesoplenty:volcanic_plains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Magmar",
@@ -48,7 +48,7 @@
           "byg:magma_wastes"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Magmar",
@@ -69,7 +69,7 @@
           "hellish"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Magmar",
@@ -92,7 +92,7 @@
           "biomesoplenty:volcanic_plains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

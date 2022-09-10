@@ -23,7 +23,7 @@
           "minecraft:desert_hills"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Golett",
@@ -47,7 +47,7 @@
           "arid"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Golett",
@@ -69,7 +69,7 @@
         ],
         "maxY": 50
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

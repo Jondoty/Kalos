@@ -21,7 +21,7 @@
         ],
         "maxY": 35
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Tynamo",
@@ -36,7 +36,7 @@
           "pixelmon:infinite_ocean"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

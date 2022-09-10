@@ -17,7 +17,7 @@
           "mountainous"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Absol",
@@ -34,7 +34,7 @@
           "byg:nightshade_forest"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

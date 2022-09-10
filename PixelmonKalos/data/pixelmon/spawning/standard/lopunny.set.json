@@ -17,7 +17,7 @@
           "freezing forests"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Lopunny palette:summer",
@@ -38,7 +38,7 @@
           "minecraft:snowy_beach"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

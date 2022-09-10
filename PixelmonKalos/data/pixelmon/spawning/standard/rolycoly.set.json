@@ -30,7 +30,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Rolycoly",
@@ -60,7 +60,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

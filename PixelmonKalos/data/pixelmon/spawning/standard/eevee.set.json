@@ -18,7 +18,7 @@
           "birches"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Eevee palette:creator",
@@ -36,7 +36,7 @@
           "birches"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Eevee form:base palette:strike",
@@ -57,7 +57,7 @@
           "birches"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

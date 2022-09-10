@@ -21,7 +21,7 @@
         ],
         "minY": 100
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Rufflet",
@@ -45,7 +45,7 @@
         ],
         "minY": 100
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Rufflet",
@@ -65,7 +65,7 @@
           "mountainous forests"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Rufflet",
@@ -87,7 +87,7 @@
           "freezing forests"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

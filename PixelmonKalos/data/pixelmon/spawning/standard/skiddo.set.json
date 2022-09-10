@@ -21,7 +21,7 @@
           "biomesoplenty:tundra_bog"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Skiddo",
@@ -47,7 +47,7 @@
           "byg:snowy_evergreen_hills"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

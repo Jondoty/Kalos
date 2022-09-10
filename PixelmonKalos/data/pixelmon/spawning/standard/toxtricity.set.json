@@ -27,7 +27,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Toxtricity form:low_key",
@@ -55,7 +55,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

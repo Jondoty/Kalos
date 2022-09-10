@@ -25,7 +25,7 @@
           "lakes"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Farfetchd form:galarian",
@@ -51,7 +51,7 @@
           "lakes"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

@@ -27,7 +27,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Zoroark form:hisuian",
@@ -56,7 +56,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Zoroark palette:alter",
@@ -74,7 +74,7 @@
           "plains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

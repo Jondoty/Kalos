@@ -23,7 +23,7 @@
           "savannas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Blissey palette:valencian",
@@ -48,7 +48,7 @@
           "byg:tropical_islands"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

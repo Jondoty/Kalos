@@ -32,7 +32,7 @@
         ],
         "maxY": 50
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Qwilfish form:hisuian",
@@ -65,7 +65,7 @@
         ],
         "maxY": 50
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Qwilfish palette:drowned",
@@ -86,7 +86,7 @@
           "pixelmon:infinite_ocean"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

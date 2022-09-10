@@ -20,7 +20,7 @@
           "biomesoplenty:volcanic_plains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Houndoom",
@@ -35,7 +35,7 @@
           "hellish"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Houndoom palette:ashen",
@@ -57,7 +57,7 @@
           "mesas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

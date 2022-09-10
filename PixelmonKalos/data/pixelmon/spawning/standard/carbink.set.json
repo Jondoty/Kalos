@@ -18,7 +18,7 @@
           "pixelmon:ultra_deep_sea"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Carbink",
@@ -33,7 +33,7 @@
           "biomesoplenty:crystalline_chasm"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Carbink",
@@ -49,7 +49,7 @@
         ],
         "maxY": 40
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

@@ -19,7 +19,7 @@
           "mesas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Natu",
@@ -38,7 +38,7 @@
           "mesas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

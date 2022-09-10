@@ -14,7 +14,7 @@
           "freezing"
         ]
       },
-      "rarity": 0
+      "rarity": 100.0
     },
     {
       "spec": "species:Vanillish",
@@ -29,7 +29,7 @@
           "freezing"
         ]
       },
-      "rarity": 0
+      "rarity": 7.0
     },
     {
       "spec": "species:Vanilluxe",
@@ -44,7 +44,7 @@
           "freezing"
         ]
       },
-      "rarity": 0
+      "rarity": 0.1
     }
   ]
 }

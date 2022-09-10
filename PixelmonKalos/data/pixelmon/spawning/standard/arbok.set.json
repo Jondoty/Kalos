@@ -17,7 +17,7 @@
           "evil"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Arbok palette:main_circular",
@@ -32,7 +32,7 @@
           "savannas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Arbok palette:secondary_circular",
@@ -47,7 +47,7 @@
           "swamps"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Arbok palette:dark",
@@ -67,7 +67,7 @@
           "byg:withering_woods"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

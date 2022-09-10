@@ -17,7 +17,7 @@
           "forests"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Oricorio form:pom_pom",
@@ -35,7 +35,7 @@
           "birches"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Oricorio form:pau_u",
@@ -53,7 +53,7 @@
           "taigas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Oricorio form:sensu",
@@ -71,7 +71,7 @@
           "roofed"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

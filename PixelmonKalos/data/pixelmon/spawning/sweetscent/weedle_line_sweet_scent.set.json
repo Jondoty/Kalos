@@ -20,7 +20,7 @@
           "byg:crag_gardens"
         ]
       },
-      "rarity": 0
+      "rarity": 150.0
     },
     {
       "spec": "species:Kakuna",
@@ -41,7 +41,7 @@
           "byg:crag_gardens"
         ]
       },
-      "rarity": 0
+      "rarity": 100.0
     },
     {
       "spec": "species:Beedrill",
@@ -62,7 +62,7 @@
           "byg:crag_gardens"
         ]
       },
-      "rarity": 0
+      "rarity": 20.0
     }
   ]
 }

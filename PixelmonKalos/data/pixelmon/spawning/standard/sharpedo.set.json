@@ -28,7 +28,7 @@
           "terraforged:warm_beach"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Sharpedo",
@@ -53,7 +53,7 @@
           "oceanic"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

@@ -20,7 +20,7 @@
           "swamps"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Goodra form:hisuian",
@@ -41,7 +41,7 @@
           "swamps"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

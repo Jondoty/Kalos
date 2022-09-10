@@ -19,7 +19,7 @@
         ],
         "maxY": 50
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Unown",
@@ -34,7 +34,7 @@
           "end"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Unown",
@@ -52,7 +52,7 @@
           "arid"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

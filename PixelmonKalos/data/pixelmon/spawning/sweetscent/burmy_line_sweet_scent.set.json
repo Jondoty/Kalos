@@ -19,7 +19,7 @@
           "roofed"
         ]
       },
-      "rarity": 0
+      "rarity": 100.0
     },
     {
       "spec": "species:Wormadam",
@@ -39,7 +39,7 @@
           "roofed"
         ]
       },
-      "rarity": 0
+      "rarity": 20.0
     },
     {
       "spec": "species:Mothim",
@@ -59,7 +59,7 @@
           "redwoods"
         ]
       },
-      "rarity": 0
+      "rarity": 20.0
     }
   ]
 }

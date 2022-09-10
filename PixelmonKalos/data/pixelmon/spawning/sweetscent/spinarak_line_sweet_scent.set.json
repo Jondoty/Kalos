@@ -19,7 +19,7 @@
           "byg:crag_gardens"
         ]
       },
-      "rarity": 0
+      "rarity": 40.0
     },
     {
       "spec": "species:Ariados",
@@ -39,7 +39,7 @@
           "byg:crag_gardens"
         ]
       },
-      "rarity": 0
+      "rarity": 5.0
     }
   ]
 }

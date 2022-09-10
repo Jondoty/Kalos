@@ -30,7 +30,7 @@
           "biomesoplenty:burnt_forest"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vulpix form:base palette:strike",
@@ -61,7 +61,7 @@
           "biomesoplenty:burnt_forest"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Vulpix form:alolan",
@@ -85,7 +85,7 @@
           "freezing forests"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

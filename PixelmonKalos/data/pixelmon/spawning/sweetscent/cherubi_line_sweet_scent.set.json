@@ -17,7 +17,7 @@
           "birches"
         ]
       },
-      "rarity": 0
+      "rarity": 80.0
     },
     {
       "spec": "species:Cherrim form:overcast",
@@ -40,7 +40,7 @@
           "birches"
         ]
       },
-      "rarity": 0
+      "rarity": 5.0
     },
     {
       "spec": "species:Cherrim form:sunshine",
@@ -62,7 +62,7 @@
           "birches"
         ]
       },
-      "rarity": 0
+      "rarity": 5.0
     }
   ]
 }

@@ -23,7 +23,7 @@
           "mountainous"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Castform form:snow",
@@ -47,7 +47,7 @@
           "freezing"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Castform form:rain",
@@ -77,7 +77,7 @@
           "freezing"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Castform form:sun",
@@ -98,7 +98,7 @@
           "arid"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

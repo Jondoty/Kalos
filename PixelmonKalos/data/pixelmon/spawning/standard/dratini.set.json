@@ -27,7 +27,7 @@
         ],
         "maxY": 35
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Dratini",
@@ -48,7 +48,7 @@
           "pixelmon:infinite_ocean"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

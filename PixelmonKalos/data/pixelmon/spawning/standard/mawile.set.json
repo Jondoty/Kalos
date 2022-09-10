@@ -23,7 +23,7 @@
           "mountainous"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Mawile",
@@ -47,7 +47,7 @@
           "freezing mountains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Mawile",
@@ -70,7 +70,7 @@
         ],
         "maxY": 50
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

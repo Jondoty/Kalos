@@ -21,7 +21,7 @@
           "biomesoplenty:tropic_beach"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Exeggutor form:alolan",
@@ -40,7 +40,7 @@
           "biomesoplenty:tropic_beach"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Exeggutor form:base palette:pink",
@@ -62,7 +62,7 @@
           "biomesoplenty:tropic_beach"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

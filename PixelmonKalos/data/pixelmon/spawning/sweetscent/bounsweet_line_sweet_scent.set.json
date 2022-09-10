@@ -19,7 +19,7 @@
           "birches"
         ]
       },
-      "rarity": 0
+      "rarity": 200.0
     },
     {
       "spec": "species:Steenee",
@@ -45,7 +45,7 @@
           "flowery"
         ]
       },
-      "rarity": 0
+      "rarity": 50.0
     },
     {
       "spec": "species:Tsareena",
@@ -71,7 +71,7 @@
           "flowery"
         ]
       },
-      "rarity": 0
+      "rarity": 3.0
     }
   ]
 }

@@ -21,7 +21,7 @@
           "evil"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Murkrow",
@@ -42,7 +42,7 @@
           "evil"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

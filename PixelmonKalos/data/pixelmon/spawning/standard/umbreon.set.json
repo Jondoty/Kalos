@@ -24,7 +24,7 @@
           "evil"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Umbreon palette:ashen",
@@ -52,7 +52,7 @@
           "evil"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Umbreon palette:strike",
@@ -80,7 +80,7 @@
           "evil"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

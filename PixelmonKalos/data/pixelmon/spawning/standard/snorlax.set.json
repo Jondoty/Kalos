@@ -24,7 +24,7 @@
           "mountainous forests"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Snorlax palette:snowy",
@@ -49,7 +49,7 @@
           "freezing forests"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Snorlax palette:summer",
@@ -77,7 +77,7 @@
           "byg:rocky_beach"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

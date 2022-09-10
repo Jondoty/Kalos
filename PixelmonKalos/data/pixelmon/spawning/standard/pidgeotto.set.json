@@ -20,7 +20,7 @@
           "taigas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Pidgeotto palette:pink",
@@ -40,7 +40,7 @@
           "taigas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

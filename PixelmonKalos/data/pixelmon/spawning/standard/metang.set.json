@@ -24,7 +24,7 @@
         ],
         "minY": 90
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Metang",
@@ -49,7 +49,7 @@
         ],
         "minY": 90
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Metang",
@@ -71,7 +71,7 @@
           "minecraft:end_barrens"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Metang",
@@ -99,7 +99,7 @@
           "mountainous"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

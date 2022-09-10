@@ -25,7 +25,7 @@
           "arid"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Baltoy palette:alter",
@@ -50,7 +50,7 @@
           "arid"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Baltoy",
@@ -74,7 +74,7 @@
           "byg:cryptic_wastes"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

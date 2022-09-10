@@ -23,7 +23,7 @@
           "savannas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Chansey palette:valencian",
@@ -47,7 +47,7 @@
           "jungles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

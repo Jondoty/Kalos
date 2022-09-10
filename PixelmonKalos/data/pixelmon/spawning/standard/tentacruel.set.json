@@ -25,7 +25,7 @@
         ],
         "minY": 50
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Tentacruel palette:drowned",
@@ -46,7 +46,7 @@
           "pixelmon:infinite_ocean"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

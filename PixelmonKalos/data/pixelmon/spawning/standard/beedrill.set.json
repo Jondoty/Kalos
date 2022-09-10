@@ -32,7 +32,7 @@
           "byg:crag_gardens"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Beedrill palette:pink",
@@ -63,7 +63,7 @@
           "byg:crag_gardens"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

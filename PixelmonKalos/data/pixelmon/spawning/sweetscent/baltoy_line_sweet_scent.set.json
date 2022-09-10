@@ -24,7 +24,7 @@
           "arid"
         ]
       },
-      "rarity": 0
+      "rarity": 150.0
     },
     {
       "spec": "species:Claydol",
@@ -49,7 +49,7 @@
           "arid"
         ]
       },
-      "rarity": 0
+      "rarity": 20.0
     }
   ]
 }

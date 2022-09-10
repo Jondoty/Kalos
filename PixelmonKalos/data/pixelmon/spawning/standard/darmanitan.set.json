@@ -22,7 +22,7 @@
           "byg:red_desert_dunes"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Darmanitan form:galarian",
@@ -41,7 +41,7 @@
           "freezing mountains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

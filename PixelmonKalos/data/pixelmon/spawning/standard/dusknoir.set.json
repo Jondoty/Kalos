@@ -20,7 +20,7 @@
           "minecraft:soul_sand_valley"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Dusknoir",
@@ -48,7 +48,7 @@
           "roofed"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Dusknoir boss:haunted",
@@ -76,7 +76,7 @@
           "roofed"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

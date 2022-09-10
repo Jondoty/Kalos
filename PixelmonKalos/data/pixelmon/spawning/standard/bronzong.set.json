@@ -24,7 +24,7 @@
           "minecraft:badlands_plateau"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Bronzong",
@@ -45,7 +45,7 @@
           "end"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Bronzong",
@@ -74,7 +74,7 @@
           }
         }
       ],
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Bronzong",
@@ -101,7 +101,7 @@
           "arid"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

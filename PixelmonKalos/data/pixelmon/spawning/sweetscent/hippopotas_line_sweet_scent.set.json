@@ -14,7 +14,7 @@
           "arid"
         ]
       },
-      "rarity": 0
+      "rarity": 100.0
     },
     {
       "spec": "species:Hippowdon",
@@ -29,7 +29,7 @@
           "arid"
         ]
       },
-      "rarity": 0
+      "rarity": 5.0
     }
   ]
 }

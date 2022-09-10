@@ -26,7 +26,7 @@
         ],
         "minY": 100
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Minior",
@@ -50,7 +50,7 @@
           "pixelmon:ultra_deep_sea"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Minior",
@@ -71,7 +71,7 @@
           "end"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Minior",
@@ -95,7 +95,7 @@
           "mountainous"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

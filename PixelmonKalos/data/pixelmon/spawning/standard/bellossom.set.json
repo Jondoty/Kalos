@@ -27,7 +27,7 @@
           "jungles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Bellossom palette:valencian",
@@ -54,7 +54,7 @@
           "jungles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Bellossom palette:pink",
@@ -81,7 +81,7 @@
           "flowery"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

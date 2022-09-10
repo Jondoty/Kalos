@@ -27,7 +27,7 @@
           "jungles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Zubat",
@@ -40,7 +40,7 @@
       "condition": {
         "maxLightLevel": 0
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Zubat palette:strike",
@@ -67,7 +67,7 @@
           "jungles"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

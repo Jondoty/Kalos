@@ -20,7 +20,7 @@
           "taigas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Pidgey",
@@ -40,7 +40,7 @@
           "taigas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Pidgey palette:pink",
@@ -60,7 +60,7 @@
           "taigas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Pidgey palette:pink",
@@ -80,7 +80,7 @@
           "taigas"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

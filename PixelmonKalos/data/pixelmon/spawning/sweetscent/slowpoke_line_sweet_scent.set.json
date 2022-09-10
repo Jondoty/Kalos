@@ -31,7 +31,7 @@
           "freezing"
         ]
       },
-      "rarity": 0
+      "rarity": 60.0
     },
     {
       "spec": "species:Slowpoke form:galarian",
@@ -63,7 +63,7 @@
           "freezing"
         ]
       },
-      "rarity": 0
+      "rarity": 30.0
     },
     {
       "spec": "species:Slowbro",
@@ -95,7 +95,7 @@
           "freezing"
         ]
       },
-      "rarity": 0
+      "rarity": 7.0
     },
     {
       "spec": "species:Slowbro form:galarian",
@@ -127,7 +127,7 @@
           "freezing"
         ]
       },
-      "rarity": 0
+      "rarity": 3.0
     }
   ]
 }

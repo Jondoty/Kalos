@@ -27,7 +27,7 @@
           "biomesoplenty:volcanic_plains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Weezing",
@@ -49,7 +49,7 @@
           "byg:embur_bog"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Weezing form:galarian",
@@ -73,7 +73,7 @@
           "swamps"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }

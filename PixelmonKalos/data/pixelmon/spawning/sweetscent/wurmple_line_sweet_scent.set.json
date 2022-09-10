@@ -29,7 +29,7 @@
           "all forests"
         ]
       },
-      "rarity": 0
+      "rarity": 150.0
     },
     {
       "spec": "species:Silcoon",
@@ -48,7 +48,7 @@
           "all forests"
         ]
       },
-      "rarity": 0
+      "rarity": 70.0
     },
     {
       "spec": "species:Beautifly",
@@ -68,7 +68,7 @@
           "magical"
         ]
       },
-      "rarity": 0
+      "rarity": 20.0
     },
     {
       "spec": "species:Cascoon",
@@ -87,7 +87,7 @@
           "all forests"
         ]
       },
-      "rarity": 0
+      "rarity": 70.0
     },
     {
       "spec": "species:Dustox",
@@ -107,7 +107,7 @@
           "redwoods"
         ]
       },
-      "rarity": 0
+      "rarity": 20.0
     }
   ]
 }

@@ -28,7 +28,7 @@
           "byg:cika_mountains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Pumpkaboo growth:pygmy",
@@ -57,7 +57,7 @@
           "byg:cika_mountains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Pumpkaboo growth:runt",
@@ -86,7 +86,7 @@
           "byg:cika_mountains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Pumpkaboo growth:small",
@@ -115,7 +115,7 @@
           "byg:cika_mountains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Pumpkaboo growth:ordinary",
@@ -144,7 +144,7 @@
           "byg:cika_mountains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Pumpkaboo growth:huge",
@@ -173,7 +173,7 @@
           "byg:cika_mountains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Pumpkaboo growth:giant",
@@ -202,7 +202,7 @@
           "byg:cika_mountains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Pumpkaboo growth:enormous",
@@ -231,7 +231,7 @@
           "byg:cika_mountains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     },
     {
       "spec": "species:Pumpkaboo growth:ginormous",
@@ -260,7 +260,7 @@
           "byg:cika_mountains"
         ]
       },
-      "rarity": 0
+      "rarity": 0.0
     }
   ]
 }
