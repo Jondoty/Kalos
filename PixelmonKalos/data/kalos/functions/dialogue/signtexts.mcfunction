@@ -154,6 +154,31 @@ tellraw @a[scores={SignRead=35}] {"text":"Trainer Tips! Pokemon lured to you by 
 tellraw @a[scores={SignRead=36}] {"text":"Advanced Tips! If you use Trick Room again after it’s already been used, everything goes back to normal. The fastest Pokémon once again gets to act first!","italic":true,"color":"gray"}
 
 
+#Route 17 Anistar side Trainer Tips
+#sign located at 1077 108 -200
+tellraw @a[scores={SignRead=37}] {"text":"Trainer Tips! Some Pokemon may evolve if they gain a level while it's raining.","italic":true,"color":"gray"}
+
+#Route 10 Trainer Tips
+#sign located at -2196 104 -316
+tellraw @a[scores={SignRead=38}] {"text":"Trainer Tips! Some Pokemon may evolve if they gain a level at a high altitude, like on a mountain!","italic":true,"color":"gray"}
+
+#Route 15 Trainer Tips
+#sign located at 522 108 -481
+tellraw @a[scores={SignRead=39}] {"text":"Trainer Tips! Grass-type Pokemon are unaffected by powder and spore moves!","italic":true,"color":"gray"}
+
+#Route 16 Trainer Tips
+#sign located at 445 108 -330
+tellraw @a[scores={SignRead=40}] {"text":"Advanced Tips! With the Keen Eye Ability, the Pokémon’s accuracy can’t be lowered! Keen Eye also lets the Pokémon ignore any boosts to the opposing Pokémon’s evasiveness.","italic":true,"color":"gray"}
+
+#Route 19 Trainer Tips
+#sign located at 1361 100 508
+tellraw @a[scores={SignRead=41}] {"text":"Trainer Tips! The move Misty Terrain can cut damage from Dragon-type moves in half! But it only protects Pokémon if they’re touching the ground.","italic":true,"color":"gray"}
+
+#Route 20 Trainer Tips
+#sign located at 1435 100 903
+tellraw @a[scores={SignRead=42}] {"text":"Advanced Tips! You can check the moves for any of your Pokémon right from inside the PC Box!","italic":true,"color":"gray"}
+
+
 scoreboard players set @s SignRead 0
 
 #
