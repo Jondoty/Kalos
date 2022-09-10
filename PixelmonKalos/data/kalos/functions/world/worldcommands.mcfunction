@@ -2,6 +2,13 @@
 #-417 101 1389
 
 #---------------------------------------------------------
+
+#Used to tag trainers that I'll need to replace in 1.16.5
+tag @e[tag=!1.12.2Trainer,type=pixelmon:npc_trainer] add 1.12.2Trainer
+execute at @e[tag=1.12.2Trainer,type=pixelmon:npc_trainer] run particle minecraft:end_rod ~ ~5 ~ 0 10 0 0.001 10 force @a
+
+
+#---------------------------------------------------------
 #List of 20tps commands for reference
 
 #Portals

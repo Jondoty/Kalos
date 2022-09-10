@@ -21,7 +21,7 @@ scoreboard players add @a[scores={TrainerLoot2=1}] TrainerLoot2 1
 
 #Santalune
 give @a[scores={TrainerLoot3=1}] pixelmon:x_attack 3
-give @a[scores={TrainerLoot3=1}] pixelmon:x_defence 3
+give @a[scores={TrainerLoot3=1}] pixelmon:x_defense 3
 scoreboard players add @a[scores={TrainerLoot3=1}] TrainerLoot3 1
 
 give @a[scores={TrainerLoot65=1}] pixelmon:great_ball
@@ -52,7 +52,7 @@ scoreboard players add @a[scores={TrainerLoot6=1}] TrainerLoot6 1
 
 
 tellraw @a[scores={TrainerLoot57=3,PokemonLeague_min=1..},x=-492,y=100,z=245,distance=..10] {"text":"<Diantha> Please take good care of Ralts!"}
-scoreboard players add @a[scores={TrainerLoot57=1..,score_PokemonLeague_min=1..}}] TrainerLoot57 1
+scoreboard players add @a[scores={TrainerLoot57=1..,PokemonLeague=1..}] TrainerLoot57 1
 
 
 #Lumiose Poke Ball Boutique
@@ -112,8 +112,8 @@ scoreboard players add @a[scores={TrainerLoot7=1}] TrainerLoot7 1
 
 
 #Berry Fields
-give @a[scores={TrainerLoot8=1}] pixelmon:oran_berry 5 0 {CanPlaceOn:[farmland]}
-give @a[scores={TrainerLoot8=1}] pixelmon:pecha_berry 5 0 {CanPlaceOn:[farmland]}
+give @a[scores={TrainerLoot8=1}] pixelmon:oran_berry{CanPlaceOn:[farmland]} 5
+give @a[scores={TrainerLoot8=1}] pixelmon:pecha_berry{CanPlaceOn:[farmland]} 5
 scoreboard players add @a[scores={TrainerLoot8=1}] TrainerLoot8 1
 
 
@@ -126,7 +126,7 @@ scoreboard players add @a[scores={TrainerLoot9=1},tag=Dialogue44] TrainerLoot9 1
 
 #Ambrette
 give @a[scores={TrainerLoot53=1}] pixelmon:tm_gen6{tm:94}
-scoreboard players tag @a[scores={TrainerLoot53=1}] add RockSmash
+tag @a[scores={TrainerLoot53=1}] add RockSmash
 tellraw @a[scores={TrainerLoot53=1},tag=RockSmash] {"text":"You can now use Rock Smash on rocks!","italic":true,"color":"gray"}
 scoreboard players add @a[scores={TrainerLoot53=1}] TrainerLoot53 1
 
@@ -147,7 +147,7 @@ scoreboard players add @a[scores={TrainerLoot63=1}] TrainerLoot63 1
 
 
 #Parfum Palace
-give @a[scores={TrainerLoot83=1}] pixelmon:oran_berry 1 0 {CanPlaceOn:[farmland]}
+give @a[scores={TrainerLoot83=1}] pixelmon:oran_berry{CanPlaceOn:[farmland]} 1
 scoreboard players add @a[scores={TrainerLoot83=1}] TrainerLoot83 1
 
 
@@ -161,7 +161,7 @@ scoreboard players add @a[scores={TrainerLoot13=1}] TrainerLoot13 1
 give @a[scores={TrainerLoot14=1}] pixelmon:destiny_knot
 scoreboard players add @a[scores={TrainerLoot14=1}] TrainerLoot14 1
 
-give @a[scores={TrainerLoot23=1}] pixelmon:mach_bike 1 0 {color:13b}
+give @a[scores={TrainerLoot23=1}] pixelmon:mach_bike{color:13b} 1
 scoreboard players add @a[scores={TrainerLoot23=1}] TrainerLoot23 1
 
 give @a[scores={TrainerLoot69=1}] pixelmon:whipped_dream
@@ -202,11 +202,11 @@ scoreboard players add @a[scores={TrainerLoot75=1}] TrainerLoot75 1
 
 
 #Route 12 Lapras Lady
-execute @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ /pokegive @a[scores={TrainerLoot31=1}] Lapras lvl:30
+execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[scores={TrainerLoot31=1}] Lapras lvl:30
 scoreboard players add @a[scores={TrainerLoot31=1}] TrainerLoot31 1
 
 #Skiddo rancher
-execute @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ /pokegive @a[scores={TrainerLoot101=1}] Skiddo lvl:25
+execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[scores={TrainerLoot101=1}] Skiddo lvl:25
 scoreboard players add @a[scores={TrainerLoot101=1}] TrainerLoot101 1
 
 
@@ -222,7 +222,7 @@ scoreboard players add @a[scores={TrainerLoot81=1}] TrainerLoot81 1
 
 
 #Route 9 Rhyhorn Person
-execute @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] ~ ~ ~ /pokegive @a[scores={TrainerLoot62=1}] Rhyhorn lvl:15 untradeable
+execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[scores={TrainerLoot62=1}] Rhyhorn lvl:15 untradeable
 scoreboard players add @a[scores={TrainerLoot62=1}] TrainerLoot62 1
 
 
@@ -243,7 +243,7 @@ scoreboard players add @a[scores={TrainerLoot19=1}] TrainerLoot19 1
 give @a[scores={TrainerLoot20=1}] pixelmon:black_sludge
 scoreboard players add @a[scores={TrainerLoot20=1}] TrainerLoot20 1
 
-give @a[scores={TrainerLoot76=1}] emerald 1 0 {display:{Lore:["A pretty, heart-shaped scale","that is extremely rare.","It glows faintly with all of","the colors of the rainbow."]}}
+give @a[scores={TrainerLoot76=1}] pixelmon:heart_scale
 scoreboard players add @a[scores={TrainerLoot76=1}] TrainerLoot76 1
 
 give @a[scores={TrainerLoot77=1}] pixelmon:lucky_egg
@@ -304,7 +304,7 @@ scoreboard players add @a[scores={TrainerLoot33=1}] TrainerLoot33 1
 give @a[scores={TrainerLoot34=1}] pixelmon:tm_gen6{tm:42}
 scoreboard players add @a[scores={TrainerLoot34=1}] TrainerLoot34 1
 
-give @a[scores={TrainerLoot78=1}] pixelmon:sitrus_berry 1 0 {CanPlaceOn:[farmland]}
+give @a[scores={TrainerLoot78=1}] pixelmon:sitrus_berry{CanPlaceOn:[farmland]}
 scoreboard players add @a[scores={TrainerLoot78=1}] TrainerLoot78 1
 
 
@@ -315,17 +315,17 @@ scoreboard players add @a[scores={TrainerLoot35=1}] TrainerLoot35 1
 give @a[scores={TrainerLoot41=1}] pixelmon:tm_gen6{tm:10}
 scoreboard players add @a[scores={TrainerLoot41=1}] TrainerLoot41 1
 
-execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=1,score_Weekday=2] ~ ~ ~ /give @a[scores={TrainerLoot36=1}] pixelmon:tm_gen6{tm:35}
-execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=1,score_Weekday=2] ~ ~ ~ /scoreboard players add @a[scores={TrainerLoot36=1}] TrainerLoot36 1
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1..2}] run give @a[scores={TrainerLoot36=1}] pixelmon:tm_gen6{tm:35}
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1..2}] run scoreboard players add @a[scores={TrainerLoot36=1}] TrainerLoot36 1
 
-execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=3,score_Weekday=3] ~ ~ ~ /give @a[scores={TrainerLoot37=1}] pixelmon:tm_gen6{tm:77}
-execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=3,score_Weekday=3] ~ ~ ~ /scoreboard players add @a[scores={TrainerLoot37=1}] TrainerLoot37 1
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] run give @a[scores={TrainerLoot37=1}] pixelmon:tm_gen6{tm:77}
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] run scoreboard players add @a[scores={TrainerLoot37=1}] TrainerLoot37 1
 
-execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=4,score_Weekday=5] ~ ~ ~ /give @a[scores={TrainerLoot38=1}] pixelmon:tm_gen6{tm:90}
-execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=4,score_Weekday=5] ~ ~ ~ /scoreboard players add @a[scores={TrainerLoot38=1}] TrainerLoot38 1
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4..5}] run give @a[scores={TrainerLoot38=1}] pixelmon:tm_gen6{tm:90}
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4..5}] run scoreboard players add @a[scores={TrainerLoot38=1}] TrainerLoot38 1
 
-execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=6,score_Weekday=7] ~ ~ ~ /give @a[scores={TrainerLoot39=1}] pixelmon:tm_gen6{tm:32}
-execute @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,score_Weekday_min=6,score_Weekday=7] ~ ~ ~ /scoreboard players add @a[scores={TrainerLoot39=1}] TrainerLoot39 1
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6..7}] run give @a[scores={TrainerLoot39=1}] pixelmon:tm_gen6{tm:32}
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6..7}] run scoreboard players add @a[scores={TrainerLoot39=1}] TrainerLoot39 1
 
 scoreboard players set @a[scores={TrainerLoot36=1}] TrainerLoot36 0
 scoreboard players set @a[scores={TrainerLoot37=1}] TrainerLoot37 0
@@ -360,7 +360,7 @@ scoreboard players add @a[scores={TrainerLoot47=1}] TrainerLoot47 1
 
 
 #Pokemon Village
-give @a[scores={TrainerLoot49=1}] pixelmon:chople_berry 1 0 {CanPlaceOn:[farmland]}
+give @a[scores={TrainerLoot49=1}] pixelmon:chople_berry{CanPlaceOn:[farmland]} 1
 scoreboard players add @a[scores={TrainerLoot49=1}] TrainerLoot49 1
 
 give @a[scores={TrainerLoot50=1}] pixelmon:pretty_wing
@@ -377,7 +377,7 @@ scoreboard players add @a[scores={TrainerLoot52=1}] TrainerLoot52 1
 give @a[scores={TrainerLoot80=1}] pixelmon:max_revive
 scoreboard players add @a[scores={TrainerLoot80=1}] TrainerLoot80 1
 
-give @a[scores={TrainerLoot60=1}] written_book 1 0 {pages:["[\"\",{\"text\":\"Click what type you want to explore!\\n\\n[\"},{\"text\":\"Normal\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 100\"}},{\"text\":\"]\\n[\"},{\"text\":\"Fire\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 101\"}},{\"text\":\"]\\n[\"},{\"text\":\"Fighting\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 102\"}},{\"text\":\"]\\n[\"},{\"text\":\"Water\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 103\"}},{\"text\":\"]\\n[\"},{\"text\":\"Flying\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 104\"}},{\"text\":\"]\\n[\"},{\"text\":\"Grass\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 105\"}},{\"text\":\"]\\n[\"},{\"text\":\"Poison\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 106\"}},{\"text\":\"]\\n[\"},{\"text\":\"Electric\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 107\"}},{\"text\":\"]\\n[\"},{\"text\":\"Ground\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 108\"}},{\"text\":\"]\\n[\"},{\"text\":\"Psychic\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 109\"}},{\"text\":\"]\\n\\n \"}]","[\"\",{\"text\":\"[\"},{\"text\":\"Rock\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 110\"}},{\"text\":\"]\\n[\"},{\"text\":\"Ice\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 111\"}},{\"text\":\"]\\n[\"},{\"text\":\"Bug\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 112\"}},{\"text\":\"]\\n[\"},{\"text\":\"Dragon\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 113\"}},{\"text\":\"]\\n[\"},{\"text\":\"Ghost\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 114\"}},{\"text\":\"]\\n[\"},{\"text\":\"Dark\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 115\"}},{\"text\":\"]\\n[\"},{\"text\":\"Steel\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 116\"}},{\"text\":\"]\\n[\"},{\"text\":\"Fairy\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 117\"}},{\"text\":\"]\\n \"}]"],title:"Friend Safari",author:"",display:{Lore:["A tool to activate your","Friend Safari codes!"]}}
+give @a[scores={TrainerLoot60=1}] written_book{pages:["[\"\",{\"text\":\"Click what type you want to explore!\\n\\n[\"},{\"text\":\"Normal\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 100\"}},{\"text\":\"]\\n[\"},{\"text\":\"Fire\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 101\"}},{\"text\":\"]\\n[\"},{\"text\":\"Fighting\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 102\"}},{\"text\":\"]\\n[\"},{\"text\":\"Water\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 103\"}},{\"text\":\"]\\n[\"},{\"text\":\"Flying\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 104\"}},{\"text\":\"]\\n[\"},{\"text\":\"Grass\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 105\"}},{\"text\":\"]\\n[\"},{\"text\":\"Poison\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 106\"}},{\"text\":\"]\\n[\"},{\"text\":\"Electric\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 107\"}},{\"text\":\"]\\n[\"},{\"text\":\"Ground\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 108\"}},{\"text\":\"]\\n[\"},{\"text\":\"Psychic\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 109\"}},{\"text\":\"]\\n\\n \"}]","[\"\",{\"text\":\"[\"},{\"text\":\"Rock\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 110\"}},{\"text\":\"]\\n[\"},{\"text\":\"Ice\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 111\"}},{\"text\":\"]\\n[\"},{\"text\":\"Bug\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 112\"}},{\"text\":\"]\\n[\"},{\"text\":\"Dragon\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 113\"}},{\"text\":\"]\\n[\"},{\"text\":\"Ghost\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 114\"}},{\"text\":\"]\\n[\"},{\"text\":\"Dark\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 115\"}},{\"text\":\"]\\n[\"},{\"text\":\"Steel\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 116\"}},{\"text\":\"]\\n[\"},{\"text\":\"Fairy\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger FriendSafari set 117\"}},{\"text\":\"]\\n \"}]"],title:"Friend Safari",author:"",display:{Lore:["A tool to activate your","Friend Safari codes!"]}}
 scoreboard players add @a[scores={TrainerLoot60=1}] TrainerLoot60 1
 
 
@@ -467,13 +467,12 @@ scoreboard players add @a[scores={TrainerLoot97=1}] TrainerLoot97 1
 
 #NPCs wanting to see Pokemon
 #Genesect
-tag @e[x=-1947,y=140,z=594,distance=..15,type=pixelmon:pixelmon,tag=!Genesect,nbt={ndex:649s}] add Genesect
-execute as @e[tag=Genesect,type=pixelmon:pixelmon,limit=1] run tellraw @a[scores={TrainerLoot98=1}] {"text":"<Hiker> Is that Pokémon with you... Genesect?! Well then, why don\u2019t I give you these four drives?"}
-execute as @e[tag=Genesect,type=pixelmon:pixelmon,limit=1] run give @a[scores={TrainerLoot98=1}] pixelmon:shock_drive
-execute as @e[tag=Genesect,type=pixelmon:pixelmon,limit=1] run give @a[scores={TrainerLoot98=1}] pixelmon:burn_drive
-execute as @e[tag=Genesect,type=pixelmon:pixelmon,limit=1] run give @a[scores={TrainerLoot98=1}] pixelmon:douse_drive
-execute as @e[tag=Genesect,type=pixelmon:pixelmon,limit=1] run give @a[scores={TrainerLoot98=1}] pixelmon:chill_drive
-execute as @e[tag=Genesect,type=pixelmon:pixelmon,limit=1] run scoreboard players add @a[scores={TrainerLoot98=1}] TrainerLoot98 1
+execute if entity @e[x=-1947,y=140,z=594,distance=..15,nbt={ndex:649s},type=pixelmon:pixelmon,limit=1] run tellraw @a[scores={TrainerLoot98=1}] {"text":"<Hiker> Is that Pokémon with you... Genesect?! Well then, why don\u2019t I give you these four drives?"}
+execute if entity @e[x=-1947,y=140,z=594,distance=..15,nbt={ndex:649s},type=pixelmon:pixelmon,limit=1] run give @a[scores={TrainerLoot98=1}] pixelmon:shock_drive
+execute if entity @e[x=-1947,y=140,z=594,distance=..15,nbt={ndex:649s},type=pixelmon:pixelmon,limit=1] run give @a[scores={TrainerLoot98=1}] pixelmon:burn_drive
+execute if entity @e[x=-1947,y=140,z=594,distance=..15,nbt={ndex:649s},type=pixelmon:pixelmon,limit=1] run give @a[scores={TrainerLoot98=1}] pixelmon:douse_drive
+execute if entity @e[x=-1947,y=140,z=594,distance=..15,nbt={ndex:649s},type=pixelmon:pixelmon,limit=1] run give @a[scores={TrainerLoot98=1}] pixelmon:chill_drive
+execute if entity @e[x=-1947,y=140,z=594,distance=..15,nbt={ndex:649s},type=pixelmon:pixelmon,limit=1] run scoreboard players add @a[scores={TrainerLoot98=1}] TrainerLoot98 1
 scoreboard players set @a[scores={TrainerLoot98=1}] TrainerLoot98 0
 
 
@@ -487,10 +486,9 @@ execute as @e[tag=Genie,type=pixelmon:pixelmon,limit=1] run scoreboard players a
 scoreboard players set @a[scores={TrainerLoot99=1}] TrainerLoot99 0
 
 #Shaymin
-tag @e[x=1195,y=74,z=472,dx=50,dy=10,dz=50,type=pixelmon:pixelmon,tag=!Shaymin,nbt={ndex:492s}] add Shaymin
-execute @e[x=1195,y=74,z=472,dx=50,dy=10,dz=50,tag=Shaymin,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=1195,y=74,z=472,dx=50,dy=10,dz=50,type=player,scores={TrainerLoot46=1}] {"text":"<Lass Amy> Oh, wow! It's Shaymin! When I see Shaymin, the first thing that comes to mind is the Gracidea flower! And it just so happens that I have a bunch. I'd be happy to share with you!"}
-execute @e[x=1195,y=74,z=472,dx=50,dy=10,dz=50,tag=Shaymin,type=pixelmon:pixelmon,limit=1] run give @a[scores={TrainerLoot46=1}] pixelmon:gracidea
-execute @e[x=1195,y=74,z=472,dx=50,dy=10,dz=50,tag=Shaymin,type=pixelmon:pixelmon,limit=1] run scoreboard players add @a[scores={TrainerLoot46=1}] TrainerLoot46 1
+execute if entity @e[x=1195,y=74,z=472,dx=50,dy=10,dz=50,nbt={ndex:492s},type=pixelmon:pixelmon,limit=1] run tellraw @a[x=1195,y=74,z=472,dx=50,dy=10,dz=50,scores={TrainerLoot46=1}] {"text":"<Lass Amy> Oh, wow! It's Shaymin! When I see Shaymin, the first thing that comes to mind is the Gracidea flower! And it just so happens that I have a bunch. I'd be happy to share with you!"}
+execute if entity @e[x=1195,y=74,z=472,dx=50,dy=10,dz=50,nbt={ndex:492s},type=pixelmon:pixelmon,limit=1] run give @a[scores={TrainerLoot46=1}] pixelmon:gracidea
+execute if entity @e[x=1195,y=74,z=472,dx=50,dy=10,dz=50,nbt={ndex:492s},type=pixelmon:pixelmon,limit=1] run scoreboard players add @a[scores={TrainerLoot46=1}] TrainerLoot46 1
 scoreboard players set @a[scores={TrainerLoot46=1}] TrainerLoot46 0
 
 #Deoxys
@@ -503,8 +501,7 @@ scoreboard players set @a[scores={TrainerLoot46=1}] TrainerLoot46 0
 
 
 #Kyurem
-tag @e[x=1143,y=65,z=1512,dx=39,dy=10,dz=26,type=pixelmon:pixelmon,tag=!Kyurem,nbt={ndex:646s}] add Kyurem
-execute as @e[x=1143,y=65,z=1512,dx=39,dy=10,dz=26,tag=Kyurem,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=1143,y=65,z=1512,dx=39,dy=10,dz=26,type=player,scores={TrainerLoot100=1}] {"text":"<Punk Girl> That's Kyurem! Then, take these... The great Pokémon Kyurem can use those DNA Splicers... Then it can absofuse with Reshiram or Zekrom!"}
-execute as @e[x=1143,y=65,z=1512,dx=39,dy=10,dz=26,tag=Kyurem,type=pixelmon:pixelmon,limit=1] run give @a[scores={TrainerLoot100=1}] pixelmon:dna_splicers
-execute as @e[x=1143,y=65,z=1512,dx=39,dy=10,dz=26,tag=Kyurem,type=pixelmon:pixelmon,limit=1] run scoreboard players add @a[scores={TrainerLoot100=1}] TrainerLoot100 1
+execute if entity @e[x=1143,y=65,z=1512,dx=39,dy=10,dz=26,nbt={ndex:646s},type=pixelmon:pixelmon,limit=1] run tellraw @a[x=1143,y=65,z=1512,dx=39,dy=10,dz=26,scores={TrainerLoot100=1}] {"text":"<Punk Girl> That's Kyurem! Then, take these... The great Pokémon Kyurem can use those DNA Splicers... Then it can absofuse with Reshiram or Zekrom!"}
+execute if entity @e[x=1143,y=65,z=1512,dx=39,dy=10,dz=26,nbt={ndex:646s},type=pixelmon:pixelmon,limit=1] run give @a[scores={TrainerLoot100=1}] pixelmon:dna_splicers
+execute if entity @e[x=1143,y=65,z=1512,dx=39,dy=10,dz=26,nbt={ndex:646s},type=pixelmon:pixelmon,limit=1] run scoreboard players add @a[scores={TrainerLoot100=1}] TrainerLoot100 1
 scoreboard players set @a[scores={TrainerLoot100=1}] TrainerLoot100 0

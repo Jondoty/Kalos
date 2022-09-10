@@ -415,7 +415,7 @@ execute as @s[scores={DialogueTrigger=15,TalkTime=1}] run tp @e[x=-504,y=125,z=1
 tellraw @s[scores={DialogueTrigger=15,TalkTime=2}] ["",{"text":"<"},{"text":"Dexio","color":"aqua"},{"text":"> So, how are you and your Pokémon getting along?"}]
 tellraw @s[scores={DialogueTrigger=15,TalkTime=10}] ["",{"text":"<"},{"text":"Dexio","color":"aqua"},{"text":"> The more you walk around with your Pokémon, the stronger your friendship will become."}]
 tellraw @s[scores={DialogueTrigger=15,TalkTime=20}] ["",{"text":"<"},{"text":"Dexio","color":"aqua"},{"text":"> Here! This is the TM for Return."}]
-execute as @s[scores={DialogueTrigger=15,TalkTime=22}] give @s pixelmon:tm_gen6{tm:27}
+execute as @s[scores={DialogueTrigger=15,TalkTime=22}] run give @s pixelmon:tm_gen6{tm:27}
 execute as @s[scores={DialogueTrigger=15,TalkTime=22}] run playsound pixelmon:pixelmon.block.pokelootobtained block @s ~ ~ ~ 1 1 1
 tellraw @s[scores={DialogueTrigger=15,TalkTime=29}] ["",{"text":"<"},{"text":"Dexio","color":"aqua"},{"text":"> This is a move that gets more powerful when your friendship with the Pokémon using it is strong."}]
 tellraw @s[scores={DialogueTrigger=15,TalkTime=39}] ["",{"text":"<"},{"text":"Sina","color":"red"},{"text":"> Right through this gate, and you'll be in Lumiose City! Go on already!"}]
@@ -1777,7 +1777,7 @@ scoreboard players set @s[tag=Dialogue54] DialogueTrigger 0
 execute as @s[scores={DialogueTrigger=55,TalkTime=14}] run data modify entity @e[limit=1,x=-1575,y=34,z=-205,dy=3,type=pixelmon:npc_chatting] {Rotation:[180.0f,0.0f]}
 tellraw @s[scores={DialogueTrigger=55,TalkTime=3}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> Hey, "},{"selector":"@s"},{"text":"!"}]
 tellraw @s[scores={DialogueTrigger=55,TalkTime=9}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> If you use the move Flash, not as many wild Pokémon will turn up."}]
-execute as @s[scores={DialogueTrigger=55,TalkTime=14}] run give pixelmon:tm_gen6{tm:70}
+execute as @s[scores={DialogueTrigger=55,TalkTime=14}] run give @s pixelmon:tm_gen6{tm:70}
 execute as @s[scores={DialogueTrigger=55,TalkTime=14}] run function kalos:spawn/flashhm
 tellraw @s[scores={DialogueTrigger=55,TalkTime=19}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> I kinda depend on Flash."}]
 tellraw @s[scores={DialogueTrigger=55,TalkTime=26}] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> I'm still not very good at battling, so I keep running into trouble..."}]
@@ -3688,7 +3688,7 @@ tellraw @s[scores={DialogueTrigger=107,TalkTime=5}] {"text":"The piece of furnit
 tellraw @s[scores={DialogueTrigger=107,TalkTime=14}] ["",{"selector":"@s","italic":true,"color":"gray"},{"text":" said the password in front of the hidden door. \u201cOpen sesame\u201d!","italic":true,"color":"gray"}]
 
 execute as @s[scores={DialogueTrigger=107,TalkTime=23}] run fill -294 137 429 -297 133 429 air
-execute as @a[scores={DialogueTrigger=107,TalkTime=23}] run fill -292 136 429 -289 133 429 minecraft:spruce_stairs 7
+execute as @a[scores={DialogueTrigger=107,TalkTime=23}] run fill -292 136 429 -289 133 429 minecraft:spruce_stairs[facing=north,half=top,shape=straight]
 execute as @s[scores={DialogueTrigger=107,TalkTime=23}] run fill -292 137 429 -289 137 429 minecraft:flower_pot
 
 tag @s[scores={DialogueTrigger=107,TalkTime=23..}] add Dialogue107
@@ -9332,7 +9332,7 @@ execute as @s[scores={DialogueTrigger=252,TalkTime=15}] run tp @e[x=-287,y=100,z
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=252,TalkTime=25}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=252,TalkTime=26}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-execute as @a[score_DialogueTrigger_min=252,score_DialogueTrigger=252,tag=!Dialogue252,score_TalkTime_min=26,score_TalkTime=26] run pokeheal @s
+execute as @a[scores={DialogueTrigger=252,TalkTime=26}] run pokeheal @s
 
 #tp owner in
 execute as @s[scores={DialogueTrigger=252,TalkTime=35}] run particle cloud -287 101 158 2 2 2 1 100
@@ -9345,7 +9345,7 @@ tellraw @s[scores={DialogueTrigger=252,TalkTime=54}] {"text":"<Owner Christophe>
 tellraw @s[scores={DialogueTrigger=252,TalkTime=67}] {"text":"<Owner Christophe> This allows us to extract every last essence of flavor from its core."}
 tellraw @s[scores={DialogueTrigger=252,TalkTime=76}] ["",{"text":"<Owner Christophe> It takes precisely "},{"text":"60 seconds","color":"gray"},{"text":" to bring it to the prime state for eating."}]
 tellraw @s[scores={DialogueTrigger=252,TalkTime=77}] {"text":"<Owner Christophe> Might I suggest a battle?"}
-execute as @a[score_DialogueTrigger_min=252,score_DialogueTrigger=252,tag=!Dialogue252,score_TalkTime_min=85,score_TalkTime=85] run pokebattle @s Christophe2
+execute as @a[scores={DialogueTrigger=252,TalkTime=85},tag=!Dialogue252] run pokebattle @s Christophe2
 
 tag @s[scores={DialogueTrigger=252,TalkTime=85..}] add Dialogue252
 scoreboard players set @s[tag=Dialogue252] TalkTime 0
@@ -9379,7 +9379,7 @@ execute as @s[scores={DialogueTrigger=253,TalkTime=43}] run tp @e[x=-287,y=100,z
 #Eat and Heal
 execute as @s[scores={DialogueTrigger=253,TalkTime=53}] run effect give @s minecraft:blindness 5 1 true
 execute as @s[scores={DialogueTrigger=253,TalkTime=54}] run playsound pixelmon:pixelmon.block.healeractivate ambient @s ~ ~ ~ 1 1 1
-execute as @s[score_DialogueTrigger_min=253,score_DialogueTrigger=253,tag=!Dialogue253,score_TalkTime_min=54,score_TalkTime=54] run pokeheal @s
+execute as @s[scores={DialogueTrigger=253,TalkTime=54}] run pokeheal @s
 #execute as @s[score_DialogueTrigger_min=253,score_DialogueTrigger=253,tag=!Dialogue253,score_TalkTime_min=55,score_TalkTime=55] run
 
 #tp waiter in
@@ -9393,7 +9393,7 @@ tellraw @s[scores={DialogueTrigger=253,TalkTime=83}] {"text":"<Garçon Morris> A
 tellraw @s[scores={DialogueTrigger=253,TalkTime=94}] {"text":"<Garçon Morris> harvested from the coastal ocean near Cyllage City and boiled in the salt water of its sea environment so gently that it barely bubbles in the pot."}
 tellraw @s[scores={DialogueTrigger=253,TalkTime=107}] ["",{"text":"<Garçon Morris> It will take "},{"text":"90 seconds","color":"gray"},{"text":" for the heat to spread evenly throughout the dish."}]
 tellraw @s[scores={DialogueTrigger=253,TalkTime=117}] {"text":"<Garçon Morris> Would you care for a battle to help pass the time?"}
-execute as @s[score_DialogueTrigger_min=253,score_DialogueTrigger=253,tag=!Dialogue253,score_TalkTime_min=125,score_TalkTime=125] run pokebattle @s Morris1
+execute as @s[scores={DialogueTrigger=253,TalkTime=125},tag=!Dialogue253] run pokebattle @s Morris1
 
 tag @s[scores={DialogueTrigger=253,TalkTime=125..}] add Dialogue253
 scoreboard players set @s[tag=Dialogue253] TalkTime 0

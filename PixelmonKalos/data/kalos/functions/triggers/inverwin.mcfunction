@@ -31,37 +31,36 @@ scoreboard players add @e[sort=random,limit=1,x=-687,y=100,z=1376,dx=2,dy=4] rng
 scoreboard players operation @e[x=-683,y=100,z=1376,dy=3,type=armor_stand] rng = @e[x=-687,y=100,z=1376,dy=3,type=armor_stand] rng
 
 
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=0..4}] run give @a[tag=temp] pixelmon:Oran_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=5..9}] run give @a[tag=temp] pixelmon:Sitrus_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=10..14}] run give @a[tag=temp] pixelmon:Occa_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=15..19}] run give @a[tag=temp] pixelmon:Passho_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=20..24}] run give @a[tag=temp] pixelmon:Wacan_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=25..29}] run give @a[tag=temp] pixelmon:Rindo_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=30..34}] run give @a[tag=temp] pixelmon:Yache_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=35..39}] run give @a[tag=temp] pixelmon:Chople_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=40..44}] run give @a[tag=temp] pixelmon:Kebia_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=45..49}] run give @a[tag=temp] pixelmon:Shuca_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=50..54}] run give @a[tag=temp] pixelmon:Coba_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=55..59}] run give @a[tag=temp] pixelmon:Payapa_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=60..64}] run give @a[tag=temp] pixelmon:Tanga_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=65..69}] run give @a[tag=temp] pixelmon:Charti_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=70..74}] run give @a[tag=temp] pixelmon:Kasib_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=75..79}] run give @a[tag=temp] pixelmon:Haban_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=80..84}] run give @a[tag=temp] pixelmon:Colbur_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=85..89}] run give @a[tag=temp] pixelmon:Babiri_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=90..94}] run give @a[tag=temp] pixelmon:Chilan_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=95..99}] run give @a[tag=temp] pixelmon:Roseli_Berry 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=100..113}] run give @a[tag=temp] pixelmon:Fire_Stone 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=114..127}] run give @a[tag=temp] pixelmon:Water_Stone 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=128..141}] run give @a[tag=temp] pixelmon:Leaf_Stone 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=142..155}] run give @a[tag=temp] pixelmon:Thunder_Stone 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=156..169}] run give @a[tag=temp] pixelmon:Moon_Stone 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=170..183}] run give @a[tag=temp] pixelmon:Sun_Stone 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=184..197}] run give @a[tag=temp] pixelmon:Shiny_Stone 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=198..211}] run give @a[tag=temp] pixelmon:Dusk_Stone 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=212..225}] run give @a[tag=temp] pixelmon:Dawn_Stone 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=226..239}] run give @a[tag=temp] pixelmon:Everstone 1 0
-execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=240..256}] run give @a[tag=temp] pixelmon:Rare_Candy 1 0
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=0..4}] run give @a[tag=temp] pixelmon:oran_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=5..9}] run give @a[tag=temp] pixelmon:sitrus_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=10..14}] run give @a[tag=temp] pixelmon:occa_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=15..19}] run give @a[tag=temp] pixelmon:passho_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=20..24}] run give @a[tag=temp] pixelmon:wacan_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=25..29}] run give @a[tag=temp] pixelmon:rindo_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=30..34}] run give @a[tag=temp] pixelmon:yache_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=35..39}] run give @a[tag=temp] pixelmon:chople_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=40..44}] run give @a[tag=temp] pixelmon:kebia_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=45..49}] run give @a[tag=temp] pixelmon:shuca_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=50..54}] run give @a[tag=temp] pixelmon:coba_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=55..59}] run give @a[tag=temp] pixelmon:payapa_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=60..64}] run give @a[tag=temp] pixelmon:tanga_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=65..69}] run give @a[tag=temp] pixelmon:charti_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=70..74}] run give @a[tag=temp] pixelmon:kasib_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=75..79}] run give @a[tag=temp] pixelmon:haban_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=80..84}] run give @a[tag=temp] pixelmon:colbur_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=85..89}] run give @a[tag=temp] pixelmon:babiri_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=90..94}] run give @a[tag=temp] pixelmon:chilan_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=95..99}] run give @a[tag=temp] pixelmon:roseli_berry
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=100..113}] run give @a[tag=temp] pixelmon:fire_stone
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=114..127}] run give @a[tag=temp] pixelmon:water_stone
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=128..141}] run give @a[tag=temp] pixelmon:leaf_stone
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=142..155}] run give @a[tag=temp] pixelmon:thunder_stone
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=156..169}] run give @a[tag=temp] pixelmon:moon_stone
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=170..183}] run give @a[tag=temp] pixelmon:sun_stone
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=184..197}] run give @a[tag=temp] pixelmon:shiny_stone
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=198..211}] run give @a[tag=temp] pixelmon:dusk_stone
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=212..225}] run give @a[tag=temp] pixelmon:dawn_stone
+execute as @e[x=-683,y=100,z=1376,dy=3,type=armor_stand,scores={rng=226..239}] run give @a[tag=temp] pixelmon:ever_stone
 
 
 
