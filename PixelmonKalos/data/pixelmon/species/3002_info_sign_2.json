@@ -1,6 +1,6 @@
 {
-  "name": "Helix",
-  "dex": 2000,
+  "name": "Info Sign No 2",
+  "dex": 3002,
   "defaultForms": [
     ""
   ],
@@ -87,13 +87,13 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/2000_helix/all/base/none/texture.png",
-              "sprite": "pixelmon:pokemon/2000_helix/all/base/none/sprite.png",
+              "texture": "pixelmon:pokemon/2001_dome/all/base/none/texture.png",
+              "sprite": "pixelmon:pokemon/2001_dome/all/base/none/sprite.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "pixelmon:pokemon/2000_helix/all/base/none/model.pqc"
+                  "pixelmon:pokemon/2001_dome/all/base/none/model.pqc"
                 ]
               },
               "sounds": []
