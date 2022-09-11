@@ -254,7 +254,7 @@ give @a[scores={DialogueTrigger=262,TalkTime=76..77,RestaurantTotal=325..349}] p
 give @a[scores={DialogueTrigger=262,TalkTime=76..77,RestaurantTotal=350..374}] pixelmon:big_nugget 21
 give @a[scores={DialogueTrigger=262,TalkTime=76..77,RestaurantTotal=375..399}] pixelmon:big_nugget 22
 give @a[scores={DialogueTrigger=262,TalkTime=76..77,RestaurantTotal=400..424}] pixelmon:big_nugget 23
-give @a[scores={DialogueTrigger=262,TalkTime=76..77,RestaurantTotal=425..449}] pixelmon:big_nugget 24b
+give @a[scores={DialogueTrigger=262,TalkTime=76..77,RestaurantTotal=425..449}] pixelmon:big_nugget 24
 give @a[scores={DialogueTrigger=262,TalkTime=76..77,RestaurantTotal=450..474}] pixelmon:big_nugget 25
 give @a[scores={DialogueTrigger=262,TalkTime=76..77,RestaurantTotal=475..499}] pixelmon:big_nugget 24
 give @a[scores={DialogueTrigger=262,TalkTime=76..77,RestaurantTotal=500..524}] pixelmon:big_nugget 23

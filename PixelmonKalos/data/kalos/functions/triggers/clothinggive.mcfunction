@@ -809,7 +809,7 @@ execute as @a[scores={TalkTrigger=129}] run scoreboard players remove @s[scores=
 execute as @a[scores={TalkTrigger=130}] run give @s[scores={Shoes19=1..}] pixelmon:dusk_stone_boots
 execute as @a[scores={TalkTrigger=130}] run scoreboard players remove @s[scores={Shoes19=1..}] Shoes19 1
 
-execute as @a[scores={TalkTrigger=131}] run  give @s[scores={Shoes20=1..}] pixelmon:aluminium_boots
+execute as @a[scores={TalkTrigger=131}] run give @s[scores={Shoes20=1..}] pixelmon:aluminium_boots
 execute as @a[scores={TalkTrigger=131}] run scoreboard players remove @s[scores={Shoes20=1..}] Shoes20 1
 
 

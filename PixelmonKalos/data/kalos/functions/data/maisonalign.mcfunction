@@ -11,12 +11,12 @@
 #Adds Skip tags if a Pokemon is already standing on that spot
 
 #Player's positions
-execute as @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=BattleMaisonMusic,scores={BattleMaison=3..4}] run execute as @e[x=1223,y=74,z=1542,dy=3,type=armor_stand] run execute as @e[type=pixelmon:pixelmon,distance=..2] run tag @e[x=1223,y=74,z=1542,dy=3,type=armor_stand] add Skip
-execute as @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=BattleMaisonMusic,scores={BattleMaison=3..4}] run execute as @e[x=1223,y=74,z=1548,dy=3,type=armor_stand] run execute as @e[type=pixelmon:pixelmon,distance=..2] run tag @e[x=1223,y=74,z=1548,dy=3,type=armor_stand] add Skip
+execute if entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=BattleMaisonMusic,scores={BattleMaison=3..4}] at @e[x=1223,y=74,z=1542,dy=3,type=armor_stand] as @e[type=pixelmon:pixelmon,distance=..2] run tag @e[x=1223,y=74,z=1542,dy=3,type=armor_stand] add Skip
+execute if entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=BattleMaisonMusic,scores={BattleMaison=3..4}] at @e[x=1223,y=74,z=1548,dy=3,type=armor_stand] as @e[type=pixelmon:pixelmon,distance=..2] run tag @e[x=1223,y=74,z=1548,dy=3,type=armor_stand] add Skip
 
 #NPC positions
-execute as @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=BattleMaisonMusic,scores={BattleMaison=3..4}] run execute as @e[x=1217,y=74,z=1542,dy=3,type=armor_stand] run execute as @e[type=pixelmon:pixelmon,distance=..2] run tag @e[x=1217,y=74,z=1542,dy=3,type=armor_stand] add Skip
-execute as @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=BattleMaisonMusic,scores={BattleMaison=3..4}] run execute as @e[x=1217,y=74,z=1548,dy=3,type=armor_stand] run execute as @e[type=pixelmon:pixelmon,distance=..2] run tag @e[x=1217,y=74,z=1548,dy=3,type=armor_stand] add Skip
+execute if entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=BattleMaisonMusic,scores={BattleMaison=3..4}] at @e[x=1217,y=74,z=1542,dy=3,type=armor_stand] as @e[type=pixelmon:pixelmon,distance=..2] run tag @e[x=1217,y=74,z=1542,dy=3,type=armor_stand] add Skip
+execute if entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=BattleMaisonMusic,scores={BattleMaison=3..4}] at @e[x=1217,y=74,z=1548,dy=3,type=armor_stand] as @e[type=pixelmon:pixelmon,distance=..2] run tag @e[x=1217,y=74,z=1548,dy=3,type=armor_stand] add Skip
 
 
 
@@ -26,21 +26,21 @@ execute as @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=BattleMaisonMusic,scores=
 
 
 #Tps the trainer's Pokemon
-execute as @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=BattleMaisonMusic,scores={BattleMaison=3..4}] run execute as @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer] run tp @e[distance=..2,type=pixelmon:pixelmon] @e[x=1217,y=74,z=1548,dy=3,type=armor_stand,tag=!Skip]
-execute as @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=BattleMaisonMusic,scores={BattleMaison=3..4}] run execute as @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer] run tp @e[distance=..2,type=pixelmon:pixelmon] @e[x=1217,y=74,z=1542,dy=3,type=armor_stand,tag=!Skip]
+execute if entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=BattleMaisonMusic,scores={BattleMaison=3..4}] at @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer] run tp @e[distance=..2,type=pixelmon:pixelmon] @e[x=1217,y=74,z=1548,dy=3,type=armor_stand,tag=!Skip,limit=1]
+execute if entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=BattleMaisonMusic,scores={BattleMaison=3..4}] at @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer] run tp @e[distance=..2,type=pixelmon:pixelmon] @e[x=1217,y=74,z=1542,dy=3,type=armor_stand,tag=!Skip,limit=1]
 
-execute as @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=EliteFourBattleMusic,scores={BattleMaison=3..4}] run execute as @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer] run tp @e[distance=..2,type=pixelmon:pixelmon] @e[x=1217,y=74,z=1548,dy=3,type=armor_stand,tag=!Skip]
-execute as @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=EliteFourBattleMusic,scores={BattleMaison=3..4}] run execute as @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer] run tp @e[distance=..2,type=pixelmon:pixelmon] @e[x=1217,y=74,z=1542,dy=3,type=armor_stand,tag=!Skip]
+execute if entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=EliteFourBattleMusic,scores={BattleMaison=3..4}] at @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer] run tp @e[distance=..2,type=pixelmon:pixelmon] @e[x=1217,y=74,z=1548,dy=3,type=armor_stand,tag=!Skip,limit=1]
+execute if entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=EliteFourBattleMusic,scores={BattleMaison=3..4}] at @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer] run tp @e[distance=..2,type=pixelmon:pixelmon] @e[x=1217,y=74,z=1542,dy=3,type=armor_stand,tag=!Skip,limit=1]
 
 
 
 
 #Tps the player's Pokemon
-execute as @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=BattleMaisonMusic,scores={BattleMaison=3=4}] run tp @e[distance=..2,type=pixelmon:pixelmon,limit=1] @e[x=1223,y=74,z=1548,dy=3,type=armor_stand,tag=!Skip]
-execute as @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=BattleMaisonMusic,scores={BattleMaison=3=4}] run tp @e[distance=..2,type=pixelmon:pixelmon,limit=1] @e[x=1223,y=74,z=1542,dy=3,type=armor_stand,tag=!Skip]
+execute if entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=BattleMaisonMusic,scores={BattleMaison=3=4}] run tp @e[distance=..2,type=pixelmon:pixelmon,limit=1] @e[x=1223,y=74,z=1548,dy=3,type=armor_stand,tag=!Skip,limit=1]
+execute if entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=BattleMaisonMusic,scores={BattleMaison=3=4}] run tp @e[distance=..2,type=pixelmon:pixelmon,limit=1] @e[x=1223,y=74,z=1542,dy=3,type=armor_stand,tag=!Skip,limit=1]
 
-execute as @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=EliteFourBattleMusic,scores={BattleMaison=3..4}] run tp @e[distance=..2,type=pixelmon:pixelmon,limit=1] @e[x=1223,y=74,z=1548,dy=3,type=armor_stand,tag=!Skip]
-execute as @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=EliteFourBattleMusic,scores={BattleMaison=3..4}] run tp @e[distance=..2,type=pixelmon:pixelmon,limit=1] @e[x=1223,y=74,z=1542,dy=3,type=armor_stand,tag=!Skip]
+execute if entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=EliteFourBattleMusic,scores={BattleMaison=3..4}] run tp @e[distance=..2,type=pixelmon:pixelmon,limit=1] @e[x=1223,y=74,z=1548,dy=3,type=armor_stand,tag=!Skip,limit=1]
+execute if entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=EliteFourBattleMusic,scores={BattleMaison=3..4}] run tp @e[distance=..2,type=pixelmon:pixelmon,limit=1] @e[x=1223,y=74,z=1542,dy=3,type=armor_stand,tag=!Skip,limit=1]
 
 
 

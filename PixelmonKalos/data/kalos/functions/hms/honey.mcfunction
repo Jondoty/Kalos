@@ -46,8 +46,8 @@ execute as @s[x=-1897,y=0,z=-63,dx=257,dy=86,dz=201,scores={rng=121..127,HoneyUs
 execute as @s[x=-1897,y=0,z=-63,dx=257,dy=86,dz=201,scores={rng=121..127,HoneyUse=1..}] run pokespawn Axew lvl:8 ~-4 ~ ~2
 tellraw @a[x=-1897,y=0,z=-63,dx=257,dy=86,dz=201,scores={rng=121..127,HoneyUse=1..}] {"text":"A hoard of Axew spawned!","italic":true,"color":"gray"}
 
-execute as @s[x=-1897,y=0,z=-63,dx=257,dy=86,dz=201,scores={HoneyUse=1..},nbt={IsShiny:1b,OwnerUUID:""}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-1897,y=0,z=-63,dx=257,dy=86,dz=201,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=-1897,y=0,z=-63,dx=257,dy=86,dz=201,scores={HoneyUse=1..},nbt={IsShiny:1b,OwnerUUID:""}] run tag @e[distance=..10,type=pixelmon:pixelmon] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-1897,y=0,z=-63,dx=257,dy=86,dz=201,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=-1897,y=0,z=-63,dx=257,dy=86,dz=201,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -84,8 +84,8 @@ execute as @s[x=-1847,y=0,z=-675,dx=414,dy=89,dz=507,scores={rng=121..127,HoneyU
 execute as @s[x=-1847,y=0,z=-675,dx=414,dy=89,dz=507,scores={rng=121..127,HoneyUse=1..}] run pokespawn Roggenrola lvl:11 ~-4 ~ ~2
 tellraw @a[x=-1847,y=0,z=-675,dx=414,dy=89,dz=507,scores={rng=121..127,HoneyUse=1..}] {"text":"A hoard of Roggenrola & a Carbink spawned!","italic":true,"color":"gray"}
 
-execute as @s[x=-1847,y=0,z=-675,dx=414,dy=89,dz=507,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-1847,y=0,z=-675,dx=414,dy=89,dz=507,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=-1847,y=0,z=-675,dx=414,dy=89,dz=507,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-1847,y=0,z=-675,dx=414,dy=89,dz=507,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=-1847,y=0,z=-675,dx=414,dy=89,dz=507,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -116,8 +116,8 @@ execute as @s[x=-1483,y=0,z=-1340,dx=278,dy=256,dz=451,scores={rng=53..127,Honey
 execute as @s[x=-1483,y=0,z=-1340,dx=278,dy=256,dz=451,scores={rng=53..127,HoneyUse=1..}] run pokespawn Wingull lvl:13 ~-4 ~ ~2
 tellraw @a[x=-1483,y=0,z=-1340,dx=278,dy=256,dz=451,scores={rng=53..127,HoneyUse=1..}] {"text":"A hoard of Wingull spawned!","italic":true,"color":"gray"}
 
-execute as @s[x=-1483,y=0,z=-1340,dx=278,dy=256,dz=451,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-1483,y=0,z=-1340,dx=278,dy=256,dz=451,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=-1483,y=0,z=-1340,dx=278,dy=256,dz=451,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-1483,y=0,z=-1340,dx=278,dy=256,dz=451,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=-1483,y=0,z=-1340,dx=278,dy=256,dz=451,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -148,8 +148,8 @@ execute as @s[x=444,y=0,z=-1444,dx=465,dy=126,dz=550,scores={rng=84..127,HoneyUs
 execute as @s[x=444,y=0,z=-1444,dx=465,dy=126,dz=550,scores={rng=84..127,HoneyUse=1..}] run pokespawn Cubchoo lvl:20 ~-4 ~ ~2
 tellraw @a[x=444,y=0,z=-1444,dx=465,dy=126,dz=550,scores={rng=84..127,HoneyUse=1..}] {"text":"A hoard of Cubchoo spawned!","italic":true,"color":"gray"}
 
-execute as @s[x=444,y=0,z=-1444,dx=465,dy=126,dz=550,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=444,y=0,z=-1444,dx=465,dy=126,dz=550,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=444,y=0,z=-1444,dx=465,dy=126,dz=550,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=444,y=0,z=-1444,dx=465,dy=126,dz=550,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=444,y=0,z=-1444,dx=465,dy=126,dz=550,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -189,8 +189,8 @@ execute as @s[x=1720,y=0,z=-232,dx=421,dy=100,dz=324,scores={rng=60..127,HoneyUs
 execute as @s[x=1720,y=0,z=-232,dx=421,dy=100,dz=324,scores={rng=60..127,HoneyUse=1..}] run pokespawn Durant lvl:23 ~-4 ~ ~2
 tellraw @a[x=1720,y=0,z=-232,dx=421,dy=100,dz=324,scores={rng=60..127,HoneyUse=1..}] {"text":"A hoard of Durant spawned!","italic":true,"color":"gray"}
 
-execute as @s[x=1720,y=0,z=-232,dx=421,dy=100,dz=324,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=1720,y=0,z=-232,dx=421,dy=100,dz=324,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=1720,y=0,z=-232,dx=421,dy=100,dz=324,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=1720,y=0,z=-232,dx=421,dy=100,dz=324,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=1720,y=0,z=-232,dx=421,dy=100,dz=324,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -223,8 +223,8 @@ execute as @s[x=703,y=90,z=563,dx=280,dy=100,dz=279,scores={rng=53..127,HoneyUse
 tellraw @a[x=703,y=90,z=563,dx=280,dy=100,dz=279,scores={rng=53..127,HoneyUse=1..}] {"text":"A hoard of Foongus spawned!","italic":true,"color":"gray"}
 
 
-execute as @s[x=703,y=90,z=563,dx=280,dy=100,dz=279,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=703,y=90,z=563,dx=280,dy=100,dz=279,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=703,y=90,z=563,dx=280,dy=100,dz=279,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=703,y=90,z=563,dx=280,dy=100,dz=279,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=703,y=90,z=563,dx=280,dy=100,dz=279,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -264,8 +264,8 @@ execute as @s[x=1500,y=0,z=1203,dx=982,dy=256,dz=554,scores={rng=122..127,HoneyU
 tellraw @a[x=1500,y=0,z=1203,dx=982,dy=256,dz=554,scores={rng=122..127,HoneyUse=1..}] {"text":"A hoard of Floatzel spawned!","italic":true,"color":"gray"}
 
 
-execute as @s[x=1500,y=0,z=1203,dx=982,dy=256,dz=554,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=1500,y=0,z=1203,dx=982,dy=256,dz=554,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=1500,y=0,z=1203,dx=982,dy=256,dz=554,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=1500,y=0,z=1203,dx=982,dy=256,dz=554,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=1500,y=0,z=1203,dx=982,dy=256,dz=554,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -305,8 +305,8 @@ execute as @s[x=1467,y=99,z=1822,dx=1200,dy=160,dz=738,scores={rng=116..121,Hone
 tellraw @a[x=1467,y=99,z=1822,dx=1200,dy=160,dz=738,scores={rng=116..121,HoneyUse=1..}] {"text":"A hoard of Floatzel spawned!","italic":true,"color":"gray"}
 
 
-execute as @s[x=1467,y=99,z=1822,dx=1200,dy=160,dz=738,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=1467,y=99,z=1822,dx=1200,dy=160,dz=738,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=1467,y=99,z=1822,dx=1200,dy=160,dz=738,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=1467,y=99,z=1822,dx=1200,dy=160,dz=738,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=1467,y=99,z=1822,dx=1200,dy=160,dz=738,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -347,8 +347,8 @@ execute as @s[x=-963,y=0,z=-219,dx=400,dy=256,dz=230,scores={rng=85..127,HoneyUs
 tellraw @a[x=-963,y=0,z=-219,dx=400,dy=256,dz=230,scores={rng=85..127,HoneyUse=1..}] {"text":"A hoard of Scraggy spawned!","italic":true,"color":"gray"}
 
 
-execute as @s[x=-963,y=0,z=-219,dx=400,dy=256,dz=230,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-963,y=0,z=-219,dx=400,dy=256,dz=230,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=-963,y=0,z=-219,dx=400,dy=256,dz=230,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-963,y=0,z=-219,dx=400,dy=256,dz=230,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=-963,y=0,z=-219,dx=400,dy=256,dz=230,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -383,8 +383,8 @@ execute as @s[x=-1732,y=88,z=-118,dx=585,dy=168,dz=199,scores={rng=121..127,Hone
 tellraw @a[x=-1732,y=88,z=-118,dx=585,dy=168,dz=199,scores={rng=121..127,HoneyUse=1..}] {"text":"A hoard of Roselia spawned!","italic":true,"color":"gray"}
 
 
-execute as @s[x=-1732,y=88,z=-118,dx=585,dy=168,dz=199,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-1732,y=88,z=-118,dx=585,dy=168,dz=199,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=-1732,y=88,z=-118,dx=585,dy=168,dz=199,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-1732,y=88,z=-118,dx=585,dy=168,dz=199,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=-1732,y=88,z=-118,dx=585,dy=168,dz=199,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -425,8 +425,8 @@ execute as @s[x=-2231,y=83,z=59,dx=362,dy=173,dz=444,scores={rng=100..127,HoneyU
 tellraw @a[x=-2231,y=83,z=59,dx=362,dy=173,dz=444,scores={rng=100..127,HoneyUse=1..}] {"text":"A hoard of Seviper & a Zangoose spawned!","italic":true,"color":"gray"}
 
 
-execute as @s[x=-2231,y=83,z=59,dx=362,dy=173,dz=444,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-2231,y=83,z=59,dx=362,dy=173,dz=444,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=-2231,y=83,z=59,dx=362,dy=173,dz=444,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-2231,y=83,z=59,dx=362,dy=173,dz=444,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=-2231,y=83,z=59,dx=362,dy=173,dz=444,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -468,8 +468,8 @@ execute as @s[x=-2298,y=0,z=-597,dx=262,dy=256,dz=379,scores={rng=60..127,HoneyU
 tellraw @a[x=-2298,y=0,z=-597,dx=262,dy=256,dz=379,scores={rng=60..127,HoneyUse=1..}] {"text":"A hoard of Nosepass spawned!","italic":true,"color":"gray"}
 
 
-execute as @s[x=-2298,y=0,z=-597,dx=262,dy=256,dz=379,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-2298,y=0,z=-597,dx=262,dy=256,dz=379,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=-2298,y=0,z=-597,dx=262,dy=256,dz=379,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-2298,y=0,z=-597,dx=262,dy=256,dz=379,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=-2298,y=0,z=-597,dx=262,dy=256,dz=379,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -510,8 +510,8 @@ execute as @s[x=-2112,y=0,z=-757,dx=264,dy=256,dz=159,scores={rng=93..127,HoneyU
 tellraw @a[x=-2112,y=0,z=-757,dx=264,dy=256,dz=159,scores={rng=93..127,HoneyUse=1..}] {"text":"A hoard of Stunky spawned!","italic":true,"color":"gray"}
 
 
-execute as @s[x=-2112,y=0,z=-757,dx=264,dy=256,dz=159,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-2112,y=0,z=-757,dx=264,dy=256,dz=159,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=-2112,y=0,z=-757,dx=264,dy=256,dz=159,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-2112,y=0,z=-757,dx=264,dy=256,dz=159,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=-2112,y=0,z=-757,dx=264,dy=256,dz=159,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -552,8 +552,8 @@ execute as @s[x=-1483,y=0,z=-888,dx=278,dy=256,dz=154,scores={rng=59..127,HoneyU
 tellraw @a[x=-1483,y=0,z=-888,dx=278,dy=256,dz=154,scores={rng=59..127,HoneyUse=1..}] {"text":"A hoard of Wingull spawned!","italic":true,"color":"gray"}
 
 
-execute as @s[x=-1483,y=0,z=-888,dx=278,dy=256,dz=154,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-1483,y=0,z=-888,dx=278,dy=256,dz=154,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=-1483,y=0,z=-888,dx=278,dy=256,dz=154,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-1483,y=0,z=-888,dx=278,dy=256,dz=154,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=-1483,y=0,z=-888,dx=278,dy=256,dz=154,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -585,8 +585,8 @@ execute as @s[x=-342,y=0,z=-1302,dx=432,dy=256,dz=508,scores={rng=85..127,HoneyU
 tellraw @a[x=-342,y=0,z=-1302,dx=432,dy=256,dz=508,scores={rng=85..127,HoneyUse=1..}] {"text":"A hoard of Skorupi spawned!","italic":true,"color":"gray"}
 
 
-execute as @s[x=-342,y=0,z=-1302,dx=432,dy=256,dz=508,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-342,y=0,z=-1302,dx=432,dy=256,dz=508,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=-342,y=0,z=-1302,dx=432,dy=256,dz=508,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=-342,y=0,z=-1302,dx=432,dy=256,dz=508,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=-342,y=0,z=-1302,dx=432,dy=256,dz=508,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -619,8 +619,8 @@ execute as @s[x=212,y=95,z=-695,dx=369,dy=156,dz=292,scores={rng=121..127,HoneyU
 tellraw @a[x=212,y=95,z=-695,dx=369,dy=156,dz=292,scores={rng=121..127,HoneyUse=1..}] {"text":"A hoard of Klefki spawned!","italic":true,"color":"gray"}
 
 
-execute as @s[x=212,y=95,z=-695,dx=369,dy=156,dz=292,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=212,y=95,z=-695,dx=369,dy=156,dz=292,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=212,y=95,z=-695,dx=369,dy=156,dz=292,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=212,y=95,z=-695,dx=369,dy=156,dz=292,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=212,y=95,z=-695,dx=369,dy=156,dz=292,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -652,8 +652,8 @@ execute as @s[x=212,y=95,z=-402,dx=369,dy=160,dz=273,scores={rng=121..127,HoneyU
 tellraw @a[x=212,y=95,z=-402,dx=369,dy=160,dz=273,scores={rng=121..127,HoneyUse=1..}] {"text":"A hoard of Klefki spawned!","italic":true,"color":"gray"}
 
 
-execute as @s[x=212,y=95,z=-402,dx=369,dy=160,dz=273,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=212,y=95,z=-402,dx=369,dy=160,dz=273,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=212,y=95,z=-402,dx=369,dy=160,dz=273,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=212,y=95,z=-402,dx=369,dy=160,dz=273,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=212,y=95,z=-402,dx=369,dy=160,dz=273,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -692,8 +692,8 @@ execute as @s[x=1298,y=0,z=-140,dx=300,dy=256,dz=271,scores={rng=121..127,HoneyU
 tellraw @a[x=1298,y=0,z=-140,dx=300,dy=256,dz=271,scores={rng=121..127,HoneyUse=1..}] {"text":"A hoard of Durant & a Heatmor spawned!","italic":true,"color":"gray"}
 
 
-execute as @s[x=1298,y=0,z=-140,dx=300,dy=256,dz=271,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=1298,y=0,z=-140,dx=300,dy=256,dz=271,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=1298,y=0,z=-140,dx=300,dy=256,dz=271,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=1298,y=0,z=-140,dx=300,dy=256,dz=271,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=1298,y=0,z=-140,dx=300,dy=256,dz=271,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -725,8 +725,8 @@ execute as @s[x=1326,y=0,z=331,dx=296,dy=256,dz=249,scores={rng=85..127,HoneyUse
 tellraw @a[x=1326,y=0,z=331,dx=296,dy=256,dz=249,scores={rng=85..127,HoneyUse=1..}] {"text":"A hoard of Gligar spawned!","italic":true,"color":"gray"}
 
 
-execute as @s[x=1326,y=0,z=331,dx=296,dy=256,dz=249,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=1326,y=0,z=331,dx=296,dy=256,dz=249,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=1326,y=0,z=331,dx=296,dy=256,dz=249,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=1326,y=0,z=331,dx=296,dy=256,dz=249,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=1326,y=0,z=331,dx=296,dy=256,dz=249,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -765,8 +765,8 @@ execute as @s[x=984,y=95,z=707,dx=621,dy=50,dz=451,scores={rng=121..127,HoneyUse
 tellraw @a[x=984,y=95,z=707,dx=621,dy=50,dz=451,scores={rng=121..127,HoneyUse=1..}] {"text":"A hoard of Trevenant & a Sudowoodo spawned!","italic":true,"color":"gray"}
 
 
-execute as @s[x=984,y=95,z=707,dx=621,dy=50,dz=451,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=984,y=95,z=707,dx=621,dy=50,dz=451,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=984,y=95,z=707,dx=621,dy=50,dz=451,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=984,y=95,z=707,dx=621,dy=50,dz=451,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=984,y=95,z=707,dx=621,dy=50,dz=451,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -796,8 +796,8 @@ execute as @s[x=705,y=95,z=299,dx=278,dy=100,dz=263,scores={rng=85..127,HoneyUse
 execute as @s[x=705,y=95,z=299,dx=278,dy=100,dz=263,scores={rng=85..127,HoneyUse=1..}] run pokespawn Swablu lvl:26 ~-4 ~ ~2
 tellraw @a[x=705,y=95,z=299,dx=278,dy=100,dz=263,scores={rng=85..127,HoneyUse=1..}] {"text":"A hoard of Swablu spawned!","italic":true,"color":"gray"}
 
-execute as @s[x=705,y=95,z=299,dx=278,dy=100,dz=263,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=705,y=95,z=299,dx=278,dy=100,dz=263,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=705,y=95,z=299,dx=278,dy=100,dz=263,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=705,y=95,z=299,dx=278,dy=100,dz=263,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=705,y=95,z=299,dx=278,dy=100,dz=263,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -828,8 +828,8 @@ execute as @s[x=683,y=95,z=393,dx=21,dy=100,dz=170,scores={rng=85..127,HoneyUse=
 execute as @s[x=683,y=95,z=393,dx=21,dy=100,dz=170,scores={rng=85..127,HoneyUse=1..}] run pokespawn Swablu lvl:26 ~-4 ~ ~2
 tellraw @a[x=683,y=95,z=393,dx=21,dy=100,dz=170,scores={rng=85..127,HoneyUse=1..}] {"text":"A hoard of Swablu spawned!","italic":true,"color":"gray"}
 
-execute as @s[x=683,y=95,z=393,dx=21,dy=100,dz=170,scores={rng=1,HoneyUse=1..}] run scoreboard players tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
-execute @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=683,y=95,z=393,dx=21,dy=100,dz=170,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
+execute as @s[x=683,y=95,z=393,dx=21,dy=100,dz=170,scores={rng=1,HoneyUse=1..}] run tag @e[distance=..10,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
+execute as @e[tag=Shiny,type=pixelmon:pixelmon,limit=1] run tellraw @a[x=683,y=95,z=393,dx=21,dy=100,dz=170,scores={HoneyUse=1..}] ["",{"text":"And one of them is ","italic":true,"color":"gray"},{"text":"s","italic":true,"color":"red"},{"text":"h","italic":true,"color":"gold"},{"text":"i","italic":true,"color":"green"},{"text":"n","italic":true,"color":"light_purple"},{"text":"y","italic":true,"color":"dark_purple"},{"text":"!","italic":true,"color":"gray"}]
 
 scoreboard players set @a[x=683,y=95,z=393,dx=21,dy=100,dz=170,scores={HoneyUse=1..}] HoneyUse 0
 
@@ -841,4 +841,4 @@ scoreboard players set @a[x=683,y=95,z=393,dx=21,dy=100,dz=170,scores={HoneyUse=
 
 tellraw @a[scores={HoneyUse=1..,rng=1..10}] {"text":"No Pokemon reacted to the Honey!","italic":true,"color":"gray"}
 give @a[scores={HoneyUse=1..,rng=1..10}] minecraft:lingering_potion{display:{Lore:["A tool used to attract","hoards of Pokemon."]},HideFlags:32}
-scoreboard players set @a[scores={HoneyUse=1..,rng=1..10] HoneyUse 0
+scoreboard players set @a[scores={HoneyUse=1..,rng=1..10}] HoneyUse 0
