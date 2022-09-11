@@ -7,23 +7,29 @@ execute at @a run execute if block ~ ~ ~ pixelmon:warp_plate run function kalos:
 execute as @a[scores={CutUse=1..}] run function kalos:triggers/berrytags
 
 #Runs shiny particles if player has turned that option on
-execute @e[x=-685,y=100,z=1388,dy=3,tag=Particles,type=armor_stand] ~ ~ ~ execute @e[tag=Shiny,type=pixelmon:pixelmon] ~ ~ ~ /particle reddust ~ ~ ~ 0 10 0 1 10 force @a[r=50]
+#execute as @e[x=-685,y=100,z=1388,dy=3,tag=Particles,type=armor_stand] at @e[tag=Shiny,type=pixelmon:pixelmon] run particle reddust ~ ~ ~ 0 10 0 1 10 force @a[distance=..50]
 
 
 #Runs the restaurant timer
-execute @a[x=-514,y=0,z=64,dx=526,dy=256,dz=436,tag=RunTimer,score_RestaurantBattle_min=1] ~ ~ ~ function custom:restauranttimer
+execute as @a[x=-514,y=0,z=64,dx=526,dy=256,dz=436,tag=RunTimer,scores={RestaurantBattle=1..}] run function kalos:triggers/restauranttimer
 
 
 #Mamoswine Route removing snow
-execute as @e[x=828,y=108,z=-318,dx=150,dy=10,dz=150,tag=Dialogue100] at @e[type=pixelmon:pixelmon,name=Mamoswine,distance=..3] run fill ~-3 108 ~-3 ~2 112 ~3 air 0 replace minecraft:snow
+execute as @e[x=828,y=108,z=-318,dx=150,dy=10,dz=150,tag=Dialogue100] at @e[type=pixelmon:pixelmon,name=Mamoswine,distance=..3] run fill ~-3 108 ~-3 ~2 112 ~3 minecraft:air replace minecraft:snow_block
 
 
 
 #Mega Stone Particles
 execute as @a[scores={MegaStones=1..}] run function kalos:world/megastonesactive
-execute if entity @e[x=-685,y=100,z=1388,dy=3,tag=Particles,type=armor_stand] as @a[x=1205,y=111,z=-276,distance=..50,limit=1] run particle reddust 1205 111 -276 10 5 10 1 50 force @a[distance=..50]
+execute if entity @e[x=-685,y=100,z=1388,dy=3,tag=Particles,type=armor_stand] as @a[x=1205,y=111,z=-276,distance=..50,limit=1] run particle minecraft:dust 1 1 1 1 ~ ~1 ~ 0 10 0 0.5 50 force @a[distance=..50]
 
 
+#Runs the Poke Ball Factory floors
+execute if entity @a[x=-242,y=91,z=-2026,dx=180,dy=3,dz=188,limit=1] run function kalos:data/factorymotion
+
+
+#Sycamore's cutscene timings
+execute if entity @a[x=-1034,y=99,z=1432,dx=50,dy=50,dz=50,scores={DialogueTrigger=266}] run function kalos:cutscenes/welcomeintro
 
 
 #Road Blocks
