@@ -10,6 +10,10 @@ execute at @e[tag=1.12.2Trainer,type=pixelmon:npc_trainer] run particle minecraf
 #---------------------------------------------------------
 #Important triggers for functions of map
 
+#Runs the beginning commands if a player is near spawn without initial tag
+execute as @a[x=-552,y=100,z=1257,distance=..25,tag=!InitialTags] run function kalos:triggers/startingcommands
+
+
 #Runs constantly-scanning Music switching and area display titles function
 execute as @a[scores={TalkTime=0,TrainerClass=0}] run function kalos:world/musictitles
 
@@ -28,6 +32,14 @@ execute at @e[type=armor_stand,tag=PhotoSpot] run execute as @a[distance=20..50,
 
 #Signs players click on to read
 execute as @a[scores={SignRead=..1}] run function kalos:dialogue/signtexts
+
+#Tracks player motion between sprinting/Jumping and walking for a motion-based Cooldown
+scoreboard players operation @a[scores={CooldownSprint=1..}] Cooldown += @a[scores={CooldownSprint=1..}] CooldownSprint
+scoreboard players add @a[scores={CooldownJump=1..}] Cooldown 500
+scoreboard players set @a[scores={CooldownSprint=1..}] CooldownSprint 0
+scoreboard players set @a[scores={CooldownJump=1..}] CooldownJump 0
+#tellraw @a[x=-488,y=100,z=1414,distance=..3,scores={Cooldown=5000..}] {"text":"Hey this is a test!"}
+#scoreboard players set @a[x=-488,y=100,z=1414,distance=..3,scores={Cooldown=5000..}] Cooldown 0
 
 #---------------------------
 
@@ -199,8 +211,9 @@ effect give @a[x=-2027,y=0,z=-2285,dx=1319,dy=256,dz=498] minecraft:night_vision
 effect give @a[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227] minecraft:night_vision 15 1 true
 
 #Pokeball Factory Interior
-#effect @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188] minecraft:night_vision 15 1 true
-#execute @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188] ~ ~ ~ setblock -593 100 1158 redstone_block
+effect give @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188] minecraft:night_vision 15 1 true
+execute if entity @a[x=-242,y=91,z=-2026,dx=180,dy=3,dz=188,limit=1] run setblock -600 101 1154 minecraft:iron_block
+execute unless entity @a[x=-242,y=91,z=-2026,dx=180,dy=3,dz=188,limit=1] if block -600 101 1154 minecraft:iron_block run setblock -600 101 1154 minecraft:redstone_block
 
 
 #---------------------------------------------------------
@@ -263,7 +276,248 @@ scoreboard players set @a[tag=!Dialogue167,scores={Grass=1..,PokemonLeague=1..,T
 
 scoreboard players set @a[tag=!Dialogue167,scores={PokemonLeague=1..,Grass=1..}] Grass 0
 
+#----------
+#Yveltal Dormant Activate
+execute as @a[x=-2336,y=42,z=-1017,distance=..10,scores={Yveltal=1,TalkTime=0,Cooldown=5000..},tag=Dialogue130,tag=!Dialogue131] run scoreboard players enable @s TalkTrigger
+execute as @a[x=-2336,y=42,z=-1017,distance=..10,scores={Yveltal=1,TalkTime=0,Cooldown=5000..},tag=Dialogue130,tag=!Dialogue131] run tellraw @s ["",{"text":"A dormant Pokemon lies asleep. Would you like to wake it?","italic":true,"color":"gray"},{"text":"\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 1"}},{"text":"]"}]
+
+#Xerneas
+execute as @a[x=-2336,y=42,z=-1017,distance=..10,scores={Xerneas=1,TalkTime=0,Cooldown=5000..},tag=Dialogue130,tag=!Dialogue131] run scoreboard players enable @s TalkTrigger
+execute as @a[x=-2336,y=42,z=-1017,distance=..10,scores={Xerneas=1,TalkTime=0,Cooldown=5000..},tag=Dialogue130,tag=!Dialogue131] run tellraw @s ["",{"text":"A dormant Pokemon lies asleep. Would you like to wake it?","italic":true,"color":"gray"},{"text":"\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 1"}},{"text":"]"}]
+
+#Diancie Mirror Vanish
+execute if entity @a[x=-1718,y=11,z=-405,dx=82,dy=10,dz=6,scores={PokemonLeague=1..}] run fill -1638 25 -402 -1717 12 -402 minecraft:air replace minecraft:blue_stained_glass
+execute if entity @a[x=-1718,y=11,z=-405,dx=82,dy=10,dz=6,scores={PokemonLeague=1..,Cooldown=5000..}] run tellraw @a[x=-1718,y=11,z=-405,dx=82,dy=10,dz=6,scores={PokemonLeague=1..}] {"text":"The mirror vanished...","italic":true,"color":"gray"}
+execute if entity @a[x=-1718,y=11,z=-405,dx=82,dy=10,dz=6,scores={PokemonLeague=1..,Cooldown=5000..}] run scoreboard players set @a[x=-1718,y=11,z=-405,dx=82,dy=10,dz=6,scores={PokemonLeague=1..,Cooldown=10000}] Cooldown 0
+
+execute unless entity @a[x=-1718,y=11,z=-405,dx=82,dy=10,dz=6,scores={PokemonLeague=1..}] if block -1713 14 -402 minecraft:air run fill -1638 25 -402 -1717 12 -402 minecraft:blue_stained_glass replace minecraft:air
+
+#Volcanion Power Plant Doors
+execute if entity @a[x=-821,y=104,z=-670,distance=..10,scores={PokemonLeague=1..}] run fill -821 103 -670 -820 103 -670 minecraft:redstone_torch
+execute if entity @a[x=-821,y=104,z=-670,distance=..10,scores={PokemonLeague=1..,Cooldown=5000..}] run tellraw @a[x=-821,y=104,z=-670,distance=..10,scores={PokemonLeague=1..}] {"text":"A mysterious door opened...","italic":true,"color":"gray"}
+execute if entity @a[x=-821,y=104,z=-670,distance=..10,scores={PokemonLeague=1..,Cooldown=5000..}] run scoreboard players set @a[x=-821,y=104,z=-670,distance=..10,scores={PokemonLeague=1..,Cooldown=5000}] Cooldown 0
+
+execute unless entity @a[x=-821,y=104,z=-670,distance=..10,scores={PokemonLeague=1..}] run fill -821 103 -670 -820 103 -670 air
+
 #---------------------------------------------------------
+#Misc Random Events
+
+#Vaniville Animated Door
+execute if entity @a[x=455,y=107,z=1515,dx=29,dy=20,dz=80] run setblock -676 100 1172 minecraft:redstone_block
+execute unless entity @a[x=455,y=107,z=1515,dx=29,dy=20,dz=80] run setblock -676 100 1172 minecraft:iron_block
+
+
+#Elite Four Chambers levetation effects
+#Fire
+effect clear @a[x=-2028,y=44,z=2112,dx=4,dy=5,dz=4] minecraft:levitation
+tp @a[x=-2028,y=44,z=2112,dx=4,dy=5,dz=4] -2040 30 2048 180 ~
+effect give @a[x=-2028,y=6,z=2112,dx=4,dy=50,dz=4] minecraft:levitation 5 5 true
+
+#Water
+effect clear @a[x=-1972,y=44,z=2110,dx=4,dy=5,dz=4] minecraft:levitation
+tp @a[x=-1972,y=44,z=2110,dx=4,dy=5,dz=4] -1951 30 2048 180 ~
+effect give @a[x=-1972,y=6,z=2110,dx=4,dy=50,dz=4] minecraft:levitation 5 5 true
+
+#Iron
+effect clear @a[x=-1839,y=44,z=2111,dx=4,dy=5,dz=4] minecraft:levitation
+tp @a[x=-1839,y=44,z=2111,dx=4,dy=5,dz=4] -1862 30 2048 180 ~
+effect give @a[x=-1839,y=6,z=2111,dx=4,dy=50,dz=4] minecraft:levitation 5 5 true
+
+#Dragon
+effect clear @a[x=-1786,y=44,z=2111,dx=4,dy=5,dz=4] minecraft:levitation
+tp @a[x=-1786,y=44,z=2111,dx=4,dy=5,dz=4] -1773 30 2048 180 ~
+effect give @a[x=-1786,y=6,z=2111,dx=4,dy=50,dz=4] minecraft:levitation 5 5 true
+
+
+
+
+#Safari Zone Entrance Text
+scoreboard players enable @a[x=1286,y=110,z=1466,dx=42,dy=20,dz=54] FriendSafari
+#tellraw @a[x=1286,y=110,z=1466,dx=42,dy=20,dz=54] {"text":"Use your Friend Safari Book to activate Pokemon!","italic":true,"color":"gray"}
+#scoreboard players set @a[x=1286,y=110,z=1466,dx=42,dy=20,dz=54] click 1
+
+#Returns the spawner to stone if no player is within the area
+execute unless entity @a[x=1286,y=110,z=1466,dx=42,dy=20,dz=54] if block 1307 109 1482 pixelmon:pixelmon_spawner run setblock 1307 109 1482 minecraft:stone
+
+tag @a[x=1286,y=110,z=1466,dx=42,dy=20,dz=54] add Skip
+
+#Safari Zone Activates
+execute as @a[scores={FriendSafari=1..99},tag=!Skip] run function kalos:triggers/friendsafaritrigger
+tellraw @a[scores={FriendSafari=1..99},tag=!Skip] {"text":"Use this book in the Friend Safari back area!","italic":true,"color":"gray"}
+scoreboard players set @a[scores={FriendSafari=1..118},tag=!Skip] FriendSafari 0
+
+
+#Safari Zone when player clicks book
+execute as @a[scores={FriendSafari=100..120},tag=!Skip] run function kalos:triggers/friendsafariactive
+tellraw @a[scores={FriendSafari=100..120},tag=!Skip] {"text":"Use this book in the Friend Safari back area!","italic":true,"color":"gray"}
+scoreboard players set @a[scores={FriendSafari=1..118},tag=!Skip] FriendSafari 0
+
+tag @a[tag=Skip] remove Skip
+
+
+
+#Regenerates snow in Mamoswine's Route when nobody is in the cleared zone
+execute unless entity @a[x=802,y=107,z=-312,dx=166,dy=15,dz=170] unless entity @a[x=862,y=107,z=-420,dx=140,dy=15,dz=144] run fill 913 108 -262 968 112 -182 minecraft:snow_block replace minecraft:air
+execute unless entity @a[x=802,y=107,z=-312,dx=166,dy=15,dz=170] unless entity @a[x=862,y=107,z=-420,dx=140,dy=15,dz=144] run fill 828 108 -285 912 112 -229 minecraft:snow_block replace minecraft:air
+execute unless entity @a[x=802,y=107,z=-312,dx=166,dy=15,dz=170] unless entity @a[x=862,y=107,z=-420,dx=140,dy=15,dz=144] run fill 828 108 -312 890 112 -286 minecraft:snow_block replace minecraft:air
+
+#Runs the Rhyhorn Riding Route Function
+execute as @a[x=-1875,y=135,z=560,dx=507,dy=10,dz=202,gamemode=adventure] run function kalos:world/rhyhornroute
+
+
+#Opens power-plant doors
+execute if entity @p[x=-817,y=104,z=-304,distance=..10,tag=PowerPlantPass] run clone -815 35 -305 -815 36 -304 -817 105 -304
+execute unless entity @p[x=-817,y=104,z=-304,distance=..10,tag=PowerPlantPass] run clone -813 35 -305 -813 36 -304 -817 105 -304
+
+
+
+#Restaurant Prompts
+#Le Nah
+execute as @a[x=-193,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LN"}}}]}] run scoreboard players enable @s TalkTrigger
+execute as @a[x=-193,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LN"}}}]}] run tellraw @s ["",{"text":"<Restaurant Owner> Begin your dining experience? We recommend for the Double Battle you have at least three Pokemon with you.\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 292"}},{"text":"]"}]
+execute as @a[x=-193,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LN"}}}]}] run scoreboard players set @s Cooldown 0
+
+#Le Yeah
+execute as @a[x=-400,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LY"}}}]}] run scoreboard players enable @s TalkTrigger
+execute as @a[x=-400,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LY"}}}]}] run tellraw @s ["",{"text":"<Server> Begin your dining experience? We recommend you have at least three Pokemon with you.\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 293"}},{"text":"]"}]
+execute as @a[x=-400,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LY"}}}]}] run scoreboard players set @s Cooldown 0
+
+#Le Wow
+execute as @a[x=-293,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LW"}}}]}] run scoreboard players enable @s TalkTrigger
+execute as @a[x=-293,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LW"}}}]}] run tellraw @s ["",{"text":"<Server> Begin your dining experience? We recommend you have at least three Pokemon with you.\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 294"}},{"text":"]"}]
+execute as @a[x=-293,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LW"}}}]}] run scoreboard players set @s Cooldown 0
+
+#Sushi High Roller
+execute as @a[x=-487,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, HR"}}}]}] run scoreboard players enable @s TalkTrigger
+execute as @a[x=-487,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, HR"}}}]}] run tellraw @s ["",{"text":"<Server> Begin your dining experience? We recommend you have at least three Pokemon with you.\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 295"}},{"text":"]"}]
+execute as @a[x=-487,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, HR"}}}]}] run scoreboard players set @s Cooldown 0
+
+
+#Battle Maison manages tping NPCs
+execute if entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMaison=1..,Cooldown=5000..}] run function kalos:data/maisonstagetp
+
+execute unless entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMaison=1..,Cooldown=5000..}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,tag=Single] 1213 66 1549
+execute unless entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMaison=1..,Cooldown=5000..}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,tag=Single] 1213 66 1549
+execute unless entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMaison=1..,Cooldown=5000..}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,tag=Double] 1213 66 1544
+execute unless entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMaison=1..,Cooldown=5000..}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,tag=Double] 1213 66 1544
+execute unless entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMaison=1..,Cooldown=5000..}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,name=Nita,tag=!Super] 1227 66 1548
+execute unless entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMaison=1..,Cooldown=5000..}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,name=Nita,tag=Super] 1227 66 1550
+execute unless entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMaison=1..,Cooldown=5000..}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,name=Evelyn,tag=!Super] 1227 66 1543
+execute unless entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMaison=1..,Cooldown=5000..}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,name=Evelyn,tag=Super] 1227 66 1545
+
+scoreboard players set @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMaison=1..,Cooldown=5000..}] cooldown 0
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Strength Rock Prompts
+
+#Victory Road Interior #1
+execute as @a[x=2011,y=101,z=1473,dx=11,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block 2012 101 1486 minecraft:air run scoreboard players enable @s StrengthTrigger
+execute as @a[x=2011,y=101,z=1473,dx=11,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block 2012 101 1486 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
+execute as @a[x=2011,y=101,z=1473,dx=11,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block 2012 101 1486 minecraft:air run scoreboard players set @s Cooldown 0
+
+#Victory Road Exterior 3 #2
+execute as @a[x=2235,y=174,z=2289,dx=14,dy=5,dz=19,tag=Strength,scores={Cooldown=5000..}] if block 2231 174 2297 minecraft:air run scoreboard players enable @s StrengthTrigger
+execute as @a[x=2235,y=174,z=2289,dx=14,dy=5,dz=19,tag=Strength,scores={Cooldown=5000..}] if block 2231 174 2297 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
+execute as @a[x=2235,y=174,z=2289,dx=14,dy=5,dz=19,tag=Strength,scores={Cooldown=5000..}] if block 2231 174 2297 minecraft:air run scoreboard players set @s Cooldown 0
+
+#Victory Road Exterior 3 #1
+execute as @a[x=2215,y=174,z=2265,dx=8,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block 2219 174 2284 minecraft:air run scoreboard players enable @s StrengthTrigger
+execute as @a[x=2215,y=174,z=2265,dx=8,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block 2219 174 2284 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
+execute as @a[x=2215,y=174,z=2265,dx=8,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block 2219 174 2284 minecraft:air run scoreboard players set @s Cooldown 0
+
+#Victory Road Interior 2 #2
+execute as @a[x=2188,y=90,z=1358,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 2181 90 1356 minecraft:air run scoreboard players enable @s StrengthTrigger
+execute as @a[x=2188,y=90,z=1358,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 2181 90 1356 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
+execute as @a[x=2188,y=90,z=1358,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 2181 90 1356 minecraft:air run scoreboard players set @s Cooldown 0
+
+#Route 10 #1
+execute as @a[x=-2107,y=102,z=-322,dx=17,dy=10,dz=13,tag=Strength,scores={Cooldown=5000..}] if block -2100 103 -329 minecraft:air run scoreboard players enable @s StrengthTrigger
+execute as @a[x=-2107,y=102,z=-322,dx=17,dy=10,dz=13,tag=Strength,scores={Cooldown=5000..}] if block -2100 103 -329 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
+execute as @a[x=-2107,y=102,z=-322,dx=17,dy=10,dz=13,tag=Strength,scores={Cooldown=5000..}] if block -2100 103 -329 minecraft:air run scoreboard players set @s Cooldown 0
+
+#Route 10 #2
+execute as @a[x=-2126,y=105,z=-364,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block -2087 103 -366 minecraft:air run scoreboard players enable @s StrengthTrigger
+execute as @a[x=-2126,y=105,z=-364,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block -2087 103 -366 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
+execute as @a[x=-2126,y=105,z=-364,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block -2087 103 -366 minecraft:air run scoreboard players set @s Cooldown 0
+
+
+#Connecting Cave #1
+execute as @a[x=-1767,y=43,z=70,dx=6,dy=5,dz=14,tag=Strength,scores={Cooldown=5000..}] if block -1765 43 86 minecraft:air run scoreboard players enable @s StrengthTrigger
+execute as @a[x=-1767,y=43,z=70,dx=6,dy=5,dz=14,tag=Strength,scores={Cooldown=5000..}] if block -1765 43 86 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
+execute as @a[x=-1767,y=43,z=70,dx=6,dy=5,dz=14,tag=Strength,scores={Cooldown=5000..}] if block -1765 43 86 minecraft:air run scoreboard players set @s Cooldown 0
+
+#Connecting Cave #2
+execute as @a[x=-1801,y=43,z=29,dx=14,dy=5,dz=13,tag=Strength,scores={Cooldown=5000..}] if block -1787 43 33 minecraft:air run scoreboard players enable @s StrengthTrigger
+execute as @a[x=-1801,y=43,z=29,dx=14,dy=5,dz=13,tag=Strength,scores={Cooldown=5000..}] if block -1787 43 33 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
+execute as @a[x=-1801,y=43,z=29,dx=14,dy=5,dz=13,tag=Strength,scores={Cooldown=5000..}] if block -1787 43 33 minecraft:air run scoreboard players set @s Cooldown 0
+
+#Connecting Cave #3
+execute as @a[x=-1842,y=50,z=-21,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block -1839 47 -23 minecraft:air run scoreboard players enable @s StrengthTrigger
+execute as @a[x=-1842,y=50,z=-21,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block -1839 47 -23 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
+execute as @a[x=-1842,y=50,z=-21,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block -1839 47 -23 minecraft:air run scoreboard players set @s Cooldown 0
+
+#Route 8
+execute as @a[x=-1942,y=153,z=238,tag=Strength,scores={Cooldown=5000..}] if block -1939 150 238 minecraft:air run scoreboard players enable @s StrengthTrigger
+execute as @a[x=-1942,y=153,z=238,tag=Strength,scores={Cooldown=5000..}] if block -1939 150 238 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
+execute as @a[x=-1942,y=153,z=238,tag=Strength,scores={Cooldown=5000..}] if block -1939 150 238 minecraft:air run scoreboard players set @s Cooldown 0
+
+#Reflection Cave
+execute as @a[x=-1675,y=73,z=-346,dx=18,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block -1673 73 -338 minecraft:air run scoreboard players enable @s StrengthTrigger
+execute as @a[x=-1675,y=73,z=-346,dx=18,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block -1673 73 -338 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
+execute as @a[x=-1675,y=73,z=-346,dx=18,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block -1673 73 -338 minecraft:air run scoreboard players set @s Cooldown 0
+
+#Route 16 #1
+execute as @a[x=377,y=104,z=-247,dx=10,dy=5,dz=10,tag=Strength,scores={Cooldown=5000..}] if block 377 103 -252 minecraft:air run scoreboard players enable @s StrengthTrigger
+execute as @a[x=377,y=104,z=-247,dx=10,dy=5,dz=10,tag=Strength,scores={Cooldown=5000..}] if block 377 103 -252 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
+execute as @a[x=377,y=104,z=-247,dx=10,dy=5,dz=10,tag=Strength,scores={Cooldown=5000..}] if block 377 103 -252 minecraft:air run scoreboard players set @s Cooldown 0
+
+#Route 16 #2
+execute as @a[x=358,y=100,z=-215,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 356 99 -212 minecraft:air run scoreboard players enable @s StrengthTrigger
+execute as @a[x=358,y=100,z=-215,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 356 99 -212 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
+execute as @a[x=358,y=100,z=-215,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 356 99 -212 minecraft:air run scoreboard players set @s Cooldown 0
+
+#Route 19
+execute as @a[x=1419,y=75,z=351,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 1422 74 349 minecraft:air run scoreboard players enable @s StrengthTrigger
+execute as @a[x=1419,y=75,z=351,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 1422 74 349 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
+execute as @a[x=1419,y=75,z=351,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 1422 74 349 minecraft:air run scoreboard players set @s Cooldown 0
+
+#Route 21 #1
+execute as @a[x=901,y=103,z=409,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 899 101 365 minecraft:air run scoreboard players enable @s StrengthTrigger
+execute as @a[x=901,y=103,z=409,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 899 101 365 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
+execute as @a[x=901,y=103,z=409,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 899 101 365 minecraft:air run scoreboard players set @s Cooldown 0
+
+#Route 21 #2
+execute as @a[x=802,y=104,z=454,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 805 99 452 minecraft:air run scoreboard players enable @s StrengthTrigger
+execute as @a[x=802,y=104,z=454,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 805 99 452 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
+execute as @a[x=802,y=104,z=454,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 805 99 452 minecraft:air run scoreboard players set @s Cooldown 0
+
+#Route 21 #3
+execute as @a[x=706,y=100,z=513,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 704 99 498 minecraft:air run scoreboard players enable @s StrengthTrigger
+execute as @a[x=706,y=100,z=513,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 704 99 498 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
+execute as @a[x=706,y=100,z=513,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 704 99 498 minecraft:air run scoreboard players set @s Cooldown 0
+
+#Victory Road Room 1
+execute as @a[x=2419,y=39,z=1630,dx=9,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block 2422 39 1645 minecraft:air run scoreboard players enable @s StrengthTrigger
+execute as @a[x=2419,y=39,z=1630,dx=9,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block 2422 39 1645 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
+execute as @a[x=2419,y=39,z=1630,dx=9,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block 2422 39 1645 minecraft:air run scoreboard players set @s Cooldown 0
+
+#Victory Road Inside 2
+execute as @a[x=2230,y=75,z=1416,dx=17,dy=5,dz=15,tag=Strength,scores={Cooldown=5000..}] if block 2183 75 1421 minecraft:air run scoreboard players enable @s StrengthTrigger
+execute as @a[x=2230,y=75,z=1416,dx=17,dy=5,dz=15,tag=Strength,scores={Cooldown=5000..}] if block 2183 75 1421 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
+execute as @a[x=2230,y=75,z=1416,dx=17,dy=5,dz=15,tag=Strength,scores={Cooldown=5000..}] if block 2183 75 1421 minecraft:air run scoreboard players set @s Cooldown 0
+
+
+
+
+
+
+
+
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Story Dialogues
 
 #Primary Dialogue function
@@ -603,11 +857,11 @@ scoreboard players set @a[x=-1085,y=114,z=-579,dx=20,dy=10,dz=20,tag=!Dialogue69
 execute as @a[x=-772,y=104,z=-330,distance=..30,tag=!Dialogue70,tag=Ramos] run tp @e[x=-504,y=120,z=1268,dy=3,type=pixelmon:npc_trainer] -772 104 -330
 
 #Hidden Power Plant Pass give
-#execute @a[x=-779,y=103,z=-347,distance=..30,tag=Dialogue70,tag=!PowerPlantPass] ~ ~ ~ /execute @e[x=-779,y=102,z=-347,dy=3,type=armor_stand] ~ ~ ~ /particle fireworksSpark ~ ~ ~ 1 2 1 0.1 2 normal @a[tag=!PowerPlantPass]
-#execute @e[x=-779,y=103,z=-347,dy=3,type=armor_stand] ~ ~ ~ give @a[r=3,tag=!PowerPlantPass] minecraft:prismarine_shard 1 0 {display:{Lore:["This pass serves as an ID","card for gaining access to","the power plant that lies","along Route 13."]},HideFlags:6}
-#execute @e[x=-779,y=103,z=-347,dy=3,type=armor_stand] ~ ~ ~ tellraw @a[r=3,tag=!PowerPlantPass] {"text":"You found a Power Plant Pass!","italic":true,"color":"gray"}
-#execute @e[x=-779,y=102,z=-347,dy=3,type=armor_stand] ~ ~ ~ playsound pixelmon:pixelmon.block.pokelootobtained ambient @a[r=3,tag=!PowerPlantPass] ~ ~ ~ 10 1 1
-#execute @e[x=-779,y=102,z=-347,dy=3,type=armor_stand] ~ ~ ~ scoreboard players tag @a[r=3,tag=!PowerPlantPass] add PowerPlantPass
+execute as @e[x=-779,y=103,z=-347,dy=3,type=armor_stand] if entity @a[x=-779,y=103,z=-347,distance=..30,tag=Dialogue70,tag=!PowerPlantPass] run particle minecraft:firework ~ ~ ~ 1 2 1 0.1 2 normal @a[tag=!PowerPlantPass,tag=Dialogue70]
+execute as @e[x=-779,y=103,z=-347,dy=3,type=armor_stand] if entity @a[distance=..3,tag=!PowerPlantPass,tag=Dialogue70] run give @a[distance=..3,tag=!PowerPlantPass,tag=Dialogue70] minecraft:prismarine_shard{display:{Lore:["This pass serves as an ID","card for gaining access to","the power plant that lies","along Route 13."]},HideFlags:6}
+execute as @e[x=-779,y=103,z=-347,dy=3,type=armor_stand] if entity @a[distance=..3,tag=!PowerPlantPass,tag=Dialogue70] run tellraw @a[distance=..3,tag=!PowerPlantPass,tag=Dialogue70] {"text":"You found a Power Plant Pass!","italic":true,"color":"gray"}
+execute as @e[x=-779,y=102,z=-347,dy=3,type=armor_stand] if entity @a[distance=..3,tag=!PowerPlantPass,tag=Dialogue70] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @a[distance=..3,tag=!PowerPlantPass,tag=Dialogue70] ~ ~ ~ 10 1 1
+execute as @e[x=-779,y=102,z=-347,dy=3,type=armor_stand] if entity @a[distance=..3,tag=!PowerPlantPass,tag=Dialogue70] run tag @a[distance=..3,tag=!PowerPlantPass,tag=Dialogue70] add PowerPlantPass
 
 #Dialogue 71
 #Power Plant Flare Grunts first
@@ -815,9 +1069,18 @@ execute as @a[x=-2359,y=69,z=-992,dx=46,dy=10,dz=15,tag=!Dialogue123,scores={Tal
 #Flare HQ Double Battle No 1
 scoreboard players set @a[x=-2400,y=61,z=-965,dx=13,dy=5,dz=13,tag=!Dialogue124,scores={TalkTime=0}] DialogueTrigger 124
 
+#tps in Serena
+execute as @a[x=-2400,y=61,z=-965,dx=13,dy=5,dz=13,scores={StarterPick=1}] run tp @e[x=-2396,y=61,z=-961,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=1}] -504 106 1284
+execute as @a[x=-2400,y=61,z=-965,dx=13,dy=5,dz=13,scores={StarterPick=2}] run tp @e[x=-2396,y=61,z=-961,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=2}] -504 106 1286
+execute as @a[x=-2400,y=61,z=-965,dx=13,dy=5,dz=13,scores={StarterPick=3}] run tp @e[x=-2396,y=61,z=-961,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=3}] -504 106 1288
+
 #Dialogue 125
 #Flare HQ Double Battle No 2
 scoreboard players set @a[x=-2456,y=73,z=-989,dx=13,dy=5,dz=13,tag=!Dialogue125,scores={TalkTime=0}] DialogueTrigger 125
+
+execute as @a[x=-2456,y=73,z=-989,dx=13,dy=5,dz=13,scores={StarterPick=1}] run tp @e[x=-2447,y=73,z=-980,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=1}] -504 106 1292
+execute as @a[x=-2456,y=73,z=-989,dx=13,dy=5,dz=13,scores={StarterPick=2}] run tp @e[x=-2447,y=73,z=-980,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=2}] -504 106 1294
+execute as @a[x=-2456,y=73,z=-989,dx=13,dy=5,dz=13,scores={StarterPick=3}] run tp @e[x=-2447,y=73,z=-980,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=3}] -504 106 1296
 
 #Dialogue 126
 #Flare HQ Shauna joins the party
@@ -826,6 +1089,10 @@ scoreboard players set @a[x=-2478,y=76,z=-1005,dx=13,dy=5,dz=13,tag=!Dialogue126
 #Dialogue 127
 #Flare HQ Double Battle No 3
 scoreboard players set @a[x=-2486,y=47,z=-949,dx=13,dy=5,dz=13,tag=!Dialogue127,scores={TalkTime=0}] DialogueTrigger 127
+
+execute as @a[x=-2486,y=47,z=-949,dx=13,dy=5,dz=13,scores={StarterPick=1}] run tp @e[x=-2477,y=47,z=-940,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=1}] -504 111 1284
+execute as @a[x=-2486,y=47,z=-949,dx=13,dy=5,dz=13,scores={StarterPick=2}] run tp @e[x=-2477,y=47,z=-940,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=2}] -504 111 1286
+execute as @a[x=-2486,y=47,z=-949,dx=13,dy=5,dz=13,scores={StarterPick=3}] run tp @e[x=-2477,y=47,z=-940,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=3}] -504 111 1288
 
 #Dialogue 128
 #Flare HQ outside legendary chamber
@@ -843,6 +1110,16 @@ execute as @a[x=-2336,y=42,z=-1007,distance=..15,tag=Dialogue129,scores={TalkTim
 #Flare HQ Chamber Respawns Lysandre trainer
 execute as @a[x=-2336,y=42,z=-997,distance=..20,scores={TalkTime=0},tag=!Dialogue133,tag=Dialogue132] run tp @e[x=-504,y=130,z=1290,dy=3,type=pixelmon:npc_trainer] -2336 42 -997
 
+#Respawns the legendary Pokemon if player didn't catch it
+#If player without the score, and no Pokemon in the room, and the previous legendary spawn score, reset
+execute if entity @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue132] unless entity @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,type=pixelmon:pixelmon,nbt={OwnerUUID:""}] run tellraw @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=Dialogue131] {"text":"Legendary Pokemon has been reset! Catch it to continue the story!","italic":true,"color":"gray"}
+execute if entity @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue132] unless entity @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,type=pixelmon:pixelmon,nbt={OwnerUUID:""}] run tag @s[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=Dialogue131] remove Dialogue131
+
+#If the legendary Pokemon is in the chamber and the player leaves
+execute if entity @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue132] if entity @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,type=pixelmon:pixelmon,nbt={ndex:716}] run tellraw @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=Dialogue131] {"text":"Legendary detected in the chamber! Catch it to continue the story!","italic":true,"color":"gray"}
+execute if entity @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue132] if entity @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,type=pixelmon:pixelmon,nbt={ndex:717}] run tag @s[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=Dialogue131] remove Dialogue131
+
+
 #Dialogue 134
 #Geosenge Town post-destruction with friends
 scoreboard players set @a[x=-410,y=109,z=2014,distance=..20,tag=!Dialogue134,scores={TalkTime=0}] DialogueTrigger 134
@@ -854,10 +1131,16 @@ execute as @a[x=1501,y=101,z=253,distance=..10,tag=Dialogue135,tag=!Dialogue136,
 
 #Camphrier Town Sycamore's Note
 #execute @a[x=1568,y=119,z=163,distance=..30,tag=Dialogue136,tag=!SycamoresNote] ~ ~ ~ /execute @e[x=1568,y=119,z=163,dy=3,type=armor_stand] ~ ~ ~ /particle fireworksSpark ~ ~ ~ 1 2 1 0.1 2 normal @a[tag=!SycamoresNote]
-#execute @e[x=1568,y=119,z=163,dy=3,type=armor_stand] ~ ~ ~ /give @a[r=3,tag=!SycamoresNote] written_book 1 0 {pages:["{\"text\":\"To the person reading this:\\n\\nWhat are you like now?\\n\\nDid you become who you wanted to be?\"}","{\"text\":\"For starters, what was the person you wanted to become even like?\"}","{\"text\":\"I don't know, but it would be wonderful if you can boast that you're living each day to the fullest.\"}","{\"text\":\"To future Sycamore.\\n\\nFrom the Sycamore dreaming of the future.\"}"],title:"To future Sycamore",author:"Augustine Sycamore"}
+#execute @e[x=1568,y=119,z=163,dy=3,type=armor_stand] ~ ~ ~ /give @a[r=3,tag=!SycamoresNote] written_book{pages:["{\"text\":\"To the person reading this:\\n\\nWhat are you like now?\\n\\nDid you become who you wanted to be?\"}","{\"text\":\"For starters, what was the person you wanted to become even like?\"}","{\"text\":\"I don't know, but it would be wonderful if you can boast that you're living each day to the fullest.\"}","{\"text\":\"To future Sycamore.\\n\\nFrom the Sycamore dreaming of the future.\"}"],title:"To future Sycamore",author:"Augustine Sycamore"}
 #execute @e[x=1568,y=119,z=163,dy=3,type=armor_stand] ~ ~ ~ /tellraw @a[r=3,tag=!SycamoresNote] {"text":"You found a Sycamore's Note!","italic":true,"color":"gray"}
 #execute @e[x=1568,y=119,z=163,dy=3,type=armor_stand] ~ ~ ~ /playsound pixelmon:pixelmon.block.pokelootobtained ambient @a[r=3,tag=!SycamoresNote] ~ ~ ~ 10 1 1
 #execute @e[x=1568,y=119,z=163,dy=3,type=armor_stand] ~ ~ ~ /scoreboard players tag @a[r=3,tag=!SycamoresNote] add SycamoresNote
+
+execute as @e[x=1568,y=119,z=163,dy=3,type=armor_stand] if entity @a[x=-779,y=103,z=-347,distance=..30,tag=Dialogue136,tag=!SycamoresNote] run particle minecraft:firework ~ ~ ~ 1 2 1 0.1 2 normal @a[tag=!SycamoresNote,tag=Dialogue136]
+execute as @e[x=1568,y=119,z=163,dy=3,type=armor_stand] if entity @a[distance=..3,tag=!SycamoresNote,tag=Dialogue136] run give @a[tag=!SycamoresNote,tag=Dialogue136] written_book{pages:["{\"text\":\"To the person reading this:\\n\\nWhat are you like now?\\n\\nDid you become who you wanted to be?\"}","{\"text\":\"For starters, what was the person you wanted to become even like?\"}","{\"text\":\"I don't know, but it would be wonderful if you can boast that you're living each day to the fullest.\"}","{\"text\":\"To future Sycamore.\\n\\nFrom the Sycamore dreaming of the future.\"}"],title:"To future Sycamore",author:"Augustine Sycamore"}
+execute as @e[x=1568,y=119,z=163,dy=3,type=armor_stand] if entity @a[distance=..3,tag=!SycamoresNote,tag=Dialogue136] run tellraw @a[distance=..3,tag=!SycamoresNote,tag=Dialogue136] {"text":"You found a Sycamore's Note!","italic":true,"color":"gray"}
+execute as @e[x=1568,y=119,z=163,dy=3,type=armor_stand] if entity @a[distance=..3,tag=!SycamoresNote,tag=Dialogue136] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @a[distance=..3,tag=!SycamoresNote,tag=Dialogue136] ~ ~ ~ 10 1 1
+execute as @e[x=1568,y=119,z=163,dy=3,type=armor_stand] if entity @a[distance=..3,tag=!SycamoresNote,tag=Dialogue136] run tag @a[distance=..3,tag=!SycamoresNote,tag=Dialogue136] add SycamoresNote
 
 #Dialogue 137-140
 #Route 19 Friends on bridge
@@ -942,6 +1225,11 @@ scoreboard players set @a[x=-1533,y=65,z=-68,distance=..20,tag=!Dialogue166,scor
 #Lumiose Press Volcanion Memo Start
 execute as @a[x=-444,y=101,z=206,distance=..6,scores={TalkTime=0},tag=VolcanionCatch] run scoreboard players set @s[tag=!Dialogue168] DialogueTrigger 168
 execute as @a[x=-449,y=101,z=215,distance=..10,scores={TalkTime=0},tag=VolcanionCatch] run tp @e[x=-442,y=100,z=210,dy=3,type=pixelmon:npc_chatting] -504 211 1286
+
+#Memo Revisit Trigger
+execute as @a[x=-444,y=101,z=206,distance=..6,tag=Dialogue168,scores={TalkTime=0,Cooldown=5000..}] run scoreboard players set @s TalkTrigger 20
+scoreboard players set @a[x=-444,y=101,z=206,distance=..6,tag=Dialogue168,scores={TalkTime=0,Cooldown=5000..}] Cooldown 0
+
 
 #----------
 #Looker Chapters
@@ -1041,6 +1329,13 @@ execute as @a[x=-490,y=144,z=336,distance=..20,tag=!Dialogue195,tag=Dialogue194]
 #Lysandre Labs Malva
 execute as @a[x=-296,y=81,z=443,distance=..8,scores={TalkTime=0},tag=Dialogue196,tag=!Dialogue197] run scoreboard players set @s DialogueTrigger 197
 execute as @a[x=-295,y=89,z=393,distance=..8,scores={TalkTime=0},tag=Dialogue197,tag=!Dialogue198] run scoreboard players set @s DialogueTrigger 198
+
+#Looker Chapter Lysandre Labs Hidden Floor button
+execute as @a[x=-296,y=89,z=384,distance=..10,tag=Dialogue198] if block -297 89 385 minecraft:air run clone -443 102 1368 -443 102 1368 -297 89 384
+execute as @a[x=-296,y=89,z=384,distance=..10,tag=Dialogue198] if block -297 89 385 minecraft:air run setblock -297 89 385 minecraft:stone_button[facing=east]
+
+execute as @a[x=-296,y=89,z=384,distance=..10,tag=!Dialogue198] if block -297 89 385 minecraft:stone_button run fill -297 89 385 -297 89 384 air
+
 
 #Dialogue 199
 #Lysandre Labs Nix pre-battle
