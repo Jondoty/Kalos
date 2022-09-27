@@ -1,5 +1,5 @@
 {
-  "name": "Info Sign No 1",
+  "name": "Info Sign 1 Hitbox",
   "dex": 3001,
   "defaultForms": [
     ""
@@ -9,9 +9,9 @@
       "name": "",
       "experienceGroup": "SLOW",
       "dimensions": {
-        "height": 0.7,
-        "width": 0.7,
-        "length": 0.7,
+        "height": 3.5,
+        "width": 1.0,
+        "length": 1.8,
         "eyeHeight": 0.7,
         "hoverHeight": 0.7
       },
@@ -87,13 +87,12 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/2000_helix/all/base/none/texture.png",
-              "sprite": "pixelmon:pokemon/2000_helix/all/base/none/sprite.png",
+              "texture": "pixelmon:pokemon/3001_info_sign_1/all/base/none/texture.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "pixelmon:pokemon/2000_helix/all/base/none/model.pqc"
+                  "pixelmon:pokemon/3001_info_sign_1/all/base/none/model.pqc"
                 ]
               },
               "sounds": []

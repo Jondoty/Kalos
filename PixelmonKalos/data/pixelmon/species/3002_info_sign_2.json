@@ -9,9 +9,9 @@
       "name": "",
       "experienceGroup": "SLOW",
       "dimensions": {
-        "height": 0.7,
-        "width": 0.7,
-        "length": 0.7,
+        "height": 3.25,
+        "width": 1.0,
+        "length": 1.0,
         "eyeHeight": 0.7,
         "hoverHeight": 0.7
       },
@@ -87,13 +87,12 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/2001_dome/all/base/none/texture.png",
-              "sprite": "pixelmon:pokemon/2001_dome/all/base/none/sprite.png",
+              "texture": "pixelmon:pokemon/3002_info_sign_2/all/base/none/texture.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "pixelmon:pokemon/2001_dome/all/base/none/model.pqc"
+                  "pixelmon:pokemon/3002_info_sign_2/all/base/none/model.pqc"
                 ]
               },
               "sounds": []

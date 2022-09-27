@@ -1,6 +1,6 @@
 {
-  "name": "Photo Spot",
-  "dex": 3005,
+  "name": "Taxi Hitbox",
+  "dex": 3006,
   "defaultForms": [
     ""
   ],
@@ -10,8 +10,8 @@
       "experienceGroup": "SLOW",
       "dimensions": {
         "height": 3.5,
-        "width": 1.0,
-        "length": 1.0,
+        "width": 3.5,
+        "length": 3.5,
         "eyeHeight": 0.7,
         "hoverHeight": 0.7
       },
@@ -87,12 +87,12 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/3005_photo_spot/all/base/none/texture.png",
+              "texture": "pixelmon:pokemon/3006_taxi/all/base/none/texture.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "pixelmon:pokemon/3005_photo_spot/all/base/none/model.pqc"
+                  "pixelmon:pokemon/3006_taxi/all/base/none/model.pqc"
                 ]
               },
               "sounds": []

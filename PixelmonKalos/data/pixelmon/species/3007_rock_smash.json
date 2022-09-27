@@ -1,6 +1,6 @@
 {
-  "name": "Photo Spot",
-  "dex": 3005,
+  "name": "Rock Smash Rock",
+  "dex": 3007,
   "defaultForms": [
     ""
   ],
@@ -87,12 +87,12 @@
           "palettes": [
             {
               "name": "none",
-              "texture": "pixelmon:pokemon/3005_photo_spot/all/base/none/texture.png",
+              "texture": "pixelmon:pokemon/3007_rock_smash/all/base/none/texture.png",
               "particle": "",
               "modelLocator": {
                 "factoryType": "NORMAL",
                 "pqc": [
-                  "pixelmon:pokemon/3005_photo_spot/all/base/none/model.pqc"
+                  "pixelmon:pokemon/3007_rock_smash/all/base/none/model.pqc"
                 ]
               },
               "sounds": []

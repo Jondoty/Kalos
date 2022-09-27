@@ -1,6 +1,9 @@
 #/function world:worldcommands
 #-417 101 1389
 
+#Kills corrupted entities
+tp @e[x=-705,y=100,z=1377,dy=2] ~ ~-10000 ~
+
 #---------------------------------------------------------
 
 #Used to tag trainers that I'll need to replace in 1.16.5
