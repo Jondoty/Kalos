@@ -2957,8 +2957,8 @@ scoreboard players set @s[tag=Dialogue85] DialogueTrigger 0
 
 
 #tps player back to same stair plane
-execute as @s[x=-189,y=115,z=-1678,dx=70,dy=10,dz=20,scores={DialogueTrigger=86,TalkTime=1..100}] run tp @s ~ ~ ~10
-execute as @s[x=-189,y=115,z=-1636,dx=70,dy=10,dz=20,scores={DialogueTrigger=86,TalkTime=1..100}] run tp @s ~ 117 ~-10
+execute as @s[x=-189,y=115,z=-1678,dx=70,dy=10,dz=20,scores={DialogueTrigger=86,TalkTime=1..100}] at @s run tp @s ~ ~ ~10
+execute as @s[x=-189,y=115,z=-1636,dx=70,dy=10,dz=20,scores={DialogueTrigger=86,TalkTime=1..100}] at @s run tp @s ~ 117 ~-10
 
 #Motion data
 #entitydata @e[x=-158,y=111,z=-1685,dx=6,dy=13,dz=100,type=pixelmon:npc_chatting] {Motion:[0.0d,-0.3d,0.5d]}
@@ -5790,8 +5790,8 @@ execute as @s[scores={DialogueTrigger=167,TalkTime=1..2}] run tag @e[x=-505,y=19
 execute as @s[scores={DialogueTrigger=167,TalkTime=3,StarterPick=1}] run tp @e[x=-501,y=200,z=1238,distance=..3,type=pixelmon:statue] @s
 execute as @s[scores={DialogueTrigger=167,TalkTime=3,StarterPick=2}] run tp @e[x=-501,y=209,z=1238,distance=..3,type=pixelmon:statue] @s
 execute as @s[scores={DialogueTrigger=167,TalkTime=3,StarterPick=3}] run tp @e[x=-501,y=218,z=1238,distance=..3,type=pixelmon:statue] @s
-execute as @s[scores={DialogueTrigger=167,TalkTime=3}] run execute as @e[distance=..20,type=pixelmon:statue,tag=Roaming] run tp @s ~ ~5 ~
-execute as @s[scores={DialogueTrigger=167,TalkTime=3}] run execute as @e[distance=..20,type=pixelmon:statue,tag=Roaming] run particle cloud ~ ~ ~ 2 2 2 1 100
+execute if entity @s[scores={DialogueTrigger=167,TalkTime=3}] as @e[distance=..20,type=pixelmon:statue,tag=Roaming] at @s run tp @s ~ ~5 ~
+execute if entity @s[scores={DialogueTrigger=167,TalkTime=3}] as @e[distance=..20,type=pixelmon:statue,tag=Roaming] at @s run particle cloud ~ ~ ~ 2 2 2 1 100
 
 #Switches music to legendary encounter music
 execute as @s[scores={DialogueTrigger=167,TalkTime=3}] run scoreboard players set @s click 1
@@ -6999,7 +6999,7 @@ execute as @s[scores={DialogueTrigger=189,TalkTime=128}] run tp @e[x=-250,y=100,
 execute as @s[scores={DialogueTrigger=189,TalkTime=128}] run scoreboard players set @s click 1
 
 #Keeps player from leaving alley while dialogue active
-execute as @s[scores={DialogueTrigger=189,TalkTime=1..128}] run tp @s[x=-237,y=100,z=-622,dx=10,dy=5,dz=7] ~-10 ~ ~
+execute as @s[scores={DialogueTrigger=189,TalkTime=1..128}] at @s run tp @s[x=-237,y=100,z=-622,dx=10,dy=5,dz=7] ~-10 ~ ~
 
 tag @s[scores={DialogueTrigger=189,TalkTime=128..}] add Dialogue189
 scoreboard players set @s[tag=Dialogue189] TalkTime 0
@@ -7065,7 +7065,7 @@ execute as @s[scores={DialogueTrigger=190,TalkTime=122}] run scoreboard players 
 
 
 #Keeps player from leaving
-execute as @s[scores={DialogueTrigger=190,TalkTime=1..122}] run tp @s[x=-126,y=100,z=-611,dx=10,dy=5,dz=6] ~5 ~ ~
+execute as @s[scores={DialogueTrigger=190,TalkTime=1..122}] at @s run tp @s[x=-126,y=100,z=-611,dx=10,dy=5,dz=6] ~5 ~ ~
 
 tag @s[scores={DialogueTrigger=190,TalkTime=122..}] add Dialogue190
 scoreboard players set @s[tag=Dialogue190] TalkTime 0
@@ -7458,7 +7458,7 @@ execute as @s[scores={DialogueTrigger=197,TalkTime=20}] run tp @e[x=-296,y=80,z=
 execute as @s[scores={DialogueTrigger=197,TalkTime=20}] run tp @e[x=-504,y=100,z=1312,dy=3,type=pixelmon:npc_chatting] -295 89 393
 
 #Keeps player from running ahead into the lab
-execute as @s[scores={DialogueTrigger=197,TalkTime=1..20}] run tp @s[x=-298,y=80,z=419,dx=5,dy=5,dz=9] run6
+#execute as @s[scores={DialogueTrigger=197,TalkTime=1..20}] run tp @s[x=-298,y=80,z=419,dx=5,dy=5,dz=9] run 6
 
 
 tag @s[scores={DialogueTrigger=197,TalkTime=20..}] add Dialogue197
@@ -8124,7 +8124,7 @@ scoreboard players set @s[tag=Dialogue214] DialogueTrigger 0
 #Punk Guy when player goes to the door
 
 #tps player out of the door
-execute as @s[scores={DialogueTrigger=215,TalkTime=1}] run tp @s[x=-54,y=101,z=398,dx=5,dy=3] run-7
+execute as @s[scores={DialogueTrigger=215,TalkTime=1}] at @s run tp @s[x=-54,y=101,z=398,dx=5,dy=3] run ~ ~ ~-7
 
 #Punk Guy tps in
 execute as @s[scores={DialogueTrigger=215,TalkTime=2}] run particle cloud -51 101 397 2 2 2 1 100
@@ -9485,7 +9485,7 @@ tellraw @s[scores={DialogueTrigger=255,TalkTime=75}] {"text":"That's what it say
 #waitress tps in, battles
 execute as @s[scores={DialogueTrigger=255,TalkTime=85}] run particle cloud -287 101 157 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=255,TalkTime=85}] run tp @e[x=-504,y=135,z=1308,dy=3,type=pixelmon:npc_trainer] -287 101 157
-execute as @s[scores={DialogueTrigger=255,TalkTime=86}] run tp @s Paula
+execute as @s[scores={DialogueTrigger=255,TalkTime=86}] run pokebattle @s Paula
 
 tag @s[scores={DialogueTrigger=255,TalkTime=86..}] add Dialogue255
 scoreboard players set @s[tag=Dialogue255] TalkTime 0

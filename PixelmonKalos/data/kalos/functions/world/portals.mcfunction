@@ -35,7 +35,7 @@ tp @a[x=-1679,y=101,z=-1865,dx=5,dy=5] -1912 114 2
 #Shalour City Gym
 #Pre-Tower of Mastery Serena defeat
 scoreboard players set @a[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1,scores={TalkTime=0},tag=!Dialogue61] DialogueTrigger 57
-tp @a[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1,scores={TalkTime=0},tag=!Dialogue61] ~ ~ ~10
+execute as @a[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1,scores={TalkTime=0},tag=!Dialogue61] at @s run tp @s ~ ~ ~10
 
 scoreboard players set @a[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1] click1
 tp @a[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1] -1328 102 -1816
@@ -59,7 +59,7 @@ tp @a[x=-1661,y=77,z=-1176,dx=5,dy=5,scores={TalkTime=0}] -1659 93 -1159
 
 #Courmarine City Gym
 tellraw @a[x=-1083,y=121,z=-714,dx=9,dy=5,tag=!Dialogue68] {"text":"Defeat Serena to continue!","italic":true,"color":"gray"}
-tp @a[x=-1083,y=121,z=-714,dx=9,dy=5,tag=!Dialogue68] ~ ~ ~10
+execute as @a[x=-1083,y=121,z=-714,dx=9,dy=5,tag=!Dialogue68] at @s run tp @s ~ ~ ~10
 
 scoreboard players set @a[x=-1083,y=121,z=-714,dx=9,dy=5,tag=Dialogue68] click1
 tp @a[x=-1083,y=121,z=-714,dx=9,dy=5,tag=Dialogue68] -1926 102 -2147
@@ -81,7 +81,7 @@ tp @a[x=-1965,y=101,z=-1667,dx=6,dy=5] -93 100 -1460
 
 #Anistar City Gym
 tellraw @a[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=!Dialogue103,scores={TalkTime=0}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Let's battle, "},{"selector":"@p[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=!Dialogue103]"},{"text":"!"}]
-tp @a[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=!Dialogue103] ~ ~ ~10
+execute as @a[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=!Dialogue103] at @s run tp @s ~ ~ ~10
 
 scoreboard players set @a[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=Dialogue103] click1
 tp @a[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=Dialogue103] -1057 101 -1710
@@ -337,10 +337,10 @@ scoreboard players set @a[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarters,t
 tp @a[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarters,tag=Dialogue22,scores={TalkTime=0}] -567 92 -159 90 ~
 
 tellraw @a[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=!KantoStarters] {"text":"You need to go see Professor Sycamore!","italic":true,"color":"gray"}
-tp @a[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=!KantoStarters] ~5 ~ ~-5
+execute as @a[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=!KantoStarters] at @s run tp @s ~5 ~ ~-5
 
 tellraw @a[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarters,tag=!Dialogue22] {"text":"Serena is waiting at Cafe Soleil!","italic":true,"color":"gray"}
-tp @a[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarters,tag=!Dialogue22] ~5 ~ ~-5
+execute as @a[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarters,tag=!Dialogue22] at @s run tp @s ~5 ~ ~-5
 
 
 #Lumiose Route 4 Connector
@@ -353,7 +353,7 @@ tp @a[x=20,y=101,z=-107,dx=7,dy=5,dz=6] 179 100 -116 0 ~
 
 #Lumiose Route 16 Connector
 tellraw @a[x=165,y=101,z=-510,dx=4,dy=5,dz=9,tag=!Dialogue90] {"text":"<Worker> The power outage has messed up something in the gate. Clemont is probably busy over at the Gym, so it's up to me to figure out how to fix it."}
-tp @a[x=165,y=101,z=-510,dx=4,dy=5,dz=9,tag=!Dialogue90] ~-10 ~ ~
+execute as @a[x=165,y=101,z=-510,dx=4,dy=5,dz=9,tag=!Dialogue90] at @s run tp @s ~-10 ~ ~
 
 scoreboard players set @a[x=218,y=100,z=-246,dy=5,dz=14] click1
 tp @a[x=218,y=100,z=-246,dy=5,dz=14] 162 101 -502 70 ~
@@ -364,7 +364,7 @@ tp @a[x=165,y=101,z=-510,dx=4,dy=5,dz=9,tag=Dialogue90] 220 100 -239 -90 ~
 
 #Lumiose Route 14 Connector
 tellraw @a[x=-188,y=101,z=-754,dx=11,dy=5,tag=!Clemont] {"text":"<Worker> The power outage has messed up something in the gate. Clemont is probably busy over at the Gym, so it's up to me to figure out how to fix it."}
-tp @a[x=-188,y=101,z=-754,dx=11,dy=5,tag=!Clemont] ~ ~ ~10
+execute at @a[x=-188,y=101,z=-754,dx=11,dy=5,tag=!Clemont] as @s run tp @s ~ ~ ~10
 
 scoreboard players set @a[x=-188,y=101,z=-754,dx=11,dy=5,tag=Clemont] click1
 tp @a[x=-188,y=101,z=-754,dx=11,dy=5,tag=Clemont] -183 100 -797
@@ -473,7 +473,7 @@ tp @a[x=-1976,y=118,z=-720,dx=7,dy=5] -1806 64 -310
 #Poke Ball Factory
 
 tellraw @a[x=-157,y=125,z=-1774,dx=6,dy=5,tag=!Dialogue86] {"text":"<Team Flare Grunt> Adults are talking inside. Scram, kid. Shoo! Shoo!"}
-tp @a[x=-157,y=125,z=-1774,dx=6,dy=5,tag=!Dialogue86] ~ ~ ~10
+execute as @a[x=-157,y=125,z=-1774,dx=6,dy=5,tag=!Dialogue86] at @s run tp @s ~ ~ ~10
 
 execute as @a[x=-157,y=125,z=-1774,dx=6,dy=5,tag=Dialogue86] run scoreboard players set @s[tag=!Dialogue87] DialogueTrigger 87
 #Removes reverse tag in case player can't ride the left belt to the reverse button
@@ -484,7 +484,7 @@ tp @a[x=-158,y=89,z=-1843,dx=7,dy=5,scores={TalkTime=0}] -154 125 -1772
 
 #Laverre Gate
 tellraw @a[x=43,y=100,z=-1360,dy=5,dz=14,scores={TalkTime=0},tag=!Dialogue90] {"text":"<Team Flare Grunt> Hey, hey! Stop right there. You want to go beyond this point? You\u2019ll have to join Team Flare! I\u2019ll let you in for a small fee... Let\u2019s say $5,000,000?"}
-tp @a[x=43,y=100,z=-1360,dy=5,dz=14,tag=!Dialogue90] ~-10 ~ ~
+execute as @a[x=43,y=100,z=-1360,dy=5,dz=14,tag=!Dialogue90] at @s run tp @s ~-10 ~ ~
 
 scoreboard players set @a[x=43,y=100,z=-1360,dy=5,dz=14,tag=Dialogue90] click1
 tp @a[x=43,y=100,z=-1360,dy=5,dz=14,tag=Dialogue90] 265 108 -571
@@ -642,7 +642,7 @@ tp @a[x=968,y=93,z=660,dy=5,dz=5,scores={TalkTime=0}] 1037 100 858
 scoreboard players set @a[x=841,y=95,z=608,dx=5,dy=5,scores={PokemonLeague=1..}] click1
 tp @a[x=841,y=95,z=608,dx=5,dy=5,scores={PokemonLeague=1..}] 845 75 606
 
-tp @a[x=841,y=95,z=608,dx=5,dy=5,scores={PokemonLeague=0}] ~ ~ ~10
+execute as @a[x=841,y=95,z=608,dx=5,dy=5,scores={PokemonLeague=0}] at @s run tp @s ~ ~ ~10
 
 scoreboard players set @a[x=842,y=75,z=608,dx=6,dy=5] click1
 tp @a[x=842,y=75,z=608,dx=6,dy=5] 844 95 610
@@ -845,7 +845,7 @@ playsound tmv ambient @a[x=935,y=105,z=1643,dx=1,dy=3,dz=1] ~ ~ ~ 1 1 1
 tp @a[x=935,y=105,z=1643,dx=1,dy=3,dz=1] 1053 105 1899 0 ~
 
 tellraw @a[x=1053,y=105,z=1893,dx=1,dy=3,dz=1,tag=!TMVPass] {"text":"A TMV Pass is required to ride on the train!","italic":true,"color":"gray"}
-tp @a[x=1053,y=105,z=1893,dx=1,dy=3,dz=1,tag=!TMVPass] ~ ~ ~10
+execute as @a[x=1053,y=105,z=1893,dx=1,dy=3,dz=1,tag=!TMVPass] at @s run tp @s ~ ~ ~10
 
 scoreboard players set @a[x=1053,y=105,z=1893,dx=1,dy=3,dz=1,tag=TMVPass] click1
 playsound tmv ambient @a[x=1053,y=105,z=1893,dx=1,dy=3,dz=1,tag=TMVPass] ~ ~ ~ 1 1 1
@@ -854,7 +854,7 @@ tp @a[x=1053,y=105,z=1893,dx=1,dy=3,dz=1,tag=TMVPass] 942 105 1644 -90 ~
 
 #Portal in Looker Chapter duplicate station
 tellraw @a[x=1053,y=105,z=1995,dx=1,dy=3,dz=1] {"text":"The train is not currently running. Please try again later!","italic":true,"color":"gray"}
-tp @a[x=1053,y=105,z=1995,dx=1,dy=3,dz=1] ~ ~ ~10
+execute as @a[x=1053,y=105,z=1995,dx=1,dy=3,dz=1] at @s run tp @s ~ ~ ~10
 
 
 #Kiloude City NPC Home 1
@@ -906,7 +906,7 @@ tp @a[x=141,y=101,z=-385,dy=5,dz=10] 1016 105 1917 180 ~
 
 #Route 13 and Power Plant
 tellraw @a[x=-818,y=105,z=-304,dx=1,dy=2,dz=1,tag=!PowerPlantPass] {"text":"A Power Plant Pass is reqiured to access the Power Plant!","italic":true,"color":"gray"}
-tp @a[x=-818,y=105,z=-304,dx=1,dy=2,dz=1,tag=!PowerPlantPass] ~10 ~ ~
+execute as @a[x=-818,y=105,z=-304,dx=1,dy=2,dz=1,tag=!PowerPlantPass] at @s run tp @s ~10 ~ ~
 
 scoreboard players set @a[x=-818,y=105,z=-304,dx=1,dy=2,dz=1,tag=PowerPlantPass] click1
 tp @a[x=-818,y=105,z=-304,dx=1,dy=2,dz=1,tag=PowerPlantPass] -808 48 -349
@@ -1215,7 +1215,7 @@ tp @a[x=-191,y=101,z=266,dx=4,dy=5] -159 101 -217 90 ~
 
 #Lumiose City Boutique Couture
 tellraw @a[x=-156,y=101,z=-192,dy=5,dz=7,scores={Style=..14}] {"text":"Only the most stylish Trainers may shop here!","italic":true,"color":"gray"}
-tp @a[x=-156,y=101,z=-192,dy=5,dz=7,scores={Style=..14}] ~-10 ~ ~
+execute as @a[x=-156,y=101,z=-192,dy=5,dz=7,scores={Style=..14}] at @s run tp @s ~-10 ~ ~
 
 scoreboard players set @a[x=-156,y=101,z=-192,dy=5,dz=7,scores={Style=15..}] click 1
 tp @a[x=-156,y=101,z=-192,dy=5,dz=7,scores={Style=15..}] -25 101 93 180 ~
@@ -1236,7 +1236,7 @@ tp @a[x=-153,y=101,z=266,dx=5,dy=5] -55 101 -229 48 ~
 tp @a[x=27,y=101,z=-237,dx=4,dy=5,dz=4] -193 101 185 180 ~
 
 tellraw @a[x=-196,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] {"text":"<Server> Please come back to the table!"}
-tp @a[x=-196,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] ~ ~ ~-5 ~ ~
+execute as @a[x=-196,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] at @s run tp @s ~ ~ ~-5 ~ ~
 tp @a[x=-196,y=101,z=186,dx=6,dy=5] 31 101 -232 -48 ~
 
 #Lumiose City Jaune Plaza NPC Home
@@ -1264,7 +1264,7 @@ scoreboard players set @a[x=-170,y=101,z=-602,dy=5,dz=5] click 1
 tp @a[x=-170,y=101,z=-602,dy=5,dz=5] -489 101 185 180 ~
 
 tellraw @a[x=-492,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] {"text":"<Server> Please come back to the table!"}
-tp @a[x=-492,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] ~ ~ ~-5 ~ ~
+execute as @a[x=-492,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] at @s run tp @s ~ ~ ~-5 ~ ~
 scoreboard players set @a[x=-492,y=101,z=186,dx=6,dy=5] click 1
 tp @a[x=-492,y=101,z=186,dx=6,dy=5] -171 101 -600 90 ~
 
@@ -1272,7 +1272,7 @@ tp @a[x=-492,y=101,z=186,dx=6,dy=5] -171 101 -600 90 ~
 tp @a[x=-102,y=101,z=-544,dx=3,dy=5,dz=5] -295 101 185 180 ~
 
 tellraw @a[x=-298,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] {"text":"<Server> Please come back to the table!"}
-tp @a[x=-298,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] ~ ~ ~-5 ~ ~
+execute as @a[x=-298,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] at @s run tp @s ~ ~ ~-5 ~ ~
 tp @a[x=-298,y=101,z=186,dx=6,dy=5] -98 101 -539 -70 ~
 
 #Lumiose City Poke Ball Boutique
@@ -1290,7 +1290,7 @@ tp @a[x=-446,y=101,z=266,dx=5,dy=5] -324 101 -552 -131 ~
 tp @a[x=-267,y=100,z=-551,dx=4,dy=5,dz=4] -402 101 185 180 ~
 
 tellraw @a[x=-405,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] {"text":"<Server> Please come back to the table!"}
-tp @a[x=-405,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] ~ ~ ~-5 ~ ~
+execute as @a[x=-405,y=101,z=186,dx=6,dy=5,scores={RestaurantBattle=1..}] at @s run tp @s ~ ~ ~-5 ~ ~
 tp @a[x=-405,y=101,z=186,dx=6,dy=5] -268 101 -547 62 ~
 
 #Lumiose City Juice Shoppe
@@ -1683,7 +1683,7 @@ tp @a[x=-1420,y=111,z=-404,dx=14,dy=5,scores={TalkTime=0}] -1417 74 -393
 #Lumiose City Gym
 #Lobby and Floor 2
 tellraw @a[x=-1823,y=100,z=-1705,dy=5,tag=Clemont] {"text":"You already defeated Clemont!","italic":true,"color":"gray"}
-tp @a[x=-1823,y=100,z=-1705,dy=5,tag=Clemont] ~ ~ ~5
+execute as @a[x=-1823,y=100,z=-1705,dy=5,tag=Clemont] at @s run tp @s ~ ~ ~5
 
 tellraw @a[x=-1823,y=100,z=-1705,dy=5,tag=!Clemont] {"text":"Welcome to the Lumiose City Gym! You will have to answer our questions if you want to get any farther ahead! Just battle the trainer you think is the answer!"}
 tp @a[x=-1823,y=100,z=-1705,dy=5,tag=!Clemont] -1823 110 -1706
@@ -1712,7 +1712,7 @@ tp @a[x=-1823,y=155,z=-1741,dy=3] -1823 170 -1706
 #Return to gym lobby
 execute as @a[x=-1823,y=125,z=-1705,dy=65] run tellraw @s ["",{"text":"Would you like to return to the lobby?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 3"}},{"text":"]"}]
 execute as @a[x=-1823,y=125,z=-1705,dy=65] run scoreboard players enable @s TalkTrigger
-tp @a[x=-1823,y=125,z=-1705,dy=65] ~ ~ ~-3
+execute as @a[x=-1823,y=125,z=-1705,dy=65] at @s run tp @s ~ ~ ~-3
 
 tp @a[x=-1823,y=110,z=-1705,dy=3] -1823 100 -1703 0 ~
 tp @a[x=-1832,y=172,z=-1730,dx=2,dy=3,dz=2] -1823 100 -1703 0 ~
@@ -1741,7 +1741,7 @@ execute as @a[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4,tag=!Diantha,tag=!Malva,tag=!Si
 
 tellraw @a[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] ["",{"text":"Would you like to leave the Elite Four challenge? Your battle progress will be reset. ","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 4"}},{"text":"]","color":"white"}]
 scoreboard players enable @a[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] TalkTrigger
-tp @a[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] ~-4 ~ ~4
+execute as @a[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] at @s run tp @s ~-4 ~ ~4
 
 
 
@@ -1761,7 +1761,7 @@ execute as @a[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4,tag=!Diantha] run execute as @s
 
 tellraw @a[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] ["",{"text":"Would you like to leave the Elite Four challenge? Your battle progress will be reset. ","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 5"}},{"text":"]","color":"white"}]
 scoreboard players enable @a[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] TalkTrigger
-tp @a[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] ~4 ~ ~4
+execute at @a[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] as @s run tp @s ~4 ~ ~4
 
 
 #Blazing Chamber Hallway
@@ -1797,7 +1797,7 @@ tellraw @a[x=-1909,y=33,z=2101,dx=4,dy=5,scores={TalkTime=0},tag=!Malva] {"text"
 tellraw @a[x=-1909,y=33,z=2101,dx=4,dy=5,scores={TalkTime=0},tag=!Siebold] {"text":"Siebold","italic":true,"color":"gray"}
 tellraw @a[x=-1909,y=33,z=2101,dx=4,dy=5,scores={TalkTime=0},tag=!Wikstrom] {"text":"Wikstrom","italic":true,"color":"gray"}
 tellraw @a[x=-1909,y=33,z=2101,dx=4,dy=5,scores={TalkTime=0},tag=!Drasna] {"text":"Drasna","italic":true,"color":"gray"}
-tp @a[x=-1909,y=33,z=2101,dx=4,dy=5,scores={TalkTime=0}] ~ ~ ~4
+execute as @a[x=-1909,y=33,z=2101,dx=4,dy=5,scores={TalkTime=0}] run tp @s ~ ~ ~4
 
 #tp out of radiant chamber
 tp @a[x=-1915,y=22,z=1979,dx=17,dy=5,scores={TalkTime=0}] -1907 32 2103
@@ -1805,7 +1805,7 @@ tp @a[x=-1915,y=22,z=1979,dx=17,dy=5,scores={TalkTime=0}] -1907 32 2103
 
 #Hall of Fame
 tellraw @a[x=-1915,y=22,z=1873,dx=17,dy=5,tag=!Diantha,scores={TalkTime=0}] {"text":"Beat Champion Diantha to proceed!","italic":true,"color":"gray"}
-tp @a[x=-1915,y=22,z=1873,dx=17,dy=5,tag=!Diantha,scores={TalkTime=0}] ~ ~ ~4
+execute as @a[x=-1915,y=22,z=1873,dx=17,dy=5,tag=!Diantha,scores={TalkTime=0}] at @s run tp @s ~ ~ ~4
 
 execute as @a[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,scores={PokemonLeague=0,TalkTime=0}] run scoreboard players set @s[tag=!Dialogue152] DialogueTrigger 152
 execute as @a[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,scores={PokemonLeague=1..,TalkTime=0}] run scoreboard players set @s DialogueTrigger 153
