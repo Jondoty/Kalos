@@ -46,7 +46,7 @@ playsound pixelmon:pixelmon.block.pokelootobtained ambient @a[scores={TrashTrigg
 
 execute as @a[scores={TrashTrigger=1}] run tp @e[x=-468,y=99,z=1063,distance=..3,type=pixelmon:statue] ~ ~-1000 ~
 execute as @a[scores={TrashTrigger=1}] run data modify entity @e[limit=1,x=-468,y=99,z=1063,distance=..3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:49s}]}
-execute as @a[scores={TrashTrigger=1}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=1}] run 100 1 1 1
+execute as @a[scores={TrashTrigger=1}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=1}] ~ ~ ~ 1 1 1
 
 #Tuesday Loot
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] run give @a[scores={TrashTrigger=1,rng=65..70}] minecraft:ender_eye{display:{Lore:["A long and durable rope.","Use it to escape instantly","from a cave."]}}
@@ -96,7 +96,7 @@ scoreboard players set @a[scores={TrashTrigger=1}] TrashTrigger 0
 #Lost Hotel Trash can No 1
 execute as @a[scores={TrashTrigger=7}] run tp @e[x=512,y=92,z=-463,distance=..3,type=pixelmon:statue] ~ ~-1000 ~
 execute as @a[scores={TrashTrigger=7}] run data modify entity @e[limit=1,x=512,y=92,z=-463,distance=..3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:49s}]}
-execute as @a[scores={TrashTrigger=7}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=7}] run 100 1 1 1
+execute as @a[scores={TrashTrigger=7}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=7}] ~ ~ ~ 1 1 1
 
 #Tuesday Loot
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] run give @a[scores={TrashTrigger=7,rng=65..70}] minecraft:ender_eye{display:{Lore:["A long and durable rope.","Use it to escape instantly","from a cave."]}}
@@ -142,7 +142,7 @@ scoreboard players set @a[scores={TrashTrigger=7}] TrashTrigger 0
 #Lost Hotel Trash can No 2
 execute as @a[scores={TrashTrigger=8}] run tp @e[x=446,y=92,z=-486,distance=..3,type=pixelmon:statue] ~ ~-1000 ~
 execute as @a[scores={TrashTrigger=8}] run data modify entity @e[limit=1,x=446,y=92,z=-486,distance=..3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:49s}]}
-execute as @a[scores={TrashTrigger=8}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=8}] run 100 1 1 1
+execute as @a[scores={TrashTrigger=8}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=8}] ~ ~ ~ 1 1 1
 
 #Tuesday Loot
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] run give @a[scores={TrashTrigger=8,rng=65..70}] minecraft:ender_eye{display:{Lore:["A long and durable rope.","Use it to escape instantly","from a cave."]}}
@@ -189,7 +189,7 @@ scoreboard players set @a[scores={TrashTrigger=8}] TrashTrigger 0
 #Lost Hotel Trash can No 4
 execute as @a[scores={TrashTrigger=9}] run tp @e[x=413,y=92,z=-450,distance=..3,type=pixelmon:statue] ~ ~-1000 ~
 execute as @a[scores={TrashTrigger=9}] run data modify entity @e[limit=1,x=413,y=92,z=-450,distance=..3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:49s}]}
-execute as @a[scores={TrashTrigger=9}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=9}] run 100 1 1 1
+execute as @a[scores={TrashTrigger=9}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=9}] ~ ~ ~ 1 1 1
 
 #Tuesday Loot
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] run give @a[scores={TrashTrigger=9,rng=65..70}] minecraft:ender_eye{display:{Lore:["A long and durable rope.","Use it to escape instantly","from a cave."]}}
@@ -236,7 +236,7 @@ scoreboard players set @a[scores={TrashTrigger=9}] TrashTrigger 0
 #Lost Hotel Trash can No 4
 execute as @a[scores={TrashTrigger=10}] run tp @e[x=497,y=92,z=-413,distance=..3,type=pixelmon:statue] ~ ~-1000 ~
 execute as @a[scores={TrashTrigger=10}] run data modify entity @e[limit=1,x=497,y=92,z=-413,distance=..3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:49s}]}
-execute as @a[scores={TrashTrigger=10}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=10}] run 100 1 1 1
+execute as @a[scores={TrashTrigger=10}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=10}] ~ ~ ~ 1 1 1
 
 #Tuesday Loot
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] run give @a[scores={TrashTrigger=10,rng=65..70}] minecraft:ender_eye{display:{Lore:["A long and durable rope.","Use it to escape instantly","from a cave."]}}
@@ -283,7 +283,7 @@ scoreboard players set @a[scores={TrashTrigger=10}] TrashTrigger 0
 #Lost Hotel Trash can No 5
 execute as @a[scores={TrashTrigger=11}] run tp @e[x=416,y=92,z=-377,distance=..3,type=pixelmon:statue] ~ ~-1000 ~
 execute as @a[scores={TrashTrigger=11}] run data modify entity @e[limit=1,x=416,y=92,z=-377,distance=..3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:49s}]}
-execute as @a[scores={TrashTrigger=11}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=11}] run 100 1 1 1
+execute as @a[scores={TrashTrigger=11}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=11}] ~ ~ ~ 1 1 1
 
 #Tuesday Loot
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] run give @a[scores={TrashTrigger=11,rng=65..70}] minecraft:ender_eye{display:{Lore:["A long and durable rope.","Use it to escape instantly","from a cave."]}}
@@ -332,7 +332,7 @@ scoreboard players set @a[scores={TrashTrigger=11}] TrashTrigger 0
 #Pokemon Village Trash Can No 1
 execute as @a[scores={TrashTrigger=2}] run tp @e[x=794,y=93,z=641,distance=..3,type=pixelmon:statue] ~ ~-1000 ~
 execute as @a[scores={TrashTrigger=2}] run data modify entity @e[limit=1,x=794,y=93,z=641,distance=..3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:49s}]}
-execute as @a[scores={TrashTrigger=2}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=2}] run 100 1 1 1
+execute as @a[scores={TrashTrigger=2}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=2}] ~ ~ ~ 1 1 1
 
 #Tuesday Loot
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] run give @a[scores={TrashTrigger=2,rng=65..70}] pixelmon:big_mushroom
@@ -371,7 +371,7 @@ scoreboard players set @a[scores={TrashTrigger=2}] TrashTrigger 0
 #Pokemon Village Trash Can No 2
 execute as @a[scores={TrashTrigger=3}] run tp @e[x=824,y=93,z=697,distance=..3,type=pixelmon:statue] ~ ~-1000 ~
 execute as @a[scores={TrashTrigger=3}] run data modify entity @e[limit=1,x=824,y=93,z=697,distance=..3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:49s}]}
-execute as @a[scores={TrashTrigger=3}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=3}] run 100 1 1 1
+execute as @a[scores={TrashTrigger=3}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=3}] ~ ~ ~ 1 1 1
 
 #Tuesday Loot
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] run give @a[scores={TrashTrigger=3,rng=65..70}] pixelmon:big_mushroom
@@ -410,7 +410,7 @@ scoreboard players set @a[scores={TrashTrigger=3}] TrashTrigger 0
 #Pokemon Village Trash Can No 3
 execute as @a[scores={TrashTrigger=4}] run tp @e[x=800,y=93,z=737,distance=..3,type=pixelmon:statue] ~ ~-1000 ~
 execute as @a[scores={TrashTrigger=4}] run data modify entity @e[limit=1,x=800,y=93,z=737,distance=..3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:49s}]}
-execute as @a[scores={TrashTrigger=4}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=4}] run 100 1 1 1
+execute as @a[scores={TrashTrigger=4}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=4}] ~ ~ ~ 1 1 1
 
 #Tuesday Loot
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] run give @a[scores={TrashTrigger=4,rng=65..70}] pixelmon:big_mushroom
@@ -450,7 +450,7 @@ scoreboard players set @a[scores={TrashTrigger=4}] TrashTrigger 0
 #Pokemon Village Trash Can No 4
 execute as @a[scores={TrashTrigger=5}] run tp @e[x=830,y=93,z=744,distance=..3,type=pixelmon:statue] ~ ~-1000 ~
 execute as @a[scores={TrashTrigger=5}] run data modify entity @e[limit=1,x=830,y=93,z=744,distance=..3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:49s}]}
-execute as @a[scores={TrashTrigger=5}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=5}] run 100 1 1 1
+execute as @a[scores={TrashTrigger=5}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=5}] ~ ~ ~ 1 1 1
 
 #Tuesday Loot
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] run give @a[scores={TrashTrigger=5,rng=65..70}] pixelmon:big_mushroom
@@ -492,7 +492,7 @@ scoreboard players set @a[scores={TrashTrigger=5}] TrashTrigger 0
 #Pokemon Village Trash Can No 5
 execute as @a[scores={TrashTrigger=6}] run tp @e[x=849,y=93,z=741,distance=..3,type=pixelmon:statue] ~ ~-1000 ~
 execute as @a[scores={TrashTrigger=6}] run data modify entity @e[limit=1,x=849,y=93,z=741,distance=..3,type=armor_stand] {ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:49s}]}
-execute as @a[scores={TrashTrigger=6}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=6}] run 100 1 1 1
+execute as @a[scores={TrashTrigger=6}] run playsound minecraft:entity.arrow.shoot ambient @a[scores={TrashTrigger=6}] ~ ~ ~ 1 1 1
 
 #Tuesday Loot
 execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] run give @a[scores={TrashTrigger=6,rng=65..70}] pixelmon:big_mushroom
