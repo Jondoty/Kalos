@@ -8124,7 +8124,7 @@ scoreboard players set @s[tag=Dialogue214] DialogueTrigger 0
 #Punk Guy when player goes to the door
 
 #tps player out of the door
-execute as @s[scores={DialogueTrigger=215,TalkTime=1}] at @s run tp @s[x=-54,y=101,z=398,dx=5,dy=3] run ~ ~ ~-7
+execute as @s[scores={DialogueTrigger=215,TalkTime=1}] at @s run tp @s[x=-54,y=101,z=398,dx=5,dy=3] ~ ~ ~-7
 
 #Punk Guy tps in
 execute as @s[scores={DialogueTrigger=215,TalkTime=2}] run particle cloud -51 101 397 2 2 2 1 100
