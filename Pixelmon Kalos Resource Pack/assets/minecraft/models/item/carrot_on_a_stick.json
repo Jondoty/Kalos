@@ -1,0 +1,17 @@
+{
+	"parent": "item/handheld_rod",
+	"textures": {
+		"layer0": "item/carrot_on_a_stick"
+	},
+	"overrides": [
+		{ "predicate": { "damage": 0 }, "model": "playeritems/holocasteroff" },
+		{ "predicate": { "damaged": 0, "damage": 0.04 }, "model": "playeritems/holocasteron" },
+		{ "predicate": { "damaged": 0, "damage": 0.08 }, "model": "holocaster/lysandre" },
+		{ "predicate": { "damaged": 0, "damage": 0.12 }, "model": "holocaster/sycamore" },
+		{ "predicate": { "damaged": 0, "damage": 0.16 }, "model": "holocaster/trevor" },
+		{ "predicate": { "damaged": 0, "damage": 0.2 }, "model": "holocaster/serena" },
+		{ "predicate": { "damaged": 0, "damage": 0.24 }, "model": "holocaster/tierno" },
+		{ "predicate": { "damaged": 0, "damage": 0.28 }, "model": "holocaster/malva" },
+		{ "predicate": { "damaged": 1 }, "model": "item/carrot_on_a_stick" }
+	]
+}
