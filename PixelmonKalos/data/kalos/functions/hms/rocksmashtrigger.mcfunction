@@ -70,8 +70,8 @@ give @a[scores={RockTrigger=1,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=1,rng=101..104}] pixelmon:star_piece
 playsound pixelmon:pixelmon.block.pokelootobtained ambient @a[scores={RockTrigger=1,rng=65..104}] ~ ~ ~ 100 1 1
 
-execute as @s[scores={RockTrigger=1,rng=0..21}] pokebattle @s Dwebble,lvl:14
-execute as @s[scores={RockTrigger=1,rng=32..64}] pokebattle @s Binacle,lvl:14
+execute as @s[scores={RockTrigger=1,rng=0..21}] run pokebattle @s Dwebble,lvl:14
+execute as @s[scores={RockTrigger=1,rng=32..64}] run pokebattle @s Binacle,lvl:14
 
 execute as @a[scores={RockTrigger=1}] run execute as @e[x=-507,y=100,z=1046,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=1}] run setblock -500 100 1055 minecraft:gold_block
@@ -100,9 +100,9 @@ give @a[scoreD={RockTrigger=2,rng=93..96}] pixelmon:revive
 give @a[scoreD={RockTrigger=2,rng=97..100}] pixelmon:soft_sand
 give @a[scoreD={RockTrigger=2,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scoreD={RockTrigger=2,rng=0..21}] pokebattle @s Dwebble,lvl:14
-execute as @s[scoreD={RockTrigger=2,rng=22..44}] pokebattle @s Binacle,lvl:14
-execute as @s[scoreD={RockTrigger=2,rng=45..64}] pokebattle @s Onix,lvl:14
+execute as @s[scoreD={RockTrigger=2,rng=0..21}] run pokebattle @s Dwebble,lvl:14
+execute as @s[scoreD={RockTrigger=2,rng=22..44}] run pokebattle @s Binacle,lvl:14
+execute as @s[scoreD={RockTrigger=2,rng=45..64}] run pokebattle @s Onix,lvl:14
 
 execute as @a[scores={RockTrigger=2}] run execute as @e[x=-2168,y=99,z=-193,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=2}] run setblock -687 100 1290 minecraft:gold_block
@@ -127,9 +127,9 @@ give @a[scores={RockTrigger=3,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=3,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=3,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=3,rng=0..21}] pokebattle @s Dwebble,lvl:14
-execute as @s[scores={RockTrigger=3,rng=22..44}] pokebattle @s Binacle,lvl:14
-execute as @s[scores={RockTrigger=3,rng=45..64}] pokebattle @s Onix,lvl:14
+execute as @s[scores={RockTrigger=3,rng=0..21}] run pokebattle @s Dwebble,lvl:14
+execute as @s[scores={RockTrigger=3,rng=22..44}] run pokebattle @s Binacle,lvl:14
+execute as @s[scores={RockTrigger=3,rng=45..64}] run pokebattle @s Onix,lvl:14
 
 execute as @a[scores={RockTrigger=3}] run execute as @e[x=-2179,y=99,z=-170,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=3}] run setblock -687 100 1291 minecraft:gold_block
@@ -154,9 +154,9 @@ give @a[scores={RockTrigger=4,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=4,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=4,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=4,rng=0..21}] pokebattle @s Dwebble,lvl:14
-execute as @s[scores={RockTrigger=4,rng=22..44}] pokebattle @s Binacle,lvl:14
-execute as @s[scores={RockTrigger=4,rng=45..64}] pokebattle @s Onix,lvl:14
+execute as @s[scores={RockTrigger=4,rng=0..21}] run pokebattle @s Dwebble,lvl:14
+execute as @s[scores={RockTrigger=4,rng=22..44}] run pokebattle @s Binacle,lvl:14
+execute as @s[scores={RockTrigger=4,rng=45..64}] run pokebattle @s Onix,lvl:14
 
 execute as @a[scores={RockTrigger=4}] run execute as @e[x=-2132,y=99,z=-163,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=4}] run setblock -687 100 1292 minecraft:gold_block
@@ -181,9 +181,9 @@ give @a[scores={RockTrigger=5,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=5,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=5,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=5,rng=0..21}] pokebattle @s Dwebble,lvl:14
-execute as @s[scores={RockTrigger=5,rng=22..44}] pokebattle @s Binacle,lvl:14
-execute as @s[scores={RockTrigger=5,rng=45..64}] pokebattle @s Onix,lvl:14
+execute as @s[scores={RockTrigger=5,rng=0..21}] run pokebattle @s Dwebble,lvl:14
+execute as @s[scores={RockTrigger=5,rng=22..44}] run pokebattle @s Binacle,lvl:14
+execute as @s[scores={RockTrigger=5,rng=45..64}] run pokebattle @s Onix,lvl:14
 
 execute as @a[scores={RockTrigger=5}] run execute as @e[x=-2109,y=99,z=-101,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=5}] run setblock -687 100 1293 minecraft:gold_block
@@ -208,9 +208,9 @@ give @a[scores={RockTrigger=6,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=6,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=6,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=6,rng=0..21}] pokebattle @s Dwebble,lvl:14
-execute as @s[scores={RockTrigger=6,rng=22..44}] pokebattle @s Binacle,lvl:14
-execute as @s[scores={RockTrigger=6,rng=45..64}] pokebattle @s Onix,lvl:14
+execute as @s[scores={RockTrigger=6,rng=0..21}] run pokebattle @s Dwebble,lvl:14
+execute as @s[scores={RockTrigger=6,rng=22..44}] run pokebattle @s Binacle,lvl:14
+execute as @s[scores={RockTrigger=6,rng=45..64}] run pokebattle @s Onix,lvl:14
 
 execute as @a[scores={RockTrigger=6}] run execute as @e[x=-2106,y=99,z=-43,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=6}] run setblock -687 100 1294 minecraft:gold_block
@@ -240,8 +240,8 @@ give @a[scores={RockTrigger=7,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=7,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=7,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=7,rng=0..31}] pokebattle @s Dwebble,lvl:14
-execute as @s[scores={RockTrigger=7,rng=32..64}] pokebattle @s Binacle,lvl:14
+execute as @s[scores={RockTrigger=7,rng=0..31}] run pokebattle @s Dwebble,lvl:14
+execute as @s[scores={RockTrigger=7,rng=32..64}] run pokebattle @s Binacle,lvl:14
 
 execute as @a[scores={RockTrigger=7}] run execute as @e[x=-1983,y=99,z=151,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=7}] run setblock -687 100 1295 minecraft:gold_block
@@ -266,8 +266,8 @@ give @a[scores={RockTrigger=8,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=8,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=8,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=8,rng=0..31}] pokebattle @s Dwebble,lvl:14
-execute as @s[scores={RockTrigger=8,rng=32..64}] pokebattle @s Binacle,lvl:14
+execute as @s[scores={RockTrigger=8,rng=0..31}] run pokebattle @s Dwebble,lvl:14
+execute as @s[scores={RockTrigger=8,rng=32..64}] run pokebattle @s Binacle,lvl:14
 
 execute as @a[scores={RockTrigger=8}] run execute as @e[x=-2025,y=99,z=396,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=8}] run setblock -687 100 1296 minecraft:gold_block
@@ -292,8 +292,8 @@ give @a[scores={RockTrigger=9,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=9,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=9,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=9,rng=0..31}] pokebattle @s Dwebble,lvl:14
-execute as @s[scores={RockTrigger=9,rng=32..64}] pokebattle @s Binacle,lvl:14
+execute as @s[scores={RockTrigger=9,rng=0..31}] run pokebattle @s Dwebble,lvl:14
+execute as @s[scores={RockTrigger=9,rng=32..64}] run pokebattle @s Binacle,lvl:14
 
 execute as @a[scores={RockTrigger=9}] run execute as @e[x=-1994,y=99,z=427,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=9}] run setblock -687 100 1297 minecraft:gold_block
@@ -322,8 +322,8 @@ give @a[scores={RockTrigger=10,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=10,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=10,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=10,rng=0..31}] pokebattle @s Dwebble,lvl:14
-execute as @s[scores={RockTrigger=10,rng=32..64}] pokebattle @s Binacle,lvl:14
+execute as @s[scores={RockTrigger=10,rng=0..31}] run pokebattle @s Dwebble,lvl:14
+execute as @s[scores={RockTrigger=10,rng=32..64}] run pokebattle @s Binacle,lvl:14
 
 execute as @a[scores={RockTrigger=10}] run execute as @e[x=-2040,y=99,z=599,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=10}] run setblock -687 100 1298 minecraft:gold_block
@@ -348,8 +348,8 @@ give @a[scores={RockTrigger=11,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=11,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=11,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=11,rng=0..31}] pokebattle @s Dwebble,lvl:14
-execute as @s[scores={RockTrigger=11,rng=32..64}] pokebattle @s Binacle,lvl:14
+execute as @s[scores={RockTrigger=11,rng=0..31}] run pokebattle @s Dwebble,lvl:14
+execute as @s[scores={RockTrigger=11,rng=32..64}] run pokebattle @s Binacle,lvl:14
 
 execute as @a[scores={RockTrigger=11}] run execute as @e[x=-2032,y=99,z=620,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=11}] run setblock -687 100 1299 minecraft:gold_block
@@ -374,8 +374,8 @@ give @a[scores={RockTrigger=12,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=12,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=12,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=12,rng=0..31}] pokebattle @s Dwebble,lvl:14
-execute as @s[scores={RockTrigger=12,rng=32..64}] pokebattle @s Binacle,lvl:14
+execute as @s[scores={RockTrigger=12,rng=0..31}] run pokebattle @s Dwebble,lvl:14
+execute as @s[scores={RockTrigger=12,rng=32..64}] run pokebattle @s Binacle,lvl:14
 
 execute as @a[scores={RockTrigger=12}] run execute as @e[x=-2032,y=99,z=644,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=12}] run setblock -687 100 1300 minecraft:gold_block
@@ -400,8 +400,8 @@ give @a[scores={RockTrigger=13,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=13,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=13,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=13,rng=0..31}] pokebattle @s Dwebble,lvl:14
-execute as @s[scores={RockTrigger=13,rng=32..64}] pokebattle @s Binacle,lvl:14
+execute as @s[scores={RockTrigger=13,rng=0..31}] run pokebattle @s Dwebble,lvl:14
+execute as @s[scores={RockTrigger=13,rng=32..64}] run pokebattle @s Binacle,lvl:14
 
 execute as @a[scores={RockTrigger=13}] run execute as @e[x=-2015,y=99,z=718,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=13}] run setblock -687 100 1301 minecraft:gold_block
@@ -430,8 +430,8 @@ give @a[scores={RockTrigger=14,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=14,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=14,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=14,rng=0..31}] pokebattle @s Dwebble,lvl:24
-execute as @s[scores={RockTrigger=14,rng=32..64}] pokebattle @s Binacle,lvl:24
+execute as @s[scores={RockTrigger=14,rng=0..31}] run pokebattle @s Dwebble,lvl:24
+execute as @s[scores={RockTrigger=14,rng=32..64}] run pokebattle @s Binacle,lvl:24
 
 execute as @a[scores={RockTrigger=14}] run execute as @e[x=-1379,y=75,z=-794,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=14}] run setblock -687 100 1302 minecraft:gold_block
@@ -455,8 +455,8 @@ give @a[scores={RockTrigger=15,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=15,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=15,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=15,rng=0..31}] pokebattle @s Dwebble,lvl:24
-execute as @s[scores={RockTrigger=15,rng=32..64}] pokebattle @s Binacle,lvl:24
+execute as @s[scores={RockTrigger=15,rng=0..31}] run pokebattle @s Dwebble,lvl:24
+execute as @s[scores={RockTrigger=15,rng=32..64}] run pokebattle @s Binacle,lvl:24
 
 execute as @a[scores={RockTrigger=15}] run execute as @e[x=-1242,y=75,z=-793,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=15}] run setblock -687 100 1303 minecraft:gold_block
@@ -485,8 +485,8 @@ give @a[scores={RockTrigger=16,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=16,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=16,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=16,rng=0..31}] pokebattle @s Dwebble,lvl:24
-execute as @s[scores={RockTrigger=16,rng=32..64}] pokebattle @s Binacle,lvl:24
+execute as @s[scores={RockTrigger=16,rng=0..31}] run pokebattle @s Dwebble,lvl:24
+execute as @s[scores={RockTrigger=16,rng=32..64}] run pokebattle @s Binacle,lvl:24
 
 execute as @a[scores={RockTrigger=16}] run execute as @e[x=-1446,y=75,z=-1142,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=16}] run setblock -687 100 1304 minecraft:gold_block
@@ -511,8 +511,8 @@ give @a[scores={RockTrigger=17,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=17,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=17,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=17,rng=0..31}] pokebattle @s Dwebble,lvl:24
-execute as @s[scores={RockTrigger=17,rng=32..64}] pokebattle @s Binacle,lvl:24
+execute as @s[scores={RockTrigger=17,rng=0..31}] run pokebattle @s Dwebble,lvl:24
+execute as @s[scores={RockTrigger=17,rng=32..64}] run pokebattle @s Binacle,lvl:24
 
 execute as @a[scores={RockTrigger=17}] run execute as @e[x=-1451,y=75,z=-1155,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=17}] run setblock -687 100 1305 minecraft:gold_block
@@ -537,8 +537,8 @@ give @a[scores={RockTrigger=18,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=18,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=18,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=18,rng=0..31}] pokebattle @s Dwebble,lvl:24
-execute as @s[scores={RockTrigger=18,rng=32..64}] pokebattle @s Binacle,lvl:24
+execute as @s[scores={RockTrigger=18,rng=0..31}] run pokebattle @s Dwebble,lvl:24
+execute as @s[scores={RockTrigger=18,rng=32..64}] run pokebattle @s Binacle,lvl:24
 
 execute as @a[scores={RockTrigger=18}] run execute as @e[x=-1450,y=75,z=-1231,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=18}] run setblock -687 100 1306 minecraft:gold_block
@@ -568,8 +568,8 @@ give @a[scores={RockTrigger=19,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=19,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=19,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=19,rng=0..31}] pokebattle @s Graveler,lvl:27
-execute as @s[scores={RockTrigger=19,rng=32..64}] pokebattle @s Slugma,lvl:27
+execute as @s[scores={RockTrigger=19,rng=0..31}] run pokebattle @s Graveler,lvl:27
+execute as @s[scores={RockTrigger=19,rng=32..64}] run pokebattle @s Slugma,lvl:27
 
 execute as @a[scores={RockTrigger=19}] run execute as @e[x=-788,y=103,z=-421,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=19}] run setblock -687 100 1307 minecraft:gold_block
@@ -594,8 +594,8 @@ give @a[scores={RockTrigger=20,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=20,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=20,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=20,rng=0..31}] pokebattle @s Graveler,lvl:27
-execute as @s[scores={RockTrigger=20,rng=32..64}] pokebattle @s Slugma,lvl:27
+execute as @s[scores={RockTrigger=20,rng=0..31}] run pokebattle @s Graveler,lvl:27
+execute as @s[scores={RockTrigger=20,rng=32..64}] run pokebattle @s Slugma,lvl:27
 
 execute as @a[scores={RockTrigger=20}] run execute as @e[x=-900,y=103,z=-404,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=20}] run setblock -687 100 1308 minecraft:gold_block
@@ -620,8 +620,8 @@ give @a[scores={RockTrigger=21,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=21,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=21,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=21,rng=0..31}] pokebattle @s Graveler,lvl:27
-execute as @s[scores={RockTrigger=21,rng=32..64}] pokebattle @s Slugma,lvl:27
+execute as @s[scores={RockTrigger=21,rng=0..31}] run pokebattle @s Graveler,lvl:27
+execute as @s[scores={RockTrigger=21,rng=32..64}] run pokebattle @s Slugma,lvl:27
 
 execute as @a[scores={RockTrigger=21}] run execute as @e[x=-682,y=99,z=-544,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=21}] run setblock -687 100 1309 minecraft:gold_block
@@ -645,8 +645,8 @@ give @a[scores={RockTrigger=22,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=22,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=22,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=22,rng=0..31}] pokebattle @s Graveler,lvl:27
-execute as @s[scores={RockTrigger=22,rng=32..64}] pokebattle @s Slugma,lvl:27
+execute as @s[scores={RockTrigger=22,rng=0..31}] run pokebattle @s Graveler,lvl:27
+execute as @s[scores={RockTrigger=22,rng=32..64}] run pokebattle @s Slugma,lvl:27
 
 execute as @a[scores={RockTrigger=22}] run execute as @e[x=-682,y=99,z=-523,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=22}] run setblock -687 100 1310 minecraft:gold_block
@@ -674,8 +674,8 @@ give @a[scores={RockTrigger=23,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=23,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=23,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=23,rng=0..31}] pokebattle @s Graveler,lvl:45
-execute as @s[scores={RockTrigger=23,rng=32..64}] pokebattle @s Shuckle,lvl:45
+execute as @s[scores={RockTrigger=23,rng=0..31}] run pokebattle @s Graveler,lvl:45
+execute as @s[scores={RockTrigger=23,rng=32..64}] run pokebattle @s Shuckle,lvl:45
 
 execute as @a[scores={RockTrigger=23}] run execute as @e[x=1472,y=104,z=47,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=23}] run setblock -687 100 1311 minecraft:gold_block
@@ -700,8 +700,8 @@ give @a[scores={RockTrigger=24,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=24,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=24,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=24,rng=0..31}] pokebattle @s Graveler,lvl:45
-execute as @s[scores={RockTrigger=24,rng=32..64}] pokebattle @s Shuckle,lvl:45
+execute as @s[scores={RockTrigger=24,rng=0..31}] run pokebattle @s Graveler,lvl:45
+execute as @s[scores={RockTrigger=24,rng=32..64}] run pokebattle @s Shuckle,lvl:45
 
 execute as @a[scores={RockTrigger=24}] run execute as @e[x=1485,y=104,z=33,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=24}] run setblock -687 100 1312 minecraft:gold_block
@@ -729,8 +729,8 @@ give @a[scores={RockTrigger=25,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=25,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=25,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=25,rng=0..58}] pokebattle @s Graveler,lvl:45
-execute as @s[scores={RockTrigger=25,rng=59..64}] pokebattle @s Shuckle,lvl:45
+execute as @s[scores={RockTrigger=25,rng=0..58}] run pokebattle @s Graveler,lvl:45
+execute as @s[scores={RockTrigger=25,rng=59..64}] run pokebattle @s Shuckle,lvl:45
 
 execute as @a[scores={RockTrigger=25}] run execute as @e[x=1761,y=77,z=-48,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=25}] run setblock -687 100 1313 minecraft:gold_block
@@ -755,8 +755,8 @@ give @a[scores={RockTrigger=26,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=26,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=26,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=26,rng=0..58}] pokebattle @s Graveler,lvl:45
-execute as @s[scores={RockTrigger=26,rng=59..64}] pokebattle @s Shuckle,lvl:45
+execute as @s[scores={RockTrigger=26,rng=0..58}] run pokebattle @s Graveler,lvl:45
+execute as @s[scores={RockTrigger=26,rng=59..64}] run pokebattle @s Shuckle,lvl:45
 
 execute as @a[scores={RockTrigger=26}] run execute as @e[x=1746,y=77,z=-50,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=26}] run setblock -687 100 1314 minecraft:gold_block
@@ -781,8 +781,8 @@ give @a[scores={RockTrigger=27,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=27,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=27,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=27,rng=0..58}] pokebattle @s Graveler,lvl:45
-execute as @s[scores={RockTrigger=27,rng=59..64}] pokebattle @s Shuckle,lvl:45
+execute as @s[scores={RockTrigger=27,rng=0..58}] run pokebattle @s Graveler,lvl:45
+execute as @s[scores={RockTrigger=27,rng=59..64}] run pokebattle @s Shuckle,lvl:45
 
 execute as @a[scores={RockTrigger=27}] run execute as @e[x=1740,y=77,z=-66,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=27}] run setblock -687 100 1315 minecraft:gold_block
@@ -807,8 +807,8 @@ give @a[scores={RockTrigger=28,rng=93..96}] pixelmon:revive
 give @a[scores={RockTrigger=28,rng=97..100}] pixelmon:soft_sand
 give @a[scores={RockTrigger=28,rng=101..104}] pixelmon:star_piece
 
-execute as @s[scores={RockTrigger=28,rng=0..58}] pokebattle @s Graveler,lvl:45
-execute as @s[scores={RockTrigger=28,rng=59..64}] pokebattle @s Shuckle,lvl:45
+execute as @s[scores={RockTrigger=28,rng=0..58}] run pokebattle @s Graveler,lvl:45
+execute as @s[scores={RockTrigger=28,rng=59..64}] run pokebattle @s Shuckle,lvl:45
 
 execute as @a[scores={RockTrigger=28}] run execute as @e[x=1746,y=77,z=-72,distance=..3,type=armor_stand] run particle blockdust ~ ~1 ~ 0 2 1 1 100 normal @a[distance=..30] 172
 execute as @a[scores={RockTrigger=28}] run setblock -687 100 1316 minecraft:gold_block

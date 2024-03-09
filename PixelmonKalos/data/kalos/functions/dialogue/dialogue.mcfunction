@@ -5251,7 +5251,7 @@ execute as @s[scores={DialogueTrigger=154,TalkTime=1}] run advancement grant @s 
 tellraw @s[scores={DialogueTrigger=154,TalkTime=3}] {"text":"Thank you for playing Pixelmon Kalos!","color":"white"}
 tellraw @s[scores={DialogueTrigger=154,TalkTime=12}] {"text":"Map Creators:\nJond - Organizer, terrain, redstone, builder.\nPixelmonChampion - Head builder, custom models."}
 tellraw @s[scores={DialogueTrigger=154,TalkTime=25}] {"text":"Helpers:\nMystcraftMC | The_GlassPhoenix | callthemuffinman | xuambacraft | Tyranium | Wither999 | Dark_Spartan_"}
-tellraw @s[scores={DialogueTrigger=154,TalkTime=35}] ["",{"text":"Check out my other projects if you are interested!\n"},{"text":"Pixelmon Johto","color":"blue","clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/worlds/pixelmon-johto"}}]
+tellraw @s[scores={DialogueTrigger=154,TalkTime=35}] ["",{"text":"Check out my other region maps if you liked this one!\n"},{"text":"Pixelmon Johto","color":"blue","clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/worlds/pixelmon-johto"}}]
 tellraw @s[scores={DialogueTrigger=154,TalkTime=45}] {"text":"All source material credit to Game Freak, The Pokemon Company, and Nintendo."}
 tellraw @s[scores={DialogueTrigger=154,TalkTime=55,PokemonLeague=1}] {"text":"You can now encounter post-game Legendaries and Mythicals.","italic":true,"color":"gray"}
 execute as @s[scores={DialogueTrigger=154,TalkTime=55}] run advancement grant @s only kalos:legendroot
@@ -8124,7 +8124,7 @@ scoreboard players set @s[tag=Dialogue214] DialogueTrigger 0
 #Punk Guy when player goes to the door
 
 #tps player out of the door
-execute as @s[scores={DialogueTrigger=215,TalkTime=1}] at @s run tp @s[x=-54,y=101,z=398,dx=5,dy=3] run ~ ~ ~-7
+execute as @s[scores={DialogueTrigger=215,TalkTime=1}] at @s run tp @s[x=-54,y=101,z=398,dx=5,dy=3] ~ ~ ~-7
 
 #Punk Guy tps in
 execute as @s[scores={DialogueTrigger=215,TalkTime=2}] run particle cloud -51 101 397 2 2 2 1 100

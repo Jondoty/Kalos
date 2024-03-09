@@ -99,12 +99,12 @@ execute as @s[scores={BattleMaison=1,BattleStreak=11..19}] run scoreboard player
 execute as @s[scores={BattleMaison=1,BattleStreak=20}] run scoreboard players add @s BattlePoint 20
 execute as @s[scores={BattleMaison=1,BattleStreak=21..}] run scoreboard players add @s BattlePoint 3
 
-execute as @s[scores={BattleMaison=2,BattleStreak=1,score_BattleStreak=10}] run scoreboard players add @s BattlePoint 2
-execute as @s[scores={BattleMaison=2,BattleStreak=11,score_BattleStreak=20}] run scoreboard players add @s BattlePoint 3
-execute as @s[scores={BattleMaison=2,BattleStreak=21,score_BattleStreak=30}] run scoreboard players add @s BattlePoint 4
-execute as @s[scores={BattleMaison=2,BattleStreak=31,score_BattleStreak=40}] run scoreboard players add @s BattlePoint 5
-execute as @s[scores={BattleMaison=2,BattleStreak=49,score_BattleStreak=49}] run scoreboard players add @s BattlePoint 6
-execute as @s[scores={BattleMaison=2,BattleStreak=50,score_BattleStreak=50}] run scoreboard players add @s BattlePoint 50
+execute as @s[scores={BattleMaison=2,BattleStreak=1..10}] run scoreboard players add @s BattlePoint 2
+execute as @s[scores={BattleMaison=2,BattleStreak=11..20}] run scoreboard players add @s BattlePoint 3
+execute as @s[scores={BattleMaison=2,BattleStreak=21..30}] run scoreboard players add @s BattlePoint 4
+execute as @s[scores={BattleMaison=2,BattleStreak=31..40}] run scoreboard players add @s BattlePoint 5
+execute as @s[scores={BattleMaison=2,BattleStreak=41..49}] run scoreboard players add @s BattlePoint 6
+execute as @s[scores={BattleMaison=2,BattleStreak=50..50}] run scoreboard players add @s BattlePoint 50
 execute as @s[scores={BattleMaison=2,BattleStreak=51..}] run scoreboard players add @s BattlePoint 7
 
 
@@ -117,7 +117,7 @@ execute as @s[scores={BattleMaison=4,BattleStreak=1..10}] run scoreboard players
 execute as @s[scores={BattleMaison=4,BattleStreak=11..20}] run scoreboard players add @s BattlePoint 3
 execute as @s[scores={BattleMaison=4,BattleStreak=21..30}] run scoreboard players add @s BattlePoint 4
 execute as @s[scores={BattleMaison=4,BattleStreak=31..40}] run scoreboard players add @s BattlePoint 5
-execute as @s[scores={BattleMaison=4,BattleStreak=49..49}] run scoreboard players add @s BattlePoint 6
+execute as @s[scores={BattleMaison=4,BattleStreak=41..49}] run scoreboard players add @s BattlePoint 6
 execute as @s[scores={BattleMaison=4,BattleStreak=50..50}] run scoreboard players add @s BattlePoint 50
 execute as @s[scores={BattleMaison=4,BattleStreak=51..}] run scoreboard players add @s BattlePoint 7
 
@@ -133,7 +133,7 @@ execute as @s[scores={BattleMaison=2,BattleStreak=1..10}] run tellraw @s {"text"
 execute as @s[scores={BattleMaison=2,BattleStreak=11..20}] run tellraw @s {"text":"You recieved 3 battle points!","italic":true,"color":"gray"}
 execute as @s[scores={BattleMaison=2,BattleStreak=21..30}] run tellraw @s {"text":"You recieved 4 battle points!","italic":true,"color":"gray"}
 execute as @s[scores={BattleMaison=2,BattleStreak=31..40}] run tellraw @s {"text":"You recieved 5 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=2,BattleStreak=49..49}] run tellraw @s {"text":"You recieved 6 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=2,BattleStreak=40..49}] run tellraw @s {"text":"You recieved 6 battle points!","italic":true,"color":"gray"}
 execute as @s[scores={BattleMaison=2,BattleStreak=50..50}] run tellraw @s {"text":"You recieved 50 battle points!","italic":true,"color":"gray"}
 execute as @s[scores={BattleMaison=2,BattleStreak=51}] run tellraw @s {"text":"You recieved 7 battle points!","italic":true,"color":"gray"}
 
@@ -147,7 +147,7 @@ execute as @s[scores={BattleMaison=4,BattleStreak=1..10}] run tellraw @s {"text"
 execute as @s[scores={BattleMaison=4,BattleStreak=11..20}] run tellraw @s {"text":"You recieved 3 battle points!","italic":true,"color":"gray"}
 execute as @s[scores={BattleMaison=4,BattleStreak=21..30}] run tellraw @s {"text":"You recieved 4 battle points!","italic":true,"color":"gray"}
 execute as @s[scores={BattleMaison=4,BattleStreak=31..40}] run tellraw @s {"text":"You recieved 5 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=4,BattleStreak=49..49}] run tellraw @s {"text":"You recieved 6 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=4,BattleStreak=41..49}] run tellraw @s {"text":"You recieved 6 battle points!","italic":true,"color":"gray"}
 execute as @s[scores={BattleMaison=4,BattleStreak=50..50}] run tellraw @s {"text":"You recieved 50 battle points!","italic":true,"color":"gray"}
 execute as @s[scores={BattleMaison=4,BattleStreak=51..}] run tellraw @s {"text":"You recieved 7 battle points!","italic":true,"color":"gray"}
 
