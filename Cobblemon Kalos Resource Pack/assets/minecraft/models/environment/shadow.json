@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "environment/blank",
-		"1": "environment/greyshadow",
-		"particle": "environment/blank"
+		"0": "item/environment/blank",
+		"1": "item/environment/greyshadow",
+		"particle": "item/environment/blank"
 	},
 	"elements": [
 		{

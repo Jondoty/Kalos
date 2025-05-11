@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "holocaster/tierno_holocast",
-		"particle": "holocaster/tierno_holocast"
+		"0": "item/holocaster/tierno_holocast",
+		"particle": "item/holocaster/tierno_holocast"
 	},
 	"elements": [
 		{

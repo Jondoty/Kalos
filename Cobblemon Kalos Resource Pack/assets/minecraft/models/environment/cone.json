@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench by Ozzy",
 	"textures": {
-		"2": "environment/c1",
-		"3": "environment/c2"
+		"2": "item/environment/c1",
+		"3": "item/environment/c2"
 	},
 	"elements": [
 		{

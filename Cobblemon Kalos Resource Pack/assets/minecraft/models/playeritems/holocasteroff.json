@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "playeritems/h1",
-		"1": "playeritems/h2",
-		"3": "playeritems/h4"
+		"0": "item/playeritems/h1",
+		"1": "item/playeritems/h2",
+		"3": "item/playeritems/h4"
 	},
 	"elements": [
 		{

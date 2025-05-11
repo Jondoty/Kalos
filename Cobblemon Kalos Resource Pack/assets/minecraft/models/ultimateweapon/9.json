@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [400, 400],
 	"textures": {
-		"0": "ultimateweapon/9",
-		"particle": "ultimateweapon/9"
+		"0": "item/ultimateweapon/9",
+		"particle": "item/ultimateweapon/9"
 	},
 	"elements": [
 		{

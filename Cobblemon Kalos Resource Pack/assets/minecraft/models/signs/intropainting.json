@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [315, 210],
 	"textures": {
-		"0": "signs/intropainting",
-		"2": "environment/blank",
-		"particle": "signs/intropainting"
+		"0": "item/signs/intropainting",
+		"2": "item/environment/blank",
+		"particle": "item/signs/intropainting"
 	},
 	"elements": [
 		{

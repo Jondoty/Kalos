@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "holocaster/teamflareleaderlysandre_holocast",
-		"particle": "holocaster/teamflareleaderlysandre_holocast"
+		"0": "item/holocaster/teamflareleaderlysandre_holocast",
+		"particle": "item/holocaster/teamflareleaderlysandre_holocast"
 	},
 	"elements": [
 		{

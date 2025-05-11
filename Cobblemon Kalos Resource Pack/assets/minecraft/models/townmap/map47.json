@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [2048, 2048],
 	"textures": {
-		"0": "townmap/hdbase",
-		"1": "townmap/pushpin",
-		"particle": "townmap/hdbase"
+		"0": "item/townmap/hdbase",
+		"1": "item/townmap/pushpin",
+		"particle": "item/townmap/hdbase"
 	},
 	"elements": [
 		{

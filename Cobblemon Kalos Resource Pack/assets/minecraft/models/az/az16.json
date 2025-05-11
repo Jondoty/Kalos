@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [400, 240],
 	"textures": {
-		"0": "az/16",
-		"particle": "az/16"
+		"0": "item/az/16",
+		"particle": "item/az/16"
 	},
 	"elements": [
 		{

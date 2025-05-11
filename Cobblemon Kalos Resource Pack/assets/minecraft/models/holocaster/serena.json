@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "holocaster/serena_holocast",
-		"particle": "holocaster/serena_holocast"
+		"0": "item/holocaster/serena_holocast",
+		"particle": "item/holocaster/serena_holocast"
 	},
 	"elements": [
 		{

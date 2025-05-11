@@ -1,11 +1,11 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "playeritems/h1",
-		"1": "playeritems/h2",
-		"3": "playeritems/h4",
-		"4": "playeritems/h5",
-		"5": "playeritems/h6"
+		"0": "item/playeritems/h1",
+		"1": "item/playeritems/h2",
+		"3": "item/playeritems/h4",
+		"4": "item/playeritems/h5",
+		"5": "item/playeritems/h6"
 	},
 	"elements": [
 		{

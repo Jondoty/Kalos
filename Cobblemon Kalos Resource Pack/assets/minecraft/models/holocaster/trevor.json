@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "holocaster/trevor_holocast",
-		"particle": "holocaster/trevor_holocast"
+		"0": "item/holocaster/trevor_holocast",
+		"particle": "item/holocaster/trevor_holocast"
 	},
 	"elements": [
 		{

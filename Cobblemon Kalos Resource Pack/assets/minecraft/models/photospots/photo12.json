@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [315, 210],
 	"textures": {
-		"0": "photospots/couriway",
-		"2": "environment/blank",
-		"3": "environment/b2",
-		"particle": "photospots/couriway"
+		"0": "item/photospots/couriway",
+		"2": "item/environment/blank",
+		"3": "item/environment/b2",
+		"particle": "item/photospots/couriway"
 	},
 	"elements": [
 		{

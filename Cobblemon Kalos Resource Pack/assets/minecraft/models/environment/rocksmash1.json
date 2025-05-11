@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench by Ozzy",
 	"textures": {
-		"0": "environment/rock"
+		"0": "item/environment/rock"
 	},
 	"elements": [
 		{

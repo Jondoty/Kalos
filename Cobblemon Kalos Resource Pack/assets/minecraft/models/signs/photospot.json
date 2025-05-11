@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "signs/s6",
-		"2": "signs/camera",
-		"4": "signs/s10"
+		"0": "item/signs/s6",
+		"2": "item/signs/camera",
+		"4": "item/signs/s10"
 	},
 	"elements": [
 		{

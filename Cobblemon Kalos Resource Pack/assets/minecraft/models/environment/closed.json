@@ -1,12 +1,12 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "trashcan/t2",
-		"1": "trashcan/t1",
-		"2": "trashcan/t3",
-		"3": "trashcan/t5",
-		"4": "trashcan/rclogo",
-		"5": "trashcan/t4"
+		"0": "item/trashcan/t2",
+		"1": "item/trashcan/t1",
+		"2": "item/trashcan/t3",
+		"3": "item/trashcan/t5",
+		"4": "item/trashcan/rclogo",
+		"5": "item/trashcan/t4"
 	},
 	"elements": [
 		{

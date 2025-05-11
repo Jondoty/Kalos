@@ -1,11 +1,11 @@
 {
 	"credit": "Made with Blockbench by Ozzy",
 	"textures": {
-		"0": "environment/goldcurve",
-		"1": "environment/leather",
-		"3": "environment/buckle",
-		"4": "environment/s1",
-		"5": "environment/s2"
+		"0": "item/environment/goldcurve",
+		"1": "item/environment/leather",
+		"3": "item/environment/buckle",
+		"4": "item/environment/s1",
+		"5": "item/environment/s2"
 	},
 	"elements": [
 		{

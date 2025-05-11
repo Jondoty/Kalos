@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [315, 210],
 	"textures": {
-		"0": "townmap/map6",
-		"2": "environment/blank",
-		"3": "environment/b2",
-		"particle": "townmap/map6"
+		"0": "item/townmap/map6",
+		"2": "item/environment/blank",
+		"3": "item/environment/b2",
+		"particle": "item/townmap/map6"
 	},
 	"elements": [
 		{

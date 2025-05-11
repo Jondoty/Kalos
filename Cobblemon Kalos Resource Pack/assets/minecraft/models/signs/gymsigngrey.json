@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench by Ozzy",
 	"textures": {
-		"0": "signs/s6",
-		"1": "environment/greyshadow",
-		"2": "environment/greyshadow"
+		"0": "item/signs/s6",
+		"1": "item/environment/greyshadow",
+		"2": "item/environment/greyshadow"
 	},
 	"elements": [
 		{

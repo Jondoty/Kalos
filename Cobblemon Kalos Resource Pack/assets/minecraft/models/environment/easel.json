@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "environment/spine",
-		"1": "environment/canvas",
-		"particle": "environment/spine"
+		"0": "item/environment/spine",
+		"1": "item/environment/canvas",
+		"particle": "item/environment/spine"
 	},
 	"elements": [
 		{

@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [315, 210],
 	"textures": {
-		"0": "photospots/route7",
-		"2": "environment/blank",
-		"3": "environment/b2",
-		"particle": "photospots/route7"
+		"0": "item/photospots/route7",
+		"2": "item/environment/blank",
+		"3": "item/environment/b2",
+		"particle": "item/photospots/route7"
 	},
 	"elements": [
 		{

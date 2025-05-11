@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "holocaster/professorsycamore_holocast",
-		"particle": "holocaster/professorsycamore_holocast"
+		"0": "item/holocaster/professorsycamore_holocast",
+		"particle": "item/holocaster/professorsycamore_holocast"
 	},
 	"elements": [
 		{

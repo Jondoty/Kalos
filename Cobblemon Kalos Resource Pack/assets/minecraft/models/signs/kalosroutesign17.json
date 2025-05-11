@@ -1,11 +1,11 @@
 {
 	"credit": "Made with Blockbench by Ozzy",
 	"textures": {
-		"0": "signs/s6",
-		"3": "signs/s9",
-		"4": "signs/s10",
-		"5": "signs/s14",
-		"6": "signs/routesign17"
+		"0": "item/signs/s6",
+		"3": "item/signs/s9",
+		"4": "item/signs/s10",
+		"5": "item/signs/s14",
+		"6": "item/signs/routesign17"
 	},
 	"elements": [
 		{
