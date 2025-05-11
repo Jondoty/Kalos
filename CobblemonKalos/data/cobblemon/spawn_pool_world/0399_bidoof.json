@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "bidoof-1",
+            "pokemon": "bidoof",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "3-5",
+            "weight": 20,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": 251, "maxX": 443, "minZ": 524, "maxZ": 719
+            }
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "azurill-1",
+            "pokemon": "azurill",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "3-5",
+            "weight": 10,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": 251, "maxX": 443, "minZ": 524, "maxZ": 719
+            }
+        }
+    ]
+}

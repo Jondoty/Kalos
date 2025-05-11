@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "dunsparce-1",
+            "pokemon": "dunsparce",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "3-5",
+            "weight": 5,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": 251, "maxX": 443, "minZ": 524, "maxZ": 719
+            }
+        }
+    ]
+}

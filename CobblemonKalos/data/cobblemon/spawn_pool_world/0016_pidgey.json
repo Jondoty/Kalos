@@ -1,0 +1,38 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "pidgey-1",
+            "pokemon": "pidgey",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "2-4",
+            "weight": 14,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": 446, "maxX": 500, "minZ": 1022, "maxZ": 1165
+            }
+        },
+
+        {
+            "id": "pidgey-2",
+            "pokemon": "pidgey",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "3-5",
+            "weight": 10,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": 251, "maxX": 443, "minZ": 524, "maxZ": 719
+            }
+        }
+    ]
+}

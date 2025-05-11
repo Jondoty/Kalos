@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "marill-1",
+            "pokemon": "marill",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "3-5",
+            "weight": 34,
+            "condition": {
+                "minX": 251, "maxX": 443, "minZ": 524, "maxZ": 719
+            }
+        }
+    ]
+}

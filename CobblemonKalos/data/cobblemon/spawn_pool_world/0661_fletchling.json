@@ -1,0 +1,54 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "fletchling-1",
+            "pokemon": "fletchling",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "2-4",
+            "weight": 20,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": 446, "maxX": 500, "minZ": 1022, "maxZ": 1165
+            }
+        },
+
+        {
+            "id": "fletchling-2",
+            "pokemon": "fletchling",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "2-4",
+            "weight": 10,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": 331, "maxX": 587, "minZ": 739, "maxZ": 978
+            }
+        },
+
+        {
+            "id": "fletchling-3",
+            "pokemon": "fletchling",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "3-5",
+            "weight": 20,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": 251, "maxX": 443, "minZ": 524, "maxZ": 719
+            }
+        }
+    ]
+}

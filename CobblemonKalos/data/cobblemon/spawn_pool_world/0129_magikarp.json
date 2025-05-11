@@ -1,0 +1,21 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "magikarp-1",
+            "pokemon": "magikarp",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "15",
+            "weight": 100.0,
+            "condition": {
+                "minX": 251, "maxX": 443, "minZ": 524, "maxZ": 719,
+                "minLureLevel": 1,
+                "maxLureLevel": 1
+            }
+        }
+    ]
+}

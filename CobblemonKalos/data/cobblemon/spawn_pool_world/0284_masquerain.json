@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "masquerain-1",
+            "pokemon": "masquerain",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "3-5",
+            "weight": 66,
+            "condition": {
+                "minX": 251, "maxX": 443, "minZ": 524, "maxZ": 719
+            }
+        }
+    ]
+}

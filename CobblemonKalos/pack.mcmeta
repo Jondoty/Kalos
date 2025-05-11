@@ -2,5 +2,13 @@
    "pack":{
       "pack_format":48,
       "description":"Cobblemon Kalos 1.0.0 commands!"
+    },
+      "filter": {
+        "block": [
+          {
+            "namespace": "cobblemon",
+            "path": "spawn_pool_world"
+          }
+        ]
+      }
    }
-}
