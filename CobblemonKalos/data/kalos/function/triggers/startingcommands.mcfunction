@@ -29,10 +29,8 @@ advancement grant @s only kalos:root
 
 
 #Items
-give @s minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your hotbar.","","Can be double-clicked to","toggle music on and off."]},HideFlags:63}
-give @s pixelmon:blackbadgecase
-give @s pixelmon:new_running_boots
-execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run givemoney @s 2000
+function kalos:spawn/holocaster
+scoreboard players add @s Money 2000
 
 
 #Starting Scoreboard Scores
