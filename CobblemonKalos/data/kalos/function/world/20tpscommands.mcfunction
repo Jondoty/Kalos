@@ -1,6 +1,6 @@
 
 #Portals
-execute at @a run execute if block ~ ~ ~ minecraft:magenta_carpet run function kalos:world/portals
+execute as @a at @s if block ~ ~ ~ minecraft:magenta_carpet run function kalos:world/portals
 
 
 #Tagging berries when the player uses an Axe (HM Cut)
