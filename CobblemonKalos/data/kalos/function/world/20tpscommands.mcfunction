@@ -1,6 +1,6 @@
 
 #Portals
-execute at @a run execute if block ~ ~ ~ pixelmon:warp_plate run function kalos:world/portals
+execute at @a run execute if block ~ ~ ~ minecraft:magenta_carpet run function kalos:world/portals
 
 
 #Tagging berries when the player uses an Axe (HM Cut)
@@ -15,13 +15,13 @@ execute as @a[x=-514,y=0,z=64,dx=526,dy=256,dz=436,tag=RunTimer,scores={Restaura
 
 
 #Mamoswine Route removing snow
-execute as @e[x=828,y=108,z=-318,dx=150,dy=10,dz=150,tag=Dialogue100] at @e[type=pixelmon:pixelmon,name=Mamoswine,distance=..3] run fill ~-3 108 ~-3 ~2 112 ~3 minecraft:air replace minecraft:snow_block
+#execute as @e[x=828,y=108,z=-318,dx=150,dy=10,dz=150,tag=Dialogue100] at @e[type=pixelmon:pixelmon,name=Mamoswine,distance=..3] run fill ~-3 108 ~-3 ~2 112 ~3 minecraft:air replace minecraft:snow_block
 
 
 
 #Mega Stone Particles
 execute as @a[scores={MegaStones=1..}] run function kalos:world/megastonesactive
-execute if entity @e[x=-685,y=100,z=1388,dy=3,tag=Particles,type=armor_stand] as @a[x=1205,y=111,z=-276,distance=..50,limit=1] run particle minecraft:dust 1 1 1 1 ~ ~1 ~ 0 10 0 0.5 50 force @a[distance=..50]
+#execute if entity @e[x=-685,y=100,z=1388,dy=3,tag=Particles,type=armor_stand] as @a[x=1205,y=111,z=-276,distance=..50,limit=1] run particle minecraft:dust 1 1 1 1 ~ ~1 ~ 0 10 0 0.5 50 force @a[distance=..50]
 
 
 #Runs the Poke Ball Factory floors
