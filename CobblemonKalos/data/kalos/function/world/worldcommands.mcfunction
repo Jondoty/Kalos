@@ -33,10 +33,19 @@ scoreboard players set @a[scores={CooldownJump=1..}] CooldownJump 0
 #tellraw @a[x=-488,y=100,z=1414,distance=..3,scores={Cooldown=5000..}] {"text":"Hey this is a test!"}
 #scoreboard players set @a[x=-488,y=100,z=1414,distance=..3,scores={Cooldown=5000..}] Cooldown 0
 
-#---------------------------------------------------------
-#Holo Caster Music
+#------------------------------------------------------------------------------
+#Music commands
+#Music rate: 86 ticks per 60 seconds (~1 second x 1.4)
 
-#Music rate: 86 ticks per 60 seconds
+#Runs battle music and post-battle events
+#Battle endings
+execute as @a[scores={BattleEnd=1..}] run function kalos:battles/battleend
+
+
+#Battle start and music
+execute as @a[scores={BattleStart=1..,MusicCooldown=0},tag=BattleMusicCooldown] run tag @s remove BattleMusicCooldown
+execute as @a[scores={BattleStart=1..},tag=!BattleMusicCooldown] run function kanto:triggers/battles/battlestart
+
 
 #Runs the click trigger if player uses Carrot on a Stick
 execute as @a[scores={click=1..},tag=TempDelay] run function kalos:triggers/click
@@ -44,58 +53,21 @@ tag @a[scores={click=1..},tag=!TempDelay] add TempDelay
 
 
 #Runs music for players holding radio
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:0b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:1b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:2b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:3b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:4b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:5b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:6b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:7b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:8b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-execute as @a[tag=TrackSeek,tag=!RadioOff] run function world:music
-
-
-
-#Tests for if player is using the old timings from battle music
-tag @a[scores={MusicCooldown=300},tag=OldTimings] add Temp
-scoreboard players set @a[tag=Temp] MusicCooldown 21
-tag @a[tag=Temp] remove OldTimings
-tag @a[tag=Temp] remove Temp
+tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}]}] add TrackSeek
+tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:0b,components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}]}] add TrackSeek
+tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:1b,components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}]}] add TrackSeek
+tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:2b,components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}]}] add TrackSeek
+tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:3b,components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}]}] add TrackSeek
+tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:4b,components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}]}] add TrackSeek
+tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:5b,components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}]}] add TrackSeek
+tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:6b,components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}]}] add TrackSeek
+tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:7b,components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}]}] add TrackSeek
+tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:8b,components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}]}] add TrackSeek
+execute as @a[tag=TrackSeek,tag=!RadioOff] run function kalos:world/music
 
 
 #removes MusicCooldown score for music timings
 scoreboard players remove @a[scores={MusicCooldown=1..}] MusicCooldown 1
-
-
-
-#Click trigger function on Holo Caster
-#execute @a[score_click_min=1] ~ ~ ~ /function triggers:click
-
-
-
-
-#Runs trainer music
-
-#Battle Start
-#/tedit add BATTLE_START scoreboard players set @pl TrainerClass 1
-#/tedit add BATTLE_START scoreboard players tag @pl add BattleStart
-execute as @a[tag=BattleStart] run function kalos:trainers/playerstart
-
-#Battle Win (player)
-#/tedit add LOSS scoreboard players tag @pl add BattleWin
-execute as @a[tag=BattleWin] run function kalos:trainers/playerwin
-
-#Battle Lose (player)
-#/tedit add WIN scoreboard players tag @pl add BattleLose
-execute as @a[tag=BattleLose] run function kalos:trainers/playerlose
-
-#Battle Forefit (player)
-#/tedit add FORFEIT scoreboard players tag @pl add BattleForefit
-execute as @a[tag=BattleForefit] run function kalos:trainers/playerforefit
-
-
 
 
 
