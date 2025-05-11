@@ -1,0 +1,67 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "psyduck-1",
+            "pokemon": "psyduck",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-7",
+            "weight": 10,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": 344, "maxX": 672, "minZ": 299, "maxZ": 453
+            }
+        },
+        {
+            "id": "psyduck-2",
+            "pokemon": "psyduck",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "25-27",
+            "weight": 20,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:dandelion"
+                ],
+                "minX": 535, "maxX": 594, "minZ": 473, "maxZ": 506			
+            }
+        },
+        {
+            "id": "psyduck-3",
+            "pokemon": "psyduck",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "5-7",
+            "weight": 95,
+            "condition": {
+                "minX": 344, "maxX": 672, "minZ": 299, "maxZ": 453
+            }
+        },
+        {
+            "id": "psyduck-4",
+            "pokemon": "psyduck",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "25-27",
+            "weight": 95,
+            "condition": {
+                "minX": 454, "maxX": 682, "minZ": 524, "maxZ": 738
+            }
+        }
+    ]
+}

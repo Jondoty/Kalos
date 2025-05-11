@@ -4,28 +4,13 @@
     "neededUninstalledMods": [],
     "spawns": [
         {
-            "id": "goldeen-1",
-            "pokemon": "goldeen",
+            "id": "carvanha-1",
+            "pokemon": "carvanha",
             "type": "pokemon",
             "context": "fishing",
             "bucket": "common",
             "level": "25",
-            "weight": 65.0,
-            "condition": {
-                "minX": 251, "maxX": 443, "minZ": 524, "maxZ": 719,
-                "minLureLevel": 2,
-                "maxLureLevel": 2
-            }
-        },
-
-        {
-            "id": "goldeen-2",
-            "pokemon": "goldeen",
-            "type": "pokemon",
-            "context": "fishing",
-            "bucket": "common",
-            "level": "25",
-            "weight": 65.0,
+            "weight": 35.0,
             "condition": {
                 "minX": 454, "maxX": 682, "minZ": 524, "maxZ": 738,
                 "minLureLevel": 2,
@@ -33,13 +18,13 @@
             }
         },
         {
-            "id": "goldeen-3",
-            "pokemon": "goldeen",
+            "id": "carvanha-2",
+            "pokemon": "carvanha",
             "type": "pokemon",
             "context": "fishing",
             "bucket": "common",
             "level": "25",
-            "weight": 65.0,
+            "weight": 35.0,
             "condition": {
                 "minX": 344, "maxX": 672, "minZ": 299, "maxZ": 453,
                 "minLureLevel": 2,

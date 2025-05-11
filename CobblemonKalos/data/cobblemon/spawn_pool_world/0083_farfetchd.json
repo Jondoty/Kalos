@@ -4,29 +4,13 @@
     "neededUninstalledMods": [],
     "spawns": [
         {
-            "id": "dunsparce-1",
-            "pokemon": "dunsparce",
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "common",
-            "level": "3-5",
-            "weight": 5,
-            "condition": {
-                "neededNearbyBlocks": [
-                    "minecraft:short_grass"
-                ],
-                "minX": 251, "maxX": 443, "minZ": 524, "maxZ": 719
-            }
-        },
-
-        {
-            "id": "dunsparce-2",
-            "pokemon": "dunsparce",
+            "id": "farfetchd-1",
+            "pokemon": "farfetchd",
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
             "level": "5-7",
-            "weight": 5,
+            "weight": 10,
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:short_grass"
@@ -34,14 +18,15 @@
                 "minX": 344, "maxX": 672, "minZ": 299, "maxZ": 453
             }
         },
+
         {
-            "id": "dunsparce-3",
-            "pokemon": "dunsparce",
+            "id": "farfetchd-2",
+            "pokemon": "farfetchd",
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
             "level": "25-27",
-            "weight": 5,
+            "weight": 20,
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:dandelion"

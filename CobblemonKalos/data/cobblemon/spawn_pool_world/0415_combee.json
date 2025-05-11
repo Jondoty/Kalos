@@ -4,34 +4,34 @@
     "neededUninstalledMods": [],
     "spawns": [
         {
-            "id": "bidoof-1",
-            "pokemon": "bidoof",
+            "id": "combee",
+            "pokemon": "combee",
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
-            "level": "3-5",
-            "weight": 20,
+            "level": "6-8",
+            "weight": 30,
             "condition": {
                 "neededNearbyBlocks": [
-                    "minecraft:short_grass"
+                    "minecraft:rose_bush"
                 ],
-                "minX": 251, "maxX": 443, "minZ": 524, "maxZ": 719
+                "minX": 103, "maxX": 258, "minZ": -114, "maxZ": 383
             }
         },
 
         {
-            "id": "bidoof-2",
-            "pokemon": "bidoof",
+            "id": "combee-2",
+            "pokemon": "combee",
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
-            "level": "5-7",
+            "level": "6-8",
             "weight": 10,
             "condition": {
                 "neededNearbyBlocks": [
-                    "minecraft:short_grass"
+                    "minecraft:sunflower"
                 ],
-                "minX": 344, "maxX": 672, "minZ": 299, "maxZ": 453
+                "minX": 103, "maxX": 258, "minZ": -114, "maxZ": 383
             }
         }
     ]

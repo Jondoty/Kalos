@@ -16,6 +16,35 @@
                 "minLureLevel": 1,
                 "maxLureLevel": 1
             }
+        },
+
+        {
+            "id": "magikarp-2",
+            "pokemon": "magikarp",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "15",
+            "weight": 100.0,
+            "condition": {
+                "minX": 454, "maxX": 682, "minZ": 524, "maxZ": 738,
+                "minLureLevel": 1,
+                "maxLureLevel": 1
+            }
+        },
+                {
+            "id": "magikarp-3",
+            "pokemon": "magikarp",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "15",
+            "weight": 100.0,
+            "condition": {
+                "minX": 344, "maxX": 672, "minZ": 299, "maxZ": 453,
+                "minLureLevel": 1,
+                "maxLureLevel": 1
+            }
         }
     ]
 }

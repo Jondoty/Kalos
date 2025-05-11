@@ -33,6 +33,22 @@
                 ],
                 "minX": 251, "maxX": 443, "minZ": 524, "maxZ": 719
             }
+        },
+
+        {
+            "id": "bunnelby-2",
+            "pokemon": "bunnelby",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-7",
+            "weight": 20,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": 344, "maxX": 672, "minZ": 299, "maxZ": 453
+            }
         }
     ]
 }
