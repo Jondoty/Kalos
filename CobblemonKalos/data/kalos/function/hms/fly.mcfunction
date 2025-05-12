@@ -5,6 +5,9 @@ scoreboard players set @s[scores={Fly=1..,TalkTime=1..}] Fly 0
 title @s[scores={Fly=1..,DialogueTrigger=1..}] actionbar {"text":"You can't Fly while in a dialogue!"}
 scoreboard players set @s[scores={Fly=1..,DialogueTrigger=1..}] Fly 0
 
+title @s[scores={Fly=1..},tag=InDialogue] actionbar {"text":"You can't Fly while in a dialogue!"}
+scoreboard players set @s[scores={Fly=1..},tag=InDialogue] Fly 0
+
 #----------------------------------------------------------------
 
 #If Indoors (primarily to force the player to dialogue points and portal triggers):

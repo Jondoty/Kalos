@@ -1,1 +1,1 @@
-give @s minecraft:firework_rocket{display:{Name:"TM70: Flash",Lore:["Illuminates an area to","the user for 10 minutes."]}} 16
+give @s carrot_on_a_stick[custom_name='["",{"text":"TM70: Flash","italic":false,"color":"aqua"}]',lore=['["",{"text":"Illuminates the user","italic":false,"color":"#ce9178"},{"text":"\'","italic":false,"color":"#d7ba7d"},{"text":"s vision","italic":false,"color":"#ce9178"}]','["",{"text":"for fifteen minutes.","italic":false,"color":"#ce9178"}]'],enchantment_glint_override=true,unbreakable={},custom_model_data=2]

@@ -33,6 +33,40 @@ scoreboard players set @a[scores={CooldownJump=1..}] CooldownJump 0
 #tellraw @a[x=-488,y=100,z=1414,distance=..3,scores={Cooldown=5000..}] {"text":"Hey this is a test!"}
 #scoreboard players set @a[x=-488,y=100,z=1414,distance=..3,scores={Cooldown=5000..}] Cooldown 0
 
+#---------------------------------------------------------
+#HMs/Important item functions
+
+#Flash
+#Runs if player can fly
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"HM02: Fly"}],"text":""}'}}}] run scoreboard players set @s Fly 1
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"HM02: Fly"}],"text":""}'}}}] run function kalos:hms/fly
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"HM02: Fly"}],"text":""}'}}}] run scoreboard players set @s click 0
+
+#Activates Flash
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"TM70: Flash"}],"text":""}'}}}] run tellraw @s {"text":"You used Flash!","italic":true,"color":"gray"} 
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"TM70: Flash"}],"text":""}'}}}] run effect give @s minecraft:night_vision 900 1 true
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"TM70: Flash"}],"text":""}'}}}] run playsound minecraft:entity.firework_rocket.launch ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"TM70: Flash"}],"text":""}'}}}] run scoreboard players set @s click 0
+
+
+#Town Map
+scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:0b}],SelectedItemSlot:0}] MapSelect 1
+scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:1b}],SelectedItemSlot:1}] MapSelect 2
+scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:2b}],SelectedItemSlot:2}] MapSelect 3
+scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:3b}],SelectedItemSlot:3}] MapSelect 4
+scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:4b}],SelectedItemSlot:4}] MapSelect 5
+scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:5b}],SelectedItemSlot:5}] MapSelect 6
+scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:6b}],SelectedItemSlot:6}] MapSelect 7
+scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:7b}],SelectedItemSlot:7}] MapSelect 8
+scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:8b}],SelectedItemSlot:8}] MapSelect 9
+scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:-106b}]}] MapSelect 10
+execute as @a[scores={MapSelect=1..}] run function kalos:hms/townmap
+
+#Escape Rope
+execute as @a[scores={EscapeRopeUse=1..}] run function kalos:hms/escaperope
+
+
+
 #------------------------------------------------------------------------------
 #Music commands
 #Music rate: 86 ticks per 60 seconds (~1 second x 1.4)
@@ -68,35 +102,6 @@ execute as @a[tag=TrackSeek,tag=!RadioOff] run function kalos:world/music
 
 #removes MusicCooldown score for music timings
 scoreboard players remove @a[scores={MusicCooldown=1..}] MusicCooldown 1
-
-
-
-#---------------------------------------------------------
-#Important item functions
-
-#Flash
-#tellraw @a[scores={Flash=1..}] {"text":"You used Flash!","italic":true,"color":"gray"}
-#give @a[scores={Flash=1..}] minecraft:firework_rocket{display:{Name:"TM70: Flash",Lore:["Illuminates an area to","the user for 10 minutes."]}}
-#effect give @a[scores={Flash=1..}] minecraft:night_vision 600 1 true
-#scoreboard players remove @a[scores={Flash=1..}] Flash 1
-
-
-#Town Map
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:0b}],SelectedItemSlot:0}] MapSelect 1
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:1b}],SelectedItemSlot:1}] MapSelect 2
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:2b}],SelectedItemSlot:2}] MapSelect 3
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:3b}],SelectedItemSlot:3}] MapSelect 4
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:4b}],SelectedItemSlot:4}] MapSelect 5
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:5b}],SelectedItemSlot:5}] MapSelect 6
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:6b}],SelectedItemSlot:6}] MapSelect 7
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:7b}],SelectedItemSlot:7}] MapSelect 8
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:8b}],SelectedItemSlot:8}] MapSelect 9
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:-106b}]}] MapSelect 10
-execute as @a[scores={MapSelect=1..}] run function kalos:hms/townmap
-
-#Escape Rope
-execute as @a[scores={EscapeRopeUse=1..}] run function kalos:hms/escaperope
-
 
 #---------------------------------------------------------
 #Adds night vision in specific areas
