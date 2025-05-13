@@ -13,7 +13,7 @@
             "weight": 30,
             "condition": {
                 "canSeeSky": false,
-                "minX": -1897, "maxX": -63, "maxY": 75, "minZ": -1640, "maxZ": 138
+                "minX": -1902, "maxX": -1638, "maxY": 75, "minZ": -63, "maxZ": 138
             }
         }
     ]
