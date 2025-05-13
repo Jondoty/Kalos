@@ -1,0 +1,51 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "skrelp-1",
+            "pokemon": "skrelp",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "25",
+            "weight": 65.0,
+            "condition": {
+                "minX": -2231, "maxX": -1869, "minZ": 59, "maxZ": 503,
+                "minLureLevel": 2,
+                "maxLureLevel": 2
+            }
+        },
+
+        {
+            "id": "skrelp-2",
+            "pokemon": "skrelp",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "25",
+            "weight": 65.0,
+            "condition": {
+                "minX": -2115, "maxX": -1875, "minZ": 504, "maxZ": 762,
+                "minLureLevel": 2,
+                "maxLureLevel": 2
+            }
+        },
+
+        {
+            "id": "skrelp-3",
+            "pokemon": "skrelp",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "25",
+            "weight": 65.0,
+            "condition": {
+                "minX": -2223, "maxX": -1869, "minZ": -217, "maxZ": 58,
+                "minLureLevel": 2,
+                "maxLureLevel": 2
+            }
+        }
+    ]
+}

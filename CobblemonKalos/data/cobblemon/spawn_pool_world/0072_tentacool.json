@@ -1,0 +1,54 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "tentacool-1",
+            "pokemon": "tentacool",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "13-15",
+            "weight": 69,
+            "condition": {
+                "minX": -2231, "maxX": -1869, "minZ": 59, "maxZ": 503
+            }
+        },
+
+        {
+            "id": "tentacool-2",
+            "pokemon": "tentacool",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "13-15",
+            "weight": 69,
+            "condition": {
+                "minX": -2115, "maxX": -1875, "minZ": 504, "maxZ": 762
+            }
+        },
+
+        {
+            "id": "tentacool-3",
+            "pokemon": "tentacool",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "13-15",
+            "weight": 69,
+            "condition": {
+                "minX": -2223, "maxX": -1869, "minZ": -217, "maxZ": 58
+            }
+        }
+    ]
+}

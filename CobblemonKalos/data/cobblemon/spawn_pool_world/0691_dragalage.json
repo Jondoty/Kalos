@@ -1,0 +1,51 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "dragalage-1",
+            "pokemon": "dragalage",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "35",
+            "weight": 35.0,
+            "condition": {
+                "minX": -2231, "maxX": -1869, "minZ": 59, "maxZ": 503,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        },
+
+        {
+            "id": "dragalage-2",
+            "pokemon": "dragalage",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "35",
+            "weight": 35.0,
+            "condition": {
+                "minX": -2115, "maxX": -1875, "minZ": 504, "maxZ": 762,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        },
+
+        {
+            "id": "dragalage-3",
+            "pokemon": "dragalage",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "35",
+            "weight": 35.0,
+            "condition": {
+                "minX": -2223, "maxX": -1869, "minZ": -217, "maxZ": 58,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "clauncher-1",
+            "pokemon": "clauncher",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "25",
+            "weight": 65.0,
+            "condition": {
+                "minX": -2231, "maxX": -1869, "minZ": 59, "maxZ": 503,
+                "minLureLevel": 2,
+                "maxLureLevel": 2
+            }
+        },
+
+        {
+            "id": "clauncher-2",
+            "pokemon": "clauncher",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "25",
+            "weight": 65.0,
+            "condition": {
+                "minX": -2115, "maxX": -1875, "minZ": 504, "maxZ": 762,
+                "minLureLevel": 2,
+                "maxLureLevel": 2
+            }
+        },
+
+        {
+            "id": "clauncher-3",
+            "pokemon": "clauncher",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "25",
+            "weight": 65.0,
+            "condition": {
+                "minX": -2223, "maxX": -1869, "minZ": -217, "maxZ": 58,
+                "minLureLevel": 2,
+                "maxLureLevel": 2
+            }
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "horsea-1",
+            "pokemon": "horsea",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "25",
+            "weight": 35.0,
+            "condition": {
+                "minX": -2115, "maxX": -1875, "minZ": 504, "maxZ": 762,
+                "minLureLevel": 2,
+                "maxLureLevel": 2
+            }
+        },
+
+        {
+            "id": "horsea-2",
+            "pokemon": "horsea",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "25",
+            "weight": 35.0,
+            "condition": {
+                "minX": -2223, "maxX": -1869, "minZ": -217, "maxZ": 58,
+                "minLureLevel": 2,
+                "maxLureLevel": 2
+            }
+        }
+    ]
+}
