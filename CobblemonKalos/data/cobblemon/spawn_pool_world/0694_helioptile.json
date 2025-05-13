@@ -1,0 +1,23 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "helioptile",
+            "pokemon": "helioptile",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "15-17",
+            "weight": 20,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:red_sandstone",
+                    "minecraft:red_sandstone_stairs"
+                ],
+                "minX": -1875, "maxX": -1468, "minY": 138, "maxY": 140, "minZ": 560, "maxZ": 701
+            }
+        }
+    ]
+}

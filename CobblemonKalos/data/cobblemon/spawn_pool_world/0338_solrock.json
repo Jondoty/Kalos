@@ -1,0 +1,20 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "solrock-1",
+            "pokemon": "solrock",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "15-17",
+            "weight": 10,
+            "condition": {
+                "canSeeSky": false,
+                "minX": -1542, "maxX": -1368, "minY": 140, "maxY": 150, "minZ": 249, "maxZ": 559
+            }
+        }
+    ]
+}

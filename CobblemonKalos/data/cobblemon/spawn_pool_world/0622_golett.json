@@ -1,0 +1,37 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "golett-1",
+            "pokemon": "golett",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "19-21",
+            "weight": 30,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": -2298, "maxX": -2036, "minZ": -597, "maxZ": -218
+            }
+        },
+        {
+            "id": "golett-2",
+            "pokemon": "golett",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "19-21",
+            "weight": 10,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:dandelion"
+                ],
+                "minX": -2298, "maxX": -2036, "minZ": -597, "maxZ": -218
+            }
+        }
+    ]
+}

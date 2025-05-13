@@ -1,0 +1,20 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "machop-1",
+            "pokemon": "machop",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "15-17",
+            "weight": 30,
+            "condition": {
+                "canSeeSky": false,
+                "minX": -1542, "maxX": -1368, "minY": 140, "maxY": 150, "minZ": 249, "maxZ": 559
+            }
+        }
+    ]
+}

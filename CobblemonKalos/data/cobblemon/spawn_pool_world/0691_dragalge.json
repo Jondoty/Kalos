@@ -4,8 +4,8 @@
     "neededUninstalledMods": [],
     "spawns": [
         {
-            "id": "dragalage-1",
-            "pokemon": "dragalage",
+            "id": "dragalge-1",
+            "pokemon": "dragalge",
             "type": "pokemon",
             "context": "fishing",
             "bucket": "common",
@@ -19,8 +19,8 @@
         },
 
         {
-            "id": "dragalage-2",
-            "pokemon": "dragalage",
+            "id": "dragalge-2",
+            "pokemon": "dragalge",
             "type": "pokemon",
             "context": "fishing",
             "bucket": "common",
@@ -34,8 +34,8 @@
         },
 
         {
-            "id": "dragalage-3",
-            "pokemon": "dragalage",
+            "id": "dragalge-3",
+            "pokemon": "dragalge",
             "type": "pokemon",
             "context": "fishing",
             "bucket": "common",

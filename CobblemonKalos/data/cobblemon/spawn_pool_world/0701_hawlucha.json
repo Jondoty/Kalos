@@ -1,0 +1,37 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "hawlucha-1",
+            "pokemon": "hawlucha",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "19-21",
+            "weight": 20,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": -2298, "maxX": -2036, "minZ": -597, "maxZ": -218
+            }
+        },
+        {
+            "id": "hawlucha-2",
+            "pokemon": "hawlucha",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "19-21",
+            "weight": 5,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:dandelion"
+                ],
+                "minX": -2298, "maxX": -2036, "minZ": -597, "maxZ": -218
+            }
+        }
+    ]
+}
