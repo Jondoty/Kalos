@@ -16,15 +16,6 @@
         }
       ]
     },
-    
-    "flareappears": {
-      "sounds": [
-        {
-          "name":"battles/flareappears",
-          "stream": true
-          }
-        ]
-      },
 
       "gymleaderbattle": {
       "sounds": [
@@ -307,7 +298,25 @@
         ]
       },
 
+      "friendbattle": {
+        "sounds": [
+          {
+            "name":"battles/friendbattle",
+            "stream": true
+            }
+          ]
+        },
       
+
+                "flarebattle": {
+        "sounds": [
+          {
+            "name":"battles/flarebattle",
+            "stream": true
+            }
+          ]
+        },
+
 
 
 
@@ -659,14 +668,6 @@
           ]
         },
 
-        "flarebattle": {
-        "sounds": [
-          {
-            "name":"world/flarebattle",
-            "stream": true
-            }
-          ]
-        },
 
         "flaresecrethq": {
         "sounds": [
@@ -677,14 +678,6 @@
           ]
         },
 
-        "friendbattle": {
-        "sounds": [
-          {
-            "name":"world/friendbattle",
-            "stream": true
-            }
-          ]
-        },
 
         "friendsafari": {
         "sounds": [
@@ -1134,6 +1127,15 @@
             "stream": true
             }
           ]
-        }        
+        },
+
+            "flareappears": {
+      "sounds": [
+        {
+          "name":"world/flareappears",
+          "stream": true
+          }
+        ]
+      }
 
 }
