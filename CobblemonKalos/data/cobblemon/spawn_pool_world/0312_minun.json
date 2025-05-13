@@ -1,0 +1,23 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "minun-1",
+            "pokemon": "minun",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "8-10",
+            "weight": 5,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass",
+                    "minecraft:allium"
+                ],
+                "minX": -963, "maxX": -563, "minZ": -219, "maxZ": 11
+            }
+        }
+    ]
+}

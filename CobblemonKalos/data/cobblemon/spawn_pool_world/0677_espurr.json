@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "espurr-1",
+            "pokemon": "espurr",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "10-12",
+            "weight": 20,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": -1348, "maxX": -1147, "minZ": -432, "maxZ": -119
+            }
+        }
+    ]
+}

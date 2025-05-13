@@ -18,6 +18,39 @@
                 ],
                 "minX": 103, "maxX": 258, "minZ": -114, "maxZ": 383
             }
+        },
+
+        {
+            "id": "flabebe-white-2",
+            "pokemon": "flabebe flower=white",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "12-14",
+            "weight": 1,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": -1732, "maxX": -1609, "minZ": -118, "maxZ": 75
+            }
+        },
+        {
+            "id": "flabebe-white-3",
+            "pokemon": "flabebe flower=white",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "12-14",
+            "weight": 1,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:dandelion",
+                    "minecraft:allium",
+                    "minecraft:pink_tulip"
+                ],
+                "minX": -1732, "maxX": -1309, "minZ": -118, "maxZ": -9
+            }
         }
     ]
 }

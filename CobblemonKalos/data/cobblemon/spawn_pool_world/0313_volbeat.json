@@ -4,30 +4,13 @@
     "neededUninstalledMods": [],
     "spawns": [
         {
-            "id": "flabebe-orange-1",
-            "pokemon": "flabebe flower=orange",
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "common",
-            "level": "6-8",
-            "weight": 4,
-            "condition": {
-                "neededNearbyBlocks": [
-                    "minecraft:rose_bush",
-                    "minecraft:sunflower"
-                ],
-                "minX": 103, "maxX": 258, "minZ": -114, "maxZ": 383
-            }
-        },
-
-        {
-            "id": "flabebe-orange-2",
-            "pokemon": "flabebe flower=orange",
+            "id": "volbeat-1",
+            "pokemon": "volbeat",
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
             "level": "12-14",
-            "weight": 4,
+            "weight": 10,
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:short_grass"
@@ -35,14 +18,15 @@
                 "minX": -1732, "maxX": -1609, "minZ": -118, "maxZ": 75
             }
         },
+
         {
-            "id": "flabebe-orange-3",
-            "pokemon": "flabebe flower=orange",
+            "id": "volbeat-1",
+            "pokemon": "volbeat",
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
             "level": "12-14",
-            "weight": 4,
+            "weight": 10,
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:dandelion",

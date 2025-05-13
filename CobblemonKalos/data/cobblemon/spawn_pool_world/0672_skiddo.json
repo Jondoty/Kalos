@@ -4,34 +4,33 @@
     "neededUninstalledMods": [],
     "spawns": [
         {
-            "id": "flabebe-yellow-1",
-            "pokemon": "flabebe flower=yellow",
+            "id": "skiddo-1",
+            "pokemon": "skiddo",
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
-            "level": "6-8",
-            "weight": 30,
+            "level": "8-10",
+            "weight": 10,
             "condition": {
                 "neededNearbyBlocks": [
-                    "minecraft:sunflower"
+                    "minecraft:short_grass"
                 ],
-                "minX": 103, "maxX": 258, "minZ": -114, "maxZ": 383
+                "minX": -963, "maxX": -563, "minZ": -219, "maxZ": 11
             }
         },
-
         {
-            "id": "flabebe-yellow-2",
-            "pokemon": "flabebe flower=yellow",
+            "id": "skiddo-2",
+            "pokemon": "skiddo",
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
-            "level": "12-14",
+            "level": "8-10",
             "weight": 30,
             "condition": {
                 "neededNearbyBlocks": [
-                    "minecraft:dandelion"
+                    "minecraft:allium"
                 ],
-                "minX": -1732, "maxX": -1309, "minZ": -118, "maxZ": -9
+                "minX": -963, "maxX": -563, "minZ": -219, "maxZ": 11
             }
         }
     ]

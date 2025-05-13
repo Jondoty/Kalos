@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "honedge-1",
+            "pokemon": "honedge",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "10-12",
+            "weight": 15,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": -1348, "maxX": -1147, "minZ": -432, "maxZ": -119
+            }
+        }
+    ]
+}

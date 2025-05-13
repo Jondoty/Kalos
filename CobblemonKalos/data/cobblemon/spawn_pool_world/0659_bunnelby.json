@@ -36,7 +36,7 @@
         },
 
         {
-            "id": "bunnelby-2",
+            "id": "bunnelby-3",
             "pokemon": "bunnelby",
             "type": "pokemon",
             "context": "grounded",
@@ -48,6 +48,37 @@
                     "minecraft:short_grass"
                 ],
                 "minX": 344, "maxX": 672, "minZ": 299, "maxZ": 453
+            }
+        },
+
+        {
+            "id": "bunnelby-4",
+            "pokemon": "bunnelby",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "8-10",
+            "weight": 30,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": -963, "maxX": -563, "minZ": -219, "maxZ": 11
+            }
+        },
+        {
+            "id": "bunnelby-5",
+            "pokemon": "bunnelby",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "8-10",
+            "weight": 10,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:allium"
+                ],
+                "minX": -963, "maxX": -563, "minZ": -219, "maxZ": 11
             }
         }
     ]

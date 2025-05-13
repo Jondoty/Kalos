@@ -1,0 +1,23 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "flabebe-blue-1",
+            "pokemon": "flabebe flower=blue",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "6-8",
+            "weight": 30,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:allium",
+                    "minecraft:pink_tulip"
+                ],
+                "minX": -1732, "maxX": -1309, "minZ": -118, "maxZ": -9
+            }
+        }
+    ]
+}

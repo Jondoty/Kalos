@@ -1,0 +1,23 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "doduo-1",
+            "pokemon": "doduo",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "8-10",
+            "weight": 10,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass",
+                    "minecraft:allium"
+                ],
+                "minX": -963, "maxX": -563, "minZ": -219, "maxZ": 11
+            }
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "nincada-1",
+            "pokemon": "nincada",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "10-12",
+            "weight": 10,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": -1348, "maxX": -1147, "minZ": -432, "maxZ": -119
+            }
+        }
+    ]
+}
