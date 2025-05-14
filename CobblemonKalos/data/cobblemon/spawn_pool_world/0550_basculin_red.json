@@ -1,0 +1,64 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "basculin-1",
+            "pokemon": "basculin striped=red",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "25",
+            "weight": 32.0,
+            "condition": {
+                "minX": -342, "maxX": 90, "minZ": -1577, "maxZ": -1303,
+                "minLureLevel": 2,
+                "maxLureLevel": 2
+            }
+        },
+        {
+            "id": "basculin-1",
+            "pokemon": "basculin striped=red",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "35",
+            "weight": 17.0,
+            "condition": {
+                "minX": -342, "maxX": 90, "minZ": -1577, "maxZ": -1303,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        },
+
+        {
+            "id": "basculin-2",
+            "pokemon": "basculin striped=red",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "25",
+            "weight": 32.0,
+            "condition": {
+                "minX": 212, "maxX": 575, "minZ": -402, "maxZ": -129,
+                "minLureLevel": 2,
+                "maxLureLevel": 2
+            }
+        },
+        {
+            "id": "basculin-2",
+            "pokemon": "basculin striped=red",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "35",
+            "weight": 17.0,
+            "condition": {
+                "minX": 212, "maxX": 575, "minZ": -402, "maxZ": -129,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        }
+    ]
+}

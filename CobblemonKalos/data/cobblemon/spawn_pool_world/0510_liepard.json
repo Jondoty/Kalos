@@ -1,0 +1,37 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "liepard-1",
+            "pokemon": "liepard",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "34-36",
+            "weight": 15,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": 212, "maxX": 581, "minY": 103, "minZ": -695, "maxZ": -403
+            }
+        },
+        {
+            "id": "liepard-1",
+            "pokemon": "liepard",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "34-36",
+            "weight": 5,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:rose_bush"
+                ],
+                "minX": 212, "maxX": 581, "minY": 103, "minZ": -695, "maxZ": -403
+            }
+        }
+    ]
+}

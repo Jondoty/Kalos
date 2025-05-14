@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "dugtrio-1",
+            "pokemon": "dugtrio",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "26-28",
+            "weight": 40,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:red_sand"
+                ],
+                "minX": -973, "maxX": -602, "minY": 101, "maxY": 106, "minZ": -871, "maxZ": -220
+            }
+        }
+    ]
+}

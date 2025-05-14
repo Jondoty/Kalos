@@ -1,0 +1,66 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "poliwag-1",
+            "pokemon": "poliwag",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "15",
+            "weight": 100.0,
+            "condition": {
+                "minX": -342, "maxX": 90, "minZ": -1302, "maxZ": -794,
+                "minLureLevel": 1,
+                "maxLureLevel": 1
+            }
+        },
+
+        {
+            "id": "poliwag-2",
+            "pokemon": "poliwag",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "15",
+            "weight": 100.0,
+            "condition": {
+                "minX": -342, "maxX": 90, "minZ": -1577, "maxZ": -1303,
+                "minLureLevel": 1,
+                "maxLureLevel": 1
+            }
+        },
+
+        {
+            "id": "poliwag-3",
+            "pokemon": "poliwag",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "15",
+            "weight": 100.0,
+            "condition": {
+                "minX": 212, "maxX": 575, "minZ": -402, "maxZ": -129,
+                "minLureLevel": 1,
+                "maxLureLevel": 1
+            }
+        },
+
+        {
+            "id": "poliwag-4",
+            "pokemon": "poliwag",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "15",
+            "weight": 100.0,
+            "condition": {
+                "minX": 212, "maxX": 581, "minY": 103, "minZ": -695, "maxZ": -403,
+                "minLureLevel": 1,
+                "maxLureLevel": 1
+            }
+        }
+    ]
+}

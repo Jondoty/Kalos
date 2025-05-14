@@ -1,0 +1,38 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "karrablast-1",
+            "pokemon": "karrablast",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30-32",
+            "weight": 10,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": -342, "maxX": 90, "minZ": -1302, "maxZ": -794
+            }
+        },
+
+        {
+            "id": "karrablast-2",
+            "pokemon": "karrablast",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "30-32",
+            "weight": 10,
+            "condition": {
+                "minX": -342, "maxX": 90, "minZ": -1302, "maxZ": -794
+            }
+        }
+    ]
+}

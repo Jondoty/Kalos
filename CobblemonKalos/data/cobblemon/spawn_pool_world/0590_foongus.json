@@ -1,0 +1,55 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "foongus-1",
+            "pokemon": "foongus",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "34-36",
+            "weight": 20,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": 212, "maxX": 575, "minZ": -402, "maxZ": -129
+            }
+        },
+
+        {
+            "id": "foongus-2",
+            "pokemon": "foongus",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "34-36",
+            "weight": 20,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:dandelion"
+                ],
+                "minX": 212, "maxX": 575, "minZ": -402, "maxZ": -129
+            }
+        },
+
+        {
+            "id": "foongus-3",
+            "pokemon": "foongus",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "34-36",
+            "weight": 15,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass",
+                    "minecraft:rose_bush"
+                ],
+                "minX": 212, "maxX": 581, "minY": 103, "minZ": -695, "maxZ": -403
+            }
+        }
+    ]
+}

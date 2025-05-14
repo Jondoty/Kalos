@@ -1,0 +1,38 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "phantump-1",
+            "pokemon": "phantump",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "34-36",
+            "weight": 10,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": 212, "maxX": 575, "minZ": -402, "maxZ": -129
+            }
+        },
+
+        {
+            "id": "phantump-2",
+            "pokemon": "phantump",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "34-36",
+            "weight": 10,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:dandelion"
+                ],
+                "minX": 212, "maxX": 575, "minZ": -402, "maxZ": -129
+            }
+        }
+    ]
+}

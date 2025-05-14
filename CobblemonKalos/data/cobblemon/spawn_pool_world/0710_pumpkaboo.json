@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "pumpkaboo-1",
+            "pokemon": "pumpkaboo",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "34-36",
+            "weight": 61,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": 212, "maxX": 575, "minZ": -402, "maxZ": -129
+            }
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "stunfisk-1",
+            "pokemon": "stunfisk",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "30-32",
+            "weight": 20,
+            "condition": {
+                "minX": -342, "maxX": 90, "minZ": -1302, "maxZ": -794
+            }
+        }
+    ]
+}

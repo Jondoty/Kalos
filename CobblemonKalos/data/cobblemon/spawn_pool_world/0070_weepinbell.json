@@ -1,0 +1,38 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "weepinbell-1",
+            "pokemon": "weepinbell",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30-32",
+            "weight": 20,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": -342, "maxX": 90, "minZ": -1302, "maxZ": -794
+            }
+        },
+
+        {
+            "id": "weepinbell-2",
+            "pokemon": "weepinbell",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "34-36",
+            "weight": 20,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:dandelion"
+                ],
+                "minX": 212, "maxX": 575, "minZ": -402, "maxZ": -129
+            }
+        }
+    ]
+}

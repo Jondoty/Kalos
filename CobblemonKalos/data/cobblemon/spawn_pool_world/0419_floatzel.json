@@ -1,0 +1,54 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "floatzel-1",
+            "pokemon": "floatzel",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "34-36",
+            "weight": 20,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:dandelion"
+                ],
+                "minX": 212, "maxX": 575, "minZ": -402, "maxZ": -129
+            }
+        },
+
+        {
+            "id": "floatzel-2",
+            "pokemon": "floatzel",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "34-36",
+            "weight": 34,
+            "condition": {
+                "minX": 212, "maxX": 575, "minZ": -402, "maxZ": -129
+            }
+        },
+
+        {
+            "id": "floatzel-3",
+            "pokemon": "floatzel",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "34-36",
+            "weight": 34,
+            "condition": {
+                "minX": 212, "maxX": 581, "minY": 103, "minZ": -695, "maxZ": -403
+            }
+        }
+    ]
+}

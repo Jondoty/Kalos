@@ -1,0 +1,38 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "carnivine-1",
+            "pokemon": "carnivine",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30-32",
+            "weight": 15,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": -342, "maxX": 90, "minZ": -1302, "maxZ": -794
+            }
+        },
+
+        {
+            "id": "carnivine-2",
+            "pokemon": "carnivine",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "30-32",
+            "weight": 5,
+            "condition": {
+                "minX": -342, "maxX": 90, "minZ": -1302, "maxZ": -794
+            }
+        }
+    ]
+}

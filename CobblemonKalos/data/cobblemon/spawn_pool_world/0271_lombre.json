@@ -1,0 +1,38 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "lombre-1",
+            "pokemon": "lombre",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "34-36",
+            "weight": 66,
+            "condition": {
+                "minX": 212, "maxX": 575, "minZ": -402, "maxZ": -129
+            }
+        },
+
+        {
+            "id": "lombre-2",
+            "pokemon": "lombre",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "34-36",
+            "weight": 66,
+            "condition": {
+                "minX": 212, "maxX": 581, "minY": 103, "minZ": -695, "maxZ": -403
+            }
+        }
+    ]
+}
