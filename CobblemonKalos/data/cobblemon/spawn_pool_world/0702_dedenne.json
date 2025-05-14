@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "dedenne-1",
+            "pokemon": "dedenne",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "21-23",
+            "weight": 5,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": -2112, "maxX": -1848, "minZ": -757, "maxZ": -598
+            }
+        }
+    ]
+}

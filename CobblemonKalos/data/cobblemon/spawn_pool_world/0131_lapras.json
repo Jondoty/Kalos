@@ -1,0 +1,38 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "lapras-1",
+            "pokemon": "lapras",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "23-25",
+            "weight": 1,
+            "condition": {
+                "minX": -1483, "maxX": -1205, "minZ": -888, "maxZ": -734
+            }
+        },
+
+        {
+            "id": "lapras-2",
+            "pokemon": "lapras",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "25-27",
+            "weight": 1,
+            "condition": {
+                "minX": -1483, "maxX": -1205, "minZ": -1340, "maxZ": -889
+            }
+        }
+    ]
+}

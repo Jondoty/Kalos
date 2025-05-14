@@ -46,6 +46,51 @@
                 "minLureLevel": 1,
                 "maxLureLevel": 1
             }
+        },
+
+        {
+            "id": "luvdisc-4",
+            "pokemon": "luvdisc",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "15",
+            "weight": 100.0,
+            "condition": {
+                "minX": -1788, "maxX": -1484, "minZ": -1326, "maxZ": -733,
+                "minLureLevel": 1,
+                "maxLureLevel": 1
+            }
+        },
+
+        {
+            "id": "luvdisc-5",
+            "pokemon": "luvdisc",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "15",
+            "weight": 100.0,
+            "condition": {
+                "minX": -1483, "maxX": -1205, "minZ": -888, "maxZ": -734,
+                "minLureLevel": 1,
+                "maxLureLevel": 1
+            }
+        },
+
+        {
+            "id": "luvdisc-6",
+            "pokemon": "luvdisc",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "15",
+            "weight": 100.0,
+            "condition": {
+                "minX": -1483, "maxX": -1205, "minZ": -1340, "maxZ": -889,
+                "minLureLevel": 1,
+                "maxLureLevel": 1
+            }
         }
     ]
 }

@@ -1,0 +1,49 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "chingling-1",
+            "pokemon": "chingling",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "21-23",
+            "weight": 10,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": -2112, "maxX": -1848, "minZ": -757, "maxZ": -598
+            }
+        },
+
+        {
+            "id": "chingling-2",
+            "pokemon": "chingling",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "21-23",
+            "weight": 15,
+            "condition": {
+                "canSeeSky": false,
+                "minX": -1844, "maxX": -1618, "minY": 57, "maxY": 89, "minZ": -439, "maxZ": -197
+            }
+        },
+        {
+            "id": "chingling-2",
+            "pokemon": "chingling",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "21-23",
+            "weight": 15,
+            "condition": {
+                "canSeeSky": false,
+                "minX": -1772, "maxX": -1433, "minY": 0, "maxY": 55, "minZ": -364, "maxZ": -168
+            }
+        }
+    ]
+}

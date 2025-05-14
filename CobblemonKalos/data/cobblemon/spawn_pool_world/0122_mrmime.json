@@ -1,0 +1,33 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "mrmime-1",
+            "pokemon": "mrmime",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "21-23",
+            "weight": 20,
+            "condition": {
+                "canSeeSky": false,
+                "minX": -1844, "maxX": -1618, "minY": 57, "maxY": 89, "minZ": -439, "maxZ": -197
+            }
+        },
+        {
+            "id": "mrmime-1",
+            "pokemon": "mrmime",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "21-23",
+            "weight": 20,
+            "condition": {
+                "canSeeSky": false,
+                "minX": -1772, "maxX": -1433, "minY": 0, "maxY": 55, "minZ": -364, "maxZ": -168
+            }
+        }
+    ]
+}

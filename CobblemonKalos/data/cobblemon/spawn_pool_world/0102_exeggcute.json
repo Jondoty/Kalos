@@ -4,30 +4,30 @@
     "neededUninstalledMods": [],
     "spawns": [
         {
-            "id": "inkay-1",
-            "pokemon": "inkay",
+            "id": "exeggcute-1",
+            "pokemon": "exeggcute",
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
-            "level": "13-15",
-            "weight": 15,
+            "level": "23-25",
+            "weight": 10,
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:short_grass",
                     "minecraft:dandelion"
                 ],
-                "minX": -2231, "maxX": -1869, "minZ": 59, "maxZ": 503
+                "minX": -1483, "maxX": -1205, "minZ": -888, "maxZ": -734
             }
         },
 
         {
-            "id": "inkay-2",
-            "pokemon": "inkay",
+            "id": "exeggcute-2",
+            "pokemon": "exeggcute",
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
             "level": "25-27",
-            "weight": 15,
+            "weight": 10,
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:short_grass"

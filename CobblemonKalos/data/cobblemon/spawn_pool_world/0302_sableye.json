@@ -1,0 +1,33 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "sableye-1",
+            "pokemon": "sableye",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "21-23",
+            "weight": 5,
+            "condition": {
+                "canSeeSky": false,
+                "minX": -1844, "maxX": -1618, "minY": 57, "maxY": 89, "minZ": -439, "maxZ": -197
+            }
+        },
+        {
+            "id": "sableye-1",
+            "pokemon": "sableye",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "21-23",
+            "weight": 5,
+            "condition": {
+                "canSeeSky": false,
+                "minX": -1772, "maxX": -1433, "minY": 0, "maxY": 55, "minZ": -364, "maxZ": -168
+            }
+        }
+    ]
+}

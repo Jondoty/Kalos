@@ -4,35 +4,33 @@
     "neededUninstalledMods": [],
     "spawns": [
         {
-            "id": "inkay-1",
-            "pokemon": "inkay",
+            "id": "pachirisu-1",
+            "pokemon": "pachirisu",
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
-            "level": "13-15",
-            "weight": 15,
-            "condition": {
-                "neededNearbyBlocks": [
-                    "minecraft:short_grass",
-                    "minecraft:dandelion"
-                ],
-                "minX": -2231, "maxX": -1869, "minZ": 59, "maxZ": 503
-            }
-        },
-
-        {
-            "id": "inkay-2",
-            "pokemon": "inkay",
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "common",
-            "level": "25-27",
-            "weight": 15,
+            "level": "23-25",
+            "weight": 10,
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:short_grass"
                 ],
-                "minX": -1439, "maxX": -1396, "maxY": 78, "minZ": -1040, "maxZ": -978
+                "minX": -1483, "maxX": -1205, "minZ": -888, "maxZ": -734
+            }
+        },
+        {
+            "id": "pachirisu-1",
+            "pokemon": "pachirisu",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "23-25",
+            "weight": 5,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:dandelion"
+                ],
+                "minX": -1483, "maxX": -1205, "minZ": -888, "maxZ": -734
             }
         }
     ]
