@@ -4,47 +4,47 @@
     "neededUninstalledMods": [],
     "spawns": [
         {
-            "id": "pawniard-1",
-            "pokemon": "pawniard",
+            "id": "sandslash-1",
+            "pokemon": "sandslash",
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
-            "level": "34-36",
+            "level": "44-46",
             "weight": 10,
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:short_grass"
                 ],
-                "minX": 212, "maxX": 581, "minY": 103, "minZ": -695, "maxZ": -403
+                "minX": 1298, "maxX": 1598, "minZ": -140, "maxZ": 131
             }
         },
         {
-            "id": "pawniard-1",
-            "pokemon": "pawniard",
+            "id": "sandslash-1",
+            "pokemon": "sandslash",
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
-            "level": "34-36",
+            "level": "44-46",
             "weight": 20,
             "condition": {
                 "neededNearbyBlocks": [
-                    "minecraft:rose_bush"
+                    "minecraft:poppy"
                 ],
-                "minX": 212, "maxX": 581, "minY": 103, "minZ": -695, "maxZ": -403
+                "minX": 1298, "maxX": 1598, "minZ": -140, "maxZ": 131
             }
         },
 
         {
-            "id": "pawniard-2",
-            "pokemon": "pawniard",
+            "id": "sandslash-2",
+            "pokemon": "sandslash",
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
-            "level": "36-38",
+            "level": "44-46",
             "weight": 20,
             "condition": {
                 "canSeeSky": false,
-                "minX": 398, "maxX": 553, "maxY": 102, "minZ": -502, "maxZ": -366
+                "minX": 1720, "maxX": 2141, "minY": 0, "maxY": 100, "minZ": -232, "maxZ": 92
             }
         }
     ]

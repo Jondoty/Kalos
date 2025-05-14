@@ -1,0 +1,20 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "magneton-1",
+            "pokemon": "magneton",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "36-38",
+            "weight": 20,
+            "condition": {
+                "canSeeSky": false,
+                "minX": 398, "maxX": 553, "maxY": 102, "minZ": -502, "maxZ": -366
+            }
+        }
+    ]
+}

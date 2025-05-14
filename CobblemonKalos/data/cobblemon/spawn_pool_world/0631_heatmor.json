@@ -1,0 +1,23 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "heatmor-1",
+            "pokemon": "heatmor",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "44-46",
+            "weight": 5,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass",
+                    "minecraft:poppy"
+                ],
+                "minX": 1298, "maxX": 1598, "minZ": -140, "maxZ": 131
+            }
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "sneasel-1",
+            "pokemon": "sneasel",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "38-40",
+            "weight": 29,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "snow_block"
+                ],
+                "minX": 829, "maxX": 968, "minZ": -312, "maxZ": -182
+            }
+        }
+    ]
+}

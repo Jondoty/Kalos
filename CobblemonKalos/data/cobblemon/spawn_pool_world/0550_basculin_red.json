@@ -59,6 +59,35 @@
                 "minLureLevel": 3,
                 "maxLureLevel": 3
             }
+        },
+
+        {
+            "id": "basculin-3",
+            "pokemon": "basculin striped=red",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "30",
+            "weight": 32.0,
+            "condition": {
+                "minX": 444, "maxX": 887, "minZ": -1444, "maxZ": -638,
+                "minLureLevel": 2,
+                "maxLureLevel": 2
+            }
+        },
+        {
+            "id": "basculin-3",
+            "pokemon": "basculin striped=red",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "40",
+            "weight": 17.0,
+            "condition": {
+                "minX": 444, "maxX": 887, "minZ": -1444, "maxZ": -638,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
         }
     ]
 }

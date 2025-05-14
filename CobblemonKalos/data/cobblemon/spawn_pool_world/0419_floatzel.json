@@ -49,6 +49,22 @@
             "condition": {
                 "minX": 212, "maxX": 581, "minY": 103, "minZ": -695, "maxZ": -403
             }
+        },
+
+        {
+            "id": "floatzel-4",
+            "pokemon": "floatzel",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "38-40",
+            "weight": 34,
+            "condition": {
+                "minX": 444, "maxX": 887, "minZ": -1444, "maxZ": -638
+            }
         }
     ]
 }

@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "snover-1",
+            "pokemon": "snover",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "38-40",
+            "weight": 30,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "snow_block"
+                ],
+                "minX": 829, "maxX": 968, "minZ": -312, "maxZ": -182
+            }
+        }
+    ]
+}

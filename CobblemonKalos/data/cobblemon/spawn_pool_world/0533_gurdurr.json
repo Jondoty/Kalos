@@ -1,0 +1,37 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "gurdurr-1",
+            "pokemon": "gurdurr",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "44-46",
+            "weight": 30,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "minX": 1298, "maxX": 1598, "minZ": -140, "maxZ": 131
+            }
+        },
+        {
+            "id": "gurdurr-1",
+            "pokemon": "gurdurr",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "44-46",
+            "weight": 10,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:poppy"
+                ],
+                "minX": 1298, "maxX": 1598, "minZ": -140, "maxZ": 131
+            }
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "durant-1",
+            "pokemon": "durant",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "44-46",
+            "weight": 10,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass",
+                    "minecraft:poppy"
+                ],
+                "minX": 1298, "maxX": 1598, "minZ": -140, "maxZ": 131
+            }
+        },
+
+        {
+            "id": "durant-2",
+            "pokemon": "durant",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "44-46",
+            "weight": 40,
+            "condition": {
+                "canSeeSky": false,
+                "minX": 1720, "maxX": 2141, "minY": 0, "maxY": 100, "minZ": -232, "maxZ": 92
+            }
+        }
+    ]
+}
