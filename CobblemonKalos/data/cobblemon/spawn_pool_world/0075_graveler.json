@@ -32,6 +32,20 @@
                 "canSeeSky": false,
                 "minX": 1720, "maxX": 2141, "minY": 0, "maxY": 100, "minZ": -232, "maxZ": 92
             }
+        },
+
+        {
+            "id": "graveler-3",
+            "pokemon": "graveler",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "57-59",
+            "weight": 20,
+            "condition": {
+                "canSeeSky": false,
+                "minX": 1500, "maxX": 2482, "minY": 0, "minZ": 1203, "maxZ": 1757
+            }
         }
     ]
 }

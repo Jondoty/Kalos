@@ -161,6 +161,64 @@
                 "minLureLevel": 3,
                 "maxLureLevel": 3
             }
+        },
+
+        {
+            "id": "poliwhirl-8",
+            "pokemon": "poliwhirl",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "35",
+            "weight": 35.0,
+            "condition": {
+                "minX": 1326, "maxX": 1686, "minZ": 132, "maxZ": 330,
+                "minLureLevel": 2,
+                "maxLureLevel": 2
+            }
+        },
+        {
+            "id": "poliwhirl-8",
+            "pokemon": "poliwhirl",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "45",
+            "weight": 65.0,
+            "condition": {
+                "minX": 1326, "maxX": 1686, "minZ": 132, "maxZ": 330,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        },
+
+        {
+            "id": "poliwhirl-9",
+            "pokemon": "poliwhirl",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "45",
+            "weight": 35.0,
+            "condition": {
+                "minX": 1500, "maxX": 2667, "minZ": 1203, "maxZ": 2620,
+                "minLureLevel": 2,
+                "maxLureLevel": 2
+            }
+        },
+        {
+            "id": "poliwhirl-9",
+            "pokemon": "poliwhirl",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "55",
+            "weight": 60.0,
+            "condition": {
+                "minX": 1500, "maxX": 2667, "minZ": 1203, "maxZ": 2620,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
         }
     ]
 }

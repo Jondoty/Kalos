@@ -33,6 +33,38 @@
             "condition": {
                 "minX": 212, "maxX": 581, "minY": 103, "minZ": -695, "maxZ": -403
             }
+        },
+
+        {
+            "id": "lombre-3",
+            "pokemon": "lombre",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "44-46",
+            "weight": 66,
+            "condition": {
+                "minX": 1326, "maxX": 1686, "minZ": 132, "maxZ": 330
+            }
+        },
+
+        {
+            "id": "lombre-4",
+            "pokemon": "lombre",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "57-59",
+            "weight": 66,
+            "condition": {
+                "minX": 1500, "maxX": 2667, "minZ": 1203, "maxZ": 2620
+            }
         }
     ]
 }

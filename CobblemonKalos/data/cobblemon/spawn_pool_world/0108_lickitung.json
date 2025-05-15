@@ -1,0 +1,20 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "lickitung-1",
+            "pokemon": "lickitung",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "57-59",
+            "weight": 15,
+            "condition": {
+                "canSeeSky": false,
+                "minX": 1500, "maxX": 2482, "minY": 0, "minZ": 1203, "maxZ": 1757
+            }
+        }
+    ]
+}

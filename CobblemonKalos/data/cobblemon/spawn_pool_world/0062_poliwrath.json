@@ -1,0 +1,21 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "poliwrath-1",
+            "pokemon": "poliwrath",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "55",
+            "weight": 5.0,
+            "condition": {
+                "minX": 1518, "maxX": 1646, "minZ": 1345, "maxZ": 1624,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        }
+    ]
+}

@@ -32,6 +32,20 @@
                 ],
                 "minX": 1298, "maxX": 1598, "minZ": -140, "maxZ": 131
             }
+        },
+
+        {
+            "id": "gurdurr-2",
+            "pokemon": "gurdurr",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "57-59",
+            "weight": 20,
+            "condition": {
+                "canSeeSky": false,
+                "minX": 1500, "maxX": 2482, "minY": 0, "minZ": 1203, "maxZ": 1757
+            }
         }
     ]
 }
