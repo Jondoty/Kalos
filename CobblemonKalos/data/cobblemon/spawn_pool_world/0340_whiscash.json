@@ -16,6 +16,21 @@
                 "minLureLevel": 3,
                 "maxLureLevel": 3
             }
+        },
+
+        {
+            "id": "whiscash-2",
+            "pokemon": "whiscash",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "50",
+            "weight": 35.0,
+            "condition": {
+                "minX": 1326, "maxX": 1622, "minZ": 331, "maxZ": 580,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
         }
     ]
 }

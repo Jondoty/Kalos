@@ -97,6 +97,53 @@
             "condition": {
                 "minX": 1500, "maxX": 2667, "minZ": 1203, "maxZ": 2620
             }
+        },
+
+
+        {
+            "id": "floatzel-7",
+            "pokemon": "floatzel",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "50-52",
+            "weight": 40,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:allium"
+                ],
+                "minX": 683, "maxX": 983, "minZ": 299, "maxZ": 562
+            }
+        },
+        {
+            "id": "floatzel-7",
+            "pokemon": "floatzel",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "50-52",
+            "weight": 10,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:red_tulip"
+                ],
+                "minX": 683, "maxX": 983, "minZ": 299, "maxZ": 562
+            }
+        },
+        {
+            "id": "floatzel-8",
+            "pokemon": "floatzel",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "50-52",
+            "weight": 34,
+            "condition": {
+                "minX": 1500, "maxX": 2667, "minZ": 1203, "maxZ": 2620
+            }
         }
     ]
 }

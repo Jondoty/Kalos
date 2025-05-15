@@ -1,0 +1,21 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "dragonair-1",
+            "pokemon": "dragonair",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "50",
+            "weight": 5.0,
+            "condition": {
+                "minX": 683, "maxX": 983, "minZ": 299, "maxZ": 562,
+                "minLureLevel": 3,
+                "maxLureLevel": 3
+            }
+        }
+    ]
+}

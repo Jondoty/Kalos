@@ -1,0 +1,37 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "ursaring-1",
+            "pokemon": "ursaring",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "50-52",
+            "weight": 10,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:allium"
+                ],
+                "minX": 683, "maxX": 983, "minZ": 299, "maxZ": 562
+            }
+        },
+        {
+            "id": "ursaring-1",
+            "pokemon": "ursaring",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "50-52",
+            "weight": 40,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:red_tulip"
+                ],
+                "minX": 683, "maxX": 983, "minZ": 299, "maxZ": 562
+            }
+        }
+    ]
+}

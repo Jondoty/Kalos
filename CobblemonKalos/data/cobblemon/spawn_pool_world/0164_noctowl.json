@@ -4,66 +4,64 @@
     "neededUninstalledMods": [],
     "spawns": [
         {
-            "id": "weepinbell-1",
-            "pokemon": "weepinbell",
+            "id": "noctowl-1",
+            "pokemon": "noctowl",
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
-            "level": "30-32",
-            "weight": 20,
+            "level": "48-50",
+            "weight": 30,
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:short_grass"
                 ],
-                "minX": -342, "maxX": 90, "minZ": -1302, "maxZ": -794
+                "minX": 984, "maxX": 1605, "minZ": 707, "maxZ": 1158
+            }
+        },
+        {
+            "id": "noctowl-1",
+            "pokemon": "noctowl",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "48-50",
+            "weight": 10,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:red_tulip"
+                ],
+                "minX": 984, "maxX": 1605, "minZ": 707, "maxZ": 1158
             }
         },
 
         {
-            "id": "weepinbell-2",
-            "pokemon": "weepinbell",
+            "id": "noctowl-2",
+            "pokemon": "noctowl",
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
-            "level": "34-36",
-            "weight": 20,
-            "condition": {
-                "neededNearbyBlocks": [
-                    "minecraft:dandelion"
-                ],
-                "minX": 212, "maxX": 575, "minZ": -402, "maxZ": -129
-            }
-        },
-
-        {
-            "id": "weepinbell-3",
-            "pokemon": "weepinbell",
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "common",
-            "level": "46-48",
-            "weight": 20,
-            "condition": {
-                "neededNearbyBlocks": [
-                    "minecraft:allium",
-                    "minecraft:pink_tulip"
-                ],
-                "minX": 1326, "maxX": 1622, "minZ": 331, "maxZ": 580
-            }
-        },
-        {
-            "id": "weepinbell-3",
-            "pokemon": "weepinbell",
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "common",
-            "level": "46-48",
+            "level": "48-50",
             "weight": 10,
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:dandelion"
                 ],
-                "minX": 1326, "maxX": 1622, "minZ": 331, "maxZ": 580
+                "minX": 984, "maxX": 1605, "minZ": 707, "maxZ": 1158
+            }
+        },
+        {
+            "id": "noctowl-2",
+            "pokemon": "noctowl",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "48-50",
+            "weight": 30,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:allium"
+                ],
+                "minX": 984, "maxX": 1605, "minZ": 707, "maxZ": 1158
             }
         }
     ]

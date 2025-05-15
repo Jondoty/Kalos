@@ -1,0 +1,40 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "zoroark-1",
+            "pokemon": "zoroark",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "48-50",
+            "weight": 5,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass",
+                    "minecraft:red_tulip"
+                ],
+                "minX": 984, "maxX": 1605, "minZ": 707, "maxZ": 1158
+            }
+        },
+
+        {
+            "id": "zoroark-2",
+            "pokemon": "zoroark",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "48-50",
+            "weight": 10,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:dandelion",
+                    "minecraft:allium"
+                ],
+                "minX": 703, "maxX": 983, "minZ": 563, "maxZ": 842
+            }
+        }
+    ]
+}

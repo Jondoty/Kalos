@@ -16,6 +16,21 @@
                 "minLureLevel": 2,
                 "maxLureLevel": 2
             }
+        },
+
+        {
+            "id": "barboach-2",
+            "pokemon": "barboach",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "35",
+            "weight": 65.0,
+            "condition": {
+                "minX": 1326, "maxX": 1622, "minZ": 331, "maxZ": 580,
+                "minLureLevel": 2,
+                "maxLureLevel": 2
+            }
         }
     ]
 }

@@ -4,57 +4,39 @@
     "neededUninstalledMods": [],
     "spawns": [
         {
-            "id": "carnivine-1",
-            "pokemon": "carnivine",
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "common",
-            "level": "30-32",
-            "weight": 15,
-            "condition": {
-                "neededNearbyBlocks": [
-                    "minecraft:short_grass"
-                ],
-                "minX": -342, "maxX": 90, "minZ": -1302, "maxZ": -794
-            }
-        },
-
-        {
-            "id": "carnivine-2",
-            "pokemon": "carnivine",
-            "type": "pokemon",
-            "presets": [
-                "water"
-            ],
-            "context": "surface",
-            "bucket": "common",
-            "level": "30-32",
-            "weight": 5,
-            "condition": {
-                "minX": -342, "maxX": 90, "minZ": -1302, "maxZ": -794
-            }
-        },
-
-        {
-            "id": "carnivine-3",
-            "pokemon": "carnivine",
+            "id": "sliggoo-1",
+            "pokemon": "sliggoo",
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
             "level": "46-48",
-            "weight": 5,
+            "weight": 10,
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:allium",
-                    "minecraft:pink_tulip",
+                    "minecraft:pink_tulip"
+                ],
+                "minX": 1326, "maxX": 1622, "minZ": 331, "maxZ": 580
+            }
+        },
+        {
+            "id": "sliggoo-1",
+            "pokemon": "sliggoo",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "46-48",
+            "weight": 20,
+            "condition": {
+                "neededNearbyBlocks": [
                     "minecraft:dandelion"
                 ],
                 "minX": 1326, "maxX": 1622, "minZ": 331, "maxZ": 580
             }
         },
         {
-            "id": "carnivine-4",
-            "pokemon": "carnivine",
+            "id": "sliggoo-2",
+            "pokemon": "sliggoo",
             "type": "pokemon",
             "presets": [
                 "water"
@@ -62,7 +44,7 @@
             "context": "surface",
             "bucket": "common",
             "level": "46-48",
-            "weight": 5,
+            "weight": 20,
             "condition": {
                 "minX": 1326, "maxX": 1622, "minZ": 331, "maxZ": 580
             }

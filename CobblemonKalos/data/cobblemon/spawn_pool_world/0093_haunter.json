@@ -61,6 +61,39 @@
                 "canSeeSky": false,
                 "minX": 1500, "maxX": 2482, "minY": 0, "minZ": 1203, "maxZ": 1757
             }
+        },
+
+        {
+            "id": "haunter-4",
+            "pokemon": "haunter",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "46-48",
+            "weight": 5,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:allium",
+                    "minecraft:pink_tulip",
+                    "minecraft:dandelion"
+                ],
+                "minX": 1326, "maxX": 1622, "minZ": 331, "maxZ": 580
+            }
+        },
+        {
+            "id": "haunter-5",
+            "pokemon": "haunter",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "surface",
+            "bucket": "common",
+            "level": "46-48",
+            "weight": 5,
+            "condition": {
+                "minX": 1326, "maxX": 1622, "minZ": 331, "maxZ": 580
+            }
         }
     ]
 }

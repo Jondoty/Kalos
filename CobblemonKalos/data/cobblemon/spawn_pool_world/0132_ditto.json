@@ -1,0 +1,37 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "ditto-1",
+            "pokemon": "ditto",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "48-50",
+            "weight": 20,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:dandelion"
+                ],
+                "minX": 703, "maxX": 983, "minZ": 563, "maxZ": 842
+            }
+        },
+        {
+            "id": "ditto-1",
+            "pokemon": "ditto",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "48-50",
+            "weight": 10,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:allium"
+                ],
+                "minX": 703, "maxX": 983, "minZ": 563, "maxZ": 842
+            }
+        }
+    ]
+}

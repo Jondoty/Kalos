@@ -1,0 +1,40 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "amoonguss-1",
+            "pokemon": "amoonguss",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "48-50",
+            "weight": 25,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass",
+                    "minecraft:red_tulip"
+                ],
+                "minX": 984, "maxX": 1605, "minZ": 707, "maxZ": 1158
+            }
+        },
+
+        {
+            "id": "amoonguss-2",
+            "pokemon": "amoonguss",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "48-50",
+            "weight": 20,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:allium",
+                    "minecraft:dandelion"
+                ],
+                "minX": 703, "maxX": 983, "minZ": 563, "maxZ": 842
+            }
+        }
+    ]
+}
