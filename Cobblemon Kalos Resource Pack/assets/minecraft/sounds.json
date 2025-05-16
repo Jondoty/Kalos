@@ -22,5 +22,8 @@
   "xerneas": {"sounds": ["xerneas"]},
   "yveltal": {"sounds": ["yveltal"]},
   "zapdos": {"sounds": ["zapdos"]},
-  "zygarde": {"sounds": ["zygarde"]}
+  "zygarde": {"sounds": ["zygarde"]},
+
+  "heal": {"sounds": ["heal"]},
+  "itemget": {"sounds": ["itemget"]}
 }
