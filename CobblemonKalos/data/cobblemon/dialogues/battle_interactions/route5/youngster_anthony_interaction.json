@@ -25,7 +25,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        ""
+        "Shorts are the coolest! And the comfiest!"
       ],
       "input": {
         "type": "option",

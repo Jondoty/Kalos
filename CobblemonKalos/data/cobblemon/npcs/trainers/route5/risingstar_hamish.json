@@ -1,6 +1,6 @@
 {
   "hitbox": "player",
-  "resourceIdentifier": "cobblemon:risingstarm",
+  "resourceIdentifier": "cobblemon:risingstar",
   "presets": [
     "cobblemon:trainer_basics"
   ],

@@ -1,6 +1,6 @@
 {
   "hitbox": "player",
-  "resourceIdentifier": "cobblemon:youngsterm",
+  "resourceIdentifier": "cobblemon:youngster",
   "presets": [
     "cobblemon:trainer_basics"
   ],

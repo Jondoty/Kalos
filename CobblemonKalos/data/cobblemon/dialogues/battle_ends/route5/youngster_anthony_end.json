@@ -12,7 +12,7 @@
       "face": {
         "type": "artificial",
         "modelType": "npc",
-        "identifier": "cobblemon:youngsterm",
+        "identifier": "cobblemon:youngster",
         "isLeftSide": true
       }
     }
@@ -22,7 +22,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        ""
+        "Whenever I’m feeling down after losing a battle, I just think, 'At least I’ve still got my shorts!'"
       ],
       "input": {
         "type": "option",
