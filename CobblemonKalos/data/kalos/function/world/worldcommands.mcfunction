@@ -70,6 +70,9 @@ execute as @a[scores={EscapeRopeUse=1..}] run function kalos:hms/escaperope
 #Honey
 execute as @a[scores={HoneyUse=1..}] run function kalos:hms/honey
 
+#Escape Rope
+execute as @a[scores={EscapeRopeUse=1..}] run function kalos:hms/escaperope
+
 
 #------------------------------------------------------------------------------
 #Music commands

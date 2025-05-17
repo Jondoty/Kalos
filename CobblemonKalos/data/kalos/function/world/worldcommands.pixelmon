@@ -147,10 +147,6 @@ scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:
 scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:-106b}]}] MapSelect 10
 execute as @a[scores={MapSelect=1..}] run function kalos:hms/townmap
 
-#Escape Rope
-execute as @a[scores={EscapeRopeUse=1..}] run function kalos:hms/escaperope
-
-
 #Clothing Room Prompts
 execute at @e[type=armor_stand,name=ClothingRoom] run tellraw @a[distance=..6,tag=!ClothingTalked] ["",{"text":"It's a fitting room! What do you want to change?\n    ["},{"text":"Hats","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 40"}},{"text":"]    ["},{"text":"Shirts","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 43"}},{"text":"]    ["},{"text":"Pants","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 46"}},{"text":"]    ["},{"text":"Shoes","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 49"}},{"text":"]"}]
 execute at @e[type=armor_stand,name=ClothingRoom] run scoreboard players enable @a[distance=..6,tag=!ClothingTalked] TalkTrigger

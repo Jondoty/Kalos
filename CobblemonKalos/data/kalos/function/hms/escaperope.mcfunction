@@ -1,10 +1,10 @@
 #If player is currently in a dialogue
 title @s[scores={DialogueTrigger=1..,EscapeRopeUse=1..}] actionbar {"text":"You can't use this while in a dialogue!"}
-give @s[scores={EscapeRopeUse=1..,DialogueTrigger=1..}] ender_eye{display:{Lore:['[{"text":"A long and durable rope.","italic":false}]','[{"text":"Use it to escape instantly","italic":false}]','[{"text":"from a cave.","italic":false}]']}}
+give @s[scores={EscapeRopeUse=1..,DialogueTrigger=1..}] ender_eye
 scoreboard players set @s[scores={EscapeRopeUse=1..,DialogueTrigger=1..}] EscapeRopeUse 0
 
 title @s[scores={TalkTime=1..,EscapeRopeUse=1..}] actionbar {"text":"You can't use this while in a dialogue!"}
-give @s[scores={EscapeRopeUse=1..,TalkTime=1..}] ender_eye{display:{Lore:['[{"text":"A long and durable rope.","italic":false}]','[{"text":"Use it to escape instantly","italic":false}]','[{"text":"from a cave.","italic":false}]']}}
+give @s[scores={EscapeRopeUse=1..,TalkTime=1..}] ender_eye
 scoreboard players set @s[scores={EscapeRopeUse=1..,TalkTime=1..}] EscapeRopeUse 0
 
 
@@ -14,7 +14,6 @@ execute as @s[x=-1542,y=0,z=249,dx=174,dy=256,dz=310,scores={EscapeRopeUse=1..}]
 effect give @s[x=-1542,y=0,z=249,dx=174,dy=256,dz=310,scores={EscapeRopeUse=1..}] minecraft:blindness 3 1 true
 tellraw @s[x=-1542,y=0,z=249,dx=174,dy=256,dz=310,scores={EscapeRopeUse=1..}] {"text":"You used an Escape Rope!","italic":true,"color":"gray"}
 tp @s[x=-1542,y=0,z=249,dx=174,dy=256,dz=310,scores={EscapeRopeUse=1..}] -1475 148 564 0 ~
-scoreboard players set @s[x=-1475,y=148,z=564,distance=..10,scores={EscapeRopeUse=1..}] click 1
 scoreboard players set @s[x=-1475,y=148,z=564,distance=..10,scores={EscapeRopeUse=1..}] EscapeRopeUse 0
 
 
@@ -24,7 +23,6 @@ execute as @s[x=444,y=0,z=-1444,dx=465,dy=126,dz=550,scores={EscapeRopeUse=1..}]
 effect give @s[x=444,y=0,z=-1444,dx=465,dy=126,dz=550,scores={EscapeRopeUse=1..}] minecraft:blindness 3 1 true
 tellraw @s[x=444,y=0,z=-1444,dx=465,dy=126,dz=550,scores={EscapeRopeUse=1..}] {"text":"You used an Escape Rope!","italic":true,"color":"gray"}
 tp @s[x=444,y=0,z=-1444,dx=465,dy=126,dz=550,scores={EscapeRopeUse=1..}] 674 120 -890 0 ~
-scoreboard players set @s[x=674,y=120,z=-890,distance=..10,scores={EscapeRopeUse=1..}] click 1
 scoreboard players set @s[x=674,y=120,z=-890,distance=..10,scores={EscapeRopeUse=1..}] EscapeRopeUse 0
 
 
@@ -35,7 +33,6 @@ execute as @s[x=1720,y=0,z=-232,dx=421,dy=100,dz=324,scores={EscapeRopeUse=1..}]
 effect give @s[x=1720,y=0,z=-232,dx=421,dy=100,dz=324,scores={EscapeRopeUse=1..}] minecraft:blindness 3 1 true
 tellraw @s[x=1720,y=0,z=-232,dx=421,dy=100,dz=324,scores={EscapeRopeUse=1..}] {"text":"You used an Escape Rope!","italic":true,"color":"gray"}
 tp @s[x=1720,y=0,z=-232,dx=421,dy=100,dz=324,scores={EscapeRopeUse=1..}] 1501 110 -42 0 ~
-scoreboard players set @s[x=1501,y=110,z=-42,distance=..10,scores={EscapeRopeUse=1..}] click 1
 scoreboard players set @s[x=1501,y=110,z=-42,distance=..10,scores={EscapeRopeUse=1..}] EscapeRopeUse 0
 
 
@@ -45,7 +42,6 @@ scoreboard players set @s[x=1501,y=110,z=-42,distance=..10,scores={EscapeRopeUse
 execute as @s[x=-1897,y=0,z=-63,dx=257,dy=86,dz=201,scores={EscapeRopeUse=1..}] run kill @e[distance=..10,type=minecraft:eye_of_ender]
 effect give @s[x=-1897,y=0,z=-63,dx=257,dy=86,dz=201,scores={EscapeRopeUse=1..}] minecraft:blindness 3 1 true
 tellraw @s[x=-1897,y=0,z=-63,dx=257,dy=86,dz=201,scores={EscapeRopeUse=1..}] {"text":"You used an Escape Rope!","italic":true,"color":"gray"}
-scoreboard players set @s[x=-1897,y=0,z=-63,dx=257,dy=86,dz=201,scores={EscapeRopeUse=1..}] click 1
 
 #R7 North
 tp @s[x=-1897,y=0,z=-63,dx=257,dy=86,dz=201,scores={EscapeRopeUse=1..,EscapeRope=1}] -1642 103 -36 -90 ~
@@ -75,7 +71,6 @@ scoreboard players set @s[x=-1893,y=134,z=-129,distance=..10,scores={EscapeRopeU
 execute as @s[x=403,y=0,z=-497,dx=144,dy=100,dz=127,scores={EscapeRopeUse=1..}] run kill @e[distance=..10,type=minecraft:eye_of_ender]
 effect give @s[x=403,y=0,z=-497,dx=144,dy=100,dz=127,scores={EscapeRopeUse=1..}] minecraft:blindness 3 1 true
 tellraw @s[x=403,y=0,z=-497,dx=144,dy=100,dz=127,scores={EscapeRopeUse=1..}] {"text":"You used an Escape Rope!","italic":true,"color":"gray"}
-scoreboard players set @s[x=403,y=0,z=-497,dx=144,dy=100,dz=127,scores={EscapeRopeUse=1..}] click 1
 
 #North Entrance
 tp @s[x=403,y=0,z=-497,dx=144,dy=100,dz=127,scores={EscapeRopeUse=1..,EscapeRope=5}] 551 108 -488 -90 ~
@@ -106,7 +101,6 @@ scoreboard players set @s[x=548,y=108,z=-378,distance=..10,scores={EscapeRopeUse
 execute as @s[x=-1847,y=0,z=-675,dx=414,dy=89,dz=507,scores={EscapeRopeUse=1..}] run kill @e[distance=..10,type=minecraft:eye_of_ender]
 effect give @s[x=-1847,y=0,z=-675,dx=414,dy=89,dz=507,scores={EscapeRopeUse=1..}] minecraft:blindness 3 1 true
 tellraw @s[x=-1847,y=0,z=-675,dx=414,dy=89,dz=507,scores={EscapeRopeUse=1..}] {"text":"You used an Escape Rope!","italic":true,"color":"gray"}
-scoreboard players set @s[x=-1847,y=0,z=-675,dx=414,dy=89,dz=507,scores={EscapeRopeUse=1..}] click 1
 
 #Shalour Side
 tp @s[x=-1847,y=0,z=-675,dx=414,dy=89,dz=507,scores={EscapeRopeUse=1..,EscapeRope=9}] -1618 84 -746 180 ~
@@ -126,7 +120,6 @@ scoreboard players set @s[x=-1972,y=118,z=-718,distance=..10,scores={EscapeRopeU
 execute as @s[x=1500,y=0,z=1203,dx=982,dy=256,dz=1417,scores={EscapeRopeUse=1..}] run kill @e[distance=..10,type=minecraft:eye_of_ender]
 effect give @s[x=1500,y=0,z=1203,dx=982,dy=256,dz=1417,scores={EscapeRopeUse=1..}] minecraft:blindness 3 1 true
 tellraw @s[x=1500,y=0,z=1203,dx=982,dy=256,dz=1417,scores={EscapeRopeUse=1..}] {"text":"You used an Escape Rope!","italic":true,"color":"gray"}
-scoreboard players set @s[x=1500,y=0,z=1203,dx=982,dy=256,dz=1417,scores={EscapeRopeUse=1..}] click 1
 
 
 #Victory Road Pokemon League
@@ -153,5 +146,5 @@ scoreboard players set @s[x=693,y=116,z=314,distance=..10,scores={EscapeRopeUse=
 #Not in area where Escape Rope works
 execute as @s[scores={EscapeRopeUse=1..}] run kill @e[distance=..10,type=minecraft:eye_of_ender]
 tellraw @s[scores={EscapeRopeUse=1..}] ["",{"text":"Mom's words echoed... ","italic":true,"color":"gray"},{"selector":"@s","italic":true,"color":"gray"},{"text":"! There's a time and place for everything! But not now.","italic":true,"color":"gray"}]
-give @s[scores={EscapeRopeUse=1..}] ender_eye{display:{Lore:['[{"text":"A long and durable rope.","italic":false}]','[{"text":"Use it to escape instantly","italic":false}]','[{"text":"from a cave.","italic":false}]']}}
+give @s[scores={EscapeRopeUse=1..}] ender_eye
 scoreboard players set @s[scores={EscapeRopeUse=1..}] EscapeRopeUse 0
