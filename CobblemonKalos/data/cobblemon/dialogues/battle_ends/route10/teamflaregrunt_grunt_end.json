@@ -1,0 +1,45 @@
+{
+  "initializationAction": [
+    "c.npc.set_chatting();",
+    "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 3');",
+    "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+    "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $920 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
+    "q.run_command('scoreboard players add ' + q.player.username + ' Money 920');"
+  ],
+  "speakers": {
+    "npc": {
+      "name": "Team Flare Grunt",
+      "face": {
+        "type": "artificial",
+        "modelType": "npc",
+        "identifier": "cobblemon:teamflaregrunt",
+        "isLeftSide": true
+      }
+    }
+  },
+  "pages": [
+    {
+      "id": "greeting",
+      "speaker": "npc",
+      "lines": [
+        "You may have beaten me...again. But when I lose, I go out in style!"
+      ],
+      "input": {
+        "type": "option",
+        "vertical": false,
+        "options": [
+          {
+            "text": "Close",
+            "value": "close",
+            "action": [
+              "q.dialogue.close();"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "escapeAction": [
+    "q.dialogue.close();"
+  ]
+}

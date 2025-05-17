@@ -1,0 +1,43 @@
+{
+  "hitbox": "player",
+  "resourceIdentifier": "cobblemon:hiker",
+  "presets": [
+    "cobblemon:trainer_basics"
+  ],
+  "interaction": {
+    "type": "dialogue",
+    "dialogue": "cobblemon:hiker_dunstan_interaction"
+  },
+  "name": "Dunstan",
+  "party": {
+    "type": "simple",
+    "pokemon": [
+      "Sandile level=22",
+      "Dwebble level=23",
+      "Diggersby level=24"
+    ]
+  },
+  "config": [
+    {
+      "variableName": "challenge_cooldown",
+      "displayName": "Cooldown",
+      "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
+      "type": "NUMBER",
+      "defaultValue": "0"
+    },
+    {
+      "variableName": "can_rechallenge",
+      "displayName": "Rechallenging",
+      "description": "This NPC can be battled multiple times.",
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    {
+      "variableName": "on_player_wins",
+      "displayName": "npc.variable.on_player_wins.name",
+      "description": "npc.variable.on_player_wins.desc",
+      "type": "TEXT",
+      "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue hiker_dunstan_end @s');"
+    }
+  ]
+}

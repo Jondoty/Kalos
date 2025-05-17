@@ -1,0 +1,41 @@
+{
+  "hitbox": "player",
+  "resourceIdentifier": "cobblemon:battlegirl",
+  "presets": [
+    "cobblemon:trainer_basics"
+  ],
+  "interaction": {
+    "type": "dialogue",
+    "dialogue": "cobblemon:battlegirl_gerardine_interaction"
+  },
+  "name": "Gerardine",
+  "party": {
+    "type": "simple",
+    "pokemon": [
+      "Meinfoo level=28"
+    ]
+  },
+  "config": [
+    {
+      "variableName": "challenge_cooldown",
+      "displayName": "Cooldown",
+      "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
+      "type": "NUMBER",
+      "defaultValue": "0"
+    },
+    {
+      "variableName": "can_rechallenge",
+      "displayName": "Rechallenging",
+      "description": "This NPC can be battled multiple times.",
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    {
+      "variableName": "on_player_wins",
+      "displayName": "npc.variable.on_player_wins.name",
+      "description": "npc.variable.on_player_wins.desc",
+      "type": "TEXT",
+      "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue battlegirl_gerardine_end @s');"
+    }
+  ]
+}

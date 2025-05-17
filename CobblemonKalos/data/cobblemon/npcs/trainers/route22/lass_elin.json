@@ -1,0 +1,42 @@
+{
+  "hitbox": "player",
+  "resourceIdentifier": "cobblemon:lass",
+  "presets": [
+    "cobblemon:trainer_basics"
+  ],
+  "interaction": {
+    "type": "dialogue",
+    "dialogue": "cobblemon:lass_elin_interaction"
+  },
+  "name": "Elin",
+  "party": {
+    "type": "simple",
+    "pokemon": [
+      "Goldeen level=6",
+      "Marill level=6"
+    ]
+  },
+  "config": [
+    {
+      "variableName": "challenge_cooldown",
+      "displayName": "Cooldown",
+      "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
+      "type": "NUMBER",
+      "defaultValue": "0"
+    },
+    {
+      "variableName": "can_rechallenge",
+      "displayName": "Rechallenging",
+      "description": "This NPC can be battled multiple times.",
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    {
+      "variableName": "on_player_wins",
+      "displayName": "npc.variable.on_player_wins.name",
+      "description": "npc.variable.on_player_wins.desc",
+      "type": "TEXT",
+      "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue lass_elin_end @s');"
+    }
+  ]
+}

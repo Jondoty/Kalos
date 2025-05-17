@@ -1,0 +1,56 @@
+{
+  "initializationAction": [
+    "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 18');",
+    "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');"
+  ],
+  "escapeAction": [
+    "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 0');",
+    "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+    "q.dialogue.close();"
+  ],
+  "names": [
+    "Mia"
+  ],
+  "speakers": {
+    "npc": {
+      "name": {
+        "type": "expression",
+        "expression": "q.npc.name"
+      },
+      "face": "q.npc.face();"
+    }
+  },
+  "pages": [
+    {
+      "id": "greeting",
+      "speaker": "npc",
+      "lines": [
+        "Hey! Hey! Listen! I'm gonna win this battle!"
+      ],
+      "input": {
+        "type": "option",
+        "vertical": false,
+        "options": [
+          {
+            "text": "§c⚔ Battle ⚔§r",
+            "value": "battle",
+            "action": [
+              "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 34');",
+              "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+              "v.battle = q.npc.start_battle(q.player);"
+            ]
+          },
+          {
+            "text": "No",
+            "value": "no",
+            "action": [
+              "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 0');",
+              "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+              "q.dialogue.close();"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
