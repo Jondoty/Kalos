@@ -1,0 +1,1 @@
+give @s minecraft:lingering_potion[potion_contents={custom_color:16701501},custom_name='["",{"text":"Honey","italic":false,"color":"yellow"}]',lore=['["",{"text":"A sweet honey with a lush aroma","italic":false}]','["",{"text":"that attracts wild Pokémon when","italic":false}]','["",{"text":"it is used in tall grass or caves.","italic":false}]']]
