@@ -1,0 +1,43 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:olympia",
+    "presets": [
+        "cobblemon:trainer_basics"
+    ],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:olympia_gym_interaction"
+    },
+    "name": "Olympia",
+    "party": {
+        "type": "simple",
+        "pokemon": [
+            "Sigilyph level=44 moves=psychic,airslash,lightscreen,reflect",
+            "Slowking level=45 moves=psychic,calmmind,powergem,yawn",
+            "Meowstic level=48 moves=psychic,calmmind,fakeout,shadowball"
+        ]
+    },
+    "config": [
+        {
+            "variableName": "challenge_cooldown",
+            "displayName": "Cooldown",
+            "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
+            "type": "NUMBER",
+            "defaultValue": "0"
+        },
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue olympia_gym_end @s');"
+        }
+    ]
+}

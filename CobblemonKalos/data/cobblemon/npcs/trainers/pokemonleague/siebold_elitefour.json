@@ -1,0 +1,44 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:siebold",
+    "presets": [
+        "cobblemon:trainer_basics"
+    ],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:siebold_elitefour_interaction"
+    },
+    "name": "Siebold",
+    "party": {
+        "type": "simple",
+        "pokemon": [
+            "Clawitzer level=63 moves=dragonpulse,waterpulse,aurasphere,darkpulse",
+            "Starmie level=63 moves=psychic,lightscreen,surf,dazzlinggleam",
+            "Gyarados level=63 moves=waterfall,icefang,dragondance,earthquake",
+            "Barbaracle level=65 moves=stoneedge,razorshell,crosschop,xscissor"
+        ]
+    },
+    "config": [
+        {
+            "variableName": "challenge_cooldown",
+            "displayName": "Cooldown",
+            "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
+            "type": "NUMBER",
+            "defaultValue": "0"
+        },
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue siebold_elitefour_end @s');"
+        }
+    ]
+}

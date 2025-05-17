@@ -1,0 +1,119 @@
+{
+    "speakers": {
+        "npc": {
+            "name": {
+                "type": "expression",
+                "expression": "q.npc.name"
+            },
+            "face": "q.npc.face();"
+        },
+        "player": {
+            "face": "q.player.face();",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "I've been waiting in eager anticipation!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "What have I been waiting for? For a worthy challenger to appear!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "It's quite an achievement to have climbed all the way up here."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('battle_prompt');"
+                    }
+                ]
+            }
+        },
+       {
+            "id": "battle_prompt",
+            "speaker": "npc",
+            "lines": [
+                "Very impressive, actually! I have a feeling that our battle will turn out to be worth the wait!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "§c⚔ Battle ⚔§r",
+                        "value": "battle",
+                        "action": "q.dialogue.set_page('battle_start');"
+                    },
+                    {
+                        "text": "No",
+                        "value": "no",
+                        "action": "q.dialogue.close();"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "battle_start",
+            "speaker": "npc",
+            "lines": [
+                "I hope you'll show me that your skill as a Trainer surpasses even mine."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [              
+                            "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 29');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.dialogue.close();",
+                            "v.battle = q.npc.start_battle(q.player);"]
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,340 @@
+{
+    "speakers": {
+        "npc": {
+            "name": {
+                "type": "expression",
+                "expression": "q.npc.name"
+            },
+            "face": "q.npc.face();"
+        },
+        "player": {
+            "face": "q.player.face();",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "... ... ... No, I simply can't say."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "You there! Young trainer! "
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "I have a question I must pose to you."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "npc",
+            "lines": [
+                "Do you think Pokémon battling can ever be worthy of being called an art?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Yes",
+                        "value": "yes",
+                        "action": "q.dialogue.set_page('yes1');"
+                    },
+                    {
+                        "text": "No",
+                        "value": "no",
+                        "action": "q.dialogue.set_page('no1');"
+                    }
+                ]
+            }
+        },
+
+
+
+
+    {
+            "id": "yes1",
+            "speaker": "npc",
+            "lines": [
+                "... ... ... Indeed."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('yes2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "yes2",
+            "speaker": "npc",
+            "lines": [
+                "You see, cooking is the type of art that disappears as soon as it is completed."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('yes3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "yes3",
+            "speaker": "npc",
+            "lines": [
+                "Pokémon battles are the same."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('yes4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "yes4",
+            "speaker": "npc",
+            "lines": [
+                "Even memories of sweet victory soon fade after the battle ends."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('yes5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "yes5",
+            "speaker": "npc",
+            "lines": [
+                "To devote yourself entirely to such a life, made up of fleeting experiences--that is truly artful."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "§c⚔ Battle ⚔§r",
+                        "value": "battle",
+                        "action": [              
+                            "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 25');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.dialogue.close();",
+                            "v.battle = q.npc.start_battle(q.player);"]
+                    },
+                    {
+                        "text": "No",
+                        "value": "no",
+                        "action": "q.dialogue.close();"
+                    }
+                ]
+            }
+        },
+
+
+{
+            "id": "no1",
+            "speaker": "npc",
+            "lines": [
+                "Fool! You silly, unseeing child!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('no2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "no2",
+            "speaker": "npc",
+            "lines": [
+                "If all you seek in life is to fill your stomach with some tasteless matter, then why are there Chefs in this world?!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('no3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "no3",
+            "speaker": "npc",
+            "lines": [
+                "We labor tirelessly to make something wonderful that will disappear from sight as soon as it is enjoyed."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('no4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "no4",
+            "speaker": "npc",
+            "lines": [
+                "That is the life of a Chef!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('no5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "no5",
+            "speaker": "npc",
+            "lines": [
+                "That is the life of a Trainer!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "§c⚔ Battle ⚔§r",
+                        "value": "battle",
+                        "action": [              
+                            "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 25');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.dialogue.close();",
+                            "v.battle = q.npc.start_battle(q.player);"]
+                    },
+                    {
+                        "text": "No",
+                        "value": "no",
+                        "action": "q.dialogue.close();"
+                    }
+                ]
+            }
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+       {
+            "id": "battle_prompt",
+            "speaker": "npc",
+            "lines": [
+                "Ready? En garde!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "§c⚔ Battle ⚔§r",
+                        "value": "battle",
+                        "action": [              
+                            "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 25');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.dialogue.close();",
+                            "v.battle = q.npc.start_battle(q.player);"]
+                    },
+                    {
+                        "text": "No",
+                        "value": "no",
+                        "action": "q.dialogue.close();"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,153 @@
+{
+    "initializationAction": [
+        "c.npc.set_chatting();",
+        "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 5');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+        "q.run_command('execute as ' + q.player.username + ' run tag ' + q.player.username + ' add Diantha');",
+        "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $16320 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
+        "q.run_command('scoreboard players add ' + q.player.username + ' Money 16320');"
+    ],
+    "speakers": {
+        "npc": {
+            "name": "Diantha",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:diantha",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "Witnessing the noble spirits of you and your Pokémon in battle has really touched my heart..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "I-I'm so choked up that it's hard to know what I should say, but I...I..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "I'm just so glad at this moment that I was good enough to be the Champion..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "npc",
+            "lines": [
+                "After all, it gave me the chance to meet and battle with you and your wonderful Pokémon!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "npc",
+            "lines": [
+                "Now I understand just why dear Augustine--that's Professor Sycamore to you--said he had to get everything ready for the new Champion!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "npc",
+            "lines": [
+                "He'll be waiting for us in Lumiose City, but before I take you there..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "npc",
+            "lines": [
+                "My dear trainer, would you mind coming this way with me?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "escapeAction": [
+    ]
+}

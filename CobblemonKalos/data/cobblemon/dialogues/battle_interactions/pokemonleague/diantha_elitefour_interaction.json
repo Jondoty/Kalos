@@ -1,0 +1,138 @@
+{
+    "speakers": {
+        "npc": {
+            "name": {
+                "type": "expression",
+                "expression": "q.npc.name"
+            },
+            "face": "q.npc.face();"
+        },
+        "player": {
+            "face": "q.player.face();",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "Welcome at last, dear Trainer. As you must know, I am the Champion, Diantha."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "Oh, but you are... You're the child I spoke to in Coumarine City, aren't you?!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "Then that means that you are also the one that dear Augustine said..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "npc",
+            "lines": [
+                "Of course! How could I--?!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "npc",
+            "lines": [
+                "Oh, I must look like such a fool not to recognize you sooner!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('battle_prompt');"
+                    }
+                ]
+            }
+        },
+        
+       {
+            "id": "battle_prompt",
+            "speaker": "npc",
+            "lines": [
+                "I can't wait to see what you and your Pokémon are capable of now that I know exactly what it is you've done already!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "§c⚔ Battle ⚔§r",
+                        "value": "battle",
+                        "action": [              
+                            "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 26');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.dialogue.close();",
+                            "v.battle = q.npc.start_battle(q.player);"]
+                    },
+                    {
+                        "text": "No",
+                        "value": "no",
+                        "action": "q.dialogue.close();"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,261 @@
+{
+    "initializationAction": [
+        "c.npc.set_chatting();",
+        "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 2');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+        "q.run_command('execute as ' + q.player.username + ' run tag ' + q.player.username + ' add Korrina');",
+        "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $5120 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
+        "q.run_command('scoreboard players add ' + q.player.username + ' Money 5120');"
+    ],
+    "speakers": {
+        "npc": {
+            "name": "Korrina",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:korrina",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "How could it be?!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "Oh! I have been defeated!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "Alack, alay! Lady Korrina gave a terrible display!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "npc",
+            "lines": [
+                "This is it. I must give up my title and admit that your strength far exceeds--"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "npc",
+            "lines": [
+                "Just teasing! But here's your Badge. Boy, you'll be rolling in 'em soon!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "npc",
+            "lines": [
+                "Look... I do have to apologize."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "npc",
+            "lines": [
+                "You'll have to make it up to the top of the Tower of Mastery if you want the Mega Ring."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page8');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "npc",
+            "lines": [
+                "I'm sorry for sending you this way and that."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page9');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page9",
+            "speaker": "npc",
+            "lines": [
+                "I swear, I'm not giving you the runaround! You've done great rolling with the punches."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page10');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page10",
+            "speaker": "npc",
+            "lines": [
+                "So great that I'd like to ask you a favor..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page11');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page11",
+            "speaker": "npc",
+            "lines": [
+                "Battle me again, won't you? But this time, it won't be just another Gym Battle..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page12');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page12",
+            "speaker": "npc",
+            "lines": [
+                "I want a battle between equals! As two Trainers who can use Mega Evolution!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page13');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page13",
+            "speaker": "npc",
+            "lines": [
+                "I'll be waiting for you with Lucario at the top of the Tower of Mastery!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "escapeAction": [
+    ]
+}

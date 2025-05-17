@@ -1,0 +1,46 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:diantha",
+    "presets": [
+        "cobblemon:trainer_basics"
+    ],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:diantha_elitefour_interaction"
+    },
+    "name": "Diantha",
+    "party": {
+        "type": "simple",
+        "pokemon": [
+            "Hawlucha level=64 moves=poisonjab,flyingpress,swordsdance,xscissor",
+            "Tyrantrum level=65 moves=headsmash,dragonclaw,earthquake,crunch",
+            "Aurorus level=65 moves=thunder,blizzard,reflect,lightscreen",
+            "Gourgeist level=65 moves=trickortreat,phantomforce,seedbomb,shadowsneak",
+            "Goodra level=66 moves=focusblast,dragonpulse,fireblast,muddywater",
+            "Gardevoir mega_evolution=mega level=68 moves=thunderbolt,moonblast,psychic,shadowball"
+        ]
+    },
+    "config": [
+        {
+            "variableName": "challenge_cooldown",
+            "displayName": "Cooldown",
+            "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
+            "type": "NUMBER",
+            "defaultValue": "0"
+        },
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue diantha_elitefour_end @s');"
+        }
+    ]
+}

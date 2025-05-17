@@ -1,0 +1,44 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:malva",
+    "presets": [
+        "cobblemon:trainer_basics"
+    ],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:malva_elitefour_interaction"
+    },
+    "name": "Malva",
+    "party": {
+        "type": "simple",
+        "pokemon": [
+            "Pyroar level=63 moves=hypervoice,nobleroar,flamethrower,wildcharge",
+            "Torkoal level=63 moves=curse,flamewheel,stoneedge,earthquake",
+            "Chandelure level=63 moves=flamethrower,confuseray,confide,shadowball",
+            "Talonflame level=65 moves=quickattack,bravebird,flareblitz,flail"
+        ]
+    },
+    "config": [
+        {
+            "variableName": "challenge_cooldown",
+            "displayName": "Cooldown",
+            "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
+            "type": "NUMBER",
+            "defaultValue": "0"
+        },
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue malva_elitefour_end @s');"
+        }
+    ]
+}

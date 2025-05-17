@@ -1,0 +1,44 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:wikstrom",
+    "presets": [
+        "cobblemon:trainer_basics"
+    ],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:wikstrom_elitefour_interaction"
+    },
+    "name": "Wikstrom",
+    "party": {
+        "type": "simple",
+        "pokemon": [
+            "Klefki level=63 moves=spikes,torment,dazzlinggleam,flashcannon",
+            "Probopass level=63 moves=powergem,earthpower,flashcannon,discharge",
+            "Scizor level=63 moves=xscissor,ironhead,bulletpunch,nightslash",
+            "Aegislash level=65 moves=sacredsword,ironhead,kingsshield,shadowclaw"
+        ]
+    },
+    "config": [
+        {
+            "variableName": "challenge_cooldown",
+            "displayName": "Cooldown",
+            "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
+            "type": "NUMBER",
+            "defaultValue": "0"
+        },
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue wikstrom_elitefour_end @s');"
+        }
+    ]
+}

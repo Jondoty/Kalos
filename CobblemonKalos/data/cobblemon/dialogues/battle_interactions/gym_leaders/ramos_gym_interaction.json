@@ -1,0 +1,137 @@
+{
+    "speakers": {
+        "npc": {
+            "name": {
+                "type": "expression",
+                "expression": "q.npc.name"
+            },
+            "face": "q.npc.face();"
+        },
+        "player": {
+            "face": "q.player.face();",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "Ho! So yeh've made it clear up here!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "I'm the Gym Leader. Ramos's the name."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "So what'd yeh think, whippersnapper?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "npc",
+            "lines": [
+                "Did yeh enjoy the garden playground I made with all these sturdy plants o' mine?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "npc",
+            "lines": [
+                "Their strength is a sign o' my strength as a gardener and a Gym Leader!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('battle_prompt');"
+                    }
+                ]
+            }
+        },
+       {
+            "id": "battle_prompt",
+            "speaker": "npc",
+            "lines": [
+                "Yeh sure yer up to facing all that?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "§c⚔ Battle ⚔§r",
+                        "value": "battle",
+                        "action": [              
+                            "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 29');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.dialogue.close();",
+                            "v.battle = q.npc.start_battle(q.player);"]
+                    },
+                    {
+                        "text": "No",
+                        "value": "no",
+                        "action": "q.dialogue.close();"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "initializationAction": [
+        "c.npc.set_chatting();",
+        "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 2');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+        "q.run_command('execute as ' + q.player.username + ' run tag ' + q.player.username + ' add Siebold');",
+        "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $13000 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
+        "q.run_command('scoreboard players add ' + q.player.username + ' Money 13000');"
+    ],
+    "speakers": {
+        "npc": {
+            "name": "Siebold",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:siebold",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "I shall store my memory of you and your Pokémon forever away within my heart."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "Devote yourself entirely, so even that which will fade and disappear is ingrained forever upon your heart and mind!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "That is the only fate for any human."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "escapeAction": [
+    ]
+}

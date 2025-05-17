@@ -1,0 +1,162 @@
+{
+    "initializationAction": [
+        "c.npc.set_chatting();",
+        "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 2');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+        "q.run_command('execute as ' + q.player.username + ' run tag ' + q.player.username + ' add Clemont');",
+        "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $5920 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
+        "q.run_command('scoreboard players add ' + q.player.username + ' Money 5920');"
+    ],
+    "speakers": {
+        "clemont": {
+            "name": "Clemont",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:clemont",
+                "isLeftSide": true
+            }
+        },
+        "bonnie": {
+            "name": "Bonnie",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:bonnie",
+                "isLeftSide": false
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "bonnie",
+            "lines": [
+                "M-my brother... You lost?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "clemont",
+            "lines": [
+                "Oh, Bonnie... When will you learn there's no shame in losing?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "clemont",
+            "lines": [
+                "I'm glad whenever I get to learn something new thanks to strong challengers like this trainer here."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "clemont",
+            "lines": [
+                "Now, to the victor go the spoils! This Voltage Badge belongs to you!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "clemont",
+            "lines": [
+                "Look, I'm not... It's not like I'm just trying to make myself stronger or..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "clemont",
+            "lines": [
+                "... ... ..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "clemont",
+            "lines": [
+                "All I'm trying to do is enjoy every day to the fullest with my Pokémon, while doing the science that I love with my inventing."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "escapeAction": [
+    ]
+}
