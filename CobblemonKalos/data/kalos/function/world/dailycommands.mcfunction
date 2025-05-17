@@ -31,7 +31,7 @@ execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] run 
 
 
 #Resets Tierno's daily Heart Scale
-scoreboard players set @a[scores={TrainerLoot76=1..}] TrainerLoot76 0
+#scoreboard players set @a[scores={TrainerLoot76=1..}] TrainerLoot76 0
 
 #Resets Rock Smash rocks, Trash Cans, and Ambush Shadows
 fill -672 100 1273 -687 100 1344 minecraft:redstone_block replace minecraft:gold_block
@@ -188,22 +188,22 @@ fill -1235 99 26 -1272 99 26 minecraft:farmland replace minecraft:dirt
 fill -1235 99 28 -1272 99 28 minecraft:farmland replace minecraft:dirt
 fill -1235 99 30 -1272 99 30 minecraft:farmland replace minecraft:dirt
 
-fill -1189 99 15 -1226 99 15 minecraft:farmland replace minecraft:grass
-fill -1189 99 17 -1226 99 17 minecraft:farmland replace minecraft:grass
-fill -1189 99 19 -1226 99 19 minecraft:farmland replace minecraft:grass
+fill -1189 99 15 -1226 99 15 minecraft:farmland replace minecraft:grass_block
+fill -1189 99 17 -1226 99 17 minecraft:farmland replace minecraft:grass_block
+fill -1189 99 19 -1226 99 19 minecraft:farmland replace minecraft:grass_block
 
-fill -1189 99 26 -1226 99 26 minecraft:farmland replace minecraft:grass
-fill -1189 99 28 -1226 99 28 minecraft:farmland replace minecraft:grass
-fill -1189 99 30 -1226 99 30 minecraft:farmland replace minecraft:grass
+fill -1189 99 26 -1226 99 26 minecraft:farmland replace minecraft:grass_block
+fill -1189 99 28 -1226 99 28 minecraft:farmland replace minecraft:grass_block
+fill -1189 99 30 -1226 99 30 minecraft:farmland replace minecraft:grass_block
 
-fill -1235 99 4 -1272 99 4 minecraft:farmland replace minecraft:grass
-fill -1235 99 6 -1272 99 6 minecraft:farmland replace minecraft:grass
-fill -1235 99 8 -1272 99 8 minecraft:farmland replace minecraft:grass
+fill -1235 99 4 -1272 99 4 minecraft:farmland replace minecraft:grass_block
+fill -1235 99 6 -1272 99 6 minecraft:farmland replace minecraft:grass_block
+fill -1235 99 8 -1272 99 8 minecraft:farmland replace minecraft:grass_block
 
-fill -1235 99 15 -1272 99 15 minecraft:farmland replace minecraft:grass
-fill -1235 99 17 -1272 99 17 minecraft:farmland replace minecraft:grass
-fill -1235 99 19 -1272 99 19 minecraft:farmland replace minecraft:grass
+fill -1235 99 15 -1272 99 15 minecraft:farmland replace minecraft:grass_block
+fill -1235 99 17 -1272 99 17 minecraft:farmland replace minecraft:grass_block
+fill -1235 99 19 -1272 99 19 minecraft:farmland replace minecraft:grass_block
 
-fill -1235 99 26 -1272 99 26 minecraft:farmland replace minecraft:grass
-fill -1235 99 28 -1272 99 28 minecraft:farmland replace minecraft:grass
-fill -1235 99 30 -1272 99 30 minecraft:farmland replace minecraft:grass
+fill -1235 99 26 -1272 99 26 minecraft:farmland replace minecraft:grass_block
+fill -1235 99 28 -1272 99 28 minecraft:farmland replace minecraft:grass_block
+fill -1235 99 30 -1272 99 30 minecraft:farmland replace minecraft:grass_block
