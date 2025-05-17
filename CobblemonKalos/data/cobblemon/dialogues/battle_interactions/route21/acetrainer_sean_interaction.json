@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Once you've memorized all the pokemon moves and Abilities, victory just comes naturally!"
+                "Once you've memorized all the Pokémon moves and Abilities, victory just comes naturally!"
             ],
             "input": {
                 "type": "option",

@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Become one with nature to understand how pokemon truly feel!"
+                "Become one with nature to understand how Pokémon truly feel!"
             ],
             "input": {
                 "type": "option",

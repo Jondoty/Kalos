@@ -25,7 +25,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "I care less about battling than just showing off my awesome Pokemon to everyone!"
+        "I care less about battling than just showing off my awesome Pokémon to everyone!"
       ],
       "input": {
         "type": "option",

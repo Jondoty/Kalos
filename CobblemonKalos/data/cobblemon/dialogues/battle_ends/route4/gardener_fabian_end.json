@@ -22,7 +22,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "Looks like your combination with your Pokemon was even more honed than mine!"
+        "Looks like your combination with your Pokémon was even more honed than mine!"
       ],
       "input": {
         "type": "option",

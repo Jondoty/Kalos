@@ -25,7 +25,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "Only those with a noble spirit can try to take on the challenge of the Cyllage City Pokemon Gym"
+        "Only those with a noble spirit can try to take on the challenge of the Cyllage City Pokémon Gym"
       ],
       "input": {
         "type": "option",

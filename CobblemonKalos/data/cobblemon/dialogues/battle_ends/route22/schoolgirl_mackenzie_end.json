@@ -22,7 +22,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "To tell you the truth, Bunnelby is the only Pokemon I've got..."
+        "To tell you the truth, Bunnelby is the only Pokémon I've got..."
       ],
       "input": {
         "type": "option",

@@ -22,7 +22,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "It looks like you and your pokemon are even more in tune with one another than my team is!"
+        "It looks like you and your Pokémon are even more in tune with one another than my team is!"
       ],
       "input": {
         "type": "option",

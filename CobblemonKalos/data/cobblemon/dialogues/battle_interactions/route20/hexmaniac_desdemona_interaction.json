@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "My dark magic along with my pokemon cannot be defeated!"
+                "My dark magic along with my Pokémon cannot be defeated!"
             ],
             "input": {
                 "type": "option",

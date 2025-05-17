@@ -22,7 +22,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Hmmmmmm?! Your pokemon are the ones that got experience from this match?"
+                "Hmmmmmm?! Your Pokémon are the ones that got experience from this match?"
             ],
             "input": {
                 "type": "option",

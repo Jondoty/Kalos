@@ -22,7 +22,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "You and your pokemon were far more powerful than I could have imagined..."
+        "You and your Pokémon were far more powerful than I could have imagined..."
       ],
       "input": {
         "type": "option",

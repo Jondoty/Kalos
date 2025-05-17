@@ -25,7 +25,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "This grass is almost as tall as I am! Yer tellin' me there's Pokemon lurkin' in here!"
+        "This grass is almost as tall as I am! Yer tellin' me there's Pokémon lurkin' in here!"
       ],
       "input": {
         "type": "option",

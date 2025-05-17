@@ -22,7 +22,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "Excellent! Thanks! It's been ages since I worked up a good sweat like this from a Pokemon battle."
+        "Excellent! Thanks! It's been ages since I worked up a good sweat like this from a Pokémon battle."
       ],
       "input": {
         "type": "option",

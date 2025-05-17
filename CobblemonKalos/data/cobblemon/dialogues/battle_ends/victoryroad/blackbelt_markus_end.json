@@ -22,7 +22,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Ouch! You mean running around in my bare feet didn't help me improve at pokemon battling?"
+                "Ouch! You mean running around in my bare feet didn't help me improve at Pokémon battling?"
             ],
             "input": {
                 "type": "option",

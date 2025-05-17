@@ -25,7 +25,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "When two trainers' eyes meet, a Pokemon battle must begin!"
+        "When two trainers' eyes meet, a Pokémon battle must begin!"
       ],
       "input": {
         "type": "option",

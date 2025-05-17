@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "\u201cTime for a pokemon battle.\u201d ...Is what the me from 10 seconds ago said."
+                "\u201cTime for a Pokémon battle.\u201d ...Is what the me from 10 seconds ago said."
             ],
             "input": {
                 "type": "option",

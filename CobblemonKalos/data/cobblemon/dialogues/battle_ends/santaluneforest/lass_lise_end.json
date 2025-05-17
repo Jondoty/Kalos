@@ -22,7 +22,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "I've got to keep battling and training up my really awesome Pokemon team!"
+        "I've got to keep battling and training up my really awesome Pokémon team!"
       ],
       "input": {
         "type": "option",

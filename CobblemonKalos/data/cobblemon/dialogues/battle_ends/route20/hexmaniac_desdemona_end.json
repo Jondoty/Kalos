@@ -22,7 +22,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "My dark magic didn't work? You and your pokemon are shining too brightly!"
+                "My dark magic didn't work? You and your Pokémon are shining too brightly!"
             ],
             "input": {
                 "type": "option",

@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "We are pokemon Rangers! We draw out the power in our pokemon!"
+                "We are Pokémon Rangers! We draw out the power in our pokemon!"
             ],
             "input": {
                 "type": "option",

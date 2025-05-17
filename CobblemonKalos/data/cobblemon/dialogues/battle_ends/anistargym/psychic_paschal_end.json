@@ -22,7 +22,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Yes! When you remain calm and undistracted, your pokemon can realize their full potential."
+                "Yes! When you remain calm and undistracted, your Pokémon can realize their full potential."
             ],
             "input": {
                 "type": "option",

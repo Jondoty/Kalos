@@ -25,7 +25,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "The rules of a Pokemon battle are simple, you see. Rule one: battle, Rule two: win!"
+        "The rules of a Pokémon battle are simple, you see. Rule one: battle, Rule two: win!"
       ],
       "input": {
         "type": "option",

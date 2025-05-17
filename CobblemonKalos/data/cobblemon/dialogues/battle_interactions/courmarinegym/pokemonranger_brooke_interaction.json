@@ -25,7 +25,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "My pokemon and I will share the joy of defeating you!"
+        "My Pokémon and I will share the joy of defeating you!"
       ],
       "input": {
         "type": "option",

@@ -22,7 +22,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "You get to see all kinds of Pokemon by hangingout in a Gym!"
+        "You get to see all kinds of Pokémon by hangingout in a Gym!"
       ],
       "input": {
         "type": "option",

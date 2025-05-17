@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Brrr... It's so cold! You there! You came at just the right time! Let's warm our bodies with some vigorous pokemon battling!"
+                "Brrr... It's so cold! You there! You came at just the right time! Let's warm our bodies with some vigorous Pokémon battling!"
             ],
             "input": {
                 "type": "option",

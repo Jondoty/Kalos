@@ -22,7 +22,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "You and your Pokemon look like you have something stronger than mere love!"
+        "You and your Pokémon look like you have something stronger than mere love!"
       ],
       "input": {
         "type": "option",

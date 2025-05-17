@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Aren't pokemon moves just the coolest? I really wish I could use them..."
+                "Aren't Pokémon moves just the coolest? I really wish I could use them..."
             ],
             "input": {
                 "type": "option",

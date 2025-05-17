@@ -22,7 +22,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "What a beautiful combination you and your pokemon make!"
+                "What a beautiful combination you and your Pokémon make!"
             ],
             "input": {
                 "type": "option",

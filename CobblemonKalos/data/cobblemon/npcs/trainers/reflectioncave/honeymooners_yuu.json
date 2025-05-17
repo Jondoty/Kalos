@@ -1,6 +1,6 @@
 {
   "hitbox": "player",
-  "resourceIdentifier": "cobblemon:honeymooners",
+  "resourceIdentifier": "cobblemon:schoolboy",
   "presets": [
     "cobblemon:trainer_basics"
   ],

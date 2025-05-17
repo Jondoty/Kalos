@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Let's have a Pokemon battle before we compare answers!"
+                "Let's have a Pokémon battle before we compare answers!"
             ],
             "input": {
                 "type": "option",

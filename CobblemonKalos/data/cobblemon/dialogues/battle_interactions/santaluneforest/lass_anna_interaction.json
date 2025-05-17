@@ -25,7 +25,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "Your Pokemon are in for a shock!"
+        "Your Pokémon are in for a shock!"
       ],
       "input": {
         "type": "option",

@@ -22,7 +22,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "You're no doll! You're a true pokemon Trainer!"
+                "You're no doll! You're a true Pokémon Trainer!"
             ],
             "input": {
                 "type": "option",

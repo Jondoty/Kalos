@@ -22,7 +22,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "What excellent pokemon you have!"
+        "What excellent Pokémon you have!"
       ],
       "input": {
         "type": "option",

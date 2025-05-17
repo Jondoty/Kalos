@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "If it weren't for a certain benefactor of mine, I wouldn't be a pokemon Ranger today."
+                "If it weren't for a certain benefactor of mine, I wouldn't be a Pokémon Ranger today."
             ],
             "input": {
                 "type": "option",

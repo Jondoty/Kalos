@@ -22,7 +22,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "I can't stop tee-heeing, because the sight of your pokemon really tickles me! Tee hee!"
+                "I can't stop tee-heeing, because the sight of your Pokémon really tickles me! Tee hee!"
             ],
             "input": {
                 "type": "option",

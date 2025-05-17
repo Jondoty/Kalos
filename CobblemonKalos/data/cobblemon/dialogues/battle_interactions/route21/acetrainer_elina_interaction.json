@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "A strong pokemon and a strong Trainer come together to form a strong team! It's that simple."
+                "A strong Pokémon and a strong Trainer come together to form a strong team! It's that simple."
             ],
             "input": {
                 "type": "option",

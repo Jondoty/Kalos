@@ -22,7 +22,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Parkour doesn't really have anything to do with pokemon battles..."
+                "Parkour doesn't really have anything to do with Pokémon battles..."
             ],
             "input": {
                 "type": "option",

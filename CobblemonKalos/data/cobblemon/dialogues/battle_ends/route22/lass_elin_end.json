@@ -22,7 +22,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "Goldeen, Maril, I'm so sorry! I'll get you both healed right up at the Pokemon Center!"
+        "Goldeen, Maril, I'm so sorry! I'll get you both healed right up at the Pokémon Center!"
       ],
       "input": {
         "type": "option",

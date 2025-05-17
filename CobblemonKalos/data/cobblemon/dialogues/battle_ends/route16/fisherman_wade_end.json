@@ -22,7 +22,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Hee-yah! That was one rootin' tootin' pokemon battle! Mah Poliwhirl is all tuckered out!"
+                "Hee-yah! That was one rootin' tootin' Pokémon battle! Mah Poliwhirl is all tuckered out!"
             ],
             "input": {
                 "type": "option",

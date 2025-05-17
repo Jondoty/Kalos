@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "I probably shouldn't praise my pupil so openly, but her pokemon have gotten so strong! I'm very proud!"
+                "I probably shouldn't praise my pupil so openly, but her Pokémon have gotten so strong! I'm very proud!"
             ],
             "input": {
                 "type": "option",

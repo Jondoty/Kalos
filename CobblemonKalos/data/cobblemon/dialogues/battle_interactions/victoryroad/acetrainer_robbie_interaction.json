@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "You and your pokemon have tremendous power! Keep on surging into the future!"
+                "You and your Pokémon have tremendous power! Keep on surging into the future!"
             ],
             "input": {
                 "type": "option",

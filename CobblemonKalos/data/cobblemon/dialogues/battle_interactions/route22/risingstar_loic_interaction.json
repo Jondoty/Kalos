@@ -25,7 +25,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "Is Pokemon battling just a hobby to you, or do you want to become a pro?"
+        "Is Pokémon battling just a hobby to you, or do you want to become a pro?"
       ],
       "input": {
         "type": "option",

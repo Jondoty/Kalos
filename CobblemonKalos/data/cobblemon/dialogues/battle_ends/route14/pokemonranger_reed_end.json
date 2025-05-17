@@ -22,7 +22,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "What amazing power! Do you understand how pokemon feel?"
+                "What amazing power! Do you understand how Pokémon feel?"
             ],
             "input": {
                 "type": "option",

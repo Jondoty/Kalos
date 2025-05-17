@@ -25,7 +25,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "Tee hee hee! Come join us for a Pokemon battle! I'm confident that you'll love your Pokemon even more after we're done!"
+        "Tee hee hee! Come join us for a Pokémon battle! I'm confident that you'll love your Pokémon even more after we're done!"
       ],
       "input": {
         "type": "option",

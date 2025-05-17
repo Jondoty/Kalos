@@ -25,7 +25,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "I love Pokemon battles, but they'd be even better if I didn't have to stop skating!"
+        "I love Pokémon battles, but they'd be even better if I didn't have to stop skating!"
       ],
       "input": {
         "type": "option",

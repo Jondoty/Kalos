@@ -22,7 +22,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "Those are some beautiful moves your pokemon have!"
+        "Those are some beautiful moves your Pokémon have!"
       ],
       "input": {
         "type": "option",

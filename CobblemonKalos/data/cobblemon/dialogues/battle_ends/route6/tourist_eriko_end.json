@@ -22,7 +22,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "Do you see your Pokemon smile just now?"
+        "Do you see your Pokémon smile just now?"
       ],
       "input": {
         "type": "option",

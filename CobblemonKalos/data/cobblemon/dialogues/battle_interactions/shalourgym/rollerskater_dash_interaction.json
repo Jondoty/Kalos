@@ -25,7 +25,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "You look like you could use some lessons! Don't worry--when it comes to speed skating and pokemon battling, you won't find a better teacher!"
+        "You look like you could use some lessons! Don't worry--when it comes to speed skating and Pokémon battling, you won't find a better teacher!"
       ],
       "input": {
         "type": "option",

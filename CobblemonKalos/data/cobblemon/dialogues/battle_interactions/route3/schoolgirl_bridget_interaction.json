@@ -25,7 +25,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "Hey! My Pokemon and I are studying! Wanna join us?"
+        "Hey! My Pokémon and I are studying! Wanna join us?"
       ],
       "input": {
         "type": "option",

@@ -22,7 +22,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "I've made my Pokemon sad... It's all my fault! I'm too weak..."
+        "I've made my Pokémon sad... It's all my fault! I'm too weak..."
       ],
       "input": {
         "type": "option",

@@ -25,7 +25,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "Do you have any idea how quickly Bug-type Pokemon evolve?"
+        "Do you have any idea how quickly Bug-type Pokémon evolve?"
       ],
       "input": {
         "type": "option",

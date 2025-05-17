@@ -25,7 +25,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "The best way to learn about a move is to have your Pokemon use it!"
+        "The best way to learn about a move is to have your Pokémon use it!"
       ],
       "input": {
         "type": "option",

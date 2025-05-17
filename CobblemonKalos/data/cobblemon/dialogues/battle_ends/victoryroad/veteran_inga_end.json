@@ -22,7 +22,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Surely pokemon don't stick by our sides simply to have battles like this..."
+                "Surely Pokémon don't stick by our sides simply to have battles like this..."
             ],
             "input": {
                 "type": "option",

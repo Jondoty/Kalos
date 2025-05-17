@@ -25,7 +25,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "My swarm of Bug-type pokemon is in tip-top shape and buzzin' for a battle!"
+        "My swarm of Bug-type Pokémon is in tip-top shape and buzzin' for a battle!"
       ],
       "input": {
         "type": "option",

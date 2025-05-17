@@ -22,7 +22,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "What?! No way! You've got me beat in pokemon battles, too?"
+        "What?! No way! You've got me beat in Pokémon battles, too?"
       ],
       "input": {
         "type": "option",

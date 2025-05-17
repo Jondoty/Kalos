@@ -22,7 +22,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Hate to lose, but I gotta admit, you got some strong pokemon there, kid."
+                "Hate to lose, but I gotta admit, you got some strong Pokémon there, kid."
             ],
             "input": {
                 "type": "option",

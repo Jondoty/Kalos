@@ -25,7 +25,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "To realize our true potential, my pokemon and I must become connected on an emotional level!"
+        "To realize our true potential, my Pokémon and I must become connected on an emotional level!"
       ],
       "input": {
         "type": "option",

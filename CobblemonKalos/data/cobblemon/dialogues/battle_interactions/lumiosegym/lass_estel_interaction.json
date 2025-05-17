@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "You're right, but this is still a Pokemon Gym. It wouldn't seem right if we didn't fight."
+                "You're right, but this is still a Pokémon Gym. It wouldn't seem right if we didn't fight."
             ],
             "input": {
                 "type": "option",

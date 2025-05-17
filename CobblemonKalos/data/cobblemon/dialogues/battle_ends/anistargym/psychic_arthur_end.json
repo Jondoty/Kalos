@@ -22,7 +22,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "You and your pokemon look like you know how to share your burdens with one another."
+                "You and your Pokémon look like you know how to share your burdens with one another."
             ],
             "input": {
                 "type": "option",

@@ -22,7 +22,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "As a fellow Pokemon lover, you're an ace yourself!"
+        "As a fellow Pokémon lover, you're an ace yourself!"
       ],
       "input": {
         "type": "option",

@@ -22,7 +22,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "I may have lost, but that doesn't devalue the effort my pokemon put in!"
+        "I may have lost, but that doesn't devalue the effort my Pokémon put in!"
       ],
       "input": {
         "type": "option",

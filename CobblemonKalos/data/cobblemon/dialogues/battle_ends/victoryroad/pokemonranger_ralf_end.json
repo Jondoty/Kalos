@@ -22,7 +22,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "You and your pokemon just showed me what battles are supposed to be about!"
+                "You and your Pokémon just showed me what battles are supposed to be about!"
             ],
             "input": {
                 "type": "option",

@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "It's a pokemon Ranger's duty to ensure that pokemon can live the same way tomorrow as they do today."
+                "It's a Pokémon Ranger's duty to ensure that Pokémon can live the same way tomorrow as they do today."
             ],
             "input": {
                 "type": "option",

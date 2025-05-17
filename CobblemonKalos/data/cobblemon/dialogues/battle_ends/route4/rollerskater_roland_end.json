@@ -22,7 +22,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "Wow! You've got some crazy Pokemon there! Mind if I put some roller skates on them?"
+        "Wow! You've got some crazy Pokémon there! Mind if I put some roller skates on them?"
       ],
       "input": {
         "type": "option",

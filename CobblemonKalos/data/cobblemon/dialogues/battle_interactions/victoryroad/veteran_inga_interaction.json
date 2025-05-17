@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "If pokemon can so easily fly and swim, what use do they have for us Trainers?"
+                "If Pokémon can so easily fly and swim, what use do they have for us Trainers?"
             ],
             "input": {
                 "type": "option",

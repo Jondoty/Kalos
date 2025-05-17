@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Allow me to honor you and your pokemon with a battle!"
+                "Allow me to honor you and your Pokémon with a battle!"
             ],
             "input": {
                 "type": "option",

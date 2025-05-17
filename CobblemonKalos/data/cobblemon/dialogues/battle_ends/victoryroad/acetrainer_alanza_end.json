@@ -22,7 +22,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "I can see that you and your pokemon trust each other very much!"
+                "I can see that you and your Pokémon trust each other very much!"
             ],
             "input": {
                 "type": "option",

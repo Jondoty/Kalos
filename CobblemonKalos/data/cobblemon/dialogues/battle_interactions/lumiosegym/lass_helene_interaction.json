@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Let me see just what your love for Pokemon is made of!"
+                "Let me see just what your love for Pokémon is made of!"
             ],
             "input": {
                 "type": "option",

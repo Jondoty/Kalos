@@ -25,7 +25,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "You know what this is, right? It's the beginning of a pokemon battle."
+        "You know what this is, right? It's the beginning of a Pokémon battle."
       ],
       "input": {
         "type": "option",

@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Don't you think pokemon are just gorgeous when they're showing off their moves?"
+                "Don't you think Pokémon are just gorgeous when they're showing off their moves?"
             ],
             "input": {
                 "type": "option",

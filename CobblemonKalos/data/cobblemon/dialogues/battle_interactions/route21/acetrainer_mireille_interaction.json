@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "I've been with my pokemon partners since the very beginning of my journey!"
+                "I've been with my Pokémon partners since the very beginning of my journey!"
             ],
             "input": {
                 "type": "option",

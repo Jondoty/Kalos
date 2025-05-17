@@ -22,7 +22,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "This Gym was waiting for a Trainer and Pokemon like you!"
+        "This Gym was waiting for a Trainer and Pokémon like you!"
       ],
       "input": {
         "type": "option",

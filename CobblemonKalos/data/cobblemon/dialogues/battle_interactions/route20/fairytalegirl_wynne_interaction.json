@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Tee hee hee. \u266a You just ran into a girl who's head over heels for pokemon battles."
+                "Tee hee hee. \u266a You just ran into a girl who's head over heels for Pokémon battles."
             ],
             "input": {
                 "type": "option",

@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Ya can't make friends with the pokemon under the water unless ya take up fishing!"
+                "Ya can't make friends with the Pokémon under the water unless ya take up fishing!"
             ],
             "input": {
                 "type": "option",

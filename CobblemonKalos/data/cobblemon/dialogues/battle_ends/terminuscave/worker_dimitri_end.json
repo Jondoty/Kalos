@@ -22,7 +22,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "You and your pokemon make quite the picture, too!"
+                "You and your Pokémon make quite the picture, too!"
             ],
             "input": {
                 "type": "option",

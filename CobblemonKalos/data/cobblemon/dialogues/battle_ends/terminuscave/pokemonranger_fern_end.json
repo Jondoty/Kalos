@@ -22,7 +22,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Your pokemon shine more brightly than any jewel I've ever seen! Lee: You look like you've been to quite a few places in Kalos."
+                "Your Pokémon shine more brightly than any jewel I've ever seen! Lee: You look like you've been to quite a few places in Kalos."
             ],
             "input": {
                 "type": "option",

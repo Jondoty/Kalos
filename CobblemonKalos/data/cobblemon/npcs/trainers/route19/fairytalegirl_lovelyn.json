@@ -12,7 +12,7 @@
     "party": {
         "type": "simple",
         "pokemon": [
-            "Mr. Mime level=49",
+            "MrMime level=49",
             "Azumarill level=49",
             "Aromatisse level=49"
         ]
