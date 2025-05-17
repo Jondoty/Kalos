@@ -5,6 +5,8 @@
 #Runs the beginning commands if a player is near spawn without initial tag
 execute as @a[x=-552,y=100,z=1257,distance=..25,tag=!InitialTags] run function kalos:triggers/startingcommands
 
+#Aligns and gets rid of nametags on NPCs
+execute as @e[type=cobblemon:npc,nbt={PersistenceRequired:0b}] run data merge entity @s {PersistenceRequired:1b,HideNPCNameTag:1b}
 
 #Runs constantly-scanning Music switching and area display titles function
 execute as @a[scores={TalkTime=0,TrainerClass=0}] run function kalos:world/musictitles
