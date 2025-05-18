@@ -25,7 +25,25 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "I started out just wanting the strength to protect those that I love, but now... Now all I want is to keep battling for the thrill of it! Did I lose my way? Is what I'm doing correct?"
+                "I started out just wanting the strength to protect those that I love, but now..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "Now all I want is to keep battling for the thrill of it! Did I lose my way? Is what I'm doing correct?"
             ],
             "input": {
                 "type": "option",
