@@ -325,7 +325,7 @@ execute as @a[scores={TriggerCommand=129,Money=..549}] run tellraw @s {"text":"Y
 execute as @a[scores={TriggerCommand=129,Money=..549}] run scoreboard players set @s TriggerCommand 0
 
 execute as @a[scores={TriggerCommand=129,Money=550..}] run tellraw @s {"text":"You put the items in your inventory.","italic":true,"color":"gray"}
-execute as @a[scores={TriggerCommand=129,Money=550..}] run function johto:spawn/escaperope
+execute as @a[scores={TriggerCommand=129,Money=550..}] run function kalos:spawn/escaperope
 execute as @a[scores={TriggerCommand=129,Money=550..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
 execute as @a[scores={TriggerCommand=129,Money=550..}] run scoreboard players remove @s Money 550
 
@@ -335,11 +335,11 @@ execute as @a[scores={TriggerCommand=130,Money=..2749}] run tellraw @s {"text":"
 execute as @a[scores={TriggerCommand=130,Money=..2749}] run scoreboard players set @s TriggerCommand 0
 
 execute as @a[scores={TriggerCommand=130,Money=2750..}] run tellraw @s {"text":"You put the items in your inventory.","italic":true,"color":"gray"}
-execute as @a[scores={TriggerCommand=130,Money=2750..}] run function johto:spawn/escaperope
-execute as @a[scores={TriggerCommand=130,Money=2750..}] run function johto:spawn/escaperope
-execute as @a[scores={TriggerCommand=130,Money=2750..}] run function johto:spawn/escaperope
-execute as @a[scores={TriggerCommand=130,Money=2750..}] run function johto:spawn/escaperope
-execute as @a[scores={TriggerCommand=130,Money=2750..}] run function johto:spawn/escaperope
+execute as @a[scores={TriggerCommand=130,Money=2750..}] run function kalos:spawn/escaperope
+execute as @a[scores={TriggerCommand=130,Money=2750..}] run function kalos:spawn/escaperope
+execute as @a[scores={TriggerCommand=130,Money=2750..}] run function kalos:spawn/escaperope
+execute as @a[scores={TriggerCommand=130,Money=2750..}] run function kalos:spawn/escaperope
+execute as @a[scores={TriggerCommand=130,Money=2750..}] run function kalos:spawn/escaperope
 execute as @a[scores={TriggerCommand=130,Money=2750..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
 execute as @a[scores={TriggerCommand=130,Money=2750..}] run scoreboard players remove @s Money 2750
 

@@ -1,10 +1,10 @@
 #If player is currently in a dialogue
 title @s[scores={DialogueTrigger=1..,EscapeRopeUse=1..}] actionbar {"text":"You can't use this while in a dialogue!"}
-give @s[scores={EscapeRopeUse=1..,DialogueTrigger=1..}] ender_eye
+execute as @s[scores={EscapeRopeUse=1..,DialogueTrigger=1..}] run function kalos:spawn/escaperope
 scoreboard players set @s[scores={EscapeRopeUse=1..,DialogueTrigger=1..}] EscapeRopeUse 0
 
 title @s[scores={TalkTime=1..,EscapeRopeUse=1..}] actionbar {"text":"You can't use this while in a dialogue!"}
-give @s[scores={EscapeRopeUse=1..,TalkTime=1..}] ender_eye
+execute as @s[scores={EscapeRopeUse=1..,TalkTime=1..}] run function kalos:spawn/escaperope
 scoreboard players set @s[scores={EscapeRopeUse=1..,TalkTime=1..}] EscapeRopeUse 0
 
 
@@ -146,5 +146,5 @@ scoreboard players set @s[x=693,y=116,z=314,distance=..10,scores={EscapeRopeUse=
 #Not in area where Escape Rope works
 execute as @s[scores={EscapeRopeUse=1..}] run kill @e[distance=..10,type=minecraft:eye_of_ender]
 tellraw @s[scores={EscapeRopeUse=1..}] ["",{"text":"Mom's words echoed... ","italic":true,"color":"gray"},{"selector":"@s","italic":true,"color":"gray"},{"text":"! There's a time and place for everything! But not now.","italic":true,"color":"gray"}]
-give @s[scores={EscapeRopeUse=1..}] ender_eye
+execute as @s[scores={EscapeRopeUse=1..}] run function kalos:spawn/escaperope
 scoreboard players set @s[scores={EscapeRopeUse=1..}] EscapeRopeUse 0

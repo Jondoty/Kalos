@@ -507,7 +507,7 @@ execute as @s[x=-1937,y=141,z=265,distance=..5,tag=!ItemLoot140] run playsound i
 execute as @s[x=-1937,y=141,z=265,distance=..5,tag=!ItemLoot140] run tag @s add ItemLoot140
 
 execute as @s[x=-2008,y=151,z=306,distance=..5,tag=ItemLoot141] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
-execute as @s[x=-2008,y=151,z=306,distance=..5,tag=!ItemLoot141] run give @s minecraft:ender_eye
+execute as @s[x=-2008,y=151,z=306,distance=..5,tag=!ItemLoot141] run function kalos:spawn/escaperope
 execute as @s[x=-2008,y=151,z=306,distance=..5,tag=!ItemLoot141] run tellraw @s {"text":"You found an Escape Rope!","italic":true,"color":"gray"}
 execute as @s[x=-2008,y=151,z=306,distance=..5,tag=!ItemLoot141] run playsound itemget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-2008,y=151,z=306,distance=..5,tag=!ItemLoot141] run tag @s add ItemLoot141
@@ -629,7 +629,7 @@ execute as @s[x=-1505,y=148,z=517,distance=..5,tag=!ItemLoot169] run playsound i
 execute as @s[x=-1505,y=148,z=517,distance=..5,tag=!ItemLoot169] run tag @s add ItemLoot169
 
 execute as @s[x=-1479,y=148,z=324,distance=..5,tag=ItemLoot171] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
-execute as @s[x=-1479,y=148,z=324,distance=..5,tag=!ItemLoot171] run give @s minecraft:ender_eye
+execute as @s[x=-1479,y=148,z=324,distance=..5,tag=!ItemLoot171] run function kalos:spawn/escaperope
 execute as @s[x=-1479,y=148,z=324,distance=..5,tag=!ItemLoot171] run tellraw @s {"text":"You found an Escape Rope!","italic":true,"color":"gray"}
 execute as @s[x=-1479,y=148,z=324,distance=..5,tag=!ItemLoot171] run playsound itemget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-1479,y=148,z=324,distance=..5,tag=!ItemLoot171] run tag @s add ItemLoot171
@@ -839,7 +839,7 @@ execute as @s[x=-1568,y=40,z=-271,distance=..5,tag=!ItemLoot214] run playsound i
 execute as @s[x=-1568,y=40,z=-271,distance=..5,tag=!ItemLoot214] run tag @s add ItemLoot214
 
 execute as @s[x=-1523,y=39,z=-212,distance=..5,tag=ItemLoot217] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
-execute as @s[x=-1523,y=39,z=-212,distance=..5,tag=!ItemLoot217] run give @s minecraft:ender_eye
+execute as @s[x=-1523,y=39,z=-212,distance=..5,tag=!ItemLoot217] run function kalos:spawn/escaperope
 execute as @s[x=-1523,y=39,z=-212,distance=..5,tag=!ItemLoot217] run tellraw @s {"text":"You found an Escape Rope!","italic":true,"color":"gray"}
 execute as @s[x=-1523,y=39,z=-212,distance=..5,tag=!ItemLoot217] run playsound itemget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-1523,y=39,z=-212,distance=..5,tag=!ItemLoot217] run tag @s add ItemLoot217
@@ -1510,7 +1510,7 @@ execute as @s[x=650,y=118,z=-720,distance=..5,tag=!ItemLoot365] run playsound it
 execute as @s[x=650,y=118,z=-720,distance=..5,tag=!ItemLoot365] run tag @s add ItemLoot365
 
 execute as @s[x=659,y=120,z=-890,distance=..5,tag=ItemLoot366] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
-execute as @s[x=659,y=120,z=-890,distance=..5,tag=!ItemLoot366] run give @s minecraft:ender_eye
+execute as @s[x=659,y=120,z=-890,distance=..5,tag=!ItemLoot366] run function kalos:spawn/escaperope
 execute as @s[x=659,y=120,z=-890,distance=..5,tag=!ItemLoot366] run tellraw @s {"text":"You found an Escape Rope!","italic":true,"color":"gray"}
 execute as @s[x=659,y=120,z=-890,distance=..5,tag=!ItemLoot366] run playsound itemget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=659,y=120,z=-890,distance=..5,tag=!ItemLoot366] run tag @s add ItemLoot366
@@ -1630,7 +1630,7 @@ execute as @s[x=1102,y=108,z=-239,distance=..5,tag=!ItemLoot389] run playsound i
 execute as @s[x=1102,y=108,z=-239,distance=..5,tag=!ItemLoot389] run tag @s add ItemLoot389
 
 execute as @s[x=1381,y=106,z=-277,distance=..5,tag=ItemLoot397] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
-execute as @s[x=1381,y=106,z=-277,distance=..5,tag=!ItemLoot397] run give @s minecraft:ender_eye
+execute as @s[x=1381,y=106,z=-277,distance=..5,tag=!ItemLoot397] run function kalos:spawn/escaperope
 execute as @s[x=1381,y=106,z=-277,distance=..5,tag=!ItemLoot397] run tellraw @s {"text":"You found an Escape Rope!","italic":true,"color":"gray"}
 execute as @s[x=1381,y=106,z=-277,distance=..5,tag=!ItemLoot397] run playsound itemget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=1381,y=106,z=-277,distance=..5,tag=!ItemLoot397] run tag @s add ItemLoot397
@@ -1732,7 +1732,7 @@ execute as @s[x=1790,y=48,z=-34,distance=..5,tag=!ItemLoot416] run playsound ite
 execute as @s[x=1790,y=48,z=-34,distance=..5,tag=!ItemLoot416] run tag @s add ItemLoot416
 
 execute as @s[x=1864,y=41,z=13,distance=..5,tag=ItemLoot417] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
-execute as @s[x=1864,y=41,z=13,distance=..5,tag=!ItemLoot417] run give @s minecraft:ender_eye
+execute as @s[x=1864,y=41,z=13,distance=..5,tag=!ItemLoot417] run function kalos:spawn/escaperope
 execute as @s[x=1864,y=41,z=13,distance=..5,tag=!ItemLoot417] run tellraw @s {"text":"You found an Escape Rope!","italic":true,"color":"gray"}
 execute as @s[x=1864,y=41,z=13,distance=..5,tag=!ItemLoot417] run playsound itemget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=1864,y=41,z=13,distance=..5,tag=!ItemLoot417] run tag @s add ItemLoot417
@@ -1910,7 +1910,7 @@ execute as @s[x=1411,y=75,z=561,distance=..5,tag=!ItemLoot452] run playsound ite
 execute as @s[x=1411,y=75,z=561,distance=..5,tag=!ItemLoot452] run tag @s add ItemLoot452
 
 execute as @s[x=1453,y=75,z=523,distance=..5,tag=ItemLoot453] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
-execute as @s[x=1453,y=75,z=523,distance=..5,tag=!ItemLoot453] run give @s minecraft:ender_eye
+execute as @s[x=1453,y=75,z=523,distance=..5,tag=!ItemLoot453] run function kalos:spawn/escaperope
 execute as @s[x=1453,y=75,z=523,distance=..5,tag=!ItemLoot453] run tellraw @s {"text":"You found an Escape Rope!","italic":true,"color":"gray"}
 execute as @s[x=1453,y=75,z=523,distance=..5,tag=!ItemLoot453] run playsound itemget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=1453,y=75,z=523,distance=..5,tag=!ItemLoot453] run tag @s add ItemLoot453
@@ -2252,7 +2252,7 @@ execute as @s[x=2383,y=190,z=2216,distance=..5,tag=!ItemLoot523] run playsound i
 execute as @s[x=2383,y=190,z=2216,distance=..5,tag=!ItemLoot523] run tag @s add ItemLoot523
 
 execute as @s[x=1826,y=82,z=1409,distance=..5,tag=ItemLoot524] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
-execute as @s[x=1826,y=82,z=1409,distance=..5,tag=!ItemLoot524] run give @s minecraft:ender_eye
+execute as @s[x=1826,y=82,z=1409,distance=..5,tag=!ItemLoot524] run function kalos:spawn/escaperope
 execute as @s[x=1826,y=82,z=1409,distance=..5,tag=!ItemLoot524] run tellraw @s {"text":"You found an Escape Rope!","italic":true,"color":"gray"}
 execute as @s[x=1826,y=82,z=1409,distance=..5,tag=!ItemLoot524] run playsound itemget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=1826,y=82,z=1409,distance=..5,tag=!ItemLoot524] run tag @s add ItemLoot524
