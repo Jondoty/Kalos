@@ -19,6 +19,8 @@ execute as @a[scores={TalkTrigger=1..}] run function kalos:triggers/talktrigger
 #Relog Trigger (player leaves world and joins back)
 execute as @a[scores={relog=1..}] run function kalos:triggers/relog
 
+#Runs TriggerCommand Function
+execute as @a[scores={TriggerCommand=1..}] run function kalos:triggers/triggercommands
 
 #Photo-Spot Dismissal if player walks away
 execute at @e[type=armor_stand,tag=PhotoSpot] run execute as @a[distance=20..50,scores={DialogueTrigger=0,PhotoSpot=1..}] run scoreboard players set @s TalkTrigger 299
