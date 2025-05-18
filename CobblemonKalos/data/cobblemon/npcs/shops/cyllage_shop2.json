@@ -1,0 +1,34 @@
+{
+  "hitbox": "player",
+  "resourceIdentifier": "cobblemon:shopman",
+  "presets": [
+    "cobblemon:trainer_basics"
+  ],
+  "interaction": {
+    "type": "dialogue",
+    "dialogue": "cobblemon:cyllage_shop2_interaction"
+  },
+  "name": "Ewan",
+  "party": {
+    "type": "simple",
+    "pokemon": [
+      "Chansey level=5"
+    ]
+  },
+  "config": [
+    {
+      "variableName": "challenge_cooldown",
+      "displayName": "Cooldown",
+      "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
+      "type": "NUMBER",
+      "defaultValue": "0"
+    },
+    {
+      "variableName": "can_rechallenge",
+      "displayName": "Rechallenging",
+      "description": "This NPC can be battled multiple times.",
+      "type": "BOOLEAN",
+      "defaultValue": true
+    }
+  ]
+}
