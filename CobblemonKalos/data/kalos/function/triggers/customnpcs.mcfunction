@@ -20,6 +20,94 @@ execute as @s[x=305,y=68,z=462,distance=..6,scores={Temp=3}] run opendialogue 3_
 execute as @s[x=305,y=68,z=462,distance=..6,scores={Temp=4}] run opendialogue 4_badges_shop_interaction @s
 execute as @s[x=305,y=68,z=462,distance=..6,scores={Temp=5..}] run opendialogue 5_badges_shop_interaction @s
 
+#Lumiose City North Main
+execute as @s[x=-478,y=101,z=432,distance=..6,scores={Temp=0}] run opendialogue 0_badges_shop_interaction @s
+execute as @s[x=-478,y=101,z=432,distance=..6,scores={Temp=1}] run opendialogue 1_badges_shop_interaction @s
+execute as @s[x=-478,y=101,z=432,distance=..6,scores={Temp=2}] run opendialogue 2_badges_shop_interaction @s
+execute as @s[x=-478,y=101,z=432,distance=..6,scores={Temp=3}] run opendialogue 3_badges_shop_interaction @s
+execute as @s[x=-478,y=101,z=432,distance=..6,scores={Temp=4}] run opendialogue 4_badges_shop_interaction @s
+execute as @s[x=-478,y=101,z=432,distance=..6,scores={Temp=5..}] run opendialogue 5_badges_shop_interaction @s
+
+#Lumiose City South Main
+execute as @s[x=-367,y=101,z=432,distance=..6,scores={Temp=0}] run opendialogue 0_badges_shop_interaction @s
+execute as @s[x=-367,y=101,z=432,distance=..6,scores={Temp=1}] run opendialogue 1_badges_shop_interaction @s
+execute as @s[x=-367,y=101,z=432,distance=..6,scores={Temp=2}] run opendialogue 2_badges_shop_interaction @s
+execute as @s[x=-367,y=101,z=432,distance=..6,scores={Temp=3}] run opendialogue 3_badges_shop_interaction @s
+execute as @s[x=-367,y=101,z=432,distance=..6,scores={Temp=4}] run opendialogue 4_badges_shop_interaction @s
+execute as @s[x=-367,y=101,z=432,distance=..6,scores={Temp=5..}] run opendialogue 5_badges_shop_interaction @s
+
+#Lumiose City Mid Main
+execute as @s[x=-421,y=101,z=432,distance=..6,scores={Temp=0}] run opendialogue 0_badges_shop_interaction @s
+execute as @s[x=-421,y=101,z=432,distance=..6,scores={Temp=1}] run opendialogue 1_badges_shop_interaction @s
+execute as @s[x=-421,y=101,z=432,distance=..6,scores={Temp=2}] run opendialogue 2_badges_shop_interaction @s
+execute as @s[x=-421,y=101,z=432,distance=..6,scores={Temp=3}] run opendialogue 3_badges_shop_interaction @s
+execute as @s[x=-421,y=101,z=432,distance=..6,scores={Temp=4}] run opendialogue 4_badges_shop_interaction @s
+execute as @s[x=-421,y=101,z=432,distance=..6,scores={Temp=5..}] run opendialogue 5_badges_shop_interaction @s
+
+#Camphrier Town
+execute as @s[x=-1004,y=80,z=-14,distance=..6,scores={Temp=0}] run opendialogue 0_badges_shop_interaction @s
+execute as @s[x=-1004,y=80,z=-14,distance=..6,scores={Temp=1}] run opendialogue 1_badges_shop_interaction @s
+execute as @s[x=-1004,y=80,z=-14,distance=..6,scores={Temp=2}] run opendialogue 2_badges_shop_interaction @s
+execute as @s[x=-1004,y=80,z=-14,distance=..6,scores={Temp=3}] run opendialogue 3_badges_shop_interaction @s
+execute as @s[x=-1004,y=80,z=-14,distance=..6,scores={Temp=4}] run opendialogue 4_badges_shop_interaction @s
+execute as @s[x=-1004,y=80,z=-14,distance=..6,scores={Temp=5..}] run opendialogue 5_badges_shop_interaction @s
+
+#Ambrette Town
+execute as @s[x=-1952,y=103,z=530,distance=..6,scores={Temp=0}] run opendialogue 0_badges_shop_interaction @s
+execute as @s[x=-1952,y=103,z=530,distance=..6,scores={Temp=1}] run opendialogue 1_badges_shop_interaction @s
+execute as @s[x=-1952,y=103,z=530,distance=..6,scores={Temp=2}] run opendialogue 2_badges_shop_interaction @s
+execute as @s[x=-1952,y=103,z=530,distance=..6,scores={Temp=3}] run opendialogue 3_badges_shop_interaction @s
+execute as @s[x=-1952,y=103,z=530,distance=..6,scores={Temp=4}] run opendialogue 4_badges_shop_interaction @s
+execute as @s[x=-1952,y=103,z=530,distance=..6,scores={Temp=5..}] run opendialogue 5_badges_shop_interaction @s
+
+#Ambrette Town
+execute as @s[x=-2028,y=78,z=-86,distance=..6,scores={Temp=0}] run opendialogue 0_badges_shop_interaction @s
+execute as @s[x=-2028,y=78,z=-86,distance=..6,scores={Temp=1}] run opendialogue 1_badges_shop_interaction @s
+execute as @s[x=-2028,y=78,z=-86,distance=..6,scores={Temp=2}] run opendialogue 2_badges_shop_interaction @s
+execute as @s[x=-2028,y=78,z=-86,distance=..6,scores={Temp=3}] run opendialogue 3_badges_shop_interaction @s
+execute as @s[x=-2028,y=78,z=-86,distance=..6,scores={Temp=4}] run opendialogue 4_badges_shop_interaction @s
+execute as @s[x=-2028,y=78,z=-86,distance=..6,scores={Temp=5..}] run opendialogue 5_badges_shop_interaction @s
+
+#Geosenge Town
+execute as @s[x=-2232,y=79,z=-650,distance=..6,scores={Temp=0}] run opendialogue 0_badges_shop_interaction @s
+execute as @s[x=-2232,y=79,z=-650,distance=..6,scores={Temp=1}] run opendialogue 1_badges_shop_interaction @s
+execute as @s[x=-2232,y=79,z=-650,distance=..6,scores={Temp=2}] run opendialogue 2_badges_shop_interaction @s
+execute as @s[x=-2232,y=79,z=-650,distance=..6,scores={Temp=3}] run opendialogue 3_badges_shop_interaction @s
+execute as @s[x=-2232,y=79,z=-650,distance=..6,scores={Temp=4}] run opendialogue 4_badges_shop_interaction @s
+execute as @s[x=-2232,y=79,z=-650,distance=..6,scores={Temp=5..}] run opendialogue 5_badges_shop_interaction @s
+
+#Shalour City
+execute as @s[x=-1611,y=57,z=-843,distance=..6,scores={Temp=0}] run opendialogue 0_badges_shop_interaction @s
+execute as @s[x=-1611,y=57,z=-843,distance=..6,scores={Temp=1}] run opendialogue 1_badges_shop_interaction @s
+execute as @s[x=-1611,y=57,z=-843,distance=..6,scores={Temp=2}] run opendialogue 2_badges_shop_interaction @s
+execute as @s[x=-1611,y=57,z=-843,distance=..6,scores={Temp=3}] run opendialogue 3_badges_shop_interaction @s
+execute as @s[x=-1611,y=57,z=-843,distance=..6,scores={Temp=4}] run opendialogue 4_badges_shop_interaction @s
+execute as @s[x=-1611,y=57,z=-843,distance=..6,scores={Temp=5..}] run opendialogue 5_badges_shop_interaction @s
+
+#Coumarine City
+execute as @s[x=-1018,y=89,z=-684,distance=..6,scores={Temp=0}] run opendialogue 0_badges_shop_interaction @s
+execute as @s[x=-1018,y=89,z=-684,distance=..6,scores={Temp=1}] run opendialogue 1_badges_shop_interaction @s
+execute as @s[x=-1018,y=89,z=-684,distance=..6,scores={Temp=2}] run opendialogue 2_badges_shop_interaction @s
+execute as @s[x=-1018,y=89,z=-684,distance=..6,scores={Temp=3}] run opendialogue 3_badges_shop_interaction @s
+execute as @s[x=-1018,y=89,z=-684,distance=..6,scores={Temp=4}] run opendialogue 4_badges_shop_interaction @s
+execute as @s[x=-1018,y=89,z=-684,distance=..6,scores={Temp=5..}] run opendialogue 5_badges_shop_interaction @s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 advancement revoke @s only kalos:click/npcs
