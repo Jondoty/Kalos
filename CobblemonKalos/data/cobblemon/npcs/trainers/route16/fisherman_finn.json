@@ -12,8 +12,8 @@
     "party": {
         "type": "simple",
         "pokemon": [
-            "Basculin Red level=38",
-            "Basculin Blue level=38"
+            "basculin striped=red level=38",
+            "basculin striped=blue level=38"
         ]
     },
     "config": [

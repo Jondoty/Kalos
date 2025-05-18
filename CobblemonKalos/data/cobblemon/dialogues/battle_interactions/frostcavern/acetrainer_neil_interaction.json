@@ -25,7 +25,25 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Rain or snow, it matters not! An Ace Trainer does not let anything get in his way! An Ace Trainer is always elegant in whatever he does! That's what it means to be an ace!"
+                "Rain or snow, it matters not! An Ace Trainer does not let anything get in his way!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "An Ace Trainer is always elegant in whatever he does! That's what it means to be an ace!"
             ],
             "input": {
                 "type": "option",

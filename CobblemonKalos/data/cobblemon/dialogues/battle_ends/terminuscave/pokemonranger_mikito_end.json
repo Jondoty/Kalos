@@ -8,7 +8,7 @@
     ],
     "speakers": {
         "npc": {
-            "name": "Lee",
+            "name": "Mikito",
             "face": {
                 "type": "artificial",
                 "modelType": "npc",
@@ -18,11 +18,29 @@
         }
     },
     "pages": [
-        {
+                        {
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "We're a pair of wanderers, on a journey through Kalos with Nidoking and our other trusty pokemon! Whether we win or we lose, we make sure to learn from every battle and improve ourselves!"
+                "We're a pair of wanderers, on a journey through Kalos with Nidoking and our other trusty Pokemon!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "Whether we win or we lose, we make sure to learn from every battle and improve ourselves!"
             ],
             "input": {
                 "type": "option",

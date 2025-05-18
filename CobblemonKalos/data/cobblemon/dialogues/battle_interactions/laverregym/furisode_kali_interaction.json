@@ -21,11 +21,29 @@
         }
     },
     "pages": [
-        {
+                {
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "This Furisode Girl had her clothing designed by the one and only Valerie! How do I look? I must live up to Valerie's beautiful design by displaying an equally beautiful battle technique!"
+                "This Furisode Girl had her clothing designed by the one and only Valerie! How do I look?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "I must live up to Valerie's beautiful design by displaying an equally beautiful battle technique!"
             ],
             "input": {
                 "type": "option",

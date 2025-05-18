@@ -12,7 +12,7 @@
             "face": {
                 "type": "artificial",
                 "modelType": "npc",
-                "identifier": "cobblemon:hex_maniac",
+                "identifier": "cobblemon:hexmaniac",
                 "isLeftSide": true
             }
         }

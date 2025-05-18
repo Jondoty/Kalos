@@ -1,12 +1,12 @@
 {
-  "name": "cobblemon:fairytailgirl",
+  "name": "cobblemon:fairytalegirl",
   "order": 1,
   "variations": [
     {
       "aspects": [],
       "poser": "cobblemon:standard",
       "model": "cobblemon:trainer.geo",
-      "texture": "cobblemon:textures/npcs/trainers/fairytailgirl.png",
+      "texture": "cobblemon:textures/npcs/trainers/fairytalegirl.png",
       "layers": []
     },
     {

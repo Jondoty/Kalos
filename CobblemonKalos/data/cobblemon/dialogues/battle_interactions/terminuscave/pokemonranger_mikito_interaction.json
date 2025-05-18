@@ -9,7 +9,7 @@
         "q.dialogue.close();"
     ],
     "names": [
-        "Lee"
+        "Mikito"
     ],
     "speakers": {
         "npc": {
@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "pokemon are like treasured jewels strewn throughout the land. It's in battle where they truly get a chance to shine!"
+                "Pokémon are like treasured jewels strewn throughout the land. It's in battle where they truly get a chance to shine!"
             ],
             "input": {
                 "type": "option",

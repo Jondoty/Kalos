@@ -21,11 +21,29 @@
         }
     },
     "pages": [
-        {
+                {
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Both my mom and my old man are Veterans, and my big bro is an Ace Trainer. I just couldn't stand to be all goody two-shoes like them! How bo-o-oring can you get?"
+                "Both my mom and my old man are Veterans, and my big bro is an Ace Trainer."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "I just couldn't stand to be all goody two-shoes like them! How bo-o-oring can you get?"
             ],
             "input": {
                 "type": "option",

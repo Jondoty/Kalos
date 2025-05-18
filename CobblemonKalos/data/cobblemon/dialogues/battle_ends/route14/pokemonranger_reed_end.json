@@ -12,7 +12,7 @@
             "face": {
                 "type": "artificial",
                 "modelType": "npc",
-                "identifier": "cobblemon:pokemon_ranger",
+                "identifier": "cobblemon:pokemonranger",
                 "isLeftSide": true
             }
         }

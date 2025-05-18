@@ -166,7 +166,7 @@
         },
         {
             "id": "battle_prompt",
-            "speaker": "npc",
+            "speaker": "clemont",
             "lines": [
                 "She's right about that, at least. Let's both do our best in battle."
             ],

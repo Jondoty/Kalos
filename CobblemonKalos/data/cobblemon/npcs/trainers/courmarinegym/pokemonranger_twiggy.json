@@ -13,7 +13,7 @@
     "type": "simple",
     "pokemon": [
       "Gloom level=29",
-      "Exeggutour level=31"
+      "Exeggutor level=31"
     ]
   },
   "config": [
@@ -36,7 +36,7 @@
       "displayName": "npc.variable.on_player_wins.name",
       "description": "npc.variable.on_player_wins.desc",
       "type": "TEXT",
-      "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue pokemon ranger_twiggy_end @s');"
+      "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue pokemonranger_twiggy_end @s');"
     }
   ]
 }

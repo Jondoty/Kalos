@@ -25,7 +25,25 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "We're a pair of wanderers, on a journey through Kalos with our trusty pokemon! One of our favorite pastimes is to battle with the Trainers we encounter on our journey."
+                "We're a pair of wanderers, on a journey through Kalos with our trusty pokemon!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "One of our favorite pastimes is to battle with the Trainers we encounter on our journey."
             ],
             "input": {
                 "type": "option",
