@@ -1,0 +1,351 @@
+{
+    "initializationAction": [
+        "q.run_command('team join shops ' + q.player.username + '');"
+    ],
+    "escapeAction": [
+        "q.run_command('team join default ' + q.player.username + '');",
+        "q.dialogue.close();"
+    ],
+    "names": [
+        "Poké Mart Clerk"
+    ],
+    "speakers": {
+        "npc": {
+            "name": "Poké Mart Clerk",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:shopman",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "Welcome to the Poké Mart! May I help you?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy",
+                        "value": "buy",
+                        "action": "q.dialogue.set_page('buy1');"
+                    },
+                    {
+                        "text": "No Thanks",
+                        "value": "nothanks",
+                        "action": "q.dialogue.set_page('end');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buy1",
+            "speaker": "npc",
+            "lines": [
+                "Which item would you like to purchase?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Heal Ball",
+                        "value": "healball",
+                        "action": "q.dialogue.set_page('pickhealball');"
+                    },
+                    {
+                        "text": "Net Ball",
+                        "value": "netball",
+                        "action": "q.dialogue.set_page('picknetball');"
+                    },
+                    {
+                        "text": "Nest Ball",
+                        "value": "nestball",
+                        "action": "q.dialogue.set_page('picknestball');"
+                    },
+                    {
+                        "text": "No Thanks",
+                        "value": "nothanks",
+                        "action": "q.dialogue.set_page('end');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buy2",
+            "speaker": "npc",
+            "lines": [
+                "Which item would you like to purchase?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Dire Hit",
+                        "value": "direhit",
+                        "action": "q.dialogue.set_page('pickdirehit');"
+                    },
+                    {
+                        "text": "X Accuracy",
+                        "value": "xaccuracy",
+                        "action": "q.dialogue.set_page('pickxaccuracy');"
+                    },
+                    {
+                        "text": "X Sp Atk",
+                        "value": "xspecialattack",
+                        "action": "q.dialogue.set_page('pickxspecialattack');"
+                    },
+                    {
+                        "text": "X Sp Def",
+                        "value": "xspecialdefence",
+                        "action": "q.dialogue.set_page('pickxspecialdefence');"
+                    },
+                    {
+                        "text": "<< Page 1",
+                        "value": "page1",
+                        "action": "q.dialogue.set_page('buy1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buy3",
+            "speaker": "npc",
+            "lines": [
+                "Which item would you like to purchase?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Revive",
+                        "value": "revive",
+                        "action": "q.dialogue.set_page('pickrevive');"
+                    },
+                    {
+                        "text": "Antidote",
+                        "value": "antidote",
+                        "action": "q.dialogue.set_page('pickantidote');"
+                    },
+                    {
+                        "text": "Paralyze Heal",
+                        "value": "paralyzeheal",
+                        "action": "q.dialogue.set_page('pickparalyzeheal');"
+                    },
+                    {
+                        "text": "Awakening",
+                        "value": "awakening",
+                        "action": "q.dialogue.set_page('pickawakening');"
+                    },
+                    {
+                        "text": "Next Page >>",
+                        "value": "nextpage",
+                        "action": "q.dialogue.set_page('buy4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buy4",
+            "speaker": "npc",
+            "lines": [
+                "Which item would you like to purchase?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Burn Heal",
+                        "value": "superpotion",
+                        "action": "q.dialogue.set_page('pickburnheal');"
+                    },
+                    {
+                        "text": "Ice Heal",
+                        "value": "antidote",
+                        "action": "q.dialogue.set_page('pickiceheal');"
+                    },
+                    {
+                        "text": "Full Heal",
+                        "value": "fullheal",
+                        "action": "q.dialogue.set_page('pickfullheal');"
+                    },
+                    {
+                        "text": "Escape Rope",
+                        "value": "escaperope",
+                        "action": "q.dialogue.set_page('pickescaperope');"
+                    },
+                    {
+                        "text": "<< Page 1",
+                        "value": "page1",
+                        "action": "q.dialogue.set_page('buy1');"
+                    }
+                ]
+            }
+        },
+
+        
+        {
+            "id": "pickhealball",
+            "speaker": "npc",
+            "lines": [
+                "You'd like to purchase a Heal Ball for $300 each?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy x1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 131');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Buy x5",
+                        "value": "buy5",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 132');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Buy x10",
+                        "value": "buy10",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 133');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "picknetball",
+            "speaker": "npc",
+            "lines": [
+                "You'd like to purchase a Net Ball for $1000 each?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy x1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 134');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Buy x5",
+                        "value": "buy5",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 135');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Buy x10",
+                        "value": "buy10",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 136');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "picknestball",
+            "speaker": "npc",
+            "lines": [
+                "You'd like to purchase a Nest Ball for $1000 each?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy x1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 143');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Buy x5",
+                        "value": "buy5",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 144');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Buy x10",
+                        "value": "buy10",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 145');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "buyend",
+            "speaker": "npc",
+            "lines": [
+                "Here you are! Thank you!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('team join default ' + q.player.username + '');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "end",
+            "speaker": "npc",
+            "lines": [
+                "Please come again!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('team join default ' + q.player.username + '');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
