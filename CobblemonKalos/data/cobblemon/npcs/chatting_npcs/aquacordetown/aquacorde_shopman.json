@@ -1,0 +1,12 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:shopman",
+    "presets": [
+        "cobblemon:chatting_basics"
+    ],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:aquacorde_shopman_interaction"
+    },
+    "name": "     "
+}

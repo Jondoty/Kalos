@@ -1,0 +1,12 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:littlegirl",
+    "presets": [
+        "cobblemon:chatting_basics"
+    ],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:aquacorde_littlegirl_interaction"
+    },
+    "name": "     "
+}

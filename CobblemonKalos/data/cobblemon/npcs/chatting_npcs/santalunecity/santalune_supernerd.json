@@ -1,0 +1,12 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:supernerd",
+    "presets": [
+        "cobblemon:chatting_basics"
+    ],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:santalune_supernerd_interaction"
+    },
+    "name": "     "
+}
