@@ -95,8 +95,9 @@ execute as @s[x=-1018,y=89,z=-684,distance=..6,scores={Temp=5..}] run opendialog
 
 
 
-
-
+#Hall of Fame dialogue trigger
+execute as @s[x=-1998,y=12,z=1915,distance=..6] run tag @s remove Dialogue154
+execute as @s[x=-1998,y=12,z=1915,distance=..6] run scoreboard players set @s DialogueTrigger 154
 
 
 

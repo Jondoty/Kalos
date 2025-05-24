@@ -75,6 +75,14 @@ execute as @a[scores={HoneyUse=1..}] run function kalos:hms/honey
 #Escape Rope
 execute as @a[scores={EscapeRopeUse=1..}] run function kalos:hms/escaperope
 
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Story Dialogues
+
+#Primary Dialogue function
+execute as @a[scores={DialogueTrigger=1..}] run function kalos:dialogue/dialogue
+
+#Holo Caster Calls
+execute as @a[scores={HoloCall=1..}] run function kalos:dialogue/holocall
 
 #------------------------------------------------------------------------------
 #Music commands

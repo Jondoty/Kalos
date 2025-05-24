@@ -1810,7 +1810,6 @@ execute as @s[x=-1915,y=22,z=1873,dx=17,dy=5,tag=!Diantha,scores={TalkTime=0}] a
 execute as @s[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,scores={PokemonLeague=0,TalkTime=0}] run scoreboard players set @s[tag=!Dialogue152] DialogueTrigger 152
 execute as @s[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,scores={PokemonLeague=1..,TalkTime=0}] run scoreboard players set @s DialogueTrigger 153
 scoreboard players add @s[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,scores={TalkTime=0}] Grass 0
-scoreboard players add @s[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,scores={TalkTime=0}] PokemonLeague 1
 tp @s[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,scores={TalkTime=0}] -1998 8 1964
 
 

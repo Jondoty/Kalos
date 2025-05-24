@@ -512,14 +512,7 @@ execute as @a[x=2230,y=75,z=1416,dx=17,dy=5,dz=15,tag=Strength,scores={Cooldown=
 
 
 
-#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Story Dialogues
 
-#Primary Dialogue function
-execute as @a[scores={DialogueTrigger=1..}] run function kalos:dialogue/dialogue
-
-#Holo Caster Calls
-execute as @a[scores={HoloCall=1..}] run function kalos:dialogue/holocall
 
 #----------
 #Holo Caster Calls

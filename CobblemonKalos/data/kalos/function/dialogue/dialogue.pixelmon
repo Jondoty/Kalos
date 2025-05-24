@@ -1,14 +1,3 @@
-#Triggered by DialogueTrigger X score and !DialogueX tag
-#/execute as @s[score_DialogueTrigger_min=1] run function dialogues:events
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-#Scans and removes DialogueTrigger score if player already has specific Dialogue tag
-
-execute as @s[scores={score_DialogueTrigger=1..,TalkTime=0}] run function kalos:dialogue/duplicateend
-
-#Adds timings
-scoreboard players add @a[scores={DialogueTrigger=1..}] TalkTime 1
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Mom dialogue when spawned in
