@@ -54,16 +54,9 @@ execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custo
 
 
 #Town Map
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:0b}],SelectedItemSlot:0}] MapSelect 1
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:1b}],SelectedItemSlot:1}] MapSelect 2
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:2b}],SelectedItemSlot:2}] MapSelect 3
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:3b}],SelectedItemSlot:3}] MapSelect 4
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:4b}],SelectedItemSlot:4}] MapSelect 5
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:5b}],SelectedItemSlot:5}] MapSelect 6
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:6b}],SelectedItemSlot:6}] MapSelect 7
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:7b}],SelectedItemSlot:7}] MapSelect 8
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:8b}],SelectedItemSlot:8}] MapSelect 9
-scoreboard players set @a[nbt={Inventory:[{tag:{display:{Name:"Town Map"}},Slot:-106b}]}] MapSelect 10
+execute as @a[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Town Map"}],"text":""}'}}}] run function kalos:hms/townmap
+execute as @a[nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Town Map"}],"text":""}'}}]}] run function kalos:hms/townmap
+
 execute as @a[scores={MapSelect=1..}] run function kalos:hms/townmap
 
 #Escape Rope

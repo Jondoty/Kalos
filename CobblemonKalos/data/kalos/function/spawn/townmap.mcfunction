@@ -1,0 +1,1 @@
+give @s diamond_hoe[custom_name='["",{"text":"Town Map","italic":false,"color":"aqua"}]',lore=['["",{"text":"A map of the Kalos region.","italic":false}]'],unbreakable={show_in_tooltip:false},damage=2]
