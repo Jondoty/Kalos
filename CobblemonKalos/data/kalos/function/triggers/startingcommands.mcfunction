@@ -569,133 +569,553 @@ scoreboard players reset @s Scizorite
 scoreboard players reset @s Tyranitarite
 
 
-#NPC Interact Poke Loot
-scoreboard players set @s TrainerLoot0 0
-scoreboard players set @s TrainerLoot1 0
-scoreboard players set @s TrainerLoot2 0
-scoreboard players set @s TrainerLoot3 0
-scoreboard players set @s TrainerLoot4 0
-scoreboard players set @s TrainerLoot5 0
-scoreboard players set @s TrainerLoot6 0
-scoreboard players set @s TrainerLoot7 0
-scoreboard players set @s TrainerLoot8 0
-scoreboard players set @s TrainerLoot9 0
-scoreboard players set @s TrainerLoot10 0
-scoreboard players set @s TrainerLoot11 0
-scoreboard players set @s TrainerLoot12 0
-scoreboard players set @s TrainerLoot13 0
-scoreboard players set @s TrainerLoot14 0
-scoreboard players set @s TrainerLoot15 0
-scoreboard players set @s TrainerLoot16 0
-scoreboard players set @s TrainerLoot17 0
-scoreboard players set @s TrainerLoot18 0
-scoreboard players set @s TrainerLoot19 0
-scoreboard players set @s TrainerLoot20 0
-scoreboard players set @s TrainerLoot21 0
-scoreboard players set @s TrainerLoot22 0
-scoreboard players set @s TrainerLoot23 0
-scoreboard players set @s TrainerLoot24 0
-scoreboard players set @s TrainerLoot25 0
-scoreboard players set @s TrainerLoot26 0
-scoreboard players set @s TrainerLoot27 0
-scoreboard players set @s TrainerLoot28 0
-scoreboard players set @s TrainerLoot29 0
-scoreboard players set @s TrainerLoot30 0
-scoreboard players set @s TrainerLoot31 0
-scoreboard players set @s TrainerLoot32 0
-scoreboard players set @s TrainerLoot33 0
-scoreboard players set @s TrainerLoot34 0
-scoreboard players set @s TrainerLoot35 0
-scoreboard players set @s TrainerLoot36 0
-scoreboard players set @s TrainerLoot37 0
-scoreboard players set @s TrainerLoot38 0
-scoreboard players set @s TrainerLoot39 0
-scoreboard players set @s TrainerLoot40 0
-scoreboard players set @s TrainerLoot41 0
-scoreboard players set @s TrainerLoot42 0
-scoreboard players set @s TrainerLoot43 0
-scoreboard players set @s TrainerLoot44 0
-scoreboard players set @s TrainerLoot45 0
-scoreboard players set @s TrainerLoot46 0
-scoreboard players set @s TrainerLoot47 0
-scoreboard players set @s TrainerLoot48 0
-scoreboard players set @s TrainerLoot49 0
-scoreboard players set @s TrainerLoot50 0
-scoreboard players set @s TrainerLoot51 0
-scoreboard players set @s TrainerLoot52 0
-scoreboard players set @s TrainerLoot53 0
-scoreboard players set @s TrainerLoot54 0
-scoreboard players set @s TrainerLoot55 0
-scoreboard players set @s TrainerLoot56 0
-scoreboard players set @s TrainerLoot57 0
-scoreboard players set @s TrainerLoot58 0
-scoreboard players set @s TrainerLoot59 0
-scoreboard players set @s TrainerLoot60 0
-scoreboard players set @s TrainerLoot61 0
-scoreboard players set @s TrainerLoot62 0
-scoreboard players set @s TrainerLoot63 0
-scoreboard players set @s TrainerLoot64 0
-scoreboard players set @s TrainerLoot65 0
-scoreboard players set @s TrainerLoot66 0
-scoreboard players set @s TrainerLoot67 0
-scoreboard players set @s TrainerLoot68 0
-scoreboard players set @s TrainerLoot69 0
-scoreboard players set @s TrainerLoot70 0
-scoreboard players set @s TrainerLoot71 0
-scoreboard players set @s TrainerLoot72 0
-scoreboard players set @s TrainerLoot73 0
-scoreboard players set @s TrainerLoot74 0
-scoreboard players set @s TrainerLoot75 0
-scoreboard players set @s TrainerLoot76 0
-scoreboard players set @s TrainerLoot77 0
-scoreboard players set @s TrainerLoot78 0
-scoreboard players set @s TrainerLoot79 0
-scoreboard players set @s TrainerLoot80 0
-scoreboard players set @s TrainerLoot81 0
-scoreboard players set @s TrainerLoot82 0
-scoreboard players set @s TrainerLoot83 0
-scoreboard players set @s TrainerLoot84 0
-scoreboard players set @s TrainerLoot85 0
-scoreboard players set @s TrainerLoot86 0
-scoreboard players set @s TrainerLoot87 0
-scoreboard players set @s TrainerLoot88 0
-scoreboard players set @s TrainerLoot89 0
-scoreboard players set @s TrainerLoot90 0
-scoreboard players set @s TrainerLoot91 0
-scoreboard players set @s TrainerLoot92 0
-scoreboard players set @s TrainerLoot93 0
-scoreboard players set @s TrainerLoot94 0
-scoreboard players set @s TrainerLoot95 0
-scoreboard players set @s TrainerLoot96 0
-scoreboard players set @s TrainerLoot97 0
-scoreboard players set @s TrainerLoot98 0
-scoreboard players set @s TrainerLoot99 0
-scoreboard players set @s TrainerLoot100 0
-scoreboard players set @s TrainerLoot101 0
-scoreboard players set @s TrainerLoot102 0
-scoreboard players set @s TrainerLoot103 0
-scoreboard players set @s TrainerLoot104 0
-scoreboard players set @s TrainerLoot105 0
-scoreboard players set @s TrainerLoot106 0
-scoreboard players set @s TrainerLoot107 0
-scoreboard players set @s TrainerLoot108 0
-scoreboard players set @s TrainerLoot109 0
-scoreboard players set @s TrainerLoot110 0
-scoreboard players set @s TrainerLoot111 0
-scoreboard players set @s TrainerLoot112 0
-scoreboard players set @s TrainerLoot113 0
-scoreboard players set @s TrainerLoot114 0
-scoreboard players set @s TrainerLoot115 0
-scoreboard players set @s TrainerLoot116 0
-scoreboard players set @s TrainerLoot117 0
-scoreboard players set @s TrainerLoot118 0
-scoreboard players set @s TrainerLoot119 0
-scoreboard players set @s TrainerLoot120 0
-scoreboard players set @s TrainerLoot121 0
-scoreboard players set @s TrainerLoot122 0
-scoreboard players set @s TrainerLoot123 0
-scoreboard players set @s TrainerLoot124 0
-scoreboard players set @s TrainerLoot125 0
+#Loots from ground and NPCs
+tag @s remove ItemLoot1
+tag @s remove ItemLoot2
+tag @s remove ItemLoot3
+tag @s remove ItemLoot4
+tag @s remove ItemLoot5
+tag @s remove ItemLoot6
+tag @s remove ItemLoot7
+tag @s remove ItemLoot8
+tag @s remove ItemLoot9
+tag @s remove ItemLoot10
+tag @s remove ItemLoot11
+tag @s remove ItemLoot12
+tag @s remove ItemLoot13
+tag @s remove ItemLoot14
+tag @s remove ItemLoot15
+tag @s remove ItemLoot16
+tag @s remove ItemLoot17
+tag @s remove ItemLoot18
+tag @s remove ItemLoot19
+tag @s remove ItemLoot20
+tag @s remove ItemLoot21
+tag @s remove ItemLoot22
+tag @s remove ItemLoot23
+tag @s remove ItemLoot24
+tag @s remove ItemLoot25
+tag @s remove ItemLoot26
+tag @s remove ItemLoot27
+tag @s remove ItemLoot28
+tag @s remove ItemLoot29
+tag @s remove ItemLoot30
+tag @s remove ItemLoot31
+tag @s remove ItemLoot32
+tag @s remove ItemLoot33
+tag @s remove ItemLoot34
+tag @s remove ItemLoot35
+tag @s remove ItemLoot36
+tag @s remove ItemLoot37
+tag @s remove ItemLoot38
+tag @s remove ItemLoot39
+tag @s remove ItemLoot40
+tag @s remove ItemLoot41
+tag @s remove ItemLoot42
+tag @s remove ItemLoot43
+tag @s remove ItemLoot44
+tag @s remove ItemLoot45
+tag @s remove ItemLoot46
+tag @s remove ItemLoot47
+tag @s remove ItemLoot48
+tag @s remove ItemLoot49
+tag @s remove ItemLoot50
+tag @s remove ItemLoot51
+tag @s remove ItemLoot52
+tag @s remove ItemLoot53
+tag @s remove ItemLoot54
+tag @s remove ItemLoot55
+tag @s remove ItemLoot56
+tag @s remove ItemLoot57
+tag @s remove ItemLoot58
+tag @s remove ItemLoot59
+tag @s remove ItemLoot60
+tag @s remove ItemLoot61
+tag @s remove ItemLoot62
+tag @s remove ItemLoot63
+tag @s remove ItemLoot64
+tag @s remove ItemLoot65
+tag @s remove ItemLoot66
+tag @s remove ItemLoot67
+tag @s remove ItemLoot68
+tag @s remove ItemLoot69
+tag @s remove ItemLoot70
+tag @s remove ItemLoot71
+tag @s remove ItemLoot72
+tag @s remove ItemLoot73
+tag @s remove ItemLoot74
+tag @s remove ItemLoot75
+tag @s remove ItemLoot76
+tag @s remove ItemLoot77
+tag @s remove ItemLoot78
+tag @s remove ItemLoot79
+tag @s remove ItemLoot80
+tag @s remove ItemLoot81
+tag @s remove ItemLoot82
+tag @s remove ItemLoot83
+tag @s remove ItemLoot84
+tag @s remove ItemLoot85
+tag @s remove ItemLoot86
+tag @s remove ItemLoot87
+tag @s remove ItemLoot88
+tag @s remove ItemLoot89
+tag @s remove ItemLoot90
+tag @s remove ItemLoot91
+tag @s remove ItemLoot92
+tag @s remove ItemLoot93
+tag @s remove ItemLoot94
+tag @s remove ItemLoot95
+tag @s remove ItemLoot96
+tag @s remove ItemLoot97
+tag @s remove ItemLoot98
+tag @s remove ItemLoot99
+tag @s remove ItemLoot100
+tag @s remove ItemLoot101
+tag @s remove ItemLoot102
+tag @s remove ItemLoot103
+tag @s remove ItemLoot104
+tag @s remove ItemLoot105
+tag @s remove ItemLoot106
+tag @s remove ItemLoot107
+tag @s remove ItemLoot108
+tag @s remove ItemLoot109
+tag @s remove ItemLoot110
+tag @s remove ItemLoot111
+tag @s remove ItemLoot112
+tag @s remove ItemLoot113
+tag @s remove ItemLoot114
+tag @s remove ItemLoot115
+tag @s remove ItemLoot116
+tag @s remove ItemLoot117
+tag @s remove ItemLoot118
+tag @s remove ItemLoot119
+tag @s remove ItemLoot120
+tag @s remove ItemLoot121
+tag @s remove ItemLoot122
+tag @s remove ItemLoot123
+tag @s remove ItemLoot124
+tag @s remove ItemLoot125
+tag @s remove ItemLoot126
+tag @s remove ItemLoot127
+tag @s remove ItemLoot128
+tag @s remove ItemLoot129
+tag @s remove ItemLoot130
+tag @s remove ItemLoot131
+tag @s remove ItemLoot132
+tag @s remove ItemLoot133
+tag @s remove ItemLoot134
+tag @s remove ItemLoot135
+tag @s remove ItemLoot136
+tag @s remove ItemLoot137
+tag @s remove ItemLoot138
+tag @s remove ItemLoot139
+tag @s remove ItemLoot140
+tag @s remove ItemLoot141
+tag @s remove ItemLoot142
+tag @s remove ItemLoot143
+tag @s remove ItemLoot144
+tag @s remove ItemLoot145
+tag @s remove ItemLoot146
+tag @s remove ItemLoot147
+tag @s remove ItemLoot148
+tag @s remove ItemLoot149
+tag @s remove ItemLoot150
+tag @s remove ItemLoot151
+tag @s remove ItemLoot152
+tag @s remove ItemLoot153
+tag @s remove ItemLoot154
+tag @s remove ItemLoot155
+tag @s remove ItemLoot156
+tag @s remove ItemLoot157
+tag @s remove ItemLoot158
+tag @s remove ItemLoot159
+tag @s remove ItemLoot160
+tag @s remove ItemLoot161
+tag @s remove ItemLoot162
+tag @s remove ItemLoot163
+tag @s remove ItemLoot164
+tag @s remove ItemLoot165
+tag @s remove ItemLoot166
+tag @s remove ItemLoot167
+tag @s remove ItemLoot168
+tag @s remove ItemLoot169
+tag @s remove ItemLoot170
+tag @s remove ItemLoot171
+tag @s remove ItemLoot172
+tag @s remove ItemLoot173
+tag @s remove ItemLoot174
+tag @s remove ItemLoot175
+tag @s remove ItemLoot176
+tag @s remove ItemLoot177
+tag @s remove ItemLoot178
+tag @s remove ItemLoot179
+tag @s remove ItemLoot180
+tag @s remove ItemLoot181
+tag @s remove ItemLoot182
+tag @s remove ItemLoot183
+tag @s remove ItemLoot184
+tag @s remove ItemLoot185
+tag @s remove ItemLoot186
+tag @s remove ItemLoot187
+tag @s remove ItemLoot188
+tag @s remove ItemLoot189
+tag @s remove ItemLoot190
+tag @s remove ItemLoot191
+tag @s remove ItemLoot192
+tag @s remove ItemLoot193
+tag @s remove ItemLoot194
+tag @s remove ItemLoot195
+tag @s remove ItemLoot196
+tag @s remove ItemLoot197
+tag @s remove ItemLoot198
+tag @s remove ItemLoot199
+tag @s remove ItemLoot200
+tag @s remove ItemLoot201
+tag @s remove ItemLoot202
+tag @s remove ItemLoot203
+tag @s remove ItemLoot204
+tag @s remove ItemLoot205
+tag @s remove ItemLoot206
+tag @s remove ItemLoot207
+tag @s remove ItemLoot208
+tag @s remove ItemLoot209
+tag @s remove ItemLoot210
+tag @s remove ItemLoot211
+tag @s remove ItemLoot212
+tag @s remove ItemLoot213
+tag @s remove ItemLoot214
+tag @s remove ItemLoot215
+tag @s remove ItemLoot216
+tag @s remove ItemLoot217
+tag @s remove ItemLoot218
+tag @s remove ItemLoot219
+tag @s remove ItemLoot220
+tag @s remove ItemLoot221
+tag @s remove ItemLoot222
+tag @s remove ItemLoot223
+tag @s remove ItemLoot224
+tag @s remove ItemLoot225
+tag @s remove ItemLoot226
+tag @s remove ItemLoot227
+tag @s remove ItemLoot228
+tag @s remove ItemLoot229
+tag @s remove ItemLoot230
+tag @s remove ItemLoot231
+tag @s remove ItemLoot232
+tag @s remove ItemLoot233
+tag @s remove ItemLoot234
+tag @s remove ItemLoot235
+tag @s remove ItemLoot236
+tag @s remove ItemLoot237
+tag @s remove ItemLoot238
+tag @s remove ItemLoot239
+tag @s remove ItemLoot240
+tag @s remove ItemLoot241
+tag @s remove ItemLoot242
+tag @s remove ItemLoot243
+tag @s remove ItemLoot244
+tag @s remove ItemLoot245
+tag @s remove ItemLoot246
+tag @s remove ItemLoot247
+tag @s remove ItemLoot248
+tag @s remove ItemLoot249
+tag @s remove ItemLoot250
+tag @s remove ItemLoot251
+tag @s remove ItemLoot252
+tag @s remove ItemLoot253
+tag @s remove ItemLoot254
+tag @s remove ItemLoot255
+tag @s remove ItemLoot256
+tag @s remove ItemLoot257
+tag @s remove ItemLoot258
+tag @s remove ItemLoot259
+tag @s remove ItemLoot260
+tag @s remove ItemLoot261
+tag @s remove ItemLoot262
+tag @s remove ItemLoot263
+tag @s remove ItemLoot264
+tag @s remove ItemLoot265
+tag @s remove ItemLoot266
+tag @s remove ItemLoot267
+tag @s remove ItemLoot268
+tag @s remove ItemLoot269
+tag @s remove ItemLoot270
+tag @s remove ItemLoot271
+tag @s remove ItemLoot272
+tag @s remove ItemLoot273
+tag @s remove ItemLoot274
+tag @s remove ItemLoot275
+tag @s remove ItemLoot276
+tag @s remove ItemLoot277
+tag @s remove ItemLoot278
+tag @s remove ItemLoot279
+tag @s remove ItemLoot280
+tag @s remove ItemLoot281
+tag @s remove ItemLoot282
+tag @s remove ItemLoot283
+tag @s remove ItemLoot284
+tag @s remove ItemLoot285
+tag @s remove ItemLoot286
+tag @s remove ItemLoot287
+tag @s remove ItemLoot288
+tag @s remove ItemLoot289
+tag @s remove ItemLoot290
+tag @s remove ItemLoot291
+tag @s remove ItemLoot292
+tag @s remove ItemLoot293
+tag @s remove ItemLoot294
+tag @s remove ItemLoot295
+tag @s remove ItemLoot296
+tag @s remove ItemLoot297
+tag @s remove ItemLoot298
+tag @s remove ItemLoot299
+tag @s remove ItemLoot300
+tag @s remove ItemLoot301
+tag @s remove ItemLoot302
+tag @s remove ItemLoot303
+tag @s remove ItemLoot304
+tag @s remove ItemLoot305
+tag @s remove ItemLoot306
+tag @s remove ItemLoot307
+tag @s remove ItemLoot308
+tag @s remove ItemLoot309
+tag @s remove ItemLoot310
+tag @s remove ItemLoot311
+tag @s remove ItemLoot312
+tag @s remove ItemLoot313
+tag @s remove ItemLoot314
+tag @s remove ItemLoot315
+tag @s remove ItemLoot316
+tag @s remove ItemLoot317
+tag @s remove ItemLoot318
+tag @s remove ItemLoot319
+tag @s remove ItemLoot320
+tag @s remove ItemLoot321
+tag @s remove ItemLoot322
+tag @s remove ItemLoot323
+tag @s remove ItemLoot324
+tag @s remove ItemLoot325
+tag @s remove ItemLoot326
+tag @s remove ItemLoot327
+tag @s remove ItemLoot328
+tag @s remove ItemLoot329
+tag @s remove ItemLoot330
+tag @s remove ItemLoot331
+tag @s remove ItemLoot332
+tag @s remove ItemLoot333
+tag @s remove ItemLoot334
+tag @s remove ItemLoot335
+tag @s remove ItemLoot336
+tag @s remove ItemLoot337
+tag @s remove ItemLoot338
+tag @s remove ItemLoot339
+tag @s remove ItemLoot340
+tag @s remove ItemLoot341
+tag @s remove ItemLoot342
+tag @s remove ItemLoot343
+tag @s remove ItemLoot344
+tag @s remove ItemLoot345
+tag @s remove ItemLoot346
+tag @s remove ItemLoot347
+tag @s remove ItemLoot348
+tag @s remove ItemLoot349
+tag @s remove ItemLoot350
+tag @s remove ItemLoot351
+tag @s remove ItemLoot352
+tag @s remove ItemLoot353
+tag @s remove ItemLoot354
+tag @s remove ItemLoot355
+tag @s remove ItemLoot356
+tag @s remove ItemLoot357
+tag @s remove ItemLoot358
+tag @s remove ItemLoot359
+tag @s remove ItemLoot360
+tag @s remove ItemLoot361
+tag @s remove ItemLoot362
+tag @s remove ItemLoot363
+tag @s remove ItemLoot364
+tag @s remove ItemLoot365
+tag @s remove ItemLoot366
+tag @s remove ItemLoot367
+tag @s remove ItemLoot368
+tag @s remove ItemLoot369
+tag @s remove ItemLoot370
+tag @s remove ItemLoot371
+tag @s remove ItemLoot372
+tag @s remove ItemLoot373
+tag @s remove ItemLoot374
+tag @s remove ItemLoot375
+tag @s remove ItemLoot376
+tag @s remove ItemLoot377
+tag @s remove ItemLoot378
+tag @s remove ItemLoot379
+tag @s remove ItemLoot380
+tag @s remove ItemLoot381
+tag @s remove ItemLoot382
+tag @s remove ItemLoot383
+tag @s remove ItemLoot384
+tag @s remove ItemLoot385
+tag @s remove ItemLoot386
+tag @s remove ItemLoot387
+tag @s remove ItemLoot388
+tag @s remove ItemLoot389
+tag @s remove ItemLoot390
+tag @s remove ItemLoot391
+tag @s remove ItemLoot392
+tag @s remove ItemLoot393
+tag @s remove ItemLoot394
+tag @s remove ItemLoot395
+tag @s remove ItemLoot396
+tag @s remove ItemLoot397
+tag @s remove ItemLoot398
+tag @s remove ItemLoot399
+tag @s remove ItemLoot400
+tag @s remove ItemLoot401
+tag @s remove ItemLoot402
+tag @s remove ItemLoot403
+tag @s remove ItemLoot404
+tag @s remove ItemLoot405
+tag @s remove ItemLoot406
+tag @s remove ItemLoot407
+tag @s remove ItemLoot408
+tag @s remove ItemLoot409
+tag @s remove ItemLoot410
+tag @s remove ItemLoot411
+tag @s remove ItemLoot412
+tag @s remove ItemLoot413
+tag @s remove ItemLoot414
+tag @s remove ItemLoot415
+tag @s remove ItemLoot416
+tag @s remove ItemLoot417
+tag @s remove ItemLoot418
+tag @s remove ItemLoot419
+tag @s remove ItemLoot420
+tag @s remove ItemLoot421
+tag @s remove ItemLoot422
+tag @s remove ItemLoot423
+tag @s remove ItemLoot424
+tag @s remove ItemLoot425
+tag @s remove ItemLoot426
+tag @s remove ItemLoot427
+tag @s remove ItemLoot428
+tag @s remove ItemLoot429
+tag @s remove ItemLoot430
+tag @s remove ItemLoot431
+tag @s remove ItemLoot432
+tag @s remove ItemLoot433
+tag @s remove ItemLoot434
+tag @s remove ItemLoot435
+tag @s remove ItemLoot436
+tag @s remove ItemLoot437
+tag @s remove ItemLoot438
+tag @s remove ItemLoot439
+tag @s remove ItemLoot440
+tag @s remove ItemLoot441
+tag @s remove ItemLoot442
+tag @s remove ItemLoot443
+tag @s remove ItemLoot444
+tag @s remove ItemLoot445
+tag @s remove ItemLoot446
+tag @s remove ItemLoot447
+tag @s remove ItemLoot448
+tag @s remove ItemLoot449
+tag @s remove ItemLoot450
+tag @s remove ItemLoot451
+tag @s remove ItemLoot452
+tag @s remove ItemLoot453
+tag @s remove ItemLoot454
+tag @s remove ItemLoot455
+tag @s remove ItemLoot456
+tag @s remove ItemLoot457
+tag @s remove ItemLoot458
+tag @s remove ItemLoot459
+tag @s remove ItemLoot460
+tag @s remove ItemLoot461
+tag @s remove ItemLoot462
+tag @s remove ItemLoot463
+tag @s remove ItemLoot464
+tag @s remove ItemLoot465
+tag @s remove ItemLoot466
+tag @s remove ItemLoot467
+tag @s remove ItemLoot468
+tag @s remove ItemLoot469
+tag @s remove ItemLoot470
+tag @s remove ItemLoot471
+tag @s remove ItemLoot472
+tag @s remove ItemLoot473
+tag @s remove ItemLoot474
+tag @s remove ItemLoot475
+tag @s remove ItemLoot476
+tag @s remove ItemLoot477
+tag @s remove ItemLoot478
+tag @s remove ItemLoot479
+tag @s remove ItemLoot480
+tag @s remove ItemLoot481
+tag @s remove ItemLoot482
+tag @s remove ItemLoot483
+tag @s remove ItemLoot484
+tag @s remove ItemLoot485
+tag @s remove ItemLoot486
+tag @s remove ItemLoot487
+tag @s remove ItemLoot488
+tag @s remove ItemLoot489
+tag @s remove ItemLoot490
+tag @s remove ItemLoot491
+tag @s remove ItemLoot492
+tag @s remove ItemLoot493
+tag @s remove ItemLoot494
+tag @s remove ItemLoot495
+tag @s remove ItemLoot496
+tag @s remove ItemLoot497
+tag @s remove ItemLoot498
+tag @s remove ItemLoot499
+tag @s remove ItemLoot500
+tag @s remove ItemLoot501
+tag @s remove ItemLoot502
+tag @s remove ItemLoot503
+tag @s remove ItemLoot504
+tag @s remove ItemLoot505
+tag @s remove ItemLoot506
+tag @s remove ItemLoot507
+tag @s remove ItemLoot508
+tag @s remove ItemLoot509
+tag @s remove ItemLoot510
+tag @s remove ItemLoot511
+tag @s remove ItemLoot512
+tag @s remove ItemLoot513
+tag @s remove ItemLoot514
+tag @s remove ItemLoot515
+tag @s remove ItemLoot516
+tag @s remove ItemLoot517
+tag @s remove ItemLoot518
+tag @s remove ItemLoot519
+tag @s remove ItemLoot520
+tag @s remove ItemLoot521
+tag @s remove ItemLoot522
+tag @s remove ItemLoot523
+tag @s remove ItemLoot524
+tag @s remove ItemLoot525
+tag @s remove ItemLoot526
+tag @s remove ItemLoot527
+tag @s remove ItemLoot528
+tag @s remove ItemLoot529
+tag @s remove ItemLoot530
+tag @s remove ItemLoot531
+tag @s remove ItemLoot532
+tag @s remove ItemLoot533
+tag @s remove ItemLoot534
+tag @s remove ItemLoot535
+tag @s remove ItemLoot536
+tag @s remove ItemLoot537
+tag @s remove ItemLoot538
+tag @s remove ItemLoot539
+tag @s remove ItemLoot540
+tag @s remove ItemLoot541
+tag @s remove ItemLoot542
+tag @s remove ItemLoot543
+tag @s remove ItemLoot544
+tag @s remove ItemLoot545
+tag @s remove ItemLoot546
 
 
 
@@ -917,4 +1337,4 @@ tag @s add InitialTags
 
 
 #Tp to lobby
-tp @s[x=-553,y=99,z=1256,dx=2,dy=3,dz=3,scores={DialogueTrigger=0}] -783 102 1210.0 -90 13
+tp @s[x=-553,y=99,z=1256,dx=2,dy=3,dz=3,tag=InitialTags] -783 102 1210.0 -90 13
