@@ -28,10 +28,6 @@ execute as @a[scores={TalkTrigger=2}] run scoreboard players set @s DialogueTrig
 execute as @a[scores={TalkTrigger=2}] run scoreboard players set @s TalkTrigger 0
 
 
-#Lumiose Gym Would you like to return to the lobby?
-execute as @a[scores={TalkTrigger=3}] run tp @s -1823 100 -1703 0 ~
-execute as @a[scores={TalkTrigger=3}] run scoreboard players set @s TalkTrigger 0
-
 #Pokemon League RIGHT would you like to end your progress?
 tag @a[limit=1,scores={TalkTrigger=4}] remove Diantha
 tag @a[limit=1,scores={TalkTrigger=4}] remove Wikstrom

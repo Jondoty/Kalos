@@ -1685,21 +1685,21 @@ tp @s[x=-1420,y=111,z=-404,dx=14,dy=5,scores={TalkTime=0}] -1417 74 -393
 tellraw @s[x=-1823,y=100,z=-1705,dy=5,tag=Clemont] {"text":"You already defeated Clemont!","italic":true,"color":"gray"}
 execute as @s[x=-1823,y=100,z=-1705,dy=5,tag=Clemont] at @s run tp @s ~ ~ ~5
 
-tellraw @s[x=-1823,y=100,z=-1705,dy=5,tag=!Clemont] {"text":"Welcome to the Lumiose City Gym! You will have to answer our questions if you want to get any farther ahead! Just battle the trainer you think is the answer!"}
+execute as @s[x=-1823,y=100,z=-1705,dy=5,tag=!Clemont] run opendialogue lumiosegym_bonnie_intro @s
 tp @s[x=-1823,y=100,z=-1705,dy=5,tag=!Clemont] -1823 110 -1706
 
 #Floor 2 to Floor 3
-tellraw @s[x=-1811,y=109,z=-1741,dy=3] {"text":"Quiz time!"}
+tellraw @s[x=-1811,y=109,z=-1741,dy=3] {"text":"<Bonnie> Quiz time!"}
 execute as @s[x=-1811,y=109,z=-1741,dy=3] run fill -1810 110 -1738 -1812 112 -1738 minecraft:light_blue_stained_glass
 tp @s[x=-1811,y=109,z=-1741,dy=3] -1823 125 -1706
 
 #Floor 3 to 4
-tellraw @s[x=-1835,y=125,z=-1741,dy=3] {"text":"Quiz time!"}
+tellraw @s[x=-1835,y=125,z=-1741,dy=3] {"text":"<Bonnie> Quiz time!"}
 execute as @s[x=-1835,y=125,z=-1741,dy=3] run fill -1834 125 -1738 -1836 127 -1738 minecraft:light_blue_stained_glass
 tp @s[x=-1835,y=125,z=-1741,dy=3] -1823 140 -1706
 
 #Floor 4 to 5
-tellraw @s[x=-1811,y=140,z=-1741,dy=3] {"text":"Quiz time!"}
+tellraw @s[x=-1811,y=140,z=-1741,dy=3] {"text":"<Bonnie> Quiz time!"}
 execute as @s[x=-1811,y=140,z=-1741,dy=3] run fill -1810 140 -1738 -1812 142 -1738 minecraft:light_blue_stained_glass
 tp @s[x=-1811,y=140,z=-1741,dy=3] -1823 155 -1706
 
@@ -1710,8 +1710,7 @@ tp @s[x=-1823,y=155,z=-1741,dy=3] -1823 170 -1706
 
 
 #Return to gym lobby
-execute as @s[x=-1823,y=125,z=-1705,dy=65] run tellraw @s ["",{"text":"Would you like to return to the lobby?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 3"}},{"text":"]"}]
-execute as @s[x=-1823,y=125,z=-1705,dy=65] run scoreboard players enable @s TalkTrigger
+execute as @s[x=-1823,y=125,z=-1705,dy=65] run opendialogue lumiosegym_exit @s
 execute as @s[x=-1823,y=125,z=-1705,dy=65] at @s run tp @s ~ ~ ~-3
 
 tp @s[x=-1823,y=110,z=-1705,dy=3] -1823 100 -1703 0 ~
