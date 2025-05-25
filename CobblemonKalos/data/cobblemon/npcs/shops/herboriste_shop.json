@@ -1,6 +1,6 @@
 {
   "hitbox": "player",
-  "resourceIdentifier": "cobblemon:shopman",
+  "resourceIdentifier": "cobblemon:oldlady",
   "presets": [
     "cobblemon:trainer_basics"
   ],
