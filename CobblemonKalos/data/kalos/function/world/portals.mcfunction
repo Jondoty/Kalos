@@ -531,10 +531,10 @@ tp @s[x=1653,y=70,z=74,dx=6,dy=5] 1533 110 7
 
 
 #Anistar Gym Interior Portals
-effect give @s[x=-1057,y=101,z=-1720,dy=5,dz=1] minecraft:blindness 5 5 true
+effect give @s[x=-1057,y=101,z=-1720,dy=5,dz=1] minecraft:blindness 3 5 true
 tp @s[x=-1057,y=101,z=-1720,dy=5,dz=1] -1077 184 -1955 180 ~
 
-effect give @s[x=-1077,y=183,z=-1953,dy=5,dz=1] minecraft:blindness 5 5 true
+effect give @s[x=-1077,y=183,z=-1953,dy=5,dz=1] minecraft:blindness 3 5 true
 tp @s[x=-1077,y=183,z=-1953,dy=5,dz=1] -1057 102 -1717 0 ~
 
 #Portal 1
@@ -563,7 +563,7 @@ tp @s[x=-1015,y=70,z=-1949,dx=2,dy=5,dz=2] -1136 57 -1965 0 ~
 
 #Portal 7
 tp @s[x=-1015,y=70,z=-1967,dx=2,dy=5,dz=2] -1080 108 -1946 90 ~
-tp @s[x=1078,y=108,z=-1947,dx=2,dy=5,dz=2] -1014 70 -1963 90 ~
+tp @s[x=-1078,y=108,z=-1947,dx=2,dy=5,dz=2] -1014 70 -1963 90 ~
 
 #Portal 8
 tp @s[x=-1156,y=108,z=-1947,dx=2,dy=5,dz=2] -1077 86 -1907 180 ~
@@ -1516,7 +1516,7 @@ tp @s[x=-231,y=29,z=337,dx=2,dy=2,dz=2] -307 29 378 180 ~
 
 #Warp Pad F
 tp @s[x=-243,y=29,z=323,dx=2,dy=2,dz=2] -295 29 330 180 ~
-tp @s[x=-296,y=29,z=332,dx=2,dy=2,dz=2,scores={TalkTime=0}] -239 29 324 -90 ~
+tp @s[x=-296,y=29,z=332,dx=2,dy=2,dz=2] -239 29 324 -90 ~
 
 #Warp Pad G
 tp @s[x=-268,y=29,z=374,dx=2,dy=2,dz=2] -332 29 356 0 ~
