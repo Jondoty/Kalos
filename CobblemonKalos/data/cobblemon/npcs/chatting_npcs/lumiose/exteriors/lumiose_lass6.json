@@ -1,0 +1,12 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:lass",
+    "presets": [
+        "cobblemon:chatting_basics"
+    ],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:lumiose_lass6_interaction"
+    },
+    "name": "     "
+}

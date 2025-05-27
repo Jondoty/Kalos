@@ -1,0 +1,12 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:acetrainerm",
+    "presets": [
+        "cobblemon:chatting_basics"
+    ],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:snowbelle_acetrainerm2_interaction"
+    },
+    "name": "     "
+}

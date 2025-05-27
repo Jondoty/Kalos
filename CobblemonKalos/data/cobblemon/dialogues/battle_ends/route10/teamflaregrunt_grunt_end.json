@@ -12,7 +12,7 @@
       "face": {
         "type": "artificial",
         "modelType": "npc",
-        "identifier": "cobblemon:teamflaregrunt",
+        "identifier": "cobblemon:teamflaregruntm",
         "isLeftSide": true
       }
     }
