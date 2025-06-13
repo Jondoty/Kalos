@@ -2,21 +2,21 @@
 setblock -420 100 1367 minecraft:iron_block
 
 
-#Resets Berries
-scoreboard players set @a OranPickup 0
-scoreboard players set @a PersimPickup 0
-scoreboard players set @a AguavPickup 0
-scoreboard players set @a MagoPickup 0
-scoreboard players set @a IapapaPickup 0
-scoreboard players set @a SitrusPickup 0
-scoreboard players set @a AspearPickup 0
-scoreboard players set @a RoseliPickup 0
-scoreboard players set @a LeppaPickup 0
-scoreboard players set @a LumPickup 0
-scoreboard players set @a WacanPickup 0
-scoreboard players set @a YachePickup 0
-scoreboard players set @a KasibPickup 0
-scoreboard players set @a FigyPickup 0
+#Resets Berry Trees
+tag @s remove OranPickup
+tag @s remove PersimPickup
+tag @s remove AguavPickup
+tag @s remove MagoPickup
+tag @s remove IapapaPickup
+tag @s remove SitrusPickup
+tag @s remove AspearPickup
+tag @s remove RoseliPickup
+tag @s remove LeppaPickup
+tag @s remove LumPickup
+tag @s remove WacanPickup
+tag @s remove YachePickup
+tag @s remove KasibPickup
+tag @s remove FigyPickup
 
 #Day of the Week counter
 scoreboard players add @e[x=-687,y=100,z=1388,dy=4,type=armor_stand] Weekday 1

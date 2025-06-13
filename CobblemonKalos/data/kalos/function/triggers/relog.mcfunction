@@ -9,6 +9,7 @@ advancement revoke @s only kalos:click/itemclick
 advancement revoke @s only kalos:click/npcs
 advancement revoke @s only kalos:click/rocksmash
 advancement revoke @s only kalos:click/signs
+advancement revoke @s only kalos:click/berrytrees
 
 
 #Removes Music tags if present

@@ -154,9 +154,6 @@ execute as @a[scores={RockTrigger=1..}] run function kalos:triggers/rocksmashtri
 execute at @e[type=armor_stand,tag=AmbushEncounter] run execute at @s[tag=!Bush] run execute as @a[distance=..2] run function kalos:world/ambushencounter
 execute at @e[type=armor_stand,tag=AmbushEncounter] run execute at @s[tag=Bush] run execute as @a[distance=..7] run function kalos:world/ambushencounter
 
-#Runs Berry-Tree gives
-execute at @e[type=armor_stand,tag=Berry_Tree] run execute as @a[distance=..5] run function kalos:world/berrygive
-
 #Player jumping in Strength Pits
 execute at @e[type=armor_stand,name=StrengthPit] run execute at @a[dx=6,dy=3,dz=6] run function kalos:hms/strengthpit
 
