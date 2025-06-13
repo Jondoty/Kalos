@@ -3,8 +3,8 @@
 execute as @a at @s if block ~ ~ ~ minecraft:magenta_carpet run function kalos:world/portals
 
 
-#Tagging berries when the player uses an Axe (HM Cut)
-execute as @a[scores={CutUse=1..}] run function kalos:triggers/berrytags
+#Tagging berries in the berry farms area
+execute as @e[x=-1273,y=100,z=2,dx=85,dy=4,dz=30,type=item] run function kalos:data/berrytags
 
 #Runs shiny particles if player has turned that option on
 #execute as @e[x=-685,y=100,z=1388,dy=3,tag=Particles,type=armor_stand] at @e[tag=Shiny,type=pixelmon:pixelmon] run particle reddust ~ ~ ~ 0 10 0 1 10 force @a[distance=..50]
