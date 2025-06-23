@@ -1,12 +1,12 @@
 {
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:acetrainerm",
+    "resourceIdentifier": "cobblemon:medium",
     "presets": [
         "cobblemon:chatting_basics"
     ],
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:coiffure_clips_acetrainerm_interaction"
+        "dialogue": "cobblemon:prstudio_medium_interaction"
     },
     "name": "     "
 }

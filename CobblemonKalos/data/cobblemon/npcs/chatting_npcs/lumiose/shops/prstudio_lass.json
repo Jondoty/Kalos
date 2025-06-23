@@ -6,7 +6,7 @@
     ],
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:coiffure_clips_lass_interaction"
+        "dialogue": "cobblemon:prstudio_lass_interaction"
     },
     "name": "     "
 }

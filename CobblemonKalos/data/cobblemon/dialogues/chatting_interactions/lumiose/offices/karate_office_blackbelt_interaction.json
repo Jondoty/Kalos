@@ -1,7 +1,7 @@
 {
     "speakers": {
         "npc": {
-            "name": "     ",
+            "name": "Sensi",
             "face": {
                 "type": "artificial",
                 "modelType": "npc",

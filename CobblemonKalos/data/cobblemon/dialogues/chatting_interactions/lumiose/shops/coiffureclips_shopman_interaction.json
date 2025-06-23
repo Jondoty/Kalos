@@ -5,7 +5,7 @@
             "face": {
                 "type": "artificial",
                 "modelType": "npc",
-                "identifier": "cobblemon:schoolgirl",
+                "identifier": "cobblemon:shopman",
                 "isLeftSide": true
             }
         }
@@ -15,7 +15,7 @@
             "id": "page1",
             "speaker": "npc",
             "lines": [
-                "Lysandre Cafe's red decor supposedly represents the owner's burning passion!"
+                "It's my dream to express all Pokemon by hairstyle."
             ],
             "input": {
                 "type": "option",

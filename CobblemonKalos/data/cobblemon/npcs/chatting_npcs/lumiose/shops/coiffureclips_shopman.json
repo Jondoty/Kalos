@@ -1,12 +1,12 @@
 {
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:schoolboy",
+    "resourceIdentifier": "cobblemon:shopman",
     "presets": [
         "cobblemon:chatting_basics"
     ],
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:herboriste_schoolboy_interaction"
+        "dialogue": "cobblemon:coiffureclips_shopman_interaction"
     },
     "name": "     "
 }

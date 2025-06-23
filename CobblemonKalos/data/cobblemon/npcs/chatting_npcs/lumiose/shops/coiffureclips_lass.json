@@ -1,12 +1,12 @@
 {
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:punkgirl",
+    "resourceIdentifier": "cobblemon:lass",
     "presets": [
         "cobblemon:chatting_basics"
     ],
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:coiffure_clips_punkgirl_interaction"
+        "dialogue": "cobblemon:coiffureclips_lass_interaction"
     },
     "name": "     "
 }

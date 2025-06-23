@@ -5,7 +5,7 @@
             "face": {
                 "type": "artificial",
                 "modelType": "npc",
-                "identifier": "cobblemon:schoolgirl",
+                "identifier": "cobblemon:lass",
                 "isLeftSide": true
             }
         }
@@ -15,7 +15,7 @@
             "id": "page1",
             "speaker": "npc",
             "lines": [
-                "Lysandre Cafe's red decor supposedly represents the owner's burning passion!"
+                "No! No matter how many times I change my look, it all looks too good!"
             ],
             "input": {
                 "type": "option",

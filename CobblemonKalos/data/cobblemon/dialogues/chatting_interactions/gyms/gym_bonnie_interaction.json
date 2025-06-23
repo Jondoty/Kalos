@@ -1,7 +1,7 @@
 {
     "speakers": {
         "npc": {
-            "name": "     ",
+            "name": "Bonnie",
             "face": {
                 "type": "artificial",
                 "modelType": "npc",

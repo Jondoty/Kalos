@@ -1,7 +1,7 @@
 {
     "speakers": {
         "npc": {
-            "name": "     ",
+            "name": "Gym Guy",
             "face": {
                 "type": "artificial",
                 "modelType": "npc",

@@ -1,7 +1,7 @@
 {
     "speakers": {
         "npc": {
-            "name": "     ",
+            "name": "Nurse Joy",
             "face": {
                 "type": "artificial",
                 "modelType": "npc",

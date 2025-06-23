@@ -1,12 +1,12 @@
 {
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:medium",
+    "resourceIdentifier": "cobblemon:lass",
     "presets": [
         "cobblemon:chatting_basics"
     ],
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:coiffure_clips_medium_interaction"
+        "dialogue": "cobblemon:prstudio_lass2_interaction"
     },
     "name": "     "
 }

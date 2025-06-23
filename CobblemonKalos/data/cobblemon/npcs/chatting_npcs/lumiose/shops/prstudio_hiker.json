@@ -1,12 +1,12 @@
 {
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:schoolboy",
+    "resourceIdentifier": "cobblemon:hiker",
     "presets": [
         "cobblemon:chatting_basics"
     ],
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:herboriste_schoolboy_interaction"
+        "dialogue": "cobblemon:prstudio_hiker_interaction"
     },
     "name": "     "
 }

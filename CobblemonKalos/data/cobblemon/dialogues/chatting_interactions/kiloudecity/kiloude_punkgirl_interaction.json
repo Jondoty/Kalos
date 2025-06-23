@@ -33,7 +33,7 @@
             "id": "page2",
             "speaker": "npc",
             "lines": [
-                "If you do, send it out and show me, please?"
+                "If you do, show me, please?"
             ],
             "input": {
                 "type": "option",

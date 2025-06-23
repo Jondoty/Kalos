@@ -1,6 +1,6 @@
 {
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:schoolkid",
+    "resourceIdentifier": "cobblemon:schoolboy",
     "presets": [
         "cobblemon:chatting_basics"
     ],

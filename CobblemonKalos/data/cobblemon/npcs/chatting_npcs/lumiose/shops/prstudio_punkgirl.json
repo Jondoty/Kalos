@@ -1,12 +1,12 @@
 {
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:hiker",
+    "resourceIdentifier": "cobblemon:punkgirl",
     "presets": [
         "cobblemon:chatting_basics"
     ],
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:coiffure_clips_hiker_interaction"
+        "dialogue": "cobblemon:prstudio_punkgirl_interaction"
     },
     "name": "     "
 }
