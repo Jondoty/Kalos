@@ -2,31 +2,31 @@ tellraw @s[tag=!InitialTags] {"text":"Initial scoreboard values required to run 
 tp @s[tag=!InitialTags] -552 100 1257
 
 #Lobby to Sycamore Welcome scene
-execute as @s[x=-764,y=102,z=1208,dy=3,dz=3,scores={TalkTime=0},tag=!Dialogue266] run gamemode spectator @s
-execute as @s[x=-764,y=102,z=1208,dy=3,dz=3,scores={TalkTime=0},tag=!Dialogue266] run scoreboard players set @s DialogueTrigger 266
-tp @s[x=-764,y=102,z=1208,dy=3,dz=3,scores={TalkTime=0},tag=!Dialogue266] -1009 125 1457 180 90
+execute as @s[x=-764,y=102,z=1208,dy=3,dz=3,tag=!Dialogue266] run gamemode spectator @s
+#execute as @s[x=-764,y=102,z=1208,dy=3,dz=3,tag=!Dialogue266] run scoreboard players set @s DialogueTrigger 266
+tp @s[x=-764,y=102,z=1208,dy=3,dz=3,tag=!Dialogue266] -1009 125 1457 180 90
 
 #Lobby to Vaniville
-execute as @s[x=-764,y=102,z=1208,dy=3,dz=3,scores={TalkTime=0},tag=Dialogue266] run function kalos:triggers/stopsound
-tp @s[x=-764,y=102,z=1208,dy=3,dz=3,scores={TalkTime=0},tag=Dialogue266] 506 118 1558 180 10
+execute as @s[x=-764,y=102,z=1208,dy=3,dz=3,tag=Dialogue266] run function kalos:triggers/stopsound
+tp @s[x=-764,y=102,z=1208,dy=3,dz=3,tag=Dialogue266] 506 118 1558 180 10
 
-tp @s[x=516,y=118,z=1549,dy=4,scores={TalkTime=0}] -783 102 1210.0 -90 13
+tp @s[x=516,y=118,z=1549,dy=4] -783 102 1210.0 -90 13
 
 #Gyms
 
 #Santalune City Gym
-execute as @s[x=310,y=102,z=383,dx=6,dy=5,dz=1,scores={TalkTime=0}] run function kalos:triggers/stopsound
-tp @s[x=310,y=102,z=383,dx=6,dy=5,dz=1,scores={TalkTime=0}] -1919 138 -1890
+execute as @s[x=310,y=102,z=383,dx=6,dy=5,dz=1] run function kalos:triggers/stopsound
+tp @s[x=310,y=102,z=383,dx=6,dy=5,dz=1] -1919 138 -1890
 
-execute as @s[x=-1922,y=138,z=-1889,dx=6,dy=5,scores={TalkTime=0}] run function kalos:triggers/stopsound
-tp @s[x=-1922,y=138,z=-1889,dx=6,dy=5,scores={TalkTime=0}] 313 102 385
+execute as @s[x=-1922,y=138,z=-1889,dx=6,dy=5] run function kalos:triggers/stopsound
+tp @s[x=-1922,y=138,z=-1889,dx=6,dy=5] 313 102 385
 
 tp @s[x=-1921,y=132,z=-1904,dx=4,dy=1,dz=5] -1937 115 -1847
 
 
 #Cyllage City Gym
-execute as @s[x=-1917,y=114,z=1,dx=11,dy=5,scores={TalkTime=0}] run function kalos:triggers/stopsound
-tp @s[x=-1917,y=114,z=1,dx=11,dy=5,scores={TalkTime=0}] -1677 102 -1866
+execute as @s[x=-1917,y=114,z=1,dx=11,dy=5] run function kalos:triggers/stopsound
+tp @s[x=-1917,y=114,z=1,dx=11,dy=5] -1677 102 -1866
 
 execute as @s[x=-1679,y=101,z=-1865,dx=5,dy=5] run function kalos:triggers/stopsound
 tp @s[x=-1679,y=101,z=-1865,dx=5,dy=5] -1912 114 2
@@ -34,8 +34,8 @@ tp @s[x=-1679,y=101,z=-1865,dx=5,dy=5] -1912 114 2
 
 #Shalour City Gym
 #Pre-Tower of Mastery Serena defeat
-scoreboard players set @s[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1,scores={TalkTime=0},tag=!Dialogue61] DialogueTrigger 57
-execute as @s[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1,scores={TalkTime=0},tag=!Dialogue61] at @s run tp @s ~ ~ ~10
+#scoreboard players set @s[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1,tag=!Dialogue61] DialogueTrigger 57
+execute as @s[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1,tag=!Dialogue61] at @s run tp @s ~ ~ ~10
 
 execute as @s[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1] run function kalos:triggers/stopsound
 tp @s[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1] -1328 102 -1816
@@ -49,11 +49,11 @@ tp @s[x=-1659,y=91,z=-1101,dx=6,dy=5] -1656 91 -1107
 tp @s[x=-1659,y=91,z=-1105,dx=6,dy=5] -1656 91 -1099
 
 #Under Lucario Statue Room
-scoreboard players set @s[x=-1662,y=93,z=-1160,dx=6,dy=5,scores={TalkTime=0},tag=!Dialogue59] DialogueTrigger 59
-tp @s[x=-1662,y=93,z=-1160,dx=6,dy=5,scores={TalkTime=0}] -1658 77 -1177
+#scoreboard players set @s[x=-1662,y=93,z=-1160,dx=6,dy=5,tag=!Dialogue59] DialogueTrigger 59
+tp @s[x=-1662,y=93,z=-1160,dx=6,dy=5] -1658 77 -1177
 
-scoreboard players set @s[x=-1661,y=77,z=-1176,dx=5,dy=5,scores={TalkTime=0},tag=Dialogue59] DialogueTrigger 60
-tp @s[x=-1661,y=77,z=-1176,dx=5,dy=5,scores={TalkTime=0}] -1659 93 -1159
+#scoreboard players set @s[x=-1661,y=77,z=-1176,dx=5,dy=5,tag=Dialogue59] DialogueTrigger 60
+tp @s[x=-1661,y=77,z=-1176,dx=5,dy=5] -1659 93 -1159
 
 
 
@@ -80,7 +80,7 @@ tp @s[x=-1965,y=101,z=-1667,dx=6,dy=5] -93 100 -1460
 
 
 #Anistar City Gym
-tellraw @s[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=!Dialogue103,scores={TalkTime=0}] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Let's battle, "},{"selector":"@p[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=!Dialogue103]"},{"text":"!"}]
+tellraw @s[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=!Dialogue103] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Let's battle, "},{"selector":"@p[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=!Dialogue103]"},{"text":"!"}]
 execute as @s[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=!Dialogue103] at @s run tp @s ~ ~ ~10
 
 execute as @s[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=Dialogue103] run function kalos:triggers/stopsound
@@ -100,20 +100,20 @@ tp @s[x=-803,y=154,z=-1835,dx=6,dy=5] 1144 97 488
 
 
 #Santalune Pokemon Center
-execute as @s[x=295,y=68,z=486,dx=4,dy=5] run function kalos:triggers/stopsound
-execute as @s[x=295,y=68,z=486,dx=4,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+#execute as @s[x=295,y=68,z=486,dx=4,dy=5] run function kalos:triggers/stopsound
+execute as @s[x=295,y=68,z=486,dx=4,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 #execute as @s[x=295,y=68,z=486,dx=4,dy=5,tag=!Dialogue9] run tp @e[x=-504,y=120,z=1252,dy=3,type=pixelmon:npc_chatting] 308 68 481
 spawnpoint @s[x=295,y=68,z=486,dx=4,dy=5] 297 68 482
 tp @s[x=295,y=68,z=486,dx=4,dy=5] 297 100 486
 
 #execute as @s[x=295,y=68,z=486,dx=4,dy=5,tag=Dialogue9] run tp @e[x=308,y=67,z=481,dy=3,type=pixelmon:npc_chatting] -504 121 1252
-scoreboard players set @s[x=294,y=100,z=485,dx=5,dy=5,dz=5,scores={TalkTime=0},tag=!Dialogue9] DialogueTrigger 9
+scoreboard players set @s[x=294,y=100,z=485,dx=5,dy=5,dz=5,tag=!Dialogue9] DialogueTrigger 9
 execute as @s[x=294,y=100,z=485,dx=5,dy=5] run function kalos:triggers/stopsound
 tp @s[x=294,y=100,z=485,dx=5,dy=5] 297 68 485
 
 
 #Camphrier Pokemon Center
-execute as @s[x=-1016,y=100,z=10,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+#execute as @s[x=-1016,y=100,z=10,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-1016,y=100,z=10,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-1016,y=100,z=10,dx=5,dy=5] -1013 80 6
 tp @s[x=-1016,y=100,z=10,dx=5,dy=5] -1013 80 9
@@ -123,7 +123,7 @@ tp @s[x=-1015,y=80,z=10,dx=4,dy=5] -1013 100 12
 
 
 #Cyllage Pokemon Center
-execute as @s[x=-2039,y=104,z=-62,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+#execute as @s[x=-2039,y=104,z=-62,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-2039,y=104,z=-62,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-2039,y=104,z=-62,dx=5,dy=5] -2036 78 -66
 tp @s[x=-2039,y=104,z=-62,dx=5,dy=5] -2036 78 -63
@@ -133,7 +133,7 @@ tp @s[x=-2038,y=78,z=-62,dx=4,dy=5] -2036 104 -60
 
 
 #Ambrette Pokemon Center
-execute as @s[x=-1964,y=141,z=554,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+#execute as @s[x=-1964,y=141,z=554,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-1964,y=141,z=554,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-1964,y=141,z=554,dx=5,dy=5] -1961 103 550
 tp @s[x=-1964,y=141,z=554,dx=5,dy=5] -1961 103 553
@@ -143,7 +143,7 @@ tp @s[x=-1963,y=103,z=554,dx=4,dy=5] -1961 141 556
 
 
 #Geosenge Pokemon Center (Ultimate Weapon Destroyed)
-execute as @s[x=-444,y=109,z=2094,dx=4,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+#execute as @s[x=-444,y=109,z=2094,dx=4,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-444,y=109,z=2094,dx=4,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-444,y=109,z=2094,dx=4,dy=5] -2241 79 -630
 tp @s[x=-444,y=109,z=2094,dx=4,dy=5] -2241 79 -627
@@ -153,7 +153,7 @@ tp @s[x=-2243,y=79,z=-626,dx=4,dy=5,scores={Geosenge=2}] -441 109 2096
 
 
 #Geosenge Pokemon Center (Ultimate Weapon)
-execute as @s[x=-1164,y=104,z=2094,dx=4,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+#execute as @s[x=-1164,y=104,z=2094,dx=4,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-1164,y=104,z=2094,dx=4,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-1164,y=104,z=2094,dx=4,dy=5] -2241 79 -630
 tp @s[x=-1164,y=104,z=2094,dx=4,dy=5] -2241 79 -627
@@ -163,7 +163,7 @@ tp @s[x=-2243,y=79,z=-626,dx=4,dy=5,scores={Geosenge=1}] -1161 109 2095
 
 
 #Geosenge Pokemon Center (normal)
-execute as @s[x=-2244,y=104,z=-626,dx=4,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+#execute as @s[x=-2244,y=104,z=-626,dx=4,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-2244,y=104,z=-626,dx=4,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-2244,y=104,z=-626,dx=4,dy=5] -2241 79 -630
 tp @s[x=-2244,y=104,z=-626,dx=4,dy=5] -2241 79 -627
@@ -173,7 +173,7 @@ tp @s[x=-2243,y=79,z=-626,dx=4,dy=5] -2241 104 -624
 
 
 #Shalour City Pokemon Center
-execute as @s[x=-1622,y=80,z=-819,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+#execute as @s[x=-1622,y=80,z=-819,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-1622,y=80,z=-819,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-1622,y=80,z=-819,dx=5,dy=5] -1619 57 -823
 tp @s[x=-1622,y=80,z=-819,dx=5,dy=5] -1619 57 -820
@@ -183,7 +183,7 @@ tp @s[x=-1621,y=57,z=-819,dx=5,dy=5] -1619 80 -817
 
 
 #Courmarine Pokemon Center
-execute as @s[x=-1029,y=115,z=-660,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+#execute as @s[x=-1029,y=115,z=-660,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-1029,y=115,z=-660,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-1029,y=115,z=-660,dx=5,dy=5] -1026 89 -664
 tp @s[x=-1029,y=115,z=-660,dx=5,dy=5] -1026 89 -661
@@ -193,7 +193,7 @@ tp @s[x=-1028,y=89,z=-660,dx=4,dy=5] -1026 115 -658
 
 
 #Laverre Pokemon Center
-execute as @s[x=-73,y=100,z=-1365,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+#execute as @s[x=-73,y=100,z=-1365,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-73,y=100,z=-1365,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-73,y=100,z=-1365,dx=5,dy=5] -70 77 -1369
 tp @s[x=-73,y=100,z=-1365,dx=5,dy=5] -70 77 -1366
@@ -203,7 +203,7 @@ tp @s[x=-72,y=77,z=-1365,dx=4,dy=5] -70 100 -1363
 
 
 #Dendemille Pokemon Center
-execute as @s[x=618,y=108,z=-375,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+#execute as @s[x=618,y=108,z=-375,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=618,y=108,z=-375,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=618,y=108,z=-375,dx=5,dy=5] 621 87 -379
 tp @s[x=618,y=108,z=-375,dx=5,dy=5] 621 87 -376
@@ -213,7 +213,7 @@ tp @s[x=619,y=87,z=-375,dx=4,dy=5] 621 108 -373
 
 
 #Anistar Pokemon Center
-execute as @s[x=1267,y=108,z=-197,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+#execute as @s[x=1267,y=108,z=-197,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=1267,y=108,z=-197,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=1267,y=108,z=-197,dx=5,dy=5] 1270 80 -201
 tp @s[x=1267,y=108,z=-197,dx=5,dy=5] 1270 80 -198
@@ -223,7 +223,7 @@ tp @s[x=1268,y=80,z=-197,dx=4,dy=5] 1270 108 -195
 
 
 #Couriway Pokemon Center
-execute as @s[x=1473,y=100,z=173,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+#execute as @s[x=1473,y=100,z=173,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=1473,y=100,z=173,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=1473,y=100,z=173,dx=5,dy=5] 1476 79 169
 tp @s[x=1473,y=100,z=173,dx=5,dy=5] 1476 79 172
@@ -234,7 +234,7 @@ tp @s[x=1474,y=79,z=173,dx=5,dy=5] 1476 100 175
 
 
 #Snowbelle Pokemon Center
-execute as @s[x=1215,y=105,z=503,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+#execute as @s[x=1215,y=105,z=503,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=1215,y=105,z=503,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=1215,y=105,z=503,dx=5,dy=5] 1218 75 499
 tp @s[x=1215,y=105,z=503,dx=5,dy=5] 1218 75 502
@@ -245,7 +245,7 @@ tp @s[x=1216,y=75,z=503,dx=5,dy=5] 1218 105 505
 
 
 #Kiloude Pokemon Center
-execute as @s[x=1177,y=101,z=1661,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+#execute as @s[x=1177,y=101,z=1661,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=1177,y=101,z=1661,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=1177,y=101,z=1661,dx=5,dy=5] 1180 81 1657
 tp @s[x=1177,y=101,z=1661,dx=5,dy=5] 1180 81 1660
@@ -255,7 +255,7 @@ tp @s[x=1178,y=81,z=1661,dx=4,dy=5] 1180 101 1663
 
 
 #Pokemon League Pokemon Center
-execute as @s[x=-1938,y=88,z=2278,dx=5,dy=5,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+#execute as @s[x=-1938,y=88,z=2278,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-1938,y=88,z=2278,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-1938,y=88,z=2278,dx=5,dy=5] -1936 39 2274
 tp @s[x=-1938,y=88,z=2278,dx=5,dy=5] -1936 39 2277
@@ -271,7 +271,7 @@ tag @s[x=-487,y=100,z=456,dx=120,dy=5,tag=LookerCooldown] remove LookerCooldown
 
 
 #Lumiose Northern Pokemon Center
-execute as @s[x=-151,y=101,z=-655,dx=5,dy=5,dz=3,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+#execute as @s[x=-151,y=101,z=-655,dx=5,dy=5,dz=3,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-151,y=101,z=-655,dx=5,dy=5,dz=3] run function kalos:triggers/stopsound
 spawnpoint @s[x=-151,y=101,z=-655,dx=5,dy=5,dz=3] -486 101 452
 tp @s[x=-151,y=101,z=-655,dx=5,dy=5,dz=3] -486 101 455 180 ~
@@ -280,7 +280,7 @@ execute as @s[x=-488,y=101,z=456,dx=4,dy=5] run function kalos:triggers/stopsoun
 tp @s[x=-488,y=101,z=456,dx=4,dy=5] -148 101 -656 180 ~
 
 #Lumiose Middle Pokemon Center
-execute as @s[x=-261,y=101,z=-403,dx=4,dy=5,dz=3,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+#execute as @s[x=-261,y=101,z=-403,dx=4,dy=5,dz=3,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-261,y=101,z=-403,dx=4,dy=5,dz=3] run function kalos:triggers/stopsound
 spawnpoint @s[x=-261,y=101,z=-403,dx=4,dy=5,dz=3] -430 101 452
 tp @s[x=-261,y=101,z=-403,dx=4,dy=5,dz=3] -430 101 455 180 ~
@@ -289,10 +289,10 @@ execute as @s[x=-432,y=101,z=456,dx=4,dy=5] run function kalos:triggers/stopsoun
 tp @s[x=-432,y=101,z=456,dx=4,dy=5] -258 101 -404 180 ~
 
 #Lumiose South Pokemon Center
-execute as @s[x=-228,y=101,z=-132,dx=3,dy=4,dz=2,scores={TalkTime=0},tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
-execute as @s[x=-228,y=101,z=-132,dx=3,dy=4,dz=2,scores={TalkTime=0}] run function kalos:triggers/stopsound
-spawnpoint @s[x=-228,y=101,z=-132,dx=3,dy=4,dz=2,scores={TalkTime=0}] -375 101 452
-tp @s[x=-228,y=101,z=-132,dx=3,dy=4,dz=2,scores={TalkTime=0}] -375 101 455 180 ~
+#execute as @s[x=-228,y=101,z=-132,dx=3,dy=4,dz=2,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+execute as @s[x=-228,y=101,z=-132,dx=3,dy=4,dz=2] run function kalos:triggers/stopsound
+spawnpoint @s[x=-228,y=101,z=-132,dx=3,dy=4,dz=2] -375 101 452
+tp @s[x=-228,y=101,z=-132,dx=3,dy=4,dz=2] -375 101 455 180 ~
 
 execute as @s[x=-377,y=101,z=456,dx=4,dy=4] run function kalos:triggers/stopsound
 tp @s[x=-377,y=101,z=456,dx=4,dy=4] -227 101 -129 26 ~
@@ -303,12 +303,12 @@ tp @s[x=-377,y=101,z=456,dx=4,dy=4] -227 101 -129 26 ~
 #Vaniville
 
 #Your home
-scoreboard players set @s[x=504,y=108,z=1576,dx=10,dy=5,tag=!Dialogue7,scores={StarterPick=1..,TalkTime=0}] DialogueTrigger 7
-tp @s[x=504,y=108,z=1576,dx=10,dy=5,scores={TalkTime=0}] 506 108 1566
+#scoreboard players set @s[x=504,y=108,z=1576,dx=10,dy=5,tag=!Dialogue7,scores={StarterPick=1..}] DialogueTrigger 7
+tp @s[x=504,y=108,z=1576,dx=10,dy=5] 506 108 1566
 
-scoreboard players set @s[x=503,y=108,z=1568,dx=5,dy=4,tag=Dialogue1,tag=!Dialogue2,scores={TalkTime=0}] DialogueTrigger 2
-scoreboard players set @s[x=503,y=108,z=1568,dx=5,dy=4,tag=Dialogue2,scores={TalkTime=0,PokemonLeague=1..}] DialogueTrigger 158
-tp @s[x=503,y=108,z=1568,dx=5,dy=4,tag=Dialogue1,scores={TalkTime=0}] 509 108 1578
+#scoreboard players set @s[x=503,y=108,z=1568,dx=5,dy=4,tag=Dialogue1,tag=!Dialogue2] DialogueTrigger 2
+#scoreboard players set @s[x=503,y=108,z=1568,dx=5,dy=4,tag=Dialogue2,scores={TalkTime=0,PokemonLeague=1..}] DialogueTrigger 158
+tp @s[x=503,y=108,z=1568,dx=5,dy=4,tag=Dialogue1] 509 108 1578
 
 #Neighbor Home
 tp @s[x=550,y=108,z=1576,dx=10,dy=5] 555 108 1569
@@ -330,11 +330,11 @@ tp @s[x=319,y=87,z=484,dx=5,dy=5] 322 100 487
 
 
 #Lumiose Route 5 Connector
-execute as @s[x=-565,y=92,z=-166,dy=10,dz=14,scores={TalkTime=0}] run function kalos:triggers/stopsound
-tp @s[x=-565,y=92,z=-166,dy=10,dz=14,scores={TalkTime=0}] -386 101 -108 -144 ~
+execute as @s[x=-565,y=92,z=-166,dy=10,dz=14] run function kalos:triggers/stopsound
+tp @s[x=-565,y=92,z=-166,dy=10,dz=14] -386 101 -108 -144 ~
 
-execute as @s[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarters,tag=Dialogue22,scores={TalkTime=0}] run function kalos:triggers/stopsound
-tp @s[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarters,tag=Dialogue22,scores={TalkTime=0}] -567 92 -159 90 ~
+execute as @s[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarters,tag=Dialogue22] run function kalos:triggers/stopsound
+tp @s[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarters,tag=Dialogue22] -567 92 -159 90 ~
 
 tellraw @s[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=!KantoStarters] {"text":"You need to go see Professor Sycamore!","italic":true,"color":"gray"}
 execute as @s[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=!KantoStarters] at @s run tp @s ~5 ~ ~-5
@@ -369,8 +369,8 @@ execute at @s[x=-188,y=101,z=-754,dx=11,dy=5,tag=!Clemont] as @s run tp @s ~ ~ ~
 execute as @s[x=-188,y=101,z=-754,dx=11,dy=5,tag=Clemont] run function kalos:triggers/stopsound
 tp @s[x=-188,y=101,z=-754,dx=11,dy=5,tag=Clemont] -183 100 -797
 
-execute as @s[x=-190,y=100,z=-795,dx=14,dy=5,scores={TalkTime=0}] run function kalos:triggers/stopsound
-tp @s[x=-190,y=100,z=-795,dx=14,dy=5,scores={TalkTime=0}] -183 101 -751
+execute as @s[x=-190,y=100,z=-795,dx=14,dy=5] run function kalos:triggers/stopsound
+tp @s[x=-190,y=100,z=-795,dx=14,dy=5] -183 101 -751
 
 
 #Lumiose Route 13 Connector
@@ -384,9 +384,9 @@ tp @s[x=-603,y=100,z=-475,dy=5,dz=14] -516 101 -498 -72 ~
 
 
 #Shabboneau Castle
-scoreboard players set @s[x=-1060,y=100,z=-102,dx=11,dy=5,tag=!Dialogue27,scores={TalkTime=0}] DialogueTrigger 27
-tp @s[x=-1060,y=100,z=-102,dx=11,dy=5,scores={TalkTime=0}] -1055 56 -104
-tp @s[x=-1058,y=56,z=-102,dx=5,dy=5,scores={TalkTime=0}] -1055 100 -100
+#scoreboard players set @s[x=-1060,y=100,z=-102,dx=11,dy=5,tag=!Dialogue27] DialogueTrigger 27
+tp @s[x=-1060,y=100,z=-102,dx=11,dy=5] -1055 56 -104
+tp @s[x=-1058,y=56,z=-102,dx=5,dy=5] -1055 100 -100
 
 #Camphrier Town NPC Home Left
 tp @s[x=-1108,y=100,z=-42,dx=4,dy=5] -1107 84 -43
@@ -425,13 +425,13 @@ tp @s[x=-1877,y=154,z=93,dy=5,dz=9] -1853 56 105
 
 #Connecting Cave Route 7
 #South Gate
-execute as @s[x=-1741,y=44,z=104,dy=5,dz=5,scores={TalkTime=0}] run function kalos:triggers/stopsound
-scoreboard players set @s[x=-1741,y=44,z=104,dy=5,dz=5,scores={TalkTime=0}] EscapeRope 0
+execute as @s[x=-1741,y=44,z=104,dy=5,dz=5] run function kalos:triggers/stopsound
+scoreboard players set @s[x=-1741,y=44,z=104,dy=5,dz=5] EscapeRope 0
 tp @s[x=-1741,y=44,z=104,dy=5,dz=5] -1702 109 25
 
-execute as @s[x=-1704,y=109,z=21,dy=5,dz=5,scores={TalkTime=0}] run function kalos:triggers/stopsound
-scoreboard players set @s[x=-1704,y=109,z=21,dy=5,dz=5,scores={TalkTime=0}] EscapeRope 2
-tp @s[x=-1704,y=109,z=21,dy=5,dz=5,scores={TalkTime=0}] -1743 44 107
+execute as @s[x=-1704,y=109,z=21,dy=5,dz=5] run function kalos:triggers/stopsound
+scoreboard players set @s[x=-1704,y=109,z=21,dy=5,dz=5] EscapeRope 2
+tp @s[x=-1704,y=109,z=21,dy=5,dz=5] -1743 44 107
 
 #North Gate
 execute as @s[x=-1668,y=36,z=33,dy=5,dz=5] run function kalos:triggers/stopsound
@@ -446,7 +446,7 @@ tp @s[x=-1644,y=103,z=-39,dy=5,dz=5,scores={TalkTime=0,PhotoSpot=0}] -1670 36 36
 
 #Courmarine City Rail
 tp @s[x=-1007,y=116,z=-678,dx=2,dy=5,dz=2] -1037 80 -802
-tp @s[x=-1039,y=81,z=-791,dx=2,dy=5,dz=2,scores={TalkTime=0}] -1006 115 -665
+tp @s[x=-1039,y=81,z=-791,dx=2,dy=5,dz=2] -1006 115 -665
 
 
 
@@ -475,15 +475,15 @@ tp @s[x=-1976,y=118,z=-720,dx=7,dy=5] -1806 64 -310
 tellraw @s[x=-157,y=125,z=-1774,dx=6,dy=5,tag=!Dialogue86] {"text":"<Team Flare Grunt> Adults are talking inside. Scram, kid. Shoo! Shoo!"}
 execute as @s[x=-157,y=125,z=-1774,dx=6,dy=5,tag=!Dialogue86] at @s run tp @s ~ ~ ~10
 
-execute as @s[x=-157,y=125,z=-1774,dx=6,dy=5,tag=Dialogue86] run scoreboard players set @s[tag=!Dialogue87] DialogueTrigger 87
+#execute as @s[x=-157,y=125,z=-1774,dx=6,dy=5,tag=Dialogue86] run scoreboard players set @s[tag=!Dialogue87] DialogueTrigger 87
 #Removes reverse tag in case player can't ride the left belt to the reverse button
 execute as @s[x=-157,y=125,z=-1774,dx=6,dy=5,tag=Dialogue86] run tag @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] remove Reverse
 tp @s[x=-157,y=125,z=-1774,dx=6,dy=5,tag=Dialogue86] -154 89 -1845
-tp @s[x=-158,y=89,z=-1843,dx=7,dy=5,scores={TalkTime=0}] -154 125 -1772
+tp @s[x=-158,y=89,z=-1843,dx=7,dy=5] -154 125 -1772
 
 
 #Laverre Gate
-tellraw @s[x=43,y=100,z=-1360,dy=5,dz=14,scores={TalkTime=0},tag=!Dialogue90] {"text":"<Team Flare Grunt> Hey, hey! Stop right there. You want to go beyond this point? You\u2019ll have to join Team Flare! I\u2019ll let you in for a small fee... Let\u2019s say $5,000,000?"}
+tellraw @s[x=43,y=100,z=-1360,dy=5,dz=14,tag=!Dialogue90] {"text":"<Team Flare Grunt> Hey, hey! Stop right there. You want to go beyond this point? You\u2019ll have to join Team Flare! I\u2019ll let you in for a small fee... Let\u2019s say $5,000,000?"}
 execute as @s[x=43,y=100,z=-1360,dy=5,dz=14,tag=!Dialogue90] at @s run tp @s ~-10 ~ ~
 
 execute as @s[x=43,y=100,z=-1360,dy=5,dz=14,tag=Dialogue90] run function kalos:triggers/stopsound
@@ -631,11 +631,11 @@ tp @s[x=1138,y=100,z=894,dy=5,dz=5] 1091 100 822
 tp @s[x=1093,y=100,z=819,dy=5,dz=5] 1163 100 821
 
 #Route 20 & Pokemon Village
-execute as @s[x=1035,y=100,z=856,dy=5,dz=5,scores={TalkTime=0}] run function kalos:triggers/stopsound
-tp @s[x=1035,y=100,z=856,dy=5,dz=5,scores={TalkTime=0}] 966 93 663
+execute as @s[x=1035,y=100,z=856,dy=5,dz=5] run function kalos:triggers/stopsound
+tp @s[x=1035,y=100,z=856,dy=5,dz=5] 966 93 663
 
-execute as @s[x=968,y=93,z=660,dy=5,dz=5,scores={TalkTime=0}] run function kalos:triggers/stopsound
-tp @s[x=968,y=93,z=660,dy=5,dz=5,scores={TalkTime=0}] 1037 100 858
+execute as @s[x=968,y=93,z=660,dy=5,dz=5] run function kalos:triggers/stopsound
+tp @s[x=968,y=93,z=660,dy=5,dz=5] 1037 100 858
 
 
 #Unknown Dungeon
@@ -659,12 +659,12 @@ tp @s[x=580,y=72,z=474,dx=6,dy=5] 585 91 475
 #Victory Road Entrance
 #Gives AllGyms check
 execute as @s[tag=Viola] run execute as @s[tag=Grant] run execute as @s[tag=Korrina] run execute as @s[tag=Ramos] run execute as @s[tag=Clemont] run execute as @s[tag=Valerie] run execute as @s[tag=Olympia] run execute as @s[tag=Wulfric] run tag @s[tag=!AllGyms] add AllGyms
-tellraw @s[x=688,y=117,z=312,dx=11,dy=5,tag=!AllGyms,scores={TalkTime=0}] {"text":"You haven't defeated all the gym leaders yet!","italic":true,"color":"gray"}
-tp @s[x=688,y=117,z=312,dx=11,dy=5,tag=!AllGyms,scores={TalkTime=0}] 694 108 328
+tellraw @s[x=688,y=117,z=312,dx=11,dy=5,tag=!AllGyms] {"text":"You haven't defeated all the gym leaders yet!","italic":true,"color":"gray"}
+tp @s[x=688,y=117,z=312,dx=11,dy=5,tag=!AllGyms] 694 108 328
 
-execute as @s[x=688,y=117,z=312,dx=11,dy=5,scores={TalkTime=0},tag=AllGyms] run function kalos:triggers/stopsound
-scoreboard players set @s[x=688,y=117,z=312,dx=11,dy=5,scores={TalkTime=0},tag=AllGyms] EscapeRope 7
-tp @s[x=688,y=117,z=312,dx=11,dy=5,scores={TalkTime=0},tag=AllGyms] 700 85 182
+execute as @s[x=688,y=117,z=312,dx=11,dy=5,tag=AllGyms] run function kalos:triggers/stopsound
+scoreboard players set @s[x=688,y=117,z=312,dx=11,dy=5,tag=AllGyms] EscapeRope 7
+tp @s[x=688,y=117,z=312,dx=11,dy=5,tag=AllGyms] 700 85 182
 
 scoreboard players set @s[x=695,y=84,z=183,dx=11,dy=6] EscapeRope 0
 tp @s[x=695,y=84,z=183,dx=11,dy=6] 693 117 313
@@ -691,11 +691,11 @@ tp @s[x=2011,y=175,z=2426,dy=5,dz=7] 2284 60 1644
 tp @s[x=1968,y=175,z=2187,dx=8,dy=5] 2200 76 1561
 tp @s[x=2197,y=76,z=1563,dx=7,dy=5] 1972 175 2189
 
-tp @s[x=2318,y=106,z=1322,dy=5,dz=6,scores={TalkTime=0}] 2137 175 2257
-tp @s[x=2135,y=175,z=2253,dy=5,dz=8,scores={TalkTime=0}] 2316 106 1325
+tp @s[x=2318,y=106,z=1322,dy=5,dz=6] 2137 175 2257
+tp @s[x=2135,y=175,z=2253,dy=5,dz=8] 2316 106 1325
 
-tp @s[x=2338,y=175,z=2254,dy=5,dz=6,scores={TalkTime=0}] 1764 72 1386
-tp @s[x=1762,y=72,z=1383,dy=5,dz=6,scores={TalkTime=0}] 2336 175 2257
+tp @s[x=2338,y=175,z=2254,dy=5,dz=6] 1764 72 1386
+tp @s[x=1762,y=72,z=1383,dy=5,dz=6] 2336 175 2257
 
 tp @s[x=1772,y=82,z=1440,dy=5,dz=6] 2389 190 2281
 tp @s[x=2391,y=190,z=2278,dy=5,dz=6] 1774 82 1443
@@ -896,7 +896,7 @@ tp @s[x=1216,y=65,z=1604,dx=8,dy=5] 1220 106 1603
 
 #Looker Chapter Active
 execute as @s[x=141,y=101,z=-385,dy=5,dz=10,tag=Dialogue182] run tp @s[tag=!Dialogue184] 1016 105 2020 180 ~
-tp @s[x=1011,y=105,z=2021,dx=10,dy=5,scores={TalkTime=0}] 139 101 -380 90 ~
+tp @s[x=1011,y=105,z=2021,dx=10,dy=5] 139 101 -380 90 ~
 
 tp @s[x=1011,y=105,z=1919,dx=10,dy=5] 139 101 -380 90 ~
 tp @s[x=141,y=101,z=-385,dy=5,dz=10] 1016 105 1917 180 ~
@@ -916,8 +916,8 @@ tp @s[x=-806,y=48,z=-352,dy=5,dz=6] -814 104 -304
 
 
 #Power Plant Interior room
-tp @s[x=-947,y=48,z=-367,dy=5,dz=5,scores={TalkTime=0},tag=!Dialogue75] -949 75 -364
-tp @s[x=-947,y=48,z=-367,dy=5,dz=5,scores={TalkTime=0},tag=Dialogue75] -949 63 -364
+tp @s[x=-947,y=48,z=-367,dy=5,dz=5,tag=!Dialogue75] -949 75 -364
+tp @s[x=-947,y=48,z=-367,dy=5,dz=5,tag=Dialogue75] -949 63 -364
 
 tp @s[x=-948,y=75,z=-367,dy=5,dz=5] -946 48 -364
 tp @s[x=-948,y=63,z=-367,dy=5,dz=5] -946 48 -364
@@ -936,34 +936,34 @@ tp @s[x=-1334,y=22,z=-1187,dx=6,dy=5] -1329 76 -1186
 
 
 #Battle Chateau
-team join Default @s[x=-1535,y=65,z=-54,dx=5,dy=5,scores={TalkTime=0}]
-execute as @s[x=-1535,y=65,z=-54,dx=5,dy=5,scores={TalkTime=0}] run function kalos:triggers/stopsound
-tp @s[x=-1535,y=65,z=-54,dx=5,dy=5,scores={TalkTime=0}] -1534 102 -49
+team join Default @s[x=-1535,y=65,z=-54,dx=5,dy=5]
+execute as @s[x=-1535,y=65,z=-54,dx=5,dy=5] run function kalos:triggers/stopsound
+tp @s[x=-1535,y=65,z=-54,dx=5,dy=5] -1534 102 -49
 
 #Prompts the player to pick a gender if not present
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=0,TalkTime=0}] ["",{"text":"Welcome to the Battle Chateau! For the purposes of nobility ranks, please choose a gender.","italic":true,"color":"gray"},{"text":"\n["},{"text":"Man","color":"blue","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 12"}},{"text":"] ["},{"text":"Woman","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 13"}},{"text":"]"}]
-scoreboard players enable @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=0,TalkTime=0}] TalkTrigger
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=0}] ["",{"text":"Welcome to the Battle Chateau! For the purposes of nobility ranks, please choose a gender.","italic":true,"color":"gray"},{"text":"\n["},{"text":"Man","color":"blue","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 12"}},{"text":"] ["},{"text":"Woman","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 13"}},{"text":"]"}]
+scoreboard players enable @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=0}] TalkTrigger
 
 #Welcomes the player using their rank
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=1..5,TalkTime=0}] ["",{"text":"Welcome to the Battle Chateau, Baron "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=6..30,TalkTime=0}] ["",{"text":"Welcome to the Battle Chateau, Viscount "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=31..98,TalkTime=0}] ["",{"text":"Welcome to the Battle Chateau, Earl "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=99..295,TalkTime=0}] ["",{"text":"Welcome to the Battle Chateau, Marquis "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=296..,TalkTime=0},tag=!GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Duke "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=296..,TalkTime=0},tag=GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Grand Duke "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=1..5}] ["",{"text":"Welcome to the Battle Chateau, Baron "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=6..30}] ["",{"text":"Welcome to the Battle Chateau, Viscount "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=31..98}] ["",{"text":"Welcome to the Battle Chateau, Earl "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=99..295}] ["",{"text":"Welcome to the Battle Chateau, Marquis "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=296..},tag=!GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Duke "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=296..},tag=GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Grand Duke "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
 
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=1..5,TalkTime=0}] ["",{"text":"Welcome to the Battle Chateau, Baroness "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=6..30,TalkTime=0}] ["",{"text":"Welcome to the Battle Chateau, Viscountess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=31..98,TalkTime=0}] ["",{"text":"Welcome to the Battle Chateau, Countess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=99..295,TalkTime=0}] ["",{"text":"Welcome to the Battle Chateau, Marchioness "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=296,TalkTime=0},tag=!GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Duchess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=296,TalkTime=0},tag=GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Grand Duchess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=1..5}] ["",{"text":"Welcome to the Battle Chateau, Baroness "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=6..30}] ["",{"text":"Welcome to the Battle Chateau, Viscountess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=31..98}] ["",{"text":"Welcome to the Battle Chateau, Countess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=99..295}] ["",{"text":"Welcome to the Battle Chateau, Marchioness "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=296},tag=!GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Duchess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=296},tag=GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Grand Duchess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
 
 
 #tps player
-team join Chateau @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={TalkTime=0}]
-execute as @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={TalkTime=0}] run function kalos:triggers/stopsound
-tp @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={TalkTime=0}] -1533 65 -56
+team join Chateau @s[x=-1537,y=100,z=-53,dx=5,dy=7]
+execute as @s[x=-1537,y=100,z=-53,dx=5,dy=7] run function kalos:triggers/stopsound
+tp @s[x=-1537,y=100,z=-53,dx=5,dy=7] -1533 65 -56
 
 
 
@@ -1032,8 +1032,8 @@ tp @s[x=1110,y=86,z=455,dx=5,dy=5] 1113 100 456
 
 
 #Route 18 Inver Home
-scoreboard players set @s[x=1474,y=110,z=-51,dx=3,dy=3,scores={TalkTime=0},tag=!Dialogue267] DialogueTrigger 267
-tp @s[x=1474,y=110,z=-51,dx=3,dy=3,scores={TalkTime=0}] 1476 86 -52
+#scoreboard players set @s[x=1474,y=110,z=-51,dx=3,dy=3,tag=!Dialogue267] DialogueTrigger 267
+tp @s[x=1474,y=110,z=-51,dx=3,dy=3] 1476 86 -52
 
 tp @s[x=1473,y=86,z=-51,dx=5,dy=5] 1476 110 -50
 
@@ -1094,21 +1094,21 @@ tp @s[x=-43,y=86,z=-1509,dx=5,dy=5] -40 104 -1510
 
 #Route 14 Scary House
 #Interior Door
-#execute as @e[x=-233,y=87,z=-1225,dx=6,dy=5,scores={TalkTime=0}] run tp @e[x=-230,y=88,z=-1242,dy=3,type=pixelmon:statue] -501 119 1238
-#execute as @e[x=-233,y=87,z=-1225,dx=6,dy=5,scores={TalkTime=0}] run tp @e[x=-501,y=118,z=1238,dy=3,type=pixelmon:npc_chatting] -230 88 -1242
+#execute as @e[x=-233,y=87,z=-1225,dx=6,dy=5] run tp @e[x=-230,y=88,z=-1242,dy=3,type=pixelmon:statue] -501 119 1238
+#execute as @e[x=-233,y=87,z=-1225,dx=6,dy=5] run tp @e[x=-501,y=118,z=1238,dy=3,type=pixelmon:npc_chatting] -230 88 -1242
 
-scoreboard players set @s[x=-233,y=87,z=-1225,dx=6,dy=5,tag=Dialogue83] DialogueTrigger 84
-execute as @s[x=-233,y=87,z=-1225,dx=6,dy=5,scores={TalkTime=0}] run function kalos:triggers/stopsound
-tp @s[x=-233,y=87,z=-1225,dx=6,dy=5,scores={TalkTime=0}] -231 100 -1224
+#scoreboard players set @s[x=-233,y=87,z=-1225,dx=6,dy=5,tag=Dialogue83] DialogueTrigger 84
+execute as @s[x=-233,y=87,z=-1225,dx=6,dy=5] run function kalos:triggers/stopsound
+tp @s[x=-233,y=87,z=-1225,dx=6,dy=5] -231 100 -1224
 
 
 #Exterior Door
-#execute as @e[x=-233,y=100,z=-1225,dx=4,dy=5,scores={Hoopa=0,PokemonLeague=1..,TalkTime=0}] run tp @e[x=-501,y=118,z=1238,dy=3,type=pixelmon:statue] -230 88 -1242
-#execute as @e[x=-233,y=100,z=-1225,dx=4,dy=5,scores={Hoopa=0,PokemonLeague=1..,TalkTime=0}] run tp @e[x=-230,y=87,z=-1242,dy=3,type=pixelmon:npc_chatting] -501 119 1238
+#execute as @e[x=-233,y=100,z=-1225,dx=4,dy=5,scores={Hoopa=0,PokemonLeague=1..}] run tp @e[x=-501,y=118,z=1238,dy=3,type=pixelmon:statue] -230 88 -1242
+#execute as @e[x=-233,y=100,z=-1225,dx=4,dy=5,scores={Hoopa=0,PokemonLeague=1..}] run tp @e[x=-230,y=87,z=-1242,dy=3,type=pixelmon:npc_chatting] -501 119 1238
 
-scoreboard players set @s[x=-233,y=100,z=-1225,dx=4,dy=5,tag=Dialogue82] DialogueTrigger 83
-execute as @s[x=-233,y=100,z=-1225,dx=4,dy=5,scores={TalkTime=0}] run function kalos:triggers/stopsound
-tp @s[x=-233,y=100,z=-1225,dx=4,dy=5,scores={TalkTime=0}] -231 87 -1226
+#scoreboard players set @s[x=-233,y=100,z=-1225,dx=4,dy=5,tag=Dialogue82] DialogueTrigger 83
+execute as @s[x=-233,y=100,z=-1225,dx=4,dy=5] run function kalos:triggers/stopsound
+tp @s[x=-233,y=100,z=-1225,dx=4,dy=5] -231 87 -1226
 
 
 
@@ -1132,12 +1132,12 @@ tp @s[x=-135,y=101,z=108,dx=4,dy=5] -247 101 -76 -167 ~
 
 
 #Lumiose City Sycamore Pokemon Lab
-scoreboard players set @s[x=-184,y=104,z=-41,dx=6,dy=5,tag=!Dialogue17,scores={TalkTime=0}] DialogueTrigger 17
-execute as @s[x=-184,y=104,z=-41,dx=6,dy=5,scores={TalkTime=0}] run function kalos:triggers/stopsound
-tp @s[x=-184,y=104,z=-41,dx=6,dy=5,scores={TalkTime=0}] -253 101 98 180 ~
+#scoreboard players set @s[x=-184,y=104,z=-41,dx=6,dy=5,tag=!Dialogue17] DialogueTrigger 17
+execute as @s[x=-184,y=104,z=-41,dx=6,dy=5] run function kalos:triggers/stopsound
+tp @s[x=-184,y=104,z=-41,dx=6,dy=5] -253 101 98 180 ~
 
-execute as @s[x=-256,y=101,z=100,dx=6,dy=5,scores={TalkTime=0}] run function kalos:triggers/stopsound
-tp @s[x=-256,y=101,z=100,dx=6,dy=5,scores={TalkTime=0}] -181 104 -43 180 ~
+execute as @s[x=-256,y=101,z=100,dx=6,dy=5] run function kalos:triggers/stopsound
+tp @s[x=-256,y=101,z=100,dx=6,dy=5] -181 104 -43 180 ~
 
 
 #Lumiose City Transportation Office
@@ -1161,11 +1161,11 @@ tp @s[x=-467,y=101,z=355,dx=6,dy=5] -11 101 -670 18 ~
 
 
 #Lumiose City Museum
-execute as @s[x=-105,y=101,z=-711,dx=8,dy=5,dz=3,scores={TalkTime=0}] run function kalos:triggers/stopsound
-tp @s[x=-105,y=101,z=-711,dx=8,dy=5,dz=3,scores={TalkTime=0}] -83 77 357 180 ~
+execute as @s[x=-105,y=101,z=-711,dx=8,dy=5,dz=3] run function kalos:triggers/stopsound
+tp @s[x=-105,y=101,z=-711,dx=8,dy=5,dz=3] -83 77 357 180 ~
 
-execute as @s[x=-86,y=77,z=358,dx=6,dy=5,scores={TalkTime=0}] run function kalos:triggers/stopsound
-tp @s[x=-86,y=77,z=358,dx=6,dy=5,scores={TalkTime=0}] -102 101 -707 21 ~
+execute as @s[x=-86,y=77,z=358,dx=6,dy=5] run function kalos:triggers/stopsound
+tp @s[x=-86,y=77,z=358,dx=6,dy=5] -102 101 -707 21 ~
 
 #Lumiose Fighting Dojo
 tp @s[x=-267,y=101,z=-704,dx=5,dy=5,dz=3] -158 101 225 180 ~
@@ -1307,9 +1307,9 @@ tp @s[x=-329,y=101,z=226,dx=5,dy=5] -255 101 -528 69 ~
 
 
 
-execute as @s[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,scores={TalkTime=0},tag=Call21] run execute as @s[tag=!Dialogue217] run scoreboard players set @s DialogueTrigger 217
-execute as @s[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,scores={TalkTime=0},tag=Call21] run execute as @s[tag=!Dialogue217] run execute as @s run function kalos:triggers/stopsound
-execute as @s[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,scores={TalkTime=0},tag=Call21] run execute as @s[tag=!Dialogue217] run tp @s -296 108 451 180 ~
+#execute as @s[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,tag=Call21] run execute as @s[tag=!Dialogue217] run scoreboard players set @s DialogueTrigger 217
+execute as @s[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,tag=Call21] run execute as @s[tag=!Dialogue217] run execute as @s run function kalos:triggers/stopsound
+execute as @s[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,tag=Call21] run execute as @s[tag=!Dialogue217] run tp @s -296 108 451 180 ~
 
 #With Labs entrance but no Flare:
 execute as @s[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,tag=Dialogue133] run function kalos:triggers/stopsound
@@ -1322,57 +1322,57 @@ tp @s[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,tag=Olympia] -296 133 451 180 ~
 
 
 #Only storefront:
-execute as @s[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,scores={TalkTime=0},tag=Clemont] run scoreboard players set @s[tag=!Dialogue79] DialogueTrigger 79
-tp @s[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,scores={TalkTime=0}] -296 121 451 180 ~
+#execute as @s[x=-302,y=101,z=-485,dx=4,dy=5,dz=3,tag=Clemont] run scoreboard players set @s[tag=!Dialogue79] DialogueTrigger 79
+tp @s[x=-302,y=101,z=-485,dx=4,dy=5,dz=3] -296 121 451 180 ~
 
 #Return TP
-execute as @s[x=-298,y=133,z=452,dx=5,dy=60,scores={TalkTime=0}] run function kalos:triggers/stopsound
-tp @s[x=-298,y=80,z=452,dx=5,dy=60,scores={TalkTime=0}] -298 101 -481 -43 ~
+execute as @s[x=-298,y=133,z=452,dx=5,dy=60] run function kalos:triggers/stopsound
+tp @s[x=-298,y=80,z=452,dx=5,dy=60] -298 101 -481 -43 ~
 
 
 #----------------------------------Looker Bureau--------------------------------------------------
 
-execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call13,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue172] DialogueTrigger 172
-execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call14,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue176] DialogueTrigger 176
-execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call15,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue182] DialogueTrigger 179
-execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call16,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue185] DialogueTrigger 185
-execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call18,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue188] DialogueTrigger 188
-execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call19,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue194] DialogueTrigger 193
-execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call20,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue214] DialogueTrigger 214
-execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Dialogue217,scores={DialogueTrigger=0},tag=!LookerCooldown] run scoreboard players set @s[tag=!Dialogue226] DialogueTrigger 226
+#execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call13,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue172] DialogueTrigger 172
+#execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call14,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue176] DialogueTrigger 176
+#execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call15,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue182] DialogueTrigger 179
+#execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call16,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue185] DialogueTrigger 185
+#execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call18,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue188] DialogueTrigger 188
+#execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call19,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue194] DialogueTrigger 193
+#execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call20,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue214] DialogueTrigger 214
+#execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Dialogue217,scores={DialogueTrigger=0},tag=!LookerCooldown] run scoreboard players set @s[tag=!Dialogue226] DialogueTrigger 226
 
 
-execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Dialogue217,scores={TalkTime=0}] run execute as @s[tag=!LookerCooldown] run tp @s[tag=!Dialogue227] -1 101 397 180 ~
-execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Dialogue217,scores={TalkTime=0}] run tp @s -26 101 397 180 ~
-execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call20,scores={TalkTime=0}] run tp @s -51 101 397 180 ~
-execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call19,scores={TalkTime=0}] run tp @s -76 101 397 180 ~
-execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=!Call19,scores={TalkTime=0}] run execute as @s[tag=Dialogue192] run tellraw @s[tag=!Dialogue225] {"text":"Mimi appears to be holding a note...","italic":true,"color":"gray"}
-execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=!Call19,scores={TalkTime=0}] run tp @s[tag=Dialogue192] -101 101 397 180 ~
-execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call18,scores={TalkTime=0}] run tp @s -177 101 397 180 ~
-execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call16,scores={TalkTime=0}] run tp @s -126 101 397 180 ~
-execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call15,scores={TalkTime=0}] run tp @s -151 101 397 180 ~
-execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call14,scores={TalkTime=0}] run tp @s -177 101 397 180 ~
-execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call13,scores={TalkTime=0}] run tp @s -177 101 397 180 ~
+execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Dialogue217] run execute as @s[tag=!LookerCooldown] run tp @s[tag=!Dialogue227] -1 101 397 180 ~
+execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Dialogue217] run tp @s -26 101 397 180 ~
+execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call20] run tp @s -51 101 397 180 ~
+execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call19] run tp @s -76 101 397 180 ~
+execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=!Call19] run execute as @s[tag=Dialogue192] run tellraw @s[tag=!Dialogue225] {"text":"Mimi appears to be holding a note...","italic":true,"color":"gray"}
+execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=!Call19] run tp @s[tag=Dialogue192] -101 101 397 180 ~
+execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call18] run tp @s -177 101 397 180 ~
+execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call16] run tp @s -126 101 397 180 ~
+execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call15] run tp @s -151 101 397 180 ~
+execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call14] run tp @s -177 101 397 180 ~
+execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call13] run tp @s -177 101 397 180 ~
 
 
-tp @s[x=-4,y=101,z=398,dx=5,dy=3,scores={TalkTime=0}] -190 101 -634 -90 ~
-tp @s[x=-29,y=101,z=398,dx=5,dy=3,scores={TalkTime=0}] -190 101 -634 -90 ~
-tp @s[x=-79,y=101,z=398,dx=5,dy=3,scores={TalkTime=0}] -190 101 -634 -90 ~
-tp @s[x=-104,y=101,z=398,dx=5,dy=3,scores={TalkTime=0}] -190 101 -634 -90 ~
-tp @s[x=-129,y=101,z=398,dx=5,dy=3,scores={TalkTime=0}] -190 101 -634 -90 ~
-tp @s[x=-179,y=101,z=398,dx=5,dy=3,scores={TalkTime=0}] -190 101 -634 -90 ~
-tp @s[x=-154,y=101,z=398,dx=5,dy=3,scores={TalkTime=0}] -190 101 -634 -90 ~
+tp @s[x=-4,y=101,z=398,dx=5,dy=3] -190 101 -634 -90 ~
+tp @s[x=-29,y=101,z=398,dx=5,dy=3] -190 101 -634 -90 ~
+tp @s[x=-79,y=101,z=398,dx=5,dy=3] -190 101 -634 -90 ~
+tp @s[x=-104,y=101,z=398,dx=5,dy=3] -190 101 -634 -90 ~
+tp @s[x=-129,y=101,z=398,dx=5,dy=3] -190 101 -634 -90 ~
+tp @s[x=-179,y=101,z=398,dx=5,dy=3] -190 101 -634 -90 ~
+tp @s[x=-154,y=101,z=398,dx=5,dy=3] -190 101 -634 -90 ~
 
 
 
-execute as @s[x=-54,y=101,z=398,dx=5,dy=3,scores={TalkTime=0},tag=Dialogue214] run scoreboard players set @s[tag=!Dialogue215] DialogueTrigger 215
+#execute as @s[x=-54,y=101,z=398,dx=5,dy=3,tag=Dialogue214] run scoreboard players set @s[tag=!Dialogue215] DialogueTrigger 215
 tp @s[x=-54,y=101,z=398,dx=5,dy=3,scores={DialogueTrigger=0}] -190 101 -634 -90 ~
 
 
 
 #Lumiose Looker Looker Bureau Empty, pre-chapters
-tp @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=!Call13,scores={TalkTime=0}] -226 101 225 180 ~
-tp @s[x=-228,y=101,z=226,dx=5,dy=5,tag=!Call13,scores={TalkTime=0}] -190 101 -634 -90 ~
+tp @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=!Call13] -226 101 225 180 ~
+tp @s[x=-228,y=101,z=226,dx=5,dy=5,tag=!Call13] -190 101 -634 -90 ~
 
 #--------------------------------------------------------------------------------------------------
 
@@ -1409,19 +1409,19 @@ tp @s[x=-490,y=102,z=226,dx=5,dy=5] -353 101 -311 180 ~
 tp @s[x=-323,y=101,z=-320,dx=3,dy=5,dz=2] -449 101 225 180 ~
 
 
-#execute as @s[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch,scores={TalkTime=0}] run tp @e[x=-443,y=100,z=210,dy=3,type=pixelmon:npc_chatting] -504 211 1288
-#execute as @s[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch,scores={TalkTime=0}] run tp @e[x=-504,y=210,z=1286,dy=3,type=pixelmon:npc_chatting] -442 101 210
-#execute as @s[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch,scores={TalkTime=0}] run tp @e[x=-444,y=100,z=206,dy=3,type=pixelmon:npc_chatting] -504 211 1284
-tp @s[x=-451,y=101,z=226,dx=5,dy=5,scores={TalkTime=0}] -322 101 -321 180 ~
+#execute as @s[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch] run tp @e[x=-443,y=100,z=210,dy=3,type=pixelmon:npc_chatting] -504 211 1288
+#execute as @s[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch] run tp @e[x=-504,y=210,z=1286,dy=3,type=pixelmon:npc_chatting] -442 101 210
+#execute as @s[x=-451,y=101,z=226,dx=5,dy=5,tag=VolcanionCatch] run tp @e[x=-444,y=100,z=206,dy=3,type=pixelmon:npc_chatting] -504 211 1284
+tp @s[x=-451,y=101,z=226,dx=5,dy=5] -322 101 -321 180 ~
 
 #Lumiose City Shutterbug Cafe
 tp @s[x=-415,y=101,z=-268,dx=3,dy=5,dz=3] -67 101 224 180 ~
 tp @s[x=-70,y=101,z=225,dx=5,dy=5] -415 101 -264 43 ~
 
 #Lumiose City Cafe Solelli
-scoreboard players set @s[x=-388,y=101,z=-230,dx=4,dy=5,dz=6,tag=KantoStarters] DialogueTrigger 22
+#scoreboard players set @s[x=-388,y=101,z=-230,dx=4,dy=5,dz=6,tag=KantoStarters] DialogueTrigger 22
 tp @s[x=-388,y=101,z=-230,dx=4,dy=5,dz=6] -491 101 265 180 ~
-tp @s[x=-494,y=101,z=266,dx=5,dy=5,scores={TalkTime=0}] -389 101 -225 43 ~
+tp @s[x=-494,y=101,z=266,dx=5,dy=5] -389 101 -225 43 ~
 
 #Lumiose City Coiffure Clips
 execute as @s[x=-365,y=101,z=-199,dx=4,dy=5,dz=4] run function kalos:triggers/stopsound
@@ -1590,8 +1590,8 @@ tp @s[x=-1970,y=102,z=-1725,dx=1,dy=3,dz=1] -1962 102 -1678 0 ~
 #Geosenge Flare HQ
 
 #Geosenge to Elevator
-execute as @s[x=-1258,y=109,z=1794,dx=4,dy=5,scores={TalkTime=0}] run function kalos:triggers/stopsound
-tp @s[x=-1258,y=109,z=1794,dx=4,dy=5,scores={TalkTime=0}] -2336 30 -922
+execute as @s[x=-1258,y=109,z=1794,dx=4,dy=5] run function kalos:triggers/stopsound
+tp @s[x=-1258,y=109,z=1794,dx=4,dy=5] -2336 30 -922
 
 execute as @s[x=-2338,y=30,z=-921,dx=5,dy=5] run function kalos:triggers/stopsound
 tp @s[x=-2338,y=30,z=-921,dx=5,dy=5] -1255 109 1796
@@ -1601,14 +1601,14 @@ tp @s[x=-2341,y=66,z=-921,dx=10,dy=5] -2336 16 -922 180 ~
 tp @s[x=-2338,y=16,z=-921,dx=5,dy=5] -2336 66 -923 180 ~
 
 #Legend Chamber Door
-scoreboard players set @s[x=-2432,y=28,z=-955,dx=9,dy=5,scores={TalkTime=0},tag=!Dialogue129] DialogueTrigger 129
-#execute as @s[x=-2432,y=28,z=-955,dx=9,dy=5,score_Xerneas_min=1,score_Xerneas=1,c=1,scores={TalkTime=0}] run summon armor_stand -2336 49 -1022 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:47s}],DisabledSlots:2039327}
-#execute as @s[x=-2432,y=28,z=-955,dx=9,dy=5,score_Yveltal_min=1,score_Yveltal=1,c=1,scores={TalkTime=0}] run summon armor_stand -2336 50.5 -1022 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:48s}],DisabledSlots:2039327,NoGravity:1b}
-tp @s[x=-2432,y=28,z=-955,dx=9,dy=5,scores={TalkTime=0}] -2336 42 -995
+#scoreboard players set @s[x=-2432,y=28,z=-955,dx=9,dy=5,tag=!Dialogue129] DialogueTrigger 129
+#execute as @s[x=-2432,y=28,z=-955,dx=9,dy=5,score_Xerneas_min=1,score_Xerneas=1,c=1] run summon armor_stand -2336 49 -1022 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:47s}],DisabledSlots:2039327}
+#execute as @s[x=-2432,y=28,z=-955,dx=9,dy=5,score_Yveltal_min=1,score_Yveltal=1,c=1] run summon armor_stand -2336 50.5 -1022 {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:iron_hoe",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:48s}],DisabledSlots:2039327,NoGravity:1b}
+tp @s[x=-2432,y=28,z=-955,dx=9,dy=5] -2336 42 -995
 
 #execute as @s[x=-2341,y=42,z=-994,dx=10,dy=5,score_Xerneas_min=1,score_Xerneas=1,c=1] run kill @e[x=-2336,y=49,z=-1022,r=3,type=armor_stand]
 #execute as @s[x=-2341,y=42,z=-994,dx=10,dy=5,score_Yveltal_min=1,score_Yveltal=1,c=1] run kill @e[x=-2336,y=49,z=-1022,r=3,type=armor_stand]
-tp @s[x=-2341,y=42,z=-994,dx=10,dy=5,scores={TalkTime=0}] -2427 28 -954
+tp @s[x=-2341,y=42,z=-994,dx=10,dy=5] -2427 28 -954
 
 
 #Tower of Mastery
@@ -1617,21 +1617,21 @@ tp @s[x=-1683,y=130,z=-1187,dy=3] -1635 154 -1187
 tp @s[x=-1637,y=154,z=-1187,dy=3] -1685 130 -1187
 
 #3F to Mega Balcony
-scoreboard players set @s[x=-1670,y=154,z=-1187,dy=3,tag=!Dialogue63] DialogueTrigger 63
+#scoreboard players set @s[x=-1670,y=154,z=-1187,dy=3,tag=!Dialogue63] DialogueTrigger 63
 tp @s[x=-1670,y=154,z=-1187,dy=3] -1647 187 -1200 -41 ~
 
-tp @s[x=-1650,y=187,z=-1201,dx=1,dy=3,dz=1,scores={TalkTime=0}] -1672 154 -1187 90 ~
+tp @s[x=-1650,y=187,z=-1201,dx=1,dy=3,dz=1] -1672 154 -1187 90 ~
 
 
 
 #Parfum Palace
 #Main Entrance
-tp @s[x=-1384,y=63,z=-376,dy=5,dz=7,scores={TalkTime=0}] -1385 100 -374
-scoreboard players set @s[x=-1386,y=100,z=-378,dy=5,dz=7,tag=!Dialogue29,scores={TalkTime=0}] DialogueTrigger 29
+tp @s[x=-1384,y=63,z=-376,dy=5,dz=7] -1385 100 -374
+#scoreboard players set @s[x=-1386,y=100,z=-378,dy=5,dz=7,tag=!Dialogue29] DialogueTrigger 29
 tp @s[x=-1386,y=100,z=-378,dy=5,dz=7] -1385 63 -372
 
 #Garden Door
-tp @s[x=-1426,y=63,z=-377,dy=5,dz=10,scores={TalkTime=0}] -1435 100 -374
+tp @s[x=-1426,y=63,z=-377,dy=5,dz=10] -1435 100 -374
 tp @s[x=-1434,y=100,z=-379,dy=5,dz=10] -1425 63 -372
 
 
@@ -1673,11 +1673,11 @@ tp @s[x=-1370,y=31,z=-376,dy=5,dz=7] -1424 74 -420
 
 #Balcony South
 tp @s[x=-1425,y=74,z=-352,dx=15,dy=5] -1413 111 -345
-tp @s[x=-1420,y=111,z=-344,dx=14,dy=5,scores={TalkTime=0}] -1418 74 -351
+tp @s[x=-1420,y=111,z=-344,dx=14,dy=5] -1418 74 -351
 
 #Balcony North
 tp @s[x=-1425,y=74,z=-392,dx=15,dy=5] -1413 111 -403
-tp @s[x=-1420,y=111,z=-404,dx=14,dy=5,scores={TalkTime=0}] -1417 74 -393
+tp @s[x=-1420,y=111,z=-404,dx=14,dy=5] -1417 74 -393
 
 
 #Lumiose City Gym
@@ -1736,11 +1736,11 @@ tag @s[x=-1880,y=31,z=2105,dx=11,dy=5] remove Dialogue153
 tag @s[x=-1880,y=31,z=2105,dx=11,dy=5] remove Dialogue154
 tp @s[x=-1880,y=31,z=2105,dx=11,dy=5] -1896 32 2108 27 ~
 
-execute as @s[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4,tag=!Diantha,tag=!Malva,tag=!Siebold,tag=!Drasna,tag=!Wikstrom] run tp @s[scores={TalkTime=0}] -1875 31 2107 0 ~
+execute as @s[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4,tag=!Diantha,tag=!Malva,tag=!Siebold,tag=!Drasna,tag=!Wikstrom] run tp @s -1875 31 2107 0 ~
 
-tellraw @s[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] ["",{"text":"Would you like to leave the Elite Four challenge? Your battle progress will be reset. ","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 4"}},{"text":"]","color":"white"}]
-scoreboard players enable @s[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] TalkTrigger
-execute as @s[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] at @s run tp @s ~-4 ~ ~4
+tellraw @s[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4] ["",{"text":"Would you like to leave the Elite Four challenge? Your battle progress will be reset. ","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 4"}},{"text":"]","color":"white"}]
+scoreboard players enable @s[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4] TalkTrigger
+execute as @s[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4] at @s run tp @s ~-4 ~ ~4
 
 
 
@@ -1756,60 +1756,60 @@ tag @s[x=-1944,y=31,z=2105,dx=11,dy=5] remove Dialogue154
 tp @s[x=-1944,y=31,z=2105,dx=11,dy=5] -1918 32 2108 -27 ~
 
 
-execute as @s[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4,tag=!Diantha] run execute as @s[tag=!Malva] run execute as @s[tag=!Siebold] run execute as @s[tag=!Drasna] run execute as @s[tag=!Wikstrom] run tp @s[scores={TalkTime=0}] -1939 31 2107 0 ~
+execute as @s[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4,tag=!Diantha] run execute as @s[tag=!Malva] run execute as @s[tag=!Siebold] run execute as @s[tag=!Drasna] run execute as @s[tag=!Wikstrom] run tp @s -1939 31 2107 0 ~
 
-tellraw @s[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] ["",{"text":"Would you like to leave the Elite Four challenge? Your battle progress will be reset. ","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 5"}},{"text":"]","color":"white"}]
-scoreboard players enable @s[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] TalkTrigger
-execute at @s[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4,scores={TalkTime=0}] as @s run tp @s ~4 ~ ~4
+tellraw @s[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4] ["",{"text":"Would you like to leave the Elite Four challenge? Your battle progress will be reset. ","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 5"}},{"text":"]","color":"white"}]
+scoreboard players enable @s[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4] TalkTrigger
+execute at @s[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4] as @s run tp @s ~4 ~ ~4
 
 
 #Blazing Chamber Hallway
-title @s[x=-1888,y=32,z=2121,dy=5,dz=6,scores={TalkTime=0}] actionbar {"text":"Blazing Chamber","color":"red"}
-tp @s[x=-1888,y=32,z=2121,dy=5,dz=6,scores={TalkTime=0}] -2026 7 2180 180 ~
+title @s[x=-1888,y=32,z=2121,dy=5,dz=6] actionbar {"text":"Blazing Chamber","color":"red"}
+tp @s[x=-1888,y=32,z=2121,dy=5,dz=6] -2026 7 2180 180 ~
 tp @s[x=-2029,y=7,z=2181,dx=6,dy=5] -1889 32 2125 90 ~
 
 #Flooded Chamber Hallway
-title @s[x=-1888,y=32,z=2150,dy=5,dz=6,scores={TalkTime=0}] actionbar {"text":"Flood Chamber","color":"blue"}
-tp @s[x=-1888,y=32,z=2150,dy=5,dz=6,scores={TalkTime=0}] -1970 7 2178 180 ~
+title @s[x=-1888,y=32,z=2150,dy=5,dz=6] actionbar {"text":"Flood Chamber","color":"blue"}
+tp @s[x=-1888,y=32,z=2150,dy=5,dz=6] -1970 7 2178 180 ~
 tp @s[x=-1973,y=7,z=2179,dx=6,dy=5] -1889 32 2153 90 ~
 
 #Ironworks Chamber Hallway
-title @s[x=-1926,y=32,z=2121,dy=5,dz=6,scores={TalkTime=0}] actionbar {"text":"Ironworks Chamber","color":"white"}
-tp @s[x=-1926,y=32,z=2121,dy=5,dz=6,scores={TalkTime=0}] -1837 7 2179 180 ~
+title @s[x=-1926,y=32,z=2121,dy=5,dz=6] actionbar {"text":"Ironworks Chamber","color":"white"}
+tp @s[x=-1926,y=32,z=2121,dy=5,dz=6] -1837 7 2179 180 ~
 tp @s[x=-1840,y=7,z=2180,dx=6,dy=5] -1925 32 2125 -90 ~
 
 
 #Dragonmark Chamber Hallway
-title @s[x=-1926,y=32,z=2150,dy=5,dz=6,scores={TalkTime=0}] actionbar {"text":"Dragonmark Chamber","color":"light_purple"}
-tp @s[x=-1926,y=32,z=2150,dy=5,dz=6,scores={TalkTime=0}] -1784 7 2179 180 ~
+title @s[x=-1926,y=32,z=2150,dy=5,dz=6] actionbar {"text":"Dragonmark Chamber","color":"light_purple"}
+tp @s[x=-1926,y=32,z=2150,dy=5,dz=6] -1784 7 2179 180 ~
 tp @s[x=-1787,y=7,z=2180,dx=6,dy=5] -1925 32 2153 -90 ~
 
 
 #Radiant Chamber
-execute as @s[x=-1909,y=33,z=2101,dx=4,dy=5,tag=Malva,tag=Siebold,tag=Drasna,tag=Wikstrom] run scoreboard players set @s[tag=!Dialogue149,scores={PokemonLeague=0}] DialogueTrigger 149
-execute as @s[x=-1909,y=33,z=2101,dx=4,dy=5,tag=Malva,tag=Siebold,tag=Drasna,tag=Wikstrom] run scoreboard players set @s[scores={PokemonLeague=1..,TalkTime=0}] DialogueTrigger 151
+#execute as @s[x=-1909,y=33,z=2101,dx=4,dy=5,tag=Malva,tag=Siebold,tag=Drasna,tag=Wikstrom] run scoreboard players set @s[tag=!Dialogue149,scores={PokemonLeague=0}] DialogueTrigger 149
+#execute as @s[x=-1909,y=33,z=2101,dx=4,dy=5,tag=Malva,tag=Siebold,tag=Drasna,tag=Wikstrom] run scoreboard players set @s[scores={PokemonLeague=1..}] DialogueTrigger 151
 execute as @s[x=-1909,y=33,z=2101,dx=4,dy=5,tag=Malva,tag=Siebold,tag=Drasna,tag=Wikstrom] run title @s actionbar {"text":"Radiant Chamber"}
-execute as @s[x=-1909,y=33,z=2101,dx=4,dy=5,tag=Malva,tag=Siebold,tag=Drasna,tag=Wikstrom] run tp @s[scores={TalkTime=0}] -1906 22 1978
+execute as @s[x=-1909,y=33,z=2101,dx=4,dy=5,tag=Malva,tag=Siebold,tag=Drasna,tag=Wikstrom] run tp @s -1906 22 1978
 
-tellraw @s[x=-1909,y=33,z=2101,dx=4,dy=5,scores={TalkTime=0}] {"text":"You still need to beat the following Elite Four members:","italic":true,"color":"gray"}
-tellraw @s[x=-1909,y=33,z=2101,dx=4,dy=5,scores={TalkTime=0},tag=!Malva] {"text":"Malva","italic":true,"color":"gray"}
-tellraw @s[x=-1909,y=33,z=2101,dx=4,dy=5,scores={TalkTime=0},tag=!Siebold] {"text":"Siebold","italic":true,"color":"gray"}
-tellraw @s[x=-1909,y=33,z=2101,dx=4,dy=5,scores={TalkTime=0},tag=!Wikstrom] {"text":"Wikstrom","italic":true,"color":"gray"}
-tellraw @s[x=-1909,y=33,z=2101,dx=4,dy=5,scores={TalkTime=0},tag=!Drasna] {"text":"Drasna","italic":true,"color":"gray"}
-execute as @s[x=-1909,y=33,z=2101,dx=4,dy=5,scores={TalkTime=0}] run tp @s ~ ~ ~4
+tellraw @s[x=-1909,y=33,z=2101,dx=4,dy=5] {"text":"You still need to beat the following Elite Four members:","italic":true,"color":"gray"}
+tellraw @s[x=-1909,y=33,z=2101,dx=4,dy=5,tag=!Malva] {"text":"Malva","italic":true,"color":"gray"}
+tellraw @s[x=-1909,y=33,z=2101,dx=4,dy=5,tag=!Siebold] {"text":"Siebold","italic":true,"color":"gray"}
+tellraw @s[x=-1909,y=33,z=2101,dx=4,dy=5,tag=!Wikstrom] {"text":"Wikstrom","italic":true,"color":"gray"}
+tellraw @s[x=-1909,y=33,z=2101,dx=4,dy=5,tag=!Drasna] {"text":"Drasna","italic":true,"color":"gray"}
+execute as @s[x=-1909,y=33,z=2101,dx=4,dy=5] at @s run tp @s ~ ~ ~4
 
 #tp out of radiant chamber
-tp @s[x=-1915,y=22,z=1979,dx=17,dy=5,scores={TalkTime=0}] -1907 32 2103
+tp @s[x=-1915,y=22,z=1979,dx=17,dy=5] -1907 32 2103
 
 
 #Hall of Fame
-tellraw @s[x=-1915,y=22,z=1873,dx=17,dy=5,tag=!Diantha,scores={TalkTime=0}] {"text":"Beat Champion Diantha to proceed!","italic":true,"color":"gray"}
-execute as @s[x=-1915,y=22,z=1873,dx=17,dy=5,tag=!Diantha,scores={TalkTime=0}] at @s run tp @s ~ ~ ~4
+tellraw @s[x=-1915,y=22,z=1873,dx=17,dy=5,tag=!Diantha] {"text":"Beat Champion Diantha to proceed!","italic":true,"color":"gray"}
+execute as @s[x=-1915,y=22,z=1873,dx=17,dy=5,tag=!Diantha] at @s run tp @s ~ ~ ~4
 
-execute as @s[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,scores={PokemonLeague=0,TalkTime=0}] run scoreboard players set @s[tag=!Dialogue152] DialogueTrigger 152
-execute as @s[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,scores={PokemonLeague=1..,TalkTime=0}] run scoreboard players set @s DialogueTrigger 153
-scoreboard players add @s[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,scores={TalkTime=0}] Grass 0
-tp @s[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,scores={TalkTime=0}] -1998 8 1964
+#execute as @s[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,scores={PokemonLeague=0}] run scoreboard players set @s[tag=!Dialogue152] DialogueTrigger 152
+#execute as @s[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha,scores={PokemonLeague=1..}] run scoreboard players set @s DialogueTrigger 153
+scoreboard players add @s[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha] Grass 0
+tp @s[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha] -1998 8 1964
 
 
 #Return from chamber commands
