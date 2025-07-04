@@ -576,12 +576,12 @@ playsound scaryhouse record @s[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28,scores={Mus
 scoreboard players set @s[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28,scores={MusicCooldown=0}] MusicCooldown 82
 
 #Frost Cavern Underground 1
-playsound caves record @s[x=582,y=0,z=-1444,dx=326,dy=128,dz=550,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=582,y=0,z=-1444,dx=326,dy=128,dz=550,scores={MusicCooldown=0}] MusicCooldown 66
+playsound caves record @s[x=444,y=0,z=-1444,dx=465,dy=126,dz=550,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=444,y=0,z=-1444,dx=465,dy=126,dz=550,scores={MusicCooldown=0}] MusicCooldown 66
 
 #Frost Cavern Underground 2
-playsound caves record @s[x=444,y=0,z=-1444,dx=137,dy=128,dz=550,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=444,y=0,z=-1444,dx=137,dy=128,dz=550,scores={MusicCooldown=0}] MusicCooldown 66
+playsound caves record @s[x=444,y=0,z=-1444,dx=465,dy=126,dz=550,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=444,y=0,z=-1444,dx=465,dy=126,dz=550,scores={MusicCooldown=0}] MusicCooldown 66
 
 #Connecting Cave
 playsound glitteringcave record @s[x=-1897,y=0,z=-63,dx=257,dy=86,dz=201,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1

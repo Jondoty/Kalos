@@ -14,7 +14,7 @@ execute as @a[x=-552,y=100,z=1257,distance=..25,tag=!InitialTags] run function k
 execute as @e[type=cobblemon:npc,nbt={PersistenceRequired:0b}] run data merge entity @s {PersistenceRequired:1b,HideNPCNameTag:1b}
 
 #Runs constantly-scanning Music switching and area display titles function
-execute as @a[scores={TalkTime=0,TrainerClass=0}] run function kalos:world/musictitles
+execute as @a run function kalos:world/musictitles
 
 
 #Runs TalkTrigger if applicable score (used to nest commands)
