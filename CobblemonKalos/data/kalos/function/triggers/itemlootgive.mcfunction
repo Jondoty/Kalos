@@ -84,12 +84,12 @@ execute as @s[x=146,y=104,z=436,distance=..5,tag=!ItemLoot16] run tellraw @s {"t
 execute as @s[x=146,y=104,z=436,distance=..5,tag=!ItemLoot16] run playsound itemget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=146,y=104,z=436,distance=..5,tag=!ItemLoot16] run tag @s add ItemLoot16
 
-execute as @s[x=246,y=85,z=402,distance=..5,tag=ItemLoot16] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
-execute as @s[x=246,y=85,z=402,distance=..5,tag=!ItemLoot16] run give @s cobblemon:x_attack 3
-execute as @s[x=246,y=85,z=402,distance=..5,tag=!ItemLoot16] run give @s cobblemon:x_defence 3
-execute as @s[x=246,y=85,z=402,distance=..5,tag=!ItemLoot16] run tellraw @s {"text":"You found a Super Potion!","italic":true,"color":"gray"}
-execute as @s[x=246,y=85,z=402,distance=..5,tag=!ItemLoot16] run playsound itemget ambient @s ~ ~ ~ 1 1 1
-execute as @s[x=246,y=85,z=402,distance=..5,tag=!ItemLoot16] run tag @s add ItemLoot16
+execute as @s[x=246,y=85,z=402,distance=..5,tag=ItemLoot17] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
+execute as @s[x=246,y=85,z=402,distance=..5,tag=!ItemLoot17] run give @s cobblemon:x_attack 3
+execute as @s[x=246,y=85,z=402,distance=..5,tag=!ItemLoot17] run give @s cobblemon:x_defence 3
+execute as @s[x=246,y=85,z=402,distance=..5,tag=!ItemLoot17] run tellraw @s {"text":"You recieved X-Attacks and X-Defenses!","italic":true,"color":"gray"}
+execute as @s[x=246,y=85,z=402,distance=..5,tag=!ItemLoot17] run playsound itemget ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=246,y=85,z=402,distance=..5,tag=!ItemLoot17] run tag @s add ItemLoot17
 
 #execute as @s[x=154,y=100,z=268,distance=..5,tag=ItemLoot20] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
 #execute as @s[x=154,y=100,z=268,distance=..5,tag=!ItemLoot20] run give @s cobblemon:repel
@@ -175,17 +175,17 @@ execute as @s[x=-410,y=121,z=96,distance=..5,tag=!ItemLoot48] run tellraw @s {"t
 execute as @s[x=-410,y=121,z=96,distance=..5,tag=!ItemLoot48] run playsound itemget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-410,y=121,z=96,distance=..5,tag=!ItemLoot48] run tag @s add ItemLoot48
 
-execute as @s[x=-151,y=121,z=208,distance=..5,tag=ItemLoot49] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
-execute as @s[x=-151,y=121,z=208,distance=..5,tag=!ItemLoot49] run give @s cobblemon:expert_belt
-execute as @s[x=-151,y=121,z=208,distance=..5,tag=!ItemLoot49] run tellraw @s {"text":"You received an Expert Belt!","italic":true,"color":"gray"}
-execute as @s[x=-151,y=121,z=208,distance=..5,tag=!ItemLoot49] run playsound itemget ambient @s ~ ~ ~ 1 1 1
-execute as @s[x=-151,y=121,z=208,distance=..5,tag=!ItemLoot49] run tag @s add ItemLoot49
+execute as @s[x=-151,y=121,z=208,distance=..3,tag=ItemLoot49] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
+execute as @s[x=-151,y=121,z=208,distance=..3,tag=!ItemLoot49] run give @s cobblemon:expert_belt
+execute as @s[x=-151,y=121,z=208,distance=..3,tag=!ItemLoot49] run tellraw @s {"text":"You received an Expert Belt!","italic":true,"color":"gray"}
+execute as @s[x=-151,y=121,z=208,distance=..3,tag=!ItemLoot49] run playsound itemget ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-151,y=121,z=208,distance=..3,tag=!ItemLoot49] run tag @s add ItemLoot49
 
-execute as @s[x=-146,y=121,z=211,distance=..5,tag=ItemLoot50] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
-execute as @s[x=-146,y=121,z=211,distance=..5,tag=!ItemLoot50] run give @s cobblemon:protein
-execute as @s[x=-146,y=121,z=211,distance=..5,tag=!ItemLoot50] run tellraw @s {"text":"You received a Protein!","italic":true,"color":"gray"}
-execute as @s[x=-146,y=121,z=211,distance=..5,tag=!ItemLoot50] run playsound itemget ambient @s ~ ~ ~ 1 1 1
-execute as @s[x=-146,y=121,z=211,distance=..5,tag=!ItemLoot50] run tag @s add ItemLoot50
+execute as @s[x=-146,y=121,z=211,distance=..3,tag=ItemLoot50] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
+execute as @s[x=-146,y=121,z=211,distance=..3,tag=!ItemLoot50] run give @s cobblemon:protein
+execute as @s[x=-146,y=121,z=211,distance=..3,tag=!ItemLoot50] run tellraw @s {"text":"You received a Protein!","italic":true,"color":"gray"}
+execute as @s[x=-146,y=121,z=211,distance=..3,tag=!ItemLoot50] run playsound itemget ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-146,y=121,z=211,distance=..3,tag=!ItemLoot50] run tag @s add ItemLoot50
 
 execute as @s[x=-364,y=141,z=349,distance=..5,tag=ItemLoot60] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
 execute as @s[x=-364,y=141,z=349,distance=..5,tag=!ItemLoot60] run give @s cobblemon:revive
@@ -696,15 +696,17 @@ execute as @s[x=-1468,y=148,z=304,distance=..5,tag=!ItemLoot173] run tag @s add 
 
 execute as @s[x=-1968,y=101,z=-3,distance=..5,tag=ItemLoot174] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
 execute as @s[x=-1968,y=101,z=-3,distance=..5,tag=!ItemLoot174] run give @s cobblemon:whipped_dream
-execute as @s[x=-1968,y=101,z=-3,distance=..5,tag=!ItemLoot174] run tellraw @s {"text":"You recieved a Whipped Dream!","italic":true,"color":"gray"}
+execute as @s[x=-1968,y=101,z=-3,distance=..5,tag=!ItemLoot174] run give @s cobblemon:sachet
+execute as @s[x=-1968,y=101,z=-3,distance=..5,tag=!ItemLoot174] run tellraw @s {"text":"You recieved a Whipped Dream & Sachet!","italic":true,"color":"gray"}
 execute as @s[x=-1968,y=101,z=-3,distance=..5,tag=!ItemLoot174] run playsound itemget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-1968,y=101,z=-3,distance=..5,tag=!ItemLoot174] run tag @s add ItemLoot174
 
-execute as @s[x=-1968,y=101,z=-3,distance=..5,tag=ItemLoot175] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
-execute as @s[x=-1968,y=101,z=-3,distance=..5,tag=!ItemLoot175] run give @s cobblemon:sachet
-execute as @s[x=-1968,y=101,z=-3,distance=..5,tag=!ItemLoot175] run tellraw @s {"text":"You recieved a Sachet!","italic":true,"color":"gray"}
-execute as @s[x=-1968,y=101,z=-3,distance=..5,tag=!ItemLoot175] run playsound itemget ambient @s ~ ~ ~ 1 1 1
-execute as @s[x=-1968,y=101,z=-3,distance=..5,tag=!ItemLoot175] run tag @s add ItemLoot175
+execute as @s[x=-1199,y=85,z=-11,distance=..5,tag=ItemLoot175] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
+execute as @s[x=-1199,y=85,z=-11,distance=..5,tag=!ItemLoot175] run give @s cobblemon:oran_berry[can_place_on={predicates:[{blocks:farmland}]}] 5
+execute as @s[x=-1199,y=85,z=-11,distance=..5,tag=!ItemLoot175] run give @s cobblemon:pecha_berry[can_place_on={predicates:[{blocks:farmland}]}] 5
+execute as @s[x=-1199,y=85,z=-11,distance=..5,tag=!ItemLoot175] run tellraw @s {"text":"You recieved Oran and Pecha Berries!","italic":true,"color":"gray"}
+execute as @s[x=-1199,y=85,z=-11,distance=..5,tag=!ItemLoot175] run playsound itemget ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-1199,y=85,z=-11,distance=..5,tag=!ItemLoot175] run tag @s add ItemLoot175
 
 execute as @s[x=-1983,y=100,z=-15,distance=..5,tag=ItemLoot176] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
 execute as @s[x=-1983,y=100,z=-15,distance=..5,tag=!ItemLoot176] run give @s cobblemon:ether
