@@ -2,6 +2,11 @@
 #---------------------------------------------------------
 #Important triggers for functions of map
 
+#Auto reloads the server if function fails to load (should thus fix itself by reloading)
+tag @e[x=-563,y=100,z=1241,dy=3,type=armor_stand] remove ReloadCheck
+function kalos:triggers/autoreload
+execute if entity @e[x=-563,y=100,z=1241,dy=3,type=armor_stand,tag=!ReloadCheck] run reload
+
 #Runs the beginning commands if a player is near spawn without initial tag
 execute as @a[x=-552,y=100,z=1257,distance=..25,tag=!InitialTags] run function kalos:triggers/startingcommands
 
