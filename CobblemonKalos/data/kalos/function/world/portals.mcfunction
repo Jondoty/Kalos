@@ -100,14 +100,12 @@ tp @s[x=-803,y=154,z=-1835,dx=6,dy=5] 1144 97 488
 
 
 #Santalune Pokemon Center
-#execute as @s[x=295,y=68,z=486,dx=4,dy=5] run function kalos:triggers/stopsound
-execute as @s[x=295,y=68,z=486,dx=4,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
+execute as @s[x=295,y=68,z=486,dx=4,dy=5] run function kalos:triggers/stopsound
+#execute as @s[x=295,y=68,z=486,dx=4,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 #execute as @s[x=295,y=68,z=486,dx=4,dy=5,tag=!Dialogue9] run tp @e[x=-504,y=120,z=1252,dy=3,type=pixelmon:npc_chatting] 308 68 481
 spawnpoint @s[x=295,y=68,z=486,dx=4,dy=5] 297 68 482
 tp @s[x=295,y=68,z=486,dx=4,dy=5] 297 100 486
 
-#execute as @s[x=295,y=68,z=486,dx=4,dy=5,tag=Dialogue9] run tp @e[x=308,y=67,z=481,dy=3,type=pixelmon:npc_chatting] -504 121 1252
-scoreboard players set @s[x=294,y=100,z=485,dx=5,dy=5,dz=5,tag=!Dialogue9] DialogueTrigger 9
 execute as @s[x=294,y=100,z=485,dx=5,dy=5] run function kalos:triggers/stopsound
 tp @s[x=294,y=100,z=485,dx=5,dy=5] 297 68 485
 

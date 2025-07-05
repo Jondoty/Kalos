@@ -588,33 +588,6 @@ execute as @a[x=-105,y=101,z=-699,distance=..20,tag=!Call21,scores={TalkTime=0,H
 #----------
 #Story Dialogues
 
-#Dialogue 1
-#Vaniville house, mom's first dialogue
-scoreboard players set @a[x=493,y=107,z=1549,dx=18,dy=5,dz=19,scores={TalkTime=0},tag=!Dialogue1] DialogueTrigger 1
-
-#Vaniville Town Doors marker
-execute as @a[x=470,y=106,z=1588,distance=..100,tag=!DoorShow] run particle minecraft:end_rod 470.0 110 1588 0 10 0 0.001 10 force @s
-tag @a[x=455,y=107,z=1515,dx=29,dy=20,dz=80,tag=!DoorShow] add DoorShow
-
-#Dialogue 3
-#Aquacorde friends first group talk
-scoreboard players set @a[x=440,y=108,z=1372,distance=..10,scores={TalkTime=0,StarterPick=0},tag=!Dialogue3] DialogueTrigger 3
-
-#Dialogue4
-#Aquacorde Friends after Starters
-scoreboard players set @a[x=440,y=108,z=1372,distance=..10,scores={TalkTime=0,StarterPick=1..},tag=!Dialogue4] DialogueTrigger 4
-
-#Dialogue5
-#Aquacorde Shauna wants to Battle
-scoreboard players set @a[x=456,y=107,z=1408,dx=28,dy=5,dz=10,scores={TalkTime=0},tag=!Dialogue5,tag=Dialogue4] DialogueTrigger 5
-execute at @a[x=471,y=108,z=1401,distance=..10,scores={StarterPick=1,TalkTime=0},tag=Dialogue5,tag=!Dialogue6] run tp @e[x=-504,y=110,z=1252,dy=3,type=pixelmon:npc_trainer] 471 108 1401
-execute at @a[x=471,y=108,z=1401,distance=..10,scores={StarterPick=2,TalkTime=0},tag=Dialogue5,tag=!Dialogue6] run tp @e[x=-504,y=110,z=1254,dy=3,type=pixelmon:npc_trainer] 471 108 1401
-execute at @a[x=471,y=108,z=1401,distance=..10,scores={StarterPick=3,TalkTime=0},tag=Dialogue5,tag=!Dialogue6] run tp @e[x=-504,y=110,z=1256,dy=3,type=pixelmon:npc_trainer] 471 108 1401
-
-#Dialogue 8
-#Route 3 Friends and adventure rules
-scoreboard players set @a[x=392,y=99,z=661,distance=..20,scores={TalkTime=0},tag=!Dialogue8] DialogueTrigger 8
-
 #Dialogue10
 #Santalune City Viola's Sister Alexa block and talk
 scoreboard players set @a[x=165,y=99,z=375,dx=28,dy=10,dz=14,scores={TalkTime=0},tag=!Dialogue10,tag=!Viola] DialogueTrigger 10
