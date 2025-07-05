@@ -4,6 +4,7 @@
         "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 2');",
         "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
         "q.run_command('execute as ' + q.player.username + ' run tag ' + q.player.username + ' add Valerie');",
+        "q.run_command('execute as ' + q.player.username + ' run advancement grant @s only kalos:badges/badge6');",
         "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $6720 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
         "q.run_command('scoreboard players add ' + q.player.username + ' Money 6720');"
     ],

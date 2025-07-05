@@ -1,0 +1,29 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "The Champion",
+            "color": "gold"
+        },
+        "description": {
+            "text": "Defeat the Pokemon League"
+        },
+        "icon": {
+            "id": "cobblemon:kings_rock"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+
+        "commandonly": {
+
+            "trigger": "minecraft:impossible"
+
+        }
+
+    },
+    "parent": "kalos:badges/badge8"
+}

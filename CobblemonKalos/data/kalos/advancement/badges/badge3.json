@@ -1,0 +1,29 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Rumble Badge",
+            "color": "red"
+        },
+        "description": {
+            "text": "Defeat Gym Leader Korrina in battle"
+        },
+        "icon": {
+            "id": "cobblemon:punching_glove"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+
+        "commandonly": {
+
+            "trigger": "minecraft:impossible"
+
+        }
+
+    },
+    "parent": "kalos:badges/badge2"
+}

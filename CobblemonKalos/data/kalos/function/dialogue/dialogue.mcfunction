@@ -18,7 +18,7 @@ scoreboard players add @a[scores={DialogueTrigger=1..}] TalkTime 1
 execute as @s[scores={DialogueTrigger=154,TalkTime=1}] run scoreboard players add @s PokemonLeague 1
 execute as @s[scores={DialogueTrigger=154,TalkTime=1}] run pokeheal
 execute as @s[scores={DialogueTrigger=154,TalkTime=1}] run function kalos:triggers/stopsound
-execute as @s[scores={DialogueTrigger=154,TalkTime=1}] run advancement grant @s only kalos:champion
+execute as @s[scores={DialogueTrigger=154,TalkTime=1}] run advancement grant @s only kalos:badges/champion
 tellraw @s[scores={DialogueTrigger=154,TalkTime=3}] {"text":"Thank you for playing Cobblemon Kalos!","color":"white"}
 tellraw @s[scores={DialogueTrigger=154,TalkTime=12}] {"text":"Map Creators:\nJond - Organizer, terrain, redstone, builder.\nPixelmonChampion - Head builder, custom models."}
 tellraw @s[scores={DialogueTrigger=154,TalkTime=25}] {"text":"Helpers:\nMystcraftMC | The_GlassPhoenix | callthemuffinman | xuambacraft | Tyranium | Wither999 | Dark_Spartan_"}
