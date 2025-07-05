@@ -177,4 +177,34 @@ tag @a[x=-2115,y=0,z=504,dx=240,dy=256,dz=258,scores={TalkTime=0},tag=!FlyAmbret
 
 
 #---------------------------------------------------------
+#Misc Random Events
+
+#Vaniville Animated Door
+execute if entity @a[x=455,y=107,z=1515,dx=29,dy=20,dz=80] run setblock -676 100 1172 minecraft:redstone_block
+execute unless entity @a[x=455,y=107,z=1515,dx=29,dy=20,dz=80] run setblock -676 100 1172 minecraft:iron_block
+
+
+#Elite Four Chambers levetation effects
+#Fire
+effect clear @a[x=-2028,y=44,z=2112,dx=4,dy=5,dz=4] minecraft:levitation
+tp @a[x=-2028,y=44,z=2112,dx=4,dy=5,dz=4] -2040 30 2048 180 ~
+effect give @a[x=-2028,y=6,z=2112,dx=4,dy=50,dz=4] minecraft:levitation 5 5 true
+
+#Water
+effect clear @a[x=-1972,y=44,z=2110,dx=4,dy=5,dz=4] minecraft:levitation
+tp @a[x=-1972,y=44,z=2110,dx=4,dy=5,dz=4] -1951 30 2048 180 ~
+effect give @a[x=-1972,y=6,z=2110,dx=4,dy=50,dz=4] minecraft:levitation 5 5 true
+
+#Iron
+effect clear @a[x=-1839,y=44,z=2111,dx=4,dy=5,dz=4] minecraft:levitation
+tp @a[x=-1839,y=44,z=2111,dx=4,dy=5,dz=4] -1862 30 2048 180 ~
+effect give @a[x=-1839,y=6,z=2111,dx=4,dy=50,dz=4] minecraft:levitation 5 5 true
+
+#Dragon
+effect clear @a[x=-1786,y=44,z=2111,dx=4,dy=5,dz=4] minecraft:levitation
+tp @a[x=-1786,y=44,z=2111,dx=4,dy=5,dz=4] -1773 30 2048 180 ~
+effect give @a[x=-1786,y=6,z=2111,dx=4,dy=50,dz=4] minecraft:levitation 5 5 true
+
+
+
 
