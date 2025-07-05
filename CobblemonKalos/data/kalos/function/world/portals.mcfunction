@@ -1812,40 +1812,20 @@ tp @s[x=-1915,y=22,z=1873,dx=17,dy=5,tag=Diantha] -1998 8 1964
 
 #Return from chamber commands
 #Fire
+execute as @s[x=-2040,y=30,z=2050,dy=5,tag=Malva] run function kalos:triggers/stopsound
 tp @s[x=-2040,y=30,z=2050,dy=5] -1889 32 2125 90 ~
 
 #Water
+execute as @s[x=-1951,y=30,z=2050,dy=5,tag=Siebold] run function kalos:triggers/stopsound
 tp @s[x=-1951,y=30,z=2050,dy=5] -1889 32 2153 90 ~
 
 #Iron
+execute as @s[x=-1862,y=30,z=2050,dy=5,tag=Wikstrom] run function kalos:triggers/stopsound
 tp @s[x=-1862,y=30,z=2050,dy=5] -1925 32 2125 -90 ~
 
 #Dragon
+execute as @s[x=-1773,y=30,z=2050,dy=5,tag=Drasna] run function kalos:triggers/stopsound
 tp @s[x=-1773,y=30,z=2050,dy=5] -1925 32 2153 -90 ~
-
-
-#Levitation Sections, commands at spawn
-#Blazing Chamber
-#effect @s[x=-2028,y=44,z=2112,dx=4,dy=5,dz=4] clear
-#tp @s[x=-2028,y=44,z=2112,dx=4,dy=5,dz=4] -2040 30 2048 180 ~
-#effect @s[x=-2028,y=6,z=2112,dx=4,dy=50,dz=4] minecraft:levitation 5 5 true
-
-#Water
-#effect @s[x=-1972,y=44,z=2110,dx=4,dy=5,dz=4] clear
-#tp @s[x=-1972,y=44,z=2110,dx=4,dy=5,dz=4] -1951 30 2048 180 ~
-#effect @s[x=-1972,y=6,z=2112,dx=4,dy=50,dz=4] minecraft:levitation 5 5 true
-
-#Iron
-#effect @s[x=-1839,y=44,z=2111,dx=4,dy=5,dz=4] clear
-#tp @s[x=-1839,y=44,z=2111,dx=4,dy=5,dz=4] -1862 30 2048 180 ~
-#effect @s[x=-1839,y=6,z=2111,dx=4,dy=50,dz=4] minecraft:levitation 5 5 true
-
-#Dragon
-#effect @s[x=-1786,y=44,z=2111,dx=4,dy=5,dz=4] clear
-#tp @s[x=-1786,y=44,z=2111,dx=4,dy=5,dz=4] -1773 30 2048 180 ~
-#effect @s[x=-1786,y=6,z=2111,dx=4,dy=50,dz=4] minecraft:levitation 5 5 true
-#
-
 
 
 #Volcanion Power Plant Chamber
