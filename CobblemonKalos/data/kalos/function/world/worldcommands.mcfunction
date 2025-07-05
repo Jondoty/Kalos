@@ -16,6 +16,8 @@ execute as @e[type=cobblemon:npc,nbt={PersistenceRequired:0b}] run data merge en
 #Runs constantly-scanning Music switching and area display titles function
 execute as @a run function kalos:world/musictitles
 
+#Road blocks for story and order guidance
+execute as @a run function kalos:world/roadblocks
 
 #Runs TalkTrigger if applicable score (used to nest commands)
 execute as @a[scores={TalkTrigger=1..}] run function kalos:triggers/talktrigger
