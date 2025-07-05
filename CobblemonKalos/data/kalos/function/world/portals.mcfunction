@@ -1715,50 +1715,43 @@ tp @s[x=-1823,y=110,z=-1705,dy=3] -1823 100 -1703 0 ~
 tp @s[x=-1832,y=172,z=-1730,dx=2,dy=3,dz=2] -1823 100 -1703 0 ~
 
 
-
+#-----------------------------------------
 
 #Pokemon League
 #Lobby Entrance
 
+#Resets any progress to the Elite Four trainers & Dialogues
+tag @s[x=-1915,y=100,z=2073,dx=18,dy=5] remove Diantha
+tag @s[x=-1915,y=100,z=2073,dx=18,dy=5] remove Malva
+tag @s[x=-1915,y=100,z=2073,dx=18,dy=5] remove Drasna
+tag @s[x=-1915,y=100,z=2073,dx=18,dy=5] remove Wikstrom
+tag @s[x=-1915,y=100,z=2073,dx=18,dy=5] remove Siebold
+tag @s[x=-1915,y=100,z=2073,dx=18,dy=5] remove Dialogue151
+tag @s[x=-1915,y=100,z=2073,dx=18,dy=5] remove Dialogue153
+tag @s[x=-1915,y=100,z=2073,dx=18,dy=5] remove Dialogue154
+
+
+#Outside to lobby room
 tp @s[x=-1910,y=31,z=2242,dx=10,dy=5] -1906 100 2075
 tp @s[x=-1915,y=100,z=2073,dx=18,dy=5] -1907 31 2240
 
-#Right Entrance to E4
-tag @s[x=-1880,y=31,z=2105,dx=11,dy=5] remove Diantha
-tag @s[x=-1880,y=31,z=2105,dx=11,dy=5] remove Malva
-tag @s[x=-1880,y=31,z=2105,dx=11,dy=5] remove Drasna
-tag @s[x=-1880,y=31,z=2105,dx=11,dy=5] remove Wikstrom
-tag @s[x=-1880,y=31,z=2105,dx=11,dy=5] remove Siebold
-tag @s[x=-1880,y=31,z=2105,dx=11,dy=5] remove Dialogue151
-tag @s[x=-1880,y=31,z=2105,dx=11,dy=5] remove Dialogue153
-tag @s[x=-1880,y=31,z=2105,dx=11,dy=5] remove Dialogue154
+
+#Right Door
 tp @s[x=-1880,y=31,z=2105,dx=11,dy=5] -1896 32 2108 27 ~
 
 execute as @s[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4,tag=!Diantha,tag=!Malva,tag=!Siebold,tag=!Drasna,tag=!Wikstrom] run tp @s -1875 31 2107 0 ~
 
-tellraw @s[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4] ["",{"text":"Would you like to leave the Elite Four challenge? Your battle progress will be reset. ","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 4"}},{"text":"]","color":"white"}]
-scoreboard players enable @s[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4] TalkTrigger
-execute as @s[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4] at @s run tp @s ~-4 ~ ~4
+tellraw @s[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4] {"text":"Note: If you leave the building any Elite Four progress will reset.","italic":true,"color":"gray"}
+execute as @s[x=-1895,y=32,z=2103,dx=4,dy=5,dz=4] run tp @s -1875 31 2107 0 ~
 
 
-
-#Left Entrance to E4
-tag @s[x=-1944,y=31,z=2105,dx=11,dy=5] remove Diantha
-tag @s[x=-1944,y=31,z=2105,dx=11,dy=5] remove Malva
-tag @s[x=-1944,y=31,z=2105,dx=11,dy=5] remove Drasna
-tag @s[x=-1944,y=31,z=2105,dx=11,dy=5] remove Wikstrom
-tag @s[x=-1944,y=31,z=2105,dx=11,dy=5] remove Siebold
-tag @s[x=-1944,y=31,z=2105,dx=11,dy=5] remove Dialogue151
-tag @s[x=-1944,y=31,z=2105,dx=11,dy=5] remove Dialogue153
-tag @s[x=-1944,y=31,z=2105,dx=11,dy=5] remove Dialogue154
+#Left Door
 tp @s[x=-1944,y=31,z=2105,dx=11,dy=5] -1918 32 2108 -27 ~
-
 
 execute as @s[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4,tag=!Diantha] run execute as @s[tag=!Malva] run execute as @s[tag=!Siebold] run execute as @s[tag=!Drasna] run execute as @s[tag=!Wikstrom] run tp @s -1939 31 2107 0 ~
 
-tellraw @s[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4] ["",{"text":"Would you like to leave the Elite Four challenge? Your battle progress will be reset. ","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 5"}},{"text":"]","color":"white"}]
-scoreboard players enable @s[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4] TalkTrigger
-execute at @s[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4] as @s run tp @s ~4 ~ ~4
+tellraw @s[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4] {"text":"Note: If you leave the building any Elite Four progress will reset.","italic":true,"color":"gray"}
+execute at @s[x=-1923,y=32,z=2103,dx=4,dy=5,dz=4] run tp @s -1939 31 2107 0 ~
 
 
 #Blazing Chamber Hallway
@@ -1826,6 +1819,8 @@ tp @s[x=-1862,y=30,z=2050,dy=5] -1925 32 2125 -90 ~
 #Dragon
 execute as @s[x=-1773,y=30,z=2050,dy=5,tag=Drasna] run function kalos:triggers/stopsound
 tp @s[x=-1773,y=30,z=2050,dy=5] -1925 32 2153 -90 ~
+
+#-----------------------------------------
 
 
 #Volcanion Power Plant Chamber
