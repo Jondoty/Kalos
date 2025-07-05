@@ -59,7 +59,7 @@
                         "text": "Next",
                         "value": "next",
                         "action": [
-                            "q.run_command('tp @e[x=471,y=107,z=1401,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tp @e[x=441,y=107,z=1369,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
                             "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={StarterPick=1}] unless entity @e[x=471,y=107,z=1401,dy=3,type=cobblemon:npc] run npcspawnat 471 108 1401 aquacorde_shauna1');",
                             "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={StarterPick=2}] unless entity @e[x=471,y=107,z=1401,dy=3,type=cobblemon:npc] run npcspawnat 471 108 1401 aquacorde_shauna2');",
                             "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={StarterPick=3}] unless entity @e[x=471,y=107,z=1401,dy=3,type=cobblemon:npc] run npcspawnat 471 108 1401 aquacorde_shauna3');",

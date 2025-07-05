@@ -985,25 +985,25 @@ tp @s[x=-1503,y=67,z=-130,dx=7,dy=5] -1533 65 -85
 
 #Starter Rooms TP Back
 #Kalos
-tellraw @s[x=-1079,y=100,z=1281,dx=2,dy=5,dz=1] {"text":"Right click what starter you want!","italic":true,"color":"gray"}
-tp @s[x=-1079,y=100,z=1281,dx=2,dy=5,dz=1] -1078 101 1211 180 ~
+tellraw @s[x=-1079,y=100,z=1280,dx=2,dy=5,dz=1] {"text":"Right click what starter you want!","italic":true,"color":"gray"}
+tp @s[x=-1079,y=100,z=1280,dx=2,dy=5,dz=1] -1078 101 1211 180 ~
 
-tellraw @s[x=-1079,y=100,z=1334,dx=2,dy=5,dz=1] {"text":"Right click what starter you want!","italic":true,"color":"gray"}
-tp @s[x=-1079,y=100,z=1334,dx=2,dy=5,dz=1] -1078 101 1211 180 ~
+tellraw @s[x=-1079,y=100,z=1333,dx=2,dy=5,dz=1] {"text":"Right click what starter you want!","italic":true,"color":"gray"}
+tp @s[x=-1079,y=100,z=1333,dx=2,dy=5,dz=1] -1078 101 1211 180 ~
 
-tellraw @s[x=-1079,y=100,z=1396,dx=2,dy=5,dz=1] {"text":"Right click what starter you want!","italic":true,"color":"gray"}
-tp @s[x=-1079,y=100,z=1396,dx=2,dy=5,dz=1] -1078 101 1211 180 ~
+tellraw @s[x=-1079,y=100,z=1395,dx=2,dy=5,dz=1] {"text":"Right click what starter you want!","italic":true,"color":"gray"}
+tp @s[x=-1079,y=100,z=1395,dx=2,dy=5,dz=1] -1078 101 1211 180 ~
 
 
 #Kanto
-tellraw @s[x=-1010,y=100,z=1396,dx=2,dy=5,dz=1] {"text":"Right click what starter you want!","italic":true,"color":"gray"}
-tp @s[x=-1010,y=100,z=1396,dx=2,dy=5,dz=1] -1009 101 1211 180 ~
+tellraw @s[x=-1010,y=100,z=1395,dx=2,dy=5,dz=1] {"text":"Right click what starter you want!","italic":true,"color":"gray"}
+tp @s[x=-1010,y=100,z=1395,dx=2,dy=5,dz=1] -1009 101 1211 180 ~
 
-tellraw @s[x=-1010,y=100,z=1334,dx=2,dy=5,dz=1] {"text":"Right click what starter you want!","italic":true,"color":"gray"}
-tp @s[x=-1010,y=100,z=1334,dx=2,dy=5,dz=1] -1009 101 1211 180 ~
+tellraw @s[x=-1010,y=100,z=1333,dx=2,dy=5,dz=1] {"text":"Right click what starter you want!","italic":true,"color":"gray"}
+tp @s[x=-1010,y=100,z=1333,dx=2,dy=5,dz=1] -1009 101 1211 180 ~
 
-tellraw @s[x=-1010,y=100,z=1281,dx=2,dy=5,dz=1] {"text":"Right click what starter you want!","italic":true,"color":"gray"}
-tp @s[x=-1010,y=100,z=1281,dx=2,dy=5,dz=1] -1009 101 1211 180 ~
+tellraw @s[x=-1010,y=100,z=1280,dx=2,dy=5,dz=1] {"text":"Right click what starter you want!","italic":true,"color":"gray"}
+tp @s[x=-1010,y=100,z=1280,dx=2,dy=5,dz=1] -1009 101 1211 180 ~
 
 
 #Snowbelle City NPC Home 1

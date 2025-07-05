@@ -48,43 +48,6 @@ execute as @a[scores={TalkTrigger=4..5}] run scoreboard players set @s TalkTrigg
 
 
 
-#Resets randomized Pokemon
-#/scoreboard players set @e[x=-688,y=100,z=1136,dy=3,type=armor_stand] rng 650
-#/scoreboard players set @e[x=-686,y=100,z=1136,dy=3,type=armor_stand] rng 653
-#/scoreboard players set @e[x=-684,y=100,z=1136,dy=3,type=armor_stand] rng 656
-
-
-#Starter Pokemon
-#Chespin - Shauna picks Froakie, Serena picks Fennekin
-#execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[score_TalkTrigger_min=6,score_TalkTrigger=6,score_StarterPick=0] Chespin lvl:5 gr:7
-execute as @a[scores={TalkTrigger=6,StarterPick=0}] run function kalos:randomizer/startersgive
-execute as @a[scores={TalkTrigger=6,StarterPick=0}] run tellraw @s {"text":"An excellent choice!","italic":true,"color":"gray"}
-execute as @a[scores={TalkTrigger=6,StarterPick=0}] run scoreboard players set @s StarterPick 1
-execute as @a[scores={TalkTrigger=6,StarterPick=1..}] run tp @s 443 108 1369 88 6
-execute as @a[scores={TalkTrigger=6,StarterPick=1..}] run scoreboard players set @s TalkTrigger 0
-
-
-
-
-#Fennekin - Shauna picks Chespin, Serena picks Froakie
-#execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[score_TalkTrigger_min=7,score_TalkTrigger=7,score_StarterPick=0] Fennekin lvl:5 gr:7
-execute as @a[scores={TalkTrigger=7,StarterPick=0}] run function kalos:randomizer/startersgive
-execute as @a[scores={TalkTrigger=7,StarterPick=0}] run tellraw @s {"text":"An excellent choice!","italic":true,"color":"gray"}
-execute as @a[scores={TalkTrigger=7,StarterPick=0}] run scoreboard players set @s StarterPick 2
-execute as @a[scores={TalkTrigger=7,StarterPick=1..}] run tp @s 443 108 1369 88 6
-execute as @a[scores={TalkTrigger=7,StarterPick=1..}] run scoreboard players set @s TalkTrigger 0
-
-
-
-#Froakie - Shauna picks Fennekin, Serena picks Chespin
-#execute as @e[x=-683,y=100,z=1388,dy=3,type=armor_stand] run pokegive @a[score_TalkTrigger_min=8,score_TalkTrigger=8,score_StarterPick=0] Froakie lvl:5 gr:7
-execute as @a[scores={TalkTrigger=8,StarterPick=0}] run function kalos:randomizer/startersgive
-execute as @a[scores={TalkTrigger=8,StarterPick=0}] run tellraw @s {"text":"An excellent choice!","italic":true,"color":"gray"}
-execute as @a[scores={TalkTrigger=8,StarterPick=0}] run scoreboard players set @s StarterPick 3
-execute as @a[scores={TalkTrigger=8,StarterPick=1..}] run tp @s 443 108 1369 88 6
-execute as @a[scores={TalkTrigger=8,StarterPick=1..}] run scoreboard players set @s TalkTrigger 0
-
-
 
 #Bulbasaur
 give @a[scores={TalkTrigger=9},tag=!KantoStarters] pixelmon:venusaurite
