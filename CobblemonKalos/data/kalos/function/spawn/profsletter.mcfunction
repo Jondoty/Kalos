@@ -1,0 +1,1 @@
+give @s paper[custom_name='["",{"text":"Prof\'s Letter","italic":false}]',lore=['["",{"text":"A letter from Professor Sycamore","italic":false}]','["",{"text":"addressed to your mom.","italic":false}]']]

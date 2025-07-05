@@ -1,0 +1,95 @@
+{   
+    "initializationAction": [              
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+            ],
+
+    "speakers": {
+        "serena": {
+          "name": "Serena",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:serena",
+            "isLeftSide": true
+          }
+        },
+        "shauna": {
+          "name": "Shauna",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:shauna",
+            "isLeftSide": false
+          }
+        },
+        "trevor": {
+          "name": "Trevor",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:trevor",
+            "isLeftSide": true
+          }
+        },
+        "tierno": {
+          "name": "Tierno",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:tierno",
+            "isLeftSide": false
+          }
+        }
+      },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "shauna",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'' + q.player.username + ', wait!';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('tp @e[x=471,y=107,z=1401,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={StarterPick=1}] unless entity @e[x=471,y=107,z=1401,dy=3,type=cobblemon:npc] run npcspawnat 471 108 1401 aquacorde_shauna1');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={StarterPick=2}] unless entity @e[x=471,y=107,z=1401,dy=3,type=cobblemon:npc] run npcspawnat 471 108 1401 aquacorde_shauna2');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={StarterPick=3}] unless entity @e[x=471,y=107,z=1401,dy=3,type=cobblemon:npc] run npcspawnat 471 108 1401 aquacorde_shauna3');",
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "shauna",
+            "lines": [
+                "You're gonna be my opponent in my Pokemon-battling debut!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue5');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                            ]
+                    }
+                ]
+            }
+        }
+        ]
+    }
