@@ -5,6 +5,7 @@
         "q.run_command('execute as ' + q.player.username + ' run playsound sycamorestheme record @s[tag=!RadioOff] ~ ~ ~ 1 1 1');",
         "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s[tag=!RadioOff] MusicCooldown 98');"
     ],
+    "escapeAction": [],
     "speakers": {
         "sycamore": {
             "name": "Sycamore",

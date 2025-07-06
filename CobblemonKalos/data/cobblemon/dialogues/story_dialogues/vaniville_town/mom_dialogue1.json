@@ -2,7 +2,7 @@
     "initializationAction": [              
         "q.run_command('tag ' + q.player.username + ' add InDialogue');"
             ],
-
+    "escapeAction": [],
     "speakers": {
         "npc": {
           "name": "Mom",
