@@ -1,0 +1,70 @@
+{   
+    "initializationAction": [              
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+            ],
+
+    "speakers": {
+        "sina": {
+          "name": "Sina",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:sina",
+            "isLeftSide": true
+          }
+        },
+        "dexio": {
+          "name": "Dexio",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:dexio",
+            "isLeftSide": false
+          }
+        }
+      },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "sina",
+            "lines": [
+                "You've traveled a long way from Vaniville Town, but you're finally here!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "sina",
+            "lines": [
+                "The professor can't wait to meet you. You can find him on the third floor, so hop in the elevator!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue17');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                            ]
+                    }
+                ]
+            }
+        }
+        ]
+    }

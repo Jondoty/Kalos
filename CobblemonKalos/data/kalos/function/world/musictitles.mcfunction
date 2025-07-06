@@ -24,6 +24,12 @@ execute as @s[x=-937,y=36,z=-742,dx=280,dy=40,dz=117] unless entity @s[scores={M
 execute as @s[x=-937,y=36,z=-742,dx=280,dy=40,dz=117] unless entity @s[scores={MusicCheck=26}] run scoreboard players set @s MusicCheck 26
 execute as @s[x=-937,y=36,z=-742,dx=280,dy=40,dz=117] run tag @s add Indoors
 
+#Sycamore's Lab - 63
+execute as @s[x=-271,y=99,z=64,dx=36,dy=50,dz=37] unless entity @s[scores={MusicCheck=63}] run title @s actionbar {"text":"Sycamore's Lab"}
+execute as @s[x=-271,y=99,z=64,dx=36,dy=50,dz=37] unless entity @s[scores={MusicCheck=63}] run function kalos:triggers/stopsound
+execute as @s[x=-271,y=99,z=64,dx=36,dy=50,dz=37] unless entity @s[scores={MusicCheck=63}] run scoreboard players set @s MusicCheck 63
+execute as @s[x=-271,y=99,z=64,dx=36,dy=50,dz=37] run tag @s add Indoors
+
 #---------------------------------------------------------------------------------------
 
 #Vaniville Town - 1
@@ -56,15 +62,15 @@ execute as @s[x=93,y=0,z=384,dx=250,dy=256,dz=139] unless entity @s[scores={Musi
 
 
 #Lumiose City Above Ground - 5
-execute as @s[x=-181,y=101,z=-390,distance=..395] unless entity @s[scores={MusicCheck=5}] run title @s actionbar {"text":"Lumiose City"}
-execute as @s[x=-181,y=101,z=-390,distance=..395] unless entity @s[scores={MusicCheck=5}] run function kalos:triggers/stopsound
-execute as @s[x=-181,y=101,z=-390,distance=..395] unless entity @s[scores={MusicCheck=5}] run scoreboard players set @s MusicCheck 5
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Indoors] unless entity @s[scores={MusicCheck=5}] run title @s actionbar {"text":"Lumiose City"}
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Indoors] unless entity @s[scores={MusicCheck=5}] run function kalos:triggers/stopsound
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Indoors] unless entity @s[scores={MusicCheck=5}] run scoreboard players set @s MusicCheck 5
 
 
 #Lumiose Building Interiors - 5
-execute as @s[x=-514,y=0,z=64,dx=516,dy=150,dz=436] unless entity @s[scores={MusicCheck=5}] run title @s actionbar {"text":"Lumiose City"}
-execute as @s[x=-514,y=0,z=64,dx=516,dy=150,dz=436] unless entity @s[scores={MusicCheck=5}] run function kalos:triggers/stopsound
-execute as @s[x=-514,y=0,z=64,dx=516,dy=150,dz=436] unless entity @s[scores={MusicCheck=5}] run scoreboard players set @s MusicCheck 5
+execute as @s[x=-514,y=0,z=64,dx=516,dy=150,dz=436,tag=!Indoors] unless entity @s[scores={MusicCheck=5}] run title @s actionbar {"text":"Lumiose City"}
+execute as @s[x=-514,y=0,z=64,dx=516,dy=150,dz=436,tag=!Indoors] unless entity @s[scores={MusicCheck=5}] run function kalos:triggers/stopsound
+execute as @s[x=-514,y=0,z=64,dx=516,dy=150,dz=436,tag=!Indoors] unless entity @s[scores={MusicCheck=5}] run scoreboard players set @s MusicCheck 5
 
 
 #Camphrier Town - 6
@@ -286,13 +292,6 @@ execute as @s[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97] unless entity @s[scores={M
 execute as @s[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97] unless entity @s[scores={MusicCheck=62}] run function kalos:triggers/stopsound
 execute as @s[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97] unless entity @s[scores={MusicCheck=62}] run scoreboard players set @s MusicCheck 62
 
-
-#Sycamore's Lab - 63
-execute as @s[x=-271,y=99,z=64,dx=36,dy=50,dz=37] unless entity @s[scores={MusicCheck=63}] run title @s actionbar {"text":"Sycamore's Lab"}
-execute as @s[x=-271,y=99,z=64,dx=36,dy=50,dz=37] unless entity @s[scores={MusicCheck=63}] run function kalos:triggers/stopsound
-execute as @s[x=-271,y=99,z=64,dx=36,dy=50,dz=37] unless entity @s[scores={MusicCheck=63}] run scoreboard players set @s MusicCheck 63
-
-
 #Kiloude City Train Station - 9
 execute as @s[x=913,y=98,z=1473,dx=70,dy=100,dz=228] unless entity @s[scores={MusicCheck=9}] unless entity @s[scores={MusicCheck=18}] run title @s actionbar {"text":"Kiloude City"}
 execute as @s[x=913,y=98,z=1473,dx=70,dy=100,dz=228] unless entity @s[scores={MusicCheck=9}] unless entity @s[scores={MusicCheck=18}] run function kalos:triggers/stopsound
@@ -300,9 +299,9 @@ execute as @s[x=913,y=98,z=1473,dx=70,dy=100,dz=228] unless entity @s[scores={Mu
 
 
 #Lumiose City - 5
-execute as @s[x=984,y=99,z=1845,dx=267,dy=50,dz=100] unless entity @s[scores={MusicCheck=5}] run title @s actionbar {"text":"Lumiose City"}
-execute as @s[x=984,y=99,z=1845,dx=267,dy=50,dz=100] unless entity @s[scores={MusicCheck=5}] run function kalos:triggers/stopsound
-execute as @s[x=984,y=99,z=1845,dx=267,dy=50,dz=100] unless entity @s[scores={MusicCheck=5}] run scoreboard players set @s MusicCheck 5
+execute as @s[x=984,y=99,z=1845,dx=267,dy=50,dz=100,tag=!Indoors] unless entity @s[scores={MusicCheck=5}] run title @s actionbar {"text":"Lumiose City"}
+execute as @s[x=984,y=99,z=1845,dx=267,dy=50,dz=100,tag=!Indoors] unless entity @s[scores={MusicCheck=5}] run function kalos:triggers/stopsound
+execute as @s[x=984,y=99,z=1845,dx=267,dy=50,dz=100,tag=!Indoors] unless entity @s[scores={MusicCheck=5}] run scoreboard players set @s MusicCheck 5
 
 
 #Lobby - 64

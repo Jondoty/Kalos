@@ -60,7 +60,7 @@ scoreboard players set @s TrainerClass 0
 
 #Event tag Resets if present
 tag @s remove GhostGirl
-tag @s remove KantoStarters
+tag @s remove KantoStarter
 tag @s remove LucarioMoves
 tag @s remove PowerPlantPass
 tag @s remove Admin1

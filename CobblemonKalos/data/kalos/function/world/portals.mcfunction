@@ -342,8 +342,8 @@ execute as @s[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarters,tag=!Dialogue
 
 
 #Lumiose Route 4 Connector
-execute as @s[x=172,y=100,z=-118,dx=14,dy=5,tag=Dialogue15] run function kalos:triggers/stopsound
-tp @s[x=172,y=100,z=-118,dx=14,dy=5,tag=Dialogue15] 19 101 -108 145 ~
+execute as @s[x=172,y=100,z=-118,dx=14,dy=5] run function kalos:triggers/stopsound
+tp @s[x=172,y=100,z=-118,dx=14,dy=5] 19 101 -108 145 ~
 
 execute as @s[x=20,y=101,z=-107,dx=7,dy=5,dz=6] run function kalos:triggers/stopsound
 tp @s[x=20,y=101,z=-107,dx=7,dy=5,dz=6] 179 100 -116 0 ~
@@ -1130,7 +1130,6 @@ tp @s[x=-135,y=101,z=108,dx=4,dy=5] -247 101 -76 -167 ~
 
 
 #Lumiose City Sycamore Pokemon Lab
-#scoreboard players set @s[x=-184,y=104,z=-41,dx=6,dy=5,tag=!Dialogue17] DialogueTrigger 17
 execute as @s[x=-184,y=104,z=-41,dx=6,dy=5] run function kalos:triggers/stopsound
 tp @s[x=-184,y=104,z=-41,dx=6,dy=5] -253 101 98 180 ~
 

@@ -12,6 +12,9 @@ execute as @s[x=-1074,y=101,z=1196,distance=..10] run tp @s -1078 101 1377 180 2
 #Kanto Starters
 execute as @s[x=-1009,y=101,z=1373,distance=..10] run tellraw @s {"text":"An excellent choice!","italic":true,"color":"gray"}
 execute as @s[x=-1009,y=101,z=1373,distance=..10] run pokegive squirtle level=10
+execute as @s[x=-1009,y=101,z=1373,distance=..10] run give @s mega_showdown:blastoisinite
+execute as @s[x=-1009,y=101,z=1373,distance=..10] run tag @s add KantoStarter
+execute as @s[x=-1009,y=101,z=1373,distance=..10] run tp @s -265 121 95 180 12
 
 execute as @s[x=-1009,y=101,z=1196,distance=..10] run tellraw @s {"text":"You pick the Water-type Pokémon Squirtle?","italic":true,"color":"gray"}
 execute as @s[x=-1009,y=101,z=1196,distance=..10] run tp @s -1009 101 1377 180 20

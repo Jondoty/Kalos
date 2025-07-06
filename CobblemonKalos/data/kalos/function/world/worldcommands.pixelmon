@@ -562,10 +562,6 @@ execute as @a[x=-105,y=101,z=-699,distance=..20,tag=!Call21,scores={TalkTime=0,H
 #----------
 #Story Dialogues
 
-#Dialogue 14
-#Route 4 Dexio and Sina first Introduction
-scoreboard players set @a[x=179,y=100,z=-58,distance=..10,scores={TalkTime=0},tag=!Dialogue14] DialogueTrigger 14
-
 #Dialogue 15
 #Route 4 - Lumiose Gate Dexio and Sina
 scoreboard players set @a[x=179,y=100,z=-115,distance=..10,scores={TalkTime=0},tag=Dialogue14] DialogueTrigger 15

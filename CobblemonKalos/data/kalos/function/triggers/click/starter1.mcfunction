@@ -13,6 +13,9 @@ execute as @s[x=-1082,y=101,z=1196,distance=..10] run tp @s -1078 101 1262 180 2
 #Kanto Starters
 execute as @s[x=-1009,y=101,z=1258,distance=..10] run tellraw @s {"text":"An excellent choice!","italic":true,"color":"gray"}
 execute as @s[x=-1009,y=101,z=1258,distance=..10] run pokegive bulbasaur level=10
+execute as @s[x=-1009,y=101,z=1258,distance=..10] run give @s mega_showdown:venusaurite
+execute as @s[x=-1009,y=101,z=1258,distance=..10] run tag @s add KantoStarter
+execute as @s[x=-1009,y=101,z=1258,distance=..10] run tp @s -265 121 95 180 12
 
 
 execute as @s[x=-1009,y=101,z=1196,distance=..10] run tellraw @s {"text":"You pick the Grass-type Pokémon Bulbasaur?","italic":true,"color":"gray"}

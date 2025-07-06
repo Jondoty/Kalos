@@ -14,6 +14,8 @@ execute as @s[x=187,y=100,z=389,distance=..6,tag=Viola,tag=!Dialogue11] run open
 execute as @s[x=187,y=100,z=389,distance=..6,tag=Viola,tag=Dialogue11] run opendialogue alexa_post @s
 
 
+#Professor Sycamore
+execute as @s[x=-265,y=121,z=90,distance=..6] run opendialogue sycamoreslab_sycamore_interaction @s
 
 
 
