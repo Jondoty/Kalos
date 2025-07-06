@@ -38,9 +38,11 @@ execute as @s[x=389,y=100,z=719,distance=..15,tag=!Dialogue8] unless entity @e[x
 execute as @s[x=389,y=100,z=719,distance=..15,tag=!Dialogue8] unless entity @e[x=389,y=99,z=659,dy=3,type=cobblemon:npc] run npcspawnat 389 100 659 serena_generic
 
 
+#Santalune Alexa after beating Viola
+execute as @s[x=165,y=99,z=375,dx=28,dy=10,dz=14,tag=!Dialogue11,tag=Viola] run opendialogue alexa_dialogue11 @s
 
-
-
+#Gym Guy post-badge
+execute as @s[x=-1921,y=138,z=-1896,distance=..7,tag=!Dialogue13,tag=Viola] run opendialogue gymguy_dialogue13 @s
 
 
 

@@ -1,67 +1,6 @@
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#Viola's Sister Santalune City north exit block
-#scoreboard players set @a[x=165,y=99,z=375,dx=28,dy=10,dz=14,tag=!Dialogue10,tag=!Viola] DialogueTrigger 10
-
-tellraw @s[scores={DialogueTrigger=10,TalkTime=2}] {"text":"<...> Oh, you... You are, aren't you? You're one of the kids who got a Pokémon from Augustine Sycamore, right?"}
-tellraw @s[scores={DialogueTrigger=10,TalkTime=12}] {"text":"<...> That Pokémon you've got there looks pretty happy. You must be a good Trainer."}
-tellraw @s[scores={DialogueTrigger=10,TalkTime=22}] {"text":"<...> In that case, get over to the Pokémon Gym. I'm sure my sister will be glad to meet you!"}
-
-tag @s[scores={DialogueTrigger=10,TalkTime=22..}] add Dialogue10
-scoreboard players set @s[tag=Dialogue10] TalkTime 0
-scoreboard players set @s[tag=Dialogue10] DialogueTrigger 0
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-#Viola's Sister Santalune City north exit after block
-#scoreboard players set @a[x=165,y=99,z=375,dx=28,dy=10,dz=14,tag=!Dialogue11,tag=Viola] DialogueTrigger 11
-
-tellraw @s[scores={DialogueTrigger=11,TalkTime=2}] {"text":"<...> Would you look at that! You got a Bug Badge! Looks like I might have a new scoop."}
-tellraw @s[scores={DialogueTrigger=11,TalkTime=10}] {"text":"<...> To beat Viola at your young age... You really are something, aren't you?"}
-tellraw @s[scores={DialogueTrigger=11,TalkTime=18}] {"text":"<Alexa> Oh! Sorry, I never did introduce myself, did I? I'm Alexa."}
-tellraw @s[scores={DialogueTrigger=11,TalkTime=27}] {"text":"<Alexa> The Gym Leader you just faced, Viola, is my younger sister. I work as a journalist myself."}
-tellraw @s[scores={DialogueTrigger=11,TalkTime=36}] {"text":"<Alexa> Here, why don't you take this to celebrate getting your first Badge!"}
-execute as @s[scores={DialogueTrigger=11,TalkTime=39}] run give @s pixelmon:exp_all 1
-tellraw @s[scores={DialogueTrigger=11,TalkTime=45}] {"text":"<Alexa> If you have an Exp. Share and you turn it on, all of the Pokémon on your team get Exp. Points, even if they don't ever appear in battle."}
-tellraw @s[scores={DialogueTrigger=11,TalkTime=55}] {"text":"<Alexa> I hope it helps you with your training! I work at the big publishing house up in Lumiose City."}
-tellraw @s[scores={DialogueTrigger=11,TalkTime=65}] {"text":"<Alexa> Feel free to stop by anytime if you have the next big scoop to share with me!"}
-
-tag @s[scores={DialogueTrigger=11,TalkTime=65..}] add Dialogue11
-scoreboard players set @s[tag=Dialogue11] TalkTime 0
-scoreboard players set @s[tag=Dialogue11] DialogueTrigger 0
-
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-#Victory Road gate & Route 21 block
-#scoreboard players set @a[x=718,y=103,z=399,dx=9,dy=10,dz=16,tag=!Dialogue12,tag=!FlySnowbelle] DialogueTrigger 12
-
-tellraw @s[scores={DialogueTrigger=12,TalkTime=2}] {"text":"<Ace Trainer> Where do you think you're going? Listen up."}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=11}] {"text":"<Ace Trainer> Taking on challenges may be important. But as for what lies beyond here?"}
-tellraw @s[scores={DialogueTrigger=12,TalkTime=21}] {"text":"<Ace Trainer> You're not ready to tackle that yet."}
-
-tag @s[scores={DialogueTrigger=12,TalkTime=21..}] add Dialogue12
-scoreboard players set @s[tag=Dialogue12] TalkTime 0
-scoreboard players set @s[tag=Dialogue12] DialogueTrigger 0
-
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-#Gym Guide after Viola badge
-#scoreboard players set @a[x=-1929,y=137,z=-1908,dx=20,dy=10,dz=20,tag=!Dialogue13,tag=Viola] DialogueTrigger 13
-
-tellraw @s[scores={DialogueTrigger=13,TalkTime=2}] {"text":"<Gym Guide> Whoa-ho-ho! Wouldja look at that Bug Badge!"}
-tellraw @s[scores={DialogueTrigger=13,TalkTime=10}] {"text":"<Gym Guide> Nice! Very nice, future Champ! I bet that schmancy-pants professor who gave you your first Pokémon'd be amazed to see it!"}
-tellraw @s[scores={DialogueTrigger=13,TalkTime=22}] {"text":"<Gym Guide> After you heal up your Pokémon in the Pokémon Center, why don'tcha head on up to the Pokémon Lab in Lumiose City and show it to him, huh?"}
-
-tag @s[scores={DialogueTrigger=13,TalkTime=22..}] add Dialogue13
-scoreboard players set @s[tag=Dialogue13] TalkTime 0
-scoreboard players set @s[tag=Dialogue13] DialogueTrigger 0
-
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 #Dexio and Sina before Lumiose Gate
 #scoreboard players set @a[x=179,y=100,z=-58,r=10,tag=!Dialogue14] DialogueTrigger 14
 

@@ -9,6 +9,15 @@ execute as @s[x=460,y=101,z=1361,dx=20,dy=10,dz=15,scores={StarterPick=0}] at @s
 tellraw @s[x=460,y=101,z=1361,dx=20,dy=10,dz=15,tag=!Dialogue7,scores={StarterPick=1..}] {"text":"You still need to run the Prof's Letter to mom!","italic":true,"color":"gray"}
 execute as @s[x=460,y=101,z=1361,dx=20,dy=10,dz=15,tag=!Dialogue7,scores={StarterPick=1..}] at @s run tp @s ~ 108 ~10
 
+#Alexa blocking Route 4 until Viola is beaten
+execute as @s[x=165,y=99,z=375,dx=28,dy=10,dz=14,tag=!Dialogue10,tag=!Viola] run opendialogue alexa_block @s
+execute as @s[x=165,y=99,z=375,dx=28,dy=10,dz=14,tag=!Viola] at @s run tp @s ~ ~ ~10
+
+#Victory Road & Route 21 Ace Trainer Block
+execute as @s[x=718,y=103,z=399,dx=9,dy=10,dz=16,tag=!FlySnowbelle] run opendialogue route21_block @s
+execute as @s[x=718,y=103,z=399,dx=9,dy=10,dz=16,tag=!FlySnowbelle] at @s run tp @s ~-10 105 ~
+
+
 #----------------
 
 ##Lumisose Blackout Southern Blvd

@@ -1,6 +1,36 @@
 #Function that manages what specific NPCs say when you click on boxes surroung them.
 #Used to have the same NPC say different lines depending on the player's own tags.
 
+#-------------------------------------------------------------
+#General Story NPCs
+
+#Mom
+
+
+
+#Santalune City Alexa
+execute as @s[x=187,y=100,z=389,distance=..6,tag=!Viola] run opendialogue alexa_block @s
+execute as @s[x=187,y=100,z=389,distance=..6,tag=Viola,tag=!Dialogue11] run opendialogue alexa_dialogue11 @s
+execute as @s[x=187,y=100,z=389,distance=..6,tag=Viola,tag=Dialogue11] run opendialogue alexa_post @s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#-------------------------------------------------------------
+
 #Dynamic Shop NPCs
 scoreboard players set @s Temp 0
 execute as @s[tag=Viola] run scoreboard players add @s Temp 1
