@@ -20,46 +20,46 @@ execute as @s[x=718,y=103,z=399,dx=9,dy=10,dz=16,tag=!FlySnowbelle] at @s run tp
 
 #----------------
 
-##Lumisose Blackout Southern Blvd
-#tellraw @s[x=64,y=101,z=-287,dx=75,dy=10,dz=20,tag=!LumiosePower] {"text":"<Worker> I\u2019m sorry. There\u2019s a blackout. You can\u2019t go any farther until it\u2019s fixed."}
-#execute as @s[x=64,y=101,z=-287,dx=75,dy=10,dz=20,tag=!LumiosePower] at @s run tp @s ~-9 ~ ~10
-#
-##Vert Plaza Blackout
-#tellraw @s[x=-30,y=101,z=-181,distance=..10,tag=!LumiosePower] {"text":"<Worker> I\u2019m sorry. There\u2019s a blackout. You can\u2019t go any farther until it\u2019s fixed."}
-#execute as @s[x=-30,y=101,z=-181,distance=..10,tag=!LumiosePower] at @s run tp @s ~8 ~ ~10
-#
-##Vernal Ave
-#tellraw @s[x=-204,y=100,z=-149,dx=46,dy=10,dz=20,tag=!LumiosePower] {"text":"<Worker> I\u2019m sorry. There\u2019s a blackout. You can\u2019t go any farther until it\u2019s fixed."}
-#execute as @s[x=-204,y=100,z=-149,dx=46,dy=10,dz=20,tag=!LumiosePower] as @s run tp @s ~ ~ ~10
-#
-##Bleu Plaz
-#tellraw @s[x=-331,y=101,z=-183,distance=..10,tag=!LumiosePower] {"text":"<Worker> I\u2019m sorry. There\u2019s a blackout. You can\u2019t go any farther until it\u2019s fixed."}
-#execute as @s[x=-331,y=101,z=-183,distance=..10,tag=!LumiosePower] at @s run tp @s ~-8 ~ ~10
-#
-##Northern Blvd
-#tellraw @s[x=-504,y=100,z=-437,dx=62,dy=10,dz=27,tag=!LumiosePower] {"text":"<Worker> I\u2019m sorry. There\u2019s a blackout. You can\u2019t go any farther until it\u2019s fixed."}
-#execute as @s[x=-504,y=100,z=-437,dx=62,dy=10,dz=27,tag=!LumiosePower] at @s run tp @s ~ ~ ~10
-#
-##Estival
-#tellraw @s[x=-427,y=100,z=-335,dx=11,dy=10,dz=49,tag=!LumiosePower] {"text":"<Worker> I\u2019m sorry. There\u2019s a blackout. You can\u2019t go any farther until it\u2019s fixed."}
-#execute as @s[x=-427,y=100,z=-335,dx=11,dy=10,dz=49,tag=!LumiosePower] at @s run tp @s ~-10 ~ ~10
-#
-##Magenta Plaza
-#tellraw @s[x=-321,y=101,z=-399,distance=..10,tag=!LumiosePower,scores={TalkTime=0}] {"text":"<Worker> I\u2019m sorry. There\u2019s a blackout. You can\u2019t go any farther until it\u2019s fixed."}
-#execute as @s[x=-321,y=101,z=-399,distance=..10,tag=!LumiosePower] at @s run tp @s ~-5 ~ ~-10
-#
-##Autumnal Ave
-#tellraw @s[x=-282,y=101,z=-484,distance=..10,tag=!LumiosePower,scores={TalkTime=0}] {"text":"<Worker> I\u2019m sorry. There\u2019s a blackout. You can\u2019t go any farther until it\u2019s fixed."}
-#execute as @s[x=-282,y=101,z=-484,distance=..10,tag=!LumiosePower] at @s run tp @s ~-6 ~ ~5
-#
-##Northn Blvd to Shauna
-#tellraw @s[x=-489,y=100,z=-520,dx=69,dy=6,dz=15,tag=!LumiosePower,scores={TalkTime=0}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Hey! What are you doing? Let\u2019s go see Prism Tower!"}]
-#tp @s[x=-489,y=100,z=-520,dx=69,dy=6,dz=15,tag=!LumiosePower] -454 101 -492 -36 ~
-#
-#tellraw @s[x=-502,y=100,z=-463,dx=60,dy=6,dz=10,tag=!LumiosePower,scores={TalkTime=0}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Hey! What are you doing? Let\u2019s go see Prism Tower!"}]
-#execute as @s[x=-502,y=100,z=-463,dx=60,dy=6,dz=10,tag=!LumiosePower] at @s run tp @s ~ ~ ~-10
-#
-##----------------
+#Lumisose Blackout Southern Blvd
+execute as @s[x=64,y=101,z=-287,dx=75,dy=10,dz=20,tag=!LumiosePower] run opendialogue lumiose_power_block @s
+execute as @s[x=64,y=101,z=-287,dx=75,dy=10,dz=20,tag=!LumiosePower] at @s run tp @s ~-9 ~ ~10
+
+#Vert Plaza Blackout
+execute as @s[x=-30,y=101,z=-181,distance=..10,tag=!LumiosePower] run opendialogue lumiose_power_block @s
+execute as @s[x=-30,y=101,z=-181,distance=..10,tag=!LumiosePower] at @s run tp @s ~8 ~ ~10
+
+#Vernal Ave
+execute as @s[x=-204,y=100,z=-149,dx=46,dy=10,dz=20,tag=!LumiosePower] run opendialogue lumiose_power_block @s
+execute as @s[x=-204,y=100,z=-149,dx=46,dy=10,dz=20,tag=!LumiosePower] at @s run tp @s ~ ~ ~10
+
+#Bleu Plaz
+execute as @s[x=-331,y=101,z=-183,distance=..10,tag=!LumiosePower] run opendialogue lumiose_power_block @s
+execute as @s[x=-331,y=101,z=-183,distance=..10,tag=!LumiosePower] at @s run tp @s ~-8 ~ ~10
+
+#Northern Blvd
+execute as @s[x=-504,y=100,z=-437,dx=62,dy=10,dz=27,tag=!LumiosePower] run opendialogue lumiose_power_block @s
+execute as @s[x=-504,y=100,z=-437,dx=62,dy=10,dz=27,tag=!LumiosePower] at @s run tp @s ~ ~ ~10
+
+#Estival
+execute as @s[x=-427,y=100,z=-335,dx=11,dy=10,dz=49,tag=!LumiosePower] run opendialogue lumiose_power_block @s
+execute as @s[x=-427,y=100,z=-335,dx=11,dy=10,dz=49,tag=!LumiosePower] at @s run tp @s ~-10 ~ ~10
+
+#Magenta Plaza
+execute as @s[x=-321,y=101,z=-399,distance=..10,tag=!LumiosePower,scores={TalkTime=0}] run opendialogue lumiose_power_block @s
+execute as @s[x=-321,y=101,z=-399,distance=..10,tag=!LumiosePower] at @s run tp @s ~-5 ~ ~-10
+
+#Autumnal Ave
+execute as @s[x=-282,y=101,z=-484,distance=..10,tag=!LumiosePower,scores={TalkTime=0}] run opendialogue lumiose_power_block @s
+execute as @s[x=-282,y=101,z=-484,distance=..10,tag=!LumiosePower] at @s run tp @s ~-6 ~ ~5
+
+#Northn Blvd to Shauna
+tellraw @s[x=-489,y=100,z=-520,dx=69,dy=6,dz=15,tag=!LumiosePower,scores={TalkTime=0}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Hey! What are you doing? Let\u2019s go see Prism Tower!"}]
+tp @s[x=-489,y=100,z=-520,dx=69,dy=6,dz=15,tag=!LumiosePower] -454 101 -492 -36 ~
+
+tellraw @s[x=-502,y=100,z=-463,dx=60,dy=6,dz=10,tag=!LumiosePower,scores={TalkTime=0}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Hey! What are you doing? Let\u2019s go see Prism Tower!"}]
+execute as @s[x=-502,y=100,z=-463,dx=60,dy=6,dz=10,tag=!LumiosePower] at @s run tp @s ~ ~ ~-10
+
+#----------------
 #
 ##Route 7, Route 6 block before Snorlax talk
 #tellraw @s[x=-1207,y=100,z=-55,dx=31,dy=10,dz=11,tag=!Dialogue28,scores={TalkTime=0}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> "},{"selector":"@p[x=-1207,y=100,z=-55,dx=31,dy=10,dz=11,tag=!Dialogue28]"},{"text":"! They said they were going this way!"}]
