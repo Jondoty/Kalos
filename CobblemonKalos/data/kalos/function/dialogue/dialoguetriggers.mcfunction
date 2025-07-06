@@ -94,12 +94,19 @@ execute as @s[x=-492,y=101,z=261,distance=..10,tag=!Dialogue22] unless entity @e
 execute as @s[x=-492,y=101,z=261,distance=..10,tag=!Dialogue22] unless entity @e[x=-490,y=100,z=245,dy=3,type=cobblemon:npc] run npcspawnat -490 101 245 lysandre_generic
 execute as @s[x=-491,y=101,z=252,distance=..10,tag=!Dialogue22] run opendialogue serena_dialogue22 @s
 
+#Route 5 Lucario and Korrina
+execute as @s[x=-627,y=90,z=-172,dx=8,dy=10,dz=25,tag=!Dialogue23] run opendialogue korrina_dialogue23 @s
 
+execute as @a[x=-627,y=92,z=-159,distance=..30,tag=!Dialogue23] unless entity @e[x=-627,y=92,z=-159,distance=..5,type=cobblemon:pokemon] run pokespawnat -627 92 -159 lucario no_ai=true level=25
+execute positioned -627 92 -159 as @e[distance=..5,type=cobblemon:pokemon,name=Lucario,nbt={PersistenceRequired:0b}] at @s run tp @s ~ ~ ~ -90 ~
+execute positioned -627 92 -159 as @e[distance=..5,type=cobblemon:pokemon,name=Lucario,nbt={PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
+execute positioned -627 92 -159 as @e[distance=..5,type=cobblemon:pokemon,name=Lucario,nbt={PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
+execute positioned -627 92 -159 as @e[distance=..5,type=cobblemon:pokemon,name=Lucario,nbt={PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
+execute positioned -627 92 -159 as @e[distance=..5,type=cobblemon:pokemon,name=Lucario,nbt={PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
 
-
-
-
-
+#Route 5 Tierno Trainer and Trevor
+execute as @s[x=-757,y=99,z=-134,distance=..30,tag=!Dialogue25] unless entity @e[x=-766,y=100,z=-134,dy=3,type=cobblemon:npc] run npcspawnat -766 100 -134 route5_tierno
+execute as @s[x=-757,y=99,z=-134,distance=..30,tag=!Dialogue25] unless entity @e[x=-769,y=100,z=-136,dy=3,type=cobblemon:npc] run npcspawnat -769 100 -136 trevor_generic
 
 
 

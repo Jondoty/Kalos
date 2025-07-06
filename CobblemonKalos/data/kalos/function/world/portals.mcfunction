@@ -331,14 +331,14 @@ tp @s[x=319,y=87,z=484,dx=5,dy=5] 322 100 487
 execute as @s[x=-565,y=92,z=-166,dy=10,dz=14] run function kalos:triggers/stopsound
 tp @s[x=-565,y=92,z=-166,dy=10,dz=14] -386 101 -108 -144 ~
 
-execute as @s[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarters,tag=Dialogue22] run function kalos:triggers/stopsound
-tp @s[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarters,tag=Dialogue22] -567 92 -159 90 ~
+execute as @s[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarter,tag=Dialogue22] run function kalos:triggers/stopsound
+tp @s[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarter,tag=Dialogue22] -567 92 -159 90 ~
 
-tellraw @s[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=!KantoStarters] {"text":"You need to go see Professor Sycamore!","italic":true,"color":"gray"}
-execute as @s[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=!KantoStarters] at @s run tp @s ~5 ~ ~-5
+tellraw @s[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=!KantoStarter] {"text":"You need to go see Professor Sycamore!","italic":true,"color":"gray"}
+execute as @s[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=!KantoStarter] at @s run tp @s ~5 ~ ~-5
 
-tellraw @s[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarters,tag=!Dialogue22] {"text":"Serena is waiting at Cafe Soleil!","italic":true,"color":"gray"}
-execute as @s[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarters,tag=!Dialogue22] at @s run tp @s ~5 ~ ~-5
+tellraw @s[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarter,tag=!Dialogue22] {"text":"Serena is waiting at Cafe Soleil!","italic":true,"color":"gray"}
+execute as @s[x=-393,y=101,z=-107,dx=7,dy=5,dz=6,tag=KantoStarter,tag=!Dialogue22] at @s run tp @s ~5 ~ ~-5
 
 
 #Lumiose Route 4 Connector

@@ -566,36 +566,7 @@ execute as @a[x=-105,y=101,z=-699,distance=..20,tag=!Call21,scores={TalkTime=0,H
 #Route 4 - Lumiose Gate Dexio and Sina
 scoreboard players set @a[x=179,y=100,z=-115,distance=..10,scores={TalkTime=0},tag=Dialogue14] DialogueTrigger 15
 
-#Dialogue 16
-#Lumiose City Dexio and Sina city Introduction
-scoreboard players set @a[x=-15,y=101,z=-135,dx=44,dy=10,dz=23,scores={TalkTime=0},tag=!Dialogue16] DialogueTrigger 16
 
-#Dialogue 18
-#Sycamore Lab opening dialogue before battle
-scoreboard players set @a[x=-270,y=120,z=82,dx=10,dy=10,dz=16,scores={TalkTime=0},tag=!Dialogue18] DialogueTrigger 18
-
-#Dialogue 19
-#Sycamore Lab Switching NPCs
-execute as @a[x=-265,y=120,z=91,distance=..10,scores={TalkTime=0},tag=!Dialogue19,tag=Dialogue18] run tp @e[x=-265,y=120,z=91,dy=3,type=pixelmon:npc_chatting] -504 136 1252
-execute as @a[x=-265,y=120,z=91,distance=..10,scores={TalkTime=0},tag=!Dialogue19,tag=Dialogue18] run tp @e[x=-504,y=135,z=1254,dy=3,type=pixelmon:npc_trainer] -265 121 91
-
-#Dialogue 21
-#Sycamore Lab Lysandre first meeting
-scoreboard players set @a[x=-271,y=99,z=64,dx=36,dy=7,dz=37,scores={TalkTime=0},tag=!Dialogue21,tag=KantoStarters] DialogueTrigger 21
-
-#Dialogue 23
-#Route 5 Korrina and Lucario first meet
-scoreboard players set @a[x=-624,y=90,z=-172,dx=8,dy=10,dz=25,scores={TalkTime=0},tag=!Dialogue23] DialogueTrigger 23
-
-#Dialogue 24
-#Route 5 Trevor and Tierno pre-battle
-scoreboard players set @a[x=-757,y=99,z=-134,distance=..10,tag=!Dialogue24,scores={TalkTime=0}] DialogueTrigger 24
-execute at @e[x=-504,y=155,z=1254,dy=3,type=pixelmon:npc_trainer] run execute as @a[x=-766,y=100,z=-134,distance=..6,tag=Dialogue24,tag=!Dialogue25] run tp @e[x=-504,y=155,z=1254,dy=3,type=pixelmon:npc_trainer] -766 100 -134
-
-#Dialogue 26
-#Camphrier Town West Block until seeing castle
-scoreboard players set @a[x=-1159,y=99,z=-44,dx=12,dy=10,dz=19,tag=!Dialogue26,scores={TalkTime=0},tag=!Dialogue27] DialogueTrigger 26
-execute as @a[x=-1159,y=99,z=-44,dx=12,dy=10,dz=19,tag=!Dialogue27] at @s run tp @s ~10 ~ ~
 
 #Dialogue 28
 #Route 7 Sleeping Snorlax Intro

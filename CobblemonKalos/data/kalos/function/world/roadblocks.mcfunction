@@ -59,7 +59,12 @@ tp @s[x=-489,y=100,z=-520,dx=69,dy=6,dz=15,tag=!LumiosePower] -454 101 -492 -36 
 tellraw @s[x=-502,y=100,z=-463,dx=60,dy=6,dz=10,tag=!LumiosePower,scores={TalkTime=0}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> Hey! What are you doing? Let\u2019s go see Prism Tower!"}]
 execute as @s[x=-502,y=100,z=-463,dx=60,dy=6,dz=10,tag=!LumiosePower] at @s run tp @s ~ ~ ~-10
 
-#----------------
+
+#Camphrier Town West Block until seeing castle
+execute as @s[x=-1159,y=99,z=-44,dx=12,dy=10,dz=19,tag=!Dialogue27] run opendialogue camphrier_block @s
+execute as @s[x=-1159,y=99,z=-44,dx=12,dy=10,dz=19,tag=!Dialogue27] at @s run tp @s ~10 ~ ~
+
+
 #
 ##Route 7, Route 6 block before Snorlax talk
 #tellraw @s[x=-1207,y=100,z=-55,dx=31,dy=10,dz=11,tag=!Dialogue28,scores={TalkTime=0}] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> "},{"selector":"@p[x=-1207,y=100,z=-55,dx=31,dy=10,dz=11,tag=!Dialogue28]"},{"text":"! They said they were going this way!"}]
