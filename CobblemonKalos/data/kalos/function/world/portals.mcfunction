@@ -1130,11 +1130,16 @@ tp @s[x=-135,y=101,z=108,dx=4,dy=5] -247 101 -76 -167 ~
 
 
 #Lumiose City Sycamore Pokemon Lab
+
+#tps Sina NPC out after dialogues with Lysandre
+execute as @s[x=-256,y=101,z=100,dx=6,dy=5,tag=Dialogue21] run tp @e[x=-251,y=101,z=91,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+
 execute as @s[x=-184,y=104,z=-41,dx=6,dy=5] run function kalos:triggers/stopsound
 tp @s[x=-184,y=104,z=-41,dx=6,dy=5] -253 101 98 180 ~
 
 execute as @s[x=-256,y=101,z=100,dx=6,dy=5] run function kalos:triggers/stopsound
 tp @s[x=-256,y=101,z=100,dx=6,dy=5] -181 104 -43 180 ~
+
 
 
 #Lumiose City Transportation Office
@@ -1416,7 +1421,6 @@ tp @s[x=-415,y=101,z=-268,dx=3,dy=5,dz=3] -67 101 224 180 ~
 tp @s[x=-70,y=101,z=225,dx=5,dy=5] -415 101 -264 43 ~
 
 #Lumiose City Cafe Solelli
-#scoreboard players set @s[x=-388,y=101,z=-230,dx=4,dy=5,dz=6,tag=KantoStarters] DialogueTrigger 22
 tp @s[x=-388,y=101,z=-230,dx=4,dy=5,dz=6] -491 101 265 180 ~
 tp @s[x=-494,y=101,z=266,dx=5,dy=5] -389 101 -225 43 ~
 

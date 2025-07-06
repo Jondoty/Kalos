@@ -64,9 +64,6 @@ execute as @s[x=-13,y=100,z=-126,distance=..10,tag=!Dialogue16] run opendialogue
 execute as @s[x=-251,y=101,z=91,distance=..10,tag=!Dialogue17] unless entity @e[x=-251,y=101,z=91,dy=3,type=cobblemon:npc] run npcspawnat -251 101 91 sina_generic
 execute as @s[x=-251,y=101,z=91,distance=..20,tag=!Dialogue17] run opendialogue sina_dialogue17 @s
 
-execute if block -252 102 71 minecraft:stone_button[powered=true] run tp @e[x=-251,y=101,z=91,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
-execute if block -252 103 71 minecraft:stone_button[powered=true] run tp @e[x=-251,y=101,z=91,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
-
 
 #Professor Sycamore's Lab
 
@@ -86,9 +83,16 @@ execute as @s[x=-253,y=121,z=71,distance=..4,tag=Dialogue20] run tp @e[x=-261,y=
 execute as @s[x=-270,y=120,z=82,dx=10,dy=10,dz=16,tag=Dialogue19] unless entity @e[x=-270,y=120,z=82,dx=10,dy=10,dz=16,type=interaction] positioned -265 122 90 run function kalos:spawn/npcboxes
 
 
+#Sycamore's Lab Lysandre first introduction
+execute as @s[x=-253,y=121,z=71,distance=..4,tag=Dialogue20,tag=!Dialogue21] unless entity @e[x=-257,y=101,z=93,dy=3,type=cobblemon:npc] run npcspawnat -257 101 93 lysandre_generic
+execute as @s[x=-271,y=99,z=84,dx=36,dy=7,dz=37,tag=Dialogue20,tag=!Dialogue21] run opendialogue lysandre_dialogue21 @s
 
 
-
+#Cafe Soleil Lysandre and Diantha
+execute as @s[x=-492,y=101,z=261,distance=..10,tag=!Dialogue22] unless entity @e[x=-490,y=100,z=258,dy=3,type=cobblemon:npc] run npcspawnat -490 101 258 serena_generic
+execute as @s[x=-492,y=101,z=261,distance=..10,tag=!Dialogue22] unless entity @e[x=-492,y=100,z=245,dy=3,type=cobblemon:npc] run npcspawnat -492 101 245 diantha_generic
+execute as @s[x=-492,y=101,z=261,distance=..10,tag=!Dialogue22] unless entity @e[x=-490,y=100,z=245,dy=3,type=cobblemon:npc] run npcspawnat -490 101 245 lysandre_generic
+execute as @s[x=-491,y=101,z=252,distance=..10,tag=!Dialogue22] run opendialogue serena_dialogue22 @s
 
 
 
