@@ -29,6 +29,11 @@ execute as @s[tag=!RadioOff,scores={BattleEnd=5}] run playsound victorychampion 
 execute as @s[tag=!RadioOff,scores={BattleEnd=5}] run scoreboard players set @s MusicCooldown 73
 
 
+#Story-activated events after battles
+
+#Snorlax post-battle
+execute as @s[x=-1301,y=100,z=-36,distance=..15,tag=Dialogue33,tag=!Dialogue34] run opendialogue snorlax_dialogue34 @s
+
 
 scoreboard players set @s BattleEnd 0
 

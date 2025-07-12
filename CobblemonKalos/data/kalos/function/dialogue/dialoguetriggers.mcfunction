@@ -120,9 +120,9 @@ execute positioned -1301 101 -36 as @e[distance=..5,type=cobblemon:pokemon,name=
 execute positioned -1301 101 -36 as @e[distance=..5,type=cobblemon:pokemon,name=Snorlax,nbt={PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
 execute positioned -1301 101 -36 as @e[distance=..5,type=cobblemon:pokemon,name=Snorlax,nbt={PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
 
-execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=!Dialogue28] unless entity @e[x=-1289,y=100,z=-39,dy=3,type=cobblemon:npc] run npcspawnat -1289 100 -39 shauna_generic
-execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=!Dialogue28] unless entity @e[x=-1296,y=101,z=-37,dy=3,type=cobblemon:npc] run npcspawnat -1298 101 -34 camphrier_guide
-execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=!Dialogue28] unless entity @e[x=-1298,y=101,z=-34,dy=3,type=cobblemon:npc] run npcspawnat -1296 101 -37 camphrier_worker
+execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=!Dialogue33] unless entity @e[x=-1289,y=100,z=-39,dy=3,type=cobblemon:npc] run npcspawnat -1289 100 -39 shauna_generic
+execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=!Dialogue33] unless entity @e[x=-1296,y=101,z=-37,dy=3,type=cobblemon:npc] run npcspawnat -1298 101 -34 camphrier_guide
+execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=!Dialogue33] unless entity @e[x=-1298,y=101,z=-34,dy=3,type=cobblemon:npc] run npcspawnat -1296 101 -37 camphrier_worker
 
 execute as @s[x=-1301,y=101,z=-36,distance=..15,tag=!Dialogue28] run opendialogue snorlax_dialogue28 @s
 
@@ -134,6 +134,28 @@ execute as @s[x=-1391,y=63,z=-372,distance=..10,tag=!Dialogue29] run opendialogu
 #Shauna pointing out Furfrou
 execute as @s[x=-1623,y=100,z=-319,distance=..30,tag=!Dialogue30] unless entity @e[x=-1623,y=100,z=-319,dy=3,type=cobblemon:npc] run npcspawnat -1623 100 -319 shauna_generic
 execute as @s[x=-1623,y=100,z=-319,distance=..10,tag=!Dialogue30] run opendialogue shauna_dialogue30 @s
+
+
+
+
+#Route 7 Snorlax waking up
+execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=Dialogue32,tag=!Dialogue33] unless entity @e[x=-1289,y=100,z=-39,dy=3,type=cobblemon:npc] run npcspawnat -1289 100 -39 shauna_generic
+execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=Dialogue32,tag=!Dialogue33] unless entity @e[x=-1296,y=101,z=-37,dy=3,type=cobblemon:npc] run npcspawnat -1298 101 -34 camphrier_guide
+execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=Dialogue32,tag=!Dialogue33] unless entity @e[x=-1298,y=101,z=-34,dy=3,type=cobblemon:npc] run npcspawnat -1296 101 -37 camphrier_worker
+
+execute as @s[x=-1301,y=101,z=-36,distance=..15,tag=Dialogue32,tag=!Dialogue33] run opendialogue snorlax_dialogue33 @s
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

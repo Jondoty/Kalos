@@ -1,0 +1,214 @@
+{   
+    "initializationAction": [       
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"       
+            ],
+    "escapeAction": [
+    ],
+    "speakers": {
+        "guide": {
+            "name": "Castle Guide",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:blackbelt",
+                "isLeftSide": true
+            }
+        },
+        "shauna": {
+            "name": "Shauna",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:shauna",
+                "isLeftSide": false
+            }
+        },
+        "worker": {
+            "name": "Castle Worker",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:gentleman",
+                "isLeftSide": false
+            }
+        },
+        "player": {
+            "face": "q.player.face(true);",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "worker",
+            "lines": [
+                "Oh, it's you two."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "worker",
+            "lines": [
+                "Did you actually manage to borrow the Poké Flute?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "player",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'' + q.player.username + ' handed over the Poké Flute!';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run clear @s minecraft:music_disc_13');"  ,
+                            "q.dialogue.set_page('page4');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "guide",
+            "lines": [
+                "Thanks!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page5');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "shauna",
+            "lines": [
+                "Well, you're the only one who can play it, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page6');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "guide",
+            "lines": [
+                "Snorlax can be grumpy when it wakes up--it might attack. I'll play the flute right now, but are you ready to stop it?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page7');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "guide",
+            "lines": [
+                "Feels nice to have this flute in my hands again. OK, I guess I'll start playing."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run stopsound @s record');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound pokeflute record @s ~ ~ ~ 10 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s MusicCooldown 13');",
+                            "q.dialogue.set_page('page8');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "player",
+            "lines": [
+                "The Guide started playing the Flute!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('data merge entity @e[x=-1301,y=101,z=-36,distance=..5,type=cobblemon:pokemon,limit=1,name=Snorlax] {Pokemon:{PokemonData:[\"catchable\"]}}');",
+                            "q.run_command('data merge entity @e[x=-1301,y=101,z=-36,distance=..5,type=cobblemon:pokemon,limit=1,name=Snorlax] {NoAI:0b}');",
+                            "q.run_command('data modify entity @e[x=-1301,y=101,z=-36,distance=..5,type=cobblemon:pokemon,limit=1,name=Snorlax] Unbattleable set value 0b');",
+                            "q.run_command('data remove entity @e[x=-1301,y=101,z=-36,distance=..5,type=cobblemon:pokemon,limit=1,name=Snorlax] Pokemon.Status');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue33');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
+                            "q.dialogue.close();"
+                            ]
+                    }
+                ]
+            }
+        }
+        ]
+    }

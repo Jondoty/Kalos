@@ -1,0 +1,1 @@
+give @s minecraft:music_disc_13[!minecraft:jukebox_playable,custom_name='["",{"text":"Poké Flute","italic":false,"color":"gold"}]',lore=['["",{"text":"A flute which can play with such a","italic":false}]','["",{"text":"beautiful tone that even sleeping","italic":false}]','["",{"text":"Pokémon find themselves roused.","italic":false}]']]

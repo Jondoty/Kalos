@@ -1,0 +1,314 @@
+{   
+    "initializationAction": [       
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"       
+            ],
+    "escapeAction": [
+    ],
+    "speakers": {
+        "guide": {
+            "name": "Castle Guide",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:blackbelt",
+                "isLeftSide": true
+            }
+        },
+        "shauna": {
+            "name": "Shauna",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:shauna",
+                "isLeftSide": false
+            }
+        },
+        "worker": {
+            "name": "Castle Worker",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:gentleman",
+                "isLeftSide": false
+            }
+        },
+        "owner": {
+            "name": "Palace Owner",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:monsieur",
+                "isLeftSide": false
+            }
+        },
+        "player": {
+            "face": "q.player.face(true);",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        },
+        "furfrou": {
+            "name": "Furfrou",
+            "face": {
+                "type": "artificial",
+                "modelType": "pokemon",
+                "identifier": "cobblemon:furfrou",
+                "isLeftSide": false
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "furfrou",
+            "lines": [
+                "Grrr! Ouaf!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud -1286 100 -37 2 2 2 1 100');",  
+                            "q.run_command('particle cloud -1286 100 -34 2 2 2 1 100');",  
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "shauna",
+            "lines": [
+                "Oh..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "owner",
+            "lines": [
+                "The only thing I can do with that Poké Flute is put it on display."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run clear @s minecraft:music_disc_13');"  ,
+                            "q.dialogue.set_page('page4');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "owner",
+            "lines": [
+                "But you've been playing since you were little, and the tone is lovely."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page5');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "owner",
+            "lines": [
+                "It seems like my Furfrou also likes the sound of that flute."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page6');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "owner",
+            "lines": [
+                "Not as much as it likes my beautiful, wonderfrou fireworks, of course."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page7');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "guide",
+            "lines": [
+                "Uh... Yeah... I guess so..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page8');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "owner",
+            "lines": [
+                "Still, your playing sounded better back in the day."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page9');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page9",
+            "speaker": "owner",
+            "lines": [
+                "I'll let you take care of that flute, so be sure to practice more."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud -1296 101 -37 2 2 2 1 100');",  
+                            "q.run_command('particle cloud -1298 101 -34 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-1296,y=100,z=-37,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",  
+                            "q.run_command('tp @e[x=-1298,y=100,z=-34,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('particle cloud -1286 100 -37 2 2 2 1 100');",  
+                            "q.run_command('particle cloud -1286 100 -34 2 2 2 1 100');",  
+                            "q.dialogue.set_page('page10');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page10",
+            "speaker": "shauna",
+            "lines": [
+                "Was THAT supposed to be an attempt to patch things up?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page11');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page11",
+            "speaker": "shauna",
+            "lines": [
+                "Well, whatever! All's well that ends well."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page12');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page12",
+            "speaker": "shauna",
+            "lines": [
+                "I wonder what lies past where Snorlax was sleeping."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue34');", 
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
+                            "q.run_command('tp @e[x=-1289,y=99,z=-39,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",  
+                            "q.run_command('particle cloud -1289 100 -39 2 2 2 1 100');",
+                            "q.dialogue.close();"
+                            ]
+                    }
+                ]
+            }
+        }
+        ]
+    }
