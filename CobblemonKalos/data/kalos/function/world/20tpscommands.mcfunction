@@ -35,4 +35,4 @@ execute if entity @a[x=-1034,y=99,z=1432,dx=50,dy=50,dz=50,scores={DialogueTrigg
 #Road Blocks
 #Route 7 Sleeping Snorlax
 tellraw @a[x=-1305,y=100,z=-39,dx=6,dy=10,dz=6,tag=!Dialogue32] {"text":"There is a large Pokémon sleeping peacefully. It looks so content!","italic":true,"color":"gray"}
-execute at @a[x=-1305,y=100,z=-39,dx=6,dy=10,dz=6,tag=!Dialogue32] run tp @s[x=-1305,y=100,z=-39,dx=6,dy=10,dz=6,tag=!Dialogue32] ~10 ~ ~
+execute as @a[x=-1305,y=100,z=-39,dx=6,dy=10,dz=6,tag=!Dialogue32] at @s run tp @s ~10 ~ ~

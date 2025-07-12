@@ -6,13 +6,13 @@
 
 execute as @s[scores={DialogueTrigger=15,TalkTime=1}] run tp @e[x=-504,y=125,z=1256,dy=3,type=pixelmon:npc_chatting] 177 100 -116
 execute as @s[scores={DialogueTrigger=15,TalkTime=1}] run tp @e[x=-504,y=125,z=1258,dy=3,type=pixelmon:npc_chatting] 180 100 -116
-tellraw @s[scores={DialogueTrigger=15,TalkTime=2}] {"text":"<Dexio> So, how are you and your Pokémon getting along?"}]
-tellraw @s[scores={DialogueTrigger=15,TalkTime=10}] {"text":"<Dexio> The more you walk around with your Pokémon, the stronger your friendship will become."}]
-tellraw @s[scores={DialogueTrigger=15,TalkTime=20}] {"text":"<Dexio> Here! This is the TM for Return."}]
+tellraw @s[scores={DialogueTrigger=15,TalkTime=2}] {"text":"<Dexio> So, how are you and your Pokémon getting along?"}
+tellraw @s[scores={DialogueTrigger=15,TalkTime=10}] {"text":"<Dexio> The more you walk around with your Pokémon, the stronger your friendship will become."}
+tellraw @s[scores={DialogueTrigger=15,TalkTime=20}] {"text":"<Dexio> Here! This is the TM for Return."}
 execute as @s[scores={DialogueTrigger=15,TalkTime=22}] run give @s pixelmon:tm_gen6{tm:27}
 execute as @s[scores={DialogueTrigger=15,TalkTime=22}] run playsound pixelmon:pixelmon.block.pokelootobtained block @s ~ ~ ~ 1 1 1
-tellraw @s[scores={DialogueTrigger=15,TalkTime=29}] {"text":"<Dexio> This is a move that gets more powerful when your friendship with the Pokémon using it is strong."}]
-tellraw @s[scores={DialogueTrigger=15,TalkTime=39}] {"text":"<Sina> Right through this gate, and you'll be in Lumiose City! Go on already!"}]
+tellraw @s[scores={DialogueTrigger=15,TalkTime=29}] {"text":"<Dexio> This is a move that gets more powerful when your friendship with the Pokémon using it is strong."}
+tellraw @s[scores={DialogueTrigger=15,TalkTime=39}] {"text":"<Sina> Right through this gate, and you'll be in Lumiose City! Go on already!"}
 
 execute as @s[scores={DialogueTrigger=15,TalkTime=49}] run tp @e[x=177,y=99,z=-116,dy=3,type=pixelmon:npc_chatting] -504 126 1256
 execute as @s[scores={DialogueTrigger=15,TalkTime=49}] run tp @e[x=180,y=99,z=-116,dy=3,type=pixelmon:npc_chatting] -504 126 1258
@@ -23,121 +23,6 @@ tag @s[scores={DialogueTrigger=15,TalkTime=49..}] add Dialogue15
 scoreboard players set @s[tag=Dialogue15] TalkTime 0
 scoreboard players set @s[tag=Dialogue15] DialogueTrigger 0
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-#Shabboneau Castle Shauna
-#scoreboard players set @a[x=-1060,y=100,z=-102,dx=11,dy=5,tag=!Dialogue27,score_TalkTime=0] DialogueTrigger 27
-
-execute as @s[scores={DialogueTrigger=27,TalkTime=2}] run tp @e[x=-504,y=160,z=1252,dy=3,type=pixelmon:npc_chatting] -1052 56 -107
-execute as @s[scores={DialogueTrigger=27,TalkTime=2}] run tp @e[x=-504,y=160,z=1254,dy=3,type=pixelmon:npc_chatting] -1055 56 -109
-execute as @s[scores={DialogueTrigger=27,TalkTime=2}] run particle cloud -1055 56 -109 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=27,TalkTime=2}] run particle cloud -1052 56 -107 2 2 2 1 100
-
-tellraw @s[scores={DialogueTrigger=27,TalkTime=4}] {"text":"<Shauna> Hi, "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=27,TalkTime=10}] {"text":"<Castle Guide> An acquaintance of yours? Two visitors to Shabboneau Castle? "}
-tellraw @s[scores={DialogueTrigger=27,TalkTime=18}] {"text":"<Castle Guide> I can't remember the last time we've been so busy! "}
-tellraw @s[scores={DialogueTrigger=27,TalkTime=27}] {"text":"<Castle Guide> This castle, chateau if you will, was a manor house of a noble family."}
-tellraw @s[scores={DialogueTrigger=27,TalkTime=37}] {"text":"<Castle Guide> It may be a little run down, but that's because there's history to this place."}
-tellraw @s[scores={DialogueTrigger=27,TalkTime=47}] {"text":"<Castle Guide> During that history, the owners of this castle gave away a lot of their stuff to everyone, so that's why it feels so empty. The end."}
-tellraw @s[scores={DialogueTrigger=27,TalkTime=59}] {"text":"<Shauna> That's it?! Don't you have anything related to Mega Evolution?"}]
-tellraw @s[scores={DialogueTrigger=27,TalkTime=68}] {"text":"<Castle Guide> That's it. What in the world is Mega Evolution?"}
-tellraw @s[scores={DialogueTrigger=27,TalkTime=75}] {"text":"<Shauna> ..."}]
-
-#tp in groom npc
-execute as @s[scores={DialogueTrigger=27,TalkTime=80}] run tp @e[x=-504,y=160,z=1256,dy=3,type=pixelmon:npc_chatting] -1055 56 -104
-execute as @s[scores={DialogueTrigger=27,TalkTime=80}] run particle cloud -1055 56 -104 2 2 2 1 100
-
-tellraw @s[scores={DialogueTrigger=27,TalkTime=83}] {"text":"<...> Sir! It's back again."}
-tellraw @s[scores={DialogueTrigger=27,TalkTime=90}] {"text":"<Castle Guide> Is it that time of year already? Well, there's nothing I can do about that now..."}
-tellraw @s[scores={DialogueTrigger=27,TalkTime=100}] {"text":"<Castle Guide> I need to go to Route 7, but please take your time and have a look around."}
-
-#Guide and groom tp out
-execute as @s[scores={DialogueTrigger=27,TalkTime=107}] run tp @e[x=-1055,y=55,z=-104,dy=3,type=pixelmon:npc_chatting] -504 161 1256
-execute as @s[scores={DialogueTrigger=27,TalkTime=107}] run tp @e[x=-1055,y=55,z=-109,dy=3,type=pixelmon:npc_chatting] -504 161 1254
-execute as @s[scores={DialogueTrigger=27,TalkTime=107}] run particle cloud -1055 56 -104 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=27,TalkTime=107}] run particle cloud -1055 56 -109 2 2 2 1 100
-
-
-tellraw @s[scores={DialogueTrigger=27,TalkTime=110}] {"text":"<Shauna> I wonder what that's about."}]
-tellraw @s[scores={DialogueTrigger=27,TalkTime=117}] {"text":"<Shauna> Why don't we go to Route 7, too?"}]
-#Shauna tps out
-execute as @s[scores={DialogueTrigger=27,TalkTime=125}] run tp @e[x=-1052,y=55,z=-107,dy=3,type=pixelmon:npc_chatting] -504 161 1252
-execute as @s[scores={DialogueTrigger=27,TalkTime=125}] run particle cloud -1052 56 -107 2 2 2 1 100
-
-tag @s[scores={DialogueTrigger=27,TalkTime=125..}] add Dialogue27
-scoreboard players set @s[tag=Dialogue27] TalkTime 0
-scoreboard players set @s[tag=Dialogue27] DialogueTrigger 0
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-#Route 7 and the Sleeping Snorlax
-#scoreboard players set @a[x=-1293,y=100,z=-36,r=20,tag=!Dialogue28,score_TalkTime=0] DialogueTrigger 28
-
-#tp in everyone and Snorlax statue
-execute as @s[scores={DialogueTrigger=28,TalkTime=1}] run tp @e[x=-501,y=145,z=1238,dy=3,type=pixelmon:statue] -1301 101 -36
-execute as @s[scores={DialogueTrigger=28,TalkTime=1}] run tp @e[x=-504,y=165,z=1252,dy=3,type=pixelmon:npc_chatting] -1289 100 -39
-execute as @s[scores={DialogueTrigger=28,TalkTime=1}] run tp @e[x=-504,y=165,z=1254,dy=3,type=pixelmon:npc_chatting] -1296 101 -37
-execute as @s[scores={DialogueTrigger=28,TalkTime=1}] run tp @e[x=-504,y=165,z=1256,dy=3,type=pixelmon:npc_chatting] -1298 101 -34
-
-tellraw @s[scores={DialogueTrigger=28,TalkTime=5}] {"text":"<Castle Guide> Here we go again. It's sleeping so soundly, the end of the world wouldn't wake it."}
-tellraw @s[scores={DialogueTrigger=28,TalkTime=15}] ["",{"text":"<"},{"text":"Castle Worker","color":"gray"},{"text":"> Look! It's practically a mountain, right? It's blocking the road completely."}]
-tellraw @s[scores={DialogueTrigger=28,TalkTime=25}] ["",{"text":"<"},{"text":"Castle Worker","color":"gray"},{"text":"> Come now, sir. Use the Poké Flute! "}]
-tellraw @s[scores={DialogueTrigger=28,TalkTime=33}] ["",{"text":"<"},{"text":"Castle Worker","color":"gray"},{"text":"> Oh, wait... Do you even have it anymore?"}]
-tellraw @s[scores={DialogueTrigger=28,TalkTime=40}] {"text":"<Castle Guide> Nope. I handed it over."}
-tellraw @s[scores={DialogueTrigger=28,TalkTime=47}] ["",{"text":"<"},{"text":"Castle Worker","color":"gray"},{"text":"> Or you could say it was taken... By the owner of the palace."}]
-tellraw @s[scores={DialogueTrigger=28,TalkTime=56}] {"text":"<Shauna> What? Huh? What's a Poké Flute?"}]
-tellraw @s[scores={DialogueTrigger=28,TalkTime=63}] {"text":"<Castle Guide> Basically, the Poké Flute is what we need to wake up Snorlax. "}
-tellraw @s[scores={DialogueTrigger=28,TalkTime=70}] {"text":"<Castle Guide> But the Poké Flute is currently at Parfum Palace."}
-tellraw @s[scores={DialogueTrigger=28,TalkTime=77}] {"text":"<Shauna> Oh, that's it? All we need to do is go get it, then!"}]
-tellraw @s[scores={DialogueTrigger=28,TalkTime=85}] {"text":"<Shauna> C'mon, "},{"selector":"@p"},{"text":"! Let's go! The Parfum Palace is just past Route 6!"}]
-tellraw @s[scores={DialogueTrigger=28,TalkTime=95}] {"text":"<Shauna> And maybe at a place like that, we might learn something about Mega Evolution!"}]
-#Shauna teleports
-execute as @s[scores={DialogueTrigger=28,TalkTime=103}] run tp @e[x=-1289,y=99,z=-39,dy=3,type=pixelmon:npc_chatting] -504 166 1252
-execute as @s[scores={DialogueTrigger=28,TalkTime=103}] run particle cloud -1289 100 -39 2 2 2 1 100
-
-tag @s[scores={DialogueTrigger=28,TalkTime=130..}] add Dialogue28
-scoreboard players set @s[tag=Dialogue28] TalkTime 0
-scoreboard players set @s[tag=Dialogue28] DialogueTrigger 0
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Parfum Palace and the missing Furfrou
-#scoreboard players set @a[x=-1386,y=100,z=-378,dy=5,dz=7,tag=!Dialogue29,score_TalkTime=0] DialogueTrigger 29
-
-#tp in
-execute as @s[scores={DialogueTrigger=29,TalkTime=1}] run tp @e[x=-504,y=170,z=1252,dy=3,type=pixelmon:npc_chatting] -1390 63 -375
-execute as @s[scores={DialogueTrigger=29,TalkTime=1}] run tp @e[x=-504,y=170,z=1254,dy=3,type=pixelmon:npc_chatting] -1397 63 -372
-
-tellraw @s[scores={DialogueTrigger=29,TalkTime=3}] {"text":"<...> Where is it?"}
-tellraw @s[scores={DialogueTrigger=29,TalkTime=8}] {"text":"<...> Where could it be?!"}
-tellraw @s[scores={DialogueTrigger=29,TalkTime=15}] {"text":"<...> My Furfrou!"}
-tellraw @s[scores={DialogueTrigger=29,TalkTime=21}] {"text":"<...> My beloved little Furfrou has disappeared!"}
-tellraw @s[scores={DialogueTrigger=29,TalkTime=29}] {"text":"<Shauna> It disappeared? Hey, "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=29,TalkTime=37}] {"text":"<Shauna> We should help look! I mean, if my... If my Pokémon was missing, I'd be sick with worry!"}]
-tellraw @s[scores={DialogueTrigger=29,TalkTime=47}] {"text":"<Shauna> I'll have a look in back!"}]
-#Shauna tp out
-execute as @s[scores={DialogueTrigger=29,TalkTime=53}] run tp @e[x=-1390,y=62,z=-375,dy=3,type=pixelmon:npc_chatting] -504 171 1252
-execute as @s[scores={DialogueTrigger=29,TalkTime=53}] run particle cloud -1390 63 -375 2 2 2 1 100
-
-tag @s[scores={DialogueTrigger=29,TalkTime=53..}] add Dialogue29
-scoreboard players set @s[tag=Dialogue29] TalkTime 0
-scoreboard players set @s[tag=Dialogue29] DialogueTrigger 0
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Shauna pointing player to Furfrou
-#scoreboard players set @a[x=-1623,y=100,z=-319,r=15,tag=!Dialogue30,score_TalkTime=0] DialogueTrigger 30
-
-execute as @s[scores={DialogueTrigger=30,TalkTime=1}] run tp @e[x=-504,y=170,z=1256,dy=3,type=pixelmon:npc_chatting] -1623 100 -319
-execute as @s[scores={DialogueTrigger=30,TalkTime=1}] run particle cloud -1623 100 -319 2 2 2 1 100
-
-tellraw @s[scores={DialogueTrigger=30,TalkTime=3}] {"text":"<Shauna> "},{"selector":"@s"},{"text":"! I think I saw the Furfrou go in here!"}]
-tellraw @s[scores={DialogueTrigger=30,TalkTime=12}] {"text":"<Shauna> Why don't you go get it? I'll make sure it can't escape!"}]
-
-execute as @s[scores={DialogueTrigger=30,TalkTime=20}] run tp @e[x=-1623,y=99,z=-319,dy=3,type=pixelmon:npc_chatting] -504 171 1256
-execute as @s[scores={DialogueTrigger=30,TalkTime=20}] run particle cloud -1623 100 -319 2 2 2 1 100
-
-tag @s[scores={DialogueTrigger=30,TalkTime=20..}] add Dialogue30
-scoreboard players set @s[tag=Dialogue30] TalkTime 0
-scoreboard players set @s[tag=Dialogue30] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Finding Furfrou in the garden
