@@ -146,13 +146,14 @@ execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=Dialogue32,tag=!Dialogue33] 
 execute as @s[x=-1301,y=101,z=-36,distance=..15,tag=Dialogue32,tag=!Dialogue33] run opendialogue snorlax_dialogue33 @s
 
 
+#Route 8 Sina and Dexio
+execute as @s[x=-1942,y=150,z=84,dx=13,dy=10,dz=21,tag=!Dialogue37] run opendialogue sinadexio_dialogue37 @s
 
+#Route 8/Ambrette Serena
+execute as @s[x=-1930,y=151,z=562,distance=..10,tag=!Dialogue38] run opendialogue serena_dialogue38 @s
 
-
-
-
-
-
+#Ambrette Town Serena & Scientist
+execute as @s[x=-1949,y=140,z=579,dx=23,dy=10,dz=26,tag=!Dialogue39] run opendialogue serena_dialogue39 @s
 
 
 
