@@ -36,6 +36,13 @@ execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] run 
 #Resets Rock Smash rocks, Trash Cans, and Ambush Shadows
 fill -672 100 1273 -687 100 1344 minecraft:redstone_block replace minecraft:gold_block
 
+#Resets trash cans
+execute positioned -468 100 1063 run function kalos:spawn/trashcans
+
+
+
+
+
 #Resets player's roaming legendary scores
 scoreboard players set @a[scores={Grass=1..}] Grass 0
 tag @a[tag=Dialogue167] remove Dialogue167
