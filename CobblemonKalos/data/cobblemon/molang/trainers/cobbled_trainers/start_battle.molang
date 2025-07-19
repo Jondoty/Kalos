@@ -1,0 +1,6 @@
+v.npc = q.npc;
+v.player = q.player;
+(q.player.in_battle() == false) && q.player.party.has_usable_pokemon ? {
+    q.npc.start_battle(q.player);
+};
+return 1;

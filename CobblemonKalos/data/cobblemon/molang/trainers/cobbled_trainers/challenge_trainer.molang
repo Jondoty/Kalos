@@ -1,0 +1,6 @@
+(q.entity.in_battle() == false) ? {
+    q.run_command('execute at ' + q.entity.uuid + ' if entity @a[distance=..10,limit=1] run runmolangscript cobblemon:start_battle @a[distance=..10,limit=1] ' + q.entity.uuid);
+};
+q.entity.data.ticks_alive = q.entity.data.ticks_alive + 1;
+q.entity.save_data();
+return 1;
