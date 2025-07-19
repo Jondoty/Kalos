@@ -37,9 +37,20 @@ execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] run 
 fill -672 100 1273 -687 100 1344 minecraft:redstone_block replace minecraft:gold_block
 
 #Resets trash cans
-execute positioned -468 100 1063 run function kalos:spawn/trashcans
+#Lost Hotel
+execute positioned 512 92 -463 run function kalos:spawn/trashcans
+execute positioned 446 92 -486 run function kalos:spawn/trashcans
+execute positioned 413 92 -450 run function kalos:spawn/trashcans
+execute positioned 497 92 -413 run function kalos:spawn/trashcans
+execute positioned 416 92 -377 run function kalos:spawn/trashcans
 
 
+#Pokemon Village
+execute positioned 794 93 641 run function kalos:spawn/trashcans
+execute positioned 824 93 697 run function kalos:spawn/trashcans
+execute positioned 800 93 737 run function kalos:spawn/trashcans
+execute positioned 830 93 744 run function kalos:spawn/trashcans
+execute positioned 849 93 741 run function kalos:spawn/trashcans
 
 
 
