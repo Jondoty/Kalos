@@ -595,40 +595,7 @@ execute as @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue35] run execute as @
 #Route 7 friends 2v2 post-battle
 scoreboard players set @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue36,tag=!Dialogue36,scores={MusicSteps=1..,TalkTime=0}] DialogueTrigger 36
 
-#Dialogue 37
-#Route 8 Dexio & Sina
-scoreboard players set @a[x=-1942,y=150,z=84,dx=13,dy=10,dz=21,tag=!Dialogue37,scores={TalkTime=0}] DialogueTrigger 37
 
-#Dialogue 38
-#Route 8 Serena
-scoreboard players set @a[x=-1937,y=150,z=552,dx=17,dy=10,dz=19,tag=!Dialogue38,scores={TalkTime=0}] DialogueTrigger 38
-
-#Dialogue 39
-#Ambrette Town Fossil Lab
-scoreboard players set @a[x=-1949,y=140,z=579,dx=23,dy=10,dz=26,tag=!Dialogue39,scores={TalkTime=0}] DialogueTrigger 39
-
-#Dialogue 40
-#Glittering Cave First Flare encounter
-scoreboard players set @a[x=-1437,y=148,z=322,distance=..15,tag=!Dialogue40,scores={TalkTime=0}] DialogueTrigger 40
-execute as @e[x=-504,y=195,z=1252,dy=3,type=pixelmon:npc_trainer] run execute as @e[x=-1437,y=148,z=322,distance=..20,tag=Dialogue40] run execute as @s[tag=!Dialogue41] run tp @e[x=-504,y=195,z=1252,dy=3,type=pixelmon:npc_trainer] -1437 148 322
-
-#Dialogue 42
-#Glittering Cave Serena and Flare double battle
-scoreboard players set @a[x=-1434,y=148,z=273,distance=..10,tag=!Dialogue42,scores={TalkTime=0}] DialogueTrigger 42
-execute at @e[x=-504,y=195,z=1262,dy=3,type=pixelmon:npc_trainer] run execute at @e[x=-1434,y=148,z=273,distance=..10,tag=!Dialogue42] run tp @e[x=-504,y=195,z=1262,dy=3,type=pixelmon:npc_trainer] -1437 148 275
-execute at @e[x=-504,y=195,z=1262,dy=3,type=pixelmon:npc_trainer] run execute at @e[x=-1434,y=148,z=273,distance=..10,tag=!Dialogue42] run tp @e[x=-504,y=195,z=1264,dy=3,type=pixelmon:npc_trainer] -1437 148 271
-execute at @e[x=-504,y=195,z=1262,dy=3,type=pixelmon:npc_trainer] run execute at @e[x=-1434,y=148,z=273,distance=..10,tag=!Dialogue42,scores={StarterPick=1}] run tp @e[x=-504,y=195,z=1256,dy=3,type=pixelmon:npc_trainer] -1431 148 271
-execute at @e[x=-504,y=195,z=1262,dy=3,type=pixelmon:npc_trainer] run execute at @e[x=-1434,y=148,z=273,distance=..10,tag=!Dialogue42,scores={StarterPick=2}] run tp @e[x=-504,y=195,z=1258,dy=3,type=pixelmon:npc_trainer] -1431 148 271
-execute at @e[x=-504,y=195,z=1262,dy=3,type=pixelmon:npc_trainer] run execute at @e[x=-1434,y=148,z=273,distance=..10,tag=!Dialogue42,scores={StarterPick=3}] run tp @e[x=-504,y=195,z=1260,dy=3,type=pixelmon:npc_trainer] -1431 148 271
-
-#Dialogue 43
-#Glittering Cave Double Battle tp away
-scoreboard players set @a[x=-1434,y=148,z=273,distance=..10,tag=!Dialogue43,scores={MusicSteps=1..,TalkTime=0}] DialogueTrigger 43
-
-#Dialogue 44 & 45
-#Glittering Cave Fossil Prompt
-execute as @a[x=-1471,y=147,z=303,distance=..20,tag=!Dialogue44] run tp @e[x=-504,y=200,z=1254,dy=3,type=pixelmon:npc_chatting] -1469 148 305
-scoreboard players set @a[x=-1471,y=147,z=303,dx=6,dy=5,dz=11,tag=Dialogue44,tag=!Dialogue44,scores={TalkTime=0}] DialogueTrigger 44
 
 #Dialogue 46
 #Grant outside of Cyllage Gym giving Strength HM

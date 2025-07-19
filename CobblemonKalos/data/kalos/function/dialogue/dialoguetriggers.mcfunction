@@ -155,6 +155,31 @@ execute as @s[x=-1930,y=151,z=562,distance=..10,tag=!Dialogue38] run opendialogu
 #Ambrette Town Serena & Scientist
 execute as @s[x=-1949,y=140,z=579,dx=23,dy=10,dz=26,tag=!Dialogue39] run opendialogue serena_dialogue39 @s
 
+#Glittering Cave First Flare Grunt
+execute as @s[x=-1437,y=148,z=359,distance=..30,tag=!Dialogue41] unless entity @e[x=-1437,y=148,z=322,dy=3,type=cobblemon:npc] run npcspawnat -1437 148 322 glittering_flaregrunt1
+
+#Flare Grunts Blocking Way
+execute as @s[x=-1434,y=148,z=273,distance=..20,tag=!Dialogue43] unless entity @e[x=-1431,y=148,z=271,dy=3,type=cobblemon:npc] run npcspawnat -1431 148 271 serena_generic
+execute as @s[x=-1434,y=148,z=273,distance=..20,tag=!Dialogue43] unless entity @e[x=-1437,y=148,z=275,dy=3,type=cobblemon:npc] run npcspawnat -1437 148 275 glittering_flaregrunt3
+execute as @s[x=-1434,y=148,z=273,distance=..20,tag=!Dialogue43] unless entity @e[x=-1437,y=148,z=271,dy=3,type=cobblemon:npc] run npcspawnat -1437 148 271 glittering_flaregrunt4
+
+#Pre Battle
+execute as @s[x=-1437,y=148,z=275,distance=..10,tag=!Dialogue42] run opendialogue teamflare_dialogue42 @s
+
+#Post Battles
+execute as @s[x=-1437,y=148,z=275,distance=..20,tag=GlitteringGrunt1,tag=GlitteringGrunt2,tag=!Dialogue43] run opendialogue teamflare_dialogue43 @s
+
+#Glittering Cave Scientist and Fossil
+execute as @s[x=-1485,y=148,z=317,distance=..10,tag=!Dialogue45] unless entity @e[x=-1469,y=148,z=306,dy=3,type=cobblemon:npc] run npcspawnat -1469 148 306 glittering_scientist
+
+
+
+
+
+
+
+
+
 
 
 
