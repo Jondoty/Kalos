@@ -79,6 +79,9 @@ execute as @a[scores={EscapeRopeUse=1..}] run function kalos:hms/escaperope
 execute as @a[nbt={Inventory:[{Slot:100b,id:"minecraft:golden_boots"}]}] run effect give @s minecraft:speed 30 2 true
 execute as @a unless entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:golden_boots"}]}] run effect clear @s minecraft:speed
 
+#Saves players that fall into Strength Pits
+execute as @a run function kalos:hms/strengthpit
+
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Story Dialogues
 

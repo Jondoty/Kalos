@@ -154,12 +154,6 @@ execute as @a[scores={RockTrigger=1..}] run function kalos:triggers/rocksmashtri
 execute at @e[type=armor_stand,tag=AmbushEncounter] run execute at @s[tag=!Bush] run execute as @a[distance=..2] run function kalos:world/ambushencounter
 execute at @e[type=armor_stand,tag=AmbushEncounter] run execute at @s[tag=Bush] run execute as @a[distance=..7] run function kalos:world/ambushencounter
 
-#Player jumping in Strength Pits
-execute at @e[type=armor_stand,name=StrengthPit] run execute at @a[dx=6,dy=3,dz=6] run function kalos:hms/strengthpit
-
-#Runs Strength function
-execute as @a[scores={StrengthTrigger=1..}] run function kalos:hms/strength
-
 #Adds Shiny Particles tag
 execute at @a run tag @e[distance=..50,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
 
@@ -359,117 +353,6 @@ execute unless entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMais
 execute unless entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMaison=1..,Cooldown=5000..}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,name=Evelyn,tag=Super] 1227 66 1545
 
 scoreboard players set @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMaison=1..,Cooldown=5000..}] cooldown 0
-
-
-#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Strength Rock Prompts
-
-#Victory Road Interior #1
-execute as @a[x=2011,y=101,z=1473,dx=11,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block 2012 101 1486 minecraft:air run scoreboard players enable @s StrengthTrigger
-execute as @a[x=2011,y=101,z=1473,dx=11,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block 2012 101 1486 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
-execute as @a[x=2011,y=101,z=1473,dx=11,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block 2012 101 1486 minecraft:air run scoreboard players set @s Cooldown 0
-
-#Victory Road Exterior 3 #2
-execute as @a[x=2235,y=174,z=2289,dx=14,dy=5,dz=19,tag=Strength,scores={Cooldown=5000..}] if block 2231 174 2297 minecraft:air run scoreboard players enable @s StrengthTrigger
-execute as @a[x=2235,y=174,z=2289,dx=14,dy=5,dz=19,tag=Strength,scores={Cooldown=5000..}] if block 2231 174 2297 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
-execute as @a[x=2235,y=174,z=2289,dx=14,dy=5,dz=19,tag=Strength,scores={Cooldown=5000..}] if block 2231 174 2297 minecraft:air run scoreboard players set @s Cooldown 0
-
-#Victory Road Exterior 3 #1
-execute as @a[x=2215,y=174,z=2265,dx=8,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block 2219 174 2284 minecraft:air run scoreboard players enable @s StrengthTrigger
-execute as @a[x=2215,y=174,z=2265,dx=8,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block 2219 174 2284 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
-execute as @a[x=2215,y=174,z=2265,dx=8,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block 2219 174 2284 minecraft:air run scoreboard players set @s Cooldown 0
-
-#Victory Road Interior 2 #2
-execute as @a[x=2188,y=90,z=1358,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 2181 90 1356 minecraft:air run scoreboard players enable @s StrengthTrigger
-execute as @a[x=2188,y=90,z=1358,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 2181 90 1356 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
-execute as @a[x=2188,y=90,z=1358,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 2181 90 1356 minecraft:air run scoreboard players set @s Cooldown 0
-
-#Route 10 #1
-execute as @a[x=-2107,y=102,z=-322,dx=17,dy=10,dz=13,tag=Strength,scores={Cooldown=5000..}] if block -2100 103 -329 minecraft:air run scoreboard players enable @s StrengthTrigger
-execute as @a[x=-2107,y=102,z=-322,dx=17,dy=10,dz=13,tag=Strength,scores={Cooldown=5000..}] if block -2100 103 -329 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
-execute as @a[x=-2107,y=102,z=-322,dx=17,dy=10,dz=13,tag=Strength,scores={Cooldown=5000..}] if block -2100 103 -329 minecraft:air run scoreboard players set @s Cooldown 0
-
-#Route 10 #2
-execute as @a[x=-2126,y=105,z=-364,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block -2087 103 -366 minecraft:air run scoreboard players enable @s StrengthTrigger
-execute as @a[x=-2126,y=105,z=-364,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block -2087 103 -366 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
-execute as @a[x=-2126,y=105,z=-364,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block -2087 103 -366 minecraft:air run scoreboard players set @s Cooldown 0
-
-
-#Connecting Cave #1
-execute as @a[x=-1767,y=43,z=70,dx=6,dy=5,dz=14,tag=Strength,scores={Cooldown=5000..}] if block -1765 43 86 minecraft:air run scoreboard players enable @s StrengthTrigger
-execute as @a[x=-1767,y=43,z=70,dx=6,dy=5,dz=14,tag=Strength,scores={Cooldown=5000..}] if block -1765 43 86 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
-execute as @a[x=-1767,y=43,z=70,dx=6,dy=5,dz=14,tag=Strength,scores={Cooldown=5000..}] if block -1765 43 86 minecraft:air run scoreboard players set @s Cooldown 0
-
-#Connecting Cave #2
-execute as @a[x=-1801,y=43,z=29,dx=14,dy=5,dz=13,tag=Strength,scores={Cooldown=5000..}] if block -1787 43 33 minecraft:air run scoreboard players enable @s StrengthTrigger
-execute as @a[x=-1801,y=43,z=29,dx=14,dy=5,dz=13,tag=Strength,scores={Cooldown=5000..}] if block -1787 43 33 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
-execute as @a[x=-1801,y=43,z=29,dx=14,dy=5,dz=13,tag=Strength,scores={Cooldown=5000..}] if block -1787 43 33 minecraft:air run scoreboard players set @s Cooldown 0
-
-#Connecting Cave #3
-execute as @a[x=-1842,y=50,z=-21,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block -1839 47 -23 minecraft:air run scoreboard players enable @s StrengthTrigger
-execute as @a[x=-1842,y=50,z=-21,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block -1839 47 -23 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
-execute as @a[x=-1842,y=50,z=-21,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block -1839 47 -23 minecraft:air run scoreboard players set @s Cooldown 0
-
-#Route 8
-execute as @a[x=-1942,y=153,z=238,tag=Strength,scores={Cooldown=5000..}] if block -1939 150 238 minecraft:air run scoreboard players enable @s StrengthTrigger
-execute as @a[x=-1942,y=153,z=238,tag=Strength,scores={Cooldown=5000..}] if block -1939 150 238 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
-execute as @a[x=-1942,y=153,z=238,tag=Strength,scores={Cooldown=5000..}] if block -1939 150 238 minecraft:air run scoreboard players set @s Cooldown 0
-
-#Reflection Cave
-execute as @a[x=-1675,y=73,z=-346,dx=18,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block -1673 73 -338 minecraft:air run scoreboard players enable @s StrengthTrigger
-execute as @a[x=-1675,y=73,z=-346,dx=18,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block -1673 73 -338 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
-execute as @a[x=-1675,y=73,z=-346,dx=18,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block -1673 73 -338 minecraft:air run scoreboard players set @s Cooldown 0
-
-#Route 16 #1
-execute as @a[x=377,y=104,z=-247,dx=10,dy=5,dz=10,tag=Strength,scores={Cooldown=5000..}] if block 377 103 -252 minecraft:air run scoreboard players enable @s StrengthTrigger
-execute as @a[x=377,y=104,z=-247,dx=10,dy=5,dz=10,tag=Strength,scores={Cooldown=5000..}] if block 377 103 -252 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
-execute as @a[x=377,y=104,z=-247,dx=10,dy=5,dz=10,tag=Strength,scores={Cooldown=5000..}] if block 377 103 -252 minecraft:air run scoreboard players set @s Cooldown 0
-
-#Route 16 #2
-execute as @a[x=358,y=100,z=-215,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 356 99 -212 minecraft:air run scoreboard players enable @s StrengthTrigger
-execute as @a[x=358,y=100,z=-215,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 356 99 -212 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
-execute as @a[x=358,y=100,z=-215,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 356 99 -212 minecraft:air run scoreboard players set @s Cooldown 0
-
-#Route 19
-execute as @a[x=1419,y=75,z=351,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 1422 74 349 minecraft:air run scoreboard players enable @s StrengthTrigger
-execute as @a[x=1419,y=75,z=351,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 1422 74 349 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
-execute as @a[x=1419,y=75,z=351,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 1422 74 349 minecraft:air run scoreboard players set @s Cooldown 0
-
-#Route 21 #1
-execute as @a[x=901,y=103,z=409,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 899 101 365 minecraft:air run scoreboard players enable @s StrengthTrigger
-execute as @a[x=901,y=103,z=409,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 899 101 365 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
-execute as @a[x=901,y=103,z=409,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 899 101 365 minecraft:air run scoreboard players set @s Cooldown 0
-
-#Route 21 #2
-execute as @a[x=802,y=104,z=454,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 805 99 452 minecraft:air run scoreboard players enable @s StrengthTrigger
-execute as @a[x=802,y=104,z=454,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 805 99 452 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
-execute as @a[x=802,y=104,z=454,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 805 99 452 minecraft:air run scoreboard players set @s Cooldown 0
-
-#Route 21 #3
-execute as @a[x=706,y=100,z=513,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 704 99 498 minecraft:air run scoreboard players enable @s StrengthTrigger
-execute as @a[x=706,y=100,z=513,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 704 99 498 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
-execute as @a[x=706,y=100,z=513,distance=..10,tag=Strength,scores={Cooldown=5000..}] if block 704 99 498 minecraft:air run scoreboard players set @s Cooldown 0
-
-#Victory Road Room 1
-execute as @a[x=2419,y=39,z=1630,dx=9,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block 2422 39 1645 minecraft:air run scoreboard players enable @s StrengthTrigger
-execute as @a[x=2419,y=39,z=1630,dx=9,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block 2422 39 1645 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
-execute as @a[x=2419,y=39,z=1630,dx=9,dy=5,dz=12,tag=Strength,scores={Cooldown=5000..}] if block 2422 39 1645 minecraft:air run scoreboard players set @s Cooldown 0
-
-#Victory Road Inside 2
-execute as @a[x=2230,y=75,z=1416,dx=17,dy=5,dz=15,tag=Strength,scores={Cooldown=5000..}] if block 2183 75 1421 minecraft:air run scoreboard players enable @s StrengthTrigger
-execute as @a[x=2230,y=75,z=1416,dx=17,dy=5,dz=15,tag=Strength,scores={Cooldown=5000..}] if block 2183 75 1421 minecraft:air run tellraw @s ["",{"text":"It's a big boulder, but you may be able to push it aside. Would you like to use Strength?","italic":true,"color":"gray"},{"text":"\n"},{"text":"[","color":"white"},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger StrengthTrigger set 1"}},{"text":"]","color":"white"}]
-execute as @a[x=2230,y=75,z=1416,dx=17,dy=5,dz=15,tag=Strength,scores={Cooldown=5000..}] if block 2183 75 1421 minecraft:air run scoreboard players set @s Cooldown 0
-
-
-
-
-
-
-
-
-
-
-
 
 
 #----------
