@@ -173,11 +173,13 @@ execute as @s[x=-1437,y=148,z=275,distance=..20,tag=GlitteringGrunt1,tag=Glitter
 execute as @s[x=-1485,y=148,z=317,distance=..10,tag=!Dialogue45] unless entity @e[x=-1469,y=148,z=306,dy=3,type=cobblemon:npc] run npcspawnat -1469 148 306 glittering_scientist
 
 
+#Cyllage City Grant chatting NPC
+execute as @s[x=-1937,y=114,z=-22,distance=..10,tag=!Dialogue46] unless entity @e[x=-1922,y=114,z=16,dy=3,type=cobblemon:npc] run npcspawnat -1922 114 16 cyllage_grant
 
-
-
-
-
+#Route 10 Flare Grunts, clears out after battles
+execute as @s[x=-2208,y=104,z=-450,distance=..40,tag=Grant,tag=!Dialogue48] unless entity @e[x=-2208,y=104,z=-450,dy=3,type=cobblemon:npc] run npcspawnat -2208 104 -450 route10_flaregrunt1
+execute as @s[x=-2190,y=104,z=-522,distance=..40,tag=Grant,tag=!Dialogue49] unless entity @e[x=-2190,y=104,z=-522,dy=3,type=cobblemon:npc] run npcspawnat -2190 104 -522 route10_flaregrunt2
+execute as @s[x=-2227,y=104,z=-558,distance=..40,tag=Grant,tag=!Dialogue50] unless entity @e[x=-2227,y=104,z=-558,dy=3,type=cobblemon:npc] run npcspawnat -2227 104 -558 route10_flaregrunt3
 
 
 

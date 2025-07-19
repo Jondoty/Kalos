@@ -25,7 +25,7 @@
       "id": "greeting",
       "speaker": "npc",
       "lines": [
-        "Stop right there! I remember you! You're the one who foiled our Fossil-finding plans! All right! Time for me to get some sweet revenge... With style!"
+        "You inspect the stones... I inspect YOU!"
       ],
       "input": {
         "type": "option",
@@ -35,18 +35,9 @@
             "text": "§c⚔ Battle ⚔§r",
             "value": "battle",
             "action": [
-              "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 34');",
+              "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 28');",
               "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
               "v.battle = q.npc.start_battle(q.player);"
-            ]
-          },
-          {
-            "text": "No",
-            "value": "no",
-            "action": [
-              "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 0');",
-              "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
-              "q.dialogue.close();"
             ]
           }
         ]

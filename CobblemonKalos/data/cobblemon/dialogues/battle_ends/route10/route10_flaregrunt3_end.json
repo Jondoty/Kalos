@@ -1,0 +1,47 @@
+{
+  "initializationAction": [
+    "c.npc.set_chatting();",
+    "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 1');",
+    "q.run_command('execute as ' + q.player.username + ' run tag @s add Dialogue50');",
+    "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+    "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $960 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
+    "q.run_command('scoreboard players add ' + q.player.username + ' Money 960');"
+  ],
+  "speakers": {
+    "npc": {
+      "name": "Team Flare Grunt",
+      "face": {
+        "type": "artificial",
+        "modelType": "npc",
+        "identifier": "cobblemon:teamflaregruntm",
+        "isLeftSide": true
+      }
+    }
+  },
+  "pages": [
+    {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "As a result of my inspection, I can tell that you’re stronger than I am!"
+            ],
+      "input": {
+        "type": "option",
+        "vertical": false,
+        "options": [
+          {
+            "text": "Close",
+            "value": "close",
+            "action": [
+              "q.run_command('particle cloud -2227 104 -558 2 2 2 1 100');",
+              "q.run_command('tp @e[x=-2227,y=103,z=-558,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+              "q.dialogue.close();"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "escapeAction": [
+  ]
+}
