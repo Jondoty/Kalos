@@ -203,8 +203,16 @@ execute as @s[x=-1659,y=92,z=-1160,distance=..10,tag=!Dialogue59] unless entity 
 execute as @s[x=-1659,y=92,z=-1160,distance=..10,tag=!Dialogue59] unless entity @e[x=-1654,y=77,z=-1189,dy=3,type=cobblemon:npc] run npcspawnat -1654 77 -1189 megaguru_generic
 execute as @s[x=-1658,y=77,z=-1191,distance=..7,tag=!Dialogue59] run opendialogue megaguru_dialogue59 @s
 
-
-
+#Tower of Mastery Everyone Conversation and Serena Battle
+execute as @s[x=-1659,y=92,z=-1156,distance=..10,tag=Dialogue59,tag=!Dialogue61] unless entity @e[x=-1654,y=92,z=-1149,dy=3,type=cobblemon:npc] run npcspawnat -1654 92 -1149 korrina_generic
+execute as @s[x=-1659,y=92,z=-1156,distance=..10,tag=Dialogue59,tag=!Dialogue61] unless entity @e[x=-1653,y=92,z=-1153,dy=3,type=cobblemon:npc] run npcspawnat -1653 92 -1153 megaguru_generic
+execute as @s[x=-1659,y=92,z=-1156,distance=..10,tag=Dialogue59,tag=!Dialogue61,scores={StarterPick=1}] unless entity @e[x=-1662,y=92,z=-1146,dy=3,type=cobblemon:npc] run npcspawnat -1662 92 -1146 towerofmastery_serena1
+execute as @s[x=-1659,y=92,z=-1156,distance=..10,tag=Dialogue59,tag=!Dialogue61,scores={StarterPick=2}] unless entity @e[x=-1662,y=92,z=-1146,dy=3,type=cobblemon:npc] run npcspawnat -1662 92 -1146 towerofmastery_serena2
+execute as @s[x=-1659,y=92,z=-1156,distance=..10,tag=Dialogue59,tag=!Dialogue61,scores={StarterPick=3}] unless entity @e[x=-1662,y=92,z=-1146,dy=3,type=cobblemon:npc] run npcspawnat -1662 92 -1146 towerofmastery_serena3
+execute as @s[x=-1659,y=92,z=-1156,distance=..10,tag=Dialogue59,tag=!Dialogue61] unless entity @e[x=-1664,y=92,z=-1149,dy=3,type=cobblemon:npc] run npcspawnat -1664 92 -1149 shauna_generic
+execute as @s[x=-1659,y=92,z=-1156,distance=..10,tag=Dialogue59,tag=!Dialogue61] unless entity @e[x=-1665,y=92,z=-1152,dy=3,type=cobblemon:npc] run npcspawnat -1665 92 -1152 trevor_generic
+execute as @s[x=-1659,y=92,z=-1156,distance=..10,tag=Dialogue59,tag=!Dialogue61] unless entity @e[x=-1664,y=92,z=-1155,dy=3,type=cobblemon:npc] run npcspawnat -1664 92 -1155 tierno_generic
+execute as @s[x=-1659,y=92,z=-1156,distance=..10,tag=Dialogue59,tag=!Dialogue60] run opendialogue megaguru_dialogue60 @s
 
 
 #

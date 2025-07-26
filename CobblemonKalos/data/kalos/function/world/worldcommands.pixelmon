@@ -480,25 +480,6 @@ scoreboard players set @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue36,tag=!
 
 
 
-#Dialogue 56
-#Shalour City Trevor and Tierno
-scoreboard players set @a[x=-1671,y=79,z=-837,dx=23,dy=10,dz=10,scores={TalkTime=0},tag=!Dialogue56] DialogueTrigger 56
-
-#Dialogue 57
-#Shalour City Gym Guide
-execute as @a[x=-1770,y=84,z=-898,distance=..30,tag=Dialogue61] run tp @e[x=-1770,y=84,z=-898,dy=3,type=pixelmon:npc_chatting] -504 231 1258
-execute as @a[x=-1770,y=84,z=-898,distance=..30,tag=!Dialogue61] run tp @e[x=-504,y=230,z=1258,dy=3,type=pixelmon:npc_chatting] -1770 85 -898
-
-#Dialogue 58
-#Shalour City Tierno giving Intriguing Stone
-scoreboard players set @a[x=-1694,y=76,z=-925,dx=75,dy=10,dz=20,scores={TalkTime=0},tag=!Dialogue58] DialogueTrigger 58
-
-#Dialogue 61
-#Tower of Mastery Serena
-execute as @a[x=-1661,y=91,z=-1150,distance=..30,tag=Dialogue60,tag=!Dialogue61,scores={StarterPick=1,DialogueTrigger=0}] run tp @e[x=-504,y=245,z=1252,dy=3,type=pixelmon:npc_trainer] -1662 92 -1146
-execute as @a[x=-1661,y=91,z=-1150,distance=..30,tag=Dialogue60,tag=!Dialogue61,scores={StarterPick=2,DialogueTrigger=0}] run tp @e[x=-504,y=245,z=1254,dy=3,type=pixelmon:npc_trainer] -1662 92 -1146
-execute as @a[x=-1661,y=91,z=-1150,distance=..30,tag=Dialogue60,tag=!Dialogue61,scores={StarterPick=3,DialogueTrigger=0}] run tp @e[x=-504,y=245,z=1256,dy=3,type=pixelmon:npc_trainer] -1662 92 -1146
-
 #Dialogue 64
 #Tower of Mastery tp in Korrina
 execute as @a[x=-1635,y=187,z=-1186,distance=..30,tag=Dialogue63,tag=!Dialogue64,scores={DialogueTrigger=0}] run tp @e[x=-504,y=250,z=1252,dy=3,type=pixelmon:npc_trainer] -1635 187.5 -1180

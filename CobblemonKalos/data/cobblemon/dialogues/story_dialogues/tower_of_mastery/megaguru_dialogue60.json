@@ -1,0 +1,997 @@
+{
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+    ],
+    "escapeAction": [],
+    "speakers": {
+        "serena": {
+            "name": "Serena",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:serena",
+                "isLeftSide": true
+            }
+        },
+        "shauna": {
+            "name": "Shauna",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:shauna",
+                "isLeftSide": false
+            }
+        },
+        "trevor": {
+            "name": "Trevor",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:trevor",
+                "isLeftSide": true
+            }
+        },
+        "tierno": {
+            "name": "Tierno",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:tierno",
+                "isLeftSide": false
+            }
+        },
+        "guru": {
+            "name": "Mega Evolution Guru",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:megaguru",
+                "isLeftSide": false
+            }
+        },
+        
+        "korrina": {
+            "name": "Korrina",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:korrina",
+                "isLeftSide": true
+            }
+        },
+        "player": {
+            "face": "q.player.face(true);",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "guru",
+            "lines": [
+                "Hmm! Looks like everyone is finally here."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "shauna",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'' + q.player.username + '!';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "trevor",
+            "lines": [
+                "It feels like it's been some time since our whole group has gathered in one place."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "tierno",
+            "lines": [
+                "Yeah. I think it's been since we met up on Route 7."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "tierno",
+            "lines": [
+                "Mr. Mega Evolution Guru... I've been wondering this whole time. Who is that over there?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "guru",
+            "lines": [
+                "This is my granddaughter Korrina. She's Shalour City's Gym Leader."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "guru",
+            "lines": [
+                "So, Sycamore's pupils. Now that you're all here..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page8');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "guru",
+            "lines": [
+                "I suppose I should explain Mega Evolution to you."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page9');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page9",
+            "speaker": "guru",
+            "lines": [
+                "I assume you all know about Pokémon Evolution?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page10');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page10",
+            "speaker": "shauna",
+            "lines": [
+                "I know! I know! Um..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page11');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page11",
+            "speaker": "shauna",
+            "lines": [
+                "You have your Pokémon battle a lot, and then they grow stronger and evolve!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page12');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page12",
+            "speaker": "shauna",
+            "lines": [
+                "Oh, and there are Pokémon that evolve with certain items."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page13');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page13",
+            "speaker": "serena",
+            "lines": [
+                "Some Pokémon evolve through friendship, and others only evolve in certain places."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page14');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page14",
+            "speaker": "korrina",
+            "lines": [
+                "Exactly! And it's likely that Pokémon evolve in a lot of other ways as well!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page15');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page15",
+            "speaker": "korrina",
+            "lines": [
+                "But Mega Evolution is an Evolution that transcends all other Evolution!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page16');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page16",
+            "speaker": "guru",
+            "lines": [
+                "Indeed! Mega Evolution is a transformation of Pokémon that were thought to be unable to evolve any further!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page17');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page17",
+            "speaker": "guru",
+            "lines": [
+                "It's a whole new level of power!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page18');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page18",
+            "speaker": "trevor",
+            "lines": [
+                "So in an Evolutionary line like Charmander, Charmeleon, and Charizard..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page19');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page19",
+            "speaker": "trevor",
+            "lines": [
+                "Does that mean Charizard would be able to evolve even further?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page20');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page20",
+            "speaker": "korrina",
+            "lines": [
+                "Yep! Exactly right! But not all Pokémon have a Mega Evolution."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page21');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page21",
+            "speaker": "guru",
+            "lines": [
+                "There's a reason why I used the word \u201ctransformation\u201d a moment ago."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page22');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page22",
+            "speaker": "guru",
+            "lines": [
+                "Mega Evolution differs from Evolution because it ends after a certain amount of time."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page23');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page23",
+            "speaker": "guru",
+            "lines": [
+                "In other words, it's a temporary Evolution."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page24');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page24",
+            "speaker": "shauna",
+            "lines": [
+                "What?! It evolves, but then it goes back to what it was before?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page25');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page25",
+            "speaker": "korrina",
+            "lines": [
+                "Yes... Mega Evolution is a special kind of Evolution."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page26');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page26",
+            "speaker": "korrina",
+            "lines": [
+                "That said, we still know very little about it."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page27');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page27",
+            "speaker": "korrina",
+            "lines": [
+                "What we know now is that it requires special items."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page28');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page28",
+            "speaker": "korrina",
+            "lines": [
+                "And the most important element is the trust between Pokémon and Trainer."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page29');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page29",
+            "speaker": "serena",
+            "lines": [
+                "Trust... In other words, the bond between Trainer and Pokémon!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page30');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page30",
+            "speaker": "guru",
+            "lines": [
+                "To make Mega Evolution work, you need two items:"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page31');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page31",
+            "speaker": "guru",
+            "lines": [
+                "a Mega Stone for the Pokémon and the Mega Ring, which has a mysterious stone set in it, for the Trainer."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page32');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page32",
+            "speaker": "guru",
+            "lines": [
+                "Since Professor Sycamore entrusted each one of you with a Pokédex, I would like to give these items to all of you..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page33');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page33",
+            "speaker": "guru",
+            "lines": [
+                "I'd like to share them with you, but..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page34');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page34",
+            "speaker": "shauna",
+            "lines": [
+                "But? But what? Just come out and say it already!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page35');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page35",
+            "speaker": "guru",
+            "lines": [
+                "Sorry, but presently, I have only one Mega Ring..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page36');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page36",
+            "speaker": "guru",
+            "lines": [
+                "It's a very precious item. That's why my research isn't getting anywhere..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page37');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page37",
+            "speaker": "guru",
+            "lines": [
+                "So, I want all of you to decide among yourselves which one of you will be the one who challenges the Mega Evolution successor."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page38');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page38",
+            "speaker": "tierno",
+            "lines": [
+                "I'll pass. Pokémon battling isn't really my scene."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page39');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page39",
+            "speaker": "tierno",
+            "lines": [
+                "So, Mega Evolution would be way out of my league."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page40');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page40",
+            "speaker": "shauna",
+            "lines": [
+                "Me, too! It really would be a cool memory, and it does look interesting, but..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page41');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page41",
+            "speaker": "trevor",
+            "lines": [
+                "I want to complete the Pokédex first."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page42');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page42",
+            "speaker": "trevor",
+            "lines": [
+                "If you try to do too much at once, you won't accomplish anything."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page43');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page43",
+            "speaker": "shauna",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'So that leaves ' + q.player.username + ' and Serena, then.';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page44');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page44",
+            "speaker": "tierno",
+            "lines": [
+                "Trainers don't get much better than you two."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page45');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page45",
+            "speaker": "serena",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'' + q.player.username + ', lets battle for it!';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page46');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page46",
+            "speaker": "serena",
+            "lines": [
+                "Whatever the reason, a battle gives us an opportunity to compete and see who Vaniville Town's best Trainer really is!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page47');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page47",
+            "speaker": "serena",
+            "lines": [
+                "I will master Mega Evolution and set myself apart from other Trainers."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page48');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page48",
+            "speaker": "serena",
+            "lines": [
+                "I'll also do it for my Pokémon--we've come so far together, and they never stopped believing in me, their Trainer."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page49');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page49",
+            "speaker": "serena",
+            "lines": [
+                "You and your Pokémon are stronger... I can tell just by looking at you."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page50');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page50",
+            "speaker": "serena",
+            "lines": [
+                "But I will not lose. No... I'm going to win!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue60');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
