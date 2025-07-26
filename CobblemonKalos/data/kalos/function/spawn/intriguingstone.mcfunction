@@ -1,0 +1,1 @@
+give @s prismarine_crystals[custom_name='["",{"text":"Intriguing Stone","italic":false,"color":"gold"}]',lore=['["",{"text":"A rather curious stone that","italic":false}]','["",{"text":"might appear to be valuable","italic":false}]','["",{"text":"to some. It\'s all in the","italic":false}]','["",{"text":"eye of the beholder.","italic":false}]']]

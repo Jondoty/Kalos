@@ -189,11 +189,19 @@ execute as @s[x=-2210,y=104,z=-693,distance=..7,tag=!Dialogue52,tag=Grant] run o
 execute as @s[x=-2109,y=103,z=-703,dx=10,dy=10,dz=26,tag=!Dialogue54] unless entity @e[x=-2105,y=104,z=-691,dy=3,type=cobblemon:npc] run particle cloud -2105 104 -691 2 2 2 1 100
 execute as @s[x=-2109,y=103,z=-703,dx=10,dy=10,dz=26,tag=!Dialogue54] unless entity @e[x=-2105,y=104,z=-691,dy=3,type=cobblemon:npc] run npcspawnat -2105 104 -691 route11_korrina
 
+#Shalour City Trevor and Tierno
+execute as @s[x=-1628,y=83,z=-785,distance=..10,tag=!Dialogue56] unless entity @e[x=-1654,y=80,z=-824,dy=3,type=cobblemon:npc] run npcspawnat -1654 80 -824 tierno_generic
+execute as @s[x=-1628,y=83,z=-785,distance=..10,tag=!Dialogue56] unless entity @e[x=-1658,y=80,z=-824,dy=3,type=cobblemon:npc] run npcspawnat -1658 80 -824 trevor_generic
+execute as @s[x=-1656,y=80,z=-824,distance=..7,tag=!Dialogue56] run opendialogue trevortierno_dialogue56 @s
 
+#Shalour Tierno giving Intriguing Stone
+execute as @s[x=-1656,y=76,z=-917,distance=..30,tag=!Dialogue58] unless entity @e[x=-1656,y=76,z=-917,dy=3,type=cobblemon:npc] run npcspawnat -1656 76 -917 tierno_generic
+execute as @s[x=-1694,y=76,z=-925,dx=75,dy=10,dz=20,tag=!Dialogue58] run opendialogue tierno_dialogue58 @s
 
-
-
-
+#Tower of Mastery Interior Room Conversation
+execute as @s[x=-1659,y=92,z=-1160,distance=..10,tag=!Dialogue59] unless entity @e[x=-1658,y=77,z=-1189,dy=3,type=cobblemon:npc] run npcspawnat -1658 77 -1189 korrina_generic
+execute as @s[x=-1659,y=92,z=-1160,distance=..10,tag=!Dialogue59] unless entity @e[x=-1654,y=77,z=-1189,dy=3,type=cobblemon:npc] run npcspawnat -1654 77 -1189 megaguru_generic
+execute as @s[x=-1658,y=77,z=-1191,distance=..7,tag=!Dialogue59] run opendialogue megaguru_dialogue59 @s
 
 
 

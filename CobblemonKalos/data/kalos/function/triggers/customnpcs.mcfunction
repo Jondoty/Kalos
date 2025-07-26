@@ -17,8 +17,10 @@ execute as @s[x=187,y=100,z=389,distance=..6,tag=Viola,tag=Dialogue11] run opend
 #Professor Sycamore
 execute as @s[x=-265,y=121,z=90,distance=..6] run opendialogue sycamoreslab_sycamore_interaction @s
 
-
-
+#Shalour Hiker with and without stone
+execute as @s[x=-1563,y=83,z=-844,distance=..6] unless data entity @s Inventory[{id:"minecraft:prismarine_crystals"}] run opendialogue shalourhiker_default @s
+execute as @s[x=-1563,y=83,z=-844,distance=..6] if data entity @s Inventory[{id:"minecraft:prismarine_crystals"}] run opendialogue shalourhiker_stone @s
+execute as @s[x=-1563,y=83,z=-844,distance=..6,tag=Dialogue264] run opendialogue shalourhiker_traded @s
 
 
 

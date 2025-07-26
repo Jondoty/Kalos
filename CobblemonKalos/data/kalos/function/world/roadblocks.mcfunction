@@ -89,10 +89,14 @@ tp @s[x=-2234,y=83,z=337,dx=283,dy=30,dz=5,tag=!Dialogue44] -1971 100 355 ~ ~
 tellraw @s[x=-2088,y=103,z=-703,dx=10,dy=10,dz=26,tag=!Dialogue54] ["",{"text":"<Korrina> Hey "},{"selector":"@s"},{"text":", come here a second!"}]
 execute as @s[x=-2088,y=103,z=-703,dx=10,dy=10,dz=26,tag=!Dialogue54] at @s run tp @s ~-10 ~ ~
 
-##Shalour City Hiker directing to Trevor and Tierno
-#tellraw @s[x=-1578,y=80,z=-853,dx=13,dy=12,dz=8,tag=!Dialogue56] {"text":"<Hiker> I\u2019m really sorry, but I\u2019m looking for something."}
-#execute as @s[x=-1578,y=80,z=-853,dx=13,dy=12,dz=8,tag=!Dialogue56] at @s run tp @s ~ ~ ~10
-#
+#Shalour City Hiker directing to Trevor and Tierno
+tellraw @s[x=-1578,y=80,z=-853,dx=13,dy=12,dz=8,tag=!Dialogue56] {"text":"<Hiker> I\u2019m really sorry, but I\u2019m looking for something."}
+execute as @s[x=-1578,y=80,z=-853,dx=13,dy=12,dz=8,tag=!Dialogue56] at @s run tp @s ~ ~ ~10
+
+#Shalour Gym spawn in gym guy blocking
+execute as @s[x=-1770,y=84,z=-898,distance=..30,tag=!Dialogue61] unless entity @e[x=-1770,y=85,z=-898,dy=3,type=cobblemon:npc] run npcspawnat -1770 85 -898 gymguy_shalour
+execute as @s[x=-1770,y=84,z=-898,distance=..30,tag=Dialogue61] run tp @e[x=-1770,y=85,z=-898,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+
 ##Tower of Mastery pre-Korrina gym
 #tellraw @s[x=-1705,y=96,z=-1202,dx=13,dy=10,dz=10,tag=!Korrina] {"text":"<Tower Guard> Only those who have been approved may climb the Tower of Mastery!"}
 #tp @s[x=-1705,y=96,z=-1202,dx=13,dy=10,dz=10,tag=!Korrina] -1692 93 -1207

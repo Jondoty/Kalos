@@ -1,0 +1,197 @@
+{
+    "initializationAction": [
+    ],
+    "escapeAction": [],
+    "speakers": {
+        "npc": {
+            "name": "     ",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:hiker",
+                "isLeftSide": true
+            }
+        },
+        "player": {
+            "face": "q.player.face(true);",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "I just can't seem to find it..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "It's such an intriguing stone, too..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page3');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "Hey, could that be it? Is that the stone I'm looking for?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page4');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "npc",
+            "lines": [
+                "What luck! Here, I'll give you this Sun Stone for it!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page5');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "npc",
+            "lines": [
+                "It's a mysterious stone that makes certain Pokémon evolve."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Trade",
+                        "value": "trade",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:itemget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run clear @s minecraft:prismarine_crystals');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:sun_stone');",
+                            "q.run_command('execute as ' + q.player.username + ' run tag @s add Dialogue264');",
+                            "q.dialogue.set_page('tradestone1');"
+                        ]
+                    },
+                    {
+                        "text": "Leave",
+                        "value": "leave",
+                        "action": [
+                            "q.dialogue.set_page('goodbye');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "tradestone1",
+            "speaker": "npc",
+            "lines": [
+                "It's a funny thing. You tend to come across rare stones in Shalour City. "
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('tradestone2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "tradestone2",
+            "speaker": "npc",
+            "lines": [
+                "I'll bet the Mega Evolution guru'll be really happy if this is a Mega Stone."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "goodbye",
+            "speaker": "npc",
+            "lines": [
+                "Aww, my stone..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

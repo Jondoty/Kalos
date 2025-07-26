@@ -34,7 +34,7 @@ tp @s[x=-1679,y=101,z=-1865,dx=5,dy=5] -1912 114 2
 
 #Shalour City Gym
 #Pre-Tower of Mastery Serena defeat
-#scoreboard players set @s[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1,tag=!Dialogue61] DialogueTrigger 57
+execute as @s[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1,tag=!Dialogue61] run opendialogue gymguy_shalour_blocked @s
 execute as @s[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1,tag=!Dialogue61] at @s run tp @s ~ ~ ~10
 
 execute as @s[x=-1774,y=86,z=-903,dx=5,dy=5,dz=1] run function kalos:triggers/stopsound
