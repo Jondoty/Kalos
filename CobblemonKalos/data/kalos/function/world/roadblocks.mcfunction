@@ -81,14 +81,14 @@ execute as @s[x=-1423,y=147,z=309,dx=10,dy=5,dz=4,tag=!Dialogue41] at @s run tp 
 #Glittering Cave Double Flare block
 execute as @s[x=-1442,y=147,z=269,dx=6,dy=5,dz=8,tag=!Dialogue43] at @s run tp @s ~6 ~ ~
 
-##Route 8 Pre-Fossil block
-#tellraw @s[x=-2234,y=83,z=337,dx=283,dy=30,dz=5,tag=!Dialogue44] {"text":"<...> W-w-wait! Stop! I dropped the Fossil I was taking to the Fossil Lab in Ambrette Town. I\u2019m really sorry, but could you wait a little bit until I find it?"}
-#tp @s[x=-2234,y=83,z=337,dx=283,dy=30,dz=5,tag=!Dialogue44] -1971 100 355 ~ ~
-#
-##Geosenge Town Battle Korrina to continue
-#tellraw @s[x=-2088,y=103,z=-703,dx=10,dy=10,dz=26,tag=!Dialogue54] {"text":"Win against Korrina to continue!","italic":true,"color":"gray"}
-#execute as @s[x=-2088,y=103,z=-703,dx=10,dy=10,dz=26,tag=!Dialogue54] at @s run tp @s ~-10 ~ ~
-#
+#Route 8 Pre-Fossil block
+tellraw @s[x=-2234,y=83,z=337,dx=283,dy=30,dz=5,tag=!Dialogue44] {"text":"<...> W-w-wait! Stop! I dropped the Fossil I was taking to the Fossil Lab in Ambrette Town. I\u2019m really sorry, but could you wait a little bit until I find it?"}
+tp @s[x=-2234,y=83,z=337,dx=283,dy=30,dz=5,tag=!Dialogue44] -1971 100 355 ~ ~
+
+#Geosenge Town Battle Korrina to continue
+tellraw @s[x=-2088,y=103,z=-703,dx=10,dy=10,dz=26,tag=!Dialogue54] ["",{"text":"<Korrina> Hey "},{"selector":"@s"},{"text":", come here a second!"}]
+execute as @s[x=-2088,y=103,z=-703,dx=10,dy=10,dz=26,tag=!Dialogue54] at @s run tp @s ~-10 ~ ~
+
 ##Shalour City Hiker directing to Trevor and Tierno
 #tellraw @s[x=-1578,y=80,z=-853,dx=13,dy=12,dz=8,tag=!Dialogue56] {"text":"<Hiker> I\u2019m really sorry, but I\u2019m looking for something."}
 #execute as @s[x=-1578,y=80,z=-853,dx=13,dy=12,dz=8,tag=!Dialogue56] at @s run tp @s ~ ~ ~10

@@ -185,6 +185,16 @@ execute as @s[x=-2227,y=104,z=-558,distance=..40,tag=Grant,tag=!Dialogue50] unle
 execute as @s[x=-2210,y=104,z=-693,distance=..30,tag=!Dialogue52,tag=Grant] unless entity @e[x=-2210,y=104,z=-693,dy=3,type=cobblemon:npc] run npcspawnat -2210 104 -693 flare_generic
 execute as @s[x=-2210,y=104,z=-693,distance=..7,tag=!Dialogue52,tag=Grant] run opendialogue teamflare_dialogue52 @s
 
+#Route 11 Korrina Battle
+execute as @s[x=-2109,y=103,z=-703,dx=10,dy=10,dz=26,tag=!Dialogue54] unless entity @e[x=-2105,y=104,z=-691,dy=3,type=cobblemon:npc] run particle cloud -2105 104 -691 2 2 2 1 100
+execute as @s[x=-2109,y=103,z=-703,dx=10,dy=10,dz=26,tag=!Dialogue54] unless entity @e[x=-2105,y=104,z=-691,dy=3,type=cobblemon:npc] run npcspawnat -2105 104 -691 route11_korrina
+
+
+
+
+
+
+
 
 
 

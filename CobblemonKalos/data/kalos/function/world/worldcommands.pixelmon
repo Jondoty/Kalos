@@ -480,17 +480,6 @@ scoreboard players set @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue36,tag=!
 
 
 
-#Dialogue 53
-#Geosenge Town Korrina battle
-scoreboard players set @a[x=-2109,y=103,z=-703,dx=10,dy=10,dz=26,scores={TalkTime=0},tag=!Dialogue53] DialogueTrigger 53
-execute as @e[x=-504,y=220,z=1252,dy=3,type=pixelmon:npc_trainer] run execute as @a[x=-2105,y=104,z=-691,distance=..20,tag=Dialogue53,tag=!Dialogue54] run tp @e[x=-504,y=220,z=1252,dy=3,type=pixelmon:npc_trainer] -2105 104 -691
-execute as @a[x=-2105,y=104,z=-691,distance=..20,tag=Dialogue53,tag=TrainerBattleMusic] run execute as @s[tag=!Dialogue54] run effect give @e[distance=..20,name=Lucario,type=pixelmon:statue] minecraft:invisibility 2 1 true
-
-#Dialogue 55
-#Reflection Cave Tierno giving Flash
-scoreboard players set @a[x=-1580,y=35,z=-220,dx=12,dy=10,dz=17,scores={TalkTime=0},tag=!Dialogue55] DialogueTrigger 55
-execute as @a[x=-1580,y=35,z=-220,distance=..40,tag=!Dialogue55] run tp @e[x=-504,y=225,z=1252,dy=3,type=pixelmon:npc_chatting] -1575 35 -205
-
 #Dialogue 56
 #Shalour City Trevor and Tierno
 scoreboard players set @a[x=-1671,y=79,z=-837,dx=23,dy=10,dz=10,scores={TalkTime=0},tag=!Dialogue56] DialogueTrigger 56
