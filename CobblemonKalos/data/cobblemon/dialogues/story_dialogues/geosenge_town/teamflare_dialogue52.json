@@ -1,0 +1,188 @@
+{   
+    "initializationAction": [              
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+            ],
+    "escapeAction": [],
+    "speakers": {
+        "grunt": {
+          "name": "Team Flare Grunt",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:teamflaregruntm",
+            "isLeftSide": true
+          }
+        },
+        
+        "serena": {
+          "name": "Serena",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:serena",
+            "isLeftSide": false
+          }
+        }
+      },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "grunt",
+            "lines": [
+                "Geosenge Town is the town of stones!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "grunt",
+            "lines": [
+                "Hear this, pip-squeak!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "grunt",
+            "lines": [
+                "Team Flare is gonna use the stones on Route 10 and a fantastic treasure to make everyone on our team happy!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "grunt",
+            "lines": [
+                "In this world, the ones who have power are the ones who win with flair!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('tp @e[x=-2210,y=103,z=-693,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('particle cloud -2210 104 -693 2 2 2 1 100');",
+                            "q.run_command('execute at ' + q.player.username + ' run particle cloud ~ ~ ~-10 2 2 2 1 100');",
+                            "q.dialogue.set_page('page5');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "serena",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'' + q.player.username + ', was someone from Team Flare here just now?';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "serena",
+            "lines": [
+                "He was here... But he isn't anymore, is he?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "serena",
+            "lines": [
+                "And the only thing past here is a dead end..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page8');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "serena",
+            "lines": [
+                "There's something very weird about Team Flare..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('execute at ' + q.player.username + ' run particle cloud ~ ~ ~-10 2 2 2 1 100');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue52');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                            ]
+                    }
+                ]
+            }
+        }
+        ]
+    }

@@ -290,68 +290,6 @@ scoreboard players set @s[tag=Dialogue36] DialogueTrigger 0
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Team Flare Grunt in Geosenge town
-#execute as @s[x=-2210,y=104,z=-693,r=30,tag=Grant] run scoreboard players set @s[tag=!Dialogue51] DialogueTrigger 51
-
-#tps grunt in
-execute as @s[scores={DialogueTrigger=51,TalkTime=2}] run data modify entity @e[limit=1,x=-504,y=215,z=1258,dy=3,type=pixelmon:npc_chatting] {Rotation:[180.0f,0.0f]}
-execute as @s[scores={DialogueTrigger=51,TalkTime=2}] run tp @e[x=-504,y=215,z=1258,dy=3,type=pixelmon:npc_chatting] -2210 104 -693
-execute as @s[scores={DialogueTrigger=51,TalkTime=2}] run particle cloud -2210 104 -693 2 2 2 1 100
-
-tellraw @s[scores={DialogueTrigger=51,TalkTime=6}] {"text":"<Team Flare Grunt> Geosenge Town is the town of stones! \u266a"}
-
-#Walks left, then tps
-execute as @s[scores={DialogueTrigger=51,TalkTime=10}] run setblock -674 100 1366 minecraft:redstone_block
-execute as @s[scores={DialogueTrigger=51,TalkTime=10}] run data modify entity @e[limit=1,x=-2210,y=104,z=-693,distance=..45,type=pixelmon:npc_chatting,name=Grunt51] {Rotation:[90.0f,0.0f]}
-execute as @s[scores={DialogueTrigger=51,TalkTime=15..16}] run setblock -674 100 1366 minecraft:iron_block
-
-execute as @s[scores={DialogueTrigger=51,TalkTime=15}] run execute as @e[x=-2210,y=104,z=-693,distance=..45,type=pixelmon:npc_chatting,name=Grunt51] run particle cloud ~ ~ ~ 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=51,TalkTime=15}] run tp @e[type=pixelmon:npc_chatting,name=Grunt51] -504 216 1258
-
-tag @s[scores={DialogueTrigger=51,TalkTime=15..}] add Dialogue51
-scoreboard players set @s[tag=Dialogue51] TalkTime 0
-scoreboard players set @s[tag=Dialogue51] DialogueTrigger 0
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Team Flare Grunt in Geosenge town part 2
-#execute as @s[x=-2278,y=104,z=-815,r=25,tag=Dialogue51] run scoreboard players set @s[tag=!Dialogue52] DialogueTrigger 52
-
-#tps Grunt in
-execute as @s[scores={DialogueTrigger=52,TalkTime=2}] run tp @e[x=-504,y=215,z=1262,dy=3,type=pixelmon:npc_chatting] -2283 104 -823
-execute as @s[scores={DialogueTrigger=52,TalkTime=2}] run particle cloud -2283 104 -823 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=52,TalkTime=2}] run data modify entity @e[limit=1,x=-2283,y=103,z=-823,dy=3,type=pixelmon:npc_chatting] {Rotation:[-23.0f,0.0f]}
-
-tellraw @s[scores={DialogueTrigger=52,TalkTime=5}] {"text":"<Team Flare Grunt> Hear this, pip-squeak!"}
-tellraw @s[scores={DialogueTrigger=52,TalkTime=11}] {"text":"<Team Flare Grunt> Team Flare is gonna use the stones on Route 10 and a fantastic treasure to make everyone on our team happy!"}
-tellraw @s[scores={DialogueTrigger=52,TalkTime=22}] {"text":"<Team Flare Grunt> In this world, the ones who have power are the ones who win with flair!"}
-
-#tps away
-execute as @s[scores={DialogueTrigger=52,TalkTime=31}] run tp @e[x=-2283,y=103,z=-823,dy=3,type=pixelmon:npc_chatting] -504 216 1262
-execute as @s[scores={DialogueTrigger=52,TalkTime=31}] run particle cloud -2283 104 -823 2 2 2 1 100
-
-#Serena tps in
-execute as @s[scores={DialogueTrigger=52,TalkTime=35}] run tp @e[x=-504,y=215,z=1260,dy=3,type=pixelmon:npc_chatting] -2280 104 -802
-execute as @s[scores={DialogueTrigger=52,TalkTime=35}] run particle cloud -2280 104 -802 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=52,TalkTime=35}] run data modify entity @e[limit=1,x=-2280,y=103,z=-802,dy=3,type=pixelmon:npc_chatting] {Rotation:[180.0f,0.0f]}
-
-tellraw @s[scores={DialogueTrigger=52,TalkTime=37}] {"text":"<Serena> "},{"selector":"@s"},{"text":", was someone from Team Flare here just now?"}]
-tellraw @s[scores={DialogueTrigger=52,TalkTime=46}] {"text":"<Serena> He was here... But he isn't anymore, is he?"}]
-tellraw @s[scores={DialogueTrigger=52,TalkTime=53}] {"text":"<Serena> And the only thing past here is a dead end..."}]
-tellraw @s[scores={DialogueTrigger=52,TalkTime=60}] {"text":"<Serena> There's something very weird about Team Flare..."}]
-
-#Serena tps out
-execute as @s[scores={DialogueTrigger=52,TalkTime=68}] run tp @e[x=-2280,y=103,z=-802,dy=3,type=pixelmon:npc_chatting] -504 216 1260
-execute as @s[scores={DialogueTrigger=52,TalkTime=68}] run particle cloud -2280 104 -802 2 2 2 1 100
-
-#gets rid of backpackers still if loaded
-execute as @s[scores={DialogueTrigger=52,TalkTime=68}] run tp @e[x=-2120,y=103,z=-691,dy=3,dz=1,type=pixelmon:npc_chatting] -504 216 1252
-execute as @s[scores={DialogueTrigger=52,TalkTime=68}] run tp @e[x=-2116,y=103,z=-699,dy=3,dz=17,type=pixelmon:npc_chatting] -504 216 1254
-
-tag @s[scores={DialogueTrigger=52,TalkTime=68..}] add Dialogue52
-scoreboard players set @s[tag=Dialogue52] TalkTime 0
-scoreboard players set @s[tag=Dialogue52] DialogueTrigger 0
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Korrina battle on East side of Geosenge
 #scoreboard players set @a[x=-2109,y=103,z=-703,dx=10,dy=10,dz=26,tag=!Dialogue53] DialogueTrigger 53
 

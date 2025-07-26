@@ -133,22 +133,22 @@ execute as @s[x=-1442,y=147,z=269,dx=6,dy=5,dz=8,tag=!Dialogue43] at @s run tp @
 ##Southern Waterfall
 #execute as @s[x=1627,y=100,z=2415,dx=22,dy=156,dz=36] at @s run tp @s ~ ~ ~-10
 #
-##Geosenge Town Eastern block until talk with Team Flare grunt twice
-#tp @s[x=-2116,y=103,z=-702,dx=10,dy=10,dz=23,tag=!Dialogue52] ~-10 ~ ~
-#execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,type=pixelmon:npc_chatting,limit=1] -2116 104 -698
-#execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,type=pixelmon:npc_chatting,limit=1] -2116 104 -696
-#execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,type=pixelmon:npc_chatting,limit=1] -2116 104 -694
-#execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,type=pixelmon:npc_chatting,limit=1] -2116 104 -692
-#execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,type=pixelmon:npc_chatting,limit=1] -2116 104 -689
-#execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,type=pixelmon:npc_chatting,limit=1] -2116 104 -687
-#execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,type=pixelmon:npc_chatting,limit=1] -2116 104 -685
-#execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1254,dy=3,type=pixelmon:npc_chatting,limit=1] -2116 104 -683
-#execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] run tp @e[x=-504,y=215,z=1252,dy=3,type=pixelmon:npc_chatting] -2120 104 -690.0
+#Geosenge Town Eastern block until talk with Team Flare grunt twice
+execute as @s[x=-2116,y=103,z=-702,dx=10,dy=10,dz=23,tag=!Dialogue52] at @s run tp @s ~-10 ~ ~
+execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] unless entity @e[x=-2116,y=104,z=-698,dy=3,type=cobblemon:npc] run npcspawnat -2116 104 -698 geosenge_backpacker
+execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] unless entity @e[x=-2116,y=104,z=-696,dy=3,type=cobblemon:npc] run npcspawnat -2116 104 -696 geosenge_backpacker2
+execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] unless entity @e[x=-2116,y=104,z=-694,dy=3,type=cobblemon:npc] run npcspawnat -2116 104 -694 geosenge_backpacker3
+execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] unless entity @e[x=-2116,y=104,z=-692,dy=3,type=cobblemon:npc] run npcspawnat -2116 104 -692 geosenge_backpacker4
+execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] unless entity @e[x=-2116,y=104,z=-689,dy=3,type=cobblemon:npc] run npcspawnat -2116 104 -689 geosenge_backpacker5
+execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] unless entity @e[x=-2116,y=104,z=-687,dy=3,type=cobblemon:npc] run npcspawnat -2116 104 -687 geosenge_backpacker6
+execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] unless entity @e[x=-2116,y=104,z=-685,dy=3,type=cobblemon:npc] run npcspawnat -2116 104 -685 geosenge_backpacker7
+execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] unless entity @e[x=-2116,y=104,z=-683,dy=3,type=cobblemon:npc] run npcspawnat -2116 104 -683 geosenge_backpacker8
+execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] unless entity @e[x=-2120,y=104,z=-690,dy=3,type=cobblemon:npc] run npcspawnat -2120 104 -690.0 geosenge_pokemonranger2
 #execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] at @s run tp @s[x=-2116,y=103,z=-702,dx=10,dy=10,dz=23,tag=!Dialogue52] ~-10 ~ ~
-#
-#execute as @s[x=-2124,y=104,z=-691,distance=..30,tag=Dialogue52] run tp @e[x=-2120,y=103,z=-691,dy=3,dz=1,type=pixelmon:npc_chatting] -504 216 1252
-#execute as @s[x=-2124,y=104,z=-691,distance=..30,tag=Dialogue52] run tp @e[x=-2116,y=103,z=-699,dy=3,dz=17,type=pixelmon:npc_chatting] -504 216 1254
-#
+
+execute as @s[x=-2175,y=104,z=-691,distance=..30,tag=Dialogue52] run tp @e[x=-2120,y=103,z=-691,dy=3,dz=1,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @s[x=-2175,y=104,z=-691,distance=..30,tag=Dialogue52] run tp @e[x=-2116,y=103,z=-699,dy=3,dz=17,type=cobblemon:npc] 10000000 -50000 -10000000
+
 ##Route 12 block pre-Surf
 #tellraw @s[x=-1423,y=71,z=-850,dx=20,dy=20,dz=41,tag=!Korrina] {"text":"You need the Rumble Badge to use Surf outside of battle!","italic":true,"color":"gray"}
 #tp @s[x=-1423,y=71,z=-850,dx=20,dy=20,dz=41,tag=!Korrina] -1440 76 -809

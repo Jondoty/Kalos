@@ -480,28 +480,6 @@ scoreboard players set @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue36,tag=!
 
 
 
-#Dialogue 46
-#Grant outside of Cyllage Gym giving Strength HM
-scoreboard players set @a[x=-1938,y=113,z=2,dx=18,dy=10,dz=17,scores={TalkTime=0},tag=!Dialogue46] DialogueTrigger 46
-
-#Dialogue 47
-#Route 10 Team Flare
-execute at @a[x=-2208,y=104,z=-450,distance=..20,scores={TalkTime=0},tag=Grant] run scoreboard players set @s[tag=!Dialogue47] DialogueTrigger 47
-
-#Dialogues 48-50
-#Route 10 tp in grunts
-execute at @e[x=-504,y=210,z=1252,dy=3,type=pixelmon:npc_trainer] run execute as @a[x=-2208,y=104,z=-450,distance=..20,tag=!Dialogue48,tag=Grant,tag=Dialogue47] run tp @e[x=-504,y=210,z=1252,dy=3,type=pixelmon:npc_trainer] -2208 104 -450
-execute at @e[x=-504,y=210,z=1256,dy=3,type=pixelmon:npc_trainer] run execute as @a[x=-2190,y=104,z=-522,distance=..20,tag=!Dialogue49,tag=Grant] run tp @e[x=-504,y=210,z=1256,dy=3,type=pixelmon:npc_trainer] -2190 104 -522
-execute at @e[x=-504,y=210,z=1258,dy=3,type=pixelmon:npc_trainer] run execute as @a[x=-2227,y=104,z=-558,distance=..20,tag=!Dialogue50,tag=Grant] run tp @e[x=-504,y=210,z=1258,dy=3,type=pixelmon:npc_trainer] -2227 104 -558
-
-#Dialogue 51
-#Geosenge first Flare encounter 1
-execute as @a[x=-2210,y=104,z=-693,distance=..30,scores={TalkTime=0},tag=Grant] run scoreboard players set @s[tag=!Dialogue51] DialogueTrigger 51
-
-#Dialogue 52
-#Geosenge Flare encounter 2
-execute as @a[x=-2278,y=104,z=-815,distance=..25,scores={TalkTime=0},tag=Dialogue51] run scoreboard players set @s[tag=!Dialogue52] DialogueTrigger 52
-
 #Dialogue 53
 #Geosenge Town Korrina battle
 scoreboard players set @a[x=-2109,y=103,z=-703,dx=10,dy=10,dz=26,scores={TalkTime=0},tag=!Dialogue53] DialogueTrigger 53

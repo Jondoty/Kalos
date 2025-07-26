@@ -181,8 +181,9 @@ execute as @s[x=-2208,y=104,z=-450,distance=..40,tag=Grant,tag=!Dialogue48] unle
 execute as @s[x=-2190,y=104,z=-522,distance=..40,tag=Grant,tag=!Dialogue49] unless entity @e[x=-2190,y=104,z=-522,dy=3,type=cobblemon:npc] run npcspawnat -2190 104 -522 route10_flaregrunt2
 execute as @s[x=-2227,y=104,z=-558,distance=..40,tag=Grant,tag=!Dialogue50] unless entity @e[x=-2227,y=104,z=-558,dy=3,type=cobblemon:npc] run npcspawnat -2227 104 -558 route10_flaregrunt3
 
-
-
+#Geosenge Town Team Flare dialogue
+execute as @s[x=-2210,y=104,z=-693,distance=..30,tag=!Dialogue52,tag=Grant] unless entity @e[x=-2210,y=104,z=-693,dy=3,type=cobblemon:npc] run npcspawnat -2210 104 -693 flare_generic
+execute as @s[x=-2210,y=104,z=-693,distance=..7,tag=!Dialogue52,tag=Grant] run opendialogue teamflare_dialogue52 @s
 
 
 
