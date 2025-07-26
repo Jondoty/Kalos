@@ -10,6 +10,7 @@ advancement revoke @s only kalos:click/npcs
 advancement revoke @s only kalos:click/rocksmash
 advancement revoke @s only kalos:click/signs
 advancement revoke @s only kalos:click/berrytrees
+advancement revoke @s only kalos:click/strengthrock
 advancement revoke @s only kalos:click/trashcans
 
 
@@ -29,6 +30,9 @@ execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7
 
 
 
+
+#Removes main dialogue locking tag if player leaves and rejoins
+tag @s remove InDialogue
 
 #Removes specific dialogue tags
 
