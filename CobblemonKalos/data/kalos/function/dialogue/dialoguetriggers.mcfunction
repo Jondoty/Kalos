@@ -214,5 +214,19 @@ execute as @s[x=-1659,y=92,z=-1156,distance=..10,tag=Dialogue59,tag=!Dialogue61]
 execute as @s[x=-1659,y=92,z=-1156,distance=..10,tag=Dialogue59,tag=!Dialogue61] unless entity @e[x=-1664,y=92,z=-1155,dy=3,type=cobblemon:npc] run npcspawnat -1664 92 -1155 tierno_generic
 execute as @s[x=-1659,y=92,z=-1156,distance=..10,tag=Dialogue59,tag=!Dialogue60] run opendialogue megaguru_dialogue60 @s
 
+#Tower of Mastery Korrina Mega Battle
+execute as @s[x=-1635,y=188,z=-1180,distance=..25,tag=!Dialogue64] unless entity @e[x=-1635,y=188,z=-1180,dy=3,type=cobblemon:npc] run npcspawnat -1635 188 -1180 towerofmastery_korrina
+execute as @s[x=-1635,y=188,z=-1180,distance=..5,tag=!Dialogue63] run opendialogue korrina_dialogue63 @s
+
+
+
+
+
+
+
+
+
+
+
 
 #

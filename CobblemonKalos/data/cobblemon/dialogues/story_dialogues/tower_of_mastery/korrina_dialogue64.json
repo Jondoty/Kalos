@@ -1,0 +1,217 @@
+{
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');",
+        "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 3');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');"
+    ],
+    "escapeAction": [],
+    "speakers": {
+        "korrina": {
+            "name": "Korrina",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:korrina",
+                "isLeftSide": true
+            }
+        },
+        "lucario": {
+            "name": "Lucario",
+            "face": {
+                "type": "artificial",
+                "modelType": "pokemon",
+                "identifier": "cobblemon:lucario",
+                "isLeftSide": false
+            }
+        },
+        "player": {
+            "face": "q.player.face(true);",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "korrina",
+            "lines": [
+                "What an explosive battle! I could tell that both Mega Lucario didn't hold anything back!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "korrina",
+            "lines": [
+                "With strong bonds like that, you shouldn't have any trouble triggering your Pokémon's Mega Evolution!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound cobblemon:pokemon.lucario.cry ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page3');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "lucario",
+            "lines": [
+                "Grrrooof!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "korrina",
+            "lines": [
+                "I really want you to give Lucario a chance to see what Mega Evolution is like!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "korrina",
+            "lines": [
+                "I think it would be best if you took that Lucario along with you on your journey."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "korrina",
+            "lines": [
+                "It's quite apparent that you two make a truly incredible team!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page7');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "korrina",
+            "lines": [
+                "As long as Pokémon and Trainers have the kindness to care for each other and give each other courage, the world will be full of smiles!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound cobblemon:pokemon.lucario.cry ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page8');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "lucario",
+            "lines": [
+                "Grrrooof!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page9');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page9",
+            "speaker": "korrina",
+            "lines": [
+                "I'll return back to the gym."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('particle cloud -1635 188 -1180 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-1635,y=187,z=-1180,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue64');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

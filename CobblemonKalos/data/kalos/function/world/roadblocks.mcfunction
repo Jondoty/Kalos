@@ -97,10 +97,10 @@ execute as @s[x=-1578,y=80,z=-853,dx=13,dy=12,dz=8,tag=!Dialogue56] at @s run tp
 execute as @s[x=-1770,y=84,z=-898,distance=..30,tag=!Dialogue61] unless entity @e[x=-1770,y=85,z=-898,dy=3,type=cobblemon:npc] run npcspawnat -1770 85 -898 gymguy_shalour
 execute as @s[x=-1770,y=84,z=-898,distance=..30,tag=Dialogue61] run tp @e[x=-1770,y=85,z=-898,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
-##Tower of Mastery pre-Korrina gym
-#tellraw @s[x=-1705,y=96,z=-1202,dx=13,dy=10,dz=10,tag=!Korrina] {"text":"<Tower Guard> Only those who have been approved may climb the Tower of Mastery!"}
-#tp @s[x=-1705,y=96,z=-1202,dx=13,dy=10,dz=10,tag=!Korrina] -1692 93 -1207
-#
+#Tower of Mastery pre-Korrina gym
+tellraw @s[x=-1705,y=96,z=-1202,dx=13,dy=10,dz=10,tag=!Korrina] {"text":"<Tower Guard> Only those who have been approved may climb the Tower of Mastery!"}
+tp @s[x=-1705,y=96,z=-1202,dx=13,dy=10,dz=10,tag=!Korrina] -1692 93 -1207
+
 ##Route 14 Defeat Serena to continue
 #tellraw @s[x=-193,y=99,z=-933,dx=18,dy=10,dz=11,tag=!Dialogue81] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Come on! Let's battle."}]
 #execute as @s[x=-193,y=99,z=-933,dx=18,dy=10,dz=11,tag=!Dialogue81] at @s run tp @s ~ ~ ~10

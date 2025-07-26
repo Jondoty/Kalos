@@ -49,10 +49,7 @@ tp @s[x=-1659,y=91,z=-1101,dx=6,dy=5] -1656 91 -1107
 tp @s[x=-1659,y=91,z=-1105,dx=6,dy=5] -1656 91 -1099
 
 #Under Lucario Statue Room
-#scoreboard players set @s[x=-1662,y=93,z=-1160,dx=6,dy=5,tag=!Dialogue59] DialogueTrigger 59
 tp @s[x=-1662,y=93,z=-1160,dx=6,dy=5] -1658 77 -1177
-
-#scoreboard players set @s[x=-1661,y=77,z=-1176,dx=5,dy=5,tag=Dialogue59] DialogueTrigger 60
 tp @s[x=-1661,y=77,z=-1176,dx=5,dy=5] -1659 93 -1159
 
 
@@ -1618,9 +1615,7 @@ tp @s[x=-1683,y=130,z=-1187,dy=3] -1635 154 -1187
 tp @s[x=-1637,y=154,z=-1187,dy=3] -1685 130 -1187
 
 #3F to Mega Balcony
-#scoreboard players set @s[x=-1670,y=154,z=-1187,dy=3,tag=!Dialogue63] DialogueTrigger 63
 tp @s[x=-1670,y=154,z=-1187,dy=3] -1647 187 -1200 -41 ~
-
 tp @s[x=-1650,y=187,z=-1201,dx=1,dy=3,dz=1] -1672 154 -1187 90 ~
 
 

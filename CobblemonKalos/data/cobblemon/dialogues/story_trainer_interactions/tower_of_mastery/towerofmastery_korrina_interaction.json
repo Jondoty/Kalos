@@ -1,0 +1,75 @@
+{
+    "initializationAction": [
+        "v.first_pokemon = q.player.party.get_pokemon(0);"
+    ],
+    "escapeAction": [
+    ],
+    "names": [
+        "     "
+    ],
+    "speakers": {
+        "korrina": {
+            "name": "Korrina",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:korrina",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "korrina",
+            "lines": [
+                "Got your Mega Braclet equiped and Lucario ready?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "§c⚔ Battle ⚔§r",
+                        "value": "battle",
+                        "isSelectable": "q.player.party.count == 1.0 && v.first_pokemon.species.name == 'Lucario'",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 33');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "v.battle = q.npc.start_battle(q.player);"
+                        ]
+                    },
+                    {
+                        "text": "Not Yet",
+                        "value": "no",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+
+        
+        {
+            "id": "page2",
+            "speaker": "korrina",
+            "lines": [
+                "We're only battling with Lucario, put your other Pokémon in that PC if you need to!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

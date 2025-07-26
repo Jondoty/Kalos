@@ -479,13 +479,6 @@ execute as @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue35] run execute as @
 scoreboard players set @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue36,tag=!Dialogue36,scores={MusicSteps=1..,TalkTime=0}] DialogueTrigger 36
 
 
-
-#Dialogue 64
-#Tower of Mastery tp in Korrina
-execute as @a[x=-1635,y=187,z=-1186,distance=..30,tag=Dialogue63,tag=!Dialogue64,scores={DialogueTrigger=0}] run tp @e[x=-504,y=250,z=1252,dy=3,type=pixelmon:npc_trainer] -1635 187.5 -1180
-execute as @a[x=-1635,y=187,z=-1186,distance=..30,tag=Dialogue63,tag=!Dialogue64,scores={DialogueTrigger=0}] run tp @e[x=-1635,y=187,z=-1180,dy=3,type=pixelmon:npc_chatting] -504 251 1254
-execute as @a[x=-1635,y=187,z=-1186,distance=..30,tag=KorrinaBattleMusic] run effect give @e[distance=..30,name=Lucario,type=pixelmon:statue] minecraft:invisibility 2 1 true
-
 #Dialogue 65
 #Shalour City Serena giving Surf
 execute as @a[x=-1528,y=79,z=-817,dx=15,dy=10,dz=14,scores={TalkTime=0},tag=Dialogue64,tag=!Dialogue65] run scoreboard players set @s DialogueTrigger 65

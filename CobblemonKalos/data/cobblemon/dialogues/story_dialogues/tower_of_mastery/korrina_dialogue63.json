@@ -1,0 +1,461 @@
+{
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+    ],
+    "escapeAction": [],
+    "speakers": {
+        "korrina": {
+            "name": "Korrina",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:korrina",
+                "isLeftSide": true
+            }
+        },
+        "lucario": {
+            "name": "Lucario",
+            "face": {
+                "type": "artificial",
+                "modelType": "pokemon",
+                "identifier": "cobblemon:lucario",
+                "isLeftSide": false
+            }
+        },
+        "player": {
+            "face": "q.player.face(true);",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "korrina",
+            "lines": [
+                "I really love this place! When I'm here with my Pokémon, looking at the wide-open sky above,"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "korrina",
+            "lines": [
+                "all my worries disappear, and I feel like I can do anything!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "korrina",
+            "lines": [
+                "Thanks for coming all the way up here."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "korrina",
+            "lines": [
+                "It was decided that this must be the place where the Mega Ring is handed over."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "korrina",
+            "lines": [
+                "Something about making sure we never forget to set our sights as high as the sky."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "korrina",
+            "lines": [
+                "And here it is--your very own Mega Ring!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page7');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "korrina",
+            "lines": [
+                "It's in the shape of a bracelet, so it's super easy to wear!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:megabracelet 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page8');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "korrina",
+            "lines": [
+                "Give your Pokémon the right Mega Stone, and try battling with it! Your Pokémon will surely answer the call of the Mega Ring!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page9');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page9",
+            "speaker": "korrina",
+            "lines": [
+                "Hmm? Lucario, what's wrong?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound cobblemon:pokemon.lucario.cry ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page10');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page10",
+            "speaker": "lucario",
+            "lines": [
+                "Grrrooof!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page11');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page11",
+            "speaker": "korrina",
+            "lines": [
+                "Lucario, are you sure? You want to battle alongside that Trainer?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound cobblemon:pokemon.lucario.cry ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page12');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page12",
+            "speaker": "lucario",
+            "lines": [
+                "Grrrooof!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page13');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page13",
+            "speaker": "korrina",
+            "lines": [
+                "I don't know what to say..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page14');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page14",
+            "speaker": "korrina",
+            "lines": [
+                "I'm a bit shocked that some traveling Trainer seems to have a stronger bond with you than I do..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page15');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page15",
+            "speaker": "korrina",
+            "lines": [
+                "Haha! Well, you must be something special!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page16');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page16",
+            "speaker": "korrina",
+            "lines": [
+                "Well, who found it doesn't really matter."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page17');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page17",
+            "speaker": "korrina",
+            "lines": [
+                "So, whaddya say, Trainer? Will you and Lucario battle against me and my Lucario?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:itemget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run pokegive lucario level=32 held_item=mega_showdown:lucarionite moves=swordsdance,poweruppunch,metalsound,bonerush');",
+                            "q.dialogue.set_page('page18');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page18",
+            "speaker": "korrina",
+            "lines": [
+                "A Lucario-on-Lucario battle! It will be nothing short of riveting."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page19');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page19",
+            "speaker": "korrina",
+            "lines": [
+                "How about we get this show on the road?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page20');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page20",
+            "speaker": "korrina",
+            "lines": [
+                "I can feel Lucario's passion."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page21');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page21",
+            "speaker": "korrina",
+            "lines": [
+                "Perhaps it's just that it doesn't want to lose to the other Lucario, but it may be that it's just on the same wavelength as you..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page22');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page22",
+            "speaker": "korrina",
+            "lines": [
+                "I'll give you a minute to prepare."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue63');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
