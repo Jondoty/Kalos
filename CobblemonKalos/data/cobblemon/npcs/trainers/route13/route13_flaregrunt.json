@@ -6,14 +6,14 @@
     ],
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:teamflare_dialogue40"
+        "dialogue": "cobblemon:route13_flaregrunt_interaction"
     },
     "name": "Team Flare Grunt",
     "party": {
         "type": "simple",
         "pokemon": [
-            "Houndour level=18",
-            "Zubat level=18"
+            "Houndoom level=31",
+            "Golbat level=33"
         ]
     },
     "config": [
@@ -36,7 +36,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue teamflare_dialogue41 @s');"
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue route13_flaregrunt_end @s');"
         }
     ]
 }

@@ -153,30 +153,37 @@ execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] unless entity 
 execute as @s[x=-2175,y=104,z=-691,distance=..30,tag=Dialogue52] run tp @e[x=-2120,y=103,z=-691,dy=3,dz=1,type=cobblemon:npc] 10000000 -50000 -10000000
 execute as @s[x=-2175,y=104,z=-691,distance=..30,tag=Dialogue52] run tp @e[x=-2116,y=103,z=-699,dy=3,dz=17,type=cobblemon:npc] 10000000 -50000 -10000000
 
-##Route 12 block pre-Surf
-#tellraw @s[x=-1423,y=71,z=-850,dx=20,dy=20,dz=41,tag=!Korrina] {"text":"You need the Rumble Badge to use Surf outside of battle!","italic":true,"color":"gray"}
-#tp @s[x=-1423,y=71,z=-850,dx=20,dy=20,dz=41,tag=!Korrina] -1440 76 -809
-#
-##Route 12 block Surf
-#tellraw @s[x=-1418,y=71,z=-807,dx=10,dy=20,dz=20,tag=!Korrina] {"text":"You need the Rumble Badge to use Surf outside of battle!","italic":true,"color":"gray"}
-#tp @s[x=-1418,y=71,z=-807,dx=10,dy=20,dz=20,tag=!Korrina] -1440 76 -809
-#
-##Route 12 block until beaten Successor battle
-#tellraw @s[x=-1448,y=70,z=-814,dx=9,dy=12,dz=8,tag=!Dialogue64] {"text":"<Poke Breeder> Hey, Trainer! Not a good idea to leave the city when you still have pending matters with Korrina."}
-#tp @s[x=-1448,y=70,z=-814,dx=9,dy=12,dz=8,tag=!Dialogue64] ~-10 80 ~
-#
-##Route 13 stairs to Lumiose blocked while Flare occupied Power Plant
-#tellraw @s[x=-728,y=102,z=-474,dx=10,dy=10,dz=12,tag=!Dialogue75] {"text":"<Worker> Is the power not getting here? The gate to Lumiose won\u2019t open... The Power Plant is running, so what could be going on?"}
-#execute as @s[x=-728,y=102,z=-474,dx=10,dy=10,dz=12,tag=!Dialogue75] at @s run tp @s ~-10 ~ ~
-#
-##Power Plant before defeating first Flare Grunt
-#tellraw @s[x=-981,y=53,z=-340,dx=7,dy=8,dz=5,tag=!Dialogue72] {"text":"Defeat the Team Flare Grunts!","italic":true,"color":"gray"}
-#execute as @s[x=-981,y=53,z=-340,dx=7,dy=8,dz=5,tag=!Dialogue72] at @s run tp @s ~10 ~ ~
-#
-##Power Plant blocking right path of generator room
-#tellraw @s[x=-984,y=53,z=-352,dx=5,dy=5,dz=3,tag=!Dialogue75] ["",{"text":"<Team Flare Grunt> ","color":"white"},{"text":"Now I\u2019m mad! I told you I was persistent! I refuse to budge from this spot! Not an inch!"}]
-#execute as @s[x=-984,y=53,z=-352,dx=5,dy=5,dz=3,tag=!Dialogue75] at @s run tp @s ~ ~ ~7
-#
+#Route 12 block pre-Surf
+tellraw @s[x=-1423,y=71,z=-850,dx=20,dy=20,dz=41,tag=!Korrina] {"text":"You need the Rumble Badge to use Surf outside of battle!","italic":true,"color":"gray"}
+tp @s[x=-1423,y=71,z=-850,dx=20,dy=20,dz=41,tag=!Korrina] -1440 76 -809
+
+#Route 12 block Surf
+tellraw @s[x=-1418,y=71,z=-807,dx=10,dy=20,dz=20,tag=!Korrina] {"text":"You need the Rumble Badge to use Surf outside of battle!","italic":true,"color":"gray"}
+tp @s[x=-1418,y=71,z=-807,dx=10,dy=20,dz=20,tag=!Korrina] -1440 76 -809
+
+#Route 12 block until beaten Successor battle
+tellraw @s[x=-1448,y=70,z=-814,dx=9,dy=12,dz=8,tag=!Dialogue64] {"text":"<Poke Breeder> Hey, Trainer! Not a good idea to leave the city when you still have pending matters with Korrina."}
+tp @s[x=-1448,y=70,z=-814,dx=9,dy=12,dz=8,tag=!Dialogue64] ~-10 80 ~
+
+#Route 13 stairs to Lumiose blocked while Flare occupied Power Plant
+execute as @s[x=-728,y=102,z=-474,dx=10,dy=10,dz=12,tag=!Dialogue75] run opendialogue route13_worker_interaction @s
+execute as @s[x=-728,y=102,z=-474,dx=10,dy=10,dz=12,tag=!Dialogue75] at @s run tp @s ~-10 ~ ~
+
+#Power Plant Doors
+execute as @p[x=-817,y=104,z=-304,distance=..10,tag=PowerPlantPass] run setblock -817 103 -303 minecraft:redstone_torch
+execute as @p[x=-817,y=104,z=-304,distance=..10,tag=PowerPlantPass] run setblock -817 103 -304 minecraft:redstone_torch
+
+execute as @p[x=-817,y=104,z=-304,distance=..30,tag=!PowerPlantPass] run setblock -817 103 -303 minecraft:air
+execute as @p[x=-817,y=104,z=-304,distance=..30,tag=!PowerPlantPass] run setblock -817 103 -304 minecraft:air
+
+#Power Plant before defeating first Flare Grunt
+tellraw @s[x=-981,y=53,z=-340,dx=7,dy=8,dz=5,tag=!Dialogue72] {"text":"Defeat the Team Flare Grunts!","italic":true,"color":"gray"}
+execute as @s[x=-981,y=53,z=-340,dx=7,dy=8,dz=5,tag=!Dialogue72] at @s run tp @s ~10 ~ ~
+
+#Power Plant blocking right path of generator room
+tellraw @s[x=-984,y=53,z=-352,dx=5,dy=5,dz=3,tag=!Dialogue75] ["",{"text":"<Team Flare Grunt> ","color":"white"},{"text":"Now I\u2019m mad! I told you I was persistent! I refuse to budge from this spot! Not an inch!"}]
+execute as @s[x=-984,y=53,z=-352,dx=5,dy=5,dz=3,tag=!Dialogue75] at @s run tp @s ~ ~ ~7
+
 ##Lysandre Labs Nix blocking the way until after battle
 #tp @s[x=-305,y=28,z=318,dx=20,dy=5,dz=10,tag=!Dialogue200] -297 29 331
 #

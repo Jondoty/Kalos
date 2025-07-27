@@ -233,6 +233,22 @@ execute as @s[x=-1078,y=119,z=-697,distance=..15,tag=!Dialogue68,scores={Starter
 execute as @s[x=-1078,y=119,z=-697,distance=..15,tag=!Dialogue68,scores={StarterPick=2}] unless entity @e[x=-1078,y=121,z=-709,dy=3,type=cobblemon:npc] run npcspawnat -1078 121 -709 courmarine_serena2
 execute as @s[x=-1078,y=119,z=-697,distance=..15,tag=!Dialogue68,scores={StarterPick=3}] unless entity @e[x=-1078,y=121,z=-709,dy=3,type=cobblemon:npc] run npcspawnat -1078 121 -709 courmarine_serena3
 
+#Courmarine Sina and Dexio
+execute as @s[x=-1073,y=115,z=-568,distance=..7,tag=!Dialogue69] run opendialogue sinadexio_dialogue69 @s
+
+#Route 13 Respawns Team Flare Grunt
+execute as @s[x=-765,y=104,z=-363,distance=..30,tag=Ramos,tag=!Dialogue70] unless entity @e[x=-772,y=104,z=-330,dy=3,type=cobblemon:npc] run npcspawnat -772 104 -330 route13_flaregrunt
+
+#Particles for power plant pass
+#execute as @a[x=-779,y=104,z=-347,distance=..45,tag=Dialogue70,tag=!PowerPlantPass] run particle minecraft:firework -779 104 -347 0 2 0 0.1 0 normal @s
+
+
+
+
+
+
+
+
 
 
 

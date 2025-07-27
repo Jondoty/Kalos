@@ -2391,7 +2391,10 @@ execute as @s[x=-1449,y=80,z=-816,distance=..5,tag=!ItemLoot542] run tellraw @s 
 execute as @s[x=-1449,y=80,z=-816,distance=..5,tag=!ItemLoot542] run playsound minecraft:itemget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-1449,y=80,z=-816,distance=..5,tag=!ItemLoot542] run tag @s add ItemLoot542
 
-
+execute as @s[x=-779,y=104,z=-347,distance=..5,tag=Dialogue70,tag=PowerPlantPass] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
+execute as @s[x=-779,y=104,z=-347,distance=..5,tag=Dialogue70,tag=!PowerPlantPass] run tellraw @s {"text":"You found a Power Plant Pass!","italic":true,"color":"gray"}
+execute as @s[x=-779,y=104,z=-347,distance=..5,tag=Dialogue70,tag=!PowerPlantPass] run playsound minecraft:itemget ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-779,y=104,z=-347,distance=..5,tag=Dialogue70,tag=!PowerPlantPass] run tag @s add PowerPlantPass
 
 
 
