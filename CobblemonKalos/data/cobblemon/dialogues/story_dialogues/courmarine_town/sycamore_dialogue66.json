@@ -1,0 +1,496 @@
+{
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+        "q.run_command('execute as ' + q.player.username + ' run playsound sycamorestheme record @s[tag=!RadioOff] ~ ~ ~ 1 1 1');",
+        "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s[tag=!RadioOff] MusicCooldown 98');"
+    ],
+    "escapeAction": [],
+    "speakers": {
+        "sycamore": {
+            "name": "Sycamore",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:professorsycamore",
+                "isLeftSide": true
+            }
+        },
+        "diantha": {
+            "name": "Diantha",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:diantha",
+                "isLeftSide": false
+            }
+        },
+        "player": {
+            "face": "q.player.face(true);",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "sycamore",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'Why hello, ' + q.player.username + '!';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "sycamore",
+            "lines": [
+                "Congratulations!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "sycamore",
+            "lines": [
+                "I see you finally obtained everything you need for Mega Evolution!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "sycamore",
+            "lines": [
+                "A Mega Stone for the Pokémon, a Mega Ring for the Trainer, and a strong bond with your Pokémon."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "diantha",
+            "lines": [
+                "A strong bond?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "sycamore",
+            "lines": [
+                "It's only a hypothesis, but I think the bond between Pokémon and Trainer is the key to this new Evolution."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "sycamore",
+            "lines": [
+                "But what is this bond, exactly? And why are there examples of Mega Evolution only in the Kalos region?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page8');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "sycamore",
+            "lines": [
+                "There's still so much we don't know..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page9');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page9",
+            "speaker": "diantha",
+            "lines": [
+                "Does this make you think of something like Kalos's Legendary Pokémon?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page10');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page10",
+            "speaker": "diantha",
+            "lines": [
+                "Found only here in the Kalos region, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page11');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page11",
+            "speaker": "diantha",
+            "lines": [
+                "Nowhere else? Maybe that's not a coincidence."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page12');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page12",
+            "speaker": "sycamore",
+            "lines": [
+                "Oh! What an excellent point! Indeed!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page13');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page13",
+            "speaker": "sycamore",
+            "lines": [
+                "The more you know, the more there is to research! The excitement never ends, does it?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page14');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page14",
+            "speaker": "sycamore",
+            "lines": [
+                "Oh, that's right! I came here to give you this!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('playsound minecraft:itemget ambient ' + q.player.username + ' ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:spawn/flyhm');",
+                            "q.dialogue.set_page('page15');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page15",
+            "speaker": "sycamore",
+            "lines": [
+                "Use the HM Fly to pop right over to Pokémon Centers of places you've already visited!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page16');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page16",
+            "speaker": "sycamore",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'Well then, ' + q.player.username + '...!';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page17');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page17",
+            "speaker": "sycamore",
+            "lines": [
+                "Diantha, I hope to see you both again soon!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud -1055 80 -794 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-1055,y=79,z=-794,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.dialogue.set_page('page18');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page18",
+            "speaker": "diantha",
+            "lines": [
+                "Bonds... They really are important to us all, aren't they?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page19');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page19",
+            "speaker": "diantha",
+            "lines": [
+                "When I'm acting, I think I'm always trying to forge a bond between myself and the character I'm playing."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page20');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page20",
+            "speaker": "diantha",
+            "lines": [
+                "If all I think about is how I'm nothing like a character, then I'll just hate playing it."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page21');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page21",
+            "speaker": "diantha",
+            "lines": [
+                "But if I focus on what I have in common with the character and put myself in her shoes, I might be able to understand her."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page22');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page22",
+            "speaker": "diantha",
+            "lines": [
+                "It's the same for people--or Pokémon."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page23');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page23",
+            "speaker": "diantha",
+            "lines": [
+                "Oh, never mind me! I'm just babbling about my own things."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page24');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page24",
+            "speaker": "diantha",
+            "lines": [
+                "Let's have a battle the next we meet, shall we? I'm still looking forward to it!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('particle cloud -1052 80 -794 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-1052,y=79,z=-794,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue66');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -218,12 +218,20 @@ execute as @s[x=-1659,y=92,z=-1156,distance=..10,tag=Dialogue59,tag=!Dialogue60]
 execute as @s[x=-1635,y=188,z=-1180,distance=..25,tag=!Dialogue64] unless entity @e[x=-1635,y=188,z=-1180,dy=3,type=cobblemon:npc] run npcspawnat -1635 188 -1180 towerofmastery_korrina
 execute as @s[x=-1635,y=188,z=-1180,distance=..5,tag=!Dialogue63] run opendialogue korrina_dialogue63 @s
 
+#Shalour Serena giving Surf after the Tower of Mastery battle
+execute as @s[x=-1540,y=83,z=-810,distance=..15,tag=Dialogue64,tag=!Dialogue65] unless entity @e[x=-1517,y=80,z=-808,dy=3,type=cobblemon:npc] run npcspawnat -1517 80 -808 serena_generic
+execute as @s[x=-1517,y=79,z=-808,distance=..5,tag=Dialogue64,tag=!Dialogue65] run opendialogue serena_dialogue65 @s
 
+#Courmarine Town Sycamore and Diantha, getting Fly
+execute as @s[x=-1052,y=80,z=-778,distance=..15,tag=!Dialogue66] unless entity @e[x=-1055,y=80,z=-794,dy=3,type=cobblemon:npc] run npcspawnat -1055 80 -794 sycamore_generic
+execute as @s[x=-1052,y=80,z=-778,distance=..15,tag=!Dialogue66] unless entity @e[x=-1052,y=80,z=-794,dy=3,type=cobblemon:npc] run npcspawnat -1052 80 -794 diantha_generic
+execute as @s[x=-1053,y=80,z=-794,distance=..5,tag=!Dialogue66] run opendialogue sycamore_dialogue66 @s
 
-
-
-
-
+#Courmarine Serena Battle setup
+execute as @s[x=-1078,y=119,z=-697,distance=..15,tag=!Dialogue68] unless entity @e[x=-1078,y=121,z=-709,dy=3,type=cobblemon:npc] run particle cloud -1078 121 -709 2 2 2 1 100
+execute as @s[x=-1078,y=119,z=-697,distance=..15,tag=!Dialogue68,scores={StarterPick=1}] unless entity @e[x=-1078,y=121,z=-709,dy=3,type=cobblemon:npc] run npcspawnat -1078 121 -709 courmarine_serena1
+execute as @s[x=-1078,y=119,z=-697,distance=..15,tag=!Dialogue68,scores={StarterPick=2}] unless entity @e[x=-1078,y=121,z=-709,dy=3,type=cobblemon:npc] run npcspawnat -1078 121 -709 courmarine_serena2
+execute as @s[x=-1078,y=119,z=-697,distance=..15,tag=!Dialogue68,scores={StarterPick=3}] unless entity @e[x=-1078,y=121,z=-709,dy=3,type=cobblemon:npc] run npcspawnat -1078 121 -709 courmarine_serena3
 
 
 

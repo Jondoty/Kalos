@@ -55,7 +55,7 @@ tp @s[x=-1661,y=77,z=-1176,dx=5,dy=5] -1659 93 -1159
 
 
 #Courmarine City Gym
-tellraw @s[x=-1083,y=121,z=-714,dx=9,dy=5,tag=!Dialogue68] {"text":"Defeat Serena to continue!","italic":true,"color":"gray"}
+tellraw @s[x=-1083,y=121,z=-714,dx=9,dy=5,tag=!Dialogue68] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Let's battle, "},{"selector":"@s"},{"text":"!"}]
 execute as @s[x=-1083,y=121,z=-714,dx=9,dy=5,tag=!Dialogue68] at @s run tp @s ~ ~ ~10
 
 execute as @s[x=-1083,y=121,z=-714,dx=9,dy=5,tag=Dialogue68] run function kalos:triggers/stopsound
@@ -77,7 +77,7 @@ tp @s[x=-1965,y=101,z=-1667,dx=6,dy=5] -93 100 -1460
 
 
 #Anistar City Gym
-tellraw @s[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=!Dialogue103] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Let's battle, "},{"selector":"@p[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=!Dialogue103]"},{"text":"!"}]
+tellraw @s[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=!Dialogue103] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Let's battle, "},{"selector":"@s"},{"text":"!"}]
 execute as @s[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=!Dialogue103] at @s run tp @s ~ ~ ~10
 
 execute as @s[x=1325,y=110,z=-289,dx=5,dy=5,dz=1,tag=Dialogue103] run function kalos:triggers/stopsound
