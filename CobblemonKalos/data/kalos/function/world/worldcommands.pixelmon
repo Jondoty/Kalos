@@ -479,56 +479,9 @@ execute as @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue35] run execute as @
 scoreboard players set @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue36,tag=!Dialogue36,scores={MusicSteps=1..,TalkTime=0}] DialogueTrigger 36
 
 
-#Dialogue 65
-#Shalour City Serena giving Surf
-execute as @a[x=-1528,y=79,z=-817,dx=15,dy=10,dz=14,scores={TalkTime=0},tag=Dialogue64,tag=!Dialogue65] run scoreboard players set @s DialogueTrigger 65
 
-#Dialogue 66
-#Courmarine Sycamore and Diantha
-scoreboard players set @a[x=-1059,y=79,z=-799,dx=14,dy=10,dz=14,scores={TalkTime=0},tag=!Dialogue66] DialogueTrigger 66
 
-#Dialogue 67
-#Courmarine Serena outside of Gym
-scoreboard players set @a[x=-1092,y=120,z=-713,dx=35,dy=10,dz=14,scores={TalkTime=0},tag=!Dialogue67] DialogueTrigger 67
-execute as @a[x=-1092,y=120,z=-713,dx=35,dy=10,dz=14,tag=Dialogue67,tag=!Dialogue68,scores={StarterPick=1,TalkTime=0}] run tp @e[x=-504,y=110,z=1268,dy=3,type=pixelmon:npc_trainer] -1078 121 -709
-execute as @a[x=-1092,y=120,z=-713,dx=35,dy=10,dz=14,tag=Dialogue67,tag=!Dialogue68,scores={StarterPick=2,TalkTime=0}] run tp @e[x=-504,y=110,z=1270,dy=3,type=pixelmon:npc_trainer] -1078 121 -709
-execute as @a[x=-1092,y=120,z=-713,dx=35,dy=10,dz=14,tag=Dialogue67,tag=!Dialogue68,scores={StarterPick=3,TalkTime=0}] run tp @e[x=-504,y=110,z=1272,dy=3,type=pixelmon:npc_trainer] -1078 121 -709
 
-#Dialogue 69
-#Courmarine Dexio and Sina
-scoreboard players set @a[x=-1085,y=114,z=-579,dx=20,dy=10,dz=20,tag=!Dialogue69,scores={TalkTime=0,HoloCall=0}] DialogueTrigger 69
-
-#Dialogue 70
-#Route 13 Flare Grunt
-execute as @a[x=-772,y=104,z=-330,distance=..30,tag=!Dialogue70,tag=Ramos] run tp @e[x=-504,y=120,z=1268,dy=3,type=pixelmon:npc_trainer] -772 104 -330
-
-#Hidden Power Plant Pass give
-execute as @e[x=-779,y=103,z=-347,dy=3,type=armor_stand] if entity @a[x=-779,y=103,z=-347,distance=..30,tag=Dialogue70,tag=!PowerPlantPass] run particle minecraft:firework ~ ~ ~ 1 2 1 0.1 2 normal @a[tag=!PowerPlantPass,tag=Dialogue70]
-execute as @e[x=-779,y=103,z=-347,dy=3,type=armor_stand] if entity @a[distance=..3,tag=!PowerPlantPass,tag=Dialogue70] run give @a[distance=..3,tag=!PowerPlantPass,tag=Dialogue70] minecraft:prismarine_shard{display:{Lore:["This pass serves as an ID","card for gaining access to","the power plant that lies","along Route 13."]},HideFlags:6}
-execute as @e[x=-779,y=103,z=-347,dy=3,type=armor_stand] if entity @a[distance=..3,tag=!PowerPlantPass,tag=Dialogue70] run tellraw @a[distance=..3,tag=!PowerPlantPass,tag=Dialogue70] {"text":"You found a Power Plant Pass!","italic":true,"color":"gray"}
-execute as @e[x=-779,y=102,z=-347,dy=3,type=armor_stand] if entity @a[distance=..3,tag=!PowerPlantPass,tag=Dialogue70] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @a[distance=..3,tag=!PowerPlantPass,tag=Dialogue70] ~ ~ ~ 10 1 1
-execute as @e[x=-779,y=102,z=-347,dy=3,type=armor_stand] if entity @a[distance=..3,tag=!PowerPlantPass,tag=Dialogue70] run tag @a[distance=..3,tag=!PowerPlantPass,tag=Dialogue70] add PowerPlantPass
-
-#Dialogue 71
-#Power Plant Flare Grunts first
-scoreboard players set @a[x=-954,y=47,z=-361,dx=22,dy=10,dz=16,scores={TalkTime=0},tag=!Dialogue71] DialogueTrigger 71
-execute as @a[x=-954,y=47,z=-361,dx=22,dy=10,dz=16,tag=Dialogue71,tag=!Dialogue72] run tp @e[x=-504,y=125,z=1268,dy=3,type=pixelmon:npc_trainer] -949 48 -350
-
-#Power Plant tps in grunts to generator room
-execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1268,dy=3,type=pixelmon:npc_trainer] -982 54 -346
-execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1270,dy=3,type=pixelmon:npc_trainer] -992 54 -310
-execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1272,dy=3,type=pixelmon:npc_trainer] -1029 54 -293
-execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1274,dy=3,type=pixelmon:npc_trainer] -1076 54 -336
-execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1276,dy=3,type=pixelmon:npc_trainer] -1069 54 -363
-execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=130,z=1278,dy=3,type=pixelmon:npc_trainer] -1029 54 -380
-execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=135,z=1268,dy=3,type=pixelmon:npc_chatting] -1013 58 -335
-execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] run tp @e[x=-504,y=135,z=1272,dy=3,type=pixelmon:npc_chatting] -1013 58 -339
-
-#Dialogue 73
-#Power Plant Admin and Aliana
-scoreboard players set @a[x=-1007,y=57,z=-340,dx=14,dy=5,dz=6,scores={TalkTime=0},tag=!Dialogue73] DialogueTrigger 73
-execute as @a[x=-1013,y=57,z=-339,distance=..10,tag=Dialogue73,scores={TalkTime=0},tag=!Dialogue74] run tp @e[x=-504,y=135,z=1270,dy=3,type=pixelmon:npc_trainer] -1013 58 -335
-execute as @a[x=-1013,y=57,z=-339,distance=..10,tag=Dialogue74,scores={TalkTime=0},tag=!Dialogue75] run tp @e[x=-504,y=135,z=1274,dy=3,type=pixelmon:npc_trainer] -1013 58 -339
 
 #Route 76
 #Route 13 Az

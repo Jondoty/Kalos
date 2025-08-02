@@ -242,12 +242,34 @@ execute as @s[x=-765,y=104,z=-363,distance=..30,tag=Ramos,tag=!Dialogue70] unles
 #Particles for power plant pass
 #execute as @a[x=-779,y=104,z=-347,distance=..45,tag=Dialogue70,tag=!PowerPlantPass] run particle minecraft:firework -779 104 -347 0 2 0 0.1 0 normal @s
 
+#Sets up Team Flare Grunts
+#First grunt
+execute as @a[x=-954,y=47,z=-361,dx=22,dy=10,dz=16,tag=!Dialogue73] unless entity @e[x=-949,y=48,z=-350,dy=3,type=cobblemon:npc] run npcspawnat -949 48 -350 powerplant_flaregrunt1
+execute as @a[x=-954,y=47,z=-361,dx=22,dy=10,dz=16,tag=!Dialogue73] unless entity @e[x=-962,y=54,z=-336,dy=3,type=cobblemon:npc] run npcspawnat -962 54 -336 powerplant_flaregrunt2
 
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] unless entity @e[x=-982,y=54,z=-346,dy=3,type=cobblemon:npc] run npcspawnat -982 54 -346 powerplant_flaregrunt3
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] unless entity @e[x=-992,y=54,z=-310,dy=3,type=cobblemon:npc] run npcspawnat -992 54 -310 powerplant_flaregrunt4
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] unless entity @e[x=-1029,y=54,z=-293,dy=3,type=cobblemon:npc] run npcspawnat -1029 54 -293 powerplant_flaregrunt5
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] unless entity @e[x=-1076,y=54,z=-336,dy=3,type=cobblemon:npc] run npcspawnat -1076 54 -336 powerplant_flaregrunt6
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] unless entity @e[x=-1069,y=54,z=-363,dy=3,type=cobblemon:npc] run npcspawnat -1069 54 -363 powerplant_flaregrunt7
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue73] unless entity @e[x=-1029,y=54,z=-380,dy=3,type=cobblemon:npc] run npcspawnat -1029 54 -380 powerplant_flaregrunt8
+#Admin
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue75] unless entity @e[x=-1013,y=58,z=-335,dy=3,type=cobblemon:npc] run npcspawnat -1013 58 -335 powerplant_flareadmin
+#Aliana
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue75] unless entity @e[x=-1013,y=58,z=-339,dy=3,type=cobblemon:npc] run npcspawnat -1013 58 -339 powerplant_aliana
 
+#Power Plant Admin and Aliana pre-battle
+execute as @a[x=-1007,y=57,z=-340,dx=14,dy=5,dz=6,tag=!Dialogue73] run opendialogue teamflare_dialogue73 @s
 
-
-
-
+#Gets rid of all Flare grunts after defeating Aliana
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=Dialogue75] run tp @e[x=-949,y=48,z=-350,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=Dialogue75] run tp @e[x=-962,y=54,z=-336,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=Dialogue75] run tp @e[x=-982,y=54,z=-346,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=Dialogue75] run tp @e[x=-992,y=54,z=-310,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=Dialogue75] run tp @e[x=-1029,y=54,z=-293,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=Dialogue75] run tp @e[x=-1076,y=54,z=-336,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=Dialogue75] run tp @e[x=-1069,y=54,z=-363,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=Dialogue75] run tp @e[x=-1029,y=54,z=-380,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
 
 

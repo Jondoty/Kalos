@@ -1,0 +1,175 @@
+{   
+    "initializationAction": [              
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+            ],
+    "escapeAction": [],
+    "speakers": {
+        "admin": {
+          "name": "???",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:teamflareadminm",
+            "isLeftSide": true
+          }
+        },
+        
+        "aliana": {
+          "name": "???",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:aliana",
+            "isLeftSide": false
+          }
+        },
+        "player": {
+            "face": "q.player.face();",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+      },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "admin",
+            "lines": [
+                "How much longer?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "aliana",
+            "lines": [
+                "If you're just interested in the facts, I'd say we already have enough energy to power the device."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "admin",
+            "lines": [
+                "Good. Let's finish up here and move out. There's still more work to be done."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page4",
+            "speaker": "aliana",
+            "lines": [
+                "What other work do you mean?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page5",
+            "speaker": "aliana",
+            "lines": [
+                "Perhaps you mean taking out that annoying little Pokémon Trainer over there?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound flareappears record @s[tag=!RadioOff] ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s[tag=!RadioOff] MusicCooldown 83');",
+                            "q.dialogue.set_page('page6');"
+                        ]
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page6",
+            "speaker": "admin",
+            "lines": [
+                "What's this?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page7",
+            "speaker": "admin",
+            "lines": [
+                "I didn't think anyone remained here after we dealt with the workers."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue73');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                            ]
+                    }
+                ]
+            }
+        }
+        ]
+    }

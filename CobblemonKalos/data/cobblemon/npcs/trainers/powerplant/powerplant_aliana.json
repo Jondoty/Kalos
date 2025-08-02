@@ -1,6 +1,6 @@
 {
     "hitbox": "player",
-    "resourceIdentifier": "cobblemon:teamflarealiana",
+    "resourceIdentifier": "cobblemon:aliana",
     "presets": [
         "cobblemon:trainer_basics"
     ],
@@ -8,7 +8,7 @@
         "type": "dialogue",
         "dialogue": "cobblemon:powerplant_aliana_interaction"
     },
-    "name": "Team Flare Admin",
+    "name": "Team Flare Aliana",
     "party": {
         "type": "simple",
         "pokemon": [
@@ -35,7 +35,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue powerplant_aliana_end @s');"
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue teamflare_dialogue75 @s');"
         }
     ]
 }

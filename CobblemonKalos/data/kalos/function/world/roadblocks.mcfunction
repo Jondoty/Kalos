@@ -177,8 +177,8 @@ execute as @p[x=-817,y=104,z=-304,distance=..30,tag=!PowerPlantPass] run setbloc
 execute as @p[x=-817,y=104,z=-304,distance=..30,tag=!PowerPlantPass] run setblock -817 103 -304 minecraft:air
 
 #Power Plant before defeating first Flare Grunt
-tellraw @s[x=-981,y=53,z=-340,dx=7,dy=8,dz=5,tag=!Dialogue72] {"text":"Defeat the Team Flare Grunts!","italic":true,"color":"gray"}
-execute as @s[x=-981,y=53,z=-340,dx=7,dy=8,dz=5,tag=!Dialogue72] at @s run tp @s ~10 ~ ~
+#tellraw @s[x=-981,y=53,z=-340,dx=7,dy=8,dz=5,tag=!Dialogue72] {"text":"Defeat the Team Flare Grunts!","italic":true,"color":"gray"}
+#execute as @s[x=-981,y=53,z=-340,dx=7,dy=8,dz=5,tag=!Dialogue72] at @s run tp @s ~10 ~ ~
 
 #Power Plant blocking right path of generator room
 tellraw @s[x=-984,y=53,z=-352,dx=5,dy=5,dz=3,tag=!Dialogue75] ["",{"text":"<Team Flare Grunt> ","color":"white"},{"text":"Now I\u2019m mad! I told you I was persistent! I refuse to budge from this spot! Not an inch!"}]

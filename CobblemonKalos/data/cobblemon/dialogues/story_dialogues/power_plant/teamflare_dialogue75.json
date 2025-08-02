@@ -1,0 +1,287 @@
+{   
+    "initializationAction": [
+        "c.npc.set_chatting();",
+        "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 1');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+        "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $5320 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
+        "q.run_command('scoreboard players add ' + q.player.username + ' Money 5320');",
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+            ],
+    "escapeAction": [],
+    "speakers": {
+        "admin": {
+          "name": "Team Flare Admin",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:teamflareadminm",
+            "isLeftSide": true
+          }
+        },
+        
+        "aliana": {
+          "name": "Team Flare Admin",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:aliana",
+            "isLeftSide": false
+          }
+        },
+        
+        "sina": {
+          "name": "???",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:sina_hero",
+            "isLeftSide": false
+          }
+        },
+        "dexio": {
+          "name": "???",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:dexio_hero",
+            "isLeftSide": true
+          }
+        },
+        "player": {
+            "face": "q.player.face();",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+      },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "aliana",
+            "lines": [
+                "Ah ha ha!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "aliana",
+            "lines": [
+                "Well, I certainly didn't expect you to be so interesting! I do hope we can meet again!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud -1013 58 -335 2 2 2 1 100');",
+                            "q.run_command('particle cloud -1013 58 -339 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-1013,y=57,z=-339,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tp @e[x=-1013,y=57,z=-335,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('particle cloud -1000 58 -335 2 2 2 1 100');",
+                            "q.run_command('particle cloud -1000 58 -339 2 2 2 1 100');",
+                            "q.dialogue.set_page('page3');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "sina",
+            "lines": [
+                "Oh my!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page4",
+            "speaker": "sina",
+            "lines": [
+                "You chased off that mysterious bunch before we could even get here?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page5",
+            "speaker": "sina",
+            "lines": [
+                "Well, I guess there's always room for more defenders of Kalos! Let me heal your Pokémon as thanks!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run pokeheal');",
+                            "q.dialogue.set_page('page6');"
+                        ]
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page6",
+            "speaker": "dexio",
+            "lines": [
+                "You and your Pokémon are the ultimate team! No doubt about it!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page7",
+            "speaker": "dexio",
+            "lines": [
+                "But don't push yourself too hard. Here. Take these."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:full_restore 2');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:itemget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page8');"
+                        ]
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page8",
+            "speaker": "dexio",
+            "lines": [
+                "Thanks to you, the power is back on in Lumiose City."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page9');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page9",
+            "speaker": "dexio",
+            "lines": [
+                "Now people can pass through the gate connecting Route 13 to Lumiose City again."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page10');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page10",
+            "speaker": "sina",
+            "lines": [
+                "Well, I think us mysterious people will be off now!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page11');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page11",
+            "speaker": "sina",
+            "lines": [
+                "I leave before being left. I decide. Au revoir!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('particle cloud -1000 58 -339 2 2 2 1 100');",
+                            "q.run_command('particle cloud -1000 58 -335 2 2 2 1 100');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue75');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                            ]
+                    }
+                ]
+            }
+        }
+        ]
+    }
