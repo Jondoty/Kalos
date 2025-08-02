@@ -271,6 +271,15 @@ execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=Dialogue75] run tp @e[
 execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=Dialogue75] run tp @e[x=-1069,y=54,z=-363,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=Dialogue75] run tp @e[x=-1029,y=54,z=-380,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
+#Route 13 AZ
+execute as @s[x=-709,y=100,z=-468,distance=..30,tag=Dialogue75,tag=!Dialogue76] unless entity @e[x=-709,y=100,z=-468,dy=3,type=cobblemon:npc] run npcspawnat -709 100 -468 az_generic
+execute as @s[x=-719,y=99,z=-474,dx=7,dy=10,dz=12,tag=Dialogue75,tag=!Dialogue76] run opendialogue az_dialogue76 @s
+
+#Lumiose City Shauna from Route 13 gate
+execute as @a[x=-509,y=101,z=-497,distance=..20,tag=!Dialogue77] run opendialogue shauna_dialogue77 @s
+
+
+
 
 
 

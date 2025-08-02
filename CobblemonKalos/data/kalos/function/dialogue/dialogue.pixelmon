@@ -288,50 +288,6 @@ scoreboard players set @s[tag=Dialogue36] TalkTime 0
 scoreboard players set @s[tag=Dialogue36] DialogueTrigger 0
 
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Az Route 13 First Encounter
-#scoreboard players set @a[x=-719,y=99,z=-474,dx=7,dy=10,dz=12,tag=!Dialogue76] DialogueTrigger 76
-#execute as @s[x=-709,y=100,z=-468,r=30,tag=!Dialogue76] run execute as @s[tag=Dialogue75] run tp @e[x=-504,y=140,z=1268,dy=3,type=pixelmon:npc_chatting] -709 100 -468
-
-execute as @s[scores={DialogueTrigger=76,TalkTime=1}] run scoreboard players set @s click 1
-tellraw @s[scores={DialogueTrigger=76,TalkTime=3}] {"text":"<...> The Pokémon... The flower Pokémon..."}
-tellraw @s[scores={DialogueTrigger=76,TalkTime=10}] {"text":"<...> The Pokémon that was given eternal life..."}
-
-#az tps away
-execute as @s[scores={DialogueTrigger=76,TalkTime=16}] run tp @e[x=-709,y=99,z=-468,dy=3,type=pixelmon:npc_chatting] -504 141 1268
-execute as @s[scores={DialogueTrigger=76,TalkTime=16}] run particle cloud -709 100 -468 2 2 2 1 100
-
-tag @s[scores={DialogueTrigger=76,TalkTime=16..}] add Dialogue76
-scoreboard players set @s[tag=Dialogue76] TalkTime 0
-scoreboard players set @s[tag=Dialogue76] DialogueTrigger 0
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Shauna at Lumiose-Route 13 Connector
-#scoreboard players set @a[x=-509,y=101,z=-497,r=20,tag=!Dialogue77] DialogueTrigger 77
-
-tellraw @s[scores={DialogueTrigger=77,TalkTime=3}] {"text":"<Shauna> "},{"selector":"@s"},{"text":"! \u266a"}]
-
-#tp Shauna in
-execute as @s[scores={DialogueTrigger=77,TalkTime=6}] run tp @e[x=-504,y=145,z=1268,dy=3,type=pixelmon:npc_chatting] -503 101 -494
-execute as @s[scores={DialogueTrigger=77,TalkTime=6}] run particle cloud -503 101 -494 2 2 2 1 100
-
-tellraw @s[scores={DialogueTrigger=77,TalkTime=10}] {"text":"<Shauna> I ran after you like crazy when I spotted you up ahead!"}]
-tellraw @s[scores={DialogueTrigger=77,TalkTime=17}] {"text":"<Shauna> Know what? I heard the power's back on here in Lumiose City!"}]
-tellraw @s[scores={DialogueTrigger=77,TalkTime=25}] {"text":"<Shauna> Some really bad people were stealing electricity from the Kalos Power Plant..."}]
-tellraw @s[scores={DialogueTrigger=77,TalkTime=34}] {"text":"<Shauna> and then somebody came and stopped 'em!"}]
-tellraw @s[scores={DialogueTrigger=77,TalkTime=41}] {"text":"<Shauna> No one knows who, but they must be awesome! Who do you think it was?"}]
-tellraw @s[scores={DialogueTrigger=77,TalkTime=50}] {"text":"<Shauna> Whoa! NO WAY! You, "},{"selector":"@s"},{"text":"?!"}]
-tellraw @s[scores={DialogueTrigger=77,TalkTime=57}] {"text":"<Shauna> And get this! They're gonna open the tower!"}]
-tellraw @s[scores={DialogueTrigger=77,TalkTime=65}] {"text":"<Shauna> Let's go see it, "},{"selector":"@s"},{"text":"! It's Lumiose City's most famous sight!"}]
-tellraw @s[scores={DialogueTrigger=77,TalkTime=75}] {"text":"<Shauna> Straight into the center of city you'll run smack into Prism Tower! \u266a"}]
-
-#Tp Shauna out
-execute as @s[scores={DialogueTrigger=77,TalkTime=83}] run tp @e[x=-503,y=100,z=-494,dy=3,type=pixelmon:npc_chatting] -504 146 1268
-execute as @s[scores={DialogueTrigger=77,TalkTime=83}] run particle cloud -503 101 -494 2 2 2 1 100
-
-tag @s[scores={DialogueTrigger=77,TalkTime=83..}] add Dialogue77
-scoreboard players set @s[tag=Dialogue77] TalkTime 0
-scoreboard players set @s[tag=Dialogue77] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Prism Tower opening

@@ -482,16 +482,6 @@ scoreboard players set @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue36,tag=!
 
 
 
-
-#Route 76
-#Route 13 Az
-execute as @a[x=-709,y=100,z=-468,distance=..30,tag=!Dialogue76,tag=Dialogue75] run tp @e[x=-504,y=140,z=1268,dy=3,type=pixelmon:npc_chatting] -709 100 -468
-scoreboard players set @a[x=-719,y=99,z=-474,dx=7,dy=10,dz=12,scores={TalkTime=0},tag=!Dialogue76] DialogueTrigger 76
-
-#Dialogue 77
-#Lumiose City Shauna at Route 13 entrance
-scoreboard players set @a[x=-509,y=101,z=-497,distance=..20,scores={TalkTime=0},tag=!Dialogue77] DialogueTrigger 77
-
 #Dialogue 78
 #Prism Tower turning on
 scoreboard players set @a[x=-236,y=100,z=-418,dx=15,dy=10,dz=27,scores={TalkTime=0},tag=!Dialogue78] DialogueTrigger 78
