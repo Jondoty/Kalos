@@ -1,7 +1,7 @@
 {
 	"__comment": "Designed by Ozzy with Cubik Studio - https://cubik.studio",
 	"textures": {
-		"texture": "environment/xern"
+		"texture": "item/environment/xern"
 	},
 	"elements": [
 		{

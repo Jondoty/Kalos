@@ -1,0 +1,9 @@
+/data get entity @e[distance=..5,type=minecraft:armor_stand,limit=1]
+
+/kill @e[distance=..5,type=minecraft:armor_stand]
+
+/summon minecraft:armor_stand -477 102 1031 {Invisible:true,Invulnerable:true,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"iron_hoe",Count:1,components:{"minecraft:custom_model_data":53}}]}
+
+,NoGravity:1b
+
+/execute as @e[type=minecraft:armor_stand,distance=..4] at @s run tp @s ~ ~ ~ ~180 ~
