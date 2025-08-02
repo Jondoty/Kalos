@@ -1,0 +1,1847 @@
+{
+    "speakers": {
+        "npc": {
+            "name": "Cab Driver",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:gentleman",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "page1",
+            "speaker": "npc",
+            "lines": [
+                "Thanks for choosing Lumi Cab! The base fare's $710. What are you in the mood for?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Services",
+                        "value": "services",
+                        "action": "q.dialogue.set_page('services1');"
+                    },
+                    {
+                        "text": "Transportation",
+                        "value": "transportation",
+                        "action": "q.dialogue.set_page('transportation1');"
+                    },
+                    {
+                        "text": "Facilities",
+                        "value": "facilities",
+                        "action": "q.dialogue.set_page('facilities1');"
+                    },
+                    {
+                        "text": "More >>",
+                        "value": "more",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "Thanks for choosing Lumi Cab! The base fare's $710. What are you in the mood for?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Shopping",
+                        "value": "shopping",
+                        "action": "q.dialogue.set_page('shopping1');"
+                    },
+                    {
+                        "text": "Fine Dining",
+                        "value": "finedining",
+                        "action": "q.dialogue.set_page('dining1');"
+                    },
+                    {
+                        "text": "Cafes",
+                        "value": "cafes",
+                        "action": "q.dialogue.set_page('cafe1');"
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('page1');"
+                    },
+                    
+                    {
+                        "text": "No Thanks",
+                        "value": "nothanks",
+                        "action": "q.dialogue.set_page('leave');"
+                    }
+                ]
+            }
+        },
+
+
+        {
+            "id": "services1",
+            "speaker": "npc",
+            "lines": [
+                "Got it. And where are we headed?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "South Pokémon Center",
+                        "value": "southernpokemoncenter",
+                        "action": "q.dialogue.set_page('services3');"
+                    },
+                    {
+                        "text": "PR Video Studio",
+                        "value": "prvideostudio",
+                        "action": "q.dialogue.set_page('services4');"
+                    },
+                    {
+                        "text": "Friseur Furfrou",
+                        "value": "friseurfurfrou",
+                        "action": "q.dialogue.set_page('services5');"
+                    },
+                    {
+                        "text": "Coiffure Clips",
+                        "value": "coiffureclips",
+                        "action": "q.dialogue.set_page('services6');"
+                    },
+                    {
+                        "text": "<< Other Category",
+                        "value": "othercategory",
+                        "action": "q.dialogue.set_page('page1');"
+                    },
+                    {
+                        "text": "More Services >>",
+                        "value": "more",
+                        "action": "q.dialogue.set_page('services2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "services2",
+            "speaker": "npc",
+            "lines": [
+                "Got it. And where are we headed?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Loto-ID Center",
+                        "value": "lotoidcenter",
+                        "action": "q.dialogue.set_page('services7');"
+                    },
+                    {
+                        "text": "North Pokémon Center",
+                        "value": "northpokemoncenter",
+                        "action": "q.dialogue.set_page('services8');"
+                    },
+                    {
+                        "text": "Hotel Richissime",
+                        "value": "hotelrichissime",
+                        "action": "q.dialogue.set_page('services9');"
+                    },
+                    {
+                        "text": "Magenta Pokémon Center",
+                        "value": "magentapokemoncenter",
+                        "action": "q.dialogue.set_page('services10');"
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('services1');"
+                    }
+                ]
+            }
+        },
+
+
+        {
+            "id": "services3",
+            "speaker": "npc",
+            "lines": [
+                "That\u2019s gotta be the Pokémon Center that\u2019s on South Boulevard, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 37');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('services1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "services4",
+            "speaker": "npc",
+            "lines": [
+                "That\u2019s the place on South Boulevard where you can make Trainer PR Videos, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 38');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('services1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "services5",
+            "speaker": "npc",
+            "lines": [
+                "That\u2019s the shop on Vernal Avenue that\u2019ll trim and style your Pokémon\u2019s pelt, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 39');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('services1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "services6",
+            "speaker": "npc",
+            "lines": [
+                "That\u2019s the shop on South Boulevard where you can get your hair cut and dyed, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 40');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('services1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "services7",
+            "speaker": "npc",
+            "lines": [
+                "That\u2019s the shop where you can win big on Estival Avenue, isn\u2019t it?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 41');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('services1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "services8",
+            "speaker": "npc",
+            "lines": [
+                "That\u2019s gotta be the Pokémon Center that\u2019s on North Boulevard, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 42');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('services1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "services9",
+            "speaker": "npc",
+            "lines": [
+                "That\u2019s the one swanky-looking hotel up on North Boulevard, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 43');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('services1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "services10",
+            "speaker": "npc",
+            "lines": [
+                "That\u2019s the Pokémon Center near Magenta Plaza, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 44');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('services1');"
+                    }
+                ]
+            }
+        },
+
+
+
+
+
+
+        {
+            "id": "transportation1",
+            "speaker": "npc",
+            "lines": [
+                "Got it. And where are we headed?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Gate to Route 4",
+                        "value": "route4gate",
+                        "action": "q.dialogue.set_page('transportation3');"
+                    },
+                    {
+                        "text": "Gate to Route 5",
+                        "value": "route5gate",
+                        "action": "q.dialogue.set_page('transportation4');"
+                    },
+                    {
+                        "text": "Gate to Route 13",
+                        "value": "route13gate",
+                        "action": "q.dialogue.set_page('transportation5');"
+                    },
+                    {
+                        "text": "<< Other Category",
+                        "value": "othercategory",
+                        "action": "q.dialogue.set_page('page1');"
+                    },
+                    {
+                        "text": "More Transportation >>",
+                        "value": "more",
+                        "action": "q.dialogue.set_page('transportation2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "transportation2",
+            "speaker": "npc",
+            "lines": [
+                "Got it. And where are we headed?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Gate to Route 14",
+                        "value": "route14gate",
+                        "action": "q.dialogue.set_page('transportation6');"
+                    },
+                    {
+                        "text": "Gate to Route 16",
+                        "value": "route16gate",
+                        "action": "q.dialogue.set_page('transportation7');"
+                    },
+                    {
+                        "text": "Lumiose Station",
+                        "value": "lumiosestation",
+                        "action": "q.dialogue.set_page('transportation8');"
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('transportation1');"
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "transportation3",
+            "speaker": "npc",
+            "lines": [
+                "Sure, down on South Boulevard where Route 4 enters the city, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 45');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('transportation1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "transportation4",
+            "speaker": "npc",
+            "lines": [
+                "Sure, down on South Boulevard where Route 5 enters the city, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 46');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('transportation1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "transportation5",
+            "speaker": "npc",
+            "lines": [
+                "Sure, up on North Boulevard where Route 13 enters the city, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 47');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('transportation1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "transportation6",
+            "speaker": "npc",
+            "lines": [
+                "Sure, up on North Boulevard where Route 14 enters the city, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 48');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('transportation1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "transportation7",
+            "speaker": "npc",
+            "lines": [
+                "Sure, up on North Boulevard where Route 16 enters the city, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 49');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('transportation1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "transportation8",
+            "speaker": "npc",
+            "lines": [
+                "That\u2019s the train station where you can board the TMV trains--on North Boulevard, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 50');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('transportation1');"
+                    }
+                ]
+            }
+        },
+
+
+
+
+
+
+
+
+        {
+            "id": "facilities1",
+            "speaker": "npc",
+            "lines": [
+                "Got it. And where are we headed?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Pokémon Lab",
+                        "value": "pokemonlab",
+                        "action": "q.dialogue.set_page('facilities3');"
+                    },
+                    {
+                        "text": "Lumiose Press",
+                        "value": "lumiosepress",
+                        "action": "q.dialogue.set_page('facilities4');"
+                    },
+                    {
+                        "text": "Looker Bureau",
+                        "value": "lookerbureau",
+                        "action": "q.dialogue.set_page('facilities5');"
+                    },
+                    {
+                        "text": "<< Other Category",
+                        "value": "othercategory",
+                        "action": "q.dialogue.set_page('page1');"
+                    },
+                    {
+                        "text": "More Facilities >>",
+                        "value": "more",
+                        "action": "q.dialogue.set_page('facilities2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "facilities2",
+            "speaker": "npc",
+            "lines": [
+                "Got it. And where are we headed?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Lumiose Museum",
+                        "value": "lumiosemuseum",
+                        "action": "q.dialogue.set_page('facilities6');"
+                    },
+                    {
+                        "text": "Battle Institute",
+                        "value": "battleinstitute",
+                        "action": "q.dialogue.set_page('facilities7');"
+                    },
+                    {
+                        "text": "Prism Tower",
+                        "value": "prismtower",
+                        "action": "q.dialogue.set_page('facilities8');"
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('facilities1');"
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "facilities3",
+            "speaker": "npc",
+            "lines": [
+                "Yeah. Right. That research place down on South Boulevard, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 51');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('facilities1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "facilities4",
+            "speaker": "npc",
+            "lines": [
+                "I know it. It\u2019s that place where they print the books, right? On Estival Avenue?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 52');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('facilities1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "facilities5",
+            "speaker": "npc",
+            "lines": [
+                "I don\u2019t know much about it myself, but I can get you there, at least!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 53');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('facilities1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "facilities6",
+            "speaker": "npc",
+            "lines": [
+                "That place with all the pictures and stuff on North Boulevard, right? I know it well."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 54');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('facilities1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "facilities7",
+            "speaker": "npc",
+            "lines": [
+                "Sure, that\u2019s the place up on North Boulevard where you can do the Battle Tests, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 55');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('facilities1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "facilities8",
+            "speaker": "npc",
+            "lines": [
+                "Sure, you\u2019ve got to mean the Pokémon Gym that\u2019s smack in the middle of Centrico Plaza."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 56');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('facilities1');"
+                    }
+                ]
+            }
+        },
+
+
+
+        
+
+        {
+            "id": "shopping1",
+            "speaker": "npc",
+            "lines": [
+                "Got it. And where are we headed?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Boutique Couture",
+                        "value": "boutiquecouture",
+                        "action": "q.dialogue.set_page('shopping3');"
+                    },
+                    {
+                        "text": "Herboriste",
+                        "value": "herbosite",
+                        "action": "q.dialogue.set_page('shopping4');"
+                    },
+                    {
+                        "text": "Stone Emporium",
+                        "value": "stoneemporium",
+                        "action": "q.dialogue.set_page('shopping5');"
+                    },
+                    {
+                        "text": "Poké Ball Boutique",
+                        "value": "pokeballboutique",
+                        "action": "q.dialogue.set_page('shopping6');"
+                    },
+                    {
+                        "text": "<< Other Category",
+                        "value": "othercategory",
+                        "action": "q.dialogue.set_page('page1');"
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "shopping3",
+            "speaker": "npc",
+            "lines": [
+                "It\u2019s that fancy brand-name shop that\u2019s on Vernal Avenue, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 61');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('shopping1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "shopping4",
+            "speaker": "npc",
+            "lines": [
+                "It\u2019s that place on Vernal Avenue that sells medicines and stuff, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 58');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('shopping1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "shopping5",
+            "speaker": "npc",
+            "lines": [
+                "Isn\u2019t that the shop on Vernal Avenue that sells rocks or something?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 59');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('shopping1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "shopping6",
+            "speaker": "npc",
+            "lines": [
+                "It\u2019s that place on Autumnal Avenue where they only sell Poké Balls, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 60');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('shopping1');"
+                    }
+                ]
+            }
+        },
+
+
+
+        {
+            "id": "dining1",
+            "speaker": "npc",
+            "lines": [
+                "Got it. And where are we headed?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Restaurant Le Nah",
+                        "value": "restaurantlenah",
+                        "action": "q.dialogue.set_page('dining3');"
+                    },
+                    {
+                        "text": "Galette Stand",
+                        "value": "galettestand",
+                        "action": "q.dialogue.set_page('dining4');"
+                    },
+                    {
+                        "text": "Juice Shoppe",
+                        "value": "juiceshoppe",
+                        "action": "q.dialogue.set_page('dining5');"
+                    },
+                    {
+                        "text": "<< Other Category",
+                        "value": "othercategory",
+                        "action": "q.dialogue.set_page('page1');"
+                    },
+                    {
+                        "text": "More Dining >>",
+                        "value": "more",
+                        "action": "q.dialogue.set_page('dining2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "dining2",
+            "speaker": "npc",
+            "lines": [
+                "Got it. And where are we headed?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Restaurant Le Yeah",
+                        "value": "restaurantleyeah",
+                        "action": "q.dialogue.set_page('dining6');"
+                    },
+                    {
+                        "text": "Restaurant Le Wow",
+                        "value": "restaurantlewow",
+                        "action": "q.dialogue.set_page('dining7');"
+                    },
+                    {
+                        "text": "Sushi High Roller",
+                        "value": "sushihighroller",
+                        "action": "q.dialogue.set_page('dining8');"
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('dining1');"
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "dining3",
+            "speaker": "npc",
+            "lines": [
+                "It\u2019s that average place with the average food on South Boulevard, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 61');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('dining1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "dining4",
+            "speaker": "npc",
+            "lines": [
+                "Sure, sure, it\u2019s that stand on North Boulevard where they sell fresh galettes, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 62');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('dining1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "dining5",
+            "speaker": "npc",
+            "lines": [
+                "Yeah, that\u2019s the shop where you can get fresh juice to drink. On Autumnal Avenue, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 63');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('dining1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "dining6",
+            "speaker": "npc",
+            "lines": [
+                "It\u2019s that expensive place on Autumnal Avenue, right? But the food sure is good."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 64');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('dining1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "dining7",
+            "speaker": "npc",
+            "lines": [
+                "It\u2019s the best restaurant in town, you know! On Hibernal Avenue, right? Sure, I know it."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 65');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('dining1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "dining8",
+            "speaker": "npc",
+            "lines": [
+                "Haven\u2019t you got to be a member or something to eat there? I think I know where it is, at least."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 66');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('dining1');"
+                    }
+                ]
+            }
+        },
+
+
+        {
+            "id": "cafe1",
+            "speaker": "npc",
+            "lines": [
+                "Got it. And where are we headed?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Café Cyclone",
+                        "value": "cafecyclone",
+                        "action": "q.dialogue.set_page('cafe4');"
+                    },
+                    {
+                        "text": "Café Introversion",
+                        "value": "cafeintroversion",
+                        "action": "q.dialogue.set_page('cafe5');"
+                    },
+                    {
+                        "text": "Café Classe",
+                        "value": "cafeclasse",
+                        "action": "q.dialogue.set_page('cafe6');"
+                    },
+                    {
+                        "text": "Café Woof",
+                        "value": "cafewoof",
+                        "action": "q.dialogue.set_page('cafe7');"
+                    },
+                    {
+                        "text": "<< Other Category",
+                        "value": "othercategory",
+                        "action": "q.dialogue.set_page('page1');"
+                    },
+                    {
+                        "text": "More Cafes >>",
+                        "value": "morecafes",
+                        "action": "q.dialogue.set_page('cafe2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cafe2",
+            "speaker": "npc",
+            "lines": [
+                "Got it. And where are we headed?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Café Soleil",
+                        "value": "cafesoleil",
+                        "action": "q.dialogue.set_page('cafe8');"
+                    },
+                    {
+                        "text": "Shutterbug Café",
+                        "value": "shutterbugcafe",
+                        "action": "q.dialogue.set_page('cafe9');"
+                    },
+                    {
+                        "text": "Café Rouleau",
+                        "value": "caferouleau",
+                        "action": "q.dialogue.set_page('cafe10');"
+                    },
+                    {
+                        "text": "Café Gallant",
+                        "value": "cafegallant",
+                        "action": "q.dialogue.set_page('cafe11');"
+                    },
+                    {
+                        "text": "Café Triste",
+                        "value": "cafetriste",
+                        "action": "q.dialogue.set_page('cafe12');"
+                    },
+                    {
+                        "text": "Lysandre Café",
+                        "value": "lysandrecafe",
+                        "action": "q.dialogue.set_page('cafe13');"
+                    },
+                    {
+                        "text": "More Cafes >>",
+                        "value": "more",
+                        "action": "q.dialogue.set_page('cafe3');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "cafe3",
+            "speaker": "npc",
+            "lines": [
+                "Got it. And where are we headed?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Café Pokémon-Amie",
+                        "value": "cafepokemonamie",
+                        "action": "q.dialogue.set_page('cafe14');"
+                    },
+                    {
+                        "text": "Café Ultimo",
+                        "value": "cafeultimo",
+                        "action": "q.dialogue.set_page('cafe15');"
+                    },
+                    {
+                        "text": "Café Kizuna",
+                        "value": "cafekizuna",
+                        "action": "q.dialogue.set_page('cafe16');"
+                    },
+                    {
+                        "text": "Café Action!",
+                        "value": "cafeaction",
+                        "action": "q.dialogue.set_page('cafe17');"
+                    },
+                    {
+                        "text": "Café Bataille",
+                        "value": "cafebataille",
+                        "action": "q.dialogue.set_page('cafe18');"
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('cafe1');"
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "cafe4",
+            "speaker": "npc",
+            "lines": [
+                "That kinda weird café near Vert Plaza, right? OK then..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 67');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('cafe1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cafe5",
+            "speaker": "npc",
+            "lines": [
+                "It\u2019s the place on South Boulevard where all those communications nuts hang out, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 68');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('cafe1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cafe6",
+            "speaker": "npc",
+            "lines": [
+                "That\u2019s the one on Vernal Avenue where all the fashionistas hang out, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 69');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('cafe1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cafe7",
+            "speaker": "npc",
+            "lines": [
+                "That\u2019s the place on Vernal Avenue where all the Furfrou-loving folks go, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 70');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('cafe1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cafe8",
+            "speaker": "npc",
+            "lines": [
+                "That\u2019s the totally normal café on South Boulevard, isn\u2019t it?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 71');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('cafe1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cafe9",
+            "speaker": "npc",
+            "lines": [
+                "That\u2019s the one those crazy camera fanatics go to, down on South Boulevard, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 72');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('cafe1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cafe10",
+            "speaker": "npc",
+            "lines": [
+                "Sure, sure. Where all the Roller Skaters hang out on Estival Avenue, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 73');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('cafe1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cafe11",
+            "speaker": "npc",
+            "lines": [
+                "It\u2019s on Estival Avenue, right? I don\u2019t really get it, but OK..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 74');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('cafe1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cafe12",
+            "speaker": "npc",
+            "lines": [
+                "That one on North Boulevard? The one that looks like it\u2019s going out of business?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 75');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('cafe1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cafe13",
+            "speaker": "npc",
+            "lines": [
+                "Yeah, I feel like there was some café like that near Magenta Plaza, huh?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 76');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('cafe1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cafe14",
+            "speaker": "npc",
+            "lines": [
+                "I know it. It\u2019s on Autumnal Avenue, yeah? And all the Poké Fans like to hang out there?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 77');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('cafe1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cafe15",
+            "speaker": "npc",
+            "lines": [
+                "Right. That place were all the S.T. meatheads hang out on North Boulevard, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 78');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('cafe1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cafe16",
+            "speaker": "npc",
+            "lines": [
+                "That gloomy café on Hibernal Avenue, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 79');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('cafe1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cafe17",
+            "speaker": "npc",
+            "lines": [
+                "Isn\u2019t that the café on North Boulevard where the promo prima donnas hang?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 80');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('cafe1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cafe18",
+            "speaker": "npc",
+            "lines": [
+                "Yeah, it\u2019s the one on North Boulevard where the battle fanatics get together, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Travel",
+                        "value": "travel",
+                        "action": [
+                            
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 81');",
+                            "q.dialogue.set_page('travelend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('cafe1');"
+                    }
+                ]
+            }
+        },
+
+
+
+
+        {
+            "id": "leave",
+            "speaker": "npc",
+            "lines": [
+                "Call us anytime!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "travelend",
+            "speaker": "npc",
+            "lines": [
+                "Then here we go!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

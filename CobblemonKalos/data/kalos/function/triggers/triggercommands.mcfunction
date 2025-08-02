@@ -8,7 +8,69 @@
 
 
 
+#37-81, Lumiose Taxis Traveling
+execute as @s[scores={TriggerCommand=37..81}] run effect give @s minecraft:blindness 5 1 true
 
+#Service Destinations
+execute as @s[scores={TriggerCommand=37}] run tp @s -230 101 -120 -160 -16
+execute as @s[scores={TriggerCommand=38}] run tp @s -244 101 -84 20 -18
+execute as @s[scores={TriggerCommand=39}] run tp @s -194 101 -215 90 -7
+execute as @s[scores={TriggerCommand=40}] run tp @s -371 101 -190 -130 -15
+execute as @s[scores={TriggerCommand=41}] run tp @s -357 101 -320 -24 -5
+execute as @s[scores={TriggerCommand=42}] run tp @s -146 101 -662 16 3
+execute as @s[scores={TriggerCommand=43}] run tp @s -13 101 -662 -158 0
+execute as @s[scores={TriggerCommand=44}] run tp @s -257 101 -409 14 -10
+
+#Transportation Destinations
+execute as @s[scores={TriggerCommand=45}] run tp @s 13 101 -116 -37 -23
+execute as @s[scores={TriggerCommand=46}] run tp @s -376 101 -119 42 -20
+execute as @s[scores={TriggerCommand=47}] run tp @s -508 101 -494 118 -24
+execute as @s[scores={TriggerCommand=48}] run tp @s -183 101 -744 180 -36
+execute as @s[scores={TriggerCommand=49}] run tp @s 153 101 -500 -109 -24
+execute as @s[scores={TriggerCommand=50}] run tp @s 129 101 -380 -90 -21
+
+#Facilities Destinations
+execute as @s[scores={TriggerCommand=51}] run tp @s -181 101 -66 0 -19
+execute as @s[scores={TriggerCommand=52}] run tp @s -325 101 -330 -21 -6
+execute as @s[scores={TriggerCommand=53}] run tp @s -181 101 -634 90 -10
+execute as @s[scores={TriggerCommand=54}] run tp @s -107 101 -691 -158 -3
+execute as @s[scores={TriggerCommand=55}] run tp @s 131 101 -451 -90 -5
+execute as @s[scores={TriggerCommand=56}] run tp @s -181 102 -339 180 -23
+
+#Shopping Destinations
+execute as @s[scores={TriggerCommand=57}] run tp @s -166 101 -188 -90 -12
+execute as @s[scores={TriggerCommand=58}] run tp @s -195 101 -187 90 -11
+execute as @s[scores={TriggerCommand=59}] run tp @s -195 101 -166 90 -11
+execute as @s[scores={TriggerCommand=60}] run tp @s -286 101 -558 -132 -7
+
+#Dining Destinations
+execute as @s[scores={TriggerCommand=61}] run tp @s 38 101 -229 126 -13
+execute as @s[scores={TriggerCommand=62}] run tp @s -375 101 -654 141 2
+execute as @s[scores={TriggerCommand=63}] run tp @s -260 101 -524 -128 -6
+execute as @s[scores={TriggerCommand=64}] run tp @s -273 101 -543 -127 -11
+execute as @s[scores={TriggerCommand=65}] run tp @s -91 101 -535 125 -10
+execute as @s[scores={TriggerCommand=66}] run tp @s -180 101 -599 -90 -12
+
+#Cafes
+execute as @s[scores={TriggerCommand=67}] run tp @s -61 101 -225 -130 -9
+execute as @s[scores={TriggerCommand=68}] run tp @s -85 101 -135 150 -13
+execute as @s[scores={TriggerCommand=69}] run tp @s -166 101 -217 -90 -8
+execute as @s[scores={TriggerCommand=70}] run tp @s -195 101 -236 90 -12
+execute as @s[scores={TriggerCommand=71}] run tp @s -395 101 -220 -125 -9
+execute as @s[scores={TriggerCommand=72}] run tp @s -423 101 -260 -126 -12
+execute as @s[scores={TriggerCommand=73}] run tp @s -369 101 -339 156 -11
+execute as @s[scores={TriggerCommand=74}] run tp @s -331 101 -355 162 -6
+
+#Cafes
+execute as @s[scores={TriggerCommand=75}] run tp @s -405 101 -548 -57 -14
+execute as @s[scores={TriggerCommand=76}] run tp @s -294 101 -475 146 -11
+execute as @s[scores={TriggerCommand=77}] run tp @s -317 101 -558 50 -7
+execute as @s[scores={TriggerCommand=78}] run tp @s 18 101 -580 53 2
+execute as @s[scores={TriggerCommand=79}] run tp @s -65 101 -526 -58 -12
+execute as @s[scores={TriggerCommand=80}] run tp @s 72 101 -502 52 0
+execute as @s[scores={TriggerCommand=81}] run tp @s 92 101 -399 90 0
+
+execute as @s[scores={TriggerCommand=37..81}] run opendialogue taxi_traveled @s
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
