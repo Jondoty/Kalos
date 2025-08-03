@@ -101,10 +101,10 @@ execute as @s[x=-1770,y=84,z=-898,distance=..30,tag=Dialogue61] run tp @e[x=-177
 tellraw @s[x=-1705,y=96,z=-1202,dx=13,dy=10,dz=10,tag=!Korrina] {"text":"<Tower Guard> Only those who have been approved may climb the Tower of Mastery!"}
 tp @s[x=-1705,y=96,z=-1202,dx=13,dy=10,dz=10,tag=!Korrina] -1692 93 -1207
 
-##Route 14 Defeat Serena to continue
-#tellraw @s[x=-193,y=99,z=-933,dx=18,dy=10,dz=11,tag=!Dialogue81] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Come on! Let's battle."}]
-#execute as @s[x=-193,y=99,z=-933,dx=18,dy=10,dz=11,tag=!Dialogue81] at @s run tp @s ~ ~ ~10
-#
+#Route 14 Defeat Serena to continue
+tellraw @s[x=-193,y=99,z=-933,dx=18,dy=10,dz=11,tag=!Dialogue81] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Over here!"}]
+execute as @s[x=-193,y=99,z=-933,dx=18,dy=10,dz=11,tag=!Dialogue81] at @s run tp @s ~ ~ ~10
+
 ##Route 14 visit Scary House
 #tellraw @s[x=-195,y=99,z=-1243,dx=23,dy=5,dz=15,tag=!Dialogue84] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> C'mon! This way!"}]
 #execute as @s[x=-195,y=99,z=-1243,dx=23,dy=5,dz=15,tag=!Dialogue84] at @s run tp @s ~ ~ ~10

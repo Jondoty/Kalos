@@ -291,7 +291,11 @@ execute as @s[x=-295,y=120,z=451,distance=..6,tag=Clemont,tag=!Dialogue79] unles
 execute as @s[x=-295,y=120,z=451,distance=..6,tag=Clemont,tag=!Dialogue79] unless entity @e[x=-293,y=121,z=433,dy=3,type=cobblemon:npc] run npcspawnat -293 121 433 lysandre_generic
 execute as @s[x=-295,y=121,z=433,distance=..7,tag=Clemont,tag=!Dialogue79] run opendialogue sycamorelydandre_dialogue79 @s
 
-
+#Route 14 Friends Pre-Battle
+execute as @s[x=-194,y=99,z=-899,dx=30,dy=5,dz=53,tag=!Dialogue81] unless entity @e[x=-171,y=100,z=-885,dy=3,type=cobblemon:npc] run npcspawnat -171 100 -885 trevor_generic
+execute as @s[x=-194,y=99,z=-899,dx=30,dy=5,dz=53,scores={StarterPick=1},tag=!Dialogue81] unless entity @e[x=-174,y=100,z=-887,dy=3,type=cobblemon:npc] run npcspawnat -174 100 -887 route14_serena1
+execute as @s[x=-194,y=99,z=-899,dx=30,dy=5,dz=53,scores={StarterPick=2},tag=!Dialogue81] unless entity @e[x=-174,y=100,z=-887,dy=3,type=cobblemon:npc] run npcspawnat -174 100 -887 route14_serena2
+execute as @s[x=-194,y=99,z=-899,dx=30,dy=5,dz=53,scores={StarterPick=3},tag=!Dialogue81] unless entity @e[x=-174,y=100,z=-887,dy=3,type=cobblemon:npc] run npcspawnat -174 100 -887 route14_serena3
 
 
 

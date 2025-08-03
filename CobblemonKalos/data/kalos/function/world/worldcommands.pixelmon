@@ -480,19 +480,6 @@ scoreboard players set @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue36,tag=!
 
 
 
-
-
-#Dialogue 78
-#Prism Tower turning on
-scoreboard players set @a[x=-236,y=100,z=-418,dx=15,dy=10,dz=27,scores={TalkTime=0},tag=!Dialogue78] DialogueTrigger 78
-
-#Dialogue 80
-#Route 14 South Friends
-scoreboard players set @a[x=-194,y=99,z=-899,dx=30,dy=5,dz=53,scores={TalkTime=0},tag=!Dialogue80] DialogueTrigger 80
-execute as @a[x=-175,y=100,z=-884,distance=..15,tag=Dialogue80,scores={TalkTime=0,StarterPick=1},tag=!Dialogue81] run tp @e[x=-504,y=155,z=1270,dy=3,type=pixelmon:npc_trainer] -174 100 -887
-execute as @a[x=-175,y=100,z=-884,distance=..15,tag=Dialogue80,scores={TalkTime=0,StarterPick=2},tag=!Dialogue81] run tp @e[x=-504,y=155,z=1272,dy=3,type=pixelmon:npc_trainer] -174 100 -887
-execute as @a[x=-175,y=100,z=-884,distance=..15,tag=Dialogue80,scores={TalkTime=0,StarterPick=3},tag=!Dialogue81] run tp @e[x=-504,y=155,z=1274,dy=3,type=pixelmon:npc_trainer] -174 100 -887
-
 #Dialogue 82
 #Scary House opening
 scoreboard players set @a[x=-231,y=100,z=-1217,distance=..15,scores={TalkTime=0},tag=!Dialogue82] DialogueTrigger 82
