@@ -480,10 +480,6 @@ scoreboard players set @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue36,tag=!
 
 
 
-#Dialogue 82
-#Scary House opening
-scoreboard players set @a[x=-231,y=100,z=-1217,distance=..15,scores={TalkTime=0},tag=!Dialogue82] DialogueTrigger 82
-
 #Dialogue 85
 #Laverre City Gym ext Shauna and Trevor
 execute as @a[x=-93,y=100,z=-1458,distance=..10,scores={TalkTime=0},tag=Valerie,tag=!Dialogue85] run scoreboard players set @s DialogueTrigger 85

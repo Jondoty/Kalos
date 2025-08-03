@@ -105,10 +105,10 @@ tp @s[x=-1705,y=96,z=-1202,dx=13,dy=10,dz=10,tag=!Korrina] -1692 93 -1207
 tellraw @s[x=-193,y=99,z=-933,dx=18,dy=10,dz=11,tag=!Dialogue81] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Over here!"}]
 execute as @s[x=-193,y=99,z=-933,dx=18,dy=10,dz=11,tag=!Dialogue81] at @s run tp @s ~ ~ ~10
 
-##Route 14 visit Scary House
-#tellraw @s[x=-195,y=99,z=-1243,dx=23,dy=5,dz=15,tag=!Dialogue84] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> C'mon! This way!"}]
-#execute as @s[x=-195,y=99,z=-1243,dx=23,dy=5,dz=15,tag=!Dialogue84] at @s run tp @s ~ ~ ~10
-#
+#Route 14 visit Scary House
+tellraw @s[x=-195,y=99,z=-1243,dx=23,dy=5,dz=15,tag=!Dialogue84] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> C'mon! This way!"}]
+execute as @s[x=-195,y=99,z=-1243,dx=23,dy=5,dz=15,tag=!Dialogue84] at @s run tp @s ~ ~ ~10
+
 ##Poke Ball Interior Flare Blocks
 #execute as @s[x=-136,y=94,z=-1927,dx=4,dy=5,dz=8,tag=!Dialogue90] at @s run tp @s ~ ~ ~8
 #execute as @s[x=-134,y=104,z=-1998,dx=6,dy=5,dz=5,tag=!Dialogue90] at @s run tp @s ~-7 ~ ~

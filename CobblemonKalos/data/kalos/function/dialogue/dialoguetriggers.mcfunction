@@ -297,13 +297,23 @@ execute as @s[x=-194,y=99,z=-899,dx=30,dy=5,dz=53,scores={StarterPick=1},tag=!Di
 execute as @s[x=-194,y=99,z=-899,dx=30,dy=5,dz=53,scores={StarterPick=2},tag=!Dialogue81] unless entity @e[x=-174,y=100,z=-887,dy=3,type=cobblemon:npc] run npcspawnat -174 100 -887 route14_serena2
 execute as @s[x=-194,y=99,z=-899,dx=30,dy=5,dz=53,scores={StarterPick=3},tag=!Dialogue81] unless entity @e[x=-174,y=100,z=-887,dy=3,type=cobblemon:npc] run npcspawnat -174 100 -887 route14_serena3
 
+#Route 14 Friends outside Scary House
+execute as @s[x=-204,y=100,z=-1207,distance=..10,tag=!Dialogue82] unless entity @e[x=-231,y=100,z=-1220,dy=3,type=cobblemon:npc] run npcspawnat -231 100 -1220 shauna_generic
+execute as @s[x=-204,y=100,z=-1207,distance=..10,tag=!Dialogue82] unless entity @e[x=-229,y=100,z=-1214,dy=3,type=cobblemon:npc] run npcspawnat -229 100 -1214 trevor_generic
+execute as @s[x=-204,y=100,z=-1207,distance=..10,tag=!Dialogue82] unless entity @e[x=-234,y=100,z=-1214,dy=3,type=cobblemon:npc] run npcspawnat -234 100 -1214 tierno_generic
+execute as @s[x=-231,y=100,z=-1217,distance=..8,tag=!Dialogue82] run opendialogue scaryhouse_dialogue82 @s
 
+#Inside Scary House
+execute as @s[x=-233,y=100,z=-1225,distance=..10,tag=!Dialogue83] unless entity @e[x=-229,y=88,z=-1238,dy=3,type=cobblemon:npc] run npcspawnat -229 88 -1238 shauna_generic
+execute as @s[x=-233,y=100,z=-1225,distance=..10,tag=!Dialogue83] unless entity @e[x=-232,y=88,z=-1238,dy=3,type=cobblemon:npc] run npcspawnat -232 88 -1238 trevor_generic
+execute as @s[x=-233,y=100,z=-1225,distance=..10,tag=!Dialogue83] unless entity @e[x=-233,y=88,z=-1236,dy=3,type=cobblemon:npc] run npcspawnat -233 88 -1236 tierno_generic
+execute as @s[x=-230,y=88,z=-1242,distance=..9,tag=!Dialogue83] run opendialogue scaryhouse_dialogue83 @s
 
-
-
-
-
-
+#Scary House Followup outside
+execute as @s[x=-231,y=87,z=-1225,distance=..10,tag=Dialogue83,tag=!Dialogue84] unless entity @e[x=-231,y=100,z=-1220,dy=3,type=cobblemon:npc] run npcspawnat -231 100 -1220 shauna_generic
+execute as @s[x=-231,y=87,z=-1225,distance=..10,tag=Dialogue83,tag=!Dialogue84] unless entity @e[x=-229,y=100,z=-1214,dy=3,type=cobblemon:npc] run npcspawnat -229 100 -1214 trevor_generic
+execute as @s[x=-231,y=87,z=-1225,distance=..10,tag=Dialogue83,tag=!Dialogue84] unless entity @e[x=-234,y=100,z=-1214,dy=3,type=cobblemon:npc] run npcspawnat -234 100 -1214 tierno_generic
+execute as @s[x=-231,y=100,z=-1218,distance=..6,tag=Dialogue83,tag=!Dialogue84] run opendialogue scaryhouse_dialogue84 @s
 
 
 #
