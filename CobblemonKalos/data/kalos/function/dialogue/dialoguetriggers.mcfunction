@@ -278,6 +278,24 @@ execute as @s[x=-719,y=99,z=-474,dx=7,dy=10,dz=12,tag=Dialogue75,tag=!Dialogue76
 #Lumiose City Shauna from Route 13 gate
 execute as @a[x=-509,y=101,z=-497,distance=..20,tag=!Dialogue77] run opendialogue shauna_dialogue77 @s
 
+#Lumiose City Clemong, Bonnie and Shauna working on tower
+execute if entity @s[x=-254,y=101,z=-413,distance=..15,tag=!Dialogue78] run setblock -181 172 -390 iron_block 
+execute if entity @s[x=-254,y=101,z=-413,distance=..15,tag=!Dialogue78] as @e[x=-181,y=114,z=-390,distance=..30,type=armor_stand,nbt={ArmorItems:[{},{},{},{components:{"minecraft:custom_model_data":34},count:1,id:"minecraft:iron_hoe"}]}] run data merge entity @s {ArmorItems:[{},{},{},{components:{"minecraft:custom_model_data":52},count:1,id:"minecraft:iron_hoe"}]}
+execute as @s[x=-254,y=101,z=-413,distance=..15,tag=!Dialogue78] unless entity @e[x=-226,y=102,z=-395,dy=3,type=cobblemon:npc] run npcspawnat -226 102 -395 shauna_generic
+execute as @s[x=-254,y=101,z=-413,distance=..15,tag=!Dialogue78] unless entity @e[x=-214,y=102,z=-392,dy=3,type=cobblemon:npc] run npcspawnat -214 102 -392 clemont_generic
+execute as @s[x=-254,y=101,z=-413,distance=..15,tag=!Dialogue78] unless entity @e[x=-214,y=102,z=-388,dy=3,type=cobblemon:npc] run npcspawnat -214 102 -388 bonnie_generic
+execute as @s[x=-226,y=102,z=-395,distance=..10,tag=!Dialogue78] run opendialogue lumiosetower_dialogue78 @s
+
+#Lumiose Lysandre Labs after beating Clemont
+execute as @s[x=-295,y=120,z=451,distance=..6,tag=Clemont,tag=!Dialogue79] unless entity @e[x=-296,y=121,z=433,dy=3,type=cobblemon:npc] run npcspawnat -296 121 433 sycamore_generic
+execute as @s[x=-295,y=120,z=451,distance=..6,tag=Clemont,tag=!Dialogue79] unless entity @e[x=-293,y=121,z=433,dy=3,type=cobblemon:npc] run npcspawnat -293 121 433 lysandre_generic
+execute as @s[x=-295,y=121,z=433,distance=..7,tag=Clemont,tag=!Dialogue79] run opendialogue sycamorelydandre_dialogue79 @s
+
+
+
+
+
+
 
 
 
