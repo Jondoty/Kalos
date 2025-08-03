@@ -30,6 +30,12 @@ execute as @s[x=-271,y=99,z=64,dx=36,dy=50,dz=37] unless entity @s[scores={Music
 execute as @s[x=-271,y=99,z=64,dx=36,dy=50,dz=37] unless entity @s[scores={MusicCheck=63}] run scoreboard players set @s MusicCheck 63
 execute as @s[x=-271,y=99,z=64,dx=36,dy=50,dz=37] run tag @s add Indoors
 
+#Scary House - 61
+execute as @s[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28] unless entity @s[scores={MusicCheck=61}] run title @s actionbar {"text":"Scary House"}
+execute as @s[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28] unless entity @s[scores={MusicCheck=61}] run function kalos:triggers/stopsound
+execute as @s[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28] unless entity @s[scores={MusicCheck=61}] run scoreboard players set @s MusicCheck 61
+execute as @s[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28] run tag @s add Indoors
+
 #---------------------------------------------------------------------------------------
 
 #Vaniville Town - 1
@@ -215,12 +221,6 @@ execute as @s[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83] unless entity @s[scores={M
 execute as @s[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83] unless entity @s[scores={MusicCheck=28}] run scoreboard players set @s MusicCheck 28
 
 
-#Scary House - 61
-execute as @s[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28] unless entity @s[scores={MusicCheck=61}] run title @s actionbar {"text":"Scary House"}
-execute as @s[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28] unless entity @s[scores={MusicCheck=61}] run function kalos:triggers/stopsound
-execute as @s[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28] unless entity @s[scores={MusicCheck=61}] run scoreboard players set @s MusicCheck 61
-
-
 #Poké Ball Factory - 29
 execute as @s[x=-342,y=0,z=-2044,dx=431,dy=256,dz=466] unless entity @s[scores={MusicCheck=29..30}] run title @s actionbar {"text":"Poké Ball Factory"}
 execute as @s[x=-342,y=0,z=-2044,dx=431,dy=256,dz=466] unless entity @s[scores={MusicCheck=29..30}] run function kalos:triggers/stopsound
@@ -377,9 +377,9 @@ execute as @s[x=-973,y=0,z=-871,dx=371,dy=256,dz=651,tag=!Indoors] unless entity
 
 
 #Route 14 - 51
-execute as @s[x=-342,y=0,z=-1302,dx=432,dy=256,dz=508] unless entity @s[scores={MusicCheck=51}] run title @s actionbar {"text":"Route 14"}
-execute as @s[x=-342,y=0,z=-1302,dx=432,dy=256,dz=508] unless entity @s[scores={MusicCheck=51}] run function kalos:triggers/stopsound
-execute as @s[x=-342,y=0,z=-1302,dx=432,dy=256,dz=508] unless entity @s[scores={MusicCheck=51}] run scoreboard players set @s MusicCheck 51
+execute as @s[x=-342,y=0,z=-1302,dx=432,dy=256,dz=508,tag=!Indoors] unless entity @s[scores={MusicCheck=51}] run title @s actionbar {"text":"Route 14"}
+execute as @s[x=-342,y=0,z=-1302,dx=432,dy=256,dz=508,tag=!Indoors] unless entity @s[scores={MusicCheck=51}] run function kalos:triggers/stopsound
+execute as @s[x=-342,y=0,z=-1302,dx=432,dy=256,dz=508,tag=!Indoors] unless entity @s[scores={MusicCheck=51}] run scoreboard players set @s MusicCheck 51
 
 
 #Route 15 - 52
