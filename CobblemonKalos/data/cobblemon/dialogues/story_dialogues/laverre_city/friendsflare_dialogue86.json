@@ -1,0 +1,310 @@
+{
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');",
+        "c.npc.set_chatting();"
+    ],
+    "speakers": {
+        "serena": {
+            "name": "Serena",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:serena",
+                "isLeftSide": true
+            }
+        },
+        "shauna": {
+            "name": "Shauna",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:shauna",
+                "isLeftSide": false
+            }
+        },
+        "trevor": {
+            "name": "Trevor",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:trevor",
+                "isLeftSide": false
+            }
+        },
+        "tierno": {
+            "name": "Tierno",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:tierno",
+                "isLeftSide": true
+            }
+        },
+        "flare": {
+            "name": "Team Flare Grunt",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:teamflaregruntm",
+                "isLeftSide": false
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "trevor",
+            "lines": [
+                "How vexing. He won't let us inside the Poké Ball Factory."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "shauna",
+            "lines": [
+                "He'll let us in. You'll see! I'll go talk to him again!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud -172 117 -1642 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-172,y=116,z=-1642,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.dialogue.set_page('page3');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "trevor",
+            "lines": [
+                "Shauna! Wait!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud -172 117 -1645 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-172,y=116,z=-1645,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('particle cloud -169 117 -1641 2 2 2 1 100');",
+                            "q.run_command('particle cloud -169 117 -1638 2 2 2 1 100');",
+                            "q.run_command('execute unless entity @e[x=-169,y=117,z=-1641,dy=3,type=cobblemon:npc] run npcspawnat -169 117 -1641 tierno_generic');",
+                            "q.run_command('execute unless entity @e[x=-169,y=117,z=-1638,dy=3,type=cobblemon:npc] run npcspawnat -169 117 -1638 serena_generic');",
+                            "q.dialogue.set_page('page4');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "tierno",
+            "lines": [
+                "Did Shaunee and Trevs go running off just now? What's the deal?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page5');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "serena",
+            "lines": [
+                "We were supposed to meet here, too... I wonder what the matter is."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page6');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "shauna",
+            "lines": [
+                "Eeeeek!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page7');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "trevor",
+            "lines": [
+                "Shaunee, wait!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page8');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "flare",
+            "lines": [
+                "Stop!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page9');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page9",
+            "speaker": "tierno",
+            "lines": [
+                "Huh? Hm? What's going on?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page10');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page10",
+            "speaker": "tierno",
+            "lines": [
+                "W-well, I guess I'll go help them!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud -169 117 -1638 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-169,y=116,z=-1641,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.dialogue.set_page('page11');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page11",
+            "speaker": "serena",
+            "lines": [
+                "Team Flare? There might be something happening inside."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page12');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page12",
+            "speaker": "serena",
+            "lines": [
+                "Let's check it out while the guard is gone!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('particle cloud -169 117 -1641 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-158,y=124,z=-1771,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tp @e[x=-169,y=116,z=-1638,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue86');"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

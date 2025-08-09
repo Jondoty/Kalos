@@ -480,19 +480,7 @@ scoreboard players set @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue36,tag=!
 
 
 
-#Dialogue 85
-#Laverre City Gym ext Shauna and Trevor
-execute as @a[x=-93,y=100,z=-1458,distance=..10,scores={TalkTime=0},tag=Valerie,tag=!Dialogue85] run scoreboard players set @s DialogueTrigger 85
 
-#Dialogue 86
-#Factory Stairs grunt chasing friends
-execute as @a[x=-172,y=117,z=-1643,distance=..5,scores={TalkTime=0},tag=Valerie,tag=!Dialogue86] run scoreboard players set @s DialogueTrigger 86
-execute as @a[x=-172,y=117,z=-1643,distance=..30,tag=Valerie,scores={TalkTime=0},tag=!Dialogue86] run tp @e[x=-504,y=170,z=1268,dy=3,type=pixelmon:npc_chatting] -172 117 -1642
-execute as @a[x=-172,y=117,z=-1643,distance=..30,tag=Valerie,scores={TalkTime=0},tag=!Dialogue86] run tp @e[x=-504,y=170,z=1270,dy=3,type=pixelmon:npc_chatting] -172 117 -1645
-
-#Door guard
-execute as @p[x=-155,y=125,z=-1715,distance=..30,tag=Dialogue86] run tp @e[x=-158,y=124,z=-1771,dy=3,type=pixelmon:npc_chatting] -504 166 1280
-execute as @p[x=-155,y=125,z=-1715,distance=..30,tag=!Dialogue86] run tp @e[x=-504,y=165,z=1280,dy=3,type=pixelmon:npc_chatting] -158 125 -1771
 
 #Dialogue 87
 #Factory Floor Serena and Grunt at door

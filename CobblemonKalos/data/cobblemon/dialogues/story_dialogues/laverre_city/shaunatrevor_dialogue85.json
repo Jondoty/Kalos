@@ -1,0 +1,133 @@
+{   
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');",
+        "c.npc.set_chatting();"
+    ],
+    "speakers": {
+        "serena": {
+          "name": "Serena",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:serena",
+            "isLeftSide": true
+          }
+        },
+        "shauna": {
+          "name": "Shauna",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:shauna",
+            "isLeftSide": false
+          }
+        },
+        "trevor": {
+          "name": "Trevor",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:trevor",
+            "isLeftSide": true
+          }
+        },
+        "tierno": {
+          "name": "Tierno",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:tierno",
+            "isLeftSide": false
+          }
+        }
+      },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "shauna",
+            "lines": [
+                "Hey, that's the Fairy Badge! It's so cute and sparkly! \u266a"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page2",
+            "speaker": "shauna",
+            "lines": [
+                "Know what? We're going to go tour the Poké Ball Factory! Come with us! \u266a"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page3');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "trevor",
+            "lines": [
+                "I'm interested in Poké Balls because they're used to catch Pokémon!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page4');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "trevor",
+            "lines": [
+                "To put it another way, I'm utterly fascinated by them!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('particle cloud -95 100 -1454 2 2 2 1 100');",
+                            "q.run_command('particle cloud -91 100 -1454 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-91,y=99,z=-1454,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tp @e[x=-95,y=99,z=-1454,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue85');"
+                            ]
+                    }
+                ]
+            }
+        }
+        ]
+    }

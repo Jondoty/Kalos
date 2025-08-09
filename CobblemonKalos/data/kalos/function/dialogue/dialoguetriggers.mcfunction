@@ -315,5 +315,25 @@ execute as @s[x=-231,y=87,z=-1225,distance=..10,tag=Dialogue83,tag=!Dialogue84] 
 execute as @s[x=-231,y=87,z=-1225,distance=..10,tag=Dialogue83,tag=!Dialogue84] unless entity @e[x=-234,y=100,z=-1214,dy=3,type=cobblemon:npc] run npcspawnat -234 100 -1214 tierno_generic
 execute as @s[x=-231,y=100,z=-1218,distance=..6,tag=Dialogue83,tag=!Dialogue84] run opendialogue scaryhouse_dialogue84 @s
 
+#Laverre Town Friends after badge
+execute as @s[x=-93,y=100,z=-1458,distance=..10,tag=Valerie,tag=!Dialogue85] unless entity @e[x=-95,y=100,z=-1454,dy=3,type=cobblemon:npc] run particle cloud -95 100 -1454 2 2 2 1 100
+execute as @s[x=-93,y=100,z=-1458,distance=..10,tag=Valerie,tag=!Dialogue85] unless entity @e[x=-91,y=100,z=-1454,dy=3,type=cobblemon:npc] run particle cloud -91 100 -1454 2 2 2 1 100
+execute as @s[x=-93,y=100,z=-1458,distance=..10,tag=Valerie,tag=!Dialogue85] unless entity @e[x=-95,y=100,z=-1454,dy=3,type=cobblemon:npc] run npcspawnat -95 100 -1454 shauna_generic
+execute as @s[x=-93,y=100,z=-1458,distance=..10,tag=Valerie,tag=!Dialogue85] unless entity @e[x=-91,y=100,z=-1454,dy=3,type=cobblemon:npc] run npcspawnat -91 100 -1454 trevor_generic
+execute as @s[x=-93,y=100,z=-1458,distance=..10,tag=Valerie,tag=!Dialogue85] run opendialogue shaunatrevor_dialogue85 @s
+
+#Friends on stairs chasing away Team Flare
+execute as @s[x=-172,y=117,z=-1643,distance=..7,tag=Valerie,tag=!Dialogue86] run opendialogue friendsflare_dialogue86 @s
+execute as @s[x=-172,y=117,z=-1600,distance=..30,tag=Valerie,tag=!Dialogue86] unless entity @e[x=-172,y=117,z=-1642,dy=3,type=cobblemon:npc] run npcspawnat -172 117 -1642 shauna_generic
+execute as @s[x=-172,y=117,z=-1600,distance=..30,tag=Valerie,tag=!Dialogue86] unless entity @e[x=-172,y=117,z=-1645,dy=3,type=cobblemon:npc] run npcspawnat -172 117 -1645 trevor_generic
+
+
+
+
+
+
+
+
+
 
 #
