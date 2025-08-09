@@ -466,8 +466,8 @@ tp @s[x=-1976,y=118,z=-720,dx=7,dy=5] -1806 64 -310
 
 
 #Poke Ball Factory
-
-tellraw @s[x=-157,y=125,z=-1774,dx=6,dy=5,tag=!Dialogue86] {"text":"<Team Flare Grunt> Adults are talking inside. Scram, kid. Shoo! Shoo!"}
+#NPC that blocks the player before friends dialogue
+execute as @s[x=-157,y=125,z=-1774,dx=6,dy=5,tag=!Dialogue86] run opendialogue flare_ballfactory_block_interaction @s
 execute as @s[x=-157,y=125,z=-1774,dx=6,dy=5,tag=!Dialogue86] at @s run tp @s ~ ~ ~10
 
 #execute as @s[x=-157,y=125,z=-1774,dx=6,dy=5,tag=Dialogue86] run scoreboard players set @s[tag=!Dialogue87] DialogueTrigger 87
@@ -478,7 +478,7 @@ tp @s[x=-158,y=89,z=-1843,dx=7,dy=5] -154 125 -1772
 
 
 #Laverre Gate
-tellraw @s[x=43,y=100,z=-1360,dy=5,dz=14,tag=!Dialogue90] {"text":"<Team Flare Grunt> Hey, hey! Stop right there. You want to go beyond this point? You\u2019ll have to join Team Flare! I\u2019ll let you in for a small fee... Let\u2019s say $5,000,000?"}
+execute as @s[x=43,y=100,z=-1360,dy=5,dz=14,tag=!Dialogue90] run opendialogue laverre_gateblock_interaction @s
 execute as @s[x=43,y=100,z=-1360,dy=5,dz=14,tag=!Dialogue90] at @s run tp @s ~-10 ~ ~
 
 execute as @s[x=43,y=100,z=-1360,dy=5,dz=14,tag=Dialogue90] run function kalos:triggers/stopsound

@@ -109,10 +109,21 @@ execute as @s[x=-193,y=99,z=-933,dx=18,dy=10,dz=11,tag=!Dialogue81] at @s run tp
 tellraw @s[x=-195,y=99,z=-1243,dx=23,dy=5,dz=15,tag=!Dialogue84] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> C'mon! This way!"}]
 execute as @s[x=-195,y=99,z=-1243,dx=23,dy=5,dz=15,tag=!Dialogue84] at @s run tp @s ~ ~ ~10
 
-##Poke Ball Interior Flare Blocks
-#execute as @s[x=-136,y=94,z=-1927,dx=4,dy=5,dz=8,tag=!Dialogue90] at @s run tp @s ~ ~ ~8
-#execute as @s[x=-134,y=104,z=-1998,dx=6,dy=5,dz=5,tag=!Dialogue90] at @s run tp @s ~-7 ~ ~
-#
+#Poke Ball Factory Flare Guard blocking entrance
+execute as @s[x=-155,y=125,z=-1715,distance=..30,tag=!Dialogue86] unless entity @e[x=-158,y=124,z=-1771,dy=3,type=cobblemon:npc] run npcspawnat -158 125 -1771 flare_ballfactory_block
+execute as @s[x=-155,y=125,z=-1715,distance=..30,tag=Dialogue86] run tp @e[x=-158,y=124,z=-1771,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+
+#Laverre Route 15 Gate Flare Block
+execute as @s[x=-27,y=100,z=-1353,distance=..30,tag=!Dialogue90] unless entity @e[x=41,y=100,z=-1357,dy=3,type=cobblemon:npc] run npcspawnat 41 100 -1357 flare_laverre_block
+execute as @s[x=-27,y=100,z=-1353,distance=..30,tag=!Dialogue90] unless entity @e[x=41,y=100,z=-1349,dy=3,type=cobblemon:npc] run npcspawnat 41 100 -1349 flare_laverre_block
+execute as @s[x=-27,y=100,z=-1353,distance=..30,tag=Dialogue90] run tp @e[x=41,y=100,z=-1357,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @s[x=-27,y=100,z=-1353,distance=..30,tag=Dialogue90] run tp @e[x=41,y=100,z=-1349,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+
+
+#Poke Ball Interior Flare Blocks
+execute as @s[x=-136,y=94,z=-1927,dx=4,dy=5,dz=8,tag=!Dialogue90] at @s run tp @s ~ ~ ~8
+execute as @s[x=-134,y=104,z=-1998,dx=6,dy=5,dz=5,tag=!Dialogue90] at @s run tp @s ~-7 ~ ~
+
 ##Anistar City South Exit
 #tellraw @s[x=1342,y=107,z=-122,dx=14,dy=6,dz=15,tag=!Dialogue133] {"text":"<Worker> Stop! The road up ahead was all torn up by the Durant, and we\u2019re still trying to fix it."}
 #execute as @s[x=1342,y=107,z=-122,dx=14,dy=6,dz=15,tag=!Dialogue133] at @s run tp @s ~ ~ ~-10
