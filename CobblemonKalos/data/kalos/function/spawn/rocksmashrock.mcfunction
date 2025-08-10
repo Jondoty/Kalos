@@ -3,5 +3,5 @@ summon minecraft:interaction ~ ~ ~ {width:1.25,height:1.25,response:1,Tags:[Rock
 setblock ~ ~ ~ barrier
 setblock ~ ~1 ~ barrier
 
-#/execute positioned 4163 34 614 run function johto:spawn/rocksmashrock
+#/execute positioned 4163 34 614 run function kalos:spawn/rocksmashrock
 #/execute as @e[distance=..10,type=minecraft:armor_stand,tag=RockSmash] at @s run tp @s ~ ~ ~ ~90 ~
