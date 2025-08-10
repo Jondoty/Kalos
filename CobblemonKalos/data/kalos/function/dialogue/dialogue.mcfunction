@@ -29,26 +29,8 @@ tellraw @s[scores={DialogueTrigger=154,TalkTime=55,PokemonLeague=1}] {"text":"Yo
 execute as @s[scores={DialogueTrigger=154,TalkTime=55}] run advancement grant @s only kalos:legendroot
 execute as @s[scores={DialogueTrigger=154,TalkTime=55}] run advancement grant @s only kalos:mythicalroot
 
-#V1, skip over Sycamore's mega upgrade talk
-tellraw @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] {"text":"Your Mega Ring was also upgraded to find more stones in the region!","italic":true,"color":"gray"}
-execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run scoreboard players set @s MegaStones 1
-execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run scoreboard players set @s Abomasite 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run scoreboard players set @s Aggronite 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run scoreboard players set @s Alakazite 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run scoreboard players set @s Banettite 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run scoreboard players set @s Diancite 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run scoreboard players set @s Garchompite 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run scoreboard players set @s Gyaradosite 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run scoreboard players set @s Heracronite 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run scoreboard players set @s Houndoominite 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run scoreboard players set @s Kangaskhanite 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run scoreboard players set @s Manectite 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run scoreboard players set @s Mawilite 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run scoreboard players set @s Medichamite 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run scoreboard players set @s Mewtwonite_X 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run scoreboard players set @s Mewtwonite_Y 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run scoreboard players set @s Scizorite 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run scoreboard players set @s Tyranitarite 0
+#Runs legendary reset dialogue
+execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run function kalos:triggers/legendaryreset
 
 execute as @s[scores={DialogueTrigger=154,TalkTime=65}] run effect give @s minecraft:blindness 10 1 true
 #Takes player home

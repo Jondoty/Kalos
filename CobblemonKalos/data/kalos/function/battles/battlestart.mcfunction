@@ -150,16 +150,33 @@ execute as @s[tag=!RadioOff,scores={BattleStart=34}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleStart=34}] run playsound trainerbattle record @s ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleStart=34}] run scoreboard players set @s MusicCooldown 226
 
-#35 - Wild Pokemon
-execute as @s[tag=!RadioOff,scores={BattleStart=35}] run stopsound @s record
-execute as @s[tag=!RadioOff,scores={BattleStart=35}] run playsound wildpokemonbattle record @s ~ ~ ~ 1 1 1
-execute as @s[tag=!RadioOff,scores={BattleStart=35}] run scoreboard players set @s MusicCooldown 123
-
 #36 - World Champ Battle Music
 execute as @s[tag=!RadioOff,scores={BattleStart=36}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleStart=36}] run playsound worldchampionships record @s ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleStart=36}] run scoreboard players set @s MusicCooldown 259
 
+
+
+#35 - Wild Pokemon
+
+#Scans for legendary Pokemon
+execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:articuno",PokemonOriginalTrainerType:"NONE"}}] add LegendaryKanto
+execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:zapdos",PokemonOriginalTrainerType:"NONE"}}] add LegendaryKanto
+execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:moltres",PokemonOriginalTrainerType:"NONE"}}] add LegendaryKanto
+execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:mewtwo",PokemonOriginalTrainerType:"NONE"}}] add LegendaryKanto
+
+#First priority play for legendary species
+execute as @s[tag=!RadioOff,scores={BattleStart=35,MusicCooldown=0}] at @s if entity @e[distance=..15,tag=LegendaryKanto] run stopsound @s record
+execute as @s[tag=!RadioOff,scores={BattleStart=35,MusicCooldown=0}] at @s if entity @e[distance=..15,tag=LegendaryKanto] run playsound mewtwobattle record @s ~ ~ ~ 1 1 1
+execute as @s[tag=!RadioOff,scores={BattleStart=35,MusicCooldown=0}] at @s if entity @e[distance=..15,tag=LegendaryKanto] run scoreboard players set @s MusicCooldown 259
+
+
+
+
+#Generic Pokemon
+execute as @s[tag=!RadioOff,scores={BattleStart=35,MusicCooldown=0}] run stopsound @s record
+execute as @s[tag=!RadioOff,scores={BattleStart=35,MusicCooldown=0}] run playsound wildpokemonbattle record @s ~ ~ ~ 1 1 1
+execute as @s[tag=!RadioOff,scores={BattleStart=35,MusicCooldown=0}] run scoreboard players set @s MusicCooldown 123
 
 
 

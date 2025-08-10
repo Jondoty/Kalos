@@ -2,6 +2,29 @@
 #Used to have the same NPC say different lines depending on the player's own tags.
 
 #-------------------------------------------------------------
+#Legendary Pokemon Triggers
+#execute as @e[distance=..3,type=cobblemon:pokemon] at @s run summon minecraft:interaction ~ ~ ~ {width:3,height:5,response:1,Tags:[NPCs]}
+
+#Mewtwo
+execute as @s[x=845,y=75,z=559,distance=..10,scores={Mewtwo=0}] run opendialogue mewtwo_encounter @s
+
+#Zygarde
+
+#Articuno
+
+#Zapdos
+
+#Moltres
+
+#Diancie
+
+#Hoopa
+
+#Volcanion
+
+
+
+#-------------------------------------------------------------
 #General Story NPCs
 
 #Mom

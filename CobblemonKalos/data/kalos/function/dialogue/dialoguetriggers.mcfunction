@@ -336,4 +336,22 @@ execute as @s[x=-172,y=117,z=-1600,distance=..30,tag=Valerie,tag=!Dialogue86] un
 
 
 
+
+
+#-----------------------------------------------------------
+#Sets up legendary Pokemon
+
+#Mewtwo
+execute as @a[x=845,y=75,z=605,distance=..6,scores={Mewtwo=0}] unless entity @e[x=845,y=75,z=559,distance=..5,type=cobblemon:pokemon] run summon minecraft:interaction 845 75 559 {width:2,height:3,response:1,Tags:[NPCs]}
+execute as @a[x=845,y=75,z=605,distance=..6,scores={Mewtwo=0}] unless entity @e[x=845,y=75,z=559,distance=..5,type=cobblemon:pokemon] run pokespawnat 845 75 559 mewtwo no_ai=true level=70
+execute positioned 845 75 559 as @e[distance=..5,type=cobblemon:pokemon,name=Mewtwo,nbt={PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
+execute positioned 845 75 559 as @e[distance=..5,type=cobblemon:pokemon,name=Mewtwo,nbt={PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
+execute positioned 845 75 559 as @e[distance=..5,type=cobblemon:pokemon,name=Mewtwo,nbt={PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
+execute positioned 845 75 559 as @e[distance=..5,type=cobblemon:pokemon,name=Mewtwo,nbt={PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
+
+
+
+
+
+
 #
