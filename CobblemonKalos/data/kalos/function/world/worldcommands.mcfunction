@@ -186,6 +186,22 @@ tag @a[x=-2115,y=0,z=504,dx=240,dy=256,dz=258,scores={TalkTime=0},tag=!FlyAmbret
 execute if entity @a[x=455,y=107,z=1515,dx=29,dy=20,dz=80] run setblock -676 100 1172 minecraft:redstone_block
 execute unless entity @a[x=455,y=107,z=1515,dx=29,dy=20,dz=80] run setblock -676 100 1172 minecraft:iron_block
 
+#Poke Ball Factory reversing conveyor belt
+#Determines the conveyer's current state
+execute if block -218 96 -1902 stone_button[powered=true] as @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=!Reverse] run tag @s add Temp1
+execute if block -218 96 -1902 stone_button[powered=true] as @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] run tag @s add Temp2
+
+#Inverts the state by adding or removing tag
+execute if block -218 96 -1902 stone_button[powered=true] as @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Temp1] run tag @s add Reverse
+execute if block -218 96 -1902 stone_button[powered=true] as @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Temp2] run tag @s remove Reverse
+
+#Common ending
+execute if block -218 96 -1902 stone_button[powered=true] as @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] run tag @s remove Temp1
+execute if block -218 96 -1902 stone_button[powered=true] as @e[x=-681,y=100,z=1388,dy=3,type=armor_stand] run tag @s remove Temp2
+
+execute if block -218 96 -1902 stone_button[powered=true] run tellraw @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188] {"text":"The belts changed direction!","italic":true,"color":"gray"}
+execute if block -218 96 -1902 stone_button[powered=true] run setblock -218 96 -1902 minecraft:stone_button[facing=south,face=wall,powered=false]
+
 
 #Elite Four Chambers levetation effects
 #Fire
