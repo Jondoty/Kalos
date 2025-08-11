@@ -163,14 +163,21 @@ execute as @s[tag=!RadioOff,scores={BattleStart=36}] run scoreboard players set 
 execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:articuno",PokemonOriginalTrainerType:"NONE"}}] add LegendaryKanto
 execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:zapdos",PokemonOriginalTrainerType:"NONE"}}] add LegendaryKanto
 execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:moltres",PokemonOriginalTrainerType:"NONE"}}] add LegendaryKanto
-execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:mewtwo",PokemonOriginalTrainerType:"NONE"}}] add LegendaryKanto
+execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:xerneas",PokemonOriginalTrainerType:"NONE"}}] add LegendaryKanto
+execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:yveltal",PokemonOriginalTrainerType:"NONE"}}] add LegendaryXY
+execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:zygarde",PokemonOriginalTrainerType:"NONE"}}] add LegendaryXY
+execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:hoopa",PokemonOriginalTrainerType:"NONE"}}] add LegendaryXY
+execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:volcanion",PokemonOriginalTrainerType:"NONE"}}] add LegendaryXY
+execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:diancie",PokemonOriginalTrainerType:"NONE"}}] add LegendaryXY
 
 #First priority play for legendary species
 execute as @s[tag=!RadioOff,scores={BattleStart=35,MusicCooldown=0}] at @s if entity @e[distance=..15,tag=LegendaryKanto] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleStart=35,MusicCooldown=0}] at @s if entity @e[distance=..15,tag=LegendaryKanto] run playsound mewtwobattle record @s ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleStart=35,MusicCooldown=0}] at @s if entity @e[distance=..15,tag=LegendaryKanto] run scoreboard players set @s MusicCooldown 259
 
-
+execute as @s[tag=!RadioOff,scores={BattleStart=35,MusicCooldown=0}] at @s if entity @e[distance=..15,tag=LegendaryXY] run stopsound @s record
+execute as @s[tag=!RadioOff,scores={BattleStart=35,MusicCooldown=0}] at @s if entity @e[distance=..15,tag=LegendaryXY] run playsound legendarybattlexy record @s ~ ~ ~ 1 1 1
+execute as @s[tag=!RadioOff,scores={BattleStart=35,MusicCooldown=0}] at @s if entity @e[distance=..15,tag=LegendaryXY] run scoreboard players set @s MusicCooldown 224
 
 
 #Generic Pokemon
@@ -184,7 +191,8 @@ execute as @s[tag=!RadioOff,scores={BattleStart=35,MusicCooldown=0}] run scorebo
 
 #Adds a cooldown tag to not loop until player hits MusicCooldown 0 again
 tag @s add BattleMusicCooldown
-
+tag @s remove LegendaryKanto
+tag @s remove LegendaryXY
 
 
 

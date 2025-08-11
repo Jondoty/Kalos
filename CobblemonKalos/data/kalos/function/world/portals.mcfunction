@@ -918,9 +918,6 @@ tp @s[x=-948,y=75,z=-367,dy=5,dz=5] -946 48 -364
 tp @s[x=-948,y=63,z=-367,dy=5,dz=5] -946 48 -364
 
 #Azure Bay Sea Spirit's Den
-#execute as @s[x=-1332,y=76,z=-1187,dx=5,dy=5,scores={Articuno=5,StarterPick=1,PokemonLeague=1..}] run tp @e[x=-501,y=163,z=1238,dy=3,type=pixelmon:statue] -1335 22 -1252
-#execute as @s[x=-1332,y=76,z=-1187,dx=5,dy=5,scores={Zapdos=5,StarterPick=2,PokemonLeague=1..}] run tp @e[x=-501,y=172,z=1238,dy=3,type=pixelmon:statue] -1349 22 -1232
-#execute as @s[x=-1332,y=76,z=-1187,dx=5,dy=5,scores={Moltres=5,StarterPick=3,PokemonLeague=1..}] run tp @e[x=-501,y=154,z=1238,dy=3,type=pixelmon:statue] -1313 22 -1232
 execute as @s[x=-1332,y=76,z=-1187,dx=5,dy=5] run function kalos:triggers/stopsound
 tp @s[x=-1332,y=76,z=-1187,dx=5,dy=5] -1331 22 -1188
 

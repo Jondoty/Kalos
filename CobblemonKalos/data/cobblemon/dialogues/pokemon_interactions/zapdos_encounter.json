@@ -1,0 +1,45 @@
+{   
+    "initializationAction": [              
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');",
+        "q.run_command('playsound minecraft:zapdos ambient ' + q.player.username + ' ~ ~ ~ 1 1 1');"
+            ],
+    "escapeAction": [],
+    "speakers": {
+        "zapdos": {
+      "name": "Zapdos",
+        "face": {
+          "type": "artificial",
+          "modelType": "pokemon",
+          "identifier": "cobblemon:zapdos",
+          "isLeftSide": true
+      }
+    }
+      },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "zapdos",
+            "lines": [
+                "Gyaoo!"
+            ],            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('data merge entity @e[x=-1349,y=22,z=-1232,distance=..5,type=cobblemon:pokemon,limit=1,name=Zapdos] {Pokemon:{PokemonData:[\"catchable\"]}}');",
+                            "q.run_command('data merge entity @e[x=-1349,y=22,z=-1232,distance=..5,type=cobblemon:pokemon,limit=1,name=Zapdos] {NoAI:0b}');",
+                            "q.run_command('data modify entity @e[x=-1349,y=22,z=-1232,distance=..5,type=cobblemon:pokemon,limit=1,name=Zapdos] Unbattleable set value 0b');",
+                            "q.run_command('kill @e[x=-1349,y=22,z=-1232,distance=..5,type=minecraft:interaction]');",
+                            "q.run_command('scoreboard players add ' + q.player.username + ' Zapdos 1');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                            ]
+                    }
+                ]
+            }
+        }
+        ]
+    }

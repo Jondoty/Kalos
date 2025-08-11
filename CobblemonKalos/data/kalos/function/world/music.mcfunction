@@ -54,34 +54,10 @@ playsound successorbattle record @s[tag=KorrinaBattleMusic,scores={MusicCooldown
 scoreboard players set @s[tag=KorrinaBattleMusic,scores={MusicCooldown=0}] MusicCooldown 317
 
 
-#Legendary Battle X Y & Z
-#execute as @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!LegendaryXY,nbt={ndex:716s,OwnerUUID:""}] add LegendaryXY
-#execute as @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!LegendaryXY,nbt={ndex:717s,OwnerUUID:""}] add LegendaryXY
-#
-#execute as @s[type=player] run tag @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,type=pixelmon:pixelmon,tag=!LegendaryXY,nbt={ndex:716s,OwnerUUID:""}] add LegendaryXY
-#execute as @s[type=player] run tag @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,type=pixelmon:pixelmon,tag=!LegendaryXY,nbt={ndex:717s,OwnerUUID:""}] add LegendaryXY
-#
-#execute as @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!LegendaryXY,nbt={ndex:718s,OwnerUUID:""}] add LegendaryXY
-#execute as @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!LegendaryXY,nbt={ndex:719s,OwnerUUID:""}] add LegendaryXY
-#execute as @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!LegendaryXY,nbt={ndex:720s,OwnerUUID:""}] add LegendaryXY
-#execute as @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!LegendaryXY,nbt={ndex:721s,OwnerUUID:""}] add LegendaryXY
-#
-#execute as @e[tag=LegendaryXY,type=pixelmon:pixelmon,limit=1] run playsound legendarybattlexy record @a[distance=..10,scores={MusicCooldown=0,TalkTime=0}] ~ ~ ~ 1 1 1
-#execute as @e[tag=LegendaryXY,type=pixelmon:pixelmon] run scoreboard players set @a[distance=..10,scores={MusicCooldown=0,TalkTime=0}] MusicCooldown 224
-#
 ##Flare HQ room-specific music if legend is present
 #execute as @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,tag=LegendaryXY,type=pixelmon:pixelmon,limit=1] run playsound legendarybattlexy record @a[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,scores={MusicCooldown=0,TalkTime=0}] ~ ~ ~ 1 1 1
 #execute as @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,tag=LegendaryXY,type=pixelmon:pixelmon] run scoreboard players set @a[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,scores={MusicCooldown=0,TalkTime=0}] MusicCooldown 224
 #
-#
-##Legendary Battle Kanto
-#execute as @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!LegendaryKanto,nbt={ndex:144s,OwnerUUID:""}] add LegendaryKanto
-#execute as @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!LegendaryKanto,nbt={ndex:145s,OwnerUUID:""}] add LegendaryKanto
-#execute as @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!LegendaryKanto,nbt={ndex:146s,OwnerUUID:""}] add LegendaryKanto
-#execute as @s[type=player] run tag @e[distance=..15,type=pixelmon:pixelmon,tag=!LegendaryKanto,nbt={ndex:150s,OwnerUUID:""}] add LegendaryKanto
-#
-#execute as @e[tag=LegendaryKanto,type=pixelmon:pixelmon,limit=1] run playsound mewtwobattle record @s[distance=..10,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-#execute as @e[tag=LegendaryKanto,type=pixelmon:pixelmon] run scoreboard players set @s[distance=..10,scores={MusicCooldown=0}] MusicCooldown 259
 
 #Bird Encounters Roaming
 playsound birdencounter record @s[scores={DialogueTrigger=167,MusicCooldown=0}] ~ ~ ~ 1 1 1

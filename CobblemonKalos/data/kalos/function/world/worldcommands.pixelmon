@@ -223,16 +223,6 @@ tag @a[x=-2115,y=0,z=504,dx=240,dy=256,dz=258,scores={TalkTime=0},tag=!FlyAmbret
 #Runs clicked legendary spawn function
 execute as @a[tag=LegendActivate] run function kalos:triggers/legendspawn
 
-#Resets Mewtwo
-execute at @e[x=-501,y=101,z=1238,distance=..2,type=pixelmon:statue] run execute as @a[x=809,y=74,z=525,dx=66,dy=14,dz=92,scores={Mewtwo=0}] run tp @e[x=-501,y=101,z=1238,distance=..2,type=pixelmon:statue] 845 75 559
-
-#Zygarde
-execute at @e[x=-501,y=110,z=1238,distance=..2,type=pixelmon:statue] run execute as @a[x=2015,y=61,z=-176,distance=..50,scores={Zygarde=0}] run tp @e[x=-501,y=110,z=1238,distance=..2,type=pixelmon:statue] 2015 61 -174
-
-#Diancie
-execute at @e[x=-501,y=128,z=1238,distance=..2,type=pixelmon:statue] run execute as @a[x=-1707,y=2,z=-437,distance=..50,scores={Diancie=0}] run tp @e[x=-501,y=128,z=1238,distance=..2,type=pixelmon:statue] -1707 2 -437
-
-#----------
 
 #Bird Spawns
 execute as @a[tag=!Dialogue167,scores={PokemonLeague=1..,StarterPick=1..}] run execute if block ~ ~ ~ minecraft:grass_block run scoreboard players set @s Grass 1

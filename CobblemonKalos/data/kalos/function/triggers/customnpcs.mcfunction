@@ -9,14 +9,19 @@
 execute as @s[x=845,y=75,z=559,distance=..10,scores={Mewtwo=0}] run opendialogue mewtwo_encounter @s
 
 #Zygarde
+execute as @s[x=2015,y=61,z=-174,distance=..10,scores={Zygarde=0}] run opendialogue zygarde_encounter @s
 
 #Articuno
+execute as @s[x=-1335,y=22,z=-1252,distance=..10,scores={Articuno=5,StarterPick=1}] run opendialogue articuno_encounter @s
 
 #Zapdos
+execute as @s[x=-1349,y=22,z=-1232,distance=..10,scores={Zapdos=5,StarterPick=2}] run opendialogue zapdos_encounter @s
 
 #Moltres
+execute as @s[x=-1313,y=22,z=-1232,distance=..10,scores={Moltres=5,StarterPick=3}] run opendialogue moltres_encounter @s
 
 #Diancie
+execute as @s[x=-1707,y=2,z=-437,distance=..10,scores={Diancie=0}] run opendialogue diancie_encounter @s
 
 #Hoopa
 

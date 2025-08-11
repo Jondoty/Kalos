@@ -2512,47 +2512,8 @@ tellraw @s[scores={DialogueTrigger=154,TalkTime=55,PokemonLeague=1}] {"text":"Yo
 execute as @s[scores={DialogueTrigger=154,TalkTime=55}] run advancement grant @s only kalos:legendroot
 execute as @s[scores={DialogueTrigger=154,TalkTime=55}] run advancement grant @s only kalos:mythicalroot
 
-#Resets legendaries if not caught but encountered
 
-execute as @s[scores={DialogueTrigger=154,TalkTime=55,Mewtwo=1..}] run execute as @e[x=809,y=74,z=525,dx=66,dy=14,dz=92,type=pixelmon:pixelmon,name=Mewtwo] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
-execute as @s[scores={DialogueTrigger=154,TalkTime=55,Mewtwo=1..}] run tellraw @s[tag=!MewtwoCatch] {"text":"You can now re-encounter Mewtwo!","italic":true,"color":"gray"}
-execute as @s[scores={DialogueTrigger=154,TalkTime=55,Mewtwo=1..}] run scoreboard players set @s[tag=!MewtwoCatch] Mewtwo 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=55}] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
-execute as @s[scores={DialogueTrigger=154,TalkTime=56,Zygarde=1..}] run execute as @e[x=1720,y=0,z=-232,dx=421,dy=100,dz=324,type=pixelmon:pixelmon,name=Zygarde] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
-execute as @s[scores={DialogueTrigger=154,TalkTime=56,Zygarde=1..}] run tellraw @s[tag=!ZygardeCatch] {"text":"You can now re-encounter Zygarde!","italic":true,"color":"gray"}
-execute as @s[scores={DialogueTrigger=154,TalkTime=56,Zygarde=1..}] run scoreboard players set @s[tag=!ZygardeCatch] Zygarde 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=56}] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
-
-execute as @s[scores={DialogueTrigger=154,TalkTime=57,Diancie=1..}] run execute as @e[x=-1847,y=0,z=-675,dx=414,dy=89,dz=507,type=pixelmon:pixelmon,name=Diancie] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
-execute as @s[scores={DialogueTrigger=154,TalkTime=57,Diancie=1..}] run tellraw @s[tag=!DiancieCatch] {"text":"You can now re-encounter Diancie!","italic":true,"color":"gray"}
-execute as @s[scores={DialogueTrigger=154,TalkTime=57,Diancie=1..}] run scoreboard players set @s[tag=!DiancieCatch] Diancie 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=57}] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
-
-execute as @s[scores={DialogueTrigger=154,TalkTime=58,Hoopa=1..}] run execute as @e[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28,type=pixelmon:pixelmon,name=Hoopa] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
-execute as @s[scores={DialogueTrigger=154,TalkTime=58,Hoopa=1..}] run tellraw @s[tag=!HoopaCatch] {"text":"You can now re-encounter Hoopa!","italic":true,"color":"gray"}
-execute as @s[scores={DialogueTrigger=154,TalkTime=58,Hoopa=1..}] run scoreboard players set @s[tag=!HoopaCatch] Hoopa 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=58}] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
-
-execute as @s[scores={DialogueTrigger=154,TalkTime=59,Volcanion=1..}] run execute as @e[x=-937,y=36,z=-742,dx=280,dy=40,dz=117,type=pixelmon:pixelmon,name=Volcanion] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
-execute as @s[scores={DialogueTrigger=154,TalkTime=59,Volcanion=1..}] run tellraw @s[tag=!VolcanionCatch] {"text":"You can now re-encounter Volcanion!","italic":true,"color":"gray"}
-execute as @s[scores={DialogueTrigger=154,TalkTime=59,Volcanion=1..}] run scoreboard players set @s[tag=!VolcanionCatch] Volcanion 0
-execute as @s[scores={DialogueTrigger=154,TalkTime=59}] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
-
-execute as @s[scores={DialogueTrigger=154,TalkTime=60,Zapdos=6..}] run execute as @e[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83,type=pixelmon:pixelmon,name=Zapdos] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
-execute as @s[scores={DialogueTrigger=154,TalkTime=60,Zapdos=6..}] run tellraw @s[tag=!ZapdosCatch] {"text":"You can now re-encounter Zapdos!","italic":true,"color":"gray"}
-execute as @s[scores={DialogueTrigger=154,TalkTime=60,Zapdos=6..}] run scoreboard players set @s[tag=!ZapdosCatch] Zapdos 5
-execute as @s[scores={DialogueTrigger=154,TalkTime=60}] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
-
-execute as @s[scores={DialogueTrigger=154,TalkTime=61,Moltres=6..}] run execute as @e[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83,type=pixelmon:pixelmon,name=Moltres] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
-execute as @s[scores={DialogueTrigger=154,TalkTime=61,Moltres=6..}] run tellraw @s[tag=!MoltresCatch] {"text":"You can now re-encounter Moltres!","italic":true,"color":"gray"}
-execute as @s[scores={DialogueTrigger=154,TalkTime=61,Moltres=6..}] run scoreboard players set @s[tag=!MoltresCatch] Moltres 5
-execute as @s[scores={DialogueTrigger=154,TalkTime=61}] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
-
-execute as @s[scores={DialogueTrigger=154,TalkTime=62,Articuno=6..}] run execute as @e[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83,type=pixelmon:pixelmon,name=Articuno] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] add Skip
-execute as @s[scores={DialogueTrigger=154,TalkTime=62,Articuno=6..}] run tellraw @s[tag=!ArticunoCatch] {"text":"You can now re-encounter Articuno!","italic":true,"color":"gray"}
-execute as @s[scores={DialogueTrigger=154,TalkTime=62,Articuno=6..}] run scoreboard players set @s[tag=!ArticunoCatch] Articuno 5
-execute as @s[scores={DialogueTrigger=154,TalkTime=62}] run tag @e[x=-685,y=100,z=1386,dy=3,type=armor_stand] remove Skip
 
 
 execute as @s[scores={DialogueTrigger=154,TalkTime=65}] run effect give @s minecraft:blindness 10 1 true

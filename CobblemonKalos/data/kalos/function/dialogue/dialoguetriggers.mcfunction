@@ -342,12 +342,66 @@ execute as @s[x=-172,y=117,z=-1600,distance=..30,tag=Valerie,tag=!Dialogue86] un
 #Sets up legendary Pokemon
 
 #Mewtwo
-execute as @a[x=845,y=75,z=605,distance=..6,scores={Mewtwo=0}] unless entity @e[x=845,y=75,z=559,distance=..5,type=cobblemon:pokemon] run summon minecraft:interaction 845 75 559 {width:2,height:3,response:1,Tags:[NPCs]}
-execute as @a[x=845,y=75,z=605,distance=..6,scores={Mewtwo=0}] unless entity @e[x=845,y=75,z=559,distance=..5,type=cobblemon:pokemon] run pokespawnat 845 75 559 mewtwo no_ai=true level=70
+execute as @s[x=845,y=75,z=605,distance=..6,scores={Mewtwo=0}] unless entity @e[x=845,y=75,z=559,distance=..5,type=cobblemon:pokemon] run summon minecraft:interaction 845 75 559 {width:2,height:3,response:1,Tags:[NPCs]}
+execute as @s[x=845,y=75,z=605,distance=..6,scores={Mewtwo=0}] unless entity @e[x=845,y=75,z=559,distance=..5,type=cobblemon:pokemon] run pokespawnat 845 75 559 mewtwo no_ai=true level=70 moves=recover,psychic,barrier,aurasphere
 execute positioned 845 75 559 as @e[distance=..5,type=cobblemon:pokemon,name=Mewtwo,nbt={PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
 execute positioned 845 75 559 as @e[distance=..5,type=cobblemon:pokemon,name=Mewtwo,nbt={PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
 execute positioned 845 75 559 as @e[distance=..5,type=cobblemon:pokemon,name=Mewtwo,nbt={PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
 execute positioned 845 75 559 as @e[distance=..5,type=cobblemon:pokemon,name=Mewtwo,nbt={PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
+
+
+#Zygarde
+execute as @s[x=2020,y=56,z=-98,distance=..6,scores={Zygarde=0}] unless entity @e[x=2015,y=61,z=-174,distance=..5,type=cobblemon:pokemon,name=Zygarde] run summon minecraft:interaction 2015 61 -174 {width:4,height:4,response:1,Tags:[NPCs]}
+execute as @s[x=2020,y=56,z=-98,distance=..6,scores={Zygarde=0}] unless entity @e[x=2015,y=61,z=-174,distance=..5,type=cobblemon:pokemon,name=Zygarde] run pokespawnat 2015 61 -174 zygarde no_ai=true level=70 moves=crunch,earthquake,camouflage,dragonpulse
+execute positioned 2015 61 -174 as @e[distance=..5,type=cobblemon:pokemon,name=Zygarde,nbt={PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
+execute positioned 2015 61 -174 as @e[distance=..5,type=cobblemon:pokemon,name=Zygarde,nbt={PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
+execute positioned 2015 61 -174 as @e[distance=..5,type=cobblemon:pokemon,name=Zygarde,nbt={PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
+execute positioned 2015 61 -174 as @e[distance=..5,type=cobblemon:pokemon,name=Zygarde,nbt={PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
+
+
+#Diancie
+execute as @s[x=-1692,y=2,z=-439,distance=..20,scores={Diancie=0}] unless entity @e[x=-1707,y=2,z=-437,distance=..5,type=cobblemon:pokemon,name=Diancie] run summon minecraft:interaction -1707 2 -437 {width:2,height:2,response:1,Tags:[NPCs]}
+execute as @s[x=-1692,y=2,z=-439,distance=..20,scores={Diancie=0}] unless entity @e[x=-1707,y=2,z=-437,distance=..5,type=cobblemon:pokemon,name=Diancie] run pokespawnat -1707 2 -437 diancie no_ai=true level=50 moves=diamondstorm,moonblast,dazzlinggleam,protect
+execute positioned -1707 2 -437 as @e[distance=..5,type=cobblemon:pokemon,name=Diancie,nbt={PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
+execute positioned -1707 2 -437 as @e[distance=..5,type=cobblemon:pokemon,name=Diancie,nbt={PersistenceRequired:0b}] at @s run tp @s ~ ~ ~ -90 ~
+execute positioned -1707 2 -437 as @e[distance=..5,type=cobblemon:pokemon,name=Diancie,nbt={PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
+execute positioned -1707 2 -437 as @e[distance=..5,type=cobblemon:pokemon,name=Diancie,nbt={PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
+execute positioned -1707 2 -437 as @e[distance=..5,type=cobblemon:pokemon,name=Diancie,nbt={PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
+
+
+#Articuno
+execute as @s[x=-1331,y=22,z=-1193,distance=..10,scores={Articuno=5,StarterPick=1}] unless entity @e[x=-1335,y=22,z=-1252,distance=..5,type=cobblemon:pokemon,name=Articuno] run summon minecraft:interaction -1335 22 -1252 {width:2,height:3,response:1,Tags:[NPCs]}
+execute as @s[x=-1331,y=22,z=-1193,distance=..10,scores={Articuno=5,StarterPick=1}] unless entity @e[x=-1335,y=22,z=-1252,distance=..5,type=cobblemon:pokemon,name=Articuno] run pokespawnat -1335 22 -1252 articuno no_ai=true level=70 moves=icebeam,reflect,hail,tailwind
+execute positioned -1335 22 -1252 as @e[distance=..5,type=cobblemon:pokemon,name=Articuno,nbt={PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
+execute positioned -1335 22 -1252 as @e[distance=..5,type=cobblemon:pokemon,name=Articuno,nbt={PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
+execute positioned -1335 22 -1252 as @e[distance=..5,type=cobblemon:pokemon,name=Articuno,nbt={PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
+execute positioned -1335 22 -1252 as @e[distance=..5,type=cobblemon:pokemon,name=Articuno,nbt={PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
+
+#Zapdos
+execute as @s[x=-1331,y=22,z=-1193,distance=..10,scores={Zapdos=5,StarterPick=2}] unless entity @e[x=-1349,y=22,z=-1232,distance=..5,type=cobblemon:pokemon,name=Zapdos] run summon minecraft:interaction -1349 22 -1232 {width:2,height:3,response:1,Tags:[NPCs]}
+execute as @s[x=-1331,y=22,z=-1193,distance=..10,scores={Zapdos=5,StarterPick=2}] unless entity @e[x=-1349,y=22,z=-1232,distance=..5,type=cobblemon:pokemon,name=Zapdos] run pokespawnat -1349 22 -1232 zapdos no_ai=true level=70 moves=agility,discharge,raindance,lightscreen
+execute positioned -1349 22 -1232 as @e[distance=..5,type=cobblemon:pokemon,name=Zapdos,nbt={PersistenceRequired:0b}] at @s run tp @s ~ ~ ~ -90 ~
+execute positioned -1349 22 -1232 as @e[distance=..5,type=cobblemon:pokemon,name=Zapdos,nbt={PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
+execute positioned -1349 22 -1232 as @e[distance=..5,type=cobblemon:pokemon,name=Zapdos,nbt={PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
+execute positioned -1349 22 -1232 as @e[distance=..5,type=cobblemon:pokemon,name=Zapdos,nbt={PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
+execute positioned -1349 22 -1232 as @e[distance=..5,type=cobblemon:pokemon,name=Zapdos,nbt={PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
+
+#Moltres
+execute as @s[x=-1331,y=22,z=-1193,distance=..10,scores={Moltres=5,StarterPick=3}] unless entity @e[x=-1313,y=22,z=-1232,distance=..5,type=cobblemon:pokemon,name=Moltres] run summon minecraft:interaction -1313 22 -1232 {width:2,height:3,response:1,Tags:[NPCs]}
+execute as @s[x=-1331,y=22,z=-1193,distance=..10,scores={Moltres=5,StarterPick=3}] unless entity @e[x=-1313,y=22,z=-1232,distance=..5,type=cobblemon:pokemon,name=Moltres] run pokespawnat -1313 22 -1232 moltres no_ai=true level=70 moves=safeguard,airslash,sunnyday,heatwave
+execute positioned -1313 22 -1232 as @e[distance=..5,type=cobblemon:pokemon,name=Moltres,nbt={PersistenceRequired:0b}] at @s run tp @s ~ ~ ~ 90 ~
+execute positioned -1313 22 -1232 as @e[distance=..5,type=cobblemon:pokemon,name=Moltres,nbt={PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
+execute positioned -1313 22 -1232 as @e[distance=..5,type=cobblemon:pokemon,name=Moltres,nbt={PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
+execute positioned -1313 22 -1232 as @e[distance=..5,type=cobblemon:pokemon,name=Moltres,nbt={PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
+execute positioned -1313 22 -1232 as @e[distance=..5,type=cobblemon:pokemon,name=Moltres,nbt={PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
+
+
+
+
+
+
+
+
 
 
 

@@ -36,6 +36,12 @@ execute as @s[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28] unless entity @s[scores={Mu
 execute as @s[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28] unless entity @s[scores={MusicCheck=61}] run scoreboard players set @s MusicCheck 61
 execute as @s[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28] run tag @s add Indoors
 
+#Sea Spirit's Den - 28
+execute as @s[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83] unless entity @s[scores={MusicCheck=28}] run title @s actionbar {"text":"Sea Spirit's Den"}
+execute as @s[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83] unless entity @s[scores={MusicCheck=28}] run function kalos:triggers/stopsound
+execute as @s[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83] unless entity @s[scores={MusicCheck=28}] run scoreboard players set @s MusicCheck 28
+execute as @s[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83] run tag @s add Indoors
+
 #---------------------------------------------------------------------------------------
 
 #Vaniville Town - 1
@@ -210,15 +216,9 @@ execute as @s[x=-1847,y=0,z=-675,dx=414,dy=89,dz=507] unless entity @s[scores={M
 
 
 #Azure Bay - 27
-execute as @s[x=-1483,y=0,z=-1340,dx=278,dy=256,dz=451] unless entity @s[scores={MusicCheck=27}] run title @s actionbar {"text":"Azure Bay"}
-execute as @s[x=-1483,y=0,z=-1340,dx=278,dy=256,dz=451] unless entity @s[scores={MusicCheck=27}] unless entity @s[scores={MusicCheck=49}] run function kalos:triggers/stopsound
-execute as @s[x=-1483,y=0,z=-1340,dx=278,dy=256,dz=451] unless entity @s[scores={MusicCheck=27}] run scoreboard players set @s MusicCheck 27
-
-
-#Sea Spirit's Den - 28
-execute as @s[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83] unless entity @s[scores={MusicCheck=28}] run title @s actionbar {"text":"Sea Spirit's Den"}
-execute as @s[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83] unless entity @s[scores={MusicCheck=28}] run function kalos:triggers/stopsound
-execute as @s[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83] unless entity @s[scores={MusicCheck=28}] run scoreboard players set @s MusicCheck 28
+execute as @s[x=-1483,y=0,z=-1340,dx=278,dy=256,dz=451,tag=!Indoors] unless entity @s[scores={MusicCheck=27}] run title @s actionbar {"text":"Azure Bay"}
+execute as @s[x=-1483,y=0,z=-1340,dx=278,dy=256,dz=451,tag=!Indoors] unless entity @s[scores={MusicCheck=27}] unless entity @s[scores={MusicCheck=49}] run function kalos:triggers/stopsound
+execute as @s[x=-1483,y=0,z=-1340,dx=278,dy=256,dz=451,tag=!Indoors] unless entity @s[scores={MusicCheck=27}] run scoreboard players set @s MusicCheck 27
 
 
 #Poké Ball Factory - 29
