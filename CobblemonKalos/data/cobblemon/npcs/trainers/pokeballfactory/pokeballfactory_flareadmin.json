@@ -6,7 +6,7 @@
     ],
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:pokeballfactory_flareadmin_interaction"
+        "dialogue": "cobblemon:pokeballfactory_admin_interaction"
     },
     "name": "Team Flare Admin",
     "party": {

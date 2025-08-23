@@ -9,7 +9,7 @@
         "q.dialogue.close();"
     ],
     "names": [
-        "Team Flare Celosia"
+        "Team Flare Celosia & Bryony"
     ],
     "speakers": {
         "npc": {
@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Let’s get ’em!"
+                "When we're the ones fighting together, our odds of victory increase exponentially!"
             ],
             "input": {
                 "type": "option",

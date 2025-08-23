@@ -470,7 +470,6 @@ tp @s[x=-1976,y=118,z=-720,dx=7,dy=5] -1806 64 -310
 execute as @s[x=-157,y=125,z=-1774,dx=6,dy=5,tag=!Dialogue86] run opendialogue flare_ballfactory_block_interaction @s
 execute as @s[x=-157,y=125,z=-1774,dx=6,dy=5,tag=!Dialogue86] at @s run tp @s ~ ~ ~10
 
-#execute as @s[x=-157,y=125,z=-1774,dx=6,dy=5,tag=Dialogue86] run scoreboard players set @s[tag=!Dialogue87] DialogueTrigger 87
 #Removes reverse tag in case player can't ride the left belt to the reverse button
 execute as @s[x=-157,y=125,z=-1774,dx=6,dy=5,tag=Dialogue86] run tag @e[x=-681,y=100,z=1388,dy=3,type=armor_stand,tag=Reverse] remove Reverse
 tp @s[x=-157,y=125,z=-1774,dx=6,dy=5,tag=Dialogue86] -154 89 -1845

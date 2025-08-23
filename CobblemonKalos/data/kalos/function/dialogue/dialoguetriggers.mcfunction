@@ -327,15 +327,37 @@ execute as @s[x=-172,y=117,z=-1643,distance=..7,tag=Valerie,tag=!Dialogue86] run
 execute as @s[x=-172,y=117,z=-1600,distance=..30,tag=Valerie,tag=!Dialogue86] unless entity @e[x=-172,y=117,z=-1642,dy=3,type=cobblemon:npc] run npcspawnat -172 117 -1642 shauna_generic
 execute as @s[x=-172,y=117,z=-1600,distance=..30,tag=Valerie,tag=!Dialogue86] unless entity @e[x=-172,y=117,z=-1645,dy=3,type=cobblemon:npc] run npcspawnat -172 117 -1645 trevor_generic
 
+#Poke Ball Factory Team Flare
+execute as @s[x=-154,y=89,z=-1859,distance=..8,tag=Dialogue86,tag=!Dialogue87] run opendialogue teamflare_dialogue87 @s
 
+#Sets up Power Plant Flare Grunts
+execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90] unless entity @e[x=-134,y=95,z=-1919,dy=3,type=cobblemon:npc] run npcspawnat -134 95 -1919 pokeballfactory_flaregrunt1
+execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90] unless entity @e[x=-209,y=89,z=-1938,dy=3,type=cobblemon:npc] run npcspawnat -209 89 -1938 pokeballfactory_flaregrunt2
+execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90] unless entity @e[x=-148,y=89,z=-1965,dy=3,type=cobblemon:npc] run npcspawnat -148 89 -1965 pokeballfactory_flaregrunt3
+execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90] unless entity @e[x=-135,y=104,z=-1996,dy=3,type=cobblemon:npc] run npcspawnat -135 104 -1996 pokeballfactory_flaregrunt4
 
+#Gets rid of grunts
+execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90] run tp @e[x=-134,y=95,z=-1919,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90] run tp @e[x=-209,y=89,z=-1938,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90] run tp @e[x=-148,y=89,z=-1965,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90] run tp @e[x=-135,y=104,z=-1996,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
+#grunt and serena from dialogue 87
+execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90] run tp @e[x=-154,y=89,z=-1859,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90] run tp @e[x=-154,y=88,z=-1849,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
+#Poke Ball Factory spawns admin and scientists
+execute as @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue90] unless entity @e[x=-77,y=104,z=-2010,dy=3,type=cobblemon:npc] run npcspawnat -77 104 -2010 pokeballfactory_celosia
+execute as @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue90] unless entity @e[x=-80,y=104,z=-2012,dy=3,type=cobblemon:npc] run npcspawnat -80 104 -2012 pokeballfactory_flareadmin
+execute as @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue90] unless entity @e[x=-83,y=104,z=-2010,dy=3,type=cobblemon:npc] run npcspawnat -83 104 -2010 pokeballfactory_bryony
+execute as @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue89] unless entity @e[x=-83,y=103,z=-2010,dy=3,type=minecraft:interaction] positioned -83 104 -2010 run function kalos:spawn/npcboxes
+execute as @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue89] unless entity @e[x=-77,y=103,z=-2010,dy=3,type=minecraft:interaction] positioned -77 104 -2010 run function kalos:spawn/npcboxes
 
-
-
-
-
+#Friends post-Team Flare Grunts
+execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90,tag=!Dialogue93] unless entity @e[x=-157,y=89,z=-1853,dy=3,type=cobblemon:npc] run npcspawnat -157 89 -1853 shauna_generic
+execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90,tag=!Dialogue93] unless entity @e[x=-151,y=89,z=-1853,dy=3,type=cobblemon:npc] run npcspawnat -151 89 -1853 trevor_generic
+execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90,tag=!Dialogue93] unless entity @e[x=-154,y=89,z=-1852,dy=3,type=cobblemon:npc] run npcspawnat -154 89 -1852 tierno_generic
+execute as @s[x=-154,y=89,z=-1852,distance=..10,tag=Dialogue90,tag=!Dialogue93] run opendialogue friends_dialogue93 @s
 
 
 #-----------------------------------------------------------

@@ -1,0 +1,65 @@
+{   
+    "initializationAction": [              
+            ],
+    "escapeAction": [],
+    "speakers": {
+        "bryony": {
+          "name": "???",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:bryony",
+            "isLeftSide": true
+          }
+        },
+        "celosia": {
+          "name": "Team Flare Celosia",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:celosia",
+            "isLeftSide": false
+          }
+        },
+        "president": {
+          "name": "Factory President",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:gentleman",
+            "isLeftSide": true
+          }
+        },
+        "admin": {
+          "name": "Team Flare Admin",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:teamflareadminf",
+            "isLeftSide": true
+          }
+        }
+      },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "bryony",
+            "lines": [
+                "I don't remember you in the factory?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();"
+                            ]
+                    }
+                ]
+            }
+        }
+        ]
+    }

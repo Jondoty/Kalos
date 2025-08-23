@@ -6,13 +6,14 @@
     ],
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:pokeballfactory_celosia_interaction"
+        "dialogue": "cobblemon:pokeballfactory_celosiabryony_interaction"
     },
-    "name": "Team Flare Celosia",
+    "name": "Team Flare Celosia & Bryony",
     "party": {
         "type": "simple",
         "pokemon": [
-            "Manectric level=41"
+            "Manectric level=41",
+            "Liepard level=41"
         ]
     },
     "config": [
@@ -35,7 +36,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue pokeballfactory_celosia_end @s');"
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue teamflare_dialogue90 @s');"
         }
     ]
 }

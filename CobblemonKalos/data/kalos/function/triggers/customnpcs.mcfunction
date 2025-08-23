@@ -51,8 +51,13 @@ execute as @s[x=-1563,y=83,z=-844,distance=..6] if data entity @s Inventory[{id:
 execute as @s[x=-1563,y=83,z=-844,distance=..6,tag=Dialogue264] run opendialogue shalourhiker_traded @s
 
 
+#Celosia & Bryony Poke Ball Factory pre-admin-battle
+execute as @s[x=-83,y=103,z=-2010,distance=..3,tag=!Dialogue89] run opendialogue pokeballfactory_bryony_prebattle @s
+execute as @s[x=-77,y=103,z=-2010,distance=..3,tag=!Dialogue89] run opendialogue pokeballfactory_celosia_prebattle @s
 
-
+#Ball Factory President 
+execute as @s[x=-80,y=103,z=-2016,distance=..3,tag=!Dialogue90] run opendialogue pokeballfactory_president_prebattle @s
+execute as @s[x=-80,y=103,z=-2016,distance=..3,tag=Dialogue90] run opendialogue pokeballfactory_president_postbattles @s
 
 
 

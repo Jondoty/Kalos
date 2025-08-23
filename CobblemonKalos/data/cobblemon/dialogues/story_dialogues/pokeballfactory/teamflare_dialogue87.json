@@ -1,0 +1,163 @@
+{   
+    "initializationAction": [              
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+        "q.run_command('execute as ' + q.player.username + ' run playsound flareappears record @s[tag=!RadioOff] ~ ~ ~ 1 1 1');",
+        "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s[tag=!RadioOff] MusicCooldown 83');",
+        "q.run_command('execute as ' + q.player.username + ' run particle cloud -154 89 -1859 2 2 2 1 100');",
+        "q.run_command('execute as ' + q.player.username + ' unless entity @e[x=-154,y=89,z=-1859,dy=3,type=cobblemon:npc] run npcspawnat -154 89 -1859 flare_generic');"
+            ],
+    "escapeAction": [],
+    "speakers": {
+        "flare": {
+          "name": "Team Flare Grunt",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:teamflaregruntm",
+            "isLeftSide": true
+          }
+        },
+        
+        "serena": {
+          "name": "Serena",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:serena",
+            "isLeftSide": false
+          }
+        },
+        "player": {
+            "face": "q.player.face();",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+      },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "flare",
+            "lines": [
+                "Can't that idiot outside even handle guard duty?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "flare",
+            "lines": [
+                "So sorry, but we're not offering tours right now."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run particle cloud -154 89 -1849 2 2 2 1 100');",
+                            "q.run_command('execute as ' + q.player.username + ' unless entity @e[x=-154,y=89,z=-1849,dy=3,type=cobblemon:npc] run npcspawnat -154 89 -1849 serena_generic');",
+                            "q.dialogue.set_page('page3');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "serena",
+            "lines": [
+                "With a red suit like that, you must be a member of Team Flare, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page4",
+            "speaker": "serena",
+            "lines": [
+                "Did you have to take a part-time job at the Poké Ball Factory to pay for that ugly suit?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page5",
+            "speaker": "flare",
+            "lines": [
+                "What?! How dare you mock Team Flare! Mightyena, get them!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page6');"
+                        ]
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page6",
+            "speaker": "serena",
+            "lines": [
+                "I'll take care of this! You go on ahead!"
+            ],
+              "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue87');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                            ]
+                    }
+                ]
+            }
+        }
+        ]
+    }
