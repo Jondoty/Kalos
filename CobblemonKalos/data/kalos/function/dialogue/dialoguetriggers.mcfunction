@@ -360,6 +360,29 @@ execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90,tag=!Dialog
 execute as @s[x=-154,y=89,z=-1852,distance=..10,tag=Dialogue90,tag=!Dialogue93] run opendialogue friends_dialogue93 @s
 
 
+#Dendemille Town Sycamore and Dexio
+execute as @s[x=591,y=108,z=-422,distance=..10,tag=!Dialogue94] unless entity @e[x=645,y=108,z=-420,dy=3,type=cobblemon:npc] run npcspawnat 645 108 -420 sycamore_generic
+execute as @s[x=591,y=108,z=-422,distance=..10,tag=!Dialogue94] unless entity @e[x=645,y=108,z=-424,dy=3,type=cobblemon:npc] run npcspawnat 645 108 -424 dexio_generic
+execute as @s[x=645,y=108,z=-422,distance=..7,tag=!Dialogue94] run opendialogue sycamore_dialogue94 @s
+
+#Frost Cavern Ext Mamoswine and Ace Trainer
+execute as @s[x=733,y=119,z=-646,distance=..20,tag=!Dialogue95] unless entity @e[x=722,y=118,z=-666,distance=..5,type=cobblemon:pokemon] run pokespawnat 722 118 -666 mamoswine no_ai=true level=40
+execute positioned 722 118 -666 as @e[distance=..5,type=cobblemon:pokemon,name=Mamoswine,nbt={PersistenceRequired:0b}] at @s run tp @s ~ ~ ~ -180 ~
+execute positioned 722 118 -666 as @e[distance=..5,type=cobblemon:pokemon,name=Mamoswine,nbt={PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
+execute positioned 722 118 -666 as @e[distance=..5,type=cobblemon:pokemon,name=Mamoswine,nbt={PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
+execute positioned 722 118 -666 as @e[distance=..5,type=cobblemon:pokemon,name=Mamoswine,nbt={PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
+execute positioned 722 118 -666 as @e[distance=..5,type=cobblemon:pokemon,name=Mamoswine,nbt={PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
+
+execute as @s[x=733,y=119,z=-646,distance=..20,tag=!Dialogue95] unless entity @e[x=725,y=118,z=-665,dy=3,type=cobblemon:npc] run npcspawnat 725 118 -665 frostcavern_acetrainerm
+execute as @s[x=717,y=117,z=-682,dx=24,dy=10,dz=20,tag=!Dialogue95] run opendialogue trevor_dialogue95 @s
+
+
+
+
+
+
+
+
 #-----------------------------------------------------------
 #Sets up legendary Pokemon
 
