@@ -59,7 +59,8 @@ execute as @s[x=-77,y=103,z=-2010,distance=..3,tag=!Dialogue89] run opendialogue
 execute as @s[x=-80,y=103,z=-2016,distance=..3,tag=!Dialogue90] run opendialogue pokeballfactory_president_prebattle @s
 execute as @s[x=-80,y=103,z=-2016,distance=..3,tag=Dialogue90] run opendialogue pokeballfactory_president_postbattles @s
 
-
+#Frost Cavern Mable blocked before grunt battle
+execute as @s[x=676,y=85,z=-1361,distance=..5,tag=!Dialogue97] run opendialogue frostcavern_mable_prebattle @s
 
 
 

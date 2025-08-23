@@ -376,7 +376,22 @@ execute positioned 722 118 -666 as @e[distance=..5,type=cobblemon:pokemon,name=M
 execute as @s[x=733,y=119,z=-646,distance=..20,tag=!Dialogue95] unless entity @e[x=725,y=118,z=-665,dy=3,type=cobblemon:npc] run npcspawnat 725 118 -665 frostcavern_acetrainerm
 execute as @s[x=717,y=117,z=-682,dx=24,dy=10,dz=20,tag=!Dialogue95] run opendialogue trevor_dialogue95 @s
 
+#Frost Cavern Abomasnow and Team Flare 
+execute as @s[x=676,y=85,z=-1368,distance=..20,tag=!Dialogue98] unless entity @e[x=722,y=118,z=-666,distance=..5,type=cobblemon:pokemon] run pokespawnat 676 85 -1368 abomasnow no_ai=true level=40
+execute positioned 676 85 -1368 as @e[distance=..5,type=cobblemon:pokemon,name=Abomasnow,nbt={PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
+execute positioned 676 85 -1368 as @e[distance=..5,type=cobblemon:pokemon,name=Abomasnow,nbt={PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
+execute positioned 676 85 -1368 as @e[distance=..5,type=cobblemon:pokemon,name=Abomasnow,nbt={PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
+execute positioned 676 85 -1368 as @e[distance=..5,type=cobblemon:pokemon,name=Abomasnow,nbt={PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
 
+#Sets up Trevor and grunts
+execute as @s[x=676,y=84,z=-1230,distance=..15,tag=!Dialogue96] unless entity @e[x=676,y=85,z=-1297,dy=3,type=cobblemon:npc] run npcspawnat 676 85 -1297 trevor_generic
+execute as @s[x=672,y=84,z=-1299,dx=18,dy=6,dz=11,tag=!Dialogue98] unless entity @e[x=676,y=85,z=-1361,dy=3,type=cobblemon:npc] run npcspawnat 676 85 -1361 frostcavern_mable
+execute as @s[x=672,y=84,z=-1299,dx=18,dy=6,dz=11,tag=!Dialogue98] unless entity @e[x=673,y=85,z=-1358,dy=3,type=cobblemon:npc] run npcspawnat 673 85 -1358 flare_generic
+execute as @s[x=672,y=84,z=-1299,dx=18,dy=6,dz=11,tag=!Dialogue98] unless entity @e[x=679,y=85,z=-1358,dy=3,type=cobblemon:npc] run npcspawnat 679 85 -1358 frostcavern_flaregrunt
+
+#Trevor dialogue before battle
+execute as @s[x=672,y=84,z=-1299,dx=18,dy=6,dz=11,tag=!Dialogue96] run opendialogue trevor_dialogue96 @s
+execute as @s[x=672,y=84,z=-1299,dx=18,dy=6,dz=11,tag=!Dialogue96] unless entity @e[x=676,y=85,z=-1361,dy=3,type=minecraft:interaction] positioned 676 85 -1361 run function kalos:spawn/npcboxes
 
 
 
