@@ -475,10 +475,80 @@ execute positioned -1313 22 -1232 as @e[distance=..5,type=cobblemon:pokemon,name
 #Holo Calls
 
 #Call 2 - Tierno Holo Call leaving city
+#Runs ringer sound effect and message
 execute as @s[x=-372,y=101,z=-124,distance=..20,tag=Dialogue22,tag=!Call2] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run playsound minecraft:block.note_block.chime ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-372,y=101,z=-124,distance=..20,tag=Dialogue22,tag=!Call2] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
 
+#Opens dialogue when player selects the Caster
 execute as @s[x=-372,y=101,z=-124,distance=..20,tag=Dialogue22,tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue tierno_call2 @s
+
+
+#Call 3 - Sycamore approaching Shalour
+execute as @s[x=-1972,y=113,z=-666,distance=..15,tag=Dialogue22,tag=!Call3] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run playsound minecraft:block.note_block.chime ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-1972,y=113,z=-666,distance=..15,tag=Dialogue22,tag=!Call3] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
+
+execute as @s[x=-1972,y=113,z=-666,distance=..15,tag=Dialogue22,tag=!Call3,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue sycamore_call3 @s
+
+
+#Call 4 - Serena Courmarine battle prep
+execute as @s[x=-1189,y=79,z=-812,dx=13,dy=10,dz=18,tag=!Call4] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run playsound minecraft:block.note_block.chime ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-1189,y=79,z=-812,dx=13,dy=10,dz=18,tag=!Call4] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
+
+execute as @s[x=-1189,y=79,z=-812,dx=13,dy=10,dz=18,tag=!Call4,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue serena_call4 @s
+
+
+#Call 5 - Lysandre after gym battle
+execute as @s[x=-1077,y=115,z=-615,distance=..20,tag=Ramos,tag=!Call5] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run playsound minecraft:block.note_block.chime ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-1077,y=115,z=-615,distance=..20,tag=Ramos,tag=!Call5] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
+
+execute as @s[x=-1077,y=115,z=-615,distance=..20,tag=Ramos,tag=!Call5,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue lysandre_call5 @s
+
+
+#Call 6 - Sycamore post-Clemont battle
+execute as @s[x=-181,y=101,z=-390,distance=..51,tag=Clemont,tag=!Call6] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run playsound minecraft:block.note_block.chime ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-181,y=101,z=-390,distance=..51,tag=Clemont,tag=!Call6] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
+
+execute as @s[x=-181,y=101,z=-390,distance=..51,tag=Clemont,tag=!Call6,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue sycamore_call6 @s
+
+
+#Call 7 - Trevor post-Lysandre talk
+execute as @s[x=-296,y=101,z=-478,distance=..20,tag=Dialogue79,tag=!Call7] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run playsound minecraft:block.note_block.chime ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-296,y=101,z=-478,distance=..20,tag=Dialogue79,tag=!Call7] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
+
+execute as @s[x=-296,y=101,z=-478,distance=..20,tag=Dialogue79,tag=!Call7,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue trevor_call7 @s
+
+
+#Call 8 - Malva Newscast after Poke Ball Factory
+execute as @s[x=-154,y=125,z=-1763,distance=..20,tag=Dialogue90,tag=!Call8] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run playsound minecraft:block.note_block.chime ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-154,y=125,z=-1763,distance=..20,tag=Dialogue90,tag=!Call8] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
+
+execute as @s[x=-154,y=125,z=-1763,distance=..20,tag=Dialogue90,tag=!Call8,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue malva_call8 @s
+
+
+#Call 9 - Lysandre second call
+execute as @s[x=522,y=108,z=-475,distance=..20,tag=!Call9] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run playsound minecraft:block.note_block.chime ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=522,y=108,z=-475,distance=..20,tag=!Call9] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
+
+execute as @s[x=522,y=108,z=-475,distance=..20,tag=!Call9,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue lysandre_call9 @s
+
+
+#Call 10 - Serena Anistar battle prep
+execute as @s[x=1056,y=108,z=-191,distance=..20,tag=!Call10] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run playsound minecraft:block.note_block.chime ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=1056,y=108,z=-191,distance=..20,tag=!Call10] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
+
+execute as @s[x=1056,y=108,z=-191,distance=..20,tag=!Call10,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue serena_call10 @s
+
+
+#Call 12 - Sycamore post-Clemont battle
+execute as @s[x=1349,y=108,z=-173,distance=..20,tag=Dialogue134,tag=!Call12] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run playsound minecraft:block.note_block.chime ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=1349,y=108,z=-173,distance=..20,tag=Dialogue134,tag=!Call12] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
+
+execute as @s[x=1349,y=108,z=-173,distance=..20,tag=Dialogue134,tag=!Call12,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue sycamore_call12 @s
+
+
+
+
+
 
 
 
