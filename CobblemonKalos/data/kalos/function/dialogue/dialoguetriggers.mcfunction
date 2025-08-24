@@ -472,9 +472,13 @@ execute positioned -1313 22 -1232 as @e[distance=..5,type=cobblemon:pokemon,name
 
 
 
+#Holo Calls
 
+#Call 2 - Tierno Holo Call leaving city
+execute as @s[x=-372,y=101,z=-124,distance=..20,tag=Dialogue22,tag=!Call2] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run playsound minecraft:block.note_block.chime ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-372,y=101,z=-124,distance=..20,tag=Dialogue22,tag=!Call2] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
 
-
+execute as @s[x=-372,y=101,z=-124,distance=..20,tag=Dialogue22,tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue tierno_call2 @s
 
 
 

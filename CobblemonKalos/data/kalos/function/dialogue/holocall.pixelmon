@@ -57,36 +57,7 @@ tag @a[scores={HoloCall=1,HoloSelect=1..,TalkTime=30..}] add EndCall
 
 
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#Call2, Tierno
-#execute as @a[x=-372,y=101,z=-124,distance=..20,tag=Dialogue22] ~ ~ ~ /scoreboard players set @s[tag=!Call2,score_HoloCall=0] HoloCall 2
-
-
-#Title and ring of incoming call
-title @a[scores={HoloSelect=0,HoloCall=2},tag=!Call2,x=-372,y=101,z=-124,distance=..20] actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
-execute as @a[scores={HoloSelect=0,HoloCall=2},tag=!Call2,x=-372,y=101,z=-124,distance=..20] run playsound minecraft:block.note.chime ambient @s ~ ~ ~ 10 1
-
-replaceitem entity @a[scores={HoloSelect=1,HoloCall=2},tag=!Call2,tag=!Replaced] hotbar.0 minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:6s}
-replaceitem entity @a[scores={HoloSelect=2,HoloCall=2},tag=!Call2,tag=!Replaced] hotbar.1 minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:6s}
-replaceitem entity @a[scores={HoloSelect=3,HoloCall=2},tag=!Call2,tag=!Replaced] hotbar.2 minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:6s}
-replaceitem entity @a[scores={HoloSelect=4,HoloCall=2},tag=!Call2,tag=!Replaced] hotbar.3 minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:6s}
-replaceitem entity @a[scores={HoloSelect=5,HoloCall=2},tag=!Call2,tag=!Replaced] hotbar.4 minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:6s}
-replaceitem entity @a[scores={HoloSelect=6,HoloCall=2},tag=!Call2,tag=!Replaced] hotbar.5 minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:6s}
-replaceitem entity @a[scores={HoloSelect=7,HoloCall=2},tag=!Call2,tag=!Replaced] hotbar.6 minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:6s}
-replaceitem entity @a[scores={HoloSelect=8,HoloCall=2},tag=!Call2,tag=!Replaced] hotbar.7 minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:6s}
-replaceitem entity @a[scores={HoloSelect=9,HoloCall=2},tag=!Call2,tag=!Replaced] hotbar.8 minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:6s}
-replaceitem entity @a[scores={HoloSelect=106,HoloCall=2},tag=!Call2,tag=!Replaced] weapon.offhand minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:6s}
-
-tag @a[scores={HoloSelect=1..,HoloCall=2},tag=!Call2,tag=!Replaced,nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",Damage:6s}]}] add Replaced
-
-
-
-scoreboard players add @a[scores={HoloCall=2,HoloSelect=1..}] TalkTime 1
-tellraw @a[scores={TalkTime=3,HoloSelect=1..,HoloCall=2},tag=!Call2] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> So, check this out! I'm out on Route 5 right now, and it's just hopping with wild Pokémon!"}]
-tellraw @a[scores={TalkTime=13,HoloSelect=1..,HoloCall=2},tag=!Call2] ["",{"text":"<"},{"text":"Tierno","color":"yellow"},{"text":"> Hurry and come check it out!"}]
-
-tag @a[scores={TalkTime=20..,HoloCall=2},tag=!Call2] add EndCall
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #Call3, Sycamore
