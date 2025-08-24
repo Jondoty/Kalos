@@ -404,9 +404,23 @@ execute as @s[x=1303,y=107,z=-273,distance=..15,tag=!Dialogue103,scores={Starter
 execute as @s[x=1303,y=107,z=-273,distance=..15,tag=!Dialogue103,scores={StarterPick=2}] unless entity @e[x=1325,y=108,z=-277,dy=3,type=cobblemon:npc] run npcspawnat 1325 108 -277 anistar_serena2
 execute as @s[x=1303,y=107,z=-273,distance=..15,tag=!Dialogue103,scores={StarterPick=3}] unless entity @e[x=1325,y=108,z=-277,dy=3,type=cobblemon:npc] run npcspawnat 1325 108 -277 anistar_serena3
 
+#Serena and Lysandre's call outside of Anistar Gym
+execute as @s[x=1328,y=108,z=-281,distance=..20,tag=Olympia,tag=!Dialogue104] unless entity @e[x=1318,y=108,z=-278,dy=3,type=cobblemon:npc] run npcspawnat 1318 108 -278 serena_generic
+execute as @s[x=1318,y=108,z=-278,distance=..6,tag=Olympia,tag=!Dialogue104] run opendialogue serena_dialogue104 @s
 
+#Anistar spawns in two Team Flare grunts for hint
+execute as @s[x=1328,y=108,z=-281,distance=..20,tag=Olympia,tag=!Dialogue133] unless entity @e[x=1353,y=108,z=-283,dy=3,type=cobblemon:npc] run npcspawnat 1353 108 -283 anistar_flaregrunt
+execute as @s[x=1328,y=108,z=-281,distance=..20,tag=Olympia,tag=!Dialogue133] unless entity @e[x=1357,y=108,z=-283,dy=3,type=cobblemon:npc] run npcspawnat 1357 108 -283 anistar_flaregrunt2
+execute as @s[x=1328,y=108,z=-281,distance=..20,tag=Dialogue133] run tp @e[x=1353,y=108,z=-283,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @s[x=1328,y=108,z=-281,distance=..20,tag=Dialogue133] run tp @e[x=1357,y=108,z=-283,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
+#Lumiose Lysandre Labs Hidden bookcase
+execute as @s[x=-296,y=133,z=429,distance=..5,tag=Dialogue105,tag=Dialogue106] unless block -296 133 429 air run opendialogue lysandrelabs_dialogue107 @s
 
+#Resets the bookcase if grunts are not beaten
+execute as @s[x=-296,y=133,z=429,distance=..20,tag=!Dialogue107] if block -296 133 429 air run fill -292 133 429 -289 137 429 air
+execute as @s[x=-296,y=133,z=429,distance=..20,tag=!Dialogue107] if block -296 133 429 air run fill -297 137 429 -294 137 429 minecraft:flower_pot
+execute as @s[x=-296,y=133,z=429,distance=..20,tag=!Dialogue107] if block -296 133 429 air run fill -294 133 429 -297 136 429 minecraft:spruce_stairs[facing=north,half=top,shape=straight]
 
 
 

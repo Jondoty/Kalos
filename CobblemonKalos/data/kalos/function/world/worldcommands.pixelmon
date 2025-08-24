@@ -487,21 +487,6 @@ execute as @a[x=801,y=107,z=-340,dx=50,dy=10,dz=30,tag=!Dialogue98] run effect g
 execute as @a[x=837,y=108,z=-335,distance=..10,tag=!Dialogue100,scores={TalkTime=0},tag=Dialogue98] run scoreboard players set @s DialogueTrigger 100
 
 
-
-#Dialogue 104
-#Anistar City Serena gets Lysandre's doom call
-execute as @a[x=1328,y=108,z=-281,distance=..20,scores={TalkTime=0},tag=Olympia,tag=!Dialogue104] run scoreboard players set @s DialogueTrigger 104
-
-#Hint-giving grunts
-execute as @p[x=1303,y=108,z=-267,distance=..20,tag=Dialogue133] run tp @e[x=1353,y=107,z=-283,dy=3,type=pixelmon:npc_chatting] -504 221 1272
-execute as @p[x=1303,y=108,z=-267,distance=..20,tag=Dialogue133] run tp @e[x=1357,y=107,z=-283,dy=3,type=pixelmon:npc_chatting] -504 221 1274
-
-#Dialogue 107
-#Lysandre Labs two Waiters
-execute as @a[x=-307,y=80,z=425,dx=23,dy=100,dz=28,scores={TalkTime=0},tag=Dialogue105,tag=Dialogue106] run scoreboard players set @s[tag=!Dialogue107] DialogueTrigger 107
-execute as @a[x=-307,y=132,z=427,dx=23,dy=9,dz=26,tag=Olympia] run tp @e[x=-504,y=225,z=1268,dy=3,type=pixelmon:npc_trainer] -298 133 442
-execute as @a[x=-307,y=132,z=427,dx=23,dy=9,dz=26,tag=Olympia] run tp @e[x=-504,y=225,z=1270,dy=3,type=pixelmon:npc_trainer] -294 133 431
-
 #Dialogue 108 & 109
 #Lysandre Labs Lysandre first floor encounter
 scoreboard players set @a[x=-304,y=140,z=388,dx=16,dy=5,dz=12,scores={TalkTime=0},tag=!Dialogue108] DialogueTrigger 108
