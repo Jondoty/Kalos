@@ -469,46 +469,6 @@ execute as @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue35] run execute as @
 scoreboard players set @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue36,tag=!Dialogue36,scores={MusicSteps=1..,TalkTime=0}] DialogueTrigger 36
 
 
-
-
-
-#Dialogue 87
-#Factory Floor Serena and Grunt at door
-execute as @a[x=-157,y=125,z=-1774,dx=6,dy=5,scores={TalkTime=0},tag=Dialogue86,tag=!Dialogue87,] run scoreboard players set @s DialogueTrigger 87
-
-execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue88,scores={TalkTime=0}] run tp @e[x=-504,y=180,z=1268,dy=3,type=pixelmon:npc_chatting] -80 104 -2012
-execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue88,scores={TalkTime=0}] run tp @e[x=-504,y=180,z=1272,dy=3,type=pixelmon:npc_chatting] -83 104 -2010
-execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue88,scores={TalkTime=0}] run tp @e[x=-504,y=180,z=1276,dy=3,type=pixelmon:npc_chatting] -77 104 -2010
-
-#Sets up Factory NPCs
-execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,scores={TalkTime=0}] run tp @e[x=-504,y=175,z=1272,dy=3,type=pixelmon:npc_trainer] -134 95 -1919
-execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,scores={TalkTime=0}] run tp @e[x=-504,y=175,z=1274,dy=3,type=pixelmon:npc_trainer] -209 89 -1938
-execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,scores={TalkTime=0}] run tp @e[x=-504,y=175,z=1276,dy=3,type=pixelmon:npc_trainer] -148 89 -1965
-execute as @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90,scores={TalkTime=0}] run tp @e[x=-504,y=175,z=1278,dy=3,type=pixelmon:npc_trainer] -135 104 -1996
-
-#Dialogue 88
-#Factory Admin and Scientists in Presidential building
-scoreboard players set @a[x=-92,y=102,z=-2020,dx=24,dy=5,dz=16,scores={TalkTime=0},tag=!Dialogue88] DialogueTrigger 88
-execute as @a[x=-92,y=102,z=-2020,dx=24,dy=5,dz=16,tag=!Dialogue89,scores={TalkTime=0},tag=Dialogue88] run tp @e[x=-504,y=180,z=1270,dy=3,type=pixelmon:npc_trainer] -80 104 -2012
-
-#Dialogue 90
-#Factory post-double battle
-execute as @a[x=-92,y=102,z=-2020,dx=24,dy=5,dz=16,tag=Dialogue89,scores={MusicSteps=1..,TalkTime=0},tag=!Dialogue90] run scoreboard players set @s DialogueTrigger 90
-
-#Dialogue 93
-#Factory friends at entrance after defeating Flare
-execute as @a[x=-154,y=89,z=-1852,distance=..20,tag=Dialogue90,tag=!Dialogue93,scores={TalkTime=0}] run scoreboard players set @s DialogueTrigger 93
-
-#Route 15 Gate Flare Grunts
-execute as @p[x=-27,y=100,z=-1353,distance=..30,tag=Dialogue90] run tp @e[x=41,y=98,z=-1357,dy=3,type=pixelmon:npc_chatting] -504 196 1268
-execute as @p[x=-27,y=100,z=-1353,distance=..30,tag=Dialogue90] run tp @e[x=41,y=98,z=-1349,dy=3,type=pixelmon:npc_chatting] -504 196 1270
-execute as @p[x=-27,y=100,z=-1353,distance=..30,tag=!Dialogue90] run tp @e[x=-504,y=195,z=1268,dy=3,type=pixelmon:npc_chatting] 41 100 -1357
-execute as @p[x=-27,y=100,z=-1353,distance=..30,tag=!Dialogue90] run tp @e[x=-504,y=195,z=1270,dy=3,type=pixelmon:npc_chatting] 41 100 -1349
-
-#Dialogue 94
-#Dendemille Sycamore and Dexio
-scoreboard players set @a[x=638,y=107,z=-431,dx=15,dy=5,dz=17,tag=!Dialogue94,scores={TalkTime=0}] DialogueTrigger 94
-
 #Dialogue 95
 #Frost Cavern ext Mamoswine has a bad feeling
 scoreboard players set @a[x=717,y=117,z=-682,dx=24,dy=10,dz=20,scores={TalkTime=0},tag=!Dialogue95] DialogueTrigger 95
@@ -516,12 +476,6 @@ execute as @p[x=733,y=119,z=-646,distance=..20,tag=!Dialogue95,tag=!Dialogue98] 
 execute as @p[x=733,y=119,z=-646,distance=..20,tag=!Dialogue95,tag=!Dialogue98] run tp @e[x=-501,y=190,z=1238,dy=3,type=pixelmon:statue] 722 118 -666
 execute as @p[x=719,y=117,z=-682,distance=..30,tag=Dialogue98] run tp @e[x=725,y=117,z=-665,dy=3,type=pixelmon:npc_chatting] -504 206 1268
 execute as @p[x=719,y=117,z=-682,distance=..30,tag=Dialogue98] run tp @e[x=722,y=117,z=-666,dy=3,type=pixelmon:statue] -501 191 1238
-
-#Dialogue 96
-#Frost Cavern Team Flare
-scoreboard players set @a[x=672,y=84,z=-1299,dx=18,dy=6,dz=11,scores={TalkTime=0},tag=!Dialogue96] DialogueTrigger 96
-execute as @a[x=676,y=85,z=-1359,distance=..10,scores={TalkTime=0},tag=Dialogue96,tag=!Dialogue97] run tp @e[x=-504,y=210,z=1280,dy=3,type=pixelmon:npc_trainer] 679 85 -1358
-execute as @a[x=676,y=85,z=-1359,distance=..10,scores={TalkTime=0},tag=Dialogue97,tag=!Dialogue98] run tp @e[x=-504,y=210,z=1278,dy=3,type=pixelmon:npc_trainer] 676 85 -1361
 
 #Dialogue 99
 #Route 13 Mamoswine is gone if went to here first
@@ -532,16 +486,7 @@ execute as @a[x=801,y=107,z=-340,dx=50,dy=10,dz=30,tag=!Dialogue98] run effect g
 #Route 17 Mamoswine has returned
 execute as @a[x=837,y=108,z=-335,distance=..10,tag=!Dialogue100,scores={TalkTime=0},tag=Dialogue98] run scoreboard players set @s DialogueTrigger 100
 
-#Dialogue 101
-#Anistar City Sina
-scoreboard players set @a[x=1187,y=107,z=-196,dx=16,dy=5,dz=17,tag=!Dialogue101,scores={TalkTime=0}] DialogueTrigger 101
 
-#Dialogue 102
-#Anistar Serena Battle
-scoreboard players set @a[x=1308,y=107,z=-286,dx=12,dy=5,dz=25,tag=!Dialogue102,scores={TalkTime=0}] DialogueTrigger 102
-execute as @a[x=1308,y=107,z=-286,dx=12,dy=5,dz=25,tag=!Dialogue103,scores={TalkTime=0,StarterPick=1},tag=Dialogue102] run tp @e[x=-504,y=215,z=1272,dy=3,type=pixelmon:npc_trainer] 1325 108 -277
-execute as @a[x=1308,y=107,z=-286,dx=12,dy=5,dz=25,tag=!Dialogue103,scores={TalkTime=0,StarterPick=2},tag=Dialogue102] run tp @e[x=-504,y=215,z=1274,dy=3,type=pixelmon:npc_trainer] 1325 108 -277
-execute as @a[x=1308,y=107,z=-286,dx=12,dy=5,dz=25,tag=!Dialogue103,scores={TalkTime=0,StarterPick=3},tag=Dialogue102] run tp @e[x=-504,y=215,z=1276,dy=3,type=pixelmon:npc_trainer] 1325 108 -277
 
 #Dialogue 104
 #Anistar City Serena gets Lysandre's doom call

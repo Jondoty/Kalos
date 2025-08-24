@@ -1,0 +1,87 @@
+{
+    "initializationAction": [
+        "c.npc.set_chatting();",
+        "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 3');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+        "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $4600 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
+        "q.run_command('scoreboard players add ' + q.player.username + ' Money 4600');",
+        "q.run_command('tag ' + q.player.username + ' add Dialogue103');"
+    ],
+    "speakers": {
+        "npc": {
+            "name": "Serena",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:serena",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "My Pokémon are so much stronger now, but you and your Pokémon are still one step ahead of us..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "Anyway, I'll heal your Pokémon. Here."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run pokeheal');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound cobblemon:item.medicine.spray.use ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page3');"]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "You and your Pokémon are good enough to beat the Gym Leader. Go for it!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('particle cloud 1325 108 -277 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=1325,y=107,z=-277,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "escapeAction": []
+}

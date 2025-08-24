@@ -1,0 +1,147 @@
+{   
+    "initializationAction": [              
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+            ],
+    "escapeAction": [],
+    "speakers": {
+        "sina": {
+          "name": "Sina",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:sina",
+            "isLeftSide": true
+          }
+        },
+        "dexio": {
+          "name": "Dexio",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:dexio",
+            "isLeftSide": false
+          }
+        }
+      },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "sina",
+            "lines": [
+                "You there!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "sina",
+            "lines": [
+                "I came in place of Dexio to tell you something."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "sina",
+            "lines": [
+                "There's a person here in Anistar City who knows about the Legendary Pokémon."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "sina",
+            "lines": [
+                "Oh, I almost forgot! I brought you some gifts! Put them to good use!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('give ' + q.player.username + ' cobblemon:repeat_ball 10');",
+                            "q.run_command('playsound minecraft:itemget ambient ' + q.player.username + ' ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page5');"]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "sina",
+            "lines": [
+                "Repeat Balls make it easier to catch kinds of Pokémon that you've caught before!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "sina",
+            "lines": [
+                "Even though they're the same species, the strengths and Natures of individual Pokémon can be really different."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('particle cloud 1207 108 -188 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=1207,y=107,z=-188,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue101');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                            ]
+                    }
+                ]
+            }
+        }
+        ]
+    }

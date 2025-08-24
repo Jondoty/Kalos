@@ -393,6 +393,19 @@ execute as @s[x=672,y=84,z=-1299,dx=18,dy=6,dz=11,tag=!Dialogue98] unless entity
 execute as @s[x=672,y=84,z=-1299,dx=18,dy=6,dz=11,tag=!Dialogue96] run opendialogue trevor_dialogue96 @s
 execute as @s[x=672,y=84,z=-1299,dx=18,dy=6,dz=11,tag=!Dialogue96] unless entity @e[x=676,y=85,z=-1361,dy=3,type=minecraft:interaction] positioned 676 85 -1361 run function kalos:spawn/npcboxes
 
+#Skipped over Mamoswine riding until 1.7 introduces riding
+
+#Anistar Sina at entrance to city
+execute as @s[x=1187,y=107,z=-196,dx=16,dy=5,dz=17,tag=!Dialogue101] unless entity @e[x=1207,y=108,z=-188,dy=3,type=cobblemon:npc] run npcspawnat 1207 108 -188 sina_generic
+execute as @s[x=1207,y=108,z=-188,distance=..6,tag=!Dialogue101] run opendialogue sina_dialogue101 @s
+
+#Anistar Serena battle spawn
+execute as @s[x=1303,y=107,z=-273,distance=..15,tag=!Dialogue103,scores={StarterPick=1}] unless entity @e[x=1325,y=108,z=-277,dy=3,type=cobblemon:npc] run npcspawnat 1325 108 -277 anistar_serena1
+execute as @s[x=1303,y=107,z=-273,distance=..15,tag=!Dialogue103,scores={StarterPick=2}] unless entity @e[x=1325,y=108,z=-277,dy=3,type=cobblemon:npc] run npcspawnat 1325 108 -277 anistar_serena2
+execute as @s[x=1303,y=107,z=-273,distance=..15,tag=!Dialogue103,scores={StarterPick=3}] unless entity @e[x=1325,y=108,z=-277,dy=3,type=cobblemon:npc] run npcspawnat 1325 108 -277 anistar_serena3
+
+
+
 
 
 

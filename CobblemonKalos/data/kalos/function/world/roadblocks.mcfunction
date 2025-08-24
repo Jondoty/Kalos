@@ -124,10 +124,10 @@ execute as @s[x=-27,y=100,z=-1353,distance=..30,tag=Dialogue90] run tp @e[x=41,y
 execute as @s[x=-136,y=94,z=-1927,dx=4,dy=5,dz=8,tag=!Dialogue90] at @s run tp @s ~ ~ ~8
 execute as @s[x=-134,y=104,z=-1998,dx=6,dy=5,dz=5,tag=!Dialogue90] at @s run tp @s ~-7 ~ ~
 
-##Anistar City South Exit
-#tellraw @s[x=1342,y=107,z=-122,dx=14,dy=6,dz=15,tag=!Dialogue133] {"text":"<Worker> Stop! The road up ahead was all torn up by the Durant, and we\u2019re still trying to fix it."}
-#execute as @s[x=1342,y=107,z=-122,dx=14,dy=6,dz=15,tag=!Dialogue133] at @s run tp @s ~ ~ ~-10
-#
+#Anistar City South Exit
+execute as @s[x=1342,y=107,z=-122,dx=14,dy=6,dz=15,tag=!Dialogue133] run opendialogue anistar_exitblocked @s
+execute as @s[x=1342,y=107,z=-122,dx=14,dy=6,dz=15,tag=!Dialogue133] at @s run tp @s ~ ~ ~-10
+
 ##Route 19 Defeat Friends
 #tellraw @s[x=1404,y=99,z=489,dx=15,dy=10,dz=6,tag=!Dialogue140] {"text":"Battle your friends on the bridge!","italic":true,"color":"gray"}
 #execute as @s[x=1404,y=99,z=489,dx=15,dy=10,dz=6,tag=!Dialogue140] at @s run tp @s ~10 ~ ~

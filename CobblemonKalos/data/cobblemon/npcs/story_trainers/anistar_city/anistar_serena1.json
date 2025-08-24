@@ -1,0 +1,44 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:serena",
+    "presets": [
+        "cobblemon:trainer_basics"
+    ],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:anistar_serena_interaction"
+    },
+    "name": "Serena",
+    "party": {
+        "type": "simple",
+        "pokemon": [
+            "Meowstic gender=female level=44 moves=fakeout,psychic,disarmingvoice,shadowball",
+            "Absol level=44 moves=swordsdance,slash,nightslash,quickattack",
+            "Jolteon level=44 moves=discharge,quickattack,doublekick",
+            "Delphox level=46 moves=psychic,flamethrower"
+        ]
+    },
+    "config": [
+        {
+            "variableName": "challenge_cooldown",
+            "displayName": "Cooldown",
+            "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
+            "type": "NUMBER",
+            "defaultValue": "0"
+        },
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue anistar_serena_end @s');"
+        }
+    ]
+}
