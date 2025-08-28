@@ -487,47 +487,6 @@ execute as @a[x=801,y=107,z=-340,dx=50,dy=10,dz=30,tag=!Dialogue98] run effect g
 execute as @a[x=837,y=108,z=-335,distance=..10,tag=!Dialogue100,scores={TalkTime=0},tag=Dialogue98] run scoreboard players set @s DialogueTrigger 100
 
 
-#Dialogue 108 & 109
-#Lysandre Labs Lysandre first floor encounter
-scoreboard players set @a[x=-304,y=140,z=388,dx=16,dy=5,dz=12,scores={TalkTime=0},tag=!Dialogue108] DialogueTrigger 108
-execute as @a[x=-304,y=140,z=388,dx=16,dy=5,dz=12,tag=!Dialogue109,scores={TalkTime=0},tag=Dialogue108] run tp @e[x=-504,y=230,z=1268,dy=3,type=pixelmon:npc_trainer] -296 141 393
-
-#Sets up Team Flare in Lysandre Labs
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1270,dy=3,type=pixelmon:npc_trainer] -321 141 382
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1272,dy=3,type=pixelmon:npc_trainer] -333 141 336
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1274,dy=3,type=pixelmon:npc_trainer] -318 141 356
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1276,dy=3,type=pixelmon:npc_trainer] -301 141 346
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1278,dy=3,type=pixelmon:npc_trainer] -254 141 340
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=230,z=1280,dy=3,type=pixelmon:npc_trainer] -256 141 397
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=235,z=1268,dy=3,type=pixelmon:npc_trainer] -275 141 364
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=235,z=1270,dy=3,type=pixelmon:npc_trainer] -233 141 325
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!ElevatorKey] run tp @e[x=-504,y=235,z=1272,dy=3,type=pixelmon:npc_trainer] -355 141 330
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!Dialogue111,scores={TalkTime=0}] run tp @e[x=-504,y=240,z=1268,dy=3,type=pixelmon:npc_chatting] -264 141 311
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!Dialogue111,scores={TalkTime=0}] run tp @e[x=-504,y=240,z=1270,dy=3,type=pixelmon:npc_chatting] -260 141 311
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!Dialogue114,scores={TalkTime=0}] run tp @e[x=-504,y=240,z=1280,dy=3,type=pixelmon:npc_chatting] -216 141 347
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!Dialogue110] run tp @e[x=-504,y=245,z=1276,dy=3,type=pixelmon:npc_chatting] -327 141 302
-execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=Dialogue109,tag=!Dialogue110] run tp @e[x=-504,y=245,z=1278,dy=3,type=pixelmon:npc_chatting] -331 141 302
-
-#Dialogue 110
-#Lysandre Labs Heroes talk
-scoreboard players set @a[x=-339,y=140,z=311,dx=20,dy=10,dz=8,scores={TalkTime=0},tag=!Dialogue110] DialogueTrigger 110
-
-#Dialogue 111-113
-#Lysandre Lavs Celosia and Bryony
-scoreboard players set @a[x=-272,y=140,z=312,dx=20,dy=10,dz=10,scores={TalkTime=0},tag=!Dialogue111] DialogueTrigger 111
-execute as @a[x=-272,y=140,z=312,dx=20,dy=10,dz=10,tag=Dialogue111,scores={TalkTime=0},tag=!Dialogue112] run tp @e[x=-504,y=235,z=1274,dy=3,type=pixelmon:npc_trainer] -264 141 311
-execute as @a[x=-272,y=140,z=312,dx=20,dy=10,dz=10,tag=Dialogue112,scores={TalkTime=0},tag=!Dialogue113] run tp @e[x=-504,y=235,z=1276,dy=3,type=pixelmon:npc_trainer] -260 141 311
-
-#Dialogue 114 & 115
-#Lysandre Labs Mable
-scoreboard players set @a[x=-225,y=140,z=348,dx=17,dy=10,dz=10,scores={TalkTime=0},tag=!Dialogue114] DialogueTrigger 114
-execute as @a[x=-225,y=140,z=348,dx=17,dy=10,dz=10,tag=Dialogue114,scores={TalkTime=0},tag=!Dialogue115] run tp @e[x=-504,y=235,z=1278,dy=3,type=pixelmon:npc_trainer] -216 141 347
-
-#Dialogue 116
-#Lysandre Labs Lysandre and AZ
-scoreboard players set @a[x=-395,y=110,z=392,dx=18,dy=10,dz=11,scores={TalkTime=0},tag=!Dialogue116] DialogueTrigger 116
-execute as @a[x=-376,y=110,z=396,dx=41,dy=10,dz=7,tag=!Dialogue116] run tp @e[x=-504,y=240,z=1274,dy=3,type=pixelmon:npc_chatting] -386 111 390
-execute as @a[x=-376,y=110,z=396,dx=41,dy=10,dz=7,tag=!Dialogue116] run tp @e[x=-504,y=240,z=1276,dy=3,type=pixelmon:npc_chatting] -388 111 394
 
 #Dialogue 117
 #Lysandre Labs B3F Xerosic and Lysandre

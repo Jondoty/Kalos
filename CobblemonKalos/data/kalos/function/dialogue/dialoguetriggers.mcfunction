@@ -452,6 +452,16 @@ execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=!Dialogue110] unless en
 execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=!Dialogue110] unless entity @e[x=-331,y=141,z=302,dy=3,type=cobblemon:npc] run npcspawnat -331 141 302 hero_dexio_generic
 execute as @s[x=-329,y=141,z=302,distance=..7,tag=!Dialogue110] run opendialogue sinadexio_dialogue110 @s
 
+#Az imprisoned starting dialogue
+execute as @a[x=-376,y=110,z=396,dx=41,dy=10,dz=7,scores={DialogueTrigger=0},tag=!Dialogue116] unless entity @e[x=-386,y=111,z=390,dy=3,type=cobblemon:npc] run npcspawnat -386 111 390 az_generic
+execute as @a[x=-376,y=110,z=396,dx=41,dy=10,dz=7,scores={DialogueTrigger=0},tag=!Dialogue116] unless entity @e[x=-388,y=111,z=394,dy=3,type=cobblemon:npc] run npcspawnat -388 111 394 lysandre_generic
+execute as @s[x=-395,y=110,z=392,dx=18,dy=10,dz=11,scores={DialogueTrigger=0},tag=!Dialogue116] run opendialogue az_dialogue116a @s
+
+
+
+
+
+
 
 #-----------------------------------------------------------
 #Sets up legendary Pokemon

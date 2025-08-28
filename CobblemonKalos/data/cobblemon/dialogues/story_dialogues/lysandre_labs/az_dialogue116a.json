@@ -1,0 +1,46 @@
+{
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+    ],
+    "escapeAction": [
+    ],
+    "names": [
+    ],
+    "speakers": {
+        "az": {
+            "name": "???",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:az",
+                "isLeftSide": false
+            }
+        }
+    },
+    "pages": [        
+        {
+            "id": "greeting",
+            "speaker": "az",
+            "lines": [
+                "Listen, one who will face Lysandre."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' DialogueTrigger 116');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players add @s TalkTime 9');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

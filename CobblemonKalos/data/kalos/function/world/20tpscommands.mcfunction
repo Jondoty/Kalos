@@ -38,3 +38,17 @@ execute if entity @a[x=-1034,y=99,z=1432,dx=50,dy=50,dz=50,scores={DialogueTrigg
 #Route 7 Sleeping Snorlax
 tellraw @a[x=-1305,y=100,z=-39,dx=6,dy=10,dz=6,tag=!Dialogue32] {"text":"There is a large Pokémon sleeping peacefully. It looks so content!","italic":true,"color":"gray"}
 execute as @a[x=-1305,y=100,z=-39,dx=6,dy=10,dz=6,tag=!Dialogue32] at @s run tp @s ~10 ~ ~
+
+
+#AZ Cutscene Camera Movements
+execute as @a[x=-383,y=100,z=366,dx=6,dy=5,dz=7] at @s run tp @s ~ ~ ~-0.005
+execute as @a[x=-375,y=100,z=366,dx=6,dy=5,dz=7] at @s run tp @s ~ ~ ~-0.005
+execute as @a[x=-367,y=100,z=366,dx=6,dy=5,dz=7] at @s run tp @s ~0.005 ~ ~
+execute as @a[x=-359,y=100,z=366,dx=6,dy=5,dz=7] at @s run tp @s ~ ~ ~0.005
+execute as @a[x=-351,y=100,z=366,dx=4,dy=5,dz=7] at @s run tp @s ~ ~ ~ ~ ~-0.05
+execute as @a[x=-353,y=100,z=354,dx=6,dy=5,dz=7] at @s run tp @s ~ ~ ~-0.005
+execute as @a[x=-359,y=100,z=354,dx=4,dy=5,dz=7] at @s run tp @s ~ ~ ~ ~ ~-0.05
+execute as @a[x=-367,y=100,z=354,dx=6,dy=5,dz=7] at @s run tp @s ~ ~ ~0.005
+execute as @a[x=-375,y=100,z=354,dx=6,dy=5,dz=7] at @s run tp @s ~0.005 ~ ~
+execute as @a[x=-383,y=100,z=355,dx=6,dy=5,dz=7] at @s run tp @s ~ ~ ~-0.005
+execute as @a[x=-391,y=100,z=354,dx=6,dy=6,dz=3] at @s run tp @s ~0.005 ~ ~

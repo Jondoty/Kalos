@@ -1,0 +1,135 @@
+{
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+    ],
+    "escapeAction": [
+    ],
+    "names": [
+    ],
+    "speakers": {
+        "az": {
+            "name": "???",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:az",
+                "isLeftSide": false
+            }
+        },
+        "lysandre": {
+            "name": "Lysandre",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:lysandre",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [    
+        {
+            "id": "greeting",
+            "speaker": "az",
+            "lines": [
+                "Get the key back. It should not be used. Everything will vanish again."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "az",
+            "lines": [
+                "Do you want to know unending pain...like I have?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page3');"
+                        ]
+                    }
+                ]
+            }
+        },    
+        {
+            "id": "page3",
+            "speaker": "lysandre",
+            "lines": [
+                "That is AZ. He has the same name as a king that lived 3,000 years ago."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page4');"
+                        ]
+                    }
+                ]
+            }
+        },   
+        {
+            "id": "page4",
+            "speaker": "lysandre",
+            "lines": [
+                "And for some unknown reason, he had the key to the ultimate weapon hung around his neck."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page5');"
+                        ]
+                    }
+                ]
+            }
+        },   
+        {
+            "id": "page5",
+            "speaker": "lysandre",
+            "lines": [
+                "It's finally time. Follow me to my chambers, just one floor below."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('particle cloud -388 111 394 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-388,y=110,z=394,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue116');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
