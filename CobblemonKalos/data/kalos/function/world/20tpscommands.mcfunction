@@ -2,6 +2,8 @@
 #Portals
 execute as @a at @s if block ~ ~ ~ minecraft:magenta_carpet run function kalos:world/portals
 
+#Runs movement panels in Lysandre Labs
+execute as @a[x=-402,y=0,z=277,dx=209,dy=256,dz=148] run function kalos:world/movementpanels
 
 #Tagging berries in the berry farms area
 execute as @e[x=-1273,y=100,z=2,dx=85,dy=4,dz=30,type=item] run function kalos:data/berrytags
