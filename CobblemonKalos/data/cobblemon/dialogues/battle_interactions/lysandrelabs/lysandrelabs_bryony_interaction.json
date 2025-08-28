@@ -18,7 +18,7 @@
                 "type": "artificial",
                 "modelType": "npc",
                 "identifier": "cobblemon:celosia",
-                "isLeftSide": false
+                "isLeftSide": true
             }
         },
         "bryony": {
@@ -27,7 +27,7 @@
                 "type": "artificial",
                 "modelType": "npc",
                 "identifier": "cobblemon:bryony",
-                "isLeftSide": true
+                "isLeftSide": false
             }
         }
     },

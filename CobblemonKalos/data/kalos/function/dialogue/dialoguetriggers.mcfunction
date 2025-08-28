@@ -423,6 +423,34 @@ execute as @s[x=-296,y=133,z=429,distance=..20,tag=!Dialogue107] if block -296 1
 execute as @s[x=-296,y=133,z=429,distance=..20,tag=!Dialogue107] if block -296 133 429 air run fill -294 133 429 -297 136 429 minecraft:spruce_stairs[facing=north,half=top,shape=straight]
 
 
+#Lysandre Labs sets up trainers
+#Lysandre
+execute as @a[x=-296,y=140,z=402,distance=..10,tag=!Dialogue109] unless entity @e[x=-296,y=141,z=393,dy=3,type=cobblemon:npc] run npcspawnat -296 141 393 lysandrelabs_lysandre
+
+
+#Grunts
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=!ElevatorKey] unless entity @e[x=-321,y=141,z=382,dy=3,type=cobblemon:npc] run npcspawnat -321 141 382 lysandrelabs_grunt1
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=!ElevatorKey] unless entity @e[x=-333,y=141,z=336,dy=3,type=cobblemon:npc] run npcspawnat -333 141 336 lysandrelabs_grunt2
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=!ElevatorKey] unless entity @e[x=-318,y=141,z=356,dy=3,type=cobblemon:npc] run npcspawnat -318 141 356 lysandrelabs_grunt3
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=!ElevatorKey] unless entity @e[x=-301,y=141,z=346,dy=3,type=cobblemon:npc] run npcspawnat -301 141 346 lysandrelabs_grunt4
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=!ElevatorKey] unless entity @e[x=-254,y=141,z=340,dy=3,type=cobblemon:npc] run npcspawnat -254 141 340 lysandrelabs_grunt5
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=!ElevatorKey] unless entity @e[x=-256,y=141,z=397,dy=3,type=cobblemon:npc] run npcspawnat -256 141 397 lysandrelabs_grunt6
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=!ElevatorKey] unless entity @e[x=-275,y=141,z=364,dy=3,type=cobblemon:npc] run npcspawnat -275 141 364 lysandrelabs_grunt7
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=!ElevatorKey] unless entity @e[x=-233,y=141,z=325,dy=3,type=cobblemon:npc] run npcspawnat -233 141 325 lysandrelabs_grunt8
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=!ElevatorKey] unless entity @e[x=-355,y=141,z=330,dy=3,type=cobblemon:npc] run npcspawnat -355 141 330 lysandrelabs_aliana
+
+#Scientists Celosia, Bryony, Mable
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=!Dialogue113] unless entity @e[x=-264,y=141,z=311,dy=3,type=cobblemon:npc] run npcspawnat -264 141 311 lysandrelabs_celosia
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=!Dialogue113] unless entity @e[x=-260,y=141,z=311,dy=3,type=cobblemon:npc] run npcspawnat -260 141 311 lysandrelabs_bryony
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=!Dialogue114] unless entity @e[x=-216,y=141,z=347,dy=3,type=cobblemon:npc] run npcspawnat -216 141 347 lysandrelabs_mable
+
+#Celosia, Bryony post-battle dialogue
+execute as @s[x=-262,y=141,z=311,distance=..15,tag=LabsCelosia,tag=LabsBryony,tag=!Dialogue113] run opendialogue celosiabryony_dialogue113 @s
+
+#Sina and Dexio
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=!Dialogue110] unless entity @e[x=-327,y=141,z=302,dy=3,type=cobblemon:npc] run npcspawnat -327 141 302 hero_sina_generic
+execute as @a[x=-402,y=99,z=277,dx=209,dy=100,dz=148,tag=!Dialogue110] unless entity @e[x=-331,y=141,z=302,dy=3,type=cobblemon:npc] run npcspawnat -331 141 302 hero_dexio_generic
+execute as @s[x=-329,y=141,z=302,distance=..7,tag=!Dialogue110] run opendialogue sinadexio_dialogue110 @s
 
 
 #-----------------------------------------------------------

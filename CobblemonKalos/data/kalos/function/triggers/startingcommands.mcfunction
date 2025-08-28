@@ -73,6 +73,8 @@ tag @s remove HoopaCatch
 tag @s remove VolcanionCatch
 tag @s remove GlitteringGrunt1
 tag @s remove GlitteringGrunt2
+tag @s remove LabsCelosia
+tag @s remove LabsBryony
 
 tag @s remove Viscount
 tag @s remove Earl

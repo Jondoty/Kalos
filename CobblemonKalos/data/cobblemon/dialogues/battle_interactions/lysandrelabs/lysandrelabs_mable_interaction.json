@@ -25,7 +25,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Oh, oh, oh, oh?"
+                "Oh, oh, oh, oh? You’re that kid from the Frost Cavern..."
             ],
             "input": {
                 "type": "option",
@@ -45,7 +45,7 @@
             "id": "page2",
             "speaker": "npc",
             "lines": [
-                "You’re that kid from the Frost Cavern..."
+                "On your lonesome this time?"
             ],
             "input": {
                 "type": "option",
@@ -65,7 +65,67 @@
             "id": "page3",
             "speaker": "npc",
             "lines": [
-                "On your lonesome this time?"
+                "We gather data about all the Trainers in the region through the Holo Caster, so we know all about you guys."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page4');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "npc",
+            "lines": [
+                "And you know how the Mega Ring is used to awaken a Pokémon's power, right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page5');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "npc",
+            "lines": [
+                "Just like how the ultimate weapon can max out a Pokémon's power."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page6');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "npc",
+            "lines": [
+                "Heheh... Looks like you and me are practically after the same thing, yeah?"
             ],
              "input": {
                 "type": "option",
