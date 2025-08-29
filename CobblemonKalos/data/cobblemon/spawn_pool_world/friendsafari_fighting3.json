@@ -1,0 +1,1627 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham shiny=yes hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham shiny=yes hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham shiny=yes hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham shiny=yes hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham shiny=yes hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham shiny=yes defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham shiny=yes defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham shiny=yes defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham shiny=yes defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham shiny=yes attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham shiny=yes attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham shiny=yes attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham shiny=yes special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham shiny=yes special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "pancham-1",
+            "pokemon": "pancham shiny=yes special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite shiny=yes hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite shiny=yes hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite shiny=yes hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite shiny=yes hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite shiny=yes hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite shiny=yes defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite shiny=yes defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite shiny=yes defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite shiny=yes defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite shiny=yes attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite shiny=yes attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite shiny=yes attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite shiny=yes special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite shiny=yes special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "meditite-1",
+            "pokemon": "meditite shiny=yes special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama shiny=yes hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama shiny=yes hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama shiny=yes hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama shiny=yes hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama shiny=yes hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama shiny=yes defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama shiny=yes defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama shiny=yes defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama shiny=yes defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama shiny=yes attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama shiny=yes attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama shiny=yes attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama shiny=yes special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama shiny=yes special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        },
+        {
+            "id": "hariyama-1",
+            "pokemon": "hariyama shiny=yes special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting3"
+            ]
+            }
+        }
+    ]
+}

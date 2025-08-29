@@ -1,0 +1,1627 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "throh-1",
+            "pokemon": "throh hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh shiny=yes hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh shiny=yes hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh shiny=yes hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh shiny=yes hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh shiny=yes hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh shiny=yes defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh shiny=yes defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh shiny=yes defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh shiny=yes defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh shiny=yes attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh shiny=yes attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh shiny=yes attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh shiny=yes special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh shiny=yes special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "throh-1",
+            "pokemon": "throh shiny=yes special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey shiny=yes hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey shiny=yes hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey shiny=yes hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey shiny=yes hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey shiny=yes hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey shiny=yes defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey shiny=yes defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey shiny=yes defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey shiny=yes defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey shiny=yes attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey shiny=yes attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey shiny=yes attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey shiny=yes special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey shiny=yes special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "mankey-1",
+            "pokemon": "mankey shiny=yes special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue shiny=yes hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue shiny=yes hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue shiny=yes hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue shiny=yes hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue shiny=yes hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue shiny=yes defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue shiny=yes defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue shiny=yes defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue shiny=yes defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue shiny=yes attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue shiny=yes attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue shiny=yes attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue shiny=yes special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue shiny=yes special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        },
+        {
+            "id": "tyrogue-1",
+            "pokemon": "tyrogue shiny=yes special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting1"
+            ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,1627 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino shiny=yes hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino shiny=yes hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino shiny=yes hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino shiny=yes hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino shiny=yes hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino shiny=yes defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino shiny=yes defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino shiny=yes defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino shiny=yes defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino shiny=yes attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino shiny=yes attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino shiny=yes attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino shiny=yes special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino shiny=yes special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "minccino-1",
+            "pokemon": "minccino shiny=yes special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup shiny=yes hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup shiny=yes hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup shiny=yes hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup shiny=yes hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup shiny=yes hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup shiny=yes defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup shiny=yes defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup shiny=yes defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup shiny=yes defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup shiny=yes attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup shiny=yes attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup shiny=yes attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup shiny=yes special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup shiny=yes special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "lillipup-1",
+            "pokemon": "lillipup shiny=yes special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle shiny=yes hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle shiny=yes hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle shiny=yes hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle shiny=yes hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle shiny=yes hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle shiny=yes defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle shiny=yes defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle shiny=yes defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle shiny=yes defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle shiny=yes attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle shiny=yes attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle shiny=yes attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle shiny=yes special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle shiny=yes special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        },
+        {
+            "id": "smeargle-1",
+            "pokemon": "smeargle shiny=yes special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:normal4"
+            ]
+            }
+        }
+    ]
+}

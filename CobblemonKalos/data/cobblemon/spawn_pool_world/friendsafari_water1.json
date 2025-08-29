@@ -1,0 +1,1627 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle shiny=yes hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle shiny=yes hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle shiny=yes hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle shiny=yes hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle shiny=yes hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle shiny=yes defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle shiny=yes defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle shiny=yes defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle shiny=yes defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle shiny=yes attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle shiny=yes attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle shiny=yes attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle shiny=yes special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle shiny=yes special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "wartortle-1",
+            "pokemon": "wartortle shiny=yes special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby shiny=yes hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby shiny=yes hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby shiny=yes hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby shiny=yes hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby shiny=yes hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby shiny=yes defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby shiny=yes defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby shiny=yes defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby shiny=yes defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby shiny=yes attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby shiny=yes attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby shiny=yes attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby shiny=yes special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby shiny=yes special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "krabby-1",
+            "pokemon": "krabby shiny=yes special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl shiny=yes hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl shiny=yes hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl shiny=yes hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl shiny=yes hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl shiny=yes hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl shiny=yes defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl shiny=yes defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl shiny=yes defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl shiny=yes defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl shiny=yes attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl shiny=yes attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl shiny=yes attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl shiny=yes special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl shiny=yes special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        },
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl shiny=yes special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:water1"
+            ]
+            }
+        }
+    ]
+}

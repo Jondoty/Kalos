@@ -1,0 +1,1627 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk shiny=yes hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk shiny=yes hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk shiny=yes hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk shiny=yes hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk shiny=yes hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk shiny=yes defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk shiny=yes defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk shiny=yes defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk shiny=yes defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk shiny=yes attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk shiny=yes attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk shiny=yes attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk shiny=yes special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk shiny=yes special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "sawk-1",
+            "pokemon": "sawk shiny=yes special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke shiny=yes hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke shiny=yes hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke shiny=yes hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke shiny=yes hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke shiny=yes hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke shiny=yes defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke shiny=yes defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke shiny=yes defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke shiny=yes defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke shiny=yes attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke shiny=yes attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke shiny=yes attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke shiny=yes special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke shiny=yes special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "machoke-1",
+            "pokemon": "machoke shiny=yes special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom shiny=yes hp_iv=31 defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom shiny=yes hp_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom shiny=yes hp_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom shiny=yes hp_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom shiny=yes hp_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom shiny=yes defence_iv=31 attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom shiny=yes defence_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom shiny=yes defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom shiny=yes defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom shiny=yes attack_iv=31 special_defence_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom shiny=yes attack_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom shiny=yes attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom shiny=yes special_defence_iv=31 special_attack_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom shiny=yes special_defence_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 511,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        },
+        {
+            "id": "breloom-1",
+            "pokemon": "breloom shiny=yes special_attack_iv=31 speed_iv=31",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30",
+            "weight": 1,
+            "condition": {
+                "minX": 1286, "maxX": 1328, "minZ": 1466, "maxZ": 1500,
+                "neededNearbyBlocks": [
+                    "minecraft:short_grass"
+                ],
+                "biomes": [
+                "kalos:fighting2"
+            ]
+            }
+        }
+    ]
+}
