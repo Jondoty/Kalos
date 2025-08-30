@@ -1,0 +1,56 @@
+{
+    "speakers": {
+        "npc": {
+            "name": "Team Flare Scientist",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:scientistf",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "All systems are go for the ultimate weapon."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "All we have to do is charge it using every bit of that thing's power."
+            ],            
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

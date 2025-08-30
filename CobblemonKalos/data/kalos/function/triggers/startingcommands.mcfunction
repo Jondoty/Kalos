@@ -64,9 +64,9 @@ tag @s remove KantoStarter
 tag @s remove LucarioMoves
 tag @s remove PowerPlantPass
 tag @s remove Admin1
+tag @s remove Admin2
 tag @s remove Admin3
 tag @s remove Admin4
-tag @s remove Admin6
 tag @s remove SycamoresNote
 tag @s remove TMVPass
 tag @s remove HoopaCatch

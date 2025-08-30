@@ -1,0 +1,56 @@
+{
+    "speakers": {
+        "npc": {
+            "name": "Team Flare Grunt",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:teamflaregruntm",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "It was 3,000 years ago..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "The ultimate weapon was used, and many Pokemon lost their lives..."
+            ],            
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

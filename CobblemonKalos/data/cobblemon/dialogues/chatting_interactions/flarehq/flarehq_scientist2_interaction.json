@@ -1,0 +1,56 @@
+{
+    "speakers": {
+        "npc": {
+            "name": "Team Flare Scientist",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:scientistf",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "Everyone in the whole world must be happy before any one person can be happy."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "But the world is too big, and there are too many people and Pokemon, so that isn't enough happiness to the ground around..."
+            ],            
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
