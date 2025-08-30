@@ -75,8 +75,65 @@ execute as @s[scores={DialogueTrigger=116,TalkTime=182..190},tag=!Dialogue116,x=
 execute as @s[scores={DialogueTrigger=116,TalkTime=200}] run opendialogue az_dialogue116b @s
 
 tag @s[scores={DialogueTrigger=116,TalkTime=200..}] add Dialogue116
-scoreboard players set @s[tag=Dialogue116] TalkTime 0
-scoreboard players set @s[tag=Dialogue116] DialogueTrigger 0
+scoreboard players set @s[scores={DialogueTrigger=116},tag=Dialogue116] TalkTime 0
+scoreboard players set @s[scores={DialogueTrigger=116},tag=Dialogue116] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#dialogue when pushed button
+
+#Replaces the screen entitydata with frames of the weapon going off
+execute as @s[scores={DialogueTrigger=120,TalkTime=35}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":101},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=36}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":102},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=37}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":103},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=38}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":104},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=39}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":105},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=40}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":106},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=41}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":107},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=42}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":108},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=43}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":109},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=44}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":110},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=45}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":111},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=46}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":112},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=47}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":113},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=48}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":114},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=49}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":115},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=50}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":116},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=51}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":117},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=52}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":118},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=53}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":119},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=54}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":120},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=55}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":121},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=56}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":122},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=57}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":123},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=58}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":124},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=59}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":125},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=60}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":126},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=61}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":127},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=62}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":128},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=63}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":129},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=64}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":130},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=65}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":131},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=66}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":132},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=67}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":133},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=68}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":134},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=69}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":135},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=70}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":136},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=71}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":137},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=72}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":138},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=73}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":139},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=74}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":140},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=75}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":141},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=76}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":142},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=77}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":143},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[scores={DialogueTrigger=120,TalkTime=78}] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":144},count:1,id:"minecraft:diamond_hoe"}}
+
+execute as @s[scores={DialogueTrigger=120,TalkTime=83}] run opendialogue xerosic_dialogue120b @s
+execute as @s[scores={DialogueTrigger=120,TalkTime=83}] run scoreboard players set @s Geosenge 1
+execute as @s[scores={DialogueTrigger=120,TalkTime=83}] run advancement grant @s only kalos:flare7
+
+tag @s[scores={DialogueTrigger=120,TalkTime=83..}] add Dialogue120
+scoreboard players set @s[scores={DialogueTrigger=120},tag=Dialogue120] TalkTime 0
+scoreboard players set @s[scores={DialogueTrigger=120},tag=Dialogue120] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Hall of Fame credits (activated by healer)
@@ -105,7 +162,7 @@ execute as @s[scores={DialogueTrigger=154,TalkTime=65}] run effect give @s minec
 execute as @s[scores={DialogueTrigger=154,TalkTime=67}] run tp @s 506 118 1558 180 10
 
 tag @s[scores={DialogueTrigger=154,TalkTime=67..}] add Dialogue154
-scoreboard players set @s[tag=Dialogue154] TalkTime 0
-scoreboard players set @s[tag=Dialogue154] DialogueTrigger 0
+scoreboard players set @s[scores={DialogueTrigger=154},tag=Dialogue154] TalkTime 0
+scoreboard players set @s[scores={DialogueTrigger=154},tag=Dialogue154] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

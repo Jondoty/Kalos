@@ -52,3 +52,8 @@ execute as @a[x=-367,y=100,z=354,dx=6,dy=5,dz=7] at @s run tp @s ~ ~ ~0.005
 execute as @a[x=-375,y=100,z=354,dx=6,dy=5,dz=7] at @s run tp @s ~0.005 ~ ~
 execute as @a[x=-383,y=100,z=355,dx=6,dy=5,dz=7] at @s run tp @s ~ ~ ~-0.005
 execute as @a[x=-391,y=100,z=354,dx=6,dy=6,dz=3] at @s run tp @s ~0.005 ~ ~
+execute as @a[x=-359,y=100,z=378,dx=6,dy=5,dz=7] at @s run tp @s ~ ~ ~0.005
+execute as @a[x=-367,y=100,z=378,dx=6,dy=5,dz=7] at @s run tp @s ~ ~ ~0.005
+execute as @a[x=-375,y=100,z=378,dx=6,dy=5,dz=7] at @s run tp @s ~ ~ ~-0.005
+execute as @a[x=-383,y=100,z=378,dx=6,dy=5,dz=7] at @s run tp @s ~ ~ ~-0.005
+execute as @a[x=-391,y=100,z=378,dx=6,dy=5,dz=7] at @s run tp @s ~ ~ ~0.005
