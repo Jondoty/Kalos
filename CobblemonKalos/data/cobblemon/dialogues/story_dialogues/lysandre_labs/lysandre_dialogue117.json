@@ -1,0 +1,164 @@
+{
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+    ],
+    "escapeAction": [
+    ],
+    "names": [
+    ],
+    "speakers": {
+        "xerosichidden": {
+            "name": "???",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:xerosic",
+                "isLeftSide": false
+            }
+        },
+        "xerosic": {
+            "name": "Xerosic",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:xerosic",
+                "isLeftSide": false
+            }
+        },
+        "lysandre": {
+            "name": "Lysandre",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:lysandre",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [    
+        {
+            "id": "greeting",
+            "speaker": "xerosichidden",
+            "lines": [
+                "So the Poké Balls we received and the Pokémon we've gathered are where they need to be."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "xerosichidden",
+            "lines": [
+                "Add it all up, and it means all preparations are complete!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page3');"
+                        ]
+                    }
+                ]
+            }
+        },    
+        {
+            "id": "page3",
+            "speaker": "lysandre",
+            "lines": [
+                "The only thing left to do is put the plan in motion. I'm counting on you."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page4');"
+                        ]
+                    }
+                ]
+            }
+        },   
+        {
+            "id": "page4",
+            "speaker": "lysandre",
+            "lines": [
+                "One push of a button, and we can activate the ultimate weapon from this room."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page5');"
+                        ]
+                    }
+                ]
+            }
+        },   
+        {
+            "id": "page5",
+            "speaker": "lysandre",
+            "lines": [
+                "I believe being a chosen one means you have the potential to change the future!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page6');"
+                        ]
+                    }
+                ]
+            }
+        },   
+        {
+            "id": "page6",
+            "speaker": "lysandre",
+            "lines": [
+                "Whether we activate the ultimate weapon or leave it safely underground will rest upon if you actually have this potential or not."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('particle cloud -312 107 326 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-312,y=106,z=326,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue117');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

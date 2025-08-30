@@ -457,7 +457,18 @@ execute as @a[x=-376,y=110,z=396,dx=41,dy=10,dz=7,scores={DialogueTrigger=0},tag
 execute as @a[x=-376,y=110,z=396,dx=41,dy=10,dz=7,scores={DialogueTrigger=0},tag=!Dialogue116] unless entity @e[x=-388,y=111,z=394,dy=3,type=cobblemon:npc] run npcspawnat -388 111 394 lysandre_generic
 execute as @s[x=-395,y=110,z=392,dx=18,dy=10,dz=11,scores={DialogueTrigger=0},tag=!Dialogue116] run opendialogue az_dialogue116a @s
 
+#Lysandre and Xerosic in button room pre-battle
+execute as @s[x=-311,y=110,z=390,distance=..20,tag=!Dialogue117] unless entity @e[x=-312,y=107,z=326,dy=3,type=cobblemon:npc] run npcspawnat -312 107 326 lysandre_generic
+execute as @s[x=-311,y=110,z=390,distance=..20,tag=!Dialogue120] unless entity @e[x=-308,y=107,z=326,dy=3,type=cobblemon:npc] run npcspawnat -308 107 326 lysandrelabs_xerosic
+execute as @s[x=-311,y=110,z=390,distance=..20,tag=!Dialogue117] run data merge entity @e[limit=1,x=-311,y=110,z=306,distance=..2,type=item_frame] {Item:{components:{"minecraft:custom_model_data":101},count:1,id:"minecraft:diamond_hoe"}}
+execute as @s[x=-310,y=107,z=326,distance=..7,tag=!Dialogue117] run opendialogue lysandre_dialogue117 @s
 
+#Ultimate Weapon Geosenge Serena pre-HQ 
+execute as @s[x=-1255,y=109,z=1807,distance=..10,tag=!Dialogue121] run opendialogue serena_dialogue121 @s
+
+#Lysandre and Serena in HQ lobby
+execute as @s[x=-2336,y=66,z=-940,distance=..10,tag=!Dialogue123] unless entity @e[x=-2331,y=70,z=-980,dy=3,type=cobblemon:npc] run npcspawnat -2331 70 -980 serena_generic
+execute as @s[x=-2336,y=66,z=-940,distance=..10,tag=!Dialogue123] unless entity @e[x=-2336,y=70,z=-990,dy=3,type=cobblemon:npc] run npcspawnat -2336 70 -990 flarehq_lysandre
 
 
 

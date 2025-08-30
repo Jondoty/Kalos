@@ -42,6 +42,12 @@ execute as @s[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83] unless entity @s[scores={M
 execute as @s[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83] unless entity @s[scores={MusicCheck=28}] run scoreboard players set @s MusicCheck 28
 execute as @s[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83] run tag @s add Indoors
 
+#Team Flare Secret HQ - 35
+execute as @s[x=-2526,y=0,z=-1074,dx=232,dy=95,dz=167] unless entity @s[scores={MusicCheck=35}] run title @s actionbar {"text":"Team Flare Secret HQ"}
+execute as @s[x=-2526,y=0,z=-1074,dx=232,dy=95,dz=167] unless entity @s[scores={MusicCheck=35}] run function kalos:triggers/stopsound
+execute as @s[x=-2526,y=0,z=-1074,dx=232,dy=95,dz=167] unless entity @s[scores={MusicCheck=35}] run scoreboard players set @s MusicCheck 35
+execute as @s[x=-2526,y=0,z=-1074,dx=232,dy=95,dz=167] run tag @s add Indoors
+
 #---------------------------------------------------------------------------------------
 
 #Vaniville Town - 1
@@ -156,21 +162,21 @@ execute as @s[x=1027,y=0,z=1434,dx=331,dy=256,dz=266] unless entity @s[scores={M
 
 
 #Geosenge Town - 9
-execute as @s[x=-2386,y=0,z=-984,dx=273,dy=256,dz=386] unless entity @s[scores={MusicCheck=9}] run title @s actionbar {"text":"Geosenge Town"}
-execute as @s[x=-2386,y=0,z=-984,dx=273,dy=256,dz=386] unless entity @s[scores={MusicCheck=9}] run function kalos:triggers/stopsound
-execute as @s[x=-2386,y=0,z=-984,dx=273,dy=256,dz=386] unless entity @s[scores={MusicCheck=9}] run scoreboard players set @s MusicCheck 9
+execute as @s[x=-2386,y=0,z=-984,dx=273,dy=256,dz=386,tag=!Indoors] unless entity @s[scores={MusicCheck=9}] run title @s actionbar {"text":"Geosenge Town"}
+execute as @s[x=-2386,y=0,z=-984,dx=273,dy=256,dz=386,tag=!Indoors] unless entity @s[scores={MusicCheck=9}] run function kalos:triggers/stopsound
+execute as @s[x=-2386,y=0,z=-984,dx=273,dy=256,dz=386,tag=!Indoors] unless entity @s[scores={MusicCheck=9}] run scoreboard players set @s MusicCheck 9
 
 
 #Geosenge Town - 9
-execute as @s[x=-1306,y=0,z=1736,dx=273,dy=256,dz=386] unless entity @s[scores={MusicCheck=9}] run title @s actionbar {"text":"Geosenge Town"}
-execute as @s[x=-1306,y=0,z=1736,dx=273,dy=256,dz=386] unless entity @s[scores={MusicCheck=9}] run function kalos:triggers/stopsound
-execute as @s[x=-1306,y=0,z=1736,dx=273,dy=256,dz=386] unless entity @s[scores={MusicCheck=9}] run scoreboard players set @s MusicCheck 9
+execute as @s[x=-1306,y=0,z=1736,dx=273,dy=256,dz=386,tag=!Indoors] unless entity @s[scores={MusicCheck=9}] run title @s actionbar {"text":"Geosenge Town"}
+execute as @s[x=-1306,y=0,z=1736,dx=273,dy=256,dz=386,tag=!Indoors] unless entity @s[scores={MusicCheck=9}] run function kalos:triggers/stopsound
+execute as @s[x=-1306,y=0,z=1736,dx=273,dy=256,dz=386,tag=!Indoors] unless entity @s[scores={MusicCheck=9}] run scoreboard players set @s MusicCheck 9
 
 
 #Geosenge Town - 9
-execute as @s[x=-586,y=0,z=1736,dx=273,dy=256,dz=386] unless entity @s[scores={MusicCheck=9}] run title @s actionbar {"text":"Geosenge Town"}
-execute as @s[x=-586,y=0,z=1736,dx=273,dy=256,dz=386] unless entity @s[scores={MusicCheck=9}] run function kalos:triggers/stopsound
-execute as @s[x=-586,y=0,z=1736,dx=273,dy=256,dz=386] unless entity @s[scores={MusicCheck=9}] run scoreboard players set @s MusicCheck 9
+execute as @s[x=-586,y=0,z=1736,dx=273,dy=256,dz=386,tag=!Indoors] unless entity @s[scores={MusicCheck=9}] run title @s actionbar {"text":"Geosenge Town"}
+execute as @s[x=-586,y=0,z=1736,dx=273,dy=256,dz=386,tag=!Indoors] unless entity @s[scores={MusicCheck=9}] run function kalos:triggers/stopsound
+execute as @s[x=-586,y=0,z=1736,dx=273,dy=256,dz=386,tag=!Indoors] unless entity @s[scores={MusicCheck=9}] run scoreboard players set @s MusicCheck 9
 
 
 #Santalune Forest - 19
@@ -249,12 +255,6 @@ execute as @s[x=444,y=100,z=-1444,dx=137,dy=128,dz=560] unless entity @s[scores=
 execute as @s[x=444,y=0,z=-1444,dx=465,dy=126,dz=550] unless entity @s[scores={MusicCheck=34}] run title @s actionbar {"text":"Frost Cavern"}
 execute as @s[x=444,y=0,z=-1444,dx=465,dy=126,dz=550] unless entity @s[scores={MusicCheck=34}] run function kalos:triggers/stopsound
 execute as @s[x=444,y=0,z=-1444,dx=465,dy=126,dz=550] unless entity @s[scores={MusicCheck=34}] run scoreboard players set @s MusicCheck 34
-
-
-#Team Flare Secret HQ - 35
-execute as @s[x=-2526,y=0,z=-1074,dx=232,dy=95,dz=167] unless entity @s[scores={MusicCheck=35}] run title @s actionbar {"text":"Team Flare Secret HQ"}
-execute as @s[x=-2526,y=0,z=-1074,dx=232,dy=95,dz=167] unless entity @s[scores={MusicCheck=35}] run function kalos:triggers/stopsound
-execute as @s[x=-2526,y=0,z=-1074,dx=232,dy=95,dz=167] unless entity @s[scores={MusicCheck=35}] run scoreboard players set @s MusicCheck 35
 
 
 #Terminus Cave - 36

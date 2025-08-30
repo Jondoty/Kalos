@@ -12,10 +12,10 @@
     "party": {
         "type": "simple",
         "pokemon": [
-            "Mienfoo level=45 moves=swordsdance,highjumpkick,acrobatics",
-            "Murkrow level=45 moves=foulplay,aerialace,retaliate,steelwing",
-            "Pyroar gender=male level=45 moves=hypervoice,fireblast,darkpulse",
-            "Gyarados level=45 moves=aquatail,earthquake,ironhead,outrage"
+            "Mienshao level=47 moves=swordsdance,highjumpkick,acrobatics",
+            "Honchkrow level=47 moves=nightslash,aerialace,retaliate,steelwing",
+            "Pyroar gender=male level=49 moves=hypervoice,fireblast,darkpulse",
+            "Gyarados level=51 moves=aquatail,earthquake,ironhead,outrage"
         ]
     },
     "config": [
@@ -38,7 +38,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue lysandrelabs_lysandre_end @s');"
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue flarehq_lysandre_end @s');"
         }
     ]
 }

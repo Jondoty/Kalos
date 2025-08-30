@@ -198,45 +198,37 @@ execute as @s[x=-984,y=53,z=-352,dx=5,dy=5,dz=3,tag=!Dialogue75] at @s run tp @s
 ##Lysandre Labs Nix blocking the way until after battle
 #tp @s[x=-305,y=28,z=318,dx=20,dy=5,dz=10,tag=!Dialogue200] -297 29 331
 #
-##Flare HQ Battle Lysandre to exit lobby
-#tellraw @s[x=-2372,y=69,z=-987,dx=13,dy=5,dz=4,tag=!Dialogue123] {"text":"Defeat Lysandre!","italic":true,"color":"gray"}
-#execute as @s[x=-2372,y=69,z=-987,dx=13,dy=5,dz=4,tag=!Dialogue123] at @s run tp @s ~10 ~ ~
-#
-##Geosenge version portal managers
-#
-##C-K
-#execute as @s[x=-2130,y=103,z=-702,dx=14,dy=10,dz=23,scores={Geosenge=2}] run tp @e[distance=..3,type=pixelmon:bike] -317 109 2030
-#tp @s[x=-2130,y=103,z=-702,dx=14,dy=10,dz=23,scores={Geosenge=2}] -317 109 2030
-#
-##A-I
-#execute as @s[x=-2224,y=103,z=-612,dx=26,dy=10,dz=13,scores={Geosenge=2}] run tp @e[distance=..3,type=pixelmon:bike] -411 109 2118
-#tp @s[x=-2224,y=103,z=-612,dx=26,dy=10,dz=13,scores={Geosenge=2}] -411 109 2118
-#
-##J-B
-#execute as @s[x=-423,y=108,z=2123,dx=25,dy=10,dz=15,scores={Geosenge=2}] run tp @e[distance=..3,type=pixelmon:bike] -2210 104 -593
-#tp @s[x=-423,y=108,z=2123,dx=25,dy=10,dz=15,scores={Geosenge=2}] -2210 104 -593
-#
-##L-D
-#execute as @s[x=-314,y=108,z=2018,dx=18,dy=10,dz=23,scores={Geosenge=2}] run tp @e[distance=..3,type=pixelmon:bike] -2112 104 -690
-#tp @s[x=-314,y=108,z=2018,dx=18,dy=10,dz=23,scores={Geosenge=2}] -2112 104 -690
-#
-##C-G
-#execute as @s[x=-2130,y=103,z=-702,dx=14,dy=10,dz=23,scores={Geosenge=1}] run tp @e[distance=..3,type=pixelmon:bike] -1040 109 2030
-#tp @s[x=-2130,y=103,z=-702,dx=14,dy=10,dz=23,scores={Geosenge=1}] -1040 109 2030
-#
-##A-E
-#execute as @s[x=-2224,y=103,z=-612,dx=26,dy=10,dz=13,scores={Geosenge=1}] run tp @e[distance=..3,type=pixelmon:bike] -1131 109 2117
-#tp @s[x=-2224,y=103,z=-612,dx=26,dy=10,dz=13,scores={Geosenge=1}] -1131 109 2117
-#
-##F-B
-#execute as @s[x=-1143,y=108,z=2123,dx=25,dy=10,dz=15,scores={Geosenge=1}] run tp @e[distance=..3,type=pixelmon:bike] -2210 104 -593
-#tp @s[x=-1143,y=108,z=2123,dx=25,dy=10,dz=15,scores={Geosenge=1}] -2210 104 -593
-#
-##H-D
-#execute as @s[x=-1034,y=108,z=2018,dx=18,dy=10,dz=23,scores={Geosenge=1}] run tp @e[distance=..3,type=pixelmon:bike] -2112 104 -690
-#tp @s[x=-1034,y=108,z=2018,dx=18,dy=10,dz=23,scores={Geosenge=1}] -2112 104 -690
-#
-#
+#Flare HQ Battle Lysandre to exit lobby
+tellraw @s[x=-2372,y=69,z=-987,dx=13,dy=5,dz=4,tag=!Dialogue123] {"text":"Defeat Lysandre!","italic":true,"color":"gray"}
+execute as @s[x=-2372,y=69,z=-987,dx=13,dy=5,dz=4,tag=!Dialogue123] at @s run tp @s ~10 ~ ~
+
+#Geosenge version portal managers
+
+#C-K
+tp @s[x=-2130,y=103,z=-702,dx=14,dy=10,dz=23,scores={Geosenge=2}] -317 109 2030
+
+#A-I
+tp @s[x=-2224,y=103,z=-612,dx=26,dy=10,dz=13,scores={Geosenge=2}] -411 109 2118
+
+#J-B
+tp @s[x=-423,y=108,z=2123,dx=25,dy=10,dz=15,scores={Geosenge=2}] -2210 104 -593
+
+#L-D
+tp @s[x=-314,y=108,z=2018,dx=18,dy=10,dz=23,scores={Geosenge=2}] -2112 104 -690
+
+#C-G
+tp @s[x=-2130,y=103,z=-702,dx=14,dy=10,dz=23,scores={Geosenge=1}] -1040 109 2030
+
+#A-E
+tp @s[x=-2224,y=103,z=-612,dx=26,dy=10,dz=13,scores={Geosenge=1}] -1131 109 2117
+
+#F-B
+tp @s[x=-1143,y=108,z=2123,dx=25,dy=10,dz=15,scores={Geosenge=1}] -2210 104 -593
+
+#H-D
+tp @s[x=-1034,y=108,z=2018,dx=18,dy=10,dz=23,scores={Geosenge=1}] -2112 104 -690
+
+
 ##---------------------------------------------------------
 #
 #
