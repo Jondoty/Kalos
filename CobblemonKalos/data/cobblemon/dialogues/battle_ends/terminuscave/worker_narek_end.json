@@ -4,7 +4,9 @@
         "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 3');",
         "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
         "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $3072 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
-        "q.run_command('scoreboard players add ' + q.player.username + ' Money 3072');"
+        "q.run_command('scoreboard players add ' + q.player.username + ' Money 3072');",
+    "q.run_command('execute as ' + q.player.username + ' run tag @s add FSRock1');",
+    "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You also received a Friend Safari Code!\",\"italic\":true,\"color\":\"gray\"}');"
     ],
     "speakers": {
         "npc": {
