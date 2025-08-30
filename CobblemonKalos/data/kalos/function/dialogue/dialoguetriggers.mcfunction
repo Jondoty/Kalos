@@ -73,7 +73,7 @@ execute as @s[x=-270,y=120,z=82,dx=10,dy=10,dz=16,tag=!Dialogue19] run kill @e[x
 #Activates dialogue after you've gotten a Kanto Starter
 execute as @s[x=-270,y=120,z=82,dx=10,dy=10,dz=16,tag=KantoStarter,tag=!Dialogue20] run opendialogue sycamore_dialogue20 @s
 
-#TPs out gang after you've battled and recieved a Kanto starter
+#TPs out gang after you've battled and received a Kanto starter
 execute as @s[x=-253,y=121,z=71,distance=..4,tag=Dialogue20] run tp @e[x=-268,y=120,z=97,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 execute as @s[x=-253,y=121,z=71,distance=..4,tag=Dialogue20] run tp @e[x=-266,y=120,z=97,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 execute as @s[x=-253,y=121,z=71,distance=..4,tag=Dialogue20] run tp @e[x=-263,y=120,z=97,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000

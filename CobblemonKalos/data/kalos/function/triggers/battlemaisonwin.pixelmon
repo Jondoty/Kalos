@@ -124,32 +124,32 @@ execute as @s[scores={BattleMaison=4,BattleStreak=51..}] run scoreboard players 
 
 
 #Tellraws
-execute as @s[scores={BattleMaison=1,BattleStreak=1..10}] run tellraw @s {"text":"You recieved 1 battle point!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=1,BattleStreak=11..19}] run tellraw @s {"text":"You recieved 2 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=1,BattleStreak=20}] run tellraw @s {"text":"You recieved 20 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=1,BattleStreak=21..}] run tellraw @s {"text":"You recieved 3 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=1,BattleStreak=1..10}] run tellraw @s {"text":"You received 1 battle point!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=1,BattleStreak=11..19}] run tellraw @s {"text":"You received 2 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=1,BattleStreak=20}] run tellraw @s {"text":"You received 20 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=1,BattleStreak=21..}] run tellraw @s {"text":"You received 3 battle points!","italic":true,"color":"gray"}
 
-execute as @s[scores={BattleMaison=2,BattleStreak=1..10}] run tellraw @s {"text":"You recieved 2 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=2,BattleStreak=11..20}] run tellraw @s {"text":"You recieved 3 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=2,BattleStreak=21..30}] run tellraw @s {"text":"You recieved 4 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=2,BattleStreak=31..40}] run tellraw @s {"text":"You recieved 5 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=2,BattleStreak=40..49}] run tellraw @s {"text":"You recieved 6 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=2,BattleStreak=50..50}] run tellraw @s {"text":"You recieved 50 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=2,BattleStreak=51}] run tellraw @s {"text":"You recieved 7 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=2,BattleStreak=1..10}] run tellraw @s {"text":"You received 2 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=2,BattleStreak=11..20}] run tellraw @s {"text":"You received 3 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=2,BattleStreak=21..30}] run tellraw @s {"text":"You received 4 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=2,BattleStreak=31..40}] run tellraw @s {"text":"You received 5 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=2,BattleStreak=40..49}] run tellraw @s {"text":"You received 6 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=2,BattleStreak=50..50}] run tellraw @s {"text":"You received 50 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=2,BattleStreak=51}] run tellraw @s {"text":"You received 7 battle points!","italic":true,"color":"gray"}
 
 
-execute as @s[scores={BattleMaison=3,BattleStreak=1..10}] run tellraw @s {"text":"You recieved 1 battle point!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=3,BattleStreak=11..19}] run tellraw @s {"text":"You recieved 2 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=3,BattleStreak=20..20}] run tellraw @s {"text":"You recieved 20 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=3,BattleStreak=21..}] run tellraw @s {"text":"You recieved 3 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=3,BattleStreak=1..10}] run tellraw @s {"text":"You received 1 battle point!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=3,BattleStreak=11..19}] run tellraw @s {"text":"You received 2 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=3,BattleStreak=20..20}] run tellraw @s {"text":"You received 20 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=3,BattleStreak=21..}] run tellraw @s {"text":"You received 3 battle points!","italic":true,"color":"gray"}
 
-execute as @s[scores={BattleMaison=4,BattleStreak=1..10}] run tellraw @s {"text":"You recieved 2 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=4,BattleStreak=11..20}] run tellraw @s {"text":"You recieved 3 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=4,BattleStreak=21..30}] run tellraw @s {"text":"You recieved 4 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=4,BattleStreak=31..40}] run tellraw @s {"text":"You recieved 5 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=4,BattleStreak=41..49}] run tellraw @s {"text":"You recieved 6 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=4,BattleStreak=50..50}] run tellraw @s {"text":"You recieved 50 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={BattleMaison=4,BattleStreak=51..}] run tellraw @s {"text":"You recieved 7 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=4,BattleStreak=1..10}] run tellraw @s {"text":"You received 2 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=4,BattleStreak=11..20}] run tellraw @s {"text":"You received 3 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=4,BattleStreak=21..30}] run tellraw @s {"text":"You received 4 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=4,BattleStreak=31..40}] run tellraw @s {"text":"You received 5 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=4,BattleStreak=41..49}] run tellraw @s {"text":"You received 6 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=4,BattleStreak=50..50}] run tellraw @s {"text":"You received 50 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={BattleMaison=4,BattleStreak=51..}] run tellraw @s {"text":"You received 7 battle points!","italic":true,"color":"gray"}
 
 
 
