@@ -135,19 +135,7 @@ execute as @s[x=1342,y=107,z=-122,dx=14,dy=6,dz=15,tag=!Dialogue133] at @s run t
 ##Terminus Cave block Zygarde before Champion
 #tellraw @s[x=2023,y=41,z=-100,dx=12,dy=20,dz=5,scores={PokemonLeague=0}] {"text":"<Ace Trainer> It must be dangerous to go further ahead unless you're as strong as the Champion."}
 #tp @s[x=2023,y=41,z=-100,dx=12,dy=20,dz=5,scores={PokemonLeague=0}] 2043 41 -98
-#
-##Victory Road Western Waterfall
-#execute as @s[x=1599,y=100,z=2327,dx=19,dy=156,dz=13] at @s run tp @s ~10 ~ ~
-#
-##Northern Waterfall
-#execute as @s[x=1615,y=100,z=2183,dx=50,dy=156,dz=24] at @s run tp @s ~10 ~ ~
-#
-##East Waterfall
-#execute as @s[x=1760,y=100,z=2335,dx=15,dy=156,dz=28] at @s run tp @s ~-10 ~ ~
-#
-##Southern Waterfall
-#execute as @s[x=1627,y=100,z=2415,dx=22,dy=156,dz=36] at @s run tp @s ~ ~ ~-10
-#
+
 #Geosenge Town Eastern block until talk with Team Flare grunt twice
 execute as @s[x=-2116,y=103,z=-702,dx=10,dy=10,dz=23,tag=!Dialogue52] at @s run tp @s ~-10 ~ ~
 execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] unless entity @e[x=-2116,y=104,z=-698,dy=3,type=cobblemon:npc] run npcspawnat -2116 104 -698 geosenge_backpacker
