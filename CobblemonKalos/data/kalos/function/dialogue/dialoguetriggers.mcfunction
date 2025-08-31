@@ -470,7 +470,14 @@ execute as @s[x=-1255,y=109,z=1807,distance=..10,tag=!Dialogue121] run opendialo
 execute as @s[x=-2336,y=66,z=-940,distance=..10,tag=!Dialogue123] unless entity @e[x=-2331,y=70,z=-980,dy=3,type=cobblemon:npc] run npcspawnat -2331 70 -980 serena_generic
 execute as @s[x=-2336,y=66,z=-940,distance=..10,tag=!Dialogue123] unless entity @e[x=-2336,y=70,z=-990,dy=3,type=cobblemon:npc] run npcspawnat -2336 70 -990 flarehq_lysandre
 
+#FlareHQ Serena and Shauna
+execute as @s[x=-2471,y=78,z=-998,distance=..20,tag=!Dialogue126] unless entity @e[x=-2471,y=78,z=-998,dy=3,type=cobblemon:npc] run npcspawnat -2471 78 -998 serena_generic
+execute as @a[x=-2478,y=76,z=-1005,dx=13,dy=5,dz=13,tag=!Dialogue126] run opendialogue serenashauna_dialogue126 @s
 
+#Flare HQ Friends at the door
+execute as @s[x=-2431,y=28,z=-944,distance=..20,tag=!Dialogue128] unless entity @e[x=-2431,y=28,z=-944,dy=3,type=cobblemon:npc] run npcspawnat -2431 28 -944 serena_generic
+execute as @s[x=-2431,y=28,z=-944,distance=..20,tag=!Dialogue128] unless entity @e[x=-2434,y=28,z=-953,dy=3,type=cobblemon:npc] run npcspawnat -2434 28 -953 shauna_generic
+execute as @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue128] run opendialogue serenashauna_dialogue128 @s
 
 
 
