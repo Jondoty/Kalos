@@ -488,63 +488,6 @@ execute as @a[x=837,y=108,z=-335,distance=..10,tag=!Dialogue100,scores={TalkTime
 
 
 
-#Dialogue 117
-#Lysandre Labs B3F Xerosic and Lysandre
-scoreboard players set @a[x=-319,y=106,z=349,dx=17,dy=5,dz=10,scores={TalkTime=0},tag=!Dialogue117] DialogueTrigger 117
-execute as @a[x=-311,y=110,z=390,distance=..20,tag=!Dialogue117,scores={TalkTime=0}] run tp @e[x=-504,y=245,z=1268,dy=3,type=pixelmon:npc_chatting] -312 107 326
-execute as @a[x=-311,y=110,z=390,distance=..20,tag=!Dialogue117,scores={TalkTime=0}] run tp @e[x=-504,y=245,z=1270,dy=3,type=pixelmon:npc_chatting] -308 107 326
-execute as @a[x=-308,y=107,z=326,distance=..10,tag=!Dialogue118,scores={TalkTime=0},tag=Dialogue117] run tp @e[x=-504,y=245,z=1272,dy=3,type=pixelmon:npc_trainer] -308 107 326
-
-#Dialogue 121
-#Geosenge Serena pre-Flare HQ
-scoreboard players set @a[x=-1255,y=109,z=1807,distance=..10,scores={TalkTime=0},tag=!Dialogue121] DialogueTrigger 121
-
-#Dialogue 122-123
-#Flare HQ Lysandre first battle
-scoreboard players set @a[x=-2359,y=69,z=-992,dx=46,dy=10,dz=15,scores={TalkTime=0},tag=!Dialogue122] DialogueTrigger 122
-execute as @a[x=-2359,y=69,z=-992,dx=46,dy=10,dz=15,tag=!Dialogue123,scores={TalkTime=0},tag=Dialogue122] run tp @e[x=-504,y=100,z=1292,dy=3,type=pixelmon:npc_trainer] -2336 70 -990
-
-#Dialogue 124
-#Flare HQ Double Battle No 1
-scoreboard players set @a[x=-2400,y=61,z=-965,dx=13,dy=5,dz=13,tag=!Dialogue124,scores={TalkTime=0}] DialogueTrigger 124
-
-#tps in Serena
-execute as @a[x=-2400,y=61,z=-965,dx=13,dy=5,dz=13,scores={StarterPick=1}] run tp @e[x=-2396,y=61,z=-961,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=1}] -504 106 1284
-execute as @a[x=-2400,y=61,z=-965,dx=13,dy=5,dz=13,scores={StarterPick=2}] run tp @e[x=-2396,y=61,z=-961,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=2}] -504 106 1286
-execute as @a[x=-2400,y=61,z=-965,dx=13,dy=5,dz=13,scores={StarterPick=3}] run tp @e[x=-2396,y=61,z=-961,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=3}] -504 106 1288
-
-#Dialogue 125
-#Flare HQ Double Battle No 2
-scoreboard players set @a[x=-2456,y=73,z=-989,dx=13,dy=5,dz=13,tag=!Dialogue125,scores={TalkTime=0}] DialogueTrigger 125
-
-execute as @a[x=-2456,y=73,z=-989,dx=13,dy=5,dz=13,scores={StarterPick=1}] run tp @e[x=-2447,y=73,z=-980,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=1}] -504 106 1292
-execute as @a[x=-2456,y=73,z=-989,dx=13,dy=5,dz=13,scores={StarterPick=2}] run tp @e[x=-2447,y=73,z=-980,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=2}] -504 106 1294
-execute as @a[x=-2456,y=73,z=-989,dx=13,dy=5,dz=13,scores={StarterPick=3}] run tp @e[x=-2447,y=73,z=-980,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=3}] -504 106 1296
-
-#Dialogue 126
-#Flare HQ Shauna joins the party
-scoreboard players set @a[x=-2478,y=76,z=-1005,dx=13,dy=5,dz=13,tag=!Dialogue126,scores={TalkTime=0}] DialogueTrigger 126
-
-#Dialogue 127
-#Flare HQ Double Battle No 3
-scoreboard players set @a[x=-2486,y=47,z=-949,dx=13,dy=5,dz=13,tag=!Dialogue127,scores={TalkTime=0}] DialogueTrigger 127
-
-execute as @a[x=-2486,y=47,z=-949,dx=13,dy=5,dz=13,scores={StarterPick=1}] run tp @e[x=-2477,y=47,z=-940,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=1}] -504 111 1284
-execute as @a[x=-2486,y=47,z=-949,dx=13,dy=5,dz=13,scores={StarterPick=2}] run tp @e[x=-2477,y=47,z=-940,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=2}] -504 111 1286
-execute as @a[x=-2486,y=47,z=-949,dx=13,dy=5,dz=13,scores={StarterPick=3}] run tp @e[x=-2477,y=47,z=-940,dy=3,type=pixelmon:npc_trainer,scores={StarterPick=3}] -504 111 1288
-
-#Dialogue 128
-#Flare HQ outside legendary chamber
-scoreboard players set @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue128,scores={TalkTime=0}] DialogueTrigger 128
-
-#Dialogue 130
-#Flare HQ post-Four admins in chamber
-execute as @a[x=-2526,y=0,z=-1074,dx=232,dy=95,dz=167,scores={TalkTime=0},tag=Admin1,tag=Admin3,tag=Admin4,tag=Admin6] run scoreboard players set @s[tag=!Dialogue130] DialogueTrigger 130
-execute as @a[x=-2336,y=42,z=-1007,distance=..15,tag=Dialogue129,scores={TalkTime=0},tag=!Dialogue130] run tp @e[x=-504,y=125,z=1284,dy=3,type=pixelmon:npc_trainer] -2342 42 -1007
-execute as @a[x=-2336,y=42,z=-1007,distance=..15,tag=Dialogue129,scores={TalkTime=0},tag=!Dialogue130] run tp @e[x=-504,y=125,z=1286,dy=3,type=pixelmon:npc_trainer] -2336 42 -1012
-execute as @a[x=-2336,y=42,z=-1007,distance=..15,tag=Dialogue129,scores={TalkTime=0},tag=!Dialogue130] run tp @e[x=-504,y=125,z=1288,dy=3,type=pixelmon:npc_trainer] -2336 42 -1007
-execute as @a[x=-2336,y=42,z=-1007,distance=..15,tag=Dialogue129,scores={TalkTime=0},tag=!Dialogue130] run tp @e[x=-504,y=125,z=1290,dy=3,type=pixelmon:npc_trainer] -2330 42 -1007
-
 #Dialogue 133
 #Flare HQ Chamber Respawns Lysandre trainer
 execute as @a[x=-2336,y=42,z=-997,distance=..20,scores={TalkTime=0},tag=!Dialogue133,tag=Dialogue132] run tp @e[x=-504,y=130,z=1290,dy=3,type=pixelmon:npc_trainer] -2336 42 -997

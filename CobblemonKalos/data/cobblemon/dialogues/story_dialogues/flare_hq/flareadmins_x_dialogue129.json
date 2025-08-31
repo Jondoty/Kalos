@@ -1,0 +1,332 @@
+{
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+    ],
+    "escapeAction": [
+    ],
+    "names": [
+    ],
+    "speakers": {
+        "serena": {
+            "name": "Serena",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:serena",
+                "isLeftSide": false
+            }
+        },
+        "shauna": {
+            "name": "Shauna",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:shauna",
+                "isLeftSide": true
+            }
+        },
+        "admin1": {
+            "name": "Team Flare Admin",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:teamflareadminf",
+                "isLeftSide": false
+            }
+        },
+        "admin2": {
+            "name": "Team Flare Admin",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:teamflareadminm",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [    
+        {
+            "id": "greeting",
+            "speaker": "serena",
+            "lines": [
+                "We're in the deepest part of the headquarters..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "serena",
+            "lines": [
+                "It's somehow hard to breathe in here."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page3');"
+                        ]
+                    }
+                ]
+            }
+        },    
+        {
+            "id": "page3",
+            "speaker": "shauna",
+            "lines": [
+                "Hey... Is that thing that looks like a tree the Legendary Pokémon? It doesn't look like it's alive, but..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud -2340 42 -1005 2 2 2 1 100');",
+                            "q.run_command('particle cloud -2332 42 -1005 2 2 2 1 100');",
+                            "q.run_command('particle cloud -2336 42 -1009 2 2 2 1 100');",
+                            "q.run_command('execute unless entity @e[x=-2342,y=42,z=-1007,dy=3,type=cobblemon:npc] run npcspawnat -2342 42 -1007 flarehq_admin4');",
+                            "q.run_command('execute unless entity @e[x=-2336,y=42,z=-1012,dy=3,type=cobblemon:npc] run npcspawnat -2336 42 -1012 flarehq_admin5');",
+                            "q.run_command('execute unless entity @e[x=-2336,y=42,z=-1007,dy=3,type=cobblemon:npc] run npcspawnat -2336 42 -1007 flarehq_admin6');",
+                            "q.run_command('execute unless entity @e[x=-2330,y=42,z=-1007,dy=3,type=cobblemon:npc] run npcspawnat -2330 42 -1007 flarehq_admin7');",
+
+                            "q.run_command('execute unless entity @e[x=-2333,y=42,z=-1004,dy=3,type=cobblemon:npc] run npcspawnat -2333 42 -1004 flarehq_admin1');",
+                            "q.run_command('execute unless entity @e[x=-2339,y=42,z=-1004,dy=3,type=cobblemon:npc] run npcspawnat -2339 42 -1004 flarehq_admin2');",
+                            "q.dialogue.set_page('page4');"
+                        ]
+                    }
+                ]
+            }
+        },   
+        {
+            "id": "page4",
+            "speaker": "admin1",
+            "lines": [
+                "That's none of your business, kids."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page5');"
+                        ]
+                    }
+                ]
+            }
+        },   
+        {
+            "id": "page5",
+            "speaker": "admin2",
+            "lines": [
+                "The ultimate weapon has taken 99 percent of the Legendary Pokémon's energy."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page6');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "admin2",
+            "lines": [
+                "But just to make double sure nothing goes wrong, let's take these runts out!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page7');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "shauna",
+            "lines": [
+                "Nooo! I hate being chased!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud -2339 42 -998 2 2 2 1 100');",
+                            "q.run_command('particle cloud -2339 42 -1004 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-2339,y=41,z=-998,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tp @e[x=-2339,y=41,z=-1004,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.dialogue.set_page('page8');"
+                        ]
+                    }
+                ]
+            }
+        }, 
+        {
+            "id": "page8",
+            "speaker": "serena",
+            "lines": [
+                "Oh, Shauna... This again?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page9');"
+                        ]
+                    }
+                ]
+            }
+        },  
+        {
+            "id": "page9",
+            "speaker": "serena",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'' + q.player.username + '! You take care of things here! I will protect Shauna!';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud -2333 42 -998 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-2333,y=41,z=-998,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.dialogue.set_page('page10');"
+                        ]
+                    }
+                ]
+            }
+        }, 
+        {
+            "id": "page10",
+            "speaker": "admin1",
+            "lines": [
+                "Make sure to take care of those runts that ran away!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page11');"
+                        ]
+                    }
+                ]
+            }
+        }, 
+        {
+            "id": "page11",
+            "speaker": "admin1",
+            "lines": [
+                "I should've expected as much from kids who made it clear down here."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page12');"
+                        ]
+                    }
+                ]
+            }
+        }, 
+        {
+            "id": "page12",
+            "speaker": "admin1",
+            "lines": [
+                "It was a pretty simple tactic, but it managed to split us up. That girl's pretty good!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud -2333 42 -1004 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-2333,y=41,z=-1004,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.dialogue.set_page('page13');"
+                        ]
+                    }
+                ]
+            }
+        }, 
+        {
+            "id": "page13",
+            "speaker": "admin2",
+            "lines": [
+                "So, you really think you can beat us?"
+            ],            
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue129');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

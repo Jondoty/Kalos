@@ -479,6 +479,43 @@ execute as @s[x=-2431,y=28,z=-944,distance=..20,tag=!Dialogue128] unless entity 
 execute as @s[x=-2431,y=28,z=-944,distance=..20,tag=!Dialogue128] unless entity @e[x=-2434,y=28,z=-953,dy=3,type=cobblemon:npc] run npcspawnat -2434 28 -953 shauna_generic
 execute as @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue128] run opendialogue serenashauna_dialogue128 @s
 
+#Sets up dormant legendary models
+#47 xer
+#48 yvel
+#From upper level
+execute as @s[x=2336,y=70,z=-978,distance=..10,scores={GameVersion=1},tag=!Dialogue131] unless entity @e[x=-2336,y=49,z=-1022,distance=..6,type=armor_stand] run summon minecraft:armor_stand -2336 49 -1022 {Invisible:true,Invulnerable:true,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"iron_hoe",Count:1,components:{"minecraft:custom_model_data":47}}],NoGravity:1b}
+execute as @s[x=2336,y=70,z=-978,distance=..10,scores={GameVersion=2},tag=!Dialogue131] unless entity @e[x=-2336,y=49,z=-1022,distance=..6,type=armor_stand] run summon minecraft:armor_stand -2336 50.5 -1022 {Invisible:true,Invulnerable:true,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"iron_hoe",Count:1,components:{"minecraft:custom_model_data":48}}],NoGravity:1b}
+
+#From lower level
+execute as @s[x=-2336,y=42,z=-995,distance=..10,scores={GameVersion=1,DialogueTrigger=0},tag=!Dialogue131] unless entity @e[x=-2336,y=49,z=-1022,distance=..6,type=armor_stand] run summon minecraft:armor_stand -2336 49 -1022 {Invisible:true,Invulnerable:true,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"iron_hoe",Count:1,components:{"minecraft:custom_model_data":47}}],NoGravity:1b}
+execute as @s[x=-2336,y=42,z=-995,distance=..10,scores={GameVersion=2,DialogueTrigger=0},tag=!Dialogue131] unless entity @e[x=-2336,y=49,z=-1022,distance=..6,type=armor_stand] run summon minecraft:armor_stand -2336 50.5 -1022 {Invisible:true,Invulnerable:true,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"iron_hoe",Count:1,components:{"minecraft:custom_model_data":48}}],NoGravity:1b}
+
+#Flare HQ Chamber, sets up admins to battle
+execute as @s[x=-2336,y=42,z=-995,distance=..10,tag=!Dialogue129] unless entity @e[x=-2333,y=42,z=-998,dy=3,type=cobblemon:npc] run npcspawnat -2333 42 -998 serena_generic
+execute as @s[x=-2336,y=42,z=-995,distance=..10,tag=!Dialogue129] unless entity @e[x=-2339,y=42,z=-998,dy=3,type=cobblemon:npc] run npcspawnat -2339 42 -998 shauna_generic
+execute as @a[x=-2336,y=41,z=-1011,distance=..14,scores={GameVersion=1},tag=!Dialogue129] run opendialogue flareadmins_x_dialogue129 @s
+execute as @a[x=-2336,y=41,z=-1011,distance=..14,scores={GameVersion=2},tag=!Dialogue129] run opendialogue flareadmins_y_dialogue129 @s
+
+#Flare HQ Chamber with all admins beaten
+execute as @a[x=-2336,y=41,z=-1011,distance=..20,tag=Admin1,tag=Admin2,tag=Admin3,tag=Admin4,tag=!Dialogue130] run opendialogue flareadmins_dialogue130 @s
+
+#Respawns admins needed if missing
+execute as @s[x=-2336,y=41,z=-1011,distance=..20,tag=Dialogue129,tag=!Dialogue130] unless entity @e[x=-2342,y=42,z=-1007,dy=3,type=cobblemon:npc] run npcspawnat -2342 42 -1007 flarehq_admin4
+execute as @s[x=-2336,y=41,z=-1011,distance=..20,tag=Dialogue129,tag=!Dialogue130] unless entity @e[x=-2336,y=42,z=-1012,dy=3,type=cobblemon:npc] run npcspawnat -2336 42 -1012 flarehq_admin5
+execute as @s[x=-2336,y=41,z=-1011,distance=..20,tag=Dialogue129,tag=!Dialogue130] unless entity @e[x=-2336,y=42,z=-1007,dy=3,type=cobblemon:npc] run npcspawnat -2336 42 -1007 flarehq_admin6
+execute as @s[x=-2336,y=41,z=-1011,distance=..20,tag=Dialogue129,tag=!Dialogue130] unless entity @e[x=-2330,y=42,z=-1007,dy=3,type=cobblemon:npc] run npcspawnat -2330 42 -1007 flarehq_admin7
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #-----------------------------------------------------------
