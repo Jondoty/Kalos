@@ -163,9 +163,9 @@ execute as @s[tag=!RadioOff,scores={BattleStart=36}] run scoreboard players set 
 execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:articuno",PokemonOriginalTrainerType:"NONE"}}] add LegendaryKanto
 execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:zapdos",PokemonOriginalTrainerType:"NONE"}}] add LegendaryKanto
 execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:moltres",PokemonOriginalTrainerType:"NONE"}}] add LegendaryKanto
-execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:xerneas",PokemonOriginalTrainerType:"NONE"}}] add LegendaryKanto
-execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:yveltal",PokemonOriginalTrainerType:"NONE"}}] add LegendaryXY
-execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:zygarde",PokemonOriginalTrainerType:"NONE"}}] add LegendaryXY
+execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:xerneas",PokemonOriginalTrainerType:"NONE"}}] add LegendaryXY
+execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..30,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:yveltal",PokemonOriginalTrainerType:"NONE"}}] add LegendaryXY
+execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..30,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:zygarde",PokemonOriginalTrainerType:"NONE"}}] add LegendaryXY
 execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:hoopa",PokemonOriginalTrainerType:"NONE"}}] add LegendaryXY
 execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:volcanion",PokemonOriginalTrainerType:"NONE"}}] add LegendaryXY
 execute as @s[scores={BattleStart=35}] at @s run tag @e[distance=..10,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:diancie",PokemonOriginalTrainerType:"NONE"}}] add LegendaryXY

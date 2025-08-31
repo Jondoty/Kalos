@@ -135,6 +135,64 @@ tag @s[scores={DialogueTrigger=120,TalkTime=83..}] add Dialogue120
 scoreboard players set @s[scores={DialogueTrigger=120},tag=Dialogue120] TalkTime 0
 scoreboard players set @s[scores={DialogueTrigger=120},tag=Dialogue120] DialogueTrigger 0
 
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Legendary Pokemon spawn
+#Dialogue131
+#execute as @s[x=-2336,y=42,z=-1017,r=10,score_Yveltal_min=1,score_Yveltal=1,tag=Dialogue130,score_TalkTime=0] run scoreboard players enable @s[tag=!Dialogue131] TalkTrigger
+#execute as @s[x=-2336,y=42,z=-1017,r=10,score_Xerneas_min=1,score_Xerneas=1,tag=Dialogue130,score_TalkTime=0] run scoreboard players enable @s[tag=!Dialogue131] TalkTrigger
+
+execute as @s[scores={DialogueTrigger=131,TalkTime=1,GameVersion=1}] run summon armor_stand -2336 49 -1022 {Invisible:true,Invulnerable:true,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"iron_hoe",Count:1,components:{"minecraft:custom_model_data":47}}],NoGravity:1b}
+execute as @s[scores={DialogueTrigger=131,TalkTime=1,GameVersion=2}] run summon armor_stand -2336 50.5 -1022 {Invisible:true,Invulnerable:true,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"iron_hoe",Count:1,components:{"minecraft:custom_model_data":48}}],NoGravity:1b}
+
+execute as @s[scores={DialogueTrigger=131,TalkTime=1}] run function kalos:triggers/stopsound
+execute as @s[scores={DialogueTrigger=131,TalkTime=1}] run playsound legendaryawaken record @s[tag=!RadioOff] ~ ~ ~ 1 1 1
+execute as @s[scores={DialogueTrigger=131,TalkTime=1}] run scoreboard players set @s[tag=!RadioOff] MusicCooldown 94
+
+tellraw @s[scores={DialogueTrigger=131,TalkTime=10,GameVersion=1}] ["",{"text":"<"},{"text":"Xerneas","color":"aqua"},{"text":"> "},{"text":"Xsaaaaaah!","bold":true,"italic":true}]
+tellraw @s[scores={DialogueTrigger=131,TalkTime=10,GameVersion=2}] ["",{"text":"<"},{"text":"Yveltal","color":"dark_red"},{"text":"> "},{"text":"Yvaaaaaar!","bold":true,"italic":true}]
+execute as @s[scores={DialogueTrigger=131,TalkTime=10,GameVersion=1}] run playsound xerneas hostile @s ~ ~ ~ 1 1 1
+execute as @s[scores={DialogueTrigger=131,TalkTime=10,GameVersion=2}] run playsound yveltal hostile @s ~ ~ ~ 1 1 1
+
+#Activates Particle 1
+#execute as @s[scores={DialogueTrigger=131,TalkTime=20}] run setblock -674 100 1364 minecraft:redstone_block
+execute as @s[scores={DialogueTrigger=131,TalkTime=1..}] positioned -2336 50 -1022 run particle minecraft:enchant ~ ~5 ~ 5 5 5 1 10 normal
+
+#Activates Particle 2
+#execute as @s[scores={DialogueTrigger=131,TalkTime=35}] run setblock -674 101 1364 minecraft:redstone_block
+#execute as @e[x=-2336,y=49,z=-1022,r=3,type=armor_stand] run particle endRod ~ ~ ~ 0 10 0 1 1
+
+#Activates Particle 3
+#execute as @s[scores={DialogueTrigger=131,TalkTime=60}] run setblock -674 102 1364 minecraft:redstone_block
+#execute as @e[x=-2336,y=49,z=-1022,r=3,type=armor_stand] run particle fireworksSpark ~ ~ ~ 0 1 1 0.5 5
+
+#Activates Particle 4
+#execute as @s[scores={DialogueTrigger=131,TalkTime=80}] run setblock -674 103 1364 minecraft:redstone_block
+#execute as @e[x=-2336,y=49,z=-1022,r=3,type=armor_stand] run particle blockdust ~ ~ ~ 0 1 0 1 10 normal @a 173
+
+execute as @s[scores={DialogueTrigger=131,TalkTime=45..90}] run execute as @e[x=-2336,y=49,z=-1022,distance=..3,type=armor_stand] run particle crit ~ ~5 ~ 5 5 5 1 50 normal
+
+
+execute as @s[scores={DialogueTrigger=131,TalkTime=90}] positioned -2336 50 -1022 run particle minecraft:explosion ~ ~ ~ 2 2 2 2 30
+execute as @a[scores={DialogueTrigger=131,TalkTime=90,GameVersion=1}] run pokespawnat -2336 50.5 -1022 xerneas level=50 moves=gravity,geomancy,moonblast,megahorn
+execute as @a[scores={DialogueTrigger=131,TalkTime=90,GameVersion=2}] run pokespawnat -2336 50.5 -1022 yveltal level=50 moves=snarl,oblivionwing,disable,darkpulse
+
+execute as @s[scores={DialogueTrigger=131,TalkTime=90,GameVersion=1}] run playsound xerneas hostile @s ~ ~ ~ 100 1 1
+execute as @s[scores={DialogueTrigger=131,TalkTime=90,GameVersion=2}] run playsound yveltal hostile @s ~ ~ ~ 100 1 1
+tellraw @s[scores={DialogueTrigger=131,TalkTime=90,GameVersion=1}] ["",{"text":"<"},{"text":"Xerneas","color":"aqua"},{"text":"> "},{"text":"Xsaaaaaah!","bold":true,"italic":true}]
+tellraw @s[scores={DialogueTrigger=131,TalkTime=90,GameVersion=2}] ["",{"text":"<"},{"text":"Yveltal","color":"dark_red"},{"text":"> "},{"text":"Yvaaaaaar!","bold":true,"italic":true}]
+
+execute as @s[scores={DialogueTrigger=131,TalkTime=90}] run kill @e[x=-2336,y=49,z=-1022,distance=..3,type=armor_stand]
+
+execute as @s[scores={DialogueTrigger=131,TalkTime=96}] run function kalos:triggers/stopsound
+
+#Disables particles
+#execute as @s[scores={DialogueTrigger=131,TalkTime=95..96}] run fill -674 100 1364 -674 103 1364 minecraft:iron_block
+
+tag @s[scores={DialogueTrigger=131,TalkTime=96..}] add Dialogue131
+scoreboard players set @s[scores={DialogueTrigger=131},tag=Dialogue131] TalkTime 0
+scoreboard players set @s[scores={DialogueTrigger=131},tag=Dialogue131] DialogueTrigger 0
+
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Hall of Fame credits (activated by healer)
 #scoreboard players set @a[r=20,score_TalkTime=0] DialogueTrigger 154

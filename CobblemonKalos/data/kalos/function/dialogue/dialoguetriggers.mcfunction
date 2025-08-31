@@ -505,18 +505,35 @@ execute as @s[x=-2336,y=41,z=-1011,distance=..20,tag=Dialogue129,tag=!Dialogue13
 execute as @s[x=-2336,y=41,z=-1011,distance=..20,tag=Dialogue129,tag=!Dialogue130] unless entity @e[x=-2336,y=42,z=-1007,dy=3,type=cobblemon:npc] run npcspawnat -2336 42 -1007 flarehq_admin6
 execute as @s[x=-2336,y=41,z=-1011,distance=..20,tag=Dialogue129,tag=!Dialogue130] unless entity @e[x=-2330,y=42,z=-1007,dy=3,type=cobblemon:npc] run npcspawnat -2330 42 -1007 flarehq_admin7
 
+#Prompts the player to activate the legendary Pokemon
+execute as @a[x=-2336,y=42,z=-1016,distance=..4,tag=Dialogue130,tag=!Dialogue131,scores={DialogueTrigger=0}] run opendialogue legendary_activate_prompt @s
+
+#Upon catching the legendary Pokemon activates Lysandre's last dialogue before battle
+execute as @s[x=-2336,y=41,z=-1011,distance=..20,tag=Dialogue131,tag=!Dialogue132] run scoreboard players set @s Temp 0
+execute as @s[x=-2336,y=41,z=-1011,distance=..20,tag=Dialogue131,tag=!Dialogue132,scores={GameVersion=1}] store success score @s Temp run teststore @s all xerneas
+execute as @s[x=-2336,y=41,z=-1011,distance=..20,tag=Dialogue131,tag=!Dialogue132,scores={GameVersion=2}] store success score @s Temp run teststore @s all yveltal
+execute as @s[x=-2336,y=41,z=-1011,distance=..20,tag=Dialogue131,tag=!Dialogue132,scores={Temp=1..}] run opendialogue lysandre_dialogue132 @s
 
 
+#If player defeats the legendary Pokemon, leaving resets it.
+execute as @s[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=Dialogue131,tag=!Dialogue132] run scoreboard players set @s Temp 0
+execute as @s[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=Dialogue131,tag=!Dialogue132,scores={GameVersion=1}] store success score @s Temp run teststore @s all xerneas
+execute as @s[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=Dialogue131,tag=!Dialogue132,scores={GameVersion=2}] store success score @s Temp run teststore @s all yveltal
+execute as @s[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=Dialogue131,tag=!Dialogue132,scores={Temp=0}] unless entity @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,type=cobblemon:pokemon] run tellraw @s {"text":"Legendary Pokemon has been reset! Catch it to continue the story!","italic":true,"color":"gray"}
+execute as @s[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=Dialogue131,tag=!Dialogue132,scores={Temp=0}] unless entity @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,type=cobblemon:pokemon] run tag @s remove Dialogue131
 
+#Lysandre final battle ending
+execute as @s[x=-2336,y=42,z=-997,distance=..20,tag=LysandreDefeat,tag=!Dialogue133] run opendialogue lysandre_x_dialogue133 @s
+execute as @s[x=-2336,y=42,z=-997,distance=..20,tag=LysandreDefeat,tag=!Dialogue133] run opendialogue lysandre_y_dialogue133 @s
 
-
-
-
-
-
-
-
-
+#Destroyed Geosenge everybody
+execute as @s[x=-410,y=109,z=2014,distance=..20,tag=!Dialogue134] unless entity @e[x=-415,y=109,z=2012,dy=3,type=cobblemon:npc] run npcspawnat -415 109 2012 hero_sina_generic
+execute as @s[x=-410,y=109,z=2014,distance=..20,tag=!Dialogue134] unless entity @e[x=-417,y=109,z=2015,dy=3,type=cobblemon:npc] run npcspawnat -417 109 2015 hero_dexio_generic
+execute as @s[x=-410,y=109,z=2014,distance=..20,tag=!Dialogue134] unless entity @e[x=-404,y=109,z=2018,dy=3,type=cobblemon:npc] run npcspawnat -404 109 2018 tierno_generic
+execute as @s[x=-410,y=109,z=2014,distance=..20,tag=!Dialogue134] unless entity @e[x=-404,y=109,z=2015,dy=3,type=cobblemon:npc] run npcspawnat -404 109 2015 trevor_generic
+execute as @s[x=-410,y=109,z=2014,distance=..20,tag=!Dialogue134] unless entity @e[x=-407,y=109,z=2019,dy=3,type=cobblemon:npc] run npcspawnat -407 109 2019 shauna_generic
+execute as @s[x=-410,y=109,z=2014,distance=..20,tag=!Dialogue134] unless entity @e[x=-413,y=109,z=2020,dy=3,type=cobblemon:npc] run npcspawnat -413 109 2020 serena_generic
+execute as @s[x=-410,y=109,z=2014,distance=..20,tag=!Dialogue134] run opendialogue friends_dialogue134 @s
 
 #-----------------------------------------------------------
 #Sets up legendary Pokemon

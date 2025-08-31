@@ -67,6 +67,7 @@ tag @s remove Admin1
 tag @s remove Admin2
 tag @s remove Admin3
 tag @s remove Admin4
+tag @s remove LysandreDefeat
 tag @s remove SycamoresNote
 tag @s remove TMVPass
 tag @s remove HoopaCatch
