@@ -19,6 +19,9 @@ scoreboard players remove @e[x=-687,y=100,z=1384,dy=3,type=armor_stand,scores={C
 execute as @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,limit=1] run execute at @e[x=-687,y=100,z=1384,dy=3,type=armor_stand,scores={ChateauCD=0}] run function kalos:triggers/battlechateau
 
 
+#Resets the Friend Safari biome if no player is nearby
+execute unless entity @a[x=1307,y=111,z=1496,distance=..75] run fillbiome 1286 109 1466 1328 115 1500 minecraft:jungle
+
 
 #Regenerates Cut Trees
 function kalos:hms/cutregen

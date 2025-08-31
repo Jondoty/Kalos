@@ -1,7 +1,7 @@
 {
     "speakers": {
         "npc": {
-            "name": "     ",
+            "name": "Friend Safari Manager",
             "face": {
                 "type": "artificial",
                 "modelType": "npc",
@@ -15,16 +15,21 @@
             "id": "page1",
             "speaker": "npc",
             "lines": [
-                "Welcome to the Friend Safari! Please take this book to get you started!"
+                "Welcome to the Friend Safari!"
             ],
             "input": {
                 "type": "option",
                 "vertical": false,
                 "options": [
                     {
-                        "text": "Next",
+                        "text": "Info",
                         "value": "next",
                         "action": "q.dialogue.set_page('page2');"
+                    },
+                    {
+                        "text": "Change Biome",
+                        "value": "changebiome",
+                        "action": "q.dialogue.set_page('typeselect1');"
                     }
                 ]
             }
@@ -33,7 +38,7 @@
             "id": "page2",
             "speaker": "npc",
             "lines": [
-                "Walk into the back, and you can start using your book to first select a type."
+                "Select a biome with me, then walk into the back for your desired spawns!"
             ],
             "input": {
                 "type": "option",
@@ -51,7 +56,7 @@
             "id": "page3",
             "speaker": "npc",
             "lines": [
-                "Then if you have a Friend Code for someone who has that type, you can find the Pokemon in their Safari!"
+                "If you have a Friend Code for someone who has that type, you can find the Pokemon in their Safari!"
             ],
             "input": {
                 "type": "option",
@@ -76,9 +81,1226 @@
                 "vertical": false,
                 "options": [
                     {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page5');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "npc",
+            "lines": [
+                "The Pokemon that spawn here even have two randomly-guaranteed perfect IVs, and a boosted shiny chance, so get hunting!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
                         "text": "Close",
                         "value": "close",
                         "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+
+
+        {
+            "id": "typeselect1",
+            "speaker": "npc",
+            "lines": [
+                "Which type would you like to activate?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Bug",
+                        "value": "bug",
+                        "action": "q.dialogue.set_page('bugselect');"
+                    },
+                    {
+                        "text": "Dark",
+                        "value": "dark",
+                        "action": "q.dialogue.set_page('darkselect');"
+                    },
+                    {
+                        "text": "Dragon",
+                        "value": "dragon",
+                        "action": "q.dialogue.set_page('dragonselect');"
+                    },
+                    {
+                        "text": "Electric",
+                        "value": "electric",
+                        "action": "q.dialogue.set_page('electricselect');"
+                    },
+                    {
+                        "text": "Fairy",
+                        "value": "fairy",
+                        "action": "q.dialogue.set_page('fairyselect');"
+                    },
+                    {
+                        "text": "More Types >>",
+                        "value": "moretypes",
+                        "action": "q.dialogue.set_page('typeselect2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "typeselect2",
+            "speaker": "npc",
+            "lines": [
+                "Which type would you like to activate?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Fighting",
+                        "value": "fighting",
+                        "action": "q.dialogue.set_page('fightingselect');"
+                    },
+                    {
+                        "text": "Fire",
+                        "value": "fire",
+                        "action": "q.dialogue.set_page('fireselect');"
+                    },
+                    {
+                        "text": "Flying",
+                        "value": "flying",
+                        "action": "q.dialogue.set_page('flyingselect');"
+                    },
+                    {
+                        "text": "Ghost",
+                        "value": "ghost",
+                        "action": "q.dialogue.set_page('ghostselect');"
+                    },
+                    {
+                        "text": "Grass",
+                        "value": "grass",
+                        "action": "q.dialogue.set_page('grassselect');"
+                    },
+                    {
+                        "text": "More Types >>",
+                        "value": "moretypes",
+                        "action": "q.dialogue.set_page('typeselect3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "typeselect3",
+            "speaker": "npc",
+            "lines": [
+                "Which type would you like to activate?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Ground",
+                        "value": "ground",
+                        "action": "q.dialogue.set_page('groundselect');"
+                    },
+                    {
+                        "text": "Ice",
+                        "value": "ice",
+                        "action": "q.dialogue.set_page('iceselect');"
+                    },
+                    {
+                        "text": "Normal",
+                        "value": "normal",
+                        "action": "q.dialogue.set_page('normalselect');"
+                    },
+                    {
+                        "text": "Poison",
+                        "value": "poison",
+                        "action": "q.dialogue.set_page('poisonselect');"
+                    },
+                    {
+                        "text": "Psychic",
+                        "value": "psychic",
+                        "action": "q.dialogue.set_page('psychicselect');"
+                    },
+                    {
+                        "text": "More Types >>",
+                        "value": "moretypes",
+                        "action": "q.dialogue.set_page('typeselect4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "typeselect4",
+            "speaker": "npc",
+            "lines": [
+                "Which type would you like to activate?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Rock",
+                        "value": "rock",
+                        "action": "q.dialogue.set_page('rockselect');"
+                    },
+                    {
+                        "text": "Steel",
+                        "value": "steel",
+                        "action": "q.dialogue.set_page('steelselect');"
+                    },
+                    {
+                        "text": "Water",
+                        "value": "water",
+                        "action": "q.dialogue.set_page('waterselect');"
+                    },
+                    {
+                        "text": "<<< Page 1 ",
+                        "value": "page1",
+                        "action": "q.dialogue.set_page('typeselect1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "normalselect",
+            "speaker": "npc",
+            "lines": [
+                "Which pool of Pokemon do you wish to spawn?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag(FSNormal1)",
+                        "text": "1) Teddiursa, Loudred, Chansey",
+                        "value": "normal1",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:normal1');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSNormal2)",
+                        "text": "2) Aipom, Kecleon, Ditto",
+                        "value": "normal2",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:normal2');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSNormal3)",
+                        "text": "3) Dunsparce, Audino, Eevee",
+                        "value": "normal3",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:normal3');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSNormal4)",
+                        "text": "4) Lillipup, Minccino, Smeargle",
+                        "value": "normal4",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:normal4');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": [
+                            "q.dialogue.set_page('typeselect1');"
+                        ]
+                    }
+                ]
+            }
+        },
+
+
+        {
+            "id": "fireselect",
+            "speaker": "npc",
+            "lines": [
+                "Which pool of Pokemon do you wish to spawn?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag(FSFire1)",
+                        "text": "1) Growlithe, Charmeleon, Ninetales",
+                        "value": "fire1",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:fire1');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSFire2)",
+                        "text": "2) Ponyta, Slugma, Braixen",
+                        "value": "fire2",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:fire2');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSFire3)",
+                        "text": "3) Magmar, Larvesta, Braixen",
+                        "value": "fire3",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:fire3');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSFire4)",
+                        "text": "4) Pansear, Pyroar, Fletchinder",
+                        "value": "fire4",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:fire4');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": [
+                            "q.dialogue.set_page('typeselect1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "fightingselect",
+            "speaker": "npc",
+            "lines": [
+                "Which pool of Pokemon do you wish to spawn?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag(FSFighting1)",
+                        "text": "1) Mankey, Throh, Tyrogue",
+                        "value": "fighting1",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:fighting1');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSFighting2)",
+                        "text": "2) Machoke, Sawk, Breloom",
+                        "value": "fighting2",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:fighting2');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSFighting3)",
+                        "text": "3) Meditite, Pancham, Hariyama",
+                        "value": "fighting3",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:fighting3');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSFighting4)",
+                        "text": "4) Mienfoo, Pancham, Riolu",
+                        "value": "fighting4",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:fighting4');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": [
+                            "q.dialogue.set_page('typeselect1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "waterselect",
+            "speaker": "npc",
+            "lines": [
+                "Which pool of Pokemon do you wish to spawn?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag(FSWater1)",
+                        "text": "1) Krabby, Wartortle, Poliwhirl",
+                        "value": "water1",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:water1');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSWater2)",
+                        "text": "2) Octillery, Gyarados, Azumarill",
+                        "value": "water2",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:water2');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSWater3)",
+                        "text": "3) Bibarel, Quagsire, Frogadier",
+                        "value": "water3",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:water3');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSWater4)",
+                        "text": "4) Panpour, Floatzel, Frogadier",
+                        "value": "water4",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:water4');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": [
+                            "q.dialogue.set_page('typeselect1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "flyingselect",
+            "speaker": "npc",
+            "lines": [
+                "Which pool of Pokemon do you wish to spawn?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag(FSFlying1)",
+                        "text": "1) Pidgey, Hoothoot, Tropius",
+                        "value": "flying1",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:flying1');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSFlying2)",
+                        "text": "2) Spearow, Tranquill, Rufflet",
+                        "value": "flying2",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:flying2');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSFlying3)",
+                        "text": "3) Farfetch'd, Woobat, Fletchinder",
+                        "value": "flying3",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:flying3');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSFlying4)",
+                        "text": "4) Doduo, Swanna, Hawlucha",
+                        "value": "flying4",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:flying4');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": [
+                            "q.dialogue.set_page('typeselect1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "grassselect",
+            "speaker": "npc",
+            "lines": [
+                "Which pool of Pokemon do you wish to spawn?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag(FSGrass1)",
+                        "text": "1) Oddish, Ivysaur, Maractus",
+                        "value": "grass1",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:grass1');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSGrass2)",
+                        "text": "2) Tangela, Swadloon, Quilladin",
+                        "value": "grass2",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:grass2');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSGrass3)",
+                        "text": "3) Sunkern, Petilil, Gogoat",
+                        "value": "grass3",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:grass3');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSGrass4)",
+                        "text": "4) Pansage, Sawsbuck, Quilladin",
+                        "value": "grass4",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:grass4');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": [
+                            "q.dialogue.set_page('typeselect1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "poisonselect",
+            "speaker": "npc",
+            "lines": [
+                "Which pool of Pokemon do you wish to spawn?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag(FSPoison1)",
+                        "text": "1) Kakuna, Venomoth, Muk",
+                        "value": "poison1",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:poison1');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSPoison2)",
+                        "text": "2) Gloom, Ariados, Drapion",
+                        "value": "poison2",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:poison2');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSPoison3)",
+                        "text": "3) Cascoon, Swalot, Toxicroak",
+                        "value": "poison3",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:poison3');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSPoison4)",
+                        "text": "4) Seviper, Garbodor, Whirlipede",
+                        "value": "poison4",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:poison4');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": [
+                            "q.dialogue.set_page('typeselect1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "electricselect",
+            "speaker": "npc",
+            "lines": [
+                "Which pool of Pokemon do you wish to spawn?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag(FSElectric1)",
+                        "text": "1) Electrode, Pikachu, Manectric",
+                        "value": "electric1",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:electric1');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSElectric2)",
+                        "text": "2) Pachirisu, Electabuzz, Luxio",
+                        "value": "electric2",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:electric2');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSElectric3)",
+                        "text": "3) Emolga, Stunfisk, Zebstrika",
+                        "value": "electric3",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:electric3');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSElectric4)",
+                        "text": "4) Dedenne, Helioptile, Galvantula",
+                        "value": "electric4",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:electric4');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": [
+                            "q.dialogue.set_page('typeselect1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "groundselect",
+            "speaker": "npc",
+            "lines": [
+                "Which pool of Pokemon do you wish to spawn?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag(FSGround1)",
+                        "text": "1) Sandshrew, Dugtrio, Gastrodon",
+                        "value": "ground1",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:ground1');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSGround2)",
+                        "text": "2) Wooper, Marowak, Palpitoad",
+                        "value": "ground2",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:ground2');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSGround3)",
+                        "text": "3) Phanpy, Nincada, Diggersby",
+                        "value": "ground3",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:ground3');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSGround4)",
+                        "text": "4) Trapinch, Camerupt, Diggersby",
+                        "value": "ground4",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:ground4');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": [
+                            "q.dialogue.set_page('typeselect1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "psychicselect",
+            "speaker": "npc",
+            "lines": [
+                "Which pool of Pokemon do you wish to spawn?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag(FSPsychic1)",
+                        "text": "1) Abra, Wobbuffet, Xatu",
+                        "value": "psychic1",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:psychic1');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSPsychic2)",
+                        "text": "2) Drowzee, Sigilyph, Girafarig",
+                        "value": "psychic2",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:psychic2');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSPsychic3)",
+                        "text": "3) Grumpig, Espurr, Gothorita",
+                        "value": "psychic3",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:psychic3');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSPsychic4)",
+                        "text": "4) Munna, Espurr, Duosion",
+                        "value": "psychic4",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:psychic4');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": [
+                            "q.dialogue.set_page('typeselect1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "rockselect",
+            "speaker": "npc",
+            "lines": [
+                "Which pool of Pokemon do you wish to spawn?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag(FSRock1)",
+                        "text": "1) Nosepass, Onix, Barbaracle",
+                        "value": "rock1",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:rock1');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSRock2)",
+                        "text": "2) Boldore, Magcargo, Shuckle",
+                        "value": "rock2",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:rock2');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSRock3)",
+                        "text": "3) Dwebble, Corsola, Rhydon",
+                        "value": "rock3",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:rock3');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSRock4)",
+                        "text": "4) Dwebble, Pupitar, Barbaracle",
+                        "value": "rock4",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:rock4');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": [
+                            "q.dialogue.set_page('typeselect1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "iceselect",
+            "speaker": "npc",
+            "lines": [
+                "Which pool of Pokemon do you wish to spawn?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag(FSIce1)",
+                        "text": "1) Delibird, Sneasel, Dewgong",
+                        "value": "ice1",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:ice1');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSIce2)",
+                        "text": "2) Snorunt, Beartic, Cloyster",
+                        "value": "ice2",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:ice2');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSIce3)",
+                        "text": "3) Spheal, Bergmite, Lapras",
+                        "value": "ice3",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:ice3');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSIce4)",
+                        "text": "4) Snover, Bergmite, Piloswine",
+                        "value": "ice4",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:ice4');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": [
+                            "q.dialogue.set_page('typeselect1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "bugselect",
+            "speaker": "npc",
+            "lines": [
+                "Which pool of Pokemon do you wish to spawn?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag(FSBug1)",
+                        "text": "1) Butterfree, Beautifly, Venomoth",
+                        "value": "bug1",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:bug1');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSBug2)",
+                        "text": "2) Paras, Masquerain, Pinsir",
+                        "value": "bug2",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:bug2');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSBug3)",
+                        "text": "3) Ledyba, Volbeat, Heracross",
+                        "value": "bug3",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:bug3');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSBug4)",
+                        "text": "4) Combee, Illumise, Vivillon",
+                        "value": "bug4",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:bug4');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": [
+                            "q.dialogue.set_page('typeselect1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "dragonselect",
+            "speaker": "npc",
+            "lines": [
+                "Which pool of Pokemon do you wish to spawn?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag(FSDragon1)",
+                        "text": "1) Gabite, Dragonair, Druddigon",
+                        "value": "dragon1",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:dragon1');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSDragon2)",
+                        "text": "2) Gabite, Noibat, Sliggoo",
+                        "value": "dragon2",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:dragon2');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSDragon3)",
+                        "text": "3) Fraxure, Noibat, Druddigon",
+                        "value": "dragon3",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:dragon3');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSDragon4)",
+                        "text": "4) Fraxure, Shelgon, Sliggoo",
+                        "value": "dragon4",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:dragon4');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": [
+                            "q.dialogue.set_page('typeselect1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ghostselect",
+            "speaker": "npc",
+            "lines": [
+                "Which pool of Pokemon do you wish to spawn?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag(FSGhost1)",
+                        "text": "1) Shuppet, Pumpkaboo, Dusclops",
+                        "value": "ghost1",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:ghost1');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSGhost2)",
+                        "text": "2) Lampent, Pumpkaboo, Drifblim",
+                        "value": "ghost2",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:ghost2');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSGhost3)",
+                        "text": "3) Shuppet, Phantump, Spiritomb",
+                        "value": "ghost3",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:ghost3');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSGhost4)",
+                        "text": "4) Lampent, Phantump, Golurk",
+                        "value": "ghost4",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:ghost4');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": [
+                            "q.dialogue.set_page('typeselect1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "darkselect",
+            "speaker": "npc",
+            "lines": [
+                "Which pool of Pokemon do you wish to spawn?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag(FSDark1)",
+                        "text": "1) Mightyena, Sneasel, Sableye",
+                        "value": "dark1",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:dark1');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSDark2)",
+                        "text": "2) Nuzleaf, Cacturne, Absol",
+                        "value": "dark2",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:dark2');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSDark3)",
+                        "text": "3) Pawniard, Crawdaunt, Liepard",
+                        "value": "dark3",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:dark3');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSDark4)",
+                        "text": "4) Vullaby, Sandile, Inkay",
+                        "value": "dark4",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:dark4');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": [
+                            "q.dialogue.set_page('typeselect1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "steelselect",
+            "speaker": "npc",
+            "lines": [
+                "Which pool of Pokemon do you wish to spawn?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag(FSSteel1)",
+                        "text": "1) Magneton, Forretress, Klefki",
+                        "value": "steel1",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:steel1');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSSteel2)",
+                        "text": "2) Mawile, Skarmory, Bronzong",
+                        "value": "steel2",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:steel2');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSSteel3)",
+                        "text": "3) Ferroseed, Metang, Excadrill",
+                        "value": "steel3",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:steel3');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSSteel4)",
+                        "text": "4) Ferroseed, Klang, Klefki",
+                        "value": "steel4",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:steel4');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": [
+                            "q.dialogue.set_page('typeselect1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "fairyselect",
+            "speaker": "npc",
+            "lines": [
+                "Which pool of Pokemon do you wish to spawn?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag(FSFairy1)",
+                        "text": "1) Togepi, Jigglypuff, Clefairy",
+                        "value": "fairy1",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:fairy1');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSFairy2)",
+                        "text": "2) Snubbull, Mawile, Blue Floette",
+                        "value": "fairy2",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:fairy2');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSFairy3)",
+                        "text": "3) Kirlia, Spritzee, Red Floette",
+                        "value": "fairy3",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:fairy3');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag(FSFairy4)",
+                        "text": "4) Dedenne, Swirlix, Yellow Floette",
+                        "value": "fairy4",
+                        "action": [
+                            "q.run_command('fillbiome 1286 109 1466 1328 115 1500 kalos:fairy4');",
+                            "q.dialogue.set_page('selectend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": [
+                            "q.dialogue.set_page('typeselect1');"
+                        ]
+                    }
+                ]
+            }
+        },
+
+
+        {
+            "id": "selectend",
+            "speaker": "npc",
+            "lines": [
+                "The biome has been changed! Enjoy!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('execute as @e[x=1286,y=110,z=1466,dx=42,dy=6,dz=55,type=cobblemon:pokemon,nbt={Pokemon:{Shiny:0b}}] unless entity @a[x=1286,y=110,z=1466,dx=42,dy=6,dz=55] run tp @s ~ ~-500 ~');",
                             "q.dialogue.close();"
                         ]
                     }
