@@ -550,6 +550,17 @@ execute as @s[x=1488,y=99,z=492,distance=..10,tag=!Dialogue138,scores={StarterPi
 execute as @s[x=1448,y=98,z=492,distance=..30,tag=Dialogue138,tag=!Dialogue140] unless entity @e[x=1451,y=98,z=494,dy=3,type=cobblemon:npc] run npcspawnat 1451 98 494 route19_tierno
 execute as @s[x=1448,y=98,z=492,distance=..30,tag=Dialogue138,tag=!Dialogue140] unless entity @e[x=1451,y=98,z=490,dy=3,type=cobblemon:npc] run npcspawnat 1451 98 490 route19_trevor
 
+#Pokemon Village Wulfric
+execute as @s[x=951,y=93,z=664,distance=..20,tag=!Wulfric,tag=!Dialogue141] unless entity @e[x=951,y=93,z=664,dy=3,type=cobblemon:npc] run npcspawnat 951 93 664 wulfric_generic
+execute as @s[x=951,y=93,z=664,distance=..7,tag=!Wulfric,tag=!Dialogue141] run opendialogue wulfric_dialogue141 @s
+
+#Snowbelle Gym Guy after last badge
+execute as @s[x=1144,y=95,z=497,distance=..7,tag=Wulfric,tag=!Dialogue143] run opendialogue gymguywulfric_dialogue143 @s
+
+#Victory Road Gate Ace Trainer block
+#Deletes or sets up if the player is ready to battle them with an npcbox
+execute as @p[x=694,y=106,z=396,distance=..10,tag=Viola,tag=Grant,tag=Korrina,tag=Ramos,tag=Clemont,tag=Valerie,tag=Olympia,tag=Wulfric] run kill @e[x=694,y=106,z=396,dy=4,type=interaction]
+execute as @p[x=694,y=106,z=396,distance=..10] unless entity @s[tag=Viola,tag=Grant,tag=Korrina,tag=Ramos,tag=Clemont,tag=Valerie,tag=Olympia,tag=Wulfric] positioned 694 106 396 run function kalos:spawn/npcboxes 
 
 #-----------------------------------------------------------
 #Sets up legendary Pokemon

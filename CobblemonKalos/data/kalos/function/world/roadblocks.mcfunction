@@ -17,6 +17,9 @@ execute as @s[x=165,y=99,z=375,dx=28,dy=10,dz=14,tag=!Viola] at @s run tp @s ~ ~
 execute as @s[x=718,y=103,z=399,dx=9,dy=10,dz=16,tag=!FlySnowbelle] run opendialogue route21_block @s
 execute as @s[x=718,y=103,z=399,dx=9,dy=10,dz=16,tag=!FlySnowbelle] at @s run tp @s ~-10 105 ~
 
+#Victory Road Gate Ace Trainer Robbie block entering Victory Road
+execute as @s[x=686,y=106,z=388,dx=16,dy=9,dz=8,tag=!Dialogue145] run opendialogue route22_acetrainerm_interaction @s
+execute as @s[x=686,y=106,z=388,dx=16,dy=9,dz=8,tag=!Dialogue145] at @s run tp @s ~ ~ ~10
 
 #----------------
 

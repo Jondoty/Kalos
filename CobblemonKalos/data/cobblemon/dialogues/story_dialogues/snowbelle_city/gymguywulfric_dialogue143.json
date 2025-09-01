@@ -1,0 +1,191 @@
+{   
+    "initializationAction": [              
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');",
+        "q.run_command('particle cloud 1143 96 490 2 2 2 1 100');"
+            ],
+    "escapeAction": [],
+    "speakers": {
+        "gymguy": {
+          "name": "Gym Guy",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:monsieur",
+            "isLeftSide": false
+          }
+        },
+        
+        "wulfric": {
+          "name": "Wulfric",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:wulfric",
+            "isLeftSide": true
+          }
+        }
+      },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "gymguy",
+            "lines": [
+                "There's the future Champ I know and love!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "gymguy",
+            "lines": [
+                "Looks like you trumped our ol' Gym Leader!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page4",
+            "speaker": "gymguy",
+            "lines": [
+                "It's never a bad thing to test the limits of your strength."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page5",
+            "speaker": "gymguy",
+            "lines": [
+                "Am I right or am I right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page6');"
+                        ]
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page6",
+            "speaker": "gymguy",
+            "lines": [
+                "And since you're such a star, I guess that means you're off to the Pokémon League!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud 1146 96 490 2 2 2 1 100');",
+                            "q.dialogue.set_page('page7');"
+                        ]
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page7",
+            "speaker": "wulfric",
+            "lines": [
+                "You know what? You have all the Gym Badges now, so there's really only one thing left to do..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page8');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page8",
+            "speaker": "wulfric",
+            "lines": [
+                "It's time you headed off to the Pokémon League!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page9');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page9",
+            "speaker": "wulfric",
+            "lines": [
+                "Listen up, now... Trust in your Pokémon, and there's no limit to what you can achieve!"
+            ],            
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('particle cloud 1143 96 490 2 2 2 1 100');",
+                            "q.run_command('particle cloud 1146 96 490 2 2 2 1 100');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue143');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                            ]
+                    }
+                ]
+            }
+        }
+        ]
+    }

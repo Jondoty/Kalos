@@ -65,6 +65,9 @@ execute as @s[x=676,y=85,z=-1361,distance=..5,tag=!Dialogue97] run opendialogue 
 #Route 19 box blocking Trevor NPC until Tierno is beaten
 execute as @s[x=1451,y=98,z=490,distance=..8] run opendialogue route19_tierno_reminder @s
 
+#Victory Road Gate Ace blocking the path without all the badges
+execute as @s[x=694,y=106,z=396,distance=..7] run opendialogue route22_acetrainerm_interaction @s
+
 
 
 #-------------------------------------------------------------

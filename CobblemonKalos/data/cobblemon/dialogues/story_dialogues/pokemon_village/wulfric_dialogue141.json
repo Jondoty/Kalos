@@ -1,0 +1,301 @@
+{   
+    "initializationAction": [              
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+            ],
+    "escapeAction": [],
+    "speakers": {
+        "wulfricunknown": {
+          "name": "???",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:wulfric",
+            "isLeftSide": true
+          }
+        },
+        
+        "wulfric": {
+          "name": "Wulfric",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:wulfric",
+            "isLeftSide": true
+          }
+        }
+      },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "wulfricunknown",
+            "lines": [
+                "You know what this place is?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "wulfricunknown",
+            "lines": [
+                "Welcome to the Pokémon Village. This place is a secret, y'know?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page4",
+            "speaker": "wulfricunknown",
+            "lines": [
+                "Most of the Pokémon here are runaways--escaped from bad people who did awful things to them."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page5",
+            "speaker": "wulfricunknown",
+            "lines": [
+                "It's a shame how many heartless Trainers who can't bother to care for their Pokémon are out there."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page6');"
+                        ]
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page6",
+            "speaker": "wulfricunknown",
+            "lines": [
+                "Some of these Pokémon, though..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page7",
+            "speaker": "wulfricunknown",
+            "lines": [
+                "Some of 'em are just too strong and found they didn't really have a place in the outside world, so they came here."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page8');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page8",
+            "speaker": "wulfricunknown",
+            "lines": [
+                "Hmm... I see. Your Pokémon sure seem to think highly of you. You've had some good times together, haven't you?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page9');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page9",
+            "speaker": "wulfricunknown",
+            "lines": [
+                "Sometimes I get worried and come here to check on everyone."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page10');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page10",
+            "speaker": "wulfricunknown",
+            "lines": [
+                "Oh--excuse my manners. We haven't even had a proper introduction yet."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page11');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page11",
+            "speaker": "wulfric",
+            "lines": [
+                "The name's Wulfric. I'm usually over at the Gym in Snowbelle City, since I'm the Gym Leader and all."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page12');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page12",
+            "speaker": "wulfric",
+            "lines": [
+                "Let me guess--you want to challenge me?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page13');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page13",
+            "speaker": "wulfric",
+            "lines": [
+                "I thought so. Sorry to inconvenience you like this."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page14');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page14",
+            "speaker": "wulfric",
+            "lines": [
+                "I'll be waiting for you back at the Gym, then."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page15');"
+                    }
+                ]
+            }
+        },
+        
+        {
+            "id": "page15",
+            "speaker": "wulfric",
+            "lines": [
+                "Before you come by, I think it would do you good to spend some time with the Pokémon here."
+            ],            
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('particle cloud 951 93 664 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=951,y=92,z=664,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue141');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                            ]
+                    }
+                ]
+            }
+        }
+        ]
+    }
