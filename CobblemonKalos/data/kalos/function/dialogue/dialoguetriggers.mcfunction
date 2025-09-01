@@ -543,11 +543,12 @@ execute as @s[x=1501,y=101,z=271,distance=..10,tag=Dialogue135,tag=!Dialogue136]
 #Particles for Sycamore's Note
 execute as @a[x=1568,y=119,z=163,distance=..45,tag=Dialogue136,tag=!SycamoresNote] run particle minecraft:firework 1568 119 163 0 2 0 0.1 0 normal @s
 
-
-
-
-
-
+#Route 19 Shauna, Tierno and Trevor spawning on bridge
+execute as @s[x=1488,y=99,z=492,distance=..10,tag=!Dialogue138,scores={StarterPick=1}] unless entity @e[x=1448,y=98,z=492,dy=3,type=cobblemon:npc] run npcspawnat 1448 98 492 route19_shauna1
+execute as @s[x=1488,y=99,z=492,distance=..10,tag=!Dialogue138,scores={StarterPick=2}] unless entity @e[x=1448,y=98,z=492,dy=3,type=cobblemon:npc] run npcspawnat 1448 98 492 route19_shauna2
+execute as @s[x=1488,y=99,z=492,distance=..10,tag=!Dialogue138,scores={StarterPick=3}] unless entity @e[x=1448,y=98,z=492,dy=3,type=cobblemon:npc] run npcspawnat 1448 98 492 route19_shauna3
+execute as @s[x=1448,y=98,z=492,distance=..30,tag=Dialogue138,tag=!Dialogue140] unless entity @e[x=1451,y=98,z=494,dy=3,type=cobblemon:npc] run npcspawnat 1451 98 494 route19_tierno
+execute as @s[x=1448,y=98,z=492,distance=..30,tag=Dialogue138,tag=!Dialogue140] unless entity @e[x=1451,y=98,z=490,dy=3,type=cobblemon:npc] run npcspawnat 1451 98 490 route19_trevor
 
 
 #-----------------------------------------------------------

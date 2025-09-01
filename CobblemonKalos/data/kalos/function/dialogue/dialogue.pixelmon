@@ -446,6 +446,8 @@ execute as @s[scores={DialogueTrigger=140,TalkTime=75}] run particle cloud 1451 
 execute as @s[scores={DialogueTrigger=140,TalkTime=75}] run tp @e[x=1451,y=97,z=494,dy=3,type=pixelmon:npc_trainer] -504 146 1292
 execute as @s[scores={DialogueTrigger=140,TalkTime=75}] run tp @e[x=1451,y=97,z=490,dy=3,type=pixelmon:npc_trainer] -504 146 1290
 
+
+
 tellraw @s[scores={DialogueTrigger=140,TalkTime=78}] {"text":"<Shauna> I'm so glad I went on a journey."}]
 tellraw @s[scores={DialogueTrigger=140,TalkTime=85}] {"text":"<Shauna> I made some great friends."}]
 tellraw @s[scores={DialogueTrigger=140,TalkTime=92,StarterPick=3}] {"text":"<Shauna> And thanks to my Li'l Fennekin that I met before we left,"}]

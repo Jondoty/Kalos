@@ -128,10 +128,10 @@ execute as @s[x=-134,y=104,z=-1998,dx=6,dy=5,dz=5,tag=!Dialogue90] at @s run tp 
 execute as @s[x=1342,y=107,z=-122,dx=14,dy=6,dz=15,tag=!Dialogue133] run opendialogue anistar_exitblocked @s
 execute as @s[x=1342,y=107,z=-122,dx=14,dy=6,dz=15,tag=!Dialogue133] at @s run tp @s ~ ~ ~-10
 
-##Route 19 Defeat Friends
-#tellraw @s[x=1404,y=99,z=489,dx=15,dy=10,dz=6,tag=!Dialogue140] {"text":"Battle your friends on the bridge!","italic":true,"color":"gray"}
-#execute as @s[x=1404,y=99,z=489,dx=15,dy=10,dz=6,tag=!Dialogue140] at @s run tp @s ~10 ~ ~
-#
+#Route 19 Defeat Friends
+tellraw @s[x=1404,y=99,z=489,dx=15,dy=10,dz=6,tag=!Dialogue140] {"text":"Battle your friends on the bridge!","italic":true,"color":"gray"}
+execute as @s[x=1404,y=99,z=489,dx=15,dy=10,dz=6,tag=!Dialogue140] at @s run tp @s ~10 ~ ~
+
 ##Terminus Cave block Zygarde before Champion
 #tellraw @s[x=2023,y=41,z=-100,dx=12,dy=20,dz=5,scores={PokemonLeague=0}] {"text":"<Ace Trainer> It must be dangerous to go further ahead unless you're as strong as the Champion."}
 #tp @s[x=2023,y=41,z=-100,dx=12,dy=20,dz=5,scores={PokemonLeague=0}] 2043 41 -98
