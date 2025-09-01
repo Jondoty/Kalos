@@ -535,6 +535,21 @@ execute as @s[x=-410,y=109,z=2014,distance=..20,tag=!Dialogue134] unless entity 
 execute as @s[x=-410,y=109,z=2014,distance=..20,tag=!Dialogue134] unless entity @e[x=-413,y=109,z=2020,dy=3,type=cobblemon:npc] run npcspawnat -413 109 2020 serena_generic
 execute as @s[x=-410,y=109,z=2014,distance=..20,tag=!Dialogue134] run opendialogue friends_dialogue134 @s
 
+
+#Couriway Sycamore Trainer Spawn
+execute as @s[x=1501,y=101,z=271,distance=..10,tag=!Dialogue135] run opendialogue sycamore_dialogue135 @s
+execute as @s[x=1501,y=101,z=271,distance=..10,tag=Dialogue135,tag=!Dialogue136] unless entity @e[x=1501,y=101,z=271,dy=3,type=cobblemon:npc] run npcspawnat 1501 101 271 couriway_sycamore
+
+#Particles for Sycamore's Note
+execute as @a[x=1568,y=119,z=163,distance=..45,tag=Dialogue136,tag=!SycamoresNote] run particle minecraft:firework 1568 119 163 0 2 0 0.1 0 normal @s
+
+
+
+
+
+
+
+
 #-----------------------------------------------------------
 #Sets up legendary Pokemon
 

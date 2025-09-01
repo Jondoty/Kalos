@@ -1941,6 +1941,12 @@ execute as @s[x=1595,y=115,z=244,distance=..5,tag=!ItemLoot447] run tellraw @s {
 execute as @s[x=1595,y=115,z=244,distance=..5,tag=!ItemLoot447] run playsound itemget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=1595,y=115,z=244,distance=..5,tag=!ItemLoot447] run tag @s add ItemLoot447
 
+execute as @s[x=1568,y=119,z=163,distance=..5,tag=Dialogue136,tag=SycamoresNote] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
+execute as @s[x=1568,y=119,z=163,distance=..5,tag=Dialogue136,tag=!SycamoresNote] run function kalos:spawn/sycamoresletter
+execute as @s[x=1568,y=119,z=163,distance=..5,tag=Dialogue136,tag=!SycamoresNote] run tellraw @s {"text":"You found Professor Sycamore's Note!","italic":true,"color":"gray"}
+execute as @s[x=1568,y=119,z=163,distance=..5,tag=Dialogue136,tag=!SycamoresNote] run playsound itemget ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=1568,y=119,z=163,distance=..5,tag=Dialogue136,tag=!SycamoresNote] run tag @s add SycamoresNote
+
 execute as @s[x=1511,y=100,z=436,distance=..5,tag=ItemLoot449] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
 execute as @s[x=1511,y=100,z=436,distance=..5,tag=!ItemLoot449] run give @s cobblemon:net_ball
 execute as @s[x=1511,y=100,z=436,distance=..5,tag=!ItemLoot449] run tellraw @s {"text":"You found a Net Ball!","italic":true,"color":"gray"}

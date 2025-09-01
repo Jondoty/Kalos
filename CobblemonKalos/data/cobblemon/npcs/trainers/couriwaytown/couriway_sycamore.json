@@ -1,0 +1,43 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:professorsycamore",
+    "presets": [
+        "cobblemon:trainer_basics"
+    ],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:couriway_sycamore_interaction"
+    },
+    "name": "Sycamore",
+    "party": {
+        "type": "simple",
+        "pokemon": [
+            "Venusaur level=50 moves=petaldance,worryseed,synthesis,petalblizzard",
+            "Charizard level=50 moves=flameburst,wingattack,slash,flamethrower",
+            "Blastoise level=50 moves=waterpulse,aquatail,skullbash,irondefense"
+        ]
+    },
+    "config": [
+        {
+            "variableName": "challenge_cooldown",
+            "displayName": "Cooldown",
+            "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
+            "type": "NUMBER",
+            "defaultValue": "0"
+        },
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue couriway_sycamore_end @s');"
+        }
+    ]
+}
