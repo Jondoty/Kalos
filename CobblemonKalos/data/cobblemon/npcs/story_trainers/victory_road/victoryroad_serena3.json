@@ -1,0 +1,45 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:serena",
+    "presets": [
+        "cobblemon:trainer_basics"
+    ],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:victoryroad_serena_interaction"
+    },
+    "name": "Serena",
+    "party": {
+        "type": "simple",
+        "pokemon": [
+            "Meowstic gender=female level=57 moves=fakeout,psychic,disarmingvoice,shadowball",
+            "Altaria level=58 moves=dragonpulse,dazzlinggleam,confide",
+            "Absol level=59 moves=swordsdance,slash,nightslash,quickattack",
+            "Vaporeon level=57 moves=aurorabeam,muddywater,quickattack",
+            "Chesnaught level=61 moves=seedbomb,brickbreak,bodyslam"
+        ]
+    },
+    "config": [
+        {
+            "variableName": "challenge_cooldown",
+            "displayName": "Cooldown",
+            "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
+            "type": "NUMBER",
+            "defaultValue": "0"
+        },
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue victoryroad_serena_end @s');"
+        }
+    ]
+}

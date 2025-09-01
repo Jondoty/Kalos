@@ -562,6 +562,25 @@ execute as @s[x=1144,y=95,z=497,distance=..7,tag=Wulfric,tag=!Dialogue143] run o
 execute as @p[x=694,y=106,z=396,distance=..10,tag=Viola,tag=Grant,tag=Korrina,tag=Ramos,tag=Clemont,tag=Valerie,tag=Olympia,tag=Wulfric] run kill @e[x=694,y=106,z=396,dy=4,type=interaction]
 execute as @p[x=694,y=106,z=396,distance=..10] unless entity @s[tag=Viola,tag=Grant,tag=Korrina,tag=Ramos,tag=Clemont,tag=Valerie,tag=Olympia,tag=Wulfric] positioned 694 106 396 run function kalos:spawn/npcboxes 
 
+#Serena Victory Road spawn
+execute as @s[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=!Dialogue147,scores={StarterPick=1}] unless entity @e[x=2294,y=175,z=2184,dy=3,type=cobblemon:npc] run npcspawnat 2294 175 2184 victoryroad_serena1
+execute as @s[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=!Dialogue147,scores={StarterPick=2}] unless entity @e[x=2294,y=175,z=2184,dy=3,type=cobblemon:npc] run npcspawnat 2294 175 2184 victoryroad_serena2
+execute as @s[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=!Dialogue147,scores={StarterPick=3}] unless entity @e[x=2294,y=175,z=2184,dy=3,type=cobblemon:npc] run npcspawnat 2294 175 2184 victoryroad_serena3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #-----------------------------------------------------------
 #Sets up legendary Pokemon
 
