@@ -1,0 +1,4 @@
+execute unless entity @e[x=-504,y=100,z=1229,dy=4] run npcspawnat -504 101 1229 lobby_testnpc
+
+kill @e[x=-498,y=101,z=1230,distance=..2,type=minecraft:item_frame]
+summon item_frame -498 101 1230 {Motion: [0.0d, 0.0d, 0.0d], Facing: 3b, ItemRotation: 0b, Invulnerable: 0b, Air: 300s, OnGround: 0b, PortalCooldown: 0, Rotation: [0.0f, 0.0f], FallDistance: 0.0f, Item: {count: 1, id: "mega_showdown:mega_stone"}, ItemDropChance: 1.0f, Pos: [-497.5d, 101.5d, 1230.03125d], Fire: -1s, TileY: 101, TileX: -498, Invisible: 0b, UUID: [I; 539663181, 1357858055, -1703820808, 648973658], TileZ: 1230, Fixed: 0b}
