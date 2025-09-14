@@ -1,0 +1,245 @@
+{
+    "variations": {
+        "random": {
+            "type": "weighted",
+            "options": [
+                {
+                    "aspect": "acetrainerf",
+                    "weight": 1
+                },
+                {
+                    "aspect": "acetrainerm",
+                    "weight": 1
+                },
+                {
+                    "aspect": "artist",
+                    "weight": 1
+                },
+                {
+                    "aspect": "backpacker",
+                    "weight": 1
+                },
+                {
+                    "aspect": "baker",
+                    "weight": 1
+                },
+                {
+                    "aspect": "battlegirl",
+                    "weight": 1
+                },
+                {
+                    "aspect": "beauty",
+                    "weight": 1
+                },
+                {
+                    "aspect": "blackbelt",
+                    "weight": 1
+                },
+                {
+                    "aspect": "breedermale",
+                    "weight": 1
+                },
+                {
+                    "aspect": "butler",
+                    "weight": 1
+                },
+                {
+                    "aspect": "chef",
+                    "weight": 1
+                },
+                {
+                    "aspect": "dress",
+                    "weight": 1
+                },
+                {
+                    "aspect": "engineer",
+                    "weight": 1
+                },
+                {
+                    "aspect": "fairytalegirl",
+                    "weight": 1
+                },
+                {
+                    "aspect": "fisherman",
+                    "weight": 1
+                },
+                {
+                    "aspect": "furisode",
+                    "weight": 1
+                },
+                {
+                    "aspect": "gardener",
+                    "weight": 1
+                },
+                {
+                    "aspect": "gentleman",
+                    "weight": 1
+                },
+                {
+                    "aspect": "hexmaniac",
+                    "weight": 1
+                },
+                {
+                    "aspect": "hiker",
+                    "weight": 1
+                },
+                {
+                    "aspect": "lass",
+                    "weight": 1
+                },
+                {
+                    "aspect": "littleboy",
+                    "weight": 1
+                },
+                {
+                    "aspect": "littlegirl",
+                    "weight": 1
+                },
+                {
+                    "aspect": "medium",
+                    "weight": 1
+                },
+                {
+                    "aspect": "monsieur",
+                    "weight": 1
+                },
+                {
+                    "aspect": "oldlady",
+                    "weight": 1
+                },
+                {
+                    "aspect": "oldman",
+                    "weight": 1
+                },
+                {
+                    "aspect": "ornithologist",
+                    "weight": 1
+                },
+                {
+                    "aspect": "pokefanf",
+                    "weight": 1
+                },
+                {
+                    "aspect": "pokefanm",
+                    "weight": 1
+                },
+                {
+                    "aspect": "pokemonbreeder",
+                    "weight": 1
+                },
+                {
+                    "aspect": "pokemonbreeder2",
+                    "weight": 1
+                },
+                {
+                    "aspect": "pokemonranger",
+                    "weight": 1
+                },
+                {
+                    "aspect": "pokemonrangerf",
+                    "weight": 1
+                },
+                {
+                    "aspect": "preschoolerf",
+                    "weight": 1
+                },
+                {
+                    "aspect": "preschoolerm",
+                    "weight": 1
+                },
+                {
+                    "aspect": "psychic",
+                    "weight": 1
+                },
+                {
+                    "aspect": "punkgirl",
+                    "weight": 1
+                },
+                {
+                    "aspect": "punkguy",
+                    "weight": 1
+                },
+                {
+                    "aspect": "richman",
+                    "weight": 1
+                },
+                {
+                    "aspect": "risingstar",
+                    "weight": 1
+                },
+                {
+                    "aspect": "rollerskaterf",
+                    "weight": 1
+                },
+                {
+                    "aspect": "rollerskaterm",
+                    "weight": 1
+                },
+                {
+                    "aspect": "schoolboy",
+                    "weight": 1
+                },
+                {
+                    "aspect": "schoolgirl",
+                    "weight": 1
+                },
+                {
+                    "aspect": "scientistf",
+                    "weight": 1
+                },
+                {
+                    "aspect": "scientistm",
+                    "weight": 1
+                },
+                {
+                    "aspect": "shopman",
+                    "weight": 1
+                },
+                {
+                    "aspect": "skytrainer",
+                    "weight": 1
+                },
+                {
+                    "aspect": "supernerd",
+                    "weight": 1
+                },
+                {
+                    "aspect": "swimmerf",
+                    "weight": 1
+                },
+                {
+                    "aspect": "swimmerm",
+                    "weight": 1
+                },
+                {
+                    "aspect": "tourist",
+                    "weight": 1
+                },
+                {
+                    "aspect": "twins",
+                    "weight": 1
+                },
+                {
+                    "aspect": "veteran",
+                    "weight": 1
+                },
+                {
+                    "aspect": "waiter",
+                    "weight": 1
+                },
+                {
+                    "aspect": "waitress",
+                    "weight": 1
+                },
+                {
+                    "aspect": "worker",
+                    "weight": 1
+                },
+                {
+                    "aspect": "youngster",
+                    "weight": 1
+                }
+            ]
+        }
+    }
+}
