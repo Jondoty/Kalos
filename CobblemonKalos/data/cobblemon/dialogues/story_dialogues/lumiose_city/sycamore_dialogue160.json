@@ -1,0 +1,208 @@
+{
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+        "q.run_command('execute as ' + q.player.username + ' run playsound sycamorestheme record @s[tag=!RadioOff] ~ ~ ~ 1 1 1');",
+        "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s[tag=!RadioOff] MusicCooldown 98');"
+    ],
+    "escapeAction": [],
+    "speakers": {
+        "sycamore": {
+            "name": "Sycamore",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:professorsycamore",
+                "isLeftSide": true
+            }
+        },
+        "player": {
+            "face": "q.player.face(true);",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "sycamore",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'How did you like your parade, ' + q.player.username + '?';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "sycamore",
+            "lines": [
+                "So the reason I asked you to come here is..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "sycamore",
+            "lines": [
+                "I wanted to give you a pass to Kiloude City!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "sycamore",
+            "lines": [
+                "Doesn't ring any bells?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "sycamore",
+            "lines": [
+                "Kiloude City is a city in the southern part of the Kalos region."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "sycamore",
+            "lines": [
+                "And it's the perfect place for Trainers looking to sharpen their skills!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "sycamore",
+            "lines": [
+                "So here's your pass for the super high-speed rail to Kiloude City!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run tag @s add TMVPass');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:itemget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run tellraw @s {\"text\":\"You received a TMV Pass to Kiloude City!\",\"italic\":true,\"color\":\"gray\"}');",
+                            "q.dialogue.set_page('page8');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "sycamore",
+            "lines": [
+                "Use it to ride the TMV super high-speed rail! Just hop on a train with your pass!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page9');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page9",
+            "speaker": "sycamore",
+            "lines": [
+                "Have a fantastic time!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('particle cloud 1029 105 1893 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=1029,y=105,z=1893,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue160');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

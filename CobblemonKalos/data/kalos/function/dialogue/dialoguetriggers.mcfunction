@@ -581,7 +581,21 @@ scoreboard players set @a[x=1488,y=137,z=-1900,distance=..20,scores={DialogueTri
 #Respawns AZ if missing 
 execute as @s[x=1469,y=101,z=-1954,distance=..15,tag=Dialogue155,tag=!Dialogue156,scores={DialogueTrigger=0}] unless entity @e[x=1469,y=101,z=-1954,dy=3,type=cobblemon:npc] run npcspawnat 1469 101 -1954 lumiose_az
 
+#Mom post-Pokemon League
+execute as @s[x=493,y=107,z=1549,dx=18,dy=5,dz=19,tag=Dialogue1,tag=!Dialogue157,scores={PokemonLeague=1..}] run opendialogue mom_dialogue157 @s
 
+#Shauna outside giving second starter
+execute as @s[x=509,y=108,z=1586,distance=..15,tag=!Dialogue158,scores={PokemonLeague=1..}] unless entity @e[x=509,y=108,z=1586,dy=3,type=cobblemon:npc] run npcspawnat 509 108 1586 shauna_generic
+execute as @s[x=509,y=108,z=1586,distance=..7,tag=!Dialogue158,scores={PokemonLeague=1..,StarterPick=1}] run opendialogue shauna_dialogue158a @s
+execute as @s[x=509,y=108,z=1586,distance=..7,tag=!Dialogue158,scores={PokemonLeague=1..,StarterPick=2}] run opendialogue shauna_dialogue158b @s
+execute as @s[x=509,y=108,z=1586,distance=..7,tag=!Dialogue158,scores={PokemonLeague=1..,StarterPick=3}] run opendialogue shauna_dialogue158c @s
+
+#Lumiose Sina and Dexio post-game
+execute as @s[x=1017,y=105,z=1908,distance=..7,tag=!Dialogue159] run opendialogue sinadexio_dialogue159 @s
+
+#Sycamore at the train station
+execute as @s[x=1017,y=105,z=1908,distance=..20,tag=!Dialogue160,scores={PokemonLeague=1..}] unless entity @e[x=1029,y=105,z=1893,dy=3,type=cobblemon:npc] run npcspawnat 1029 105 1893 sycamore_generic
+execute as @s[x=1029,y=105,z=1893,distance=..6,tag=!Dialogue160] run opendialogue sycamore_dialogue160 @s
 
 
 

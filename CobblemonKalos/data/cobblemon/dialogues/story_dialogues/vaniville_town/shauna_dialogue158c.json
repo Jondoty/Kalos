@@ -1,0 +1,163 @@
+{   
+    "initializationAction": [              
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+            ],
+    "escapeAction": [],
+    "speakers": {
+        "shauna": {
+          "name": "Shauna",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:shauna",
+            "isLeftSide": true
+          }
+        }
+      },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "shauna",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'' + q.player.username + '! That parade was so great!';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "shauna",
+            "lines": [
+                "Ummm... I have something I want to ask you. Do you mind?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "shauna",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'I want to give you a Pokémon, ' + q.player.username + '!';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "shauna",
+            "lines": [
+                "It'll be like a friendship bracelet, but Pokémon! \u266a"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "shauna",
+            "lines": [
+                "I'll give you this Fennekin!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "shauna",
+            "lines": [
+                "I found it in an Egg! \u266a"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run pokegive fennekin level=5');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:itemget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page7');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "shauna",
+            "lines": [
+                "Of course, each and every Pokémon is special!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('particle cloud 509 108 1586 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=509,y=108,z=1586,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue158');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                            ]
+                    }
+                ]
+            }
+        }
+        ]
+    }

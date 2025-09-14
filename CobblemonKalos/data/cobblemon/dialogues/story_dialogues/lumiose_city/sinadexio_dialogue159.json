@@ -1,0 +1,190 @@
+{   
+    "initializationAction": [              
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+            ],
+    "escapeAction": [],
+    "speakers": {
+        "sina": {
+          "name": "Sina",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:sina",
+            "isLeftSide": true
+          }
+        },
+        "dexio": {
+          "name": "Dexio",
+          "face": {
+            "type": "artificial",
+            "modelType": "npc",
+            "identifier": "cobblemon:dexio",
+            "isLeftSide": false
+          }
+        }
+      },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "dexio",
+            "lines": [
+                "Stop right there!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound sinaanddexio record @s[tag=!RadioOff] ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s[tag=!RadioOff] MusicCooldown 51');",
+                            "q.run_command('execute unless entity @e[x=1014,y=105,z=1909,dy=3,type=cobblemon:npc] run npcspawnat 1014 105 1909 sina_generic');",
+                            "q.run_command('execute unless entity @e[x=1018,y=105,z=1909,dy=3,type=cobblemon:npc] run npcspawnat 1018 105 1909 dexio_generic');",
+                            "q.run_command('particle cloud 1014 105 1909 2 2 2 1 100');",
+                            "q.run_command('particle cloud 1018 105 1909 2 2 2 1 100');",
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "dexio",
+            "lines": [
+                "Ahahahaha! Sorry, sorry. We always seem to be surprising you, don't we?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "dexio",
+            "lines": [
+                "We're just here to give you something the professor forgot about last time."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "sina",
+            "lines": [
+                "...Central Kalos! ...Coastal Kalos! ...Mountain Kalos!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "sina",
+            "lines": [
+                "There are more Pokémon in Kalos than you'll find in those three Pokédexes! Didja know that?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "dexio",
+            "lines": [
+                "That's basically what we're here about. We'll power up your Pokédex for you!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "sina",
+            "lines": [
+                "You'd better keep on treasuring the time you get with your Pokémon from now on, got it?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page8');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "sina",
+            "lines": [
+                "This precious time that you fought for..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('particle cloud 1014 105 1909 2 2 2 1 100');",
+                            "q.run_command('particle cloud 1018 105 1909 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=1014,y=105,z=1909,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tp @e[x=1018,y=105,z=1909,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue159');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                            ]
+                    }
+                ]
+            }
+        }
+        ]
+    }
