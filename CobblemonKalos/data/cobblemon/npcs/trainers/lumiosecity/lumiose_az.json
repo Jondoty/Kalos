@@ -1,0 +1,43 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:az",
+    "presets": [
+        "cobblemon:trainer_basics"
+    ],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:lumiose_az_interaction"
+    },
+    "name": "Az",
+    "party": {
+        "type": "simple",
+        "pokemon": [
+            "Torkoal level=60 moves=lavaplume,stoneedge,bodyslam,return",
+            "Golurk level=60 moves=phantomforce,heavyslam,megapunch,return",
+            "Sigilyph level=60 moves=psychic,airslash,cosmicpower,return"
+        ]
+    },
+    "config": [
+        {
+            "variableName": "challenge_cooldown",
+            "displayName": "Cooldown",
+            "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
+            "type": "NUMBER",
+            "defaultValue": "0"
+        },
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s DialogueTrigger 156');"
+        }
+    ]
+}

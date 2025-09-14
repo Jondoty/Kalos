@@ -203,7 +203,7 @@ execute as @s[scores={DialogueTrigger=154,TalkTime=1}] run pokeheal
 execute as @s[scores={DialogueTrigger=154,TalkTime=1}] run function kalos:triggers/stopsound
 execute as @s[scores={DialogueTrigger=154,TalkTime=1}] run advancement grant @s only kalos:badges/champion
 tellraw @s[scores={DialogueTrigger=154,TalkTime=3}] {"text":"Thank you for playing Cobblemon Kalos!","color":"white"}
-tellraw @s[scores={DialogueTrigger=154,TalkTime=12}] {"text":"Map Creators:\nJond - Organizer, terrain, redstone, builder.\nPixelmonChampion - Head builder, custom models."}
+tellraw @s[scores={DialogueTrigger=154,TalkTime=12}] {"text":"Map Creators:\nJond - Organizer, terrain, commands, builder, Cobblemon adaptation.\nPixelmonChampion - Head builder, custom models."}
 tellraw @s[scores={DialogueTrigger=154,TalkTime=25}] {"text":"Helpers:\nMystcraftMC | The_GlassPhoenix | callthemuffinman | xuambacraft | Tyranium | Wither999 | Dark_Spartan_"}
 tellraw @s[scores={DialogueTrigger=154,TalkTime=35}] {"text":"Check out my other region maps if you liked this one!"}
 tellraw @s[scores={DialogueTrigger=154,TalkTime=35}] ["",{"text":"["},{"text":"Pixelmon Hoenn","color":"aqua","clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/worlds/pixelmon-hoenn"}},{"text":"] ["},{"text":"Cobblemon Kanto","color":"yellow","clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/worlds/cobblemon-kanto"}},{"text":"] ["},{"text":"Cobblemon Johto","color":"red","clickEvent":{"action":"open_url","value":"https://www.curseforge.com/minecraft/worlds/cobblemon-johto"}},{"text":"]"}]
@@ -215,12 +215,120 @@ execute as @s[scores={DialogueTrigger=154,TalkTime=55}] run advancement grant @s
 #Runs legendary reset dialogue
 execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run function kalos:triggers/legendaryreset
 
-execute as @s[scores={DialogueTrigger=154,TalkTime=65}] run effect give @s minecraft:blindness 10 1 true
-#Takes player home
-execute as @s[scores={DialogueTrigger=154,TalkTime=67}] run tp @s 506 118 1558 180 10
+execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run effect give @s minecraft:blindness 7 1 true
+execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=2..}] run effect give @s minecraft:blindness 5 1 true
+
+#Takes the player to the parade on first win
+execute as @s[scores={DialogueTrigger=154,TalkTime=67,PokemonLeague=1}] run gamemode spectator @s
+execute as @s[scores={DialogueTrigger=154,TalkTime=67,PokemonLeague=1}] run tp @s 1488 137 -1900 155 40
+
+#Takes player home on second+ wins
+execute as @s[scores={DialogueTrigger=154,TalkTime=67,PokemonLeague=2..}] run tp @s 506 118 1558 180 10
 
 tag @s[scores={DialogueTrigger=154,TalkTime=67..}] add Dialogue154
 scoreboard players set @s[scores={DialogueTrigger=154},tag=Dialogue154] TalkTime 0
 scoreboard players set @s[scores={DialogueTrigger=154},tag=Dialogue154] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Parade scene if this is the first time player has beaten the Pokemon League
+#Directly from the Hall of Fame to this dialogue if score_PokemonLeague=1
+#scoreboard players set @a[x=1467,y=104,z=-1982,r=20,score_TalkTime=0,tag=!Dialogue155] DialogueTrigger 155
+#scoreboard players set @a[x=1488,y=137,z=-1900,r=20,score_TalkTime=0,tag=!Dialogue155] DialogueTrigger 155
+
+#Music
+
+#pans player towards the parade in 20tps
+#tp @a[scores={DialogueTrigger155,TalkTime=5..20},tag=!Dialogue155] ~ ~ ~-0.10 ~ ~
+
+execute as @s[scores={DialogueTrigger=155,TalkTime=21}] run function kalos:triggers/stopsound
+execute as @s[scores={DialogueTrigger=155,TalkTime=21}] run gamemode adventure @s
+execute as @s[scores={DialogueTrigger=155,TalkTime=21}] run tp @s 1467 104 -1982 0 ~
+
+tellraw @s[scores={DialogueTrigger=155,TalkTime=5}] ["",{"text":"A few days later... Crowds of people gathered in Lumiose City to celebrate the five defenders of the Kalos region and to cheer for its new Champion, "},{"selector":"@p"}]
+tellraw @s[scores={DialogueTrigger=155,TalkTime=25}] {"text":"<Sycamore> What an amazing turnout! All of these people are here to celebrate your achievements."}
+tellraw @s[scores={DialogueTrigger=155,TalkTime=35}] {"text":"<Sycamore> I'd like to present you with the Honor of Kalos for the bravery you showed battling Team Flare!"}
+execute as @s[scores={DialogueTrigger=155,TalkTime=40}] run give @s diamond_horse_armor[custom_name='["",{"text":"Honor of Kalos","italic":false}]',lore=['["",{"text":"A precious symbol that is awarded","italic":false}]','["",{"text":"only to an individual who has done","italic":false}]','["",{"text":"great things for the Kalos region.","italic":false}]']]
+execute as @s[scores={DialogueTrigger=155,TalkTime=40}] run playsound minecraft:itemget ambient @s ~ ~ ~ 1 1 1
+#tellraw @s[scores={DialogueTrigger=155,TalkTime=45}] {"text":"<Sycamore> I'd also like to give you this Shiny Charm, for all your work on the Pokédex!"}]
+#execute as @a[scores={DialogueTrigger=155,TalkTime=50}] run shinycharm @s
+tellraw @s[scores={DialogueTrigger=155,TalkTime=45}] {"text":"<Sycamore> I'm so proud of you all!"}
+tellraw @s[scores={DialogueTrigger=155,TalkTime=54}] {"text":"<Sycamore> On behalf of the entire Kalos region, I'd like to say..."}
+tellraw @s[scores={DialogueTrigger=155,TalkTime=63}] {"text":"<Sycamore> Thank you!"}
+
+execute as @s[scores={DialogueTrigger=155,TalkTime=63}] run summon firework_rocket 1480 115 -1986 {LifeTime:30,FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{flight_duration:2,explosions:[{shape:"large_ball",has_twinkle:1,has_trail:1,colors:[I;11743532],fade_colors:[I;2437522]}]}}}}
+execute as @s[scores={DialogueTrigger=155,TalkTime=63}] run summon firework_rocket 1458 115 -1986 {LifeTime:30,FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{flight_duration:2,explosions:[{shape:"large_ball",has_twinkle:1,has_trail:1,colors:[I;2437522],fade_colors:[I;11743532]}]}}}}
+
+
+#Az tps in on the red carpet
+execute as @s[scores={DialogueTrigger=155,TalkTime=73}] run particle cloud 1469 101 -1954 2 2 2 1 100
+execute as @s[scores={DialogueTrigger=155,TalkTime=73}] unless entity @e[x=1469,y=101,z=-1954,dy=3,type=cobblemon:npc] run npcspawnat 1469 101 -1954 lumiose_az
+execute as @s[scores={DialogueTrigger=155,TalkTime=74}] as @e[x=1469,y=101,z=-1954,distance=..5,type=cobblemon:npc] at @s run tp @s ~ ~ ~ 180 ~
+
+tellraw @s[scores={DialogueTrigger=155,TalkTime=80}] {"text":"<Az> Battle with me."}
+tellraw @s[scores={DialogueTrigger=155,TalkTime=87}] {"text":"<Az> I want to know what a \u201cTrainer\u201d is."}
+
+tag @s[scores={DialogueTrigger=155,TalkTime=87..}] add Dialogue155
+scoreboard players set @s[scores={DialogueTrigger=155},tag=Dialogue155] TalkTime 0
+scoreboard players set @s[scores={DialogueTrigger=155},tag=Dialogue155] DialogueTrigger 0
+
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Az post-battle
+#/tedit add LOSS /scoreboard players set @pl DialogueTrigger 156
+#/tedit add WIN /scoreboard players set @pl DialogueTrigger 156
+#/tedit add LOSS /scoreboard players set @pl TalkTime 0
+#/tedit add WIN /scoreboard players set @pl TalkTime 0
+
+#Music is 29. The Sun Shines Down
+execute as @s[scores={DialogueTrigger=156,TalkTime=1}] run scoreboard players set @s BattleStart 0
+execute as @s[scores={DialogueTrigger=156,TalkTime=1}] run function kalos:triggers/stopsound
+
+tellraw @s[scores={DialogueTrigger=156,TalkTime=10}] {"text":"<Az> Thank you very much for battling with me."}
+tellraw @s[scores={DialogueTrigger=156,TalkTime=20}] {"text":"<Az> Now I finally feel free..."}
+tellraw @s[scores={DialogueTrigger=156,TalkTime=30}] {"text":"<Az> Free from the part of me mired in sorrow--"}
+tellraw @s[scores={DialogueTrigger=156,TalkTime=40}] {"text":"<Az> the part of me that built the ultimate weapon..."}
+
+#Eternal Floette floats down
+execute as @s[scores={DialogueTrigger=156,TalkTime=33}] run spawnpokemonat 1469 130 -1957 floette flower=eternal no_ai=yes level=60 uncatchable=yes
+execute as @s[scores={DialogueTrigger=156,TalkTime=33}] run particle cloud 1469 130 -1954 2 2 2 1 100
+
+#Motion data
+#execute if entity @a[scores={DialogueTrigger=156}] as @e[x=1469,y=102,z=-1957,dy=40,type=cobblemon:pokemon] at @s run tp @s ~ ~-0.08 ~
+
+tellraw @s[scores={DialogueTrigger=156,TalkTime=60}] {"text":"<Az> Floette..."}
+tellraw @s[scores={DialogueTrigger=156,TalkTime=70}] {"text":"<Az> It's been 3,000 years..."}
+tellraw @s[scores={DialogueTrigger=156,TalkTime=90}] {"text":"<Sycamore> His Pokémon was waiting all this time..."}
+tellraw @s[scores={DialogueTrigger=156,TalkTime=100}] {"text":"<Sycamore> Waiting for him to return to the man he was."}
+tellraw @s[scores={DialogueTrigger=156,TalkTime=110}] {"text":"<Sycamore> The man who loved Pokémon with all his heart."}
+
+#lets the music play for a bit
+
+execute as @s[scores={DialogueTrigger=156,TalkTime=130}] run title @s times 200 100 100
+execute as @s[scores={DialogueTrigger=156,TalkTime=130}] run title @s title {"text":"The End."}
+
+#blinds player
+execute as @s[scores={DialogueTrigger=156,TalkTime=150}] run effect give @s minecraft:blindness 10 1 true
+
+#tp Floette and Az out
+execute as @s[scores={DialogueTrigger=156,TalkTime=155}] run tp @e[x=1469,y=100,z=-1957,dy=40,type=cobblemon:pokemon] 10000000 -50000 -10000000
+execute as @s[scores={DialogueTrigger=156,TalkTime=155}] run tp @e[x=1469,y=100,z=-1954,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+
+#tp player to Vaniville Home
+execute as @s[scores={DialogueTrigger=156,TalkTime=155}] run tp @s 506 118 1558 180 10
+
+tag @s[scores={DialogueTrigger=156,TalkTime=155..}] add Dialogue156
+scoreboard players set @s[scores={DialogueTrigger=156},tag=Dialogue156] TalkTime 0
+scoreboard players set @s[scores={DialogueTrigger=156},tag=Dialogue156] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+#

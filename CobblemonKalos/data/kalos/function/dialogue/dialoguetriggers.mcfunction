@@ -574,7 +574,12 @@ execute as @s[x=-1907,y=32,z=2117,distance=..7,tag=!Dialogue148] run opendialogu
 #Diantha Hall of Fame talk
 execute as @s[x=-1998,y=8,z=1943,distance=..7,tag=!Dialogue152] run opendialogue diantha_dialogue152 @s
 
+#Starts the parade dialogue opening
+scoreboard players set @a[x=1467,y=104,z=-1982,distance=..20,scores={DialogueTrigger=0},tag=!Dialogue155] DialogueTrigger 155
+scoreboard players set @a[x=1488,y=137,z=-1900,distance=..20,scores={DialogueTrigger=0},tag=!Dialogue155] DialogueTrigger 155
 
+#Respawns AZ if missing 
+execute as @s[x=1469,y=101,z=-1954,distance=..15,tag=Dialogue155,tag=!Dialogue156,scores={DialogueTrigger=0}] unless entity @e[x=1469,y=101,z=-1954,dy=3,type=cobblemon:npc] run npcspawnat 1469 101 -1954 lumiose_az
 
 
 

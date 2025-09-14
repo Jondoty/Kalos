@@ -75,6 +75,11 @@ execute if entity @a[scores={DialogueTrigger=131,TalkTime=80..96}] positioned -2
 
 
 
+#Parade Camera Motion
+execute as @a[scores={DialogueTrigger=155,TalkTime=5..20}] at @s run tp @s ~ ~ ~-0.10 ~ ~
+
+#AZ's floette floating down
+execute if entity @a[scores={DialogueTrigger=156}] as @e[x=1469,y=102,z=-1957,dy=40,type=cobblemon:pokemon] at @s run tp @s ~ ~-0.08 ~
 
 
 
