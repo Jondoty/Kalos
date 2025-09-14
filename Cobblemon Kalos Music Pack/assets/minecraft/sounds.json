@@ -92,7 +92,7 @@
       "victorychampion": {
       "sounds": [
         {
-          "name":"battles/victorychampion",
+          "name":"battles/victories/victorychampion",
           "stream": true
           }
         ]

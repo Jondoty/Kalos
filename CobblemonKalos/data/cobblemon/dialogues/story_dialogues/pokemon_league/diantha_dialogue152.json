@@ -1,12 +1,8 @@
 {
     "initializationAction": [
-        "c.npc.set_chatting();",
-        "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 5');",
-        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
-        "q.run_command('execute as ' + q.player.username + ' run tag ' + q.player.username + ' add Diantha');",
-        "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $16320 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
-        "q.run_command('scoreboard players add ' + q.player.username + ' Money 16320');"
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
     ],
+    "escapeAction": [],
     "speakers": {
         "npc": {
             "name": "Diantha",
@@ -23,7 +19,7 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Witnessing the noble spirits of you and your Pokémon in battle has really touched my heart..."
+                "Here we are! I'm so glad to welcome you in."
             ],
             "input": {
                 "type": "option",
@@ -32,7 +28,9 @@
                     {
                         "text": "Next",
                         "value": "next",
-                        "action": "q.dialogue.set_page('page2');"
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
                     }
                 ]
             }
@@ -41,7 +39,7 @@
             "id": "page2",
             "speaker": "npc",
             "lines": [
-                "I-I'm so choked up that it's hard to know what I should say, but I...I..."
+                "This grand chamber is where you enter the Kalos region's Hall of fame."
             ],
             "input": {
                 "type": "option",
@@ -59,7 +57,7 @@
             "id": "page3",
             "speaker": "npc",
             "lines": [
-                "I'm just so glad at this moment that I was good enough to be the Champion..."
+                "This is where Pokémon Trainers will live on forever,"
             ],
             "input": {
                 "type": "option",
@@ -77,7 +75,7 @@
             "id": "page4",
             "speaker": "npc",
             "lines": [
-                "After all, it gave me the chance to meet and battle with you and your wonderful Pokémon!"
+                "remembered always for giving their all in battle to the Pokémon League and for the glory and light that they shared with all."
             ],
             "input": {
                 "type": "option",
@@ -95,7 +93,10 @@
             "id": "page5",
             "speaker": "npc",
             "lines": [
-                "Now I understand just why dear Augustine--that's Professor Sycamore to you--said he had to get everything ready for the new Champion!"
+                {
+                    "type": "expression",
+                    "expression": "'Come, ' + q.player.username + '\u2026 Your love for your Pokémon\u2026';"
+                }
             ],
             "input": {
                 "type": "option",
@@ -113,7 +114,7 @@
             "id": "page6",
             "speaker": "npc",
             "lines": [
-                "He'll be waiting for us in Lumiose City, but before I take you there..."
+                "And the way that those Pokémon gave everything they had in battle for you\u2026"
             ],
             "input": {
                 "type": "option",
@@ -131,10 +132,7 @@
             "id": "page7",
             "speaker": "npc",
             "lines": [
-                {
-                    "type": "expression",
-                    "expression": "'My dear ' + q.player.username + ', would you mind stepping through the door behind me?';"
-                }
+                "We'll record them all right here, at this healer, for eternity."
             ],
             "input": {
                 "type": "option",
@@ -144,13 +142,13 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue152');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
                             "q.dialogue.close();"
                         ]
                     }
                 ]
             }
         }
-    ],
-    "escapeAction": [
     ]
 }

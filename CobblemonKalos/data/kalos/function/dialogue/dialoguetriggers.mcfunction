@@ -567,11 +567,12 @@ execute as @s[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=!Dialogue147,scores={Sta
 execute as @s[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=!Dialogue147,scores={StarterPick=2}] unless entity @e[x=2294,y=175,z=2184,dy=3,type=cobblemon:npc] run npcspawnat 2294 175 2184 victoryroad_serena2
 execute as @s[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=!Dialogue147,scores={StarterPick=3}] unless entity @e[x=2294,y=175,z=2184,dy=3,type=cobblemon:npc] run npcspawnat 2294 175 2184 victoryroad_serena3
 
+#Malva priopr to Elite Four
+execute as @s[x=-1907,y=32,z=2117,distance=..20,tag=!Dialogue148] unless entity @e[x=-1907,y=33,z=2117,dy=3,type=cobblemon:npc] run npcspawnat -1907 33 2117 malva_generic
+execute as @s[x=-1907,y=32,z=2117,distance=..7,tag=!Dialogue148] run opendialogue malva_dialogue148 @s
 
-
-
-
-
+#Diantha Hall of Fame talk
+execute as @s[x=-1998,y=8,z=1943,distance=..7,tag=!Dialogue152] run opendialogue diantha_dialogue152 @s
 
 
 

@@ -68,6 +68,8 @@ execute as @s[x=1451,y=98,z=490,distance=..8] run opendialogue route19_tierno_re
 #Victory Road Gate Ace blocking the path without all the badges
 execute as @s[x=694,y=106,z=396,distance=..7] run opendialogue route22_acetrainerm_interaction @s
 
+#Diantha Hall of Fame reminder
+execute as @s[x=-2005,y=8,z=1952,distance=..7] run opendialogue diantha_dialogue152 @s
 
 
 #-------------------------------------------------------------
