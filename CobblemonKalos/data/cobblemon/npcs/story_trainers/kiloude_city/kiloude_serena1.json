@@ -1,0 +1,46 @@
+{
+    "hitbox": "player",
+    "resourceIdentifier": "cobblemon:serena",
+    "presets": [
+        "cobblemon:trainer_basics"
+    ],
+    "interaction": {
+        "type": "dialogue",
+        "dialogue": "cobblemon:kiloude_serena_interaction"
+    },
+    "name": "Serena",
+    "party": {
+        "type": "simple",
+        "pokemon": [
+            "Meowstic gender=female level=66 moves=fakeout,psychic,disarmingvoice,shadowball",
+            "Clefable level=68 moves=moonblast,focusblast,meteormash,sing",
+            "Absol mega_evolution=mega level=68 moves=swordsdance,slash,nightslash,quickattack",
+            "Altaria level=67 moves=dragonpulse,dazzlinggleam,confide",
+            "Jolteon level=66 moves=thunder,quickattack,doublekick",
+            "Delphox level=70 moves=fireblast,psychic,shadowball"
+        ]
+    },
+    "config": [
+        {
+            "variableName": "challenge_cooldown",
+            "displayName": "Cooldown",
+            "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
+            "type": "NUMBER",
+            "defaultValue": "0"
+        },
+        {
+            "variableName": "can_rechallenge",
+            "displayName": "Rechallenging",
+            "description": "This NPC can be battled multiple times.",
+            "type": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "variableName": "on_player_wins",
+            "displayName": "npc.variable.on_player_wins.name",
+            "description": "npc.variable.on_player_wins.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue kiloude_serena_end @s');"
+        }
+    ]
+}

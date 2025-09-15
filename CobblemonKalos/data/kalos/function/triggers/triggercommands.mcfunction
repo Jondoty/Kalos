@@ -4,6 +4,37 @@
 #/scoreboard players enable @p TriggerCommand
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#1 - unlocks all mega stone scoreboards, enables player to find Mega Stones in the evenings
+execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s MegaStones 1
+execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Abomasite 0
+execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Aggronite 0
+execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Alakazite 0
+execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Banettite 0
+execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Diancite 0
+execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Garchompite 0
+execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Gyaradosite 0
+execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Heracronite 0
+execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Houndoominite 0
+execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Kangaskhanite 0
+execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Manectite 0
+execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Mawilite 0
+execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Medichamite 0
+execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Mewtwonite_X 0
+execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Mewtwonite_Y 0
+execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Scizorite 0
+execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Tyranitarite 0
+
+execute as @s[scores={TriggerCommand=1}] run advancement grant @s only kalos:mega2
+
+
+
+
+
+
+
+
+
+
 
 
 

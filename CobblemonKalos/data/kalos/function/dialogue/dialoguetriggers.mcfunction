@@ -597,6 +597,15 @@ execute as @s[x=1017,y=105,z=1908,distance=..7,tag=!Dialogue159] run opendialogu
 execute as @s[x=1017,y=105,z=1908,distance=..20,tag=!Dialogue160,scores={PokemonLeague=1..}] unless entity @e[x=1029,y=105,z=1893,dy=3,type=cobblemon:npc] run npcspawnat 1029 105 1893 sycamore_generic
 execute as @s[x=1029,y=105,z=1893,distance=..6,tag=!Dialogue160] run opendialogue sycamore_dialogue160 @s
 
+#Kiloude City spawns Serena
+execute as @s[x=1221,y=119,z=1497,distance=..20,tag=!Dialogue161,scores={StarterPick=1}] unless entity @e[x=1229,y=119,z=1461,dy=3,type=cobblemon:npc] run npcspawnat 1229 119 1461 kiloude_serena1
+execute as @s[x=1221,y=119,z=1497,distance=..20,tag=!Dialogue161,scores={StarterPick=2}] unless entity @e[x=1229,y=119,z=1461,dy=3,type=cobblemon:npc] run npcspawnat 1229 119 1461 kiloude_serena2
+execute as @s[x=1221,y=119,z=1497,distance=..20,tag=!Dialogue161,scores={StarterPick=3}] unless entity @e[x=1229,y=119,z=1461,dy=3,type=cobblemon:npc] run npcspawnat 1229 119 1461 kiloude_serena3
+
+#Sets up Sycamore NPC in Anistar
+execute as @s[x=1254,y=107,z=-244,distance=..20,tag=Dialogue162,tag=!Dialogue163] unless entity @e[x=1179,y=110,z=-276,dy=3,type=cobblemon:npc] run npcspawnat 1179 110 -276 anistar_sycamore
+execute as @s[x=1254,y=107,z=-307,distance=..20,tag=Dialogue162,tag=!Dialogue163] unless entity @e[x=1179,y=110,z=-276,dy=3,type=cobblemon:npc] run npcspawnat 1179 110 -276 anistar_sycamore
+
 
 
 

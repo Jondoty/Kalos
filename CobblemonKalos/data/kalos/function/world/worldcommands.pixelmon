@@ -348,47 +348,6 @@ scoreboard players set @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMai
 #----------
 #Holo Caster Calls
 
-#Holo Call 1
-#Camphrier Town Lysandre Labs announcement
-scoreboard players set @a[x=-965,y=100,z=-32,distance=..15,tag=!Call1,scores={TalkTime=0,HoloCall=0}] HoloCall 1
-
-#Holo Call 2
-#Lumiose City to Route 5 gate Tierno
-execute as @a[x=-372,y=101,z=-124,distance=..20,tag=Dialogue22,tag=!Call2,scores={TalkTime=0,HoloCall=0}] run scoreboard players set @s HoloCall 2
-
-#Call 3
-#Route 11 Sycamore
-scoreboard players set @a[x=-1972,y=113,z=-666,distance=..15,tag=!Call3,scores={TalkTime=0,HoloCall=0}] HoloCall 3
-
-#Holo Call 4
-#Courmarine Entrance Serena
-scoreboard players set @a[x=-1189,y=79,z=-812,dx=13,dy=10,dz=18,tag=!Call4,scores={TalkTime=0,HoloCall=0}] HoloCall 4
-
-
-#Holo Call 5
-#Courmarine Lysandre
-execute as @a[x=-1077,y=115,z=-615,distance=..20,tag=Ramos,scores={TalkTime=0,HoloCall=0}] run scoreboard players set @s[tag=!Call5] HoloCall 5
-
-#Call 7
-#Lumiose City Trevor after Lysandre's Cafe
-execute as @a[x=-296,y=101,z=-478,distance=..20,tag=Dialogue79,scores={TalkTime=0,HoloCall=0}] run scoreboard players set @s[tag=!Call7] HoloCall 7
-
-#Call 8
-#Poke Ball Factory after chasing out Flare
-execute as @a[x=-154,y=125,z=-1763,distance=..20,tag=Dialogue90,scores={TalkTime=0,HoloCall=0}] run scoreboard players set @s[tag=!Call8] HoloCall 8
-
-#Call 9
-#Route 15 Lysandre
-scoreboard players set @a[x=522,y=108,z=-475,distance=..20,tag=!Call9,scores={TalkTime=0,HoloCall=0}] HoloCall 9
-
-#Call 10
-#Route 17 Serena
-scoreboard players set @a[x=1056,y=108,z=-191,distance=..20,tag=!Call10,scores={TalkTime=0,HoloCall=0}] HoloCall 10
-
-#Route 12
-#Anistar City Sycamore
-execute as @a[x=1349,y=108,z=-173,distance=..20,tag=!Call12,scores={TalkTime=0,HoloCall=0},tag=Dialogue133] run scoreboard players set @s HoloCall 12
-
 #Call 13
 #Looker post-Mega Upgrade in Lumiose City
 execute as @a[x=-188,y=101,z=-639,distance=..100,tag=!Call13,scores={TalkTime=0,HoloCall=0,PokemonLeague=1..},tag=Dialogue163] run scoreboard players set @s HoloCall 13
@@ -488,108 +447,17 @@ execute as @a[x=837,y=108,z=-335,distance=..10,tag=!Dialogue100,scores={TalkTime
 
 
 
-#Dialogue 133
-#Flare HQ Chamber Respawns Lysandre trainer
-execute as @a[x=-2336,y=42,z=-997,distance=..20,scores={TalkTime=0},tag=!Dialogue133,tag=Dialogue132] run tp @e[x=-504,y=130,z=1290,dy=3,type=pixelmon:npc_trainer] -2336 42 -997
-
-#Respawns the legendary Pokemon if player didn't catch it
-#If player without the score, and no Pokemon in the room, and the previous legendary spawn score, reset
-execute if entity @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue132] unless entity @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,type=pixelmon:pixelmon,nbt={OwnerUUID:""}] run tellraw @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=Dialogue131] {"text":"Legendary Pokemon has been reset! Catch it to continue the story!","italic":true,"color":"gray"}
-execute if entity @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue132] unless entity @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,type=pixelmon:pixelmon,nbt={OwnerUUID:""}] run tag @s[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=Dialogue131] remove Dialogue131
-
 #If the legendary Pokemon is in the chamber and the player leaves
 execute if entity @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue132] if entity @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,type=pixelmon:pixelmon,nbt={ndex:716}] run tellraw @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=Dialogue131] {"text":"Legendary detected in the chamber! Catch it to continue the story!","italic":true,"color":"gray"}
 execute if entity @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue132] if entity @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,type=pixelmon:pixelmon,nbt={ndex:717}] run tag @s[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=Dialogue131] remove Dialogue131
 
 
-#Dialogue 134
-#Geosenge Town post-destruction with friends
-scoreboard players set @a[x=-410,y=109,z=2014,distance=..20,tag=!Dialogue134,scores={TalkTime=0}] DialogueTrigger 134
-
-#Dialogue 135 & 136
-#Couriway Town Sycamore Battle
-scoreboard players set @a[x=1501,y=101,z=253,distance=..10,scores={TalkTime=0},tag=!Dialogue135] DialogueTrigger 135
-execute as @a[x=1501,y=101,z=253,distance=..10,tag=Dialogue135,tag=!Dialogue136,scores={TalkTime=0}] run tp @e[x=-504,y=140,z=1286,dy=3,type=pixelmon:npc_trainer] 1501 101 253
-
-#Camphrier Town Sycamore's Note
-#execute @a[x=1568,y=119,z=163,distance=..30,tag=Dialogue136,tag=!SycamoresNote] ~ ~ ~ /execute @e[x=1568,y=119,z=163,dy=3,type=armor_stand] ~ ~ ~ /particle fireworksSpark ~ ~ ~ 1 2 1 0.1 2 normal @a[tag=!SycamoresNote]
-#execute @e[x=1568,y=119,z=163,dy=3,type=armor_stand] ~ ~ ~ /give @a[r=3,tag=!SycamoresNote] written_book{pages:["{\"text\":\"To the person reading this:\\n\\nWhat are you like now?\\n\\nDid you become who you wanted to be?\"}","{\"text\":\"For starters, what was the person you wanted to become even like?\"}","{\"text\":\"I don't know, but it would be wonderful if you can boast that you're living each day to the fullest.\"}","{\"text\":\"To future Sycamore.\\n\\nFrom the Sycamore dreaming of the future.\"}"],title:"To future Sycamore",author:"Augustine Sycamore"}
-#execute @e[x=1568,y=119,z=163,dy=3,type=armor_stand] ~ ~ ~ /tellraw @a[r=3,tag=!SycamoresNote] {"text":"You found a Sycamore's Note!","italic":true,"color":"gray"}
-#execute @e[x=1568,y=119,z=163,dy=3,type=armor_stand] ~ ~ ~ /playsound pixelmon:pixelmon.block.pokelootobtained ambient @a[r=3,tag=!SycamoresNote] ~ ~ ~ 10 1 1
-#execute @e[x=1568,y=119,z=163,dy=3,type=armor_stand] ~ ~ ~ /scoreboard players tag @a[r=3,tag=!SycamoresNote] add SycamoresNote
-
-execute as @e[x=1568,y=119,z=163,dy=3,type=armor_stand] if entity @a[x=-779,y=103,z=-347,distance=..30,tag=Dialogue136,tag=!SycamoresNote] run particle minecraft:firework ~ ~ ~ 1 2 1 0.1 2 normal @a[tag=!SycamoresNote,tag=Dialogue136]
-execute as @e[x=1568,y=119,z=163,dy=3,type=armor_stand] if entity @a[distance=..3,tag=!SycamoresNote,tag=Dialogue136] run give @a[tag=!SycamoresNote,tag=Dialogue136] written_book{pages:["{\"text\":\"To the person reading this:\\n\\nWhat are you like now?\\n\\nDid you become who you wanted to be?\"}","{\"text\":\"For starters, what was the person you wanted to become even like?\"}","{\"text\":\"I don't know, but it would be wonderful if you can boast that you're living each day to the fullest.\"}","{\"text\":\"To future Sycamore.\\n\\nFrom the Sycamore dreaming of the future.\"}"],title:"To future Sycamore",author:"Augustine Sycamore"}
-execute as @e[x=1568,y=119,z=163,dy=3,type=armor_stand] if entity @a[distance=..3,tag=!SycamoresNote,tag=Dialogue136] run tellraw @a[distance=..3,tag=!SycamoresNote,tag=Dialogue136] {"text":"You found a Sycamore's Note!","italic":true,"color":"gray"}
-execute as @e[x=1568,y=119,z=163,dy=3,type=armor_stand] if entity @a[distance=..3,tag=!SycamoresNote,tag=Dialogue136] run playsound pixelmon:pixelmon.block.pokelootobtained ambient @a[distance=..3,tag=!SycamoresNote,tag=Dialogue136] ~ ~ ~ 10 1 1
-execute as @e[x=1568,y=119,z=163,dy=3,type=armor_stand] if entity @a[distance=..3,tag=!SycamoresNote,tag=Dialogue136] run tag @a[distance=..3,tag=!SycamoresNote,tag=Dialogue136] add SycamoresNote
-
-#Dialogue 137-140
-#Route 19 Friends on bridge
-scoreboard players set @a[x=1452,y=97,z=489,dx=11,dy=10,dz=6,scores={TalkTime=0},tag=!Dialogue137] DialogueTrigger 137
-execute as @e[x=1448,y=98,z=492,distance=..10,scores={TalkTime=0,StarterPick=1},tag=Dialogue137,tag=!Dialogue138] run tp @e[x=-504,y=145,z=1284,dy=3,type=pixelmon:npc_trainer] 1448 98 492
-execute as @e[x=1448,y=98,z=492,distance=..10,scores={TalkTime=0,StarterPick=2},tag=Dialogue137,tag=!Dialogue138] run tp @e[x=-504,y=145,z=1286,dy=3,type=pixelmon:npc_trainer] 1448 98 492
-execute as @e[x=1448,y=98,z=492,distance=..10,scores={TalkTime=0,StarterPick=3},tag=Dialogue137,tag=!Dialogue138] run tp @e[x=-504,y=145,z=1288,dy=3,type=pixelmon:npc_trainer] 1448 98 492
-execute as @e[x=1448,y=98,z=492,distance=..10,scores={TalkTime=0},tag=Dialogue138,tag=!Dialogue139] run tp @e[x=-504,y=145,z=1292,dy=3,type=pixelmon:npc_trainer] 1451 98 494
-execute as @e[x=1448,y=98,z=492,distance=..10,scores={TalkTime=0},tag=Dialogue139,tag=!Dialogue140] run tp @e[x=-504,y=145,z=1290,dy=3,type=pixelmon:npc_trainer] 1451 98 490
-
-#Dialogue 141
-#Pokemon Village Wulfric
-execute as @a[x=951,y=93,z=664,distance=..20,scores={TalkTime=0},tag=!Wulfric] run scoreboard players set @s[tag=Dialogue140] DialogueTrigger 141
 
 #Pokemon Village block Mewtwo unless beaten ELite Four
 execute as @p[x=825,y=95,z=624,distance=..20,scores={PokemonLeague=0}] run tp @e[x=-504,y=150,z=1288,dy=3,type=pixelmon:npc_chatting] 844 95 610
 execute as @p[x=825,y=95,z=624,distance=..20,scores={PokemonLeague=1..}] run tp @e[x=844,y=94,z=610,dy=3,type=pixelmon:npc_chatting] -504 151 1288
 
-#Dialogue 143
-#Snowbelle Wulfric and Gym Guy
-execute as @a[x=1144,y=95,z=492,distance=..20,tag=!Dialogue143,scores={TalkTime=0}] run scoreboard players set @s[tag=Wulfric] DialogueTrigger 143
 
-#Dialogue 144-145
-#Victory Road gate Ace Trainer battle
-execute as @a[x=686,y=105,z=379,dx=15,dy=10,dz=25,tag=!Dialogue144,tag=Viola,tag=Grant,tag=Korrina,tag=Ramos,tag=Clemont,tag=Valerie,tag=Olympia,tag=Wulfric] run scoreboard players set @s DialogueTrigger 144
-execute as @a[x=686,y=105,z=379,dx=15,dy=10,dz=25,tag=Dialogue144,scores={TalkTime=0},tag=!Dialogue145] run tp @e[x=-504,y=160,z=1286,dy=3,type=pixelmon:npc_trainer] 694 106 396
-
-#Dialogue 146
-#Victory Road Serena 5th battle
-scoreboard players set @a[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,scores={TalkTime=0},tag=!Dialogue146] DialogueTrigger 146
-execute as @a[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=Dialogue146,tag=!Dialogue147,scores={TalkTime=0,StarterPick=1}] run tp @e[x=-504,y=165,z=1284,dy=3,type=pixelmon:npc_trainer] 2294 175 2184
-execute as @a[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=Dialogue146,tag=!Dialogue147,scores={TalkTime=0,StarterPick=2}] run tp @e[x=-504,y=165,z=1286,dy=3,type=pixelmon:npc_trainer] 2294 175 2184
-execute as @a[x=2274,y=174,z=2175,dx=20,dy=10,dz=17,tag=Dialogue146,tag=!Dialogue147,scores={TalkTime=0,StarterPick=3}] run tp @e[x=-504,y=165,z=1288,dy=3,type=pixelmon:npc_trainer] 2294 175 2184
-
-#Dialogue 149
-#Pokemon League Malva Introduction
-scoreboard players set @a[x=-1907,y=32,z=2117,distance=..20,tag=!Dialogue148,scores={TalkTime=0}] DialogueTrigger 148
-
-#Dialogue 155-156
-#Lumiose Parade AZ
-scoreboard players set @a[x=1488,y=137,z=-1900,distance=..20,scores={TalkTime=0},tag=!Dialogue155] DialogueTrigger 155
-execute as @a[x=1469,y=101,z=-1954,distance=..20,tag=!Dialogue156,scores={TalkTime=0},tag=Dialogue155] run tp @e[x=-504,y=175,z=1284,dy=3,type=pixelmon:npc_trainer] 1469 101 -1954
-
-#Dialogue 157
-#Vaniville Town Mom post-League
-scoreboard players set @s[x=493,y=107,z=1549,dx=18,dy=5,dz=19,tag=Dialogue1,tag=!Dialogue157,scores={PokemonLeague=1..,TalkTime=0}] DialogueTrigger 157
-
-#Dialogue 159
-#Lumiose Station Dexio & Sina
-scoreboard players set @a[x=1017,y=105,z=1908,distance=..20,scores={PokemonLeague=1..,TalkTime=0},tag=!Dialogue159] DialogueTrigger 159
-
-#Dialogue 160
-#Lumiose Station Sycamore
-scoreboard players set @a[x=1029,y=105,z=1893,distance=..6,tag=!Dialogue160,scores={TalkTime=0,PokemonLeague=1..}] DialogueTrigger 160
-execute as @a[x=1017,y=105,z=1908,distance=..20,tag=!Dialogue160,scores={PokemonLeague=1..}] run tp @e[x=-504,y=185,z=1290,dy=3,type=pixelmon:npc_chatting] 1029 105 1893
-
-#Dialogue 161
-#Kilouce City Serena battle
-scoreboard players set @a[x=1229,y=119,z=1461,distance=..6,scores={TalkTime=0},tag=!Dialogue161] DialogueTrigger 161
-execute as @a[x=1229,y=119,z=1461,distance=..15,scores={TalkTime=0,StarterPick=1},tag=Dialogue161,tag=!Dialogue162] run tp @e[x=-504,y=190,z=1288,dy=3,type=pixelmon:npc_trainer] 1229 119 1461
-execute as @a[x=1229,y=119,z=1461,distance=..15,scores={TalkTime=0,StarterPick=2},tag=Dialogue161,tag=!Dialogue162] run tp @e[x=-504,y=190,z=1290,dy=3,type=pixelmon:npc_trainer] 1229 119 1461
-execute as @a[x=1229,y=119,z=1461,distance=..15,scores={TalkTime=0,StarterPick=3},tag=Dialogue161,tag=!Dialogue162] run tp @e[x=-504,y=190,z=1292,dy=3,type=pixelmon:npc_trainer] 1229 119 1461
-execute as @a[x=1221,y=119,z=1497,distance=..20,tag=!Dialogue161] run tp @e[x=-504,y=190,z=1284,dy=3,type=pixelmon:npc_chatting] 1229 119 1461
-
-#Dialogue 163
-#Anistar City Sycamore upgrading Mega Ring
-execute as @a[x=1179,y=110,z=-276,distance=..20,scores={TalkTime=0},tag=Dialogue162,tag=!Dialogue163] run scoreboard players set @s DialogueTrigger 163
 
 #Dialogue 164
 #Lumiose Cafe Soleil Diantha giving Ralts
