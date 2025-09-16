@@ -1,0 +1,582 @@
+{
+    "initializationAction": [
+        "v.slot1 = q.player.party.get_pokemon(0);",
+        "v.slot2 = q.player.party.get_pokemon(1);",
+        "v.slot3 = q.player.party.get_pokemon(2);",
+        "v.slot4 = q.player.party.get_pokemon(3);",
+        "v.slot5 = q.player.party.get_pokemon(4);",
+        "v.slot6 = q.player.party.get_pokemon(5);",
+        "q.run_command('team join shops ' + q.player.username + '');"
+    ],
+    "escapeAction": [
+        "q.run_command('team join default ' + q.player.username + '');",
+        "q.dialogue.close();"
+    ],
+    "names": [
+        "Friseur Furfrou"
+    ],
+    "speakers": {
+        "npc": {
+            "name": "Friseur Furfrou",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:lass",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "Bienvenue to Friseur Furfrou! Here, we can groom your lovely Furfrou into any style that you desire, dear customer!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Trims",
+                        "value": "trims",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' Temp 0');",
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    },
+                    {
+                        "text": "No Thanks",
+                        "value": "nothanks",
+                        "action": "q.dialogue.set_page('end');"
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "buy1",
+            "speaker": "npc",
+            "lines": [
+                "Which lovely Furfrou will we be working on today?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": {
+                            "type": "expression",
+                            "expression": "v.slot1.species.name;"
+                        },
+                        "isSelectable": "v.slot1.species.name == 'Furfrou'",
+                        "isVisible": "v.slot1 != 0",
+                        "value": "s1",
+                        "action": [
+                            "q.dialogue.set_page('buy2');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s Temp 1');"
+                        ]
+                    },
+                    {
+                        "text": {
+                            "type": "expression",
+                            "expression": "v.slot2.species.name;"
+                        },
+                        "isSelectable": "v.slot2.species.name == 'Furfrou'",
+                        "isVisible": "v.slot2 != 0",
+                        "value": "s2",
+                        "action": [
+                            "q.dialogue.set_page('buy2');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s Temp 2');"
+                ]
+                    },
+                    {
+                        "text": {
+                            "type": "expression",
+                            "expression": "v.slot3.species.name;"
+                        },
+                        "isSelectable": "v.slot3.species.name == 'Furfrou'",
+                        "isVisible": "v.slot3 != 0",
+                        "value": "s3",
+                        "action": [
+                            "q.dialogue.set_page('buy2');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s Temp 3');"
+                ]
+                    },
+                    {
+                        "text": {
+                            "type": "expression",
+                            "expression": "v.slot4.species.name;"
+                        },
+                        "isSelectable": "v.slot4.species.name == 'Furfrou'",
+                        "isVisible": "v.slot4 != 0",
+                        "value": "s4",
+                        "action": [
+                            "q.dialogue.set_page('buy2');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s Temp 4');"
+                    ]
+                    },
+                    {
+                        "text": {
+                            "type": "expression",
+                            "expression": "v.slot5.species.name;"
+                        },
+                        "isSelectable": "v.slot5.species.name == 'Furfrou'",
+                        "isVisible": "v.slot5 != 0",
+                        "value": "s5",
+                        "action": [
+                            "q.dialogue.set_page('buy2');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s Temp 5');"
+                    ]
+                    },
+                    {
+                        "text": {
+                            "type": "expression",
+                            "expression": "v.slot6.species.name;"
+                        },
+                        "isSelectable": "v.slot6.species.name == 'Furfrou'",
+                        "isVisible": "v.slot6 != 0",
+                        "value": "s6",
+                        "action": [
+                            "q.dialogue.set_page('buy2');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s Temp 6');"
+                    ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "buy2",
+            "speaker": "npc",
+            "lines": [
+                "And what kind of style were you thinking of? Our trims are unparalleled in the Kalos region!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Heart Trim",
+                        "value": "heart",
+                        "action": "q.dialogue.set_page('hearttrim');"
+                    },
+                    {
+                        "text": "Star Trim",
+                        "value": "star",
+                        "action": "q.dialogue.set_page('startrim');"
+                    },
+                    {
+                        "text": "Diamond Trim",
+                        "value": "diamond",
+                        "action": "q.dialogue.set_page('diamondtrim');"
+                    },
+                    {
+                        "text": "Debutante Trim",
+                        "value": "debutante",
+                        "action": "q.dialogue.set_page('debutantetrim');"
+                    },
+                    {
+                        "text": "Matron Trim",
+                        "value": "matron",
+                        "action": "q.dialogue.set_page('matrontrim');"
+                    },
+                    {
+                        "text": "Next Page >>",
+                        "value": "nextpage",
+                        "action": "q.dialogue.set_page('buy3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buy3",
+            "speaker": "npc",
+            "lines": [
+                "And what kind of style were you thinking of? Our trims are unparalleled in the Kalos region!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Dandy Trim",
+                        "value": "dandy",
+                        "action": "q.dialogue.set_page('dandytrim');"
+                    },
+                    {
+                        "text": "La Reine Trim",
+                        "value": "lareine",
+                        "action": "q.dialogue.set_page('lareinetrim');"
+                    },
+                    {
+                        "text": "Kabuki Trim",
+                        "value": "kabuki",
+                        "action": "q.dialogue.set_page('kabukitrim');"
+                    },
+                    {
+                        "text": "Pharaoh Trim",
+                        "value": "pharaoh",
+                        "action": "q.dialogue.set_page('pharaohtrim');"
+                    },
+                    {
+                        "text": "Back to natural",
+                        "value": "natural",
+                        "action": "q.dialogue.set_page('naturaltrim');"
+                    },
+                    {
+                        "text": "<< Page 1",
+                        "value": "page1",
+                        "action": "q.dialogue.set_page('buy1');"
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "hearttrim",
+            "speaker": "npc",
+            "lines": [
+                "Would you like this terrific trim for just $500?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy Trim",
+                        "value": "buytrim",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 224');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('buy2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "startrim",
+            "speaker": "npc",
+            "lines": [
+                "Would you like this terrific trim for just $500?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy Trim",
+                        "value": "buytrim",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 225');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('buy2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "diamondtrim",
+            "speaker": "npc",
+            "lines": [
+                "Would you like this terrific trim for just $500?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy Trim",
+                        "value": "buytrim",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 226');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('buy2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "debutantetrim",
+            "speaker": "npc",
+            "lines": [
+                "Would you like this terrific trim for just $500?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy Trim",
+                        "value": "buytrim",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 227');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('buy2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "matrontrim",
+            "speaker": "npc",
+            "lines": [
+                "Would you like this terrific trim for just $500?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy Trim",
+                        "value": "buytrim",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 228');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('buy2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "dandytrim",
+            "speaker": "npc",
+            "lines": [
+                "Would you like this terrific trim for just $500?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy Trim",
+                        "value": "buytrim",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 229');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('buy2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "lareinetrim",
+            "speaker": "npc",
+            "lines": [
+                "Would you like this terrific trim for just $500?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy Trim",
+                        "value": "buytrim",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 230');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('buy2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "kabukitrim",
+            "speaker": "npc",
+            "lines": [
+                "Would you like this terrific trim for just $500?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy Trim",
+                        "value": "buytrim",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 231');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('buy2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pharaohtrim",
+            "speaker": "npc",
+            "lines": [
+                "Would you like this terrific trim for just $500?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy Trim",
+                        "value": "buytrim",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 232');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('buy2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "naturaltrim",
+            "speaker": "npc",
+            "lines": [
+                "Oh? So, it's to be au naturale, is it? You'd like to return your Furfrou to its natural look?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy Trim",
+                        "value": "buytrim",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 233');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('buy2');"
+                    }
+                ]
+            }
+        },
+
+
+        {
+            "id": "buyend",
+            "speaker": "npc",
+            "lines": [
+                "Snip...= Snippity-snip... Snip-snip... Snip!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('buyend2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buyend2",
+            "speaker": "npc",
+            "lines": [
+                "Thank you for your patience! My work is complete! Your lovely Furfrou was the ideal model! Such a well-behaved Pokémon!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('buyend3');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buyend3",
+            "speaker": "npc",
+            "lines": [
+                "If you ever wish to try out a new style, you know where to come! We'll be waiting at Friseur Furfrou!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('team join default ' + q.player.username + '');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "end",
+            "speaker": "npc",
+            "lines": [
+                "If you ever wish to try out a new style, you know where to come! We'll be waiting at Friseur Furfrou!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('team join default ' + q.player.username + '');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

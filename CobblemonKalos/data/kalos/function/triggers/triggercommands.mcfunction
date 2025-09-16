@@ -1410,10 +1410,138 @@ execute as @a[scores={TriggerCommand=223,Money=30000..}] run give @s mega_showdo
 execute as @a[scores={TriggerCommand=223,Money=30000..}] run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1
 execute as @a[scores={TriggerCommand=223,Money=30000..}] run scoreboard players remove @s Money 30000
 
+#-----------------------------
+#Furfrou Trims
+execute as @a[scores={TriggerCommand=224,Money=..500}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=224,Money=..500}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=224,Money=500..,Temp=1}] run pokeedit 1 poodle_trim=heart
+execute as @a[scores={TriggerCommand=224,Money=500..,Temp=2}] run pokeedit 2 poodle_trim=heart
+execute as @a[scores={TriggerCommand=224,Money=500..,Temp=3}] run pokeedit 3 poodle_trim=heart
+execute as @a[scores={TriggerCommand=224,Money=500..,Temp=4}] run pokeedit 4 poodle_trim=heart
+execute as @a[scores={TriggerCommand=224,Money=500..,Temp=5}] run pokeedit 5 poodle_trim=heart
+execute as @a[scores={TriggerCommand=224,Money=500..,Temp=6}] run pokeedit 6 poodle_trim=heart
+execute as @a[scores={TriggerCommand=224,Money=500..}] run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=224,Money=500..}] run scoreboard players remove @s Money 500
 
 
+execute as @a[scores={TriggerCommand=225,Money=..500}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=225,Money=..500}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=225,Money=500..,Temp=1}] run pokeedit 1 poodle_trim=star
+execute as @a[scores={TriggerCommand=225,Money=500..,Temp=2}] run pokeedit 2 poodle_trim=star
+execute as @a[scores={TriggerCommand=225,Money=500..,Temp=3}] run pokeedit 3 poodle_trim=star
+execute as @a[scores={TriggerCommand=225,Money=500..,Temp=4}] run pokeedit 4 poodle_trim=star
+execute as @a[scores={TriggerCommand=225,Money=500..,Temp=5}] run pokeedit 5 poodle_trim=star
+execute as @a[scores={TriggerCommand=225,Money=500..,Temp=6}] run pokeedit 6 poodle_trim=star
+execute as @a[scores={TriggerCommand=225,Money=500..}] run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=225,Money=500..}] run scoreboard players remove @s Money 500
 
 
+execute as @a[scores={TriggerCommand=226,Money=..500}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=226,Money=..500}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=226,Money=500..,Temp=1}] run pokeedit 1 poodle_trim=diamond
+execute as @a[scores={TriggerCommand=226,Money=500..,Temp=2}] run pokeedit 2 poodle_trim=diamond
+execute as @a[scores={TriggerCommand=226,Money=500..,Temp=3}] run pokeedit 3 poodle_trim=diamond
+execute as @a[scores={TriggerCommand=226,Money=500..,Temp=4}] run pokeedit 4 poodle_trim=diamond
+execute as @a[scores={TriggerCommand=226,Money=500..,Temp=5}] run pokeedit 5 poodle_trim=diamond
+execute as @a[scores={TriggerCommand=226,Money=500..,Temp=6}] run pokeedit 6 poodle_trim=diamond
+execute as @a[scores={TriggerCommand=226,Money=500..}] run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=226,Money=500..}] run scoreboard players remove @s Money 500
+
+
+execute as @a[scores={TriggerCommand=227,Money=..500}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=227,Money=..500}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=227,Money=500..,Temp=1}] run pokeedit 1 poodle_trim=debutante
+execute as @a[scores={TriggerCommand=227,Money=500..,Temp=2}] run pokeedit 2 poodle_trim=debutante
+execute as @a[scores={TriggerCommand=227,Money=500..,Temp=3}] run pokeedit 3 poodle_trim=debutante
+execute as @a[scores={TriggerCommand=227,Money=500..,Temp=4}] run pokeedit 4 poodle_trim=debutante
+execute as @a[scores={TriggerCommand=227,Money=500..,Temp=5}] run pokeedit 5 poodle_trim=debutante
+execute as @a[scores={TriggerCommand=227,Money=500..,Temp=6}] run pokeedit 6 poodle_trim=debutante
+execute as @a[scores={TriggerCommand=227,Money=500..}] run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=227,Money=500..}] run scoreboard players remove @s Money 500
+
+
+execute as @a[scores={TriggerCommand=228,Money=..500}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=228,Money=..500}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=228,Money=500..,Temp=1}] run pokeedit 1 poodle_trim=matron
+execute as @a[scores={TriggerCommand=228,Money=500..,Temp=2}] run pokeedit 2 poodle_trim=matron
+execute as @a[scores={TriggerCommand=228,Money=500..,Temp=3}] run pokeedit 3 poodle_trim=matron
+execute as @a[scores={TriggerCommand=228,Money=500..,Temp=4}] run pokeedit 4 poodle_trim=matron
+execute as @a[scores={TriggerCommand=228,Money=500..,Temp=5}] run pokeedit 5 poodle_trim=matron
+execute as @a[scores={TriggerCommand=228,Money=500..,Temp=6}] run pokeedit 6 poodle_trim=matron
+execute as @a[scores={TriggerCommand=228,Money=500..}] run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=228,Money=500..}] run scoreboard players remove @s Money 500
+
+
+execute as @a[scores={TriggerCommand=229,Money=..500}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=229,Money=..500}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=229,Money=500..,Temp=1}] run pokeedit 1 poodle_trim=dandy
+execute as @a[scores={TriggerCommand=229,Money=500..,Temp=2}] run pokeedit 2 poodle_trim=dandy
+execute as @a[scores={TriggerCommand=229,Money=500..,Temp=3}] run pokeedit 3 poodle_trim=dandy
+execute as @a[scores={TriggerCommand=229,Money=500..,Temp=4}] run pokeedit 4 poodle_trim=dandy
+execute as @a[scores={TriggerCommand=229,Money=500..,Temp=5}] run pokeedit 5 poodle_trim=dandy
+execute as @a[scores={TriggerCommand=229,Money=500..,Temp=6}] run pokeedit 6 poodle_trim=dandy
+execute as @a[scores={TriggerCommand=229,Money=500..}] run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=229,Money=500..}] run scoreboard players remove @s Money 500
+
+
+execute as @a[scores={TriggerCommand=230,Money=..500}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=230,Money=..500}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=230,Money=500..,Temp=1}] run pokeedit 1 poodle_trim=la_reine
+execute as @a[scores={TriggerCommand=230,Money=500..,Temp=2}] run pokeedit 2 poodle_trim=la_reine
+execute as @a[scores={TriggerCommand=230,Money=500..,Temp=3}] run pokeedit 3 poodle_trim=la_reine
+execute as @a[scores={TriggerCommand=230,Money=500..,Temp=4}] run pokeedit 4 poodle_trim=la_reine
+execute as @a[scores={TriggerCommand=230,Money=500..,Temp=5}] run pokeedit 5 poodle_trim=la_reine
+execute as @a[scores={TriggerCommand=230,Money=500..,Temp=6}] run pokeedit 6 poodle_trim=la_reine
+execute as @a[scores={TriggerCommand=230,Money=500..}] run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=230,Money=500..}] run scoreboard players remove @s Money 500
+
+
+execute as @a[scores={TriggerCommand=231,Money=..500}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=231,Money=..500}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=231,Money=500..,Temp=1}] run pokeedit 1 poodle_trim=kabuki
+execute as @a[scores={TriggerCommand=231,Money=500..,Temp=2}] run pokeedit 2 poodle_trim=kabuki
+execute as @a[scores={TriggerCommand=231,Money=500..,Temp=3}] run pokeedit 3 poodle_trim=kabuki
+execute as @a[scores={TriggerCommand=231,Money=500..,Temp=4}] run pokeedit 4 poodle_trim=kabuki
+execute as @a[scores={TriggerCommand=231,Money=500..,Temp=5}] run pokeedit 5 poodle_trim=kabuki
+execute as @a[scores={TriggerCommand=231,Money=500..,Temp=6}] run pokeedit 6 poodle_trim=kabuki
+execute as @a[scores={TriggerCommand=231,Money=500..}] run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=231,Money=500..}] run scoreboard players remove @s Money 500
+
+
+execute as @a[scores={TriggerCommand=232,Money=..500}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=232,Money=..500}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=232,Money=500..,Temp=1}] run pokeedit 1 poodle_trim=pharaoh
+execute as @a[scores={TriggerCommand=232,Money=500..,Temp=2}] run pokeedit 2 poodle_trim=pharaoh
+execute as @a[scores={TriggerCommand=232,Money=500..,Temp=3}] run pokeedit 3 poodle_trim=pharaoh
+execute as @a[scores={TriggerCommand=232,Money=500..,Temp=4}] run pokeedit 4 poodle_trim=pharaoh
+execute as @a[scores={TriggerCommand=232,Money=500..,Temp=5}] run pokeedit 5 poodle_trim=pharaoh
+execute as @a[scores={TriggerCommand=232,Money=500..,Temp=6}] run pokeedit 6 poodle_trim=pharaoh
+execute as @a[scores={TriggerCommand=232,Money=500..}] run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=232,Money=500..}] run scoreboard players remove @s Money 500
+
+
+execute as @a[scores={TriggerCommand=233,Money=..500}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=233,Money=..500}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=233,Money=500..,Temp=1}] run pokeedit 1 poodle_trim=natural
+execute as @a[scores={TriggerCommand=233,Money=500..,Temp=2}] run pokeedit 2 poodle_trim=natural
+execute as @a[scores={TriggerCommand=233,Money=500..,Temp=3}] run pokeedit 3 poodle_trim=natural
+execute as @a[scores={TriggerCommand=233,Money=500..,Temp=4}] run pokeedit 4 poodle_trim=natural
+execute as @a[scores={TriggerCommand=233,Money=500..,Temp=5}] run pokeedit 5 poodle_trim=natural
+execute as @a[scores={TriggerCommand=233,Money=500..,Temp=6}] run pokeedit 6 poodle_trim=natural
+execute as @a[scores={TriggerCommand=233,Money=500..}] run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=233,Money=500..}] run scoreboard players remove @s Money 500
+
+scoreboard players set @a[scores={TriggerCommand=224..233}] Temp 0
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #If score is left behind, not to be used for longer store of data.
 scoreboard players set @s TriggerCommand 0
