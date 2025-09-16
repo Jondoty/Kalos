@@ -55,29 +55,29 @@
                 "vertical": true,
                 "options": [
                     {
-                        "text": "Protein",
-                        "value": "protein",
-                        "action": "q.dialogue.set_page('pickprotein');"
+                        "text": "Wise Glasses",
+                        "value": "wiseglasses",
+                        "action": "q.dialogue.set_page('pickwiseglasses');"
                     },
                     {
-                        "text": "Calcium",
-                        "value": "calcium",
-                        "action": "q.dialogue.set_page('pickcalcium');"
+                        "text": "Choice Specs",
+                        "value": "choicespecs",
+                        "action": "q.dialogue.set_page('pickchoicespecs');"
                     },
                     {
-                        "text": "Iron",
-                        "value": "iron",
-                        "action": "q.dialogue.set_page('pickiron');"
+                        "text": "Scope Lens",
+                        "value": "scopelens",
+                        "action": "q.dialogue.set_page('pickscopelens');"
                     },
                     {
-                        "text": "Zinc",
-                        "value": "zinc",
-                        "action": "q.dialogue.set_page('pickzinc');"
+                        "text": "Zoom Lens",
+                        "value": "zoomlens",
+                        "action": "q.dialogue.set_page('pickzoomlens');"
                     },
                     {
-                        "text": "Carbos",
-                        "value": "carbos",
-                        "action": "q.dialogue.set_page('pickcarbos');"
+                        "text": "Wide Lens",
+                        "value": "widelens",
+                        "action": "q.dialogue.set_page('pickwidelens');"
                     },
                     {
                         "text": "Next Page >>",
@@ -98,29 +98,29 @@
                 "vertical": true,
                 "options": [
                     {
-                        "text": "HP Up",
-                        "value": "hpup",
-                        "action": "q.dialogue.set_page('pickhpup');"
+                        "text": "Muscle Band",
+                        "value": "muscleband",
+                        "action": "q.dialogue.set_page('pickmuscleband');"
                     },
                     {
-                        "text": "Power Bracer",
-                        "value": "powerbracer",
-                        "action": "q.dialogue.set_page('pickpowerbracer');"
+                        "text": "Focus Band",
+                        "value": "focusband",
+                        "action": "q.dialogue.set_page('pickfocusband');"
                     },
                     {
-                        "text": "Power Belt",
-                        "value": "powerbelt",
-                        "action": "q.dialogue.set_page('pickpowerbelt');"
+                        "text": "Choice Band",
+                        "value": "choiceband",
+                        "action": "q.dialogue.set_page('pickchoiceband');"
                     },
                     {
-                        "text": "Power Lens",
-                        "value": "powerlens",
-                        "action": "q.dialogue.set_page('pickpowerlens');"
+                        "text": "Choice Scarf",
+                        "value": "choicescarf",
+                        "action": "q.dialogue.set_page('pickchoicescarf');"
                     },
                     {
-                        "text": "Power Band",
-                        "value": "powerband",
-                        "action": "q.dialogue.set_page('pickpowerband');"
+                        "text": "Assault Vest",
+                        "value": "assaultvest",
+                        "action": "q.dialogue.set_page('pickassaultvest');"
                     },
                     {
                         "text": "Next Page >>",
@@ -141,29 +141,29 @@
                 "vertical": true,
                 "options": [
                     {
-                        "text": "Power Anklet",
-                        "value": "poweranklet",
-                        "action": "q.dialogue.set_page('pickpoweranklet');"
+                        "text": "Focus Sash",
+                        "value": "focussash",
+                        "action": "q.dialogue.set_page('pickfocussash');"
                     },
                     {
-                        "text": "Power Weight",
-                        "value": "powerweight",
-                        "action": "q.dialogue.set_page('pickpowerweight');"
+                        "text": "Razor Claw",
+                        "value": "razorclaw",
+                        "action": "q.dialogue.set_page('pickrazorclaw');"
                     },
                     {
-                        "text": "Toxic Orb",
-                        "value": "toxicorb",
-                        "action": "q.dialogue.set_page('picktoxicorb');"
+                        "text": "Razor Fang",
+                        "value": "razorfang",
+                        "action": "q.dialogue.set_page('pickrazorfang');"
                     },
                     {
-                        "text": "Flame Orb",
-                        "value": "flameorb",
-                        "action": "q.dialogue.set_page('pickflameorb');"
+                        "text": "Bright Powder",
+                        "value": "brightpowder",
+                        "action": "q.dialogue.set_page('pickbrightpowder');"
                     },
                     {
-                        "text": "White Herb",
-                        "value": "whiteherb",
-                        "action": "q.dialogue.set_page('pickwhiteherb');"
+                        "text": "Life Orb",
+                        "value": "lifeorb",
+                        "action": "q.dialogue.set_page('picklifeorb');"
                     },
                     {
                         "text": "Next Page >>",
@@ -184,29 +184,24 @@
                 "vertical": true,
                 "options": [
                     {
-                        "text": "Power Herb",
-                        "value": "powerherb",
-                        "action": "q.dialogue.set_page('pickpowerherb');"
+                        "text": "Iron Ball",
+                        "value": "ironball",
+                        "action": "q.dialogue.set_page('pickironball');"
                     },
                     {
-                        "text": "Absorb Bulb",
-                        "value": "absorbbulb",
-                        "action": "q.dialogue.set_page('pickabsorbbulb');"
+                        "text": "Air Balloon",
+                        "value": "airballoon",
+                        "action": "q.dialogue.set_page('pickairballoon');"
                     },
                     {
-                        "text": "Cell Battery",
-                        "value": "cellbattery",
-                        "action": "q.dialogue.set_page('pickcellbattery');"
+                        "text": "Binding Band",
+                        "value": "bindingband",
+                        "action": "q.dialogue.set_page('pickbindingband');"
                     },
                     {
-                        "text": "Red Card",
-                        "value": "redcard",
-                        "action": "q.dialogue.set_page('pickredcard');"
-                    },
-                    {
-                        "text": "Eject Button",
-                        "value": "ejectbutton",
-                        "action": "q.dialogue.set_page('pickejectbutton');"
+                        "text": "Safety Goggles",
+                        "value": "safetygoggles",
+                        "action": "q.dialogue.set_page('picksafetygoggles');"
                     },
                     {
                         "text": "Next Page >>",
@@ -227,72 +222,14 @@
                 "vertical": true,
                 "options": [
                     {
-                        "text": "Weakness Policy",
-                        "value": "weaknesspolicy",
-                        "action": "q.dialogue.set_page('pickweaknesspolicy');"
+                        "text": "Rare Candy",
+                        "value": "rarecandy",
+                        "action": "q.dialogue.set_page('pickrarecandy');"
                     },
                     {
-                        "text": "Ring Target",
-                        "value": "ringtarget",
-                        "action": "q.dialogue.set_page('pickringtarget');"
-                    },
-                    {
-                        "text": "Protector",
-                        "value": "protector",
-                        "action": "q.dialogue.set_page('pickprotector');"
-                    },
-                    {
-                        "text": "Whipped Dream",
-                        "value": "whippeddream",
-                        "action": "q.dialogue.set_page('pickwhippeddream');"
-                    },
-                    {
-                        "text": "Sachet",
-                        "value": "sachet",
-                        "action": "q.dialogue.set_page('picksachet');"
-                    },
-                    {
-                        "text": "Next Page >>",
-                        "value": "nextpage",
-                        "action": "q.dialogue.set_page('buy6');"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "buy6",
-            "speaker": "npc",
-            "lines": [
-                "Which item would you like to purchase?"
-            ],
-            "input": {
-                "type": "option",
-                "vertical": true,
-                "options": [
-                    {
-                        "text": "Electirizer",
-                        "value": "electrizer",
-                        "action": "q.dialogue.set_page('pickelectrizer');"
-                    },
-                    {
-                        "text": "Magmarizer",
-                        "value": "magmarizer",
-                        "action": "q.dialogue.set_page('pickmagmarizer');"
-                    },
-                    {
-                        "text": "Reaper Cloth",
-                        "value": "reapercloth",
-                        "action": "q.dialogue.set_page('pickreapercloth');"
-                    },
-                    {
-                        "text": "Up-Grade",
-                        "value": "upgrade",
-                        "action": "q.dialogue.set_page('pickupgrade');"
-                    },
-                    {
-                        "text": "Dubious Disc",
-                        "value": "dubiousdisc",
-                        "action": "q.dialogue.set_page('pickdubiousdisc');"
+                        "text": "Ability Capsule",
+                        "value": "abilitycapsule",
+                        "action": "q.dialogue.set_page('pickabilitycapsule');"
                     },
                     {
                         "text": "<< Back",
@@ -304,10 +241,10 @@
         },
 
         {
-            "id": "pickprotein",
+            "id": "pickwiseglasses",
             "speaker": "npc",
             "lines": [
-                "2 BP) A nutritious drink for Pokémon. When consumed, it raises the base Attack stat of a single Pokémon."
+                "48 BP) An item to be held by a Pokémon. This thick pair of glasses slightly boosts the power of special moves. "
             ],
             "input": {
                 "type": "option",
@@ -317,7 +254,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 235');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 265');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -332,10 +269,10 @@
             }
         },
         {
-            "id": "pickcalcium",
+            "id": "pickchoicespecs",
             "speaker": "npc",
             "lines": [
-                "2 BP) A nutritious drink for Pokémon. When consumed, it raises the base Sp. Atk stat of a single Pokémon. "
+                "48 BP) An item to be held by a Pokémon. These curious glasses boost Sp. Atk but only allow the use of one move. "
             ],
             "input": {
                 "type": "option",
@@ -345,7 +282,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 236');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 266');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -360,10 +297,10 @@
             }
         },
         {
-            "id": "pickiron",
+            "id": "pickscopelens",
             "speaker": "npc",
             "lines": [
-                "2 BP) A nutritious drink for Pokémon. When consumed, it raises the base Defense stat of a single Pokémon. "
+                "48 BP) An item to be held by a Pokémon. It's a lens for scoping out weak points. It boosts the holder's critical-hit ratio. "
             ],
             "input": {
                 "type": "option",
@@ -373,7 +310,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 237');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 267');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -388,10 +325,10 @@
             }
         },
         {
-            "id": "pickzinc",
+            "id": "pickzoomlens",
             "speaker": "npc",
             "lines": [
-                "2 BP) A nutritious drink for Pokémon. When consumed, it raises the base Sp. Def stat of a single Pokémon. "
+                "48 BP) An item to be held by a Pokémon. If the holder moves after its target moves, its accuracy will be boosted. "
             ],
             "input": {
                 "type": "option",
@@ -401,7 +338,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 238');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 268');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -416,10 +353,10 @@
             }
         },
         {
-            "id": "pickcarbos",
+            "id": "pickwidelens",
             "speaker": "npc",
             "lines": [
-                "2 BP) A nutritious drink for Pokémon. When consumed, it raises the base Speed stat of a single Pokémon."
+                "48 BP) An item to be held by a Pokémon. It's a magnifying lens that slightly boosts the accuracy of moves. "
             ],
             "input": {
                 "type": "option",
@@ -429,7 +366,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 239');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 269');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -444,10 +381,10 @@
             }
         },
         {
-            "id": "pickhpup",
+            "id": "pickmuscleband",
             "speaker": "npc",
             "lines": [
-                "2 BP) A nutritious drink for Pokémon. When consumed, it raises the base HP of a single Pokémon. "
+                "48 BP) An item to be held by a Pokémon. This headband exudes strength, slightly boosting the power of physical moves. "
             ],
             "input": {
                 "type": "option",
@@ -457,7 +394,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 240');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 270');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -472,10 +409,10 @@
             }
         },
         {
-            "id": "pickpowerbracer",
+            "id": "pickfocusband",
             "speaker": "npc",
             "lines": [
-                "16 BP) An item to be held by a Pokémon. It reduces Speed but allows the holder's Attack stat to grow more after battling."
+                "48 BP) An item to be held by a Pokémon. The holder may endure a potential KO attack, leaving it with just 1 HP. "
             ],
             "input": {
                 "type": "option",
@@ -485,7 +422,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 241');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 271');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -500,10 +437,10 @@
             }
         },
         {
-            "id": "pickpowerbelt",
+            "id": "pickchoiceband",
             "speaker": "npc",
             "lines": [
-                "16 BP) An item to be held by a Pokémon. It reduces Speed but allows the holder's Defense stat to grow more after battling. "
+                "48 BP) An item to be held by a Pokémon. This curious headband boosts Attack but only allows the use of one move. "
             ],
             "input": {
                 "type": "option",
@@ -513,7 +450,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 242');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 272');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -528,10 +465,10 @@
             }
         },
         {
-            "id": "pickpowerlens",
+            "id": "pickchoicescarf",
             "speaker": "npc",
             "lines": [
-                "16 BP) An item to be held by a Pokémon. It reduces Speed but allows the holder's Sp. Atk stat to grow more after battling."
+                "48 BP) An item to be held by a Pokémon. This curious scarf boosts Speed but only allows the use of one move. "
             ],
             "input": {
                 "type": "option",
@@ -541,7 +478,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 243');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 273');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -556,10 +493,10 @@
             }
         },
         {
-            "id": "pickpowerband",
+            "id": "pickassaultvest",
             "speaker": "npc",
             "lines": [
-                "16 BP) An item to be held by a Pokémon. It reduces Speed but allows the holder's Sp. Def stat to grow more after battling."
+                "48 BP) An item to be held by a Pokémon. This offensive vest raises Sp. Def but prevents the use of status moves. "
             ],
             "input": {
                 "type": "option",
@@ -569,7 +506,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 244');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 274');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -584,10 +521,10 @@
             }
         },
         {
-            "id": "pickpoweranklet",
+            "id": "pickfocussash",
             "speaker": "npc",
             "lines": [
-                "16 BP) A Pokémon held item that promotes Speed gain on leveling, but reduces the Speed stat."
+                "48 BP) An item to be held by a Pokémon. If the holder has full HP, it will endure a potential KO attack with 1 HP. The item then disappears. "
             ],
             "input": {
                 "type": "option",
@@ -597,7 +534,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 245');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 275');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -612,10 +549,10 @@
             }
         },
         {
-            "id": "pickpowerweight",
+            "id": "pickrazorclaw",
             "speaker": "npc",
             "lines": [
-                "16 BP) An item to be held by a Pokémon. It reduces Speed but allows the holder's maximum HP to grow more after battling."
+                "48 BP) An item to be held by a Pokémon. This sharply hooked claw increases the holder's critical-hit ratio. "
             ],
             "input": {
                 "type": "option",
@@ -625,7 +562,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 246');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 276');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -640,10 +577,10 @@
             }
         },
         {
-            "id": "picktoxicorb",
+            "id": "pickrazorfang",
             "speaker": "npc",
             "lines": [
-                "16 BP) An item to be held by a Pokémon. It is a bizarre orb that will badly poison the holder during battle. "
+                "48 BP) An item to be held by a Pokémon. When the holder successfully inflicts damage, the target may also flinch. "
             ],
             "input": {
                 "type": "option",
@@ -653,7 +590,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 247');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 277');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -668,10 +605,10 @@
             }
         },
         {
-            "id": "pickflameorb",
+            "id": "pickbrightpowder",
             "speaker": "npc",
             "lines": [
-                "16 BP) An item to be held by a Pokémon. It is a bizarre orb that will afflict the holder with a burn during battle."
+                "48 BP) An item to be held by a Pokémon. It casts a tricky glare that lowers the opposing Pokémon's accuracy."
             ],
             "input": {
                 "type": "option",
@@ -681,7 +618,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 248');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 278');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -696,10 +633,10 @@
             }
         },
         {
-            "id": "pickwhiteherb",
+            "id": "picklifeorb",
             "speaker": "npc",
             "lines": [
-                "32 BP) An item to be held by a Pokémon. It will restore any lowered stat in battle. It can be used only once. "
+                "48 BP) An item to be held by a Pokémon. It boosts the power of moves, but at the cost of some HP on each hit."
             ],
             "input": {
                 "type": "option",
@@ -709,7 +646,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 249');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 279');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -724,10 +661,10 @@
             }
         },
         {
-            "id": "pickpowerherb",
+            "id": "pickironball",
             "speaker": "npc",
             "lines": [
-                "32 BP) A single-use item to be held by a Pokémon. It allows the holder to immediately use a move that normally requires a turn to charge. "
+                "48 BP) An item to be held by a Pokémon. It lowers Speed and allows Ground-type moves to hit Flying-type and levitating holders."
             ],
             "input": {
                 "type": "option",
@@ -737,7 +674,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 250');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 280');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -752,10 +689,10 @@
             }
         },
         {
-            "id": "pickabsorbbulb",
+            "id": "pickairballoon",
             "speaker": "npc",
             "lines": [
-                "32 BP) An item to be held by a Pokémon. It boosts Sp. Atk if hit with a Water-type attack. It can only be used once. "
+                "48 BP) An item to be held by a Pokémon. The holder will float in the air until hit. Once hit, this item will burst."
             ],
             "input": {
                 "type": "option",
@@ -765,7 +702,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 251');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 281');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -780,10 +717,10 @@
             }
         },
         {
-            "id": "pickcellbattery",
+            "id": "pickbindingband",
             "speaker": "npc",
             "lines": [
-                "32 BP) An item to be held by a Pokémon. It boosts Attack if hit with an Electric-type attack. It can only be used once. "
+                "48 BP) An item to be held by a Pokémon. A band that increases the power of binding moves used by the holder."
             ],
             "input": {
                 "type": "option",
@@ -793,7 +730,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 252');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 282');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -808,10 +745,10 @@
             }
         },
         {
-            "id": "pickredcard",
+            "id": "picksafetygoggles",
             "speaker": "npc",
             "lines": [
-                "32 BP) An item to be held by a Pokémon. When the holder is hit by an attack, the attacker is removed from battle. "
+                "48 BP) An item to be held by a Pokémon. These goggles protect the holder from both weather-related damage and powder."
             ],
             "input": {
                 "type": "option",
@@ -821,7 +758,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 253');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 283');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -836,10 +773,10 @@
             }
         },
         {
-            "id": "pickejectbutton",
+            "id": "pickrarecandy",
             "speaker": "npc",
             "lines": [
-                "32 BP) An item to be held by a Pokémon. If the holder is hit by an attack, it will be switched out of battle. "
+                "48 BP) A candy that is packed with energy. When consumed, it will instantly raise the level of a single Pokémon by one."
             ],
             "input": {
                 "type": "option",
@@ -849,7 +786,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 254');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 284');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -864,10 +801,10 @@
             }
         },
         {
-            "id": "pickweaknesspolicy",
+            "id": "pickabilitycapsule",
             "speaker": "npc",
             "lines": [
-                "32 BP) An item to be held by a Pokémon. Attack and Sp. Atk sharply increase if the holder is hit with a move it's weak to. "
+                "200 BP) A capsule that allows a Pokémon with two Abilities to switch between these Abilities when it is used."
             ],
             "input": {
                 "type": "option",
@@ -877,7 +814,7 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 255');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 285');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -891,260 +828,6 @@
                 ]
             }
         },
-        {
-            "id": "pickringtarget",
-            "speaker": "npc",
-            "lines": [
-                "32 BP) An item to be held by a Pokémon. Moves that normally have no effect will land on a Pokémon holding it."
-            ],
-            "input": {
-                "type": "option",
-                "vertical": false,
-                "options": [
-                    {
-                        "text": "Buy",
-                        "value": "buy",
-                        "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 256');",
-                            "q.dialogue.set_page('buyend');"
-                        ]
-                    },
-                    {
-                        "text": "Go Back",
-                        "value": "goback",
-                        "action": [
-                            "q.dialogue.set_page('buy1');"
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "id": "pickprotector",
-            "speaker": "npc",
-            "lines": [
-                "32 BP) A protective item of some sort. It is extremely stiff and heavy. It's loved by a certain Pokémon."
-            ],
-            "input": {
-                "type": "option",
-                "vertical": false,
-                "options": [
-                    {
-                        "text": "Buy",
-                        "value": "buy",
-                        "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 257');",
-                            "q.dialogue.set_page('buyend');"
-                        ]
-                    },
-                    {
-                        "text": "Go Back",
-                        "value": "goback",
-                        "action": [
-                            "q.dialogue.set_page('buy1');"
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "id": "pickwhippeddream",
-            "speaker": "npc",
-            "lines": [
-                "32 BP) A soft and sweet treat made of fluffy, puffy, whipped and whirled cream. It's loved by a certain Pokémon."
-            ],
-            "input": {
-                "type": "option",
-                "vertical": false,
-                "options": [
-                    {
-                        "text": "Buy",
-                        "value": "buy",
-                        "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 258');",
-                            "q.dialogue.set_page('buyend');"
-                        ]
-                    },
-                    {
-                        "text": "Go Back",
-                        "value": "goback",
-                        "action": [
-                            "q.dialogue.set_page('buy1');"
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "id": "picksachet",
-            "speaker": "npc",
-            "lines": [
-                "32 BP) A sachet filled with fragrant perfumes that are just slightly too overwhelming. Yet it's loved by a certain Pokémon."
-            ],
-            "input": {
-                "type": "option",
-                "vertical": false,
-                "options": [
-                    {
-                        "text": "Buy",
-                        "value": "buy",
-                        "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 259');",
-                            "q.dialogue.set_page('buyend');"
-                        ]
-                    },
-                    {
-                        "text": "Go Back",
-                        "value": "goback",
-                        "action": [
-                            "q.dialogue.set_page('buy1');"
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "id": "pickelectrizer",
-            "speaker": "npc",
-            "lines": [
-                "32 BP) A box packed with a tremendous amount of electric energy. It's loved by a certain Pokémon."
-            ],
-            "input": {
-                "type": "option",
-                "vertical": false,
-                "options": [
-                    {
-                        "text": "Buy",
-                        "value": "buy",
-                        "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 260');",
-                            "q.dialogue.set_page('buyend');"
-                        ]
-                    },
-                    {
-                        "text": "Go Back",
-                        "value": "goback",
-                        "action": [
-                            "q.dialogue.set_page('buy1');"
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "id": "pickmagmarizer",
-            "speaker": "npc",
-            "lines": [
-                "32 BP) A box packed with a tremendous amount of magma energy. It's loved by a certain Pokémon."
-            ],
-            "input": {
-                "type": "option",
-                "vertical": false,
-                "options": [
-                    {
-                        "text": "Buy",
-                        "value": "buy",
-                        "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 261');",
-                            "q.dialogue.set_page('buyend');"
-                        ]
-                    },
-                    {
-                        "text": "Go Back",
-                        "value": "goback",
-                        "action": [
-                            "q.dialogue.set_page('buy1');"
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "id": "pickreapercloth",
-            "speaker": "npc",
-            "lines": [
-                "32 BP) A cloth imbued with horrifyingly strong spiritual energy. It's loved by a certain Pokémon."
-            ],
-            "input": {
-                "type": "option",
-                "vertical": false,
-                "options": [
-                    {
-                        "text": "Buy",
-                        "value": "buy",
-                        "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 262');",
-                            "q.dialogue.set_page('buyend');"
-                        ]
-                    },
-                    {
-                        "text": "Go Back",
-                        "value": "goback",
-                        "action": [
-                            "q.dialogue.set_page('buy1');"
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "id": "pickupgrade",
-            "speaker": "npc",
-            "lines": [
-                "32 BP) A transparent device somehow filled with all sorts of data. It was produced by Silph Co."
-            ],
-            "input": {
-                "type": "option",
-                "vertical": false,
-                "options": [
-                    {
-                        "text": "Buy",
-                        "value": "buy",
-                        "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 263');",
-                            "q.dialogue.set_page('buyend');"
-                        ]
-                    },
-                    {
-                        "text": "Go Back",
-                        "value": "goback",
-                        "action": [
-                            "q.dialogue.set_page('buy1');"
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "id": "pickdubiousdisc",
-            "speaker": "npc",
-            "lines": [
-                "32 BP) A transparent device overflowing with dubious data. Its producer is unknown."
-            ],
-            "input": {
-                "type": "option",
-                "vertical": false,
-                "options": [
-                    {
-                        "text": "Buy",
-                        "value": "buy",
-                        "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 264');",
-                            "q.dialogue.set_page('buyend');"
-                        ]
-                    },
-                    {
-                        "text": "Go Back",
-                        "value": "goback",
-                        "action": [
-                            "q.dialogue.set_page('buy1');"
-                        ]
-                    }
-                ]
-            }
-        },
-
-
 
         {
             "id": "buyend",
