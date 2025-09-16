@@ -606,12 +606,18 @@ execute as @s[x=1221,y=119,z=1497,distance=..20,tag=!Dialogue161,scores={Starter
 execute as @s[x=1254,y=107,z=-244,distance=..20,tag=Dialogue162,tag=!Dialogue163] unless entity @e[x=1179,y=110,z=-276,dy=3,type=cobblemon:npc] run npcspawnat 1179 110 -276 anistar_sycamore
 execute as @s[x=1254,y=107,z=-307,distance=..20,tag=Dialogue162,tag=!Dialogue163] unless entity @e[x=1179,y=110,z=-276,dy=3,type=cobblemon:npc] run npcspawnat 1179 110 -276 anistar_sycamore
 
-
-
+#Diantha giving Ralts post-game
+execute as @s[x=-492,y=101,z=261,distance=..10,scores={PokemonLeague=1..},tag=!Dialogue164] unless entity @e[x=-495,y=101,z=256,dy=3,type=cobblemon:npc] run npcspawnat -495 101 256 lumiose_diantha
 
 
 #-----------------------------------------------------------
 #Sets up legendary Pokemon
+
+#Activates roaming bird encounters once daily (resets at midnight) until player can find them in the den
+execute as @s[scores={StarterPick=1,PokemonLeague=1..,Articuno=..4},tag=!Dialogue167] at @s if block ~ ~ ~ minecraft:short_grass run scoreboard players set @s DialogueTrigger 167
+execute as @s[scores={StarterPick=2,PokemonLeague=1..,Zapdos=..4},tag=!Dialogue167] at @s if block ~ ~ ~ minecraft:short_grass run scoreboard players set @s DialogueTrigger 167
+execute as @s[scores={StarterPick=3,PokemonLeague=1..,Moltres=..4},tag=!Dialogue167] at @s if block ~ ~ ~ minecraft:short_grass run scoreboard players set @s DialogueTrigger 167
+
 
 #Mewtwo
 execute as @s[x=845,y=75,z=605,distance=..6,scores={Mewtwo=0}] unless entity @e[x=845,y=75,z=559,distance=..5,type=cobblemon:pokemon] run summon minecraft:interaction 845 75 559 {width:2,height:3,response:1,Tags:[NPCs]}

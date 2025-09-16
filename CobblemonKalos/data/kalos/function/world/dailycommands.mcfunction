@@ -55,7 +55,6 @@ execute positioned 849 93 741 run function kalos:spawn/trashcans
 
 
 #Resets player's roaming legendary scores
-scoreboard players set @a[scores={Grass=1..}] Grass 0
 tag @a[tag=Dialogue167] remove Dialogue167
 
 

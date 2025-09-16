@@ -335,34 +335,6 @@ scoreboard players set @s[tag=Dialogue100] DialogueTrigger 0
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Cafe Soleil post-Pokemon League
-#scoreboard players set @a[x=-495,y=100,z=256,r=15,tag=!Dialogue164,score_TalkTime=0,score_PokemonLeague_min=1] DialogueTrigger 164
-
-#Diantha tp in
-execute as @s[scores={DialogueTrigger=164,TalkTime=2}] run tp @e[x=-504,y=200,z=1284,dy=3,type=pixelmon:npc_chatting] -495 101 256
-execute as @s[scores={DialogueTrigger=164,TalkTime=2}] run particle cloud -495 101 256 2 2 2 1 100
-
-tellraw @s[scores={DialogueTrigger=164,TalkTime=5}] {"text":"<Diantha> Oh, why hello there!"}
-tellraw @s[scores={DialogueTrigger=164,TalkTime=10}] {"text":"<Diantha> That's right..."}
-tellraw @s[scores={DialogueTrigger=164,TalkTime=15}] ["",{"text":"<Diantha> This is where I first met you, isn't it? "},{"selector":"@s"},{"text":"?"}]
-tellraw @s[scores={DialogueTrigger=164,TalkTime=23}] {"text":"<Diantha> You know, I'd really love to learn more about how a strong Trainer like you raises your Pokémon."}
-tellraw @s[scores={DialogueTrigger=164,TalkTime=33}] {"text":"<Diantha> This probably seems a bit sudden, but how would you feel about taking my Ralts here?"}
-
-execute as @a[scores={DialogueTrigger=164,TalkTime=37}] run pokegive @s Ralts lvl:5 g:female gr:6 n:Modest ab:Synchronize ba:24 ivhp:20 ivatk:20 ivdef:20 ivspatk:31 ivspdef:20 ivspd:31 ot:Diantha
-execute as @a[scores={DialogueTrigger=164,TalkTime=37}] run give @s pixelmon:gardevoirite 1
-
-tellraw @s[scores={DialogueTrigger=164,TalkTime=42}] {"text":"<Diantha> Please take very good care of Ralts. I'm sure you will!"}
-tellraw @s[scores={DialogueTrigger=164,TalkTime=50}] {"text":"<Diantha> I'm sure we'll both continue to become even better Trainers as we keep battling and growing!"}
-
-#Diantha tp out
-execute as @s[scores={DialogueTrigger=164,TalkTime=61}] run tp @e[x=-495,y=100,z=256,dy=3,type=pixelmon:npc_chatting] -504 201 1284
-execute as @s[scores={DialogueTrigger=164,TalkTime=60}] run particle cloud -495 101 256 2 2 2 1 100
-
-tag @s[scores={DialogueTrigger=164,TalkTime=60..}] add Dialogue164
-scoreboard players set @s[tag=Dialogue164] TalkTime 0
-scoreboard players set @s[tag=Dialogue164] DialogueTrigger 0
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Ghost Girl Event
 #scoreboard players set @a[x=-162,y=110,z=196,dx=8,dy=5,dz=10,tag=!Dialogue165] DialogueTrigger 165
 
@@ -468,66 +440,7 @@ tag @s[scores={DialogueTrigger=166,TalkTime=206..}] add Dialogue166
 scoreboard players set @s[tag=Dialogue166] TalkTime 0
 scoreboard players set @s[tag=Dialogue166] DialogueTrigger 0
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Legendary bird encoutners
-#/execute as @a[score_PokemonLeague_min=1,tag=!Dialogue167,score_StarterPick_min=1,score_StarterPick=1] run detect ~ ~ ~ tallgrass 1 scoreboard players set @s Grass 1
-#/execute as @a[score_PokemonLeague_min=1,tag=!Dialogue167,score_StarterPick_min=2,score_StarterPick=2] run detect ~ ~ ~ tallgrass 1 scoreboard players set @s Grass 1
-#/execute as @a[score_PokemonLeague_min=1,tag=!Dialogue167,score_StarterPick_min=3,score_StarterPick=3] run detect ~ ~ ~ tallgrass 1 scoreboard players set @s Grass 1
-#scoreboard players set @a[score_Grass_min=1,score_PokemonLeague_min=1,score_TalkTime=0,tag=!Dialogue167,score_Articuno_min=0,score_Articuno=4,score_StarterPick_min=1,score_StarterPick=1] DialogueTrigger 167
-#scoreboard players set @a[score_Grass_min=1,score_PokemonLeague_min=1,score_TalkTime=0,tag=!Dialogue167,score_Zapdos_min=0,score_Zapdos=4,score_StarterPick_min=2,score_StarterPick=2] DialogueTrigger 167
-#scoreboard players set @a[score_Grass_min=1,score_PokemonLeague_min=1,score_TalkTime=0,tag=!Dialogue167,score_Moltres_min=0,score_Moltres=4,score_StarterPick_min=3,score_StarterPick=3] DialogueTrigger 167
-#scoreboard players set @a[score_PokemonLeague_min=1,tag=!Dialogue167] Grass 0
 
-#Adds tag to statues in case missing
-execute as @s[scores={DialogueTrigger=167,TalkTime=1..2}] run tag @e[x=-505,y=199,z=1234,dx=8,dy=25,dz=8,type=pixelmon:statue] add Roaming
-
-#tps statue above player
-execute as @s[scores={DialogueTrigger=167,TalkTime=3,StarterPick=1}] run tp @e[x=-501,y=200,z=1238,distance=..3,type=pixelmon:statue] @s
-execute as @s[scores={DialogueTrigger=167,TalkTime=3,StarterPick=2}] run tp @e[x=-501,y=209,z=1238,distance=..3,type=pixelmon:statue] @s
-execute as @s[scores={DialogueTrigger=167,TalkTime=3,StarterPick=3}] run tp @e[x=-501,y=218,z=1238,distance=..3,type=pixelmon:statue] @s
-execute if entity @s[scores={DialogueTrigger=167,TalkTime=3}] as @e[distance=..20,type=pixelmon:statue,tag=Roaming] at @s run tp @s ~ ~5 ~
-execute if entity @s[scores={DialogueTrigger=167,TalkTime=3}] as @e[distance=..20,type=pixelmon:statue,tag=Roaming] at @s run particle cloud ~ ~ ~ 2 2 2 1 100
-
-#Switches music to legendary encounter music
-execute as @s[scores={DialogueTrigger=167,TalkTime=3}] run scoreboard players set @s click 1
-
-#Pokemon cry
-execute as @s[scores={DialogueTrigger=167,TalkTime=6,StarterPick=1}] run playsound articuno hostile @s ~ ~ ~ 100 1 1
-execute as @s[scores={DialogueTrigger=167,TalkTime=6,StarterPick=2}] run playsound zapdos hostile @s ~ ~ ~ 100 1 1
-execute as @s[scores={DialogueTrigger=167,TalkTime=6,StarterPick=3}] run playsound moltres hostile @s ~ ~ ~ 100 1 1
-
-#Delay of 10 seconds or so (14 ticks)
-
-#Pokemon cry
-execute as @s[scores={DialogueTrigger=167,TalkTime=20,StarterPick=1}] run playsound articuno hostile @s ~ ~ ~ 100 1 1
-execute as @s[scores={DialogueTrigger=167,TalkTime=20,StarterPick=2}] run playsound zapdos hostile @s ~ ~ ~ 100 1 1
-execute as @s[scores={DialogueTrigger=167,TalkTime=20,StarterPick=3}] run playsound moltres hostile @s ~ ~ ~ 100 1 1
-
-#tps statue back to spawn
-execute as @s[scores={DialogueTrigger=167,TalkTime=25}] run execute as @e[distance=..20,type=pixelmon:statue,tag=Roaming] run particle cloud ~ ~ ~ 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=167,TalkTime=25,StarterPick=1}] run tp @e[type=pixelmon:statue,tag=Roaming,name=Articuno] -501 200 1238
-execute as @s[scores={DialogueTrigger=167,TalkTime=25,StarterPick=2}] run tp @e[type=pixelmon:statue,tag=Roaming,name=Zapdos] -501 209 1238
-execute as @s[scores={DialogueTrigger=167,TalkTime=25,StarterPick=3}] run tp @e[type=pixelmon:statue,tag=Roaming,name=Moltres] -501 218 1238
-
-#tellraw
-tellraw @s[scores={DialogueTrigger=167,TalkTime=27,StarterPick=1,Articuno=0..3}] {"text":"Articuno fled!","italic":true,"color":"gray"}
-tellraw @s[scores={DialogueTrigger=167,TalkTime=27,StarterPick=2,Zapdos=0..3}] {"text":"Zapdos fled!","italic":true,"color":"gray"}
-tellraw @s[scores={DialogueTrigger=167,TalkTime=27,StarterPick=3,Moltres=0..3}] {"text":"Moltres fled!","italic":true,"color":"gray"}
-
-tellraw @s[scores={DialogueTrigger=167,TalkTime=27,StarterPick=1,Articuno=4..}] {"text":"Articuno fled to the Sea Spirit's Den!","italic":true,"color":"gray"}
-tellraw @s[scores={DialogueTrigger=167,TalkTime=27,StarterPick=2,Zapdos=4..}] {"text":"Zapdos fled to the Sea Spirit's Den!","italic":true,"color":"gray"}
-tellraw @s[scores={DialogueTrigger=167,TalkTime=27,StarterPick=3,Moltres=4..}] {"text":"Moltres fled to the Sea Spirit's Den!","italic":true,"color":"gray"}
-
-#Adds score to player for number of encounters
-execute as @s[scores={DialogueTrigger=167,TalkTime=30,StarterPick=1}] run scoreboard players add @s Articuno 1
-execute as @s[scores={DialogueTrigger=167,TalkTime=30,StarterPick=2}] run scoreboard players add @s Zapdos 1
-execute as @s[scores={DialogueTrigger=167,TalkTime=30,StarterPick=3}] run scoreboard players add @s Moltres 1
-
-execute as @s[scores={DialogueTrigger=167,TalkTime=30}] run scoreboard players set @s Grass 0
-
-tag @s[scores={DialogueTrigger=167,TalkTime=30..}] add Dialogue167
-scoreboard players set @s[tag=Dialogue167] TalkTime 0
-scoreboard players set @s[tag=Dialogue167] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Lumiose Press Volcanion EIC after catching

@@ -321,8 +321,60 @@ scoreboard players set @s[scores={DialogueTrigger=156},tag=Dialogue156] TalkTime
 scoreboard players set @s[scores={DialogueTrigger=156},tag=Dialogue156] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Legendary bird encoutners
+#execute as @s[scores={PokemonLeague=1..,Articuno=..4},tag=!Dialogue167] if block ~ ~ ~ minecraft:short_grass run scoreboard players set @s DialogueTrigger 167
+#execute as @s[scores={PokemonLeague=1..,Zapdos=..4},tag=!Dialogue167] if block ~ ~ ~ minecraft:short_grass run scoreboard players set @s DialogueTrigger 167
+#execute as @s[scores={PokemonLeague=1..,Moltres=..4},tag=!Dialogue167] if block ~ ~ ~ minecraft:short_grass run scoreboard players set @s DialogueTrigger 167
 
+#tps statue above player
+execute as @s[scores={DialogueTrigger=167,TalkTime=3,StarterPick=1}] at @s run pokespawnat ~ ~5 ~ articuno level=70 uncatchable=yes pokeball=ancient_azure_ball
+execute as @s[scores={DialogueTrigger=167,TalkTime=3,StarterPick=2}] at @s run pokespawnat ~ ~5 ~ zapdos level=70 uncatchable=yes pokeball=ancient_azure_ball
+execute as @s[scores={DialogueTrigger=167,TalkTime=3,StarterPick=3}] at @s run pokespawnat ~ ~5 ~ moltres level=70 uncatchable=yes pokeball=ancient_azure_ball
+execute if entity @s[scores={DialogueTrigger=167,TalkTime=3}] as @e[distance=..20,type=cobblemon:pokemon,nbt={Pokemon:{CaughtBall:"cobblemon:ancient_azure_ball"}}] at @s run particle cloud ~ ~ ~ 2 2 2 1 100
+execute if entity @s[scores={DialogueTrigger=167,TalkTime=3..4}] as @e[distance=..20,type=cobblemon:pokemon,nbt={Pokemon:{CaughtBall:"cobblemon:ancient_azure_ball"}}] run data modify entity @s Unbattleable set value 1b
 
+#Switches music to legendary encounter music
+execute as @s[scores={DialogueTrigger=167,TalkTime=3}] run function kalos:triggers/stopsound
+
+#Pokemon cry
+execute as @s[scores={DialogueTrigger=167,TalkTime=6,StarterPick=1}] run playsound articuno hostile @s ~ ~ ~ 100 1 1
+execute as @s[scores={DialogueTrigger=167,TalkTime=6,StarterPick=2}] run playsound zapdos hostile @s ~ ~ ~ 100 1 1
+execute as @s[scores={DialogueTrigger=167,TalkTime=6,StarterPick=3}] run playsound moltres hostile @s ~ ~ ~ 100 1 1
+
+#Delay of 10 seconds or so (14 ticks)
+
+#Pokemon cry
+execute as @s[scores={DialogueTrigger=167,TalkTime=20,StarterPick=1}] run playsound articuno hostile @s ~ ~ ~ 100 1 1
+execute as @s[scores={DialogueTrigger=167,TalkTime=20,StarterPick=2}] run playsound zapdos hostile @s ~ ~ ~ 100 1 1
+execute as @s[scores={DialogueTrigger=167,TalkTime=20,StarterPick=3}] run playsound moltres hostile @s ~ ~ ~ 100 1 1
+
+#tps statue back to spawn
+execute as @s[scores={DialogueTrigger=167,TalkTime=25}] as @e[type=cobblemon:pokemon,nbt={Pokemon:{CaughtBall:"cobblemon:ancient_azure_ball"}}] at @s run particle cloud ~ ~ ~ 2 2 2 1 100
+execute as @s[scores={DialogueTrigger=167,TalkTime=25,StarterPick=1}] run tp @e[type=cobblemon:pokemon,nbt={Pokemon:{CaughtBall:"cobblemon:ancient_azure_ball"}}] 10000000 -50000 -10000000
+execute as @s[scores={DialogueTrigger=167,TalkTime=25,StarterPick=2}] run tp @e[type=cobblemon:pokemon,nbt={Pokemon:{CaughtBall:"cobblemon:ancient_azure_ball"}}] 10000000 -50000 -10000000
+execute as @s[scores={DialogueTrigger=167,TalkTime=25,StarterPick=3}] run tp @e[type=cobblemon:pokemon,nbt={Pokemon:{CaughtBall:"cobblemon:ancient_azure_ball"}}] 10000000 -50000 -10000000
+
+#tellraw
+tellraw @s[scores={DialogueTrigger=167,TalkTime=27,StarterPick=1,Articuno=0..3}] {"text":"Articuno fled!","italic":true,"color":"gray"}
+tellraw @s[scores={DialogueTrigger=167,TalkTime=27,StarterPick=2,Zapdos=0..3}] {"text":"Zapdos fled!","italic":true,"color":"gray"}
+tellraw @s[scores={DialogueTrigger=167,TalkTime=27,StarterPick=3,Moltres=0..3}] {"text":"Moltres fled!","italic":true,"color":"gray"}
+
+tellraw @s[scores={DialogueTrigger=167,TalkTime=27,StarterPick=1,Articuno=4..}] {"text":"Articuno fled to the Sea Spirit's Den!","italic":true,"color":"gray"}
+tellraw @s[scores={DialogueTrigger=167,TalkTime=27,StarterPick=2,Zapdos=4..}] {"text":"Zapdos fled to the Sea Spirit's Den!","italic":true,"color":"gray"}
+tellraw @s[scores={DialogueTrigger=167,TalkTime=27,StarterPick=3,Moltres=4..}] {"text":"Moltres fled to the Sea Spirit's Den!","italic":true,"color":"gray"}
+
+#Adds score to player for number of encounters
+execute as @s[scores={DialogueTrigger=167,TalkTime=30,StarterPick=1}] run scoreboard players add @s Articuno 1
+execute as @s[scores={DialogueTrigger=167,TalkTime=30,StarterPick=2}] run scoreboard players add @s Zapdos 1
+execute as @s[scores={DialogueTrigger=167,TalkTime=30,StarterPick=3}] run scoreboard players add @s Moltres 1
+
+#execute as @s[scores={DialogueTrigger=167,TalkTime=30}] run function kalos:triggers/stopsound
+
+tag @s[scores={DialogueTrigger=167,TalkTime=30..}] add Dialogue167
+scoreboard players set @s[scores={DialogueTrigger=167},tag=Dialogue167] TalkTime 0
+scoreboard players set @s[scores={DialogueTrigger=167},tag=Dialogue167] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 

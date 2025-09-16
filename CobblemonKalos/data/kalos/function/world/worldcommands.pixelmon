@@ -223,22 +223,6 @@ tag @a[x=-2115,y=0,z=504,dx=240,dy=256,dz=258,scores={TalkTime=0},tag=!FlyAmbret
 #Runs clicked legendary spawn function
 execute as @a[tag=LegendActivate] run function kalos:triggers/legendspawn
 
-
-#Bird Spawns
-execute as @a[tag=!Dialogue167,scores={PokemonLeague=1..,StarterPick=1..}] run execute if block ~ ~ ~ minecraft:grass_block run scoreboard players set @s Grass 1
-
-#Articuno Activate
-scoreboard players set @a[tag=!Dialogue167,scores={Grass=1..,PokemonLeague=1..,TalkTime=0,Articuno=0..4,StarterPick=1}] DialogueTrigger 167
-
-#Zapdos Activate
-scoreboard players set @a[tag=!Dialogue167,scores={Grass=1..,PokemonLeague=1..,TalkTime=0,Zapdos=0..4,StarterPick=2}] DialogueTrigger 167
-
-#Moltres Activate
-scoreboard players set @a[tag=!Dialogue167,scores={Grass=1..,PokemonLeague=1..,TalkTime=0,Moltres=0..4,StarterPick=3}] DialogueTrigger 167
-
-
-scoreboard players set @a[tag=!Dialogue167,scores={PokemonLeague=1..,Grass=1..}] Grass 0
-
 #----------
 #Yveltal Dormant Activate
 execute as @a[x=-2336,y=42,z=-1017,distance=..10,scores={Yveltal=1,TalkTime=0,Cooldown=5000..},tag=Dialogue130,tag=!Dialogue131] run scoreboard players enable @s TalkTrigger
