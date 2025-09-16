@@ -1,0 +1,456 @@
+{
+    "initializationAction": [
+        "q.run_command('team join battlepoints ' + q.player.username + '');"
+    ],
+    "escapeAction": [
+        "q.run_command('team join default ' + q.player.username + '');",
+        "q.dialogue.close();"
+    ],
+    "names": [
+        "Battle Maison Clerk"
+    ],
+    "speakers": {
+        "npc": {
+            "name": "Battle Maison Clerk",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:shopman",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "Welcome to the Battle Maison. What would you like to do today?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Challenge",
+                        "value": "challenge",
+                        "action": "q.dialogue.set_page('challenge1');"
+                    },
+                    {
+                        "text": "Info",
+                        "value": "info",
+                        "action": "q.dialogue.set_page('info1');"
+                    },
+                    {
+                        "text": "Change Music",
+                        "value": "changemusic",
+                        "action": "q.dialogue.set_page('music1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "music1",
+            "speaker": "npc",
+            "lines": [
+                "What track would you like to battle to?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Regular Trainer music",
+                        "value": "trainermusic",
+                        "action": [
+                            "q.run_command('tag ' + q.player.username + ' add Music1');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music2');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music3');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music4');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music5');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music6');",
+                            "q.dialogue.set_page('musicend');"]
+                    },
+                    {
+                        "text": "Friend Battle music",
+                        "value": "friendmusic",
+                        "action": [
+                            "q.run_command('tag ' + q.player.username + ' remove Music1');",
+                            "q.run_command('tag ' + q.player.username + ' add Music2');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music3');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music4');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music5');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music6');",
+                            "q.dialogue.set_page('musicend');"]
+                    },
+                    {
+                        "text": "Gym Leader music",
+                        "value": "gymmusic",
+                        "action": [
+                            "q.run_command('tag ' + q.player.username + ' remove Music1');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music2');",
+                            "q.run_command('tag ' + q.player.username + ' add Music3');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music4');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music5');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music6');",
+                            "q.dialogue.set_page('musicend');"]
+                    },
+                    {
+                        "text": "Successor music",
+                        "value": "successormusic",
+                        "action": [
+                            "q.run_command('tag ' + q.player.username + ' remove Music1');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music2');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music3');",
+                            "q.run_command('tag ' + q.player.username + ' add Music4');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music5');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music6');",
+                            "q.dialogue.set_page('musicend');"]
+                    },
+                    {
+                        "text": "Lysandre music",
+                        "value": "lysandre",
+                        "action": [
+                            "q.run_command('tag ' + q.player.username + ' remove Music1');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music2');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music3');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music4');",
+                            "q.run_command('tag ' + q.player.username + ' add Music5');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music6');",
+                            "q.dialogue.set_page('musicend');"]
+                    },
+                    {
+                        "text": "World Championship music",
+                        "value": "championship",
+                        "action": [
+                            "q.run_command('tag ' + q.player.username + ' remove Music1');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music2');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music3');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music4');",
+                            "q.run_command('tag ' + q.player.username + ' remove Music5');",
+                            "q.run_command('tag ' + q.player.username + ' add Music6');",
+                            "q.dialogue.set_page('musicend');"]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('greeting');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "musicend",
+            "speaker": "npc",
+            "lines": [
+                "Your music choice has been saved! Go try it out!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('team join default ' + q.player.username + '');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+
+
+        {
+            "id": "challenge1",
+            "speaker": "npc",
+            "lines": [
+                "Which battle format would you like to choose?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Single Battle",
+                        "value": "singlebattle",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' BattleMaison 1');",
+                            "q.dialogue.set_page('challengeend');"
+                        ]
+                    },
+                    {
+                        "text": "Single Super Battle",
+                        "value": "supersingle",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' BattleMaison 2');",
+                            "q.dialogue.set_page('challengeend');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('greeting');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "challengeend",
+            "speaker": "npc",
+            "lines": [
+                "Your challenge has been registered. Please step on the stage to begin!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('team join default ' + q.player.username + '');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+
+
+
+
+
+
+
+        {
+            "id": "info1",
+            "speaker": "npc",
+            "lines": [
+                "What would you like to hear about?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "The Battle Maison",
+                        "value": "battlemaison",
+                        "action": "q.dialogue.set_page('info2');"
+                    },
+                    {
+                        "text": "The rules",
+                        "value": "therules",
+                        "action": "q.dialogue.set_page('info10');"
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('greeting');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "info2",
+            "speaker": "npc",
+            "lines": [
+                "This Battle Maison provides various battles with many Trainers."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('info3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "info3",
+            "speaker": "npc",
+            "lines": [
+                "Currently we only have a Single Battle mode format."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('info4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "info4",
+            "speaker": "npc",
+            "lines": [
+                "You'll keep battling until you lose, and compete based on how many people you can defeat."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('info5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "info5",
+            "speaker": "npc",
+            "lines": [
+                "Please note that if you lose even once, your winning streak will end, and you'll start from zero again."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('info6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "info6",
+            "speaker": "npc",
+            "lines": [
+                "Every time you defeat a Trainer, we'll give you points called BP."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('info7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "info7",
+            "speaker": "npc",
+            "lines": [
+                "You'll earn more BP as you keep winning, so do your best!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('info1');"
+                    }
+                ]
+            }
+        },
+
+        
+        {
+            "id": "info10",
+            "speaker": "npc",
+            "lines": [
+                "Please note the following three points when you battle in the Battle Maison."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('info11');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "info11",
+            "speaker": "npc",
+            "lines": [
+                "First, while you participate in battles here, Pokémon you battle will be adjusted to your highest party level."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('info12');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "info12",
+            "speaker": "npc",
+            "lines": [
+                "Second, please note the number of Pokémon you need for a challenge."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('info13');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "info13",
+            "speaker": "npc",
+            "lines": [
+                "You need exactly three Pokémon on your team for the Single Battle format."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('info14');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "info14",
+            "speaker": "npc",
+            "lines": [
+                "Third, and lastly, we recommend all your Pokémon and their items should be different."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('info1');"
+                    }
+                ]
+            }
+        }
+      ]
+}

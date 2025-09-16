@@ -64,37 +64,6 @@ playsound birdencounter record @s[scores={DialogueTrigger=167,MusicCooldown=0}] 
 scoreboard players set @s[scores={DialogueTrigger=167,MusicCooldown=0}] MusicCooldown 30
 
 
-#----------------------------------------------------------------Battle Maison----------------------------------------------------------------
-
-execute as @s[tag=BattleMaisonMusic] run playsound trainerbattle record @s[tag=Music1,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-execute as @s[tag=BattleMaisonMusic] run tag @s[tag=Music1,scores={MusicCooldown=0}] add OldTimings
-execute as @s[tag=BattleMaisonMusic] run scoreboard players set @s[tag=Music1,scores={MusicCooldown=0}] MusicCooldown 227
-
-execute as @s[tag=BattleMaisonMusic] run playsound wildpokemonbattle record @s[tag=Music2,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-execute as @s[tag=BattleMaisonMusic] run tag @s[tag=Music2,scores={MusicCooldown=0}] add OldTimings
-execute as @s[tag=BattleMaisonMusic] run scoreboard players set @s[tag=Music2,scores={MusicCooldown=0}] MusicCooldown 124
-
-execute as @s[tag=BattleMaisonMusic] run playsound friendbattle record @s[tag=Music3,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-execute as @s[tag=BattleMaisonMusic] run tag @s[tag=Music3,scores={MusicCooldown=0}] add OldTimings
-execute as @s[tag=BattleMaisonMusic] run scoreboard players set @s[tag=Music3,scores={MusicCooldown=0}] MusicCooldown 166
-
-execute as @s[tag=BattleMaisonMusic] run playsound gymleaderbattle record @s[tag=Music4,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-execute as @s[tag=BattleMaisonMusic] run tag @s[tag=Music4,scores={MusicCooldown=0}] add OldTimings
-execute as @s[tag=BattleMaisonMusic] run scoreboard players set @s[tag=Music4,scores={MusicCooldown=0}] MusicCooldown 363
-
-execute as @s[tag=BattleMaisonMusic] run playsound successorbattle record @s[tag=Music5,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-execute as @s[tag=BattleMaisonMusic] run tag @s[tag=Music5,scores={MusicCooldown=0}] add OldTimings
-execute as @s[tag=BattleMaisonMusic] run scoreboard players set @s[tag=Music5,scores={MusicCooldown=0}] MusicCooldown 317
-
-execute as @s[tag=BattleMaisonMusic] run playsound lysandrebattle record @s[tag=Music6,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-execute as @s[tag=BattleMaisonMusic] run tag @s[tag=Music6,scores={MusicCooldown=0}] add OldTimings
-execute as @s[tag=BattleMaisonMusic] run scoreboard players set @s[tag=Music6,scores={MusicCooldown=0}] MusicCooldown 230
-
-execute as @s[tag=BattleMaisonMusic] run playsound worldchampionships record @s[tag=Music7,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-execute as @s[tag=BattleMaisonMusic] run tag @s[tag=Music7,scores={MusicCooldown=0}] add OldTimings
-execute as @s[tag=BattleMaisonMusic] run scoreboard players set @s[tag=Music7,scores={MusicCooldown=0}] MusicCooldown 259
-
-
 
 
 #----------------------------------------------------------------Dialogue Based----------------------------------------------------------------

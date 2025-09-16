@@ -3118,36 +3118,6 @@ tag @s[scores={DialogueTrigger=227,TalkTime=22..}] add Dialogue227
 scoreboard players set @s[tag=Dialogue227] TalkTime 0
 scoreboard players set @s[tag=Dialogue227] DialogueTrigger 0
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Battle Maison location explanation
-#Dialogue228
-
-tellraw @s[scores={DialogueTrigger=228,TalkTime=2}] {"text":"This Battle Maison provides various battles with many Trainers."}
-tellraw @s[scores={DialogueTrigger=228,TalkTime=12}] {"text":"You can choose from the following battle formats: Single & Double."}
-tellraw @s[scores={DialogueTrigger=228,TalkTime=21}] {"text":"You'll keep battling until you lose, and compete based on how many people you can defeat."}
-tellraw @s[scores={DialogueTrigger=228,TalkTime=31}] {"text":"Please note that if you lose even once, your winning streak will end, and you'll start from zero again."}
-tellraw @s[scores={DialogueTrigger=228,TalkTime=42}] {"text":"Every time you defeat a Trainer, we'll give you points called BP."}
-tellraw @s[scores={DialogueTrigger=228,TalkTime=50}] {"text":"You'll earn more BP as you keep winning, so do your best!"}
-execute as @s[scores={DialogueTrigger=228,TalkTime=58}] run scoreboard players set @s TalkTrigger 214
-
-tag @s[scores={DialogueTrigger=228,TalkTime=58..}] add Dialogue228
-scoreboard players set @s[tag=Dialogue228] TalkTime 0
-scoreboard players set @s[tag=Dialogue228] DialogueTrigger 0
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Battle Maison rules explanation
-#Dialogue229
-
-tellraw @s[scores={DialogueTrigger=229,TalkTime=2}] {"text":"Please note the following three points when you battle in the Battle Maison."}
-tellraw @s[scores={DialogueTrigger=229,TalkTime=11}] {"text":"First, while you participate in battles here, Pokémon at levels higher than 50 will be reduced temporarily to Lv. 50."}
-tellraw @s[scores={DialogueTrigger=229,TalkTime=23}] {"text":"Second, please note the number of Pokémon you need for a challenge."}
-tellraw @s[scores={DialogueTrigger=229,TalkTime=31}] {"text":"You need three Pokémon for Single Battles, and four Pokémon for Double Battles."}
-tellraw @s[scores={DialogueTrigger=229,TalkTime=40}] {"text":"Third, and lastly, all Pokémon and their items should be different."}
-execute as @s[scores={DialogueTrigger=229,TalkTime=49}] run scoreboard players set @s TalkTrigger 214
-
-tag @s[scores={DialogueTrigger=229,TalkTime=49..}] add Dialogue229
-scoreboard players set @s[tag=Dialogue229] TalkTime 0
-scoreboard players set @s[tag=Dialogue229] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Nita Introduction

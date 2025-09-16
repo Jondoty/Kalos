@@ -879,8 +879,10 @@ tp @s[x=943,y=105,z=1690,dx=10,dy=5] 1080 101 1651
 execute as @s[x=1216,y=106,z=1602,dx=8,dy=5] run function kalos:triggers/stopsound
 tp @s[x=1216,y=106,z=1602,dx=8,dy=5] 1220 65 1603
 
+#Ends Challenge if player walks out of the building
+execute as @s[x=1216,y=65,z=1604,dx=8,dy=5] run scoreboard players set @s BattleMaison 0
+execute as @s[x=1216,y=65,z=1604,dx=8,dy=5] run tellraw @s {"text":"Your current challenge has ended! Please come again!","color":"gray"}
 execute as @s[x=1216,y=65,z=1604,dx=8,dy=5] run function kalos:triggers/stopsound
-scoreboard players set @s[x=1216,y=65,z=1604,dx=8,dy=5] BattleMaison 0
 tp @s[x=1216,y=65,z=1604,dx=8,dy=5] 1220 106 1603
 
 
