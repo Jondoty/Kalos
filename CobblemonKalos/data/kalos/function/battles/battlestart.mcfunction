@@ -2,27 +2,6 @@
 #Depending on the number, can play pre-battle music and then battle music
 
 
-#----------------------------------------------------------------Battle Maison priority music----------------------------------------------------------------
-
-execute as @s[x=1182,y=63,z=1511,dx=76,dy=31,dz=94] run playsound trainerbattle record @s[tag=Music1] ~ ~ ~ 1 1 1
-execute as @s[x=1182,y=63,z=1511,dx=76,dy=31,dz=94] run scoreboard players set @s[tag=Music1] MusicCooldown 227
-
-execute as @s[x=1182,y=63,z=1511,dx=76,dy=31,dz=94] run playsound friendbattle record @s[tag=Music2] ~ ~ ~ 1 1 1
-execute as @s[x=1182,y=63,z=1511,dx=76,dy=31,dz=94] run scoreboard players set @s[tag=Music2] MusicCooldown 166
-
-execute as @s[x=1182,y=63,z=1511,dx=76,dy=31,dz=94] run playsound gymleaderbattle record @s[tag=Music3] ~ ~ ~ 1 1 1
-execute as @s[x=1182,y=63,z=1511,dx=76,dy=31,dz=94] run scoreboard players set @s[tag=Music3] MusicCooldown 363
-
-execute as @s[x=1182,y=63,z=1511,dx=76,dy=31,dz=94] run playsound successorbattle record @s[tag=Music4] ~ ~ ~ 1 1 1
-execute as @s[x=1182,y=63,z=1511,dx=76,dy=31,dz=94] run scoreboard players set @s[tag=Music4] MusicCooldown 317
-
-execute as @s[x=1182,y=63,z=1511,dx=76,dy=31,dz=94] run playsound lysandrebattle record @s[tag=Music5] ~ ~ ~ 1 1 1
-execute as @s[x=1182,y=63,z=1511,dx=76,dy=31,dz=94] run scoreboard players set @s[tag=Music5] MusicCooldown 230
-
-execute as @s[x=1182,y=63,z=1511,dx=76,dy=31,dz=94] run playsound worldchampionships record @s[tag=Music6] ~ ~ ~ 1 1 1
-execute as @s[x=1182,y=63,z=1511,dx=76,dy=31,dz=94] run scoreboard players set @s[tag=Music6] MusicCooldown 259
-
-
 #----------------------------------------------------------------
 
 
@@ -119,8 +98,27 @@ execute as @s[tag=!RadioOff,scores={BattleStart=18}] run playsound introyoungste
 execute as @s[tag=!RadioOff,scores={BattleStart=18}] run scoreboard players set @s MusicCooldown 26
 
 
+#----------------------------------------------------------------Battle Maison music----------------------------------------------------------------
 
+execute as @s[tag=!RadioOff,scores={BattleStart=19}] run playsound trainerbattle record @s[tag=Music1] ~ ~ ~ 1 1 1
+execute as @s[tag=!RadioOff,scores={BattleStart=19}] run scoreboard players set @s[tag=Music1] MusicCooldown 227
 
+execute as @s[tag=!RadioOff,scores={BattleStart=19}] run playsound friendbattle record @s[tag=Music2] ~ ~ ~ 1 1 1
+execute as @s[tag=!RadioOff,scores={BattleStart=19}] run scoreboard players set @s[tag=Music2] MusicCooldown 166
+
+execute as @s[tag=!RadioOff,scores={BattleStart=19}] run playsound gymleaderbattle record @s[tag=Music3] ~ ~ ~ 1 1 1
+execute as @s[tag=!RadioOff,scores={BattleStart=19}] run scoreboard players set @s[tag=Music3] MusicCooldown 363
+
+execute as @s[tag=!RadioOff,scores={BattleStart=19}] run playsound successorbattle record @s[tag=Music4] ~ ~ ~ 1 1 1
+execute as @s[tag=!RadioOff,scores={BattleStart=19}] run scoreboard players set @s[tag=Music4] MusicCooldown 317
+
+execute as @s[tag=!RadioOff,scores={BattleStart=19}] run playsound lysandrebattle record @s[tag=Music5] ~ ~ ~ 1 1 1
+execute as @s[tag=!RadioOff,scores={BattleStart=19}] run scoreboard players set @s[tag=Music5] MusicCooldown 230
+
+execute as @s[tag=!RadioOff,scores={BattleStart=19}] run playsound worldchampionships record @s[tag=Music6] ~ ~ ~ 1 1 1
+execute as @s[tag=!RadioOff,scores={BattleStart=19}] run scoreboard players set @s[tag=Music6] MusicCooldown 259
+
+#----------------------------------------------------------------
 
 
 #25-40, battle music

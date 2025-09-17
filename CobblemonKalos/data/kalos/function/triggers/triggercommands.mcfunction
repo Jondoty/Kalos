@@ -26,17 +26,59 @@ execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Tyranitar
 
 execute as @s[scores={TriggerCommand=1}] run advancement grant @s only kalos:mega2
 
+#---------------------
+
+#2-5, common Battle Maison commands
+execute as @s[scores={TriggerCommand=2..5}] run pokeheal
+execute as @s[scores={TriggerCommand=2..5}] run scoreboard players set @s BattleEnd 3
+execute as @s[scores={TriggerCommand=2..5}] run function kalos:triggers/stopsound
+execute as @s[scores={TriggerCommand=2..5}] run scoreboard players add @s BattleStreak 1
+execute as @s[scores={TriggerCommand=2..5}] run particle cloud 1217 75 1545 1 1 1 1 25
+execute as @s[scores={TriggerCommand=2..5}] run tp @e[x=1217,y=75,z=1545,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+
+#Refreshes new NPC
+execute as @s[scores={TriggerCommand=2..5,BattleMaison=1}] run npcspawnat 1217 75 1545 battlemaison_single
+execute as @s[scores={TriggerCommand=2..5,BattleMaison=2}] run npcspawnat 1217 75 1545 battlemaison_single_super
+#execute as @s[scores={TriggerCommand=2..5,BattleMaison=3}] run 
+#execute as @s[scores={TriggerCommand=2..5,BattleMaison=4}] run 
+
+
+#2 - Awards Battle Points and swaps out Single Mode trainers
+execute as @s[scores={TriggerCommand=2,BattleStreak=1..10}] run scoreboard players add @s BattlePoints 1
+execute as @s[scores={TriggerCommand=2,BattleStreak=11..19}] run scoreboard players add @s BattlePoints 2
+execute as @s[scores={TriggerCommand=2,BattleStreak=20}] run scoreboard players add @s BattlePoints 20
+execute as @s[scores={TriggerCommand=2,BattleStreak=21..}] run scoreboard players add @s BattlePoints 3
+
+execute as @s[scores={TriggerCommand=2,BattleStreak=1..10}] run tellraw @s {"text":"You received 1 battle point for winning!","italic":true,"color":"gray"}
+execute as @s[scores={TriggerCommand=2,BattleStreak=11..19}] run tellraw @s {"text":"You received 2 battle points for winning!","italic":true,"color":"gray"}
+execute as @s[scores={TriggerCommand=2,BattleStreak=20}] run tellraw @s {"text":"You received 20 battle points for winning!","italic":true,"color":"gray"}
+execute as @s[scores={TriggerCommand=2,BattleStreak=21..}] run tellraw @s {"text":"You received 3 battle points for winning!","italic":true,"color":"gray"}
+
+
+#3 - Awards Battle Points and swaps out Single Super trainers
+execute as @s[scores={TriggerCommand=3,BattleStreak=1..10}] run scoreboard players add @s BattlePoints 2
+execute as @s[scores={TriggerCommand=3,BattleStreak=11..20}] run scoreboard players add @s BattlePoints 3
+execute as @s[scores={TriggerCommand=3,BattleStreak=21..30}] run scoreboard players add @s BattlePoints 4
+execute as @s[scores={TriggerCommand=3,BattleStreak=31..40}] run scoreboard players add @s BattlePoints 5
+execute as @s[scores={TriggerCommand=3,BattleStreak=41..49}] run scoreboard players add @s BattlePoints 6
+execute as @s[scores={TriggerCommand=3,BattleStreak=50}] run scoreboard players add @s BattlePoints 50
+execute as @s[scores={TriggerCommand=3,BattleStreak=51..}] run scoreboard players add @s BattlePoints 7
+
+execute as @s[scores={TriggerCommand=3,BattleStreak=1..10}] run tellraw @s {"text":"You received 2 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={TriggerCommand=3,BattleStreak=11..20}] run tellraw @s {"text":"You received 3 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={TriggerCommand=3,BattleStreak=21..30}] run tellraw @s {"text":"You received 4 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={TriggerCommand=3,BattleStreak=31..40}] run tellraw @s {"text":"You received 5 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={TriggerCommand=3,BattleStreak=41..49}] run tellraw @s {"text":"You received 6 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={TriggerCommand=3,BattleStreak=50}] run tellraw @s {"text":"You received 50 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={TriggerCommand=3,BattleStreak=51..}] run tellraw @s {"text":"You received 7 battle points!","italic":true,"color":"gray"}
 
 
 
+#4 & 5, future double Maison battles
 
 
 
-
-
-
-
-
+#---------------------
 
 
 #37-81, Lumiose Taxis Traveling
