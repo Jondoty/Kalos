@@ -37,7 +37,7 @@ t.34 = 'froakie held_item=cobblemon:wacan_berry moves=quickattack,waterpulse,rou
 t.35 = 'flabebe held_item=cobblemon:miracle_seed moves=fairywind,razorleaf,round,wish attack_ev=252 special_attack_ev=252' + t.constants;
 t.36 = 'bronzor held_item=cobblemon:rawst_berry moves=psywave,chargebeam,metalsound,confuseray special_attack_ev=170 special_defence_ev=170 speed_ev=170' + t.constants;
 t.37 = 'litleo held_item=cobblemon:persim_berry moves=firefang,headbutt,retaliate,roar attack_ev=252 speed_ev=252' + t.constants;
-t.38 = 'ledyba held_item=cobblemon:silverpowder_ moves=swift,silverwind,batonpass,doubleteam special_attack_ev=252 speed_ev=252' + t.constants;
+t.38 = 'ledyba held_item=cobblemon:silver_powder moves=swift,silverwind,batonpass,doubleteam special_attack_ev=252 speed_ev=252' + t.constants;
 t.39 = 'joltik held_item=cobblemon:liechi_berry moves=electroweb,bugbite,stringshot,gastroacid attack_ev=252 speed_ev=252' + t.constants;
 t.40 = 'gible held_item=cobblemon:dragon_fang moves=twister,sandstorm,sandtomb,rocktomb attack_ev=252 speed_ev=252' + t.constants;
 t.41 = 'skorupi held_item=cobblemon:poison_barb moves=bugbite,poisonfang,aerialace,leer attack_ev=252 speed_ev=252' + t.constants;

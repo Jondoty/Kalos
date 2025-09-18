@@ -753,7 +753,9 @@ execute as @s[x=1349,y=108,z=-173,distance=..20,tag=Dialogue134,tag=!Call12,nbt=
 
 #Battle Maison Traienr Respawns
 execute as @a[x=1220,y=75,z=1545,distance=..7,scores={BattleMaison=1}] unless entity @e[x=1217,y=75,z=1545,dy=3,type=cobblemon:npc] run npcspawnat 1217 75 1545 battlemaison_single
-execute as @a[x=1220,y=75,z=1545,distance=..7,scores={BattleMaison=2}] unless entity @e[x=1217,y=75,z=1545,dy=3,type=cobblemon:npc] run npcspawnat 1217 75 1545 battlemaison_single_super
+execute as @a[x=1220,y=75,z=1545,distance=..7,scores={BattleMaison=2,BattleStreak=..10}] unless entity @e[x=1217,y=75,z=1545,dy=3,type=cobblemon:npc] run npcspawnat 1217 75 1545 battlemaison_single_super1
+execute as @a[x=1220,y=75,z=1545,distance=..7,scores={BattleMaison=2,BattleStreak=11..19}] unless entity @e[x=1217,y=75,z=1545,dy=3,type=cobblemon:npc] run npcspawnat 1217 75 1545 battlemaison_single_super2
+execute as @a[x=1220,y=75,z=1545,distance=..7,scores={BattleMaison=2,BattleStreak=20..}] unless entity @e[x=1217,y=75,z=1545,dy=3,type=cobblemon:npc] run npcspawnat 1217 75 1545 battlemaison_single_super3
 #execute as @a[x=1220,y=75,z=1545,distance=..7,scores={BattleMaison=1}] unless entity @e[x=1217,y=75,z=1545,dy=3,type=cobblemon:npc] run npcspawnat 1217 75 1545 battlemaison_single
 #execute as @a[x=1220,y=75,z=1545,distance=..7,scores={BattleMaison=1}] unless entity @e[x=1217,y=75,z=1545,dy=3,type=cobblemon:npc] run npcspawnat 1217 75 1545 battlemaison_single
 

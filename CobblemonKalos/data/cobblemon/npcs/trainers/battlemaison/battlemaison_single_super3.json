@@ -15,7 +15,7 @@
   "skill": 5,
   "party": {
     "type": "script",
-    "script": "cobblemon:maison_super_trainerpool",
+    "script": "cobblemon:maison_super_pool3",
     "isStatic": false
   },
 

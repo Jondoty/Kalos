@@ -182,7 +182,7 @@ t.387 = 'Scizor held_item=cobblemon:occa_berry moves=metalclaw,nightslash,aerial
 t.388 = 'Heracross held_item=cobblemon:black_belt moves=aerialace,pursuit,swordsdance,brickbreak hp_ev=170 attack_ev=170 defence_ev=170' + t.constants;
 t.389 = 'Ursaring held_item=cobblemon:chesto_berry moves=thrash,crunch,rest,counter attack_ev=170 defence_ev=170 special_defence_ev=170' + t.constants;
 t.390 = 'Houndoom held_item=cobblemon:charcoal moves=incinerate,flamecharge,willowisp,suckerpunch attack_ev=252 speed_ev=252' + t.constants;
-t.391 = 'Donphan held_item=cobblemon:metronome_ moves=earthquake,scaryface,rollout,defensecurl attack_ev=252 defence_ev=252' + t.constants;
+t.391 = 'Donphan held_item=cobblemon:metronome moves=earthquake,scaryface,rollout,defensecurl attack_ev=252 defence_ev=252' + t.constants;
 t.392 = 'Wailord held_item=cobblemon:chesto_berry moves=waterfall,heavyslam,curse,rest attack_ev=170 defence_ev=170 special_defence_ev=170' + t.constants;
 t.393 = 'Claydol held_item=cobblemon:absorb_bulb moves=psychic,icebeam,protect,calmmind hp_ev=252 special_defence_ev=252' + t.constants;
 t.394 = 'Bronzong held_item=cobblemon:sitrus_berry moves=hypnosis,raindance,gyroball,trickroom hp_ev=170 defence_ev=170 special_defence_ev=170' + t.constants;
@@ -326,7 +326,7 @@ t.531 = 'Ferrothorn held_item=cobblemon:chesto_berry moves=rest,payback,gyroball
 t.532 = 'Alakazam held_item=cobblemon:focus_sash moves=psychup,encore,protect,psychic special_attack_ev=252 speed_ev=252' + t.constants;
 t.533 = 'Slowking held_item=cobblemon:kings_rock moves=zenheadbutt,earthquake,swagger,psychup attack_ev=252 special_defence_ev=252' + t.constants;
 t.534 = 'Miltank held_item=cobblemon:razor_fang moves=bodyslam,fling,brickbreak,captivate attack_ev=252 speed_ev=252' + t.constants;
-t.535 = 'Altaria held_item=minecraft:snowball_ moves=dragonclaw,pluck,steelwing,dragondance attack_ev=252 speed_ev=252' + t.constants;
+t.535 = 'Altaria held_item=minecraft:snowball moves=dragonclaw,pluck,steelwing,dragondance attack_ev=252 speed_ev=252' + t.constants;
 t.536 = 'Toxicroak held_item=cobblemon:petaya_berry moves=focusblast,sludgebomb,substitute,protect special_attack_ev=252 speed_ev=252' + t.constants;
 t.537 = 'Gothitelle held_item=cobblemon:twisted_spoon moves=psyshock,miracleeye,mirrorcoat,tickle hp_ev=170 defence_ev=170 special_attack_ev=170' + t.constants;
 t.538 = 'Reuniclus held_item=cobblemon:kings_rock moves=rockslide,explosion,gyroball,trickroom attack_ev=170 defence_ev=170 special_defence_ev=170' + t.constants;
@@ -405,7 +405,7 @@ t.610 = 'Mienshao held_item=cobblemon:kings_rock moves=fakeout,fling,acrobatics,
 t.611 = 'Beartic held_item=cobblemon:bright_powder moves=hail,icywind,grassknot,blizzard hp_ev=252 special_attack_ev=252' + t.constants;
 t.612 = 'Bouffalant held_item=cobblemon:chople_berry moves=pursuit,revenge,retaliate,swagger hp_ev=252 attack_ev=252' + t.constants;
 t.613 = 'Aggron held_item=cobblemon:kings_rock moves=surf,flashcannon,focusblast,round defence_ev=252 special_attack_ev=252' + t.constants;
-t.614 = 'Walrein held_item=cobblemon:metronome_ moves=iceball,earthquake,encore,curse attack_ev=252 special_defence_ev=252' + t.constants;
+t.614 = 'Walrein held_item=cobblemon:metronome moves=iceball,earthquake,encore,curse attack_ev=252 special_defence_ev=252' + t.constants;
 t.615 = 'Mamoswine held_item=cobblemon:zoom_lens moves=stoneedge,bulldoze,blizzard,icefang attack_ev=170 defence_ev=170 special_defence_ev=170' + t.constants;
 t.616 = 'Lapras held_item=cobblemon:mystic_water moves=surf,icebeam,rest,sleeptalk defence_ev=170 special_attack_ev=170 special_defence_ev=170' + t.constants;
 t.617 = 'Crobat held_item=cobblemon:sharp_beak moves=airslash,shadowball,confuseray,nastyplot special_attack_ev=252 speed_ev=252' + t.constants;
@@ -431,7 +431,7 @@ t.636 = 'Dragonite held_item=cobblemon:salac_berry moves=dragonpulse,icebeam,thu
 t.637 = 'Tyranitar held_item=cobblemon:kings_rock moves=rockslide,crunch,icebeam,dragondance attack_ev=252 speed_ev=252' + t.constants;
 t.638 = 'Salamence held_item=cobblemon:expert_belt moves=dragonclaw,zenheadbutt,rockslide,dragondance attack_ev=170 special_defence_ev=170 speed_ev=170' + t.constants;
 t.639 = 'Metagross held_item=cobblemon:occa_berry moves=psychic,shadowball,meteormash,magnetrise hp_ev=170 attack_ev=170 special_attack_ev=170' + t.constants;
-t.640 = 'Garchomp held_item=minecraft:snowball_ moves=fireblast,earthpower,surf,sandstorm special_attack_ev=252 speed_ev=252' + t.constants;
+t.640 = 'Garchomp held_item=minecraft:snowball moves=fireblast,earthpower,surf,sandstorm special_attack_ev=252 speed_ev=252' + t.constants;
 t.641 = 'Hydreigon held_item=cobblemon:wide_lens moves=focusblast,fireblast,dragonrush,workup attack_ev=170 special_attack_ev=170 speed_ev=170' + t.constants;
 t.642 = 'Slaking held_item=cobblemon:kee_berry moves=retaliate,nightslash,slackoff,amnesia attack_ev=252 speed_ev=252' + t.constants;
 t.643 = 'Venusaur held_item=cobblemon:salac_berry moves=energyball,sludgebomb,grassknot,protect special_attack_ev=252 speed_ev=252' + t.constants;
@@ -777,7 +777,7 @@ t.982 = 'Togekiss held_item=cobblemon:expert_belt moves=aurasphere,airslash,heat
 t.983 = 'Volcarona held_item=cobblemon:leftovers moves=hurricane,quiverdance,bugbuzz,heatwave hp_ev=252 defence_ev=252' + t.constants;
 t.984 = 'Arcanine held_item=cobblemon:sitrus_berry moves=closecombat,flareblitz,crunch,extremespeed attack_ev=252 speed_ev=252' + t.constants;
 t.985 = 'Archeops held_item=cobblemon:sitrus_berry moves=rockslide,earthquake,aerialace,protect attack_ev=252 speed_ev=252' + t.constants;
-t.986 = 'Dragonite held_item=minecraft:snowball_ moves=dragonrush,irontail,extremespeed,firepunch attack_ev=252 speed_ev=252' + t.constants;
+t.986 = 'Dragonite held_item=minecraft:snowball moves=dragonrush,irontail,extremespeed,firepunch attack_ev=252 speed_ev=252' + t.constants;
 t.987 = 'Tyranitar held_item=cobblemon:focus_sash moves=rockslide,earthquake,superpower,dragontail hp_ev=252 attack_ev=252' + t.constants;
 t.988 = 'Salamence held_item=cobblemon:lum_berry moves=outrage,crunch,earthquake,zenheadbutt attack_ev=252 speed_ev=252' + t.constants;
 t.989 = 'Metagross held_item=cobblemon:toxic_orb moves=trick,meteormash,protect,earthquake hp_ev=252 special_defence_ev=252' + t.constants;

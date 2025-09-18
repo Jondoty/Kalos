@@ -38,7 +38,9 @@ execute as @s[scores={TriggerCommand=2..5}] run tp @e[x=1217,y=75,z=1545,dy=3,ty
 
 #Refreshes new NPC
 execute as @s[scores={TriggerCommand=2..5,BattleMaison=1}] run npcspawnat 1217 75 1545 battlemaison_single
-execute as @s[scores={TriggerCommand=2..5,BattleMaison=2}] run npcspawnat 1217 75 1545 battlemaison_single_super
+execute as @s[scores={TriggerCommand=2..5,BattleMaison=2,BattleStreak=..10}] run npcspawnat 1217 75 1545 battlemaison_single_super1
+execute as @s[scores={TriggerCommand=2..5,BattleMaison=2,BattleStreak=11..19}] run npcspawnat 1217 75 1545 battlemaison_single_super2
+execute as @s[scores={TriggerCommand=2..5,BattleMaison=2,BattleStreak=20..}] run npcspawnat 1217 75 1545 battlemaison_single_super3
 #execute as @s[scores={TriggerCommand=2..5,BattleMaison=3}] run 
 #execute as @s[scores={TriggerCommand=2..5,BattleMaison=4}] run 
 
@@ -57,20 +59,14 @@ execute as @s[scores={TriggerCommand=2,BattleStreak=21..}] run tellraw @s {"text
 
 #3 - Awards Battle Points and swaps out Single Super trainers
 execute as @s[scores={TriggerCommand=3,BattleStreak=1..10}] run scoreboard players add @s BattlePoints 2
-execute as @s[scores={TriggerCommand=3,BattleStreak=11..20}] run scoreboard players add @s BattlePoints 3
-execute as @s[scores={TriggerCommand=3,BattleStreak=21..30}] run scoreboard players add @s BattlePoints 4
-execute as @s[scores={TriggerCommand=3,BattleStreak=31..40}] run scoreboard players add @s BattlePoints 5
-execute as @s[scores={TriggerCommand=3,BattleStreak=41..49}] run scoreboard players add @s BattlePoints 6
-execute as @s[scores={TriggerCommand=3,BattleStreak=50}] run scoreboard players add @s BattlePoints 50
-execute as @s[scores={TriggerCommand=3,BattleStreak=51..}] run scoreboard players add @s BattlePoints 7
+execute as @s[scores={TriggerCommand=3,BattleStreak=11..19}] run scoreboard players add @s BattlePoints 4
+execute as @s[scores={TriggerCommand=3,BattleStreak=20}] run scoreboard players add @s BattlePoints 50
+execute as @s[scores={TriggerCommand=3,BattleStreak=21..}] run scoreboard players add @s BattlePoints 8
 
 execute as @s[scores={TriggerCommand=3,BattleStreak=1..10}] run tellraw @s {"text":"You received 2 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={TriggerCommand=3,BattleStreak=11..20}] run tellraw @s {"text":"You received 3 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={TriggerCommand=3,BattleStreak=21..30}] run tellraw @s {"text":"You received 4 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={TriggerCommand=3,BattleStreak=31..40}] run tellraw @s {"text":"You received 5 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={TriggerCommand=3,BattleStreak=41..49}] run tellraw @s {"text":"You received 6 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={TriggerCommand=3,BattleStreak=50}] run tellraw @s {"text":"You received 50 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={TriggerCommand=3,BattleStreak=51..}] run tellraw @s {"text":"You received 7 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={TriggerCommand=3,BattleStreak=11..20}] run tellraw @s {"text":"You received 4 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={TriggerCommand=3,BattleStreak=20}] run tellraw @s {"text":"You received 50 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={TriggerCommand=3,BattleStreak=21..}] run tellraw @s {"text":"You received 8 battle points!","italic":true,"color":"gray"}
 
 
 
