@@ -35,6 +35,7 @@ execute as @s[scores={TriggerCommand=2..5}] run function kalos:triggers/stopsoun
 execute as @s[scores={TriggerCommand=2..5}] run scoreboard players add @s BattleStreak 1
 execute as @s[scores={TriggerCommand=2..5}] run particle cloud 1217 75 1545 1 1 1 1 25
 execute as @s[scores={TriggerCommand=2..5}] run tp @e[x=1217,y=75,z=1545,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @s[scores={TriggerCommand=2..5}] run function kalos:data/maisonstreak
 
 #Refreshes new NPC
 execute as @s[scores={TriggerCommand=2..5,BattleMaison=1}] run npcspawnat 1217 75 1545 battlemaison_single
@@ -73,6 +74,11 @@ execute as @s[scores={TriggerCommand=3,BattleStreak=21..}] run tellraw @s {"text
 #4 & 5, future double Maison battles
 
 
+
+#6 - Losing specifically in the battle maison
+execute as @s[scores={TriggerCommand=6,BattleStreak=1..}] run tellraw @s {"text":"Your Battle Streak reset!","italic":true,"color":"gray"}
+execute as @s[scores={TriggerCommand=6}] run scoreboard players set @s BattleStreak 0
+execute as @s[scores={TriggerCommand=6}] run pokeheal
 
 #---------------------
 

@@ -135,7 +135,7 @@ t.132 = 'cranidos held_item=cobblemon:petaya_berry moves=ancientpower,flamethrow
 t.133 = 'gurdurr held_item=cobblemon:zoom_lens moves=dynamicpunch,poisonjab,smackdown,machpunch attack_ev=252 defence_ev=252' + t.constants;
 t.134 = 'sliggoo held_item=cobblemon:sitrus_berry moves=bide,toxic,flail,dragonpulse defence_ev=252 special_defence_ev=252' + t.constants;
 t.135 = 'primeape held_item=cobblemon:persim_berry moves=karatechop,rockslide,thrash,uturn attack_ev=252 speed_ev=252' + t.constants;
-t.136 = 'quilladin held_item=cobblemon:leftovers_ moves=woodhammer,leechseed,protect,dig attack_ev=252 defence_ev=252' + t.constants;
+t.136 = 'quilladin held_item=cobblemon:leftovers moves=woodhammer,leechseed,protect,dig attack_ev=252 defence_ev=252' + t.constants;
 t.137 = 'frogadier held_item=cobblemon:power_herb moves=dig,poweruppunch,waterfall,bounce attack_ev=252 speed_ev=252' + t.constants;
 t.138 = 'braixen held_item=cobblemon:light_clay moves=flamethrower,psychic,safeguard,lightscreen special_attack_ev=252 speed_ev=252' + t.constants;
 t.139 = 'bibarel held_item=cobblemon:chesto_berry moves=shadowball,surf,thunderbolt,icebeam special_attack_ev=252 speed_ev=252' + t.constants;
@@ -164,7 +164,7 @@ t.161 = 'sawsbuck held_item=cobblemon:lum_berry moves=hornleech,doubleedge,wildc
 t.162 = 'whimsicott held_item=cobblemon:coba_berry moves=solarbeam,psychic,dazzlinggleam,sunnyday special_attack_ev=252 speed_ev=252' + t.constants;
 t.163 = 'dragalge held_item=cobblemon:bright_powder moves=waterfall,facade,doubleteam,poisontail attack_ev=252 speed_ev=252' + t.constants;
 t.164 = 'heatmor held_item=cobblemon:bright_powder moves=flameburst,stockpile,swallow,spituphp_ev=252 special_attack_ev=252' + t.constants;
-t.165 = 'grumpig held_item=cobblemon:leftovers_ moves=rest,sleeptalk,psychic,shadowball defence_ev=170 special_attack_ev=170 special_defence_ev=170' + t.constants;
+t.165 = 'grumpig held_item=cobblemon:leftovers moves=rest,sleeptalk,psychic,shadowball defence_ev=170 special_attack_ev=170 special_defence_ev=170' + t.constants;
 t.166 = 'piloswine held_item=cobblemon:persim_berry moves=blizzard,thrash,earthquake,hail attack_ev=252 special_attack_ev=252' + t.constants;
 t.167 = 'vigoroth held_item=cobblemon:salac_berry moves=shadowclaw,counter,endure,return defence_ev=252 speed_ev=252' + t.constants;
 t.168 = 'cacturne held_item=cobblemon:razor_claw moves=sandstorm,ingrain,spikes,paybackhp_ev=252 attack_ev=252' + t.constants;
