@@ -1,0 +1,285 @@
+Not super fleshed out but would be a good thing to maybe expand on if desired.
+Player would shift click on a shopkeeper to tell their selected item in their hand.
+If not an item they would take, it would throw a message about not being able to buy that item.
+
+
+scoreboard players set @s Temp 0
+
+execute store success score @s Temp run scoreboard players add @s Money 150
+execute store success score @s Temp run tellraw @s {"text":"You sold a Potion for $150!","italic":true,"color":"gray"}
+execute store success score @s Temp run clear @s cobblemon:potion 1
+
+
+
+
+
+
+
+
+
+
+execute as @s unless entity @s[scores={Temp=1..}] run tellraw @s {"text":"<Shopkeeper> I'm not able to buy that!","italic":true,"color":"white"}
+
+
+
+
+#Add to WorldCommands Function
+#Resets sneaking scores each refresh
+scoreboard players set @a Sneaking 0
+
+
+
+
+
+Potential sellable items
+poke_ball
+great_ball
+ultra_ball
+premier_ball
+heal_ball
+net_ball
+nest_ball
+dive_ball
+dusk_ball
+quick_ball
+timer_ball
+luxury_ball
+repeat_ball
+potion
+super_potion
+hyper_potion
+max_potion
+full_restore
+antidote
+paralyze_heal
+awakening
+burn_heal
+ice_heal
+full_heal
+revive
+x_attack
+x_defense
+x_special_attack
+x_special_defense
+x_speed
+x_accuracy
+guard_spec
+dire_hit
+hp_up
+protein
+iron
+calcium
+zinc
+carbos
+lax_incense
+full_incense
+luck_incense
+pure_incense
+sea_incense
+wave_incense
+rock_incense
+rose_incense
+odd_incense
+honey
+escape_rope
+repel
+super_repel
+max_repel
+power_weight
+power_bracer
+power_belt
+power_lens
+power_band
+power_anklet
+nugget
+big_nugget
+pearl
+big_pearl
+stardust
+star_piece
+tiny_mushroom
+big_mushroom
+balm_mushroom
+rare_bone
+relic_copper
+relic_silver
+relic_gold
+relic_vase
+relic_band
+relic_statue
+relic_crown
+electirizer
+magmarizer
+protector
+reaper_cloth
+dubious_disc
+prism_scale
+sachet
+whipped_dream
+razor_claw
+razor_fang
+king's_rock
+metal_coat
+dragon_scale
+upgrade
+fire_stone
+water_stone
+thunder_stone
+leaf_stone
+moon_stone
+sun_stone
+shiny_stone
+dusk_stone
+dawn_stone
+black_sludge
+light_ball
+deep_sea_scale
+deep_sea_tooth
+lucky_punch
+stick
+thick_club
+soul_dew
+grip_claw
+wide_lens
+zoom_lens
+scope_lens
+shell_bell
+damp_rock
+heat_rock
+icy_rock
+smooth_rock
+terrain_extender
+choice_band
+choice_specs
+choice_scarf
+life_orb
+focus_sash
+expert_belt
+black_belt
+black_glasses
+charcoal
+dragon_fang
+hard_stone
+magnet
+miracle_seed
+mystic_water
+never_melt_ice
+poison_barb
+sharp_beak
+silk_scarf
+soft_sand
+spell_tag
+twisted_spoon
+amulet_coin
+quick_claw
+bright_powder
+mental_herb
+white_herb
+smoke_ball
+light_clay
+rocky_helmet
+leftovers
+big_root
+soothe_bell
+
+
+
+
+Bit that goes in Custom NPCs
+#-------------------------------------------------------------
+
+#If player is sneaking, just sells item selected instead (or attempts to)
+execute as @s[scores={Sneaking=1..}] run function kalos:triggers/sellitems
+
+
+
+#Dynamic Shop NPCs
+scoreboard players set @s Temp 0
+execute as @s[tag=Viola] run scoreboard players add @s Temp 1
+execute as @s[tag=Grant] run scoreboard players add @s Temp 1
+execute as @s[tag=Korrina] run scoreboard players add @s Temp 1
+execute as @s[tag=Ramos] run scoreboard players add @s Temp 1
+execute as @s[tag=Clemont] run scoreboard players add @s Temp 1
+execute as @s[tag=Valerie] run scoreboard players add @s Temp 1
+execute as @s[tag=Olympia] run scoreboard players add @s Temp 1
+execute as @s[tag=Wulfric] run scoreboard players add @s Temp 1
+
+#Santalune
+execute as @s[x=305,y=68,z=462,distance=..6,scores={Sneaking=0,Temp=0}] run opendialogue 0_badges_shop_interaction @s
+execute as @s[x=305,y=68,z=462,distance=..6,scores={Sneaking=0,Temp=1}] run opendialogue 1_badges_shop_interaction @s
+execute as @s[x=305,y=68,z=462,distance=..6,scores={Sneaking=0,Temp=2}] run opendialogue 2_badges_shop_interaction @s
+execute as @s[x=305,y=68,z=462,distance=..6,scores={Sneaking=0,Temp=3}] run opendialogue 3_badges_shop_interaction @s
+execute as @s[x=305,y=68,z=462,distance=..6,scores={Sneaking=0,Temp=4}] run opendialogue 4_badges_shop_interaction @s
+execute as @s[x=305,y=68,z=462,distance=..6,scores={Sneaking=0,Temp=5..}] run opendialogue 5_badges_shop_interaction @s
+
+#Lumiose City North Main
+execute as @s[x=-478,y=101,z=432,distance=..6,scores={Sneaking=0,Temp=0}] run opendialogue 0_badges_shop_interaction @s
+execute as @s[x=-478,y=101,z=432,distance=..6,scores={Sneaking=0,Temp=1}] run opendialogue 1_badges_shop_interaction @s
+execute as @s[x=-478,y=101,z=432,distance=..6,scores={Sneaking=0,Temp=2}] run opendialogue 2_badges_shop_interaction @s
+execute as @s[x=-478,y=101,z=432,distance=..6,scores={Sneaking=0,Temp=3}] run opendialogue 3_badges_shop_interaction @s
+execute as @s[x=-478,y=101,z=432,distance=..6,scores={Sneaking=0,Temp=4}] run opendialogue 4_badges_shop_interaction @s
+execute as @s[x=-478,y=101,z=432,distance=..6,scores={Sneaking=0,Temp=5..}] run opendialogue 5_badges_shop_interaction @s
+
+#Lumiose City South Main
+execute as @s[x=-367,y=101,z=432,distance=..6,scores={Sneaking=0,Temp=0}] run opendialogue 0_badges_shop_interaction @s
+execute as @s[x=-367,y=101,z=432,distance=..6,scores={Sneaking=0,Temp=1}] run opendialogue 1_badges_shop_interaction @s
+execute as @s[x=-367,y=101,z=432,distance=..6,scores={Sneaking=0,Temp=2}] run opendialogue 2_badges_shop_interaction @s
+execute as @s[x=-367,y=101,z=432,distance=..6,scores={Sneaking=0,Temp=3}] run opendialogue 3_badges_shop_interaction @s
+execute as @s[x=-367,y=101,z=432,distance=..6,scores={Sneaking=0,Temp=4}] run opendialogue 4_badges_shop_interaction @s
+execute as @s[x=-367,y=101,z=432,distance=..6,scores={Sneaking=0,Temp=5..}] run opendialogue 5_badges_shop_interaction @s
+
+#Lumiose City Mid Main
+execute as @s[x=-421,y=101,z=432,distance=..6,scores={Sneaking=0,Temp=0}] run opendialogue 0_badges_shop_interaction @s
+execute as @s[x=-421,y=101,z=432,distance=..6,scores={Sneaking=0,Temp=1}] run opendialogue 1_badges_shop_interaction @s
+execute as @s[x=-421,y=101,z=432,distance=..6,scores={Sneaking=0,Temp=2}] run opendialogue 2_badges_shop_interaction @s
+execute as @s[x=-421,y=101,z=432,distance=..6,scores={Sneaking=0,Temp=3}] run opendialogue 3_badges_shop_interaction @s
+execute as @s[x=-421,y=101,z=432,distance=..6,scores={Sneaking=0,Temp=4}] run opendialogue 4_badges_shop_interaction @s
+execute as @s[x=-421,y=101,z=432,distance=..6,scores={Sneaking=0,Temp=5..}] run opendialogue 5_badges_shop_interaction @s
+
+#Camphrier Town
+execute as @s[x=-1004,y=80,z=-14,distance=..6,scores={Sneaking=0,Temp=0}] run opendialogue 0_badges_shop_interaction @s
+execute as @s[x=-1004,y=80,z=-14,distance=..6,scores={Sneaking=0,Temp=1}] run opendialogue 1_badges_shop_interaction @s
+execute as @s[x=-1004,y=80,z=-14,distance=..6,scores={Sneaking=0,Temp=2}] run opendialogue 2_badges_shop_interaction @s
+execute as @s[x=-1004,y=80,z=-14,distance=..6,scores={Sneaking=0,Temp=3}] run opendialogue 3_badges_shop_interaction @s
+execute as @s[x=-1004,y=80,z=-14,distance=..6,scores={Sneaking=0,Temp=4}] run opendialogue 4_badges_shop_interaction @s
+execute as @s[x=-1004,y=80,z=-14,distance=..6,scores={Sneaking=0,Temp=5..}] run opendialogue 5_badges_shop_interaction @s
+
+#Ambrette Town
+execute as @s[x=-1952,y=103,z=530,distance=..6,scores={Sneaking=0,Temp=0}] run opendialogue 0_badges_shop_interaction @s
+execute as @s[x=-1952,y=103,z=530,distance=..6,scores={Sneaking=0,Temp=1}] run opendialogue 1_badges_shop_interaction @s
+execute as @s[x=-1952,y=103,z=530,distance=..6,scores={Sneaking=0,Temp=2}] run opendialogue 2_badges_shop_interaction @s
+execute as @s[x=-1952,y=103,z=530,distance=..6,scores={Sneaking=0,Temp=3}] run opendialogue 3_badges_shop_interaction @s
+execute as @s[x=-1952,y=103,z=530,distance=..6,scores={Sneaking=0,Temp=4}] run opendialogue 4_badges_shop_interaction @s
+execute as @s[x=-1952,y=103,z=530,distance=..6,scores={Sneaking=0,Temp=5..}] run opendialogue 5_badges_shop_interaction @s
+
+#Ambrette Town
+execute as @s[x=-2028,y=78,z=-86,distance=..6,scores={Sneaking=0,Temp=0}] run opendialogue 0_badges_shop_interaction @s
+execute as @s[x=-2028,y=78,z=-86,distance=..6,scores={Sneaking=0,Temp=1}] run opendialogue 1_badges_shop_interaction @s
+execute as @s[x=-2028,y=78,z=-86,distance=..6,scores={Sneaking=0,Temp=2}] run opendialogue 2_badges_shop_interaction @s
+execute as @s[x=-2028,y=78,z=-86,distance=..6,scores={Sneaking=0,Temp=3}] run opendialogue 3_badges_shop_interaction @s
+execute as @s[x=-2028,y=78,z=-86,distance=..6,scores={Sneaking=0,Temp=4}] run opendialogue 4_badges_shop_interaction @s
+execute as @s[x=-2028,y=78,z=-86,distance=..6,scores={Sneaking=0,Temp=5..}] run opendialogue 5_badges_shop_interaction @s
+
+#Geosenge Town
+execute as @s[x=-2232,y=79,z=-650,distance=..6,scores={Sneaking=0,Temp=0}] run opendialogue 0_badges_shop_interaction @s
+execute as @s[x=-2232,y=79,z=-650,distance=..6,scores={Sneaking=0,Temp=1}] run opendialogue 1_badges_shop_interaction @s
+execute as @s[x=-2232,y=79,z=-650,distance=..6,scores={Sneaking=0,Temp=2}] run opendialogue 2_badges_shop_interaction @s
+execute as @s[x=-2232,y=79,z=-650,distance=..6,scores={Sneaking=0,Temp=3}] run opendialogue 3_badges_shop_interaction @s
+execute as @s[x=-2232,y=79,z=-650,distance=..6,scores={Sneaking=0,Temp=4}] run opendialogue 4_badges_shop_interaction @s
+execute as @s[x=-2232,y=79,z=-650,distance=..6,scores={Sneaking=0,Temp=5..}] run opendialogue 5_badges_shop_interaction @s
+
+#Shalour City
+execute as @s[x=-1611,y=57,z=-843,distance=..6,scores={Sneaking=0,Temp=0}] run opendialogue 0_badges_shop_interaction @s
+execute as @s[x=-1611,y=57,z=-843,distance=..6,scores={Sneaking=0,Temp=1}] run opendialogue 1_badges_shop_interaction @s
+execute as @s[x=-1611,y=57,z=-843,distance=..6,scores={Sneaking=0,Temp=2}] run opendialogue 2_badges_shop_interaction @s
+execute as @s[x=-1611,y=57,z=-843,distance=..6,scores={Sneaking=0,Temp=3}] run opendialogue 3_badges_shop_interaction @s
+execute as @s[x=-1611,y=57,z=-843,distance=..6,scores={Sneaking=0,Temp=4}] run opendialogue 4_badges_shop_interaction @s
+execute as @s[x=-1611,y=57,z=-843,distance=..6,scores={Sneaking=0,Temp=5..}] run opendialogue 5_badges_shop_interaction @s
+
+#Coumarine City
+execute as @s[x=-1018,y=89,z=-684,distance=..6,scores={Sneaking=0,Temp=0}] run opendialogue 0_badges_shop_interaction @s
+execute as @s[x=-1018,y=89,z=-684,distance=..6,scores={Sneaking=0,Temp=1}] run opendialogue 1_badges_shop_interaction @s
+execute as @s[x=-1018,y=89,z=-684,distance=..6,scores={Sneaking=0,Temp=2}] run opendialogue 2_badges_shop_interaction @s
+execute as @s[x=-1018,y=89,z=-684,distance=..6,scores={Sneaking=0,Temp=3}] run opendialogue 3_badges_shop_interaction @s
+execute as @s[x=-1018,y=89,z=-684,distance=..6,scores={Sneaking=0,Temp=4}] run opendialogue 4_badges_shop_interaction @s
+execute as @s[x=-1018,y=89,z=-684,distance=..6,scores={Sneaking=0,Temp=5..}] run opendialogue 5_badges_shop_interaction @s
