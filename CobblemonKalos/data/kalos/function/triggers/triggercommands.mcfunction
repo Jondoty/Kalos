@@ -148,6 +148,16 @@ execute as @s[scores={TriggerCommand=81}] run tp @s 92 101 -399 90 0
 execute as @s[scores={TriggerCommand=37..81}] run opendialogue taxi_traveled @s
 
 
+#Looker Chapter Titles
+execute as @s[scores={TriggerCommand=90}] run effect give @s minecraft:blindness 5 1 true
+execute as @s[scores={TriggerCommand=90}] run title @s times 20 100 20
+execute as @s[scores={TriggerCommand=90}] run title @s subtitle {"text":"That Man's a Real...Looker"}
+execute as @s[scores={TriggerCommand=90}] run title @s title {"text":"Chapter 1"}
+execute as @s[scores={TriggerCommand=90}] run advancement grant @s only kalos:looker0
+execute as @s[scores={TriggerCommand=90}] run function kalos:triggers/stopsound
+execute as @s[scores={TriggerCommand=90}] run playsound lookerchapter record @s[tag=!RadioOff] ~ ~ ~ 1 1 1
+execute as @s[scores={TriggerCommand=90}] run scoreboard players set @s[tag=!RadioOff] MusicCooldown 10
+
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #100-300, shopkeeper based triggers
 

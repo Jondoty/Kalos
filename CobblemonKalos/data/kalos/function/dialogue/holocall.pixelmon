@@ -67,49 +67,6 @@ tag @a[scores={HoloCall=1,HoloSelect=1..,TalkTime=30..}] add EndCall
 #tellraw @a {"text":"<Lysandre> I'm sorry, those of you who are not members of Team Flare, but this is adieu to you all."}
 
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Call 13 - Looker post-Pokemon League
-
-#execute as @a[x=-188,y=101,z=-639,distance=..100,tag=!Call13,score_HoloCall=0,score_TalkTime=0,score_PokemonLeague_min=1] ~ ~ ~ scoreboard players set @s[tag=Dialogue163] HoloCall 13
-
-#Title and ring of incoming call
-title @a[scores={HoloSelect=0,HoloCall=13},tag=!Call13,x=-181,y=101,z=-390,distance=..395] actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
-execute as @a[scores={HoloSelect=0,HoloCall=13},tag=!Call13,x=-181,y=101,z=-390,distance=..395] run playsound minecraft:block.note.chime ambient @s ~ ~ ~ 10 1
-
-
-replaceitem entity @a[scores={HoloSelect=1,HoloCall=13},tag=!Call13,tag=!Replaced] hotbar.0 minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:1s}
-replaceitem entity @a[scores={HoloSelect=2,HoloCall=13},tag=!Call13,tag=!Replaced] hotbar.1 minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:1s}
-replaceitem entity @a[scores={HoloSelect=3,HoloCall=13},tag=!Call13,tag=!Replaced] hotbar.2 minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:1s}
-replaceitem entity @a[scores={HoloSelect=4,HoloCall=13},tag=!Call13,tag=!Replaced] hotbar.3 minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:1s}
-replaceitem entity @a[scores={HoloSelect=5,HoloCall=13},tag=!Call13,tag=!Replaced] hotbar.4 minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:1s}
-replaceitem entity @a[scores={HoloSelect=6,HoloCall=13},tag=!Call13,tag=!Replaced] hotbar.5 minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:1s}
-replaceitem entity @a[scores={HoloSelect=7,HoloCall=13},tag=!Call13,tag=!Replaced] hotbar.6 minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:1s}
-replaceitem entity @a[scores={HoloSelect=8,HoloCall=13},tag=!Call13,tag=!Replaced] hotbar.7 minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:1s}
-replaceitem entity @a[scores={HoloSelect=9,HoloCall=13},tag=!Call13,tag=!Replaced] hotbar.8 minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:1s}
-replaceitem entity @a[scores={HoloSelect=106,HoloCall=13},tag=!Call13,tag=!Replaced] weapon.offhand minecraft:carrot_on_a_stick{display:{Lore:["A device that allows users","to receive hologram clips.","","It is also used to listen","to music while in your off-hand."]},HideFlags:6,Unbreakable:1,Damage:1s}
-
-tag @a[scores={HoloSelect=1..,HoloCall=13},tag=!Call13,tag=!Replaced,nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",Damage:1s}]}] add Replaced
-
-scoreboard players add @a[scores={HoloCall=13,HoloSelect=1..},tag=!Call13] TalkTime 1
-
-execute as @a[scores={TalkTime=1,HoloSelect=1..,HoloCall=13},tag=!Call13] run scoreboard players set @s click 1
-tellraw @a[scores={TalkTime=3,HoloSelect=1..,HoloCall=13},tag=!Call13] ["",{"text":"<"},{"text":"...","color":"gray"},{"text":"> Ahem... "},{"selector":"@s"},{"text":". Please excuse me. I only need a moment. Or perhaps three."}]
-tellraw @a[scores={TalkTime=13,HoloSelect=1..,HoloCall=13},tag=!Call13] ["",{"text":"<"},{"text":"...","color":"gray"},{"text":"> There is something I really need to talk about with you. Please come to the Looker Bureau."}]
-tellraw @a[scores={TalkTime=23,HoloSelect=1..,HoloCall=13},tag=!Call13] ["",{"text":"<"},{"text":"...","color":"gray"},{"text":"> The building is close to Rouge Plaza, South of the Route 14 gate."}]
-tellraw @a[scores={TalkTime=30,HoloSelect=1..,HoloCall=13},tag=!Call13] ["",{"text":"<"},{"text":"...","color":"gray"},{"text":"> I can't say any more right now. I will expect to see you soon."}]
-
-
-#Blinds player
-
-execute as @a[scores={TalkTime=43,HoloSelect=1..,HoloCall=13},tag=!Call13] run effect give @s minecraft:blindness 5 1 true
-
-execute as @a[scores={TalkTime=41,HoloSelect=1..,HoloCall=13},tag=!Call13] run scoreboard players set @s click 1
-execute as @a[scores={TalkTime=41,HoloSelect=1..,HoloCall=13},tag=!Call13] run title @s times 20 100 20
-execute as @a[scores={TalkTime=41,HoloSelect=1..,HoloCall=13},tag=!Call13] run title @s subtitle {"text":"That Man's a Real...Looker"}
-execute as @a[scores={TalkTime=41,HoloSelect=1..,HoloCall=13},tag=!Call13] run title @s title {"text":"Chapter 1"}
-execute as @a[scores={TalkTime=41,HoloSelect=1..,HoloCall=13},tag=!Call13] run advancement grant @s only kalos:looker0
-
-tag @a[scores={TalkTime=43..,HoloCall=13},tag=!Call13] add EndCall
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

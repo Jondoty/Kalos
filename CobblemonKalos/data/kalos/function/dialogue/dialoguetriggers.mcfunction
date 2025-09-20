@@ -610,6 +610,26 @@ execute as @s[x=1254,y=107,z=-307,distance=..20,tag=Dialogue162,tag=!Dialogue163
 execute as @s[x=-492,y=101,z=261,distance=..10,scores={PokemonLeague=1..},tag=!Dialogue164] unless entity @e[x=-495,y=101,z=256,dy=3,type=cobblemon:npc] run npcspawnat -495 101 256 lumiose_diantha
 
 
+#Looker First Dialogue after answering call
+execute as @s[x=-176,y=101,z=387,distance=..15,tag=Call13,tag=!Dialogue173] unless entity @e[x=-176,y=101,z=387,dy=3,type=cobblemon:npc] run npcspawnat -176 101 387 looker_dialogue173
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #-----------------------------------------------------------
 #Sets up legendary Pokemon
 
@@ -749,6 +769,20 @@ execute as @s[x=1349,y=108,z=-173,distance=..20,tag=Dialogue134,tag=!Call12] unl
 execute as @s[x=1349,y=108,z=-173,distance=..20,tag=Dialogue134,tag=!Call12] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
 
 execute as @s[x=1349,y=108,z=-173,distance=..20,tag=Dialogue134,tag=!Call12,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue sycamore_call12 @s
+
+
+#Call 13 - Looker post-game
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call13,scores={PokemonLeague=1..}] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run playsound minecraft:block.note_block.chime ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call13,scores={PokemonLeague=1..}] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
+
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call13,scores={PokemonLeague=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue looker_call13 @s
+
+
+
+
+
+
+
 
 
 #Battle Maison Traienr Respawns
