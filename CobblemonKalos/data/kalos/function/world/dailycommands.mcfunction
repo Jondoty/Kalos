@@ -18,6 +18,13 @@ tag @s remove YachePickup
 tag @s remove KasibPickup
 tag @s remove FigyPickup
 
+
+#Resets daily Cafe Pokedex additions
+tag @s remove DailyDex1
+tag @s remove DailyDex2
+tag @s remove DailyDex3
+
+
 #Day of the Week counter
 scoreboard players add @e[x=-687,y=100,z=1388,dy=4,type=armor_stand] Weekday 1
 scoreboard players set @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=8..}] Weekday 1

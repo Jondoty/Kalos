@@ -184,6 +184,70 @@ execute as @s[x=-176,y=102,z=380,distance=..5,tag=Dialogue173,tag=!Dialogue175] 
 
 
 
+#-------------------------------------------------------------
+#Cafe NPCs talking about Pokemon
+
+#Tags which NPC the player is talking to
+scoreboard players set @s Temp 0
+
+#Counter NPCS (gentleman)
+execute as @s[x=-2073,y=85,z=-177,distance=..5] run scoreboard players add @s Temp 1
+
+#Balcony NPCs (rich man)
+execute as @s[x=-2055,y=85,z=-165,distance=..5] run scoreboard players add @s Temp 2
+
+#Terrace NPCs (lass)
+execute as @s[x=-2073,y=85,z=-187,distance=..5] run scoreboard players add @s Temp 3
+
+
+#Rolls for talking about a random species
+execute if entity @s[scores={Temp=1..}] run scoreboard players set @e[x=-687,y=100,z=1376,dx=2,dy=4,type=armor_stand] rng 0
+execute if entity @s[scores={Temp=1..}] run scoreboard players add @e[sort=random,limit=1,x=-687,y=100,z=1376,dx=2,dy=4] rng 1
+execute if entity @s[scores={Temp=1..}] run scoreboard players add @e[sort=random,limit=1,x=-687,y=100,z=1376,dx=2,dy=4] rng 2
+execute if entity @s[scores={Temp=1..}] run scoreboard players add @e[sort=random,limit=1,x=-687,y=100,z=1376,dx=2,dy=4] rng 4
+execute if entity @s[scores={Temp=1..}] run scoreboard players add @e[sort=random,limit=1,x=-687,y=100,z=1376,dx=2,dy=4] rng 8
+
+scoreboard players operation @s[scores={Temp=1..}] rng = @e[x=-687,y=100,z=1376,dy=3,type=armor_stand] rng
+
+
+#Opens dialogue for Counter NPCs
+execute as @s[tag=!DailyDex1,scores={Temp=1,rng=0}] run opendialogue cafedex_gentleman_aron @s
+execute as @s[tag=!DailyDex1,scores={Temp=1,rng=1}] run opendialogue cafedex_gentleman_nidoqueen @s
+execute as @s[tag=!DailyDex1,scores={Temp=1,rng=2}] run opendialogue cafedex_gentleman_nidoking @s
+execute as @s[tag=!DailyDex1,scores={Temp=1,rng=3}] run opendialogue cafedex_gentleman_hitmonlee @s
+execute as @s[tag=!DailyDex1,scores={Temp=1,rng=4}] run opendialogue cafedex_gentleman_hitmonchan @s
+execute as @s[tag=!DailyDex1,scores={Temp=1,rng=5}] run opendialogue cafedex_gentleman_staryu @s
+execute as @s[tag=!DailyDex1,scores={Temp=1,rng=6}] run opendialogue cafedex_gentleman_porygon @s
+execute as @s[tag=!DailyDex1,scores={Temp=1,rng=7}] run opendialogue cafedex_gentleman_togepi @s
+execute as @s[tag=!DailyDex1,scores={Temp=1,rng=8}] run opendialogue cafedex_gentleman_dunsparce @s
+execute as @s[tag=!DailyDex1,scores={Temp=1,rng=9}] run opendialogue cafedex_gentleman_hitmontop @s
+execute as @s[tag=!DailyDex1,scores={Temp=1,rng=10}] run opendialogue cafedex_gentleman_elekid @s
+execute as @s[tag=!DailyDex1,scores={Temp=1,rng=11}] run opendialogue cafedex_gentleman_elgyem @s
+execute as @s[tag=!DailyDex1,scores={Temp=1,rng=12}] run opendialogue cafedex_gentleman_larvitar @s
+execute as @s[tag=!DailyDex1,scores={Temp=1,rng=13}] run opendialogue cafedex_gentleman_linoone @s
+execute as @s[tag=!DailyDex1,scores={Temp=1,rng=14}] run opendialogue cafedex_gentleman_lotad @s
+execute as @s[tag=!DailyDex1,scores={Temp=1,rng=15}] run opendialogue cafedex_gentleman_masquerain @s
+
+execute as @s[tag=DailyDex1,scores={Temp=1}] run opendialogue cafedex_gentleman_talked @s
+
+
+#Balcony NPCs
+
+
+
+
+#Terrace NPCs
+
+
+
+
+
+tag @s[scores={Temp=1}] add DailyDex1
+tag @s[scores={Temp=2}] add DailyDex2
+tag @s[scores={Temp=3}] add DailyDex3
+
+#-------------------------------------------------------------
+
 
 advancement revoke @s only kalos:click/npcs
 
