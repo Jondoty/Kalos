@@ -149,9 +149,6 @@ execute as @a[scores={TalkTrigger=25}] run scoreboard players set @s TalkTrigger
 
 #The Looker's Notebook - 26
 
-execute as @a[scores={TalkTrigger=26,TalkTime=0},tag=!Dialogue173] run tellraw @s[tag=!Dialogue175] {"text":"It's the Looker's notebook!","italic":true,"color":"gray"}
-execute as @a[scores={TalkTrigger=26,TalkTime=0},tag=Dialogue173] run tellraw @s[tag=!Dialogue175] ["",{"text":"LOOKER\u2019S NOTEBOOK","italic":true},{"text":"\nLooker Ticket Locations\n1. In the Pokémon Center next to Magenta Plaza\n2. In Centrico Plaza, in the tower illuminating the city\n3. On Vernal Avenue, at a shop selling medicines\n4. On North Boulevard, 1F, in a place where people rest\n5. On North Boulevard, 1F, in a place filled with art"}]
-
 execute as @a[scores={TalkTrigger=26,TalkTime=0},tag=Dialogue176] run tellraw @s[tag=!Dialogue178] ["",{"text":"LOOKER\u2019S NOTEBOOK","italic":true},{"text":"\nClient: A rep from a Lumiose City mothers\u2019 group \nDetails: \u201cKids in Lumiose City seem to be spending a lot of time in back alleys recently.\u201d\n\u201cWhat are they up to in these shadowy, suspicious places? Inquiring mothers want to know!\u201d\n\u201cMy son is about to take the entrance exam for an elite school for future Ace Trainers!\u201d\n\u201cI can\u2019t have him do anything stupid and get a black mark on his academic record!\u201d\n\u201cYou must do something to make kids stop hanging out in those suspicious alleys!\u201d \nReward: Enough dough to last for a week"}]
 execute as @a[scores={TalkTrigger=26,TalkTime=0},tag=Dialogue176] run tellraw @s[tag=Dialogue178] {"text":"It's the Looker's notebook!","italic":true,"color":"gray"}
 

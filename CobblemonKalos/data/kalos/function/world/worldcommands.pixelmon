@@ -332,10 +332,6 @@ scoreboard players set @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMai
 #----------
 #Holo Caster Calls
 
-#Call 13
-#Looker post-Mega Upgrade in Lumiose City
-execute as @a[x=-188,y=101,z=-639,distance=..100,tag=!Call13,scores={TalkTime=0,HoloCall=0,PokemonLeague=1..},tag=Dialogue163] run scoreboard players set @s HoloCall 13
-
 #Call 14
 #Lumiose City Looker Chapter 2 Start
 execute as @a[x=-181,y=101,z=-390,distance=..395,tag=!Call14,scores={TalkTime=0,HoloCall=0}] run execute as @s[tag=!LookerCooldown,tag=Dialogue175] run scoreboard players set @s HoloCall 14
@@ -467,10 +463,6 @@ scoreboard players set @a[x=-444,y=101,z=206,distance=..6,tag=Dialogue168,scores
 
 #----------
 #Looker Chapters
-
-#Swaps outdoor sign name
-execute at @p[x=-188,y=101,z=-639,distance=..30,tag=Call13] run execute as @e[x=-188,y=100,z=-639,dy=3,type=armor_stand] run data modify entity @s {CustomName:"Looker Bureau"}
-execute at @p[x=-188,y=101,z=-639,distance=..30,tag=!Call13] run execute as @e[x=-188,y=100,z=-639,dy=3,type=armor_stand] run data modify entity @s {CustomName:"Vacant"}
 
 #Looker Ticket Particles
 execute as @e[type=armor_stand,tag=LookerTicket] run tag @a[distance=..5,tag=Dialogue174] remove Dialogue174

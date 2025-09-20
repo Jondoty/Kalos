@@ -610,6 +610,10 @@ execute as @s[x=1254,y=107,z=-307,distance=..20,tag=Dialogue162,tag=!Dialogue163
 execute as @s[x=-492,y=101,z=261,distance=..10,scores={PokemonLeague=1..},tag=!Dialogue164] unless entity @e[x=-495,y=101,z=256,dy=3,type=cobblemon:npc] run npcspawnat -495 101 256 lumiose_diantha
 
 
+#Swaps out Looker Bureau sign outside
+execute if entity @p[x=-188,y=101,z=-639,distance=..50,tag=Call13] run data merge entity @e[x=-188,y=101,z=-639,distance=..3,type=armor_stand,limit=1] {CustomName:'"Looker Bureau"'}
+execute if entity @p[x=-188,y=101,z=-639,distance=..50,tag=!Call13] run data merge entity @e[x=-188,y=101,z=-639,distance=..3,type=armor_stand,limit=1] {CustomName:'"Vacant"'}
+
 #Looker First Dialogue after answering call
 execute as @s[x=-176,y=101,z=387,distance=..15,tag=Call13,tag=!Dialogue173] unless entity @e[x=-176,y=101,z=387,dy=3,type=cobblemon:npc] run npcspawnat -176 101 387 looker_dialogue173
 
