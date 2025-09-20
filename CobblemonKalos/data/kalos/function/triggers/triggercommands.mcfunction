@@ -158,6 +158,49 @@ execute as @s[scores={TriggerCommand=90}] run function kalos:triggers/stopsound
 execute as @s[scores={TriggerCommand=90}] run playsound lookerchapter record @s[tag=!RadioOff] ~ ~ ~ 1 1 1
 execute as @s[scores={TriggerCommand=90}] run scoreboard players set @s[tag=!RadioOff] MusicCooldown 10
 
+execute as @s[scores={TriggerCommand=91}] run effect give @s minecraft:blindness 5 1 true
+execute as @s[scores={TriggerCommand=91}] run title @s times 20 100 20
+execute as @s[scores={TriggerCommand=91}] run title @s subtitle {"text":"In the Back Alleys"}
+execute as @s[scores={TriggerCommand=91}] run title @s title {"text":"Chapter 2"}
+execute as @s[scores={TriggerCommand=91}] run function kalos:triggers/stopsound
+execute as @s[scores={TriggerCommand=91}] run playsound lookerchapter record @s[tag=!RadioOff] ~ ~ ~ 1 1 1
+execute as @s[scores={TriggerCommand=91}] run scoreboard players set @s[tag=!RadioOff] MusicCooldown 10
+
+execute as @s[scores={TriggerCommand=92}] run effect give @s minecraft:blindness 5 1 true
+execute as @s[scores={TriggerCommand=92}] run title @s times 20 100 20
+execute as @s[scores={TriggerCommand=92}] run title @s subtitle {"text":"Detective, Tourist, Gang"}
+execute as @s[scores={TriggerCommand=92}] run title @s title {"text":"Chapter 3"}
+execute as @s[scores={TriggerCommand=92}] run function kalos:triggers/stopsound
+execute as @s[scores={TriggerCommand=92}] run playsound lookerchapter record @s[tag=!RadioOff] ~ ~ ~ 1 1 1
+execute as @s[scores={TriggerCommand=92}] run scoreboard players set @s[tag=!RadioOff] MusicCooldown 10
+
+execute as @s[scores={TriggerCommand=93}] run effect give @s minecraft:blindness 5 1 true
+execute as @s[scores={TriggerCommand=93}] run title @s times 20 100 20
+execute as @s[scores={TriggerCommand=93}] run title @s subtitle {"text":"An Unforgivable Crime"}
+execute as @s[scores={TriggerCommand=93}] run title @s title {"text":"Chapter 4"}
+execute as @s[scores={TriggerCommand=93}] run function kalos:triggers/stopsound
+execute as @s[scores={TriggerCommand=93}] run playsound lookerchapter record @s[tag=!RadioOff] ~ ~ ~ 1 1 1
+execute as @s[scores={TriggerCommand=93}] run scoreboard players set @s[tag=!RadioOff] MusicCooldown 10
+
+execute as @s[scores={TriggerCommand=94}] run effect give @s minecraft:blindness 5 1 true
+execute as @s[scores={TriggerCommand=94}] run title @s times 20 100 20
+execute as @s[scores={TriggerCommand=94}] run title @s subtitle {"text":"A Fiery Woman and the Truth Revealed"}
+execute as @s[scores={TriggerCommand=94}] run title @s title {"text":"Chapter 5"}
+execute as @s[scores={TriggerCommand=94}] run function kalos:triggers/stopsound
+execute as @s[scores={TriggerCommand=94}] run playsound lookerchapter record @s[tag=!RadioOff] ~ ~ ~ 1 1 1
+execute as @s[scores={TriggerCommand=94}] run scoreboard players set @s[tag=!RadioOff] MusicCooldown 10
+
+execute as @s[scores={TriggerCommand=95}] run effect give @s minecraft:blindness 5 1 true
+execute as @s[scores={TriggerCommand=95}] run title @s times 20 100 20
+execute as @s[scores={TriggerCommand=95}] run title @s subtitle {"text":"Here's Lookin' at You, Kid"}
+execute as @s[scores={TriggerCommand=95}] run title @s title {"text":"Final Chapter"}
+execute as @s[scores={TriggerCommand=95}] run function kalos:triggers/stopsound
+execute as @s[scores={TriggerCommand=95}] run playsound lookerchapter record @s[tag=!RadioOff] ~ ~ ~ 1 1 1
+execute as @s[scores={TriggerCommand=95}] run scoreboard players set @s[tag=!RadioOff] MusicCooldown 10
+
+
+
+
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #100-300, shopkeeper based triggers
 
