@@ -615,11 +615,19 @@ execute if entity @p[x=-188,y=101,z=-639,distance=..50,tag=Call13] run data merg
 execute if entity @p[x=-188,y=101,z=-639,distance=..50,tag=!Call13] run data merge entity @e[x=-188,y=101,z=-639,distance=..3,type=armor_stand,limit=1] {CustomName:'"Vacant"'}
 
 #Looker First Dialogue after answering call
-execute as @s[x=-176,y=101,z=387,distance=..15,tag=Call13,tag=!Dialogue173] unless entity @e[x=-176,y=101,z=387,dy=3,type=cobblemon:npc] run npcspawnat -176 101 387 looker_dialogue173
+execute as @s[x=-176,y=101,z=387,distance=..15,tag=Call13,tag=!Dialogue175] unless entity @e[x=-176,y=101,z=387,dy=3,type=cobblemon:npc] run npcspawnat -176 101 387 looker_dialogue173
+execute as @s[x=-176,y=101,z=387,distance=..15,tag=Dialogue175] run tp @e[x=-176,y=101,z=387,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
 
+#Looker Ticket Particles
+execute as @s[x=-25,y=77,z=348,distance=..30,tag=Dialogue173,tag=!TicketMuseum] run particle minecraft:firework -25 77 348 1 2 1 0.1 2 normal @a[tag=!TicketMuseum]
+execute as @s[x=-433,y=101,z=335,distance=..30,tag=Dialogue173,tag=!TicketHotel] run particle minecraft:firework -433 101 335 1 2 1 0.1 2 normal @a[tag=!TicketHotel]
+execute as @s[x=-286,y=101,z=217,distance=..30,tag=Dialogue173,tag=!TicketHerb] run particle minecraft:firework -286 101 217 1 2 1 0.1 2 normal @a[tag=!TicketHerb]
+execute as @s[x=-1833,y=100,z=-1694,distance=..30,tag=Dialogue173,tag=!TicketGym] run particle minecraft:firework -1833 100 -1694 1 2 1 0.1 2 normal @a[tag=!TicketGym]
+execute as @s[x=-439,y=101,z=439,distance=..30,tag=Dialogue173,tag=!TicketCenter] run particle minecraft:firework -439 101 439 1 2 1 0.1 2 normal @a[tag=!TicketCenter]
 
-
+#Looker after finding all tickets
+execute as @s[x=-176,y=101,z=387,distance=..6,scores={LookerTickets=5..},tag=!Dialogue175] run opendialogue looker_dialogue175 @s
 
 
 

@@ -283,7 +283,66 @@ execute as @s[x=-349,y=111,z=87,distance=..5,tag=!ItemLoot70] run tellraw @s {"t
 execute as @s[x=-349,y=111,z=87,distance=..5,tag=!ItemLoot70] run playsound itemget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-349,y=111,z=87,distance=..5,tag=!ItemLoot70] run tag @s add ItemLoot70
 
+#----------------
+
 #Looker tickets
+#Opens a dialogue based on how many tickets the player has collected after finding
+execute as @s[x=-25,y=77,z=348,distance=..5,tag=Dialogue173,tag=TicketMuseum] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
+execute as @s[x=-25,y=77,z=348,distance=..5,tag=Dialogue173,tag=!TicketMuseum] run give @s ghast_tear[custom_name='["",{"text":"Looker Ticket","italic":false,"color":"gold"}]',lore=['["",{"text":"A ticket that was handmade","italic":false}]','["",{"text":"by Looker. It\'s decorated with","italic":false}]','["",{"text":"a liberal amount of glittery paint.","italic":false}]']]
+execute as @s[x=-25,y=77,z=348,distance=..5,tag=Dialogue173,tag=!TicketMuseum] run scoreboard players add @s LookerTickets 1
+execute as @s[x=-25,y=77,z=348,distance=..5,tag=Dialogue173,tag=!TicketMuseum] run playsound itemget ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-25,y=77,z=348,distance=..5,tag=Dialogue173,tag=!TicketMuseum,scores={LookerTickets=1}] run opendialogue looker_tickets1 @s
+execute as @s[x=-25,y=77,z=348,distance=..5,tag=Dialogue173,tag=!TicketMuseum,scores={LookerTickets=2}] run opendialogue looker_tickets2 @s
+execute as @s[x=-25,y=77,z=348,distance=..5,tag=Dialogue173,tag=!TicketMuseum,scores={LookerTickets=3}] run opendialogue looker_tickets3 @s
+execute as @s[x=-25,y=77,z=348,distance=..5,tag=Dialogue173,tag=!TicketMuseum,scores={LookerTickets=4}] run opendialogue looker_tickets4 @s
+execute as @s[x=-25,y=77,z=348,distance=..5,tag=Dialogue173,tag=!TicketMuseum,scores={LookerTickets=5}] run opendialogue looker_tickets5 @s
+execute as @s[x=-25,y=77,z=348,distance=..5,tag=Dialogue173,tag=!TicketMuseum] run tag @s add TicketMuseum
+
+execute as @s[x=-433,y=101,z=335,distance=..5,tag=Dialogue173,tag=TicketHotel] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
+execute as @s[x=-433,y=101,z=335,distance=..5,tag=Dialogue173,tag=!TicketHotel] run give @s ghast_tear[custom_name='["",{"text":"Looker Ticket","italic":false,"color":"gold"}]',lore=['["",{"text":"A ticket that was handmade","italic":false}]','["",{"text":"by Looker. It\'s decorated with","italic":false}]','["",{"text":"a liberal amount of glittery paint.","italic":false}]']]
+execute as @s[x=-433,y=101,z=335,distance=..5,tag=Dialogue173,tag=!TicketHotel] run scoreboard players add @s LookerTickets 1
+execute as @s[x=-433,y=101,z=335,distance=..5,tag=Dialogue173,tag=!TicketHotel] run playsound itemget ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-433,y=101,z=335,distance=..5,tag=Dialogue173,tag=!TicketHotel,scores={LookerTickets=1}] run opendialogue looker_tickets1 @s
+execute as @s[x=-433,y=101,z=335,distance=..5,tag=Dialogue173,tag=!TicketHotel,scores={LookerTickets=2}] run opendialogue looker_tickets2 @s
+execute as @s[x=-433,y=101,z=335,distance=..5,tag=Dialogue173,tag=!TicketHotel,scores={LookerTickets=3}] run opendialogue looker_tickets3 @s
+execute as @s[x=-433,y=101,z=335,distance=..5,tag=Dialogue173,tag=!TicketHotel,scores={LookerTickets=4}] run opendialogue looker_tickets4 @s
+execute as @s[x=-433,y=101,z=335,distance=..5,tag=Dialogue173,tag=!TicketHotel,scores={LookerTickets=5}] run opendialogue looker_tickets5 @s
+execute as @s[x=-433,y=101,z=335,distance=..5,tag=Dialogue173,tag=!TicketHotel] run tag @s add TicketHotel
+
+execute as @s[x=-286,y=101,z=217,distance=..5,tag=Dialogue173,tag=TicketHerb] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
+execute as @s[x=-286,y=101,z=217,distance=..5,tag=Dialogue173,tag=!TicketHerb] run give @s ghast_tear[custom_name='["",{"text":"Looker Ticket","italic":false,"color":"gold"}]',lore=['["",{"text":"A ticket that was handmade","italic":false}]','["",{"text":"by Looker. It\'s decorated with","italic":false}]','["",{"text":"a liberal amount of glittery paint.","italic":false}]']]
+execute as @s[x=-286,y=101,z=217,distance=..5,tag=Dialogue173,tag=!TicketHerb] run scoreboard players add @s LookerTickets 1
+execute as @s[x=-286,y=101,z=217,distance=..5,tag=Dialogue173,tag=!TicketHerb] run playsound itemget ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-286,y=101,z=217,distance=..5,tag=Dialogue173,tag=!TicketHerb,scores={LookerTickets=1}] run opendialogue looker_tickets1 @s
+execute as @s[x=-286,y=101,z=217,distance=..5,tag=Dialogue173,tag=!TicketHerb,scores={LookerTickets=2}] run opendialogue looker_tickets2 @s
+execute as @s[x=-286,y=101,z=217,distance=..5,tag=Dialogue173,tag=!TicketHerb,scores={LookerTickets=3}] run opendialogue looker_tickets3 @s
+execute as @s[x=-286,y=101,z=217,distance=..5,tag=Dialogue173,tag=!TicketHerb,scores={LookerTickets=4}] run opendialogue looker_tickets4 @s
+execute as @s[x=-286,y=101,z=217,distance=..5,tag=Dialogue173,tag=!TicketHerb,scores={LookerTickets=5}] run opendialogue looker_tickets5 @s
+execute as @s[x=-286,y=101,z=217,distance=..5,tag=Dialogue173,tag=!TicketHerb] run tag @s add TicketHerb
+
+execute as @s[x=-1833,y=100,z=-1694,distance=..5,tag=Dialogue173,tag=TicketGym] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
+execute as @s[x=-1833,y=100,z=-1694,distance=..5,tag=Dialogue173,tag=!TicketGym] run give @s ghast_tear[custom_name='["",{"text":"Looker Ticket","italic":false,"color":"gold"}]',lore=['["",{"text":"A ticket that was handmade","italic":false}]','["",{"text":"by Looker. It\'s decorated with","italic":false}]','["",{"text":"a liberal amount of glittery paint.","italic":false}]']]
+execute as @s[x=-1833,y=100,z=-1694,distance=..5,tag=Dialogue173,tag=!TicketGym] run scoreboard players add @s LookerTickets 1
+execute as @s[x=-1833,y=100,z=-1694,distance=..5,tag=Dialogue173,tag=!TicketGym] run playsound itemget ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-1833,y=100,z=-1694,distance=..5,tag=Dialogue173,tag=!TicketGym,scores={LookerTickets=1}] run opendialogue looker_tickets1 @s
+execute as @s[x=-1833,y=100,z=-1694,distance=..5,tag=Dialogue173,tag=!TicketGym,scores={LookerTickets=2}] run opendialogue looker_tickets2 @s
+execute as @s[x=-1833,y=100,z=-1694,distance=..5,tag=Dialogue173,tag=!TicketGym,scores={LookerTickets=3}] run opendialogue looker_tickets3 @s
+execute as @s[x=-1833,y=100,z=-1694,distance=..5,tag=Dialogue173,tag=!TicketGym,scores={LookerTickets=4}] run opendialogue looker_tickets4 @s
+execute as @s[x=-1833,y=100,z=-1694,distance=..5,tag=Dialogue173,tag=!TicketGym,scores={LookerTickets=5}] run opendialogue looker_tickets5 @s
+execute as @s[x=-1833,y=100,z=-1694,distance=..5,tag=Dialogue173,tag=!TicketGym] run tag @s add TicketGym
+
+execute as @s[x=-439,y=101,z=439,distance=..5,tag=Dialogue173,tag=TicketCenter] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
+execute as @s[x=-439,y=101,z=439,distance=..5,tag=Dialogue173,tag=!TicketCenter] run give @s ghast_tear[custom_name='["",{"text":"Looker Ticket","italic":false,"color":"gold"}]',lore=['["",{"text":"A ticket that was handmade","italic":false}]','["",{"text":"by Looker. It\'s decorated with","italic":false}]','["",{"text":"a liberal amount of glittery paint.","italic":false}]']]
+execute as @s[x=-439,y=101,z=439,distance=..5,tag=Dialogue173,tag=!TicketCenter] run scoreboard players add @s LookerTickets 1
+execute as @s[x=-439,y=101,z=439,distance=..5,tag=Dialogue173,tag=!TicketCenter] run playsound itemget ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-439,y=101,z=439,distance=..5,tag=Dialogue173,tag=!TicketCenter,scores={LookerTickets=1}] run opendialogue looker_tickets1 @s
+execute as @s[x=-439,y=101,z=439,distance=..5,tag=Dialogue173,tag=!TicketCenter,scores={LookerTickets=2}] run opendialogue looker_tickets2 @s
+execute as @s[x=-439,y=101,z=439,distance=..5,tag=Dialogue173,tag=!TicketCenter,scores={LookerTickets=3}] run opendialogue looker_tickets3 @s
+execute as @s[x=-439,y=101,z=439,distance=..5,tag=Dialogue173,tag=!TicketCenter,scores={LookerTickets=4}] run opendialogue looker_tickets4 @s
+execute as @s[x=-439,y=101,z=439,distance=..5,tag=Dialogue173,tag=!TicketCenter,scores={LookerTickets=5}] run opendialogue looker_tickets5 @s
+execute as @s[x=-439,y=101,z=439,distance=..5,tag=Dialogue173,tag=!TicketCenter] run tag @s add TicketCenter
+
+#----------------
 
 execute as @s[x=-688,y=86,z=-186,distance=..5,tag=ItemLoot76] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
 execute as @s[x=-688,y=86,z=-186,distance=..5,tag=!ItemLoot76] run give @s cobblemon:paralyze_heal

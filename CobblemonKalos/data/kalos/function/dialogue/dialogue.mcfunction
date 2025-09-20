@@ -375,6 +375,38 @@ scoreboard players set @s[scores={DialogueTrigger=167},tag=Dialogue167] TalkTime
 scoreboard players set @s[scores={DialogueTrigger=167},tag=Dialogue167] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#https://youtu.be/rrMxYkXdKC8?t=676
+#Looker after finding all 5 tickets
+#"q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s DialogueTrigger 175');",
+
+#Blinds player, keeps player in place for spectating
+execute as @s[scores={DialogueTrigger=175,TalkTime=68}] run effect give @s minecraft:blindness 5 1 true
+execute as @s[scores={DialogueTrigger=175,TalkTime=68}] run gamemode spectator @s
+execute as @s[scores={DialogueTrigger=175,TalkTime=69}] run tp @s -168 106 429 120 35
+execute as @s[scores={DialogueTrigger=175,TalkTime=70..129}] run tp @s -168 106 429 120 35
+execute as @s[scores={DialogueTrigger=175,TalkTime=68}] run function kalos:triggers/stopsound
+
+tellraw @s[scores={DialogueTrigger=175,TalkTime=74}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> ... ... ...","italic":true}]
+tellraw @s[scores={DialogueTrigger=175,TalkTime=81}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> To complete my patented training course, \u201cThe Looker Method: Yes, even YOU can become a detective in five easy steps!\u201c in so little time and with such ease...","italic":true}]
+tellraw @s[scores={DialogueTrigger=175,TalkTime=93}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> "},{"selector":"@s"},{"text":", you truly are a masterful Trainer.","italic":true}]
+tellraw @s[scores={DialogueTrigger=175,TalkTime=101}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> The big case on which I have been at work... It is a certainty.","italic":true}]
+tellraw @s[scores={DialogueTrigger=175,TalkTime=110}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> We will crack this case together. And, as for what is past, old friend, be patient.","italic":true}]
+tellraw @s[scores={DialogueTrigger=175,TalkTime=121}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Justice will be served--enough for all!","italic":true}]
+
+#Blinds player, tp to front of Beaureu
+execute as @s[scores={DialogueTrigger=175,TalkTime=129}] run effect give @s minecraft:blindness 5 1 true
+execute as @s[scores={DialogueTrigger=175,TalkTime=130}] run gamemode adventure @s
+execute as @s[scores={DialogueTrigger=175,TalkTime=130}] run tp @s -190 102 -634 -90 ~
+execute as @s[scores={DialogueTrigger=175,TalkTime=131}] run function kalos:triggers/stopsound
+execute as @s[scores={DialogueTrigger=175,TalkTime=131}] run tag @s add LookerCooldown
+execute as @s[scores={DialogueTrigger=175,TalkTime=131}] run tag @s remove InDialogue
+execute as @s[scores={DialogueTrigger=175,TalkTime=131}] run advancement grant @s only kalos:looker1
+
+tag @s[scores={DialogueTrigger=175,TalkTime=131..}] add Dialogue175
+scoreboard players set @s[scores={DialogueTrigger=175},tag=Dialogue175] TalkTime 0
+scoreboard players set @s[scores={DialogueTrigger=175},tag=Dialogue175] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 

@@ -439,10 +439,6 @@ execute as @p[x=825,y=95,z=624,distance=..20,scores={PokemonLeague=1..}] run tp 
 
 
 
-#Dialogue 164
-#Lumiose Cafe Soleil Diantha giving Ralts
-scoreboard players set @a[x=-495,y=100,z=256,distance=..15,tag=!Dialogue164,scores={TalkTime=0,PokemonLeague=1..}] DialogueTrigger 164
-
 #Dialogue 165
 #Lumiose City Ghost Girl
 scoreboard players set @a[x=-162,y=110,z=196,dx=8,dy=5,dz=10,scores={TalkTime=0},tag=!Dialogue165] DialogueTrigger 165
@@ -463,26 +459,6 @@ scoreboard players set @a[x=-444,y=101,z=206,distance=..6,tag=Dialogue168,scores
 
 #----------
 #Looker Chapters
-
-#Looker Ticket Particles
-execute as @e[type=armor_stand,tag=LookerTicket] run tag @a[distance=..5,tag=Dialogue174] remove Dialogue174
-execute as @a[x=-25,y=77,z=348,distance=..30,tag=Dialogue173,tag=!TicketMuseum] run execute as @e[x=-25,y=76,z=348,dy=3,type=armor_stand] run particle minecraft:firework ~ ~ ~ 1 2 1 0.1 2 normal @a[tag=!TicketMuseum]
-execute as @a[x=-433,y=101,z=335,distance=..30,tag=Dialogue173,tag=!TicketHotel] run execute as @e[x=-433,y=100,z=335,dy=3,type=armor_stand] run particle minecraft:firework ~ ~ ~ 1 2 1 0.1 2 normal @a[tag=!TicketHotel]
-execute as @a[x=-286,y=101,z=217,distance=..30,tag=Dialogue173,tag=!TicketHerb] run execute as @e[x=-286,y=100,z=217,dy=3,type=armor_stand] run particle minecraft:firework ~ ~ ~ 1 2 1 0.1 2 normal @a[tag=!TicketHerb]
-execute as @a[x=-1833,y=100,z=-1694,distance=..30,tag=Dialogue173,tag=!TicketGym] run execute as @e[x=-1833,y=99,z=-1694,dy=3,type=armor_stand] run particle minecraft:firework ~ ~ ~ 1 2 1 0.1 2 normal @a[tag=!TicketGym]
-execute as @a[x=-439,y=101,z=439,distance=..30,tag=Dialogue173,tag=!TicketCenter] run execute as @e[x=-439,y=100,z=439,dy=3,type=armor_stand] run particle minecraft:firework ~ ~ ~ 1 2 1 0.1 2 normal @a[tag=!TicketCenter]
-
-#Dialogue 174
-#Looker Ticket Gives
-execute as @e[x=-25,y=76,z=348,dy=3,type=armor_stand] run execute as @a[distance=..5,scores={TalkTime=0},tag=Dialogue173] run scoreboard players set @s[tag=!TicketMuseum] DialogueTrigger 174
-execute as @e[x=-433,y=100,z=335,dy=3,type=armor_stand] run execute as @a[distance=..5,scores={TalkTime=0},tag=Dialogue173] run scoreboard players set @s[tag=!TicketHotel] DialogueTrigger 174
-execute as @e[x=-286,y=100,z=217,dy=3,type=armor_stand] run execute as @a[distance=..5,scores={TalkTime=0},tag=Dialogue173] run scoreboard players set @s[tag=!TicketHerb] DialogueTrigger 174
-execute as @e[x=-1833,y=99,z=-1694,dy=3,type=armor_stand] run execute as @a[distance=..5,scores={TalkTime=0},tag=Dialogue173] run scoreboard players set @s[tag=!TicketGym] DialogueTrigger 174
-execute as @e[x=-439,y=100,z=439,dy=3,type=armor_stand] run execute as @a[distance=..5,scores={TalkTime=0},tag=Dialogue173] run scoreboard players set @s[tag=!TicketCenter] DialogueTrigger 174
-
-#Dialogue 175
-#All Looker Tickets obtained
-scoreboard players set @a[x=-176,y=100,z=387,distance=..7,scores={TalkTime=0,LookerTickets=5..},tag=!Dialogue175] DialogueTrigger 175
 
 #Set's up Emma's first alley finding her in
 execute as @a[x=-373,y=101,z=-307,distance=..40,scores={TalkTime=0},tag=Dialogue176,tag=!Dialogue177] run tp @e[x=-504,y=220,z=1284,dy=3,type=pixelmon:npc_trainer] -375 101 -299
@@ -587,17 +563,6 @@ execute as @a[x=-295,y=32,z=297,distance=..15,scores={TalkTime=0},tag=Dialogue21
 #Dialogue 216
 #Museum artist follow-up
 execute as @a[x=-83,y=77,z=355,distance=..7,scores={TalkTime=0},tag=Dialogue214,tag=!Dialogue216] run scoreboard players set @s DialogueTrigger 216
-
-
-#----------
-
-
-
-#Dialogue 264
-#Shalour City Intriguing Stone hiker prompt
-scoreboard players set @a[x=-1563,y=84,z=-844,distance=..7,scores={TalkTime=0},tag=!Dialogue264,nbt={Inventory:[{id:"minecraft:prismarine_crystals"}]}] DialogueTrigger 264
-
-
 
 
 #---------------------------------------------------------
