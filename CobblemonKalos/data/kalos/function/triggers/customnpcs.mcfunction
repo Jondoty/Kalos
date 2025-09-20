@@ -191,13 +191,19 @@ execute as @s[x=-176,y=102,z=380,distance=..5,tag=Dialogue173,tag=!Dialogue175] 
 scoreboard players set @s Temp 0
 
 #Counter NPCS (gentleman)
-execute as @s[x=-2073,y=85,z=-177,distance=..5] run scoreboard players add @s Temp 1
+execute as @s[x=-2073,y=85,z=-174,distance=..5] run scoreboard players add @s Temp 1
+execute as @s[x=-42,y=86,z=-1524,distance=..5] run scoreboard players add @s Temp 1
+execute as @s[x=1292,y=74,z=-339,distance=..5] run scoreboard players add @s Temp 1
 
 #Balcony NPCs (rich man)
 execute as @s[x=-2055,y=85,z=-165,distance=..5] run scoreboard players add @s Temp 2
+execute as @s[x=-24,y=86,z=-1515,distance=..5] run scoreboard players add @s Temp 2
+execute as @s[x=1310,y=74,z=-331,distance=..5] run scoreboard players add @s Temp 2
 
 #Terrace NPCs (lass)
 execute as @s[x=-2073,y=85,z=-187,distance=..5] run scoreboard players add @s Temp 3
+execute as @s[x=-44,y=86,z=-1537,distance=..5] run scoreboard players add @s Temp 3
+execute as @s[x=1292,y=74,z=-352,distance=..5] run scoreboard players add @s Temp 3
 
 
 #Rolls for talking about a random species
@@ -232,12 +238,46 @@ execute as @s[tag=DailyDex1,scores={Temp=1}] run opendialogue cafedex_gentleman_
 
 
 #Balcony NPCs
+execute as @s[tag=!DailyDex2,scores={Temp=2,rng=0}] run opendialogue cafedex_richman_lotad @s
+execute as @s[tag=!DailyDex2,scores={Temp=2,rng=1}] run opendialogue cafedex_richman_masquerain @s
+execute as @s[tag=!DailyDex2,scores={Temp=2,rng=2}] run opendialogue cafedex_richman_aron @s
+execute as @s[tag=!DailyDex2,scores={Temp=2,rng=3}] run opendialogue cafedex_richman_carvanha @s
+execute as @s[tag=!DailyDex2,scores={Temp=2,rng=4}] run opendialogue cafedex_richman_kecleon @s
+execute as @s[tag=!DailyDex2,scores={Temp=2,rng=5}] run opendialogue cafedex_richman_duskull @s
+execute as @s[tag=!DailyDex2,scores={Temp=2,rng=6}] run opendialogue cafedex_richman_sealeo @s
+execute as @s[tag=!DailyDex2,scores={Temp=2,rng=7}] run opendialogue cafedex_richman_pachirisu @s
+execute as @s[tag=!DailyDex2,scores={Temp=2,rng=8}] run opendialogue cafedex_richman_buneary @s
+execute as @s[tag=!DailyDex2,scores={Temp=2,rng=9}] run opendialogue cafedex_richman_bonsly @s
+execute as @s[tag=!DailyDex2,scores={Temp=2,rng=10}] run opendialogue cafedex_richman_mimejr @s
+execute as @s[tag=!DailyDex2,scores={Temp=2,rng=11}] run opendialogue cafedex_richman_happiny @s
+execute as @s[tag=!DailyDex2,scores={Temp=2,rng=12}] run opendialogue cafedex_richman_munchlax @s
+execute as @s[tag=!DailyDex2,scores={Temp=2,rng=13}] run opendialogue cafedex_richman_patrat @s
+execute as @s[tag=!DailyDex2,scores={Temp=2,rng=14}] run opendialogue cafedex_richman_zorua @s
+execute as @s[tag=!DailyDex2,scores={Temp=2,rng=15}] run opendialogue cafedex_richman_eelektrik @s
 
+execute as @s[tag=DailyDex2,scores={Temp=2}] run opendialogue cafedex_richman_talked @s
 
 
 
 #Terrace NPCs
+execute as @s[tag=!DailyDex3,scores={Temp=3,rng=0}] run opendialogue cafedex_lass_hitmontop @s
+execute as @s[tag=!DailyDex3,scores={Temp=3,rng=1}] run opendialogue cafedex_lass_metang @s
+execute as @s[tag=!DailyDex3,scores={Temp=3,rng=2}] run opendialogue cafedex_lass_raikou @s
+execute as @s[tag=!DailyDex3,scores={Temp=3,rng=3}] run opendialogue cafedex_lass_entei @s
+execute as @s[tag=!DailyDex3,scores={Temp=3,rng=4}] run opendialogue cafedex_lass_suicune @s
+execute as @s[tag=!DailyDex3,scores={Temp=3,rng=5}] run opendialogue cafedex_lass_elgyem @s
+execute as @s[tag=!DailyDex3,scores={Temp=3,rng=6}] run opendialogue cafedex_lass_axew @s
+execute as @s[tag=!DailyDex3,scores={Temp=3,rng=7}] run opendialogue cafedex_lass_accelgor @s
+execute as @s[tag=!DailyDex3,scores={Temp=3,rng=8}] run opendialogue cafedex_lass_dedenne @s
+execute as @s[tag=!DailyDex3,scores={Temp=3,rng=9}] run opendialogue cafedex_lass_hitmonlee @s
+execute as @s[tag=!DailyDex3,scores={Temp=3,rng=10}] run opendialogue cafedex_lass_hitmonchan @s
+execute as @s[tag=!DailyDex3,scores={Temp=3,rng=11}] run opendialogue cafedex_lass_porygon @s
+execute as @s[tag=!DailyDex3,scores={Temp=3,rng=12}] run opendialogue cafedex_lass_pachirisu @s
+execute as @s[tag=!DailyDex3,scores={Temp=3,rng=13}] run opendialogue cafedex_lass_munchlax @s
+execute as @s[tag=!DailyDex3,scores={Temp=3,rng=14}] run opendialogue cafedex_lass_kecleon @s
+execute as @s[tag=!DailyDex3,scores={Temp=3,rng=15}] run opendialogue cafedex_lass_magby @s
 
+execute as @s[tag=DailyDex3,scores={Temp=3}] run opendialogue cafedex_lass_talked @s
 
 
 
