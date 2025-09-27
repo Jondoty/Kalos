@@ -1,0 +1,65 @@
+{
+    "initializationAction": [
+    ],
+    "escapeAction": [],
+    "speakers": {
+        "player": {
+            "face": "q.player.face(true);",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "player",
+            "lines": [
+                "Welcome to the Battle Chateau!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "player",
+            "lines": [
+                "For the purposes of nobility ranks, please choose a gender."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Male",
+                        "value": "male",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s Gender 1');"
+                        ]
+                    },
+                    {
+                        "text": "Female",
+                        "value": "female",
+                        "action": [
+                            "q.dialogue.close();",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s Gender 2');"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

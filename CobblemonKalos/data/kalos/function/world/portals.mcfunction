@@ -934,23 +934,22 @@ execute as @s[x=-1535,y=65,z=-54,dx=5,dy=5] run function kalos:triggers/stopsoun
 tp @s[x=-1535,y=65,z=-54,dx=5,dy=5] -1534 102 -49
 
 #Prompts the player to pick a gender if not present
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=0}] ["",{"text":"Welcome to the Battle Chateau! For the purposes of nobility ranks, please choose a gender.","italic":true,"color":"gray"},{"text":"\n["},{"text":"Man","color":"blue","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 12"}},{"text":"] ["},{"text":"Woman","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 13"}},{"text":"]"}]
-scoreboard players enable @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=0}] TalkTrigger
+execute as @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=0}] run opendialogue gender_pick @s
 
 #Welcomes the player using their rank
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=1..5}] ["",{"text":"Welcome to the Battle Chateau, Baron "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=6..30}] ["",{"text":"Welcome to the Battle Chateau, Viscount "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=31..98}] ["",{"text":"Welcome to the Battle Chateau, Earl "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=99..295}] ["",{"text":"Welcome to the Battle Chateau, Marquis "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=296..},tag=!GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Duke "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=296..},tag=GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Grand Duke "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=1..5}] ["",{"text":"Welcome to the Battle Chateau, Baron "},{"selector":"@s"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=6..30}] ["",{"text":"Welcome to the Battle Chateau, Viscount "},{"selector":"@s"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=31..98}] ["",{"text":"Welcome to the Battle Chateau, Earl "},{"selector":"@s"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=99..295}] ["",{"text":"Welcome to the Battle Chateau, Marquis "},{"selector":"@s"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=296..},tag=!GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Duke "},{"selector":"@s"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=1,ChateauRank=296..},tag=GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Grand Duke "},{"selector":"@s"}]
 
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=1..5}] ["",{"text":"Welcome to the Battle Chateau, Baroness "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=6..30}] ["",{"text":"Welcome to the Battle Chateau, Viscountess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=31..98}] ["",{"text":"Welcome to the Battle Chateau, Countess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=99..295}] ["",{"text":"Welcome to the Battle Chateau, Marchioness "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=296},tag=!GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Duchess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
-tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=296},tag=GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Grand Duchess "},{"selector":"@p[x=-1537,y=100,z=-53,dx=5,dy=7]"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=1..5}] ["",{"text":"Welcome to the Battle Chateau, Baroness "},{"selector":"@s"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=6..30}] ["",{"text":"Welcome to the Battle Chateau, Viscountess "},{"selector":"@s"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=31..98}] ["",{"text":"Welcome to the Battle Chateau, Countess "},{"selector":"@s"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=99..295}] ["",{"text":"Welcome to the Battle Chateau, Marchioness "},{"selector":"@s"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=296},tag=!GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Duchess "},{"selector":"@s"}]
+tellraw @s[x=-1537,y=100,z=-53,dx=5,dy=7,scores={Gender=2,ChateauRank=296},tag=GrandDuke] ["",{"text":"Welcome to the Battle Chateau, Grand Duchess "},{"selector":"@s"}]
 
 
 #tps player

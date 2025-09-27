@@ -610,6 +610,19 @@ execute as @s[x=1254,y=107,z=-307,distance=..20,tag=Dialogue162,tag=!Dialogue163
 execute as @s[x=-492,y=101,z=261,distance=..10,scores={PokemonLeague=1..},tag=!Dialogue164] unless entity @e[x=-495,y=101,z=256,dy=3,type=cobblemon:npc] run npcspawnat -495 101 256 lumiose_diantha
 
 
+
+
+
+#Battle Chateau Introduction
+execute as @s[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,tag=!Dialogue166,scores={Gender=1..}] unless entity @e[x=-1534,y=65,z=-65,dy=3,type=cobblemon:npc] run npcspawnat -1534 65 -65 viola_generic
+execute as @s[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,tag=!Dialogue166,scores={Gender=1..}] unless entity @e[x=-1531,y=65,z=-65,dy=3,type=cobblemon:npc] run npcspawnat -1531 65 -65 butler_generic
+execute as @s[x=-1532,y=65,z=-65,distance=..5,tag=!Dialogue166,scores={Gender=1}] run opendialogue chateau_intro1 @s
+execute as @s[x=-1532,y=65,z=-65,distance=..5,tag=!Dialogue166,scores={Gender=2}] run opendialogue chateau_intro2 @s
+
+
+
+
+
 #Swaps out Looker Bureau sign outside
 execute if entity @p[x=-188,y=101,z=-639,distance=..50,tag=Call13] run data merge entity @e[x=-188,y=101,z=-639,distance=..3,type=armor_stand,limit=1] {CustomName:'"Looker Bureau"'}
 execute if entity @p[x=-188,y=101,z=-639,distance=..50,tag=!Call13] run data merge entity @e[x=-188,y=101,z=-639,distance=..3,type=armor_stand,limit=1] {CustomName:'"Vacant"'}
