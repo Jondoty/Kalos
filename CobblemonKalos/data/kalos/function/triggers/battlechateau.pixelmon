@@ -116,38 +116,7 @@ execute as @e[x=-681,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] run
 execute at @e[x=-679,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run execute as @e[x=-677,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run execute as @e[x=-675,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run execute as @e[x=-673,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run execute as @e[x=-681,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run function kalos:data/nowrit
 
 
-#------------
 
-#Announces if a player has ranked up
-tellraw @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={Gender=1,ChateauRank=6..30},tag=!Viscount] {"text":"You have ranked up to Viscount! Higher-nobility trainers will now begin appearing!","italic":true,"color":"gray"}
-tellraw @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={Gender=2,ChateauRank=6..30},tag=!Viscount] {"text":"You have ranked up to Viscountess! Higher-nobility trainers will now begin appearing!","italic":true,"color":"gray"}
-playsound minecraft:entity.player.levelup ambient @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=6..30},tag=!Viscount] ~ ~ ~ 1000 1 1
-tag @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=6..30},tag=!Viscount] add Viscount
-
-tellraw @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={Gender=1,ChateauRank=31..98},tag=!Earl] {"text":"You have ranked up to Earl!","italic":true,"color":"gray"}
-tellraw @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={Gender=2,ChateauRank=31..98},tag=!Earl] {"text":"You have ranked up to Countess!","italic":true,"color":"gray"}
-playsound minecraft:entity.player.levelup ambient @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=31..98},tag=!Earl] ~ ~ ~ 1000 1 1
-tag @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=31..98},tag=!Earl] add Earl
-
-tellraw @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=99..295},tag=!Marquises] {"text":"You have ranked up to Marquises!","italic":true,"color":"gray"}
-tellraw @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=99..295},tag=!Marquises] {"text":"You have ranked up to Marchioness!","italic":true,"color":"gray"}
-playsound minecraft:entity.player.levelup ambient @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=99..295},tag=!Marquises] ~ ~ ~ 1000 1 1
-tag @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=99..295},tag=!Marquises] add Marquises
-
-tellraw @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={Gender=1,ChateauRank=296..},tag=!Duke] {"text":"You have ranked up to Duke!","italic":true,"color":"gray"}
-tellraw @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={Gender=2,ChateauRank=296..},tag=!Duke] {"text":"You have ranked up to Duchess!","italic":true,"color":"gray"}
-playsound minecraft:entity.player.levelup ambient @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=296..},tag=!Duke] ~ ~ ~ 1000 1 1
-tag @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=296..},tag=!Duke] add Duke
-
-execute as @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={Gender=1..1,ChateauRank=296..},tag=Duke] run tellraw @s[tag=GrandDukeGet] {"text":"You have ranked up to Grand Duke!"}
-execute as @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={Gender=2..2,ChateauRank=296..},tag=Duke] run tellraw @s[tag=GrandDukeGet] {"text":"You have ranked up to Grand Duchess!"}
-execute as @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={Gender=1..2,ChateauRank=296..},tag=Duke] run playsound minecraft:entity.player.levelup ambient @s[tag=GrandDukeGet] ~ ~ ~ 1000 1 1
-execute as @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={Gender=1..2,ChateauRank=296..},tag=Duke] run tag @s[tag=GrandDukeGet] add GrandDuke
-execute as @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={Gender=1..2,ChateauRank=296..},tag=Duke] run
-execute as @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={Gender=1..2,ChateauRank=296..},tag=GrandDuke] run tag @s remove GrandDukeGet
-
-#Grants advancement when GrandDuke
-advancement grant @a[tag=GrandDuke] only kalos:adventurer2
 
 #-----------
 #Removes cooldowns for players to not repeat trainers quickly
