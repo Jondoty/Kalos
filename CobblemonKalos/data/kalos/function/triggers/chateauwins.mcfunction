@@ -12,8 +12,8 @@ execute as @s[scores={Temp=63..}] run scoreboard players add @s ChateauRank 5
 
 
 #Money
-execute as @s[scores={Temp=1}] run scoreboard players add @s Money 1800
-execute as @s[scores={Temp=1}] run tellraw @s {"text":"You got $1800 for winning!","italic":true,"color":"gray"}
+execute as @s[scores={Temp=1..}] run scoreboard players add @s Money 1800
+execute as @s[scores={Temp=1..}] run tellraw @s {"text":"You got $1800 for winning!","italic":true,"color":"gray"}
 
 
 
