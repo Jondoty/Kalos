@@ -1,0 +1,617 @@
+{
+    "initializationAction": [
+        "q.run_command('team join shops ' + q.player.username + '');"
+    ],
+    "escapeAction": [
+        "q.run_command('team join Chateau ' + q.player.username + '');",
+        "q.dialogue.close();"
+    ],
+    "names": [
+        "Battle Chateau Clerk"
+    ],
+    "speakers": {
+        "npc": {
+            "name": "Battle Chateau Clerk",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:gentleman",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "Welcome to the Battle Chateau. What would you like to do today?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Purchase Writs",
+                        "value": "purchasewrits",
+                        "action": "q.dialogue.set_page('buy1');"
+                    },
+                    {
+                        "text": "Info",
+                        "value": "info",
+                        "action": "q.dialogue.set_page('info1');"
+                    }
+                ]
+            }
+        },
+
+
+        {
+            "id": "buy1",
+            "speaker": "npc",
+            "lines": [
+                "I would be delighted to assist you. Which Writ of Invitation would you like issued?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Writs of Invitation",
+                        "value": "writsofinvitation",
+                        "action": [
+                            "q.dialogue.set_page('writsofinvitation1');"
+                        ]
+                    },
+                    {
+                        "text": "Writs of Challenge",
+                        "value": "writsofchallenge",
+                        "action": [
+                            "q.dialogue.set_page('writsofchallenge1');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('greeting');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "writsofinvitation1",
+            "speaker": "npc",
+            "lines": [
+                "I would be delighted to assist you. Which Writ of Invitation would you like issued?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Writ of Invitation",
+                        "value": "invitation",
+                        "action": [
+                            "q.dialogue.set_page('writsofinvitation2');"
+                        ]
+                    },
+                    {
+                        "text": "Silver Writ of Invitation",
+                        "value": "silverinvitation",
+                        "action": [
+                            "q.dialogue.set_page('writsofinvitation4');"
+                        ]
+                    },
+                    {
+                        "text": "Gold Writ of Invitation",
+                        "value": "goldinvitation",
+                        "action": [
+                            "q.dialogue.set_page('writsofinvitation6');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('greeting');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "writsofinvitation2",
+            "speaker": "npc",
+            "lines": [
+                "If we issue this Writ of Invitation, other Trainers will come to patronize our fair Battle Chateau with greater frequency than they usually do."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('writsofinvitation3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "writsofinvitation3",
+            "speaker": "npc",
+            "lines": [
+                "In return for this service, we would ask you to pay the modest fee of $5,000. Are these terms agreeable to you?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Purchase",
+                        "value": "purchase",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 298');",
+                            "q.dialogue.set_page('purchaseend');"]
+                    },
+                    {
+                        "text": "No Thanks",
+                        "value": "nothanks",
+                        "action": "q.dialogue.set_page('writsofinvitation1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "writsofinvitation4",
+            "speaker": "npc",
+            "lines": [
+                "If we issue this silver Writ of Invitation, Trainers will flock to our fair Battle Chateau with all due haste."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('writsofinvitation5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "writsofinvitation5",
+            "speaker": "npc",
+            "lines": [
+                "In return for this service, we would ask you to pay the modest fee of $10,000. Are these terms agreeable to you?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Purchase",
+                        "value": "purchase",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 299');",
+                            "q.dialogue.set_page('purchaseend');"
+                        ]
+                    },
+                    {
+                        "text": "No Thanks",
+                        "value": "nothanks",
+                        "action": "q.dialogue.set_page('writsofinvitation1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "writsofinvitation6",
+            "speaker": "npc",
+            "lines": [
+                "If we issue this gold Writ of Invitation, you could expect a particularly affluent class of Trainers to likely patronize our fair Battle Chateau."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('writsofinvitation7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "writsofinvitation7",
+            "speaker": "npc",
+            "lines": [
+                "In return for this service, we would ask you to pay the modest fee of $10,000. Are these terms agreeable to you?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Purchase",
+                        "value": "purchase",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 300');",
+                            "q.dialogue.set_page('purchaseend');"
+                        ]
+                    },
+                    {
+                        "text": "No Thanks",
+                        "value": "nothanks",
+                        "action": "q.dialogue.set_page('writsofinvitation1');"
+                    }
+                ]
+            }
+        },
+
+
+                {
+            "id": "writsofchallenge1",
+            "speaker": "npc",
+            "lines": [
+                "I would be delighted to assist you. Which Writ of challenge would you like issued?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Writ of Challenge",
+                        "value": "challenge",
+                        "action": [
+                            "q.dialogue.set_page('writsofchallenge2');"
+                        ]
+                    },
+                    {
+                        "text": "Blue Writ of Challenge",
+                        "value": "bluechallenge",
+                        "action": [
+                            "q.dialogue.set_page('writsofchallenge4');"
+                        ]
+                    },
+                    {
+                        "text": "Red Writ of Challenge",
+                        "value": "redchallenge",
+                        "action": [
+                            "q.dialogue.set_page('writsofchallenge6');"
+                        ]
+                    },
+                    {
+                        "text": "Black Writ of Challenge",
+                        "value": "blackchallenge",
+                        "action": [
+                            "q.dialogue.set_page('writsofchallenge8');"
+                        ]
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "back",
+                        "action": "q.dialogue.set_page('greeting');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "writsofchallenge2",
+            "speaker": "npc",
+            "lines": [
+                "If we issue this Writ of Challenge on your behalf, you will find that rather more motivated Trainers will come to patronize our fair Battle Chateau."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('writsofchallenge3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "writsofchallenge3",
+            "speaker": "npc",
+            "lines": [
+                "In return for this service, we would ask you to pay the modest fee of $5,000. Are these terms agreeable to you?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Purchase",
+                        "value": "purchase",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 301');",
+                            "q.dialogue.set_page('purchaseend');"
+                        ]
+                    },
+                    {
+                        "text": "No Thanks",
+                        "value": "nothanks",
+                        "action": "q.dialogue.set_page('writsofchallenge1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "writsofchallenge4",
+            "speaker": "npc",
+            "lines": [
+                "If we issue this blue Writ of Challenge, you can expect more sedate and serene battles with your fellow Trainers than you might usually experience."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('writsofchallenge5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "writsofchallenge5",
+            "speaker": "npc",
+            "lines": [
+                "In return for this service, we ask you to pay the modest fee of $1,000. Are these terms agreeable to you?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Purchase",
+                        "value": "purchase",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 302');",
+                            "q.dialogue.set_page('purchaseend');"
+                        ]
+                    },
+                    {
+                        "text": "No Thanks",
+                        "value": "nothanks",
+                        "action": "q.dialogue.set_page('writsofchallenge1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "writsofchallenge6",
+            "speaker": "npc",
+            "lines": [
+                "If we issue this red Writ of Challenge on your behalf, you will experience fierce and competitive battles that go beyond your usual milieu."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('writsofchallenge7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "writsofchallenge7",
+            "speaker": "npc",
+            "lines": [
+                "In return for this service, we ask you to pay the modest fee of $10,000. Are these terms agreeable to you?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Purchase",
+                        "value": "purchase",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 303');",
+                            "q.dialogue.set_page('purchaseend');"
+                        ]
+                    },
+                    {
+                        "text": "No Thanks",
+                        "value": "nothanks",
+                        "action": "q.dialogue.set_page('writsofchallenge1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "writsofchallenge8",
+            "speaker": "npc",
+            "lines": [
+                "If we issue this black Writ of Challenge on your behalf, it will draw the most competitive and most competent of opponents to you."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('writsofchallenge9');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "writsofchallenge9",
+            "speaker": "npc",
+            "lines": [
+                "In return for this service, we would ask you to pay the modest fee of $30,000. Are these terms agreeable to you?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Purchase",
+                        "value": "purchase",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 304');",
+                            "q.dialogue.set_page('purchaseend');"]
+                    },
+                    {
+                        "text": "No Thanks",
+                        "value": "nothanks",
+                        "action": "q.dialogue.set_page('writsofchallenge1');"
+                    }
+                ]
+            }
+        },
+
+
+
+        {
+            "id": "purchaseend",
+            "speaker": "npc",
+            "lines": [
+                "Very good. Then I will issue this Writ at once."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('team join Chateau ' + q.player.username + '');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "end",
+            "speaker": "npc",
+            "lines": [
+                "If there is anything else that I can possibly help you with, please do not hesitate to call on me."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('team join Chateau ' + q.player.username + '');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+
+
+
+
+
+
+
+        {
+            "id": "info1",
+            "speaker": "npc",
+            "lines": [
+                "Of course. It would be my pleasure to explain."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('info2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "info2",
+            "speaker": "npc",
+            "lines": [
+                "From this reception, you will find yourself able to issue a Writ of Invitation to the other Trainers who frequent our humble Battle Chateau."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('info3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "info3",
+            "speaker": "npc",
+            "lines": [
+                "You will discover that there are some differences in the types of Trainers that will respond to your Writ, depending on its variety."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('info4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "info4",
+            "speaker": "npc",
+            "lines": [
+                "It is my duty to inform you, however, that we do ask for a slight compensation for this service."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('info5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "info5",
+            "speaker": "npc",
+            "lines": [
+                "However, each Writ will last for an in-game week from purchase, and can be shared amongst multiple trainers who battle here."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('greeting');"
+                    }
+                ]
+            }
+        }
+     ]
+}
