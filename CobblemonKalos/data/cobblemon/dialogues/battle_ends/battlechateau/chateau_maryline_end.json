@@ -1,0 +1,46 @@
+{
+  "initializationAction": [
+    "c.npc.set_chatting();",
+    "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 3');",
+    "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+    "q.run_command('scoreboard players set ' + q.player.username + ' Temp 6');",
+    "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/chateauwins');",
+    "q.run_command('say did i win');"
+  ],
+  "speakers": {
+    "npc": {
+      "name": "Baroness Maryline",
+      "face": {
+        "type": "artificial",
+        "modelType": "npc",
+        "identifier": "cobblemon:lass",
+        "isLeftSide": true
+      }
+    }
+  },
+  "pages": [
+    {
+      "id": "greeting",
+      "speaker": "npc",
+      "lines": [
+        "I don’t hold it against you. Losing is part of the game. It’s all about having fun."
+      ],
+      "input": {
+        "type": "option",
+        "vertical": false,
+        "options": [
+          {
+            "text": "Close",
+            "value": "close",
+            "action": [
+              "q.dialogue.close();"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "escapeAction": [
+    "q.dialogue.close();"
+  ]
+}

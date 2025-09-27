@@ -1,0 +1,46 @@
+{
+  "initializationAction": [
+    "c.npc.set_chatting();",
+    "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 3');",
+    "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+    "q.run_command('scoreboard players set ' + q.player.username + ' Temp 28');",
+    "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/chateauwins');",
+    "q.run_command('say did i win');"
+  ],
+  "speakers": {
+    "npc": {
+      "name": "Viscount Tolkowsky",
+      "face": {
+        "type": "artificial",
+        "modelType": "npc",
+        "identifier": "cobblemon:monsieur",
+        "isLeftSide": true
+      }
+    }
+  },
+  "pages": [
+    {
+      "id": "greeting",
+      "speaker": "npc",
+      "lines": [
+        "Wheeze... M-my vision...is going black... Maybe I shouted too much... Perhaps this is also an effect of that red Writ of Challenge that I received before..."
+      ],
+      "input": {
+        "type": "option",
+        "vertical": false,
+        "options": [
+          {
+            "text": "Close",
+            "value": "close",
+            "action": [
+              "q.dialogue.close();"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "escapeAction": [
+    "q.dialogue.close();"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "initializationAction": [],
+  "escapeAction": [
+    "q.dialogue.close();"
+  ],
+  "names": [
+    "Siebold"
+  ],
+  "speakers": {
+    "npc": {
+      "name": {
+        "type": "expression",
+        "expression": "q.npc.name"
+      },
+      "face": "q.npc.face();"
+    }
+  },
+  "pages": [
+    {
+      "id": "greeting",
+      "speaker": "npc",
+      "lines": [
+        "... ... ... Yes, I see it now. This is a path with no end. To seek to be the absolute best is an absurd goal. Yet, as long as I am alive, I shall strive onward to seek the ultimate cuisine... and the strongest opponents in battle!"
+      ],
+      "input": {
+        "type": "option",
+        "vertical": false,
+        "options": [
+          {
+            "text": "§c⚔ Battle ⚔§r",
+            "value": "battle",
+            "action": [
+              "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 34');",
+              "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+              "v.battle = q.npc.start_battle(q.player);"
+            ]
+          },
+          {
+            "text": "No",
+            "value": "no",
+            "action": [
+              "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 0');",
+              "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+              "q.dialogue.close();"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
