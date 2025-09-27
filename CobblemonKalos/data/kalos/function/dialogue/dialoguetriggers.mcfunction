@@ -630,10 +630,10 @@ execute as @s[x=-439,y=101,z=439,distance=..30,tag=Dialogue173,tag=!TicketCenter
 execute as @s[x=-176,y=101,z=387,distance=..6,scores={LookerTickets=5..},tag=!Dialogue175] run opendialogue looker_dialogue175 @s
 
 
+#Looker Chapter 2 start
+execute as @s[x=-176,y=101,z=387,distance=..6,tag=Call14,tag=!Dialogue176] run opendialogue looker_dialogue176 @s
 
-
-
-
+#Looker discovering Emma
 
 
 
@@ -790,6 +790,11 @@ execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call13,scores={PokemonLeag
 execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call13,scores={PokemonLeague=1..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue looker_call13 @s
 
 
+#Call 14 - Looker the following day of Chapter 1
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call14,tag=!LookerCooldown,tag=Dialogue175] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run playsound minecraft:block.note_block.chime ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call14,tag=!LookerCooldown,tag=Dialogue175] unless entity @s[tag=!Call2,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
+
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call14,tag=!LookerCooldown,tag=Dialogue175,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue looker_call14 @s
 
 
 
