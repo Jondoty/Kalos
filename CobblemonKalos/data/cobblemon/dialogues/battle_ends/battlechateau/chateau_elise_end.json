@@ -4,8 +4,7 @@
     "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 3');",
     "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
     "q.run_command('scoreboard players set ' + q.player.username + ' Temp 53');",
-    "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/chateauwins');",
-    "q.run_command('say did i win');"
+    "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/chateauwins');"
   ],
   "speakers": {
     "npc": {
