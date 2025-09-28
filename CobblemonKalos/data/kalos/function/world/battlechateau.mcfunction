@@ -124,7 +124,66 @@ tp @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,nbt={NPCClass:"cobblemon:chateau_wi
 tp @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,nbt={NPCClass:"cobblemon:chateau_drasna"},tag=!Skip] -1537 54 -49
 tp @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,nbt={NPCClass:"cobblemon:chateau_diantha"},tag=!Skip] -1535 54 -49
 
+#------------
+#Adjusts trainers in storage based on Writs
 
+#No Writ
+execute as @e[x=-1559,y=52,z=-85,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:15}}}
+execute as @e[x=-1559,y=52,z=-79,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:20}}}
+execute as @e[x=-1559,y=52,z=-73,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:25},Slot1:{Level:25}}}
+execute as @e[x=-1559,y=52,z=-67,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:35},Slot1:{Level:35}}}
+execute as @e[x=-1559,y=52,z=-61,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:40},Slot1:{Level:40}}}
+execute as @e[x=-1559,y=52,z=-55,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:45},Slot1:{Level:45},Slot2:{Level:45}}}
+execute as @e[x=-1559,y=52,z=-49,dx=14,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:50},Slot1:{Level:50}}}
+execute as @e[x=-1543,y=52,z=-49,dx=6,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:55},Slot1:{Level:55},Slot2:{Level:55}}}
+execute as @e[x=-1535,y=52,z=-49,dx=6,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:60},Slot1:{Level:60},Slot2:{Level:60},Slot3:{Level:60}}}
+
+#Writ of Challange +5
+execute if entity @e[x=-679,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-85,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:20}}}
+execute if entity @e[x=-679,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-79,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:25}}}
+execute if entity @e[x=-679,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-73,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:30},Slot1:{Level:30}}}
+execute if entity @e[x=-679,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-67,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:40},Slot1:{Level:40}}}
+execute if entity @e[x=-679,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-61,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:45},Slot1:{Level:45}}}
+execute if entity @e[x=-679,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-55,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:50},Slot1:{Level:50},Slot2:{Level:50}}}
+execute if entity @e[x=-679,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-49,dx=14,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:55},Slot1:{Level:55}}}
+execute if entity @e[x=-679,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1543,y=52,z=-49,dx=6,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:60},Slot1:{Level:60},Slot2:{Level:60}}}
+execute if entity @e[x=-679,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1535,y=52,z=-49,dx=6,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:65},Slot1:{Level:65},Slot2:{Level:65},Slot3:{Level:65}}}
+
+
+#Blue Writ -10
+execute if entity @e[x=-677,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-85,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:5}}}
+execute if entity @e[x=-677,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-79,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:10}}}
+execute if entity @e[x=-677,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-73,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:15},Slot1:{Level:15}}}
+execute if entity @e[x=-677,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-67,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:25},Slot1:{Level:25}}}
+execute if entity @e[x=-677,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-61,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:30},Slot1:{Level:30}}}
+execute if entity @e[x=-677,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-55,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:35},Slot1:{Level:35},Slot2:{Level:35}}}
+execute if entity @e[x=-677,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-49,dx=14,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:40},Slot1:{Level:40}}}
+execute if entity @e[x=-677,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1543,y=52,z=-49,dx=6,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:45},Slot1:{Level:45},Slot2:{Level:45}}}
+execute if entity @e[x=-677,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1535,y=52,z=-49,dx=6,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:50},Slot1:{Level:50},Slot2:{Level:50},Slot3:{Level:50}}}
+
+
+#Red Writ +10
+execute if entity @e[x=-675,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-85,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:25}}}
+execute if entity @e[x=-675,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-79,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:30}}}
+execute if entity @e[x=-675,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-73,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:35},Slot1:{Level:35}}}
+execute if entity @e[x=-675,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-67,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:45},Slot1:{Level:45}}}
+execute if entity @e[x=-675,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-61,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:50},Slot1:{Level:50}}}
+execute if entity @e[x=-675,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-55,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:55},Slot1:{Level:55},Slot2:{Level:55}}}
+execute if entity @e[x=-675,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-49,dx=14,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:60},Slot1:{Level:60}}}
+execute if entity @e[x=-675,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1543,y=52,z=-49,dx=6,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:65},Slot1:{Level:65},Slot2:{Level:65}}}
+execute if entity @e[x=-675,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1535,y=52,z=-49,dx=6,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:70},Slot1:{Level:70},Slot2:{Level:70},Slot3:{Level:70}}}
+
+
+#Black Writ +20
+execute if entity @e[x=-673,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-85,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:35}}}
+execute if entity @e[x=-673,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-79,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:40}}}
+execute if entity @e[x=-673,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-73,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:45},Slot1:{Level:45}}}
+execute if entity @e[x=-673,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-67,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:55},Slot1:{Level:55}}}
+execute if entity @e[x=-673,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-61,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:60},Slot1:{Level:60}}}
+execute if entity @e[x=-673,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-55,dx=27,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:65},Slot1:{Level:65},Slot2:{Level:65}}}
+execute if entity @e[x=-673,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1559,y=52,z=-49,dx=14,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:70},Slot1:{Level:70}}}
+execute if entity @e[x=-673,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1543,y=52,z=-49,dx=6,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:75},Slot1:{Level:75},Slot2:{Level:75}}}
+execute if entity @e[x=-673,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] as @e[x=-1535,y=52,z=-49,dx=6,dy=3,type=cobblemon:npc] run data merge entity @s {Party:{Slot0:{Level:80},Slot1:{Level:80},Slot2:{Level:80},Slot3:{Level:80}}}
 
 
 #------------
