@@ -110,35 +110,6 @@ execute at @e[x=-679,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run e
 scoreboard players remove @e[x=-1589,y=53,z=-140,dx=104,dy=19,dz=97,scores={ChateauCD=1..}] ChateauCD 1
 
 
-#------------
-
-
-
-#Swaps out the Writ Shopkeeper to the rank of the closest player
-
-#tps out
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau] run tp @e[x=-1525,y=64,z=-58,dy=3,type=pixelmon:npc_shopkeeper,tag=Baroness] -1559 53 -91
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau] run tp @e[x=-1525,y=64,z=-58,dy=3,type=pixelmon:npc_shopkeeper,tag=Viscountess] -1557 53 -91
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau] run tp @e[x=-1525,y=64,z=-58,dy=3,type=pixelmon:npc_shopkeeper,tag=Countess] -1555 53 -91
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau] run tp @e[x=-1525,y=64,z=-58,dy=3,type=pixelmon:npc_shopkeeper,tag=Marchioness] -1553 53 -91
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau] run tp @e[x=-1525,y=64,z=-58,dy=3,type=pixelmon:npc_shopkeeper,tag=Duchess] -1551 53 -91
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau] run tp @e[x=-1525,y=64,z=-58,dy=3,type=pixelmon:npc_shopkeeper,tag=GrandDuchess] -1549 53 -91
-
-
-#tps in
-#-1525 65 -58
-
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau,scores={ChateauRank=0..5}] run tp @e[x=-1559,y=52,z=-91,dy=3,type=pixelmon:npc_shopkeeper] -1525 65 -58
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau,scores={ChateauRank=6..30}] run tp @e[x=-1557,y=52,z=-91,dy=3,type=pixelmon:npc_shopkeeper] -1525 65 -58
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau,scores={ChateauRank=31..98}] run tp @e[x=-1555,y=52,z=-91,dy=3,type=pixelmon:npc_shopkeeper] -1525 65 -58
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau,scores={ChateauRank=99..295}] run tp @e[x=-1553,y=52,z=-91,dy=3,type=pixelmon:npc_shopkeeper] -1525 65 -58
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau,scores={ChateauRank=296..},tag=Duke,tag=!GrandDuke] run tp @e[x=-1551,y=52,z=-91,dy=3,type=pixelmon:npc_shopkeeper] -1525 65 -58
-execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau,scores={ChateauRank=296..},tag=GrandDuke] run tp @e[x=-1549,y=52,z=-91,dy=3,type=pixelmon:npc_shopkeeper] -1525 65 -58
-
-
-
-
-
 
 
 
@@ -147,72 +118,6 @@ execute as @p[x=-1525,y=64,z=-58,distance=..50,team=Chateau,scores={ChateauRank=
 #------------
 
 
-#Removes Skip tags
-#Chateau entities
-tag @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,tag=Skip] remove Skip
-tag @e[x=-687,y=100,z=1384,dy=3,type=armor_stand] remove Skip
-data modify entity @e[limit=1,x=-687,y=100,z=1384,dy=3,type=armor_stand] {CustomName:"Battle Chateau"}
-
-
-
-
-
-
-#Sets ChateauCD depending on active writ (refresh rates)
-
-#Invitation Writs (Speeds up refresh rate)
-execute as @e[x=-685,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] run scoreboard players add @e[x=-687,y=100,z=1384,dy=3,type=armor_stand] ChateauCD 3
-execute as @e[x=-683,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] run scoreboard players set @e[x=-687,y=100,z=1384,dy=3,type=armor_stand] ChateauCD 0
-
-#No writs
-execute as @e[x=-685,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run execute as @e[x=-683,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run scoreboard players add @e[x=-687,y=100,z=1384,dy=3,type=armor_stand] ChateauCD 6
-
-
-
-#Removes Writ tags if WritCD=0
-#WritCD removed one point per day
-tag @e[x=-685,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] remove WritofInv
-tag @e[x=-683,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] remove SilverWritofInv
-tag @e[x=-681,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] remove GoldWritofInv
-
-tag @e[x=-679,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] remove WritofChallenge
-tag @e[x=-677,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] remove BlueWritofChal
-tag @e[x=-675,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] remove RedWritofChal
-tag @e[x=-673,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] remove BlackWritofChal
-
-
-
-
-#Sets sidebar Writ active scores
-execute as @e[x=-685,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run scoreboard players reset Writ_of_Invitation
-execute as @e[x=-683,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run scoreboard players reset Silver_Writ_of_Invitation
-execute as @e[x=-681,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run scoreboard players reset Gold_Writ_of_Invitation
-
-execute as @e[x=-679,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run scoreboard players reset Writ_of_Challenge
-execute as @e[x=-677,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run scoreboard players reset Blue_Writ_of_Challenge
-execute as @e[x=-675,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run scoreboard players reset Red_Writ_of_Challenge
-execute as @e[x=-673,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run scoreboard players reset Black_Writ_of_Challenge
-
-
-#execute @e[x=-685,y=100,z=1384,dy=3,type=armor_stand,score_WritCD_min=1] ~ ~ ~ scoreboard players set Writ_of_Invitation Active_Writs 1
-#execute @e[x=-683,y=100,z=1384,dy=3,type=armor_stand,score_WritCD_min=1] ~ ~ ~ scoreboard players set Silver_Writ_of_Invitation Active_Writs 1
-#execute @e[x=-681,y=100,z=1384,dy=3,type=armor_stand,score_WritCD_min=1] ~ ~ ~ scoreboard players set Gold_Writ_of_Invitation Active_Writs 1
-
-#execute @e[x=-679,y=100,z=1384,dy=3,type=armor_stand,score_WritCD_min=1] ~ ~ ~ scoreboard players set Writ_of_Challenge Active_Writs 1
-#execute @e[x=-677,y=100,z=1384,dy=3,type=armor_stand,score_WritCD_min=1] ~ ~ ~ scoreboard players set Blue_Writ_of_Challenge Active_Writs 1
-#execute @e[x=-675,y=100,z=1384,dy=3,type=armor_stand,score_WritCD_min=1] ~ ~ ~ scoreboard players set Red_Writ_of_Challenge Active_Writs 1
-#execute @e[x=-673,y=100,z=1384,dy=3,type=armor_stand,score_WritCD_min=1] ~ ~ ~ scoreboard players set Black_Writ_of_Challenge Active_Writs 1
-
-
-
-scoreboard players operation Writ_of_Invitation Active_Writs = @e[x=-685,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] WritCD
-scoreboard players operation Silver_Writ_of_Invitation Active_Writs = @e[x=-683,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] WritCD
-scoreboard players operation Gold_Writ_of_Invitation Active_Writs = @e[x=-681,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] WritCD
-
-scoreboard players operation Writ_of_Challenge Active_Writs = @e[x=-679,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] WritCD
-scoreboard players operation Blue_Writ_of_Challenge Active_Writs = @e[x=-677,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] WritCD
-scoreboard players operation Red_Writ_of_Challenge Active_Writs = @e[x=-675,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] WritCD
-scoreboard players operation Black_Writ_of_Challenge Active_Writs = @e[x=-673,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] WritCD
 
 
 #

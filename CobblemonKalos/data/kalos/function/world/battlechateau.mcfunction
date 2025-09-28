@@ -14,6 +14,8 @@ execute as @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={BattleStart=1..}] a
 #Adds skips to armor stands with trainers standing on them
 execute as @e[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,type=cobblemon:npc] at @s run tag @e[distance=..2,name=trainer,type=armor_stand] add Skip
 
+#Tags the clerk so it doesn't show up on names
+tag @e[x=-1528,y=64,z=-59,dy=3,type=cobblemon:npc] add Skip
 
 #------------
 
@@ -228,8 +230,8 @@ tellraw @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,scores={ChateauRank=1..}] ["",
 
 
 
-
-
+#Adds a cooldown for writs to influence
+scoreboard players add @e[x=-687,y=100,z=1384,dy=3,type=armor_stand] ChateauCD 6
 
 
 

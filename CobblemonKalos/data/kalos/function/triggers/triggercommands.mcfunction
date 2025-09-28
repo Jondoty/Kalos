@@ -2107,7 +2107,108 @@ execute as @a[scores={TriggerCommand=285,BattlePoint=200..}] run scoreboard play
 
 
 
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Battle Chateau Writs
 
+#WritofInvitation
+execute as @a[scores={TriggerCommand=298,Money=..4999}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=298,Money=..4999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=298,Money=5000..}] run tellraw @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97] {"text":"A Writ of Invitation has been activated! A new Trainer appears twice as often (once every 3 minutes).","color":"white"}
+execute as @a[scores={TriggerCommand=298,Money=5000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=298,Money=5000..}] run tag @e[x=-685,y=100,z=1384,dy=3,type=armor_stand] add WritofInvitation
+execute as @a[scores={TriggerCommand=298,Money=5000..}] run scoreboard players add @e[x=-685,y=100,z=1384,dy=3,type=armor_stand] WritCD 7
+execute as @a[scores={TriggerCommand=298,Money=5000..}] run scoreboard players remove @s Money 5000
+
+
+#SilverWritofInvitation
+execute as @a[scores={TriggerCommand=299,Money=..9999}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=299,Money=..9999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=299,Money=10000..}] run tellraw @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97] ["",{"text":"A ","color":"white"},{"text":"Silver Writ of Invitation","color":"gray"},{"text":" has been activated! ","color":"white"},{"text":"A new Trainer appears six times as often (once every minute). Writ may take a minute to take effect."}]
+execute as @a[scores={TriggerCommand=299,Money=10000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=299,Money=10000..}] run tag @e[x=-683,y=100,z=1384,dy=3,type=armor_stand] add SilverWritofInv
+execute as @a[scores={TriggerCommand=299,Money=10000..}] run scoreboard players add @e[x=-683,y=100,z=1384,dy=3,type=armor_stand] WritCD 7
+execute as @a[scores={TriggerCommand=299,Money=10000..}] run scoreboard players remove @s Money 10000
+
+
+#GoldWritofInvitation
+execute as @a[scores={TriggerCommand=300,Money=..9999}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=300,Money=..9999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=300,Money=10000..}] run tellraw @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97] ["",{"text":"A ","color":"white"},{"text":"Gold Writ of Invitation","color":"gold"},{"text":" has been activated! ","color":"white"},{"text":"Battle winnings are now increased by 50%. Writ may take a minute to take effect."}]
+execute as @a[scores={TriggerCommand=300,Money=10000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=300,Money=10000..}] run tag @e[x=-681,y=100,z=1384,dy=3,type=armor_stand] add GoldWritofInvitation
+execute as @a[scores={TriggerCommand=300,Money=10000..}] run scoreboard players add @e[x=-681,y=100,z=1384,dy=3,type=armor_stand] WritCD 7
+execute as @a[scores={TriggerCommand=300,Money=10000..}] run scoreboard players remove @s Money 10000
+
+
+#WritofChallenge
+execute as @a[scores={TriggerCommand=301,Money=..4999}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=301,Money=..4999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=301,Money=5000..}] run tellraw @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97] ["",{"text":"A ","color":"white"},{"text":"Writ of Challenge"},{"text":" has been activated! ","color":"white"},{"text":"Other trainer Pokémon levels are now increased by 5. Writ may take a minute to take effect."}]
+execute as @a[scores={TriggerCommand=301,Money=5000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=301,Money=5000..}] run tag @e[x=-679,y=100,z=1384,dy=3,type=armor_stand] add WritofChallenge
+execute as @a[scores={TriggerCommand=301,Money=5000..}] run scoreboard players add @e[x=-679,y=100,z=1384,dy=3,type=armor_stand] WritCD 7
+execute as @a[scores={TriggerCommand=301,Money=5000..}] run scoreboard players remove @s Money 5000
+
+
+#BlueWritofChallenge
+execute as @a[scores={TriggerCommand=302,Money=..999}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=302,Money=..999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=302,Money=1000..}] run tellraw @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97] ["",{"text":"A ","color":"white"},{"text":"Blue Writ of Challenge","color":"blue"},{"text":" has been activated! ","color":"white"},{"text":"Other trainer Pokémon levels are now decreased by 10. Writ may take a minute to take effect."}]
+execute as @a[scores={TriggerCommand=302,Money=1000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=302,Money=1000..}] run tag @e[x=-677,y=100,z=1384,dy=3,type=armor_stand] add BlueWritofChallenge
+execute as @a[scores={TriggerCommand=302,Money=1000..}] run scoreboard players add @e[x=-677,y=100,z=1384,dy=3,type=armor_stand] WritCD 7
+execute as @a[scores={TriggerCommand=302,Money=1000..}] run scoreboard players remove @s Money 1000
+
+
+#RedWritofChallenge
+execute as @a[scores={TriggerCommand=303,Money=..9999}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=303,Money=..9999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=303,Money=10000..}] run tellraw @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97] ["",{"text":"A ","color":"white"},{"text":"Red Writ of Challenge","color":"red"},{"text":" has been activated! ","color":"white"},{"text":"Other trainer Pokémon levels are now increased by 10. Writ may take a minute to take effect."}]
+execute as @a[scores={TriggerCommand=303,Money=10000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=303,Money=10000..}] run tag @e[x=-675,y=100,z=1384,dy=3,type=armor_stand] add RedWritofChallenge
+execute as @a[scores={TriggerCommand=303,Money=10000..}] run scoreboard players add @e[x=-675,y=100,z=1384,dy=3,type=armor_stand] WritCD 7
+execute as @a[scores={TriggerCommand=303,Money=10000..}] run scoreboard players remove @s Money 10000
+
+
+#BlackWritofChallenge
+execute as @a[scores={TriggerCommand=304,Money=..29999}] run tellraw @s {"text":"You don't have enough money for that!","italic":true,"color":"gray"}
+execute as @a[scores={TriggerCommand=304,Money=..29999}] run scoreboard players set @s TriggerCommand 0
+
+execute as @a[scores={TriggerCommand=304,Money=30000..}] run tellraw @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97] ["",{"text":"A ","color":"white"},{"text":"Black Writ of Challenge","color":"black"},{"text":" has been activated! ","color":"white"},{"text":"Other trainer Pokémon levels are now increased by 20. Writ may take a minute to take effect."}]
+execute as @a[scores={TriggerCommand=304,Money=30000..}] run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1
+execute as @a[scores={TriggerCommand=304,Money=30000..}] run tag @e[x=-673,y=100,z=1384,dy=3,type=armor_stand] add BlackWritofChallenge
+execute as @a[scores={TriggerCommand=304,Money=30000..}] run scoreboard players add @e[x=-673,y=100,z=1384,dy=3,type=armor_stand] WritCD 7
+execute as @a[scores={TriggerCommand=304,Money=30000..}] run scoreboard players remove @s Money 30000
+
+#Resets Cooldowns
+execute as @s[scores={TriggerCommand=298..304}] run scoreboard players set @e[x=-687,y=100,z=1384,dy=3,type=armor_stand,scores={ChateauCD=1..}] ChateauCD 0
+
+#Syncs Writs with sidebar
+execute as @s[scores={TriggerCommand=298..304}] run scoreboard players operation Writ_of_Invitation Active_Writs = @e[x=-685,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] WritCD
+execute as @s[scores={TriggerCommand=298..304}] run scoreboard players operation Silver_Writ_of_Invitation Active_Writs = @e[x=-683,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] WritCD
+execute as @s[scores={TriggerCommand=298..304}] run scoreboard players operation Gold_Writ_of_Invitation Active_Writs = @e[x=-681,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] WritCD
+
+execute as @s[scores={TriggerCommand=298..304}] run scoreboard players operation Writ_of_Challenge Active_Writs = @e[x=-679,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] WritCD
+execute as @s[scores={TriggerCommand=298..304}] run scoreboard players operation Blue_Writ_of_Challenge Active_Writs = @e[x=-677,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] WritCD
+execute as @s[scores={TriggerCommand=298..304}] run scoreboard players operation Red_Writ_of_Challenge Active_Writs = @e[x=-675,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] WritCD
+execute as @s[scores={TriggerCommand=298..304}] run scoreboard players operation Black_Writ_of_Challenge Active_Writs = @e[x=-673,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1..}] WritCD
+
+
+#Sets sidebar Writ active scores
+execute as @s[scores={TriggerCommand=298..304}] run execute as @e[x=-685,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run scoreboard players reset Writ_of_Invitation
+execute as @s[scores={TriggerCommand=298..304}] run execute as @e[x=-683,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run scoreboard players reset Silver_Writ_of_Invitation
+execute as @s[scores={TriggerCommand=298..304}] run execute as @e[x=-681,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run scoreboard players reset Gold_Writ_of_Invitation
+
+execute as @s[scores={TriggerCommand=298..304}] run execute as @e[x=-679,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run scoreboard players reset Writ_of_Challenge
+execute as @s[scores={TriggerCommand=298..304}] run execute as @e[x=-677,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run scoreboard players reset Blue_Writ_of_Challenge
+execute as @s[scores={TriggerCommand=298..304}] run execute as @e[x=-675,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run scoreboard players reset Red_Writ_of_Challenge
+execute as @s[scores={TriggerCommand=298..304}] run execute as @e[x=-673,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run scoreboard players reset Black_Writ_of_Challenge
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
