@@ -2,6 +2,14 @@
 #Writs will adjust the winnings based on found tags
 
 
+
+
+#Upon winning, teleports the trainer upward to relative location and y=79 to prevent rebattling (but still in range to be reorgznied)
+execute as @s at @s as @e[distance=..10,type=cobblemon:npc,tag=!Skip] run particle cloud ~ ~ ~ 2 2 2 1 50 
+execute as @s at @s as @e[distance=..10,type=cobblemon:npc,tag=!Skip] at @s run tp @s ~ 79 ~
+
+
+
 #Adds to the player's Chateau Ranks Point
 execute as @s[scores={Temp=1..14}] run scoreboard players add @s ChateauRank 1
 execute as @s[scores={Temp=15..28}] run scoreboard players add @s ChateauRank 2
