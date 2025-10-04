@@ -653,8 +653,9 @@ execute as @s[x=-373,y=101,z=-307,distance=..40,tag=Dialogue176,tag=!Dialogue177
 execute as @s[x=-373,y=101,z=-307,distance=..40,tag=Dialogue176,tag=!Dialogue177] unless entity @e[x=-372,y=101,z=-291,dy=3,type=cobblemon:npc] run npcspawnat -372 101 -291 alleys_callie
 execute as @s[x=-373,y=101,z=-307,distance=..40,tag=Dialogue176,tag=!Dialogue177] unless entity @e[x=-366,y=101,z=-288,dy=3,type=cobblemon:npc] run npcspawnat -366 101 -288 alleys_macon
 
-
-
+#Finding Mimi in the alleyway
+execute as @s[x=-405,y=101,z=-370,distance=..20,tag=Dialogue177,tag=!Dialogue178] unless entity @e[x=-428,y=101,z=-363,dy=3,type=cobblemon:pokemon] run pokespawnat -428 101 -363 espurr level=30 uncatchable=yes no_ai=yes
+execute as @s[x=-428,y=101,z=-363,distance=..6,tag=Dialogue177,tag=!Dialogue178] run opendialogue mimi_dialogue178 @s
 
 
 

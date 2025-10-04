@@ -406,11 +406,39 @@ tag @s[scores={DialogueTrigger=175,TalkTime=131..}] add Dialogue175
 scoreboard players set @s[scores={DialogueTrigger=175},tag=Dialogue175] TalkTime 0
 scoreboard players set @s[scores={DialogueTrigger=175},tag=Dialogue175] DialogueTrigger 0
 
+
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#https://youtu.be/qEms9_nJ7M0?t=64979
+#"q.run_command('scoreboard players set ' + q.player.username + ' DialogueTrigger 178');",
+#Finding Espurr in Alley:
+
+#keeps player on wall
+execute as @s[scores={DialogueTrigger=178,TalkTime=240}] run gamemode spectator @s
+execute as @s[scores={DialogueTrigger=178,TalkTime=240}] run function kalos:triggers/stopsound
+execute as @s[scores={DialogueTrigger=178,TalkTime=240..285}] run tp @s -128 100 431 -163 -6
+
+tellraw @s[scores={DialogueTrigger=178,TalkTime=245}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> "},{"text":"Emma and Mimi... I was absolutely right to invite them to stay here.","italic":true}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=255}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> "},{"text":"Truly genius, no doubt. What I don't know is if enough work will appear to keep food on our table.","italic":true}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=267}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> "},{"text":"... ... ... I-I guess I'll roll up my sleeves and concentrate on my mission!","italic":true}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=276}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Th-this is what it means to be a hard-boiled detective.","italic":true}]
+
+#blinds player
+#gamemode 2
+#tp to exterior of building
+
+execute as @s[scores={DialogueTrigger=178,TalkTime=286}] run effect give @s minecraft:blindness 5 1 true
+execute as @s[scores={DialogueTrigger=178,TalkTime=287}] run gamemode adventure @s
+execute as @s[scores={DialogueTrigger=178,TalkTime=287}] run tp @s -190 102 -634 -90 ~
+execute as @s[scores={DialogueTrigger=178,TalkTime=287}] run function kalos:triggers/stopsound
+execute as @s[scores={DialogueTrigger=178,TalkTime=287}] run tag @s add LookerCooldown
+execute as @s[scores={DialogueTrigger=178,TalkTime=287}] run advancement grant @s only kalos:looker2
+
+tag @s[scores={DialogueTrigger=178,TalkTime=287..}] add Dialogue178
+scoreboard players set @s[scores={DialogueTrigger=178},tag=Dialogue178] TalkTime 0
+scoreboard players set @s[scores={DialogueTrigger=178},tag=Dialogue178] DialogueTrigger 0
 
 
-
-
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
