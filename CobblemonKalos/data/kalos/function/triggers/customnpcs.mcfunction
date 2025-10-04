@@ -177,7 +177,9 @@ execute as @s[x=-1998,y=12,z=1915,distance=..6] run scoreboard players set @s Di
 
 
 #Looker Books
+execute as @s[x=-176,y=102,z=380,distance=..5] run opendialogue lookerbook_generic @s
 execute as @s[x=-176,y=102,z=380,distance=..5,tag=Dialogue173,tag=!Dialogue175] run opendialogue lookerbook_tickets @s
+execute as @s[x=-176,y=102,z=380,distance=..5,tag=Dialogue176] run opendialogue lookerbook_kids @s
 
 #execute positioned -176 102 380 run summon minecraft:interaction ~ ~ ~ {width:0.75,height:0.25,response:1,Tags:[NPCs]}
 #execute positioned -176 102 380 run summon minecraft:armor_stand ~ ~ ~ {Invisible:true,Invulnerable:true,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"iron_hoe",Count:1,components:{"minecraft:custom_model_data":53}}]}
