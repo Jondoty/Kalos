@@ -21,7 +21,7 @@
             "lines": [
                 {
                     "type": "expression",
-                    "expression": "'' + q.player.username + '! It's me! Looker!';"
+                    "expression": "'' + q.player.username + '! It is me! Looker!';"
                 }
             ],
             "input": {
