@@ -642,13 +642,16 @@ execute as @s[x=-439,y=101,z=439,distance=..30,tag=Dialogue173,tag=!TicketCenter
 #Looker after finding all tickets
 execute as @s[x=-176,y=101,z=387,distance=..6,scores={LookerTickets=5..},tag=!Dialogue175] run opendialogue looker_dialogue175 @s
 
-
-#Looker Chapter 2 start
-execute as @s[x=-176,y=101,z=387,distance=..6,tag=Call14,tag=!Dialogue176] run opendialogue looker_dialogue176 @s
-
 #Looker discovering Emma
 
 
+#TPs in Alley Trainers
+execute as @s[x=-378,y=101,z=-275,distance=..6,tag=Dialogue176,tag=!Dialogue177] run opendialogue emma_dialogue176 @s
+
+execute as @s[x=-373,y=101,z=-307,distance=..40,tag=Dialogue176,tag=!Dialogue177] unless entity @e[x=-375,y=101,z=-299,dy=3,type=cobblemon:npc] run npcspawnat -375 101 -299 alleys_natalie
+execute as @s[x=-373,y=101,z=-307,distance=..40,tag=Dialogue176,tag=!Dialogue177] unless entity @e[x=-369,y=101,z=-297,dy=3,type=cobblemon:npc] run npcspawnat -369 101 -297 alleys_lily
+execute as @s[x=-373,y=101,z=-307,distance=..40,tag=Dialogue176,tag=!Dialogue177] unless entity @e[x=-372,y=101,z=-291,dy=3,type=cobblemon:npc] run npcspawnat -372 101 -291 alleys_callie
+execute as @s[x=-373,y=101,z=-307,distance=..40,tag=Dialogue176,tag=!Dialogue177] unless entity @e[x=-366,y=101,z=-288,dy=3,type=cobblemon:npc] run npcspawnat -366 101 -288 alleys_macon
 
 
 

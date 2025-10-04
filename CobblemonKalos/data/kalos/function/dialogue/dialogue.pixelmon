@@ -448,180 +448,6 @@ tag @s[scores={DialogueTrigger=171,TalkTime=51..}] add Dialogue171
 scoreboard players set @s[tag=Dialogue171] TalkTime 0
 scoreboard players set @s[tag=Dialogue171] DialogueTrigger 0
 
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Looker starting Chapter 2 after Holo Call
-#execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call14,scores={TalkTime=0}] run scoreboard players set @s[tag=!Dialogue176] DialogueTrigger 176
-
-tellraw @s[scores={DialogueTrigger=176,TalkTime=2}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> "},{"selector":"@s"},{"text":", you're here! You got my message on the Holo Caster, in fact?"}]
-tellraw @s[scores={DialogueTrigger=176,TalkTime=11}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Then I need three minutes only. It is this. We have a case to solve!"}]
-tellraw @s[scores={DialogueTrigger=176,TalkTime=21}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I count on your help, "},{"selector":"@s"},{"text":"! Let us put our partnership to the test!"}]
-tellraw @s[scores={DialogueTrigger=176,TalkTime=31}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Here are some of my notes for this case."}]
-tellraw @s[scores={DialogueTrigger=176,TalkTime=39}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Client: A rep from a Lumiose City mothers' group"}]
-tellraw @s[scores={DialogueTrigger=176,TalkTime=47}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Details: \u201cKids in Lumiose City seem to be spending a lot of time in back alleys recently.\u201d"}]
-tellraw @s[scores={DialogueTrigger=176,TalkTime=57}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> \u201cWhat are they up to in these shadowy, suspicious places? Inquiring mothers want to know!\u201d"}]
-tellraw @s[scores={DialogueTrigger=176,TalkTime=67}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> \u201cMy son is about to take the entrance exam for an elite school for future Ace Trainers!\u201d"}]
-tellraw @s[scores={DialogueTrigger=176,TalkTime=77}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> \u201cI can't have him do anything stupid and get a black mark on his academic record!\u201d"}]
-tellraw @s[scores={DialogueTrigger=176,TalkTime=87}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> \u201cYou must do something to make kids stop hanging out in those suspicious alleys!\u201d"}]
-tellraw @s[scores={DialogueTrigger=176,TalkTime=97}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Reward: Enough dough to last for a week"}]
-tellraw @s[scores={DialogueTrigger=176,TalkTime=105}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> All ready to go? Good! The first thing I want you to do is to visit those dark alleys in Lumiose City."}]
-tellraw @s[scores={DialogueTrigger=176,TalkTime=116}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Find where kids are hanging out, and get the lowdown on the situation."}]
-tellraw @s[scores={DialogueTrigger=176,TalkTime=124}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Got it? Think you can handle it, partner?"}]
-tellraw @s[scores={DialogueTrigger=176,TalkTime=132}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I am counting on you, "},{"selector":"@s"},{"text":". There are a number of alleys here in Lumiose City."}]
-execute as @s[scores={DialogueTrigger=176,TalkTime=131}] run scoreboard players set @s click 1
-tellraw @s[scores={DialogueTrigger=176,TalkTime=142}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Somewhere, in one of them, you should find those kids! Yes. Yes, indeed."}]
-tellraw @s[scores={DialogueTrigger=176,TalkTime=151}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Hmm... My gut tells me there's something fishy about the alleys leading off Estival Avenue."}]
-tellraw @s[scores={DialogueTrigger=176,TalkTime=161}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> When you've got a gut boiled as hard as mine, it's worth paying attention to!"}]
-tellraw @s[scores={DialogueTrigger=176,TalkTime=171}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Start your investigations on Estival Avenue.. I'll join you when I can."}]
-
-execute as @s[scores={DialogueTrigger=176,TalkTime=180}] run effect give @s minecraft:blindness 5 1 true
-execute as @s[scores={DialogueTrigger=176,TalkTime=180}] run title @s times 20 100 20
-execute as @s[scores={DialogueTrigger=176,TalkTime=180}] run title @s subtitle {"text":"In the Back Alleys"}
-execute as @s[scores={DialogueTrigger=176,TalkTime=180}] run title @s title {"text":"Chapter 2"}
-execute as @s[scores={DialogueTrigger=176,TalkTime=180}] run scoreboard players set @s click 1
-
-tag @s[scores={DialogueTrigger=176,TalkTime=180..}] add Dialogue176
-scoreboard players set @s[tag=Dialogue176] TalkTime 0
-scoreboard players set @s[tag=Dialogue176] DialogueTrigger 0
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#https://youtu.be/qEms9_nJ7M0?t=64712
-#Looker discovering Emma
-#execute as @s[tag=Dialogue176,score_TalkTime=0] run scoreboard players set @a[x=-374,y=101,z=-280,r=6,tag=!Dialogue177] DialogueTrigger 177
-
-#Tp in the trainers separately
-#execute as @s[x=-373,y=101,z=-307,r=40,score_TalkTime=0,tag=Dialogue176] run execute as @s[tag=!Dialogue177] run tp @e[x=-504,y=220,z=1284,dy=3,type=pixelmon:npc_trainer] -375 101 -299
-#execute as @s[x=-373,y=101,z=-307,r=40,score_TalkTime=0,tag=Dialogue176] run execute as @s[tag=!Dialogue177] run tp @e[x=-504,y=220,z=1286,dy=3,type=pixelmon:npc_trainer] -369 101 -297
-#execute as @s[x=-373,y=101,z=-307,r=40,score_TalkTime=0,tag=Dialogue176] run execute as @s[tag=!Dialogue177] run tp @e[x=-504,y=220,z=1288,dy=3,type=pixelmon:npc_trainer] -372 101 -291
-#execute as @s[x=-373,y=101,z=-307,r=40,score_TalkTime=0,tag=Dialogue176] run execute as @s[tag=!Dialogue177] run tp @e[x=-504,y=220,z=1290,dy=3,type=pixelmon:npc_trainer] -366 101 -288
-
-#Keeps the player from wandering
-execute as @s[scores={DialogueTrigger=177,TalkTime=1..541}] run tp @s[x=-378,y=100,z=-307,dx=10,dy=10,dz=8] -372 101 -298 -18 ~
-
-#tp Looker in
-execute as @s[scores={DialogueTrigger=177,TalkTime=3}] run particle cloud -374 101 -280 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=177,TalkTime=3}] run tp @e[x=-504,y=215,z=1289,dy=3,type=pixelmon:npc_chatting] -374 101 -280
-
-tellraw @s[scores={DialogueTrigger=177,TalkTime=5}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Pardon, pardon. It took a while to find you!"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=12}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> \u0020How's the investigation going, "},{"selector":"@s"},{"text":"? Do you have news to report?"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=20}] ["",{"text":"<"},{"text":"...","color":"light_purple"},{"text":"> Mrrawwwr!"}]
-execute as @s[scores={DialogueTrigger=177,TalkTime=20}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
-tellraw @s[scores={DialogueTrigger=177,TalkTime=25}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Oho! Did you hear that cry? I feel like it came from deeper inside the alley..."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=32}] ["",{"text":"<"},{"text":"...","color":"light_purple"},{"text":"> Mrrawwwr!"}]
-
-
-#Expurr tps in
-execute as @s[scores={DialogueTrigger=177,TalkTime=35}] run particle cloud -376 101 -276 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=177,TalkTime=35}] run tp @e[x=-504,y=216,z=1296,dy=3,type=pixelmon:statue] -376 101 -276
-
-tellraw @s[scores={DialogueTrigger=177,TalkTime=38}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Why, it's a Pokémon! But to threaten humans like that, it is apparently none too gentle..."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=48}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> It may consider this area its territory."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=55}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> Yup, old man, you got that right."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=62}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Eh? Who's there? Show yourself!"}]
-
-#tp Emma and little girl in
-execute as @s[scores={DialogueTrigger=177,TalkTime=65}] run particle cloud -378 101 -278 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=177,TalkTime=65}] run particle cloud -378 101 -280 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=177,TalkTime=65}] run tp @e[x=-504,y=215,z=1291,dy=3,type=pixelmon:npc_chatting] -378 101 -278
-execute as @s[scores={DialogueTrigger=177,TalkTime=65}] run tp @e[x=-504,y=215,z=1293,dy=3,type=pixelmon:npc_chatting] -378 101 -280
-
-tellraw @s[scores={DialogueTrigger=177,TalkTime=68}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> Oh, nobody special. But this little sweetie right here is Mimi."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=76}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> That's what I named it, anyway."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=83}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mrrawr! Mrrrawwwrrr!"}]
-execute as @s[scores={DialogueTrigger=177,TalkTime=83}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
-tellraw @s[scores={DialogueTrigger=177,TalkTime=87}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Ahem. Then this is your Pokémon?"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=92}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> In which case, would you mind returning it to its Poké Ball for a bit?"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=100}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> Huh? What Poké Ball?"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=106}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Pardon?"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=111}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> I'm not a Trainer! Mimi is my friend."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=119}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> I have no money to buy Poké Balls, so I can't be a Trainer, you get it?"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=129}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> Anyway, Mimi and I don't need a Poké Ball to be friends!"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=137}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Of course. I...get it. Please forgive my error."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=145}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> My name is Looker. I work as a detective."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=153}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> May I introduce my partner, "},{"selector":"@s"},{"text":"."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=160}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> If you will permit me to ask, Mimi's friend..."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=167}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I am interested in what you're all doing here."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=175}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> Well, we're all playing, that's all. Everybody here is a friend of mine."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=185}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> What are you asking for? Do you want to join or something?"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=193}] ["",{"text":"<"},{"text":"...","color":"light_purple"},{"text":"> What! No, no, no-o-o-o-o! Don't do it!"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=200}] ["",{"text":"<"},{"text":"...","color":"light_purple"},{"text":"> This is our secret base. Kids only! No grown-ups allowed!"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=207}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mrrawwwr!"}]
-execute as @s[scores={DialogueTrigger=177,TalkTime=207}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
-tellraw @s[scores={DialogueTrigger=177,TalkTime=212}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> Oh, put a sock in it! Play nice, both of you!"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=220}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> How would you like to get left out just 'cause you're old and stuff?"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=230}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> ... ... ..."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=235}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> You seem to have a good group of friends playing together here."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=242}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> But why did you pick a dark alley like this one to play in?"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=250}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Lumiose City is filled with plazas and open spaces and sunny corners."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=258}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Flowers can't bloom without sunshine, and neither can young folks, you know."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=268}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> Oh, really? Well... Mimi and I have always lived in alleys, so I don't know much about sunshine."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=278}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> ...Mrawp."}]
-execute as @s[scores={DialogueTrigger=177,TalkTime=278}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
-tellraw @s[scores={DialogueTrigger=177,TalkTime=283}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> You live in an alley? You and Mimi? And...your family? They--"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=291}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> They're gone. I'm alone."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=298}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I see."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=304}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> Well, but... But Mimi is sort of my family. We stick together."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=312}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Indeed..."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=317}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Indeed! I, Looker, have struck upon an idea!"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=325}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> A genius idea. And here it is! Friend of Mimi!"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=332}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I invite you to stay at my office, the Looker Bureau."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=340}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> You may work as my assistant and, in exchange, you may live in the office."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=350}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I myself live elsewhere in a hotel, so you'll have it all to yourself after hours!"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=360}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> Wha..."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=365}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> It is not to imply that anything's wrong with a free life in the alleys, but..."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=375}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> To have a home to shelter you from the cold and the rain..."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=384}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> There is joy in having work to do each day and your efforts seen and appreciated."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=394}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> This idea is genius, even for me!"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=401}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> And, Mimi, are you on board, too? It wouldn't be the same without you!"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=410}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mrrrawr... Mrrawwwr!"}]
-execute as @s[scores={DialogueTrigger=177,TalkTime=410}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
-
-#Espurr tps off
-execute as @s[scores={DialogueTrigger=177,TalkTime=415}] run particle cloud -376 101 -276 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=177,TalkTime=415}] run tp @e[x=-376,y=100,z=-276,dy=3,type=pixelmon:statue] -504 217 1296
-
-tellraw @s[scores={DialogueTrigger=177,TalkTime=420}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Wh-what? Why did Mimi run off?"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=427}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> Mimi gets scared pretty easy. Afraid of humans, I guess. Especially grown-ups."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=437}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> Hey... Mr. Looker-guy..."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=443}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> For a minute there, I was kinda happy that you invited me to stay with you..."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=453}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> You're pretty cool. But I can't. Mimi likes it better here."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=463}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> I can't leave Mimi behind. We stick together."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=470}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Hold on! Mimi may grow to like me in time. But even if not, we can try a new angle"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=480}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> At a time like this, it helps to have a partner you can count on."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=488}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> P-partner?"}]
-
-#Looker music changes
-execute as @s[scores={DialogueTrigger=177,TalkTime=487}] run scoreboard players set @s click 1
-
-tellraw @s[scores={DialogueTrigger=177,TalkTime=493}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Indeed! "},{"selector":"@s"},{"text":"! Your assignment is to befriend Mimi. You can do it!"}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=502}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> If you wanna make friends with Mimi, you're gonna have to track it down first."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=511}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> There's, like, tons of alleys in Lumiose City."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=520}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> Mimi wanders all over them on its strolls. If you find it, try talking to it..."}]
-tellraw @s[scores={DialogueTrigger=177,TalkTime=530}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> Or do something to make Mimi like you. We'll help the search, too."}]
-
-#tp out
-#Emma and friend
-execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run particle cloud -378 101 -278 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run particle cloud -378 101 -280 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-378,y=100,z=-278,dy=3,type=pixelmon:npc_chatting] -504 216 1291
-execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-378,y=100,z=-280,dy=3,type=pixelmon:npc_chatting] -504 216 1293
-
-#Looker
-execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run particle cloud -374 101 -280 2 2 2 1 100
-execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-374,y=100,z=-280,dy=3,type=pixelmon:npc_chatting] -504 216 1289
-
-#Kid Trainers
-execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-375,y=100,z=-299,dy=3,type=pixelmon:npc_trainer] -504 221 1284
-execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-369,y=100,z=-297,dy=3,type=pixelmon:npc_trainer] -504 221 1286
-execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-372,y=100,z=-291,dy=3,type=pixelmon:npc_trainer] -504 221 1288
-execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run tp @e[x=-366,y=100,z=-288,dy=3,type=pixelmon:npc_trainer] -504 221 1290
-
-execute as @s[scores={DialogueTrigger=177,TalkTime=540}] run scoreboard players set @s click 1
-
-tag @s[scores={DialogueTrigger=177,TalkTime=540..}] add Dialogue177
-scoreboard players set @s[tag=Dialogue177] TalkTime 0
-scoreboard players set @s[tag=Dialogue177] DialogueTrigger 0
-
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #https://youtu.be/qEms9_nJ7M0?t=64979
 #execute as @s[x=-428,y=101,z=-363,r=7,tag=Dialogue177] run scoreboard players set @s[tag=!Dialogue178] DialogueTrigger 178
@@ -644,16 +470,16 @@ execute as @s[scores={DialogueTrigger=178,TalkTime=21}] run tp @e[x=-504,y=225,z
 
 tellraw @s[scores={DialogueTrigger=178,TalkTime=24}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Murrrmurrr-mrrrawwwr!"}]
 execute as @s[scores={DialogueTrigger=178,TalkTime=24}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
-tellraw @s[scores={DialogueTrigger=178,TalkTime=29}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Oh! "},{"selector":"@s"},{"text":"! Well done! Mimi seems to have taken a shine to you!"}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=29}] [<Looker> Oh! "},{"selector":"@s"},{"text":"! Well done! Mimi seems to have taken a shine to you!"}]
 tellraw @s[scores={DialogueTrigger=178,TalkTime=39}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> Awesome! "},{"selector":"@s"},{"text":", are you wicked or what? "}]
 tellraw @s[scores={DialogueTrigger=178,TalkTime=47}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> How'd you get Mimi to like you so fast?"}]
-tellraw @s[scores={DialogueTrigger=178,TalkTime=55}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Thank you, "},{"selector":"@s"},{"text":". You have proven your worth as my partner."}]
-tellraw @s[scores={DialogueTrigger=178,TalkTime=65}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Well, friend of Mimi? Problem solved? All set?"}]
-tellraw @s[scores={DialogueTrigger=178,TalkTime=73}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Is it time for you to graduate from life on the streets and join the Looker Bureau as my assistant?"}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=55}] [<Looker> Thank you, "},{"selector":"@s"},{"text":". You have proven your worth as my partner."}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=65}] [<Looker> Well, friend of Mimi? Problem solved? All set?"}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=73}] [<Looker> Is it time for you to graduate from life on the streets and join the Looker Bureau as my assistant?"}]
 tellraw @s[scores={DialogueTrigger=178,TalkTime=84}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> OK! I'm ready! As long as Mimi's with me!"}]
 tellraw @s[scores={DialogueTrigger=178,TalkTime=92}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> I'm pretty curious to find out what a detective does!"}]
-tellraw @s[scores={DialogueTrigger=178,TalkTime=100}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Ha ha! A detective is a hard-boiled kind of person!"}]
-tellraw @s[scores={DialogueTrigger=178,TalkTime=107}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> "},{"selector":"@s"},{"text":", let us make our way to the Looker Bureau with our new assistant!"}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=100}] [<Looker> Ha ha! A detective is a hard-boiled kind of person!"}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=107}] [<Looker> "},{"selector":"@s"},{"text":", let us make our way to the Looker Bureau with our new assistant!"}]
 
 #blinds player
 #tps npcs out
@@ -673,17 +499,17 @@ tellraw @s[scores={DialogueTrigger=178,TalkTime=125}] ["",{"text":"<"},{"text":"
 tellraw @s[scores={DialogueTrigger=178,TalkTime=134}] ["",{"text":"<"},{"text":"...","color":"yellow"},{"text":"> This is gonna be great, huh, Mimi?"}]
 tellraw @s[scores={DialogueTrigger=178,TalkTime=141}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Murrr-mrrrawwr?"}]
 execute as @s[scores={DialogueTrigger=178,TalkTime=141}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
-tellraw @s[scores={DialogueTrigger=178,TalkTime=146}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Please, make yourself comfortable!"}]
-tellraw @s[scores={DialogueTrigger=178,TalkTime=153}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> From today on, you will work here as my assistant!"}]
-tellraw @s[scores={DialogueTrigger=178,TalkTime=161}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> And you may live here as long as you choose!"}]
-tellraw @s[scores={DialogueTrigger=178,TalkTime=169}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I seem to have forgotten my manners. Pardon me for not asking your name."}]
-tellraw @s[scores={DialogueTrigger=178,TalkTime=179}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> What do you prefer to go by, or shall we stick with \u201cFriend-of-Mimi\u201d?"}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=146}] [<Looker> Please, make yourself comfortable!"}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=153}] [<Looker> From today on, you will work here as my assistant!"}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=161}] [<Looker> And you may live here as long as you choose!"}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=169}] [<Looker> I seem to have forgotten my manners. Pardon me for not asking your name."}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=179}] [<Looker> What do you prefer to go by, or shall we stick with \u201cFriend-of-Mimi\u201d?"}]
 tellraw @s[scores={DialogueTrigger=178,TalkTime=189}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Who, me? I'm just Emma."}]
 tellraw @s[scores={DialogueTrigger=178,TalkTime=196}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Nice to meet you! \u266a"}]
-tellraw @s[scores={DialogueTrigger=178,TalkTime=202}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Emma, is it? Indeed, a pretty name!"}]
-tellraw @s[scores={DialogueTrigger=178,TalkTime=209}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Ahem. The case of the kids in the alleys is now closed."}]
-tellraw @s[scores={DialogueTrigger=178,TalkTime=218}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> With Emma staying here instead, kids will stop making the alleys their second home!"}]
-tellraw @s[scores={DialogueTrigger=178,TalkTime=229}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> "},{"selector":"@s"},{"text":", I will send a message on your Holo Caster the next time we get a case! I look forward to it indeed."}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=202}] [<Looker> Emma, is it? Indeed, a pretty name!"}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=209}] [<Looker> Ahem. The case of the kids in the alleys is now closed."}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=218}] [<Looker> With Emma staying here instead, kids will stop making the alleys their second home!"}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=229}] [<Looker> "},{"selector":"@s"},{"text":", I will send a message on your Holo Caster the next time we get a case! I look forward to it indeed."}]
 
 #blinds player
 execute as @s[scores={DialogueTrigger=178,TalkTime=239}] run effect give @s minecraft:blindness 5 1 true
@@ -694,10 +520,10 @@ execute as @s[scores={DialogueTrigger=178,TalkTime=240}] run scoreboard players 
 execute as @s[scores={DialogueTrigger=178,TalkTime=240}] run tp @s -128 100 431 -163 -6
 execute as @s[scores={DialogueTrigger=178,TalkTime=285}] run tp @s -128 100 431 ~ ~
 
-tellraw @s[scores={DialogueTrigger=178,TalkTime=245}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> "},{"text":"Emma and Mimi... I was absolutely right to invite them to stay here.","italic":true}]
-tellraw @s[scores={DialogueTrigger=178,TalkTime=255}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> "},{"text":"Truly genius, no doubt. What I don't know is if enough work will appear to keep food on our table.","italic":true}]
-tellraw @s[scores={DialogueTrigger=178,TalkTime=267}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> "},{"text":"... ... ... I-I guess I'll roll up my sleeves and concentrate on my mission!","italic":true}]
-tellraw @s[scores={DialogueTrigger=178,TalkTime=276}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Th-this is what it means to be a hard-boiled detective.","italic":true}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=245}] [<Looker> "},{"text":"Emma and Mimi... I was absolutely right to invite them to stay here.","italic":true}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=255}] [<Looker> "},{"text":"Truly genius, no doubt. What I don't know is if enough work will appear to keep food on our table.","italic":true}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=267}] [<Looker> "},{"text":"... ... ... I-I guess I'll roll up my sleeves and concentrate on my mission!","italic":true}]
+tellraw @s[scores={DialogueTrigger=178,TalkTime=276}] [<Looker> Th-this is what it means to be a hard-boiled detective.","italic":true}]
 
 #blinds player
 #gamemode 2
@@ -722,11 +548,11 @@ scoreboard players set @s[tag=Dialogue178] DialogueTrigger 0
 #Tp Looker in if needed
 execute as @s[scores={DialogueTrigger=179,TalkTime=1}] run tp @e[x=-504,y=230,z=1284,dy=3,type=pixelmon:npc_chatting] -151 101 382
 
-tellraw @s[scores={DialogueTrigger=179,TalkTime=2}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> You're here, "},{"selector":"@s"},{"text":"! That is good. I need 30 seconds of your time, no more."}]
-tellraw @s[scores={DialogueTrigger=179,TalkTime=12}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> It is about our new friend, Emma."}]
-tellraw @s[scores={DialogueTrigger=179,TalkTime=20}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Ever since she started living here at the office, I have detected some signs of stress in her."}]
-tellraw @s[scores={DialogueTrigger=179,TalkTime=30}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> This has caused me to worry. What do you think, "},{"selector":"@s"},{"text":"? "}]
-tellraw @s[scores={DialogueTrigger=179,TalkTime=40}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Could it be that there is something wrong?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 27"}},{"text":"] \u0020 ["},{"text":"No","color":"red","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 28"}},{"text":"]"}]
+tellraw @s[scores={DialogueTrigger=179,TalkTime=2}] [<Looker> You're here, "},{"selector":"@s"},{"text":"! That is good. I need 30 seconds of your time, no more."}]
+tellraw @s[scores={DialogueTrigger=179,TalkTime=12}] [<Looker> It is about our new friend, Emma."}]
+tellraw @s[scores={DialogueTrigger=179,TalkTime=20}] [<Looker> Ever since she started living here at the office, I have detected some signs of stress in her."}]
+tellraw @s[scores={DialogueTrigger=179,TalkTime=30}] [<Looker> This has caused me to worry. What do you think, "},{"selector":"@s"},{"text":"? "}]
+tellraw @s[scores={DialogueTrigger=179,TalkTime=40}] [<Looker> Could it be that there is something wrong?\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 27"}},{"text":"] \u0020 ["},{"text":"No","color":"red","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 28"}},{"text":"]"}]
 execute as @s[scores={DialogueTrigger=179,TalkTime=40}] run scoreboard players enable @s TalkTrigger
 
 tag @s[scores={DialogueTrigger=179,TalkTime=40..}] add Dialogue179
@@ -736,12 +562,12 @@ scoreboard players set @s[tag=Dialogue179] DialogueTrigger 0
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Player selects >Yes
 
-tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Interesting, interesting... So, has she confided in you?"}]
-tellraw @s[scores={DialogueTrigger=180,TalkTime=9}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Or did you use some of the brilliant detective skills you learned from my class?"}]
-tellraw @s[scores={DialogueTrigger=180,TalkTime=19}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> You're an approachable person, "},{"selector":"@s"},{"text":", which encourages others to open up to you."}]
-tellraw @s[scores={DialogueTrigger=180,TalkTime=29}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> You know, when I first invited Emma to live here, my intention was to become a guardian to her."}]
-tellraw @s[scores={DialogueTrigger=180,TalkTime=40}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I promised to do everything for her as a parent would."}]
-tellraw @s[scores={DialogueTrigger=180,TalkTime=47}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I...I do hope my feelings of responsibility are not burdening her."}]
+tellraw @s[scores={DialogueTrigger=180,TalkTime=1}] [<Looker> Interesting, interesting... So, has she confided in you?"}]
+tellraw @s[scores={DialogueTrigger=180,TalkTime=9}] [<Looker> Or did you use some of the brilliant detective skills you learned from my class?"}]
+tellraw @s[scores={DialogueTrigger=180,TalkTime=19}] [<Looker> You're an approachable person, "},{"selector":"@s"},{"text":", which encourages others to open up to you."}]
+tellraw @s[scores={DialogueTrigger=180,TalkTime=29}] [<Looker> You know, when I first invited Emma to live here, my intention was to become a guardian to her."}]
+tellraw @s[scores={DialogueTrigger=180,TalkTime=40}] [<Looker> I promised to do everything for her as a parent would."}]
+tellraw @s[scores={DialogueTrigger=180,TalkTime=47}] [<Looker> I...I do hope my feelings of responsibility are not burdening her."}]
 
 tag @s[scores={DialogueTrigger=180,TalkTime=47..}] add Dialogue180
 scoreboard players set @s[tag=Dialogue180] TalkTime 0
@@ -750,10 +576,10 @@ scoreboard players set @s[tag=Dialogue180] DialogueTrigger 0
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Player selects >No
 
-tellraw @s[scores={DialogueTrigger=181,TalkTime=1}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Of course, of course! If my partner says nothing is wrong, then, indeed, nothing could be wrong."}]
-tellraw @s[scores={DialogueTrigger=181,TalkTime=13}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I was a little worried that living in a strange place and studying all day might be causing her stress..."}]
-tellraw @s[scores={DialogueTrigger=181,TalkTime=26}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Hah! But my concerns prove untrue."}]
-tellraw @s[scores={DialogueTrigger=181,TalkTime=33}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> It is just like a grim detective such as myself to see mysteries in everything."}]
+tellraw @s[scores={DialogueTrigger=181,TalkTime=1}] [<Looker> Of course, of course! If my partner says nothing is wrong, then, indeed, nothing could be wrong."}]
+tellraw @s[scores={DialogueTrigger=181,TalkTime=13}] [<Looker> I was a little worried that living in a strange place and studying all day might be causing her stress..."}]
+tellraw @s[scores={DialogueTrigger=181,TalkTime=26}] [<Looker> Hah! But my concerns prove untrue."}]
+tellraw @s[scores={DialogueTrigger=181,TalkTime=33}] [<Looker> It is just like a grim detective such as myself to see mysteries in everything."}]
 
 tag @s[scores={DialogueTrigger=181,TalkTime=33..}] add Dialogue181
 scoreboard players set @s[tag=Dialogue181] TalkTime 0
@@ -779,25 +605,25 @@ execute as @s[scores={DialogueTrigger=182,TalkTime=10}] run tp @e[x=-504,y=230,z
 
 tellraw @s[scores={DialogueTrigger=182,TalkTime=13}] {"text":"<...> \u304a\u306d\u304c\u3044\u3067\u3059\uff01 \u305f\u3059\u3051\u3066\u304f\u3060\u3055\u3044\uff01"}
 tellraw @s[scores={DialogueTrigger=182,TalkTime=20}] {"text":"<...> \u305f\u3044\u305b\u3064\u306a \u30dd\u30b1\u30e2\u30f3\u3061\u3083\u3093\u304c \u306c\u3059\u307e\u308c\u3066 \u3057\u307e\u3063\u305f\u3093\u3067\u3059\uff01"}
-tellraw @s[scores={DialogueTrigger=182,TalkTime=30}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Oho! What have we here? One of our fair city's famous tourists!"}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=40}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> From your manner of speaking, madame, I deduce that you have traveled far indeed!"}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=50}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I am...Looker. What may I do for you?"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=30}] [<Looker> Oho! What have we here? One of our fair city's famous tourists!"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=40}] [<Looker> From your manner of speaking, madame, I deduce that you have traveled far indeed!"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=50}] [<Looker> I am...Looker. What may I do for you?"}]
 tellraw @s[scores={DialogueTrigger=182,TalkTime=57}] {"text":"<...> \u308f\u305f\u3057\u306e \u3053\u3068\u3070\u304c \u308f\u304b\u308b\u3093\u3067\u3059\u306d \u3042\u3042 \u3088\u304b\u3063\u305f\uff01 \u305f\u3059\u304b\u308a\u307e\u3059\uff01"}
 tellraw @s[scores={DialogueTrigger=182,TalkTime=67}] {"text":"<...> \u308f\u305f\u3057 \u3053\u306e\u304f\u306b\u306e \u3053\u3068\u3070\u306f \u30d2\u30a2\u30ea\u30f3\u30b0\u3057\u304b \u3067\u304d\u306a\u304f\u3066\uff01"}
 tellraw @s[scores={DialogueTrigger=182,TalkTime=77}] {"text":"<...> \u3058\u3064\u306f \u3048\u304d\u3067 \u308f\u305f\u3057\u306e \u305f\u3044\u305b\u3064\u306a \u30dd\u30b1\u30e2\u30f3\u3061\u3083\u3093\u305f\u3061\u304c \u306c\u3059\u307e\u308c\u3066\uff01"}
 tellraw @s[scores={DialogueTrigger=182,TalkTime=87}] {"text":"<...> \u305d\u308c\u3067 \u3053\u3053\u304c \u305f\u3093\u3066\u3044\u3058\u3080\u3057\u3087 \u3060\u3063\u3066 \u304d\u3044\u305f\u304b\u3089 \u3046\u304b\u304c\u3063\u305f\u3093\u3067\u3059\u3088\uff01"}
 tellraw @s[scores={DialogueTrigger=182,TalkTime=97}] {"text":"<...> \u3069\u3046\u304b \u304a\u306d\u304c\u3044\u3057\u307e\u3059\uff01 \u3044\u307e\u3059\u3050 \u308f\u305f\u3057\u306e \u30dd\u30b1\u30e2\u30f3\u3061\u3083\u3093\u3092 \u3068\u308a\u304b\u3048\u3057\u3066 \u3044\u305f\u3060\u3051\u307e\u305b\u3093\u304b\uff1f"}
-tellraw @s[scores={DialogueTrigger=182,TalkTime=107}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Ahem... My dear lady..."}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=115}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I am so terribly sorry, but could you speak a bit less quickly?"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=107}] [<Looker> Ahem... My dear lady..."}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=115}] [<Looker> I am so terribly sorry, but could you speak a bit less quickly?"}]
 tellraw @s[scores={DialogueTrigger=182,TalkTime=125}] {"text":"<...> \u3059\u3063 \u3059\u3044\u307e\u305b\u3093\u2026\u2026 \u3067\u3082 \u3044\u305d\u3044\u3067\u308b\u3093\u3067\u3059\u3088\uff01"}
 tellraw @s[scores={DialogueTrigger=182,TalkTime=135}] {"text":"<...> \u305f\u3044\u305b\u3064\u306a \u30dd\u30b1\u30e2\u30f3\u3061\u3083\u3093\u3092 \u3068\u308a\u304b\u3048\u3055\u306a\u3044\u3068 \u305d\u3053\u304f \u306b \u304b\u3048\u308b\u3053\u3068\u3082 \u3067\u304d\u307e\u305b\u3093\uff01"}
 tellraw @s[scores={DialogueTrigger=182,TalkTime=145}] {"text":"<...> \u3072\u3053\u3046\u304d\u306e \u3058\u304b\u3093 \u3060\u3063\u3066 \u305b\u307e\u3063\u3066 \u304d\u3066\u3044\u308b\u3093\u3067\u3059\u3088\uff01"}
-tellraw @s[scores={DialogueTrigger=182,TalkTime=155}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Ahem... From what I can gather, it seems that this lady has been given sore offense."}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=165}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> And do you know why that would be, "},{"selector":"@s"},{"text":", my friend?"}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=175}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Well, thanks to my gift for languages-- I've traveled all over the world, you know..."}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=186}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> It seems she is highly offended that she has come as a guest and not yet been offered tea! Yes! Case closed!"}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=198}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Which means, my friend, I must make haste to obtain the requisite tea!"}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=207}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> "},{"selector":"@s"},{"text":", please keep our guest company until my return from this vital mission."}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=155}] [<Looker> Ahem... From what I can gather, it seems that this lady has been given sore offense."}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=165}] [<Looker> And do you know why that would be, "},{"selector":"@s"},{"text":", my friend?"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=175}] [<Looker> Well, thanks to my gift for languages-- I've traveled all over the world, you know..."}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=186}] [<Looker> It seems she is highly offended that she has come as a guest and not yet been offered tea! Yes! Case closed!"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=198}] [<Looker> Which means, my friend, I must make haste to obtain the requisite tea!"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=207}] [<Looker> "},{"selector":"@s"},{"text":", please keep our guest company until my return from this vital mission."}]
 
 #Looker tps out
 execute as @s[scores={DialogueTrigger=182,TalkTime=216}] run particle cloud -151 101 382 2 2 2 1 100
@@ -851,41 +677,41 @@ tellraw @s[scores={DialogueTrigger=182,TalkTime=512}] {"text":"... ... ... It se
 execute as @s[scores={DialogueTrigger=182,TalkTime=519}] run particle cloud -151 101 382 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=182,TalkTime=519}] run tp @e[x=-504,y=230,z=1284,dy=3,type=pixelmon:npc_chatting] -151 101 382
 
-tellraw @s[scores={DialogueTrigger=182,TalkTime=522}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I return! My apologies for the delay."}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=530}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I have obtained the finest quality tea, since our guest obviously has exquisite taste!"}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=540}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Oho! Emma and Mimi are back as well! Yes. Excellent timing all round."}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=550}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Emma, have you introduced yourself to our visitor from a faraway land?"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=522}] [<Looker> I return! My apologies for the delay."}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=530}] [<Looker> I have obtained the finest quality tea, since our guest obviously has exquisite taste!"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=540}] [<Looker> Oho! Emma and Mimi are back as well! Yes. Excellent timing all round."}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=550}] [<Looker> Emma, have you introduced yourself to our visitor from a faraway land?"}]
 tellraw @s[scores={DialogueTrigger=182,TalkTime=559}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Murrrr-mrrrawwwr. \u266a"}]
 execute as @s[scores={DialogueTrigger=182,TalkTime=559}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
 tellraw @s[scores={DialogueTrigger=182,TalkTime=564}] {"text":"Your link to the others' thoughts suddenly disappears.","italic":true,"color":"gray"}
 tellraw @s[scores={DialogueTrigger=182,TalkTime=572}] {"text":"It seems Mimi's mysterious power was somehow interrupted.","italic":true,"color":"gray"}
-tellraw @s[scores={DialogueTrigger=182,TalkTime=580}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Oh! What have we here? Mimi! Are you happy to see me come home, too?"}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=589}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Why... I wondered if it would ever happen. I have won over the hard-boiled Mimi!"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=580}] [<Looker> Oh! What have we here? Mimi! Are you happy to see me come home, too?"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=589}] [<Looker> Why... I wondered if it would ever happen. I have won over the hard-boiled Mimi!"}]
 tellraw @s[scores={DialogueTrigger=182,TalkTime=599}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Um, Mr. Looker? This old lady here says her Pokémon were stolen."}]
 tellraw @s[scores={DialogueTrigger=182,TalkTime=609}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> I'd guess the thieves are still in Lumiose Station..."}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=617}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> What's that? What's that you're saying? Then it wasn't tea that she was after?"}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=628}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> But I bought this...fancy...expensive..."}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=635}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> No! Hah! Never mind that! Let us focus on what is most important now!"}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=643}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Come, my friends! We have a case!"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=617}] [<Looker> What's that? What's that you're saying? Then it wasn't tea that she was after?"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=628}] [<Looker> But I bought this...fancy...expensive..."}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=635}] [<Looker> No! Hah! Never mind that! Let us focus on what is most important now!"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=643}] [<Looker> Come, my friends! We have a case!"}]
 tellraw @s[scores={DialogueTrigger=182,TalkTime=650}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Just a minute, Mr. Looker."}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=657}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> What is it, Emma? Didn't you hear?"}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=664}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Her Pokémon have been stolen! We must get them back at once!"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=657}] [<Looker> What is it, Emma? Didn't you hear?"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=664}] [<Looker> Her Pokémon have been stolen! We must get them back at once!"}]
 tellraw @s[scores={DialogueTrigger=182,TalkTime=672}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> I'd bet anything that the guy who stole this old lady's Pokémon was part of the Lumiose Gang."}]
 tellraw @s[scores={DialogueTrigger=182,TalkTime=682}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> They're rough types, you know? "}]
 tellraw @s[scores={DialogueTrigger=182,TalkTime=690}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> If we stick our noses in, that means a battle for sure..."}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=697}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Pardon? Whom? The Lumiose Gang?"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=697}] [<Looker> Pardon? Whom? The Lumiose Gang?"}]
 tellraw @s[scores={DialogueTrigger=182,TalkTime=704}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Yeah. So let's drop it, OK?"}]
 tellraw @s[scores={DialogueTrigger=182,TalkTime=711}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> You know, that old lady was talking trash about you while you were out."}]
 tellraw @s[scores={DialogueTrigger=182,TalkTime=720}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> She ain't nice. It's not worth having a great big fight to help a person like her."}]
 tellraw @s[scores={DialogueTrigger=182,TalkTime=730}] {"text":"<...> \u305d\u3063 \u305d\u3093\u306a\uff01\uff01"}
-tellraw @s[scores={DialogueTrigger=182,TalkTime=737}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> No, Emma."}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=744}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> "},{"text":"That is not on!","bold":true,"italic":true}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=737}] [<Looker> No, Emma."}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=744}] [<Looker> "},{"text":"That is not on!","bold":true,"italic":true}]
 execute as @s[scores={DialogueTrigger=182,TalkTime=751}] run scoreboard players set @s click 1
-tellraw @s[scores={DialogueTrigger=182,TalkTime=752}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> If you see someone in trouble, give help. "}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=760}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> If you see a Pokémon in distress, you help!"}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=767}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> That is the policy of the Looker Bureau! And it does not change!"}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=775}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> No matter what this person may have said about me, it does not change what we do!"}]
-tellraw @s[scores={DialogueTrigger=182,TalkTime=785}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Now, wait here, please. I must go to Lumiose Station."}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=752}] [<Looker> If you see someone in trouble, give help. "}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=760}] [<Looker> If you see a Pokémon in distress, you help!"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=767}] [<Looker> That is the policy of the Looker Bureau! And it does not change!"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=775}] [<Looker> No matter what this person may have said about me, it does not change what we do!"}]
+tellraw @s[scores={DialogueTrigger=182,TalkTime=785}] [<Looker> Now, wait here, please. I must go to Lumiose Station."}]
 tellraw @s[scores={DialogueTrigger=182,TalkTime=793}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Mr. L-L-Looker... ... ... ..."}]
 
 #tp Looker out
@@ -935,38 +761,38 @@ scoreboard players set @s[tag=Dialogue182] DialogueTrigger 0
 tellraw @s[scores={DialogueTrigger=183,TalkTime=1}] ["",{"text":"<"},{"text":"Punk Girl","color":"light_purple"},{"text":"> Hey, hey, hey! Wotcher doin' here, old man?"}]
 tellraw @s[scores={DialogueTrigger=183,TalkTime=10}] ["",{"text":"<"},{"text":"Punk Girl","color":"light_purple"},{"text":"> You wander in here by mistake or what?"}]
 tellraw @s[scores={DialogueTrigger=183,TalkTime=17}] ["",{"text":"<"},{"text":"Punk Girl","color":"light_purple"},{"text":"> 'Cause you'd hafter be off yer trolley to come alone an' pick a fight with us."}]
-tellraw @s[scores={DialogueTrigger=183,TalkTime=27}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Indeed. Hold that thought."}]
-tellraw @s[scores={DialogueTrigger=183,TalkTime=33}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I am not here to pick a fight. Instead, I have a simple request."}]
-tellraw @s[scores={DialogueTrigger=183,TalkTime=40}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Return that tourist's stolen Pokémon!"}]
+tellraw @s[scores={DialogueTrigger=183,TalkTime=27}] [<Looker> Indeed. Hold that thought."}]
+tellraw @s[scores={DialogueTrigger=183,TalkTime=33}] [<Looker> I am not here to pick a fight. Instead, I have a simple request."}]
+tellraw @s[scores={DialogueTrigger=183,TalkTime=40}] [<Looker> Return that tourist's stolen Pokémon!"}]
 tellraw @s[scores={DialogueTrigger=183,TalkTime=47}] ["",{"text":"<"},{"text":"Punk Girl","color":"light_purple"},{"text":"> Yer jokin', right?"}]
 tellraw @s[scores={DialogueTrigger=183,TalkTime=54}] ["",{"text":"<"},{"text":"Punk Girl","color":"light_purple"},{"text":"> If we just give 'em back wit' a pretty please and thank-you, sir,"}]
 tellraw @s[scores={DialogueTrigger=183,TalkTime=64}] ["",{"text":"<"},{"text":"Punk Girl","color":"light_purple"},{"text":"> why'd we bother stealin' sumfink?!"}]
 tellraw @s[scores={DialogueTrigger=183,TalkTime=73}] {"text":"<Punk Girl> Lookee, old man... Yer that Looker whatsisface, eh?"}
 tellraw @s[scores={DialogueTrigger=183,TalkTime=80}] {"text":"<Punk Girl> Who we are is the Lumiose Gang, and we can't stand the sight of you, got it?"}
 tellraw @s[scores={DialogueTrigger=183,TalkTime=90}] {"text":"<Punk Girl> Ever since Emma went to live at yours, she ain't never come round to hang with us!"}
-tellraw @s[scores={DialogueTrigger=183,TalkTime=100}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> What do you mean?"}]
+tellraw @s[scores={DialogueTrigger=183,TalkTime=100}] [<Looker> What do you mean?"}]
 tellraw @s[scores={DialogueTrigger=183,TalkTime=106}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> Y'hear me? It's just not on!"}]
 tellraw @s[scores={DialogueTrigger=183,TalkTime=113}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> Why did we nab these lame Pokémon, did y'ask yerself?"}]
 tellraw @s[scores={DialogueTrigger=183,TalkTime=121}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> It were just to get yer into our manor, weren't it? So yer done, old man!"}]
 tellraw @s[scores={DialogueTrigger=183,TalkTime=131}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> Get yer Pokémon out for battle! If yer win, yer take the Pokémon!"}]
 tellraw @s[scores={DialogueTrigger=183,TalkTime=139}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> But... If yer lose, yer got nothin' more to do with our Emma!"}]
-tellraw @s[scores={DialogueTrigger=183,TalkTime=148}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I cannot accept your challenge."}]
+tellraw @s[scores={DialogueTrigger=183,TalkTime=148}] [<Looker> I cannot accept your challenge."}]
 tellraw @s[scores={DialogueTrigger=183,TalkTime=155}] ["",{"text":"<"},{"text":"Punk Girl","color":"light_purple"},{"text":"> Oo-er! Yer too scared to fight?"}]
 tellraw @s[scores={DialogueTrigger=183,TalkTime=162}] ["",{"text":"<"},{"text":"Punk Girl","color":"light_purple"},{"text":"> Or are yer givin' it that yer don't have even a single Pokémon to stand by yer?"}]
-tellraw @s[scores={DialogueTrigger=183,TalkTime=173}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> You...er...\u201cgot it in one.\u201d"}]
+tellraw @s[scores={DialogueTrigger=183,TalkTime=173}] [<Looker> You...er...\u201cgot it in one.\u201d"}]
 tellraw @s[scores={DialogueTrigger=183,TalkTime=180}] {"text":"<Punk Girl> Nyahahaha! Yer not havin' us on?"}
 tellraw @s[scores={DialogueTrigger=183,TalkTime=187}] {"text":"<Punk Girl> Fine, we'll give yer a shot to ready yerself!"}
 tellraw @s[scores={DialogueTrigger=183,TalkTime=194}] {"text":"<Punk Girl> Go find some tall grass or somethin'... Then come back an' get yer hat handed to yer!"}
-tellraw @s[scores={DialogueTrigger=183,TalkTime=203}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Argh. Words are no use here."}]
-tellraw @s[scores={DialogueTrigger=183,TalkTime=210}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I'll have to go. Later, I'll return, and--"}]
-tellraw @s[scores={DialogueTrigger=183,TalkTime=218}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Oh! "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=183,TalkTime=225}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Ahaha...ahem. You've caught me making an enormous fool of myself."}]
-tellraw @s[scores={DialogueTrigger=183,TalkTime=233}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> It is as they say. The great Looker has no Pokémon of his own..."}]
-tellraw @s[scores={DialogueTrigger=183,TalkTime=241}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I can do nothing to restore the stolen Pokémon to that tourist..."}]
+tellraw @s[scores={DialogueTrigger=183,TalkTime=203}] [<Looker> Argh. Words are no use here."}]
+tellraw @s[scores={DialogueTrigger=183,TalkTime=210}] [<Looker> I'll have to go. Later, I'll return, and--"}]
+tellraw @s[scores={DialogueTrigger=183,TalkTime=218}] [<Looker> Oh! "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=183,TalkTime=225}] [<Looker> Ahaha...ahem. You've caught me making an enormous fool of myself."}]
+tellraw @s[scores={DialogueTrigger=183,TalkTime=233}] [<Looker> It is as they say. The great Looker has no Pokémon of his own..."}]
+tellraw @s[scores={DialogueTrigger=183,TalkTime=241}] [<Looker> I can do nothing to restore the stolen Pokémon to that tourist..."}]
 tellraw @s[scores={DialogueTrigger=183,TalkTime=250}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> Oi, mouth! Who are ya? Yer with this old man, eh?"}]
 tellraw @s[scores={DialogueTrigger=183,TalkTime=258}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> Naw then. Yer can take his place, like. Yer win, an' we hand over the Pokémon."}]
 tellraw @s[scores={DialogueTrigger=183,TalkTime=269}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> How do ya like yer chances, eh?! Nyahaha!"}]
-tellraw @s[scores={DialogueTrigger=183,TalkTime=278}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> "},{"selector":"@s"},{"text":", my friend... I'm afraid this is all I can do for you."}]
+tellraw @s[scores={DialogueTrigger=183,TalkTime=278}] [<Looker> "},{"selector":"@s"},{"text":", my friend... I'm afraid this is all I can do for you."}]
 
 #replace punk npcs with trainers
 execute as @s[scores={DialogueTrigger=183,TalkTime=279}] run tp @e[x=1124,y=104,z=2003,dy=3,type=pixelmon:npc_chatting] -504 236 1286
@@ -995,7 +821,7 @@ execute as @s[scores={DialogueTrigger=184,TalkTime=5}] run particle cloud 1124 1
 execute as @s[scores={DialogueTrigger=184,TalkTime=5}] run tp @e[x=-504,y=240,z=1284,dy=3,type=pixelmon:npc_chatting] 1124 105 2009
 
 tellraw @s[scores={DialogueTrigger=184,TalkTime=5}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Stop it, all of you!"}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=10}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Emma!"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=10}] [<Looker> Emma!"}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=15}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Stop it! I mean it! And return those stolen Pokémon!"}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=23}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> Well, if that don't take the biscuit! This is down to you, Emma."}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=31}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> Yer just couldn't be bothered with us no more."}]
@@ -1013,27 +839,27 @@ tellraw @s[scores={DialogueTrigger=184,TalkTime=121}] ["",{"text":"<"},{"text":"
 tellraw @s[scores={DialogueTrigger=184,TalkTime=130}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> You need to say sorry to the lady you stole from. And to Mr. Looker, too!"}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=138}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> Yes, ma'am! I will! I'm awful sorry for nickin' the Pokémon."}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=147}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> Yer got me bang to rights. Forgive me?"}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=155}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Ahem. Of course."}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=161}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> The Pokémon shall be safely restored, so let's call it water under the bridge."}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=170}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> A-a-a-a-and...case closed!"}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=177}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Cheers, "},{"selector":"@s"},{"text":", Emma! Let's head back to the Looker Bureau!"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=155}] [<Looker> Ahem. Of course."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=161}] [<Looker> The Pokémon shall be safely restored, so let's call it water under the bridge."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=170}] [<Looker> A-a-a-a-and...case closed!"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=177}] [<Looker> Cheers, "},{"selector":"@s"},{"text":", Emma! Let's head back to the Looker Bureau!"}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=187}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> OK!"}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=191}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Oh, I forgot something... Wait. Thirty seconds!"}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=199}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Hey, folks!"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=191}] [<Looker> Oh, I forgot something... Wait. Thirty seconds!"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=199}] [<Looker> Hey, folks!"}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=204}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> ...Eh?"}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=209}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> It's your wish to be friends with Emma, is that correct?"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=209}] [<Looker> It's your wish to be friends with Emma, is that correct?"}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=216}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> Yer sussed that out, eh?"}]
 execute as @s[scores={DialogueTrigger=184,TalkTime=215}] run scoreboard players set @s click 1
-tellraw @s[scores={DialogueTrigger=184,TalkTime=223}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> When people behave with evil intentions, I cannot turn away and lightly forgive such."}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=233}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Especially people who do cruel and thoughtless things."}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=240}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> For example, stealing the beloved Pokémon of other Trainers..."}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=248}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> However... I believe... No. Not just believe. I KNOW..."}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=258}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> People and Pokémon are both capable of...evolving. And so..."}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=267}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> If you give your word of honor not to ever lift a hand in cruelty again,"}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=277}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> then you may come by the Looker Bureau anytime to visit Emma...as her friends."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=223}] [<Looker> When people behave with evil intentions, I cannot turn away and lightly forgive such."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=233}] [<Looker> Especially people who do cruel and thoughtless things."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=240}] [<Looker> For example, stealing the beloved Pokémon of other Trainers..."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=248}] [<Looker> However... I believe... No. Not just believe. I KNOW..."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=258}] [<Looker> People and Pokémon are both capable of...evolving. And so..."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=267}] [<Looker> If you give your word of honor not to ever lift a hand in cruelty again,"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=277}] [<Looker> then you may come by the Looker Bureau anytime to visit Emma...as her friends."}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=283}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Mr. L-L-Looker..."}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=290}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Sir..."}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=295}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Let us now return! Back once more to the Looker Bureau!"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=295}] [<Looker> Let us now return! Back once more to the Looker Bureau!"}]
 
 #Blinds player
 #swaps trainers back to npcs
@@ -1060,9 +886,9 @@ execute as @s[scores={DialogueTrigger=184,TalkTime=303}] run scoreboard players 
 
 tellraw @s[scores={DialogueTrigger=184,TalkTime=306}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Mr. Looker... I'm really sorry about what happened earlier..."}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=315}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> When that woman insulted you, I just saw red and I... I..."}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=323}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> If you learned something from it, that is all I need to hear, Emma."}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=331}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> But that is not what concerns me now."}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=338}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Imagine how I felt to discover that you were the boss of that gang!"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=323}] [<Looker> If you learned something from it, that is all I need to hear, Emma."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=331}] [<Looker> But that is not what concerns me now."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=338}] [<Looker> Imagine how I felt to discover that you were the boss of that gang!"}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=348}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Oh, it's just silly. I wasn't in the gang for real!"}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=356}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> I had a big fight with them one time, and after I took them down, they figured I was their boss."}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=367}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> It was all their idea, not mine!"}]
@@ -1073,16 +899,16 @@ execute as @s[scores={DialogueTrigger=184,TalkTime=374}] run particle cloud -76 
 
 tellraw @s[scores={DialogueTrigger=184,TalkTime=378}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> She may look like a cute kid, but Emma is crazy strong!"}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=386}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> Sh-she really is, Looker, sir. And "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=395}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Well, it's the lad from the gang. You're here for a visit already?"}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=404}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Good. Ahem. You can drop that \u201csir\u201d business. Call me Looker."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=395}] [<Looker> Well, it's the lad from the gang. You're here for a visit already?"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=404}] [<Looker> Good. Ahem. You can drop that \u201csir\u201d business. Call me Looker."}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=413}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> As yer say, sir. ...Looker. Here's the thing, see."}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=422}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> Us in the Lumiose Gang are gonna evolve, just like yer said!"}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=431}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> We're all done wi' chorin' an' cheatin'. We're lookin' for honest work."}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=441}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> So please let us come round an' see our Emma, won't yer?"}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=450}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> ... ... ..."}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=455}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> That's excellent. Deciding to change your course in life is more than an Evolution!"}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=465}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> It is a Mega Evolution!"}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=472}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> There is no substitute for honest work if you want to make a difference in this world."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=455}] [<Looker> That's excellent. Deciding to change your course in life is more than an Evolution!"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=465}] [<Looker> It is a Mega Evolution!"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=472}] [<Looker> There is no substitute for honest work if you want to make a difference in this world."}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=481}] ["",{"text":"<"},{"text":"Punk Guy","color":"aqua"},{"text":"> Yeah, that's right, then. See yer later, eh, Emma?"}]
 
 #tps Nix out
@@ -1091,26 +917,26 @@ execute as @s[scores={DialogueTrigger=184,TalkTime=486}] run particle cloud -76 
 
 execute as @s[scores={DialogueTrigger=184,TalkTime=487}] run scoreboard players set @s click 1
 tellraw @s[scores={DialogueTrigger=184,TalkTime=488}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Hey, Mr. Looker?"}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=493}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Hm? What is it, Emma?"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=493}] [<Looker> Hm? What is it, Emma?"}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=499}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Mr. Looker... You said there is no substitute for honest work if you want to make a difference in this world."}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=511}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> But I don't do any work at all... You asked me to be your assistant."}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=519}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> But I've never done any work the whole time I've been staying here."}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=527}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> All I've done is learn things from you... Is that really enough?"}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=535}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Is it really OK for me to be here?"}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=541}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> These are good questions, Emma. You have been learning nonstop since you came here, have you not?"}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=551}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Learning is very important work at any age, and especially for you now."}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=558}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Continue to pour your heart into your studies. You have no need to worry."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=541}] [<Looker> These are good questions, Emma. You have been learning nonstop since you came here, have you not?"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=551}] [<Looker> Learning is very important work at any age, and especially for you now."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=558}] [<Looker> Continue to pour your heart into your studies. You have no need to worry."}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=567}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> But, Mr. Looker... We're always here in the Looker Bureau. And there's almost never any clients!"}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=578}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Are Mimi and I just getting in your way?"}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=585}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> I mean, you went and turned down taking money from that tourist lady."}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=594}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Be straight with me, Mr. Looker."}]
 tellraw @s[scores={DialogueTrigger=184,TalkTime=600}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> I'm asking, really, if it's really OK for Mimi and I to stay here...moneywise?"}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=610}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Y-you have no need to worry!"}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=617}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> One would expect that a hard-boiled detective has savings set aside, indeed!"}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=626}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Yes, indeed, Looker's savings are as lofty as Sinnoh's own Mt. Coronet!"}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=635}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Hm. Perhaps you have not met up with Mt. Coronet in your studies yet, Emma?"}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=644}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Ha...hahaha! I ask you to leave such worries to me."}]
-tellraw @s[scores={DialogueTrigger=184,TalkTime=653}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Your part is to study hard, so you can become my trusted assistant. Deal? Good."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=610}] [<Looker> Y-you have no need to worry!"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=617}] [<Looker> One would expect that a hard-boiled detective has savings set aside, indeed!"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=626}] [<Looker> Yes, indeed, Looker's savings are as lofty as Sinnoh's own Mt. Coronet!"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=635}] [<Looker> Hm. Perhaps you have not met up with Mt. Coronet in your studies yet, Emma?"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=644}] [<Looker> Ha...hahaha! I ask you to leave such worries to me."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=653}] [<Looker> Your part is to study hard, so you can become my trusted assistant. Deal? Good."}]
 
 #Blinds player
 #tp Looker and punk guy away
@@ -1166,13 +992,13 @@ scoreboard players set @s[tag=Dialogue184] DialogueTrigger 0
 #https://youtu.be/qEms9_nJ7M0?t=66423
 #Looker starting Chapter 4
 
-tellraw @s[scores={DialogueTrigger=185,TalkTime=3}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Ah, "},{"selector":"@s"},{"text":", thank you so much for your time. I need three minutes only."}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=11}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Emma is on my mind. Recently, she has been running off somewhere on her own. And often."}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=22}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I was hoping to ask her to watch the office for me today, and once again, nowhere can she be found."}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=33}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> It even seems as if she did not return here last night..."}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=40}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Her friends from the former gang seem to be on the straight and narrow,"}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=48}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> so I hope this is not anything bad, but..."}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=56}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Hm? What's this? A Holo Caster clip?"}]
+tellraw @s[scores={DialogueTrigger=185,TalkTime=3}] [<Looker> Ah, "},{"selector":"@s"},{"text":", thank you so much for your time. I need three minutes only."}]
+tellraw @s[scores={DialogueTrigger=185,TalkTime=11}] [<Looker> Emma is on my mind. Recently, she has been running off somewhere on her own. And often."}]
+tellraw @s[scores={DialogueTrigger=185,TalkTime=22}] [<Looker> I was hoping to ask her to watch the office for me today, and once again, nowhere can she be found."}]
+tellraw @s[scores={DialogueTrigger=185,TalkTime=33}] [<Looker> It even seems as if she did not return here last night..."}]
+tellraw @s[scores={DialogueTrigger=185,TalkTime=40}] [<Looker> Her friends from the former gang seem to be on the straight and narrow,"}]
+tellraw @s[scores={DialogueTrigger=185,TalkTime=48}] [<Looker> so I hope this is not anything bad, but..."}]
+tellraw @s[scores={DialogueTrigger=185,TalkTime=56}] [<Looker> Hm? What's this? A Holo Caster clip?"}]
 
 #blinds player
 execute as @s[scores={DialogueTrigger=185,TalkTime=63}] run scoreboard players set @s click 1
@@ -1195,12 +1021,12 @@ tellraw @s[scores={DialogueTrigger=185,TalkTime=88}] {"text":"Newscast: Museum s
 execute as @s[scores={DialogueTrigger=185,TalkTime=98}] run kill @e[x=-123,y=100,z=379,dy=3,type=armor_stand]
 execute as @s[scores={DialogueTrigger=185,TalkTime=98}] run replaceitem entity @e[x=-126,y=100,z=379,dy=3,type=pixelmon:npc_chatting] weapon.offhand air
 
-tellraw @s[scores={DialogueTrigger=185,TalkTime=101}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Did you see that, "},{"selector":"@s"},{"text":"?! Where trouble goes, Looker must follow!"}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=111}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I am on my way to the Lumiose Museum to begin my investigations! Most urgently!"}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=121}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> It is straight to the scene of the crime for us!"}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=128}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> ...Oh, wouldn't it be nice if that were true?"}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=135}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> But I actually have an appointment soon that I cannot possibly miss, so I am stuck here..."}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=145}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I hate to ask this of you, but I need you to start the investigation without me, "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=185,TalkTime=101}] [<Looker> Did you see that, "},{"selector":"@s"},{"text":"?! Where trouble goes, Looker must follow!"}]
+tellraw @s[scores={DialogueTrigger=185,TalkTime=111}] [<Looker> I am on my way to the Lumiose Museum to begin my investigations! Most urgently!"}]
+tellraw @s[scores={DialogueTrigger=185,TalkTime=121}] [<Looker> It is straight to the scene of the crime for us!"}]
+tellraw @s[scores={DialogueTrigger=185,TalkTime=128}] [<Looker> ...Oh, wouldn't it be nice if that were true?"}]
+tellraw @s[scores={DialogueTrigger=185,TalkTime=135}] [<Looker> But I actually have an appointment soon that I cannot possibly miss, so I am stuck here..."}]
+tellraw @s[scores={DialogueTrigger=185,TalkTime=145}] [<Looker> I hate to ask this of you, but I need you to start the investigation without me, "},{"selector":"@s"},{"text":"!"}]
 
 tag @s[scores={DialogueTrigger=185,TalkTime=145..}] add Dialogue185
 scoreboard players set @s[tag=Dialogue185] TalkTime 0
@@ -1268,31 +1094,31 @@ scoreboard players set @s[tag=Dialogue187] DialogueTrigger 0
 #Looker after investigating Museum
 
 execute as @s[scores={DialogueTrigger=188,TalkTime=1}] run scoreboard players set @s click 1
-tellraw @s[scores={DialogueTrigger=188,TalkTime=3}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> "},{"selector":"@s"},{"text":", have you seen the news? The purloining of Pokémon continues!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=13}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> It is unforgivable! We have not yet closed the case at the museum, but..."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=22}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> When you consider how many are suffering, we must pursue the culprits!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=31}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I have devised an absolutely amazing plan that will bring an immediate solution."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=41}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> It will be a sting operation!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=48}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> It appears the criminals are targeting Trainers in places where there are no witnesses."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=59}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> If that is indeed the case, then we can simply bait a trap and wait!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=68}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> First the \u201cvictim\u201d will go to some deserted location and act lost."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=77}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> The criminals will think they've found an easy mark, and they will surely reveal themselves!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=88}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> All the reports say they like to challenge their victims to battle before stealing their Pokémon."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=99}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> That's when we'll get them! Right when they are distracted by the heat of a Pokémon battle!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=110}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> The backup, who will be hiding and watching, will appear and help take down the criminals!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=120}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Indeed. What do you think? It is not without risk, but it's quite the best plan we have!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=131}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> However! The plan will never succeed without you, "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=140}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Now, as to our assignments..."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=147}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> There is little to decide, since you are aware that I have no Pokémon."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=156}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Your role is therefore to play the victim in our little sting operation."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=165}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I will conceal myself in the shadows and watch for my opening to attack."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=175}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Keep your Pokémon ready to spring into battle when the criminals appear!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=184}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I ask myself how to draw these miscreants into approaching us."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=193}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> What we need is a place in this bustling city that is a little deserted, perhaps."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=203}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> A nice, neglected alley is exactly what I have in mind. Come, "},{"selector":"@s"},{"text":"! The game is afoot!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=215}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Let us begin the hunt close to home!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=223}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> The nearest alley is right beside this building. It connects to Autumnal Avenue."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=232}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Go quickly, "},{"selector":"@s"},{"text":"! I will be right behind you!"}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=3}] [<Looker> "},{"selector":"@s"},{"text":", have you seen the news? The purloining of Pokémon continues!"}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=13}] [<Looker> It is unforgivable! We have not yet closed the case at the museum, but..."}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=22}] [<Looker> When you consider how many are suffering, we must pursue the culprits!"}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=31}] [<Looker> I have devised an absolutely amazing plan that will bring an immediate solution."}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=41}] [<Looker> It will be a sting operation!"}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=48}] [<Looker> It appears the criminals are targeting Trainers in places where there are no witnesses."}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=59}] [<Looker> If that is indeed the case, then we can simply bait a trap and wait!"}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=68}] [<Looker> First the \u201cvictim\u201d will go to some deserted location and act lost."}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=77}] [<Looker> The criminals will think they've found an easy mark, and they will surely reveal themselves!"}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=88}] [<Looker> All the reports say they like to challenge their victims to battle before stealing their Pokémon."}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=99}] [<Looker> That's when we'll get them! Right when they are distracted by the heat of a Pokémon battle!"}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=110}] [<Looker> The backup, who will be hiding and watching, will appear and help take down the criminals!"}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=120}] [<Looker> Indeed. What do you think? It is not without risk, but it's quite the best plan we have!"}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=131}] [<Looker> However! The plan will never succeed without you, "},{"selector":"@s"},{"text":"!"}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=140}] [<Looker> Now, as to our assignments..."}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=147}] [<Looker> There is little to decide, since you are aware that I have no Pokémon."}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=156}] [<Looker> Your role is therefore to play the victim in our little sting operation."}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=165}] [<Looker> I will conceal myself in the shadows and watch for my opening to attack."}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=175}] [<Looker> Keep your Pokémon ready to spring into battle when the criminals appear!"}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=184}] [<Looker> I ask myself how to draw these miscreants into approaching us."}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=193}] [<Looker> What we need is a place in this bustling city that is a little deserted, perhaps."}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=203}] [<Looker> A nice, neglected alley is exactly what I have in mind. Come, "},{"selector":"@s"},{"text":"! The game is afoot!"}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=215}] [<Looker> Let us begin the hunt close to home!"}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=223}] [<Looker> The nearest alley is right beside this building. It connects to Autumnal Avenue."}]
+tellraw @s[scores={DialogueTrigger=188,TalkTime=232}] [<Looker> Go quickly, "},{"selector":"@s"},{"text":"! I will be right behind you!"}]
 execute as @s[scores={DialogueTrigger=188,TalkTime=240}] run scoreboard players set @s click 1
 
 tag @s[scores={DialogueTrigger=188,TalkTime=240..}] add Dialogue188
@@ -1340,14 +1166,14 @@ execute as @s[scores={DialogueTrigger=189,TalkTime=50}] run tp @e[x=-258,y=100,z
 execute as @s[scores={DialogueTrigger=189,TalkTime=47}] run particle cloud -269 101 -619 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=189,TalkTime=47}] run tp @e[x=-269,y=100,z=-619,dy=3,type=pixelmon:npc_trainer] -504 246 1284
 
-tellraw @s[scores={DialogueTrigger=189,TalkTime=54}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Wha--?! What is that woman?! She's no Pokémon, yet she can use Transform?"}]
-tellraw @s[scores={DialogueTrigger=189,TalkTime=63}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Oh, what am I doing? This is not a time to stand around being shocked!"}]
-tellraw @s[scores={DialogueTrigger=189,TalkTime=72}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> In fact, this is a time to dash off in pursuit! The chase is on!"}]
-tellraw @s[scores={DialogueTrigger=189,TalkTime=81}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Now, considering the direction in which she ran, and the angle...hm..."}]
-tellraw @s[scores={DialogueTrigger=189,TalkTime=91}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> "},{"selector":"@s"},{"text":", my brave friend! I suspect she is headed for the alley between the office and Hibernal Avenue!"}]
-tellraw @s[scores={DialogueTrigger=189,TalkTime=103}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Please go ahead without me!"}]
-tellraw @s[scores={DialogueTrigger=189,TalkTime=110}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I will be right behind you, just as soon as I have checked this place for clues!"}]
-tellraw @s[scores={DialogueTrigger=189,TalkTime=120}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> But wait! One minute of your time! The great Looker will restore your Pokémon before you go!"}]
+tellraw @s[scores={DialogueTrigger=189,TalkTime=54}] [<Looker> Wha--?! What is that woman?! She's no Pokémon, yet she can use Transform?"}]
+tellraw @s[scores={DialogueTrigger=189,TalkTime=63}] [<Looker> Oh, what am I doing? This is not a time to stand around being shocked!"}]
+tellraw @s[scores={DialogueTrigger=189,TalkTime=72}] [<Looker> In fact, this is a time to dash off in pursuit! The chase is on!"}]
+tellraw @s[scores={DialogueTrigger=189,TalkTime=81}] [<Looker> Now, considering the direction in which she ran, and the angle...hm..."}]
+tellraw @s[scores={DialogueTrigger=189,TalkTime=91}] [<Looker> "},{"selector":"@s"},{"text":", my brave friend! I suspect she is headed for the alley between the office and Hibernal Avenue!"}]
+tellraw @s[scores={DialogueTrigger=189,TalkTime=103}] [<Looker> Please go ahead without me!"}]
+tellraw @s[scores={DialogueTrigger=189,TalkTime=110}] [<Looker> I will be right behind you, just as soon as I have checked this place for clues!"}]
+tellraw @s[scores={DialogueTrigger=189,TalkTime=120}] [<Looker> But wait! One minute of your time! The great Looker will restore your Pokémon before you go!"}]
 execute as @a[scores={DialogueTrigger=189,TalkTime=123}] run pokeheal @s
 
 #tp Looker out
@@ -1405,14 +1231,14 @@ execute as @s[scores={DialogueTrigger=190,TalkTime=47}] run tp @e[x=-104,y=100,z
 execute as @s[scores={DialogueTrigger=190,TalkTime=47}] run particle cloud -95 101 -609 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=190,TalkTime=47}] run tp @e[x=-95,y=100,z=-609,dy=3,type=pixelmon:npc_trainer] -504 246 1292
 
-tellraw @s[scores={DialogueTrigger=190,TalkTime=49}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Argh! She has run off on us again! Is she really not a Pokémon?"}]
-tellraw @s[scores={DialogueTrigger=190,TalkTime=58}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I've never seen a human jump like that... Oh, what am I doing?"}]
-tellraw @s[scores={DialogueTrigger=190,TalkTime=66}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> This is no time to stand around being impressed! Now is the time to chase the culprit!"}]
-tellraw @s[scores={DialogueTrigger=190,TalkTime=78}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Considering the direction she ran off...hmm..."}]
-tellraw @s[scores={DialogueTrigger=190,TalkTime=85}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Brave "},{"selector":"@s"},{"text":"! Her goal must be the alley next to Cafe Kizuna!"}]
-tellraw @s[scores={DialogueTrigger=190,TalkTime=95}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Go ahead without me! I will follow close behind you, just as soon as I have checked this place for clues!"}]
-tellraw @s[scores={DialogueTrigger=190,TalkTime=105}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> No, wait! Thirty seconds! How could I forget twice?!"}]
-tellraw @s[scores={DialogueTrigger=190,TalkTime=114}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Let me just restore your Pokémon before you go!"}]
+tellraw @s[scores={DialogueTrigger=190,TalkTime=49}] [<Looker> Argh! She has run off on us again! Is she really not a Pokémon?"}]
+tellraw @s[scores={DialogueTrigger=190,TalkTime=58}] [<Looker> I've never seen a human jump like that... Oh, what am I doing?"}]
+tellraw @s[scores={DialogueTrigger=190,TalkTime=66}] [<Looker> This is no time to stand around being impressed! Now is the time to chase the culprit!"}]
+tellraw @s[scores={DialogueTrigger=190,TalkTime=78}] [<Looker> Considering the direction she ran off...hmm..."}]
+tellraw @s[scores={DialogueTrigger=190,TalkTime=85}] [<Looker> Brave "},{"selector":"@s"},{"text":"! Her goal must be the alley next to Cafe Kizuna!"}]
+tellraw @s[scores={DialogueTrigger=190,TalkTime=95}] [<Looker> Go ahead without me! I will follow close behind you, just as soon as I have checked this place for clues!"}]
+tellraw @s[scores={DialogueTrigger=190,TalkTime=105}] [<Looker> No, wait! Thirty seconds! How could I forget twice?!"}]
+tellraw @s[scores={DialogueTrigger=190,TalkTime=114}] [<Looker> Let me just restore your Pokémon before you go!"}]
 execute as @a[scores={DialogueTrigger=190,TalkTime=120}] run pokeheal @s
 
 #tp Looker out
@@ -1442,24 +1268,24 @@ tellraw @s[scores={DialogueTrigger=191,TalkTime=3}] {"text":"<Black Belt> Ahhh..
 execute as @s[scores={DialogueTrigger=191,TalkTime=8}] run particle cloud 5 101 -528 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=191,TalkTime=8}] run tp @e[x=-504,y=250,z=1286,dy=3,type=pixelmon:npc_chatting] 5 101 -528
 
-tellraw @s[scores={DialogueTrigger=191,TalkTime=13}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> What is it? What has happened? "},{"selector":"@s"},{"text":", my friend!"}]
-tellraw @s[scores={DialogueTrigger=191,TalkTime=22}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Come now... Young man... What has happened to you?"}]
+tellraw @s[scores={DialogueTrigger=191,TalkTime=13}] [<Looker> What is it? What has happened? "},{"selector":"@s"},{"text":", my friend!"}]
+tellraw @s[scores={DialogueTrigger=191,TalkTime=22}] [<Looker> Come now... Young man... What has happened to you?"}]
 tellraw @s[scores={DialogueTrigger=191,TalkTime=30}] {"text":"<Black Belt> ...It was over in a flash."}
 tellraw @s[scores={DialogueTrigger=191,TalkTime=37}] {"text":"<Black Belt> I was training here in the alley when an enchanting young lady challenged me to battle... And then she..."}
-tellraw @s[scores={DialogueTrigger=191,TalkTime=47}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> What did she do?"}]
+tellraw @s[scores={DialogueTrigger=191,TalkTime=47}] [<Looker> What did she do?"}]
 tellraw @s[scores={DialogueTrigger=191,TalkTime=55}] {"text":"<Black Belt> She utterly destroyed me!"}
 tellraw @s[scores={DialogueTrigger=191,TalkTime=63}] {"text":"<Black Belt> My heart was stolen by those brunette locks and the intensity of those glittering eyes!"}
 tellraw @s[scores={DialogueTrigger=191,TalkTime=72}] {"text":"<Black Belt> And then she took them... My precious Poké Balls..."}
 tellraw @s[scores={DialogueTrigger=191,TalkTime=80}] {"text":"<Black Belt> She took them by force... Arghh..."}
 tellraw @s[scores={DialogueTrigger=191,TalkTime=87}] {"text":"<Black Belt> The memory is enough to make me start crying again..."}
-tellraw @s[scores={DialogueTrigger=191,TalkTime=95}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Argh! So we were too late... And where did the woman go?!"}]
+tellraw @s[scores={DialogueTrigger=191,TalkTime=95}] [<Looker> Argh! So we were too late... And where did the woman go?!"}]
 tellraw @s[scores={DialogueTrigger=191,TalkTime=103}] {"text":"<Black Belt> Sniffle...sniffle... She went running off toward Estival Avenue, I guess..."}
 tellraw @s[scores={DialogueTrigger=191,TalkTime=113}] {"text":"<Black Belt> Ugh... What possessed that... svelte siren..."}
-tellraw @s[scores={DialogueTrigger=191,TalkTime=120}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Estival Avenue, huh?"}]
+tellraw @s[scores={DialogueTrigger=191,TalkTime=120}] [<Looker> Estival Avenue, huh?"}]
 execute as @s[scores={DialogueTrigger=191,TalkTime=125}] run scoreboard players set @s click 1
-tellraw @s[scores={DialogueTrigger=191,TalkTime=126}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> It could be the same alley where we first met Emma and Mimi!"}]
-tellraw @s[scores={DialogueTrigger=191,TalkTime=134}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Go at top speed, if you please!"}]
-tellraw @s[scores={DialogueTrigger=191,TalkTime=141}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I will do what I can for this poor man and then follow as quickly as I can!"}]
+tellraw @s[scores={DialogueTrigger=191,TalkTime=126}] [<Looker> It could be the same alley where we first met Emma and Mimi!"}]
+tellraw @s[scores={DialogueTrigger=191,TalkTime=134}] [<Looker> Go at top speed, if you please!"}]
+tellraw @s[scores={DialogueTrigger=191,TalkTime=141}] [<Looker> I will do what I can for this poor man and then follow as quickly as I can!"}]
 
 #tp Looker and Blackbelt out
 execute as @s[scores={DialogueTrigger=191,TalkTime=150}] run particle cloud 5 101 -528 2 2 2 1 100
@@ -1493,7 +1319,7 @@ execute as @s[scores={DialogueTrigger=192,TalkTime=18}] run data modify entity @
 execute as @s[scores={DialogueTrigger=192,TalkTime=17}] run execute as @e[x=-382,y=100,z=-277,dy=100,type=pixelmon:npc_chatting] run particle cloud ~ ~ ~ 2 2 2 1 100
 
 tellraw @s[scores={DialogueTrigger=192,TalkTime=20}] ["",{"text":"<"},{"text":"...","color":"gold"},{"text":"> RELINQUISH EVERY POKÉMON YOU POSSESS. COOPERATE OR I WILL TAKE THEM BY FORCE."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=29}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Freeze!"}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=29}] [<Looker> Freeze!"}]
 
 #Plays Looker Theme
 execute as @s[scores={DialogueTrigger=192,TalkTime=29}] run scoreboard players set @s click 1
@@ -1507,11 +1333,11 @@ execute as @s[scores={DialogueTrigger=192,TalkTime=32}] run tp @e[x=-504,y=250,z
 execute as @s[scores={DialogueTrigger=192,TalkTime=32}] run particle cloud -391 101 -275 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=192,TalkTime=32}] run tp @e[x=-391,y=100,z=-275,dy=3,type=pixelmon:npc_trainer] -504 251 1290
 
-tellraw @s[scores={DialogueTrigger=192,TalkTime=35}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Pokémon thief! I will not let you lay a finger on my partner!"}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=35}] [<Looker> Pokémon thief! I will not let you lay a finger on my partner!"}]
 tellraw @s[scores={DialogueTrigger=192,TalkTime=44}] ["",{"text":"<"},{"text":"...","color":"gold"},{"text":"> DO NOT OBSTRUCT ME. I WILL ERADICATE YOU."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=52}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Easy words, but not so easy to carry out!"}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=60}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Even though I, the great Looker, have no Pokémon, I yet have my fists!"}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=69}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I'm a trained expert. The outlook for you is dismal."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=52}] [<Looker> Easy words, but not so easy to carry out!"}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=60}] [<Looker> Even though I, the great Looker, have no Pokémon, I yet have my fists!"}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=69}] [<Looker> I'm a trained expert. The outlook for you is dismal."}]
 
 #Espurr tps in
 execute as @s[scores={DialogueTrigger=192,TalkTime=75}] run particle cloud -378 101 -275 2 2 2 1 100
@@ -1519,20 +1345,20 @@ execute as @s[scores={DialogueTrigger=192,TalkTime=75}] run tp @e[x=-504,y=251,z
 
 tellraw @s[scores={DialogueTrigger=192,TalkTime=78}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mrrraaawwwr!"}]
 execute as @s[scores={DialogueTrigger=192,TalkTime=78}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
-tellraw @s[scores={DialogueTrigger=192,TalkTime=83}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> M-Mimi?! Why--?!"}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=83}] [<Looker> M-Mimi?! Why--?!"}]
 tellraw @s[scores={DialogueTrigger=192,TalkTime=89}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mrrr-murrr!"}]
 execute as @s[scores={DialogueTrigger=192,TalkTime=89}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
 tellraw @s[scores={DialogueTrigger=192,TalkTime=96}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mrrrawwwrrr mrawr!"}]
 execute as @s[scores={DialogueTrigger=192,TalkTime=96}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
 tellraw @s[scores={DialogueTrigger=192,TalkTime=101}] ["",{"text":"<"},{"text":"...","color":"gold"},{"text":"> ... ... ..."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=107}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Mimi! That woman is dangerous! Move away from her at once!"}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=107}] [<Looker> Mimi! That woman is dangerous! Move away from her at once!"}]
 tellraw @s[scores={DialogueTrigger=192,TalkTime=115}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mrrraaawwwrrr! Mrrrawwwwwwrrr!"}]
 execute as @s[scores={DialogueTrigger=192,TalkTime=116}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
 tellraw @s[scores={DialogueTrigger=192,TalkTime=120}] ["",{"text":"<"},{"text":"...","color":"gold"},{"text":"> THIS CREATURE... I DO NOT UNDERSTAND ITS PROCESS."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=128}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> How can this be? Why would our Mimi act so friendly to..."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=136}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> It...cannot...be. It cannot be so."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=128}] [<Looker> How can this be? Why would our Mimi act so friendly to..."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=136}] [<Looker> It...cannot...be. It cannot be so."}]
 tellraw @s[scores={DialogueTrigger=192,TalkTime=144}] ["",{"text":"<"},{"text":"...","color":"gold"},{"text":"> OBSTRUCTION... ERADICATE OBSTRUCTION."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=152}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Mimi! Watch out!"}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=152}] [<Looker> Mimi! Watch out!"}]
 
 #Queues up silence
 execute as @s[scores={DialogueTrigger=192,TalkTime=157}] run scoreboard players set @s click 1
@@ -1547,36 +1373,36 @@ execute as @s[scores={DialogueTrigger=192,TalkTime=163}] run particle crit -380 
 execute as @s[scores={DialogueTrigger=192,TalkTime=166}] run particle minecraft:damage_indicator -380 101 -278 0 2 0 1 5 normal
 execute as @s[scores={DialogueTrigger=192,TalkTime=163}] run playsound minecraft:entity.irongolem.death ambient @s ~ ~ ~ 100 1 1
 
-tellraw @s[scores={DialogueTrigger=192,TalkTime=166}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Augh!"}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=172}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Ughhh..."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=166}] [<Looker> Augh!"}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=172}] [<Looker> Ughhh..."}]
 tellraw @s[scores={DialogueTrigger=192,TalkTime=178}] ["",{"text":"<"},{"text":"...","color":"gold"},{"text":"> WHY DO YOU PROTECT THIS POKÉMON? I DO NOT UNDERSTAND YOUR PROCESS."}]
 tellraw @s[scores={DialogueTrigger=192,TalkTime=186}] ["",{"text":"<"},{"text":"...","color":"gold"},{"text":"> IRRELEVANT. COMMENCE ERADICATION PROCEDURE..."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=194}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> W-wait... Stop this... Emma..."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=194}] [<Looker> W-wait... Stop this... Emma..."}]
 
 #Begin sorrowful theme
 execute as @s[scores={DialogueTrigger=192,TalkTime=201}] run scoreboard players set @s click 1
 #score_DialogueTrigger_min=192,score_DialogueTrigger=192,score_TalkTime_min=200,score_TalkTime=554
 
 tellraw @s[scores={DialogueTrigger=192,TalkTime=202}] ["",{"text":"<"},{"text":"...","color":"gold"},{"text":"> EMMA?"}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=209}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Th-that's right... You are... You are Emma. Is it not so?"}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=209}] [<Looker> Th-that's right... You are... You are Emma. Is it not so?"}]
 tellraw @s[scores={DialogueTrigger=192,TalkTime=219}] ["",{"text":"<"},{"text":"...","color":"gold"},{"text":"> ... ... ..."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=225}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Ungh... M-Mimi hates all adults..."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=232}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> The only person it loves... enough to make it jump for joy... is you, Emma..."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=225}] [<Looker> Ungh... M-Mimi hates all adults..."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=232}] [<Looker> The only person it loves... enough to make it jump for joy... is you, Emma..."}]
 tellraw @s[scores={DialogueTrigger=192,TalkTime=241}] ["",{"text":"<"},{"text":"Essentia","color":"gold"},{"text":"> I AM NOT AN EMMA. I AM ESSENTIA."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=249}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Eurgh... Essentia? You cannot deceive me, Emma."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=257}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> You may trick an ordinary human eye..."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=264}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> But you could never fake the bond between you and...Mimi..."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=249}] [<Looker> Eurgh... Essentia? You cannot deceive me, Emma."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=257}] [<Looker> You may trick an ordinary human eye..."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=264}] [<Looker> But you could never fake the bond between you and...Mimi..."}]
 tellraw @s[scores={DialogueTrigger=192,TalkTime=272}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mrrrawwwr..."}]
 execute as @s[scores={DialogueTrigger=192,TalkTime=272}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
 tellraw @s[scores={DialogueTrigger=192,TalkTime=277}] ["",{"text":"<"},{"text":"Essentia","color":"gold"},{"text":"> ... ... ..."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=282}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> What is the matter with you, Emma? Why would you do these things!"}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=291}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> If you are in some sort of trouble, could you not have shared it with me?"}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=282}] [<Looker> What is the matter with you, Emma? Why would you do these things!"}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=291}] [<Looker> If you are in some sort of trouble, could you not have shared it with me?"}]
 tellraw @s[scores={DialogueTrigger=192,TalkTime=300}] ["",{"text":"<"},{"text":"Essentia","color":"gold"},{"text":"> ... ... ..."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=305}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Emma! SAY SOMETHING!"}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=305}] [<Looker> Emma! SAY SOMETHING!"}]
 tellraw @s[scores={DialogueTrigger=192,TalkTime=313}] ["",{"text":"<"},{"text":"Essentia","color":"gold"},{"text":"> ... ... ...Ugh!"}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=320}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> E-Emma?"}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=320}] [<Looker> E-Emma?"}]
 tellraw @s[scores={DialogueTrigger=192,TalkTime=325}] ["",{"text":"<"},{"text":"Essentia","color":"gold"},{"text":"> AUUUGGGHHHHHHHHH!!"}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=332}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Emma! What's wrong?!"}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=332}] [<Looker> Emma! What's wrong?!"}]
 tellraw @s[scores={DialogueTrigger=192,TalkTime=339}] ["",{"text":"<"},{"text":"Essentia","color":"gold"},{"text":"> MUST...DISCONTINUE..."}]
 
 #Essentia tps away
@@ -1584,13 +1410,13 @@ execute as @s[scores={DialogueTrigger=192,TalkTime=346}] run data modify entity 
 execute as @s[scores={DialogueTrigger=192,TalkTime=348}] run execute as @e[x=-382,y=100,z=-277,dy=100,type=pixelmon:npc_chatting,name=Essentia] run particle cloud ~ ~ ~ 2 2 2 1 100
 execute as @s[scores={DialogueTrigger=192,TalkTime=348}] run tp @e[x=-382,y=100,z=-277,dy=100,type=pixelmon:npc_chatting,name=Essentia] -504 251 1292
 
-tellraw @s[scores={DialogueTrigger=192,TalkTime=350}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Emma!"}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=350}] [<Looker> Emma!"}]
 tellraw @s[scores={DialogueTrigger=192,TalkTime=355}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mrrr-mrrrawwwrrrr!"}]
 execute as @s[scores={DialogueTrigger=192,TalkTime=355}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
-tellraw @s[scores={DialogueTrigger=192,TalkTime=360}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Oh no... Emma..."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=367}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Ahem... "},{"selector":"@s"},{"text":", forgive me..."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=375}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> It seems that last hit...got to me..."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=383}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Do you think you could possibly... help me back to the office..."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=360}] [<Looker> Oh no... Emma..."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=367}] [<Looker> Ahem... "},{"selector":"@s"},{"text":", forgive me..."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=375}] [<Looker> It seems that last hit...got to me..."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=383}] [<Looker> Do you think you could possibly... help me back to the office..."}]
 
 #blinds player
 #tps Looker and Mimi out
@@ -1605,13 +1431,13 @@ execute as @s[scores={DialogueTrigger=192,TalkTime=391}] run tp @e[x=-391,y=100,
 
 execute as @s[scores={DialogueTrigger=192,TalkTime=392}] run tp @s -50 101 434 180 8
 
-tellraw @s[scores={DialogueTrigger=192,TalkTime=400}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Thank you for your kindness, "},{"selector":"@s"},{"text":". Your help has saved me again today."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=400}] [<Looker> Thank you for your kindness, "},{"selector":"@s"},{"text":". Your help has saved me again today."}]
 tellraw @s[scores={DialogueTrigger=192,TalkTime=410}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Murrr-murrr..."}]
 execute as @s[scores={DialogueTrigger=192,TalkTime=410}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
-tellraw @s[scores={DialogueTrigger=192,TalkTime=415}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Even the great Looker can be taken down, as you see."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=423}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> The injury to my stomach, a mere trifle, not at all...cough, cough...painful."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=433}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I may just pop by...the hospital... It has been quite a busy day, in fact."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=443}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Please go home and rest yourself."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=415}] [<Looker> Even the great Looker can be taken down, as you see."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=423}] [<Looker> The injury to my stomach, a mere trifle, not at all...cough, cough...painful."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=433}] [<Looker> I may just pop by...the hospital... It has been quite a busy day, in fact."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=443}] [<Looker> Please go home and rest yourself."}]
 
 #blinds player
 #gamemode 3
@@ -1624,20 +1450,20 @@ execute as @s[scores={DialogueTrigger=192,TalkTime=450}] run effect give @s mine
 execute as @s[scores={DialogueTrigger=192,TalkTime=450}] run gamemode spectator @s
 execute as @s[scores={DialogueTrigger=192,TalkTime=451}] run tp @s -26 106 437 180 43
 
-tellraw @s[scores={DialogueTrigger=192,TalkTime=458}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Mimi, could you give this to "},{"selector":"@s"},{"text":"? I am about to embark on a dangerous investigation."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=470}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I must venture upon this road alone, in order to preserve you all from harm."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=479}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I will claim to be staying in the hospital... and use this chance to slip away..."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=458}] [<Looker> Mimi, could you give this to "},{"selector":"@s"},{"text":"? I am about to embark on a dangerous investigation."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=470}] [<Looker> I must venture upon this road alone, in order to preserve you all from harm."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=479}] [<Looker> I will claim to be staying in the hospital... and use this chance to slip away..."}]
 tellraw @s[scores={DialogueTrigger=192,TalkTime=488}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mraaawwwrrr!"}]
 execute as @s[scores={DialogueTrigger=192,TalkTime=488}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
 
 execute as @s[scores={DialogueTrigger=192,TalkTime=492}] run particle minecraft:damage_indicator -26 101 429 0 2 0 1 5 normal
-tellraw @s[scores={DialogueTrigger=192,TalkTime=493}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Urrugh... My injuries may be worse than I guessed..."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=500}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> But I must press on! I can't let this slow me down."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=509}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Essentia... I know without doubt that she is Emma..."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=518}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> That suit she wears is most likely the doing of that man..."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=527}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> The man I have come so far to hunt down."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=535}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> If I fail to find and stop him, my Emma might never..."}]
-tellraw @s[scores={DialogueTrigger=192,TalkTime=545}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I have no choice but to beg the help of that despicable..."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=493}] [<Looker> Urrugh... My injuries may be worse than I guessed..."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=500}] [<Looker> But I must press on! I can't let this slow me down."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=509}] [<Looker> Essentia... I know without doubt that she is Emma..."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=518}] [<Looker> That suit she wears is most likely the doing of that man..."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=527}] [<Looker> The man I have come so far to hunt down."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=535}] [<Looker> If I fail to find and stop him, my Emma might never..."}]
+tellraw @s[scores={DialogueTrigger=192,TalkTime=545}] [<Looker> I have no choice but to beg the help of that despicable..."}]
 
 #blinds player
 #tps player to Beaureu exterior
@@ -2197,27 +2023,27 @@ execute as @s[scores={DialogueTrigger=212,TalkTime=38}] run tp @e[x=-505,y=111,z
 
 execute as @s[scores={DialogueTrigger=212,TalkTime=39}] run data modify entity @e[limit=1,x=-297,y=29,z=308,dy=3,type=pixelmon:npc_chatting] {Rotation:[180.0f,0.0f]}
 
-tellraw @s[scores={DialogueTrigger=212,TalkTime=40}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> That is enough."}]
+tellraw @s[scores={DialogueTrigger=212,TalkTime=40}] [<Looker> That is enough."}]
 tellraw @s[scores={DialogueTrigger=212,TalkTime=46}] {"text":"<Team Flare Xerosic> What?!"}
 tellraw @s[scores={DialogueTrigger=212,TalkTime=51}] {"text":"<Team Flare Xerosic> Who are you two? Why are you here?"}
-tellraw @s[scores={DialogueTrigger=212,TalkTime=59}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Mimi is a Psychic-type Pokémon."}]
-tellraw @s[scores={DialogueTrigger=212,TalkTime=66}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> It is only natural that it could find the friend to whom it has opened its heart."}]
+tellraw @s[scores={DialogueTrigger=212,TalkTime=59}] [<Looker> Mimi is a Psychic-type Pokémon."}]
+tellraw @s[scores={DialogueTrigger=212,TalkTime=66}] [<Looker> It is only natural that it could find the friend to whom it has opened its heart."}]
 tellraw @s[scores={DialogueTrigger=212,TalkTime=78}] {"text":"<Team Flare Xerosic> You can't just barge into a private residence like this! This is a crime!"}
-tellraw @s[scores={DialogueTrigger=212,TalkTime=88}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> That may have been true had we forced our way onto the property."}]
-tellraw @s[scores={DialogueTrigger=212,TalkTime=97}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> However, all we did was step into a wide-open elevator."}]
-tellraw @s[scores={DialogueTrigger=212,TalkTime=105}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Notwithstanding that, "},{"selector":"@s"},{"text":" is the partner of the great Looker!"}]
-tellraw @s[scores={DialogueTrigger=212,TalkTime=115}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Were they in trouble, I would follow to the highest heights and the fathomless depths!"}]
+tellraw @s[scores={DialogueTrigger=212,TalkTime=88}] [<Looker> That may have been true had we forced our way onto the property."}]
+tellraw @s[scores={DialogueTrigger=212,TalkTime=97}] [<Looker> However, all we did was step into a wide-open elevator."}]
+tellraw @s[scores={DialogueTrigger=212,TalkTime=105}] [<Looker> Notwithstanding that, "},{"selector":"@s"},{"text":" is the partner of the great Looker!"}]
+tellraw @s[scores={DialogueTrigger=212,TalkTime=115}] [<Looker> Were they in trouble, I would follow to the highest heights and the fathomless depths!"}]
 tellraw @s[scores={DialogueTrigger=212,TalkTime=125}] {"text":"<Team Flare Xerosic> Grrr... Still, you will not capture me! Go, Essentia! Get them all!"}
 tellraw @s[scores={DialogueTrigger=212,TalkTime=135}] ["",{"text":"<"},{"text":"Essentia","color":"gold"},{"text":"> ... ... ..."}]
-tellraw @s[scores={DialogueTrigger=212,TalkTime=141}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Stop this, Emma!"}]
+tellraw @s[scores={DialogueTrigger=212,TalkTime=141}] [<Looker> Stop this, Emma!"}]
 tellraw @s[scores={DialogueTrigger=212,TalkTime=147}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mrrrrrrawr!"}]
 execute as @s[scores={DialogueTrigger=212,TalkTime=147}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
 tellraw @s[scores={DialogueTrigger=212,TalkTime=153}] {"text":"<Team Flare Xerosic> It's useless, you fools! Nothing you try will work!"}
 tellraw @s[scores={DialogueTrigger=212,TalkTime=161}] {"text":"<Team Flare Xerosic> Emma cannot hear you! The one in control of Essentia is not Emma, but me!"}
-tellraw @s[scores={DialogueTrigger=212,TalkTime=170}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Can you hear me, Emma?!"}]
-tellraw @s[scores={DialogueTrigger=212,TalkTime=177}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> If you can wake yourself, I know you can break free of that suit!"}]
-tellraw @s[scores={DialogueTrigger=212,TalkTime=186}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Awaken! Open your eyes!"}]
-tellraw @s[scores={DialogueTrigger=212,TalkTime=192}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Emma! EMMA!!"}]
+tellraw @s[scores={DialogueTrigger=212,TalkTime=170}] [<Looker> Can you hear me, Emma?!"}]
+tellraw @s[scores={DialogueTrigger=212,TalkTime=177}] [<Looker> If you can wake yourself, I know you can break free of that suit!"}]
+tellraw @s[scores={DialogueTrigger=212,TalkTime=186}] [<Looker> Awaken! Open your eyes!"}]
+tellraw @s[scores={DialogueTrigger=212,TalkTime=192}] [<Looker> Emma! EMMA!!"}]
 tellraw @s[scores={DialogueTrigger=212,TalkTime=200}] ["",{"text":"<"},{"text":"Essentia","color":"gold"},{"text":"> ... ... ..."}]
 tellraw @s[scores={DialogueTrigger=212,TalkTime=207}] {"text":"<Team Flare Xerosic> Isn't the power of science amazing?"}
 tellraw @s[scores={DialogueTrigger=212,TalkTime=215}] {"text":"<Team Flare Xerosic> There's no way she will hear you now!"}
@@ -2228,7 +2054,7 @@ execute as @s[scores={DialogueTrigger=212,TalkTime=222}] run tp @e[x=-503,y=111,
 
 tellraw @s[scores={DialogueTrigger=212,TalkTime=224}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Murrr-mrrraaawr!! Murrr-mrrraaawr!!"}]
 execute as @s[scores={DialogueTrigger=212,TalkTime=224}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
-tellraw @s[scores={DialogueTrigger=212,TalkTime=229}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Mimi! Get back!"}]
+tellraw @s[scores={DialogueTrigger=212,TalkTime=229}] [<Looker> Mimi! Get back!"}]
 tellraw @s[scores={DialogueTrigger=212,TalkTime=236}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mrawr?!"}]
 execute as @s[scores={DialogueTrigger=212,TalkTime=236}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
 tellraw @s[scores={DialogueTrigger=212,TalkTime=242}] ["",{"text":"<"},{"text":"Essentia","color":"gold"},{"text":"> ... ... ...Ugh!"}]
@@ -2240,7 +2066,7 @@ execute as @s[scores={DialogueTrigger=212,TalkTime=274}] run particle minecraft:
 tellraw @s[scores={DialogueTrigger=212,TalkTime=258}] {"text":"<Team Flare Xerosic> What?! How can this be happening?"}
 tellraw @s[scores={DialogueTrigger=212,TalkTime=266}] {"text":"<Team Flare Xerosic> Not a problem, though. Watch this!"}
 tellraw @s[scores={DialogueTrigger=212,TalkTime=274}] {"text":"<Team Flare Xerosic> Remote-control function... Set to maximum output!"}
-tellraw @s[scores={DialogueTrigger=212,TalkTime=283}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Ugh! "},{"selector":"@s"},{"text":"! You must go! Stop Emma for me!"}]
+tellraw @s[scores={DialogueTrigger=212,TalkTime=283}] [<Looker> Ugh! "},{"selector":"@s"},{"text":"! You must go! Stop Emma for me!"}]
 
 #Swap Essentia 6th battle trainer for 7th
 execute as @s[scores={DialogueTrigger=212,TalkTime=290}] run particle cloud -295 32 297 2 2 2 1 100
@@ -2275,20 +2101,20 @@ execute as @s[scores={DialogueTrigger=213,TalkTime=5..59}] run particle minecraf
 execute as @s[scores={DialogueTrigger=213,TalkTime=62}] run particle minecraft:angry_villager -295 33 297 0.5 1 0.5 10 1 normal
 
 tellraw @s[scores={DialogueTrigger=213,TalkTime=5}] ["",{"text":"<"},{"text":"Essentia","color":"gold"},{"text":"> ... ... ...Ngh! GAAAAAHHH!!"}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=12}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> There are no more Poké Balls! You must stop fighting!! EMMA!!!"}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=12}] [<Looker> There are no more Poké Balls! You must stop fighting!! EMMA!!!"}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=22}] ["",{"text":"<"},{"text":"Essentia","color":"gold"},{"text":"> ... ... ..."}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=26}] ["",{"text":"<"},{"text":"Essentia","color":"gold"},{"text":"> GRAAAUUUGGGHHH! AUUUGGGHHH!!"}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=33}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> No... Emma! What can I do?!"}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=33}] [<Looker> No... Emma! What can I do?!"}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=40}] {"text":"<Team Flare Xerosic> ... ... ..."}
 tellraw @s[scores={DialogueTrigger=213,TalkTime=46}] ["",{"text":"<"},{"text":"Essentia","color":"gold"},{"text":"> AAAUUUGGGHHHHH!!"}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=53}] {"text":"<Team Flare Xerosic> Remote control... Power down. Deactivate."}
 tellraw @s[scores={DialogueTrigger=213,TalkTime=60}] ["",{"text":"<"},{"text":"Essentia","color":"gold"},{"text":"> GAAAHHH!!"}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=66}] ["",{"text":"<"},{"text":"Essentia","color":"gold"},{"text":"> ... ... ..."}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=73}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> E-Emma!! Are you all right?!"}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=73}] [<Looker> E-Emma!! Are you all right?!"}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=80}] ["",{"text":"<"},{"text":"Essentia","color":"gold"},{"text":"> ... ... ..."}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=86}] {"text":"<Team Flare Xerosic> All I did was turn off the remote-control capability."}
 tellraw @s[scores={DialogueTrigger=213,TalkTime=95}] {"text":"<Team Flare Xerosic> There was never any danger to the girl."}
-tellraw @s[scores={DialogueTrigger=213,TalkTime=103}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> What?!"}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=103}] [<Looker> What?!"}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=110}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Mmh... Mmm..."}]
 execute as @s[scores={DialogueTrigger=213,TalkTime=113}] run data modify entity @e[limit=1,x=-295,y=31,z=297,dy=3] {Rotation:[45.0f,0.0f]}
 tellraw @s[scores={DialogueTrigger=213,TalkTime=116}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Yawwwn! Hm?"}]
@@ -2301,19 +2127,19 @@ tellraw @s[scores={DialogueTrigger=213,TalkTime=164}] ["",{"text":"<"},{"text":"
 execute as @s[scores={DialogueTrigger=213,TalkTime=172}] run data modify entity @e[limit=1,x=-295,y=31,z=297,dy=3] {Rotation:[180.0f,0.0f]}
 tellraw @s[scores={DialogueTrigger=213,TalkTime=175}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Huh? Wait? Why is everyone here?"}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=184}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> I thought it was a secret that I was working here!"}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=193}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> E-Emma... Are you...all right?"}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=193}] [<Looker> E-Emma... Are you...all right?"}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=200}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Hm? What do you mean? I've just been taking a nap."}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=209}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> My job here was really easy. All I had to do was wear this suit while I snoozed away."}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=220}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> What are you doing here, Mr. Looker? I thought you were in the hospital!"}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=230}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Uh... Ahem. N-no... You see..."}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=239}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I got, uh, special permission to check myself out of the...hospital..."}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=249}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I had to make sure you were OK, Emma."}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=257}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I had to see you, so I found out where you worked and came to find you."}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=230}] [<Looker> Uh... Ahem. N-no... You see..."}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=239}] [<Looker> I got, uh, special permission to check myself out of the...hospital..."}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=249}] [<Looker> I had to make sure you were OK, Emma."}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=257}] [<Looker> I had to see you, so I found out where you worked and came to find you."}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=267}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Oh, I see. I was afraid you might be mad because I started working without telling you."}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=279}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> I kept it a secret all this time..."}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=287}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> You really are a great detective, aren't you, Mr. Looker? You found me anyway!"}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=298}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Naturally! Now, Emma, how about you go and get some dinner?"}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=307}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I need to have a little grown-up talk with Dr. Xerosic here!"}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=298}] [<Looker> Naturally! Now, Emma, how about you go and get some dinner?"}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=307}] [<Looker> I need to have a little grown-up talk with Dr. Xerosic here!"}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=315}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Oh, sure. No problem! We'll head out now!"}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=324}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Let's all go together! Mimi! And you, too, "},{"selector":"@s"},{"text":"!"}]
 
@@ -2331,8 +2157,8 @@ execute as @s[scores={DialogueTrigger=213,TalkTime=335}] run gamemode spectator 
 execute as @s[scores={DialogueTrigger=213,TalkTime=336}] run tp @s -292 34 310 150 38
 execute as @s[scores={DialogueTrigger=213,TalkTime=336}] run tp @s -292 34 310 ~ ~
 
-tellraw @s[scores={DialogueTrigger=213,TalkTime=342}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> That may be that...but..."}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=350}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I think it's time you and I have a little chat, Dr. Xerosic."}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=342}] [<Looker> That may be that...but..."}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=350}] [<Looker> I think it's time you and I have a little chat, Dr. Xerosic."}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=362}] {"text":"<Team Flare Xerosic> Of course. Why would I mind having a chat with you...\u201cLooker,\u201d or so you're apparently called."}
 
 
@@ -2354,18 +2180,18 @@ execute as @s[scores={DialogueTrigger=213,TalkTime=374}] run scoreboard players 
 execute as @s[scores={DialogueTrigger=213,TalkTime=556}] run tp @s -6 105 423 -45 38
 execute as @s[scores={DialogueTrigger=213,TalkTime=556..676}] run tp @s -6 105 423 ~ ~
 
-tellraw @s[scores={DialogueTrigger=213,TalkTime=378}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Ahem. Let us get down to it."}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=386}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I would like to straighten this out before Emma returns."}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=394}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Dr. Xerosic, could you please confirm one small thing for me?"}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=402}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> The criminal mastermind behind all these incidents was--you yourself?"}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=378}] [<Looker> Ahem. Let us get down to it."}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=386}] [<Looker> I would like to straighten this out before Emma returns."}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=394}] [<Looker> Dr. Xerosic, could you please confirm one small thing for me?"}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=402}] [<Looker> The criminal mastermind behind all these incidents was--you yourself?"}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=412}] {"text":"<Team Flare Xerosic> Oho. Right enough. The graffiti in the art museum and the theft of the Trainers' Poké Balls?"}
 tellraw @s[scores={DialogueTrigger=213,TalkTime=423}] {"text":"<Team Flare Xerosic> All me, controlling Essentia remotely with the Expansion Suit!"}
 tellraw @s[scores={DialogueTrigger=213,TalkTime=431}] {"text":"<Team Flare Xerosic> Emma was clinically unconscious in the suit."}
 tellraw @s[scores={DialogueTrigger=213,TalkTime=439}] {"text":"<Team Flare Xerosic> Her mind had no clue what her body was doing."}
 tellraw @s[scores={DialogueTrigger=213,TalkTime=447}] {"text":"<Team Flare Xerosic> She has zero responsibility for any of the crimes. You need not doubt her."}
-tellraw @s[scores={DialogueTrigger=213,TalkTime=457}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> That's how it is?"}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=457}] [<Looker> That's how it is?"}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=464}] {"text":"<Team Flare Xerosic> If you're apprehending anyone, it should be me alone."}
-tellraw @s[scores={DialogueTrigger=213,TalkTime=472}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Ahem. For a minute, let's say I believe your statements--"}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=472}] [<Looker> Ahem. For a minute, let's say I believe your statements--"}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=481}] {"text":"<Team Flare Xerosic> You had better believe it. Emma is a fine person."}
 tellraw @s[scores={DialogueTrigger=213,TalkTime=499}] {"text":"<Team Flare Xerosic> She may be a bit foolish, but she's strong and clear in purpose."}
 tellraw @s[scores={DialogueTrigger=213,TalkTime=509}] {"text":"<Team Flare Xerosic> Yes, clarity... It is required when one dedicates oneself to a single pursuit."}
@@ -2373,17 +2199,17 @@ tellraw @s[scores={DialogueTrigger=213,TalkTime=519}] {"text":"<Team Flare Xeros
 tellraw @s[scores={DialogueTrigger=213,TalkTime=529}] {"text":"<Team Flare Xerosic> The Expansion Suit that I dreamed of could have only been created thanks to the clear dedication of that girl's heart."}
 tellraw @s[scores={DialogueTrigger=213,TalkTime=541}] {"text":"<Team Flare Xerosic> When you add that all up, it means..."}
 tellraw @s[scores={DialogueTrigger=213,TalkTime=548}] {"text":"<Team Flare Xerosic> That I have no regrets. Take me away, Officer."}
-tellraw @s[scores={DialogueTrigger=213,TalkTime=556}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I hear you. Once I have everything in order, I will ask you to accompany me to the station."}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=568}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> And that is all I have to say to you as Looker of the International Police."}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=578}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> What I say to you now, I say as simply Mr. Looker, young Emma's guardian..."}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=556}] [<Looker> I hear you. Once I have everything in order, I will ask you to accompany me to the station."}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=568}] [<Looker> And that is all I have to say to you as Looker of the International Police."}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=578}] [<Looker> What I say to you now, I say as simply Mr. Looker, young Emma's guardian..."}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=588}] {"text":"<Team Flare Xerosic> Hm?"}
-tellraw @s[scores={DialogueTrigger=213,TalkTime=594}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Would you care to stay and visit a while longer with Emma and me?"}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=603}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> She seems to have grown quite fond of you, you know."}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=611}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> We are about to have dinner together, and she was hoping you would join us."}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=621}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Ahem... I would like to wait until tomorrow,"}]
-tellraw @s[scores={DialogueTrigger=213,TalkTime=629}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> after she has enjoyed a last cheerful night, before I must tell her the truth."}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=594}] [<Looker> Would you care to stay and visit a while longer with Emma and me?"}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=603}] [<Looker> She seems to have grown quite fond of you, you know."}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=611}] [<Looker> We are about to have dinner together, and she was hoping you would join us."}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=621}] [<Looker> Ahem... I would like to wait until tomorrow,"}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=629}] [<Looker> after she has enjoyed a last cheerful night, before I must tell her the truth."}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=639}] {"text":"<Team Flare Xerosic> ... ... ..."}
-tellraw @s[scores={DialogueTrigger=213,TalkTime=646}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Dr. Xerosic..."}]
+tellraw @s[scores={DialogueTrigger=213,TalkTime=646}] [<Looker> Dr. Xerosic..."}]
 tellraw @s[scores={DialogueTrigger=213,TalkTime=653}] {"text":"<Team Flare Xerosic> ... ... ..."}
 tellraw @s[scores={DialogueTrigger=213,TalkTime=660}] {"text":"<Team Flare Xerosic> ... ... ... Looker--or whatever your name truly is--"}
 tellraw @s[scores={DialogueTrigger=213,TalkTime=668}] {"text":"<Team Flare Xerosic> your soft words are unexpected... But not unappreciated. Th-thanks."}
@@ -2531,12 +2357,12 @@ execute as @s[scores={DialogueTrigger=217,TalkTime=1}] run tp @e[x=-504,y=120,z=
 execute as @s[scores={DialogueTrigger=217,TalkTime=1}] run tp @e[x=-504,y=120,z=1302,dy=4,type=pixelmon:npc_chatting] -294 108 440
 
 tellraw @s[scores={DialogueTrigger=217,TalkTime=2}] {"text":"<Team Flare Xerosic> I'm telling you I gave them back! Every last one of them!"}
-tellraw @s[scores={DialogueTrigger=217,TalkTime=11}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> ...Fine. If you really say that you returned all the Poké Balls that Essentia stole..."}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=11}] [<Looker> ...Fine. If you really say that you returned all the Poké Balls that Essentia stole..."}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=21}] {"text":"<Team Flare Xerosic> And I did! I returned them!"}
 tellraw @s[scores={DialogueTrigger=217,TalkTime=28}] {"text":"<Team Flare Xerosic> And I'm turning myself in without a fight, so just give me a minute!"}
-tellraw @s[scores={DialogueTrigger=217,TalkTime=38}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> There is no minute to give you! Our train is about to depart!"}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=38}] [<Looker> There is no minute to give you! Our train is about to depart!"}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=48}] {"text":"<Team Flare Xerosic> Haha! Here they come!"}
-tellraw @s[scores={DialogueTrigger=217,TalkTime=55}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> What? "},{"selector":"@s"},{"text":"! Wh-why are you here?!"}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=55}] [<Looker> What? "},{"selector":"@s"},{"text":"! Wh-why are you here?!"}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=64}] {"text":"<Team Flare Xerosic> Because I contacted Emma, of course!"}
 tellraw @s[scores={DialogueTrigger=217,TalkTime=71}] {"text":"<Team Flare Xerosic> I'm sure she'll be here any minute, too!"}
 tellraw @s[scores={DialogueTrigger=217,TalkTime=79}] ["",{"text":"<"},{"text":"...","color":"gold"},{"text":"> Where is he? Hold on! Wait for me, Mr. Looker!"}]
@@ -2558,40 +2384,40 @@ execute as @s[scores={DialogueTrigger=217,TalkTime=94}] run scoreboard players s
 tellraw @s[scores={DialogueTrigger=217,TalkTime=96}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> Mr. Looker, I've been searching everywhere for you!"}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=104}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> Please t-tell me why, please..."}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=111}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> Why did you lie to us? Why are you leaving us behind?"}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=119}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I...I'm sorry, Emma..."}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=126}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> But my letter explains everything."}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=133}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I work for the International Police! I am a globe-trotting, crime-fighting elite!"}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=144}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Wherever there is a case, I must go! Justice awaits!"}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=119}] [<Looker> I...I'm sorry, Emma..."}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=126}] [<Looker> But my letter explains everything."}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=133}] [<Looker> I work for the International Police! I am a globe-trotting, crime-fighting elite!"}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=144}] [<Looker> Wherever there is a case, I must go! Justice awaits!"}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=153}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> Then take me and Mimi with you. We'll join whatever police!"}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=162}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> We can be police or anything-- if only we can just stay together!"}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=171}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Emma, I wish it could be like that."}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=179}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> You can't come. It's not possible at all."}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=171}] [<Looker> Emma, I wish it could be like that."}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=179}] [<Looker> You can't come. It's not possible at all."}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=187}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> Why not?! Why can't we?!"}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=194}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> I'm part of the Looker Bureau, too! I'm your assistant, aren't I?!"}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=205}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> In fact, the time has come for you to graduate from being my assistant."}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=215}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> As of this moment, I name you the new head of the Looker Bureau!"}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=205}] [<Looker> In fact, the time has come for you to graduate from being my assistant."}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=215}] [<Looker> As of this moment, I name you the new head of the Looker Bureau!"}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=224}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> Wh-what?"}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=231}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Listen to me, Emma. You were born and raised in this fair city."}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=240}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Every day of your life, you have been here."}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=247}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> You are the only one who knows this city inside and out."}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=255}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> No one else could do the things you can do for it!"}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=263}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I pass my torch of brilliant detective-ing to you!"}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=271}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Take my place, and keep protecting the peace of Lumiose City!"}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=231}] [<Looker> Listen to me, Emma. You were born and raised in this fair city."}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=240}] [<Looker> Every day of your life, you have been here."}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=247}] [<Looker> You are the only one who knows this city inside and out."}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=255}] [<Looker> No one else could do the things you can do for it!"}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=263}] [<Looker> I pass my torch of brilliant detective-ing to you!"}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=271}] [<Looker> Take my place, and keep protecting the peace of Lumiose City!"}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=280}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> But that's not fair at all!"}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=287}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> Come on, "},{"selector":"@s"},{"text":"! Say something! Tell him he's wrong!"}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=296}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Emma, please. I must ask you to respect the necessity of my decision."}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=305}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> "},{"selector":"@s"},{"text":" understands perfectly why I must go. It is the way of partners."}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=316}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> They are my partner. We understand each other."}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=296}] [<Looker> Emma, please. I must ask you to respect the necessity of my decision."}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=305}] [<Looker> "},{"selector":"@s"},{"text":" understands perfectly why I must go. It is the way of partners."}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=316}] [<Looker> They are my partner. We understand each other."}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=323}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mrrrawrrr..."}]
 execute as @s[scores={DialogueTrigger=217,TalkTime=323}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
-tellraw @s[scores={DialogueTrigger=217,TalkTime=328}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Oh, Mimi... Please don't make a sad face on my account."}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=326}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> No matter where I go, our bonds will never change."}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=334}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> You will be my dear friends from the Looker Bureau, always and forever."}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=328}] [<Looker> Oh, Mimi... Please don't make a sad face on my account."}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=326}] [<Looker> No matter where I go, our bonds will never change."}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=334}] [<Looker> You will be my dear friends from the Looker Bureau, always and forever."}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=344}] {"text":"<Team Flare Xerosic> Yes! That is it! Bonds!"}
 tellraw @s[scores={DialogueTrigger=217,TalkTime=351}] {"text":"<Team Flare Xerosic> The preposterous notion which cannot be seen nor measured!"}
 tellraw @s[scores={DialogueTrigger=217,TalkTime=360}] {"text":"<Team Flare Xerosic> And yet I cannot deny that they do still exist!"}
 tellraw @s[scores={DialogueTrigger=217,TalkTime=368}] {"text":"<Team Flare Xerosic> Fear not, Emma, for I suspect that you will always be tied to the International Police by your bonds!"}
-tellraw @s[scores={DialogueTrigger=217,TalkTime=379}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Dr. Xerosic..."}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=379}] [<Looker> Dr. Xerosic..."}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=386}] {"text":"<Team Flare Xerosic> Emma! I give you my Expansion Suit!"}
 tellraw @s[scores={DialogueTrigger=217,TalkTime=393}] {"text":"<Team Flare Xerosic> I have removed the remote-control functionality, so you needn't worry!"}
 tellraw @s[scores={DialogueTrigger=217,TalkTime=402}] {"text":"<Team Flare Xerosic> As the new head detective in town, please use your powers as Essentia to protect your beloved Lumiose City!"}
@@ -2602,18 +2428,18 @@ tellraw @s[scores={DialogueTrigger=217,TalkTime=440}] ["",{"text":"<"},{"text":"
 tellraw @s[scores={DialogueTrigger=217,TalkTime=448}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> I only became a Pokémon Trainer thanks to your being there for me."}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=456}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> ... ... ... I will always cherish your Pokémon and your suit, Dr. Xerosic."}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=465}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> I won't forget our bonds, either..."}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=473}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Everyone... I'm sorry, but..."}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=480}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> We are nearly out of time. Our train is due to depart."}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=473}] [<Looker> Everyone... I'm sorry, but..."}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=480}] [<Looker> We are nearly out of time. Our train is due to depart."}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=489}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> Mr. Looker... I think I understand..."}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=496}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> And I know what I'm gonna do. I'll keep on working hard for you."}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=506}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> I've got Mimi and "},{"selector":"@s"},{"text":" to help me."}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=515}] ["",{"text":"<"},{"text":"Emma","color":"gold"},{"text":"> With Dr. Xerosic's Pokémon and Expansion Suit, I will become the new head of the Looker Bureau!"}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=526}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I leave it in your hands, Emma!"}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=534}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I'll rest easy, knowing you're on the case!"}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=526}] [<Looker> I leave it in your hands, Emma!"}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=534}] [<Looker> I'll rest easy, knowing you're on the case!"}]
 tellraw @s[scores={DialogueTrigger=217,TalkTime=543}] {"text":"<Team Flare Xerosic> Emma! Don't you mess this up, my girl!"}
-tellraw @s[scores={DialogueTrigger=217,TalkTime=551}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Ahem... "},{"selector":"@s"},{"text":"! Emma! Mimi!"}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=560}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> I entrust to you three the great task of protecting the peace of Lumiose City!"}]
-tellraw @s[scores={DialogueTrigger=217,TalkTime=572}] ["",{"text":"<"},{"text":"Looker","color":"gray"},{"text":"> Thank you for everything! Farewell, my friends!"}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=551}] [<Looker> Ahem... "},{"selector":"@s"},{"text":"! Emma! Mimi!"}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=560}] [<Looker> I entrust to you three the great task of protecting the peace of Lumiose City!"}]
+tellraw @s[scores={DialogueTrigger=217,TalkTime=572}] [<Looker> Thank you for everything! Farewell, my friends!"}]
 
 #tp Looker and Xerosic out
 execute as @s[scores={DialogueTrigger=217,TalkTime=582}] run particle cloud -297 108 440 2 2 2 1 100

@@ -178,6 +178,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TalkTime 67');",
                             "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s DialogueTrigger 175');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
                             "q.dialogue.close();"
                         ]
                     }
