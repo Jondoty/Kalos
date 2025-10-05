@@ -440,7 +440,51 @@ scoreboard players set @s[scores={DialogueTrigger=178},tag=Dialogue178] Dialogue
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+#Blinds player
+#tp Looker and punk guy away
+#gamemode 3 fly on the wall
 
+execute as @s[scores={DialogueTrigger=184,TalkTime=660}] run effect give @s minecraft:blindness 5 1 true
+execute as @s[scores={DialogueTrigger=184,TalkTime=660}] run gamemode spectator @s
+execute as @s[scores={DialogueTrigger=184,TalkTime=660..772}] run tp @s -96.5 100 437.5 127 1
+
+tellraw @s[scores={DialogueTrigger=184,TalkTime=665}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Hey, Mimi..."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=670}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mrawr?"}]
+execute as @s[scores={DialogueTrigger=184,TalkTime=670}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
+tellraw @s[scores={DialogueTrigger=184,TalkTime=675}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Mr. Looker said we didn't need to worry about anything, y'know?"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=685}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> But I just don't feel like we can keep depending on him like this forever."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=695}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> He lets us stay here for free and pays for all the food we eat..."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=703}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mrrrawr mrawr..."}]
+execute as @s[scores={DialogueTrigger=184,TalkTime=703}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
+tellraw @s[scores={DialogueTrigger=184,TalkTime=708}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> So I think I need to do something."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=715}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Mrrr-mrrrawr!"}]
+execute as @s[scores={DialogueTrigger=184,TalkTime=715}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
+tellraw @s[scores={DialogueTrigger=184,TalkTime=720}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Thanks to Mr. Looker, I can read now, right?"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=727}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> And I've seen signs around town for part-time work."}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=735}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Murrr?"}]
+execute as @s[scores={DialogueTrigger=184,TalkTime=735}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
+tellraw @s[scores={DialogueTrigger=184,TalkTime=740}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> The signs say it's easy work and anyone can learn it. Maybe even I can do it, then!"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=750}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> I'm going over there right now to ask them for a job! What do you think, Mimi?"}]
+tellraw @s[scores={DialogueTrigger=184,TalkTime=760}] ["",{"text":"<"},{"text":"Mimi","color":"light_purple"},{"text":"> Murrr-murrrawr!"}]
+execute as @s[scores={DialogueTrigger=184,TalkTime=760}] run playsound espurr hostile @s ~ ~ ~ 100 1 1
+tellraw @s[scores={DialogueTrigger=184,TalkTime=765}] ["",{"text":"<"},{"text":"Emma","color":"yellow"},{"text":"> Hee hee hee, really?"}]
+
+#blinds player
+#gamemode 2
+#tp to exterior of building
+
+execute as @s[scores={DialogueTrigger=184,TalkTime=772}] run effect give @s minecraft:blindness 5 1 true
+execute as @s[scores={DialogueTrigger=184,TalkTime=773}] run gamemode adventure @s
+execute as @s[scores={DialogueTrigger=184,TalkTime=773}] run tp @s -190 102 -634 -90 ~
+execute as @s[scores={DialogueTrigger=184,TalkTime=773}] run function kalos:triggers/stopsound
+execute as @s[scores={DialogueTrigger=184,TalkTime=773}] run tag @s add LookerCooldown
+execute as @s[scores={DialogueTrigger=184,TalkTime=773}] run advancement grant @s only kalos:looker3
+
+tag @s[scores={DialogueTrigger=184,TalkTime=773..}] add Dialogue184
+scoreboard players set @s[scores={DialogueTrigger=184},tag=Dialogue184] TalkTime 0
+scoreboard players set @s[scores={DialogueTrigger=184},tag=Dialogue184] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 #

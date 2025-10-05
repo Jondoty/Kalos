@@ -1,0 +1,718 @@
+{
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+    ],
+    "escapeAction": [],
+    "speakers": {
+        "looker": {
+            "name": "Looker",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:looker",
+                "isLeftSide": true
+            }
+        },
+        "punkgirl": {
+            "name": "Punk Girl",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:punkgirl",
+                "isLeftSide": false
+            }
+        },
+        "punkgirl2": {
+            "name": "Punk Girl",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:punkgirl",
+                "isLeftSide": true
+            }
+        },
+        "punkguy": {
+            "name": "Punk Guy",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:punkguy",
+                "isLeftSide": false
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "punkgirl",
+            "lines": [
+                "Hey, hey, hey! Wotcher doin' here, old man?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "punkgirl",
+            "lines": [
+                "You wander in here by mistake or what?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page3');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "punkgirl",
+            "lines": [
+                "'Cause you'd hafter be off yer trolley to come alone an' pick a fight with us."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "looker",
+            "lines": [
+                "Indeed. Hold that thought."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page5');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "looker",
+            "lines": [
+                "I am not here to pick a fight. Instead, I have a simple request."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page6');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "looker",
+            "lines": [
+                "Return that tourist's stolen Pokémon!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "punkgirl",
+            "lines": [
+                "Yer jokin', right?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page8');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "punkgirl",
+            "lines": [
+                "If we just give 'em back wit' a pretty please and thank-you, sir,"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page9');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page9",
+            "speaker": "punkgirl",
+            "lines": [
+                "why'd we bother stealin' sumfink?!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page10');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page10",
+            "speaker": "punkgirl2",
+            "lines": [
+                "Lookee, old man... Yer that Looker whatsisface, eh?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page11');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page11",
+            "speaker": "punkgirl2",
+            "lines": [
+                "Who we are is the Lumiose Gang, and we can't stand the sight of you, got it?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page12');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page12",
+            "speaker": "punkgirl2",
+            "lines": [
+                "Ever since Emma went to live at yours, she ain't never come round to hang with us!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page13');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page13",
+            "speaker": "looker",
+            "lines": [
+                "What do you mean?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page14');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page14",
+            "speaker": "punkguy",
+            "lines": [
+                "Y'hear me? It's just not on!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page15');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page15",
+            "speaker": "punkguy",
+            "lines": [
+                "Why did we nab these lame Pokémon, did y'ask yerself?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page16');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page16",
+            "speaker": "punkguy",
+            "lines": [
+                "It were just to get yer into our manor, weren't it? So yer done, old man!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page17');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page17",
+            "speaker": "punkguy",
+            "lines": [
+                "I have no money to buy Pok\u00e9 Balls, so I can't be a Trainer, you get it?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page18');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page18",
+            "speaker": "punkguy",
+            "lines": [
+                "Get yer Pokémon out for battle! If yer win, yer take the Pokémon!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page19');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page19",
+            "speaker": "punkguy",
+            "lines": [
+                "But... If yer lose, yer got nothin' more to do with our Emma!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page20');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page20",
+            "speaker": "looker",
+            "lines": [
+                "I cannot accept your challenge."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page21');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page21",
+            "speaker": "punkgirl",
+            "lines": [
+                "Oo-er! Yer too scared to fight?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page22');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page22",
+            "speaker": "punkgirl",
+            "lines": [
+                "Or are yer givin' it that yer don't have even a single Pokémon to stand by yer?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page23');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page23",
+            "speaker": "looker",
+            "lines": [
+                "You...er...\u201cgot it in one.\u201d"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page24');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page24",
+            "speaker": "punkgirl2",
+            "lines": [
+                "Nyahahaha! Yer not havin' us on?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page25');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page25",
+            "speaker": "punkgirl2",
+            "lines": [
+                "Fine, we'll give yer a shot to ready yerself!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page26');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page26",
+            "speaker": "punkgirl2",
+            "lines": [
+                "Go find some tall grass or somethin'... Then come back an' get yer hat handed to yer!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page27');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page27",
+            "speaker": "looker",
+            "lines": [
+                "Argh. Words are no use here."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page28');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page28",
+            "speaker": "looker",
+            "lines": [
+                "I'll have to go. Later, I'll return, and--"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page29');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page29",
+            "speaker": "looker",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'Oh! ' + q.player.username + '!';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page30');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page30",
+            "speaker": "looker",
+            "lines": [
+                "Ahaha...ahem. You've caught me making an enormous fool of myself."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page31');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page31",
+            "speaker": "looker",
+            "lines": [
+                "It is as they say. The great Looker has no Pokémon of his own..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page32');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page32",
+            "speaker": "looker",
+            "lines": [
+                "I can do nothing to restore the stolen Pokémon to that tourist..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page33');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page33",
+            "speaker": "punkguy",
+            "lines": [
+                "Oi, mouth! Who are ya? Yer with this old man, eh?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page34');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page34",
+            "speaker": "punkguy",
+            "lines": [
+                "Naw then. Yer can take his place, like. Yer win, an' we hand over the Pokémon."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page35');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page35",
+            "speaker": "punkguy",
+            "lines": [
+                "How do ya like yer chances, eh?! Nyahaha!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page36');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page36",
+            "speaker": "looker",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'' + q.player.username + ', my friend... I am afraid this is all I can do for you.';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue183');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

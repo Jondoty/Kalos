@@ -76,6 +76,9 @@ tag @s remove GlitteringGrunt1
 tag @s remove GlitteringGrunt2
 tag @s remove LabsCelosia
 tag @s remove LabsBryony
+tag @s remove StationPunks1
+tag @s remove StationPunks2
+tag @s remove StationPunks3
 
 tag @s remove Viscount
 tag @s remove Earl

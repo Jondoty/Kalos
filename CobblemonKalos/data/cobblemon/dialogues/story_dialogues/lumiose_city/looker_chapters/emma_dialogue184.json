@@ -1,0 +1,1596 @@
+{
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');",
+        "q.run_command('particle cloud 1124 105 2009 2 2 2 1 100');",
+        "q.run_command('execute unless entity @e[x=1124,y=105,z=2009,dy=3,type=cobblemon:npc] run npcspawnat 1124 105 2009 emma_generic');"
+    ],
+    "escapeAction": [],
+    "speakers": {
+        "looker": {
+            "name": "Looker",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:looker",
+                "isLeftSide": true
+            }
+        },
+        "punkgirl": {
+            "name": "Punk Girl",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:punkgirl",
+                "isLeftSide": false
+            }
+        },
+        "punkgirl2": {
+            "name": "Punk Girl",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:punkgirl",
+                "isLeftSide": true
+            }
+        },
+        "punkguy": {
+            "name": "Punk Guy",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:punkguy",
+                "isLeftSide": false
+            }
+        },
+        "emma": {
+            "name": "Emma",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:emma",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "emma",
+            "lines": [
+                "Stop it, all of you!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "looker",
+            "lines": [
+                "Emma!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page3');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "emma",
+            "lines": [
+                "'Stop it! I mean it! And return those stolen Pok\u00e9mon!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "punkguy",
+            "lines": [
+                "Well, if that don't take the biscuit! This is down to you, Emma."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page5');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "punkguy",
+            "lines": [
+                "Yer just couldn't be bothered with us no more."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page6');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "punkguy",
+            "lines": [
+                "What's the point of us if yer don't show up?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "punkguy",
+            "lines": [
+                "Yer the boss of this gang! Did yer think how we missed yer?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page8');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "punkguy",
+            "lines": [
+                "Goin' off with this bad news and never a thought to yer old mates. Thanks for nothin'!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page9');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page9",
+            "speaker": "emma",
+            "lines": [
+                "Oh, put a sock in it! I said up front--don't count me in."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page10');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page10",
+            "speaker": "emma",
+            "lines": [
+                "You went ahead and called me boss without even asking what I wanted."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page11');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page11",
+            "speaker": "emma",
+            "lines": [
+                "I decide for myself! Now, back off before I really lose it!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page12');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page12",
+            "speaker": "punkguy",
+            "lines": [
+                "N-no! N-n-not that! We got it, boss! We got it!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page13');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page13",
+            "speaker": "punkguy",
+            "lines": [
+                "Yer don't have to be the boss!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page14');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page14",
+            "speaker": "punkguy",
+            "lines": [
+                "We've just been missing yer since yer stopped comin' round!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page15');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page15",
+            "speaker": "punkguy",
+            "lines": [
+                "Here, we'll give yer back the Pok\u00e9 Balls, so forgive us--aight?!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page16');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page16",
+            "speaker": "emma",
+            "lines": [
+                "Right. Well, enough said. I'll let it go this time, but..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page17');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page17",
+            "speaker": "emma",
+            "lines": [
+                "You need to say sorry to the lady you stole from. And to Mr. Looker, too!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page18');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page18",
+            "speaker": "punkguy",
+            "lines": [
+                "Yes, ma'am! I will! I'm awful sorry for nickin' the Pok\u00e9mon."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page19');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page19",
+            "speaker": "punkguy",
+            "lines": [
+                "Yer got me bang to rights. Forgive me?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page20');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page20",
+            "speaker": "looker",
+            "lines": [
+                "Ahem. Of course."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page21');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page21",
+            "speaker": "looker",
+            "lines": [
+                "The Pok\u00e9mon shall be safely restored, so let's call it water under the bridge."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page22');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page22",
+            "speaker": "looker",
+            "lines": [
+                "A-a-a-a-and...case closed!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page23');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page23",
+            "speaker": "looker",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'Cheers, ' + q.player.username + ', Emma! Lets head back to the Looker Bureau!';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page24');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page24",
+            "speaker": "emma",
+            "lines": [
+                "OK!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page25');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page25",
+            "speaker": "looker",
+            "lines": [
+                "Oh, I forgot something... Wait. Thirty seconds!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page26');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page26",
+            "speaker": "looker",
+            "lines": [
+                "Hey, folks!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page27');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page27",
+            "speaker": "punkguy",
+            "lines": [
+                "...Eh?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page28');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page28",
+            "speaker": "looker",
+            "lines": [
+                "It's your wish to be friends with Emma, is that correct?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page29');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page29",
+            "speaker": "punkguy",
+            "lines": [
+                "Yer sussed that out, eh?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound lookerssorrowfultheme record @s[tag=!RadioOff] ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s[tag=!RadioOff] MusicCooldown 133');",
+                            "q.dialogue.set_page('page30');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page30",
+            "speaker": "looker",
+            "lines": [
+                "When people behave with evil intentions, I cannot turn away and lightly forgive such."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page31');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page31",
+            "speaker": "looker",
+            "lines": [
+                "Especially people who do cruel and thoughtless things."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page32');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page32",
+            "speaker": "looker",
+            "lines": [
+                "For example, stealing the beloved Pok\u00e9mon of other Trainers..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page33');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page33",
+            "speaker": "looker",
+            "lines": [
+                "However... I believe... No. Not just believe. I KNOW..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page34');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page34",
+            "speaker": "looker",
+            "lines": [
+                "People and Pok\u00e9mon are both capable of...evolving. And so..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page35');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page35",
+            "speaker": "looker",
+            "lines": [
+                "If you give your word of honor not to ever lift a hand in cruelty again,"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page36');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page36",
+            "speaker": "looker",
+            "lines": [
+                "then you may come by the Looker Bureau anytime to visit Emma...as her friends."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page37');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page37",
+            "speaker": "emma",
+            "lines": [
+                "Mr. L-L-Looker..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page38');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page38",
+            "speaker": "emma",
+            "lines": [
+                "Sir..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page39');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page39",
+            "speaker": "looker",
+            "lines": [
+                "Let us now return! Back once more to the Looker Bureau!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s minecraft:blindness 5 1 true');",
+                            "q.run_command('tp @e[x=1124,y=104,z=2009,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -73 101 437 143 8');",
+                            "q.dialogue.set_page('page40');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page40",
+            "speaker": "emma",
+            "lines": [
+                "Mr. Looker... I'm really sorry about what happened earlier..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page41');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page41",
+            "speaker": "emma",
+            "lines": [
+                "When that woman insulted you, I just saw red and I... I..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page42');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page42",
+            "speaker": "looker",
+            "lines": [
+                "If you learned something from it, that is all I need to hear, Emma."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page43');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page43",
+            "speaker": "looker",
+            "lines": [
+                "But that is not what concerns me now."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page44');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page44",
+            "speaker": "looker",
+            "lines": [
+                "Imagine how I felt to discover that you were the boss of that gang!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page45');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page45",
+            "speaker": "looker",
+            "lines": [
+                "If you give your word of honor not to ever lift a hand in cruelty again,"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page46');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page46",
+            "speaker": "emma",
+            "lines": [
+                "Oh, it's just silly. I wasn't in the gang for real!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page47');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page47",
+            "speaker": "emma",
+            "lines": [
+                "I had a big fight with them one time, and after I took them down, they figured I was their boss."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page48');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page48",
+            "speaker": "emma",
+            "lines": [
+                "It was all their idea, not mine!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud -76 101 442 2 2 2 1 100');",
+                            "q.dialogue.set_page('page49');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page49",
+            "speaker": "punkguy",
+            "lines": [
+                "She may look like a cute kid, but Emma is crazy strong!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page50');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page50",
+            "speaker": "punkguy",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'Sh-she really is, Looker, sir. And ' + q.player.username + '!';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page51');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page51",
+            "speaker": "looker",
+            "lines": [
+                "Well, it's the lad from the gang. You're here for a visit already?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page52');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page52",
+            "speaker": "looker",
+            "lines": [
+                "Good. Ahem. You can drop that \u201csir\u201d business. Call me Looker."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page53');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page53",
+            "speaker": "punkguy",
+            "lines": [
+                "As yer say, sir. ...Looker. Here's the thing, see."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page54');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page54",
+            "speaker": "punkguy",
+            "lines": [
+                "Us in the Lumiose Gang are gonna evolve, just like yer said!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page55');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page55",
+            "speaker": "punkguy",
+            "lines": [
+                "We're all done wi' chorin' an' cheatin'. We're lookin' for honest work."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page56');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page56",
+            "speaker": "punkguy",
+            "lines": [
+                "So please let us come round an' see our Emma, won't yer?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page57');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page57",
+            "speaker": "emma",
+            "lines": [
+                "... ... ..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page58');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page58",
+            "speaker": "looker",
+            "lines": [
+                "That's excellent. Deciding to change your course in life is more than an Evolution!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page59');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page59",
+            "speaker": "looker",
+            "lines": [
+                "It is a Mega Evolution!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page60');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page60",
+            "speaker": "looker",
+            "lines": [
+                "There is no substitute for honest work if you want to make a difference in this world."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page61');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page61",
+            "speaker": "punkguy",
+            "lines": [
+                "Yeah, that's right, then. See yer later, eh, Emma?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud -76 101 442 2 2 2 1 100');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound lookerssorrowfultheme record @s[tag=!RadioOff] ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s[tag=!RadioOff] MusicCooldown 133');",
+                            "q.dialogue.set_page('page62');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page62",
+            "speaker": "emma",
+            "lines": [
+                "Hey, Mr. Looker?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page63');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page63",
+            "speaker": "looker",
+            "lines": [
+                "Hm? What is it, Emma?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page64');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page64",
+            "speaker": "emma",
+            "lines": [
+                "Mr. Looker... You said there is no substitute for honest work if you want to make a difference in this world."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page65');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page65",
+            "speaker": "emma",
+            "lines": [
+                "But I don't do any work at all... You asked me to be your assistant."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page66');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page66",
+            "speaker": "emma",
+            "lines": [
+                "But I've never done any work the whole time I've been staying here."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page67');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page67",
+            "speaker": "emma",
+            "lines": [
+                "All I've done is learn things from you... Is that really enough?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page68');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page68",
+            "speaker": "emma",
+            "lines": [
+                "Is it really OK for me to be here?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page69');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page69",
+            "speaker": "looker",
+            "lines": [
+                "These are good questions, Emma. You have been learning nonstop since you came here, have you not?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page70');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page70",
+            "speaker": "looker",
+            "lines": [
+                "Learning is very important work at any age, and especially for you now."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page71');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page71",
+            "speaker": "looker",
+            "lines": [
+                "Continue to pour your heart into your studies. You have no need to worry."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page72');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page72",
+            "speaker": "emma",
+            "lines": [
+                "But, Mr. Looker... We're always here in the Looker Bureau. And there's almost never any clients!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page73');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page73",
+            "speaker": "emma",
+            "lines": [
+                "Are Mimi and I just getting in your way?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page74');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page74",
+            "speaker": "emma",
+            "lines": [
+                "But I've never done any work the whole time I've been staying here."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page75');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page75",
+            "speaker": "emma",
+            "lines": [
+                "I mean, you went and turned down taking money from that tourist lady."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page76');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page76",
+            "speaker": "emma",
+            "lines": [
+                "Be straight with me, Mr. Looker."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page77');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page77",
+            "speaker": "emma",
+            "lines": [
+                "I'm asking, really, if it's really OK for Mimi and I to stay here...moneywise?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page78');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page78",
+            "speaker": "looker",
+            "lines": [
+                "Y-you have no need to worry!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page79');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page79",
+            "speaker": "looker",
+            "lines": [
+                "One would expect that a hard-boiled detective has savings set aside, indeed!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page80');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page80",
+            "speaker": "looker",
+            "lines": [
+                "Yes, indeed, Looker's savings are as lofty as Sinnoh's own Mt. Coronet!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page81');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page81",
+            "speaker": "looker",
+            "lines": [
+                "Hm. Perhaps you have not met up with Mt. Coronet in your studies yet, Emma?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page82');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page82",
+            "speaker": "looker",
+            "lines": [
+                "Ha...hahaha! I ask you to leave such worries to me."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page83');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page83",
+            "speaker": "looker",
+            "lines": [
+                "Your part is to study hard, so you can become my trusted assistant. Deal? Good."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' TalkTime 659');",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' DialogueTrigger 184');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

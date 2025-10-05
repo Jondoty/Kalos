@@ -168,54 +168,6 @@ execute as @a[x=1225,y=76,z=1545,distance=..40,tag=MaisonWin] run function kalos
 execute as @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=BattleMaisonMusic] run function kalos:data/maisonalign
 execute as @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=EliteFourBattleMusic] run function kalos:data/maisonalign
 
-#---------------------------------------------------------
-#Adds night vision in specific areas
-
-#Radiant Chamber
-effect give @a[x=-1960,y=15,z=1871,dx=110,dy=40,dz=110] minecraft:night_vision 15 1 true
-
-#Flare HQ
-effect give @a[x=-2526,y=0,z=-1074,dx=232,dy=95,dz=167] minecraft:night_vision 15 1 true
-
-#Gyms
-effect give @a[x=-2027,y=0,z=-2285,dx=1319,dy=256,dz=498] minecraft:night_vision 15 1 true
-
-#Starters rooms
-effect give @a[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227] minecraft:night_vision 15 1 true
-
-#Pokeball Factory Interior
-effect give @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188] minecraft:night_vision 15 1 true
-execute if entity @a[x=-242,y=91,z=-2026,dx=180,dy=3,dz=188,limit=1] run setblock -600 101 1154 minecraft:iron_block
-execute unless entity @a[x=-242,y=91,z=-2026,dx=180,dy=3,dz=188,limit=1] if block -600 101 1154 minecraft:iron_block run setblock -600 101 1154 minecraft:redstone_block
-
-
-#---------------------------------------------------------
-
-#Runs Fly tp
-execute as @a[scores={Fly=1..}] run function kalos:hms/fly
-
-#Fly Teleport
-execute as @a[x=1489,y=204,z=-1346,distance=..30] run function kalos:hms/flytp
-
-
-#Adds Fly tags
-tag @a[x=-342,y=0,z=-1577,dx=432,dy=256,dz=274,scores={TalkTime=0},tag=!FlyLaverre] add FlyLaverre
-tag @a[x=582,y=0,z=-573,dx=152,dy=256,dz=313,scores={TalkTime=0},tag=!FlyDendemille] add FlyDendemille
-tag @a[x=1097,y=0,z=-376,dx=334,dy=256,dz=235,scores={TalkTime=0},tag=!FlyAnistar] add FlyAnistar
-tag @a[x=1326,y=0,z=132,dx=360,dy=256,dz=198,scores={TalkTime=0},tag=!FlyCouriway] add FlyCouriway
-tag @a[x=984,y=0,z=324,dx=341,dy=256,dz=323,scores={TalkTime=0},tag=!FlySnowbelle] add FlySnowbelle
-tag @a[x=1027,y=0,z=1434,dx=331,dy=256,dz=266,scores={TalkTime=0},tag=!FlyKiloude] add FlyKiloude
-tag @a[x=-2255,y=0,z=1732,dx=629,dy=256,dz=655,scores={TalkTime=0},tag=!FlyPokemonLeague] add FlyPokemonLeague
-tag @a[x=-1204,y=0,z=-888,dx=230,dy=256,dz=380,scores={TalkTime=0},tag=!FlyCoumarine] add FlyCoumarine
-tag @a[x=-1816,y=0,z=-987,dx=332,dy=256,dz=254,scores={TalkTime=0},tag=!FlyShalour] add FlyShalour
-tag @a[x=-2386,y=0,z=-984,dx=273,dy=256,dz=386,scores={TalkTime=0},tag=!FlyGeosenge] add FlyGeosenge
-tag @a[x=395,y=0,z=1236,dx=147,dy=256,dz=205,scores={TalkTime=0},tag=!FlyAquacorde] add FlyAquacorde
-tag @a[x=93,y=0,z=384,dx=250,dy=256,dz=139,scores={TalkTime=0},tag=!FlySantalune] add FlySantalune
-tag @a[x=-181,y=101,z=-390,distance=..395,scores={TalkTime=0},tag=!FlyLumiose] add FlyLumiose
-tag @a[x=-1146,y=0,z=-213,dx=182,dy=256,dz=337,scores={TalkTime=0},tag=!FlyCamphrier] add FlyCamphrier
-tag @a[x=-2223,y=0,z=-217,dx=354,dy=256,dz=275,scores={TalkTime=0},tag=!FlyCyllage] add FlyCyllage
-tag @a[x=-2115,y=0,z=504,dx=240,dy=256,dz=258,scores={TalkTime=0},tag=!FlyAmbrette] add FlyAmbrette
-
 
 #---------------------------------------------------------
 #Legendaries
@@ -331,14 +283,6 @@ scoreboard players set @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMai
 
 #----------
 #Holo Caster Calls
-
-#Call 14
-#Lumiose City Looker Chapter 2 Start
-execute as @a[x=-181,y=101,z=-390,distance=..395,tag=!Call14,scores={TalkTime=0,HoloCall=0}] run execute as @s[tag=!LookerCooldown,tag=Dialogue175] run scoreboard players set @s HoloCall 14
-
-#Call 15
-#Lumiose City Looker Chapter 3 Start
-execute as @a[x=-181,y=101,z=-390,distance=..395,tag=!Call15,scores={TalkTime=0,HoloCall=0}] run execute as @s[tag=!LookerCooldown,tag=Dialogue178] run scoreboard players set @s HoloCall 15
 
 #Call 16 Looker Chapter 4 Start
 execute as @a[x=-181,y=101,z=-390,distance=..395,tag=!Call16,scores={TalkTime=0,HoloCall=0}] run execute as @s[tag=!LookerCooldown,tag=Dialogue184] run scoreboard players set @s HoloCall 16
@@ -459,35 +403,6 @@ scoreboard players set @a[x=-444,y=101,z=206,distance=..6,tag=Dialogue168,scores
 
 #----------
 #Looker Chapters
-
-#Set's up Emma's first alley finding her in
-execute as @a[x=-373,y=101,z=-307,distance=..40,scores={TalkTime=0},tag=Dialogue176,tag=!Dialogue177] run tp @e[x=-504,y=220,z=1284,dy=3,type=pixelmon:npc_trainer] -375 101 -299
-execute as @a[x=-373,y=101,z=-307,distance=..40,scores={TalkTime=0},tag=Dialogue176,tag=!Dialogue177] run tp @e[x=-504,y=220,z=1286,dy=3,type=pixelmon:npc_trainer] -369 101 -297
-execute as @a[x=-373,y=101,z=-307,distance=..40,scores={TalkTime=0},tag=Dialogue176,tag=!Dialogue177] run tp @e[x=-504,y=220,z=1288,dy=3,type=pixelmon:npc_trainer] -372 101 -291
-execute as @a[x=-373,y=101,z=-307,distance=..40,scores={TalkTime=0},tag=Dialogue176,tag=!Dialogue177] run tp @e[x=-504,y=220,z=1290,dy=3,type=pixelmon:npc_trainer] -366 101 -288
-
-#Dialogue 177
-#Finding Emma
-execute as @a[x=-374,y=101,z=-280,distance=..6,tag=Dialogue176,tag=!Dialogue177,scores={TalkTime=0}] run scoreboard players set @s DialogueTrigger 177
-
-#Dialogue 178
-#Player finding Mimi
-execute as @a[x=-428,y=101,z=-363,distance=..7,scores={TalkTime=0},tag=Dialogue177] run scoreboard players set @s[tag=!Dialogue178] DialogueTrigger 178
-execute as @a[x=-405,y=101,z=-370,distance=..20,tag=Dialogue177,tag=!Dialogue178] run tp @e[x=-504,y=226,z=1284,dy=3,type=pixelmon:statue] -428 101 -363
-
-#Dialogue 182
-#Looker Chapter 3 start
-execute as @a[x=-161,y=100,z=375,dx=19,dy=15,dz=23,scores={TalkTime=0},tag=Dialogue180,tag=!Dialogue182] run scoreboard players set @s DialogueTrigger 182
-execute as @a[x=-161,y=100,z=375,dx=19,dy=15,dz=23,scores={TalkTime=0},tag=Dialogue181,tag=!Dialogue182] run scoreboard players set @s DialogueTrigger 182
-
-#Dialogue 183
-#Lumiose Station pre-Nix Battle
-scoreboard players set @a[x=1103,y=105,z=2007,distance=..10,scores={TalkTime=0},tag=!Dialogue183] DialogueTrigger 183
-execute as @a[x=1103,y=105,z=2007,distance=..50,scores={TalkTime=0},tag=!Dialogue183] run tp @e[x=-504,y=235,z=1284,dy=3,type=pixelmon:npc_chatting] 1119 105 2007
-execute as @a[x=1103,y=105,z=2007,distance=..50,scores={TalkTime=0},tag=!Dialogue183] run tp @e[x=-504,y=235,z=1286,dy=3,type=pixelmon:npc_chatting] 1124 105 2003
-execute as @a[x=1103,y=105,z=2007,distance=..50,scores={TalkTime=0},tag=!Dialogue183] run tp @e[x=-504,y=235,z=1288,dy=3,type=pixelmon:npc_chatting] 1130 105 2009
-execute as @a[x=1103,y=105,z=2007,distance=..50,scores={TalkTime=0},tag=!Dialogue183] run tp @e[x=-504,y=235,z=1290,dy=3,type=pixelmon:npc_chatting] 1131 105 2005
-execute as @a[x=1131,y=105,z=2005,distance=..20,scores={TalkTime=0},tag=Dialogue183,tag=!Dialogue184] run tp @e[x=-504,y=235,z=1296,dy=3,type=pixelmon:npc_trainer] 1131 105 2005
 
 #Dialogue 186
 #Museum learning about art piece

@@ -665,6 +665,15 @@ execute as @s[x=-151,y=101,z=382,distance=..6,tag=Call15,tag=!Dialogue181] run o
 #Chapter 3 beginning, following question
 execute as @s[x=-161,y=100,z=375,dx=19,dy=15,dz=23,scores={Cooldown=2000..},tag=Dialogue181,tag=!Dialogue182] run opendialogue tourist_dialogue182 @s
 
+#Lumiose Station Punk Trainers
+execute as @s[x=1103,y=105,z=2007,distance=..50,tag=!Dialogue183] unless entity @e[x=1119,y=105,z=2007,dy=3,type=cobblemon:npc] run npcspawnat 1119 105 2007 looker_generic
+execute as @s[x=1103,y=105,z=2007,distance=..50,tag=!Dialogue183] unless entity @e[x=1124,y=105,z=2003,dy=3,type=cobblemon:npc] run npcspawnat 1124 105 2003 station_eris
+execute as @s[x=1103,y=105,z=2007,distance=..50,tag=!Dialogue183] unless entity @e[x=1130,y=105,z=2009,dy=3,type=cobblemon:npc] run npcspawnat 1130 105 2009 station_nix
+execute as @s[x=1103,y=105,z=2007,distance=..50,tag=!Dialogue183] unless entity @e[x=1131,y=105,z=2005,dy=3,type=cobblemon:npc] run npcspawnat 1131 105 2005 station_sedna
+execute as @s[x=1119,y=105,z=2007,distance=..10,tag=!Dialogue183] run opendialogue punks_dialogue183 @s
+
+#Post-battle of all three trainers
+execute as @s[x=1130,y=105,z=2009,distance=..50,tag=StationPunks1,tag=StationPunks2,tag=StationPunks3] run opendialogue emma_dialogue184 @s
 
 
 
