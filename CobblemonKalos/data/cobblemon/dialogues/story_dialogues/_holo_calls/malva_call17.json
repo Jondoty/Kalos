@@ -140,6 +140,7 @@
                         "value": "close",
                         "action": [
                             "q.dialogue.close();",
+                            "q.run_command('scoreboard players set ' + q.player.username + ' Cooldown 0');",
                             "q.run_command('tag ' + q.player.username + ' add Call17');",
                             "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
                             ]

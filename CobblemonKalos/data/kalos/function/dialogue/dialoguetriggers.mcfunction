@@ -840,6 +840,50 @@ execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call15,tag=!LookerCooldown
 execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call15,tag=!LookerCooldown,tag=Dialogue178,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue looker_call15 @s
 
 
+#Call 16 - Starting Chapter 4
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call16,tag=!LookerCooldown,tag=Dialogue184] unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run playsound minecraft:block.note_block.chime ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call16,tag=!LookerCooldown,tag=Dialogue184] unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
+
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call16,tag=!LookerCooldown,tag=Dialogue184,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue looker_call16 @s
+
+
+#Call 17 - Malva Call after investigating grafiti
+execute as @s[x=-105,y=101,z=-699,distance=..20,tag=!Call17,tag=!LookerCooldown,tag=Dialogue187] unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run playsound minecraft:block.note_block.chime ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-105,y=101,z=-699,distance=..20,tag=!Call17,tag=!LookerCooldown,tag=Dialogue187] unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
+
+execute as @s[x=-105,y=101,z=-699,distance=..20,tag=!Call17,tag=!LookerCooldown,tag=Dialogue187,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue malva_call17 @s
+
+
+#Call 18 - Looker after Malva call, saying to visit Bureau
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call18,tag=Call17,scores={Cooldown=5000..}] unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run playsound minecraft:block.note_block.chime ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call18,tag=Call17,scores={Cooldown=5000..}] unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
+
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call18,tag=Call17,scores={Cooldown=5000..},nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue looker_call18 @s
+
+
+#Call 19 - Emma calling in while Looker is away
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call19,tag=!tag=Dialogue225] unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run playsound minecraft:block.note_block.chime ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call19,tag=!tag=Dialogue225] unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
+
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call19,tag=!tag=Dialogue225,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue emma_call19 @s
+
+
+#Call 20 - Emma after Xerosic is caught
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call20,tag=!tag=Dialogue213] unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run playsound minecraft:block.note_block.chime ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call20,tag=!tag=Dialogue213] unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
+
+execute as @s[x=-181,y=101,z=-390,distance=..395,tag=!Call20,tag=!tag=Dialogue213,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue emma_call20 @s
+
+
+#Call 21 - Holo Call after you investigate for Looker, Museum exterior
+execute as @s[x=-105,y=101,z=-699,distance=..20,tag=!Call21,tag=!tag=Dialogue216] unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run playsound minecraft:block.note_block.chime ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-105,y=101,z=-699,distance=..20,tag=!Call21,tag=!tag=Dialogue216] unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run title @s actionbar {"text":"Incoming call... Select Holo Caster to answer!"}
+
+execute as @s[x=-105,y=101,z=-699,distance=..20,tag=!Call21,tag=!tag=Dialogue216,nbt={SelectedItem:{components:{"minecraft:custom_name":'{"extra":[{"color":"aqua","italic":false,"text":"Holo Caster"}],"text":""}'}}}] run opendialogue emma_call21 @s
+
+
+
+
 
 
 
