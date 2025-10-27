@@ -31,7 +31,7 @@ advancement grant @s only kalos:root
 #Items
 function kalos:spawn/holocaster
 function kalos:spawn/townmap
-function johto:spawn/runningshoes
+function kalos:spawn/runningshoes
 scoreboard players add @s Money 2000
 
 
