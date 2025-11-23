@@ -285,7 +285,7 @@
                 "vertical": true,
                 "options": [
                     {
-                        "isSelectable": "q.player.has_tag(FSNormal1)",
+                        "isSelectable": "q.player.has_tag('FSNormal1')",
                         "text": "1) Teddiursa, Loudred, Chansey",
                         "value": "normal1",
                         "action": [
@@ -294,7 +294,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSNormal2)",
+                        "isSelectable": "q.player.has_tag('FSNormal2')",
                         "text": "2) Aipom, Kecleon, Ditto",
                         "value": "normal2",
                         "action": [
@@ -303,7 +303,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSNormal3)",
+                        "isSelectable": "q.player.has_tag('FSNormal3')",
                         "text": "3) Dunsparce, Audino, Eevee",
                         "value": "normal3",
                         "action": [
@@ -312,7 +312,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSNormal4)",
+                        "isSelectable": "q.player.has_tag('FSNormal4')",
                         "text": "4) Lillipup, Minccino, Smeargle",
                         "value": "normal4",
                         "action": [
@@ -343,7 +343,7 @@
                 "vertical": true,
                 "options": [
                     {
-                        "isSelectable": "q.player.has_tag(FSFire1)",
+                        "isSelectable": "q.player.has_tag('FSFire1')",
                         "text": "1) Growlithe, Charmeleon, Ninetales",
                         "value": "fire1",
                         "action": [
@@ -352,7 +352,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSFire2)",
+                        "isSelectable": "q.player.has_tag('FSFire2')",
                         "text": "2) Ponyta, Slugma, Braixen",
                         "value": "fire2",
                         "action": [
@@ -361,7 +361,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSFire3)",
+                        "isSelectable": "q.player.has_tag('FSFire3')",
                         "text": "3) Magmar, Larvesta, Braixen",
                         "value": "fire3",
                         "action": [
@@ -370,7 +370,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSFire4)",
+                        "isSelectable": "q.player.has_tag('FSFire4')",
                         "text": "4) Pansear, Pyroar, Fletchinder",
                         "value": "fire4",
                         "action": [
@@ -399,7 +399,7 @@
                 "vertical": true,
                 "options": [
                     {
-                        "isSelectable": "q.player.has_tag(FSFighting1)",
+                        "isSelectable": "q.player.has_tag('FSFighting1')",
                         "text": "1) Mankey, Throh, Tyrogue",
                         "value": "fighting1",
                         "action": [
@@ -408,7 +408,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSFighting2)",
+                        "isSelectable": "q.player.has_tag('FSFighting2')",
                         "text": "2) Machoke, Sawk, Breloom",
                         "value": "fighting2",
                         "action": [
@@ -417,7 +417,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSFighting3)",
+                        "isSelectable": "q.player.has_tag('FSFighting3')",
                         "text": "3) Meditite, Pancham, Hariyama",
                         "value": "fighting3",
                         "action": [
@@ -426,7 +426,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSFighting4)",
+                        "isSelectable": "q.player.has_tag('FSFighting4')",
                         "text": "4) Mienfoo, Pancham, Riolu",
                         "value": "fighting4",
                         "action": [
@@ -455,7 +455,7 @@
                 "vertical": true,
                 "options": [
                     {
-                        "isSelectable": "q.player.has_tag(FSWater1)",
+                        "isSelectable": "q.player.has_tag('FSWater1')",
                         "text": "1) Krabby, Wartortle, Poliwhirl",
                         "value": "water1",
                         "action": [
@@ -464,7 +464,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSWater2)",
+                        "isSelectable": "q.player.has_tag('FSWater2')",
                         "text": "2) Octillery, Gyarados, Azumarill",
                         "value": "water2",
                         "action": [
@@ -473,7 +473,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSWater3)",
+                        "isSelectable": "q.player.has_tag('FSWater3')",
                         "text": "3) Bibarel, Quagsire, Frogadier",
                         "value": "water3",
                         "action": [
@@ -482,7 +482,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSWater4)",
+                        "isSelectable": "q.player.has_tag('FSWater4')",
                         "text": "4) Panpour, Floatzel, Frogadier",
                         "value": "water4",
                         "action": [
@@ -511,7 +511,7 @@
                 "vertical": true,
                 "options": [
                     {
-                        "isSelectable": "q.player.has_tag(FSFlying1)",
+                        "isSelectable": "q.player.has_tag('FSFlying1')",
                         "text": "1) Pidgey, Hoothoot, Tropius",
                         "value": "flying1",
                         "action": [
@@ -520,7 +520,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSFlying2)",
+                        "isSelectable": "q.player.has_tag('FSFlying2')",
                         "text": "2) Spearow, Tranquill, Rufflet",
                         "value": "flying2",
                         "action": [
@@ -529,7 +529,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSFlying3)",
+                        "isSelectable": "q.player.has_tag('FSFlying3')",
                         "text": "3) Farfetch'd, Woobat, Fletchinder",
                         "value": "flying3",
                         "action": [
@@ -538,7 +538,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSFlying4)",
+                        "isSelectable": "q.player.has_tag('FSFlying4')",
                         "text": "4) Doduo, Swanna, Hawlucha",
                         "value": "flying4",
                         "action": [
@@ -567,7 +567,7 @@
                 "vertical": true,
                 "options": [
                     {
-                        "isSelectable": "q.player.has_tag(FSGrass1)",
+                        "isSelectable": "q.player.has_tag('FSGrass1')",
                         "text": "1) Oddish, Ivysaur, Maractus",
                         "value": "grass1",
                         "action": [
@@ -576,7 +576,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSGrass2)",
+                        "isSelectable": "q.player.has_tag('FSGrass2')",
                         "text": "2) Tangela, Swadloon, Quilladin",
                         "value": "grass2",
                         "action": [
@@ -585,7 +585,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSGrass3)",
+                        "isSelectable": "q.player.has_tag('FSGrass3')",
                         "text": "3) Sunkern, Petilil, Gogoat",
                         "value": "grass3",
                         "action": [
@@ -594,7 +594,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSGrass4)",
+                        "isSelectable": "q.player.has_tag('FSGrass4')",
                         "text": "4) Pansage, Sawsbuck, Quilladin",
                         "value": "grass4",
                         "action": [
@@ -623,7 +623,7 @@
                 "vertical": true,
                 "options": [
                     {
-                        "isSelectable": "q.player.has_tag(FSPoison1)",
+                        "isSelectable": "q.player.has_tag('FSPoison1')",
                         "text": "1) Kakuna, Venomoth, Muk",
                         "value": "poison1",
                         "action": [
@@ -632,7 +632,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSPoison2)",
+                        "isSelectable": "q.player.has_tag('FSPoison2')",
                         "text": "2) Gloom, Ariados, Drapion",
                         "value": "poison2",
                         "action": [
@@ -641,7 +641,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSPoison3)",
+                        "isSelectable": "q.player.has_tag('FSPoison3')",
                         "text": "3) Cascoon, Swalot, Toxicroak",
                         "value": "poison3",
                         "action": [
@@ -650,7 +650,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSPoison4)",
+                        "isSelectable": "q.player.has_tag('FSPoison4')",
                         "text": "4) Seviper, Garbodor, Whirlipede",
                         "value": "poison4",
                         "action": [
@@ -679,7 +679,7 @@
                 "vertical": true,
                 "options": [
                     {
-                        "isSelectable": "q.player.has_tag(FSElectric1)",
+                        "isSelectable": "q.player.has_tag('FSElectric1')",
                         "text": "1) Electrode, Pikachu, Manectric",
                         "value": "electric1",
                         "action": [
@@ -688,7 +688,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSElectric2)",
+                        "isSelectable": "q.player.has_tag('FSElectric2')",
                         "text": "2) Pachirisu, Electabuzz, Luxio",
                         "value": "electric2",
                         "action": [
@@ -697,7 +697,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSElectric3)",
+                        "isSelectable": "q.player.has_tag('FSElectric3')",
                         "text": "3) Emolga, Stunfisk, Zebstrika",
                         "value": "electric3",
                         "action": [
@@ -706,7 +706,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSElectric4)",
+                        "isSelectable": "q.player.has_tag('FSElectric4')",
                         "text": "4) Dedenne, Helioptile, Galvantula",
                         "value": "electric4",
                         "action": [
@@ -735,7 +735,7 @@
                 "vertical": true,
                 "options": [
                     {
-                        "isSelectable": "q.player.has_tag(FSGround1)",
+                        "isSelectable": "q.player.has_tag('FSGround1')",
                         "text": "1) Sandshrew, Dugtrio, Gastrodon",
                         "value": "ground1",
                         "action": [
@@ -744,7 +744,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSGround2)",
+                        "isSelectable": "q.player.has_tag('FSGround2')",
                         "text": "2) Wooper, Marowak, Palpitoad",
                         "value": "ground2",
                         "action": [
@@ -753,7 +753,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSGround3)",
+                        "isSelectable": "q.player.has_tag('FSGround3')",
                         "text": "3) Phanpy, Nincada, Diggersby",
                         "value": "ground3",
                         "action": [
@@ -762,7 +762,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSGround4)",
+                        "isSelectable": "q.player.has_tag('FSGround4')",
                         "text": "4) Trapinch, Camerupt, Diggersby",
                         "value": "ground4",
                         "action": [
@@ -791,7 +791,7 @@
                 "vertical": true,
                 "options": [
                     {
-                        "isSelectable": "q.player.has_tag(FSPsychic1)",
+                        "isSelectable": "q.player.has_tag('FSPsychic1')",
                         "text": "1) Abra, Wobbuffet, Xatu",
                         "value": "psychic1",
                         "action": [
@@ -800,7 +800,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSPsychic2)",
+                        "isSelectable": "q.player.has_tag('FSPsychic2')",
                         "text": "2) Drowzee, Sigilyph, Girafarig",
                         "value": "psychic2",
                         "action": [
@@ -809,7 +809,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSPsychic3)",
+                        "isSelectable": "q.player.has_tag('FSPsychic3')",
                         "text": "3) Grumpig, Espurr, Gothorita",
                         "value": "psychic3",
                         "action": [
@@ -818,7 +818,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSPsychic4)",
+                        "isSelectable": "q.player.has_tag('FSPsychic4')",
                         "text": "4) Munna, Espurr, Duosion",
                         "value": "psychic4",
                         "action": [
@@ -847,7 +847,7 @@
                 "vertical": true,
                 "options": [
                     {
-                        "isSelectable": "q.player.has_tag(FSRock1)",
+                        "isSelectable": "q.player.has_tag('FSRock1')",
                         "text": "1) Nosepass, Onix, Barbaracle",
                         "value": "rock1",
                         "action": [
@@ -856,7 +856,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSRock2)",
+                        "isSelectable": "q.player.has_tag('FSRock2')",
                         "text": "2) Boldore, Magcargo, Shuckle",
                         "value": "rock2",
                         "action": [
@@ -865,7 +865,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSRock3)",
+                        "isSelectable": "q.player.has_tag('FSRock3')",
                         "text": "3) Dwebble, Corsola, Rhydon",
                         "value": "rock3",
                         "action": [
@@ -874,7 +874,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSRock4)",
+                        "isSelectable": "q.player.has_tag('FSRock4')",
                         "text": "4) Dwebble, Pupitar, Barbaracle",
                         "value": "rock4",
                         "action": [
@@ -903,7 +903,7 @@
                 "vertical": true,
                 "options": [
                     {
-                        "isSelectable": "q.player.has_tag(FSIce1)",
+                        "isSelectable": "q.player.has_tag('FSIce1')",
                         "text": "1) Delibird, Sneasel, Dewgong",
                         "value": "ice1",
                         "action": [
@@ -912,7 +912,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSIce2)",
+                        "isSelectable": "q.player.has_tag('FSIce2')",
                         "text": "2) Snorunt, Beartic, Cloyster",
                         "value": "ice2",
                         "action": [
@@ -921,7 +921,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSIce3)",
+                        "isSelectable": "q.player.has_tag('FSIce3')",
                         "text": "3) Spheal, Bergmite, Lapras",
                         "value": "ice3",
                         "action": [
@@ -930,7 +930,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSIce4)",
+                        "isSelectable": "q.player.has_tag('FSIce4')",
                         "text": "4) Snover, Bergmite, Piloswine",
                         "value": "ice4",
                         "action": [
@@ -959,7 +959,7 @@
                 "vertical": true,
                 "options": [
                     {
-                        "isSelectable": "q.player.has_tag(FSBug1)",
+                        "isSelectable": "q.player.has_tag('FSBug1')",
                         "text": "1) Butterfree, Beautifly, Venomoth",
                         "value": "bug1",
                         "action": [
@@ -968,7 +968,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSBug2)",
+                        "isSelectable": "q.player.has_tag('FSBug2')",
                         "text": "2) Paras, Masquerain, Pinsir",
                         "value": "bug2",
                         "action": [
@@ -977,7 +977,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSBug3)",
+                        "isSelectable": "q.player.has_tag('FSBug3')",
                         "text": "3) Ledyba, Volbeat, Heracross",
                         "value": "bug3",
                         "action": [
@@ -986,7 +986,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSBug4)",
+                        "isSelectable": "q.player.has_tag('FSBug4')",
                         "text": "4) Combee, Illumise, Vivillon",
                         "value": "bug4",
                         "action": [
@@ -1015,7 +1015,7 @@
                 "vertical": true,
                 "options": [
                     {
-                        "isSelectable": "q.player.has_tag(FSDragon1)",
+                        "isSelectable": "q.player.has_tag('FSDragon1')",
                         "text": "1) Gabite, Dragonair, Druddigon",
                         "value": "dragon1",
                         "action": [
@@ -1024,7 +1024,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSDragon2)",
+                        "isSelectable": "q.player.has_tag('FSDragon2')",
                         "text": "2) Gabite, Noibat, Sliggoo",
                         "value": "dragon2",
                         "action": [
@@ -1033,7 +1033,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSDragon3)",
+                        "isSelectable": "q.player.has_tag('FSDragon3')",
                         "text": "3) Fraxure, Noibat, Druddigon",
                         "value": "dragon3",
                         "action": [
@@ -1042,7 +1042,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSDragon4)",
+                        "isSelectable": "q.player.has_tag('FSDragon4')",
                         "text": "4) Fraxure, Shelgon, Sliggoo",
                         "value": "dragon4",
                         "action": [
@@ -1071,7 +1071,7 @@
                 "vertical": true,
                 "options": [
                     {
-                        "isSelectable": "q.player.has_tag(FSGhost1)",
+                        "isSelectable": "q.player.has_tag('FSGhost1')",
                         "text": "1) Shuppet, Pumpkaboo, Dusclops",
                         "value": "ghost1",
                         "action": [
@@ -1080,7 +1080,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSGhost2)",
+                        "isSelectable": "q.player.has_tag('FSGhost2')",
                         "text": "2) Lampent, Pumpkaboo, Drifblim",
                         "value": "ghost2",
                         "action": [
@@ -1089,7 +1089,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSGhost3)",
+                        "isSelectable": "q.player.has_tag('FSGhost3')",
                         "text": "3) Shuppet, Phantump, Spiritomb",
                         "value": "ghost3",
                         "action": [
@@ -1098,7 +1098,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSGhost4)",
+                        "isSelectable": "q.player.has_tag('FSGhost4')",
                         "text": "4) Lampent, Phantump, Golurk",
                         "value": "ghost4",
                         "action": [
@@ -1127,7 +1127,7 @@
                 "vertical": true,
                 "options": [
                     {
-                        "isSelectable": "q.player.has_tag(FSDark1)",
+                        "isSelectable": "q.player.has_tag('FSDark1')",
                         "text": "1) Mightyena, Sneasel, Sableye",
                         "value": "dark1",
                         "action": [
@@ -1136,7 +1136,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSDark2)",
+                        "isSelectable": "q.player.has_tag('FSDark2')",
                         "text": "2) Nuzleaf, Cacturne, Absol",
                         "value": "dark2",
                         "action": [
@@ -1145,7 +1145,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSDark3)",
+                        "isSelectable": "q.player.has_tag('FSDark3')",
                         "text": "3) Pawniard, Crawdaunt, Liepard",
                         "value": "dark3",
                         "action": [
@@ -1154,7 +1154,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSDark4)",
+                        "isSelectable": "q.player.has_tag('FSDark4')",
                         "text": "4) Vullaby, Sandile, Inkay",
                         "value": "dark4",
                         "action": [
@@ -1183,7 +1183,7 @@
                 "vertical": true,
                 "options": [
                     {
-                        "isSelectable": "q.player.has_tag(FSSteel1)",
+                        "isSelectable": "q.player.has_tag('FSSteel1')",
                         "text": "1) Magneton, Forretress, Klefki",
                         "value": "steel1",
                         "action": [
@@ -1192,7 +1192,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSSteel2)",
+                        "isSelectable": "q.player.has_tag('FSSteel2')",
                         "text": "2) Mawile, Skarmory, Bronzong",
                         "value": "steel2",
                         "action": [
@@ -1201,7 +1201,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSSteel3)",
+                        "isSelectable": "q.player.has_tag('FSSteel3')",
                         "text": "3) Ferroseed, Metang, Excadrill",
                         "value": "steel3",
                         "action": [
@@ -1210,7 +1210,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSSteel4)",
+                        "isSelectable": "q.player.has_tag('FSSteel4')",
                         "text": "4) Ferroseed, Klang, Klefki",
                         "value": "steel4",
                         "action": [
@@ -1239,7 +1239,7 @@
                 "vertical": true,
                 "options": [
                     {
-                        "isSelectable": "q.player.has_tag(FSFairy1)",
+                        "isSelectable": "q.player.has_tag('FSFairy1')",
                         "text": "1) Togepi, Jigglypuff, Clefairy",
                         "value": "fairy1",
                         "action": [
@@ -1248,7 +1248,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSFairy2)",
+                        "isSelectable": "q.player.has_tag('FSFairy2')",
                         "text": "2) Snubbull, Mawile, Blue Floette",
                         "value": "fairy2",
                         "action": [
@@ -1257,7 +1257,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSFairy3)",
+                        "isSelectable": "q.player.has_tag('FSFairy3')",
                         "text": "3) Kirlia, Spritzee, Red Floette",
                         "value": "fairy3",
                         "action": [
@@ -1266,7 +1266,7 @@
                         ]
                     },
                     {
-                        "isSelectable": "q.player.has_tag(FSFairy4)",
+                        "isSelectable": "q.player.has_tag('FSFairy4')",
                         "text": "4) Dedenne, Swirlix, Yellow Floette",
                         "value": "fairy4",
                         "action": [
