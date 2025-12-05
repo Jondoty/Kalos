@@ -17,7 +17,7 @@ execute as @a[x=-514,y=0,z=64,dx=526,dy=256,dz=436,tag=RunTimer,scores={Restaura
 
 
 #Mamoswine Route removing snow
-#execute as @e[x=828,y=108,z=-318,dx=150,dy=10,dz=150,tag=Dialogue100] at @e[type=pixelmon:pixelmon,name=Mamoswine,distance=..3] run fill ~-3 108 ~-3 ~2 112 ~3 minecraft:air replace minecraft:snow_block
+execute as @e[x=828,y=108,z=-318,dx=150,dy=10,dz=150,tag=Dialogue100] at @s positioned ~ ~-3 ~ if entity @e[type=cobblemon:pokemon,name=Mamoswine,distance=..3] run fill ~-3 108 ~-3 ~2 112 ~3 minecraft:air replace minecraft:snow_block
 
 
 
