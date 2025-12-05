@@ -1,15 +1,15 @@
 {
     "initializationAction": [
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/testformoney');",
         "v.slot1 = q.player.party.get_pokemon(0);",
         "v.slot2 = q.player.party.get_pokemon(1);",
         "v.slot3 = q.player.party.get_pokemon(2);",
         "v.slot4 = q.player.party.get_pokemon(3);",
         "v.slot5 = q.player.party.get_pokemon(4);",
-        "v.slot6 = q.player.party.get_pokemon(5);",
-        "q.run_command('team join shops ' + q.player.username + '');"
+        "v.slot6 = q.player.party.get_pokemon(5);"
     ],
     "escapeAction": [
-        "q.run_command('team join default ' + q.player.username + '');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
         "q.dialogue.close();"
     ],
     "names": [
@@ -244,10 +244,18 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave500')",
                         "text": "Buy Trim",
                         "value": "buytrim",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 224');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=1}] run pokeedit 1 poodle_trim=heart');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=2}] run pokeedit 2 poodle_trim=heart');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=3}] run pokeedit 3 poodle_trim=heart');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=4}] run pokeedit 4 poodle_trim=heart');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=5}] run pokeedit 5 poodle_trim=heart');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=6}] run pokeedit 6 poodle_trim=heart');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 500');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -270,10 +278,18 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave500')",
                         "text": "Buy Trim",
                         "value": "buytrim",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 225');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=1}] run pokeedit 1 poodle_trim=star');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=2}] run pokeedit 2 poodle_trim=star');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=3}] run pokeedit 3 poodle_trim=star');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=4}] run pokeedit 4 poodle_trim=star');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=5}] run pokeedit 5 poodle_trim=star');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=6}] run pokeedit 6 poodle_trim=star');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 500');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -296,10 +312,18 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave500')",
                         "text": "Buy Trim",
                         "value": "buytrim",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 226');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=1}] run pokeedit 1 poodle_trim=diamond');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=2}] run pokeedit 2 poodle_trim=diamond');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=3}] run pokeedit 3 poodle_trim=diamond');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=4}] run pokeedit 4 poodle_trim=diamond');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=5}] run pokeedit 5 poodle_trim=diamond');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=6}] run pokeedit 6 poodle_trim=diamond');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 500');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -322,10 +346,18 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave500')",
                         "text": "Buy Trim",
                         "value": "buytrim",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 227');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=1}] run pokeedit 1 poodle_trim=debutante');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=2}] run pokeedit 2 poodle_trim=debutante');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=3}] run pokeedit 3 poodle_trim=debutante');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=4}] run pokeedit 4 poodle_trim=debutante');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=5}] run pokeedit 5 poodle_trim=debutante');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=6}] run pokeedit 6 poodle_trim=debutante');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 500');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -348,10 +380,18 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave500')",
                         "text": "Buy Trim",
                         "value": "buytrim",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 228');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=1}] run pokeedit 1 poodle_trim=matron');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=2}] run pokeedit 2 poodle_trim=matron');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=3}] run pokeedit 3 poodle_trim=matron');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=4}] run pokeedit 4 poodle_trim=matron');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=5}] run pokeedit 5 poodle_trim=matron');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=6}] run pokeedit 6 poodle_trim=matron');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 500');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -374,10 +414,18 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave500')",
                         "text": "Buy Trim",
                         "value": "buytrim",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 229');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=1}] run pokeedit 1 poodle_trim=dandy');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=2}] run pokeedit 2 poodle_trim=dandy');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=3}] run pokeedit 3 poodle_trim=dandy');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=4}] run pokeedit 4 poodle_trim=dandy');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=5}] run pokeedit 5 poodle_trim=dandy');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=6}] run pokeedit 6 poodle_trim=dandy');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 500');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -400,10 +448,18 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave500')",
                         "text": "Buy Trim",
                         "value": "buytrim",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 230');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=1}] run pokeedit 1 poodle_trim=la_reine');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=2}] run pokeedit 2 poodle_trim=la_reine');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=3}] run pokeedit 3 poodle_trim=la_reine');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=4}] run pokeedit 4 poodle_trim=la_reine');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=5}] run pokeedit 5 poodle_trim=la_reine');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=6}] run pokeedit 6 poodle_trim=la_reine');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 500');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -426,10 +482,18 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave500')",
                         "text": "Buy Trim",
                         "value": "buytrim",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 231');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=1}] run pokeedit 1 poodle_trim=kabuki');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=2}] run pokeedit 2 poodle_trim=kabuki');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=3}] run pokeedit 3 poodle_trim=kabuki');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=4}] run pokeedit 4 poodle_trim=kabuki');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=5}] run pokeedit 5 poodle_trim=kabuki');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=6}] run pokeedit 6 poodle_trim=kabuki');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 500');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -452,10 +516,18 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave500')",
                         "text": "Buy Trim",
                         "value": "buytrim",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 232');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=1}] run pokeedit 1 poodle_trim=pharaoh');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=2}] run pokeedit 2 poodle_trim=pharaoh');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=3}] run pokeedit 3 poodle_trim=pharaoh');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=4}] run pokeedit 4 poodle_trim=pharaoh');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=5}] run pokeedit 5 poodle_trim=pharaoh');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=6}] run pokeedit 6 poodle_trim=pharaoh');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 500');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -478,10 +550,18 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave500')",
                         "text": "Buy Trim",
                         "value": "buytrim",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 233');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=1}] run pokeedit 1 poodle_trim=natural');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=2}] run pokeedit 2 poodle_trim=natural');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=3}] run pokeedit 3 poodle_trim=natural');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=4}] run pokeedit 4 poodle_trim=natural');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=5}] run pokeedit 5 poodle_trim=natural');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[scores={Temp=6}] run pokeedit 6 poodle_trim=natural');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.sheep.shear ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 500');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -549,7 +629,7 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
-                            "q.run_command('team join default ' + q.player.username + '');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
                             "q.dialogue.close();"
                         ]
                     }
@@ -571,7 +651,7 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
-                            "q.run_command('team join default ' + q.player.username + '');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
                             "q.dialogue.close();"
                         ]
                     }
