@@ -229,10 +229,6 @@ tag @a[tag=Skip] remove Skip
 
 
 
-#Regenerates snow in Mamoswine's Route when nobody is in the cleared zone
-execute unless entity @a[x=802,y=107,z=-312,dx=166,dy=15,dz=170] unless entity @a[x=862,y=107,z=-420,dx=140,dy=15,dz=144] run fill 913 108 -262 968 112 -182 minecraft:snow_block replace minecraft:air
-execute unless entity @a[x=802,y=107,z=-312,dx=166,dy=15,dz=170] unless entity @a[x=862,y=107,z=-420,dx=140,dy=15,dz=144] run fill 828 108 -285 912 112 -229 minecraft:snow_block replace minecraft:air
-execute unless entity @a[x=802,y=107,z=-312,dx=166,dy=15,dz=170] unless entity @a[x=862,y=107,z=-420,dx=140,dy=15,dz=144] run fill 828 108 -312 890 112 -286 minecraft:snow_block replace minecraft:air
 
 #Runs the Rhyhorn Riding Route Function
 execute as @a[x=-1875,y=135,z=560,dx=507,dy=10,dz=202,gamemode=adventure] run function kalos:world/rhyhornroute
