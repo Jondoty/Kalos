@@ -1,9 +1,7 @@
 {
   "hitbox": "player",
   "resourceIdentifier": "cobblemon:swimmerm",
-  "presets": [
-    "cobblemon:trainer_basics"
-  ],
+
   "interaction": {
     "type": "dialogue",
     "dialogue": "cobblemon:swimmer_ramses_interaction"
@@ -17,12 +15,19 @@
   },
   "config": [
     {
-      "variableName": "challenge_cooldown",
-      "displayName": "Cooldown",
-      "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
-      "type": "NUMBER",
-      "defaultValue": "0"
-    },
+     "variableName": "challenge_cooldown",
+     "displayName": "Cooldown",
+     "description": "How long in ticks the NPC will be un-challengable from that player's last challenge.",
+     "type": "NUMBER",
+     "defaultValue": "0"
+   },
+        {
+            "variableName": "on_player_loses",
+            "displayName": "npc.variable.on_player_loses.name",
+            "description": "npc.variable.on_player_loses.desc",
+            "type": "TEXT",
+            "defaultValue": "q.run_script('cobblemon:generic_forfeit');"
+        },
     {
       "variableName": "can_rechallenge",
       "displayName": "Rechallenging",
@@ -36,6 +41,38 @@
       "description": "npc.variable.on_player_wins.desc",
       "type": "TEXT",
       "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue swimmer_ramses_end @s');"
-    }
-  ]
+        }
+    ],
+    "autoHealParty": true,
+    "isMovable": false,
+    "isLeashable": false,
+    "allowProjectileHits": false,
+    "isInvulnerable": true,
+    "canDespawn": false,
+    "skill": 5,
+    "ai": [
+
+        {
+            "type": "add_tasks_to_activity",
+            "activity": "core",
+            "tasksByPriority": {
+                "0": [
+                    "look_at_target",
+                    "stay_afloat"
+                ]
+            }
+        },
+        {
+            "type": "add_tasks_to_activity",
+            "activity": "idle",
+            "tasksByPriority": {
+                "0": [
+                    "look_at_target"
+                ],
+                "1": [
+                    "look_at_entities"
+                ]
+            }
+        }
+    ]
 }

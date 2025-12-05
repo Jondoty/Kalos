@@ -7,7 +7,7 @@
             "filthy"
         ]
     },
-        "party": {
+    "party": {
         "type": "simple",
         "pokemon": [
             "Ditto level=5"
@@ -17,17 +17,13 @@
         "canChallenge": false
     },
     "autoHealParty": true,
-    "isMovable": false,  
+    "isMovable": false,
     "isLeashable": false,
     "allowProjectileHits": false,
-    "isInvulnerable": true, 
+    "isInvulnerable": true,
     "canDespawn": false,
     "skill": 5,
     "ai": [
-        {
-            "type": "apply_presets",
-            "presets": []
-        },
         {
             "type": "add_tasks_to_activity",
             "activity": "core",

@@ -42,10 +42,6 @@
     "skill": 5,
     "ai": [
         {
-            "type": "apply_presets",
-            "presets": []
-        },
-        {
             "type": "add_tasks_to_activity",
             "activity": "core",
             "tasksByPriority": {

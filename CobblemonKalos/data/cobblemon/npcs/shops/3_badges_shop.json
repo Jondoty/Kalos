@@ -1,9 +1,37 @@
 {
   "hitbox": "player",
   "resourceIdentifier": "cobblemon:shopman",
-  "presets": [
-    "cobblemon:trainer_basics"
-  ],
+    "autoHealParty": true,
+    "isMovable": false,
+    "isLeashable": false,
+    "allowProjectileHits": false,
+    "isInvulnerable": true,
+    "canDespawn": false,
+    "skill": 5,
+    "ai": [
+        {
+            "type": "add_tasks_to_activity",
+            "activity": "core",
+            "tasksByPriority": {
+                "0": [
+                    "look_at_target",
+                    "stay_afloat"
+                ]
+            }
+        },
+        {
+            "type": "add_tasks_to_activity",
+            "activity": "idle",
+            "tasksByPriority": {
+                "0": [
+                    "look_at_target"
+                ],
+                "1": [
+                    "look_at_entities"
+                ]
+            }
+        }
+    ],
   "interaction": {
     "type": "dialogue",
     "dialogue": "cobblemon:3_badges_shop_interaction"
