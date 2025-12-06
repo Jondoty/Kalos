@@ -1,9 +1,9 @@
 {
     "initializationAction": [
-        "q.run_command('team join shops ' + q.player.username + '');"
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/testformoney');"
     ],
     "escapeAction": [
-        "q.run_command('team join default ' + q.player.username + '');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
         "q.dialogue.close();"
     ],
     "names": [
@@ -211,9 +211,6 @@
                 ]
             }
         },
-
-
-
         {
             "id": "pickaltarianite",
             "speaker": "npc",
@@ -225,10 +222,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 205');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:altarianite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -253,10 +253,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 206');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:audinite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -281,10 +284,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 207');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:beedrillite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -309,10 +315,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 208');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:blazikenite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -337,10 +346,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 209');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:cameruptite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -365,10 +377,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 210');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:galladite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -393,10 +408,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 211');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:glalitite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -421,10 +439,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 212');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:latiasite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -449,10 +470,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 213');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:latiosite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -477,10 +501,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 214');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:lopunnite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -505,10 +532,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 215');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:metagrossite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -533,10 +563,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 216');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:pidgeotite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -561,10 +594,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 217');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:sablenite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -589,10 +625,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 218');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:salamencite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -617,10 +656,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 219');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:sceptilite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -645,10 +687,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 220');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:sharpedonite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -673,10 +718,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 221');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:slowbronite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -701,10 +749,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 222');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:steelixite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -729,10 +780,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 223');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:swampertite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -746,11 +800,6 @@
                 ]
             }
         },
-        
-
-
-
-
         {
             "id": "buyend",
             "speaker": "npc",
@@ -765,7 +814,7 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
-                            "q.run_command('team join default ' + q.player.username + '');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
                             "q.dialogue.close();"
                         ]
                     }
@@ -786,7 +835,7 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
-                            "q.run_command('team join default ' + q.player.username + '');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
                             "q.dialogue.close();"
                         ]
                     }

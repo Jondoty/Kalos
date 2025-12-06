@@ -1,9 +1,10 @@
 {
     "initializationAction": [
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/testformoney');",
         "q.run_command('team join battlepoints ' + q.player.username + '');"
     ],
     "escapeAction": [
-        "q.run_command('team join default ' + q.player.username + '');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
         "q.dialogue.close();"
     ],
     "names": [
@@ -153,7 +154,7 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
-                            "q.run_command('team join default ' + q.player.username + '');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
                             "q.dialogue.close();"
                         ]
                     }
@@ -213,7 +214,7 @@
                             "q.run_command('execute as ' + q.player.username + ' run function kalos:data/maisonstreakstarting');",
                             "q.run_command('execute unless entity @a[x=1220,y=75,z=1545,distance=..7,scores={BattleStart=1..}] run particle cloud 1217 75 1545 1 1 1 1 25');",
                             "q.run_command('execute unless entity @a[x=1220,y=75,z=1545,distance=..7,scores={BattleStart=1..}] run tp @e[x=1217,y=75,z=1545,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
-                            "q.run_command('team join default ' + q.player.username + '');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
                             "q.dialogue.close();"
                         ]
                     }

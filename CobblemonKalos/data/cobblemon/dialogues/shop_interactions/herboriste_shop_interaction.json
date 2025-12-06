@@ -1,9 +1,9 @@
 {
     "initializationAction": [
-        "q.run_command('team join shops ' + q.player.username + '');"
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/testformoney');"
     ],
     "escapeAction": [
-        "q.run_command('team join default ' + q.player.username + '');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
         "q.dialogue.close();"
     ],
     "names": [
@@ -72,9 +72,6 @@
                 ]
             }
         },
-
-
-
         {
             "id": "pickhealpowder",
             "speaker": "npc",
@@ -86,10 +83,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave450')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 201');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:heal_powder 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 450');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -114,6 +114,7 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave350')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
@@ -132,6 +133,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('MoneyHave800')",
             "id": "pickenergyroot",
             "speaker": "npc",
             "lines": [
@@ -145,7 +147,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 203');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:energy_root 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 800');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -170,10 +174,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave2800')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 204');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:revival_herb 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 2800');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -187,11 +194,6 @@
                 ]
             }
         },
-        
-
-
-
-
         {
             "id": "buyend",
             "speaker": "npc",
@@ -206,7 +208,7 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
-                            "q.run_command('team join default ' + q.player.username + '');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
                             "q.dialogue.close();"
                         ]
                     }
@@ -227,7 +229,7 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
-                            "q.run_command('team join default ' + q.player.username + '');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
                             "q.dialogue.close();"
                         ]
                     }

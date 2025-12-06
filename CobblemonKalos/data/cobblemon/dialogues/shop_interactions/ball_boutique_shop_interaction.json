@@ -1,9 +1,9 @@
 {
     "initializationAction": [
-        "q.run_command('team join shops ' + q.player.username + '');"
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/testformoney');"
     ],
     "escapeAction": [
-        "q.run_command('team join default ' + q.player.username + '');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
         "q.dialogue.close();"
     ],
     "names": [
@@ -144,26 +144,36 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave1000')",
                         "text": "Buy x1",
                         "value": "buy1",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 140');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:quick_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 1000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave5000')",
                         "text": "Buy x5",
                         "value": "buy5",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 141');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:quick_ball 5');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 5000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave10000')",
                         "text": "Buy x10",
                         "value": "buy10",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 142');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:quick_ball 10');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:premier_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 10000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     }
@@ -184,7 +194,9 @@
                         "text": "Buy x1",
                         "value": "buy1",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 189');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:dive_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 1000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -192,7 +204,9 @@
                         "text": "Buy x5",
                         "value": "buy5",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 190');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:dive_ball 5');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 5000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -200,7 +214,10 @@
                         "text": "Buy x10",
                         "value": "buy10",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 191');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:dive_ball 10');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:premier_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 10000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     }
@@ -221,7 +238,9 @@
                         "text": "Buy x1",
                         "value": "buy1",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 192');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:timer_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 1000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -229,7 +248,9 @@
                         "text": "Buy x5",
                         "value": "buy5",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 193');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:timer_ball 5');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 5000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -237,7 +258,10 @@
                         "text": "Buy x10",
                         "value": "buy10",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 194');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:timer_ball 10');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:premier_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 10000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     }
@@ -255,26 +279,35 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave200')",
                         "text": "Buy x1",
                         "value": "buy1",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 185');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:premier_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 200');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave1000')",
                         "text": "Buy x5",
                         "value": "buy5",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 186');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:premier_ball 5');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 1000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave2000')",
                         "text": "Buy x10",
                         "value": "buy10",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 187');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:premier_ball 11');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 2000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     }
@@ -292,26 +325,36 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave200')",
                         "text": "Buy x1",
                         "value": "buy1",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 131');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:heal_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 200');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave1500')",
                         "text": "Buy x5",
                         "value": "buy5",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 132');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:heal_ball 5');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 1500');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave3000')",
                         "text": "Buy x10",
                         "value": "buy10",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 133');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:heal_ball 10');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:premier_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 3000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     }
@@ -329,26 +372,36 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave1000')",
                         "text": "Buy x1",
                         "value": "buy1",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 134');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:net_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 1000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave5000')",
                         "text": "Buy x5",
                         "value": "buy5",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 135');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:net_ball 5');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 5000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave10000')",
                         "text": "Buy x10",
                         "value": "buy10",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 136');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:net_ball 10');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:premier_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 10000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     }
@@ -366,26 +419,36 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave1000')",
                         "text": "Buy x1",
                         "value": "buy1",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 143');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:nest_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 1000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave5000')",
                         "text": "Buy x5",
                         "value": "buy5",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 144');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:nest_ball 5');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 5000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave10000')",
                         "text": "Buy x10",
                         "value": "buy10",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 145');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:nest_ball 10');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:premier_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 10000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     }
@@ -403,26 +466,36 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave1000')",
                         "text": "Buy x1",
                         "value": "buy1",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 137');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:dusk_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 1000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave5000')",
                         "text": "Buy x5",
                         "value": "buy5",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 138');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:dusk_ball 5');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 5000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave10000')",
                         "text": "Buy x10",
                         "value": "buy10",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 139');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:dusk_ball 10');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:premier_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 10000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     }
@@ -443,7 +516,9 @@
                         "text": "Buy x1",
                         "value": "buy1",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 195');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:repeat_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 1000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -451,7 +526,9 @@
                         "text": "Buy x5",
                         "value": "buy5",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 196');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:repeat_ball 5');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 5000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -459,7 +536,10 @@
                         "text": "Buy x10",
                         "value": "buy10",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 197');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:repeat_ball 10');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:premier_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 10000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     }
@@ -480,7 +560,9 @@
                         "text": "Buy x1",
                         "value": "buy1",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 198');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:luxury_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 1000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -488,7 +570,9 @@
                         "text": "Buy x5",
                         "value": "buy5",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 199');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:luxury_ball 5');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 5000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -496,7 +580,10 @@
                         "text": "Buy x10",
                         "value": "buy10",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 200');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:luxury_ball 10');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:premier_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 10000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     }
@@ -522,7 +609,7 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
-                            "q.run_command('team join default ' + q.player.username + '');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
                             "q.dialogue.close();"
                         ]
                     }
@@ -543,7 +630,7 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
-                            "q.run_command('team join default ' + q.player.username + '');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
                             "q.dialogue.close();"
                         ]
                     }

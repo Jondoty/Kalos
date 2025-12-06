@@ -1,8 +1,9 @@
 {
     "initializationAction": [
-        "q.run_command('team join shops ' + q.player.username + '');"
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/testformoney');"
     ],
     "escapeAction": [
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
         "q.run_command('team join Chateau ' + q.player.username + '');",
         "q.dialogue.close();"
     ],
@@ -44,8 +45,6 @@
                 ]
             }
         },
-
-
         {
             "id": "buy1",
             "speaker": "npc",
@@ -146,11 +145,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave5000')",
                         "text": "Purchase",
                         "value": "purchase",
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 298');",
-                            "q.dialogue.set_page('purchaseend');"]
+                            "q.dialogue.set_page('purchaseend');"
+                        ]
                     },
                     {
                         "text": "No Thanks",
@@ -189,6 +190,7 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave10000')",
                         "text": "Purchase",
                         "value": "purchase",
                         "action": [
@@ -233,6 +235,7 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave10000')",
                         "text": "Purchase",
                         "value": "purchase",
                         "action": [
@@ -248,9 +251,7 @@
                 ]
             }
         },
-
-
-                {
+        {
             "id": "writsofchallenge1",
             "speaker": "npc",
             "lines": [
@@ -325,6 +326,7 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave5000')",
                         "text": "Purchase",
                         "value": "purchase",
                         "action": [
@@ -369,6 +371,7 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave1000')",
                         "text": "Purchase",
                         "value": "purchase",
                         "action": [
@@ -413,6 +416,7 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave10000')",
                         "text": "Purchase",
                         "value": "purchase",
                         "action": [
@@ -457,11 +461,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
                         "text": "Purchase",
                         "value": "purchase",
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s TriggerCommand 304');",
-                            "q.dialogue.set_page('purchaseend');"]
+                            "q.dialogue.set_page('purchaseend');"
+                        ]
                     },
                     {
                         "text": "No Thanks",
@@ -471,9 +477,6 @@
                 ]
             }
         },
-
-
-
         {
             "id": "purchaseend",
             "speaker": "npc",
@@ -488,6 +491,7 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
                             "q.run_command('team join Chateau ' + q.player.username + '');",
                             "q.dialogue.close();"
                         ]
@@ -509,6 +513,7 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
                             "q.run_command('team join Chateau ' + q.player.username + '');",
                             "q.dialogue.close();"
                         ]
@@ -516,13 +521,6 @@
                 ]
             }
         },
-
-
-
-
-
-
-
         {
             "id": "info1",
             "speaker": "npc",
@@ -613,5 +611,5 @@
                 ]
             }
         }
-     ]
+    ]
 }

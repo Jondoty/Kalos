@@ -1,9 +1,10 @@
 {
     "initializationAction": [
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/testformoney');",
         "q.run_command('team join battlepoints ' + q.player.username + '');"
     ],
     "escapeAction": [
-        "q.run_command('team join default ' + q.player.username + '');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
         "q.dialogue.close();"
     ],
     "names": [
@@ -239,7 +240,6 @@
                 ]
             }
         },
-
         {
             "id": "pickwiseglasses",
             "speaker": "npc",
@@ -251,10 +251,13 @@
                 "vertical": false,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('BPHave48')",
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 265');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:wise_glasses 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -269,6 +272,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave48')",
             "id": "pickchoicespecs",
             "speaker": "npc",
             "lines": [
@@ -282,7 +286,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 266');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:choice_specs 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -297,6 +303,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave48')",
             "id": "pickscopelens",
             "speaker": "npc",
             "lines": [
@@ -310,7 +317,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 267');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:scope_lens 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -325,6 +334,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave48')",
             "id": "pickzoomlens",
             "speaker": "npc",
             "lines": [
@@ -338,7 +348,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 268');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:zoom_lens 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -353,6 +365,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave48')",
             "id": "pickwidelens",
             "speaker": "npc",
             "lines": [
@@ -366,7 +379,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 269');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:wide_lens 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -381,6 +396,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave48')",
             "id": "pickmuscleband",
             "speaker": "npc",
             "lines": [
@@ -394,7 +410,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 270');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:muscle_band 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -409,6 +427,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave48')",
             "id": "pickfocusband",
             "speaker": "npc",
             "lines": [
@@ -422,7 +441,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 271');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:focus_band 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -437,6 +458,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave48')",
             "id": "pickchoiceband",
             "speaker": "npc",
             "lines": [
@@ -450,7 +472,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 272');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:choice_band 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -465,6 +489,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave48')",
             "id": "pickchoicescarf",
             "speaker": "npc",
             "lines": [
@@ -478,7 +503,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 273');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:choice_scarf 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -493,6 +520,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave48')",
             "id": "pickassaultvest",
             "speaker": "npc",
             "lines": [
@@ -506,7 +534,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 274');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:assault_vest 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -521,6 +551,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave48')",
             "id": "pickfocussash",
             "speaker": "npc",
             "lines": [
@@ -534,7 +565,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 275');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:focus_sash 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -549,6 +582,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave48')",
             "id": "pickrazorclaw",
             "speaker": "npc",
             "lines": [
@@ -562,7 +596,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 276');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:razor_claw 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -577,6 +613,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave48')",
             "id": "pickrazorfang",
             "speaker": "npc",
             "lines": [
@@ -590,7 +627,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 277');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:razor_fang 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -605,6 +644,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave48')",
             "id": "pickbrightpowder",
             "speaker": "npc",
             "lines": [
@@ -618,7 +658,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 278');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:bright_powder 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -633,6 +675,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave48')",
             "id": "picklifeorb",
             "speaker": "npc",
             "lines": [
@@ -646,7 +689,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 279');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:life_orb 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -661,6 +706,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave48')",
             "id": "pickironball",
             "speaker": "npc",
             "lines": [
@@ -674,7 +720,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 280');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:iron_ball 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -689,6 +737,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave48')",
             "id": "pickairballoon",
             "speaker": "npc",
             "lines": [
@@ -702,7 +751,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 281');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:air_balloon 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -717,6 +768,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave48')",
             "id": "pickbindingband",
             "speaker": "npc",
             "lines": [
@@ -730,7 +782,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 282');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:binding_band 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -745,6 +799,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave48')",
             "id": "picksafetygoggles",
             "speaker": "npc",
             "lines": [
@@ -758,7 +813,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 283');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:safety_goggles 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -773,6 +830,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave48')",
             "id": "pickrarecandy",
             "speaker": "npc",
             "lines": [
@@ -786,7 +844,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 284');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:rare_candy 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 48');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -801,6 +861,7 @@
             }
         },
         {
+            "isSelectable": "q.player.has_tag('BPHave200')",
             "id": "pickabilitycapsule",
             "speaker": "npc",
             "lines": [
@@ -814,7 +875,9 @@
                         "text": "Buy",
                         "value": "buy",
                         "action": [
-                            "q.run_command('scoreboard players set ' + q.player.username + ' TriggerCommand 285');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:ability_capsule 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 200');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -828,7 +891,6 @@
                 ]
             }
         },
-
         {
             "id": "buyend",
             "speaker": "npc",
@@ -843,7 +905,7 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
-                            "q.run_command('team join default ' + q.player.username + '');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
                             "q.dialogue.close();"
                         ]
                     }
@@ -864,7 +926,7 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
-                            "q.run_command('team join default ' + q.player.username + '');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
                             "q.dialogue.close();"
                         ]
                     }
