@@ -449,69 +449,6 @@ scoreboard players set @s[tag=Dialogue171] TalkTime 0
 scoreboard players set @s[tag=Dialogue171] DialogueTrigger 0
 
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#https://youtu.be/qEms9_nJ7M0?t=66423
-#Looker starting Chapter 4
-
-tellraw @s[scores={DialogueTrigger=185,TalkTime=3}] [<Looker> Ah, "},{"selector":"@s"},{"text":", thank you so much for your time. I need three minutes only."}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=11}] [<Looker> Emma is on my mind. Recently, she has been running off somewhere on her own. And often."}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=22}] [<Looker> I was hoping to ask her to watch the office for me today, and once again, nowhere can she be found."}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=33}] [<Looker> It even seems as if she did not return here last night..."}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=40}] [<Looker> Her friends from the former gang seem to be on the straight and narrow,"}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=48}] [<Looker> so I hope this is not anything bad, but..."}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=56}] [<Looker> Hm? What's this? A Holo Caster clip?"}]
-
-#blinds player
-execute as @s[scores={DialogueTrigger=185,TalkTime=63}] run scoreboard players set @s click 1
-execute as @s[scores={DialogueTrigger=185,TalkTime=63}] run effect give @s minecraft:blindness 5 1 true
-execute as @s[scores={DialogueTrigger=185,TalkTime=63}] run title @s times 20 100 20
-execute as @s[scores={DialogueTrigger=185,TalkTime=63}] run title @s subtitle {"text":"An Unforgivable Crime"}
-execute as @s[scores={DialogueTrigger=185,TalkTime=63}] run title @s title {"text":"Chapter 4"}
-
-#Summon Malva Holo Call next to Looker
-
-execute as @s[scores={DialogueTrigger=185,TalkTime=65}] run summon armor_stand -123 101.25 379 {Rotation:[90.0f,0.0f],Invisible:1b,Invulnerable:1b,NoGravity:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"carrot_on_a_stick",Count:1b,tag:{Unbreakable:1b,HideFlags:6},Damage:7s}],HandItems:[{},{}],DisabledSlots:2039327}
-execute as @s[scores={DialogueTrigger=185,TalkTime=65}] run data modify entity @e[limit=1,x=-126,y=100,z=379,dy=3,type=pixelmon:npc_chatting] {Rotation:[-90.0f,0.0f]}
-execute as @s[scores={DialogueTrigger=185,TalkTime=65}] run replaceitem entity @e[x=-126,y=100,z=379,dy=3,type=pixelmon:npc_chatting] weapon.offhand minecraft:carrot_on_a_stick
-
-tellraw @s[scores={DialogueTrigger=185,TalkTime=71}] {"text":"Newscast: We bring you a special bulletin..."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=78}] {"text":"Newscast: Late last night, an intruder broke into the Lumiose Museum and damaged a painting."}
-tellraw @s[scores={DialogueTrigger=185,TalkTime=88}] {"text":"Newscast: Museum staff said that security is very tight and breaking into the museum is impossible. The culprit remains at large."}
-
-#kill armor stand
-execute as @s[scores={DialogueTrigger=185,TalkTime=98}] run kill @e[x=-123,y=100,z=379,dy=3,type=armor_stand]
-execute as @s[scores={DialogueTrigger=185,TalkTime=98}] run replaceitem entity @e[x=-126,y=100,z=379,dy=3,type=pixelmon:npc_chatting] weapon.offhand air
-
-tellraw @s[scores={DialogueTrigger=185,TalkTime=101}] [<Looker> Did you see that, "},{"selector":"@s"},{"text":"?! Where trouble goes, Looker must follow!"}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=111}] [<Looker> I am on my way to the Lumiose Museum to begin my investigations! Most urgently!"}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=121}] [<Looker> It is straight to the scene of the crime for us!"}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=128}] [<Looker> ...Oh, wouldn't it be nice if that were true?"}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=135}] [<Looker> But I actually have an appointment soon that I cannot possibly miss, so I am stuck here..."}]
-tellraw @s[scores={DialogueTrigger=185,TalkTime=145}] [<Looker> I hate to ask this of you, but I need you to start the investigation without me, "},{"selector":"@s"},{"text":"!"}]
-
-tag @s[scores={DialogueTrigger=185,TalkTime=145..}] add Dialogue185
-scoreboard players set @s[tag=Dialogue185] TalkTime 0
-scoreboard players set @s[tag=Dialogue185] DialogueTrigger 0
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#https://youtu.be/YrN7bVT01t0?t=138
-#Lumiose Museum after vandalization
-#execute as @s[x=-83,y=77,z=355,r=7,score_TalkTime=0,tag=Dialogue185] run scoreboard players set @s[tag=!Dialogue186] DialogueTrigger 186
-
-tellraw @s[scores={DialogueTrigger=186,TalkTime=3}] {"text":"<Artist> Hey, kid! Listen to this!"}
-tellraw @s[scores={DialogueTrigger=186,TalkTime=8}] {"text":"<Artist> You've got some timing, picking today of all days to come to the museum..."}
-tellraw @s[scores={DialogueTrigger=186,TalkTime=18}] {"text":"<Artist> Or are you here because you heard about what happened?"}
-tellraw @s[scores={DialogueTrigger=186,TalkTime=26}] {"text":"<Artist> Someone went and left some crazy graffiti on a piece on the third floor!"}
-tellraw @s[scores={DialogueTrigger=186,TalkTime=35}] {"text":"<Artist> Some kind of depraved criminal, I guess, sabotaging a historic and valuable artwork!"}
-tellraw @s[scores={DialogueTrigger=186,TalkTime=45}] {"text":"<Artist> You know, this place is supposed to have the strictest security."}
-tellraw @s[scores={DialogueTrigger=186,TalkTime=54}] {"text":"<Artist> I wonder how a criminal would get access..."}
-tellraw @s[scores={DialogueTrigger=186,TalkTime=62}] {"text":"<Artist> Head up to the top floor, and you can see the outrage."}
-tellraw @s[scores={DialogueTrigger=186,TalkTime=70}] {"text":"<Artist> Believe me, it's unbelievable."}
-tellraw @s[scores={DialogueTrigger=186,TalkTime=77}] {"text":"<Artist> The museum director's up there, too. Maybe he can tell you more."}
-
-tag @s[scores={DialogueTrigger=186,TalkTime=77..}] add Dialogue186
-scoreboard players set @s[tag=Dialogue186] TalkTime 0
-scoreboard players set @s[tag=Dialogue186] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Entitydatas vandalized painting
@@ -551,40 +488,6 @@ tag @s[scores={DialogueTrigger=187,TalkTime=115..}] add Dialogue187
 scoreboard players set @s[tag=Dialogue187] TalkTime 0
 scoreboard players set @s[tag=Dialogue187] DialogueTrigger 0
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Looker after investigating Museum
-
-execute as @s[scores={DialogueTrigger=188,TalkTime=1}] run scoreboard players set @s click 1
-tellraw @s[scores={DialogueTrigger=188,TalkTime=3}] [<Looker> "},{"selector":"@s"},{"text":", have you seen the news? The purloining of Pokémon continues!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=13}] [<Looker> It is unforgivable! We have not yet closed the case at the museum, but..."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=22}] [<Looker> When you consider how many are suffering, we must pursue the culprits!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=31}] [<Looker> I have devised an absolutely amazing plan that will bring an immediate solution."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=41}] [<Looker> It will be a sting operation!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=48}] [<Looker> It appears the criminals are targeting Trainers in places where there are no witnesses."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=59}] [<Looker> If that is indeed the case, then we can simply bait a trap and wait!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=68}] [<Looker> First the \u201cvictim\u201d will go to some deserted location and act lost."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=77}] [<Looker> The criminals will think they've found an easy mark, and they will surely reveal themselves!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=88}] [<Looker> All the reports say they like to challenge their victims to battle before stealing their Pokémon."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=99}] [<Looker> That's when we'll get them! Right when they are distracted by the heat of a Pokémon battle!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=110}] [<Looker> The backup, who will be hiding and watching, will appear and help take down the criminals!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=120}] [<Looker> Indeed. What do you think? It is not without risk, but it's quite the best plan we have!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=131}] [<Looker> However! The plan will never succeed without you, "},{"selector":"@s"},{"text":"!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=140}] [<Looker> Now, as to our assignments..."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=147}] [<Looker> There is little to decide, since you are aware that I have no Pokémon."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=156}] [<Looker> Your role is therefore to play the victim in our little sting operation."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=165}] [<Looker> I will conceal myself in the shadows and watch for my opening to attack."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=175}] [<Looker> Keep your Pokémon ready to spring into battle when the criminals appear!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=184}] [<Looker> I ask myself how to draw these miscreants into approaching us."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=193}] [<Looker> What we need is a place in this bustling city that is a little deserted, perhaps."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=203}] [<Looker> A nice, neglected alley is exactly what I have in mind. Come, "},{"selector":"@s"},{"text":"! The game is afoot!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=215}] [<Looker> Let us begin the hunt close to home!"}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=223}] [<Looker> The nearest alley is right beside this building. It connects to Autumnal Avenue."}]
-tellraw @s[scores={DialogueTrigger=188,TalkTime=232}] [<Looker> Go quickly, "},{"selector":"@s"},{"text":"! I will be right behind you!"}]
-execute as @s[scores={DialogueTrigger=188,TalkTime=240}] run scoreboard players set @s click 1
-
-tag @s[scores={DialogueTrigger=188,TalkTime=240..}] add Dialogue188
-scoreboard players set @s[tag=Dialogue188] TalkTime 0
-scoreboard players set @s[tag=Dialogue188] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #https://youtu.be/YrN7bVT01t0?t=586

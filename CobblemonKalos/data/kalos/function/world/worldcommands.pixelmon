@@ -400,18 +400,11 @@ scoreboard players set @a[x=-444,y=101,z=206,distance=..6,tag=Dialogue168,scores
 #----------
 #Looker Chapters
 
-#Dialogue 186
-#Museum learning about art piece
-execute as @a[x=-83,y=77,z=355,distance=..7,scores={TalkTime=0},tag=Dialogue185,tag=!Dialogue186] run scoreboard players set @s DialogueTrigger 186
-
 #Rotates paintings to vandalized
 execute as @p[x=-79,y=103,z=326,distance=..15,tag=Dialogue185,tag=Dialogue214] run execute as @e[x=-79,y=103,z=326,distance=..1,type=item_frame] run data modify entity @s {Item:{id:"minecraft:diamond_hoe",Count:1b,Damage:202s}}
 execute as @p[x=-79,y=103,z=326,distance=..15,tag=!Dialogue185,tag=!Dialogue214] run execute as @e[x=-79,y=103,z=326,distance=..1,type=item_frame] run data modify entity @s {Item:{id:"minecraft:diamond_hoe",Count:1b,Damage:202s}}
 execute as @p[x=-79,y=103,z=326,distance=..15,tag=Dialogue185,tag=!Dialogue214] run execute as @e[x=-79,y=103,z=326,distance=..1,type=item_frame] run data modify entity @s {Item:{id:"minecraft:diamond_hoe",Count:1b,Damage:217s}}
 
-#Dialogue 187
-#Museum director vandal talk
-execute as @a[x=-80,y=100,z=327,dx=9,dy=6,dz=7,scores={TalkTime=0},tag=Dialogue185] run scoreboard players set @s[tag=!Dialogue187] DialogueTrigger 187
 
 #Dialogue 189
 #Lumiose Alley #1 trainer

@@ -675,6 +675,41 @@ execute as @s[x=1119,y=105,z=2007,distance=..10,tag=!Dialogue183] run opendialog
 #Post-battle of all three trainers
 execute as @s[x=1130,y=105,z=2009,distance=..50,tag=StationPunks1,tag=StationPunks2,tag=StationPunks3] run opendialogue emma_dialogue184 @s
 
+#Looker beginning chapter 4
+execute as @s[x=-126,y=101,z=383,distance=..6,tag=Dialogue184,tag=!Dialogue185] run opendialogue looker_dialogue185 @s
+
+#Lumiose Museum, artist
+execute as @s[x=-83,y=77,z=355,distance=..7,tag=Dialogue185,tag=!Dialogue186] unless entity @e[x=-88,y=77,z=349,dy=3,type=cobblemon:npc] run npcspawnat -88 77 349 artist_generic
+execute as @s[x=-83,y=77,z=355,distance=..7,tag=Dialogue185,tag=!Dialogue186] run opendialogue artist_dialogue186 @s
+
+#Lumiose Museum, director
+execute as @s[x=-79,y=101,z=331,distance=..35,tag=Dialogue185,tag=!Dialogue187] unless entity @e[x=-79,y=101,z=331,dy=3,type=cobblemon:npc] run npcspawnat -79 101 331 gentleman_generic
+execute as @s[x=-80,y=100,z=327,dx=9,dy=6,dz=7,tag=Dialogue185,tag=!Dialogue187] run opendialogue museumdirector_dialogue187 @s
+
+#tps out Director and artist upon leaving if dialogues are completed
+execute as @s[x=-83,y=77,z=355,distance=..7,tag=Dialogue187] run tp @e[x=-88,y=77,z=349,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute as @s[x=-83,y=77,z=355,distance=..7,tag=Dialogue187] run tp @e[x=-79,y=101,z=331,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+
+#Looker Dialogue 188, after museum investigation
+execute as @s[x=-176,y=101,z=385,distance=..6,tag=Dialogue187,tag=!Dialogue188] run opendialogue looker_dialogue188 @s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
