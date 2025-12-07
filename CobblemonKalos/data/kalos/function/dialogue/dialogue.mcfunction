@@ -198,6 +198,14 @@ scoreboard players set @s[scores={DialogueTrigger=131},tag=Dialogue131] Dialogue
 #scoreboard players set @a[r=20,score_TalkTime=0] DialogueTrigger 154
 #REPEATED, Will be reset when player enters the Pokemon League again along with E4 tags
 
+#Applies ribbons to entire party
+execute as @s[scores={DialogueTrigger=154,TalkTime=1}] run givemark @s 1 cobblemon:ribbon_champion_kalos
+execute as @s[scores={DialogueTrigger=154,TalkTime=1}] run givemark @s 2 cobblemon:ribbon_champion_kalos
+execute as @s[scores={DialogueTrigger=154,TalkTime=1}] run givemark @s 3 cobblemon:ribbon_champion_kalos
+execute as @s[scores={DialogueTrigger=154,TalkTime=1}] run givemark @s 4 cobblemon:ribbon_champion_kalos
+execute as @s[scores={DialogueTrigger=154,TalkTime=1}] run givemark @s 5 cobblemon:ribbon_champion_kalos
+execute as @s[scores={DialogueTrigger=154,TalkTime=1}] run givemark @s 6 cobblemon:ribbon_champion_kalos
+
 execute as @s[scores={DialogueTrigger=154,TalkTime=1}] run scoreboard players add @s PokemonLeague 1
 execute as @s[scores={DialogueTrigger=154,TalkTime=1}] run pokeheal
 execute as @s[scores={DialogueTrigger=154,TalkTime=1}] run function kalos:triggers/stopsound
