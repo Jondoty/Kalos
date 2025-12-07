@@ -1,7 +1,6 @@
 {  
     "hitbox": "player",
     "resourceIdentifier": "cobblemon:lass",
-    "behaviors": [],
     "variation": {
         "dirt": [
             "clean",
@@ -32,6 +31,10 @@
     "canDespawn": false,
     "skill": 5,
     "ai": [
+                {
+            "type": "apply_behaviours",
+            "behaviours": []
+        },
         {
             "type": "add_tasks_to_activity",
             "activity": "core",
