@@ -1,0 +1,304 @@
+{
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+    ],
+    "escapeAction": [],
+    "speakers": {
+        "emma": {
+            "name": "Emma",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:emma",
+                "isLeftSide": true
+            }
+        },
+        "mimi": {
+            "name": "Mimi",
+            "face": {
+                "type": "artificial",
+                "modelType": "pokemon",
+                "identifier": "cobblemon:espurr",
+                "isLeftSide": false
+            }
+        },
+        "unknown": {
+            "name": "???",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:butler",
+                "isLeftSide": true
+            }
+        },
+        "player": {
+            "face": "q.player.face(true);",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "emma",
+            "lines": [
+                "Oh! You actually showed up!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "emma",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'Hey, ' + q.player.username + ', I was hoping to find Mr. Looker.';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "emma",
+            "lines": [
+                "I've been so busy lately that I'm hardly ever here anymore. Do you have any idea where he is?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "emma",
+            "lines": [
+                "Wha...? He's in the hospital?! What's wrong with him?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "emma",
+            "lines": [
+                "Now I'm even more worried than before!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "emma",
+            "lines": [
+                "B-but... I'd need more money to get to the hospital..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "emma",
+            "lines": [
+                "Ah! Is that the time?! I'm gonna be late!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page8');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "emma",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'I gotta go, Mimi! We\\'ll talk later, ' + q.player.username + '!';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:espurr ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page9');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page9",
+            "speaker": "mimi",
+            "lines": [
+                "Murrr-murrrawr!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('tp @e[x=-77,y=101,z=385,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('particle cloud -77 101 385 2 2 2 1 100');",
+                            "q.run_command('particle cloud -77 101 394 2 2 2 1 100');",
+                            "q.run_command('execute unless entity @e[x=-77,y=101,z=394,dy=3,type=cobblemon:npc] run npcspawnat -77 101 394 butler_chalmers');",
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -74.65 101.00 391.24 -331.05 19.35');",
+                            "q.dialogue.set_page('page10');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page10",
+            "speaker": "unknown",
+            "lines": [
+                "Please pardon my intrusion..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page11');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page11",
+            "speaker": "unknown",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'Would I be correct to assume that this is the Looker Bureau and that you might be ' + q.player.username + '?';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page12');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page12",
+            "speaker": "unknown",
+            "lines": [
+                "I am terribly sorry to intrude upon you, but I have a request."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page13');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page13",
+            "speaker": "unknown",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'But before we discuss the reason for my visit today, would you allow me to verify your strength, ' + q.player.username + '?';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue193');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

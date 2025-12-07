@@ -173,7 +173,8 @@ execute as @s[x=-1998,y=12,z=1915,distance=..6] run tag @s remove Dialogue154
 execute as @s[x=-1998,y=12,z=1915,distance=..6] run scoreboard players set @s DialogueTrigger 154
 
 
-
+#Looker Chapter 5, Mimi's Note
+execute as @s[x=-101,y=101,z=384,distance=..5] run opendialogue mimi_dialogue225 @s
 
 
 #Looker Books

@@ -713,10 +713,12 @@ execute as @s[x=11,y=101,z=-533,distance=50..85,tag=Dialogue191] run tp @e[x=11,
 execute as @s[x=-361,y=101,z=-275,distance=..20,tag=Dialogue191,tag=!Dialogue192] unless entity @e[x=-391,y=101,z=-275,dy=3,type=cobblemon:npc] run npcspawnat -391 101 -275 suspicious_lady
 execute as @s[x=-391,y=101,z=-275,distance=..20,tag=Dialogue191,tag=Dialogue192] run tp @e[x=-95,y=101,z=-609,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
+#Looker Chapter 5, Emma
+execute as @s[x=-77,y=101,z=385,distance=..7,tag=Dialogue225,tag=!Dialogue193] unless entity @e[x=-77,y=101,z=385,dy=3,type=cobblemon:npc] run npcspawnat -77 101 385 emma_generic
+execute as @s[x=-77,y=101,z=385,distance=..7,tag=Dialogue225,tag=!Dialogue193] run opendialogue emma_dialogue193 @s
 
-
-
-
+#Respawns Chalmers battle NPC
+execute as @s[x=-77,y=101,z=394,distance=..15,tag=Dialogue193,tag=!Dialogue194] unless entity @e[x=-77,y=101,z=394,dy=3,type=cobblemon:npc] run npcspawnat -77 101 394 butler_chalmers
 
 
 

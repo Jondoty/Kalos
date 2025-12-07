@@ -39,7 +39,7 @@
             "displayName": "npc.variable.on_player_wins.name",
             "description": "npc.variable.on_player_wins.desc",
             "type": "TEXT",
-            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue chalmers_dialogue194 @s');"
+            "defaultValue": "q.run_command('execute as ' + q.player.username + ' run opendialogue butler_chalmers_end @s');"
         }
     ],
     "autoHealParty": true,

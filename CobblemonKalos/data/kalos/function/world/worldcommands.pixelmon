@@ -280,19 +280,6 @@ scoreboard players set @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMai
 #----------
 #Holo Caster Calls
 
-#Call 16 Looker Chapter 4 Start
-execute as @a[x=-181,y=101,z=-390,distance=..395,tag=!Call16,scores={TalkTime=0,HoloCall=0}] run execute as @s[tag=!LookerCooldown,tag=Dialogue184] run scoreboard players set @s HoloCall 16
-
-#Call 17 & 18
-#Malva Newscast and Looker
-execute as @a[x=-105,y=101,z=-699,distance=..20,tag=!Call17,scores={TalkTime=0,HoloCall=0},tag=Dialogue187] run scoreboard players set @s HoloCall 17
-execute as @a[x=-181,y=101,z=-390,distance=..395,tag=!Call18,scores={TalkTime=0,HoloCall=0},tag=Call17] run scoreboard players set @s HoloCall 18
-
-
-#Route 19
-#Lumiose City Emma after she's read Mimi's note
-execute as @a[x=-181,y=101,z=-390,distance=..395,tag=!Call19,scores={TalkTime=0,HoloCall=0},tag=!LookerCooldown,tag=Dialogue225] run scoreboard players set @s HoloCall 19
-
 #Call20
 #Lumiose City Post-Xerosic Caught
 execute as @a[x=-181,y=101,z=-390,distance=..395,tag=!Call20,scores={TalkTime=0,HoloCall=0},tag=!LookerCooldown,tag=Dialogue213] run scoreboard players set @s HoloCall 20
@@ -405,10 +392,6 @@ execute as @p[x=-79,y=103,z=326,distance=..15,tag=Dialogue185,tag=Dialogue214] r
 execute as @p[x=-79,y=103,z=326,distance=..15,tag=!Dialogue185,tag=!Dialogue214] run execute as @e[x=-79,y=103,z=326,distance=..1,type=item_frame] run data modify entity @s {Item:{id:"minecraft:diamond_hoe",Count:1b,Damage:202s}}
 execute as @p[x=-79,y=103,z=326,distance=..15,tag=Dialogue185,tag=!Dialogue214] run execute as @e[x=-79,y=103,z=326,distance=..1,type=item_frame] run data modify entity @s {Item:{id:"minecraft:diamond_hoe",Count:1b,Damage:217s}}
 
-
-#Dialogue 194
-#Looker Bureau return Butler
-execute as @a[x=-77,y=100,z=394,distance=..10,scores={TalkTime=0},tag=Dialogue193,tag=!Dialogue194] run tp @e[x=-504,y=100,z=1302,dy=3,type=pixelmon:npc_trainer] -77 101 394
 
 #Dialogue 195
 #Hotel Richissime Malva
