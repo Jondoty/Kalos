@@ -1,0 +1,1419 @@
+{
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');",
+        "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 3');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+        "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $960 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
+        "q.run_command('scoreboard players add ' + q.player.username + ' Money 960');"
+    ],
+    "escapeAction": [],
+    "speakers": {
+        "suspiciouswoman": {
+            "name": "???",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:tourist",
+                "isLeftSide": true
+            }
+        },
+        "essentia": {
+            "name": "Essentia",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:essentia",
+                "isLeftSide": true
+            }
+        },
+        "looker": {
+            "name": "Looker",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:looker",
+                "isLeftSide": false
+            }
+        },
+        "mimi": {
+            "name": "Mimi",
+            "face": {
+                "type": "artificial",
+                "modelType": "pokemon",
+                "identifier": "cobblemon:espurr",
+                "isLeftSide": false
+            }
+        },
+        "player": {
+            "face": "q.player.face(true);",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "suspiciouswoman",
+            "lines": [
+                "You really do have some of the best Pok\u00e9mon..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "suspiciouswoman",
+            "lines": [
+                "So why not give up already and hand them over to me?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -382.74 101.00 -273.73 936.30 24.30');",
+                            "q.run_command('execute unless entity @e[x=-382,y=100,z=-277,dy=40,type=cobblemon:npc] run npcspawnat -382 130 -277 essentia_generic');",
+                            "q.run_command('execute as @e[x=-382,y=100,z=-277,dy=40,cobblemon:npc] run particle cloud ~ ~ ~ 2 2 2 1 100');",
+                            "q.dialogue.set_page('page3');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "essentia",
+            "lines": [
+                "RELINQUISH EVERY POK\u00c9MON YOU POSSESS. COOPERATE OR I WILL TAKE THEM BY FORCE."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "looker",
+            "lines": [
+                "Freeze!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound lookerstheme record @s[tag=!RadioOff] ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s[tag=!RadioOff] MusicCooldown 91');",
+                            "q.run_command('particle cloud -380 101 -278 2 2 2 1 100');",
+                            "q.run_command('execute unless entity @e[x=-380,y=100,z=-278,dy=40,type=cobblemon:npc] run npcspawnat -380 101 -278 looker_generic');",
+                            "q.dialogue.set_page('page5');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "looker",
+            "lines": [
+                "Pok\u00e9mon thief! I will not let you lay a finger on my partner!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "essentia",
+            "lines": [
+                "DO NOT OBSTRUCT ME. I WILL ERADICATE YOU."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "looker",
+            "lines": [
+                "Easy words, but not so easy to carry out!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page8');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "looker",
+            "lines": [
+                "Even though I, the great Looker, have no Pok\u00e9mon, I yet have my fists!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page9');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page9",
+            "speaker": "looker",
+            "lines": [
+                "I'm a trained expert. The outlook for you is dismal."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud -378 101 -275 2 2 2 1 100');",
+                            "q.run_command('execute unless entity @e[x=-380,y=100,z=-278,dy=40,type=cobblemon:npc] run pokespawnat -378 101 -275 espurr level=30 no_ai=yes uncatchable=yes');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:espurr ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page10');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page10",
+            "speaker": "mimi",
+            "lines": [
+                "Mrrraaawwwr!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page11');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page11",
+            "speaker": "looker",
+            "lines": [
+                "M-Mimi?! Why--?!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:espurr ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page12');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page12",
+            "speaker": "mimi",
+            "lines": [
+                "Mrrr-murrr!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:espurr ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page13');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page13",
+            "speaker": "mimi",
+            "lines": [
+                "Mrrrawwwrrr mrawr!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page14');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page14",
+            "speaker": "essentia",
+            "lines": [
+                "... ... ..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page15');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page15",
+            "speaker": "looker",
+            "lines": [
+                "Mimi! That woman is dangerous! Move away from her at once!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:espurr ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page16');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page16",
+            "speaker": "mimi",
+            "lines": [
+                "Mrrraaawwwrrr! Mrrrawwwwwwrrr!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page17');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page17",
+            "speaker": "essentia",
+            "lines": [
+                "THIS CREATURE... I DO NOT UNDERSTAND ITS PROCESS."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page18');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page18",
+            "speaker": "looker",
+            "lines": [
+                "How can this be? Why would our Mimi act so friendly to..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page19');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page19",
+            "speaker": "looker",
+            "lines": [
+                "It...cannot...be. It cannot be so."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page20');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page20",
+            "speaker": "essentia",
+            "lines": [
+                "OBSTRUCTION... ERADICATE OBSTRUCTION."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -382.23 101.00 -279.55 1053.75 25.95');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s[tag=!RadioOff] MusicCooldown 50');",
+                            "q.dialogue.set_page('page21');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page21",
+            "speaker": "looker",
+            "lines": [
+                "Mimi! Watch out!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:espurr ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page22');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page22",
+            "speaker": "mimi",
+            "lines": [
+                "Rrrrawwwrrr!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle crit -380 101 -278 0 2 0 1 100 normal');",
+                            "q.run_command('particle minecraft:damage_indicator -380 101 -278 0 2 0 1 5 normal');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.iron_golem.damage ambient @s ~ ~ ~ 100 1 1');",
+                            "q.dialogue.set_page('page23');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page23",
+            "speaker": "looker",
+            "lines": [
+                "Augh!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page24');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page24",
+            "speaker": "looker",
+            "lines": [
+                "Ughhh..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page25');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page25",
+            "speaker": "essentia",
+            "lines": [
+                "WHY DO YOU PROTECT THIS POK\u00c9MON? I DO NOT UNDERSTAND YOUR PROCESS."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page26');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page26",
+            "speaker": "essentia",
+            "lines": [
+                "IRRELEVANT. COMMENCE ERADICATION PROCEDURE..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page27');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page27",
+            "speaker": "looker",
+            "lines": [
+                "W-wait... Stop this... Emma..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound lookerssorrowfultheme record @s[tag=!RadioOff] ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s[tag=!RadioOff] MusicCooldown 133');",
+                            "q.dialogue.set_page('page28');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page28",
+            "speaker": "essentia",
+            "lines": [
+                "EMMA?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page29');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page29",
+            "speaker": "looker",
+            "lines": [
+                "Th-that's right... You are... You are Emma. Is it not so?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page30');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page30",
+            "speaker": "essentia",
+            "lines": [
+                "... ... ..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page31');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page31",
+            "speaker": "looker",
+            "lines": [
+                "Ungh... M-Mimi hates all adults..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page32');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page32",
+            "speaker": "looker",
+            "lines": [
+                "The only person it loves... enough to make it jump for joy... is you, Emma..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page33');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page33",
+            "speaker": "essentia",
+            "lines": [
+                "I AM NOT AN EMMA. I AM ESSENTIA."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page34');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page34",
+            "speaker": "looker",
+            "lines": [
+                "Eurgh... Essentia? You cannot deceive me, Emma."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page35');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page35",
+            "speaker": "looker",
+            "lines": [
+                "You may trick an ordinary human eye..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page36');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page36",
+            "speaker": "looker",
+            "lines": [
+                "But you could never fake the bond between you and...Mimi..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:espurr ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page37');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page37",
+            "speaker": "mimi",
+            "lines": [
+                "Mrrrawwwr..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page38');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page38",
+            "speaker": "essentia",
+            "lines": [
+                "... ... ..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page39');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page39",
+            "speaker": "looker",
+            "lines": [
+                "What is the matter with you, Emma? Why would you do these things!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -377.85 101.00 -276.82 818.25 23.70');",
+                            "q.dialogue.set_page('page40');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page40",
+            "speaker": "looker",
+            "lines": [
+                "If you are in some sort of trouble, could you not have shared it with me?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page41');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page41",
+            "speaker": "essentia",
+            "lines": [
+                "... ... ..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page42');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page42",
+            "speaker": "looker",
+            "lines": [
+                "Emma! SAY SOMETHING!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page43');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page43",
+            "speaker": "essentia",
+            "lines": [
+                "... ... ...Ugh!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page44');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page44",
+            "speaker": "looker",
+            "lines": [
+                "E-Emma?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page45');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page45",
+            "speaker": "essentia",
+            "lines": [
+                "AUUUGGGHHHHHHHHH!!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page46');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page46",
+            "speaker": "looker",
+            "lines": [
+                "Emma! What's wrong?!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -382.39 101.00 -274.61 930.60 24.90');",
+                            "q.dialogue.set_page('page47');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page47",
+            "speaker": "essentia",
+            "lines": [
+                "MUST...DISCONTINUE..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('data merge entity @n[x=-382,y=100,z=-277,dy=100,type=cobblemon:npc] {Motion:[0.0,3.0,0.0]}');",
+                            "q.run_command('execute as @e[x=-382,y=100,z=-277,dy=100,type=cobblemon:npc] run particle cloud ~ ~ ~ 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-382,y=100,z=-277,dy=100,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tp @e[x=-391,y=100,z=-275,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.dialogue.set_page('page48');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page48",
+            "speaker": "looker",
+            "lines": [
+                "Emma!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:espurr ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page49');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page49",
+            "speaker": "mimi",
+            "lines": [
+                "Mrrr-mrrrawwwrrrr!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page50');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page50",
+            "speaker": "looker",
+            "lines": [
+                "Oh no... Emma..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page51');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page51",
+            "speaker": "looker",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'Ahem... ' + q.player.username + ', forgive me...';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page52');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page52",
+            "speaker": "looker",
+            "lines": [
+                "It seems that last hit...got to me..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page53');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page53",
+            "speaker": "looker",
+            "lines": [
+                "Do you think you could possibly... help me back to the office..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s minecraft:blindness 5 1 true');",
+                            "q.run_command('tp @e[x=-380,y=100,z=-278,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tp @e[x=-378,y=100,z=-275,dy=3,type=cobblemon:pokemon] 10000000 -50000 -10000000');",
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -50 101 434 180 8');",
+                            "q.dialogue.set_page('page54');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page54",
+            "speaker": "looker",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'Thank you for your kindness, ' + q.player.username + '. Your help has saved me again today.';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:espurr ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page55');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page55",
+            "speaker": "mimi",
+            "lines": [
+                "Murrr-murrr..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page56');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page56",
+            "speaker": "looker",
+            "lines": [
+                "Even the great Looker can be taken down, as you see."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page57');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page57",
+            "speaker": "looker",
+            "lines": [
+                "The injury to my stomach, a mere trifle, not at all...cough, cough...painful."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page58');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page58",
+            "speaker": "looker",
+            "lines": [
+                "I may just pop by...the hospital... It has been quite a busy day, in fact."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page59');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page59",
+            "speaker": "looker",
+            "lines": [
+                "Please go home and rest yourself."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s minecraft:blindness 5 1 true');",
+                            "q.run_command('execute as ' + q.player.username + ' run gamemode spectator @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -26 106 437 180 43');",
+                            "q.dialogue.set_page('page60');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page60",
+            "speaker": "looker",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'Mimi, could you give this to ' + q.player.username + '? I am about to embark on a dangerous investigation.';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page61');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page61",
+            "speaker": "looker",
+            "lines": [
+                "I must venture upon this road alone, in order to preserve you all from harm."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page62');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page62",
+            "speaker": "looker",
+            "lines": [
+                "I will claim to be staying in the hospital... and use this chance to slip away..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -24.18 99.87 432.64 131.40 5.10');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:espurr ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page63');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page63",
+            "speaker": "mimi",
+            "lines": [
+                "Mraaawwwrrr!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run particle minecraft:damage_indicator -26 101 429 0 2 0 1 5 normal');",
+                            "q.dialogue.set_page('page64');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page64",
+            "speaker": "looker",
+            "lines": [
+                "Urrugh... My injuries may be worse than I guessed..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page65');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page65",
+            "speaker": "looker",
+            "lines": [
+                "But I must press on! I can't let this slow me down."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page66');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page66",
+            "speaker": "looker",
+            "lines": [
+                "Essentia... I know without doubt that she is Emma..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page67');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page67",
+            "speaker": "looker",
+            "lines": [
+                "That suit she wears is most likely the doing of that man..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page68');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page68",
+            "speaker": "looker",
+            "lines": [
+                "The man I have come so far to hunt down."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page69');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page69",
+            "speaker": "looker",
+            "lines": [
+                "If I fail to find and stop him, my Emma might never..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page70');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page70",
+            "speaker": "looker",
+            "lines": [
+                "I have no choice but to beg the help of that despicable..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.run_command('execute as ' + q.player.username + ' run effect give @s minecraft:blindness 5 1 true');",
+                            "q.run_command('execute as ' + q.player.username + ' run gamemode adventure @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run tag @s add LookerCooldown');",
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -190 102 -634 -90 ~');",
+                            "q.run_command('execute as ' + q.player.username + ' run advancement grant @s only kalos:looker4');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue192');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

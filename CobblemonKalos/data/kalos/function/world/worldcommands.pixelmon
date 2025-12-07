@@ -406,22 +406,6 @@ execute as @p[x=-79,y=103,z=326,distance=..15,tag=!Dialogue185,tag=!Dialogue214]
 execute as @p[x=-79,y=103,z=326,distance=..15,tag=Dialogue185,tag=!Dialogue214] run execute as @e[x=-79,y=103,z=326,distance=..1,type=item_frame] run data modify entity @s {Item:{id:"minecraft:diamond_hoe",Count:1b,Damage:217s}}
 
 
-#Dialogue 189
-#Lumiose Alley #1 trainer
-execute as @a[x=-221,y=101,z=-618,distance=..20,scores={TalkTime=0},tag=Dialogue188,tag=!Dialogue189] run tp @e[x=-504,y=245,z=1284,dy=3,type=pixelmon:npc_trainer] -269 101 -619
-
-#Dialogue 190
-#Alley #2 trainer
-execute as @a[x=-122,y=101,z=-608,distance=..20,scores={TalkTime=0},tag=Dialogue189,tag=!Dialogue190] run tp @e[x=-504,y=245,z=1292,dy=3,type=pixelmon:npc_trainer] -95 101 -609
-
-#Dialogue 191
-#Alley #3 Looker & Black Belt
-execute as @a[x=11,y=101,z=-533,distance=..7,scores={TalkTime=0},tag=Dialogue190,tag=!Dialogue191] run scoreboard players set @s DialogueTrigger 191
-execute as @a[x=11,y=101,z=-533,distance=..30,scores={TalkTime=0},tag=Dialogue190,tag=!Dialogue191] run tp @e[x=-504,y=250,z=1284,dy=3,type=pixelmon:npc_chatting] 11 101 -533
-
-#Alley #4 Trainer
-execute as @a[x=-391,y=101,z=-275,distance=..30,scores={TalkTime=0},tag=Dialogue191,tag=!Dialogue192] run tp @e[x=-504,y=250,z=1290,dy=3,type=pixelmon:npc_trainer] -391 101 -275
-
 #Dialogue 194
 #Looker Bureau return Butler
 execute as @a[x=-77,y=100,z=394,distance=..10,scores={TalkTime=0},tag=Dialogue193,tag=!Dialogue194] run tp @e[x=-504,y=100,z=1302,dy=3,type=pixelmon:npc_trainer] -77 101 394

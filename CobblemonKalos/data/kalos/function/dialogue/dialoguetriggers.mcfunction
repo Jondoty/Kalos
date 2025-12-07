@@ -694,17 +694,24 @@ execute as @s[x=-83,y=77,z=355,distance=..7,tag=Dialogue187] run tp @e[x=-79,y=1
 execute as @s[x=-176,y=101,z=385,distance=..6,tag=Dialogue187,tag=!Dialogue188] run opendialogue looker_dialogue188 @s
 
 
+#Suspiscious Woman Battle, Alley 1
+execute as @s[x=-221,y=101,z=-618,distance=..20,tag=Dialogue188,tag=!Dialogue189] unless entity @e[x=-269,y=101,z=-619,dy=3,type=cobblemon:npc] run npcspawnat -269 101 -619 suspicious_woman
+execute as @s[x=-269,y=101,z=-619,distance=..20,tag=Dialogue188,tag=Dialogue189] run tp @e[x=-269,y=101,z=-619,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
+#Suspiscious Child Battle, Alley 2
+execute as @s[x=-122,y=101,z=-608,distance=..20,tag=Dialogue189,tag=!Dialogue190] unless entity @e[x=-95,y=101,z=-609,dy=3,type=cobblemon:npc] run npcspawnat -95 101 -609 suspicious_child
+execute as @s[x=-95,y=101,z=-609,distance=..20,tag=Dialogue189,tag=Dialogue190] run tp @e[x=-95,y=101,z=-609,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
+#Blackbelt, Alley 3
+execute as @s[x=11,y=101,z=-533,distance=..30,tag=Dialogue190,tag=!Dialogue191] unless entity @e[x=11,y=101,z=-533,dy=3,type=cobblemon:npc] run npcspawnat 11 101 -533 blackbelt_generic
+execute as @s[x=11,y=101,z=-533,distance=..7,tag=Dialogue190,tag=!Dialogue191] run opendialogue blackbelt_dialogue191 @s
 
+#tps out when afar after dialogue
+execute as @s[x=11,y=101,z=-533,distance=50..85,tag=Dialogue191] run tp @e[x=11,y=101,z=-533,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
-
-
-
-
-
-
-
+#Alley 4, Suspiscious Lady
+execute as @s[x=-361,y=101,z=-275,distance=..20,tag=Dialogue191,tag=!Dialogue192] unless entity @e[x=-391,y=101,z=-275,dy=3,type=cobblemon:npc] run npcspawnat -391 101 -275 suspicious_lady
+execute as @s[x=-391,y=101,z=-275,distance=..20,tag=Dialogue191,tag=Dialogue192] run tp @e[x=-95,y=101,z=-609,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
 
 

@@ -1,0 +1,330 @@
+{
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');",
+        "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 3');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+        "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $8400 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
+        "q.run_command('scoreboard players add ' + q.player.username + ' Money 8400');"
+    ],
+    "escapeAction": [],
+    "speakers": {
+        "suspiciouswoman": {
+            "name": "???",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:beauty",
+                "isLeftSide": true
+            }
+        },
+        "unknownvoice": {
+            "name": "...",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:essentia",
+                "isLeftSide": false
+            }
+        },
+        "looker": {
+            "name": "Looker",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:looker",
+                "isLeftSide": true
+            }
+        },
+        "player": {
+            "face": "q.player.face(true);",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "suspiciouswoman",
+            "lines": [
+                "Oh ho ho! You have some wonderfully strong Pok\u00e9mon."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "suspiciouswoman",
+            "lines": [
+                "I wonder, young trainer, if you wouldn't consider..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "suspiciouswoman",
+            "lines": [
+                "giving them all to me!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute unless entity @e[x=-258,y=100,z=-619,dy=40,type=cobblemon:npc] run npcspawnat -258 130 -619 essentia_generic');",
+                            "q.run_command('execute as @e[x=-258,y=100,z=-619,dy=40,cobblemon:npc] run particle cloud ~ ~ ~ 2 2 2 1 100');",
+                            "q.dialogue.set_page('page4');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "unknownvoice",
+            "lines": [
+                "Stop right there!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' at @s run tp @s -262.22 101.00 -615.30 -117.15 12.30');",
+                            "q.run_command('particle cloud -250 101 -621 2 2 2 1 100');",
+                            "q.run_command('execute unless entity @e[x=-250,y=100,z=-621,dy=40,type=cobblemon:npc] run npcspawnat -250 101 -621 looker_generic');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound lookerstheme record @s[tag=!RadioOff] ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s[tag=!RadioOff] MusicCooldown 91');",
+                            "q.dialogue.set_page('page5');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "unknownvoice",
+            "lines": [
+                "OBSTRUCTION DETECTED. PROCESS JEOPARDIZED."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "unknownvoice",
+            "lines": [
+                "RELOCATE HUNTING GROUND."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('data merge entity @n[x=-258,y=100,z=-619,dy=100,type=cobblemon:npc] {Motion:[0.0,3.0,0.0]}');",
+                            "q.run_command('execute as @e[x=-258,y=100,z=-619,dy=100,type=cobblemon:npc] run particle cloud ~ ~ ~ 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-258,y=100,z=-619,dy=100,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tp @e[x=-269,y=100,z=-619,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('particle cloud -269 101 -619 2 2 2 1 100');",
+                            "q.dialogue.set_page('page7');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "looker",
+            "lines": [
+                "Wha--?! What is that woman?! She's no Pok\u00e9mon, yet she can use Transform?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page8');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "looker",
+            "lines": [
+                "Oh, what am I doing? This is not a time to stand around being shocked!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page9');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page9",
+            "speaker": "looker",
+            "lines": [
+                "In fact, this is a time to dash off in pursuit! The chase is on!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page10');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page10",
+            "speaker": "looker",
+            "lines": [
+                "Now, considering the direction in which she ran, and the angle...hm..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page11');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page11",
+            "speaker": "looker",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "' ' + q.player.username + ', my brave friend! I suspect she is headed for the alley between the office and Hibernal Avenue!';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page12');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page12",
+            "speaker": "looker",
+            "lines": [
+                "Please go ahead without me!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page13');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page13",
+            "speaker": "looker",
+            "lines": [
+                "I will be right behind you, just as soon as I have checked this place for clues!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page14');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page14",
+            "speaker": "looker",
+            "lines": [
+                "But wait! One minute of your time! The great Looker will restore your Pok\u00e9mon before you go!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.run_command('execute as ' + q.player.username + ' run pokeheal');",
+                            "q.run_command('execute as ' + q.player.username + ' if entity @s[tag=Dialogue188] run tag @s add Dialogue189');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
+                            "q.run_command('particle cloud -250 101 -621 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-250,y=100,z=-621,dy=3,type=cobblemon:npc] -504 246 1288');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
