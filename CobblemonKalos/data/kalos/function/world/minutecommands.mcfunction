@@ -62,6 +62,17 @@ execute as @a[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227] as @e[x=-1107,y=99,z=1171
 execute as @a[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227] as @e[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227,type=cobblemon:pokemon,nbt={PersistenceRequired:0b}] run data merge entity @s {PersistenceRequired:1b}
 
 
+#Clemont's gym
+execute as @a[x=-1823,y=111,z=-1718,distance=..25] unless entity @e[x=-1823,y=111,z=-1718,distance=..2,type=cobblemon:pokemon] run pokespawnat -1823 111.1 -1718 pikachu level=15 nickname="???" aspect=silhouette no_ai=yes uncatchable=yes
+execute as @a[x=-1823,y=126,z=-1718,distance=..25] unless entity @e[x=-1823,y=126,z=-1718,distance=..2,type=cobblemon:pokemon] run pokespawnat -1823 126.1 -1718 fletchling level=15 nickname="???" aspect=silhouette no_ai=yes uncatchable=yes
+execute as @a[x=-1823,y=141,z=-1718,distance=..25] unless entity @e[x=-1823,y=141,z=-1718,distance=..2,type=cobblemon:pokemon] run pokespawnat -1823 141.1 -1718 panpour level=15 nickname="???" aspect=silhouette no_ai=yes uncatchable=yes
+execute as @a[x=-1823,y=156,z=-1718,distance=..25] unless entity @e[x=-1823,y=156,z=-1718,distance=..2,type=cobblemon:pokemon] run pokespawnat -1823 156.1 -1718 vivillon level=15 nickname="???" aspect=silhouette no_ai=yes uncatchable=yes
+
+execute as @e[x=-1823,y=111,z=-1718,distance=..3,type=cobblemon:pokemon,nbt={PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
+execute as @e[x=-1823,y=126,z=-1718,distance=..3,type=cobblemon:pokemon,nbt={PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
+execute as @e[x=-1823,y=141,z=-1718,distance=..3,type=cobblemon:pokemon,nbt={PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
+execute as @e[x=-1823,y=156,z=-1718,distance=..3,type=cobblemon:pokemon,nbt={PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
+
 
 #Regenerates snow in Mamoswine's Route when nobody is in the cleared zone
 execute as @e[x=862,y=107,z=-420,dx=140,dy=15,dz=144,type=cobblemon:pokemon] at @s run tp @s ~ 113 ~
