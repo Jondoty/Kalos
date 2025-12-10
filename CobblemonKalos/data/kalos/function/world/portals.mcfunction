@@ -97,6 +97,7 @@ tp @s[x=-803,y=154,z=-1835,dx=6,dy=5] 1144 97 488
 
 
 #Santalune Pokemon Center
+execute as @s[x=295,y=68,z=486,dx=4,dy=5] run scoreboard players set @s Whiteout 1
 execute as @s[x=295,y=68,z=486,dx=4,dy=5] run function kalos:triggers/stopsound
 #execute as @s[x=295,y=68,z=486,dx=4,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 #execute as @s[x=295,y=68,z=486,dx=4,dy=5,tag=!Dialogue9] run tp @e[x=-504,y=120,z=1252,dy=3,type=pixelmon:npc_chatting] 308 68 481
@@ -108,6 +109,7 @@ tp @s[x=294,y=100,z=485,dx=5,dy=5] 297 68 485
 
 
 #Camphrier Pokemon Center
+execute as @s[x=-1016,y=100,z=10,dx=5,dy=5] run scoreboard players set @s Whiteout 2
 #execute as @s[x=-1016,y=100,z=10,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-1016,y=100,z=10,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-1016,y=100,z=10,dx=5,dy=5] -1013 80 6
@@ -118,6 +120,7 @@ tp @s[x=-1015,y=80,z=10,dx=4,dy=5] -1013 100 12
 
 
 #Cyllage Pokemon Center
+execute as @s[x=-2039,y=104,z=-62,dx=5,dy=5] run scoreboard players set @s Whiteout 3
 #execute as @s[x=-2039,y=104,z=-62,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-2039,y=104,z=-62,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-2039,y=104,z=-62,dx=5,dy=5] -2036 78 -66
@@ -128,6 +131,7 @@ tp @s[x=-2038,y=78,z=-62,dx=4,dy=5] -2036 104 -60
 
 
 #Ambrette Pokemon Center
+execute as @s[x=-1964,y=141,z=554,dx=5,dy=5] run scoreboard players set @s Whiteout 4
 #execute as @s[x=-1964,y=141,z=554,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-1964,y=141,z=554,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-1964,y=141,z=554,dx=5,dy=5] -1961 103 550
@@ -138,6 +142,7 @@ tp @s[x=-1963,y=103,z=554,dx=4,dy=5] -1961 141 556
 
 
 #Geosenge Pokemon Center (Ultimate Weapon Destroyed)
+execute as @s[x=-444,y=109,z=2094,dx=4,dy=5] run scoreboard players set @s Whiteout 5
 #execute as @s[x=-444,y=109,z=2094,dx=4,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-444,y=109,z=2094,dx=4,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-444,y=109,z=2094,dx=4,dy=5] -2241 79 -630
@@ -148,6 +153,7 @@ tp @s[x=-2243,y=79,z=-626,dx=4,dy=5,scores={Geosenge=2}] -441 109 2096
 
 
 #Geosenge Pokemon Center (Ultimate Weapon)
+execute as @s[x=-1164,y=104,z=2094,dx=4,dy=5] run scoreboard players set @s Whiteout 6
 #execute as @s[x=-1164,y=104,z=2094,dx=4,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-1164,y=104,z=2094,dx=4,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-1164,y=104,z=2094,dx=4,dy=5] -2241 79 -630
@@ -158,6 +164,7 @@ tp @s[x=-2243,y=79,z=-626,dx=4,dy=5,scores={Geosenge=1}] -1161 109 2095
 
 
 #Geosenge Pokemon Center (normal)
+execute as @s[x=-2244,y=104,z=-626,dx=4,dy=5] run scoreboard players set @s Whiteout 7
 #execute as @s[x=-2244,y=104,z=-626,dx=4,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-2244,y=104,z=-626,dx=4,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-2244,y=104,z=-626,dx=4,dy=5] -2241 79 -630
@@ -168,6 +175,7 @@ tp @s[x=-2243,y=79,z=-626,dx=4,dy=5] -2241 104 -624
 
 
 #Shalour City Pokemon Center
+execute as @s[x=-1622,y=80,z=-819,dx=5,dy=5] run scoreboard players set @s Whiteout 8
 #execute as @s[x=-1622,y=80,z=-819,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-1622,y=80,z=-819,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-1622,y=80,z=-819,dx=5,dy=5] -1619 57 -823
@@ -178,6 +186,7 @@ tp @s[x=-1621,y=57,z=-819,dx=5,dy=5] -1619 80 -817
 
 
 #Courmarine Pokemon Center
+execute as @s[x=-1029,y=115,z=-660,dx=5,dy=5] run scoreboard players set @s Whiteout 9
 #execute as @s[x=-1029,y=115,z=-660,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-1029,y=115,z=-660,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-1029,y=115,z=-660,dx=5,dy=5] -1026 89 -664
@@ -188,6 +197,7 @@ tp @s[x=-1028,y=89,z=-660,dx=4,dy=5] -1026 115 -658
 
 
 #Laverre Pokemon Center
+execute as @s[x=-73,y=100,z=-1365,dx=5,dy=5] run scoreboard players set @s Whiteout 10
 #execute as @s[x=-73,y=100,z=-1365,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-73,y=100,z=-1365,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-73,y=100,z=-1365,dx=5,dy=5] -70 77 -1369
@@ -198,6 +208,7 @@ tp @s[x=-72,y=77,z=-1365,dx=4,dy=5] -70 100 -1363
 
 
 #Dendemille Pokemon Center
+execute as @s[x=618,y=108,z=-375,dx=5,dy=5] run scoreboard players set @s Whiteout 11
 #execute as @s[x=618,y=108,z=-375,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=618,y=108,z=-375,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=618,y=108,z=-375,dx=5,dy=5] 621 87 -379
@@ -208,6 +219,7 @@ tp @s[x=619,y=87,z=-375,dx=4,dy=5] 621 108 -373
 
 
 #Anistar Pokemon Center
+execute as @s[x=1267,y=108,z=-197,dx=5,dy=5] run scoreboard players set @s Whiteout 12
 #execute as @s[x=1267,y=108,z=-197,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=1267,y=108,z=-197,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=1267,y=108,z=-197,dx=5,dy=5] 1270 80 -201
@@ -218,6 +230,7 @@ tp @s[x=1268,y=80,z=-197,dx=4,dy=5] 1270 108 -195
 
 
 #Couriway Pokemon Center
+execute as @s[x=1473,y=100,z=173,dx=5,dy=5] run scoreboard players set @s Whiteout 13
 #execute as @s[x=1473,y=100,z=173,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=1473,y=100,z=173,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=1473,y=100,z=173,dx=5,dy=5] 1476 79 169
@@ -229,6 +242,7 @@ tp @s[x=1474,y=79,z=173,dx=5,dy=5] 1476 100 175
 
 
 #Snowbelle Pokemon Center
+execute as @s[x=1215,y=105,z=503,dx=5,dy=5] run scoreboard players set @s Whiteout 14
 #execute as @s[x=1215,y=105,z=503,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=1215,y=105,z=503,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=1215,y=105,z=503,dx=5,dy=5] 1218 75 499
@@ -240,6 +254,7 @@ tp @s[x=1216,y=75,z=503,dx=5,dy=5] 1218 105 505
 
 
 #Kiloude Pokemon Center
+execute as @s[x=1177,y=101,z=1661,dx=5,dy=5] run scoreboard players set @s Whiteout 15
 #execute as @s[x=1177,y=101,z=1661,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=1177,y=101,z=1661,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=1177,y=101,z=1661,dx=5,dy=5] 1180 81 1657
@@ -250,6 +265,7 @@ tp @s[x=1178,y=81,z=1661,dx=4,dy=5] 1180 101 1663
 
 
 #Pokemon League Pokemon Center
+execute as @s[x=-1938,y=88,z=2278,dx=5,dy=5] run scoreboard players set @s Whiteout 16
 #execute as @s[x=-1938,y=88,z=2278,dx=5,dy=5,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-1938,y=88,z=2278,dx=5,dy=5] run function kalos:triggers/stopsound
 spawnpoint @s[x=-1938,y=88,z=2278,dx=5,dy=5] -1936 39 2274
@@ -266,6 +282,7 @@ tag @s[x=-487,y=100,z=456,dx=120,dy=5,tag=LookerCooldown] remove LookerCooldown
 
 
 #Lumiose Northern Pokemon Center
+execute as @s[x=-151,y=101,z=-655,dx=5,dy=5,dz=3] run scoreboard players set @s Whiteout 17
 #execute as @s[x=-151,y=101,z=-655,dx=5,dy=5,dz=3,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-151,y=101,z=-655,dx=5,dy=5,dz=3] run function kalos:triggers/stopsound
 spawnpoint @s[x=-151,y=101,z=-655,dx=5,dy=5,dz=3] -486 101 452
@@ -275,6 +292,7 @@ execute as @s[x=-488,y=101,z=456,dx=4,dy=5] run function kalos:triggers/stopsoun
 tp @s[x=-488,y=101,z=456,dx=4,dy=5] -148 101 -656 180 ~
 
 #Lumiose Middle Pokemon Center
+execute as @s[x=-261,y=101,z=-403,dx=4,dy=5,dz=3] run scoreboard players set @s Whiteout 18
 #execute as @s[x=-261,y=101,z=-403,dx=4,dy=5,dz=3,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-261,y=101,z=-403,dx=4,dy=5,dz=3] run function kalos:triggers/stopsound
 spawnpoint @s[x=-261,y=101,z=-403,dx=4,dy=5,dz=3] -430 101 452
@@ -284,6 +302,7 @@ execute as @s[x=-432,y=101,z=456,dx=4,dy=5] run function kalos:triggers/stopsoun
 tp @s[x=-432,y=101,z=456,dx=4,dy=5] -258 101 -404 180 ~
 
 #Lumiose South Pokemon Center
+execute as @s[x=-228,y=101,z=-132,dx=3,dy=4,dz=2] run scoreboard players set @s Whiteout 19
 #execute as @s[x=-228,y=101,z=-132,dx=3,dy=4,dz=2,tag=Birthday] run scoreboard players set @s[scores={DialogueTrigger=0},tag=!Dialogue265] DialogueTrigger 265
 execute as @s[x=-228,y=101,z=-132,dx=3,dy=4,dz=2] run function kalos:triggers/stopsound
 spawnpoint @s[x=-228,y=101,z=-132,dx=3,dy=4,dz=2] -375 101 452
@@ -299,6 +318,7 @@ tp @s[x=-377,y=101,z=456,dx=4,dy=4] -227 101 -129 26 ~
 
 #Your home
 #scoreboard players set @s[x=504,y=108,z=1576,dx=10,dy=5,tag=!Dialogue7,scores={StarterPick=1..}] DialogueTrigger 7
+execute as @s[x=504,y=108,z=1576,dx=10,dy=5] run scoreboard players set @s Whiteout 0
 tp @s[x=504,y=108,z=1576,dx=10,dy=5] 506 108 1566
 
 #scoreboard players set @s[x=503,y=108,z=1568,dx=5,dy=4,tag=Dialogue1,tag=!Dialogue2] DialogueTrigger 2

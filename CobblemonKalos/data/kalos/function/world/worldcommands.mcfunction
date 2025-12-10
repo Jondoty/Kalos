@@ -45,6 +45,15 @@ scoreboard players set @a[scores={CooldownJump=1..}] CooldownJump 0
 #scoreboard players set @a[x=-488,y=100,z=1414,distance=..3,scores={Cooldown=5000..}] Cooldown 0
 
 
+#Runs whiteout function if enabled
+#Exception is the battle maison or chateau
+execute as @a[x=1182,y=63,z=1511,dx=76,dy=31,dz=94,tag=Whiteout] run tag @s remove Whiteout
+execute as @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,tag=Whiteout] run tag @s remove Whiteout
+
+execute as @a[tag=Whiteout] if entity @e[x=-563,y=100,z=1241,dy=3,tag=WhiteoutEnable] run function kalos:triggers/whiteout
+execute as @a[tag=Whiteout] run tag @s remove Whiteout
+
+
 #Runs daily commands, sets time to armor stand based on game time
 execute store result score @e[x=-687,y=100,z=1388,dy=4,type=armor_stand] DayTime run time query daytime
 execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={DayTime=18000..},tag=!DailyExecuted] run function kalos:world/dailycommands

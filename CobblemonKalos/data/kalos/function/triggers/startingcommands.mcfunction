@@ -57,6 +57,7 @@ scoreboard players set @s PlayedDays 0
 scoreboard players set @s TalkTime 0
 scoreboard players set @s PhotoSpot 0
 scoreboard players set @s TrainerClass 0
+scoreboard players set @s Whiteout 0
 
 #Event tag Resets if present
 tag @s remove GhostGirl
