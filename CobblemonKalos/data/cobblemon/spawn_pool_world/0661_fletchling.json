@@ -15,10 +15,12 @@
                 "neededNearbyBlocks": [
                     "minecraft:short_grass"
                 ],
-                "minX": 446, "maxX": 500, "minZ": 1022, "maxZ": 1165
+                "minX": 446,
+                "maxX": 500,
+                "minZ": 1022,
+                "maxZ": 1165
             }
         },
-
         {
             "id": "fletchling-2",
             "pokemon": "fletchling",
@@ -31,10 +33,12 @@
                 "neededNearbyBlocks": [
                     "minecraft:short_grass"
                 ],
-                "minX": 331, "maxX": 587, "minZ": 739, "maxZ": 978
+                "minX": 331,
+                "maxX": 587,
+                "minZ": 739,
+                "maxZ": 978
             }
         },
-
         {
             "id": "fletchling-3",
             "pokemon": "fletchling",
@@ -47,7 +51,31 @@
                 "neededNearbyBlocks": [
                     "minecraft:short_grass"
                 ],
-                "minX": 251, "maxX": 443, "minZ": 524, "maxZ": 719
+                "minX": 251,
+                "maxX": 443,
+                "minZ": 524,
+                "maxZ": 719
+            }
+        },
+        {
+            "id": "fletchling-4",
+            "pokemon": "fletchling",
+            "presets": [
+                "treetop"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "5-7",
+            "weight": 100,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "minecraft:oak_leaves"
+                ],
+                "minX": -596,
+                "maxX": 117,
+                "minZ": -701,
+                "maxZ": -105
             }
         }
     ]
