@@ -22,8 +22,13 @@ execute as @a[x=828,y=108,z=-318,dx=150,dy=10,dz=150,tag=Dialogue100] at @s posi
 
 
 #Mega Stone Particles
-execute as @a[scores={MegaStones=1..}] run function kalos:world/megastonesactive
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={DayTime=10000..18000}] as @a[scores={MegaStones=1..}] run function kalos:world/megastonesactive
 #execute if entity @e[x=-685,y=100,z=1388,dy=3,tag=Particles,type=armor_stand] as @a[x=1205,y=111,z=-276,distance=..50,limit=1] run particle minecraft:dust 1 1 1 1 ~ ~1 ~ 0 10 0 0.5 50 force @a[distance=..50]
+
+#Anistar Sundial particles
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={DayTime=10000..18000}] positioned 1205 111 -276 run particle dust_color_transition{from_color:[0.0,0.33,1.000],scale:1,to_color:[1.000,0.000,0.000]} ~ ~ ~ 4 4 4 50 20 force @a[distance=..300]
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={DayTime=10000..18000}] positioned 1205 111 -276 run particle dust_color_transition{from_color:[0.334,0.666,1.000],scale:1,to_color:[1.000,0.000,0.000]} ~ ~ ~ 6 6 6 100 20 force @a[distance=..300]
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={DayTime=10000..18000}] positioned 1205 111 -276 run particle dust_color_transition{from_color:[0.667,1.0,1.000],scale:1,to_color:[1.000,0.000,0.000]} ~ ~ ~ 8 8 8 200 20 force @a[distance=..300]
 
 
 #Runs the Poke Ball Factory floors
