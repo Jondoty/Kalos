@@ -186,6 +186,9 @@ execute as @s[x=-176,y=102,z=380,distance=..5,tag=Dialogue176] run opendialogue 
 #execute positioned -176 102 380 run summon minecraft:armor_stand ~ ~ ~ {Invisible:true,Invulnerable:true,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"iron_hoe",Count:1,components:{"minecraft:custom_model_data":53}}]}
 
 
+#Lumiose Press Volcanion book
+execute as @s[x=-444,y=102,z=207,distance=..6,tag=!Dialogue168] run opendialogue reporter_volcanionmemo_locked @s
+execute as @s[x=-444,y=102,z=207,distance=..6,tag=Dialogue168] run opendialogue reporter_volcanionmemo @s
 
 #-------------------------------------------------------------
 #Cafe NPCs talking about Pokemon

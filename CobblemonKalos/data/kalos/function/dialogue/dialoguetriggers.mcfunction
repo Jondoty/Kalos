@@ -640,7 +640,10 @@ execute as @s[x=-492,y=101,z=261,distance=..10,scores={PokemonLeague=1..},tag=!D
 #Lumiose City Ghost Girl
 scoreboard players set @s[x=-162,y=110,z=196,dx=8,dy=5,dz=10,scores={TalkTime=0},tag=!Dialogue165] DialogueTrigger 165
 
-
+#Lumiose reporter if player has Volcanion on them
+execute as @s[x=-444,y=101,z=206,distance=..7] run scoreboard players set @s Temp 0
+execute as @s[x=-444,y=101,z=206,distance=..7] store result score @s Temp run teststore @s party volcanion
+execute as @s[x=-444,y=101,z=206,distance=..7,scores={Temp=1..},tag=!Dialogue168] run opendialogue reporter_volcanion @s
 
 
 #Battle Chateau Introduction

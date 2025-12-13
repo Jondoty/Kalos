@@ -338,16 +338,6 @@ execute as @p[x=825,y=95,z=624,distance=..20,scores={PokemonLeague=1..}] run tp 
 #Battle Chateau Viola Introduction
 scoreboard players set @a[x=-1533,y=65,z=-68,distance=..20,tag=!Dialogue166,scores={Gender_min=1..,TalkTime=0}] DialogueTrigger 166
 
-#Dialogue 168
-#Lumiose Press Volcanion Memo Start
-execute as @a[x=-444,y=101,z=206,distance=..6,scores={TalkTime=0},tag=VolcanionCatch] run scoreboard players set @s[tag=!Dialogue168] DialogueTrigger 168
-execute as @a[x=-449,y=101,z=215,distance=..10,scores={TalkTime=0},tag=VolcanionCatch] run tp @e[x=-442,y=100,z=210,dy=3,type=pixelmon:npc_chatting] -504 211 1286
-
-#Memo Revisit Trigger
-execute as @a[x=-444,y=101,z=206,distance=..6,tag=Dialogue168,scores={TalkTime=0,Cooldown=5000..}] run scoreboard players set @s TalkTrigger 20
-scoreboard players set @a[x=-444,y=101,z=206,distance=..6,tag=Dialogue168,scores={TalkTime=0,Cooldown=5000..}] Cooldown 0
-
-
 #----------
 #Looker Chapters
 

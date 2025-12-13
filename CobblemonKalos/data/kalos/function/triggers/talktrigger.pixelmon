@@ -104,41 +104,6 @@ execute as @a[scores={TalkTrigger=19}] run scoreboard players set @s TalkTrigger
 
 
 
-#Lumiose Press EIC Would you like to read the memo? [Yes] - 20
-#testfor @a[x=-444,y=101,z=206,r=6,tag=Dialogue168]
-#execute as @a[x=-444,y=101,z=206,r=6,tag=Dialogue168,score_TalkTime=0] run scoreboard players set @s TalkTrigger 20
-tellraw @a[scores={TalkTrigger=20}] ["",{"text":"<Editor-in-chief> Which part of the memo do you want to read?\n["},{"text":"The secret of the power","color":"red","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 22"}},{"text":"] \u0020 ["},{"text":"In the fog","color":"gray","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 23"}},{"text":"] \u0020 ["},{"text":"A nation-building...","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 24"}},{"text":"]"}]
-execute as @a[scores={TalkTrigger=20}] run scoreboard players enable @s TalkTrigger
-execute as @a[scores={TalkTrigger=20}] run scoreboard players set @s TalkTrigger 0
-
-
-
-#Lumiose Press EIC Would you like to read the memo? [No] - 21
-tellraw @a[scores={TalkTrigger=21}] {"text":"<Editor-in-chief> If you feel like reading my memo, come visit me anytime."}
-execute as @a[scores={TalkTrigger=21}] run scoreboard players set @s TalkTrigger 0
-
-
-#[The secret of the power] Volcanion Memo - 22
-execute as @a[scores={TalkTrigger=22,TalkTime=0}] run tag @s remove Dialogue169
-execute as @a[scores={TalkTrigger=22,TalkTime=0}] run scoreboard players set @s DialogueTrigger 169
-execute as @a[scores={TalkTrigger=22,TalkTime=1..}] run scoreboard players enable @s TalkTrigger
-execute as @a[scores={TalkTrigger=22}] run scoreboard players set @s TalkTrigger 0
-
-
-#[In the fog] Volcanion Memo - 23
-execute as @a[scores={TalkTrigger=23,TalkTime=0}] run tag @s remove Dialogue170
-execute as @a[scores={TalkTrigger=23,TalkTime=0}] run scoreboard players set @s DialogueTrigger 170
-execute as @a[scores={TalkTrigger=23,TalkTime=1..}] run scoreboard players enable @s TalkTrigger
-execute as @a[scores={TalkTrigger=23}] run scoreboard players set @s TalkTrigger 0
-
-
-#[A nation-building...] Volcanion Memo - 24
-execute as @a[scores={TalkTrigger=24,TalkTime=0}] run tag @s remove Dialogue171
-execute as @a[scores={TalkTrigger=24,TalkTime=0}] run scoreboard players set @s DialogueTrigger 171
-execute as @a[scores={TalkTrigger=24,TalkTime=1..}] run scoreboard players enable @s TalkTrigger
-execute as @a[scores={TalkTrigger=24}] run scoreboard players set @s TalkTrigger 0
-
-
 #Looker first dialogue, would you like to fight crime with me? - 25
 execute as @a[scores={TalkTrigger=25,TalkTime=0}] run scoreboard players set @s DialogueTrigger 173
 execute as @a[scores={TalkTrigger=25}] run scoreboard players set @s TalkTrigger 0
