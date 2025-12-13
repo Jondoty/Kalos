@@ -87,7 +87,10 @@ execute as @a[scores={DialogueTrigger=155,TalkTime=5..20}] at @s run tp @s ~ ~ ~
 execute if entity @a[scores={DialogueTrigger=156}] as @e[x=1469,y=102,z=-1957,dy=40,type=cobblemon:pokemon] at @s run tp @s ~ ~-0.08 ~
 
 
-
+#Ghost Girl events
+#execute as @a[scores={DialogueTrigger=165,TalkTime=2..35}] run effect give @s minecraft:slowness 3 10 true
+execute as @a[scores={DialogueTrigger=165,TalkTime=2..35}] at @s run tp @s -158 111 197 ~ ~ 
+execute as @a[scores={DialogueTrigger=165,TalkTime=12..25}] as @e[x=-159,y=110,z=193,dx=2,dy=3,dz=12,type=cobblemon:npc] at @s run tp @s ~ ~ ~0.1
 
 
 #

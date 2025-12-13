@@ -397,6 +397,48 @@ scoreboard players set @s[scores={DialogueTrigger=156},tag=Dialogue156] TalkTime
 scoreboard players set @s[scores={DialogueTrigger=156},tag=Dialogue156] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Ghost Girl Event
+#scoreboard players set @a[x=-162,y=110,z=196,dx=8,dy=5,dz=10,tag=!Dialogue165] DialogueTrigger 165
+
+
+execute as @s[scores={DialogueTrigger=165,TalkTime=1}] run function kalos:triggers/stopsound
+
+#gives Blindness
+execute as @s[scores={DialogueTrigger=165,TalkTime=2}] run effect give @s minecraft:blindness 4 1 true
+execute as @s[scores={DialogueTrigger=165,TalkTime=2}] run fill -143 119 226 -173 119 195 minecraft:iron_block
+
+#tp girl in
+execute as @s[scores={DialogueTrigger=165,TalkTime=2}] unless entity @e[x=-159,y=110,z=193,dx=2,dy=3,dz=12,type=cobblemon:npc] run npcspawnat -158 111 195 hexmaniac_generic
+
+#slows player (repeated)
+#effect @s[score_DialogueTrigger_min=165,score_DialogueTrigger=165] minecraft:slowness 3 10 true
+
+#holds player in place (repeated)
+#tp @s[score_DialogueTrigger_min=165,score_DialogueTrigger=165,type=player] -158 111 197 ~ ~
+
+#Ghost Girl movement (repeated)
+#tp @e[x=-159,y=110,z=193,dx=2,dy=3,dz=12,type=pixelmon:npc_chatting] run tp @e[x=-159,y=110,z=193,dx=2,dy=3,dz=12,type=pixelmon:npc_chatting] ~ ~ ~0.1
+
+#Little flickering lights
+execute as @s[scores={DialogueTrigger=165,TalkTime=20}] run setblock -158 119 206 minecraft:redstone_block
+execute as @s[scores={DialogueTrigger=165,TalkTime=21}] run setblock -158 119 206 minecraft:iron_block
+
+tellraw @s[scores={DialogueTrigger=165,TalkTime=25}] {"text":"<...> No, you're not the one..."}
+
+#blindness again
+execute as @s[scores={DialogueTrigger=165,TalkTime=35}] run effect give @s minecraft:blindness 5 1 true
+
+#return TP
+execute as @s[scores={DialogueTrigger=165,TalkTime=37}] run tp @e[x=-175,y=110,z=195,dx=30,dy=5,dz=31,type=cobblemon:npc] 10000000 -50000 -10000000
+
+execute as @s[scores={DialogueTrigger=165,TalkTime=40}] run function kalos:triggers/stopsound
+execute as @s[scores={DialogueTrigger=165,TalkTime=40}] run fill -143 119 226 -173 119 195 minecraft:redstone_block
+
+tag @s[scores={DialogueTrigger=165,TalkTime=40..}] add Dialogue165
+scoreboard players set @s[tag=Dialogue165] TalkTime 0
+scoreboard players set @s[tag=Dialogue165] DialogueTrigger 0
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Legendary bird encoutners
 #execute as @s[scores={PokemonLeague=1..,Articuno=..4},tag=!Dialogue167] if block ~ ~ ~ minecraft:short_grass run scoreboard players set @s DialogueTrigger 167
 #execute as @s[scores={PokemonLeague=1..,Zapdos=..4},tag=!Dialogue167] if block ~ ~ ~ minecraft:short_grass run scoreboard players set @s DialogueTrigger 167

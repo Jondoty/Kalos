@@ -334,10 +334,6 @@ execute as @p[x=825,y=95,z=624,distance=..20,scores={PokemonLeague=1..}] run tp 
 
 
 
-#Dialogue 165
-#Lumiose City Ghost Girl
-scoreboard players set @a[x=-162,y=110,z=196,dx=8,dy=5,dz=10,scores={TalkTime=0},tag=!Dialogue165] DialogueTrigger 165
-
 #Dialogue 166
 #Battle Chateau Viola Introduction
 scoreboard players set @a[x=-1533,y=65,z=-68,distance=..20,tag=!Dialogue166,scores={Gender_min=1..,TalkTime=0}] DialogueTrigger 166

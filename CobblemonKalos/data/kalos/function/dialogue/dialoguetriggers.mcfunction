@@ -636,6 +636,9 @@ execute as @s[x=1254,y=107,z=-307,distance=..20,tag=Dialogue162,tag=!Dialogue163
 #Diantha giving Ralts post-game
 execute as @s[x=-492,y=101,z=261,distance=..10,scores={PokemonLeague=1..},tag=!Dialogue164] unless entity @e[x=-495,y=101,z=256,dy=3,type=cobblemon:npc] run npcspawnat -495 101 256 lumiose_diantha
 
+#Dialogue 165
+#Lumiose City Ghost Girl
+scoreboard players set @s[x=-162,y=110,z=196,dx=8,dy=5,dz=10,scores={TalkTime=0},tag=!Dialogue165] DialogueTrigger 165
 
 
 
