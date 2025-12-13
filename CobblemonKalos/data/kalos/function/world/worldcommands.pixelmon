@@ -307,19 +307,6 @@ scoreboard players set @a[x=179,y=100,z=-115,distance=..10,scores={TalkTime=0},t
 
 
 
-#Dialogue 31
-#Parfum Palace Finding Furfrou
-scoreboard players set @a[x=-1691,y=100,z=-317,dx=14,dy=5,dz=7,tag=!Dialogue31,scores={TalkTime=0}] DialogueTrigger 31
-execute as @a[x=-1679,y=100,z=-314,distance=..30,scores={TalkTime=0},tag=!Dialogue31] run tp @e[x=-501,y=181,z=1238,dy=3,type=pixelmon:statue] -1679 100 -314
-
-#Dialogue 32
-#Parfum Palace Firework Show and Flute
-execute as @a[x=-1434,y=111,z=-374,distance=..30,tag=!Dialogue32] run tp @e[x=-504,y=175,z=1252,dy=3,type=pixelmon:npc_chatting] -1434 111 -374
-execute as @a[x=-1436,y=110,z=-401,dx=15,dy=10,dz=54,scores={TalkTime=0},tag=Dialogue31] run scoreboard players set @s[tag=!Dialogue32] DialogueTrigger 32
-
-
-
-
 #Dialogue 35
 #Route 7 Friends Double Battle
 scoreboard players set @a[x=-1591,y=100,z=-36,distance=..20,tag=!Dialogue35,scores={TalkTime=0}] DialogueTrigger 35

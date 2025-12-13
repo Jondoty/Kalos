@@ -135,8 +135,20 @@ execute as @s[x=-1391,y=63,z=-372,distance=..10,tag=!Dialogue29] run opendialogu
 execute as @s[x=-1623,y=100,z=-319,distance=..30,tag=!Dialogue30] unless entity @e[x=-1623,y=100,z=-319,dy=3,type=cobblemon:npc] run npcspawnat -1623 100 -319 shauna_generic
 execute as @s[x=-1623,y=100,z=-319,distance=..10,tag=!Dialogue30] run opendialogue shauna_dialogue30 @s
 
+#Parfum Palace, finding Furfrou
+execute as @s[x=-1699,y=100,z=-313,distance=..30,tag=!Dialogue31] unless entity @e[x=-1679,y=100,z=-314,distance=..5,type=cobblemon:pokemon] run pokespawnat -1679 100 -314 furfrou no_ai=true level=15
+execute as @s[x=-1699,y=100,z=-313,distance=..30,tag=!Dialogue31] as @e[x=-1679,y=100,z=-314,distance=..5,type=cobblemon:pokemon] at @s run tp @s ~ ~ ~ 90 ~
 
+execute positioned -1301 101 -36 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:furfrou"},PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
+execute positioned -1301 101 -36 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:furfrou"},PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
+execute positioned -1301 101 -36 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:furfrou"},PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
+execute positioned -1301 101 -36 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:furfrou"},PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
 
+execute as @s[x=-1691,y=100,z=-317,dx=14,dy=5,dz=7,tag=!Dialogue31] run opendialogue furfrou_dialogue31 @s
+
+#Firework Show Dialogue 32
+execute as @s[x=-1434,y=111,z=-374,distance=..30,tag=Dialogue31,tag=!Dialogue32] unless entity @e[x=-1434,y=111,z=-374,dy=3,type=cobblemon:npc] run npcspawnat -1434 111 -374 shauna_generic
+execute as @s[x=-1436,y=110,z=-401,dx=15,dy=10,dz=54,tag=Dialogue31,tag=!Dialogue32] run opendialogue shauna_dialogue32a @s
 
 #Route 7 Snorlax waking up
 execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=Dialogue32,tag=!Dialogue33] unless entity @e[x=-1289,y=100,z=-39,dy=3,type=cobblemon:npc] run npcspawnat -1289 100 -39 shauna_generic
