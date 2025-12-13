@@ -98,36 +98,6 @@ scoreboard players set @s[tag=Dialogue36] TalkTime 0
 scoreboard players set @s[tag=Dialogue36] DialogueTrigger 0
 
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-#Route 17 Mamoswine Route Pre-Flare
-#execute as @s[x=837,y=108,z=-335,r=10,tag=!Dialogue99,score_TalkTime=0] run execute as @s[tag=!Dialogue98] run scoreboard players set @s DialogueTrigger 99
-
-tellraw @s[scores={DialogueTrigger=99,TalkTime=2}] {"text":"<Ace Trainer> As you can see, Route 17 is completely covered in snow! It's like this all year round."}
-tellraw @s[scores={DialogueTrigger=99,TalkTime=12}] {"text":"<Ace Trainer> People usually ride on the back of a Mamoswine to plow their way through to the other side."}
-tellraw @s[scores={DialogueTrigger=99,TalkTime=22}] {"text":"<Ace Trainer> But unfortunately, the Mamoswine is hanging out in front of the Frost Cavern and won't budge..."}
-
-tag @s[scores={DialogueTrigger=99,TalkTime=22..}] add Dialogue99
-scoreboard players set @s[tag=Dialogue99] TalkTime 0
-scoreboard players set @s[tag=Dialogue99] DialogueTrigger 0
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Route 17 Mamoswine Route Post-Flare
-#execute as @s[x=837,y=108,z=-335,r=10,tag=!Dialogue100,score_TalkTime=0] run execute as @s[tag=Dialogue98] run scoreboard players set @s DialogueTrigger 100
-
-tellraw @s[scores={DialogueTrigger=100,TalkTime=2}] {"text":"<Ace Trainer> Ahoy there, Trainer! Shortly after you headed off to the Frost Cavern, Mamoswine came back."}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=12}] {"text":"<Ace Trainer> Did something happen over there?"}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=20}] {"text":"<Ace Trainer> They were trying to use Abomasnow as some kind of energy source?"}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=29}] {"text":"<Ace Trainer> I wonder if that's the same Abomasnow as the one that our Mamoswine is friends with..."}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=39}] {"text":"<Ace Trainer> See, a few years back, an Abomasnow came into town carrying a Mamoswine that was all beat up and injured from something..."}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=50}] {"text":"<Ace Trainer> I wonder if Mamoswine was worried about its pal..."}
-tellraw @s[scores={DialogueTrigger=100,TalkTime=57}] {"text":"<Ace Trainer> Trainer, you should ride on Mamoswine's back to the other side!"}
-execute as @a[scores={DialogueTrigger=100,TalkTime=60}] run pokegive @s Mamoswine lvl:35 untradeable gr:7
-tellraw @s[scores={DialogueTrigger=100,TalkTime=67}] {"text":"<Ace Trainer> This deep snow and all the rocks along the path are nothing against Mamoswine's strength!"}
-
-tag @s[scores={DialogueTrigger=100,TalkTime=67..}] add Dialogue100
-scoreboard players set @s[tag=Dialogue100] TalkTime 0
-scoreboard players set @s[tag=Dialogue100] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Commands that reset the legendary if not caught

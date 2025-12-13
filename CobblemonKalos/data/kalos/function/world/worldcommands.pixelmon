@@ -322,25 +322,6 @@ execute as @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue35] run execute as @
 scoreboard players set @a[x=-1591,y=100,z=-36,distance=..20,tag=Dialogue36,tag=!Dialogue36,scores={MusicSteps=1..,TalkTime=0}] DialogueTrigger 36
 
 
-#Dialogue 95
-#Frost Cavern ext Mamoswine has a bad feeling
-scoreboard players set @a[x=717,y=117,z=-682,dx=24,dy=10,dz=20,scores={TalkTime=0},tag=!Dialogue95] DialogueTrigger 95
-execute as @p[x=733,y=119,z=-646,distance=..20,tag=!Dialogue95,tag=!Dialogue98] run tp @e[x=-504,y=205,z=1268,dy=3,type=pixelmon:npc_chatting] 725 118 -665
-execute as @p[x=733,y=119,z=-646,distance=..20,tag=!Dialogue95,tag=!Dialogue98] run tp @e[x=-501,y=190,z=1238,dy=3,type=pixelmon:statue] 722 118 -666
-execute as @p[x=719,y=117,z=-682,distance=..30,tag=Dialogue98] run tp @e[x=725,y=117,z=-665,dy=3,type=pixelmon:npc_chatting] -504 206 1268
-execute as @p[x=719,y=117,z=-682,distance=..30,tag=Dialogue98] run tp @e[x=722,y=117,z=-666,dy=3,type=pixelmon:statue] -501 191 1238
-
-#Dialogue 99
-#Route 13 Mamoswine is gone if went to here first
-execute as @a[x=837,y=108,z=-335,distance=..10,tag=!Dialogue99,scores={TalkTime=0},tag=!Dialogue98] run scoreboard players set @s DialogueTrigger 99
-execute as @a[x=801,y=107,z=-340,dx=50,dy=10,dz=30,tag=!Dialogue98] run effect give @e[type=pixelmon:statue,name=Mamoswine] minecraft:invisibility 5 5 true
-
-#Dialogue 100
-#Route 17 Mamoswine has returned
-execute as @a[x=837,y=108,z=-335,distance=..10,tag=!Dialogue100,scores={TalkTime=0},tag=Dialogue98] run scoreboard players set @s DialogueTrigger 100
-
-
-
 #If the legendary Pokemon is in the chamber and the player leaves
 execute if entity @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue132] if entity @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,type=pixelmon:pixelmon,nbt={ndex:716}] run tellraw @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=Dialogue131] {"text":"Legendary detected in the chamber! Catch it to continue the story!","italic":true,"color":"gray"}
 execute if entity @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue132] if entity @e[x=-2369,y=40,z=-1051,dx=65,dy=20,dz=65,type=pixelmon:pixelmon,nbt={ndex:717}] run tag @s[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=Dialogue131] remove Dialogue131

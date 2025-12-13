@@ -405,7 +405,22 @@ execute as @s[x=672,y=84,z=-1299,dx=18,dy=6,dz=11,tag=!Dialogue98] unless entity
 execute as @s[x=672,y=84,z=-1299,dx=18,dy=6,dz=11,tag=!Dialogue96] run opendialogue trevor_dialogue96 @s
 execute as @s[x=672,y=84,z=-1299,dx=18,dy=6,dz=11,tag=!Dialogue96] unless entity @e[x=676,y=85,z=-1361,dy=3,type=minecraft:interaction] positioned 676 85 -1361 run function kalos:spawn/npcboxes
 
-#Skipped over Mamoswine riding until 1.7 introduces riding
+
+
+#Route 17 Mamoswine and Ace Trainer
+execute as @s[x=799,y=108,z=-326,distance=..20,tag=!Dialogue100] unless entity @e[x=839,y=108,z=-335,distance=..5,type=cobblemon:pokemon] run pokespawnat 839 108 -335 mamoswine no_ai=true level=40
+execute positioned 839 108 -335 as @e[distance=..5,type=cobblemon:pokemon,name=Mamoswine,nbt={Pokemon:{Species:"cobblemon:mamoswine"},PersistenceRequired:0b}] at @s run tp @s ~ ~ ~ 45 ~
+execute positioned 839 108 -335 as @e[distance=..5,type=cobblemon:pokemon,name=Mamoswine,nbt={Pokemon:{Species:"cobblemon:mamoswine"},PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
+execute positioned 839 108 -335 as @e[distance=..5,type=cobblemon:pokemon,name=Mamoswine,nbt={Pokemon:{Species:"cobblemon:mamoswine"},PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
+execute positioned 839 108 -335 as @e[distance=..5,type=cobblemon:pokemon,name=Mamoswine,nbt={Pokemon:{Species:"cobblemon:mamoswine"},PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
+execute positioned 839 108 -335 as @e[distance=..5,type=cobblemon:pokemon,name=Mamoswine,nbt={Pokemon:{Species:"cobblemon:mamoswine"},PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
+
+execute as @s[x=837,y=108,z=-335,distance=..10,tag=!Dialogue98,tag=!Dialogue99] run opendialogue mamoswinetrainer_dialogue99 @s
+execute as @s[x=837,y=108,z=-335,distance=..10,tag=Dialogue98,tag=!Dialogue100] run opendialogue mamoswinetrainer_dialogue100 @s
+
+#Invisibles Mamoswine before player defeats Mable
+execute as @s[x=839,y=108,z=-335,distance=..50,tag=!Dialogue98] run effect give @e[x=839,y=108,z=-335,distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:mamoswine"}}] minecraft:invisibility 15 1 true
+
 
 #Anistar Sina at entrance to city
 execute as @s[x=1187,y=107,z=-196,dx=16,dy=5,dz=17,tag=!Dialogue101] unless entity @e[x=1207,y=108,z=-188,dy=3,type=cobblemon:npc] run npcspawnat 1207 108 -188 sina_generic
