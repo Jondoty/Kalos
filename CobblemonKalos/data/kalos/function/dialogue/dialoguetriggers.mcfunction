@@ -753,6 +753,30 @@ execute as @s[x=-77,y=101,z=385,distance=..7,tag=Dialogue225,tag=!Dialogue193] r
 #Respawns Chalmers battle NPC
 execute as @s[x=-77,y=101,z=394,distance=..15,tag=Dialogue193,tag=!Dialogue194] unless entity @e[x=-77,y=101,z=394,dy=3,type=cobblemon:npc] run npcspawnat -77 101 394 butler_chalmers
 
+#Hotel Richissime Malva battle
+execute as @s[x=-491,y=144,z=316,distance=..30,tag=Dialogue194,tag=!Dialogue196] unless entity @e[x=-491,y=144,z=316,dy=3,type=cobblemon:npc] run npcspawnat -491 144 316 richissime_malva
+
+#Lysandre's Cafe, post-game variant
+#Malva talking about the lab on the upper floor
+execute as @s[x=-296,y=81,z=443,distance=..30,tag=Dialogue196,tag=!Dialogue197] unless entity @e[x=-296,y=81,z=443,dy=3,type=cobblemon:npc] run npcspawnat -296 81 443 malva_generic
+execute as @s[x=-296,y=81,z=443,distance=..8,tag=Dialogue196,tag=!Dialogue197] run opendialogue malva_dialogue197 @s
+
+execute as @s[x=-295,y=89,z=393,distance=..30,tag=Dialogue196,tag=!Dialogue198] unless entity @e[x=-295,y=89,z=393,dy=3,type=cobblemon:npc] run npcspawnat -295 89 393 malva_generic
+execute as @s[x=-295,y=89,z=393,distance=..8,tag=Dialogue196,tag=!Dialogue198] run opendialogue malva_dialogue198 @s
+
+#Looker Chapter Lysandre Labs Hidden Floor button
+execute as @a[x=-296,y=89,z=384,distance=..10,tag=Dialogue198] if block -297 89 385 minecraft:air run clone -443 102 1368 -443 102 1368 -297 89 384
+execute as @a[x=-296,y=89,z=384,distance=..10,tag=Dialogue198] if block -297 89 385 minecraft:air run setblock -297 89 385 minecraft:stone_button[facing=east]
+
+execute as @a[x=-296,y=89,z=384,distance=..10,tag=!Dialogue198] if block -297 89 385 minecraft:stone_button run fill -297 89 385 -297 89 384 air
+
+
+
+
+
+
+
+
 
 
 #-----------------------------------------------------------

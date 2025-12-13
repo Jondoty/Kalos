@@ -346,17 +346,6 @@ execute as @p[x=-79,y=103,z=326,distance=..15,tag=Dialogue185,tag=Dialogue214] r
 execute as @p[x=-79,y=103,z=326,distance=..15,tag=!Dialogue185,tag=!Dialogue214] run execute as @e[x=-79,y=103,z=326,distance=..1,type=item_frame] run data modify entity @s {Item:{id:"minecraft:diamond_hoe",Count:1b,Damage:202s}}
 execute as @p[x=-79,y=103,z=326,distance=..15,tag=Dialogue185,tag=!Dialogue214] run execute as @e[x=-79,y=103,z=326,distance=..1,type=item_frame] run data modify entity @s {Item:{id:"minecraft:diamond_hoe",Count:1b,Damage:217s}}
 
-
-#Dialogue 195
-#Hotel Richissime Malva
-execute as @a[x=-494,y=143,z=325,dx=6,dy=5,dz=8,scores={TalkTime=0},tag=Dialogue194,tag=!Dialogue195] run scoreboard players set @s DialogueTrigger 195
-execute as @a[x=-490,y=144,z=336,distance=..20,tag=!Dialogue195,tag=Dialogue194] run tp @e[x=-504,y=100,z=1306,dy=3,type=pixelmon:npc_trainer] -491 144 316
-
-#Dialogue 197
-#Lysandre Labs Malva
-execute as @a[x=-296,y=81,z=443,distance=..8,scores={TalkTime=0},tag=Dialogue196,tag=!Dialogue197] run scoreboard players set @s DialogueTrigger 197
-execute as @a[x=-295,y=89,z=393,distance=..8,scores={TalkTime=0},tag=Dialogue197,tag=!Dialogue198] run scoreboard players set @s DialogueTrigger 198
-
 #Looker Chapter Lysandre Labs Hidden Floor button
 execute as @a[x=-296,y=89,z=384,distance=..10,tag=Dialogue198] if block -297 89 385 minecraft:air run clone -443 102 1368 -443 102 1368 -297 89 384
 execute as @a[x=-296,y=89,z=384,distance=..10,tag=Dialogue198] if block -297 89 385 minecraft:air run setblock -297 89 385 minecraft:stone_button[facing=east]

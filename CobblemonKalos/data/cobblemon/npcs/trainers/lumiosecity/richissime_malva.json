@@ -3,7 +3,7 @@
     "resourceIdentifier": "cobblemon:malva",
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:richissime_malva_interaction"
+        "dialogue": "cobblemon:malva_dialogue195"
     },
     "name": "Malva",
     "party": {
