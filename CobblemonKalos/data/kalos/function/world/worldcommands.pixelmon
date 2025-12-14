@@ -348,10 +348,6 @@ execute as @p[x=-79,y=103,z=326,distance=..15,tag=Dialogue185,tag=!Dialogue214] 
 
 
 
-#Dialogue 208
-#Post-reading all Xerosic notes
-execute as @a[x=-306,y=28,z=280,dx=22,dy=20,dz=47,scores={TalkTime=0},tag=Dialogue202,tag=Dialogue203,tag=Dialogue204,tag=Dialogue205,tag=Dialogue206,tag=Dialogue207,tag=!Dialogue208] run scoreboard players set @s DialogueTrigger 208
-
 #Dialogue 209
 #Lysandre Labs Xerosic tping in
 execute as @a[x=-305,y=28,z=318,dx=20,dy=5,dz=10,scores={TalkTime=0},tag=Dialogue208,tag=!Dialogue209] run scoreboard players set @s DialogueTrigger 209

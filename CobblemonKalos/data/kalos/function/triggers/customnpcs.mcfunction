@@ -190,6 +190,36 @@ execute as @s[x=-176,y=102,z=380,distance=..5,tag=Dialogue176] run opendialogue 
 execute as @s[x=-444,y=102,z=207,distance=..6,tag=!Dialogue168] run opendialogue reporter_volcanionmemo_locked @s
 execute as @s[x=-444,y=102,z=207,distance=..6,tag=Dialogue168] run opendialogue reporter_volcanionmemo @s
 
+
+#Xerosic's Notes
+#-295 32 284
+#-289 32 295
+#-290 32 301
+#-301 29 313
+#-285 29 313
+#-286 29 318
+
+#Orders of books do not matter, could even read the same book over and over
+execute as @s[x=-306,y=28,z=280,dx=22,dy=20,dz=47,tag=!Dialogue202] run opendialogue xerosicsnote_dialogue202 @s
+execute as @s[x=-306,y=28,z=280,dx=22,dy=20,dz=47,tag=Dialogue202,tag=!Dialogue203] run opendialogue xerosicsnote_dialogue203 @s
+execute as @s[x=-306,y=28,z=280,dx=22,dy=20,dz=47,tag=Dialogue202,tag=Dialogue203,tag=!Dialogue204] run opendialogue xerosicsnote_dialogue204 @s
+execute as @s[x=-306,y=28,z=280,dx=22,dy=20,dz=47,tag=Dialogue202,tag=Dialogue203,tag=Dialogue204,tag=!Dialogue205] run opendialogue xerosicsnote_dialogue205 @s
+execute as @s[x=-306,y=28,z=280,dx=22,dy=20,dz=47,tag=Dialogue202,tag=Dialogue203,tag=Dialogue204,tag=Dialogue205,tag=!Dialogue206] run opendialogue xerosicsnote_dialogue206 @s
+execute as @s[x=-306,y=28,z=280,dx=22,dy=20,dz=47,tag=Dialogue202,tag=Dialogue203,tag=Dialogue204,tag=Dialogue205,tag=Dialogue206,tag=!Dialogue207] run opendialogue xerosicsnote_dialogue207 @s
+execute as @s[x=-306,y=28,z=280,dx=22,dy=20,dz=47,tag=Dialogue202,tag=Dialogue203,tag=Dialogue204,tag=Dialogue205,tag=Dialogue206,tag=Dialogue207] run opendialogue xerosicsnote_readall @s
+
+
+
+
+
+
+
+
+
+
+
+
+
 #-------------------------------------------------------------
 #Cafe NPCs talking about Pokemon
 

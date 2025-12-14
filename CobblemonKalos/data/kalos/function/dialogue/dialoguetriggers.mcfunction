@@ -776,7 +776,8 @@ execute as @s[x=-296,y=29,z=332,distance=..30,tag=Dialogue196,tag=!Dialogue198] 
 
 execute as @s[x=-295,y=29,z=310,distance=..8,tag=!Dialogue201] run opendialogue nix_dialogue201 @s
 
-
+#Once player has read all of Xerosic's Notes
+execute as @s[x=-306,y=28,z=280,dx=22,dy=20,dz=47,tag=Dialogue202,tag=Dialogue203,tag=Dialogue204,tag=Dialogue205,tag=Dialogue206,tag=Dialogue207,tag=!Dialogue208] run opendialogue nix_dialogue208 @s
 
 
 

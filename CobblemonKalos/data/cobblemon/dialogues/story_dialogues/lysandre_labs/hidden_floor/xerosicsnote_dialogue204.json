@@ -1,0 +1,294 @@
+{
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+    ],
+    "escapeAction": [],
+    "speakers": {
+        "player": {
+            "face": "q.player.face(true);",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "Expansion Suit Field Trials Secret Records: Volume 2",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "The XXth day of the XXth month...",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "At long last, a response came to my advertisement for part-time work.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "The subject's name is Emma. She is a healthy girl, 16 years of age.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "When I attempted to explain the intent of my research, she gave little sign of understanding.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "She does appear to understand the passion I have put into the suit research,",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "and she showed interest in continuing with the trials.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page8');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "Now that Team Flare has been disbanded, my funds are running severely low.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page9');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page9",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "I hired her on the spot. The trials must proceed with no time lost.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page10');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page10",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "First, I'll measure Emma's physical and mental abilities to ensure she can complete the trials.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page11');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page11",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "The XXth day of the XXth month... I have customized the suit to better fit Emma's frame.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page12');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page12",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "The XXth day of the XXth month...",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page13');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page13",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "I have designated the code name Essentia to be used when Emma is wearing the Expansion Suit.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue204');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

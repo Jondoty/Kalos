@@ -1,0 +1,315 @@
+{
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+    ],
+    "escapeAction": [],
+    "speakers": {
+        "player": {
+            "face": "q.player.face(true);",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "Expansion Suit Field Trials Secret Records: Volume 5",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "The XXth day of the XXth month...",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "Trials begin of a key part of the Expansion Suit: the hacking cable I've called the Pok\u00e9 Ball Jack.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "With the texturing function enabled, the subject battles Trainers around the city.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "She then collects the Pok\u00e9 Balls from Trainers she defeats, so that we may use them in our tests.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "The results of the tests have been quite favorable thus far.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "However, these trials have not been entirely free from incident.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page8');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "Some apparent acquaintances of Emma's are proving to be a hindrance to our progress.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page9');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page9",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "Among these acquaintances is a Trainer who appears to be the new Champion, but this is not yet confirmed.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page10');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page10",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "We encountered a glitch in the remote-control programming, and I lost control for a brief period.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page11');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page11",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "Fearing possible effects on Emma, I suspended the trials temporarily.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page12');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page12",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "When we returned to the secret base, I examined the girl for signs of damage, but she appeared to be unharmed.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page13');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page13",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "She still retains no memories from her intervals in the suit.",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page14');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page14",
+            "speaker": "player",
+            "lines": [
+                {
+                    "text": "The one thing she admitted was experiencing \u201ca frightful dream.\u201d",
+                    "italic": true
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue207');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
