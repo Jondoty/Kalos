@@ -1,0 +1,104 @@
+{
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+    ],
+    "escapeAction": [],
+    "speakers": {
+        "punkguy": {
+            "name": {
+                "text": "Nix"
+            },
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:punkguy",
+                "isLeftSide": true
+            }
+        },
+        "player": {
+            "face": "q.player.face(true);",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "punkguy",
+            "lines": [
+                "'Ere we are, yo! Nobody's supposed to be allowed in, y'know?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "punkguy",
+            "lines": [
+                "Which makes yer think there's bound to be somethin' epic locked up in 'ere, eh?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "punkguy",
+            "lines": [
+                "Stands to reason. I ain't got nothin' goin' on at the moment,"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "punkguy",
+            "lines": [
+                "so let's be havin' us a little look-see for stacks of treasures."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue201');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

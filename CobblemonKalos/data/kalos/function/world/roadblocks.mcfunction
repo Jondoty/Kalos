@@ -186,9 +186,9 @@ execute as @p[x=-817,y=104,z=-304,distance=..30,tag=!PowerPlantPass] run setbloc
 tellraw @s[x=-984,y=53,z=-352,dx=5,dy=5,dz=3,tag=!Dialogue75] ["",{"text":"<Team Flare Grunt> ","color":"white"},{"text":"Now I\u2019m mad! I told you I was persistent! I refuse to budge from this spot! Not an inch!"}]
 execute as @s[x=-984,y=53,z=-352,dx=5,dy=5,dz=3,tag=!Dialogue75] at @s run tp @s ~ ~ ~7
 
-##Lysandre Labs Nix blocking the way until after battle
-#tp @s[x=-305,y=28,z=318,dx=20,dy=5,dz=10,tag=!Dialogue200] -297 29 331
-#
+#Lysandre Labs Nix blocking the way until after battle
+execute as @s[x=-305,y=28,z=318,dx=20,dy=5,dz=10,tag=!Dialogue200] at @s run tp @s -297 29 331
+
 #Flare HQ Battle Lysandre to exit lobby
 tellraw @s[x=-2372,y=69,z=-987,dx=13,dy=5,dz=4,tag=!Dialogue123] {"text":"Defeat Lysandre!","italic":true,"color":"gray"}
 execute as @s[x=-2372,y=69,z=-987,dx=13,dy=5,dz=4,tag=!Dialogue123] at @s run tp @s ~10 ~ ~

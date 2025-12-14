@@ -1,28 +1,21 @@
 {
-    "initializationAction": [
-        "c.npc.set_chatting();",
-        "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 3');",
-        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
-        "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $4248 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
-        "q.run_command('scoreboard players add ' + q.player.username + ' Money 4248');"
-    ],
     "speakers": {
         "npc": {
-            "name": "Ernst",
+            "name": "Nix",
             "face": {
                 "type": "artificial",
                 "modelType": "npc",
-                "identifier": "cobblemon:scientist",
+                "identifier": "cobblemon:punkguy",
                 "isLeftSide": true
             }
         }
     },
     "pages": [
         {
-            "id": "greeting",
+            "id": "page1",
             "speaker": "npc",
             "lines": [
-                "Starting with that foolish girl, I just can't understand why Dr. Xerosic would let in so many feeble-minded hooligans..."
+                "What's good, my friend? Find anythin' yet?"
             ],
             "input": {
                 "type": "option",
@@ -40,7 +33,25 @@
             "id": "page2",
             "speaker": "npc",
             "lines": [
-                "I suppose I just can't understand his genius!"
+                "Maybe hidden on those bookshelves or suchlike?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "There's gotta be somethin'! Check out every corner!"
             ],
             "input": {
                 "type": "option",
@@ -56,8 +67,5 @@
                 ]
             }
         }
-    ],
-    "escapeAction": [
-        "q.dialogue.close();"
     ]
 }

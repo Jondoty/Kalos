@@ -22,7 +22,25 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Are you another one of the new security guards hired on by the doctor? The guys that came before you--especially the ones from the gang--are a bunch of slackers!"
+                "Are you another one of the new security guards hired on by the doctor?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "The guys that came before you--especially the ones from the gang--are a bunch of slackers!"
             ],
             "input": {
                 "type": "option",

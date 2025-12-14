@@ -346,21 +346,7 @@ execute as @p[x=-79,y=103,z=326,distance=..15,tag=Dialogue185,tag=Dialogue214] r
 execute as @p[x=-79,y=103,z=326,distance=..15,tag=!Dialogue185,tag=!Dialogue214] run execute as @e[x=-79,y=103,z=326,distance=..1,type=item_frame] run data modify entity @s {Item:{id:"minecraft:diamond_hoe",Count:1b,Damage:202s}}
 execute as @p[x=-79,y=103,z=326,distance=..15,tag=Dialogue185,tag=!Dialogue214] run execute as @e[x=-79,y=103,z=326,distance=..1,type=item_frame] run data modify entity @s {Item:{id:"minecraft:diamond_hoe",Count:1b,Damage:217s}}
 
-#Looker Chapter Lysandre Labs Hidden Floor button
-execute as @a[x=-296,y=89,z=384,distance=..10,tag=Dialogue198] if block -297 89 385 minecraft:air run clone -443 102 1368 -443 102 1368 -297 89 384
-execute as @a[x=-296,y=89,z=384,distance=..10,tag=Dialogue198] if block -297 89 385 minecraft:air run setblock -297 89 385 minecraft:stone_button[facing=east]
 
-execute as @a[x=-296,y=89,z=384,distance=..10,tag=!Dialogue198] if block -297 89 385 minecraft:stone_button run fill -297 89 385 -297 89 384 air
-
-
-#Dialogue 199
-#Lysandre Labs Nix pre-battle
-scoreboard players set @a[x=-299,y=28,z=328,dx=7,dy=5,dz=9,scores={TalkTime=0},tag=!Dialogue199] DialogueTrigger 199
-execute as @a[x=-299,y=28,z=328,dx=7,dy=5,dz=9,scores={TalkTime=0},tag=!Dialogue200] run tp @e[x=-504,y=105,z=1300,dy=3,type=pixelmon:npc_trainer] -296 29 328
-
-#Dialogue 201
-#Lysandre Labs Nix talking about Xerosic Notes
-execute as @a[x=-295,y=29,z=310,distance=..8,scores={TalkTime=0},tag=Dialogue200,tag=!Dialogue201] run scoreboard players set @s DialogueTrigger 201
 
 #Dialogue 208
 #Post-reading all Xerosic notes

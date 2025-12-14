@@ -770,9 +770,11 @@ execute as @a[x=-296,y=89,z=384,distance=..10,tag=Dialogue198] if block -297 89 
 
 execute as @a[x=-296,y=89,z=384,distance=..10,tag=!Dialogue198] if block -297 89 385 minecraft:stone_button run fill -297 89 385 -297 89 384 air
 
+#Lysandre Labs Nix Trainer and NPC
+execute as @s[x=-296,y=29,z=332,distance=..30,tag=Dialogue196,tag=!Dialogue200] unless entity @e[x=-296,y=29,z=328,dy=3,type=cobblemon:npc] run npcspawnat -296 29 328 punkguy_nix
+execute as @s[x=-296,y=29,z=332,distance=..30,tag=Dialogue196,tag=!Dialogue198] unless entity @e[x=-295,y=29,z=310,dy=3,type=cobblemon:npc] run npcspawnat -295 29 310 lysandrelabs_nix
 
-
-
+execute as @s[x=-295,y=29,z=310,distance=..8,tag=!Dialogue201] run opendialogue nix_dialogue201 @s
 
 
 
