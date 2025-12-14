@@ -782,9 +782,18 @@ execute as @s[x=-306,y=28,z=280,dx=22,dy=20,dz=47,tag=Dialogue202,tag=Dialogue20
 #Xerosic as player is leaving the note room
 execute as @s[x=-305,y=28,z=318,dx=20,dy=5,dz=10,tag=Dialogue208,tag=!Dialogue209] run opendialogue xerosic_dialogue209 @s
 
+#Respawns Essentia trainers if none are present
+execute as @s[x=-295,y=31,z=297,distance=..20,tag=Dialogue209,tag=!Dialogue210] unless entity @e[x=-295,y=31,z=297,dy=3,type=cobblemon:npc] run npcspawnat -295 32 297 essentia_battle1
+execute as @s[x=-295,y=31,z=297,distance=..20,tag=Dialogue210,tag=!Dialogue211] unless entity @e[x=-295,y=31,z=297,dy=3,type=cobblemon:npc] run npcspawnat -295 32 297 essentia_battle2
+execute as @s[x=-295,y=31,z=297,distance=..20,tag=Dialogue211,tag=!Dialogue212] unless entity @e[x=-295,y=31,z=297,dy=3,type=cobblemon:npc] run npcspawnat -295 32 297 essentia_battle3
+execute as @s[x=-295,y=31,z=297,distance=..20,tag=Dialogue212,tag=!Dialogue213] unless entity @e[x=-295,y=31,z=297,dy=3,type=cobblemon:npc] run npcspawnat -295 32 297 essentia_battle4
 
 
+#Emma learning of Looker's Goodbye
+execute as @s[x=-51,y=101,z=385,distance=..20 ,tag=Call20,tag=!Dialogue214] unless entity @e[x=-51,y=101,z=385,dy=3,type=cobblemon:npc] run npcspawnat -51 101 385 emma_generic
+execute as @s[x=-51,y=101,z=385,distance=..6,tag=Call20,tag=!Dialogue214] run opendialogue emma_dialogue214 @s
 
+#Dialogue215, executed in 20tps commands before player gets teleported
 
 
 

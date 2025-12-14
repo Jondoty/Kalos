@@ -347,15 +347,6 @@ execute as @p[x=-79,y=103,z=326,distance=..15,tag=!Dialogue185,tag=!Dialogue214]
 execute as @p[x=-79,y=103,z=326,distance=..15,tag=Dialogue185,tag=!Dialogue214] run execute as @e[x=-79,y=103,z=326,distance=..1,type=item_frame] run data modify entity @s {Item:{id:"minecraft:diamond_hoe",Count:1b,Damage:217s}}
 
 
-
-#Dialogue 209
-#Lysandre Labs Xerosic tping in
-execute as @a[x=-305,y=28,z=318,dx=20,dy=5,dz=10,scores={TalkTime=0},tag=Dialogue208,tag=!Dialogue209] run scoreboard players set @s DialogueTrigger 209
-
-#Dialogue 213
-#Lysandre Labs final Essentia tp in if needed
-execute as @a[x=-295,y=32,z=297,distance=..15,scores={TalkTime=0},tag=Dialogue212,tag=!Dialogue213] run tp @e[x=-504,y=110,z=1306,dy=3,type=pixelmon:npc_trainer] -295 32 297
-
 #Dialogue 216
 #Museum artist follow-up
 execute as @a[x=-83,y=77,z=355,distance=..7,scores={TalkTime=0},tag=Dialogue214,tag=!Dialogue216] run scoreboard players set @s DialogueTrigger 216
