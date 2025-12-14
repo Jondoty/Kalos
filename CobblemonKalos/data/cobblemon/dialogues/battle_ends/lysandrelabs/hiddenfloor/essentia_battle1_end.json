@@ -1,0 +1,92 @@
+{
+    "initializationAction": [
+        "c.npc.set_chatting();",
+        "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 3');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+        "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $9240 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
+        "q.run_command('scoreboard players add ' + q.player.username + ' Money 9240');"
+    ],
+    "speakers": {
+        "essentia": {
+            "name": "Essentia",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:essentia",
+                "isLeftSide": true
+            }
+        },
+        "xerosic": {
+            "name": "Xerosic",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:xerosic",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "xerosic",
+            "lines": [
+                "Astonishing! More than satisfactory! But Essentia's skills go far beyond this!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "xerosic",
+            "lines": [
+                "Now, battle! Battle on, my Essentia!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "essentia",
+            "lines": [
+                "POKÉ BALL JACK FUNCTION INITIATED. VIRUS POTENCY SET TO 70 PERCENT."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('particle cloud -295 32 297 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-295,y=32,z=297,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('npcspawnat -295 32 297 essentia_battle2');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue210');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "escapeAction": []
+}

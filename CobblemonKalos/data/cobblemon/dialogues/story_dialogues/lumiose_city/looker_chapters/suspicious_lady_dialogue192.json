@@ -224,7 +224,7 @@
                         "value": "next",
                         "action": [
                             "q.run_command('particle cloud -378 101 -275 2 2 2 1 100');",
-                            "q.run_command('execute unless entity @e[x=-380,y=100,z=-278,dy=40,type=cobblemon:npc] run pokespawnat -378 101 -275 espurr level=30 no_ai=yes uncatchable=yes');",
+                            "q.run_command('execute unless entity @e[x=-380,y=100,z=-278,dy=40,type=cobblemon:pokemon] run pokespawnat -378 101 -275 espurr level=30 no_ai=yes uncatchable=yes');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:espurr ambient @s ~ ~ ~ 1 1 1');",
                             "q.dialogue.set_page('page10');"
                         ]
