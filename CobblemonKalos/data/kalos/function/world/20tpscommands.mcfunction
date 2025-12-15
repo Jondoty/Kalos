@@ -12,6 +12,14 @@ execute as @e[x=-1273,y=100,z=2,dx=85,dy=4,dz=30,type=item] run function kalos:d
 #execute as @e[x=-685,y=100,z=1388,dy=3,tag=Particles,type=armor_stand] at @e[tag=Shiny,type=pixelmon:pixelmon] run particle reddust ~ ~ ~ 0 10 0 1 10 force @a[distance=..50]
 
 
+#Ambush Encounters
+execute as @a at @s if entity @e[distance=..2,type=armor_stand,tag=AmbushEncounter,tag=!Bush] run function kalos:world/ambushencounter
+execute as @a at @s if entity @e[distance=..7,type=armor_stand,tag=AmbushEncounter,tag=Bush,tag=Active] run function kalos:world/ambushencounter
+
+#Ambush bush particles
+execute as @e[type=armor_stand,tag=AmbushEncounter,tag=Bush,tag=Active] at @s if entity @p[distance=..30] run particle falling_dust{block_state:{Name:oak_leaves}} ~ ~ ~ 2 2 2 8 5 normal
+
+
 #Runs the restaurant timer
 execute as @a[x=-514,y=0,z=64,dx=526,dy=256,dz=436,tag=RunTimer,scores={RestaurantBattle=1..}] run function kalos:triggers/restauranttimer
 

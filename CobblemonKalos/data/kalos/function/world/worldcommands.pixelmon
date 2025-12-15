@@ -150,10 +150,6 @@ execute as @a[scores={TrashTrigger=1..}] run function kalos:triggers/trashtrigge
 #Rock Smash
 execute as @a[scores={RockTrigger=1..}] run function kalos:triggers/rocksmashtrigger
 
-#Ambush Encounters
-execute at @e[type=armor_stand,tag=AmbushEncounter] run execute at @s[tag=!Bush] run execute as @a[distance=..2] run function kalos:world/ambushencounter
-execute at @e[type=armor_stand,tag=AmbushEncounter] run execute at @s[tag=Bush] run execute as @a[distance=..7] run function kalos:world/ambushencounter
-
 #Adds Shiny Particles tag
 execute at @a run tag @e[distance=..50,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
 

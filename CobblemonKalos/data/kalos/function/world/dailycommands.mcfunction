@@ -40,8 +40,11 @@ execute as @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] run 
 #Resets Tierno's daily Heart Scale
 #scoreboard players set @a[scores={TrainerLoot76=1..}] TrainerLoot76 0
 
-#Resets Rock Smash rocks, Trash Cans, and Ambush Shadows
-fill -672 100 1273 -687 100 1344 minecraft:redstone_block replace minecraft:gold_block
+#Resets all shadow ambush encounters
+execute as @e[tag=AmbushEncounter,type=armor_stand,tag=!Bush] run data merge entity @s {ArmorItems:[{},{},{},{id:"iron_hoe",Count:1,components:{"minecraft:custom_model_data":51}}]}
+
+#Resets Bushes
+execute as @e[tag=AmbushEncounter,type=armor_stand,tag=Bush,tag=!Active] run tag @s add Active
 
 #Resets trash cans
 #Lost Hotel
