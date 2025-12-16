@@ -790,12 +790,19 @@ execute as @s[x=-295,y=31,z=297,distance=..20,tag=Dialogue212,tag=!Dialogue213] 
 
 
 #Emma learning of Looker's Goodbye
-execute as @s[x=-51,y=101,z=385,distance=..20 ,tag=Call20,tag=!Dialogue214] unless entity @e[x=-51,y=101,z=385,dy=3,type=cobblemon:npc] run npcspawnat -51 101 385 emma_generic
+execute as @s[x=-51,y=101,z=385,distance=..20,tag=Call20,tag=!Dialogue214] unless entity @e[x=-51,y=101,z=385,dy=3,type=cobblemon:npc] run npcspawnat -51 101 385 emma_generic
 execute as @s[x=-51,y=101,z=385,distance=..6,tag=Call20,tag=!Dialogue214] run opendialogue emma_dialogue214 @s
 
 #Dialogue215, executed in 20tps commands before player gets teleported
 
+#Dialogue 216, artist followup as looker is leaving
+execute as @s[x=-83,y=77,z=355,distance=..7,tag=Dialogue214,tag=!Dialogue216] unless entity @e[x=-88,y=77,z=349,dy=3,type=cobblemon:npc] run npcspawnat -88 77 349 artist_generic
+execute as @s[x=-83,y=77,z=355,distance=..7,tag=Dialogue214,tag=!Dialogue216] run opendialogue artist_dialogue216 @s
 
+#Dialogue 217, Xerosic and Looker
+execute as @s[x=-297,y=108,z=440,distance=..20,tag=Dialogue216,tag=!Dialogue217] unless entity @e[x=-297,y=108,z=440,dy=3,type=cobblemon:npc] run npcspawnat -294 108 440 looker_generic
+execute as @s[x=-297,y=108,z=440,distance=..20,tag=Dialogue216,tag=!Dialogue217] unless entity @e[x=-294,y=108,z=440,dy=3,type=cobblemon:npc] run npcspawnat -297 108 440 xerosic_generic
+execute as @s[x=-297,y=108,z=440,distance=..7,tag=Dialogue216,tag=!Dialogue217] run opendialogue xerosic_dialogue217 @s
 
 
 

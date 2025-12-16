@@ -1,0 +1,1622 @@
+{
+    "initializationAction": [
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+    ],
+    "escapeAction": [],
+    "speakers": {
+        "player": {
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            },
+            "face": "q.player.face(true);"
+        },
+        "xerosic": {
+            "name": "Team Flare Xerosic",
+            "face": {
+                "type": "artificial",
+                "identifier": "cobblemon:xerosic",
+                "modelType": "npc",
+                "isLeftSide": true
+            }
+        },
+        "looker": {
+            "name": "Looker",
+            "face": {
+                "type": "artificial",
+                "identifier": "cobblemon:looker",
+                "modelType": "npc",
+                "isLeftSide": false
+            }
+        },
+        "emma": {
+            "name": "Emma",
+            "face": {
+                "type": "artificial",
+                "identifier": "cobblemon:emma",
+                "modelType": "npc",
+                "isLeftSide": false
+            }
+        },
+        "mimi": {
+            "name": "Mimi",
+            "face": {
+                "type": "artificial",
+                "identifier": "cobblemon:espurr",
+                "modelType": "npc",
+                "isLeftSide": false
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "xerosic",
+            "lines": [
+                "I'm telling you I gave them back! Every last one of them!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "looker",
+            "lines": [
+                "...Fine. If you really say that you returned all the Poké Balls that Essentia stole..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "xerosic",
+            "lines": [
+                "And I did! I returned them!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "xerosic",
+            "lines": [
+                "And I'm turning myself in without a fight, so just give me a minute!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "looker",
+            "lines": [
+                "There is no minute to give you! Our train is about to depart!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "xerosic",
+            "lines": [
+                "Haha! Here they come!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "looker",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'What? ' + q.player.username + '! Wh-why are you here?!';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page8');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "xerosic",
+            "lines": [
+                "Because I contacted Emma, of course!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page9');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page9",
+            "speaker": "xerosic",
+            "lines": [
+                "I'm sure she'll be here any minute, too!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page10');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page10",
+            "speaker": "emma",
+            "lines": [
+                "Where is he? Hold on! Wait for me, Mr. Looker!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud -294 108 443 2 2 2 1 100');",
+                            "q.run_command('particle cloud -296 108 444 2 2 2 1 100');",
+                            "q.run_command('execute unless entity @e[x=-294,y=108,z=443,dy=3,type=cobblemon:npc] run npcspawnat -294 108 443 looker_generic');",
+                            "q.run_command('execute unless entity @e[x=-296,y=108,z=444,dy=3,type=cobblemon:pokemon] run pokespawnat -296 108 444 espurr level=30 no_ai=yes uncatchable=yes');",
+                            "q.dialogue.set_page('page11a');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page11a",
+            "speaker": "xerosic",
+            "lines": [
+                "Good timing, Emma!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                          "q.run_command('execute as ' + q.player.username + ' if entity @s[tag=!RadioOff] run function kalos:triggers/stopsound');",
+                          "q.run_command('execute as ' + q.player.username + ' if entity @s[tag=!RadioOff] run playsound emmastheme record @s ~ ~ ~ 1 1 1');",
+                          "q.run_command('execute as ' + q.player.username + ' if entity @s[tag=!RadioOff] run scoreboard players set @s MusicCooldown 119');",
+                          "q.dialogue.set_page('page11b');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page11b",
+            "speaker": "emma",
+            "lines": [
+                "Mr. Looker, I've been searching everywhere for you!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page12');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page12",
+            "speaker": "emma",
+            "lines": [
+                "Please t-tell me why, please..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page13');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page13",
+            "speaker": "emma",
+            "lines": [
+                "Why did you lie to us? Why are you leaving us behind?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page14');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page14",
+            "speaker": "looker",
+            "lines": [
+                "I...I'm sorry, Emma..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page15');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page15",
+            "speaker": "looker",
+            "lines": [
+                "But my letter explains everything."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page16');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page16",
+            "speaker": "looker",
+            "lines": [
+                "I work for the International Police! I am a globe-trotting, crime-fighting elite!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page17');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page17",
+            "speaker": "looker",
+            "lines": [
+                "Wherever there is a case, I must go! Justice awaits!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page18');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page18",
+            "speaker": "emma",
+            "lines": [
+                "Then take me and Mimi with you. We'll join whatever police!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page19');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page19",
+            "speaker": "emma",
+            "lines": [
+                "We can be police or anything-- if only we can just stay together!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page20');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page20",
+            "speaker": "looker",
+            "lines": [
+                "Emma, I wish it could be like that."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page21');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page21",
+            "speaker": "looker",
+            "lines": [
+                "You can't come. It's not possible at all."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page22');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page22",
+            "speaker": "emma",
+            "lines": [
+                "Why not?! Why can't we?!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page23');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page23",
+            "speaker": "emma",
+            "lines": [
+                "I'm part of the Looker Bureau, too! I'm your assistant, aren't I?!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page24');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page24",
+            "speaker": "looker",
+            "lines": [
+                "In fact, the time has come for you to graduate from being my assistant."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page25');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page25",
+            "speaker": "looker",
+            "lines": [
+                "As of this moment, I name you the new head of the Looker Bureau!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page26');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page26",
+            "speaker": "emma",
+            "lines": [
+                "Wh-what?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page27');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page27",
+            "speaker": "looker",
+            "lines": [
+                "Listen to me, Emma. You were born and raised in this fair city."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page28');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page28",
+            "speaker": "looker",
+            "lines": [
+                "Every day of your life, you have been here."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page29');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page29",
+            "speaker": "looker",
+            "lines": [
+                "You are the only one who knows this city inside and out."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page30');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page30",
+            "speaker": "looker",
+            "lines": [
+                "No one else could do the things you can do for it!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page31');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page31",
+            "speaker": "looker",
+            "lines": [
+                "I pass my torch of brilliant detective-ing to you!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page32');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page32",
+            "speaker": "looker",
+            "lines": [
+                "Take my place, and keep protecting the peace of Lumiose City!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page33');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page33",
+            "speaker": "emma",
+            "lines": [
+                "But that's not fair at all!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page34');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page34",
+            "speaker": "emma",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'Come on, ' + q.player.username + '! Say something! Tell him he\\'s wrong!';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page35');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page35",
+            "speaker": "looker",
+            "lines": [
+                "Emma, please. I must ask you to respect the necessity of my decision."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page36');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page36",
+            "speaker": "looker",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'' + q.player.username + ' understands perfectly why I must go. It is the way of partners.';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page37');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page37",
+            "speaker": "looker",
+            "lines": [
+                "They are my partner. We understand each other."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('playsound espurr hostile ' + q.player.username + ' ~ ~ ~ 100 1 1');",
+                          "q.dialogue.set_page('page38');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page38",
+            "speaker": "mimi",
+            "lines": [
+                "Mrrrawrrr..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page39');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page39",
+            "speaker": "looker",
+            "lines": [
+                "Oh, Mimi... Please don't make a sad face on my account."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page40');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page40",
+            "speaker": "looker",
+            "lines": [
+                "No matter where I go, our bonds will never change."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page41');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page41",
+            "speaker": "looker",
+            "lines": [
+                "You will be my dear friends from the Looker Bureau, always and forever."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page42');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page42",
+            "speaker": "xerosic",
+            "lines": [
+                "Yes! That is it! Bonds!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page43');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page43",
+            "speaker": "xerosic",
+            "lines": [
+                "The preposterous notion which cannot be seen nor measured!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page44');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page44",
+            "speaker": "xerosic",
+            "lines": [
+                "And yet I cannot deny that they do still exist!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page45');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page45",
+            "speaker": "xerosic",
+            "lines": [
+                "Fear not, Emma, for I suspect that you will always be tied to the International Police by your bonds!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page46');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page46",
+            "speaker": "looker",
+            "lines": [
+                "Dr. Xerosic..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page47');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page47",
+            "speaker": "xerosic",
+            "lines": [
+                "Emma! I give you my Expansion Suit!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page48');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page48",
+            "speaker": "xerosic",
+            "lines": [
+                "I have removed the remote-control functionality, so you needn't worry!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page49');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page49",
+            "speaker": "xerosic",
+            "lines": [
+                "As the new head detective in town, please use your powers as Essentia to protect your beloved Lumiose City!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page50');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page50",
+            "speaker": "xerosic",
+            "lines": [
+                "And...and..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page51');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page51",
+            "speaker": "xerosic",
+            "lines": [
+                "Please take all of the Pokémon that I raised for so long! They are yours now!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page52');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page52",
+            "speaker": "emma",
+            "lines": [
+                "Dr. Xerosic... Dr. Xerosic, you've tried to do terrible things to the world, I guess."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page53');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page53",
+            "speaker": "emma",
+            "lines": [
+                "I find it hard to see you as that kind of person."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page54');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page54",
+            "speaker": "emma",
+            "lines": [
+                "I only became a Pokémon Trainer thanks to your being there for me."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page55');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page55",
+            "speaker": "emma",
+            "lines": [
+                "... ... ... I will always cherish your Pokémon and your suit, Dr. Xerosic."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page56');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page56",
+            "speaker": "emma",
+            "lines": [
+                "I won't forget our bonds, either..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page57');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page57",
+            "speaker": "looker",
+            "lines": [
+                "Everyone... I'm sorry, but..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page58');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page58",
+            "speaker": "looker",
+            "lines": [
+                "We are nearly out of time. Our train is due to depart."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page59');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page59",
+            "speaker": "emma",
+            "lines": [
+                "Mr. Looker... I think I understand..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page60');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page60",
+            "speaker": "emma",
+            "lines": [
+                "And I know what I'm gonna do. I'll keep on working hard for you."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page61');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page61",
+            "speaker": "emma",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'I\\'ve got Mimi and ' + q.player.username + ' to help me.';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page62');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page62",
+            "speaker": "emma",
+            "lines": [
+                "With Dr. Xerosic's Pokémon and Expansion Suit, I will become the new head of the Looker Bureau!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page63');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page63",
+            "speaker": "looker",
+            "lines": [
+                "I leave it in your hands, Emma!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page64');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page64",
+            "speaker": "looker",
+            "lines": [
+                "I'll rest easy, knowing you're on the case!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page65');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page65",
+            "speaker": "xerosic",
+            "lines": [
+                "Emma! Don't you mess this up, my girl!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page66');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page66",
+            "speaker": "looker",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'Ahem... ' + q.player.username + '! Emma! Mimi!';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page67');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page67",
+            "speaker": "looker",
+            "lines": [
+                "I entrust to you three the great task of protecting the peace of Lumiose City!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page68');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page68",
+            "speaker": "looker",
+            "lines": [
+                "Thank you for everything! Farewell, my friends!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                          "q.run_command('particle cloud -297 108 440 2 2 2 1 100');",
+                          "q.run_command('particle cloud -294 108 440 2 2 2 1 100');",
+                          "q.run_command('tp @e[x=-297,y=107,z=440,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                          "q.run_command('tp @e[x=-294,y=107,z=440,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                          "q.dialogue.set_page('page69');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page69",
+            "speaker": "emma",
+            "lines": [
+                "Thank you... And good-bye..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page70');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page70",
+            "speaker": "emma",
+            "lines": [
+                "That's enough..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                          "q.run_command('execute as ' + q.player.username + ' run effect give @s minecraft:blindness 5 1 true');",
+                          "q.run_command('execute as ' + q.player.username + ' run gamemode spectator @s');",
+                          "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                          "q.run_command('tp @e[x=-294,y=107,z=443,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                          "q.run_command('tp @e[x=-296,y=107,z=444,dy=3,type=cobblemon:pokemon] 10000000 -50000 -10000000');",
+                          "q.run_command('execute as ' + q.player.username + ' run tp @s -100 105 438 160 43');",
+                            "q.run_command('playsound espurr hostile ' + q.player.username + ' ~ ~ ~ 100 1 1');",
+                          "q.dialogue.set_page('page71');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page71",
+            "speaker": "mimi",
+            "lines": [
+                "Muuurrrawr..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page72');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page72",
+            "speaker": "emma",
+            "lines": [
+                "Hey, Mimi?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page73');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page73",
+            "speaker": "emma",
+            "lines": [
+                "You know, we've made a lot of really good friends since we left the alleys..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page74');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page74",
+            "speaker": "emma",
+            "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'' + q.player.username + ' and Mr. Looker... And Dr. Xerosic, too...';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('playsound espurr hostile ' + q.player.username + ' ~ ~ ~ 100 1 1');",
+                          "q.run_command('execute as ' + q.player.username + ' run tp @s -98.5 99.90 432 60 -5');",
+                          "q.dialogue.set_page('page75');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page75",
+            "speaker": "mimi",
+            "lines": [
+                "Mrawr! Mrawwwr!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page76');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page76",
+            "speaker": "emma",
+            "lines": [
+                "Mimi... Those two old guys really did everything for us..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page77');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page77",
+            "speaker": "emma",
+            "lines": [
+                "Do you think that's what it's like...to have a father?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('playsound espurr hostile ' + q.player.username + ' ~ ~ ~ 100 1 1');",
+                          "q.dialogue.set_page('page78');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page78",
+            "speaker": "mimi",
+            "lines": [
+                "Mrawr?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page79');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page79",
+            "speaker": "emma",
+            "lines": [
+                "Hehehe... Nothing. Never mind."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page80');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page80",
+            "speaker": "emma",
+            "lines": [
+                "Of course you wouldn't know any better than me, Mimi."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page81');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page81",
+            "speaker": "emma",
+            "lines": [
+                "But...I'm still glad. I'm glad we got to meet them."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                          "q.run_command('playsound espurr hostile ' + q.player.username + ' ~ ~ ~ 100 1 1');",
+                          "q.dialogue.set_page('page82');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page82",
+            "speaker": "mimi",
+            "lines": [
+                "Mrrrrrrawr!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run effect give @s minecraft:blindness 5 1 true');",
+                            "q.run_command('execute as ' + q.player.username + ' run tellraw @s {\"text\":\"Our story together ends here,\nbut their story is just the beginning...\",\"italic\":true,\"color\":\"gray\"}');",
+                            "q.run_command('execute as ' + q.player.username + ' run gamemode adventure @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -190 102 -634 -90 ~');",
+                            "q.run_command('execute as ' + q.player.username + ' run tag @s add LookerCooldown');",
+                            "q.run_command('execute as ' + q.player.username + ' run advancement grant @s only kalos:looker6');",
+                            "q.run_command('tag ' + q.player.username + ' add Dialogue217');",
+                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -342,12 +342,6 @@ execute as @p[x=-79,y=103,z=326,distance=..15,tag=Dialogue185,tag=Dialogue214] r
 execute as @p[x=-79,y=103,z=326,distance=..15,tag=!Dialogue185,tag=!Dialogue214] run execute as @e[x=-79,y=103,z=326,distance=..1,type=item_frame] run data modify entity @s {Item:{id:"minecraft:diamond_hoe",Count:1b,Damage:202s}}
 execute as @p[x=-79,y=103,z=326,distance=..15,tag=Dialogue185,tag=!Dialogue214] run execute as @e[x=-79,y=103,z=326,distance=..1,type=item_frame] run data modify entity @s {Item:{id:"minecraft:diamond_hoe",Count:1b,Damage:217s}}
 
-
-#Dialogue 216
-#Museum artist follow-up
-execute as @a[x=-83,y=77,z=355,distance=..7,scores={TalkTime=0},tag=Dialogue214,tag=!Dialogue216] run scoreboard players set @s DialogueTrigger 216
-
-
 #---------------------------------------------------------
 #Ribbons
 #/scoreboard players set @e[type=pixelmon:pixelmon,distance=..10] RibbonApply 11
