@@ -320,7 +320,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:protein 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 2');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 2');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -351,7 +351,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:calcium 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 2');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 2');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -382,7 +382,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:iron 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 2');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 2');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -413,7 +413,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:zinc 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 2');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 2');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -444,7 +444,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:carbos 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 2');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 2');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -475,7 +475,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:hp_up 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 2');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 2');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -506,7 +506,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:power_bracer 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 16');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 16');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -537,7 +537,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:power_belt 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 16');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 16');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -568,7 +568,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:power_lens 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 16');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 16');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -599,7 +599,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:power_band 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 16');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 16');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -630,7 +630,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:power_anklet 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 16');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 16');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -661,7 +661,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:power_weight 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 16');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 16');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -692,7 +692,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:toxic_orb 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 16');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 16');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -723,7 +723,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:flame_orb 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 16');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 16');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -754,7 +754,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:white_herb 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 32');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 32');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -785,7 +785,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:power_herb 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 32');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 32');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -816,7 +816,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:absorb_bulb 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 32');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 32');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -847,7 +847,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:cell_battery 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 32');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 32');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -878,7 +878,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:red_card 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 32');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 32');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -909,7 +909,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:eject_button 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 32');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 32');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -940,7 +940,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:weakness_policy 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 32');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 32');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -971,7 +971,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:ring_target 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 32');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 32');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -1002,7 +1002,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:protector 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 32');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 32');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -1033,7 +1033,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:whipped_dream 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 32');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 32');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -1064,7 +1064,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:sachet 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 32');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 32');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -1095,7 +1095,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:electirizer 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 32');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 32');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -1126,7 +1126,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:magmarizer 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 32');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 32');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -1157,7 +1157,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:reaper_cloth 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 32');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 32');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -1188,7 +1188,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:upgrade 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 32');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 32');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },
@@ -1219,7 +1219,7 @@
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:dubious_disc 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoint 32');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Battlepoints 32');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },

@@ -51,7 +51,7 @@ scoreboard players set @s Geosenge 0
 scoreboard players set @s LookerTickets 0
 scoreboard players set @s RestaurantBattle 0
 scoreboard players set @s BattleStreak 0
-scoreboard players set @s BattlePoint 0
+scoreboard players set @s Battlepoints 0
 scoreboard players set @s BattleMaison 0
 scoreboard players set @s PlayedDays 0
 scoreboard players set @s TalkTime 0

@@ -20,7 +20,7 @@
 #RNG rolls for trainer's Pokemon based on Regular/Super tags
 #entitydata changes the trainer's Pokemon
 #RNG rolls for trainer's name and skin based on current streak
-#If player wins, apply a MaisonWin tag, add a BattleStreak and BattlePoint score, rolls again for another trainer
+#If player wins, apply a MaisonWin tag, add a BattleStreak and Battlepoints score, rolls again for another trainer
 #If player loses, apply a MaisonLose tag, ends BattleStreak score from counting
 #When no players are found on stage,
 
@@ -94,32 +94,32 @@ scoreboard players add @s BattleStreak 1
 
 
 #Adds a Battle Point to the player (unsure if this should just be a /give item command)
-execute as @s[scores={BattleMaison=1,BattleStreak=1..10}] run scoreboard players add @s BattlePoint 1
-execute as @s[scores={BattleMaison=1,BattleStreak=11..19}] run scoreboard players add @s BattlePoint 2
-execute as @s[scores={BattleMaison=1,BattleStreak=20}] run scoreboard players add @s BattlePoint 20
-execute as @s[scores={BattleMaison=1,BattleStreak=21..}] run scoreboard players add @s BattlePoint 3
+execute as @s[scores={BattleMaison=1,BattleStreak=1..10}] run scoreboard players add @s Battlepoints 1
+execute as @s[scores={BattleMaison=1,BattleStreak=11..19}] run scoreboard players add @s Battlepoints 2
+execute as @s[scores={BattleMaison=1,BattleStreak=20}] run scoreboard players add @s Battlepoints 20
+execute as @s[scores={BattleMaison=1,BattleStreak=21..}] run scoreboard players add @s Battlepoints 3
 
-execute as @s[scores={BattleMaison=2,BattleStreak=1..10}] run scoreboard players add @s BattlePoint 2
-execute as @s[scores={BattleMaison=2,BattleStreak=11..20}] run scoreboard players add @s BattlePoint 3
-execute as @s[scores={BattleMaison=2,BattleStreak=21..30}] run scoreboard players add @s BattlePoint 4
-execute as @s[scores={BattleMaison=2,BattleStreak=31..40}] run scoreboard players add @s BattlePoint 5
-execute as @s[scores={BattleMaison=2,BattleStreak=41..49}] run scoreboard players add @s BattlePoint 6
-execute as @s[scores={BattleMaison=2,BattleStreak=50..50}] run scoreboard players add @s BattlePoint 50
-execute as @s[scores={BattleMaison=2,BattleStreak=51..}] run scoreboard players add @s BattlePoint 7
+execute as @s[scores={BattleMaison=2,BattleStreak=1..10}] run scoreboard players add @s Battlepoints 2
+execute as @s[scores={BattleMaison=2,BattleStreak=11..20}] run scoreboard players add @s Battlepoints 3
+execute as @s[scores={BattleMaison=2,BattleStreak=21..30}] run scoreboard players add @s Battlepoints 4
+execute as @s[scores={BattleMaison=2,BattleStreak=31..40}] run scoreboard players add @s Battlepoints 5
+execute as @s[scores={BattleMaison=2,BattleStreak=41..49}] run scoreboard players add @s Battlepoints 6
+execute as @s[scores={BattleMaison=2,BattleStreak=50..50}] run scoreboard players add @s Battlepoints 50
+execute as @s[scores={BattleMaison=2,BattleStreak=51..}] run scoreboard players add @s Battlepoints 7
 
 
-execute as @s[scores={BattleMaison=3,BattleStreak=1..10}] run scoreboard players add @s BattlePoint 1
-execute as @s[scores={BattleMaison=3,BattleStreak=11..19}] run scoreboard players add @s BattlePoint 2
-execute as @s[scores={BattleMaison=3,BattleStreak=20}] run scoreboard players add @s BattlePoint 20
-execute as @s[scores={BattleMaison=3,BattleStreak=21..}] run scoreboard players add @s BattlePoint 3
+execute as @s[scores={BattleMaison=3,BattleStreak=1..10}] run scoreboard players add @s Battlepoints 1
+execute as @s[scores={BattleMaison=3,BattleStreak=11..19}] run scoreboard players add @s Battlepoints 2
+execute as @s[scores={BattleMaison=3,BattleStreak=20}] run scoreboard players add @s Battlepoints 20
+execute as @s[scores={BattleMaison=3,BattleStreak=21..}] run scoreboard players add @s Battlepoints 3
 
-execute as @s[scores={BattleMaison=4,BattleStreak=1..10}] run scoreboard players add @s BattlePoint 2
-execute as @s[scores={BattleMaison=4,BattleStreak=11..20}] run scoreboard players add @s BattlePoint 3
-execute as @s[scores={BattleMaison=4,BattleStreak=21..30}] run scoreboard players add @s BattlePoint 4
-execute as @s[scores={BattleMaison=4,BattleStreak=31..40}] run scoreboard players add @s BattlePoint 5
-execute as @s[scores={BattleMaison=4,BattleStreak=41..49}] run scoreboard players add @s BattlePoint 6
-execute as @s[scores={BattleMaison=4,BattleStreak=50..50}] run scoreboard players add @s BattlePoint 50
-execute as @s[scores={BattleMaison=4,BattleStreak=51..}] run scoreboard players add @s BattlePoint 7
+execute as @s[scores={BattleMaison=4,BattleStreak=1..10}] run scoreboard players add @s Battlepoints 2
+execute as @s[scores={BattleMaison=4,BattleStreak=11..20}] run scoreboard players add @s Battlepoints 3
+execute as @s[scores={BattleMaison=4,BattleStreak=21..30}] run scoreboard players add @s Battlepoints 4
+execute as @s[scores={BattleMaison=4,BattleStreak=31..40}] run scoreboard players add @s Battlepoints 5
+execute as @s[scores={BattleMaison=4,BattleStreak=41..49}] run scoreboard players add @s Battlepoints 6
+execute as @s[scores={BattleMaison=4,BattleStreak=50..50}] run scoreboard players add @s Battlepoints 50
+execute as @s[scores={BattleMaison=4,BattleStreak=51..}] run scoreboard players add @s Battlepoints 7
 
 
 
