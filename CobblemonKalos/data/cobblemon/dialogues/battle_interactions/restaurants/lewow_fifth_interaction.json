@@ -1,0 +1,48 @@
+{
+    "initializationAction": [
+        "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 34');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+        "v.battle = q.npc.start_battle(q.player);"
+    ],
+    "escapeAction": [
+        "q.dialogue.close();"
+    ],
+    "speakers": {
+        "player": {
+            "face": "q.player.face(true);",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        },
+        "npc": {
+            "name": "Skiddo",
+            "face": {
+                "type": "artificial",
+                "identifier": "cobblemon:skiddo",
+                "modelType": "npc",
+                "isLeftSide": false
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "     "
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        }
+    ]
+}

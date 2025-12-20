@@ -1,11 +1,11 @@
 {
     "speakers": {
         "npc": {
-            "name": "Restaurant Le Nah",
+            "name": "Restaurant Le Wow",
             "face": {
                 "type": "artificial",
                 "modelType": "npc",
-                "identifier": "cobblemon:dress",
+                "identifier": "cobblemon:lass",
                 "isLeftSide": true
             }
         }
@@ -15,24 +15,17 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                "Welcome to Restaurant Le Nah. Our flavors will never overwhelm your palate."
+                "We are proud to offer only the best. Welcome to Restaurant Le Wow."
             ],
             "input": {
                 "type": "option",
-                "vertical": true,
+                "vertical": false,
                 "options": [
                     {
-                        "text": "I’d like to dine",
-                        "value": "dine",
+                        "text": "Next",
+                        "value": "next",
                         "action": [
                             "q.dialogue.set_page('page2');"
-                        ]
-                    },
-                    {
-                        "text": "Another time",
-                        "value": "leave",
-                        "action": [
-                            "q.dialogue.set_page('end');"
                         ]
                     }
                 ]
@@ -42,17 +35,37 @@
             "id": "page2",
             "speaker": "npc",
             "lines": [
-                "Your first taste is on the house, naturally—but you'll be facing off against Pokemon!"
+                "Our premier offering, for the selective gourmet, is a full five-fourse banquet of Pokemon battles."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page3');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "This culinary combat challenge is complimentary for first-time patrons. Would you care to try it?"
             ],
             "input": {
                 "type": "option",
                 "vertical": true,
                 "options": [
                     {
-                        "text": "I'll try it",
+                        "text": "I’d like to dine",
                         "value": "next",
                         "action": [
-                            "q.dialogue.set_page('page3');"
+                            "q.dialogue.set_page('page4');"
                         ]
                     },
                     {
@@ -66,10 +79,10 @@
             }
         },
         {
-            "id": "page3",
+            "id": "page4",
             "speaker": "npc",
             "lines": [
-                "I’m delighted to hear it. Please follow me this way."
+                "A wonderful choice, if I may say so. Allow me to show you to your seat."
             ],
             "input": {
                 "type": "option",
@@ -79,9 +92,9 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
-                            "q.run_command('execute as ' + q.player.username + ' run tp @s -189 101 157 0 ~');",
-                            "q.run_command('execute as ' + q.player.username + ' run particle cloud -185 101 158 2 2 2 1 100');",
-                            "q.run_command('execute unless entity @e[x=-185,y=100,z=158,dy=3,type=cobblemon:npc] run npcspawnat -185 101 158 lenah_first');",
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -290.29 101.00 157.50 -72.90 12.15');",
+                            "q.run_command('execute as ' + q.player.username + ' run particle cloud -287 101 158 2 2 2 1 100');",
+                            "q.run_command('execute unless entity @e[x=-287,y=100,z=158,dy=3,type=cobblemon:npc] run npcspawnat -287 101 158 lewow_first');",
                             "q.dialogue.close();"
                         ]
                     }
@@ -93,7 +106,7 @@
             "id": "end",
             "speaker": "npc",
             "lines": [
-                "We’re always waiting for your next visit."
+                "We always look forward to your visits."
             ],
             "input": {
                 "type": "option",

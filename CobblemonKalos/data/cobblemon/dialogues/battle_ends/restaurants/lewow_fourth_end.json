@@ -1,0 +1,183 @@
+{
+    "initializationAction": [
+        "c.npc.set_chatting();",
+        "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 3');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+        "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $4032 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
+        "q.run_command('scoreboard players add ' + q.player.username + ' Money 4032');"
+    ],
+    "speakers": {
+        "npc": {
+            "name": "Morris",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:waiter",
+                "isLeftSide": true
+            }
+        },
+        "player": {
+            "face": "q.player.face(true);",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        },
+        "skiddo": {
+            "name": "Skiddo",
+            "face": {
+                "type": "artificial",
+                "identifier": "cobblemon:skiddo",
+                "modelType": "npc",
+                "isLeftSide": false
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "Thank you for the wonderful battle."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "The merciless way you command a battle is as focused as a Pyroar hunting a Bunnelby."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud -287 101 158 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-287,y=100,z=158,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('execute as ' + q.player.username + ' run effect give @s minecraft:blindness 5 1 true');",
+                            "q.dialogue.set_page('page3');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "player",
+            "lines": [
+                "You ate the food."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound cobblemon:item.medicine.candy.use ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run pokeheal');",
+                            "q.run_command('execute unless entity @e[x=-287,y=100,z=158,dy=3,type=cobblemon:npc] run pokespawnat -287 101 156 skiddo level=30 no_ai=yes uncatchable=yes');",
+                            "q.run_command('execute positioned -287 101 156 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:\"cobblemon:skiddo\"}}] run data modify entity @s Unbattleable set value 1b');",
+                            "q.run_command('execute positioned -287 101 156 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:\"cobblemon:skiddo\"}}] run data modify entity @s Invulnerable set value 1b');",
+                            "q.dialogue.set_page('page4');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "skiddo",
+            "lines": [
+                "Thank you for your patience. May I present the day's fromage?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "skiddo",
+            "lines": [
+                "This sublime Tomme cheese has been made using the milk of the Skiddo before you."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "skiddo",
+            "lines": [
+                "It will taste its most delicious if you can begin eating it in precisely 60 seconds."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "player",
+            "lines": [
+                "That's what it says on the paper that the Skiddo appears to be eating..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('particle cloud -287 101 157 2 2 2 1 100');",
+                            "q.run_command('execute unless entity @e[x=-287,y=100,z=158,dy=3,type=cobblemon:npc] run npcspawnat -287 101 158 lewow_fifth');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "escapeAction": []
+}
