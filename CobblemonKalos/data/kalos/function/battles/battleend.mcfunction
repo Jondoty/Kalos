@@ -3,6 +3,13 @@
 
 scoreboard players set @s BattleStart 0
 
+
+#Tells player their money count after each battle
+tellraw @s[scores={BattleEnd=1..3}] ["",{"text":"You now have $","italic":true,"color":"gray"},{"score":{"name":"*","objective":"Money"},"italic":true,"color":"gray"}]
+tellraw @s[scores={BattleEnd=5}] ["",{"text":"You now have $","italic":true,"color":"gray"},{"score":{"name":"*","objective":"Money"},"italic":true,"color":"gray"}]
+
+
+
 #1 - Team Flare Win
 execute as @s[tag=!RadioOff,scores={BattleEnd=1}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleEnd=1}] run playsound flarewin record @s ~ ~ ~ 1 1 1

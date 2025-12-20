@@ -61,6 +61,11 @@ execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={DayTime=1
 tag @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={DayTime=..1000},tag=DailyExecuted] remove DailyExecuted
 
 
+#Displays the player's Battle Points or Money if in a shop that uses them
+title @a[team=shops] actionbar ["",{"text":"Your Money Balance: $"},{"score":{"name":"*","objective":"Money"}}]
+title @a[team=battlepoints] actionbar ["",{"text":"Your Battle Points: "},{"score":{"name":"*","objective":"BattlePoints"}}]
+
+
 #---------------------------------------------------------
 #HMs/Important item functions
 
