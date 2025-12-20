@@ -4,10 +4,9 @@
 scoreboard players set @s BattleStart 0
 
 
-#Tells player their money count after each battle
-tellraw @s[scores={BattleEnd=1..3}] ["",{"text":"You now have $","italic":true,"color":"gray"},{"score":{"name":"*","objective":"Money"},"italic":true,"color":"gray"}]
-tellraw @s[scores={BattleEnd=5}] ["",{"text":"You now have $","italic":true,"color":"gray"},{"score":{"name":"*","objective":"Money"},"italic":true,"color":"gray"}]
-
+#Tells player their money count after each battle, unless in the Battle Maison.
+execute as @s[scores={BattleEnd=1..3}] unless entity @s[x=1182,y=63,z=1511,dx=76,dy=31,dz=94] run tellraw @s ["",{"text":"You now have $","italic":true,"color":"gray"},{"score":{"name":"*","objective":"Money"},"italic":true,"color":"gray"}]
+execute as @s[scores={BattleEnd=5}] unless entity @s[x=1182,y=63,z=1511,dx=76,dy=31,dz=94] run tellraw @s ["",{"text":"You now have $","italic":true,"color":"gray"},{"score":{"name":"*","objective":"Money"},"italic":true,"color":"gray"}]
 
 
 #1 - Team Flare Win

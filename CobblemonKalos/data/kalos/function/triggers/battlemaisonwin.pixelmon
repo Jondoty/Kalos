@@ -262,10 +262,6 @@ execute as @s[scores={BattleMaison=3..4}] run function kalos:data/maisondoubles
 
 
 
-#Tells player their Battle Streak
-execute as @s run function kalos:data/maisonstreak
-playsound minecraft:entity.player.levelup ambient @s ~ ~ ~ 100 1 1
-
 
 
 

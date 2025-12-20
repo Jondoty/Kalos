@@ -35,7 +35,7 @@ execute as @s[scores={TriggerCommand=2..5}] run function kalos:triggers/stopsoun
 execute as @s[scores={TriggerCommand=2..5}] run scoreboard players add @s BattleStreak 1
 execute as @s[scores={TriggerCommand=2..5}] run particle cloud 1217 75 1545 1 1 1 1 25
 execute as @s[scores={TriggerCommand=2..5}] run tp @e[x=1217,y=75,z=1545,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
-execute as @s[scores={TriggerCommand=2..5}] run function kalos:data/maisonstreak
+execute as @s[scores={TriggerCommand=2..5}] run tellraw @s ["",{"text":"Your battle streak increased to ","italic":true,"color":"gray"},{"score":{"name":"*","objective":"BattleStreak"},"italic":true,"color":"gray"},{"text":"!","italic":true,"color":"gray"}]
 
 #Refreshes new NPC
 execute as @s[scores={TriggerCommand=2..5,BattleMaison=1}] run npcspawnat 1217 75 1545 battlemaison_single
@@ -52,10 +52,10 @@ execute as @s[scores={TriggerCommand=2,BattleStreak=11..19}] run scoreboard play
 execute as @s[scores={TriggerCommand=2,BattleStreak=20}] run scoreboard players add @s BattlePoints 20
 execute as @s[scores={TriggerCommand=2,BattleStreak=21..}] run scoreboard players add @s BattlePoints 3
 
-execute as @s[scores={TriggerCommand=2,BattleStreak=1..10}] run tellraw @s {"text":"You received 1 battle point for winning!","italic":true,"color":"gray"}
-execute as @s[scores={TriggerCommand=2,BattleStreak=11..19}] run tellraw @s {"text":"You received 2 battle points for winning!","italic":true,"color":"gray"}
-execute as @s[scores={TriggerCommand=2,BattleStreak=20}] run tellraw @s {"text":"You received 20 battle points for winning!","italic":true,"color":"gray"}
-execute as @s[scores={TriggerCommand=2,BattleStreak=21..}] run tellraw @s {"text":"You received 3 battle points for winning!","italic":true,"color":"gray"}
+execute as @s[scores={TriggerCommand=2,BattleStreak=1..10}] run tellraw @s ["",{"text":"You received 1 battle point for winning! You now have ","italic":true,"color":"gray"},{"score":{"name":"*","objective":"BattlePoints"},"italic":true,"color":"gray"},{"text":"BP.","italic":true,"color":"gray"}]
+execute as @s[scores={TriggerCommand=2,BattleStreak=11..19}] run tellraw @s ["",{"text":"You received 2 battle point for winning! You now have ","italic":true,"color":"gray"},{"score":{"name":"*","objective":"BattlePoints"},"italic":true,"color":"gray"},{"text":"BP.","italic":true,"color":"gray"}]
+execute as @s[scores={TriggerCommand=2,BattleStreak=20}] run tellraw @s ["",{"text":"You received 20 battle point for winning! You now have ","italic":true,"color":"gray"},{"score":{"name":"*","objective":"BattlePoints"},"italic":true,"color":"gray"},{"text":"BP.","italic":true,"color":"gray"}]
+execute as @s[scores={TriggerCommand=2,BattleStreak=21..}] run tellraw @s ["",{"text":"You received 3 battle point for winning! You now have ","italic":true,"color":"gray"},{"score":{"name":"*","objective":"BattlePoints"},"italic":true,"color":"gray"},{"text":"BP.","italic":true,"color":"gray"}]
 
 
 #3 - Awards Battle Points and swaps out Single Super trainers
@@ -64,10 +64,10 @@ execute as @s[scores={TriggerCommand=3,BattleStreak=11..19}] run scoreboard play
 execute as @s[scores={TriggerCommand=3,BattleStreak=20}] run scoreboard players add @s BattlePoints 50
 execute as @s[scores={TriggerCommand=3,BattleStreak=21..}] run scoreboard players add @s BattlePoints 8
 
-execute as @s[scores={TriggerCommand=3,BattleStreak=1..10}] run tellraw @s {"text":"You received 2 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={TriggerCommand=3,BattleStreak=11..20}] run tellraw @s {"text":"You received 4 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={TriggerCommand=3,BattleStreak=20}] run tellraw @s {"text":"You received 50 battle points!","italic":true,"color":"gray"}
-execute as @s[scores={TriggerCommand=3,BattleStreak=21..}] run tellraw @s {"text":"You received 8 battle points!","italic":true,"color":"gray"}
+execute as @s[scores={TriggerCommand=3,BattleStreak=1..10}] run tellraw @s ["",{"text":"You received 2 battle point for winning! You now have ","italic":true,"color":"gray"},{"score":{"name":"*","objective":"BattlePoints"},"italic":true,"color":"gray"},{"text":"BP.","italic":true,"color":"gray"}]
+execute as @s[scores={TriggerCommand=3,BattleStreak=11..20}] run tellraw @s ["",{"text":"You received 4 battle point for winning! You now have ","italic":true,"color":"gray"},{"score":{"name":"*","objective":"BattlePoints"},"italic":true,"color":"gray"},{"text":"BP.","italic":true,"color":"gray"}]
+execute as @s[scores={TriggerCommand=3,BattleStreak=20}] run tellraw @s ["",{"text":"You received 50 battle point for winning! You now have ","italic":true,"color":"gray"},{"score":{"name":"*","objective":"BattlePoints"},"italic":true,"color":"gray"},{"text":"BP.","italic":true,"color":"gray"}]
+execute as @s[scores={TriggerCommand=3,BattleStreak=21..}] run tellraw @s ["",{"text":"You received 8 battle point for winning! You now have ","italic":true,"color":"gray"},{"score":{"name":"*","objective":"BattlePoints"},"italic":true,"color":"gray"},{"text":"BP.","italic":true,"color":"gray"}]
 
 
 
