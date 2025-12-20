@@ -1,0 +1,60 @@
+{
+  "initializationAction": [],
+  "escapeAction": [
+    "q.dialogue.close();"
+  ],
+  "names": [
+    "Roger"
+  ],
+  "speakers": {
+    "npc": {
+      "name": {
+        "type": "expression",
+        "expression": "q.npc.name"
+      },
+      "face": "q.npc.face();"
+    }
+  },
+  "pages": [
+    {
+      "id": "greeting",
+      "speaker": "npc",
+      "lines": [
+        "Your main course..."
+      ],
+      "input": {
+        "type": "option",
+        "vertical": false,
+        "options": [
+          {
+            "text": "Next",
+            "value": "next",
+            "action": "q.dialogue.set_page('page2');"
+          }
+        ]
+      }
+    },
+    {
+      "id": "page2",
+      "speaker": "npc",
+      "lines": [
+        "The fish was caught just this morning and has been delicately breaded and panfried."
+      ],
+      "input": {
+        "type": "option",
+        "vertical": false,
+        "options": [
+          {
+            "text": "§c⚔ Battle ⚔§r",
+            "value": "battle",
+            "action": [
+              "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 34');",
+              "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+              "v.battle = q.npc.start_battle(q.player);"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

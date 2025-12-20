@@ -1,0 +1,114 @@
+{
+    "speakers": {
+        "npc": {
+            "name": "Restaurant Le Nah",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:dress",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "Welcome to Restaurant Le Nah. Our flavors will never overwhelm your palate."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "I’d like to dine",
+                        "value": "dine",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    },
+                    {
+                        "text": "Another time",
+                        "value": "leave",
+                        "action": [
+                            "q.dialogue.set_page('end');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "Your first taste is on the house, naturally—but you'll be facing off against Pokemon!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "I'll try it",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page3');"
+                        ]
+                    },
+                    {
+                        "text": "Another time",
+                        "value": "leave",
+                        "action": [
+                            "q.dialogue.set_page('end');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "I’m delighted to hear it. Please follow me this way."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -189 101 157 0 ~');",
+                            "q.run_command('execute as ' + q.player.username + ' run particle cloud -185 101 158 2 2 2 1 100');",
+                            "q.run_command('execute unless entity @e[x=-185,y=100,z=158,dy=3,type=cobblemon:npc] run npcspawnat -185 101 158 lenah_first');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 3000');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "end",
+            "speaker": "npc",
+            "lines": [
+                "We’re always waiting for your next visit."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

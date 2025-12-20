@@ -213,7 +213,12 @@ execute as @s[x=-306,y=28,z=280,dx=22,dy=20,dz=47,tag=Dialogue202,tag=Dialogue20
 
 
 
-
+#Restaurants
+#Checks if there is currently servers on the floor, if not opens up.
+#Le Nah
+execute as @s[x=-195,y=101,z=174,distance=..6,tag=!Dialogue245] unless entity @e[x=-185,y=100,z=158,dy=3,type=cobblemon:npc] run opendialogue lenah_frontdesk_first_interaction @s
+execute as @s[x=-195,y=101,z=174,distance=..6,tag=Dialogue245] unless entity @e[x=-185,y=100,z=158,dy=3,type=cobblemon:npc] run opendialogue lenah_frontdesk_additional_interaction @s
+execute as @s[x=-195,y=101,z=174,distance=..6] if entity @e[x=-185,y=100,z=158,dy=3,type=cobblemon:npc] run opendialogue lenah_frontdesk_busy @s
 
 
 
