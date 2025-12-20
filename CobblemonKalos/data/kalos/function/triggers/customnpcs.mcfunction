@@ -220,6 +220,20 @@ execute as @s[x=-195,y=101,z=174,distance=..6,tag=!Dialogue245] unless entity @e
 execute as @s[x=-195,y=101,z=174,distance=..6,tag=Dialogue245] unless entity @e[x=-185,y=100,z=158,dy=3,type=cobblemon:npc] run opendialogue lenah_frontdesk_additional_interaction @s
 execute as @s[x=-195,y=101,z=174,distance=..6] if entity @e[x=-185,y=100,z=158,dy=3,type=cobblemon:npc] run opendialogue lenah_frontdesk_busy @s
 
+#Le Yeah
+execute as @s[x=-404,y=101,z=174,distance=..6,tag=!Dialogue250] unless entity @e[x=-394,y=100,z=158,dy=3,type=cobblemon:npc] run opendialogue leyeah_frontdesk_first_interaction @s
+execute as @s[x=-404,y=101,z=174,distance=..6,tag=Dialogue250] unless entity @e[x=-394,y=100,z=158,dy=3,type=cobblemon:npc] run opendialogue leyeah_frontdesk_additional_interaction @s
+execute as @s[x=-404,y=101,z=174,distance=..6] if entity @e[x=-394,y=100,z=158,dy=3,type=cobblemon:npc] run opendialogue leyeah_frontdesk_busy @s
+
+#Le Wow
+execute as @s[x=-296,y=101,z=174,distance=..6,tag=!Dialogue256] unless entity @e[x=-287,y=100,z=158,dy=3,type=cobblemon:npc] run opendialogue lewow_frontdesk_first_interaction @s
+execute as @s[x=-296,y=101,z=174,distance=..6,tag=Dialogue256] unless entity @e[x=-287,y=100,z=158,dy=3,type=cobblemon:npc] run opendialogue lewow_frontdesk_additional_interaction @s
+execute as @s[x=-296,y=101,z=174,distance=..6] if entity @e[x=-287,y=100,z=158,dy=3,type=cobblemon:npc] run opendialogue lewow_frontdesk_busy @s
+
+#Sushi High Roller
+execute as @s[x=-491,y=101,z=174,distance=..6,tag=!Dialogue262] unless entity @e[x=-481,y=100,z=158,dy=3,type=cobblemon:npc] run opendialogue highroller_frontdesk_first_interaction @s
+execute as @s[x=-491,y=101,z=174,distance=..6,tag=Dialogue262] unless entity @e[x=-481,y=100,z=158,dy=3,type=cobblemon:npc] run opendialogue highroller_frontdesk_additional_interaction @s
+execute as @s[x=-491,y=101,z=174,distance=..6] if entity @e[x=-481,y=100,z=158,dy=3,type=cobblemon:npc] run opendialogue highroller_frontdesk_busy @s
 
 
 

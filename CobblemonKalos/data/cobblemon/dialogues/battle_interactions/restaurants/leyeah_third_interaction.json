@@ -1,0 +1,147 @@
+{
+    "initializationAction": [],
+    "escapeAction": [
+        "q.dialogue.close();"
+    ],
+    "speakers": {
+        "npc": {
+            "name": {
+                "type": "expression",
+                "expression": "q.npc.name"
+            },
+            "face": "q.npc.face();"
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "Excuse the intrusion, but I am one of the Owners of this fine restaurant."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "How are you enjoying your meal so far? I hope it's to your liking."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "Next is the viande portion of the meal, with our Chef's compliments."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "npc",
+            "lines": [
+                "A braciole of fresh, Azure Bay Slowpoke Tail."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "npc",
+            "lines": [
+                "It's accompanied by Payapa Berry crudités glazed in an extra-virgin Oran oil,"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "npc",
+            "lines": [
+                "and has been described as the gastronomical equivalent of a Gastly glaring at a Hex Maniac."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "npc",
+            "lines": [
+                "To keep you entertained, please join me in a Pokémon battle."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "§c⚔ Battle ⚔§r",
+                        "value": "battle",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 34');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "v.battle = q.npc.start_battle(q.player);"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

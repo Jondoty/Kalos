@@ -1,0 +1,147 @@
+{
+    "initializationAction": [],
+    "escapeAction": [
+        "q.dialogue.close();"
+    ],
+    "speakers": {
+        "npc": {
+            "name": {
+                "type": "expression",
+                "expression": "q.npc.name"
+            },
+            "face": "q.npc.face();"
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "Excuse the interruption, but I am the \u201cchef de cuisine\u201d and one of the Owners here at Restaurant Le Yeah."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "I wished to step out and thank you in person for dining with us today."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "The fromage course, hand selected by myself, will conclude your meal."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page4');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "npc",
+            "lines": [
+                "This is the ultimate in hard cheese, aged up to 180 years."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "npc",
+            "lines": [
+                "Simply biting into this blue cheese will give off an odor so foul, your nose hairs will burn."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "npc",
+            "lines": [
+                "Enjoy our washed-rind cheese made using a female Arbok's Toxic poison!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "npc",
+            "lines": [
+                "Please join me in an entertaining battle, won't you?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "§c⚔ Battle ⚔§r",
+                        "value": "battle",
+                        "action": [
+                            "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 34');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "v.battle = q.npc.start_battle(q.player);"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

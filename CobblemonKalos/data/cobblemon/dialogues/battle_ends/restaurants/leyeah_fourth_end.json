@@ -1,0 +1,187 @@
+{
+    "initializationAction": [
+        "c.npc.set_chatting();",
+        "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 3');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+        "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $1984 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
+        "q.run_command('scoreboard players add ' + q.player.username + ' Money 1984');"
+    ],
+    "speakers": {
+        "npc": {
+            "name": "Albern",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:chef",
+                "isLeftSide": true
+            }
+        },
+        "player": {
+            "face": "q.player.face(true);",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        },
+        "owner": {
+            "name": "Owner Yannick",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:monsieur",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "That was quite the experience... I do hope that you come again."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "For now, I leave you to enjoy the rest of your meal in peace."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud -394 101 158 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-394,y=100,z=158,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('execute as ' + q.player.username + ' run effect give @s minecraft:blindness 5 1 true');",
+                            "q.dialogue.set_page('page3');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "player",
+            "lines": [
+                "You ate the food."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud -394 101 158 2 2 2 1 100');",
+                            "q.run_command('execute unless entity @e[x=-394,y=101,z=158,dy=3,type=cobblemon:npc] run npcspawnat -394 101 158 monsieur_generic');",
+                            "q.dialogue.set_page('page4');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "owner",
+            "lines": [
+                "How was your meal? It really hit the spot, yeah?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page5');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "owner",
+            "lines": [
+                "Here is a little dessert to cleanse your palate:"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page6');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "owner",
+            "lines": [
+                "Berry sorbet made from fresh Spelon Berries and Rawst Berries, with tangy herbs in a whipped-mousse dressing."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page7');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "owner",
+            "lines": [
+                "Thank you again for choosing us for your meal. All of our staff eagerly await your return!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('particle cloud -394 101 158 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-394,y=100,z=158,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('execute as ' + q.player.username + ' run tag @s add Dialogue250');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "escapeAction": []
+}
