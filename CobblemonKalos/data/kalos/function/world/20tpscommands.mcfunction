@@ -43,15 +43,17 @@ execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={DayTime=1
 execute if entity @a[x=-242,y=91,z=-2026,dx=180,dy=3,dz=188,limit=1] run function kalos:data/factorymotion
 
 
-#Sycamore's cutscene timings
-execute if entity @a[x=-1034,y=99,z=1432,dx=50,dy=50,dz=50,scores={DialogueTrigger=266}] run function kalos:cutscenes/welcomeintro
-
 
 #Road Blocks
 #Route 7 Sleeping Snorlax
 tellraw @a[x=-1305,y=100,z=-39,dx=6,dy=10,dz=6,tag=!Dialogue32] {"text":"There is a large Pokémon sleeping peacefully. It looks so content!","italic":true,"color":"gray"}
 execute as @a[x=-1305,y=100,z=-39,dx=6,dy=10,dz=6,tag=!Dialogue32] at @s run tp @s ~10 ~ ~
 
+
+#---------------------------------------------------------
+#Story & Cutscenes
+#Runs opening cutscene
+execute as @a[x=-1034,y=99,z=1432,dx=50,dy=50,dz=50,scores={DialogueTrigger=266}] run function kalos:cutscenes/welcomeintro
 
 #AZ Cutscene Camera Movements
 execute as @a[x=-383,y=100,z=366,dx=6,dy=5,dz=7] at @s run tp @s ~ ~ ~-0.005

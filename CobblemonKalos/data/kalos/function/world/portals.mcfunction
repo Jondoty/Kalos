@@ -3,7 +3,7 @@ tp @s[tag=!InitialTags] -552 100 1257
 
 #Lobby to Sycamore Welcome scene
 execute as @s[x=-764,y=102,z=1208,dy=3,dz=3,tag=!Dialogue266] run gamemode spectator @s
-#execute as @s[x=-764,y=102,z=1208,dy=3,dz=3,tag=!Dialogue266] run scoreboard players set @s DialogueTrigger 266
+execute as @s[x=-764,y=102,z=1208,dy=3,dz=3,tag=!Dialogue266] run scoreboard players set @s DialogueTrigger 266
 tp @s[x=-764,y=102,z=1208,dy=3,dz=3,tag=!Dialogue266] -1009 125 1457 180 90
 
 #Lobby to Vaniville

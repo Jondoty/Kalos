@@ -8,7 +8,7 @@
 execute as @s[scores={score_DialogueTrigger=1..,TalkTime=0}] run function kalos:dialogue/duplicateend
 
 #Adds timings
-scoreboard players add @a[scores={DialogueTrigger=1..}] TalkTime 1
+scoreboard players add @s[scores={DialogueTrigger=1..}] TalkTime 1
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Dialogue 32, Pardfum Palace Firework Show

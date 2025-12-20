@@ -111,7 +111,7 @@ execute as @a run function kalos:hms/strengthpit
 execute as @a[tag=!InDialogue] run function kalos:dialogue/dialoguetriggers
 
 #Primary Dialogue function
-execute as @a[scores={DialogueTrigger=1..}] run function kalos:dialogue/dialogue
+execute as @a[scores={DialogueTrigger=1..265}] run function kalos:dialogue/dialogue
 
 #Holo Caster Calls
 execute as @a[tag=!InDialogue,scores={HoloCall=1..}] run function kalos:dialogue/holocall
