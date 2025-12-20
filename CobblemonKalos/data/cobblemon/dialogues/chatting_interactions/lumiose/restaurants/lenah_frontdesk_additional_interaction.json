@@ -85,6 +85,7 @@
                             "q.run_command('execute as ' + q.player.username + ' run tp @s -189 101 157 0 ~');",
                             "q.run_command('execute as ' + q.player.username + ' run particle cloud -185 101 158 2 2 2 1 100');",
                             "q.run_command('execute unless entity @e[x=-185,y=100,z=158,dy=3,type=cobblemon:npc] run npcspawnat -185 101 158 lenah_first');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 3000');",
                             "q.dialogue.close();"
                         ]
                     }

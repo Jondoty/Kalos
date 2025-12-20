@@ -1,11 +1,11 @@
 {
     "speakers": {
         "npc": {
-            "name": "Restaurant Le Yeah",
+            "name": "Sushi High Roller",
             "face": {
                 "type": "artificial",
                 "modelType": "npc",
-                "identifier": "cobblemon:monsieur",
+                "identifier": "cobblemon:blackbelt",
                 "isLeftSide": true
             }
         }
@@ -15,27 +15,17 @@
             "id": "greeting",
             "speaker": "npc",
             "lines": [
-                {
-                    "type": "expression",
-                    "expression": "'Well, if it isn’t good old ' + q.player.username + '! Everyone here’s been waiting for you!';"
-                }
+                "Welcome, welcome, step right in! This is the one restaurant in town that’ll really move you!"
             ],
             "input": {
                 "type": "option",
-                "vertical": true,
+                "vertical": false,
                 "options": [
                     {
-                        "text": "Yeah, I’ll dine",
-                        "value": "dine",
+                        "text": "Next",
+                        "value": "next",
                         "action": [
                             "q.dialogue.set_page('page2');"
-                        ]
-                    },
-                    {
-                        "text": "Another time",
-                        "value": "leave",
-                        "action": [
-                            "q.dialogue.set_page('end');"
                         ]
                     }
                 ]
@@ -45,17 +35,37 @@
             "id": "page2",
             "speaker": "npc",
             "lines": [
-                "We're proud to serve a full four-course feast of Pokemon battles here at Le Yeah for just $15,000. Want to try it?"
+                "Welcome to Sushi High Roller! So what can I do you for?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page3');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "You wanna see what we offer?"
             ],
             "input": {
                 "type": "option",
                 "vertical": true,
                 "options": [
                     {
-                        "text": "Yeah, I’ll dine",
+                        "text": "I’ll get something",
                         "value": "next",
                         "action": [
-                            "q.dialogue.set_page('page3');"
+                            "q.dialogue.set_page('page4');"
                         ]
                     },
                     {
@@ -69,10 +79,10 @@
             }
         },
         {
-            "id": "page3",
+            "id": "page4",
             "speaker": "npc",
             "lines": [
-                "Yeah! That’s what we like to hear. Right this way."
+                "Got it! I never miss a beat! Table for one! Let’s roll!"
             ],
             "input": {
                 "type": "option",
@@ -82,10 +92,9 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
-                            "q.run_command('execute as ' + q.player.username + ' run tp @s -398 101 157 0 ~');",
-                            "q.run_command('execute as ' + q.player.username + ' run particle cloud -394 101 158 2 2 2 1 100');",
-                            "q.run_command('execute unless entity @e[x=-394,y=100,z=158,dy=3,type=cobblemon:npc] run npcspawnat -394 101 158 leyeah_first');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 15000');",
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -485 101 157 -72.90 12.15');",
+                            "q.run_command('execute as ' + q.player.username + ' run particle cloud -481 101 158 2 2 2 1 100');",
+                            "q.run_command('execute unless entity @e[x=-481,y=100,z=158,dy=3,type=cobblemon:npc] run npcspawnat -481 101 158 highroller_first');",
                             "q.dialogue.close();"
                         ]
                     }
@@ -97,10 +106,7 @@
             "id": "end",
             "speaker": "npc",
             "lines": [
-                {
-                    "type": "expression",
-                    "expression": "'Well, we’re always sad any time we have to see you go, ' + q.player.username + '. But all of us here on the staff will be waiting eagerly for your next visit!';"
-                }
+                "Come back soon!"
             ],
             "input": {
                 "type": "option",

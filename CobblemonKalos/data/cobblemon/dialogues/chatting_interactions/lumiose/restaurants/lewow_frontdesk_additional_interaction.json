@@ -58,7 +58,7 @@
             "id": "page3",
             "speaker": "npc",
             "lines": [
-                "This meal will total to $100,000. Shall we begin the preparations?"
+                "This meal will total to $25,000. Shall we begin the preparations?"
             ],
             "input": {
                 "type": "option",
@@ -98,8 +98,7 @@
                             "q.run_command('execute as ' + q.player.username + ' run tp @s -290.29 101.00 157.50 -72.90 12.15');",
                             "q.run_command('execute as ' + q.player.username + ' run particle cloud -287 101 158 2 2 2 1 100');",
                             "q.run_command('execute unless entity @e[x=-287,y=100,z=158,dy=3,type=cobblemon:npc] run npcspawnat -287 101 158 lewow_first');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 100000');",
-                            "q.run_command('execute as ' + q.player.username + ' run tag @s remove Dialogue255');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 25000');",
                             "q.dialogue.close();"
                         ]
                     }

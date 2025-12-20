@@ -236,28 +236,6 @@ execute unless entity @p[x=-817,y=104,z=-304,distance=..10,tag=PowerPlantPass] r
 
 
 
-#Restaurant Prompts
-#Le Nah
-execute as @a[x=-193,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LN"}}}]}] run scoreboard players enable @s TalkTrigger
-execute as @a[x=-193,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LN"}}}]}] run tellraw @s ["",{"text":"<Restaurant Owner> Begin your dining experience? We recommend for the Double Battle you have at least three Pokemon with you.\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 292"}},{"text":"]"}]
-execute as @a[x=-193,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LN"}}}]}] run scoreboard players set @s Cooldown 0
-
-#Le Yeah
-execute as @a[x=-400,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LY"}}}]}] run scoreboard players enable @s TalkTrigger
-execute as @a[x=-400,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LY"}}}]}] run tellraw @s ["",{"text":"<Server> Begin your dining experience? We recommend you have at least three Pokemon with you.\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 293"}},{"text":"]"}]
-execute as @a[x=-400,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LY"}}}]}] run scoreboard players set @s Cooldown 0
-
-#Le Wow
-execute as @a[x=-293,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LW"}}}]}] run scoreboard players enable @s TalkTrigger
-execute as @a[x=-293,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LW"}}}]}] run tellraw @s ["",{"text":"<Server> Begin your dining experience? We recommend you have at least three Pokemon with you.\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 294"}},{"text":"]"}]
-execute as @a[x=-293,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, LW"}}}]}] run scoreboard players set @s Cooldown 0
-
-#Sushi High Roller
-execute as @a[x=-487,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, HR"}}}]}] run scoreboard players enable @s TalkTrigger
-execute as @a[x=-487,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, HR"}}}]}] run tellraw @s ["",{"text":"<Server> Begin your dining experience? We recommend you have at least three Pokemon with you.\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 295"}},{"text":"]"}]
-execute as @a[x=-487,y=101,z=174,distance=..10,scores={RestaurantBattle=0,Cooldown=5000..},nbt={Inventory:[{tag:{display:{Name:"Double Battle, HR"}}}]}] run scoreboard players set @s Cooldown 0
-
-
 #Battle Maison manages tping NPCs
 execute if entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMaison=1..,Cooldown=5000..}] run function kalos:data/maisonstagetp
 
