@@ -1,33 +1,6 @@
-#/function world:worldcommands
-#-417 101 1389
-
-#Kills corrupted entities
-tp @e[x=-705,y=100,z=1377,dy=2] ~ ~-10000 ~
-
-#---------------------------------------------------------
-
-#Used to tag trainers that I'll need to replace in 1.16.5
-tag @e[tag=!1.12.2Trainer,type=pixelmon:npc_trainer] add 1.12.2Trainer
-execute at @e[tag=1.12.2Trainer,type=pixelmon:npc_trainer] run particle minecraft:end_rod ~ ~5 ~ 0 10 0 0.001 10 force @a
 
 #---------------------------------------------------------
 #Important triggers for functions of map
-
-#Runs the beginning commands if a player is near spawn without initial tag
-execute as @a[x=-552,y=100,z=1257,distance=..25,tag=!InitialTags] run function kalos:triggers/startingcommands
-
-
-#Runs constantly-scanning Music switching and area display titles function
-execute as @a[scores={TalkTime=0,TrainerClass=0}] run function kalos:world/musictitles
-
-
-#Runs TalkTrigger if applicable score (used to nest commands)
-execute as @a[scores={TalkTrigger=1..}] run function kalos:triggers/talktrigger
-
-
-#Relog Trigger (player leaves world and joins back)
-execute as @a[scores={relog=1..}] run function kalos:triggers/relog
-
 
 #Photo-Spot Dismissal if player walks away
 execute at @e[type=armor_stand,tag=PhotoSpot] run execute as @a[distance=20..50,scores={DialogueTrigger=0,PhotoSpot=1..}] run scoreboard players set @s TalkTrigger 299
@@ -44,95 +17,9 @@ scoreboard players set @a[scores={CooldownJump=1..}] CooldownJump 0
 #tellraw @a[x=-488,y=100,z=1414,distance=..3,scores={Cooldown=5000..}] {"text":"Hey this is a test!"}
 #scoreboard players set @a[x=-488,y=100,z=1414,distance=..3,scores={Cooldown=5000..}] Cooldown 0
 
-#---------------------------
-
-#Randomizer script on a player
-execute as @a[tag=RandomizerTemp,limit=1] run function kalos:randomizer/tpscript
-
-#Randomizer trainers function
-execute at @e[x=-688,y=100,z=1136,dy=3,tag=Randomizer] run execute at @a run execute as @e[tag=!Randomized,type=pixelmon:npc_trainer,distance=..30,limit=1] run function kalos:randomizer/trainers
-
-#Randomize evolutions function
-execute at @e[x=-688,y=100,z=1136,dy=3,tag=Randomizer] run execute at @s[tag=Evolutions] run execute at @a run execute as @e[distance=..15,type=pixelmon:pixelmon] run function kalos:randomizer/speciescheck
-
-
-
-
-#---------------------------------------------------------
-#Holo Caster Music
-
-#Music rate: 86 ticks per 60 seconds
-
-#Runs the click trigger if player uses Carrot on a Stick
-execute as @a[scores={click=1..},tag=TempDelay] run function kalos:triggers/click
-tag @a[scores={click=1..},tag=!TempDelay] add TempDelay
-
-
-#Runs music for players holding radio
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:0b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:1b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:2b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:3b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:4b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:5b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:6b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:7b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-tag @a[scores={MusicCooldown=0},tag=!RadioOff,nbt={Inventory:[{Slot:8b,id:"minecraft:carrot_on_a_stick"}]}] add TrackSeek
-execute as @a[tag=TrackSeek,tag=!RadioOff] run function world:music
-
-
-
-#Tests for if player is using the old timings from battle music
-tag @a[scores={MusicCooldown=300},tag=OldTimings] add Temp
-scoreboard players set @a[tag=Temp] MusicCooldown 21
-tag @a[tag=Temp] remove OldTimings
-tag @a[tag=Temp] remove Temp
-
-
-#removes MusicCooldown score for music timings
-scoreboard players remove @a[scores={MusicCooldown=1..}] MusicCooldown 1
-
-
-
-#Click trigger function on Holo Caster
-#execute @a[score_click_min=1] ~ ~ ~ /function triggers:click
-
-
-
-
-#Runs trainer music
-
-#Battle Start
-#/tedit add BATTLE_START scoreboard players set @pl TrainerClass 1
-#/tedit add BATTLE_START scoreboard players tag @pl add BattleStart
-execute as @a[tag=BattleStart] run function kalos:trainers/playerstart
-
-#Battle Win (player)
-#/tedit add LOSS scoreboard players tag @pl add BattleWin
-execute as @a[tag=BattleWin] run function kalos:trainers/playerwin
-
-#Battle Lose (player)
-#/tedit add WIN scoreboard players tag @pl add BattleLose
-execute as @a[tag=BattleLose] run function kalos:trainers/playerlose
-
-#Battle Forefit (player)
-#/tedit add FORFEIT scoreboard players tag @pl add BattleForefit
-execute as @a[tag=BattleForefit] run function kalos:trainers/playerforefit
-
-
-
-
 
 #---------------------------------------------------------
 #Important item functions
-
-#Flash
-tellraw @a[scores={Flash=1..}] {"text":"You used Flash!","italic":true,"color":"gray"}
-give @a[scores={Flash=1..}] minecraft:firework_rocket{display:{Name:"TM70: Flash",Lore:["Illuminates an area to","the user for 10 minutes."]}}
-effect give @a[scores={Flash=1..}] minecraft:night_vision 600 1 true
-scoreboard players remove @a[scores={Flash=1..}] Flash 1
-
 
 #Clothing Room Prompts
 execute at @e[type=armor_stand,name=ClothingRoom] run tellraw @a[distance=..6,tag=!ClothingTalked] ["",{"text":"It's a fitting room! What do you want to change?\n    ["},{"text":"Hats","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 40"}},{"text":"]    ["},{"text":"Shirts","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 43"}},{"text":"]    ["},{"text":"Pants","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 46"}},{"text":"]    ["},{"text":"Shoes","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 49"}},{"text":"]"}]
@@ -144,26 +31,12 @@ execute at @e[type=armor_stand,name=ClothingRoom] run tag @a[distance=7..20,tag=
 #---------------------------------------------------------
 #Interactable World Objects and Locations
 
-#Trash Cans
-execute as @a[scores={TrashTrigger=1..}] run function kalos:triggers/trashtrigger
-
-#Rock Smash
-execute as @a[scores={RockTrigger=1..}] run function kalos:triggers/rocksmashtrigger
 
 #Adds Shiny Particles tag
 execute at @a run tag @e[distance=..50,type=pixelmon:pixelmon,nbt={IsShiny:1b,OwnerUUID:""}] add Shiny
 
 #Particles:
 #/execute @e[x=-685,y=100,z=1388,dy=3,tag=Particles,type=armor_stand] ~ ~ ~ execute @e[tag=Shiny,type=pixelmon:pixelmon] ~ ~ ~ /particle reddust ~ ~ ~ 0 10 0 1 10 force @a[r=50]
-
-#Battle Maison Wins and Loss Functions
-execute as @a[x=1225,y=76,z=1545,distance=..40,tag=MaisonLoss] run function kalos:triggers/battlemaisonlose
-execute as @a[x=1225,y=76,z=1545,distance=..40,tag=MaisonWin] run function kalos:triggers/battlemaisonwin
-
-#Battle Maison Aligns Pokemon
-execute as @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=BattleMaisonMusic] run function kalos:data/maisonalign
-execute as @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=EliteFourBattleMusic] run function kalos:data/maisonalign
-
 
 #---------------------------------------------------------
 #Legendaries
@@ -172,14 +45,6 @@ execute as @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,tag=EliteFourBattleMusic] run
 execute as @a[tag=LegendActivate] run function kalos:triggers/legendspawn
 
 #----------
-#Yveltal Dormant Activate
-execute as @a[x=-2336,y=42,z=-1017,distance=..10,scores={Yveltal=1,TalkTime=0,Cooldown=5000..},tag=Dialogue130,tag=!Dialogue131] run scoreboard players enable @s TalkTrigger
-execute as @a[x=-2336,y=42,z=-1017,distance=..10,scores={Yveltal=1,TalkTime=0,Cooldown=5000..},tag=Dialogue130,tag=!Dialogue131] run tellraw @s ["",{"text":"A dormant Pokemon lies asleep. Would you like to wake it?","italic":true,"color":"gray"},{"text":"\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 1"}},{"text":"]"}]
-
-#Xerneas
-execute as @a[x=-2336,y=42,z=-1017,distance=..10,scores={Xerneas=1,TalkTime=0,Cooldown=5000..},tag=Dialogue130,tag=!Dialogue131] run scoreboard players enable @s TalkTrigger
-execute as @a[x=-2336,y=42,z=-1017,distance=..10,scores={Xerneas=1,TalkTime=0,Cooldown=5000..},tag=Dialogue130,tag=!Dialogue131] run tellraw @s ["",{"text":"A dormant Pokemon lies asleep. Would you like to wake it?","italic":true,"color":"gray"},{"text":"\n["},{"text":"Yes","color":"green","clickEvent":{"action":"run_command","value":"/trigger TalkTrigger set 1"}},{"text":"]"}]
-
 #Diancie Mirror Vanish
 execute if entity @a[x=-1718,y=11,z=-405,dx=82,dy=10,dz=6,scores={PokemonLeague=1..}] run fill -1638 25 -402 -1717 12 -402 minecraft:air replace minecraft:blue_stained_glass
 execute if entity @a[x=-1718,y=11,z=-405,dx=82,dy=10,dz=6,scores={PokemonLeague=1..,Cooldown=5000..}] run tellraw @a[x=-1718,y=11,z=-405,dx=82,dy=10,dz=6,scores={PokemonLeague=1..}] {"text":"The mirror vanished...","italic":true,"color":"gray"}
@@ -249,21 +114,6 @@ execute unless entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMais
 execute unless entity @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMaison=1..,Cooldown=5000..}] run tp @e[x=1215,y=74,z=1545,dy=3,type=pixelmon:npc_trainer,name=Evelyn,tag=Super] 1227 66 1545
 
 scoreboard players set @a[x=1209,y=74,z=1537,dx=22,dy=10,dz=14,scores={BattleMaison=1..,Cooldown=5000..}] cooldown 0
-
-
-#----------
-#Holo Caster Calls
-
-#Call20
-#Lumiose City Post-Xerosic Caught
-execute as @a[x=-181,y=101,z=-390,distance=..395,tag=!Call20,scores={TalkTime=0,HoloCall=0},tag=!LookerCooldown,tag=Dialogue213] run scoreboard players set @s HoloCall 20
-
-
-#Call 21
-#Emma calling at Lumiose Museum Exterior
-execute as @a[x=-105,y=101,z=-699,distance=..20,tag=!Call21,scores={TalkTime=0,HoloCall=0},tag=Dialogue216] run scoreboard players set @s HoloCall 21
-
-
 
 
 
