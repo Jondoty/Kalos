@@ -347,9 +347,6 @@ execute at @a run execute as @e[type=pixelmon:pixelmon,distance=..10,scores={Rib
 #14 -	SMILE
 
 
-#Pokemon League Hall of Fame Room
-scoreboard players set @e[x=-2032,y=5,z=1910,dx=68,dy=50,dz=68,type=pixelmon:pixelmon] RibbonApply 1
-
 #Footprint Ribbon
 execute as @e[x=-1700,y=80,z=-827,distance=..10,type=pixelmon:pixelmon] run function kalos:data/calculatelevels
 execute as @e[x=-1700,y=80,z=-827,distance=..10,type=pixelmon:pixelmon,scores={Temp=0..30}] run tellraw @a[distance=..10] {"text":"<Ace Trainer> ...Hmmm. It's hard to tell..."}
