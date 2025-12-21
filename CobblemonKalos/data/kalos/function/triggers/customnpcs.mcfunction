@@ -341,6 +341,39 @@ tag @s[scores={Temp=1}] add DailyDex1
 tag @s[scores={Temp=2}] add DailyDex2
 tag @s[scores={Temp=3}] add DailyDex3
 
+
+#-------------------------------------------------------------
+#Misc World Ribbon Tests
+
+#Footprint Ribbon, Shalour
+#If the Pokemon's level is above 70
+execute as @s[x=-1700,y=80,z=-827,distance=..5] run function kalos:data/calculatelevels
+execute as @s[x=-1700,y=80,z=-827,distance=..5,scores={Temp2=0..30}] run opendialogue shalour_footprintribbon_low @s
+execute as @s[x=-1700,y=80,z=-827,distance=..5,scores={Temp2=31..50}] run opendialogue shalour_footprintribbon_medium @s
+execute as @s[x=-1700,y=80,z=-827,distance=..5,scores={Temp2=51..69}] run opendialogue shalour_footprintribbon_high @s
+execute as @s[x=-1700,y=80,z=-827,distance=..5,scores={Temp2=70..}] run opendialogue shalour_footprintribbon_max @s
+
+
+#Effort Ribbon, Laverre Town
+execute as @s[x=-201,y=89,z=-1520,distance=..5] run function kalos:data/calculateevtotal
+execute as @s[x=-201,y=89,z=-1520,distance=..5,scores={Temp2=0..150}] run opendialogue laverre_effortribbon_low @s
+execute as @s[x=-201,y=89,z=-1520,distance=..5,scores={Temp2=151..333}] run opendialogue laverre_effortribbon_medium @s
+execute as @s[x=-201,y=89,z=-1520,distance=..5,scores={Temp2=334..509}] run opendialogue laverre_effortribbon_high @s
+execute as @s[x=-201,y=89,z=-1520,distance=..5,scores={Temp2=510..}] run opendialogue laverre_effortribbon_max @s
+
+
+#Best Friends Ribbon, Lumiose Gym
+execute as @s[x=-1819,y=100,z=-1698,distance=..5] run function kalos:data/calculatefriendship
+execute as @s[x=-1819,y=100,z=-1698,distance=..5,scores={Temp2=0..50}] run opendialogue lumiose_friendshipribbon_lowest @s
+execute as @s[x=-1819,y=100,z=-1698,distance=..5,scores={Temp2=51..100}] run opendialogue lumiose_friendshipribbon_low @s
+execute as @s[x=-1819,y=100,z=-1698,distance=..5,scores={Temp2=101..150}] run opendialogue lumiose_friendshipribbon_medium @s
+execute as @s[x=-1819,y=100,z=-1698,distance=..5,scores={Temp2=151..200}] run opendialogue lumiose_friendshipribbon_high @s
+execute as @s[x=-1819,y=100,z=-1698,distance=..5,scores={Temp2=200..254}] run opendialogue lumiose_friendshipribbon_higher @s
+execute as @s[x=-1819,y=100,z=-1698,distance=..5,scores={Temp2=255..}] run opendialogue lumiose_friendshipribbon_max @s
+
+
+
+
 #-------------------------------------------------------------
 #Hotel Guest Dynamic dialogues
 #Dependent on the day of the week it is for which NPC you talk to

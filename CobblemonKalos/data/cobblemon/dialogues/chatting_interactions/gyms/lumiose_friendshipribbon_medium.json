@@ -1,11 +1,11 @@
 {
     "speakers": {
         "npc": {
-            "name": "     ",
+            "name": "Bonnie",
             "face": {
                 "type": "artificial",
                 "modelType": "npc",
-                "identifier": "cobblemon:monsieur",
+                "identifier": "cobblemon:bonnie",
                 "isLeftSide": true
             }
         }
@@ -15,7 +15,7 @@
             "id": "page1",
             "speaker": "npc",
             "lines": [
-                "Greetings, greetings!"
+                "Hey there! Why don't you show me your Pok\u00e9mon you've been venturing with!"
             ],
             "input": {
                 "type": "option",
@@ -33,7 +33,7 @@
             "id": "page2",
             "speaker": "npc",
             "lines": [
-                "As you can see, I am the head of the local chapter of the Pok\u00e9mon Fan Club here in the Kalos region!"
+                "Oh, you and Pok\u00e9mon are..."
             ],
             "input": {
                 "type": "option",
@@ -51,25 +51,7 @@
             "id": "page3",
             "speaker": "npc",
             "lines": [
-                "It is my proud duty to grant Effort Ribbons to any Pok\u00e9mon that are clearly making an effort!"
-            ],
-            "input": {
-                "type": "option",
-                "vertical": false,
-                "options": [
-                    {
-                        "text": "Next",
-                        "value": "next",
-                        "action": "q.dialogue.set_page('page4');"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "page4",
-            "speaker": "npc",
-            "lines": [
-                "Send a Pok\u00e9mon and I will evaluate it!"
+                "Becoming good friends! I can tell!"
             ],
             "input": {
                 "type": "option",

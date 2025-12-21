@@ -1,11 +1,11 @@
 {
     "speakers": {
         "npc": {
-            "name": "Bonnie",
+            "name": "     ",
             "face": {
                 "type": "artificial",
                 "modelType": "npc",
-                "identifier": "cobblemon:bonnie",
+                "identifier": "cobblemon:acetrainerm",
                 "isLeftSide": true
             }
         }
@@ -15,7 +15,25 @@
             "id": "page1",
             "speaker": "npc",
             "lines": [
-                "Hey there! Why don't you show me your Pok\u00e9mon you've been venturing with!"
+                "If you are a Trainer, will you show me how you're raising your Pokémon with loving care?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "You've raised it well. I can feel a bit of love from you."
             ],
             "input": {
                 "type": "option",

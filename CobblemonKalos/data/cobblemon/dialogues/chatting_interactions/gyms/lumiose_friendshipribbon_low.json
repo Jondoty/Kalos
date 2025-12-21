@@ -1,11 +1,11 @@
 {
     "speakers": {
         "npc": {
-            "name": "     ",
+            "name": "Bonnie",
             "face": {
                 "type": "artificial",
                 "modelType": "npc",
-                "identifier": "cobblemon:acetrainerm",
+                "identifier": "cobblemon:bonnie",
                 "isLeftSide": true
             }
         }
@@ -15,7 +15,7 @@
             "id": "page1",
             "speaker": "npc",
             "lines": [
-                "If you are a Trainer, will you show me how you\u2019re raising your Pok\u00e9mon with loving care?"
+                "Hey there! Why don't you show me your Pok\u00e9mon you've been venturing with!"
             ],
             "input": {
                 "type": "option",
@@ -33,7 +33,25 @@
             "id": "page2",
             "speaker": "npc",
             "lines": [
-                "Send a Pok\u00e9mon out and I will access it!"
+                "Oh, you and Pok\u00e9mon are..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "Becoming good friends! I can tell!"
             ],
             "input": {
                 "type": "option",
