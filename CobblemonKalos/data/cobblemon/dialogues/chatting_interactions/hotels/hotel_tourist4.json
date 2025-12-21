@@ -1,0 +1,326 @@
+{
+    "speakers": {
+        "npc": {
+            "name": "Tourist",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:tourist",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "page1",
+            "speaker": "npc",
+            "lines": [
+                "I know a whole lot about strong Trainers!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "Which Trainer do you want to know about?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Viola",
+                        "value": "viola",
+                        "action": [
+                            "q.dialogue.set_page('viola1');"
+                        ]
+                    },
+                    {
+                        "text": "Korrina",
+                        "value": "korrina",
+                        "action": [
+                            "q.dialogue.set_page('korrina1');"
+                        ]
+                    },
+                    {
+                        "text": "Valerie",
+                        "value": "valerie",
+                        "action": [
+                            "q.dialogue.set_page('valerie1');"
+                        ]
+                    },
+                    {
+                        "text": "Olympia",
+                        "value": "valerie",
+                        "action": [
+                            "q.dialogue.set_page('valerie1');"
+                        ]
+                    },
+                    {
+                        "text": "No Thanks",
+                        "value": "nothanks",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "viola1",
+            "speaker": "npc",
+            "lines": [
+                "Oh, Viola! Viola is the Gym Leader of Santalune City."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('viola2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "viola2",
+            "speaker": "npc",
+            "lines": [
+                "Not only is she an expert with Bug-type Pokémon, but she's also an up-and-coming photography pro!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('viola3');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "viola3",
+            "speaker": "npc",
+            "lines": [
+                "Her older sister, Alexa, happens to be a reporter!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "korrina1",
+            "speaker": "npc",
+            "lines": [
+                "Korrina! Sweet, sweet Korrina! A first-rate Roller Skater and also the Gym Leader of Shalour City!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('korrina2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "korrina2",
+            "speaker": "npc",
+            "lines": [
+                "Keep this between us, but I hear she can use some kind of amazing secret power."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('korrina3');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "korrina3",
+            "speaker": "npc",
+            "lines": [
+                "Let's hear it once more for the spectacular Korrina!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "valerie1",
+            "speaker": "npc",
+            "lines": [
+                "Valerie... What to call her? Miss Valerie? Lady Valerie? She definitely needs some kind of title."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('valerie2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "valerie2",
+            "speaker": "npc",
+            "lines": [
+                "Oh, never mind my rambling! She's a fashion designer from the Johto region and also happens to be the Gym Leader of Laverre City!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('valerie3');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "valerie3",
+            "speaker": "npc",
+            "lines": [
+                "She's also got this certain mysterious charm about her that's really hard to put into words!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "olympia1",
+            "speaker": "npc",
+            "lines": [
+                "Lady Olympia! A mystery wrapped in an enigma! Little is known about the Gym Leader of Anistar City."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('olympia2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "olympia2",
+            "speaker": "npc",
+            "lines": [
+                "One thing is for sure, though--she's second to none when it comes to fortune-telling!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('olympia3');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "olympia3",
+            "speaker": "npc",
+            "lines": [
+                "Whether it's predicting one's love prospects or the fate of a corporation, she nails it every time!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "speakers": {
+        "npc": {
+            "name": "Backpacker",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:backpacker",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "page1",
+            "speaker": "npc",
+            "lines": [
+                "The Kalos region is nice and all, but let me share something with you from my region."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page2');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "It's really special!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:itemget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:spawn/strangesouvenir');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players add @s HotelGuest2 1');",
+                            "q.dialogue.set_page('page3');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "The Kalos region is nice and all, but you've really got to check out my region!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page4');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
+            "speaker": "npc",
+            "lines": [
+                "Where is it, you ask? Well, I can tell you that it's not Kanto, Johto, Hoenn, Sinnoh, or even Unova!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run tag @s add Guest2Cooldown');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

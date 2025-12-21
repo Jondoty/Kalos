@@ -1,0 +1,36 @@
+{
+    "speakers": {
+        "npc": {
+            "name": "Madame",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:oldlady",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "page1",
+            "speaker": "npc",
+            "lines": [
+                "Where I'm from, we put Pokémon Eggs in sand baths."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run tag @s add Guest6Cooldown');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
