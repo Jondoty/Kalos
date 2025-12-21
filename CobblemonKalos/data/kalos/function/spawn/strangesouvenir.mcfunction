@@ -1,0 +1,1 @@
+give @s totem_of_undying[custom_name='["",{"text":"Strange Souvenir","italic":false}]',lore=['["",{"text":"An ornament depicting a Pokémon that is ","italic":false}]','[{"text":"venerated as a protector in some region","italic":false}]','[{"text":"far from Kalos.","italic":false}]']]

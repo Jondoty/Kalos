@@ -39,7 +39,7 @@
             ],
             "input": {
                 "type": "option",
-                "vertical": false,
+                "vertical": true,
                 "options": [
                     {
                         "text": "Viola",

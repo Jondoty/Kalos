@@ -116,6 +116,28 @@ execute as @e[x=-675,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run s
 execute as @e[x=-673,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=0}] run scoreboard players reset Black_Writ_of_Challenge
 
 
+
+
+#Counts up hotel guest scores daily for a new conversation
+scoreboard players add @s[tag=Guest1Cooldown] HotelGuest1 1
+scoreboard players add @s[tag=Guest2Cooldown] HotelGuest2 1
+scoreboard players add @s[tag=Guest3Cooldown] HotelGuest3 1
+scoreboard players add @s[tag=Guest4Cooldown] HotelGuest4 1
+scoreboard players add @s[tag=Guest5Cooldown] HotelGuest5 1
+scoreboard players add @s[tag=Guest6Cooldown] HotelGuest6 1
+
+#Resets Hotel Guest Cooldowns
+tag @s remove Guest1Cooldown
+tag @s remove Guest2Cooldown
+tag @s remove Guest3Cooldown
+tag @s remove Guest4Cooldown
+tag @s remove Guest5Cooldown
+tag @s remove Guest6Cooldown
+
+
+#Hotel Guests, adjusts the visitor's skins
+function kalos:data/hotelskins
+
 #-----------------------------------------
 
 

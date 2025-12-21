@@ -342,6 +342,335 @@ tag @s[scores={Temp=2}] add DailyDex2
 tag @s[scores={Temp=3}] add DailyDex3
 
 #-------------------------------------------------------------
+#Hotel Guest Dynamic dialogues
+#Dependent on the day of the week it is for which NPC you talk to
+#as well as how many times you've talked to the NPC in past days.
+#Counts up in the daily commands function and you have the cooldown that you've spoken to them before.
+
+#Camphrier Town
+#-1110 81 0
+
+#Mon
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-1110,y=81,z=0,distance=..5] run opendialogue hotel_maid1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest1=1}] run opendialogue hotel_maid2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest1=2}] run opendialogue hotel_maid3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest1=3}] run opendialogue hotel_maid4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest1=4..}] run opendialogue hotel_maid5 @s
+
+#Tues
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-1110,y=81,z=0,distance=..5] run opendialogue hotel_tourist1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest3=1}] run opendialogue hotel_tourist2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest3=2}] run opendialogue hotel_tourist3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest3=3..}] run opendialogue hotel_tourist4 @s
+
+#Wed
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-1110,y=81,z=0,distance=..5] run opendialogue hotel_backpacker1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest2=1}] run opendialogue hotel_backpacker2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest2=2}] run opendialogue hotel_backpacker3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest2=3}] run opendialogue hotel_backpacker4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest2=4..}] run opendialogue hotel_backpacker5 @s
+
+#Thurs
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-1110,y=81,z=0,distance=..5] run opendialogue hotel_hiker1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest4=1}] run opendialogue hotel_hiker2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest4=2}] run opendialogue hotel_hiker3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest4=3}] run opendialogue hotel_hiker4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest4=4..}] run opendialogue hotel_hiker5 @s
+
+#Fri
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-1110,y=81,z=0,distance=..5] run opendialogue hotel_waiter1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest5=1}] run opendialogue hotel_waiter2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest5=2}] run opendialogue hotel_waiter3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest5=3}] run opendialogue hotel_waiter4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest5=4..}] run opendialogue hotel_waiter5 @s
+
+#Sat
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-1110,y=81,z=0,distance=..5] run opendialogue hotel_madame1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest6=1}] run opendialogue hotel_madame2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest6=2}] run opendialogue hotel_madame3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest6=3}] run opendialogue hotel_madame4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest6=4..}] run opendialogue hotel_madame5 @s
+
+#Sun
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-1110,y=81,z=0,distance=..5] run opendialogue hotel_maid1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest1=1}] run opendialogue hotel_maid2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest1=2}] run opendialogue hotel_maid3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest1=3}] run opendialogue hotel_maid4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-1110,y=81,z=0,distance=..5,scores={HotelGuest1=4..}] run opendialogue hotel_maid5 @s
+
+
+
+
+#Ambrette Town
+#-1990 109 647
+
+#Mon
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-1990,y=109,z=647,distance=..5] run opendialogue hotel_tourist1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest3=1}] run opendialogue hotel_tourist2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest3=2}] run opendialogue hotel_tourist3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest3=3..}] run opendialogue hotel_tourist4 @s
+
+#Tues
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-1990,y=109,z=647,distance=..5] run opendialogue hotel_backpacker1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest2=1}] run opendialogue hotel_backpacker2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest2=2}] run opendialogue hotel_backpacker3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest2=3}] run opendialogue hotel_backpacker4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest2=4..}] run opendialogue hotel_backpacker5 @s
+
+#Wed
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-1990,y=109,z=647,distance=..5] run opendialogue hotel_hiker1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest4=1}] run opendialogue hotel_hiker2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest4=2}] run opendialogue hotel_hiker3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest4=3}] run opendialogue hotel_hiker4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest4=4..}] run opendialogue hotel_hiker5 @s
+
+#Thurs
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-1990,y=109,z=647,distance=..5] run opendialogue hotel_waiter1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest5=1}] run opendialogue hotel_waiter2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest5=2}] run opendialogue hotel_waiter3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest5=3}] run opendialogue hotel_waiter4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest5=4..}] run opendialogue hotel_waiter5 @s
+
+#Fri
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-1990,y=109,z=647,distance=..5] run opendialogue hotel_madame1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest6=1}] run opendialogue hotel_madame2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest6=2}] run opendialogue hotel_madame3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest6=3}] run opendialogue hotel_madame4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest6=4..}] run opendialogue hotel_madame5 @s
+
+#Sat
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-1990,y=109,z=647,distance=..5] run opendialogue hotel_maid1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest1=1}] run opendialogue hotel_maid2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest1=2}] run opendialogue hotel_maid3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest1=3}] run opendialogue hotel_maid4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest1=4..}] run opendialogue hotel_maid5 @s
+
+#Sun
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-1990,y=109,z=647,distance=..5] run opendialogue hotel_tourist1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest3=1}] run opendialogue hotel_tourist2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest3=2}] run opendialogue hotel_tourist3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-1990,y=109,z=647,distance=..5,scores={HotelGuest3=3..}] run opendialogue hotel_tourist4 @s
+
+
+
+
+
+
+#Cyllage Town
+#-2048 65 -153
+
+#Mon
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-2048,y=65,z=-153,distance=..5] run opendialogue hotel_backpacker1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest2=1}] run opendialogue hotel_backpacker2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest2=2}] run opendialogue hotel_backpacker3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest2=3}] run opendialogue hotel_backpacker4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest2=4..}] run opendialogue hotel_backpacker5 @s
+
+#Tues
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-2048,y=65,z=-153,distance=..5] run opendialogue hotel_hiker1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest4=1}] run opendialogue hotel_hiker2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest4=2}] run opendialogue hotel_hiker3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest4=3}] run opendialogue hotel_hiker4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest4=4..}] run opendialogue hotel_hiker5 @s
+
+#Wed
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-2048,y=65,z=-153,distance=..5] run opendialogue hotel_waiter1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest5=1}] run opendialogue hotel_waiter2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest5=2}] run opendialogue hotel_waiter3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest5=3}] run opendialogue hotel_waiter4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest5=4..}] run opendialogue hotel_waiter5 @s
+
+#Thurs
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-2048,y=65,z=-153,distance=..5] run opendialogue hotel_madame1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest6=1}] run opendialogue hotel_madame2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest6=2}] run opendialogue hotel_madame3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest6=3}] run opendialogue hotel_madame4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest6=4..}] run opendialogue hotel_madame5 @s
+
+#Fri
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-2048,y=65,z=-153,distance=..5] run opendialogue hotel_maid1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest1=1}] run opendialogue hotel_maid2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest1=2}] run opendialogue hotel_maid3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest1=3}] run opendialogue hotel_maid4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest1=4..}] run opendialogue hotel_maid5 @s
+
+#Sat
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-2048,y=65,z=-153,distance=..5] run opendialogue hotel_tourist1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest3=1}] run opendialogue hotel_tourist2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest3=2}] run opendialogue hotel_tourist3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest3=3..}] run opendialogue hotel_tourist4 @s
+
+#Sun
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-2048,y=65,z=-153,distance=..5] run opendialogue hotel_backpacker1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest2=1}] run opendialogue hotel_backpacker2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest2=2}] run opendialogue hotel_backpacker3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest2=3}] run opendialogue hotel_backpacker4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-2048,y=65,z=-153,distance=..5,scores={HotelGuest2=4..}] run opendialogue hotel_backpacker5 @s
+
+
+
+#Geosenge Town
+#-2190 87 -636
+
+#Mon
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-2190,y=87,z=-636,distance=..5] run opendialogue hotel_hiker1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest4=1}] run opendialogue hotel_hiker2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest4=2}] run opendialogue hotel_hiker3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest4=3}] run opendialogue hotel_hiker4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest4=4..}] run opendialogue hotel_hiker5 @s
+
+#Tues
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-2190,y=87,z=-636,distance=..5] run opendialogue hotel_waiter1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest5=1}] run opendialogue hotel_waiter2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest5=2}] run opendialogue hotel_waiter3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest5=3}] run opendialogue hotel_waiter4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest5=4..}] run opendialogue hotel_waiter5 @s
+
+#Wed
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-2190,y=87,z=-636,distance=..5] run opendialogue hotel_madame1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest6=1}] run opendialogue hotel_madame2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest6=2}] run opendialogue hotel_madame3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest6=3}] run opendialogue hotel_madame4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest6=4..}] run opendialogue hotel_madame5 @s
+
+#Thurs
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-2190,y=87,z=-636,distance=..5] run opendialogue hotel_maid1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest1=1}] run opendialogue hotel_maid2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest1=2}] run opendialogue hotel_maid3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest1=3}] run opendialogue hotel_maid4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest1=4..}] run opendialogue hotel_maid5 @s
+
+#Fri
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-2190,y=87,z=-636,distance=..5] run opendialogue hotel_tourist1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest3=1}] run opendialogue hotel_tourist2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest3=2}] run opendialogue hotel_tourist3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest3=3..}] run opendialogue hotel_tourist4 @s
+
+#Sat
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-2190,y=87,z=-636,distance=..5] run opendialogue hotel_backpacker1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest2=1}] run opendialogue hotel_backpacker2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest2=2}] run opendialogue hotel_backpacker3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest2=3}] run opendialogue hotel_backpacker4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest2=4..}] run opendialogue hotel_backpacker5 @s
+
+#Sun
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-2190,y=87,z=-636,distance=..5] run opendialogue hotel_hiker1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest4=1}] run opendialogue hotel_hiker2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest4=2}] run opendialogue hotel_hiker3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest4=3}] run opendialogue hotel_hiker4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-2190,y=87,z=-636,distance=..5,scores={HotelGuest4=4..}] run opendialogue hotel_hiker5 @s
+
+
+
+#Coumarine Town
+#-1055 56 -810
+
+#Mon
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-1055,y=56,z=-810,distance=..5] run opendialogue hotel_waiter1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest5=1}] run opendialogue hotel_waiter2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest5=2}] run opendialogue hotel_waiter3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest5=3}] run opendialogue hotel_waiter4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest5=4..}] run opendialogue hotel_waiter5 @s
+
+#Tues
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-1055,y=56,z=-810,distance=..5] run opendialogue hotel_madame1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest6=1}] run opendialogue hotel_madame2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest6=2}] run opendialogue hotel_madame3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest6=3}] run opendialogue hotel_madame4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest6=4..}] run opendialogue hotel_madame5 @s
+
+#Wed
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-1055,y=56,z=-810,distance=..5] run opendialogue hotel_maid1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest1=1}] run opendialogue hotel_maid2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest1=2}] run opendialogue hotel_maid3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest1=3}] run opendialogue hotel_maid4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest1=4..}] run opendialogue hotel_maid5 @s
+
+#Thurs
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-1055,y=56,z=-810,distance=..5] run opendialogue hotel_tourist1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest3=1}] run opendialogue hotel_tourist2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest3=2}] run opendialogue hotel_tourist3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest3=3..}] run opendialogue hotel_tourist4 @s
+
+#Fri
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-1055,y=56,z=-810,distance=..5] run opendialogue hotel_backpacker1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest2=1}] run opendialogue hotel_backpacker2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest2=2}] run opendialogue hotel_backpacker3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest2=3}] run opendialogue hotel_backpacker4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest2=4..}] run opendialogue hotel_backpacker5 @s
+
+#Sat
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-1055,y=56,z=-810,distance=..5] run opendialogue hotel_hiker1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest4=1}] run opendialogue hotel_hiker2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest4=2}] run opendialogue hotel_hiker3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest4=3}] run opendialogue hotel_hiker4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest4=4..}] run opendialogue hotel_hiker5 @s
+
+#Sun
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-1055,y=56,z=-810,distance=..5] run opendialogue hotel_waiter1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest5=1}] run opendialogue hotel_waiter2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest5=2}] run opendialogue hotel_waiter3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest5=3}] run opendialogue hotel_waiter4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=-1055,y=56,z=-810,distance=..5,scores={HotelGuest5=4..}] run opendialogue hotel_waiter5 @s
+
+
+
+#Couriway Town
+#1559 74 267
+
+#Mon
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=1559,y=74,z=267,distance=..5] run opendialogue hotel_madame1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest6=1}] run opendialogue hotel_madame2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest6=2}] run opendialogue hotel_madame3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest6=3}] run opendialogue hotel_madame4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=1}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest6=4..}] run opendialogue hotel_madame5 @s
+
+#Tues
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=1559,y=74,z=267,distance=..5] run opendialogue hotel_maid1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest1=1}] run opendialogue hotel_maid2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest1=2}] run opendialogue hotel_maid3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest1=3}] run opendialogue hotel_maid4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest1=4..}] run opendialogue hotel_maid5 @s
+
+#Wed
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=1559,y=74,z=267,distance=..5] run opendialogue hotel_tourist1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest3=1}] run opendialogue hotel_tourist2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest3=2}] run opendialogue hotel_tourist3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=3}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest3=3..}] run opendialogue hotel_tourist4 @s
+
+#Thurs
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=1559,y=74,z=267,distance=..5] run opendialogue hotel_backpacker1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest2=1}] run opendialogue hotel_backpacker2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest2=2}] run opendialogue hotel_backpacker3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest2=3}] run opendialogue hotel_backpacker4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=4}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest2=4..}] run opendialogue hotel_backpacker5 @s
+
+#Fri
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=1559,y=74,z=267,distance=..5] run opendialogue hotel_hiker1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest4=1}] run opendialogue hotel_hiker2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest4=2}] run opendialogue hotel_hiker3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest4=3}] run opendialogue hotel_hiker4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=5}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest4=4..}] run opendialogue hotel_hiker5 @s
+
+#Sat
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=1559,y=74,z=267,distance=..5] run opendialogue hotel_waiter1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest5=1}] run opendialogue hotel_waiter2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest5=2}] run opendialogue hotel_waiter3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest5=3}] run opendialogue hotel_waiter4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=6}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest5=4..}] run opendialogue hotel_waiter5 @s
+
+#Sun
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=1559,y=74,z=267,distance=..5] run opendialogue hotel_madame1 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest6=1}] run opendialogue hotel_madame2 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest6=2}] run opendialogue hotel_madame3 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest6=3}] run opendialogue hotel_madame4 @s
+execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=7}] as @s[x=1559,y=74,z=267,distance=..5,scores={HotelGuest6=4..}] run opendialogue hotel_madame5 @s
+
+
+
+
+
+#-------------------------------------------------------------
 
 
 advancement revoke @s only kalos:click/npcs

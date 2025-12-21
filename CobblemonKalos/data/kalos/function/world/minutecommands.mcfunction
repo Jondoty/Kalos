@@ -17,6 +17,10 @@ execute if entity @e[x=-683,y=100,z=1384,dy=3,type=armor_stand,scores={WritCD=1.
 
 
 
+#Hotel Guests, adjusts the visitor's skins
+function kalos:data/hotelskins
+
+
 #Runs Battle Chateau trainer changing function if Cooldown=0
 execute if entity @p[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97] unless entity @e[x=-687,y=100,z=1384,dy=3,type=armor_stand,scores={ChateauCD=1..}] run function kalos:world/battlechateau
 
@@ -80,6 +84,7 @@ execute as @e[x=802,y=107,z=-312,dx=166,dy=15,dz=170,type=cobblemon:pokemon] at 
 execute unless entity @a[x=802,y=107,z=-312,dx=166,dy=15,dz=170] unless entity @a[x=862,y=107,z=-420,dx=140,dy=15,dz=144] run fill 913 108 -262 968 112 -182 minecraft:snow_block replace minecraft:air
 execute unless entity @a[x=802,y=107,z=-312,dx=166,dy=15,dz=170] unless entity @a[x=862,y=107,z=-420,dx=140,dy=15,dz=144] run fill 828 108 -285 912 112 -229 minecraft:snow_block replace minecraft:air
 execute unless entity @a[x=802,y=107,z=-312,dx=166,dy=15,dz=170] unless entity @a[x=862,y=107,z=-420,dx=140,dy=15,dz=144] run fill 828 108 -312 890 112 -286 minecraft:snow_block replace minecraft:air
+
 
 
 
