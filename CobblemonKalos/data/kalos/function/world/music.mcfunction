@@ -374,9 +374,11 @@ execute as @s[x=-306,y=28,z=280,dx=22,dy=20,dz=47,scores={MusicCooldown=0},tag=D
 #----------------------------------------------------------------Entity Based----------------------------------------------------------------
 
 #Bikes
-#execute at @e[type=pixelmon:bike] run playsound bicycle record @s[distance=..1,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-#execute at @e[type=pixelmon:bike] run scoreboard players set @s[distance=..1,scores={MusicCooldown=0}] MusicCooldown 119
-#
+execute as @s[nbt={Inventory:[{Slot:103b,components:{"minecraft:custom_name":'{"extra":[{"color":"red","italic":false,"text":"Bicycle"}],"text":""}'}}]}] run playsound bicycle record @s[scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+execute as @s[nbt={Inventory:[{Slot:103b,components:{"minecraft:custom_name":'{"extra":[{"color":"red","italic":false,"text":"Bicycle"}],"text":""}'}}]}] run tag @s add CyclingMusic
+execute as @s[nbt={Inventory:[{Slot:103b,components:{"minecraft:custom_name":'{"extra":[{"color":"red","italic":false,"text":"Bicycle"}],"text":""}'}}]}] run scoreboard players set @s[scores={MusicCooldown=0}] MusicCooldown 119
+
+
 ##Skiddo
 #execute at @e[type=pixelmon:pixelmon,nbt={ndex:672s}] run playsound ridingskiddo record @s[distance=..2,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
 #execute at @e[type=pixelmon:pixelmon,nbt={ndex:672s}] run scoreboard players set @s[distance=..2,scores={MusicCooldown=0}] MusicCooldown 48

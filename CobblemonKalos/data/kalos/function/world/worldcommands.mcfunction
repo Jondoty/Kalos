@@ -105,6 +105,43 @@ execute as @a unless entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:golden_b
 #Saves players that fall into Strength Pits
 execute as @a run function kalos:hms/strengthpit
 
+
+
+#Running Shoe and Bike Speed Effects
+execute as @a unless entity @s[tag=Cycling] run attribute @s minecraft:generic.movement_speed base set 0.15
+execute as @a unless entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:golden_boots"}]}] run attribute @s minecraft:generic.movement_speed base set 0.15
+
+execute as @a[nbt={Inventory:[{Slot:100b,id:"minecraft:golden_boots"}]}] run attribute @s minecraft:generic.movement_speed base set 0.215
+execute as @a[tag=Cycling] run attribute @s[nbt={Inventory:[{Slot:103b,components:{"minecraft:custom_name":'{"extra":[{"color":"red","italic":false,"text":"Bicycle"}],"text":""}'}}]}] minecraft:generic.movement_speed base set 0.3
+
+
+
+
+#Bicycle
+
+#Equips and dequips bikes
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name": '{"extra":[{"color":"red","italic":false,"text":"Bicycle"}],"text":""}'}}}] run tag @s add BikeEquip
+
+execute as @a[tag=BikeEquip] run clear @s minecraft:carrot_on_a_stick[custom_name='["",{"text":"Bicycle","italic":false,"color":"red"}]',lore=['["",{"text":"A folding Bicycle that enables a rider to get around","italic":false}]','[{"text":"much faster than a pair of Running Shoes will allow.","italic":false}]'],custom_model_data=5]
+execute as @a[tag=BikeEquip] run item replace entity @s armor.head with carrot_on_a_stick[custom_name='["",{"text":"Bicycle","italic":false,"color":"red"}]',lore=['["",{"text":"A folding Bicycle that enables a rider to get around","italic":false}]','[{"text":"much faster than a pair of Running Shoes will allow.","italic":false}]'],custom_model_data=5]
+execute as @a[tag=BikeEquip] run function kalos:triggers/stopsound
+execute as @a[tag=BikeEquip] run playsound minecraft:item.armor.equip_iron ambient @s
+
+execute as @a[tag=BikeEquip] run scoreboard players set @s click 0
+tag @a[tag=BikeEquip] remove BikeEquip
+
+
+#Checks if the player has the cycles equiped for music & cycling features
+tag @a[nbt={Inventory:[{Slot:103b,components:{"minecraft:custom_name": '{"extra":[{"color":"red","italic":false,"text":"Bicycle"}],"text":""}'}}]}] add Cycling
+
+#Removes if cycling tag is found, but bike is not
+execute as @a[tag=Cycling] unless entity @s[nbt={Inventory:[{Slot:103b,components:{"minecraft:custom_name":'{"extra":[{"color":"red","italic":false,"text":"Bicycle"}],"text":""}'}}]}] run tag @s remove Cycling
+
+#Stops music if players dequips cycle
+execute as @a[tag=CyclingMusic] unless entity @s[tag=Cycling] run function kalos:triggers/stopsound
+execute as @a[tag=CyclingMusic] unless entity @s[tag=Cycling] run tag @s remove CyclingMusic
+
+
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Story Dialogues
 
