@@ -29,6 +29,7 @@ tag @s[scores={Money=9800..}] add MoneyHave9800
 tag @s[scores={Money=10000..}] add MoneyHave10000
 tag @s[scores={Money=12500..}] add MoneyHave12500
 tag @s[scores={Money=15000..}] add MoneyHave15000
+tag @s[scores={Money=25000..}] add MoneyHave25000
 tag @s[scores={Money=30000..}] add MoneyHave30000
 
 

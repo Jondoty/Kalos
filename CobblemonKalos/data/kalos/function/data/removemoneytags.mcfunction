@@ -28,6 +28,7 @@ tag @s remove MoneyHave9800
 tag @s remove MoneyHave10000
 tag @s remove MoneyHave12500
 tag @s remove MoneyHave15000
+tag @s remove MoneyHave25000
 tag @s remove MoneyHave30000
 
 #Battle Points

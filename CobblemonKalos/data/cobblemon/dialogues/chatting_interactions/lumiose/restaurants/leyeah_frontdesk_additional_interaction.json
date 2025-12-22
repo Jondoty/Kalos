@@ -1,4 +1,11 @@
 {
+    "initializationAction": [
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/testformoney');"
+    ],
+    "escapeAction": [
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
+        "q.dialogue.close();"
+    ],
     "speakers": {
         "npc": {
             "name": "Restaurant Le Yeah",
@@ -52,6 +59,7 @@
                 "vertical": true,
                 "options": [
                     {
+                        "isSelectable": "q.player.has_tag('MoneyHave15000')",
                         "text": "Yeah, I’ll dine",
                         "value": "next",
                         "action": [
@@ -86,13 +94,13 @@
                             "q.run_command('execute as ' + q.player.username + ' run particle cloud -394 101 158 2 2 2 1 100');",
                             "q.run_command('execute unless entity @e[x=-394,y=100,z=158,dy=3,type=cobblemon:npc] run npcspawnat -394 101 158 leyeah_first');",
                             "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 15000');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
                             "q.dialogue.close();"
                         ]
                     }
                 ]
             }
         },
-
         {
             "id": "end",
             "speaker": "npc",
@@ -110,6 +118,7 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
                             "q.dialogue.close();"
                         ]
                     }

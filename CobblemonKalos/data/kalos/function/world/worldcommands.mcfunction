@@ -46,9 +46,10 @@ scoreboard players set @a[scores={CooldownJump=1..}] CooldownJump 0
 
 
 #Runs whiteout function if enabled
-#Exception is the battle maison or chateau
+#Exceptions, Battle Maison, Chateau or restaurants
 execute as @a[x=1182,y=63,z=1511,dx=76,dy=31,dz=94,tag=Whiteout] run tag @s remove Whiteout
 execute as @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,tag=Whiteout] run tag @s remove Whiteout
+execute as @a[x=514,y=100,z=116,dx=346,dy=20,dz=71,tag=Whiteout] run tag @s remove Whiteout
 
 execute as @a[tag=Whiteout] if entity @e[x=-563,y=100,z=1241,dy=3,tag=WhiteoutEnable] run function kalos:triggers/whiteout
 execute as @a[tag=Whiteout] run tag @s remove Whiteout

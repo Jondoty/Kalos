@@ -1,4 +1,11 @@
 {
+    "initializationAction": [
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/testformoney');"
+    ],
+    "escapeAction": [
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
+        "q.dialogue.close();"
+    ],
     "speakers": {
         "npc": {
             "name": "Sushi High Roller",
@@ -95,13 +102,13 @@
                             "q.run_command('execute as ' + q.player.username + ' run tp @s -485 101 157 -72.90 12.15');",
                             "q.run_command('execute as ' + q.player.username + ' run particle cloud -481 101 158 2 2 2 1 100');",
                             "q.run_command('execute unless entity @e[x=-481,y=100,z=158,dy=3,type=cobblemon:npc] run npcspawnat -481 101 158 highroller_first');",
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
                             "q.dialogue.close();"
                         ]
                     }
                 ]
             }
         },
-
         {
             "id": "end",
             "speaker": "npc",
@@ -116,6 +123,7 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
                             "q.dialogue.close();"
                         ]
                     }
