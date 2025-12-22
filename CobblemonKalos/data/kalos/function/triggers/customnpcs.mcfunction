@@ -33,7 +33,9 @@ execute as @s[x=-1707,y=2,z=-437,distance=..10,scores={Diancie=0}] run opendialo
 #General Story NPCs
 
 #Mom
-
+execute as @s[x=495,y=108,z=1565,distance=..6,tag=!Dialogue2] run opendialogue vaniville_mom @s
+execute as @s[x=495,y=108,z=1565,distance=..6,tag=Dialogue2,tag=!Dialogue7] run opendialogue vaniville_mom2 @s
+execute as @s[x=495,y=108,z=1565,distance=..6,tag=Dialogue7] run opendialogue vaniville_mom3 @s
 
 
 #Santalune City Alexa
