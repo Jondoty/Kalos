@@ -383,6 +383,9 @@ execute as @s[nbt={Inventory:[{Slot:103b,components:{"minecraft:custom_name":'{"
 #execute at @e[type=pixelmon:pixelmon,nbt={ndex:672s}] run playsound ridingskiddo record @s[distance=..2,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
 #execute at @e[type=pixelmon:pixelmon,nbt={ndex:672s}] run scoreboard players set @s[distance=..2,scores={MusicCooldown=0}] MusicCooldown 48
 
+execute as @s at @s if entity @e[distance=..1,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:skiddo"}}] run playsound ridingskiddo record @s[scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+execute as @s at @s if entity @e[distance=..1,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:skiddo"}}] run tag @s add SkiddoMusic
+execute as @s at @s if entity @e[distance=..1,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:skiddo"}}] run scoreboard players set @s[scores={MusicCooldown=0}] MusicCooldown 48
 
 
 #----------------------------------------------------------------Pokemon Center Birthday Theme----------------------------------------------------------------

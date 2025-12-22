@@ -142,6 +142,14 @@ execute as @a[tag=CyclingMusic] unless entity @s[tag=Cycling] run function kalos
 execute as @a[tag=CyclingMusic] unless entity @s[tag=Cycling] run tag @s remove CyclingMusic
 
 
+#Starts Skiddo music
+execute as @a[tag=!SkiddoMusic] at @s if entity @e[distance=..1.5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:skiddo"}}] run function kalos:triggers/stopsound
+execute as @a[tag=!SkiddoMusic] at @s if entity @e[distance=..1.5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:skiddo"}}] run tag @s add SkiddoMusic
+
+#Stops Skiddo music if players dismounts a Skiddo
+execute as @a[tag=SkiddoMusic] at @s unless entity @e[distance=..1.5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:skiddo"}}] run function kalos:triggers/stopsound
+execute as @a[tag=SkiddoMusic] at @s unless entity @e[distance=..1.5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:skiddo"}}] run tag @s remove SkiddoMusic
+
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Story Dialogues
 

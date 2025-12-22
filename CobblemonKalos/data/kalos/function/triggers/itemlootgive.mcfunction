@@ -2456,6 +2456,12 @@ execute as @s[x=-1449,y=80,z=-816,distance=..5,tag=!ItemLoot542] run tellraw @s 
 execute as @s[x=-1449,y=80,z=-816,distance=..5,tag=!ItemLoot542] run playsound minecraft:itemget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-1449,y=80,z=-816,distance=..5,tag=!ItemLoot542] run tag @s add ItemLoot542
 
+execute as @s[x=-1343,y=78,z=-846,distance=..5,tag=ItemLoot543] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
+execute as @s[x=-1343,y=78,z=-846,distance=..5,tag=!ItemLoot543] run pokegive skiddo level=25
+execute as @s[x=-1343,y=78,z=-846,distance=..5,tag=!ItemLoot543] run tellraw @s {"text":"You received a Skiddo!","italic":true,"color":"gray"}
+execute as @s[x=-1343,y=78,z=-846,distance=..5,tag=!ItemLoot543] run playsound minecraft:itemget ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-1343,y=78,z=-846,distance=..5,tag=!ItemLoot543] run tag @s add ItemLoot543
+
 execute as @s[x=-779,y=104,z=-347,distance=..5,tag=Dialogue70,tag=PowerPlantPass] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
 execute as @s[x=-779,y=104,z=-347,distance=..5,tag=Dialogue70,tag=!PowerPlantPass] run tellraw @s {"text":"You found a Power Plant Pass!","italic":true,"color":"gray"}
 execute as @s[x=-779,y=104,z=-347,distance=..5,tag=Dialogue70,tag=!PowerPlantPass] run playsound minecraft:itemget ambient @s ~ ~ ~ 1 1 1
