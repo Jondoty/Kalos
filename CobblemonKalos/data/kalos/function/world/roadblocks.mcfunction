@@ -70,11 +70,11 @@ execute as @s[x=-1159,y=99,z=-44,dx=12,dy=10,dz=19,tag=!Dialogue27] at @s run tp
 
 #
 #Route 7, Route 6 block before Snorlax talk
-tellraw @s[x=-1207,y=100,z=-55,dx=31,dy=10,dz=11,tag=!Dialogue28] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> "},{"selector":"@p[x=-1207,y=100,z=-55,dx=31,dy=10,dz=11,tag=!Dialogue28]"},{"text":"! They said they were going this way!"}]
+tellraw @s[x=-1207,y=100,z=-55,dx=31,dy=10,dz=11,tag=!Dialogue28] ["",{"text":"<"},{"text":"Shauna","color":"light_purple"},{"text":"> "},{"selector":"@s"},{"text":"! They said they were going this way!"}]
 execute as @s[x=-1207,y=100,z=-55,dx=31,dy=10,dz=11,tag=!Dialogue28] at @s run tp @s ~ ~ ~10
 
 #Ambrette Talk to Fossil Lab
-tellraw @s[x=-1908,y=140,z=618,dx=10,dy=10,dz=14,tag=!Dialogue39] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Hey "},{"selector":"@s[x=-1908,y=140,z=618,dx=10,dy=10,dz=14,score_TalkTime=0,tag=!Dialogue39]"},{"text":"! The Fossil Lab is this way!"}]
+tellraw @s[x=-1908,y=140,z=618,dx=10,dy=10,dz=14,tag=!Dialogue39] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Hey "},{"selector":"@s"},{"text":"! The Fossil Lab is this way!"}]
 execute as @s[x=-1908,y=140,z=618,dx=10,dy=10,dz=14,tag=!Dialogue39] at @s run tp @s ~-10 ~ ~
 
 #Glittering Cave first Team Flare grunt pulling player back

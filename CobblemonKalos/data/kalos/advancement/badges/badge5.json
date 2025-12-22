@@ -9,7 +9,7 @@
             "text": "Defeat Clemont in battle"
         },
         "icon": {
-            "id": "mega_showdown:electricmemory"
+            "id": "mega_showdown:electric_memory"
         },
         "frame": "task",
         "show_toast": true,
