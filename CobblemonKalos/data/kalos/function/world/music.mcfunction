@@ -47,7 +47,7 @@ scoreboard players set @s[tag=LysandreBattleMusic,scores={MusicCooldown=0}] Musi
 #Friend/Rival Battles
 playsound friendbattle record @s[tag=FriendBattleMusic,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
 tag @s[tag=FriendBattleMusic,scores={MusicCooldown=0}] add OldTimings
-scoreboard players set @s[tag=FriendBattleMusic,scores={MusicCooldown=0}] MusicCooldown 166
+scoreboard players set @s[tag=FriendBattleMusic,scores={MusicCooldown=0}] MusicCooldown 161
 
 #Successor Korrina Battle
 playsound successorbattle record @s[tag=KorrinaBattleMusic,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1

@@ -6,6 +6,7 @@ gamerule keepInventory true
 scoreboard objectives setdisplay sidebar
 scoreboard objectives setdisplay list
 difficulty peaceful
+gamerule drowningDamage false
 
 gamemode adventure @s
 
@@ -30,7 +31,6 @@ advancement grant @s only kalos:root
 
 #Items
 function kalos:spawn/holocaster
-function kalos:spawn/townmap
 function kalos:spawn/runningshoes
 scoreboard players add @s Money 2000
 

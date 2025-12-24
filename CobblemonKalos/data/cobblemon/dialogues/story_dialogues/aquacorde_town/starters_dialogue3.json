@@ -286,6 +286,7 @@
                             "q.dialogue.close();",
                             "q.run_command('execute as ' + q.player.username + ' run tp @s -1078 101 1211 180 5');",
                             "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+                            "q.run_command('execute as ' + q.player.username + ' run pokerestart');",
                             "q.run_command('tag ' + q.player.username + ' add Dialogue3');",
                             "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
                             ]

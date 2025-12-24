@@ -120,9 +120,9 @@ execute positioned -1301 101 -36 as @e[distance=..5,type=cobblemon:pokemon,nbt={
 execute positioned -1301 101 -36 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:snorlax"},PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
 execute positioned -1301 101 -36 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:snorlax"},PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
 
-execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=!Dialogue33] unless entity @e[x=-1289,y=100,z=-39,dy=3,type=cobblemon:npc] run npcspawnat -1289 100 -39 shauna_generic
-execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=!Dialogue33] unless entity @e[x=-1296,y=101,z=-37,dy=3,type=cobblemon:npc] run npcspawnat -1298 101 -34 camphrier_guide
-execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=!Dialogue33] unless entity @e[x=-1298,y=101,z=-34,dy=3,type=cobblemon:npc] run npcspawnat -1296 101 -37 camphrier_worker
+execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=!Dialogue28] unless entity @e[x=-1289,y=100,z=-39,dy=3,type=cobblemon:npc] run npcspawnat -1289 100 -39 shauna_generic
+execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=!Dialogue33] unless entity @e[x=-1298,y=101,z=-34,dy=3,type=cobblemon:npc] run npcspawnat -1298 101 -34 camphrier_guide
+execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=!Dialogue33] unless entity @e[x=-1296,y=101,z=-37,dy=3,type=cobblemon:npc] run npcspawnat -1296 101 -37 camphrier_worker
 
 execute as @s[x=-1301,y=101,z=-36,distance=..15,tag=!Dialogue28] run opendialogue snorlax_dialogue28 @s
 
@@ -152,9 +152,6 @@ execute as @s[x=-1436,y=110,z=-401,dx=15,dy=10,dz=54,tag=Dialogue31,tag=!Dialogu
 
 #Route 7 Snorlax waking up
 execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=Dialogue32,tag=!Dialogue33] unless entity @e[x=-1289,y=100,z=-39,dy=3,type=cobblemon:npc] run npcspawnat -1289 100 -39 shauna_generic
-execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=Dialogue32,tag=!Dialogue33] unless entity @e[x=-1296,y=101,z=-37,dy=3,type=cobblemon:npc] run npcspawnat -1298 101 -34 camphrier_guide
-execute as @s[x=-1293,y=100,z=-36,distance=..20,tag=Dialogue32,tag=!Dialogue33] unless entity @e[x=-1298,y=101,z=-34,dy=3,type=cobblemon:npc] run npcspawnat -1296 101 -37 camphrier_worker
-
 execute as @s[x=-1301,y=101,z=-36,distance=..15,tag=Dialogue32,tag=!Dialogue33] run opendialogue snorlax_dialogue33 @s
 
 
@@ -228,7 +225,7 @@ execute as @s[x=-1659,y=92,z=-1156,distance=..10,tag=Dialogue59,tag=!Dialogue60]
 
 #Tower of Mastery Korrina Mega Battle
 execute as @s[x=-1635,y=188,z=-1180,distance=..25,tag=!Dialogue64] unless entity @e[x=-1635,y=188,z=-1180,dy=3,type=cobblemon:npc] run npcspawnat -1635 188 -1180 towerofmastery_korrina
-execute as @s[x=-1635,y=188,z=-1180,distance=..5,tag=!Dialogue63] run opendialogue korrina_dialogue63 @s
+execute as @s[x=-1635,y=188,z=-1180,distance=..8,tag=!Dialogue63] run opendialogue korrina_dialogue63 @s
 
 #Shalour Serena giving Surf after the Tower of Mastery battle
 execute as @s[x=-1540,y=83,z=-810,distance=..15,tag=Dialogue64,tag=!Dialogue65] unless entity @e[x=-1517,y=80,z=-808,dy=3,type=cobblemon:npc] run npcspawnat -1517 80 -808 serena_generic
@@ -291,8 +288,8 @@ execute as @s[x=-719,y=99,z=-474,dx=7,dy=10,dz=12,tag=Dialogue75,tag=!Dialogue76
 execute as @a[x=-509,y=101,z=-497,distance=..20,tag=!Dialogue77] run opendialogue shauna_dialogue77 @s
 
 #Lumiose City Clemong, Bonnie and Shauna working on tower
-execute if entity @s[x=-254,y=101,z=-413,distance=..15,tag=!Dialogue78] run setblock -181 172 -390 iron_block 
-execute if entity @s[x=-254,y=101,z=-413,distance=..15,tag=!Dialogue78] as @e[x=-181,y=114,z=-390,distance=..30,type=armor_stand,nbt={ArmorItems:[{},{},{},{components:{"minecraft:custom_model_data":34},count:1,id:"minecraft:iron_hoe"}]}] run data merge entity @s {ArmorItems:[{},{},{},{components:{"minecraft:custom_model_data":52},count:1,id:"minecraft:iron_hoe"}]}
+execute if entity @s[x=-254,y=101,z=-413,distance=..55,tag=!Dialogue78] run setblock -181 172 -390 iron_block 
+execute if entity @s[x=-254,y=101,z=-413,distance=..55,tag=!Dialogue78] as @e[x=-181,y=114,z=-390,distance=..30,type=armor_stand,nbt={ArmorItems:[{},{},{},{components:{"minecraft:custom_model_data":34},count:1,id:"minecraft:iron_hoe"}]}] run data merge entity @s {ArmorItems:[{},{},{},{components:{"minecraft:custom_model_data":52},count:1,id:"minecraft:iron_hoe"}]}
 execute as @s[x=-254,y=101,z=-413,distance=..15,tag=!Dialogue78] unless entity @e[x=-226,y=102,z=-395,dy=3,type=cobblemon:npc] run npcspawnat -226 102 -395 shauna_generic
 execute as @s[x=-254,y=101,z=-413,distance=..15,tag=!Dialogue78] unless entity @e[x=-214,y=102,z=-392,dy=3,type=cobblemon:npc] run npcspawnat -214 102 -392 clemont_generic
 execute as @s[x=-254,y=101,z=-413,distance=..15,tag=!Dialogue78] unless entity @e[x=-214,y=102,z=-388,dy=3,type=cobblemon:npc] run npcspawnat -214 102 -388 bonnie_generic
@@ -389,7 +386,7 @@ execute as @s[x=733,y=119,z=-646,distance=..20,tag=!Dialogue95] unless entity @e
 execute as @s[x=717,y=117,z=-682,dx=24,dy=10,dz=20,tag=!Dialogue95] run opendialogue trevor_dialogue95 @s
 
 #Frost Cavern Abomasnow and Team Flare 
-execute as @s[x=676,y=85,z=-1368,distance=..20,tag=!Dialogue98] unless entity @e[x=722,y=118,z=-666,distance=..5,type=cobblemon:pokemon] run pokespawnat 676 85 -1368 abomasnow no_ai=true level=40
+execute as @s[x=676,y=85,z=-1368,distance=..20,tag=!Dialogue98] unless entity @e[x=676,y=85,z=-1368,distance=..5,type=cobblemon:pokemon] run pokespawnat 676 85 -1368 abomasnow no_ai=true level=40
 execute positioned 676 85 -1368 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:abomasnow"},PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
 execute positioned 676 85 -1368 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:abomasnow"},PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
 execute positioned 676 85 -1368 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:abomasnow"},PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
@@ -419,7 +416,7 @@ execute as @s[x=837,y=108,z=-335,distance=..10,tag=!Dialogue98,tag=!Dialogue99] 
 execute as @s[x=837,y=108,z=-335,distance=..10,tag=Dialogue98,tag=!Dialogue100] run opendialogue mamoswinetrainer_dialogue100 @s
 
 #Invisibles Mamoswine before player defeats Mable
-execute as @s[x=839,y=108,z=-335,distance=..50,tag=!Dialogue98] run effect give @e[x=839,y=108,z=-335,distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:mamoswine"}}] minecraft:invisibility 15 1 true
+execute as @s[x=839,y=108,z=-335,distance=..75,tag=!Dialogue98] run effect give @e[x=839,y=108,z=-335,distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:mamoswine"}}] minecraft:invisibility 15 1 true
 
 
 #Anistar Sina at entrance to city
@@ -510,8 +507,8 @@ execute as @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue128] run opendia
 #47 xer
 #48 yvel
 #From upper level
-execute as @s[x=2336,y=70,z=-978,distance=..10,scores={GameVersion=1},tag=!Dialogue131] unless entity @e[x=-2336,y=49,z=-1022,distance=..6,type=armor_stand] run summon minecraft:armor_stand -2336 49 -1022 {Invisible:true,Invulnerable:true,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"iron_hoe",Count:1,components:{"minecraft:custom_model_data":47}}],NoGravity:1b}
-execute as @s[x=2336,y=70,z=-978,distance=..10,scores={GameVersion=2},tag=!Dialogue131] unless entity @e[x=-2336,y=49,z=-1022,distance=..6,type=armor_stand] run summon minecraft:armor_stand -2336 50.5 -1022 {Invisible:true,Invulnerable:true,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"iron_hoe",Count:1,components:{"minecraft:custom_model_data":48}}],NoGravity:1b}
+execute as @s[x=-2336,y=70,z=-978,distance=..10,scores={GameVersion=1},tag=!Dialogue131] unless entity @e[x=-2336,y=49,z=-1022,distance=..6,type=armor_stand] run summon minecraft:armor_stand -2336 49 -1022 {Invisible:true,Invulnerable:true,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"iron_hoe",Count:1,components:{"minecraft:custom_model_data":47}}],NoGravity:1b}
+execute as @s[x=-2336,y=70,z=-978,distance=..10,scores={GameVersion=2},tag=!Dialogue131] unless entity @e[x=-2336,y=49,z=-1022,distance=..6,type=armor_stand] run summon minecraft:armor_stand -2336 50.5 -1022 {Invisible:true,Invulnerable:true,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"iron_hoe",Count:1,components:{"minecraft:custom_model_data":48}}],NoGravity:1b}
 
 #From lower level
 execute as @s[x=-2336,y=42,z=-995,distance=..10,scores={GameVersion=1,DialogueTrigger=0},tag=!Dialogue131] unless entity @e[x=-2336,y=49,z=-1022,distance=..6,type=armor_stand] run summon minecraft:armor_stand -2336 49 -1022 {Invisible:true,Invulnerable:true,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"iron_hoe",Count:1,components:{"minecraft:custom_model_data":47}}],NoGravity:1b}

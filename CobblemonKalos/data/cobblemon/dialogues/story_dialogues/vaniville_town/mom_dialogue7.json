@@ -111,7 +111,7 @@
                         "text": "Next",
                         "value": "next",
                         "action": [
-                            "q.run_command('clear ' + q.player.username + ' @s minecraft:paper');",
+                            "q.run_command('clear ' + q.player.username + ' minecraft:paper');",
                             "q.dialogue.set_page('page6');"
                     ]
                     }

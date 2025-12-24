@@ -347,12 +347,58 @@
             ],
             "input": {
                 "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Yes, it was me.",
+                        "value": "yesitwasme",
+                        "action": "q.dialogue.set_page('lie1');"
+                    },
+                    {
+                        "text": "It was given to me.",
+                        "value": "giventome",
+                        "action": "q.dialogue.set_page('page16');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "lie1",
+            "speaker": "guru",
+            "lines": [
+                "Nothing good comes from lying!"
+            ],
+            "input": {
+                "type": "option",
                 "vertical": false,
                 "options": [
                     {
                         "text": "Next",
                         "value": "next",
-                        "action": "q.dialogue.set_page('page16');"
+                        "action": "q.dialogue.set_page('lie2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "lie2",
+            "speaker": "guru",
+            "lines": [
+                "Were you REALLY the one who found that Intriguing Stone?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Yep, sure was.",
+                        "value": "itwasme",
+                        "action": "q.dialogue.set_page('page18');"
+                    },
+                    {
+                        "text": "It was given to me.",
+                        "value": "giventome",
+                        "action": "q.dialogue.set_page('page17');"
                     }
                 ]
             }

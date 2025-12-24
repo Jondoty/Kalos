@@ -75,11 +75,6 @@
                         "action": "q.dialogue.set_page('pickleafstone');"
                     },
                     {
-                        "text": "Moon Stone",
-                        "value": "moonstone",
-                        "action": "q.dialogue.set_page('pickmoonstone');"
-                    },
-                    {
                         "text": "Next Page >>",
                         "value": "nextpage",
                         "action": "q.dialogue.set_page('buy2');"
@@ -98,6 +93,11 @@
                 "vertical": true,
                 "options": [
                     {
+                        "text": "Moon Stone",
+                        "value": "moonstone",
+                        "action": "q.dialogue.set_page('pickmoonstone');"
+                    },
+                    {
                         "text": "Sun Stone",
                         "value": "sunstone",
                         "action": "q.dialogue.set_page('picksunstone');"
@@ -113,14 +113,42 @@
                         "action": "q.dialogue.set_page('pickduskstone');"
                     },
                     {
+                        "text": "Next Page >>",
+                        "value": "nextpage",
+                        "action": "q.dialogue.set_page('buy3');"
+                    }
+                ]
+            }
+        },
+                {
+            "id": "buy3",
+            "speaker": "npc",
+            "lines": [
+                "Which item would you like to purchase?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
                         "text": "Shiny Stone",
                         "value": "shinystone",
                         "action": "q.dialogue.set_page('pickshinystone');"
                     },
                     {
+                        "text": "Ice Stone",
+                        "value": "icestone",
+                        "action": "q.dialogue.set_page('pickicestone');"
+                    },
+                    {
                         "text": "Everstone",
                         "value": "everstone",
                         "action": "q.dialogue.set_page('pickeverstone');"
+                    },
+                    {
+                        "text": "Link Cable",
+                        "value": "linkcable",
+                        "action": "q.dialogue.set_page('picklinkcable');"
                     },
                     {
                         "text": "<< Page 1",
@@ -430,6 +458,68 @@
                             "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:everstone 1');",
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
                             "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 1000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickicestone",
+            "speaker": "npc",
+            "lines": [
+                "You'd like to purchase an Ice Stone for $3000?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave3000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:ice_stone 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 3000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "picklinkcable",
+            "speaker": "npc",
+            "lines": [
+                "You'd like to purchase a Link Cable for $3000?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave3000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s cobblemon:link_cable 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.experience_orb.pickup ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 3000');",
                             "q.dialogue.set_page('buyend');"
                         ]
                     },

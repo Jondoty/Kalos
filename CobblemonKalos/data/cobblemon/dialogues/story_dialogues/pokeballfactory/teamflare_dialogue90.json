@@ -194,7 +194,7 @@
             "id": "page8",
             "speaker": "president",
             "lines": [
-                "I'll give you a Master Ball or a Big Nugget. Pick whichever one you'd like."
+                "I'll give you a Master Ball or a $10,000. Pick whichever one you'd like."
             ],
             "input": {
                 "type": "option",
@@ -208,8 +208,8 @@
                         ]
                     },
                     {
-                        "text": "Big Nugget",
-                        "value": "bignugget",
+                        "text": "$10,000",
+                        "value": "10000",
                         "action": [
                             "q.dialogue.set_page('page9');"
                         ]
@@ -254,7 +254,7 @@
                         "value": "next",
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:itemget ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players add @s Money 20000');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players add @s Money 10000');",
                             "q.dialogue.set_page('page11');"
                         ]
                     }
@@ -302,7 +302,7 @@
             }
         },
         {
-            "id": "page13",
+            "id": "page0000",
             "speaker": "president",
             "lines": [
                 "Oh, and even I don't know the proper way to use a Big Nugget."
@@ -322,7 +322,7 @@
             }
         },
         {
-            "id": "page14",
+            "id": "page13",
             "speaker": "president",
             "lines": [
                 "Still... That blasted Team Flare."

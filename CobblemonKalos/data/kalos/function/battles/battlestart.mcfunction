@@ -104,7 +104,7 @@ execute as @s[tag=!RadioOff,scores={BattleStart=19}] run playsound trainerbattle
 execute as @s[tag=!RadioOff,scores={BattleStart=19}] run scoreboard players set @s[tag=Music1] MusicCooldown 227
 
 execute as @s[tag=!RadioOff,scores={BattleStart=19}] run playsound friendbattle record @s[tag=Music2] ~ ~ ~ 1 1 1
-execute as @s[tag=!RadioOff,scores={BattleStart=19}] run scoreboard players set @s[tag=Music2] MusicCooldown 166
+execute as @s[tag=!RadioOff,scores={BattleStart=19}] run scoreboard players set @s[tag=Music2] MusicCooldown 161
 
 execute as @s[tag=!RadioOff,scores={BattleStart=19}] run playsound gymleaderbattle record @s[tag=Music3] ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleStart=19}] run scoreboard players set @s[tag=Music3] MusicCooldown 363
@@ -136,7 +136,7 @@ execute as @s[tag=!RadioOff,scores={BattleStart=26}] run scoreboard players set 
 #27 - Friends Battle
 execute as @s[tag=!RadioOff,scores={BattleStart=27}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleStart=27}] run playsound friendbattle record @s ~ ~ ~ 1 1 1
-execute as @s[tag=!RadioOff,scores={BattleStart=27}] run scoreboard players set @s MusicCooldown 198
+execute as @s[tag=!RadioOff,scores={BattleStart=27}] run scoreboard players set @s MusicCooldown 161
 
 #28 - Team Flare Grunts/Admins Battle
 execute as @s[tag=!RadioOff,scores={BattleStart=28}] run stopsound @s record

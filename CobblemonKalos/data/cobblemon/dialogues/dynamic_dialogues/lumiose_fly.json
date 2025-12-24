@@ -1,0 +1,58 @@
+{
+    "speakers": {
+        "player": {
+            "face": "q.player.face(true);",
+            "name": {
+                "type": "expression",
+                "expression": "q.player.username"
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "player",
+            "lines": [
+                "Which part of the city do you want to fly to?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('LumiosePower')",
+                        "text": "North Boulevard",
+                        "value": "north",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.arrow.shoot ambient @s ~ ~ ~ 10000 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -146.85 101.00 -655.30 220.31 1.95');",
+                            "q.run_command('execute as ' + q.player.username + ' run function world:musictitles');",
+                            "q.dialogue.close();"
+                        ]
+                    },
+                    {
+                        "isSelectable": "q.player.has_tag('LumiosePower')",
+                        "text": "Central Boulevard",
+                        "value": "central",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.arrow.shoot ambient @s ~ ~ ~ 10000 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -257.70 101.00 -403.58 -133.99 1.35');",
+                            "q.run_command('execute as ' + q.player.username + ' run function world:musictitles');",
+                            "q.dialogue.close();"
+                        ]
+                    },
+                    {
+                        "text": "South Boulevard",
+                        "value": "south",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:entity.arrow.shoot ambient @s ~ ~ ~ 10000 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -226.75 101.00 -129.04 36.11 -1.65');",
+                            "q.run_command('execute as ' + q.player.username + ' run function world:musictitles');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

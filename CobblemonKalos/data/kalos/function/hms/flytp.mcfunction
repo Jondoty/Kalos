@@ -1,12 +1,14 @@
 #Resets any Escape Rope cave data if player has score
 scoreboard players set @a[x=1489,y=204,z=-1346,distance=..30,scores={EscapeRope=1..}] EscapeRope 0
 
+#Specialty area, prompts player which Lumiose Blvd to tp to
+execute as @s[x=1489,y=204,z=-1346,dy=4,tag=FlyLumiose] run opendialogue lumiose_fly @s
+
 #Plays woosh sound
 playsound minecraft:entity.arrow.shoot ambient @a[x=1496,y=204,z=-1334,dy=4,tag=FlyKiloude] ~ ~ ~ 10000 1 1
 playsound minecraft:entity.arrow.shoot ambient @a[x=1493,y=204,z=-1335,dy=4] ~ ~ ~ 10000 1 1
 playsound minecraft:entity.arrow.shoot ambient @a[x=1493,y=204,z=-1338,dy=4,tag=FlyAquacorde] ~ ~ ~ 10000 1 1
 playsound minecraft:entity.arrow.shoot ambient @a[x=1492,y=204,z=-1341,dy=4,tag=FlySantalune] ~ ~ ~ 10000 1 1
-playsound minecraft:entity.arrow.shoot ambient @a[x=1489,y=204,z=-1346,dy=4,tag=FlyLumiose] ~ ~ ~ 10000 1 1
 playsound minecraft:entity.arrow.shoot ambient @a[x=1495,y=204,z=-1344,dy=4,tag=FlyPokemonLeague] ~ ~ ~ 10000 1 1
 playsound minecraft:entity.arrow.shoot ambient @a[x=1498,y=204,z=-1341,dy=4,tag=FlySnowbelle] ~ ~ ~ 10000 1 1
 playsound minecraft:entity.arrow.shoot ambient @a[x=1502,y=204,z=-1343,dy=4,tag=FlyCouriway] ~ ~ ~ 10000 1 1
@@ -46,7 +48,6 @@ execute as @s[x=1496,y=204,z=-1334,dy=4,tag=FlyKiloude] run function world:music
 execute as @s[x=1493,y=204,z=-1335,dy=4] run function world:musictitles
 execute as @s[x=1493,y=204,z=-1338,dy=4,tag=FlyAquacorde] run function world:musictitles
 execute as @s[x=1492,y=204,z=-1341,dy=4,tag=FlySantalune] run function world:musictitles
-execute as @s[x=1489,y=204,z=-1346,dy=4,tag=FlyLumiose] run function world:musictitles
 execute as @s[x=1495,y=204,z=-1344,dy=4,tag=FlyPokemonLeague] run function world:musictitles
 execute as @s[x=1498,y=204,z=-1341,dy=4,tag=FlySnowbelle] run function world:musictitles
 execute as @s[x=1502,y=204,z=-1343,dy=4,tag=FlyCouriway] run function world:musictitles
@@ -68,7 +69,6 @@ tp @s[x=1496,y=204,z=-1334,dy=4,tag=FlyKiloude] 1180 101 1664 0 ~
 tp @s[x=1493,y=204,z=-1335,dy=4] 509 107 1645 0 ~
 tp @s[x=1493,y=204,z=-1338,dy=4,tag=FlyAquacorde] 498 100 1311 0 ~
 tp @s[x=1492,y=204,z=-1341,dy=4,tag=FlySantalune] 297 100 488 0 ~
-tp @s[x=1489,y=204,z=-1346,dy=4,tag=FlyLumiose] -181 101 -84 0 ~
 tp @s[x=1495,y=204,z=-1344,dy=4,tag=FlyPokemonLeague] -1936 88 2280 0 ~
 tp @s[x=1498,y=204,z=-1341,dy=4,tag=FlySnowbelle] 1217 105 506 0 ~
 tp @s[x=1502,y=204,z=-1343,dy=4,tag=FlyCouriway] 1476 100 176 0 ~

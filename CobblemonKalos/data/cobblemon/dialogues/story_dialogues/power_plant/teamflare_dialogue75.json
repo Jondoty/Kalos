@@ -1,4 +1,4 @@
-{   
+{
     "initializationAction": [
         "c.npc.set_chatting();",
         "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 1');",
@@ -6,46 +6,44 @@
         "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $5320 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
         "q.run_command('scoreboard players add ' + q.player.username + ' Money 5320');",
         "q.run_command('tag ' + q.player.username + ' add InDialogue');"
-            ],
+    ],
     "escapeAction": [],
     "speakers": {
         "admin": {
-          "name": "Team Flare Admin",
-          "face": {
-            "type": "artificial",
-            "modelType": "npc",
-            "identifier": "cobblemon:teamflareadminm",
-            "isLeftSide": true
-          }
+            "name": "Team Flare Admin",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:teamflareadminm",
+                "isLeftSide": true
+            }
         },
-        
         "aliana": {
-          "name": "Team Flare Admin",
-          "face": {
-            "type": "artificial",
-            "modelType": "npc",
-            "identifier": "cobblemon:aliana",
-            "isLeftSide": false
-          }
+            "name": "Team Flare Admin",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:aliana",
+                "isLeftSide": false
+            }
         },
-        
         "sina": {
-          "name": "???",
-          "face": {
-            "type": "artificial",
-            "modelType": "npc",
-            "identifier": "cobblemon:sina_hero",
-            "isLeftSide": false
-          }
+            "name": "???",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:sina_hero",
+                "isLeftSide": false
+            }
         },
         "dexio": {
-          "name": "???",
-          "face": {
-            "type": "artificial",
-            "modelType": "npc",
-            "identifier": "cobblemon:dexio_hero",
-            "isLeftSide": true
-          }
+            "name": "???",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:dexio_hero",
+                "isLeftSide": true
+            }
         },
         "player": {
             "face": "q.player.face();",
@@ -54,7 +52,7 @@
                 "expression": "q.player.username"
             }
         }
-      },
+    },
     "pages": [
         {
             "id": "greeting",
@@ -94,6 +92,9 @@
                             "q.run_command('tp @e[x=-1013,y=57,z=-335,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
                             "q.run_command('particle cloud -1000 58 -335 2 2 2 1 100');",
                             "q.run_command('particle cloud -1000 58 -339 2 2 2 1 100');",
+                            "q.run_command('execute unless entity @e[x=-1000,y=58,z=-335,dy=3,type=cobblemon:npc] run npcspawnat -1000 58 -335 sina_hero_generic');",
+                            "q.run_command('execute unless entity @e[x=-1000,y=58,z=-339,dy=3,type=cobblemon:npc] run npcspawnat -1000 58 -339 dexio_hero_generic');",
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -1003.10 58.00 -337.29 282.60 19.50');",
                             "q.dialogue.set_page('page3');"
                         ]
                     }
@@ -118,7 +119,6 @@
                 ]
             }
         },
-        
         {
             "id": "page4",
             "speaker": "sina",
@@ -137,7 +137,6 @@
                 ]
             }
         },
-        
         {
             "id": "page5",
             "speaker": "sina",
@@ -159,7 +158,6 @@
                 ]
             }
         },
-        
         {
             "id": "page6",
             "speaker": "dexio",
@@ -178,7 +176,6 @@
                 ]
             }
         },
-        
         {
             "id": "page7",
             "speaker": "dexio",
@@ -201,7 +198,6 @@
                 ]
             }
         },
-        
         {
             "id": "page8",
             "speaker": "dexio",
@@ -220,7 +216,6 @@
                 ]
             }
         },
-        
         {
             "id": "page9",
             "speaker": "dexio",
@@ -239,7 +234,6 @@
                 ]
             }
         },
-        
         {
             "id": "page10",
             "speaker": "sina",
@@ -258,7 +252,6 @@
                 ]
             }
         },
-        
         {
             "id": "page11",
             "speaker": "sina",
@@ -276,12 +269,14 @@
                             "q.dialogue.close();",
                             "q.run_command('particle cloud -1000 58 -339 2 2 2 1 100');",
                             "q.run_command('particle cloud -1000 58 -335 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-1000,y=57,z=-339,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('tp @e[x=-1000,y=57,z=-335,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
                             "q.run_command('tag ' + q.player.username + ' add Dialogue75');",
                             "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
-                            ]
+                        ]
                     }
                 ]
             }
         }
-        ]
-    }
+    ]
+}

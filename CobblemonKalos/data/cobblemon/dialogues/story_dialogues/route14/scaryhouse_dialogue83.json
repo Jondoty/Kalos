@@ -303,7 +303,7 @@
                         "text": "Next",
                         "value": "next",
                         "action": [
-                            "q.run_command('playsound minecraft:entity.lightning_bolt.thunder ambient ' + q.player.username + ' ~ ~ ~ 1 1 1');",
+                            "q.run_command('playsound minecraft:entity.lightning_bolt.impact ambient ' + q.player.username + ' ~ ~ ~ 1 1 1');",
                             "q.dialogue.set_page('page15');"
                         ]
                     }

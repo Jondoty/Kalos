@@ -46,10 +46,12 @@ scoreboard players set @a[scores={CooldownJump=1..}] CooldownJump 0
 
 
 #Runs whiteout function if enabled
-#Exceptions, Battle Maison, Chateau or restaurants
+#Exceptions, Battle Maison, Chateau, restaurants, Lumiose Parade, Korrina's Successor battle
 execute as @a[x=1182,y=63,z=1511,dx=76,dy=31,dz=94,tag=Whiteout] run tag @s remove Whiteout
 execute as @a[x=-1589,y=60,z=-140,dx=104,dy=19,dz=97,tag=Whiteout] run tag @s remove Whiteout
 execute as @a[x=514,y=100,z=116,dx=346,dy=20,dz=71,tag=Whiteout] run tag @s remove Whiteout
+execute as @a[x=1469,y=101,z=-1954,distance=..150,tag=Whiteout] run tag @s remove Whiteout
+execute as @a[x=1635,y=188,z=-1180,distance=..30,tag=Whiteout] run tag @s remove Whiteout
 
 execute as @a[tag=Whiteout] if entity @e[x=-563,y=100,z=1241,dy=3,tag=WhiteoutEnable] run function kalos:triggers/whiteout
 execute as @a[tag=Whiteout] run tag @s remove Whiteout
@@ -98,21 +100,22 @@ execute as @a[scores={HoneyUse=1..}] run function kalos:hms/honey
 #Escape Rope
 execute as @a[scores={EscapeRopeUse=1..}] run function kalos:hms/escaperope
 
-#Running Shoes Effects
-execute as @a[nbt={Inventory:[{Slot:100b,id:"minecraft:golden_boots"}]}] run effect give @s minecraft:speed 30 2 true
-execute as @a unless entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:golden_boots"}]}] run effect clear @s minecraft:speed
 
 #Saves players that fall into Strength Pits
 execute as @a run function kalos:hms/strengthpit
 
 
+#HM Surf giving faster swimming and water breathing
+execute as @a[tag=Surf] at @s if block ~ ~ ~ minecraft:water run effect give @s minecraft:water_breathing 10 255 true
+execute as @a[tag=Surf] at @s if block ~ ~ ~ minecraft:water run effect give @s minecraft:dolphins_grace 10 2 true
+
 
 #Running Shoe and Bike Speed Effects
-execute as @a unless entity @s[tag=Cycling] run attribute @s minecraft:generic.movement_speed base set 0.125
-execute as @a unless entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:golden_boots"}]}] run attribute @s minecraft:generic.movement_speed base set 0.125
+execute as @a unless entity @s[tag=Cycling] run attribute @s minecraft:generic.movement_speed base set 0.15
+execute as @a unless entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:golden_boots"}]}] run attribute @s minecraft:generic.movement_speed base set 0.15
 
-execute as @a[nbt={Inventory:[{Slot:100b,id:"minecraft:golden_boots"}]}] run attribute @s minecraft:generic.movement_speed base set 0.20
-execute as @a[tag=Cycling] run attribute @s[nbt={Inventory:[{Slot:103b,components:{"minecraft:custom_name":'{"extra":[{"color":"red","italic":false,"text":"Bicycle"}],"text":""}'}}]}] minecraft:generic.movement_speed base set 0.275
+execute as @a[nbt={Inventory:[{Slot:100b,id:"minecraft:golden_boots"}]}] run attribute @s minecraft:generic.movement_speed base set 0.225
+execute as @a[tag=Cycling] run attribute @s[nbt={Inventory:[{Slot:103b,components:{"minecraft:custom_name":'{"extra":[{"color":"red","italic":false,"text":"Bicycle"}],"text":""}'}}]}] minecraft:generic.movement_speed base set 0.3
 
 
 

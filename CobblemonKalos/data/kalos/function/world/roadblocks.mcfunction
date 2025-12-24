@@ -67,6 +67,8 @@ execute as @s[x=-502,y=100,z=-463,dx=60,dy=6,dz=10,tag=!LumiosePower] at @s run 
 execute as @s[x=-1159,y=99,z=-44,dx=12,dy=10,dz=19,tag=!Dialogue27] run opendialogue camphrier_block @s
 execute as @s[x=-1159,y=99,z=-44,dx=12,dy=10,dz=19,tag=!Dialogue27] at @s run tp @s ~10 ~ ~
 
+#Santalune, Viola's Gym if player falls
+execute as @s[x=-1993,y=100,z=-1918,dx=112,dy=10,dz=112] run tp @s -1937 115 -1847
 
 #
 #Route 7, Route 6 block before Snorlax talk
@@ -163,9 +165,13 @@ tp @s[x=-1423,y=71,z=-850,dx=20,dy=20,dz=41,tag=!Korrina] -1440 76 -809
 tellraw @s[x=-1418,y=71,z=-807,dx=10,dy=20,dz=20,tag=!Korrina] {"text":"You need the Rumble Badge to use Surf outside of battle!","italic":true,"color":"gray"}
 tp @s[x=-1418,y=71,z=-807,dx=10,dy=20,dz=20,tag=!Korrina] -1440 76 -809
 
+#Route 22 block Surf
+tellraw @s[x=523,y=96,z=438,dx=40,dy=3,dz=15,tag=!Korrina] {"text":"You need the Rumble Badge to use Surf outside of battle!","italic":true,"color":"gray"}
+tp @s[x=523,y=96,z=438,dx=40,dy=3,dz=15,tag=!Korrina] 543 100 432
+
 #Route 12 block until beaten Successor battle
 tellraw @s[x=-1448,y=70,z=-814,dx=9,dy=12,dz=8,tag=!Dialogue64] {"text":"<Poke Breeder> Hey, Trainer! Not a good idea to leave the city when you still have pending matters with Korrina."}
-tp @s[x=-1448,y=70,z=-814,dx=9,dy=12,dz=8,tag=!Dialogue64] ~-10 80 ~
+execute as @s[x=-1448,y=70,z=-814,dx=9,dy=12,dz=8,tag=!Dialogue64] at @s run tp @s ~-10 80 ~
 
 #Route 13 stairs to Lumiose blocked while Flare occupied Power Plant
 execute as @s[x=-728,y=102,z=-474,dx=10,dy=10,dz=12,tag=!Dialogue75] run opendialogue route13_worker_interaction @s

@@ -773,6 +773,12 @@ execute as @s[x=-1983,y=100,z=-15,distance=..5,tag=!ItemLoot176] run tellraw @s 
 execute as @s[x=-1983,y=100,z=-15,distance=..5,tag=!ItemLoot176] run playsound itemget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-1983,y=100,z=-15,distance=..5,tag=!ItemLoot176] run tag @s add ItemLoot176
 
+execute as @s[x=-1988,y=87,z=-72,distance=..5,tag=ItemLoot177] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
+execute as @s[x=-1988,y=87,z=-72,distance=..5,tag=!ItemLoot177] run function kalos:spawn/bicycle
+execute as @s[x=-1988,y=87,z=-72,distance=..5,tag=!ItemLoot177] run tellraw @s {"text":"You received a Bicycle!","italic":true,"color":"gray"}
+execute as @s[x=-1988,y=87,z=-72,distance=..5,tag=!ItemLoot177] run playsound itemget ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-1988,y=87,z=-72,distance=..5,tag=!ItemLoot177] run tag @s add ItemLoot177
+
 execute as @s[x=-2050,y=65,z=-177,distance=..5,tag=ItemLoot182] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
 execute as @s[x=-2050,y=65,z=-177,distance=..5,tag=!ItemLoot182] run give @s cobblemon:destiny_knot
 execute as @s[x=-2050,y=65,z=-177,distance=..5,tag=!ItemLoot182] run tellraw @s {"text":"You found a Destiny Knot!","italic":true,"color":"gray"}
