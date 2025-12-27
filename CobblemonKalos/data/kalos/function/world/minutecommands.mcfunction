@@ -87,6 +87,21 @@ execute unless entity @a[x=802,y=107,z=-312,dx=166,dy=15,dz=170] unless entity @
 
 
 
+#Respawns ambient Pokemon if player is nearby and the Pokemon is not
+#Vaniville Rhyhorn
+execute as @a[x=527,y=110,z=1609,distance=..75] unless entity @e[x=527,y=110,z=1609,dy=3,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:rhyhorn"}}] run pokespawnat 527 109 1609 rhyhorn no_ai=yes level=35
+execute as @e[x=527,y=110,z=1609,dy=3,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:rhyhorn"},PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
+execute as @e[x=527,y=110,z=1609,dy=3,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:rhyhorn"},PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
+execute as @e[x=527,y=110,z=1609,dy=3,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:rhyhorn"},PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
+execute as @e[x=527,y=110,z=1609,dy=3,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:rhyhorn"},PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
 
+
+#Route 9 Rhyhorn
+execute as @a[x=-1804,y=139,z=661,distance=..75] unless entity @e[x=-1804,y=139,z=661,dy=3,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:rhyhorn"}}] run pokespawnat -1804 139 661 rhyhorn no_ai=yes level=15
+execute as @e[x=-1804,y=139,z=661,dy=3,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:rhyhorn"},PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
+execute as @e[x=-1804,y=139,z=661,dy=3,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:rhyhorn"},PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
+execute as @e[x=-1804,y=139,z=661,dy=3,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:rhyhorn"},PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
+execute as @e[x=-1804,y=139,z=661,dy=3,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:rhyhorn"},PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
+execute as @e[x=-1804,y=139,z=661,dy=3,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:rhyhorn"}}] at @s run tp @s ~ ~ ~ 150 ~
 
 #

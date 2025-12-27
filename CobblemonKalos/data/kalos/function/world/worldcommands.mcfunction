@@ -68,6 +68,8 @@ tag @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={DayTime=..1000},tag=Dai
 title @a[team=shops] actionbar ["",{"text":"Your Money Balance: $"},{"score":{"name":"*","objective":"Money"}}]
 title @a[team=battlepoints] actionbar ["",{"text":"Your Battle Points: "},{"score":{"name":"*","objective":"BattlePoints"}}]
 
+#Runs the Rhyhorn-only route, Route 9
+execute as @a[x=-1875,y=137,z=560,dx=507,dy=6,dz=202,tag=!RhyhornBypass] run function kalos:world/rhyhornroute
 
 #---------------------------------------------------------
 #HMs/Important item functions

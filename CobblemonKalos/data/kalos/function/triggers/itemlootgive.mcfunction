@@ -729,6 +729,24 @@ execute as @s[x=-1453,y=143,z=684,distance=..5,tag=!ItemLoot166] run tellraw @s 
 execute as @s[x=-1453,y=143,z=684,distance=..5,tag=!ItemLoot166] run playsound itemget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-1453,y=143,z=684,distance=..5,tag=!ItemLoot166] run tag @s add ItemLoot166
 
+#Tests if the player has a Rhyhorn, or has evolved it. If it is gone, removes tag to grant another.
+execute as @s[x=-1808,y=139,z=659,distance=..5,tag=ItemLoot168] run scoreboard players set @s Temp 0
+execute as @s[x=-1808,y=139,z=659,distance=..5,tag=ItemLoot168] run execute store result score @s Temp run teststore @s all rhyhorn
+execute as @s[x=-1808,y=139,z=659,distance=..5,tag=ItemLoot168,scores={Temp=1..}] run tag @s add RhyHave
+execute as @s[x=-1808,y=139,z=659,distance=..5,tag=ItemLoot168] run execute store result score @s Temp run teststore @s all rhydon
+execute as @s[x=-1808,y=139,z=659,distance=..5,tag=ItemLoot168,scores={Temp=1..}] run tag @s add RhyHave
+execute as @s[x=-1808,y=139,z=659,distance=..5,tag=ItemLoot168] run execute store result score @s Temp run teststore @s all rhyperior
+execute as @s[x=-1808,y=139,z=659,distance=..5,tag=ItemLoot168,scores={Temp=1..}] run tag @s add RhyHave
+execute as @s[x=-1808,y=139,z=659,distance=..5,tag=ItemLoot168,tag=!RhyHave] run tag @s remove ItemLoot168
+execute as @s[x=-1808,y=139,z=659,distance=..5,tag=ItemLoot168,tag=RhyHave] run tag @s remove RhyHave
+
+execute as @s[x=-1808,y=139,z=659,distance=..5,tag=ItemLoot168] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
+execute as @s[x=-1808,y=139,z=659,distance=..5,tag=!ItemLoot168] run pokegive rhyhorn level=15 tradeable=no
+execute as @s[x=-1808,y=139,z=659,distance=..5,tag=!ItemLoot168] run tellraw @s {"text":"You received a Rhyhorn!","italic":true,"color":"gray"}
+execute as @s[x=-1808,y=139,z=659,distance=..5,tag=!ItemLoot168] run playsound itemget ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-1808,y=139,z=659,distance=..5,tag=!ItemLoot168] run tag @s add ItemLoot168
+
+
 execute as @s[x=-1505,y=148,z=517,distance=..5,tag=ItemLoot169] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
 execute as @s[x=-1505,y=148,z=517,distance=..5,tag=!ItemLoot169] run give @s cobblemon:hard_stone
 execute as @s[x=-1505,y=148,z=517,distance=..5,tag=!ItemLoot169] run tellraw @s {"text":"You found a Hard Stone!","italic":true,"color":"gray"}
