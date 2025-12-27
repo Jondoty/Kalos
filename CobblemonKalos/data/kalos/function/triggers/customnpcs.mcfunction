@@ -74,6 +74,27 @@ execute as @s[x=694,y=106,z=396,distance=..7] run opendialogue route22_acetraine
 execute as @s[x=-2005,y=8,z=1952,distance=..7] run opendialogue diantha_dialogue152 @s
 
 
+#Ambrette Fossil Reanimator
+execute as @s[x=-1936,y=141,z=588,distance=..5,tag=Dialogue45,nbt={Inventory:[{id:"cobblemon:root_fossil"}]}] run tag @s add FossilHave
+execute as @s[x=-1936,y=141,z=588,distance=..5,tag=Dialogue45,nbt={Inventory:[{id:"cobblemon:claw_fossil"}]}] run tag @s add FossilHave
+execute as @s[x=-1936,y=141,z=588,distance=..5,tag=Dialogue45,nbt={Inventory:[{id:"cobblemon:helix_fossil"}]}] run tag @s add FossilHave
+execute as @s[x=-1936,y=141,z=588,distance=..5,tag=Dialogue45,nbt={Inventory:[{id:"cobblemon:dome_fossil"}]}] run tag @s add FossilHave
+execute as @s[x=-1936,y=141,z=588,distance=..5,tag=Dialogue45,nbt={Inventory:[{id:"cobblemon:old_amber_fossil"}]}] run tag @s add FossilHave
+execute as @s[x=-1936,y=141,z=588,distance=..5,tag=Dialogue45,nbt={Inventory:[{id:"cobblemon:armor_fossil"}]}] run tag @s add FossilHave
+execute as @s[x=-1936,y=141,z=588,distance=..5,tag=Dialogue45,nbt={Inventory:[{id:"cobblemon:skull_fossil"}]}] run tag @s add FossilHave
+execute as @s[x=-1936,y=141,z=588,distance=..5,tag=Dialogue45,nbt={Inventory:[{id:"cobblemon:cover_fossil"}]}] run tag @s add FossilHave
+execute as @s[x=-1936,y=141,z=588,distance=..5,tag=Dialogue45,nbt={Inventory:[{id:"cobblemon:plume_fossil"}]}] run tag @s add FossilHave
+execute as @s[x=-1936,y=141,z=588,distance=..5,tag=Dialogue45,nbt={Inventory:[{id:"cobblemon:sail_fossil"}]}] run tag @s add FossilHave
+execute as @s[x=-1936,y=141,z=588,distance=..5,tag=Dialogue45,nbt={Inventory:[{id:"cobblemon:jaw_fossil"}]}] run tag @s add FossilHave
+
+execute as @s[x=-1936,y=141,z=588,distance=..5,tag=Dialogue45,tag=!FossilHave] run opendialogue fossilman_nofossils @s
+execute as @s[x=-1936,y=141,z=588,distance=..5,tag=Dialogue45,tag=FossilHave] run opendialogue fossilman_reanimate @s
+execute as @s[x=-1936,y=141,z=588,distance=..5,tag=Dialogue45,tag=FossilHave] run tag @s remove FossilHave
+
+#Aerodactylite fossil researcher, pre and post rescue
+execute as @s[x=-1926,y=141,z=604,distance=..4,tag=!Dialogue45] run opendialogue ambrette_scientistm2_interaction @s
+execute as @s[x=-1926,y=141,z=604,distance=..4,tag=Dialogue45] run opendialogue ambrette_scientistm2_aerodactylite @s
+
 #-------------------------------------------------------------
 
 #Dynamic Shop NPCs

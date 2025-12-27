@@ -5,7 +5,7 @@
     "escapeAction": [],
     "speakers": {
         "scientist": {
-          "name": "Researcher",
+          "name": "Fossil Researcher",
           "face": {
             "type": "artificial",
             "modelType": "npc",

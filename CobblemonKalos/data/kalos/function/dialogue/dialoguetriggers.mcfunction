@@ -170,6 +170,9 @@ execute as @s[x=-1930,y=151,z=562,distance=..10,tag=!Dialogue38] run opendialogu
 #Ambrette Town Serena & Scientist
 execute as @s[x=-1949,y=140,z=579,dx=23,dy=10,dz=26,tag=!Dialogue39] run opendialogue serena_dialogue39 @s
 
+#Invisibles the researcher if player hasn't rescued him yet
+execute as @s[x=-1936,y=140,z=608,distance=..40,tag=!Dialogue45] run effect give @e[x=-1936,y=140,z=588,dy=4,type=cobblemon:npc] minecraft:invisibility 10 1 true
+
 #Glittering Cave First Flare Grunt
 execute as @s[x=-1437,y=148,z=359,distance=..30,tag=!Dialogue41] unless entity @e[x=-1437,y=148,z=322,dy=3,type=cobblemon:npc] run npcspawnat -1437 148 322 glittering_flaregrunt1
 
