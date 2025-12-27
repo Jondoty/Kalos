@@ -16,7 +16,7 @@ execute as @e[x=-688,y=250,z=1136,dy=3,type=armor_stand] run execute as @e[x=-41
 
 
 execute as @s[tag=skip] run tellraw @s[tag=infoverify] ["",{"text":"2) "},{"text":"All spawn chunk corners confirmed loaded.","color":"green"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"These 4 corners must be loaded for the map to fully function. These are spawn chunks the world keeps loaded at all times, and runs most functions of the map."}},{"text":"]"}]
-execute as @s[tag=!skip] run tellraw @s[tag=infoverify] ["",{"text":"2) "},{"text":"One or more spawn chunks failed to load.","color":"red"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"These 4 corners must be loaded for the map to fully function. These are spawn chunks the world keeps loaded at all times, and runs most functions of the map. The command \"/setworldspawn -780 64 -245\" may help this issue"}},{"text":"]"}]
+execute as @s[tag=!skip] run tellraw @s[tag=infoverify] ["",{"text":"2) "},{"text":"One or more spawn chunks failed to load.","color":"red"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"These 4 corners must be loaded for the map to fully function. These are spawn chunks the world keeps loaded at all times, and runs most functions of the map. The command \"/setworldspawn -552 100 1257\" may help this issue"}},{"text":"]"}]
 execute as @s[tag=!skip] run tag @s[tag=infoverify] add verify2
 
 tag @s remove skip
@@ -43,11 +43,7 @@ tellraw @s[scores={DialogueTrigger=1..}] ["",{"text":"4b) "},{"text":"Score of D
 tellraw @s[tag=InDialogue] ["",{"text":"4c) "},{"text":"Player has a dialogue tag, try relogging","color":"yellow"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"Tags granted by Cobblemon NPCs keep dialogue boxes from popping up over and over. If present, prevents some commands."}},{"text":"]"}]
 tellraw @s[scores={TalkTime=0,DialogueTrigger=0},tag=!InDialogue] ["",{"text":"4) "},{"text":"Player confirmed not in dialogue.","color":"green"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"Ensures the player is not currently in a map event or dialogue that may affect some functions such as portals or fly map functions."}},{"text":"]"}]
 
-tag @s[scores={TalkTime=0,DialogueTrigger=0}] add skip
-tag @s[scores={DialogueTrigger=1..}] add skip
-tag @s[scores={TalkTime=1..}] add skip
-execute as @s[tag=!skip] run tellraw @s[tag=infoverify] ["",{"text":"5) "},{"text":"Player does not have initial scores.","color":"red"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"When a player first spawns in, many values are applied to your character that make the map function. To fix, try returning to the very start with \"/tp YourPlayerNameHere -780 64 -245\""}},{"text":"]"}]
-tag @s remove skip
+tellraw @s[tag=!InitialTags] ["",{"text":"5) "},{"text":"Player does not have initial scores.","color":"red"},{"text":" ["},{"text":"Info","hoverEvent":{"action":"show_text","value":"When a player first spawns in, many values are applied to your character that make the map function. To fix, try returning to the very start with \"/tp YourPlayerNameHere -552 100 1257\""}},{"text":"]"}]
 
 #--------------------------------------------
 #Tests for the player's game version and starter or lack there of any
@@ -75,6 +71,19 @@ tag @s remove MegaVerify
 tag @s remove CobblemonVerify
 
 
+#--------------------------------------------
+#Auto fixes
+
+#Re-clones a good hopper clock in case of item duplication
+clone -572 100 1257 -572 100 1256 -568 101 1256
+
+#If spawn chunk radius is too low
+gamerule spawnChunkRadius 8
+
+#If world spawn changed
+setworldspawn -552 100 1257
+
+#--------------------------------------------
 
 #Successful results:
 #All 4 corners found of spawn (tests if spawn chunks deloaded or redstone should be active)
