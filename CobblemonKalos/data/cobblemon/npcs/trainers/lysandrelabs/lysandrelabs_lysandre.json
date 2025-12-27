@@ -4,7 +4,7 @@
 
     "interaction": {
         "type": "dialogue",
-        "dialogue": "cobblemon:lysandre_dialogue122"
+        "dialogue": "cobblemon:lysandrelabs_lysandre_interaction"
     },
     "name": "Lysandre",
     "party": {

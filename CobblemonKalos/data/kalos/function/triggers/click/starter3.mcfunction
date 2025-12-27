@@ -1,5 +1,5 @@
 #Kalos starter track Froakie
-execute as @s[x=-1078,y=101,z=1373,distance=..10] run scoreboard players set @s StarterPick 2
+execute as @s[x=-1078,y=101,z=1373,distance=..10] run scoreboard players set @s StarterPick 3
 execute as @s[x=-1078,y=101,z=1373,distance=..10] run tellraw @s {"text":"An excellent choice!","italic":true,"color":"gray"}
 execute as @s[x=-1078,y=101,z=1373,distance=..10] run pokegive froakie level=5
 execute as @s[x=-1078,y=101,z=1373,distance=..10] run tp @s 443 108 1369 88 6

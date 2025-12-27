@@ -1629,7 +1629,13 @@ tp @s[x=-2341,y=42,z=-994,dx=10,dy=5] -2427 28 -954
 
 #Tower of Mastery
 #2f to 3F
-tp @s[x=-1683,y=130,z=-1187,dy=3] -1635 154 -1187
+
+#Without badge
+execute as @s[x=-1683,y=130,z=-1187,dy=3,tag=!Korrina] run tellraw @s {"text":"Only those with Korrina's gym badge may climb the Tower of Mastery!","italic":true,"color":"gray"}
+execute as @s[x=-1683,y=130,z=-1187,dy=3,tag=!Korrina] at @s run tp @s ~-5 ~ ~ 
+
+#With Badge
+tp @s[x=-1683,y=130,z=-1187,dy=3,tag=Korrina] -1635 154 -1187
 tp @s[x=-1637,y=154,z=-1187,dy=3] -1685 130 -1187
 
 #3F to Mega Balcony

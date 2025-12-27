@@ -58,6 +58,12 @@ scoreboard players set @s TalkTime 0
 scoreboard players set @s PhotoSpot 0
 scoreboard players set @s TrainerClass 0
 scoreboard players set @s Whiteout 0
+scoreboard players set @s HotelGuest1 0
+scoreboard players set @s HotelGuest2 0
+scoreboard players set @s HotelGuest3 0
+scoreboard players set @s HotelGuest4 0
+scoreboard players set @s HotelGuest5 0
+scoreboard players set @s HotelGuest6 0
 
 #Event tag Resets if present
 tag @s remove GhostGirl

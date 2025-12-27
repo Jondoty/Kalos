@@ -6,8 +6,8 @@ tag @s[tag=Dialogue266] remove Dialogue266
 scoreboard players add @s[scores={DialogueTrigger=266},tag=!Dialogue266] TalkTime 1
 
 stopsound @s[scores={TalkTime=1}] record
-playsound kalostheme record @s[scores={TalkTime=1}] ~ ~ ~ 1000 1 1
-scoreboard players set @s[scores={TalkTime=1}] MusicCooldown 135
+playsound kalostheme record @s[tag=!RadioOff,scores={TalkTime=1}] ~ ~ ~ 1 1 1
+scoreboard players set @s[tag=!RadioOff,scores={TalkTime=1}] MusicCooldown 135
 
 effect give @s[scores={TalkTime=1}] minecraft:night_vision 1000 1 true
 

@@ -398,8 +398,10 @@
                         "value": "next",
                         "action": [
                             "q.run_command('particle cloud -413 109 2020 2 2 2 1 100');",
-                            "q.run_command('particle cloud -410 109 2007 2 2 2 1 100');",
                             "q.run_command('tp @e[x=-413,y=108,z=2020,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('particle cloud -410 109 2007 2 2 2 1 100');",
+                            "q.run_command('execute unless entity @e[x=-410,y=109,z=2007,dy=3,type=cobblemon:npc] run npcspawnat -410 109 2007 az_generic');",
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -410.55 109.00 2010.98 197.40 31.50');",
                             "q.dialogue.set_page('page18');"
                         ]
                     }
@@ -622,6 +624,7 @@
                         "action": [
                             "q.dialogue.close();",
                             "q.run_command('particle cloud -410 109 2007 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-410,y=108,z=2007,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
                             "q.run_command('tag ' + q.player.username + ' add Dialogue134');",
                             "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
                         ]

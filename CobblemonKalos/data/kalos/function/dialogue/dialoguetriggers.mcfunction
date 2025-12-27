@@ -24,6 +24,12 @@ execute as @s[x=440,y=108,z=1372,distance=..10,tag=!Dialogue4,scores={StarterPic
 #Shauna's First Battle
 execute as @s[x=456,y=107,z=1408,dx=28,dy=5,dz=10,tag=Dialogue4,tag=!Dialogue5] run opendialogue shauna_prebattle_dialogue5 @s
 
+#Respawns Shauna NPC if not battled but chatted
+execute as @s[x=471,y=108,z=1401,distance=..25,tag=Dialogue4,tag=!Dialogue5,scores={StarterPick=1}] unless entity @e[x=471,y=107,z=1401,dy=3,type=cobblemon:npc] run npcspawnat 471 108 1401 aquacorde_shauna1
+execute as @s[x=471,y=108,z=1401,distance=..25,tag=Dialogue4,tag=!Dialogue5,scores={StarterPick=2}] unless entity @e[x=471,y=107,z=1401,dy=3,type=cobblemon:npc] run npcspawnat 471 108 1401 aquacorde_shauna2
+execute as @s[x=471,y=108,z=1401,distance=..25,tag=Dialogue4,tag=!Dialogue5,scores={StarterPick=3}] unless entity @e[x=471,y=107,z=1401,dy=3,type=cobblemon:npc] run npcspawnat 471 108 1401 aquacorde_shauna3
+
+
 #Mom after you've obtained a Starter
 execute as @s[x=493,y=107,z=1549,dx=18,dy=5,dz=19,scores={StarterPick=1..},tag=Dialogue1,tag=!Dialogue7] run opendialogue mom_dialogue7 @s
 
@@ -114,7 +120,7 @@ execute as @s[x=-1055,y=56,z=-105,distance=..10,tag=!Dialogue27] unless entity @
 execute as @s[x=-1055,y=56,z=-105,distance=..10,tag=!Dialogue27] run opendialogue shauna_dialogue27 @s
 
 #Sets up Sleeping Snorlax
-execute as @a[x=-1301,y=101,z=-36,distance=..30,tag=!Dialogue33] unless entity @e[x=-1301,y=101,z=-36,distance=..5,type=cobblemon:pokemon] run pokespawnat -1301 101 -36 snorlax no_ai=true level=15 status=sleep held_item=cobblemon:sitrus_berry
+execute as @a[x=-1301,y=101,z=-36,distance=..30,tag=!Dialogue33] unless entity @e[x=-1301,y=101,z=-36,distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:snorlax"}}] run pokespawnat -1301 101 -36 snorlax no_ai=true level=15 status=sleep held_item=cobblemon:sitrus_berry
 execute positioned -1301 101 -36 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:snorlax"},PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
 execute positioned -1301 101 -36 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:snorlax"},PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
 execute positioned -1301 101 -36 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:snorlax"},PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
@@ -268,7 +274,7 @@ execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue75] unless en
 execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=!Dialogue75] unless entity @e[x=-1013,y=58,z=-339,dy=3,type=cobblemon:npc] run npcspawnat -1013 58 -339 powerplant_aliana
 
 #Power Plant Admin and Aliana pre-battle
-execute as @a[x=-1007,y=57,z=-340,dx=14,dy=5,dz=6,tag=!Dialogue73] run opendialogue teamflare_dialogue73 @s
+execute as @s[x=-1007,y=57,z=-340,dx=14,dy=5,dz=6,tag=!Dialogue73] run opendialogue teamflare_dialogue73 @s
 
 #Gets rid of all Flare grunts after defeating Aliana
 execute as @a[x=-1083,y=34,z=-388,dx=109,dy=40,dz=109,tag=Dialogue75] run tp @e[x=-949,y=48,z=-350,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
@@ -285,7 +291,7 @@ execute as @s[x=-709,y=100,z=-468,distance=..30,tag=Dialogue75,tag=!Dialogue76] 
 execute as @s[x=-719,y=99,z=-474,dx=7,dy=10,dz=12,tag=Dialogue75,tag=!Dialogue76] run opendialogue az_dialogue76 @s
 
 #Lumiose City Shauna from Route 13 gate
-execute as @a[x=-509,y=101,z=-497,distance=..20,tag=!Dialogue77] run opendialogue shauna_dialogue77 @s
+execute as @s[x=-509,y=101,z=-497,distance=..20,tag=!Dialogue77] run opendialogue shauna_dialogue77 @s
 
 #Lumiose City Clemong, Bonnie and Shauna working on tower
 execute if entity @s[x=-254,y=101,z=-413,distance=..55,tag=!Dialogue78] run setblock -181 172 -390 iron_block 
@@ -496,12 +502,12 @@ execute as @s[x=-2336,y=66,z=-940,distance=..10,tag=!Dialogue123] unless entity 
 
 #FlareHQ Serena and Shauna
 execute as @s[x=-2471,y=78,z=-998,distance=..20,tag=!Dialogue126] unless entity @e[x=-2471,y=78,z=-998,dy=3,type=cobblemon:npc] run npcspawnat -2471 78 -998 serena_generic
-execute as @a[x=-2478,y=76,z=-1005,dx=13,dy=5,dz=13,tag=!Dialogue126] run opendialogue serenashauna_dialogue126 @s
+execute as @s[x=-2478,y=76,z=-1005,dx=13,dy=5,dz=13,tag=!Dialogue126] run opendialogue serenashauna_dialogue126 @s
 
 #Flare HQ Friends at the door
 execute as @s[x=-2431,y=28,z=-944,distance=..20,tag=!Dialogue128] unless entity @e[x=-2431,y=28,z=-944,dy=3,type=cobblemon:npc] run npcspawnat -2431 28 -944 serena_generic
 execute as @s[x=-2431,y=28,z=-944,distance=..20,tag=!Dialogue128] unless entity @e[x=-2434,y=28,z=-953,dy=3,type=cobblemon:npc] run npcspawnat -2434 28 -953 shauna_generic
-execute as @a[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue128] run opendialogue serenashauna_dialogue128 @s
+execute as @s[x=-2436,y=27,z=-955,dx=17,dy=6,dz=17,tag=!Dialogue128] run opendialogue serenashauna_dialogue128 @s
 
 #Sets up dormant legendary models
 #47 xer
@@ -517,11 +523,11 @@ execute as @s[x=-2336,y=42,z=-995,distance=..10,scores={GameVersion=2,DialogueTr
 #Flare HQ Chamber, sets up admins to battle
 execute as @s[x=-2336,y=42,z=-995,distance=..10,tag=!Dialogue129] unless entity @e[x=-2333,y=42,z=-998,dy=3,type=cobblemon:npc] run npcspawnat -2333 42 -998 serena_generic
 execute as @s[x=-2336,y=42,z=-995,distance=..10,tag=!Dialogue129] unless entity @e[x=-2339,y=42,z=-998,dy=3,type=cobblemon:npc] run npcspawnat -2339 42 -998 shauna_generic
-execute as @a[x=-2336,y=41,z=-1011,distance=..14,scores={GameVersion=1},tag=!Dialogue129] run opendialogue flareadmins_x_dialogue129 @s
-execute as @a[x=-2336,y=41,z=-1011,distance=..14,scores={GameVersion=2},tag=!Dialogue129] run opendialogue flareadmins_y_dialogue129 @s
+execute as @s[x=-2336,y=41,z=-1011,distance=..14,scores={GameVersion=1},tag=!Dialogue129] run opendialogue flareadmins_x_dialogue129 @s
+execute as @s[x=-2336,y=41,z=-1011,distance=..14,scores={GameVersion=2},tag=!Dialogue129] run opendialogue flareadmins_y_dialogue129 @s
 
 #Flare HQ Chamber with all admins beaten
-execute as @a[x=-2336,y=41,z=-1011,distance=..20,tag=Admin1,tag=Admin2,tag=Admin3,tag=Admin4,tag=!Dialogue130] run opendialogue flareadmins_dialogue130 @s
+execute as @s[x=-2336,y=41,z=-1011,distance=..20,tag=Admin1,tag=Admin2,tag=Admin3,tag=Admin4,tag=!Dialogue130] run opendialogue flareadmins_dialogue130 @s
 
 #Respawns admins needed if missing
 execute as @s[x=-2336,y=41,z=-1011,distance=..20,tag=Dialogue129,tag=!Dialogue130] unless entity @e[x=-2342,y=42,z=-1007,dy=3,type=cobblemon:npc] run npcspawnat -2342 42 -1007 flarehq_admin4
@@ -530,7 +536,7 @@ execute as @s[x=-2336,y=41,z=-1011,distance=..20,tag=Dialogue129,tag=!Dialogue13
 execute as @s[x=-2336,y=41,z=-1011,distance=..20,tag=Dialogue129,tag=!Dialogue130] unless entity @e[x=-2330,y=42,z=-1007,dy=3,type=cobblemon:npc] run npcspawnat -2330 42 -1007 flarehq_admin7
 
 #Prompts the player to activate the legendary Pokemon
-execute as @a[x=-2336,y=42,z=-1016,distance=..4,tag=Dialogue130,tag=!Dialogue131,scores={DialogueTrigger=0}] run opendialogue legendary_activate_prompt @s
+execute as @s[x=-2336,y=42,z=-1016,distance=..4,tag=Dialogue130,tag=!Dialogue131,scores={DialogueTrigger=0}] run opendialogue legendary_activate_prompt @s
 
 #Upon catching the legendary Pokemon activates Lysandre's last dialogue before battle
 execute as @s[x=-2336,y=41,z=-1011,distance=..20,tag=Dialogue131,tag=!Dialogue132] run scoreboard players set @s Temp 0
@@ -599,8 +605,8 @@ execute as @s[x=-1907,y=32,z=2117,distance=..7,tag=!Dialogue148] run opendialogu
 execute as @s[x=-1998,y=8,z=1943,distance=..7,tag=!Dialogue152] run opendialogue diantha_dialogue152 @s
 
 #Starts the parade dialogue opening
-scoreboard players set @a[x=1467,y=104,z=-1982,distance=..20,scores={DialogueTrigger=0},tag=!Dialogue155] DialogueTrigger 155
-scoreboard players set @a[x=1488,y=137,z=-1900,distance=..20,scores={DialogueTrigger=0},tag=!Dialogue155] DialogueTrigger 155
+scoreboard players set @s[x=1467,y=104,z=-1982,distance=..20,scores={DialogueTrigger=0},tag=!Dialogue155] DialogueTrigger 155
+scoreboard players set @s[x=1488,y=137,z=-1900,distance=..20,scores={DialogueTrigger=0},tag=!Dialogue155] DialogueTrigger 155
 
 #Respawns AZ if missing 
 execute as @s[x=1469,y=101,z=-1954,distance=..15,tag=Dialogue155,tag=!Dialogue156,scores={DialogueTrigger=0}] unless entity @e[x=1469,y=101,z=-1954,dy=3,type=cobblemon:npc] run npcspawnat 1469 101 -1954 lumiose_az
@@ -622,9 +628,9 @@ execute as @s[x=1017,y=105,z=1908,distance=..20,tag=!Dialogue160,scores={Pokemon
 execute as @s[x=1029,y=105,z=1893,distance=..6,tag=!Dialogue160] run opendialogue sycamore_dialogue160 @s
 
 #Kiloude City spawns Serena
-execute as @s[x=1221,y=119,z=1497,distance=..20,tag=!Dialogue161,scores={StarterPick=1}] unless entity @e[x=1229,y=119,z=1461,dy=3,type=cobblemon:npc] run npcspawnat 1229 119 1461 kiloude_serena1
-execute as @s[x=1221,y=119,z=1497,distance=..20,tag=!Dialogue161,scores={StarterPick=2}] unless entity @e[x=1229,y=119,z=1461,dy=3,type=cobblemon:npc] run npcspawnat 1229 119 1461 kiloude_serena2
-execute as @s[x=1221,y=119,z=1497,distance=..20,tag=!Dialogue161,scores={StarterPick=3}] unless entity @e[x=1229,y=119,z=1461,dy=3,type=cobblemon:npc] run npcspawnat 1229 119 1461 kiloude_serena3
+execute as @s[x=1221,y=119,z=1497,distance=..20,tag=!Dialogue162,scores={StarterPick=1}] unless entity @e[x=1229,y=119,z=1461,dy=3,type=cobblemon:npc] run npcspawnat 1229 119 1461 kiloude_serena1
+execute as @s[x=1221,y=119,z=1497,distance=..20,tag=!Dialogue162,scores={StarterPick=2}] unless entity @e[x=1229,y=119,z=1461,dy=3,type=cobblemon:npc] run npcspawnat 1229 119 1461 kiloude_serena2
+execute as @s[x=1221,y=119,z=1497,distance=..20,tag=!Dialogue162,scores={StarterPick=3}] unless entity @e[x=1229,y=119,z=1461,dy=3,type=cobblemon:npc] run npcspawnat 1229 119 1461 kiloude_serena3
 
 #Sets up Sycamore NPC in Anistar
 execute as @s[x=1254,y=107,z=-244,distance=..20,tag=Dialogue162,tag=!Dialogue163] unless entity @e[x=1179,y=110,z=-276,dy=3,type=cobblemon:npc] run npcspawnat 1179 110 -276 anistar_sycamore

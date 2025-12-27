@@ -42,6 +42,11 @@ execute if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={DayTime=1
 #Runs the Poke Ball Factory floors
 execute if entity @a[x=-242,y=91,z=-2026,dx=180,dy=3,dz=188,limit=1] run function kalos:data/factorymotion
 
+#Ball Factory small Grunt Blocks
+execute as @a[x=-151,y=88,z=-1967,dx=6,dy=3,dz=2,tag=!Dialogue90] at @s run tp @s ~ ~ ~-3
+execute as @a[x=-151,y=88,z=-1965,dx=6,dy=3,dz=2,tag=!Dialogue90] at @s run tp @s ~ ~ ~3
+execute as @a[x=-136,y=94,z=-1927,dx=4,dy=5,dz=8,tag=!Dialogue90] at @s run tp @s ~ ~ ~8
+execute as @a[x=-134,y=104,z=-1998,dx=6,dy=5,dz=5,tag=!Dialogue90] at @s run tp @s ~-7 ~ ~
 
 
 #Road Blocks

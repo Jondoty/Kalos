@@ -153,7 +153,7 @@ scoreboard players set @s[scores={DialogueTrigger=152},tag=Dialogue152] Dialogue
 scoreboard players set @s[scores={DialogueTrigger=153},tag=Dialogue153] DialogueTrigger 0
 scoreboard players set @s[scores={DialogueTrigger=154},tag=Dialogue154] DialogueTrigger 0
 scoreboard players set @s[scores={DialogueTrigger=155},tag=Dialogue155] DialogueTrigger 0
-scoreboard players set @s[scores={DialogueTrigger=156},tag=Dialogue156] DialogueTrigger 0
+#scoreboard players set @s[scores={DialogueTrigger=156},tag=Dialogue156] DialogueTrigger 0
 scoreboard players set @s[scores={DialogueTrigger=157},tag=Dialogue157] DialogueTrigger 0
 scoreboard players set @s[scores={DialogueTrigger=158},tag=Dialogue158] DialogueTrigger 0
 scoreboard players set @s[scores={DialogueTrigger=159},tag=Dialogue159] DialogueTrigger 0

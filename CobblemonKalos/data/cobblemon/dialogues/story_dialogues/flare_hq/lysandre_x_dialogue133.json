@@ -1,6 +1,10 @@
 {
     "initializationAction": [
-        "q.run_command('tag ' + q.player.username + ' add InDialogue');"
+        "q.run_command('tag ' + q.player.username + ' add InDialogue');",
+        "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 1');",
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+        "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $10600 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
+        "q.run_command('scoreboard players add ' + q.player.username + ' Money 10600');"
     ],
     "escapeAction": [
     ],
@@ -482,7 +486,7 @@
                             "q.run_command('tp @e[x=-2339,y=41,z=-1008,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
                             "q.run_command('tp @e[x=-2333,y=41,z=-1008,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
                             "q.run_command('tp @e[x=-2336,y=41,z=-997,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
-                            "q.run_command('execute as ' + q.player.username + ' run tp @s -410 109 2014 180 11');",
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -407.04 109.00 2009.30 21.30 19.20');",
                             "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s Geosenge 2');",
                             "q.run_command('tag ' + q.player.username + ' add Dialogue133');",
                             "q.run_command('tag ' + q.player.username + ' remove InDialogue');"

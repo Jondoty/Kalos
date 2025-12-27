@@ -1,7 +1,7 @@
 {   
     "initializationAction": [              
         "q.run_command('tag ' + q.player.username + ' add InDialogue');",
-        "q.run_command('execute as ' + q.player.username + ' run playsound cobblemon:pokemon.lucario.cry ambient @s ~ ~ ~ 1 1 1');"
+        "q.run_command('execute as ' + q.player.username + ' run playsound cobblemon:pokemon.lucario.cry ambient @s ~ ~ ~ 10 1 1');"
             ],
     "escapeAction": [],
     "speakers": {
@@ -144,7 +144,7 @@
                         "text": "Next",
                         "value": "next",
                         "action": [
-                            "q.run_command('execute as ' + q.player.username + ' run playsound cobblemon:pokemon.lucario.cry ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound cobblemon:pokemon.lucario.cry ambient @s ~ ~ ~ 10 1 1');",
                             "q.dialogue.set_page('page7');"
                         ]
                     }

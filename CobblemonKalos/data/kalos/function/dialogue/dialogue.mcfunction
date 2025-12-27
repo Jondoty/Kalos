@@ -356,6 +356,7 @@ scoreboard players set @s[scores={DialogueTrigger=155},tag=Dialogue155] Dialogue
 #/tedit add WIN /scoreboard players set @pl TalkTime 0
 
 #Music is 29. The Sun Shines Down
+execute as @s[scores={DialogueTrigger=156,TalkTime=1}] run tag @s remove Dialogue156
 execute as @s[scores={DialogueTrigger=156,TalkTime=1}] run scoreboard players set @s BattleStart 0
 execute as @s[scores={DialogueTrigger=156,TalkTime=1}] run function kalos:triggers/stopsound
 
@@ -367,6 +368,7 @@ tellraw @s[scores={DialogueTrigger=156,TalkTime=40}] {"text":"<Az> the part of m
 #Eternal Floette floats down
 execute as @s[scores={DialogueTrigger=156,TalkTime=33}] run spawnpokemonat 1469 130 -1957 floette flower=eternal no_ai=yes level=60 uncatchable=yes
 execute as @s[scores={DialogueTrigger=156,TalkTime=33}] run particle cloud 1469 130 -1954 2 2 2 1 100
+execute as @s[scores={DialogueTrigger=156,TalkTime=34}] run execute positioned 1469 130 -1957 as @e[distance=..10,type=cobblemon:pokemon] run data modify entity @s Unbattleable set value 1b
 
 #Motion data
 #execute if entity @a[scores={DialogueTrigger=156}] as @e[x=1469,y=102,z=-1957,dy=40,type=cobblemon:pokemon] at @s run tp @s ~ ~-0.08 ~
@@ -390,6 +392,7 @@ execute as @s[scores={DialogueTrigger=156,TalkTime=155}] run tp @e[x=1469,y=100,
 execute as @s[scores={DialogueTrigger=156,TalkTime=155}] run tp @e[x=1469,y=100,z=-1954,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
 #tp player to Vaniville Home
+execute as @s[scores={DialogueTrigger=156,TalkTime=155}] run scoreboard players set @s MusicCheck 1
 execute as @s[scores={DialogueTrigger=156,TalkTime=155}] run tp @s 506 118 1558 180 10
 
 tag @s[scores={DialogueTrigger=156,TalkTime=155..}] add Dialogue156
@@ -435,8 +438,8 @@ execute as @s[scores={DialogueTrigger=165,TalkTime=40}] run function kalos:trigg
 execute as @s[scores={DialogueTrigger=165,TalkTime=40}] run fill -143 119 226 -173 119 195 minecraft:redstone_block
 
 tag @s[scores={DialogueTrigger=165,TalkTime=40..}] add Dialogue165
-scoreboard players set @s[tag=Dialogue165] TalkTime 0
-scoreboard players set @s[tag=Dialogue165] DialogueTrigger 0
+scoreboard players set @s[scores={DialogueTrigger=165,TalkTime=40..},tag=Dialogue165] TalkTime 0
+scoreboard players set @s[scores={DialogueTrigger=165,TalkTime=40..},tag=Dialogue165] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Legendary bird encoutners

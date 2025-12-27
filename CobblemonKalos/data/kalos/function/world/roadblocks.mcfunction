@@ -102,10 +102,6 @@ execute as @s[x=-1578,y=80,z=-853,dx=13,dy=12,dz=8,tag=!Dialogue56] at @s run tp
 execute as @s[x=-1770,y=84,z=-898,distance=..30,tag=!Dialogue61] unless entity @e[x=-1770,y=85,z=-898,dy=3,type=cobblemon:npc] run npcspawnat -1770 85 -898 gymguy_shalour
 execute as @s[x=-1770,y=84,z=-898,distance=..30,tag=Dialogue61] run tp @e[x=-1770,y=85,z=-898,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
-#Tower of Mastery pre-Korrina gym
-tellraw @s[x=-1705,y=96,z=-1202,dx=13,dy=10,dz=10,tag=!Korrina] {"text":"<Tower Guard> Only those who have been approved may climb the Tower of Mastery!"}
-tp @s[x=-1705,y=96,z=-1202,dx=13,dy=10,dz=10,tag=!Korrina] -1692 93 -1207
-
 #Route 14 Defeat Serena to continue
 tellraw @s[x=-193,y=99,z=-933,dx=18,dy=10,dz=11,tag=!Dialogue81] ["",{"text":"<"},{"text":"Serena","color":"gold"},{"text":"> Over here!"}]
 execute as @s[x=-193,y=99,z=-933,dx=18,dy=10,dz=11,tag=!Dialogue81] at @s run tp @s ~ ~ ~10
@@ -124,10 +120,6 @@ execute as @s[x=-27,y=100,z=-1353,distance=..30,tag=!Dialogue90] unless entity @
 execute as @s[x=-27,y=100,z=-1353,distance=..30,tag=Dialogue90] run tp @e[x=41,y=100,z=-1357,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 execute as @s[x=-27,y=100,z=-1353,distance=..30,tag=Dialogue90] run tp @e[x=41,y=100,z=-1349,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
-
-#Poke Ball Interior Flare Blocks
-execute as @s[x=-136,y=94,z=-1927,dx=4,dy=5,dz=8,tag=!Dialogue90] at @s run tp @s ~ ~ ~8
-execute as @s[x=-134,y=104,z=-1998,dx=6,dy=5,dz=5,tag=!Dialogue90] at @s run tp @s ~-7 ~ ~
 
 #Anistar City South Exit
 execute as @s[x=1342,y=107,z=-122,dx=14,dy=6,dz=15,tag=!Dialogue133] run opendialogue anistar_exitblocked @s

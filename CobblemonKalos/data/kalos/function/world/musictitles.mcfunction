@@ -48,6 +48,12 @@ execute as @s[x=-2526,y=0,z=-1074,dx=232,dy=95,dz=167] unless entity @s[scores={
 execute as @s[x=-2526,y=0,z=-1074,dx=232,dy=95,dz=167] unless entity @s[scores={MusicCheck=35}] run scoreboard players set @s MusicCheck 35
 execute as @s[x=-2526,y=0,z=-1074,dx=232,dy=95,dz=167] run tag @s add Indoors
 
+#Feriend Safari Grass Area - 66
+execute as @s[x=1286,y=110,z=1466,dx=42,dy=20,dz=54] unless entity @s[scores={MusicCheck=66}] run title @s actionbar {"text":"Friend Safari"}
+execute as @s[x=1286,y=110,z=1466,dx=42,dy=20,dz=54] unless entity @s[scores={MusicCheck=66}] unless entity @s[tag=Cycling] run function kalos:triggers/stopsound
+execute as @s[x=1286,y=110,z=1466,dx=42,dy=20,dz=54] unless entity @s[scores={MusicCheck=66}] run scoreboard players set @s MusicCheck 66
+execute as @s[x=1286,y=110,z=1466,dx=42,dy=20,dz=54] run tag @s add Indoors
+
 #---------------------------------------------------------------------------------------
 
 #Vaniville Town - 1
@@ -156,9 +162,9 @@ execute as @s[x=-2255,y=0,z=1732,dx=629,dy=256,dz=655] unless entity @s[scores={
 
 
 #Kiloude City Proper - 18
-execute as @s[x=1027,y=0,z=1434,dx=331,dy=256,dz=266] unless entity @s[scores={MusicCheck=18}] unless entity @s[scores={MusicCheck=9}] run title @s actionbar {"text":"Kiloude City"}
-execute as @s[x=1027,y=0,z=1434,dx=331,dy=256,dz=266] unless entity @s[scores={MusicCheck=18}] unless entity @s[scores={MusicCheck=9}] unless entity @s[tag=Cycling] run function kalos:triggers/stopsound
-execute as @s[x=1027,y=0,z=1434,dx=331,dy=256,dz=266] unless entity @s[scores={MusicCheck=18}] run scoreboard players set @s MusicCheck 18
+execute as @s[x=1027,y=0,z=1434,dx=331,dy=256,dz=266,tag=!Indoors] unless entity @s[scores={MusicCheck=18}] unless entity @s[scores={MusicCheck=9}] run title @s actionbar {"text":"Kiloude City"}
+execute as @s[x=1027,y=0,z=1434,dx=331,dy=256,dz=266,tag=!Indoors] unless entity @s[scores={MusicCheck=18}] unless entity @s[scores={MusicCheck=9}] unless entity @s[tag=Cycling] run function kalos:triggers/stopsound
+execute as @s[x=1027,y=0,z=1434,dx=331,dy=256,dz=266,tag=!Indoors] unless entity @s[scores={MusicCheck=18}] run scoreboard players set @s MusicCheck 18
 
 
 #Geosenge Town - 9
