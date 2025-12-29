@@ -858,6 +858,14 @@ execute positioned -860 61 -690 as @e[distance=..5,type=cobblemon:pokemon,nbt={P
 execute positioned -860 61 -690 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:volcanion"},PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
 execute positioned -860 61 -690 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:volcanion"},PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
 
+#Hoopa
+execute as @s[x=-229,y=75,z=-1236,distance=..10,scores={Hoopa=0}] unless entity @e[x=-229,y=75,z=-1245,distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:hoopa"}}] run summon minecraft:interaction -229 75 -1245 {width:2,height:2,response:1,Tags:[NPCs]}
+execute as @s[x=-229,y=75,z=-1236,distance=..10,scores={Hoopa=0}] unless entity @e[x=-229,y=75,z=-1245,distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:hoopa"}}] run pokespawnat -229 75 -1245 hoopa no_ai=true level=50 moves=hyperspacehole,nastyplot,psychic,astoinish held_item=cobblemon:focus_sash
+execute positioned -229 75 -1245 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:hoopa"},PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
+execute positioned -229 75 -1245 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:hoopa"},PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
+execute positioned -229 75 -1245 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:hoopa"},PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
+execute positioned -229 75 -1245 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:hoopa"},PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
+
 
 #Articuno
 execute as @s[x=-1331,y=22,z=-1193,distance=..10,scores={Articuno=5,StarterPick=1}] unless entity @e[x=-1335,y=22,z=-1252,distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:articuno"}}] run summon minecraft:interaction -1335 22 -1252 {width:2,height:3,response:1,Tags:[NPCs]}

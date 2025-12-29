@@ -522,8 +522,8 @@ playsound darkskies record @s[x=-307,y=80,z=425,dx=23,dy=100,dz=28,scores={Music
 scoreboard players set @s[x=-307,y=80,z=425,dx=23,dy=100,dz=28,scores={MusicCooldown=0}] MusicCooldown 103
 
 #Scary House
-playsound scaryhouse record @s[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
-scoreboard players set @s[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28,scores={MusicCooldown=0}] MusicCooldown 82
+playsound scaryhouse record @s[x=-241,y=70,z=-1253,dx=21,dy=25,dz=28,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[x=-241,y=70,z=-1253,dx=21,dy=25,dz=28,scores={MusicCooldown=0}] MusicCooldown 82
 
 #Frost Cavern Underground 1
 playsound caves record @s[x=444,y=0,z=-1444,dx=465,dy=126,dz=550,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1

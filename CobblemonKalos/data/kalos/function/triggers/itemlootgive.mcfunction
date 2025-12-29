@@ -1360,6 +1360,12 @@ execute as @s[x=-240,y=88,z=-1241,distance=..5,tag=!ItemLoot304] run tellraw @s 
 execute as @s[x=-240,y=88,z=-1241,distance=..5,tag=!ItemLoot304] run playsound itemget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-240,y=88,z=-1241,distance=..5,tag=!ItemLoot304] run tag @s add ItemLoot304
 
+execute as @s[x=-240,y=74,z=-1241,distance=..5,tag=ItemLoot304] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
+execute as @s[x=-240,y=74,z=-1241,distance=..5,tag=!ItemLoot304] run give @s mega_showdown:prison_bottle
+execute as @s[x=-240,y=74,z=-1241,distance=..5,tag=!ItemLoot304] run tellraw @s {"text":"You found a Prison Bottle!","italic":true,"color":"gray"}
+execute as @s[x=-240,y=74,z=-1241,distance=..5,tag=!ItemLoot304] run playsound itemget ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-240,y=74,z=-1241,distance=..5,tag=!ItemLoot304] run tag @s add ItemLoot304
+
 execute as @s[x=-201,y=100,z=-1369,distance=..5,tag=ItemLoot306] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
 execute as @s[x=-201,y=100,z=-1369,distance=..5,tag=!ItemLoot306] run scoreboard players add @s Money 250
 execute as @s[x=-201,y=100,z=-1369,distance=..5,tag=!ItemLoot306] run tellraw @s {"text":"You received $250!","italic":true,"color":"gray"}

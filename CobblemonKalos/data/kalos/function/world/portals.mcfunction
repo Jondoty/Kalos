@@ -1106,18 +1106,12 @@ tp @s[x=-43,y=86,z=-1509,dx=5,dy=5] -40 104 -1510
 
 #Route 14 Scary House
 #Interior Door
-#execute as @e[x=-233,y=87,z=-1225,dx=6,dy=5] run tp @e[x=-230,y=88,z=-1242,dy=3,type=pixelmon:statue] -501 119 1238
-#execute as @e[x=-233,y=87,z=-1225,dx=6,dy=5] run tp @e[x=-501,y=118,z=1238,dy=3,type=pixelmon:npc_chatting] -230 88 -1242
+execute as @s[x=-233,y=74,z=-1225,dx=6,dy=20] run function kalos:triggers/stopsound
+tp @s[x=-233,y=74,z=-1225,dx=6,dy=20] -231 100 -1224
 
-execute as @s[x=-233,y=87,z=-1225,dx=6,dy=5] run function kalos:triggers/stopsound
-tp @s[x=-233,y=87,z=-1225,dx=6,dy=5] -231 100 -1224
-
-
-#Exterior Door
-#execute as @e[x=-233,y=100,z=-1225,dx=4,dy=5,scores={Hoopa=0,PokemonLeague=1..}] run tp @e[x=-501,y=118,z=1238,dy=3,type=pixelmon:statue] -230 88 -1242
-#execute as @e[x=-233,y=100,z=-1225,dx=4,dy=5,scores={Hoopa=0,PokemonLeague=1..}] run tp @e[x=-230,y=87,z=-1242,dy=3,type=pixelmon:npc_chatting] -501 119 1238
-
+#Exterior
 execute as @s[x=-233,y=100,z=-1225,dx=4,dy=5] run function kalos:triggers/stopsound
+tp @s[x=-233,y=100,z=-1225,dx=4,dy=5,scores={PokemonLeague=1..,Hoopa=0}] -231 74 -1226
 tp @s[x=-233,y=100,z=-1225,dx=4,dy=5] -231 87 -1226
 
 

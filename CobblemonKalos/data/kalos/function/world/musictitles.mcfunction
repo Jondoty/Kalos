@@ -31,10 +31,10 @@ execute as @s[x=-271,y=99,z=64,dx=36,dy=50,dz=37] unless entity @s[scores={Music
 execute as @s[x=-271,y=99,z=64,dx=36,dy=50,dz=37] run tag @s add Indoors
 
 #Scary House - 61
-execute as @s[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28] unless entity @s[scores={MusicCheck=61}] run title @s actionbar {"text":"Scary House"}
-execute as @s[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28] unless entity @s[scores={MusicCheck=61}] unless entity @s[tag=Cycling] run function kalos:triggers/stopsound
-execute as @s[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28] unless entity @s[scores={MusicCheck=61}] run scoreboard players set @s MusicCheck 61
-execute as @s[x=-241,y=85,z=-1253,dx=21,dy=10,dz=28] run tag @s add Indoors
+execute as @s[x=-241,y=70,z=-1253,dx=21,dy=25,dz=28] unless entity @s[scores={MusicCheck=61}] run title @s actionbar {"text":"Scary House"}
+execute as @s[x=-241,y=70,z=-1253,dx=21,dy=25,dz=28] unless entity @s[scores={MusicCheck=61}] unless entity @s[tag=Cycling] run function kalos:triggers/stopsound
+execute as @s[x=-241,y=70,z=-1253,dx=21,dy=25,dz=28] unless entity @s[scores={MusicCheck=61}] run scoreboard players set @s MusicCheck 61
+execute as @s[x=-241,y=70,z=-1253,dx=21,dy=25,dz=28] run tag @s add Indoors
 
 #Sea Spirit's Den - 28
 execute as @s[x=-1363,y=21,z=-1264,dx=65,dy=15,dz=83] unless entity @s[scores={MusicCheck=28}] run title @s actionbar {"text":"Sea Spirit's Den"}

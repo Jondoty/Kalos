@@ -24,6 +24,7 @@ execute as @s[x=-1313,y=22,z=-1232,distance=..10,scores={Moltres=5,StarterPick=3
 execute as @s[x=-1707,y=2,z=-437,distance=..10,scores={Diancie=0}] run opendialogue diancie_encounter @s
 
 #Hoopa
+execute as @s[x=-229,y=74,z=-1245,distance=..10,scores={Hoopa=0}] run opendialogue hoopa_encounter @s
 
 #Volcanion
 execute as @s[x=-860,y=61,z=-690,distance=..10,scores={Volcanion=0}] run opendialogue volcanion_encounter @s
