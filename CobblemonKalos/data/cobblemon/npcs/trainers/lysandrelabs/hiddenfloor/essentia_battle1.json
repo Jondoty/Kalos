@@ -10,7 +10,7 @@
     "party": {
         "type": "simple",
         "pokemon": [
-            "Jellicent level=64",
+            "Jellicent level=64 gender=male",
             "Volcarona level=66"
         ]
     },

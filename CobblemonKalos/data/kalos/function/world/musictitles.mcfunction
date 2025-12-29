@@ -113,8 +113,8 @@ execute as @s[x=-2115,y=0,z=504,dx=240,dy=256,dz=258] unless entity @s[scores={M
 execute as @s[x=-2115,y=0,z=504,dx=240,dy=256,dz=258] unless entity @s[scores={MusicCheck=8}] unless entity @s[tag=Cycling] run function kalos:triggers/stopsound
 execute as @s[x=-2115,y=0,z=504,dx=240,dy=256,dz=258] unless entity @s[scores={MusicCheck=8}] run scoreboard players set @s MusicCheck 8
 
-#Ambrette Town - 10
-execute as @s[x=-1816,y=0,z=-987,dx=332,dy=256,dz=254] unless entity @s[scores={MusicCheck=10}] run title @s actionbar {"text":"Ambrette Town"}
+#Shalour City - 10
+execute as @s[x=-1816,y=0,z=-987,dx=332,dy=256,dz=254] unless entity @s[scores={MusicCheck=10}] run title @s actionbar {"text":"Shalour City"}
 execute as @s[x=-1816,y=0,z=-987,dx=332,dy=256,dz=254] unless entity @s[scores={MusicCheck=10}] unless entity @s[tag=Cycling] run function kalos:triggers/stopsound
 execute as @s[x=-1816,y=0,z=-987,dx=332,dy=256,dz=254] unless entity @s[scores={MusicCheck=10}] run scoreboard players set @s MusicCheck 10
 
@@ -397,7 +397,7 @@ execute as @s[x=212,y=95,z=-695,dx=369,dy=156,dz=292,tag=!Indoors] unless entity
 #Route 16 - 53
 execute as @s[x=212,y=95,z=-402,dx=369,dy=160,dz=273,tag=!Indoors] unless entity @s[scores={MusicCheck=53}] run title @s actionbar {"text":"Route 16"}
 execute as @s[x=212,y=95,z=-402,dx=369,dy=160,dz=273,tag=!Indoors] unless entity @s[scores={MusicCheck=52..53}] unless entity @s[tag=Cycling] run function kalos:triggers/stopsound
-execute as @s[x=212,y=95,z=-402,dx=369,dy=160,dz=273,tag=!Indoors] unless entity @s[scores={MusicCheck=52}] run scoreboard players set @s MusicCheck 53
+execute as @s[x=212,y=95,z=-402,dx=369,dy=160,dz=273,tag=!Indoors] unless entity @s[scores={MusicCheck=53}] run scoreboard players set @s MusicCheck 53
 
 
 #Route 17 - 54

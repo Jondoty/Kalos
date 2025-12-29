@@ -90,6 +90,10 @@ execute as @s[x=-1442,y=147,z=269,dx=6,dy=5,dz=8,tag=!Dialogue43] at @s run tp @
 tellraw @s[x=-2234,y=83,z=337,dx=283,dy=30,dz=5,tag=!Dialogue44] {"text":"<...> W-w-wait! Stop! I dropped the Fossil I was taking to the Fossil Lab in Ambrette Town. I\u2019m really sorry, but could you wait a little bit until I find it?"}
 tp @s[x=-2234,y=83,z=337,dx=283,dy=30,dz=5,tag=!Dialogue44] -1971 100 355 ~ ~
 
+#Resets specific Connecting Cave Cyllage side boulder to prevent story bypassing
+execute if entity @a[x=-1790,y=48,z=35,distance=..30,tag=!Dialogue45] run execute positioned -1790 44 35 run function kalos:spawn/strengthrock
+execute if entity @a[x=-1790,y=48,z=35,distance=..30,tag=!Dialogue45] run fill -1787 42 33 -1783 43 37 air
+
 #Geosenge Town Battle Korrina to continue
 tellraw @s[x=-2088,y=103,z=-703,dx=10,dy=10,dz=26,tag=!Dialogue54] ["",{"text":"<Korrina> Hey "},{"selector":"@s"},{"text":", come here a second!"}]
 execute as @s[x=-2088,y=103,z=-703,dx=10,dy=10,dz=26,tag=!Dialogue54] at @s run tp @s ~-10 ~ ~

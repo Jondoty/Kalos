@@ -26,6 +26,7 @@ tag @s remove MoneyHave6000
 tag @s remove MoneyHave7500
 tag @s remove MoneyHave9800
 tag @s remove MoneyHave10000
+tag @s remove MoneyHave12000
 tag @s remove MoneyHave12500
 tag @s remove MoneyHave15000
 tag @s remove MoneyHave25000

@@ -88,10 +88,10 @@ execute as @s[x=-1942,y=153,z=238,distance=..10] at @s run playsound minecraft:e
 
 
 #Reflection Cave
-execute as @s[x=-1675,y=73,z=-346,dx=18,dy=5,dz=12] run fill -1664 74 -338 -1668 78 -334 air
-execute as @s[x=-1675,y=73,z=-346,dx=18,dy=5,dz=12] run fill -1669 73 -334 -1673 72 -338 minecraft:polished_diorite
-execute as @s[x=-1675,y=73,z=-346,dx=18,dy=5,dz=12] at @s run kill @e[distance=..10,type=interaction,nbt={Tags:[StrengthRock]}]
-execute as @s[x=-1675,y=73,z=-346,dx=18,dy=5,dz=12] at @s run playsound minecraft:entity.iron_golem.hurt ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-1662,y=74,z=-341,distance=..7] run fill -1664 74 -338 -1668 78 -334 air
+execute as @s[x=-1662,y=74,z=-341,distance=..7] run fill -1669 73 -334 -1673 72 -338 minecraft:polished_diorite
+execute as @s[x=-1662,y=74,z=-341,distance=..7] at @s run kill @e[distance=..10,type=interaction,nbt={Tags:[StrengthRock]}]
+execute as @s[x=-1662,y=74,z=-341,distance=..7] at @s run playsound minecraft:entity.iron_golem.hurt ambient @s ~ ~ ~ 1 1 1
 
 #Reset
 #execute positioned -1666 74 -336 run function kalos:spawn/strengthrock

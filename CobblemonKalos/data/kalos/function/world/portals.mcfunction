@@ -676,7 +676,6 @@ execute as @s[tag=Viola] run execute as @s[tag=Grant] run execute as @s[tag=Korr
 tellraw @s[x=688,y=117,z=312,dx=11,dy=5,tag=!AllGyms] {"text":"You haven't defeated all the gym leaders yet!","italic":true,"color":"gray"}
 tp @s[x=688,y=117,z=312,dx=11,dy=5,tag=!AllGyms] 694 108 328
 
-execute as @s[x=688,y=117,z=312,dx=11,dy=5,tag=AllGyms] run function kalos:triggers/stopsound
 scoreboard players set @s[x=688,y=117,z=312,dx=11,dy=5,tag=AllGyms] EscapeRope 7
 tp @s[x=688,y=117,z=312,dx=11,dy=5,tag=AllGyms] 700 85 182
 
@@ -1222,11 +1221,14 @@ tp @s[x=-158,y=101,z=-221,dy=5,dz=8] -189 101 265 180 ~
 tp @s[x=-191,y=101,z=266,dx=4,dy=5] -159 101 -217 90 ~
 
 #Lumiose City Boutique Couture
-tellraw @s[x=-156,y=101,z=-192,dy=5,dz=7,scores={Style=..14}] {"text":"Only the most stylish Trainers may shop here!","italic":true,"color":"gray"}
-execute as @s[x=-156,y=101,z=-192,dy=5,dz=7,scores={Style=..14}] at @s run tp @s ~-10 ~ ~
+#tellraw @s[x=-156,y=101,z=-192,dy=5,dz=7,scores={Style=..14}] {"text":"Only the most stylish Trainers may shop here!","italic":true,"color":"gray"}
+#execute as @s[x=-156,y=101,z=-192,dy=5,dz=7,scores={Style=..14}] at @s run tp @s ~-10 ~ ~
 
-execute as @s[x=-156,y=101,z=-192,dy=5,dz=7,scores={Style=15..}] run function kalos:triggers/stopsound
-tp @s[x=-156,y=101,z=-192,dy=5,dz=7,scores={Style=15..}] -25 101 93 180 ~
+#execute as @s[x=-156,y=101,z=-192,dy=5,dz=7,scores={Style=15..}] run function kalos:triggers/stopsound
+#tp @s[x=-156,y=101,z=-192,dy=5,dz=7,scores={Style=15..}] -25 101 93 180 ~
+
+execute as @s[x=-156,y=101,z=-192,dy=5,dz=7] run function kalos:triggers/stopsound
+tp @s[x=-156,y=101,z=-192,dy=5,dz=7] -25 101 93 180 ~
 
 execute as @s[x=-27,y=101,z=94,dx=5,dy=5] run function kalos:triggers/stopsound
 tp @s[x=-27,y=101,z=94,dx=5,dy=5] -157 101 -188 90 ~

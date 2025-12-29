@@ -355,21 +355,21 @@ execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90] unless en
 execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90] unless entity @e[x=-135,y=104,z=-1996,dy=3,type=cobblemon:npc] run npcspawnat -135 104 -1996 pokeballfactory_flaregrunt4
 
 #Gets rid of grunts
-execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90] run tp @e[x=-134,y=95,z=-1919,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
-execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90] run tp @e[x=-209,y=89,z=-1938,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
-execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90] run tp @e[x=-148,y=89,z=-1965,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
-execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90] run tp @e[x=-135,y=104,z=-1996,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute unless entity @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90] run tp @e[x=-134,y=95,z=-1919,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute unless entity @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90] run tp @e[x=-209,y=89,z=-1938,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute unless entity @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90] run tp @e[x=-148,y=89,z=-1965,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
+execute unless entity @a[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=!Dialogue90] run tp @e[x=-135,y=104,z=-1996,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
 #grunt and serena from dialogue 87
 execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90] run tp @e[x=-154,y=89,z=-1859,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90] run tp @e[x=-154,y=88,z=-1849,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
 #Poke Ball Factory spawns admin and scientists
-execute as @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue90] unless entity @e[x=-77,y=104,z=-2010,dy=3,type=cobblemon:npc] run npcspawnat -77 104 -2010 pokeballfactory_celosia
-execute as @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue90] unless entity @e[x=-80,y=104,z=-2012,dy=3,type=cobblemon:npc] run npcspawnat -80 104 -2012 pokeballfactory_flareadmin
-execute as @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue90] unless entity @e[x=-83,y=104,z=-2010,dy=3,type=cobblemon:npc] run npcspawnat -83 104 -2010 pokeballfactory_bryony
-execute as @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue89] unless entity @e[x=-83,y=103,z=-2010,dy=3,type=minecraft:interaction] positioned -83 104 -2010 run function kalos:spawn/npcboxes
-execute as @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue89] unless entity @e[x=-77,y=103,z=-2010,dy=3,type=minecraft:interaction] positioned -77 104 -2010 run function kalos:spawn/npcboxes
+execute unless entity @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue90] unless entity @e[x=-77,y=104,z=-2010,dy=3,type=cobblemon:npc] run npcspawnat -77 104 -2010 pokeballfactory_celosia
+execute unless entity @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue90] unless entity @e[x=-80,y=104,z=-2012,dy=3,type=cobblemon:npc] run npcspawnat -80 104 -2012 pokeballfactory_flareadmin
+execute unless entity @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue90] unless entity @e[x=-83,y=104,z=-2010,dy=3,type=cobblemon:npc] run npcspawnat -83 104 -2010 pokeballfactory_bryony
+execute unless entity @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue89] unless entity @e[x=-83,y=103,z=-2010,dy=3,type=minecraft:interaction] positioned -83 104 -2010 run function kalos:spawn/npcboxes
+execute unless entity @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue89] unless entity @e[x=-77,y=103,z=-2010,dy=3,type=minecraft:interaction] positioned -77 104 -2010 run function kalos:spawn/npcboxes
 
 #Friends post-Team Flare Grunts
 execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90,tag=!Dialogue93] unless entity @e[x=-157,y=89,z=-1853,dy=3,type=cobblemon:npc] run npcspawnat -157 89 -1853 shauna_generic
@@ -902,7 +902,7 @@ execute as @s[x=-1718,y=11,z=-405,dx=82,dy=10,dz=6,scores={PokemonLeague=1..}] r
 execute as @s[x=-821,y=104,z=-670,distance=..10,scores={PokemonLeague=1..}] if block -820 103 -670 minecraft:air run tellraw @s {"text":"A mysterious door opened...","italic":true,"color":"gray"}
 execute as @s[x=-821,y=104,z=-670,distance=..10,scores={PokemonLeague=1..}] if block -820 103 -670 minecraft:air run fill -821 103 -670 -820 103 -670 minecraft:redstone_torch
 
-execute unless entity @s[x=-821,y=104,z=-670,distance=..10,scores={PokemonLeague=1..}] run fill -821 103 -670 -820 103 -670 air
+execute unless entity @a[x=-821,y=104,z=-670,distance=..10,scores={PokemonLeague=1..}] run fill -821 103 -670 -820 103 -670 air
 
 
 

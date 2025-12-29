@@ -289,7 +289,7 @@ execute as @s[scores={DialogueTrigger=154,TalkTime=55}] run advancement grant @s
 execute as @s[scores={DialogueTrigger=154,TalkTime=55}] run advancement grant @s only kalos:mythicalroot
 
 #Runs legendary reset dialogue
-execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run function kalos:triggers/legendaryreset
+execute as @s[scores={DialogueTrigger=154,TalkTime=65}] run function kalos:triggers/legendaryreset
 
 execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=1}] run effect give @s minecraft:blindness 7 1 true
 execute as @s[scores={DialogueTrigger=154,TalkTime=65,PokemonLeague=2..}] run effect give @s minecraft:blindness 5 1 true
@@ -320,7 +320,7 @@ execute as @s[scores={DialogueTrigger=155,TalkTime=21}] run function kalos:trigg
 execute as @s[scores={DialogueTrigger=155,TalkTime=21}] run gamemode adventure @s
 execute as @s[scores={DialogueTrigger=155,TalkTime=21}] run tp @s 1467 104 -1982 0 ~
 
-tellraw @s[scores={DialogueTrigger=155,TalkTime=5}] ["",{"text":"A few days later... Crowds of people gathered in Lumiose City to celebrate the five defenders of the Kalos region and to cheer for its new Champion, "},{"selector":"@p"}]
+tellraw @s[scores={DialogueTrigger=155,TalkTime=5}] ["",{"text":"A few days later... Crowds of people gathered in Lumiose City to celebrate the five defenders of the Kalos region and to cheer for its new Champion, "},{"selector":"@s"}]
 tellraw @s[scores={DialogueTrigger=155,TalkTime=25}] {"text":"<Sycamore> What an amazing turnout! All of these people are here to celebrate your achievements."}
 tellraw @s[scores={DialogueTrigger=155,TalkTime=35}] {"text":"<Sycamore> I'd like to present you with the Honor of Kalos for the bravery you showed battling Team Flare!"}
 execute as @s[scores={DialogueTrigger=155,TalkTime=40}] run give @s diamond_horse_armor[custom_name='["",{"text":"Honor of Kalos","italic":false}]',lore=['["",{"text":"A precious symbol that is awarded","italic":false}]','["",{"text":"only to an individual who has done","italic":false}]','["",{"text":"great things for the Kalos region.","italic":false}]']]

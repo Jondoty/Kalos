@@ -36,6 +36,7 @@ scoreboard players add @s Money 2000
 
 
 #Starting Scoreboard Scores
+scoreboard players set @s GameVersion 0
 scoreboard players set @s MusicCooldown 0
 scoreboard players set @s MusicState 0
 scoreboard players set @s FriendSafari 0
