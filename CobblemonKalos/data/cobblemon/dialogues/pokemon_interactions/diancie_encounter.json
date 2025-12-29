@@ -1,6 +1,5 @@
 {   
     "initializationAction": [              
-        "q.run_command('tag ' + q.player.username + ' add InDialogue');",
         "q.run_command('playsound cobblemon:pokemon.diancie.cry ambient ' + q.player.username + ' ~ ~ ~ 1 1 1');"
             ],
     "escapeAction": [],
@@ -20,7 +19,7 @@
             "id": "greeting",
             "speaker": "diancie",
             "lines": [
-                "Dia-dia!"
+                "Tiii-ling-PRISSSM!"
             ],            "input": {
                 "type": "option",
                 "vertical": false,
@@ -30,12 +29,11 @@
                         "value": "close",
                         "action": [
                             "q.dialogue.close();",
-                            "q.run_command('data merge entity @e[x=-1707,y=2,z=-437,distance=..5,type=cobblemon:pokemon,limit=1,name=Diancie] {Pokemon:{PokemonData:[\"catchable\"]}}');",
-                            "q.run_command('data merge entity @e[x=-1707,y=2,z=-437,distance=..5,type=cobblemon:pokemon,limit=1,name=Diancie] {NoAI:0b}');",
-                            "q.run_command('data modify entity @e[x=-1707,y=2,z=-437,distance=..5,type=cobblemon:pokemon,limit=1,name=Diancie] Unbattleable set value 0b');",
+                            "q.run_command('data merge entity @e[x=-1707,y=2,z=-437,distance=..5,type=cobblemon:pokemon,limit=1] {Pokemon:{PokemonData:[\"catchable\"]}}');",
+                            "q.run_command('data merge entity @e[x=-1707,y=2,z=-437,distance=..5,type=cobblemon:pokemon,limit=1] {NoAI:0b}');",
+                            "q.run_command('data modify entity @e[x=-1707,y=2,z=-437,distance=..5,type=cobblemon:pokemon,limit=1] Unbattleable set value 0b');",
                             "q.run_command('kill @e[x=-1707,y=2,z=-437,distance=..5,type=minecraft:interaction]');",
-                            "q.run_command('scoreboard players set ' + q.player.username + ' Diancie 1');",
-                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                            "q.run_command('scoreboard players set ' + q.player.username + ' Diancie 1');"
                             ]
                     }
                 ]

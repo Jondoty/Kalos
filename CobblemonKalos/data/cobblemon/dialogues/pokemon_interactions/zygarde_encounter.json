@@ -1,6 +1,5 @@
 {   
-    "initializationAction": [              
-        "q.run_command('tag ' + q.player.username + ' add InDialogue');",
+    "initializationAction": [
         "q.run_command('playsound minecraft:zygarde ambient ' + q.player.username + ' ~ ~ ~ 1 1 1');"
             ],
     "escapeAction": [],
@@ -30,12 +29,11 @@
                         "value": "close",
                         "action": [
                             "q.dialogue.close();",
-                            "q.run_command('data merge entity @e[x=2015,y=61,z=-174,distance=..5,type=cobblemon:pokemon,limit=1,name=Zygarde] {Pokemon:{PokemonData:[\"catchable\"]}}');",
-                            "q.run_command('data merge entity @e[x=2015,y=61,z=-174,distance=..5,type=cobblemon:pokemon,limit=1,name=Zygarde] {NoAI:0b}');",
-                            "q.run_command('data modify entity @e[x=2015,y=61,z=-174,distance=..5,type=cobblemon:pokemon,limit=1,name=Zygarde] Unbattleable set value 0b');",
+                            "q.run_command('data merge entity @e[x=2015,y=61,z=-174,distance=..5,type=cobblemon:pokemon,limit=1] {Pokemon:{PokemonData:[\"catchable\"]}}');",
+                            "q.run_command('data merge entity @e[x=2015,y=61,z=-174,distance=..5,type=cobblemon:pokemon,limit=1] {NoAI:0b}');",
+                            "q.run_command('data modify entity @e[x=2015,y=61,z=-174,distance=..5,type=cobblemon:pokemon,limit=1] Unbattleable set value 0b');",
                             "q.run_command('kill @e[x=2015,y=61,z=-174,distance=..5,type=minecraft:interaction]');",
-                            "q.run_command('scoreboard players set ' + q.player.username + ' Zygarde 1');",
-                            "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
+                            "q.run_command('scoreboard players set ' + q.player.username + ' Zygarde 1');"
                             ]
                     }
                 ]
