@@ -26,7 +26,7 @@ execute as @s[x=-1707,y=2,z=-437,distance=..10,scores={Diancie=0}] run opendialo
 #Hoopa
 
 #Volcanion
-
+execute as @s[x=-860,y=61,z=-690,distance=..10,scores={Volcanion=0}] run opendialogue volcanion_encounter @s
 
 
 #-------------------------------------------------------------

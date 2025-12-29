@@ -39,27 +39,6 @@ execute at @a run tag @e[distance=..50,type=pixelmon:pixelmon,nbt={IsShiny:1b,Ow
 #/execute @e[x=-685,y=100,z=1388,dy=3,tag=Particles,type=armor_stand] ~ ~ ~ execute @e[tag=Shiny,type=pixelmon:pixelmon] ~ ~ ~ /particle reddust ~ ~ ~ 0 10 0 1 10 force @a[r=50]
 
 #---------------------------------------------------------
-#Legendaries
-
-#Runs clicked legendary spawn function
-execute as @a[tag=LegendActivate] run function kalos:triggers/legendspawn
-
-#----------
-#Diancie Mirror Vanish
-execute if entity @a[x=-1718,y=11,z=-405,dx=82,dy=10,dz=6,scores={PokemonLeague=1..}] run fill -1638 25 -402 -1717 12 -402 minecraft:air replace minecraft:blue_stained_glass
-execute if entity @a[x=-1718,y=11,z=-405,dx=82,dy=10,dz=6,scores={PokemonLeague=1..,Cooldown=5000..}] run tellraw @a[x=-1718,y=11,z=-405,dx=82,dy=10,dz=6,scores={PokemonLeague=1..}] {"text":"The mirror vanished...","italic":true,"color":"gray"}
-execute if entity @a[x=-1718,y=11,z=-405,dx=82,dy=10,dz=6,scores={PokemonLeague=1..,Cooldown=5000..}] run scoreboard players set @a[x=-1718,y=11,z=-405,dx=82,dy=10,dz=6,scores={PokemonLeague=1..,Cooldown=10000}] Cooldown 0
-
-execute unless entity @a[x=-1718,y=11,z=-405,dx=82,dy=10,dz=6,scores={PokemonLeague=1..}] if block -1713 14 -402 minecraft:air run fill -1638 25 -402 -1717 12 -402 minecraft:blue_stained_glass replace minecraft:air
-
-#Volcanion Power Plant Doors
-execute if entity @a[x=-821,y=104,z=-670,distance=..10,scores={PokemonLeague=1..}] run fill -821 103 -670 -820 103 -670 minecraft:redstone_torch
-execute if entity @a[x=-821,y=104,z=-670,distance=..10,scores={PokemonLeague=1..,Cooldown=5000..}] run tellraw @a[x=-821,y=104,z=-670,distance=..10,scores={PokemonLeague=1..}] {"text":"A mysterious door opened...","italic":true,"color":"gray"}
-execute if entity @a[x=-821,y=104,z=-670,distance=..10,scores={PokemonLeague=1..,Cooldown=5000..}] run scoreboard players set @a[x=-821,y=104,z=-670,distance=..10,scores={PokemonLeague=1..,Cooldown=5000}] Cooldown 0
-
-execute unless entity @a[x=-821,y=104,z=-670,distance=..10,scores={PokemonLeague=1..}] run fill -821 103 -670 -820 103 -670 air
-
-#---------------------------------------------------------
 #Misc Random Events
 
 

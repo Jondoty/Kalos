@@ -35,6 +35,10 @@ function kalos:hms/cutregen
 #Regenerates Rock Smash rocks
 execute as @a[tag=RockSmash] at @s as @e[tag=RockSmash,type=armor_stand,distance=40..150] run function kalos:hms/rocksmashregen
 
+#Regenerates Diancie's Mirror
+execute unless entity @a[x=-1718,y=11,z=-405,dx=82,dy=10,dz=6,scores={PokemonLeague=1..}] if block -1713 14 -402 minecraft:air run fill -1638 25 -402 -1717 12 -402 minecraft:blue_stained_glass replace minecraft:air
+
+
 
 #Respawns starters in the selection orbs
 execute as @a[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227] unless entity @e[x=-1082,y=101,z=1196,dy=3,type=cobblemon:pokemon] run pokespawnat -1082 101 1196 chespin no_ai=yes level=5

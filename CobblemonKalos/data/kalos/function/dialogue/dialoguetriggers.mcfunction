@@ -849,6 +849,15 @@ execute positioned -1707 2 -437 as @e[distance=..5,type=cobblemon:pokemon,nbt={P
 execute positioned -1707 2 -437 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:diancie"},PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
 execute positioned -1707 2 -437 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:diancie"},PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
 
+#Volcanion
+execute as @s[x=-832,y=57,z=-690,distance=..10,scores={Volcanion=0}] unless entity @e[x=-860,y=61,z=-690,distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:volcanion"}}] run summon minecraft:interaction -860 61 -690 {width:3.5,height:3.5,response:1,Tags:[NPCs]}
+execute as @s[x=-832,y=57,z=-690,distance=..10,scores={Volcanion=0}] unless entity @e[x=-860,y=61,z=-690,distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:volcanion"}}] run pokespawnat -860 61 -690 volcanion no_ai=true level=60 moves=steameruption,incinerate,haze,overheat
+execute positioned -860 61 -690 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:volcanion"},PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
+execute positioned -860 61 -690 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:volcanion"},PersistenceRequired:0b}] at @s run tp @s ~ ~ ~ -90 ~
+execute positioned -860 61 -690 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:volcanion"},PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
+execute positioned -860 61 -690 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:volcanion"},PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
+execute positioned -860 61 -690 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:volcanion"},PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
+
 
 #Articuno
 execute as @s[x=-1331,y=22,z=-1193,distance=..10,scores={Articuno=5,StarterPick=1}] unless entity @e[x=-1335,y=22,z=-1252,distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:articuno"}}] run summon minecraft:interaction -1335 22 -1252 {width:2,height:3,response:1,Tags:[NPCs]}
@@ -877,6 +886,15 @@ execute positioned -1313 22 -1232 as @e[distance=..5,type=cobblemon:pokemon,nbt=
 execute positioned -1313 22 -1232 as @e[distance=..5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:moltres"},PersistenceRequired:0b}] run data modify entity @s PersistenceRequired set value 1
 
 
+#Diancie Mirror Vanish
+execute as @s[x=-1718,y=11,z=-405,dx=82,dy=10,dz=6,scores={PokemonLeague=1..}] if block -1717 12 -402 blue_stained_glass run tellraw @s {"text":"The mirror vanished...","italic":true,"color":"gray"}
+execute as @s[x=-1718,y=11,z=-405,dx=82,dy=10,dz=6,scores={PokemonLeague=1..}] run fill -1638 25 -402 -1717 12 -402 minecraft:air replace minecraft:blue_stained_glass
+
+#Volcanion Power Plant Doors
+execute as @s[x=-821,y=104,z=-670,distance=..10,scores={PokemonLeague=1..}] if block -820 103 -670 minecraft:air run tellraw @s {"text":"A mysterious door opened...","italic":true,"color":"gray"}
+execute as @s[x=-821,y=104,z=-670,distance=..10,scores={PokemonLeague=1..}] if block -820 103 -670 minecraft:air run fill -821 103 -670 -820 103 -670 minecraft:redstone_torch
+
+execute unless entity @s[x=-821,y=104,z=-670,distance=..10,scores={PokemonLeague=1..}] run fill -821 103 -670 -820 103 -670 air
 
 
 
