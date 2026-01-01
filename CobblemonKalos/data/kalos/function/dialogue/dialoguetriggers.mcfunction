@@ -584,8 +584,8 @@ execute as @s[x=1448,y=98,z=492,distance=..30,tag=Dialogue138,tag=!Dialogue140] 
 execute as @s[x=1448,y=98,z=492,distance=..30,tag=Dialogue138,tag=!Dialogue140] unless entity @e[x=1451,y=98,z=490,dy=3,type=cobblemon:npc] run npcspawnat 1451 98 490 route19_trevor
 
 #Pokemon Village Wulfric
-execute as @s[x=951,y=93,z=664,distance=..20,tag=!Wulfric,tag=!Dialogue141] unless entity @e[x=951,y=93,z=664,dy=3,type=cobblemon:npc] run npcspawnat 951 93 664 wulfric_generic
-execute as @s[x=951,y=93,z=664,distance=..7,tag=!Wulfric,tag=!Dialogue141] run opendialogue wulfric_dialogue141 @s
+execute as @s[x=951,y=93,z=664,distance=..20,tag=!Dialogue141] unless entity @e[x=951,y=93,z=664,dy=3,type=cobblemon:npc] run npcspawnat 951 93 664 wulfric_generic
+execute as @s[x=951,y=93,z=664,distance=..7,tag=!Dialogue141] run opendialogue wulfric_dialogue141 @s
 
 #Snowbelle Gym Guy after last badge
 execute as @s[x=1144,y=95,z=497,distance=..7,tag=Wulfric,tag=!Dialogue143] run opendialogue gymguywulfric_dialogue143 @s

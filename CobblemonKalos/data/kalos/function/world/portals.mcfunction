@@ -88,8 +88,11 @@ tp @s[x=-1060,y=101,z=-1709,dx=6,dy=5] 1327 110 -286
 
 
 #Snowbelle City Gym
-execute as @s[x=1141,y=97,z=485,dx=5,dy=5,dz=1] run function kalos:triggers/stopsound
-tp @s[x=1141,y=97,z=485,dx=5,dy=5,dz=1] -800 154 -1837
+execute as @s[x=1141,y=97,z=485,dx=5,dy=5,dz=1,tag=!Dialogue141] run tellraw @s {"text":"The gym leader appears to have left for the nearby forest.","italic":true,"color":"gray"}
+execute as @s[x=1141,y=97,z=485,dx=5,dy=5,dz=1,tag=!Dialogue141] at @s run tp @s ~ ~ ~5
+
+execute as @s[x=1141,y=97,z=485,dx=5,dy=5,dz=1,tag=Dialogue141] run function kalos:triggers/stopsound
+tp @s[x=1141,y=97,z=485,dx=5,dy=5,dz=1,tag=Dialogue141] -800 154 -1837
 
 execute as @s[x=-803,y=154,z=-1835,dx=6,dy=5] run function kalos:triggers/stopsound
 tp @s[x=-803,y=154,z=-1835,dx=6,dy=5] 1144 97 488
