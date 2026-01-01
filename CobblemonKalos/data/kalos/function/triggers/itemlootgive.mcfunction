@@ -567,8 +567,9 @@ execute as @s[x=-1553,y=100,z=-302,distance=..5,tag=!ItemLoot127] run playsound 
 execute as @s[x=-1553,y=100,z=-302,distance=..5,tag=!ItemLoot127] run tag @s add ItemLoot127
 
 execute as @s[x=-1554,y=100,z=-325,distance=..5,tag=Cut] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
-execute as @s[x=-1554,y=100,z=-325,distance=..5,tag=!Cut] run tellraw @s {"text":"You found HM01: Cut! You can now chop down trees.","italic":true,"color":"gray"}
+execute as @s[x=-1554,y=100,z=-325,distance=..5,tag=!Cut] run tellraw @s {"text":"You found HM01: Cut! You can now chop down trees and berry bushes.","italic":true,"color":"gray"}
 execute as @s[x=-1554,y=100,z=-325,distance=..5,tag=!Cut] run playsound itemget ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-1554,y=100,z=-325,distance=..5,tag=!Cut] run function kalos:spawn/cuthm
 execute as @s[x=-1554,y=100,z=-325,distance=..5,tag=!Cut] run tag @s add Cut
 
 execute as @s[x=-1589,y=100,z=-299,distance=..5,tag=ItemLoot129] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
