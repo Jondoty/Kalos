@@ -88,7 +88,7 @@ execute as @s[x=-1442,y=147,z=269,dx=6,dy=5,dz=8,tag=!Dialogue43] at @s run tp @
 
 #Route 8 Pre-Fossil block
 tellraw @s[x=-2234,y=83,z=337,dx=283,dy=30,dz=5,tag=!Dialogue44] {"text":"<...> W-w-wait! Stop! I dropped the Fossil I was taking to the Fossil Lab in Ambrette Town. I\u2019m really sorry, but could you wait a little bit until I find it?"}
-tp @s[x=-2234,y=83,z=337,dx=283,dy=30,dz=5,tag=!Dialogue44] -1971 100 355 ~ ~
+execute as @s[x=-2234,y=83,z=337,dx=283,dy=30,dz=5,tag=!Dialogue44] run tp @s -1971 100 355
 
 #Resets specific Connecting Cave Cyllage side boulder to prevent story bypassing
 execute if entity @a[x=-1790,y=48,z=35,distance=..30,tag=!Dialogue45] run execute positioned -1790 44 35 run function kalos:spawn/strengthrock
