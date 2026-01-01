@@ -365,11 +365,11 @@ execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90] run tp @e[
 execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90] run tp @e[x=-154,y=88,z=-1849,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
 #Poke Ball Factory spawns admin and scientists
-execute unless entity @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue90] unless entity @e[x=-77,y=104,z=-2010,dy=3,type=cobblemon:npc] run npcspawnat -77 104 -2010 pokeballfactory_celosia
-execute unless entity @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue90] unless entity @e[x=-80,y=104,z=-2012,dy=3,type=cobblemon:npc] run npcspawnat -80 104 -2012 pokeballfactory_flareadmin
-execute unless entity @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue90] unless entity @e[x=-83,y=104,z=-2010,dy=3,type=cobblemon:npc] run npcspawnat -83 104 -2010 pokeballfactory_bryony
-execute unless entity @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue89] unless entity @e[x=-83,y=103,z=-2010,dy=3,type=minecraft:interaction] positioned -83 104 -2010 run function kalos:spawn/npcboxes
-execute unless entity @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue89] unless entity @e[x=-77,y=103,z=-2010,dy=3,type=minecraft:interaction] positioned -77 104 -2010 run function kalos:spawn/npcboxes
+execute as @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue90] unless entity @e[x=-77,y=104,z=-2010,dy=3,type=cobblemon:npc] run npcspawnat -77 104 -2010 pokeballfactory_celosia
+execute as @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue90] unless entity @e[x=-80,y=104,z=-2012,dy=3,type=cobblemon:npc] run npcspawnat -80 104 -2012 pokeballfactory_flareadmin
+execute as @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue90] unless entity @e[x=-83,y=104,z=-2010,dy=3,type=cobblemon:npc] run npcspawnat -83 104 -2010 pokeballfactory_bryony
+execute as @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue89] unless entity @e[x=-83,y=103,z=-2010,dy=3,type=minecraft:interaction] positioned -83 104 -2010 run function kalos:spawn/npcboxes
+execute as @s[x=-99,y=104,z=-1993,distance=..8,tag=!Dialogue89] unless entity @e[x=-77,y=103,z=-2010,dy=3,type=minecraft:interaction] positioned -77 104 -2010 run function kalos:spawn/npcboxes
 
 #Friends post-Team Flare Grunts
 execute as @s[x=-242,y=87,z=-2026,dx=180,dy=30,dz=188,tag=Dialogue90,tag=!Dialogue93] unless entity @e[x=-157,y=89,z=-1853,dy=3,type=cobblemon:npc] run npcspawnat -157 89 -1853 shauna_generic
