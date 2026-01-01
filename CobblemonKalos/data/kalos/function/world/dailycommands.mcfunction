@@ -48,19 +48,19 @@ execute as @e[tag=AmbushEncounter,type=armor_stand,tag=Bush,tag=!Active] run tag
 
 #Resets trash cans
 #Lost Hotel
-execute positioned 512 92 -463 run function kalos:spawn/trashcans
-execute positioned 446 92 -486 run function kalos:spawn/trashcans
-execute positioned 413 92 -450 run function kalos:spawn/trashcans
-execute positioned 497 92 -413 run function kalos:spawn/trashcans
-execute positioned 416 92 -377 run function kalos:spawn/trashcans
+execute if entity @a[x=512,y=92,z=-463,distance=..150] positioned 512 92 -463 run function kalos:spawn/trashcans
+execute if entity @a[x=446,y=92,z=-486,distance=..150] positioned 446 92 -486 run function kalos:spawn/trashcans
+execute if entity @a[x=413,y=92,z=-450,distance=..150] positioned 413 92 -450 run function kalos:spawn/trashcans
+execute if entity @a[x=497,y=92,z=-413,distance=..150] positioned 497 92 -413 run function kalos:spawn/trashcans
+execute if entity @a[x=416,y=92,z=-377,distance=..150] positioned 416 92 -377 run function kalos:spawn/trashcans
 
 
 #Pokemon Village
-execute positioned 794 93 641 run function kalos:spawn/trashcans
-execute positioned 824 93 697 run function kalos:spawn/trashcans
-execute positioned 800 93 737 run function kalos:spawn/trashcans
-execute positioned 830 93 744 run function kalos:spawn/trashcans
-execute positioned 849 93 741 run function kalos:spawn/trashcans
+execute if entity @a[x=794,y=93,z=641,distance=..150] positioned 794 93 641 run function kalos:spawn/trashcans
+execute if entity @a[x=824,y=93,z=697,distance=..150] positioned 824 93 697 run function kalos:spawn/trashcans
+execute if entity @a[x=800,y=93,z=737,distance=..150] positioned 800 93 737 run function kalos:spawn/trashcans
+execute if entity @a[x=830,y=93,z=744,distance=..150] positioned 830 93 744 run function kalos:spawn/trashcans
+execute if entity @a[x=849,y=93,z=741,distance=..150] positioned 849 93 741 run function kalos:spawn/trashcans
 
 
 
