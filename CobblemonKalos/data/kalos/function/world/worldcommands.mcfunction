@@ -124,6 +124,10 @@ execute as @a[tag=Cycling] run attribute @s[nbt={Inventory:[{Slot:103b,component
 
 #Bicycle
 
+#If player has an item on their head, prevents clearing it
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name": '{"extra":[{"color":"red","italic":false,"text":"Bicycle"}],"text":""}'}}}] if entity @s[nbt={Inventory:[{count:1,Slot:103b}]}] run tellraw @s {"text":"You have a cosmetic item equipped on your head, dequip to use the bikes!","italic":true,"color":"gray"}
+execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name": '{"extra":[{"color":"red","italic":false,"text":"Bicycle"}],"text":""}'}}}] if entity @s[nbt={Inventory:[{count:1,Slot:103b}]}] run scoreboard players set @s click 0
+
 #Equips and dequips bikes
 execute as @a[scores={click=1..},nbt={SelectedItem:{components:{"minecraft:custom_name": '{"extra":[{"color":"red","italic":false,"text":"Bicycle"}],"text":""}'}}}] run tag @s add BikeEquip
 
