@@ -1,6 +1,6 @@
 {
   "initializationAction": [
-    "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 18');",
+    "q.run_command('scoreboard players set ' + q.player.username + ' BattleStart 6');",
     "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');"
   ],
   "escapeAction": [

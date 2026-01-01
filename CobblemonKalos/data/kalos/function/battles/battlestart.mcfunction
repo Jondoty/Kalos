@@ -7,12 +7,12 @@
 
 #1-24, intro music for specific trainer classes
 
-#1 - Ace Trainer, veteran
+#1 - Ace Trainer, veteran, scientist
 execute as @s[tag=!RadioOff,scores={BattleStart=1}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleStart=1}] run playsound introacetrainer record @s ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleStart=1}] run scoreboard players set @s MusicCooldown 44
 
-#2 - Black Belt, Battle Girl
+#2 - Black Belt, Battle Girl, Hex Maniac
 execute as @s[tag=!RadioOff,scores={BattleStart=2}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleStart=2}] run playsound introblackbelt record @s ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleStart=2}] run scoreboard players set @s MusicCooldown 43
@@ -32,7 +32,7 @@ execute as @s[tag=!RadioOff,scores={BattleStart=5}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleStart=5}] run playsound introfurisode record @s ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleStart=5}] run scoreboard players set @s MusicCooldown 63
 
-#6 - Hiker, Backpacker
+#6 - Hiker, Backpacker, Ranger
 execute as @s[tag=!RadioOff,scores={BattleStart=6}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleStart=6}] run playsound introhiker record @s ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleStart=6}] run scoreboard players set @s MusicCooldown 32
@@ -42,7 +42,7 @@ execute as @s[tag=!RadioOff,scores={BattleStart=7}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleStart=7}] run playsound introhoneymooners record @s ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleStart=7}] run scoreboard players set @s MusicCooldown 44
 
-#8 - Lass, schoolgirl
+#8 - Lass, schoolgirl, Fisherman
 execute as @s[tag=!RadioOff,scores={BattleStart=8}] run stopsound @s record
 execute as @s[tag=!RadioOff,scores={BattleStart=8}] run playsound introlass record @s ~ ~ ~ 1 1 1
 execute as @s[tag=!RadioOff,scores={BattleStart=8}] run scoreboard players set @s MusicCooldown 25
