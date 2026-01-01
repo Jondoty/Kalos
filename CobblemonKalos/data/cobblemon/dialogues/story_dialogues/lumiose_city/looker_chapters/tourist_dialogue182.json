@@ -1,6 +1,7 @@
 {
     "initializationAction": [
         "q.run_command('tag ' + q.player.username + ' add InDialogue');",
+        "q.run_command('execute as ' + q.player.username + ' run tp @s -146.29 101.00 383.83 41.40 16.05');",
         "q.run_command('particle cloud -149 101 387 2 2 2 1 100');",
         "q.run_command('execute unless entity @e[x=-149,y=101,z=387,dy=3,type=cobblemon:npc] run npcspawnat -149 101 387 tourist_generic');"
     ],

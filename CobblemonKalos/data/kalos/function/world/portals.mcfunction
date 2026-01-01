@@ -1345,18 +1345,12 @@ tp @s[x=-298,y=80,z=452,dx=5,dy=60] -298 101 -481 -43 ~
 
 #----------------------------------Looker Bureau--------------------------------------------------
 
-#execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call13,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue172] DialogueTrigger 172
-#execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call14,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue176] DialogueTrigger 176
-#execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call15,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue182] DialogueTrigger 179
-#execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call16,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue185] DialogueTrigger 185
-#execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call18,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue188] DialogueTrigger 188
-#execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call19,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue194] DialogueTrigger 193
-#execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Call20,scores={DialogueTrigger=0}] run scoreboard players set @s[tag=!Dialogue214] DialogueTrigger 214
-#execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Dialogue217,scores={DialogueTrigger=0},tag=!LookerCooldown] run scoreboard players set @s[tag=!Dialogue226] DialogueTrigger 226
-
 #Nix showing up as Looker's leaving
-execute as @s[x=-54,y=101,z=398,dx=5,dy=3,tag=Dialogue214,tag=!Dialogue215,tag=!InDialogue] run opendialogue nix_dialogue215 @s
-execute as @s[x=-54,y=101,z=398,dx=5,dy=3,tag=Dialogue214,tag=!Dialogue215,tag=!InDialogue] at @s run tp @s ~ ~ ~-7 
+execute as @s[x=-54,y=101,z=398,dx=5,dy=3,tag=Dialogue214,tag=!Dialogue215] run opendialogue nix_dialogue215 @s
+execute as @s[x=-54,y=101,z=398,dx=5,dy=3,tag=Dialogue214,tag=!Dialogue215] at @s run tp @s ~ ~ ~-7 
+
+tp @s[x=-54,y=101,z=398,dx=5,dy=3,tag=Dialogue215] -190 101 -634 -90 ~
+tp @s[x=-54,y=101,z=398,dx=5,dy=3,tag=!Dialogue214,tag=!Dialogue215] -190 101 -634 -90 ~
 
 execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Dialogue217] run execute as @s[tag=!LookerCooldown] run tp @s[tag=!Dialogue227] -1 101 397 180 ~
 execute as @s[x=-191,y=101,z=-637,dy=5,dz=6,tag=Dialogue217] run tp @s -26 101 397 180 ~
@@ -1379,10 +1373,6 @@ tp @s[x=-129,y=101,z=398,dx=5,dy=3] -190 101 -634 -90 ~
 tp @s[x=-179,y=101,z=398,dx=5,dy=3] -190 101 -634 -90 ~
 tp @s[x=-154,y=101,z=398,dx=5,dy=3] -190 101 -634 -90 ~
 
-
-
-#execute as @s[x=-54,y=101,z=398,dx=5,dy=3,tag=Dialogue214] run scoreboard players set @s[tag=!Dialogue215] DialogueTrigger 215
-tp @s[x=-54,y=101,z=398,dx=5,dy=3,scores={DialogueTrigger=0}] -190 101 -634 -90 ~
 
 
 

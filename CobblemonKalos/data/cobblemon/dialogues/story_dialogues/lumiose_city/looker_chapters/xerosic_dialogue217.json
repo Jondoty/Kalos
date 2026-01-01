@@ -230,7 +230,7 @@
                         "action": [
                             "q.run_command('particle cloud -294 108 443 2 2 2 1 100');",
                             "q.run_command('particle cloud -296 108 444 2 2 2 1 100');",
-                            "q.run_command('execute unless entity @e[x=-294,y=108,z=443,dy=3,type=cobblemon:npc] run npcspawnat -294 108 443 looker_generic');",
+                            "q.run_command('execute unless entity @e[x=-294,y=108,z=443,dy=3,type=cobblemon:npc] run npcspawnat -294 108 443 emma_generic');",
                             "q.run_command('execute unless entity @e[x=-296,y=108,z=444,dy=3,type=cobblemon:pokemon] run pokespawnat -296 108 444 espurr level=30 no_ai=yes uncatchable=yes');",
                             "q.dialogue.set_page('page11a');"
                         ]

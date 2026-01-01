@@ -806,8 +806,8 @@ execute as @s[x=-83,y=77,z=355,distance=..7,tag=Dialogue214,tag=!Dialogue216] un
 execute as @s[x=-83,y=77,z=355,distance=..7,tag=Dialogue214,tag=!Dialogue216] run opendialogue artist_dialogue216 @s
 
 #Dialogue 217, Xerosic and Looker
-execute as @s[x=-297,y=108,z=440,distance=..20,tag=Dialogue216,tag=!Dialogue217] unless entity @e[x=-297,y=108,z=440,dy=3,type=cobblemon:npc] run npcspawnat -294 108 440 looker_generic
-execute as @s[x=-297,y=108,z=440,distance=..20,tag=Dialogue216,tag=!Dialogue217] unless entity @e[x=-294,y=108,z=440,dy=3,type=cobblemon:npc] run npcspawnat -297 108 440 xerosic_generic
+execute as @s[x=-297,y=108,z=440,distance=..20,tag=Dialogue216,tag=!Dialogue217] unless entity @e[x=-294,y=108,z=440,dy=3,type=cobblemon:npc] run npcspawnat -294 108 440 looker_generic
+execute as @s[x=-297,y=108,z=440,distance=..20,tag=Dialogue216,tag=!Dialogue217] unless entity @e[x=-297,y=108,z=440,dy=3,type=cobblemon:npc] run npcspawnat -297 108 440 xerosic_generic
 execute as @s[x=-297,y=108,z=440,distance=..7,tag=Dialogue216,tag=!Dialogue217] run opendialogue xerosic_dialogue217 @s
 
 
