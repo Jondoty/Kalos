@@ -21,11 +21,11 @@ execute as @s[tag=MoveNorth] run effect give @s minecraft:slowness 4 255 true
 
 
 #Removes all tags and effects if player lands on a stop block (polished blackstone for Lysandre Labs)
-execute as @s at @s if block ~ ~-1 ~ minecraft:polished_blackstone as @a run tag @s remove MoveSouth
-execute as @s at @s if block ~ ~-1 ~ minecraft:polished_blackstone as @a run tag @s remove MoveEast
-execute as @s at @s if block ~ ~-1 ~ minecraft:polished_blackstone as @a run tag @s remove MoveWest
-execute as @s at @s if block ~ ~-1 ~ minecraft:polished_blackstone as @a run tag @s remove MoveNorth
-execute as @s at @s if block ~ ~-1 ~ minecraft:polished_blackstone as @a run effect clear @s minecraft:slowness
+execute as @s at @s if block ~ ~-1 ~ minecraft:polished_blackstone run tag @s remove MoveSouth
+execute as @s at @s if block ~ ~-1 ~ minecraft:polished_blackstone run tag @s remove MoveEast
+execute as @s at @s if block ~ ~-1 ~ minecraft:polished_blackstone run tag @s remove MoveWest
+execute as @s at @s if block ~ ~-1 ~ minecraft:polished_blackstone run tag @s remove MoveNorth
+execute as @s at @s if block ~ ~-1 ~ minecraft:polished_blackstone run effect clear @s minecraft:slowness
 
 
 #Pushes player in specific directions
