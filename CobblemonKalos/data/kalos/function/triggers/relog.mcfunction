@@ -12,6 +12,7 @@ advancement revoke @s only kalos:click/signs
 advancement revoke @s only kalos:click/berrytrees
 advancement revoke @s only kalos:click/strengthrock
 advancement revoke @s only kalos:click/trashcans
+advancement revoke @s only kalos:catch/any
 
 
 #Removes Music tags if present

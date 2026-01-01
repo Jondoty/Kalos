@@ -2,7 +2,8 @@
     "initializationAction": [
         "q.run_command('tag ' + q.player.username + ' add InDialogue');",
         "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 3');",
-        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');"
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+        "q.run_command('execute as ' + q.player.username + ' run pokeheal');"
     ],
     "escapeAction": [],
     "speakers": {

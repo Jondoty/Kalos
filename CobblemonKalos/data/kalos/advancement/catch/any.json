@@ -1,0 +1,13 @@
+{
+	"criteria": {
+	  "catch": {
+		"trigger": "cobblemon:aspects_collected",
+		"conditions": {
+		  "pokemon": "any"
+		}
+	  }
+	},  
+    "rewards": {
+        "function": "kalos:triggers/catchany"
+    }
+  }
