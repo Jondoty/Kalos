@@ -153,18 +153,6 @@ execute as @s[x=-2124,y=104,z=-691,distance=..20,tag=!Dialogue52] unless entity 
 execute as @s[x=-2175,y=104,z=-691,distance=..30,tag=Dialogue52] run tp @e[x=-2120,y=103,z=-691,dy=3,dz=1,type=cobblemon:npc] 10000000 -50000 -10000000
 execute as @s[x=-2175,y=104,z=-691,distance=..30,tag=Dialogue52] run tp @e[x=-2116,y=103,z=-699,dy=3,dz=17,type=cobblemon:npc] 10000000 -50000 -10000000
 
-#Route 12 block pre-Surf
-tellraw @s[x=-1423,y=71,z=-850,dx=20,dy=20,dz=41,tag=!Korrina] {"text":"You need the Rumble Badge to use Surf outside of battle!","italic":true,"color":"gray"}
-tp @s[x=-1423,y=71,z=-850,dx=20,dy=20,dz=41,tag=!Korrina] -1440 76 -809
-
-#Route 12 block Surf
-tellraw @s[x=-1418,y=71,z=-807,dx=10,dy=20,dz=20,tag=!Korrina] {"text":"You need the Rumble Badge to use Surf outside of battle!","italic":true,"color":"gray"}
-tp @s[x=-1418,y=71,z=-807,dx=10,dy=20,dz=20,tag=!Korrina] -1440 76 -809
-
-#Route 22 block Surf
-tellraw @s[x=523,y=96,z=438,dx=40,dy=3,dz=15,tag=!Korrina] {"text":"You need the Rumble Badge to use Surf outside of battle!","italic":true,"color":"gray"}
-tp @s[x=523,y=96,z=438,dx=40,dy=3,dz=15,tag=!Korrina] 543 100 432
-
 #Route 12 block until beaten Successor battle
 tellraw @s[x=-1448,y=70,z=-814,dx=9,dy=12,dz=8,tag=!Dialogue64] {"text":"<Poke Breeder> Hey, Trainer! Not a good idea to leave the city when you still have pending matters with Korrina."}
 execute as @s[x=-1448,y=70,z=-814,dx=9,dy=12,dz=8,tag=!Dialogue64] at @s run tp @s ~-10 80 ~
@@ -222,21 +210,64 @@ tp @s[x=-1143,y=108,z=2123,dx=25,dy=10,dz=15,scores={Geosenge=1}] -2210 104 -593
 tp @s[x=-1034,y=108,z=2018,dx=18,dy=10,dz=23,scores={Geosenge=1}] -2112 104 -690
 
 
-##---------------------------------------------------------
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
+#---------------------------------------------------------
+#Surf Blocks
+
+#Route 3
+execute as @s[x=327,y=95,z=664,dx=36,dy=10,dz=45,tag=!Surf] at @s if block ~ ~ ~ water run tellraw @s {"text":"This area requires Surf to traverse!","italic":true,"color":"gray"}
+execute as @s[x=327,y=95,z=664,dx=36,dy=10,dz=45,tag=!Surf] at @s if block ~ ~ ~ water run tp @s 372.78 100.00 686.01 86.60 10.05
+
+#Route 8, Cyllage and Ambrette, North to South
+execute as @s[x=-2237,y=83,z=-21,dx=215,dy=16,dz=69,tag=!Surf] at @s if block ~ ~ ~ water run tellraw @s {"text":"This area requires Surf to traverse!","italic":true,"color":"gray"}
+execute as @s[x=-2237,y=83,z=-21,dx=215,dy=16,dz=69,tag=!Surf] at @s if block ~ ~ ~ water run tp @s -2065.30 100.00 9.19 74.60 7.20
+
+execute as @s[x=-2165,y=83,z=49,dx=143,dy=16,dz=55,tag=!Surf] at @s if block ~ ~ ~ water run tellraw @s {"text":"This area requires Surf to traverse!","italic":true,"color":"gray"}
+execute as @s[x=-2165,y=83,z=49,dx=143,dy=16,dz=55,tag=!Surf] at @s if block ~ ~ ~ water run tp @s -2022.46 100.00 83.99 122.30 9.45
+
+execute as @s[x=-2114,y=83,z=105,dx=161,dy=16,dz=99,tag=!Surf] at @s if block ~ ~ ~ water run tellraw @s {"text":"This area requires Surf to traverse!","italic":true,"color":"gray"}
+execute as @s[x=-2114,y=83,z=105,dx=161,dy=16,dz=99,tag=!Surf] at @s if block ~ ~ ~ water run tp @s -2041.96 100.00 138.39 64.85 12.90
+
+execute as @s[x=-2114,y=83,z=205,dx=161,dy=16,dz=112,tag=!Surf] at @s if block ~ ~ ~ water run tellraw @s {"text":"This area requires Surf to traverse!","italic":true,"color":"gray"}
+execute as @s[x=-2114,y=83,z=205,dx=161,dy=16,dz=112,tag=!Surf] at @s if block ~ ~ ~ water run tp @s -2009.46 100.00 247.96 49.40 13.65
+
+execute as @s[x=-2114,y=83,z=318,dx=161,dy=16,dz=85,tag=!Surf] at @s if block ~ ~ ~ water run tellraw @s {"text":"This area requires Surf to traverse!","italic":true,"color":"gray"}
+execute as @s[x=-2114,y=83,z=318,dx=161,dy=16,dz=85,tag=!Surf] at @s if block ~ ~ ~ water run tp @s -2027.28 100.00 366.47 204.20 9.90
+
+execute as @s[x=-2114,y=83,z=404,dx=161,dy=16,dz=86,tag=!Surf] at @s if block ~ ~ ~ water run tellraw @s {"text":"This area requires Surf to traverse!","italic":true,"color":"gray"}
+execute as @s[x=-2114,y=83,z=404,dx=161,dy=16,dz=86,tag=!Surf] at @s if block ~ ~ ~ water run tp @s -2025.12 100.00 437.54 74.60 12.00
+
+execute as @s[x=-2114,y=83,z=491,dx=161,dy=16,dz=166,tag=!Surf] at @s if block ~ ~ ~ water run tellraw @s {"text":"This area requires Surf to traverse!","italic":true,"color":"gray"}
+execute as @s[x=-2114,y=83,z=491,dx=161,dy=16,dz=166,tag=!Surf] at @s if block ~ ~ ~ water run tp @s -2071.91 100.00 577.74 39.65 10.35
+
+execute as @s[x=-2114,y=83,z=658,dx=161,dy=16,dz=98,tag=!Surf] at @s if block ~ ~ ~ water run tellraw @s {"text":"This area requires Surf to traverse!","italic":true,"color":"gray"}
+execute as @s[x=-2114,y=83,z=658,dx=161,dy=16,dz=98,tag=!Surf] at @s if block ~ ~ ~ water run tp @s -2006.74 100.00 720.10 53.45 11.85
 
 
+#Tower of Mastery
+execute as @s[x=-1788,y=65,z=-1037,dx=130,dy=9,dz=52,tag=!Surf] at @s if block ~ ~ ~ water run tellraw @s {"text":"This area requires Surf to traverse!","italic":true,"color":"gray"}
+execute as @s[x=-1788,y=65,z=-1037,dx=130,dy=9,dz=52,tag=!Surf] at @s if block ~ ~ ~ water run tp @s -1696.94 76.00 -1023.18 -372.70 11.10
+
+execute as @s[x=-1788,y=65,z=-984,dx=130,dy=9,dz=51,tag=!Surf] at @s if block ~ ~ ~ water run tellraw @s {"text":"This area requires Surf to traverse!","italic":true,"color":"gray"}
+execute as @s[x=-1788,y=65,z=-984,dx=130,dy=9,dz=51,tag=!Surf] at @s if block ~ ~ ~ water run tp @s -1667.54 76.00 -951.76 -238.15 10.35
+
+execute as @s[x=-1657,y=65,z=-1036,dx=61,dy=9,dz=52,tag=!Surf] at @s if block ~ ~ ~ water run tellraw @s {"text":"This area requires Surf to traverse!","italic":true,"color":"gray"}
+execute as @s[x=-1657,y=65,z=-1036,dx=61,dy=9,dz=52,tag=!Surf] at @s if block ~ ~ ~ water run tp @s -1643.61 76.00 -1018.71 -42.10 9.15
+
+execute as @s[x=-1657,y=65,z=-984,dx=61,dy=9,dz=51,tag=!Surf] at @s if block ~ ~ ~ water run tellraw @s {"text":"This area requires Surf to traverse!","italic":true,"color":"gray"}
+execute as @s[x=-1657,y=65,z=-984,dx=61,dy=9,dz=51,tag=!Surf] at @s if block ~ ~ ~ water run tp @s -1636.04 76.00 -944.59 -143.95 8.40
+
+
+#Route 12 block pre-Surf
+tellraw @s[x=-1423,y=71,z=-850,dx=20,dy=20,dz=41,tag=!Korrina] {"text":"You need the Rumble Badge to use Surf outside of battle!","italic":true,"color":"gray"}
+tp @s[x=-1423,y=71,z=-850,dx=20,dy=20,dz=41,tag=!Korrina] -1440 76 -809
+
+#Route 12 block Surf
+tellraw @s[x=-1418,y=71,z=-807,dx=10,dy=20,dz=20,tag=!Korrina] {"text":"You need the Rumble Badge to use Surf outside of battle!","italic":true,"color":"gray"}
+tp @s[x=-1418,y=71,z=-807,dx=10,dy=20,dz=20,tag=!Korrina] -1440 76 -809
+
+#Route 22 block Surf
+tellraw @s[x=523,y=96,z=438,dx=40,dy=3,dz=15,tag=!Korrina] {"text":"You need the Rumble Badge to use Surf outside of battle!","italic":true,"color":"gray"}
+tp @s[x=523,y=96,z=438,dx=40,dy=3,dz=15,tag=!Korrina] 543 100 432
 
 
 
