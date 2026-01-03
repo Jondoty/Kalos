@@ -1,0 +1,24 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "End of Days"
+        },
+        "description": {
+            "text": "Lysandre begins his plan to restart the world."
+        },
+        "icon": {
+            "id": "minecraft:blaze_powder"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+      },
+      "parent": "kalos:story/flare4",
+      "criteria": {
+          "example": {
+              "trigger": "minecraft:impossible"
+          }
+      }
+    }

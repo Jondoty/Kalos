@@ -1,0 +1,33 @@
+{
+  "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+  "display": {
+    "title": {
+      "text": "Cocoon of Destruction",
+      "color": "dark_red"
+    },
+    "description": {
+      "text": "Catch Yveltal"
+    },
+    "icon": {
+      "id": "cobblemon:pokemon_model",
+      "components": {
+        "cobblemon:pokemon_item": {
+          "species": "cobblemon:yveltal",
+          "aspects": [
+            "male"
+          ]
+        }
+      }
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "kalos:story/flare7",
+  "criteria": {
+    "example": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
