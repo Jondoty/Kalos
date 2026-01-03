@@ -357,6 +357,7 @@
                         "action": [
                             "q.dialogue.close();",
                             "q.run_command('tag ' + q.player.username + ' add Dialogue92');",
+                            "q.run_command('advancement grant ' + q.player.username + ' only kalos:story/flare3');",
                             "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
                             ]
                     }

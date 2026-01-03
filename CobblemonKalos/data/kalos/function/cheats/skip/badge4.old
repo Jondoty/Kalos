@@ -54,8 +54,8 @@ scoreboard players tag @s add Ramos
 
 
 #Advancements
-advancement grant @s only kalos:flare1
-advancement grant @s only kalos:mega1
+advancement grant @s only kalos:story/flare1
+advancement grant @s only kalos:sidequests/mega1
 
 
 

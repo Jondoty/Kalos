@@ -272,6 +272,7 @@
                             "q.run_command('tp @e[x=-1000,y=57,z=-339,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
                             "q.run_command('tp @e[x=-1000,y=57,z=-335,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
                             "q.run_command('tag ' + q.player.username + ' add Dialogue75');",
+                            "q.run_command('advancement grant ' + q.player.username + ' only kalos:story/flare2');",
                             "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
                         ]
                     }

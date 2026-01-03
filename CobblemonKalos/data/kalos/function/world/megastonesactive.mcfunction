@@ -144,4 +144,4 @@ execute at @e[name=Tyranitarite,type=armor_stand,x=-1660,y=115,z=-1906,distance=
 
 
 #Gives advancement if you find every Mega Stone
-advancement grant @a[scores={Aggronite=1..,Alakazite=1..,Banettite=1..,Diancite=1..,Garchompite=1..,Gyaradosite=1..,Heracronite=1..,Houndoominite=1..,Kangaskhanite=1..,Manectite=1..,Mawilite=1..,Medichamite=1..,Mewtwonite_X=1..,Mewtwonite_Y=1..,Pinsirite=1..,Scizorite=1..,Tyranitarite=1..}] only kalos:mega3
+advancement grant @a[scores={Aggronite=1..,Alakazite=1..,Banettite=1..,Diancite=1..,Garchompite=1..,Gyaradosite=1..,Heracronite=1..,Houndoominite=1..,Kangaskhanite=1..,Manectite=1..,Mawilite=1..,Medichamite=1..,Mewtwonite_X=1..,Mewtwonite_Y=1..,Pinsirite=1..,Scizorite=1..,Tyranitarite=1..}] only kalos:sidequests/mega3

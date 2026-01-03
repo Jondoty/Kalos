@@ -138,6 +138,7 @@
                             "q.run_command('scoreboard players set ' + q.player.username + ' DialogueTrigger 120');",
                             "q.run_command('scoreboard players set ' + q.player.username + ' Geosenge 1');",
                             "q.run_command('tag ' + q.player.username + ' add Dialogue120');",
+                            "q.run_command('advancement grant ' + q.player.username + ' only kalos:story/flare7');",
                             "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
                         ]
                     }

@@ -175,7 +175,7 @@
             "id": "page9",
             "speaker": "player",
             "lines": [
-                "You are about to make the choice that determines your legendary. Pick wisely!"
+                "You are about to make the choice that determines your legendary. Blue for X, Red for Y. Pick wisely!"
             ],
             "input": {
                 "type": "option",
@@ -186,6 +186,7 @@
                         "value": "close",
                         "action": [
                             "q.dialogue.close();",
+                            "q.run_command('advancement grant ' + q.player.username + ' only kalos:story/flare6');",
                             "q.run_command('execute as ' + q.player.username + ' run tag @s add Dialogue118');"
                         ]
                     }

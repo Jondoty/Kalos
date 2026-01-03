@@ -292,7 +292,7 @@
                         "action": [
                             "q.dialogue.close();",
                             "q.run_command('particle cloud -1467 148 313 2 2 2 1 100');",
-                            "q.run_command('advancement grant ' + q.player.username + ' only kalos:flare1');",
+                            "q.run_command('advancement grant ' + q.player.username + ' only kalos:story/flare1');",
                             "q.run_command('tag ' + q.player.username + ' add Dialogue44');",
                             "q.run_command('tag ' + q.player.username + ' add Dialogue45');",
                             "q.run_command('tag ' + q.player.username + ' remove InDialogue');"

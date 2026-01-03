@@ -24,7 +24,7 @@ execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Mewtwonit
 execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Scizorite 0
 execute as @s[scores={TriggerCommand=1}] run scoreboard players set @s Tyranitarite 0
 
-execute as @s[scores={TriggerCommand=1}] run advancement grant @s only kalos:mega2
+execute as @s[scores={TriggerCommand=1}] run advancement grant @s only kalos:sidequests/mega2
 
 #---------------------
 
@@ -153,7 +153,7 @@ execute as @s[scores={TriggerCommand=90}] run effect give @s minecraft:blindness
 execute as @s[scores={TriggerCommand=90}] run title @s times 20 100 20
 execute as @s[scores={TriggerCommand=90}] run title @s subtitle {"text":"That Man's a Real...Looker"}
 execute as @s[scores={TriggerCommand=90}] run title @s title {"text":"Chapter 1"}
-execute as @s[scores={TriggerCommand=90}] run advancement grant @s only kalos:looker0
+execute as @s[scores={TriggerCommand=90}] run advancement grant @s only kalos:story/looker0
 execute as @s[scores={TriggerCommand=90}] run function kalos:triggers/stopsound
 execute as @s[scores={TriggerCommand=90}] run playsound lookerchapter record @s[tag=!RadioOff] ~ ~ ~ 1 1 1
 execute as @s[scores={TriggerCommand=90}] run scoreboard players set @s[tag=!RadioOff] MusicCooldown 10

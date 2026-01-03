@@ -64,9 +64,9 @@ scoreboard players tag @s add Clemont
 
 
 #Advancements
-advancement grant @s only kalos:flare1
-advancement grant @s only kalos:mega1
-advancement grant @s only kalos:flare2
+advancement grant @s only kalos:story/flare1
+advancement grant @s only kalos:sidequests/mega1
+advancement grant @s only kalos:story/flare2
 
 
 

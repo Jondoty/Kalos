@@ -197,7 +197,7 @@ execute as @s[scores={DialogueTrigger=120,TalkTime=78}] run data merge entity @e
 
 execute as @s[scores={DialogueTrigger=120,TalkTime=83}] run opendialogue xerosic_dialogue120b @s
 execute as @s[scores={DialogueTrigger=120,TalkTime=83}] run scoreboard players set @s Geosenge 1
-execute as @s[scores={DialogueTrigger=120,TalkTime=83}] run advancement grant @s only kalos:flare7
+execute as @s[scores={DialogueTrigger=120,TalkTime=83}] run advancement grant @s only kalos:story/flare7
 
 tag @s[scores={DialogueTrigger=120,TalkTime=83..}] add Dialogue120
 scoreboard players set @s[scores={DialogueTrigger=120},tag=Dialogue120] TalkTime 0
@@ -521,7 +521,7 @@ execute as @s[scores={DialogueTrigger=175,TalkTime=130}] run tp @s -190 102 -634
 execute as @s[scores={DialogueTrigger=175,TalkTime=131}] run function kalos:triggers/stopsound
 execute as @s[scores={DialogueTrigger=175,TalkTime=131}] run tag @s add LookerCooldown
 execute as @s[scores={DialogueTrigger=175,TalkTime=131}] run tag @s remove InDialogue
-execute as @s[scores={DialogueTrigger=175,TalkTime=131}] run advancement grant @s only kalos:looker1
+execute as @s[scores={DialogueTrigger=175,TalkTime=131}] run advancement grant @s only kalos:story/looker1
 
 tag @s[scores={DialogueTrigger=175,TalkTime=131..}] add Dialogue175
 scoreboard players set @s[scores={DialogueTrigger=175},tag=Dialogue175] TalkTime 0
@@ -552,7 +552,7 @@ execute as @s[scores={DialogueTrigger=178,TalkTime=287}] run gamemode adventure 
 execute as @s[scores={DialogueTrigger=178,TalkTime=287}] run tp @s -190 102 -634 -90 ~
 execute as @s[scores={DialogueTrigger=178,TalkTime=287}] run function kalos:triggers/stopsound
 execute as @s[scores={DialogueTrigger=178,TalkTime=287}] run tag @s add LookerCooldown
-execute as @s[scores={DialogueTrigger=178,TalkTime=287}] run advancement grant @s only kalos:looker2
+execute as @s[scores={DialogueTrigger=178,TalkTime=287}] run advancement grant @s only kalos:story/looker2
 
 tag @s[scores={DialogueTrigger=178,TalkTime=287..}] add Dialogue178
 scoreboard players set @s[scores={DialogueTrigger=178},tag=Dialogue178] TalkTime 0
@@ -599,7 +599,7 @@ execute as @s[scores={DialogueTrigger=184,TalkTime=773}] run gamemode adventure 
 execute as @s[scores={DialogueTrigger=184,TalkTime=773}] run tp @s -190 102 -634 -90 ~
 execute as @s[scores={DialogueTrigger=184,TalkTime=773}] run function kalos:triggers/stopsound
 execute as @s[scores={DialogueTrigger=184,TalkTime=773}] run tag @s add LookerCooldown
-execute as @s[scores={DialogueTrigger=184,TalkTime=773}] run advancement grant @s only kalos:looker3
+execute as @s[scores={DialogueTrigger=184,TalkTime=773}] run advancement grant @s only kalos:story/looker3
 
 tag @s[scores={DialogueTrigger=184,TalkTime=773..}] add Dialogue184
 scoreboard players set @s[scores={DialogueTrigger=184},tag=Dialogue184] TalkTime 0

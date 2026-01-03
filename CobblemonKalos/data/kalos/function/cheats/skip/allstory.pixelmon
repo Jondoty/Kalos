@@ -69,19 +69,19 @@ tag @s add Wulfric
 
 
 #Advancements
-advancement grant @s only kalos:flare1
-advancement grant @s only kalos:mega1
-advancement grant @s only kalos:flare2
-advancement grant @s only kalos:flare3
-advancement grant @s only kalos:flare4
-advancement grant @s only kalos:flare5
-advancement grant @s only kalos:flare6
-advancement grant @s only kalos:flare8
-advancement grant @s only kalos:flare9
+advancement grant @s only kalos:story/flare1
+advancement grant @s only kalos:sidequests/mega1
+advancement grant @s only kalos:story/flare2
+advancement grant @s only kalos:story/flare3
+advancement grant @s only kalos:story/flare4
+advancement grant @s only kalos:story/flare5
+advancement grant @s only kalos:story/flare6
+advancement grant @s only kalos:story/flare8
+advancement grant @s only kalos:story/flare9
 advancement grant @s only kalos:champion
 advancement grant @s only kalos:legendroot
 advancement grant @s only kalos:mythicalroot
-advancement grant @s only kalos:mega2
+advancement grant @s only kalos:sidequests/mega2
 
 
 

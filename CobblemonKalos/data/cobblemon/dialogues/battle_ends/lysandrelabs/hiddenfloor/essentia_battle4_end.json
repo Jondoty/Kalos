@@ -1479,7 +1479,7 @@
                             "q.run_command('execute as ' + q.player.username + ' run tp @s -190 102 -634 -90 ~');",
                             "q.run_command('execute as ' + q.player.username + ' run gamemode adventure @s');",
                             "q.run_command('execute as ' + q.player.username + ' run tag @s add LookerCooldown');",
-                            "q.run_command('execute as ' + q.player.username + ' run advancement grant @s only kalos:looker5');",
+                            "q.run_command('execute as ' + q.player.username + ' run advancement grant @s only kalos:story/looker5');",
                             "q.run_command('tag ' + q.player.username + ' add Dialogue213');",
                             "q.run_command('tag ' + q.player.username + ' remove InDialogue');",
                             "q.dialogue.close();"

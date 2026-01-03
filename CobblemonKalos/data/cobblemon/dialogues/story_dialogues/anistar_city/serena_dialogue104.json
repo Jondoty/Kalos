@@ -291,6 +291,7 @@
                             "q.run_command('particle cloud 1318 108 -278 2 2 2 1 100');",
                             "q.run_command('tp @e[x=1318,y=107,z=-278,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
                             "q.run_command('tag ' + q.player.username + ' add Dialogue104');",
+                            "q.run_command('advancement grant ' + q.player.username + ' only kalos:story/flare5');",
                             "q.run_command('tag ' + q.player.username + ' remove InDialogue');"
                             ]
                     }

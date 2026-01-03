@@ -49,7 +49,7 @@ scoreboard players tag @s add Korrina
 
 
 #Advancements
-advancement grant @s only kalos:flare1
+advancement grant @s only kalos:story/flare1
 
 
 
