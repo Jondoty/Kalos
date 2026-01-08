@@ -14,6 +14,12 @@ advancement revoke @s only kalos:click/strengthrock
 advancement revoke @s only kalos:click/trashcans
 advancement revoke @s only kalos:catch/any
 
+#Movement panel tags
+tag @s remove MoveSouth
+tag @s remove MoveEast
+tag @s remove MoveWest
+tag @s remove MoveNorth
+
 
 #Removes Music tags if present
 scoreboard players set @s BattleStart 0
