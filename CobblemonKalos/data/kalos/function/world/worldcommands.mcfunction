@@ -76,6 +76,11 @@ title @a[team=battlepoints] actionbar ["",{"text":"Your Battle Points: "},{"scor
 #Runs the Rhyhorn-only route, Route 9
 execute as @a[x=-1875,y=137,z=560,dx=507,dy=6,dz=202,tag=!RhyhornBypass] run function kalos:world/rhyhornroute
 
+#Integrates Cobblemon-Home compatibility
+execute if block -259 111 87 air if entity @p[x=-259,y=111,z=87,distance=..30] run function kalos:spawn/pokemonhome
+execute if entity @p[x=-259,y=111,z=87,distance=..6,scores={PokemonLeague=0}] unless entity @e[x=-259,y=111,z=87,distance=..2,type=interaction] run summon minecraft:interaction -259 111 87 {width:1.25,height:1.25,response:1,Tags:[NPCs]} 
+execute if entity @p[x=-259,y=111,z=87,distance=..6,scores={PokemonLeague=1..}] run kill @e[x=-259,y=111,z=87,distance=..2,type=interaction]
+
 #---------------------------------------------------------
 #HMs/Important item functions
 

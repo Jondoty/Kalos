@@ -33,6 +33,11 @@ execute as @s[x=-860,y=61,z=-690,distance=..10,scores={Volcanion=0}] run opendia
 #-------------------------------------------------------------
 #General Story NPCs
 
+#Cobblemon Home integration, pre-Pokemon-League
+execute as @s[x=-259,y=111,z=87,distance=..4,scores={PokemonLeague=0}] run opendialogue pokemon_home_blocked @s
+execute as @s[x=-259,y=111,z=87,distance=..4,scores={PokemonLeague=1..}] run opendialogue pokemon_home_poweron @s
+
+
 #Mom
 execute as @s[x=495,y=108,z=1565,distance=..6,tag=!Dialogue2] run opendialogue vaniville_mom @s
 execute as @s[x=495,y=108,z=1565,distance=..6,tag=Dialogue2,tag=!Dialogue7] run opendialogue vaniville_mom2 @s
