@@ -7,6 +7,11 @@ tag @e[x=-563,y=100,z=1241,dy=3,type=armor_stand] remove ReloadCheck
 function kalos:triggers/autoreload
 execute if entity @e[x=-563,y=100,z=1241,dy=3,type=armor_stand,tag=!ReloadCheck] run reload
 
+#Runs infolist command for non-ops
+execute as @a[scores={Info=1..}] run function tools:infolist
+execute as @a[scores={info=1..}] run function tools:infolist
+
+
 #Runs the beginning commands if a player is near spawn without initial tag
 execute as @a[x=-552,y=100,z=1257,distance=..25,tag=!InitialTags] run function kalos:triggers/startingcommands
 
