@@ -13,6 +13,9 @@ execute as @a[x=-779,y=104,z=-347,distance=..45,tag=Dialogue70,tag=!PowerPlantPa
 scoreboard players enable @a Info
 scoreboard players enable @a info
 
+#Runs any updates that may apply between minor versions
+function kalos:triggers/runupdates
+
 #---------------------------------------------------------------------------------------
 #Micro-manages advancements for Vivillion's patterns
 
