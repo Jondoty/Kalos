@@ -1,7 +1,7 @@
 {
    "pack":{
       "pack_format":48,
-      "description":"Cobblemon Kalos 1.0.0 commands!"
+      "description":"Cobblemon Kalos 1.0.1 commands!"
     },
       "filter": {
         "block": [

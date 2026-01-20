@@ -1,5 +1,5 @@
 #Current Map Version
-tellraw @s {"text":"1) Map version: Cobblemon Kalos 1.0.0"}
+tellraw @s {"text":"1) Map version: Cobblemon Kalos 1.0.1"}
 
 #--------------------------------------------
 
@@ -84,6 +84,10 @@ gamerule spawnChunkRadius 8
 setworldspawn -552 100 1257
 
 #--------------------------------------------
+
+
+scoreboard players set @s Info 0
+scoreboard players set @s info 0
 
 #Successful results:
 #All 4 corners found of spawn (tests if spawn chunks deloaded or redstone should be active)
