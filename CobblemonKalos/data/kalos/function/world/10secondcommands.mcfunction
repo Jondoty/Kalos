@@ -9,6 +9,10 @@ execute at @s as @e[distance=..75,nbt={ArmorItems:[{},{},{},{components:{"minecr
 #Power Plant Pass hint
 execute as @a[x=-779,y=104,z=-347,distance=..45,tag=Dialogue70,tag=!PowerPlantPass] run particle minecraft:firework -779 104 -347 0 2 0 0.1 0 normal @s
 
+#Runs infolist command for non-ops
+scoreboard players enable @a Info
+scoreboard players enable @a info
+
 #---------------------------------------------------------------------------------------
 #Micro-manages advancements for Vivillion's patterns
 
