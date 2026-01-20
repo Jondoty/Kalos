@@ -2498,7 +2498,11 @@ execute as @s[x=-779,y=104,z=-347,distance=..5,tag=Dialogue70,tag=!PowerPlantPas
 execute as @s[x=-779,y=104,z=-347,distance=..5,tag=Dialogue70,tag=!PowerPlantPass] run playsound minecraft:itemget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=-779,y=104,z=-347,distance=..5,tag=Dialogue70,tag=!PowerPlantPass] run tag @s add PowerPlantPass
 
-
+execute as @s[x=-245,y=111,z=93,distance=..5,tag=ItemLoot544] run tellraw @s {"text":"You've already claimed this loot!","italic":true,"color":"gray"}
+execute as @s[x=-245,y=111,z=93,distance=..5,tag=!ItemLoot544] run give @s mega_showdown:rotom_catalogue
+execute as @s[x=-245,y=111,z=93,distance=..5,tag=!ItemLoot544] run tellraw @s {"text":"You found a Rotom Catalogue!","italic":true,"color":"gray"}
+execute as @s[x=-245,y=111,z=93,distance=..5,tag=!ItemLoot544] run playsound itemget ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=-245,y=111,z=93,distance=..5,tag=!ItemLoot544] run tag @s add ItemLoot544
 
 
 
