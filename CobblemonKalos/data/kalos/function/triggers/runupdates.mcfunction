@@ -31,7 +31,8 @@ execute if entity @p[x=-246,y=111,z=93,distance=..50] if block -246 111 93 air r
 execute if entity @p[x=-246,y=111,z=93,distance=..50] if block -246 111 93 air run setblock -246 111 93 mega_showdown:rotom_mow[facing=south]
 
 
-
+#Route 22 Tanga Berry
+execute if entity @a[x=625,y=91,z=571,distance=..50] unless entity @e[x=625,y=91,z=571,distance=..3,type=interaction] positioned 625 91 571 run function kalos:spawn/berrytree
 
 
 

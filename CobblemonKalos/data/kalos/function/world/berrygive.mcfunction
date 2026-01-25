@@ -102,11 +102,19 @@ execute as @s[x=1381,y=98,z=783,distance=..8,tag=!KasibPickup] run tellraw @s {"
 execute as @s[x=1381,y=98,z=783,distance=..8,tag=!KasibPickup] run tag @s add KasibPickup
 
 
-#Figy Berry	Route 22	794 104 299
+#Figy Berry	Route 21	794 104 299
 execute as @s[x=794,y=102,z=300,distance=..8,tag=FigyPickup] run tellraw @s {"text":"The tree is growing berries. Better check back later.","italic":true,"color":"gray"}
 execute as @s[x=794,y=102,z=300,distance=..8,tag=!FigyPickup] run give @s cobblemon:figy_berry[can_place_on={predicates:[{blocks:farmland}]}]
 execute as @s[x=794,y=102,z=300,distance=..8,tag=!FigyPickup] run playsound minecraft:berryget ambient @s ~ ~ ~ 1 1 1
 execute as @s[x=794,y=102,z=300,distance=..8,tag=!FigyPickup] run tellraw @s {"text":"You found a Figy Berry!","italic":true,"color":"gray"}
 execute as @s[x=794,y=102,z=300,distance=..8,tag=!FigyPickup] run tag @s add FigyPickup
+
+
+#Tanga Berry	Route 22	625 91 571
+execute as @s[x=625,y=91,z=571,distance=..8,tag=TangaPickup] run tellraw @s {"text":"The tree is growing berries. Better check back later.","italic":true,"color":"gray"}
+execute as @s[x=625,y=91,z=571,distance=..8,tag=!TangaPickup] run give @s cobblemon:tanga_berry[can_place_on={predicates:[{blocks:farmland}]}]
+execute as @s[x=625,y=91,z=571,distance=..8,tag=!TangaPickup] run playsound minecraft:berryget ambient @s ~ ~ ~ 1 1 1
+execute as @s[x=625,y=91,z=571,distance=..8,tag=!TangaPickup] run tellraw @s {"text":"You found a Tanga Berry!","italic":true,"color":"gray"}
+execute as @s[x=625,y=91,z=571,distance=..8,tag=!TangaPickup] run tag @s add TangaPickup
 
 advancement revoke @s only kalos:click/berrytrees
