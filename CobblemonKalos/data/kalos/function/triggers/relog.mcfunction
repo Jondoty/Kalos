@@ -13,6 +13,9 @@ advancement revoke @s only kalos:click/berrytrees
 advancement revoke @s only kalos:click/strengthrock
 advancement revoke @s only kalos:click/trashcans
 advancement revoke @s only kalos:catch/any
+advancement revoke @s only kalos:click/box1
+advancement revoke @s only kalos:click/box2
+advancement revoke @s only kalos:click/box3
 
 #Movement panel tags
 tag @s remove MoveSouth
