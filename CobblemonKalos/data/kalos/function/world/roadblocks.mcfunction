@@ -133,9 +133,12 @@ execute as @s[x=1342,y=107,z=-122,dx=14,dy=6,dz=15,tag=!Dialogue133] at @s run t
 tellraw @s[x=1404,y=99,z=489,dx=15,dy=10,dz=6,tag=!Dialogue140] {"text":"Battle your friends on the bridge!","italic":true,"color":"gray"}
 execute as @s[x=1404,y=99,z=489,dx=15,dy=10,dz=6,tag=!Dialogue140] at @s run tp @s ~10 ~ ~
 
-##Terminus Cave block Zygarde before Champion
-#tellraw @s[x=2023,y=41,z=-100,dx=12,dy=20,dz=5,scores={PokemonLeague=0}] {"text":"<Ace Trainer> It must be dangerous to go further ahead unless you're as strong as the Champion."}
-#tp @s[x=2023,y=41,z=-100,dx=12,dy=20,dz=5,scores={PokemonLeague=0}] 2043 41 -98
+#Terminus Cave block Zygarde before Champion
+execute as @s[x=2023,y=41,z=-100,dx=12,dy=20,dz=5,scores={PokemonLeague=0}] run opendialogue terminuscave_acetrainer_interaction @s 
+tp @s[x=2023,y=41,z=-100,dx=12,dy=20,dz=5,scores={PokemonLeague=0}] 2043 41 -98
+
+execute as @s[x=2067,y=33,z=-52,distance=..15,scores={PokemonLeague=0}] unless entity @e[x=2039,y=41,z=-93,dy=3,type=cobblemon:npc] run npcspawnat 2039 41 -93 terminuscave_acetrainer
+execute as @s[x=2067,y=33,z=-52,distance=..15,scores={PokemonLeague=1..}] run tp @e[x=2039,y=41,z=-93,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000
 
 #Geosenge Town Eastern block until talk with Team Flare grunt twice
 execute as @s[x=-2116,y=103,z=-702,dx=10,dy=10,dz=23,tag=!Dialogue52] at @s run tp @s ~-10 ~ ~
