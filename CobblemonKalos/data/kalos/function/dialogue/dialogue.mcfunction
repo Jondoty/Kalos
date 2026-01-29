@@ -438,8 +438,8 @@ execute as @s[scores={DialogueTrigger=165,TalkTime=40}] run function kalos:trigg
 execute as @s[scores={DialogueTrigger=165,TalkTime=40}] run fill -143 119 226 -173 119 195 minecraft:redstone_block
 
 tag @s[scores={DialogueTrigger=165,TalkTime=40..}] add Dialogue165
-scoreboard players set @s[scores={DialogueTrigger=165,TalkTime=40..},tag=Dialogue165] TalkTime 0
-scoreboard players set @s[scores={DialogueTrigger=165,TalkTime=40..},tag=Dialogue165] DialogueTrigger 0
+scoreboard players set @s[scores={DialogueTrigger=165},tag=Dialogue165] TalkTime 0
+scoreboard players set @s[scores={DialogueTrigger=165},tag=Dialogue165] DialogueTrigger 0
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Legendary bird encoutners
