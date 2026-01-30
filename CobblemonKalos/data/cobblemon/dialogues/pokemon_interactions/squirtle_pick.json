@@ -1,0 +1,51 @@
+{
+    "initializationAction": [
+        "q.run_command('playsound cobblemon:pokemon.squirtle.cry ambient ' + q.player.username + ' ~ ~ ~ 1 1 1');"
+    ],
+    "escapeAction": [],
+    "speakers": {
+        "pokemon": {
+            "name": "Squirtle",
+            "face": {
+                "type": "artificial",
+                "modelType": "pokemon",
+                "identifier": "cobblemon:squirtle",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "pokemon",
+            "lines": [
+                "So, you like Squirtle, the Water-type Pokémon?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Yes",
+                        "value": "yes",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:itemget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run pokegive squirtle level=10');",
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s -265 121 95 180 12');",
+                            "q.run_command('execute as ' + q.player.username + ' run tag @s add KantoStarter');",
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:blastoisinite');",
+                            "q.dialogue.close();"
+                        ]
+                    },
+                    {
+                        "text": "No",
+                        "value": "no",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

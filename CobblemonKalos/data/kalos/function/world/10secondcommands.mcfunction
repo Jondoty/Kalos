@@ -16,6 +16,23 @@ scoreboard players enable @a info
 #Runs any updates that may apply between minor versions
 function kalos:triggers/runupdates
 
+
+#Respawns starters in the selection orbs if despawned.
+execute as @a[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227] unless entity @e[x=-1082,y=101,z=1196,dy=3,type=cobblemon:pokemon] run pokespawnat -1082 101 1196 chespin no_ai=yes level=5
+execute as @a[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227] unless entity @e[x=-1078,y=101,z=1196,dy=3,type=cobblemon:pokemon] run pokespawnat -1078 101 1196 fennekin no_ai=yes level=5
+execute as @a[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227] unless entity @e[x=-1074,y=101,z=1196,dy=3,type=cobblemon:pokemon] run pokespawnat -1074 101 1196 froakie no_ai=yes level=5
+
+#Kanto Starters
+execute as @a[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227] unless entity @e[x=-1013,y=101,z=1196,dy=3,type=cobblemon:pokemon] run pokespawnat -1013 101 1196 bulbasaur no_ai=yes level=10
+execute as @a[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227] unless entity @e[x=-1009,y=101,z=1196,dy=3,type=cobblemon:pokemon] run pokespawnat -1009 101 1196 charmander no_ai=yes level=10
+execute as @a[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227] unless entity @e[x=-1005,y=101,z=1196,dy=3,type=cobblemon:pokemon] run pokespawnat -1005 101 1196 squirtle no_ai=yes level=10
+
+execute as @a[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227] as @e[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227,type=cobblemon:pokemon,nbt={PersistenceRequired:0b}] run data modify entity @s Invulnerable set value 1b
+execute as @a[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227] as @e[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227,type=cobblemon:pokemon,nbt={PersistenceRequired:0b}] run data modify entity @s Unbattleable set value 1b
+execute as @a[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227] as @e[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227,type=cobblemon:pokemon,nbt={PersistenceRequired:0b}] run data merge entity @s {Pokemon:{PokemonData:["uncatchable"]}}
+execute as @a[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227] as @e[x=-1107,y=99,z=1171,dx=123,dy=30,dz=227,type=cobblemon:pokemon,nbt={PersistenceRequired:0b}] run data merge entity @s {PersistenceRequired:1b}
+
+
 #---------------------------------------------------------------------------------------
 #Micro-manages advancements for Vivillion's patterns
 

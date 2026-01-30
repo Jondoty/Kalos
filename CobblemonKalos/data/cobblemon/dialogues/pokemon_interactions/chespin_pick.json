@@ -1,0 +1,50 @@
+{
+    "initializationAction": [
+        "q.run_command('playsound cobblemon:pokemon.chespin.cry ambient ' + q.player.username + ' ~ ~ ~ 1 1 1');"
+    ],
+    "escapeAction": [],
+    "speakers": {
+        "pokemon": {
+            "name": "Chespin",
+            "face": {
+                "type": "artificial",
+                "modelType": "pokemon",
+                "identifier": "cobblemon:chespin",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "pokemon",
+            "lines": [
+                "So, you like Chespin, the Grass-type Pokémon?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Yes",
+                        "value": "yes",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:itemget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run pokegive chespin level=5');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s StarterPick 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run tp @s 443 108 1369 88 6');",
+                            "q.dialogue.close();"
+                        ]
+                    },
+                    {
+                        "text": "No",
+                        "value": "no",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
