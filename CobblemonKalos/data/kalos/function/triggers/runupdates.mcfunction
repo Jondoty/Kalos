@@ -2,13 +2,16 @@
 
 
 
+#1.0.1 to 1.1
+#Adds TM blocks
+execute if entity @a[x=-897,y=102,z=-151,distance=..75] if block -897 102 -151 air positioned -897 102 -151 run function kalos:spawn/tmloot
 
 
 
 
-
-
-
+#New entities
+execute if entity @a[x=-353,y=141,z=356,distance=..50] unless entity @e[x=-353,y=141,z=356,dy=4] run npcspawnat -353 141 356 lysandre_cafe_teamflaregruntm
+execute if entity @a[x=-114,y=77,z=346,distance=..50] unless entity @e[x=-114,y=77,z=346,dy=4] run npcspawnat -114 77 346 lumiosemuseum_acetrainerm
 
 
 
