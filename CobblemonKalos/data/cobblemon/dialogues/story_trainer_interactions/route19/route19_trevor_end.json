@@ -277,6 +277,51 @@
             "id": "page13",
             "speaker": "shauna",
             "lines": [
+                {
+                    "type": "expression",
+                    "expression": "'' + q.player.username + '... This is from us.';"
+                }
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm waterfall @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page14');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page14",
+            "speaker": "shauna",
+            "lines": [
+                "Even if you're battling without the Badge from Snowbelle City Gym, you can use Waterfall!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.dialogue.set_page('page15');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page15",
+            "speaker": "shauna",
+            "lines": [
                 "I've gotta get going! See you!"
             ],
             "input": {
