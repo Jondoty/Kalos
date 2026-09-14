@@ -404,7 +404,7 @@
             }
         },
         {
-            "id": "page20",
+            "id": "page22",
             "speaker": "butler",
             "lines": [
                 "Also, it's not much, but I would like you to have this."
@@ -416,63 +416,9 @@
                     {
                         "text": "Next",
                         "value": "next",
-                        "action": "q.dialogue.set_page('page20');"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "page21",
-            "speaker": "butler",
-            "lines": [
-                "Protect blocks opposing Pokémon's moves."
-            ],
-            "input": {
-                "type": "option",
-                "vertical": false,
-                "options": [
-                    {
-                        "text": "Next",
-                        "value": "next",
-                        "action": "q.dialogue.set_page('page21');"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "page21",
-            "speaker": "butler",
-            "lines": [
-                "But if you use it many times in a row, the chances of it not working increase."
-            ],
-            "input": {
-                "type": "option",
-                "vertical": false,
-                "options": [
-                    {
-                        "text": "Next",
-                        "value": "next",
-                        "action": "q.dialogue.set_page('page22');"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "page22",
-            "speaker": "butler",
-            "lines": [
-                "If you will excuse me. I shall take my leave."
-            ],
-            "input": {
-                "type": "option",
-                "vertical": false,
-                "options": [
-                    {
-                        "text": "Next",
-                        "value": "next",
                         "action": [
-                            "q.run_command('particle cloud -1427 111 -377 2 2 2 1 100');",
-                            "q.run_command('tp @e[x=-1427,y=110,z=-377,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run givetm protect @s');",
                             "q.dialogue.set_page('page23');"
                         ]
                     }
@@ -481,9 +427,9 @@
         },
         {
             "id": "page23",
-            "speaker": "shauna",
+            "speaker": "butler",
             "lines": [
-                "The owner of Shabboneau Castle used to be friends with that guy!"
+                "Protect blocks opposing Pokémon's moves."
             ],
             "input": {
                 "type": "option",
@@ -499,9 +445,9 @@
         },
         {
             "id": "page24",
-            "speaker": "shauna",
+            "speaker": "butler",
             "lines": [
-                "Can you believe it? Isn't that crazy?"
+                "But if you use it many times in a row, the chances of it not working increase."
             ],
             "input": {
                 "type": "option",
@@ -517,6 +463,64 @@
         },
         {
             "id": "page25",
+            "speaker": "butler",
+            "lines": [
+                "If you will excuse me. I shall take my leave."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('particle cloud -1427 111 -377 2 2 2 1 100');",
+                            "q.run_command('tp @e[x=-1427,y=110,z=-377,dy=3,type=cobblemon:npc] 10000000 -50000 -10000000');",
+                            "q.dialogue.set_page('page26');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page26",
+            "speaker": "shauna",
+            "lines": [
+                "The owner of Shabboneau Castle used to be friends with that guy!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page27');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page27",
+            "speaker": "shauna",
+            "lines": [
+                "Can you believe it? Isn't that crazy?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page28');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page28",
             "speaker": "shauna",
             "lines": [
                 "We have to be sure to give that flute back after we wake up Snorlax..."

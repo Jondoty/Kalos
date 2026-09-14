@@ -101,6 +101,19 @@ execute as @s[x=-1936,y=141,z=588,distance=..5,tag=Dialogue45,tag=FossilHave] ru
 execute as @s[x=-1926,y=141,z=604,distance=..4,tag=!Dialogue45] run opendialogue ambrette_scientistm2_interaction @s
 execute as @s[x=-1926,y=141,z=604,distance=..4,tag=Dialogue45] run opendialogue ambrette_scientistm2_aerodactylite @s
 
+
+#Courmarine TM Quiz veteran
+execute as @s[x=-1121,y=84,z=-849,distance=..4,tag=!TMQuizCD,tag=!TMQuiz1] run opendialogue coumarine_tmquiz_confide @s
+execute as @s[x=-1121,y=84,z=-849,distance=..4,tag=!TMQuizCD,tag=TMQuiz1,tag=!TMQuiz2] run opendialogue coumarine_tmquiz_acrobatics @s
+execute as @s[x=-1121,y=84,z=-849,distance=..4,tag=!TMQuizCD,tag=TMQuiz2,tag=!TMQuiz3] run opendialogue coumarine_tmquiz_embargo @s
+execute as @s[x=-1121,y=84,z=-849,distance=..4,tag=!TMQuizCD,tag=TMQuiz3,tag=!TMQuiz4] run opendialogue coumarine_tmquiz_trickroom @s
+
+execute as @s[x=-1121,y=84,z=-849,distance=..4,tag=TMQuizCD] run opendialogue coumarine_tmquiz_cooldown @s
+execute as @s[x=-1121,y=84,z=-849,distance=..4,tag=TMQuiz1,tag=TMQuiz2,tag=TMQuiz3,tag=TMQuiz4] run opendialogue coumarine_tmquiz_finished @s
+
+
+
+
 #-------------------------------------------------------------
 
 #Dynamic Shop NPCs

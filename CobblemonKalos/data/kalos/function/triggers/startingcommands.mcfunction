@@ -88,6 +88,10 @@ tag @s remove LabsBryony
 tag @s remove StationPunks1
 tag @s remove StationPunks2
 tag @s remove StationPunks3
+tag @s remove TMQuiz1
+tag @s remove TMQuiz2
+tag @s remove TMQuiz3
+tag @s remove TMQuiz4
 
 tag @s remove Viscount
 tag @s remove Earl

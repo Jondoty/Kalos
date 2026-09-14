@@ -24,7 +24,14 @@
                     {
                         "text": "Next",
                         "value": "next",
-                        "action": "q.dialogue.set_page('page2');"
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run tellraw @s[tag=ItemLoot181] {\"text\":\"You've already claimed this loot!\",\"italic\":true,\"color\":\"gray\"}');",
+                            "q.run_command('execute as ' + q.player.username + ' run givetm sleeptalk  @s[tag=!ItemLoot181]');",
+                            "q.run_command('execute as ' + q.player.username + ' run tellraw @s[tag=!ItemLoot181] {\"text\":\"You received the TM Sleep Talk!\",\"italic\":true,\"color\":\"gray\"}');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound tmget ambient @s[tag=!ItemLoot181] ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run tag @s[tag=!ItemLoot181] add ItemLoot181');",
+                            "q.dialogue.set_page('page2');"
+                        ]
                     }
                 ]
             }
