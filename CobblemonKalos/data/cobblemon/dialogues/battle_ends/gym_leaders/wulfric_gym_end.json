@@ -4,6 +4,7 @@
         "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 2');",
         "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
         "q.run_command('execute as ' + q.player.username + ' run advancement grant @s only kalos:badges/badge8');",
+        "q.run_command('execute as ' + q.player.username + ' run givetm icebeam @s[tag=!Wulfric]');",
         "q.run_command('execute as ' + q.player.username + ' run tag ' + q.player.username + ' add Wulfric');",
         "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $9440 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
         "q.run_command('scoreboard players add ' + q.player.username + ' Money 9440');"
@@ -114,7 +115,7 @@
             "id": "page6",
             "speaker": "npc",
             "lines": [
-                "Being rigid can make you tough, but it will also render you fragile."
+                "Let me give you this, too."
             ],
             "input": {
                 "type": "option",
@@ -123,7 +124,10 @@
                     {
                         "text": "Next",
                         "value": "next",
-                        "action": "q.dialogue.set_page('page7');"
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page7');"
+                        ]
                     }
                 ]
             }
@@ -132,7 +136,7 @@
             "id": "page7",
             "speaker": "npc",
             "lines": [
-                "You're better off being flexible. You know what I mean?"
+                "You know what this is? It's Ice Beam!"
             ],
             "input": {
                 "type": "option",
@@ -150,7 +154,7 @@
             "id": "page8",
             "speaker": "npc",
             "lines": [
-                "Some people are fluid like water and can adapt to their environment without changing what's important on the inside."
+                "This move has an accuracy of 100 percent!"
             ],
             "input": {
                 "type": "option",
@@ -168,7 +172,7 @@
             "id": "page9",
             "speaker": "npc",
             "lines": [
-                "Not me, though. I guess I'm too stubborn."
+                "Not only that, but every once in a while it will freeze the target it hits, too!"
             ],
             "input": {
                 "type": "option",
@@ -184,6 +188,96 @@
         },
         {
             "id": "page10",
+            "speaker": "npc",
+            "lines": [
+                "I hope you've learned a valuable lesson today."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page11');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page11",
+            "speaker": "npc",
+            "lines": [
+                "Being rigid can make you tough, but it will also render you fragile."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page12');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page12",
+            "speaker": "npc",
+            "lines": [
+                "You're better off being flexible. You know what I mean?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page13');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page13",
+            "speaker": "npc",
+            "lines": [
+                "Some people are fluid like water and can adapt to their environment without changing what's important on the inside."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page14');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page14",
+            "speaker": "npc",
+            "lines": [
+                "Not me, though. I guess I'm too stubborn."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page15');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page15",
             "speaker": "npc",
             "lines": [
                 "Maybe that's why I love Ice types."

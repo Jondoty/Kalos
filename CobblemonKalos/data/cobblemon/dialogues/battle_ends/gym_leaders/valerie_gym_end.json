@@ -3,6 +3,7 @@
         "c.npc.set_chatting();",
         "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 2');",
         "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+        "q.run_command('execute as ' + q.player.username + ' run givetm dazzlinggleam @s[tag=!Valerie]');",
         "q.run_command('execute as ' + q.player.username + ' run tag ' + q.player.username + ' add Valerie');",
         "q.run_command('execute as ' + q.player.username + ' run advancement grant @s only kalos:badges/badge6');",
         "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $6720 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
@@ -168,7 +169,7 @@
             "id": "page9",
             "speaker": "npc",
             "lines": [
-                "I've always wanted to be a Pokémon, you see."
+                "I also wish to award you this TM..."
             ],
             "input": {
                 "type": "option",
@@ -186,7 +187,7 @@
             "id": "page10",
             "speaker": "npc",
             "lines": [
-                "That desire is my inspiration and what I try to achieve by designing."
+                "Please consider it a personal gift from me, not simply the winnings of a battle."
             ],
             "input": {
                 "type": "option",
@@ -195,7 +196,10 @@
                     {
                         "text": "Next",
                         "value": "next",
-                        "action": "q.dialogue.set_page('page11');"
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page11');"
+                        ]
                     }
                 ]
             }
@@ -204,7 +208,7 @@
             "id": "page11",
             "speaker": "npc",
             "lines": [
-                "And yet...the only time I feel I am truly one with Pokémon is when we are embroiled in desperate battle."
+                "Oh? My, what a curious feeling..."
             ],
             "input": {
                 "type": "option",
@@ -222,7 +226,7 @@
             "id": "page12",
             "speaker": "npc",
             "lines": [
-                "I wonder why that is..."
+                "I can't seem to recall any longer which move is contained in that TM."
             ],
             "input": {
                 "type": "option",
@@ -240,7 +244,7 @@
             "id": "page13",
             "speaker": "npc",
             "lines": [
-                "Hmm... Could it be--"
+                "I hope you might forgive me."
             ],
             "input": {
                 "type": "option",
@@ -256,6 +260,114 @@
         },
         {
             "id": "page14",
+            "speaker": "npc",
+            "lines": [
+                "My designs are said to be rather mystifying. Do you agree with that?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page15');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page15",
+            "speaker": "npc",
+            "lines": [
+                "I've always wanted to be a Pokémon, you see."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page16');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page16",
+            "speaker": "npc",
+            "lines": [
+                "That desire is my inspiration and what I try to achieve by designing."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page17');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page17",
+            "speaker": "npc",
+            "lines": [
+                "And yet...the only time I feel I am truly one with Pokémon is when we are embroiled in desperate battle."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page18');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page18",
+            "speaker": "npc",
+            "lines": [
+                "I wonder why that is..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page19');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page19",
+            "speaker": "npc",
+            "lines": [
+                "Hmm... Could it be--"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page20');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page20",
             "speaker": "npc",
             "lines": [
                 "Never mind. It is nothing, kind Trainer."

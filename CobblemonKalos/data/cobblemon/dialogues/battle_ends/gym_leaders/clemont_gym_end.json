@@ -4,6 +4,7 @@
         "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 2');",
         "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
         "q.run_command('execute as ' + q.player.username + ' run advancement grant @s only kalos:badges/badge5');",
+        "q.run_command('execute as ' + q.player.username + ' run givetm thunderbolt @s[tag=!Clemont]');",
         "q.run_command('execute as ' + q.player.username + ' run tag ' + q.player.username + ' add Clemont');",
         "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $5920 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
         "q.run_command('scoreboard players add ' + q.player.username + ' Money 5920');"
@@ -105,7 +106,7 @@
             "id": "page5",
             "speaker": "clemont",
             "lines": [
-                "Look, I'm not... It's not like I'm just trying to make myself stronger or..."
+                "And here. Take this TM as well..."
             ],
             "input": {
                 "type": "option",
@@ -114,16 +115,19 @@
                     {
                         "text": "Next",
                         "value": "next",
-                        "action": "q.dialogue.set_page('page6');"
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page6');"
+                        ]
                     }
                 ]
             }
         },
         {
             "id": "page6",
-            "speaker": "clemont",
+            "speaker": "bonnie",
             "lines": [
-                "... ... ..."
+                "Oh, I know! I know this one! That's Thunderbolt!"
             ],
             "input": {
                 "type": "option",
@@ -139,6 +143,96 @@
         },
         {
             "id": "page7",
+            "speaker": "bonnie",
+            "lines": [
+                "It has a power of 90, and its accuracy is 100 percent! It'll never miss!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page8');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "bonnie",
+            "lines": [
+                "It's a really popular Electric move because of that!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page9');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page9",
+            "speaker": "clemont",
+            "lines": [
+                "Arghhh! Bonnie, you--! ... ... ..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page10');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page10",
+            "speaker": "clemont",
+            "lines": [
+                "Look, I'm not... It's not like I'm just trying to make myself stronger or..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page11');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page11",
+            "speaker": "clemont",
+            "lines": [
+                "... ... ..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page12');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page12",
             "speaker": "clemont",
             "lines": [
                 "All I'm trying to do is enjoy every day to the fullest with my Pokémon, while doing the science that I love with my inventing."

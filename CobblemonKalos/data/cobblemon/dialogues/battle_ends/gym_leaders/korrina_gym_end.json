@@ -4,6 +4,7 @@
         "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 2');",
         "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
         "q.run_command('execute as ' + q.player.username + ' run advancement grant @s only kalos:badges/badge3');",
+        "q.run_command('execute as ' + q.player.username + ' run givetm poweruppunch @s[tag=!Korrina]');",
         "q.run_command('execute as ' + q.player.username + ' run tag ' + q.player.username + ' add Korrina');",
         "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $5120 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
         "q.run_command('scoreboard players add ' + q.player.username + ' Money 5120');"
@@ -114,7 +115,7 @@
             "id": "page6",
             "speaker": "npc",
             "lines": [
-                "Look... I do have to apologize."
+                "If you've got a Rumble Badge, you'll be able to roll over waves using the HM Surf, even outside battle!"
             ],
             "input": {
                 "type": "option",
@@ -132,7 +133,7 @@
             "id": "page7",
             "speaker": "npc",
             "lines": [
-                "You'll have to make it up to the top of the Tower of Mastery if you want the Mega Ring."
+                "And here, why don't you take this TM? I've really been on a roll with it myself!"
             ],
             "input": {
                 "type": "option",
@@ -141,7 +142,10 @@
                     {
                         "text": "Next",
                         "value": "next",
-                        "action": "q.dialogue.set_page('page8');"
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page8');"
+                        ]
                     }
                 ]
             }
@@ -150,7 +154,7 @@
             "id": "page8",
             "speaker": "npc",
             "lines": [
-                "I'm sorry for sending you this way and that."
+                "Power-Up Punch does just what it says on the box!"
             ],
             "input": {
                 "type": "option",
@@ -168,7 +172,7 @@
             "id": "page9",
             "speaker": "npc",
             "lines": [
-                "I swear, I'm not giving you the runaround! You've done great rolling with the punches."
+                "The more that you use it, the tougher your fists get."
             ],
             "input": {
                 "type": "option",
@@ -186,7 +190,7 @@
             "id": "page10",
             "speaker": "npc",
             "lines": [
-                "So great that I'd like to ask you a favor..."
+                "Keep using it. Your Attack will go through the roof!"
             ],
             "input": {
                 "type": "option",
@@ -204,7 +208,7 @@
             "id": "page11",
             "speaker": "npc",
             "lines": [
-                "Battle me again, won't you? But this time, it won't be just another Gym Battle..."
+                "Look... I do have to apologize."
             ],
             "input": {
                 "type": "option",
@@ -222,7 +226,7 @@
             "id": "page12",
             "speaker": "npc",
             "lines": [
-                "I want a battle between equals! As two Trainers who can use Mega Evolution!"
+                "You'll have to make it up to the top of the Tower of Mastery if you want the Mega Ring."
             ],
             "input": {
                 "type": "option",
@@ -238,6 +242,96 @@
         },
         {
             "id": "page13",
+            "speaker": "npc",
+            "lines": [
+                "I'm sorry for sending you this way and that."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page14');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page14",
+            "speaker": "npc",
+            "lines": [
+                "I swear, I'm not giving you the runaround! You've done great rolling with the punches."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page15');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page15",
+            "speaker": "npc",
+            "lines": [
+                "So great that I'd like to ask you a favor..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page16');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page16",
+            "speaker": "npc",
+            "lines": [
+                "Battle me again, won't you? But this time, it won't be just another Gym Battle..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page17');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page17",
+            "speaker": "npc",
+            "lines": [
+                "I want a battle between equals! As two Trainers who can use Mega Evolution!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page18');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page18",
             "speaker": "npc",
             "lines": [
                 "I'll be waiting for you with Lucario at the top of the Tower of Mastery!"

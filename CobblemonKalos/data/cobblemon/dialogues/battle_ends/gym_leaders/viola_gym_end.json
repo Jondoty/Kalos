@@ -4,6 +4,7 @@
         "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 2');",
         "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
         "q.run_command('execute as ' + q.player.username + ' run advancement grant @s only kalos:badges/badge1');",
+        "q.run_command('execute as ' + q.player.username + ' run givetm infestation @s[tag=!Viola]');",
         "q.run_command('execute as ' + q.player.username + ' run tag ' + q.player.username + ' add Viola');",
         "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $1920 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
         "q.run_command('scoreboard players add ' + q.player.username + ' Money 1920');"
@@ -96,6 +97,117 @@
             "id": "page5",
             "speaker": "npc",
             "lines": [
+                "And here! This TM commemorates your win against a pro photog like me."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page6');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "npc",
+            "lines": [
+                "Using a TM like that one there lets you teach your Pokémon some new moves quicker than a shutter set to 1/1000 can snap shut!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "npc",
+            "lines": [
+                "TMs are some of the best gear around."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page8');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
+            "speaker": "npc",
+            "lines": [
+                "They're point-and-click easy, and you can use them over and over again! At least if you turned that on in your config files..."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page9');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page9",
+            "speaker": "npc",
+            "lines": [
+                "Now, the TM that I just gave you is for a move called Infestation."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page10');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page10",
+            "speaker": "npc",
+            "lines": [
+                "Use it, and it'll be impossible for your opponent to flee from battle!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page11');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page11",
+            "speaker": "npc",
+            "lines": [
                 "Now then, can you zoom in a bit to check out the tent behind me?"
             ],
             "input": {
@@ -105,13 +217,13 @@
                     {
                         "text": "Next",
                         "value": "next",
-                        "action": "q.dialogue.set_page('page6');"
+                        "action": "q.dialogue.set_page('page12');"
                     }
                 ]
             }
         },
         {
-            "id": "page6",
+            "id": "page12",
             "speaker": "npc",
             "lines": [
                 "Take the stairs that you find beyond it, and you'll be back up to the entrance faster than a flash!"

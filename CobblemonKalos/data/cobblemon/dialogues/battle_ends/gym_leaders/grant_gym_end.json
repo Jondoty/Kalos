@@ -3,6 +3,7 @@
         "c.npc.set_chatting();",
         "q.run_command('scoreboard players set ' + q.player.username + ' BattleEnd 2');",
         "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/stopsound');",
+        "q.run_command('execute as ' + q.player.username + ' run givetm rocktomb @s[tag=!Grant]');",
         "q.run_command('execute as ' + q.player.username + ' run advancement grant @s only kalos:badges/badge2');",
         "q.run_command('execute as ' + q.player.username + ' run tag ' + q.player.username + ' add Grant');",
         "q.run_command('tellraw ' + q.player.username + ' {\"text\":\"You got $4000 for winning!\",\"italic\":true,\"color\":\"gray\"}');",
@@ -114,7 +115,7 @@
             "id": "page6",
             "speaker": "npc",
             "lines": [
-                "Now that you've become a master wall climber and conquered this Gym, it's time you thought about how to apply your skills in other areas!"
+                "And that's not all. You also get...this!"
             ],
             "input": {
                 "type": "option",
@@ -123,7 +124,10 @@
                     {
                         "text": "Next",
                         "value": "next",
-                        "action": "q.dialogue.set_page('page7');"
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run playsound tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.dialogue.set_page('page7');"
+                        ]
                     }
                 ]
             }
@@ -132,7 +136,7 @@
             "id": "page7",
             "speaker": "npc",
             "lines": [
-                "Think about how you can improve yourself, as well as the Pokémon that are always by your side."
+                "It's Rock Tomb."
             ],
             "input": {
                 "type": "option",
@@ -148,6 +152,60 @@
         },
         {
             "id": "page8",
+            "speaker": "npc",
+            "lines": [
+                "With this move, a Pokémon can hurl rocks at its target, not only inflicting damage but also lowering the target's Speed and preventing it from moving."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page9');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page9",
+            "speaker": "npc",
+            "lines": [
+                "Now that you've become a master wall climber and conquered this Gym, it's time you thought about how to apply your skills in other areas!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page10');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page10",
+            "speaker": "npc",
+            "lines": [
+                "Think about how you can improve yourself, as well as the Pokémon that are always by your side."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page11');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page11",
             "speaker": "npc",
             "lines": [
                 "When you find the answer, that's when you'll truly be able to smile!"
