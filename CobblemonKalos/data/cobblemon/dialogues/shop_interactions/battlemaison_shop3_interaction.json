@@ -1,0 +1,577 @@
+{
+    "initializationAction": [
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/testformoney');",
+        "q.run_command('team join battlepoints ' + q.player.username + '');"
+    ],
+    "escapeAction": [
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
+        "q.dialogue.close();"
+    ],
+    "names": [
+        "Battle Maison Clerk"
+    ],
+    "speakers": {
+        "npc": {
+            "name": "Battle Maison Clerk",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:shopman",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "Hello! Welcome to the Exchange Service Corner. Would you like to trade in your BP for some fabulous prizes?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy",
+                        "value": "buy",
+                        "action": "q.dialogue.set_page('buy1');"
+                    },
+                    {
+                        "text": "No Thanks",
+                        "value": "nothanks",
+                        "action": "q.dialogue.set_page('end');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buy1",
+            "speaker": "npc",
+            "lines": [
+                "Which item would you like to purchase?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Round TM",
+                        "value": "round",
+                        "action": "q.dialogue.set_page('pickround');"
+                    },
+                    {
+                        "text": "Incinerate TM",
+                        "value": "incinerate",
+                        "action": "q.dialogue.set_page('pickincinerate');"
+                    },
+                    {
+                        "text": "Swagger TM",
+                        "value": "swagger",
+                        "action": "q.dialogue.set_page('pickswagger');"
+                    },
+                    {
+                        "text": "Quash TM",
+                        "value": "quash",
+                        "action": "q.dialogue.set_page('pickquash');"
+                    },
+                    {
+                        "text": "Next Page >>",
+                        "value": "nextpage",
+                        "action": "q.dialogue.set_page('buy2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buy2",
+            "speaker": "npc",
+            "lines": [
+                "Which item would you like to purchase?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Roar TM",
+                        "value": "roar",
+                        "action": "q.dialogue.set_page('pickroar');"
+                    },
+                    {
+                        "text": "Smack Down TM",
+                        "value": "smackdown",
+                        "action": "q.dialogue.set_page('picksmackdown');"
+                    },
+                    {
+                        "text": "Sludge Wave TM",
+                        "value": "sludgewave",
+                        "action": "q.dialogue.set_page('picksludgewave');"
+                    },
+                    {
+                        "text": "Steel Wing TM",
+                        "value": "steelwing",
+                        "action": "q.dialogue.set_page('picksteelwing');"
+                    },
+                    {
+                        "text": "Next Page >>",
+                        "value": "nextpage",
+                        "action": "q.dialogue.set_page('buy3');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buy3",
+            "speaker": "npc",
+            "lines": [
+                "Which item would you like to purchase?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Explosion TM",
+                        "value": "explosion",
+                        "action": "q.dialogue.set_page('pickexplosion');"
+                    },
+                    {
+                        "text": "Retaliate TM",
+                        "value": "retaliate",
+                        "action": "q.dialogue.set_page('pickretaliate');"
+                    },
+                    {
+                        "text": "Volt Switch TM",
+                        "value": "voltswitch",
+                        "action": "q.dialogue.set_page('pickvoltswitch');"
+                    },
+                    {
+                        "text": "Dream Eater TM",
+                        "value": "dreameater,",
+                        "action": "q.dialogue.set_page('pickdreameater');"
+                    },
+                    {
+                        "text": "<< Back",
+                        "value": "nextpage",
+                        "action": "q.dialogue.set_page('buy1');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickround",
+            "speaker": "npc",
+            "lines": [
+                "16BP) The user attacks the target with a song. If others use this move, they will act immediately after the initial user, and the power of their Rounds will be boosted."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('BPHave16')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm round @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoints 16');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickincinerate",
+            "speaker": "npc",
+            "lines": [
+                "16BP) The user attacks opposing Pokémon with fire. If a Pokémon is holding a certain item, such as a Berry, the item becomes burned up and unusable."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('BPHave16')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm incinerate @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoints 16');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickswagger",
+            "speaker": "npc",
+            "lines": [
+                "24BP) The user enrages and confuses the target. However, this also sharply boosts the target's Attack stat."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('BPHave24')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm swagger @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoints 24');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickquash",
+            "speaker": "npc",
+            "lines": [
+                "24BP) The user suppresses the target and makes its move go last."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('BPHave24')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm quash @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoints 24');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickroar",
+            "speaker": "npc",
+            "lines": [
+                "24BP) The target is scared off, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('BPHave24')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm roar @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoints 24');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "picksmackdown",
+            "speaker": "npc",
+            "lines": [
+                "32BP) The user throws a stone or similar projectile to attack the target. If the target is in the air, it will be knocked down to the ground."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('BPHave32')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm smackdown @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoints 32');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "picksludgewave",
+            "speaker": "npc",
+            "lines": [
+                "32BP) The user strikes everything around it by swamping the area with a giant sludge wave. This may also poison those it hits."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('BPHave32')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm sludgewave @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoints 32');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "picksteelwing",
+            "speaker": "npc",
+            "lines": [
+                "32BP) The target is hit with wings of steel. This may also boost the user's Defense stat."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('BPHave32')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm steelwing @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoints 32');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickexplosion",
+            "speaker": "npc",
+            "lines": [
+                "48BP) The user attacks everything around it by causing a tremendous explosion. The user faints upon using this move."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('BPHave48')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm explosion @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoints 48');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickretaliate",
+            "speaker": "npc",
+            "lines": [
+                "48BP) The user takes revenge for a fainted ally. This move's power is boosted if an ally fainted in the previous turn."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('BPHave48')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm retaliate @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoints 48');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickvoltswitch",
+            "speaker": "npc",
+            "lines": [
+                "48BP) After making its attack, the user rushes back to switch places with a party Pokémon in waiting."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('BPHave48')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm voltswitch @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoints 48');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickdreameater",
+            "speaker": "npc",
+            "lines": [
+                "48BP) The user eats the dreams of a sleeping target. The user's HP is restored by up to half the damage taken by the target."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('BPHave48')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm dreameater @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s BattlePoints 48');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buyend",
+            "speaker": "npc",
+            "lines": [
+                "Here you are! Thank you!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "end",
+            "speaker": "npc",
+            "lines": [
+                "Collect Battle Points and come again!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

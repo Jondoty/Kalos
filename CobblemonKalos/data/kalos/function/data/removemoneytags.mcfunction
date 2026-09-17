@@ -31,10 +31,14 @@ tag @s remove MoneyHave12500
 tag @s remove MoneyHave15000
 tag @s remove MoneyHave25000
 tag @s remove MoneyHave30000
+tag @s remove MoneyHave35000
+tag @s remove MoneyHave40000
+tag @s remove MoneyHave45000
 
 #Battle Points
 tag @s remove BPHave2
 tag @s remove BPHave16
+tag @s remove BPHave24
 tag @s remove BPHave32
 tag @s remove BPHave48
 tag @s remove BPHave200

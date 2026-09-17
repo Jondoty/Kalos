@@ -1,0 +1,309 @@
+{
+    "initializationAction": [
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/testformoney');"
+    ],
+    "escapeAction": [
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
+        "q.dialogue.close();"
+    ],
+    "names": [
+        "Poké Mart Clerk"
+    ],
+    "speakers": {
+        "npc": {
+            "name": "Poké Mart Clerk",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:shopman",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "Welcome to the Poké Mart! May I help you?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy",
+                        "value": "buy",
+                        "action": "q.dialogue.set_page('buy1');"
+                    },
+                    {
+                        "text": "No Thanks",
+                        "value": "nothanks",
+                        "action": "q.dialogue.set_page('end');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buy1",
+            "speaker": "npc",
+            "lines": [
+                "Which item would you like to purchase?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Blizzard TM",
+                        "value": "blizzard",
+                        "action": "q.dialogue.set_page('pickblizzard');"
+                    },
+                    {
+                        "text": "Thunder TM",
+                        "value": "thunder",
+                        "action": "q.dialogue.set_page('pickthunder');"
+                    },
+                    {
+                        "text": "Fire Blast TM",
+                        "value": "fireblast",
+                        "action": "q.dialogue.set_page('pickfireblast');"
+                    },
+                    {
+                        "text": "Page 2 >>",
+                        "value": "page2",
+                        "action": "q.dialogue.set_page('buy2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buy2",
+            "speaker": "npc",
+            "lines": [
+                "Which item would you like to purchase?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Focus Blast TM",
+                        "value": "focusblast",
+                        "action": "q.dialogue.set_page('pickfocusblast');"
+                    },
+                    {
+                        "text": "Hyper Beam TM",
+                        "value": "hyperbeam",
+                        "action": "q.dialogue.set_page('pickhyperbeam');"
+                    },
+                    {
+                        "text": "<< Page 1",
+                        "value": "page1",
+                        "action": "q.dialogue.set_page('buy1');"
+                    }
+                ]
+            }
+        },
+
+        
+        {
+            "id": "pickblizzard",
+            "speaker": "npc",
+            "lines": [
+                "$35000) A howling blizzard is summoned to strike opposing Pokémon. This may also leave the opposing Pokémon frozen."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave35000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm blizzard @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 35000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickthunder",
+            "speaker": "npc",
+            "lines": [
+                "$35000) A wicked thunderbolt is dropped on the target to inflict damage. This may also leave the target with paralysis."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave35000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm thunder @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 35000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickfireblast",
+            "speaker": "npc",
+            "lines": [
+                "$35000) The target is attacked with an intense blast of all- consuming fire. This may also leave the target with a burn."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave35000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm fireblast @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 35000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickfocusblast",
+            "speaker": "npc",
+            "lines": [
+                "$35000) The user heightens its mental focus and unleashes its power. This may also lower the target's Sp. Def stat."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave35000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm focusblast @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 35000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickhyperbeam",
+            "speaker": "npc",
+            "lines": [
+                "$45000) The target is attacked with a powerful beam. The user can't move on the next turn."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave45000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm hyperbeam @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 45000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "buyend",
+            "speaker": "npc",
+            "lines": [
+                "Here you are! Thank you!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "end",
+            "speaker": "npc",
+            "lines": [
+                "Please come again!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

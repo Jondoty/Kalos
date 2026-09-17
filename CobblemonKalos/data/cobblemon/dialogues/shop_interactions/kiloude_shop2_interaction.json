@@ -1,0 +1,309 @@
+{
+    "initializationAction": [
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/testformoney');"
+    ],
+    "escapeAction": [
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
+        "q.dialogue.close();"
+    ],
+    "names": [
+        "Poké Mart Clerk"
+    ],
+    "speakers": {
+        "npc": {
+            "name": "Poké Mart Clerk",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:shopman",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "Welcome to the Poké Mart! May I help you?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy",
+                        "value": "buy",
+                        "action": "q.dialogue.set_page('buy1');"
+                    },
+                    {
+                        "text": "No Thanks",
+                        "value": "nothanks",
+                        "action": "q.dialogue.set_page('end');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buy1",
+            "speaker": "npc",
+            "lines": [
+                "Which item would you like to purchase?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Overheat TM",
+                        "value": "overheat",
+                        "action": "q.dialogue.set_page('pickoverheat');"
+                    },
+                    {
+                        "text": "Wild Charge TM",
+                        "value": "wildcharge",
+                        "action": "q.dialogue.set_page('pickwildcharge');"
+                    },
+                    {
+                        "text": "Giga Impact TM",
+                        "value": "gigaimpact",
+                        "action": "q.dialogue.set_page('pickgigaimpact');"
+                    },
+                    {
+                        "text": "Page 2 >>",
+                        "value": "page2",
+                        "action": "q.dialogue.set_page('buy2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buy2",
+            "speaker": "npc",
+            "lines": [
+                "Which item would you like to purchase?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Reflect TM",
+                        "value": "reflect",
+                        "action": "q.dialogue.set_page('pickreflect');"
+                    },
+                    {
+                        "text": "Light Screen TM",
+                        "value": "lightscreen",
+                        "action": "q.dialogue.set_page('picklightscreen');"
+                    },
+                    {
+                        "text": "<< Page 1",
+                        "value": "page1",
+                        "action": "q.dialogue.set_page('buy1');"
+                    }
+                ]
+            }
+        },
+
+        
+        {
+            "id": "pickoverheat",
+            "speaker": "npc",
+            "lines": [
+                "$40000) The user attacks the target with all its might. The recoil from this move harshly lowers the user's Sp. Atk stat."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave40000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm overheat @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 40000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickwildcharge",
+            "speaker": "npc",
+            "lines": [
+                "$25000) The user shrouds itself in electricity and smashes into the target. This also damages the user a little."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave25000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm wildcharge @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 25000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickgigaimpact",
+            "speaker": "npc",
+            "lines": [
+                "$45000) The user charges at the target using every bit of its power. The user can't move on the next turn."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave45000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm gigaimpact @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 45000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickreflect",
+            "speaker": "npc",
+            "lines": [
+                "$15000) A wondrous wall of light is put up to reduce damage from physical moves for five turns."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave15000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm reflect @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 15000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "picklightscreen",
+            "speaker": "npc",
+            "lines": [
+                "$15000) A wondrous wall of light is put up to reduce damage from special moves for five turns."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave15000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm lightscreen @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 15000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "buyend",
+            "speaker": "npc",
+            "lines": [
+                "Here you are! Thank you!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "end",
+            "speaker": "npc",
+            "lines": [
+                "Please come again!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

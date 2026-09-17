@@ -37,6 +37,11 @@ execute if entity @a[x=-161,y=99,z=-1220,distance=..50] unless entity @e[x=-161,
 execute if entity @a[x=1196,y=50,z=432,distance=..50] unless entity @e[x=1196,y=50,z=432,dy=4] run npcspawnat 1196 50 432 snowbelle_battlegirl
 execute if entity @a[x=1246,y=80,z=1648,distance=..50] unless entity @e[x=1246,y=80,z=1648,dy=4] run npcspawnat 1196 50 432 kiloude_scientist
 execute if entity @a[x=1136,y=91,z=1526,distance=..50] unless entity @e[x=1136,y=91,z=1526,dy=4] run npcspawnat 1136 91 1526 kiloude_littlegirl
+execute if entity @a[x=-364,y=101,z=432,distance=..50] unless entity @e[x=-364,y=101,z=432,dy=4] run npcspawnat -364 101 432 lumiose_shop1
+execute if entity @a[x=-1608,y=57,z=-843,distance=..50] unless entity @e[x=-1608,y=57,z=-843,dy=4] run npcspawnat -1608 57 -843 shalour_shop2
+execute if entity @a[x=1281,y=80,z=-221,distance=..50] unless entity @e[x=1281,y=80,z=-221,dy=4] run npcspawnat 1281 80 -221 anistar_shop2
+execute if entity @a[x=1191,y=81,z=1637,distance=..50] unless entity @e[x=1191,y=81,z=1637,dy=4] run npcspawnat 1191 81 1637 kiloude_shop2
+execute if entity @a[x=1230,y=73,z=1576,distance=..50] unless entity @e[x=1230,y=73,z=1576,dy=4] run npcspawnat 1230 73 1576 battlemaison_shop3
 
 
 

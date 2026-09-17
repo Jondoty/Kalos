@@ -1,0 +1,309 @@
+{
+    "initializationAction": [
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/testformoney');"
+    ],
+    "escapeAction": [
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
+        "q.dialogue.close();"
+    ],
+    "names": [
+        "Poké Mart Clerk"
+    ],
+    "speakers": {
+        "npc": {
+            "name": "Poké Mart Clerk",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:shopman",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "Welcome to the Poké Mart! May I help you?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy",
+                        "value": "buy",
+                        "action": "q.dialogue.set_page('buy1');"
+                    },
+                    {
+                        "text": "No Thanks",
+                        "value": "nothanks",
+                        "action": "q.dialogue.set_page('end');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buy1",
+            "speaker": "npc",
+            "lines": [
+                "Which item would you like to purchase?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Bulldoze TM",
+                        "value": "bulldoze",
+                        "action": "q.dialogue.set_page('pickbulldoze');"
+                    },
+                    {
+                        "text": "Struggle Bug TM",
+                        "value": "strugglebug",
+                        "action": "q.dialogue.set_page('pickstrugglebug');"
+                    },
+                    {
+                        "text": "Swords Dance TM",
+                        "value": "swordsdance",
+                        "action": "q.dialogue.set_page('pickswordsdance');"
+                    },
+                    {
+                        "text": "Page 2 >>",
+                        "value": "page2",
+                        "action": "q.dialogue.set_page('buy2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buy2",
+            "speaker": "npc",
+            "lines": [
+                "Which item would you like to purchase?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Sunny Day TM",
+                        "value": "sunnyday",
+                        "action": "q.dialogue.set_page('picksunnyday');"
+                    },
+                    {
+                        "text": "Rain Dance TM",
+                        "value": "raindance",
+                        "action": "q.dialogue.set_page('pickraindance');"
+                    },
+                    {
+                        "text": "<< Page 1",
+                        "value": "page1",
+                        "action": "q.dialogue.set_page('buy1');"
+                    }
+                ]
+            }
+        },
+
+        
+        {
+            "id": "pickbulldoze",
+            "speaker": "npc",
+            "lines": [
+                "$5000) The user strikes everything around it by stomping down on the ground. This lowers the Speed stats of those hit."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave5000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm bulldoze @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 5000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickstrugglebug",
+            "speaker": "npc",
+            "lines": [
+                "$5000) The user attacks by struggling against opposing Pokémon. This also lowers their Sp. Atk stats."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave5000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm strugglebug @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 5000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickswordsdance",
+            "speaker": "npc",
+            "lines": [
+                "$5000) A frenetic dance to uplift the fighting spirit. This sharply boosts the user's Attack stat."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave5000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm swordsdance @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 5000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "picksunnyday",
+            "speaker": "npc",
+            "lines": [
+                "$25000) The user intensifies the sun for five turns, powering up Fire-type attacks. The sunlight also lowers the power of Water-type attacks."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave25000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm sunnyday @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 25000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickraindance",
+            "speaker": "npc",
+            "lines": [
+                "$25000) The user summons a heavy rain that falls for five turns, powering up Water-type attacks. The rain also lowers the power of Fire-type attacks."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave25000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm raindance @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 25000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "buyend",
+            "speaker": "npc",
+            "lines": [
+                "Here you are! Thank you!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "end",
+            "speaker": "npc",
+            "lines": [
+                "Please come again!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

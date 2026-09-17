@@ -1,0 +1,309 @@
+{
+    "initializationAction": [
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/testformoney');"
+    ],
+    "escapeAction": [
+        "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
+        "q.dialogue.close();"
+    ],
+    "names": [
+        "Poké Mart Clerk"
+    ],
+    "speakers": {
+        "npc": {
+            "name": "Poké Mart Clerk",
+            "face": {
+                "type": "artificial",
+                "modelType": "npc",
+                "identifier": "cobblemon:shopman",
+                "isLeftSide": true
+            }
+        }
+    },
+    "pages": [
+        {
+            "id": "greeting",
+            "speaker": "npc",
+            "lines": [
+                "Welcome to the Poké Mart! May I help you?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Buy",
+                        "value": "buy",
+                        "action": "q.dialogue.set_page('buy1');"
+                    },
+                    {
+                        "text": "No Thanks",
+                        "value": "nothanks",
+                        "action": "q.dialogue.set_page('end');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buy1",
+            "speaker": "npc",
+            "lines": [
+                "Which item would you like to purchase?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Dig TM",
+                        "value": "dig",
+                        "action": "q.dialogue.set_page('pickdig');"
+                    },
+                    {
+                        "text": "Poison Jab TM",
+                        "value": "poisonjab",
+                        "action": "q.dialogue.set_page('pickpoisonjab');"
+                    },
+                    {
+                        "text": "Safeguard TM",
+                        "value": "safeguard",
+                        "action": "q.dialogue.set_page('picksafeguard');"
+                    },
+                    {
+                        "text": "Page 2 >>",
+                        "value": "page2",
+                        "action": "q.dialogue.set_page('buy2');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "buy2",
+            "speaker": "npc",
+            "lines": [
+                "Which item would you like to purchase?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Hail TM",
+                        "value": "hail",
+                        "action": "q.dialogue.set_page('pickhail');"
+                    },
+                    {
+                        "text": "Sandstorm TM",
+                        "value": "sandstorm",
+                        "action": "q.dialogue.set_page('picksandstorm');"
+                    },
+                    {
+                        "text": "<< Page 1",
+                        "value": "page1",
+                        "action": "q.dialogue.set_page('buy1');"
+                    }
+                ]
+            }
+        },
+
+        
+        {
+            "id": "pickdig",
+            "speaker": "npc",
+            "lines": [
+                "$5000) The user burrows into the ground on the first turn, then attacks on the next turn."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave5000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm dig @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 5000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickpoisonjab",
+            "speaker": "npc",
+            "lines": [
+                "$5000) The target is stabbed with a tentacle, an arm, or the like steeped in poison. This may also poison the target."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave5000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm poisonjab @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 5000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "picksafeguard",
+            "speaker": "npc",
+            "lines": [
+                "$15000) The user creates a protective field that prevents status conditions for five turns."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave15000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm safeguard @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 15000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickhail",
+            "speaker": "npc",
+            "lines": [
+                "$25000) The user summons a hailstorm lasting five turns. It damages all Pokémon except Ice types."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave15000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm hail @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 15000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "picksandstorm",
+            "speaker": "npc",
+            "lines": [
+                "$25000) A five-turn sandstorm is summoned to damage all Pokémon except Rock, Ground, and Steel types. The sandstorm also boosts the Sp. Def stats of Rock types."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave25000')",
+                        "text": "Buy 1",
+                        "value": "buy1",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run givetm sandstorm @s');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:tmget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 25000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "id": "buyend",
+            "speaker": "npc",
+            "lines": [
+                "Here you are! Thank you!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "end",
+            "speaker": "npc",
+            "lines": [
+                "Please come again!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:data/removemoneytags');",
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
