@@ -476,95 +476,95 @@ scoreboard players set @s FigyPickup 0
 
 
 #Friend Safari Trainers, won't re-enable battles though if battled previously
-scoreboard players set @s FSNormal1 0
-scoreboard players set @s FSNormal2 0
-scoreboard players set @s FSNormal3 0
-scoreboard players set @s FSNormal4 0
+tag @s remove FSNormal1
+tag @s remove FSNormal2
+tag @s remove FSNormal3
+tag @s remove FSNormal4
 
-scoreboard players set @s FSFire1 0
-scoreboard players set @s FSFire2 0
-scoreboard players set @s FSFire3 0
-scoreboard players set @s FSFire4 0
+tag @s remove FSFire1
+tag @s remove FSFire2
+tag @s remove FSFire3
+tag @s remove FSFire4
 
-scoreboard players set @s FSFighting1 0
-scoreboard players set @s FSFighting2 0
-scoreboard players set @s FSFighting3 0
-scoreboard players set @s FSFighting4 0
+tag @s remove FSFighting1
+tag @s remove FSFighting2
+tag @s remove FSFighting3
+tag @s remove FSFighting4
 
-scoreboard players set @s FSWater1 0
-scoreboard players set @s FSWater2 0
-scoreboard players set @s FSWater3 0
-scoreboard players set @s FSWater4 0
+tag @s remove FSWater1
+tag @s remove FSWater2
+tag @s remove FSWater3
+tag @s remove FSWater4
 
-scoreboard players set @s FSFlying1 0
-scoreboard players set @s FSFlying2 0
-scoreboard players set @s FSFlying3 0
-scoreboard players set @s FSFlying4 0
+tag @s remove FSFlying1
+tag @s remove FSFlying2
+tag @s remove FSFlying3
+tag @s remove FSFlying4
 
-scoreboard players set @s FSGrass1 0
-scoreboard players set @s FSGrass2 0
-scoreboard players set @s FSGrass3 0
-scoreboard players set @s FSGrass4 0
+tag @s remove FSGrass1
+tag @s remove FSGrass2
+tag @s remove FSGrass3
+tag @s remove FSGrass4
 
-scoreboard players set @s FSPoison1 0
-scoreboard players set @s FSPoison2 0
-scoreboard players set @s FSPoison3 0
-scoreboard players set @s FSPoison4 0
+tag @s remove FSPoison1
+tag @s remove FSPoison2
+tag @s remove FSPoison3
+tag @s remove FSPoison4
 
-scoreboard players set @s FSElectric1 0
-scoreboard players set @s FSElectric2 0
-scoreboard players set @s FSElectric3 0
-scoreboard players set @s FSElectric4 0
+tag @s remove FSElectric1
+tag @s remove FSElectric2
+tag @s remove FSElectric3
+tag @s remove FSElectric4
 
-scoreboard players set @s FSGround1 0
-scoreboard players set @s FSGround2 0
-scoreboard players set @s FSGround3 0
-scoreboard players set @s FSGround4 0
+tag @s remove FSGround1
+tag @s remove FSGround2
+tag @s remove FSGround3
+tag @s remove FSGround4
 
-scoreboard players set @s FSPsychic1 0
-scoreboard players set @s FSPsychic2 0
-scoreboard players set @s FSPsychic3 0
-scoreboard players set @s FSPsychic4 0
+tag @s remove FSPsychic1
+tag @s remove FSPsychic2
+tag @s remove FSPsychic3
+tag @s remove FSPsychic4
 
-scoreboard players set @s FSRock1 0
-scoreboard players set @s FSRock2 0
-scoreboard players set @s FSRock3 0
-scoreboard players set @s FSRock4 0
+tag @s remove FSRock1
+tag @s remove FSRock2
+tag @s remove FSRock3
+tag @s remove FSRock4
 
-scoreboard players set @s FSIce1 0
-scoreboard players set @s FSIce2 0
-scoreboard players set @s FSIce3 0
-scoreboard players set @s FSIce4 0
+tag @s remove FSIce1
+tag @s remove FSIce2
+tag @s remove FSIce3
+tag @s remove FSIce4
 
-scoreboard players set @s FSBug1 0
-scoreboard players set @s FSBug2 0
-scoreboard players set @s FSBug3 0
-scoreboard players set @s FSBug4 0
+tag @s remove FSBug1
+tag @s remove FSBug2
+tag @s remove FSBug3
+tag @s remove FSBug4
 
-scoreboard players set @s FSDragon1 0
-scoreboard players set @s FSDragon2 0
-scoreboard players set @s FSDragon3 0
-scoreboard players set @s FSDragon4 0
+tag @s remove FSDragon1
+tag @s remove FSDragon2
+tag @s remove FSDragon3
+tag @s remove FSDragon4
 
-scoreboard players set @s FSGhost1 0
-scoreboard players set @s FSGhost2 0
-scoreboard players set @s FSGhost3 0
-scoreboard players set @s FSGhost4 0
+tag @s remove FSGhost1
+tag @s remove FSGhost2
+tag @s remove FSGhost3
+tag @s remove FSGhost4
 
-scoreboard players set @s FSDark1 0
-scoreboard players set @s FSDark2 0
-scoreboard players set @s FSDark3 0
-scoreboard players set @s FSDark4 0
+tag @s remove FSDark1
+tag @s remove FSDark2
+tag @s remove FSDark3
+tag @s remove FSDark4
 
-scoreboard players set @s FSSteel1 0
-scoreboard players set @s FSSteel2 0
-scoreboard players set @s FSSteel3 0
-scoreboard players set @s FSSteel4 0
+tag @s remove FSSteel1
+tag @s remove FSSteel2
+tag @s remove FSSteel3
+tag @s remove FSSteel4
 
-scoreboard players set @s FSFairy1 0
-scoreboard players set @s FSFairy2 0
-scoreboard players set @s FSFairy3 0
-scoreboard players set @s FSFairy4 0
+tag @s remove FSFairy1
+tag @s remove FSFairy2
+tag @s remove FSFairy3
+tag @s remove FSFairy4
 
 
 #Resets Mega Stone scores if they are present

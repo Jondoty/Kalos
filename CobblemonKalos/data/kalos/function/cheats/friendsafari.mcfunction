@@ -1,90 +1,92 @@
 #Friend Safari
-scoreboard players set @s FSNormal1 1
-scoreboard players set @s FSNormal2 1
-scoreboard players set @s FSNormal3 1
-scoreboard players set @s FSNormal4 1
+tellraw @s {"text":"Granted you all Friend Safari zones","italic":true,"color":"gray"}
 
-scoreboard players set @s FSFire1 1
-scoreboard players set @s FSFire2 1
-scoreboard players set @s FSFire3 1
-scoreboard players set @s FSFire4 1
+tag @s add FSNormal1
+tag @s add FSNormal2
+tag @s add FSNormal3
+tag @s add FSNormal4
 
-scoreboard players set @s FSFighting1 1
-scoreboard players set @s FSFighting2 1
-scoreboard players set @s FSFighting3 1
-scoreboard players set @s FSFighting4 1
+tag @s add FSFire1
+tag @s add FSFire2
+tag @s add FSFire3
+tag @s add FSFire4
 
-scoreboard players set @s FSWater1 1
-scoreboard players set @s FSWater2 1
-scoreboard players set @s FSWater3 1
-scoreboard players set @s FSWater4 1
+tag @s add FSFighting1
+tag @s add FSFighting2
+tag @s add FSFighting3
+tag @s add FSFighting4
 
-scoreboard players set @s FSFlying1 1
-scoreboard players set @s FSFlying2 1
-scoreboard players set @s FSFlying3 1
-scoreboard players set @s FSFlying4 1
+tag @s add FSWater1
+tag @s add FSWater2
+tag @s add FSWater3
+tag @s add FSWater4
 
-scoreboard players set @s FSGrass1 1
-scoreboard players set @s FSGrass2 1
-scoreboard players set @s FSGrass3 1
-scoreboard players set @s FSGrass4 1
+tag @s add FSFlying1
+tag @s add FSFlying2
+tag @s add FSFlying3
+tag @s add FSFlying4
 
-scoreboard players set @s FSPoison1 1
-scoreboard players set @s FSPoison2 1
-scoreboard players set @s FSPoison3 1
-scoreboard players set @s FSPoison4 1
+tag @s add FSGrass1
+tag @s add FSGrass2
+tag @s add FSGrass3
+tag @s add FSGrass4
 
-scoreboard players set @s FSElectric1 1
-scoreboard players set @s FSElectric2 1
-scoreboard players set @s FSElectric3 1
-scoreboard players set @s FSElectric4 1
+tag @s add FSPoison1
+tag @s add FSPoison2
+tag @s add FSPoison3
+tag @s add FSPoison4
 
-scoreboard players set @s FSGround1 1
-scoreboard players set @s FSGround2 1
-scoreboard players set @s FSGround3 1
-scoreboard players set @s FSGround4 1
+tag @s add FSElectric1
+tag @s add FSElectric2
+tag @s add FSElectric3
+tag @s add FSElectric4
 
-scoreboard players set @s FSPsychic1 1
-scoreboard players set @s FSPsychic2 1
-scoreboard players set @s FSPsychic3 1
-scoreboard players set @s FSPsychic4 1
+tag @s add FSGround1
+tag @s add FSGround2
+tag @s add FSGround3
+tag @s add FSGround4
 
-scoreboard players set @s FSRock1 1
-scoreboard players set @s FSRock2 1
-scoreboard players set @s FSRock3 1
-scoreboard players set @s FSRock4 1
+tag @s add FSPsychic1
+tag @s add FSPsychic2
+tag @s add FSPsychic3
+tag @s add FSPsychic4
 
-scoreboard players set @s FSIce1 1
-scoreboard players set @s FSIce2 1
-scoreboard players set @s FSIce3 1
-scoreboard players set @s FSIce4 1
+tag @s add FSRock1
+tag @s add FSRock2
+tag @s add FSRock3
+tag @s add FSRock4
 
-scoreboard players set @s FSBug1 1
-scoreboard players set @s FSBug2 1
-scoreboard players set @s FSBug3 1
-scoreboard players set @s FSBug4 1
+tag @s add FSIce1
+tag @s add FSIce2
+tag @s add FSIce3
+tag @s add FSIce4
 
-scoreboard players set @s FSDragon1 1
-scoreboard players set @s FSDragon2 1
-scoreboard players set @s FSDragon3 1
-scoreboard players set @s FSDragon4 1
+tag @s add FSBug1
+tag @s add FSBug2
+tag @s add FSBug3
+tag @s add FSBug4
 
-scoreboard players set @s FSGhost1 1
-scoreboard players set @s FSGhost2 1
-scoreboard players set @s FSGhost3 1
-scoreboard players set @s FSGhost4 1
+tag @s add FSDragon1
+tag @s add FSDragon2
+tag @s add FSDragon3
+tag @s add FSDragon4
 
-scoreboard players set @s FSDark1 1
-scoreboard players set @s FSDark2 1
-scoreboard players set @s FSDark3 1
-scoreboard players set @s FSDark4 1
+tag @s add FSGhost1
+tag @s add FSGhost2
+tag @s add FSGhost3
+tag @s add FSGhost4
 
-scoreboard players set @s FSSteel1 1
-scoreboard players set @s FSSteel2 1
-scoreboard players set @s FSSteel3 1
-scoreboard players set @s FSSteel4 1
+tag @s add FSDark1
+tag @s add FSDark2
+tag @s add FSDark3
+tag @s add FSDark4
 
-scoreboard players set @s FSFairy1 1
-scoreboard players set @s FSFairy2 1
-scoreboard players set @s FSFairy3 1
-scoreboard players set @s FSFairy4 1
+tag @s add FSSteel1
+tag @s add FSSteel2
+tag @s add FSSteel3
+tag @s add FSSteel4
+
+tag @s add FSFairy1
+tag @s add FSFairy2
+tag @s add FSFairy3
+tag @s add FSFairy4
