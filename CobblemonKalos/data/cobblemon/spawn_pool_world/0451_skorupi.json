@@ -11,6 +11,12 @@
             "bucket": "common",
             "level": "30-32",
             "weight": 20,
+            "heldItems": [
+                {
+                    "item": "cobblemon:poison_barb",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:short_grass"
@@ -27,6 +33,12 @@
             "bucket": "common",
             "level": "34-36",
             "weight": 20,
+            "heldItems": [
+                {
+                    "item": "cobblemon:poison_barb",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:dandelion"
@@ -43,6 +55,12 @@
             "bucket": "common",
             "level": "34-36",
             "weight": 20,
+            "heldItems": [
+                {
+                    "item": "cobblemon:poison_barb",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:short_grass"
@@ -58,6 +76,12 @@
             "bucket": "common",
             "level": "34-36",
             "weight": 10,
+            "heldItems": [
+                {
+                    "item": "cobblemon:poison_barb",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:rose_bush"

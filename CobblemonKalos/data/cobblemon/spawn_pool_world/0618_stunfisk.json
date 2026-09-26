@@ -14,6 +14,12 @@
             "bucket": "common",
             "level": "30-32",
             "weight": 20,
+            "heldItems": [
+                {
+                    "item": "cobblemon:soft_sand",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": -342, "maxX": 90, "minZ": -1302, "maxZ": -794
             }
@@ -30,6 +36,12 @@
             "bucket": "common",
             "level": "46-48",
             "weight": 20,
+            "heldItems": [
+                {
+                    "item": "cobblemon:soft_sand",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 1326, "maxX": 1622, "minZ": 331, "maxZ": 580
             }

@@ -1085,6 +1085,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy hp_iv=31 defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1103,6 +1109,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy shiny=yes hp_iv=31 defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1121,6 +1133,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy hp_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1139,6 +1157,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy shiny=yes hp_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1157,6 +1181,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy hp_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1175,6 +1205,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy shiny=yes hp_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1193,6 +1229,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy hp_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1211,6 +1253,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy shiny=yes hp_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1229,6 +1277,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy hp_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1247,6 +1301,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy shiny=yes hp_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1265,6 +1325,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy defence_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1283,6 +1349,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy shiny=yes defence_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1301,6 +1373,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy defence_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1319,6 +1397,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy shiny=yes defence_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1337,6 +1421,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1355,6 +1445,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy shiny=yes defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1373,6 +1469,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1391,6 +1493,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy shiny=yes defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1409,6 +1517,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy attack_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1427,6 +1541,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy shiny=yes attack_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1445,6 +1565,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy attack_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1463,6 +1589,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy shiny=yes attack_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1481,6 +1613,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1499,6 +1637,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy shiny=yes attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1517,6 +1661,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy special_defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1535,6 +1685,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy shiny=yes special_defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1553,6 +1709,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy special_defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1571,6 +1733,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy shiny=yes special_defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1589,6 +1757,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy special_attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1607,6 +1781,12 @@
         },
         {
             "id": "clefairy-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:moon_stone",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "clefairy shiny=yes special_attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",

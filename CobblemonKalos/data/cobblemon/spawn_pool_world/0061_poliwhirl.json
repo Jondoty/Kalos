@@ -11,6 +11,12 @@
             "bucket": "common",
             "level": "25",
             "weight": 35.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": -342, "maxX": 90, "minZ": -1302, "maxZ": -794,
                 "minLureLevel": 2,
@@ -25,6 +31,12 @@
             "bucket": "common",
             "level": "35",
             "weight": 65.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": -342, "maxX": 90, "minZ": -1302, "maxZ": -794,
                 "minLureLevel": 3,
@@ -40,6 +52,12 @@
             "bucket": "common",
             "level": "25",
             "weight": 35.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": -342, "maxX": 90, "minZ": -1577, "maxZ": -1303,
                 "minLureLevel": 2,
@@ -54,6 +72,12 @@
             "bucket": "common",
             "level": "35",
             "weight": 65.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": -342, "maxX": 90, "minZ": -1577, "maxZ": -1303,
                 "minLureLevel": 3,
@@ -69,6 +93,12 @@
             "bucket": "common",
             "level": "25",
             "weight": 35.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 212, "maxX": 575, "minZ": -402, "maxZ": -129,
                 "minLureLevel": 2,
@@ -83,6 +113,12 @@
             "bucket": "common",
             "level": "35",
             "weight": 65.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 212, "maxX": 575, "minZ": -402, "maxZ": -129,
                 "minLureLevel": 3,
@@ -98,6 +134,12 @@
             "bucket": "common",
             "level": "25",
             "weight": 35.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 212, "maxX": 581, "minY": 103, "minZ": -695, "maxZ": -403,
                 "minLureLevel": 2,
@@ -112,6 +154,12 @@
             "bucket": "common",
             "level": "35",
             "weight": 65.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 212, "maxX": 581, "minY": 103, "minZ": -695, "maxZ": -403,
                 "minLureLevel": 3,
@@ -130,6 +178,12 @@
             "bucket": "common",
             "level": "38-40",
             "weight": 66,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 444, "maxX": 887, "minZ": -1444, "maxZ": -638
             }
@@ -156,6 +210,12 @@
             "bucket": "common",
             "level": "40",
             "weight": 65.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 444, "maxX": 887, "minZ": -1444, "maxZ": -638,
                 "minLureLevel": 3,
@@ -171,6 +231,12 @@
             "bucket": "common",
             "level": "35",
             "weight": 35.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 1326, "maxX": 1686, "minZ": 132, "maxZ": 330,
                 "minLureLevel": 2,
@@ -185,6 +251,12 @@
             "bucket": "common",
             "level": "45",
             "weight": 65.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 1326, "maxX": 1686, "minZ": 132, "maxZ": 330,
                 "minLureLevel": 3,
@@ -200,6 +272,12 @@
             "bucket": "common",
             "level": "45",
             "weight": 35.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 1500, "maxX": 2667, "minZ": 1203, "maxZ": 2620,
                 "minLureLevel": 2,
@@ -214,6 +292,12 @@
             "bucket": "common",
             "level": "55",
             "weight": 60.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 1500, "maxX": 2667, "minZ": 1203, "maxZ": 2620,
                 "minLureLevel": 3,
@@ -229,6 +313,12 @@
             "bucket": "common",
             "level": "35",
             "weight": 35.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 1326, "maxX": 1622, "minZ": 331, "maxZ": 580,
                 "minLureLevel": 2,
@@ -243,6 +333,12 @@
             "bucket": "common",
             "level": "50",
             "weight": 60.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 1326, "maxX": 1622, "minZ": 331, "maxZ": 580,
                 "minLureLevel": 3,
@@ -261,6 +357,12 @@
             "bucket": "common",
             "level": "48-50",
             "weight": 66,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 703, "maxX": 983, "minZ": 563, "maxZ": 842
             }
@@ -273,6 +375,12 @@
             "bucket": "common",
             "level": "40",
             "weight": 35.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 703, "maxX": 983, "minZ": 563, "maxZ": 842,
                 "minLureLevel": 2,
@@ -287,6 +395,12 @@
             "bucket": "common",
             "level": "50",
             "weight": 65.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 703, "maxX": 983, "minZ": 563, "maxZ": 842,
                 "minLureLevel": 3,
@@ -302,6 +416,12 @@
             "bucket": "common",
             "level": "40",
             "weight": 35.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 683, "maxX": 983, "minZ": 299, "maxZ": 562,
                 "minLureLevel": 2,
@@ -316,6 +436,12 @@
             "bucket": "common",
             "level": "50",
             "weight": 60.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 683, "maxX": 983, "minZ": 299, "maxZ": 562,
                 "minLureLevel": 3,

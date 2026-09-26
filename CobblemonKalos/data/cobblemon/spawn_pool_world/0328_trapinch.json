@@ -11,6 +11,12 @@
             "bucket": "common",
             "level": "26-28",
             "weight": 40,
+            "heldItems": [
+                {
+                    "item": "cobblemon:soft_sand",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:red_sand"

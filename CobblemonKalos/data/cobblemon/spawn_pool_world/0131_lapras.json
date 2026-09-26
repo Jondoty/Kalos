@@ -14,6 +14,12 @@
             "bucket": "common",
             "level": "23-25",
             "weight": 1,
+            "heldItems": [
+                {
+                    "item": "cobblemon:mystic_water",
+                    "percentage": 100.0
+                }
+            ],
             "condition": {
                 "minX": -1483, "maxX": -1205, "minZ": -888, "maxZ": -734
             }
@@ -30,6 +36,12 @@
             "bucket": "common",
             "level": "25-27",
             "weight": 1,
+            "heldItems": [
+                {
+                    "item": "cobblemon:mystic_water",
+                    "percentage": 100.0
+                }
+            ],
             "condition": {
                 "minX": -1483, "maxX": -1205, "minZ": -1340, "maxZ": -889
             }

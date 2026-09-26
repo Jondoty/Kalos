@@ -11,6 +11,12 @@
             "bucket": "common",
             "level": "15-17",
             "weight": 10,
+            "heldItems": [
+                {
+                    "item": "cobblemon:sun_stone",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "canSeeSky": false,
                 "minX": -1542, "maxX": -1368, "minY": 140, "maxY": 150, "minZ": 249, "maxZ": 559

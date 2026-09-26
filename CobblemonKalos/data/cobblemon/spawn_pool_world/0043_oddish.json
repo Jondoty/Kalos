@@ -11,6 +11,12 @@
             "bucket": "common",
             "level": "10-12",
             "weight": 30,
+            "heldItems": [
+                {
+                    "item": "cobblemon:absorb_bulb",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:short_grass"

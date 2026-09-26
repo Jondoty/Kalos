@@ -11,6 +11,12 @@
             "bucket": "common",
             "level": "6-8",
             "weight": 10,
+            "heldItems": [
+                {
+                    "item": "cobblemon:poison_barb",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:rose_bush",

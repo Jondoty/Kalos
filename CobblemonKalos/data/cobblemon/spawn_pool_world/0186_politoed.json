@@ -11,6 +11,12 @@
             "bucket": "common",
             "level": "50",
             "weight": 5.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 1326, "maxX": 1622, "minZ": 331, "maxZ": 580,
                 "minLureLevel": 3,

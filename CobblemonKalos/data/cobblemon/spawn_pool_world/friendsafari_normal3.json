@@ -5,6 +5,16 @@
     "spawns": [
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino hp_iv=31 defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -23,6 +33,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino shiny=yes hp_iv=31 defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -41,6 +61,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino hp_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -59,6 +89,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino shiny=yes hp_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -77,6 +117,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino hp_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -95,6 +145,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino shiny=yes hp_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -113,6 +173,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino hp_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -131,6 +201,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino shiny=yes hp_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -149,6 +229,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino hp_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -167,6 +257,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino shiny=yes hp_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -185,6 +285,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino defence_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -203,6 +313,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino shiny=yes defence_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -221,6 +341,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino defence_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -239,6 +369,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino shiny=yes defence_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -257,6 +397,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -275,6 +425,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino shiny=yes defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -293,6 +453,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -311,6 +481,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino shiny=yes defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -329,6 +509,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino attack_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -347,6 +537,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino shiny=yes attack_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -365,6 +565,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino attack_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -383,6 +593,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino shiny=yes attack_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -401,6 +621,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -419,6 +649,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino shiny=yes attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -437,6 +677,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino special_defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -455,6 +705,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino shiny=yes special_defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -473,6 +733,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino special_defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -491,6 +761,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino shiny=yes special_defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -509,6 +789,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino special_attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -527,6 +817,16 @@
         },
         {
             "id": "audino-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sitrus_berry",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:oran_berry",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "audino shiny=yes special_attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",

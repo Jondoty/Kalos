@@ -545,6 +545,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore hp_iv=31 defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -563,6 +573,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore shiny=yes hp_iv=31 defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -581,6 +601,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore hp_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -599,6 +629,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore shiny=yes hp_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -617,6 +657,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore hp_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -635,6 +685,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore shiny=yes hp_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -653,6 +713,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore hp_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -671,6 +741,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore shiny=yes hp_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -689,6 +769,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore hp_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -707,6 +797,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore shiny=yes hp_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -725,6 +825,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore defence_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -743,6 +853,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore shiny=yes defence_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -761,6 +881,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore defence_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -779,6 +909,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore shiny=yes defence_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -797,6 +937,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -815,6 +965,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore shiny=yes defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -833,6 +993,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -851,6 +1021,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore shiny=yes defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -869,6 +1049,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore attack_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -887,6 +1077,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore shiny=yes attack_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -905,6 +1105,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore attack_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -923,6 +1133,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore shiny=yes attack_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -941,6 +1161,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -959,6 +1189,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore shiny=yes attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -977,6 +1217,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore special_defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -995,6 +1245,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore shiny=yes special_defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1013,6 +1273,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore special_defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1031,6 +1301,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore shiny=yes special_defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1049,6 +1329,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore special_attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1067,6 +1357,16 @@
         },
         {
             "id": "boldore-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "pokemon": "boldore shiny=yes special_attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1085,6 +1385,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle hp_iv=31 defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1103,6 +1409,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle shiny=yes hp_iv=31 defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1121,6 +1433,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle hp_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1139,6 +1457,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle shiny=yes hp_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1157,6 +1481,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle hp_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1175,6 +1505,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle shiny=yes hp_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1193,6 +1529,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle hp_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1211,6 +1553,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle shiny=yes hp_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1229,6 +1577,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle hp_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1247,6 +1601,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle shiny=yes hp_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1265,6 +1625,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle defence_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1283,6 +1649,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle shiny=yes defence_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1301,6 +1673,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle defence_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1319,6 +1697,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle shiny=yes defence_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1337,6 +1721,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1355,6 +1745,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle shiny=yes defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1373,6 +1769,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1391,6 +1793,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle shiny=yes defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1409,6 +1817,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle attack_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1427,6 +1841,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle shiny=yes attack_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1445,6 +1865,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle attack_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1463,6 +1889,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle shiny=yes attack_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1481,6 +1913,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1499,6 +1937,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle shiny=yes attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1517,6 +1961,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle special_defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1535,6 +1985,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle shiny=yes special_defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1553,6 +2009,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle special_defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1571,6 +2033,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle shiny=yes special_defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1589,6 +2057,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle special_attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1607,6 +2081,12 @@
         },
         {
             "id": "shuckle-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:berry_juice",
+                    "percentage": 100.0
+                }
+            ],
             "pokemon": "shuckle shiny=yes special_attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",

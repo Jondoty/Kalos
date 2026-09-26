@@ -11,6 +11,12 @@
             "bucket": "common",
             "level": "10-12",
             "weight": 10,
+            "heldItems": [
+                {
+                    "item": "cobblemon:soft_sand",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:short_grass"

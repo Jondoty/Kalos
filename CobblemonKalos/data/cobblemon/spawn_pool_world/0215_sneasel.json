@@ -11,6 +11,12 @@
             "bucket": "common",
             "level": "38-40",
             "weight": 29,
+            "heldItems": [
+                {
+                    "item": "cobblemon:grip_claw",
+                    "percentage": 50.0
+                }
+            ],
             "condition": {
                 "neededNearbyBlocks": [
                     "snow_block"

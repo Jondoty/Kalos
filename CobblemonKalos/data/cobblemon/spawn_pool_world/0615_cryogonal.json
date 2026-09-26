@@ -11,6 +11,12 @@
             "bucket": "common",
             "level": "38-40",
             "weight": 4,
+            "heldItems": [
+                {
+                    "item": "cobblemon:never_melt_ice",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "canSeeSky": false,
                 "minX": 444, "maxX": 906, "minY": 0, "maxY": 98, "minZ": -1444, "maxZ": -888

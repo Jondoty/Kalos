@@ -80,8 +80,10 @@ execute as @s[x=-468,y=99,z=1063,distance=..10] unless entity @e[x=-687,y=100,z=
 execute as @s[x=-468,y=99,z=1063,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=91..95}] run give @s cobblemon:zinc
 execute as @s[x=-468,y=99,z=1063,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=96..100}] run give @s cobblemon:max_elixir
 
-execute as @s[x=-468,y=99,z=1063,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..51}] run pokespawn trubbish level=35
-execute as @s[x=-468,y=99,z=1063,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=52..64}] run pokespawn garbodor level=37
+execute as @s[x=-468,y=99,z=1063,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..2}] run pokespawn trubbish level=35 held_item=cobblemon:black_sludge
+execute as @s[x=-468,y=99,z=1063,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=3..51}] run pokespawn trubbish level=35
+execute as @s[x=-468,y=99,z=1063,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=52..57}] run pokespawn garbodor level=37 held_item=cobblemon:black_sludge
+execute as @s[x=-468,y=99,z=1063,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=58..64}] run pokespawn garbodor level=37
 
 execute as @s[x=-468,y=99,z=1063,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] at @e[distance=..5,type=armor_stand] run particle minecraft:explosion ~ ~1 ~ 0 2 1 1 10 normal @s
 
@@ -128,8 +130,10 @@ execute as @s[x=512,y=92,z=-463,distance=..10] unless entity @e[x=-687,y=100,z=1
 execute as @s[x=512,y=92,z=-463,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=91..95}] run give @s cobblemon:zinc
 execute as @s[x=512,y=92,z=-463,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=96..100}] run give @s cobblemon:max_elixir
 
-execute as @s[x=512,y=92,z=-463,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..51}] run pokespawn trubbish level=35
-execute as @s[x=512,y=92,z=-463,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=52..64}] run pokespawn garbodor level=37
+execute as @s[x=512,y=92,z=-463,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..2}] run pokespawn trubbish level=35 held_item=cobblemon:black_sludge
+execute as @s[x=512,y=92,z=-463,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=3..51}] run pokespawn trubbish level=35
+execute as @s[x=512,y=92,z=-463,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=52..57}] run pokespawn garbodor level=37 held_item=cobblemon:black_sludge
+execute as @s[x=512,y=92,z=-463,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=58..64}] run pokespawn garbodor level=37
 
 execute as @s[x=512,y=92,z=-463,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] at @e[distance=..5,type=armor_stand] run particle minecraft:explosion ~ ~1 ~ 0 2 1 1 10 normal @s
 
@@ -171,8 +175,10 @@ execute as @s[x=446,y=92,z=-486,distance=..10] unless entity @e[x=-687,y=100,z=1
 execute as @s[x=446,y=92,z=-486,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=91..95}] run give @s cobblemon:zinc
 execute as @s[x=446,y=92,z=-486,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=96..100}] run give @s cobblemon:max_elixir
 
-execute as @s[x=446,y=92,z=-486,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..51}] run pokespawn trubbish level=35
-execute as @s[x=446,y=92,z=-486,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=52..64}] run pokespawn garbodor level=37
+execute as @s[x=446,y=92,z=-486,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..2}] run pokespawn trubbish level=35 held_item=cobblemon:black_sludge
+execute as @s[x=446,y=92,z=-486,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=3..51}] run pokespawn trubbish level=35
+execute as @s[x=446,y=92,z=-486,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=52..57}] run pokespawn garbodor level=37 held_item=cobblemon:black_sludge
+execute as @s[x=446,y=92,z=-486,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=58..64}] run pokespawn garbodor level=37
 
 execute as @s[x=446,y=92,z=-486,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] at @e[distance=..5,type=armor_stand] run particle minecraft:explosion ~ ~1 ~ 0 2 1 1 10 normal @s
 
@@ -212,8 +218,11 @@ execute as @s[x=413,y=92,z=-450,distance=..10] unless entity @e[x=-687,y=100,z=1
 execute as @s[x=413,y=92,z=-450,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=91..95}] run give @s cobblemon:zinc
 execute as @s[x=413,y=92,z=-450,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=96..100}] run give @s cobblemon:max_elixir
 
-execute as @s[x=413,y=92,z=-450,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..51}] run pokespawn trubbish level=35
-execute as @s[x=413,y=92,z=-450,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=52..64}] run pokespawn garbodor level=37
+execute as @s[x=413,y=92,z=-450,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..2}] run pokespawn trubbish level=35 held_item=cobblemon:black_sludge
+execute as @s[x=413,y=92,z=-450,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=3..51}] run pokespawn trubbish level=35
+execute as @s[x=413,y=92,z=-450,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=52..57}] run pokespawn garbodor level=37 held_item=cobblemon:black_sludge
+execute as @s[x=413,y=92,z=-450,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=58..64}] run pokespawn garbodor level=37
+
 
 execute as @s[x=413,y=92,z=-450,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] at @e[distance=..5,type=armor_stand] run particle minecraft:explosion ~ ~1 ~ 0 2 1 1 10 normal @s
 
@@ -255,8 +264,11 @@ execute as @s[x=497,y=92,z=-413,distance=..10] unless entity @e[x=-687,y=100,z=1
 execute as @s[x=497,y=92,z=-413,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=91..95}] run give @s cobblemon:zinc
 execute as @s[x=497,y=92,z=-413,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=96..100}] run give @s cobblemon:max_elixir
 
-execute as @s[x=497,y=92,z=-413,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..51}] run pokespawn trubbish level=35
-execute as @s[x=497,y=92,z=-413,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=52..64}] run pokespawn garbodor level=37
+execute as @s[x=497,y=92,z=-413,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..2}] run pokespawn trubbish level=35 held_item=cobblemon:black_sludge
+execute as @s[x=497,y=92,z=-413,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=3..51}] run pokespawn trubbish level=35
+execute as @s[x=497,y=92,z=-413,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=52..57}] run pokespawn garbodor level=37 held_item=cobblemon:black_sludge
+execute as @s[x=497,y=92,z=-413,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=58..64}] run pokespawn garbodor level=37
+
 
 execute as @s[x=497,y=92,z=-413,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] at @e[distance=..5,type=armor_stand] run particle minecraft:explosion ~ ~1 ~ 0 2 1 1 10 normal @s
 
@@ -298,8 +310,10 @@ execute as @s[x=416,y=92,z=-377,distance=..10] unless entity @e[x=-687,y=100,z=1
 execute as @s[x=416,y=92,z=-377,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=91..95}] run give @s cobblemon:zinc
 execute as @s[x=416,y=92,z=-377,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=96..100}] run give @s cobblemon:max_elixir
 
-execute as @s[x=416,y=92,z=-377,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..51}] run pokespawn trubbish level=35
-execute as @s[x=416,y=92,z=-377,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=52..64}] run pokespawn garbodor level=37
+execute as @s[x=416,y=92,z=-377,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..2}] run pokespawn trubbish level=35 held_item=cobblemon:black_sludge
+execute as @s[x=416,y=92,z=-377,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=3..51}] run pokespawn trubbish level=35
+execute as @s[x=416,y=92,z=-377,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=52..57}] run pokespawn garbodor level=37 held_item=cobblemon:black_sludge
+execute as @s[x=416,y=92,z=-377,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=58..64}] run pokespawn garbodor level=37
 
 execute as @s[x=416,y=92,z=-377,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] at @e[distance=..5,type=armor_stand] run particle minecraft:explosion ~ ~1 ~ 0 2 1 1 10 normal @s
 
@@ -323,7 +337,8 @@ execute as @s[x=794,y=93,z=641,distance=..10] if entity @e[x=-687,y=100,z=1388,d
 execute as @s[x=794,y=93,z=641,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=91..95}] run give @s cobblemon:revival_herb
 execute as @s[x=794,y=93,z=641,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=96..100}] run give @s cobblemon:eviolite
 
-execute as @s[x=794,y=93,z=641,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..64}] run pokespawn banette level=50
+execute as @s[x=794,y=93,z=641,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..3}] run pokespawn banette level=50 held_item=cobblemon:spell_tag
+execute as @s[x=794,y=93,z=641,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=4..64}] run pokespawn banette level=50
 
 execute as @s[x=794,y=93,z=641,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] run execute as @s run execute as @e[distance=..5,type=armor_stand] run particle minecraft:explosion ~ ~1 ~ 0 2 1 1 10 normal @s
 
@@ -337,7 +352,8 @@ execute as @s[x=794,y=93,z=641,distance=..10] unless entity @e[x=-687,y=100,z=13
 execute as @s[x=794,y=93,z=641,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=91..95}] run give @s cobblemon:revival_herb
 execute as @s[x=794,y=93,z=641,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=96..100}] run give @s cobblemon:mental_herb
 
-execute as @s[x=794,y=93,z=641,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..64}] run pokespawn garbodor level=50
+execute as @s[x=794,y=93,z=641,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..31}] run pokespawn garbodor level=50 held_item=cobblemon:black_sludge
+execute as @s[x=794,y=93,z=641,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=32..64}] run pokespawn garbodor level=50
 
 execute as @s[x=794,y=93,z=641,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] at @e[distance=..5,type=armor_stand] run particle minecraft:explosion ~ ~1 ~ 0 2 1 1 10 normal @s
 
@@ -357,7 +373,8 @@ execute as @s[x=824,y=93,z=697,distance=..10] if entity @e[x=-687,y=100,z=1388,d
 execute as @s[x=824,y=93,z=697,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=91..95}] run give @s cobblemon:revival_herb
 execute as @s[x=824,y=93,z=697,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=96..100}] run give @s cobblemon:eviolite
 
-execute as @s[x=824,y=93,z=697,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..64}] run pokespawn banette level=50
+execute as @s[x=824,y=93,z=697,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..3}] run pokespawn banette level=50 held_item=cobblemon:spell_tag
+execute as @s[x=824,y=93,z=697,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=4..64}] run pokespawn banette level=50
 
 execute as @s[x=824,y=93,z=697,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] run execute as @s run execute as @e[distance=..5,type=armor_stand] run particle minecraft:explosion ~ ~1 ~ 0 2 1 1 10 normal @s
 
@@ -371,7 +388,8 @@ execute as @s[x=824,y=93,z=697,distance=..10] unless entity @e[x=-687,y=100,z=13
 execute as @s[x=824,y=93,z=697,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=91..95}] run give @s cobblemon:revival_herb
 execute as @s[x=824,y=93,z=697,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=96..100}] run give @s cobblemon:mental_herb
 
-execute as @s[x=824,y=93,z=697,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..64}] run pokespawn garbodor level=50
+execute as @s[x=824,y=93,z=697,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..31}] run pokespawn garbodor level=50 held_item=cobblemon:black_sludge
+execute as @s[x=824,y=93,z=697,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=32..64}] run pokespawn garbodor level=50
 
 execute as @s[x=824,y=93,z=697,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] at @e[distance=..5,type=armor_stand] run particle minecraft:explosion ~ ~1 ~ 0 2 1 1 10 normal @s
 
@@ -391,7 +409,8 @@ execute as @s[x=800,y=93,z=737,distance=..10] if entity @e[x=-687,y=100,z=1388,d
 execute as @s[x=800,y=93,z=737,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=91..95}] run give @s cobblemon:revival_herb
 execute as @s[x=800,y=93,z=737,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=96..100}] run give @s cobblemon:eviolite
 
-execute as @s[x=800,y=93,z=737,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..64}] run pokespawn banette level=50
+execute as @s[x=800,y=93,z=737,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..3}] run pokespawn banette level=50 held_item=cobblemon:spell_tag
+execute as @s[x=800,y=93,z=737,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=4..64}] run pokespawn banette level=50
 
 execute as @s[x=800,y=93,z=737,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] run execute as @s run execute as @e[distance=..5,type=armor_stand] run particle minecraft:explosion ~ ~1 ~ 0 2 1 1 10 normal @s
 
@@ -405,7 +424,8 @@ execute as @s[x=800,y=93,z=737,distance=..10] unless entity @e[x=-687,y=100,z=13
 execute as @s[x=800,y=93,z=737,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=91..95}] run give @s cobblemon:revival_herb
 execute as @s[x=800,y=93,z=737,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=96..100}] run give @s cobblemon:mental_herb
 
-execute as @s[x=800,y=93,z=737,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..64}] run pokespawn garbodor level=50
+execute as @s[x=800,y=93,z=737,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..31}] run pokespawn garbodor level=50 held_item=cobblemon:black_sludge
+execute as @s[x=800,y=93,z=737,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=32..64}] run pokespawn garbodor level=50
 
 execute as @s[x=800,y=93,z=737,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] at @e[distance=..5,type=armor_stand] run particle minecraft:explosion ~ ~1 ~ 0 2 1 1 10 normal @s
 
@@ -426,7 +446,8 @@ execute as @s[x=830,y=93,z=744,distance=..10] if entity @e[x=-687,y=100,z=1388,d
 execute as @s[x=830,y=93,z=744,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=91..95}] run give @s cobblemon:revival_herb
 execute as @s[x=830,y=93,z=744,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=96..100}] run give @s cobblemon:eviolite
 
-execute as @s[x=830,y=93,z=744,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..64}] run pokespawn banette level=50
+execute as @s[x=830,y=93,z=744,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..3}] run pokespawn banette level=50 held_item=cobblemon:spell_tag
+execute as @s[x=830,y=93,z=744,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=4..64}] run pokespawn banette level=50
 
 execute as @s[x=830,y=93,z=744,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] run execute as @s run execute as @e[distance=..5,type=armor_stand] run particle minecraft:explosion ~ ~1 ~ 0 2 1 1 10 normal @s
 
@@ -440,7 +461,8 @@ execute as @s[x=830,y=93,z=744,distance=..10] unless entity @e[x=-687,y=100,z=13
 execute as @s[x=830,y=93,z=744,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=91..95}] run give @s cobblemon:revival_herb
 execute as @s[x=830,y=93,z=744,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=96..100}] run give @s cobblemon:mental_herb
 
-execute as @s[x=830,y=93,z=744,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..64}] run pokespawn garbodor level=50
+execute as @s[x=830,y=93,z=744,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..31}] run pokespawn garbodor level=50 held_item=cobblemon:black_sludge
+execute as @s[x=830,y=93,z=744,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=32..64}] run pokespawn garbodor level=50
 
 execute as @s[x=830,y=93,z=744,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] at @e[distance=..5,type=armor_stand] run particle minecraft:explosion ~ ~1 ~ 0 2 1 1 10 normal @s
 
@@ -462,7 +484,8 @@ execute as @s[x=849,y=93,z=741,distance=..10] if entity @e[x=-687,y=100,z=1388,d
 execute as @s[x=849,y=93,z=741,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=91..95}] run give @s cobblemon:revival_herb
 execute as @s[x=849,y=93,z=741,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=96..100}] run give @s cobblemon:eviolite
 
-execute as @s[x=849,y=93,z=741,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..64}] run pokespawn banette level=50
+execute as @s[x=849,y=93,z=741,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..3}] run pokespawn banette level=50 held_item=cobblemon:spell_tag
+execute as @s[x=849,y=93,z=741,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=4..64}] run pokespawn banette level=50
 
 execute as @s[x=849,y=93,z=741,distance=..10] if entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] run execute as @s run execute as @e[distance=..5,type=armor_stand] run particle minecraft:explosion ~ ~1 ~ 0 2 1 1 10 normal @s
 
@@ -476,7 +499,8 @@ execute as @s[x=849,y=93,z=741,distance=..10] unless entity @e[x=-687,y=100,z=13
 execute as @s[x=849,y=93,z=741,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=91..95}] run give @s cobblemon:revival_herb
 execute as @s[x=849,y=93,z=741,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=96..100}] run give @s cobblemon:mental_herb
 
-execute as @s[x=849,y=93,z=741,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..64}] run pokespawn garbodor level=50
+execute as @s[x=849,y=93,z=741,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=0..31}] run pokespawn garbodor level=50 held_item=cobblemon:black_sludge
+execute as @s[x=849,y=93,z=741,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] if entity @s[scores={rng=32..64}] run pokespawn garbodor level=50
 
 execute as @s[x=849,y=93,z=741,distance=..10] unless entity @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=2}] at @e[distance=..5,type=armor_stand] run particle minecraft:explosion ~ ~1 ~ 0 2 1 1 10 normal @s
 

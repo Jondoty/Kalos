@@ -11,6 +11,12 @@
             "bucket": "common",
             "level": "23-25",
             "weight": 10,
+            "heldItems": [
+                {
+                    "item": "cobblemon:moomoo_milk",
+                    "percentage": 100.0
+                }
+            ],
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:short_grass"
@@ -26,6 +32,12 @@
             "bucket": "common",
             "level": "23-25",
             "weight": 30,
+            "heldItems": [
+                {
+                    "item": "cobblemon:moomoo_milk",
+                    "percentage": 100.0
+                }
+            ],
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:dandelion"

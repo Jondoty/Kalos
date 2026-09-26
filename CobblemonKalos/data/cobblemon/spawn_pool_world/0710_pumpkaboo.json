@@ -11,6 +11,12 @@
             "bucket": "common",
             "level": "34-36",
             "weight": 61,
+            "heldItems": [
+                {
+                    "item": "cobblemon:miracle_seed",
+                    "percentage": 10.0
+                }
+            ],
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:short_grass"

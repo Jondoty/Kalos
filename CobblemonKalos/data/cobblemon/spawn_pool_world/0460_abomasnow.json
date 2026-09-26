@@ -11,6 +11,12 @@
             "bucket": "common",
             "level": "38-40",
             "weight": 1,
+            "heldItems": [
+                {
+                    "item": "cobblemon:never_melt_ice",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "neededNearbyBlocks": [
                     "snow_block"

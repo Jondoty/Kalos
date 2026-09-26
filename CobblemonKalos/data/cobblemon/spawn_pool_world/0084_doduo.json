@@ -11,6 +11,12 @@
             "bucket": "common",
             "level": "8-10",
             "weight": 10,
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:short_grass",

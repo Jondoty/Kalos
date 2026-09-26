@@ -11,6 +11,12 @@
             "bucket": "common",
             "level": "25",
             "weight": 32.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:deep_sea_tooth",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": -342, "maxX": 90, "minZ": -1577, "maxZ": -1303,
                 "minLureLevel": 2,
@@ -25,6 +31,12 @@
             "bucket": "common",
             "level": "35",
             "weight": 17.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:deep_sea_tooth",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": -342, "maxX": 90, "minZ": -1577, "maxZ": -1303,
                 "minLureLevel": 3,
@@ -40,6 +52,12 @@
             "bucket": "common",
             "level": "25",
             "weight": 32.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:deep_sea_tooth",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 212, "maxX": 575, "minZ": -402, "maxZ": -129,
                 "minLureLevel": 2,
@@ -54,6 +72,12 @@
             "bucket": "common",
             "level": "35",
             "weight": 17.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:deep_sea_tooth",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 212, "maxX": 575, "minZ": -402, "maxZ": -129,
                 "minLureLevel": 3,
@@ -69,6 +93,12 @@
             "bucket": "common",
             "level": "30",
             "weight": 32.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:deep_sea_tooth",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 444, "maxX": 887, "minZ": -1444, "maxZ": -638,
                 "minLureLevel": 2,
@@ -83,6 +113,12 @@
             "bucket": "common",
             "level": "40",
             "weight": 17.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:deep_sea_tooth",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 444, "maxX": 887, "minZ": -1444, "maxZ": -638,
                 "minLureLevel": 3,
@@ -98,6 +134,12 @@
             "bucket": "common",
             "level": "35",
             "weight": 32.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:deep_sea_tooth",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 1326, "maxX": 1686, "minZ": 132, "maxZ": 330,
                 "minLureLevel": 2,
@@ -112,6 +154,12 @@
             "bucket": "common",
             "level": "45",
             "weight": 17.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:deep_sea_tooth",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 1326, "maxX": 1686, "minZ": 132, "maxZ": 330,
                 "minLureLevel": 3,
@@ -127,6 +175,12 @@
             "bucket": "common",
             "level": "45",
             "weight": 32.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:deep_sea_tooth",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 1500, "maxX": 2667, "minZ": 1203, "maxZ": 2620,
                 "minLureLevel": 2,
@@ -141,6 +195,12 @@
             "bucket": "common",
             "level": "55",
             "weight": 17.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:deep_sea_tooth",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 1500, "maxX": 2667, "minZ": 1203, "maxZ": 2620,
                 "minLureLevel": 3,
@@ -156,6 +216,12 @@
             "bucket": "common",
             "level": "40",
             "weight": 60.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:deep_sea_tooth",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 683, "maxX": 983, "minZ": 299, "maxZ": 562,
                 "minLureLevel": 2,
@@ -170,6 +236,12 @@
             "bucket": "common",
             "level": "50",
             "weight": 35.0,
+            "heldItems": [
+                {
+                    "item": "cobblemon:deep_sea_tooth",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "minX": 683, "maxX": 983, "minZ": 299, "maxZ": 562,
                 "minLureLevel": 3,

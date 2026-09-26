@@ -11,6 +11,12 @@
             "bucket": "common",
             "level": "21-23",
             "weight": 20,
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:short_grass"

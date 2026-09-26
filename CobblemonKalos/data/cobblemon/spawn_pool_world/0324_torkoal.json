@@ -11,6 +11,12 @@
             "bucket": "common",
             "level": "44-46",
             "weight": 20,
+            "heldItems": [
+                {
+                    "item": "cobblemon:charcoal",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:short_grass"
@@ -26,6 +32,12 @@
             "bucket": "common",
             "level": "44-46",
             "weight": 10,
+            "heldItems": [
+                {
+                    "item": "cobblemon:charcoal",
+                    "percentage": 5.0
+                }
+            ],
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:poppy"

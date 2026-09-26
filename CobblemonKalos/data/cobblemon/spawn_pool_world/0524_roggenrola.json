@@ -11,6 +11,16 @@
             "bucket": "common",
             "level": "21-23",
             "weight": 20,
+            "heldItems": [
+                {
+                    "item": "cobblemon:hard_stone",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:everstone",
+                    "percentage": 50.0
+                }
+            ],
             "condition": {
                 "canSeeSky": false,
                 "minX": -1844, "maxX": -1618, "minY": 57, "maxY": 89, "minZ": -439, "maxZ": -197

@@ -11,6 +11,16 @@
             "bucket": "common",
             "level": "48-50",
             "weight": 20,
+            "heldItems": [
+                {
+                    "item": "cobblemon:metal_powder",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:quick_powder",
+                    "percentage": 50.0
+                }
+            ],
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:dandelion"
@@ -26,6 +36,16 @@
             "bucket": "common",
             "level": "48-50",
             "weight": 10,
+            "heldItems": [
+                {
+                    "item": "cobblemon:metal_powder",
+                    "percentage": 5.0
+                },
+                {
+                    "item": "cobblemon:quick_powder",
+                    "percentage": 50.0
+                }
+            ],
             "condition": {
                 "neededNearbyBlocks": [
                     "minecraft:allium"

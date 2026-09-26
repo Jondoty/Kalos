@@ -545,6 +545,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo hp_iv=31 defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -563,6 +569,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo shiny=yes hp_iv=31 defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -581,6 +593,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo hp_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -599,6 +617,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo shiny=yes hp_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -617,6 +641,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo hp_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -635,6 +665,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo shiny=yes hp_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -653,6 +689,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo hp_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -671,6 +713,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo shiny=yes hp_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -689,6 +737,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo hp_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -707,6 +761,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo shiny=yes hp_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -725,6 +785,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo defence_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -743,6 +809,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo shiny=yes defence_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -761,6 +833,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo defence_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -779,6 +857,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo shiny=yes defence_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -797,6 +881,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -815,6 +905,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo shiny=yes defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -833,6 +929,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -851,6 +953,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo shiny=yes defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -869,6 +977,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo attack_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -887,6 +1001,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo shiny=yes attack_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -905,6 +1025,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo attack_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -923,6 +1049,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo shiny=yes attack_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -941,6 +1073,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -959,6 +1097,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo shiny=yes attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -977,6 +1121,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo special_defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -995,6 +1145,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo shiny=yes special_defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1013,6 +1169,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo special_defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1031,6 +1193,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo shiny=yes special_defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1049,6 +1217,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo special_attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1067,6 +1241,12 @@
         },
         {
             "id": "doduo-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:sharp_beak",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "doduo shiny=yes special_attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1085,6 +1265,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha hp_iv=31 defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1103,6 +1289,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha shiny=yes hp_iv=31 defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1121,6 +1313,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha hp_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1139,6 +1337,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha shiny=yes hp_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1157,6 +1361,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha hp_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1175,6 +1385,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha shiny=yes hp_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1193,6 +1409,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha hp_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1211,6 +1433,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha shiny=yes hp_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1229,6 +1457,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha hp_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1247,6 +1481,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha shiny=yes hp_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1265,6 +1505,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha defence_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1283,6 +1529,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha shiny=yes defence_iv=31 attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1301,6 +1553,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha defence_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1319,6 +1577,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha shiny=yes defence_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1337,6 +1601,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1355,6 +1625,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha shiny=yes defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1373,6 +1649,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1391,6 +1673,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha shiny=yes defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1409,6 +1697,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha attack_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1427,6 +1721,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha shiny=yes attack_iv=31 special_defence_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1445,6 +1745,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha attack_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1463,6 +1769,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha shiny=yes attack_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1481,6 +1793,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1499,6 +1817,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha shiny=yes attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1517,6 +1841,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha special_defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1535,6 +1865,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha shiny=yes special_defence_iv=31 special_attack_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1553,6 +1889,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha special_defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1571,6 +1913,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha shiny=yes special_defence_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1589,6 +1937,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha special_attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
@@ -1607,6 +1961,12 @@
         },
         {
             "id": "hawlucha-1",
+            "heldItems": [
+                {
+                    "item": "cobblemon:kings_rock",
+                    "percentage": 5.0
+                }
+            ],
             "pokemon": "hawlucha shiny=yes special_attack_iv=31 speed_iv=31",
             "type": "pokemon",
             "context": "grounded",
