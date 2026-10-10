@@ -27,6 +27,9 @@ tag @s remove DailyDex3
 #Daily TM Quiz
 tag @s remove TMQuizCD
 
+#Daily Dive Ball cooldown
+tag @s remove ItemLoot153
+
 #Day of the Week counter
 scoreboard players add @e[x=-687,y=100,z=1388,dy=4,type=armor_stand] Weekday 1
 scoreboard players set @e[x=-687,y=100,z=1388,dy=4,type=armor_stand,scores={Weekday=8..}] Weekday 1
