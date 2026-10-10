@@ -15,7 +15,7 @@
             "id": "page1",
             "speaker": "npc",
             "lines": [
-                "There may be more than one example of the Reveal Glass first found in Unova. That\u2019s what the latest research seems to suggest."
+                "There may be more than one example of the Reveal Glass first found in Unova."
             ],
             "input": {
                 "type": "option",
@@ -33,7 +33,7 @@
             "id": "page2",
             "speaker": "npc",
             "lines": [
-                "It\u2019s a real breakthrough! Oh, sorry. Don\u2019t you know?"
+                "That's what the latest research seems to suggest."
             ],
             "input": {
                 "type": "option",
@@ -51,7 +51,7 @@
             "id": "page3",
             "speaker": "npc",
             "lines": [
-                "A Reveal Glass is a mirror that has the ability to transform Landorus, Thundurus, and Tornadus back to their original forms."
+                "It's a real breakthrough!"
             ],
             "input": {
                 "type": "option",
@@ -69,7 +69,25 @@
             "id": "page4",
             "speaker": "npc",
             "lines": [
-                "Of course, no one really knows whether the Therian Forme or the Incarnate Forme is its true Forme..."
+                "Oh, sorry. Don't you know?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page5');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "npc",
+            "lines": [
+                "A Reveal Glass is a mirror that has the ability to transform Landorus, Thundurus, and Tornadus back to their original forms."
             ],
             "input": {
                 "type": "option",

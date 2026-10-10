@@ -15,7 +15,7 @@
             "id": "page1",
             "speaker": "npc",
             "lines": [
-                "The Pokemon Kyurem... Doesn't anyone have it?"
+                "The Pokémon Kyurem... "
             ],
             "input": {
                 "type": "option",
@@ -33,7 +33,7 @@
             "id": "page2",
             "speaker": "npc",
             "lines": [
-                "If you do, show me, please?"
+                "Doesn't anyone have it?"
             ],
             "input": {
                 "type": "option",

@@ -113,6 +113,152 @@ execute as @s[x=-1121,y=84,z=-849,distance=..4,tag=TMQuiz1,tag=TMQuiz2,tag=TMQui
 
 
 
+#-------------------------------------------------------------
+#NPCs granting items depending on who is in your party
+
+#Ambrette Genesect hiker
+execute as @s[x=-1947,y=141,z=594,distance=..6] run scoreboard players set @s Temp 0
+execute as @s[x=-1947,y=141,z=594,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1947,y=141,z=594,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 1 genesect
+execute as @s[x=-1947,y=141,z=594,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1947,y=141,z=594,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1947,y=141,z=594,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 2 genesect
+execute as @s[x=-1947,y=141,z=594,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1947,y=141,z=594,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1947,y=141,z=594,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 3 genesect
+execute as @s[x=-1947,y=141,z=594,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1947,y=141,z=594,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1947,y=141,z=594,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 4 genesect
+execute as @s[x=-1947,y=141,z=594,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1947,y=141,z=594,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1947,y=141,z=594,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 5 genesect
+execute as @s[x=-1947,y=141,z=594,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1947,y=141,z=594,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1947,y=141,z=594,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 6 genesect
+execute as @s[x=-1947,y=141,z=594,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1947,y=141,z=594,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1947,y=141,z=594,distance=..6,tag=!ItemLoot157] run opendialogue ambrette_hiker_interaction @s
+execute as @s[x=-1947,y=141,z=594,distance=..6,scores={Temp=1..},tag=!ItemLoot157] run opendialogue ambrette_hiker_genesect @s
+execute as @s[x=-1947,y=141,z=594,distance=..6,tag=ItemLoot157] run opendialogue ambrette_hiker_genesect_claimed @s
+
+
+#Reflection Cave Genie Scientist
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s Temp 0
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 1 landorus
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 2 landorus
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 3 landorus
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 4 landorus
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 5 landorus
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 6 landorus
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s PokeHave 0
+
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 1 thundurus
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 2 thundurus
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 3 thundurus
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 4 thundurus
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 5 thundurus
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 6 thundurus
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s PokeHave 0
+
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 1 tornadus
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 2 tornadus
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 3 tornadus
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 4 tornadus
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 5 tornadus
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 6 tornadus
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=-1697,y=69,z=-345,distance=..6] run scoreboard players set @s PokeHave 0
+
+execute as @s[x=-1697,y=69,z=-345,distance=..6,tag=!ItemLoot213] run opendialogue reflectioncave_scientistf_interaction @s
+execute as @s[x=-1697,y=69,z=-345,distance=..6,scores={Temp=1..},tag=!ItemLoot213] run opendialogue reflectioncave_scientistf_genie @s
+execute as @s[x=-1697,y=69,z=-345,distance=..6,tag=ItemLoot213] run opendialogue reflectioncave_scientistf_done @s
+
+
+
+#Snowbelle Beauty Shaymin
+execute as @s[x=1230,y=74,z=492,distance=..6] run scoreboard players set @s Temp 0
+execute as @s[x=1230,y=74,z=492,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=1230,y=74,z=492,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 1 shaymin
+execute as @s[x=1230,y=74,z=492,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=1230,y=74,z=492,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=1230,y=74,z=492,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 2 shaymin
+execute as @s[x=1230,y=74,z=492,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=1230,y=74,z=492,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=1230,y=74,z=492,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 3 shaymin
+execute as @s[x=1230,y=74,z=492,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=1230,y=74,z=492,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=1230,y=74,z=492,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 4 shaymin
+execute as @s[x=1230,y=74,z=492,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=1230,y=74,z=492,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=1230,y=74,z=492,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 5 shaymin
+execute as @s[x=1230,y=74,z=492,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=1230,y=74,z=492,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=1230,y=74,z=492,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 6 shaymin
+execute as @s[x=1230,y=74,z=492,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=1230,y=74,z=492,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=1230,y=74,z=492,distance=..6,tag=!ItemLoot462] run opendialogue snowbelle_lass4_interaction @s
+execute as @s[x=1230,y=74,z=492,distance=..6,scores={Temp=1..},tag=!ItemLoot462] run opendialogue snowbelle_lass4_shaymin @s
+execute as @s[x=1230,y=74,z=492,distance=..6,tag=ItemLoot462] run opendialogue snowbelle_lass4_shaymin_done @s
+
+
+#Kiloude DNA Splicers, Kyurem
+execute as @s[x=1173,y=67,z=1527,distance=..6] run scoreboard players set @s Temp 0
+execute as @s[x=1173,y=67,z=1527,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=1173,y=67,z=1527,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 1 kyurem
+execute as @s[x=1173,y=67,z=1527,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=1173,y=67,z=1527,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=1173,y=67,z=1527,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 2 kyurem
+execute as @s[x=1173,y=67,z=1527,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=1173,y=67,z=1527,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=1173,y=67,z=1527,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 3 kyurem
+execute as @s[x=1173,y=67,z=1527,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=1173,y=67,z=1527,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=1173,y=67,z=1527,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 4 kyurem
+execute as @s[x=1173,y=67,z=1527,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=1173,y=67,z=1527,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=1173,y=67,z=1527,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 5 kyurem
+execute as @s[x=1173,y=67,z=1527,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=1173,y=67,z=1527,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=1173,y=67,z=1527,distance=..6] run execute as @s store result score @s PokeHave run testpartyslot @s 6 kyurem
+execute as @s[x=1173,y=67,z=1527,distance=..6] run execute as @s[scores={PokeHave=1}] run scoreboard players add @s Temp 1
+execute as @s[x=1173,y=67,z=1527,distance=..6] run scoreboard players set @s PokeHave 0
+execute as @s[x=1173,y=67,z=1527,distance=..6,tag=!ItemLoot538] run opendialogue kiloude_punkgirl_interaction @s
+execute as @s[x=1173,y=67,z=1527,distance=..6,scores={Temp=1..},tag=!ItemLoot538] run opendialogue kiloude_punkgirl_kyurem @s
+execute as @s[x=1173,y=67,z=1527,distance=..6,tag=ItemLoot538] run opendialogue kiloude_punkgirl_done @s
+
 
 #-------------------------------------------------------------
 

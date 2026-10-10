@@ -3,6 +3,8 @@
 
 
 #1.0.1 to 1.1
+scoreboard objectives add PokeHave dummy
+
 #Adds TM blocks
 execute if entity @a[x=-897,y=102,z=-151,distance=..75] if block -897 102 -151 air positioned -897 102 -151 run function kalos:spawn/tmloot
 execute if entity @a[x=-1223,y=100,z=-165,distance=..75] if block -1223 100 -165 air positioned -1223 100 -165 run function kalos:spawn/tmloot
@@ -24,7 +26,12 @@ execute if entity @a[x=822,y=100,z=499,distance=..75] if block 822 100 499 air p
 execute if entity @a[x=596,y=91,z=542,distance=..75] if block 596 91 542 air positioned 596 91 542 run function kalos:spawn/tmloot
 execute if entity @a[x=2040,y=175,z=2377,distance=..75] if block 2040 175 2377 air positioned 2040 175 2377 run function kalos:spawn/tmloot
 execute if entity @a[x=1758,y=190,z=2172,distance=..75] if block 1758 190 2172 air positioned 1758 190 2172 run function kalos:spawn/tmloot
+execute if entity @a[x=-2156,y=100,z=179,distance=..75] if block -2156 100 179 air positioned -2156 100 179 run function kalos:spawn/tmloot
 
+
+#New Blocks
+execute if entity @a[x=-1944,y=142,z=590,distance=..50] if block -1944 142 590 air run setblock -1944 142 590 mega_showdown:deoxys_meteorite
+execute if entity @a[x=-1944,y=142,z=590,distance=..50] if block -1947 142 590 air run setblock -1947 142 590 mega_showdown:deoxys_meteorite
 
 
 
@@ -42,6 +49,10 @@ execute if entity @a[x=-1608,y=57,z=-843,distance=..50] unless entity @e[x=-1608
 execute if entity @a[x=1281,y=80,z=-221,distance=..50] unless entity @e[x=1281,y=80,z=-221,dy=4] run npcspawnat 1281 80 -221 anistar_shop2
 execute if entity @a[x=1191,y=81,z=1637,distance=..50] unless entity @e[x=1191,y=81,z=1637,dy=4] run npcspawnat 1191 81 1637 kiloude_shop2
 execute if entity @a[x=1230,y=73,z=1576,distance=..50] unless entity @e[x=1230,y=73,z=1576,dy=4] run npcspawnat 1230 73 1576 battlemaison_shop3
+execute if entity @a[x=-1947,y=141,z=594,distance=..50] unless entity @e[x=-1947,y=141,z=594,distance=..4,type=interaction] positioned -1947 141 594 run function kalos:spawn/npcboxes
+execute if entity @a[x=-1697,y=69,z=-345,distance=..50] unless entity @e[x=-1697,y=69,z=-345,distance=..4,type=interaction] positioned -1697 69 -345 run function kalos:spawn/npcboxes
+execute if entity @a[x=1230,y=74,z=492,distance=..50] unless entity @e[x=1230,y=74,z=492,distance=..4,type=interaction] positioned 1230 74 492 run function kalos:spawn/npcboxes
+execute if entity @a[x=1173,y=67,z=1527,distance=..50] unless entity @e[x=1173,y=67,z=1527,distance=..4,type=interaction] positioned 1173 67 1527 run function kalos:spawn/npcboxes
 
 
 
