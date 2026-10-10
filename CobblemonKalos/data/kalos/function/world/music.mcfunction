@@ -388,6 +388,15 @@ execute as @s at @s if entity @e[distance=..1,type=cobblemon:pokemon,nbt={Pokemo
 execute as @s at @s if entity @e[distance=..1,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:skiddo"}}] run scoreboard players set @s[scores={MusicCooldown=0}] MusicCooldown 48
 
 
+#Riding a Pokemon in the water
+playsound surf record @s[tag=SurfMusic,scores={MusicCooldown=0}] ~ ~ ~ 1 1 1
+scoreboard players set @s[tag=SurfMusic,scores={MusicCooldown=0}] MusicCooldown 162
+
+execute as @a at @s[scores={MusicCooldown=0}] on vehicle if predicate kalos:near_water on passengers run playsound surf record @s ~ ~ ~ 1 1 1
+execute as @a at @s[scores={MusicCooldown=0}] on vehicle if predicate kalos:near_water on passengers run tag @s add SurfMusic
+execute as @a at @s[scores={MusicCooldown=0}] on vehicle if predicate kalos:near_water on passengers run scoreboard players set @s MusicCooldown 162
+
+
 #----------------------------------------------------------------Pokemon Center Birthday Theme----------------------------------------------------------------
 
 #Santalune Pokemon Center

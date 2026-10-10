@@ -174,6 +174,16 @@ execute as @a[tag=!SkiddoMusic] at @s if entity @e[distance=..1.5,type=cobblemon
 execute as @a[tag=SkiddoMusic] at @s unless entity @e[distance=..1.5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:skiddo"}}] run function kalos:triggers/stopsound
 execute as @a[tag=SkiddoMusic] at @s unless entity @e[distance=..1.5,type=cobblemon:pokemon,nbt={Pokemon:{Species:"cobblemon:skiddo"}}] run tag @s remove SkiddoMusic
 
+
+#Starts Surfing music
+execute as @a at @s[tag=!SurfMusic] on vehicle if predicate kalos:near_water on passengers run function kalos:triggers/stopsound
+execute as @a at @s[tag=!SurfMusic] on vehicle if predicate kalos:near_water on passengers run tag @s add SurfMusic
+
+#Stops Surfing music if players dismounts a mount
+execute as @a at @s[tag=SurfMusic] unless predicate kalos:near_water run function kalos:triggers/stopsound
+execute as @a at @s[tag=SurfMusic] unless predicate kalos:near_water run tag @s remove SurfMusic
+
+
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Story Dialogues
 
