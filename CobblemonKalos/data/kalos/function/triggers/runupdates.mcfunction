@@ -28,6 +28,8 @@ execute if entity @a[x=2040,y=175,z=2377,distance=..75] if block 2040 175 2377 a
 execute if entity @a[x=1758,y=190,z=2172,distance=..75] if block 1758 190 2172 air positioned 1758 190 2172 run function kalos:spawn/tmloot
 execute if entity @a[x=-2156,y=100,z=179,distance=..75] if block -2156 100 179 air positioned -2156 100 179 run function kalos:spawn/tmloot
 execute if entity @a[x=-1500,y=148,z=383,distance=..75] if block -1500 148 383 air positioned -1500 148 383 run function kalos:spawn/tmloot
+execute if entity @a[x=-1662,y=129,z=-1227,distance=..75] if block -1662 129 -1227 air positioned -1662 129 -1227 run function kalos:spawn/tmloot
+execute if entity @a[x=-1413,y=76,z=-977,distance=..75] if block -1413 76 -977 air positioned -1413 76 -977 run function kalos:spawn/tmloot
 
 
 #New Blocks
@@ -55,6 +57,8 @@ execute if entity @a[x=-1697,y=69,z=-345,distance=..50] unless entity @e[x=-1697
 execute if entity @a[x=1230,y=74,z=492,distance=..50] unless entity @e[x=1230,y=74,z=492,distance=..4,type=interaction] positioned 1230 74 492 run function kalos:spawn/npcboxes
 execute if entity @a[x=1173,y=67,z=1527,distance=..50] unless entity @e[x=1173,y=67,z=1527,distance=..4,type=interaction] positioned 1173 67 1527 run function kalos:spawn/npcboxes
 execute if entity @a[x=-1958,y=141,z=597,distance=..50] unless entity @e[x=-1958,y=141,z=597,distance=..4,type=interaction] positioned -1958 141 597 run function kalos:spawn/npcboxes
+execute if entity @a[x=-1731,y=84,z=-897,distance=..50] unless entity @e[x=-1731,y=84,z=-897,dy=4] run npcspawnat -1731 84 -897 shalour_psychic
+execute if entity @a[x=-1731,y=84,z=-897,distance=..50] unless entity @e[x=-1731,y=84,z=-897,distance=..4,type=interaction] positioned -1731 84 -897 run function kalos:spawn/npcboxes
 
 
 

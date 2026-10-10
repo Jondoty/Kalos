@@ -111,6 +111,15 @@ execute as @s[x=-1957,y=140,z=597,distance=..5,tag=ItemLoot153,tag=BallHave] run
 execute as @s[x=-1957,y=140,z=597,distance=..5,tag=BallHave] run tag @s remove BallHave
 
 
+#Shalour Leppa Berry exchange
+execute as @s[x=-1731,y=84,z=-897,distance=..5,nbt={Inventory:[{id:"cobblemon:sitrus_berry"}]}] run tag @s add BerryHave
+
+execute as @s[x=-1731,y=84,z=-897,distance=..5,tag=!BerryHave] run opendialogue shalour_psychic_noberry @s
+execute as @s[x=-1731,y=84,z=-897,distance=..5,tag=!ItemLoot229,tag=BerryHave] run opendialogue shalour_psychic_interaction @s
+execute as @s[x=-1731,y=84,z=-897,distance=..5,tag=ItemLoot229] run opendialogue shalour_psychic_traded @s
+execute as @s[x=-1731,y=84,z=-897,distance=..5,tag=BerryHave] run tag @s remove BerryHave
+
+
 #Courmarine TM Quiz veteran
 execute as @s[x=-1121,y=84,z=-849,distance=..4,tag=!TMQuizCD,tag=!TMQuiz1] run opendialogue coumarine_tmquiz_confide @s
 execute as @s[x=-1121,y=84,z=-849,distance=..4,tag=!TMQuizCD,tag=TMQuiz1,tag=!TMQuiz2] run opendialogue coumarine_tmquiz_acrobatics @s
