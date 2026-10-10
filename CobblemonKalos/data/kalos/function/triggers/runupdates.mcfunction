@@ -38,6 +38,7 @@ execute if entity @a[x=1304,y=108,z=1586,distance=..75] if block 1304 108 1586 a
 #New Blocks
 execute if entity @a[x=-1944,y=142,z=590,distance=..50] if block -1944 142 590 air run setblock -1944 142 590 mega_showdown:deoxys_meteorite
 execute if entity @a[x=-1944,y=142,z=590,distance=..50] if block -1947 142 590 air run setblock -1947 142 590 mega_showdown:deoxys_meteorite
+execute if entity @a[x=511,y=118,z=1546,distance=..50] if block 510 120 1546 minecraft:white_stained_glass run fill 511 118 1546 510 120 1546 cobblemon:disc_shelf[facing=south]
 
 
 
