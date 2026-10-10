@@ -7,7 +7,7 @@
 execute at @s as @e[distance=..75,nbt={ArmorItems:[{},{},{},{components:{"minecraft:custom_model_data":49},count:1,id:"minecraft:iron_hoe"}]}] run data merge entity @s {Motion:[0.0d,0.4d,0.0d]}
 
 #Power Plant Pass hint
-execute as @a[x=-779,y=104,z=-347,distance=..45,tag=Dialogue70,tag=!PowerPlantPass] run particle minecraft:firework -779 104 -347 0 2 0 0.1 0 normal @s
+execute as @a[x=-779,y=104,z=-347,distance=..45,tag=Dialogue70] run particle minecraft:firework -779 104 -347 0 2 0 0.1 0 normal @s[tag=!PowerPlantPass]
 
 #Runs infolist command for non-ops
 scoreboard players enable @a Info

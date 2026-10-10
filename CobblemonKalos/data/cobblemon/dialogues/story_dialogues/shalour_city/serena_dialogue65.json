@@ -36,6 +36,7 @@
                         "text": "Next",
                         "value": "next",
                         "action": [
+                            "q.run_command('givetm surf ' + q.player.username + '');",
                             "q.run_command('tag ' + q.player.username + ' add Surf');",
                             "q.run_command('playsound minecraft:itemget ambient ' + q.player.username + ' ~ ~ ~ 1 1 1');",
                             "q.dialogue.set_page('page2');"

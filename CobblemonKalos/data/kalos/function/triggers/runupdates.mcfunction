@@ -30,6 +30,9 @@ execute if entity @a[x=-2156,y=100,z=179,distance=..75] if block -2156 100 179 a
 execute if entity @a[x=-1500,y=148,z=383,distance=..75] if block -1500 148 383 air positioned -1500 148 383 run function kalos:spawn/tmloot
 execute if entity @a[x=-1662,y=129,z=-1227,distance=..75] if block -1662 129 -1227 air positioned -1662 129 -1227 run function kalos:spawn/tmloot
 execute if entity @a[x=-1413,y=76,z=-977,distance=..75] if block -1413 76 -977 air positioned -1413 76 -977 run function kalos:spawn/tmloot
+execute if entity @a[x=-836,y=104,z=-378,distance=..75] if block -836 104 -378 air positioned -836 104 -378 run function kalos:spawn/tmloot
+execute if entity @a[x=1965,y=4,z=-110,distance=..75] if block 1965 4 -110 air positioned 1965 4 -110 run function kalos:spawn/tmloot
+execute if entity @a[x=1304,y=108,z=1586,distance=..75] if block 1304 108 1586 air positioned 1304 108 1586 run function kalos:spawn/itemloot
 
 
 #New Blocks

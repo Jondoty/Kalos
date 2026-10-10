@@ -15,7 +15,7 @@
             "id": "page1",
             "speaker": "npc",
             "lines": [
-                "An Eviolite is quite a handy item. Would you believe what it does?"
+                "Oh, what's that you have there?"
             ],
             "input": {
                 "type": "option",
@@ -33,7 +33,7 @@
             "id": "page2",
             "speaker": "npc",
             "lines": [
-                "It raises the Defense and Special Defense for a Pok\u00e9mon holding it."
+                "That's a Kalos Pokédex, isn't it? Let me have a look for a moment."
             ],
             "input": {
                 "type": "option",
@@ -51,7 +51,7 @@
             "id": "page3",
             "speaker": "npc",
             "lines": [
-                "But I\u2019m afraid there is one catch. It only works for Pok\u00e9mon that can evolve, but haven\u2019t finished evolving."
+                "In Coastal Kalos you've seen... Quite a few Pokémon!"
             ],
             "input": {
                 "type": "option",
@@ -67,6 +67,81 @@
         },
         {
             "id": "page4",
+            "speaker": "npc",
+            "lines": [
+                "Take this in honor of your effort!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/itemlootgive');",
+                            "q.dialogue.set_page('page5');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page5",
+            "speaker": "npc",
+            "lines": [
+                "An Eviolite is quite a handy item. Would you believe what it does?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page6');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page6",
+            "speaker": "npc",
+            "lines": [
+                "It raises the Defense and Special Defense for a Pok\u00e9mon holding it."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page7');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page7",
+            "speaker": "npc",
+            "lines": [
+                "But I\u2019m afraid there is one catch. It only works for Pok\u00e9mon that can evolve, but haven\u2019t finished evolving."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": "q.dialogue.set_page('page8');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page8",
             "speaker": "npc",
             "lines": [
                 "Mysterious, isn\u2019t it?"

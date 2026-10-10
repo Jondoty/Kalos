@@ -15,7 +15,7 @@
             "id": "page1",
             "speaker": "npc",
             "lines": [
-                "You have a Pokedex, right?"
+                "You have a Pokédex, right? I'll give you a Pokémon quiz!"
             ],
             "input": {
                 "type": "option",
@@ -31,6 +31,75 @@
         },
         {
             "id": "page2",
+            "speaker": "npc",
+            "lines": [
+                "What is the sticky stuff that Swirlix expels to stop its opponent's movement?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Threads",
+                        "value": "threads",
+                        "action": "q.dialogue.set_page('page3');"
+                    },
+                    {
+                        "text": "Saliva",
+                        "value": "saliva",
+                        "action": "q.dialogue.set_page('wrong');"
+                    },
+                    {
+                        "text": "Sweat",
+                        "value": "sweat",
+                        "action": "q.dialogue.set_page('wrong');"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "wrong",
+            "speaker": "npc",
+            "lines": [
+                "Too bad! That's not correct."
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Close",
+                        "value": "close",
+                        "action": [
+                            "q.dialogue.close();"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page3",
+            "speaker": "npc",
+            "lines": [
+                "Wow! You're correct! This is the prize!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "text": "Next",
+                        "value": "next",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/itemlootgive');",
+                            "q.dialogue.set_page('page4');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "page4",
             "speaker": "npc",
             "lines": [
                 "I'm expanding my world by imagining a lot of things from my Pokedex!"

@@ -197,24 +197,6 @@
             "id": "page9",
             "speaker": "npc",
             "lines": [
-                "Correct, correct, CORRECT! "
-            ],
-            "input": {
-                "type": "option",
-                "vertical": false,
-                "options": [
-                    {
-                        "text": "Next",
-                        "value": "next",
-                        "action": "q.dialogue.set_page('page10');"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "page10",
-            "speaker": "npc",
-            "lines": [
                 "As I promised, I'll give you a TM!"
             ],
             "input": {

@@ -15,7 +15,7 @@
             "id": "page1",
             "speaker": "npc",
             "lines": [
-                "When you have your Pok\u00e9mon hold a Miracle Seed, the power of its Grass-type moves will go up."
+                "When you have your Pokémon hold a Miracle Seed, the power of its Grass-type moves will go up."
             ],
             "input": {
                 "type": "option",
@@ -25,6 +25,7 @@
                         "text": "Close",
                         "value": "close",
                         "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run function kalos:triggers/itemlootgive');",
                             "q.dialogue.close();"
                         ]
                     }
