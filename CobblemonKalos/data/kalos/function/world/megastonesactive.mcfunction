@@ -145,3 +145,159 @@ execute at @e[name=Tyranitarite,type=armor_stand,x=-1660,y=115,z=-1906,distance=
 
 #Gives advancement if you find every Mega Stone
 advancement grant @a[scores={Aggronite=1..,Alakazite=1..,Banettite=1..,Diancite=1..,Garchompite=1..,Gyaradosite=1..,Heracronite=1..,Houndoominite=1..,Kangaskhanite=1..,Manectite=1..,Mawilite=1..,Medichamite=1..,Mewtwonite_X=1..,Mewtwonite_Y=1..,Pinsirite=1..,Scizorite=1..,Tyranitarite=1..}] only kalos:sidequests/mega3
+
+
+
+#Custom ZA Mega Stones
+
+#Raichu X, Santalune Forest
+execute at @e[type=armor_stand,x=477,y=100,z=850,distance=..2] run particle dust_color_transition{from_color:[1.0,0.92,0.2],to_color:[1.0,0.55,0.05],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!RaichuniteX,distance=..30]
+execute at @e[type=armor_stand,x=477,y=100,z=850,distance=..2] run give @p[tag=Dialogue163,tag=!RaichuniteX,distance=..2] mega_showdown:raichunite_x
+execute at @e[type=armor_stand,x=477,y=100,z=850,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!RaichuniteX,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=477,y=100,z=850,distance=..2] run tellraw @p[tag=Dialogue163,tag=!RaichuniteX,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=477,y=100,z=850,distance=..2] run tag @p[tag=Dialogue163,tag=!RaichuniteX,distance=..2] add RaichuniteX
+
+#Raichu Y, Santalune Forest
+execute at @e[type=armor_stand,x=537,y=100,z=773,distance=..2] run particle dust_color_transition{from_color:[1.0,0.92,0.2],to_color:[1.0,0.55,0.05],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!RaichuniteY,distance=..30]
+execute at @e[type=armor_stand,x=537,y=100,z=773,distance=..2] run give @p[tag=Dialogue163,tag=!RaichuniteY,distance=..2] mega_showdown:raichunite_y
+execute at @e[type=armor_stand,x=537,y=100,z=773,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!RaichuniteY,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=537,y=100,z=773,distance=..2] run tellraw @p[tag=Dialogue163,tag=!RaichuniteY,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=537,y=100,z=773,distance=..2] run tag @p[tag=Dialogue163,tag=!RaichuniteY,distance=..2] add RaichuniteY
+
+#Victreebel, Route 14
+execute at @e[type=armor_stand,x=-218,y=100,z=-1240,distance=..2] run particle dust_color_transition{from_color:[0.3,0.75,0.2],to_color:[0.95,0.8,0.15],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!Victreebelite,distance=..30]
+execute at @e[type=armor_stand,x=-218,y=100,z=-1240,distance=..2] run give @p[tag=Dialogue163,tag=!Victreebelite,distance=..2] mega_showdown:victreebelite
+execute at @e[type=armor_stand,x=-218,y=100,z=-1240,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!Victreebelite,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=-218,y=100,z=-1240,distance=..2] run tellraw @p[tag=Dialogue163,tag=!Victreebelite,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=-218,y=100,z=-1240,distance=..2] run tag @p[tag=Dialogue163,tag=!Victreebelite,distance=..2] add Victreebelite
+
+#Starmie, Route 8 (lower)
+execute at @e[type=armor_stand,x=-2060,y=100,z=91,distance=..2] run particle dust_color_transition{from_color:[0.6,0.35,0.8],to_color:[0.9,0.1,0.25],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!Starminite,distance=..30]
+execute at @e[type=armor_stand,x=-2060,y=100,z=91,distance=..2] run give @p[tag=Dialogue163,tag=!Starminite,distance=..2] mega_showdown:starminite
+execute at @e[type=armor_stand,x=-2060,y=100,z=91,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!Starminite,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=-2060,y=100,z=91,distance=..2] run tellraw @p[tag=Dialogue163,tag=!Starminite,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=-2060,y=100,z=91,distance=..2] run tag @p[tag=Dialogue163,tag=!Starminite,distance=..2] add Starminite
+
+#Absol Z, Route 8 (upper)
+execute at @e[type=armor_stand,x=-1994,y=151,z=128,distance=..2] run particle dust_color_transition{from_color:[0.95,0.95,1.0],to_color:[0.75,0.0,0.1],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!AbsoliteZ,distance=..30]
+execute at @e[type=armor_stand,x=-1994,y=151,z=128,distance=..2] run give @p[tag=Dialogue163,tag=!AbsoliteZ,distance=..2] mega_showdown:absolite_z
+execute at @e[type=armor_stand,x=-1994,y=151,z=128,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!AbsoliteZ,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=-1994,y=151,z=128,distance=..2] run tellraw @p[tag=Dialogue163,tag=!AbsoliteZ,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=-1994,y=151,z=128,distance=..2] run tag @p[tag=Dialogue163,tag=!AbsoliteZ,distance=..2] add AbsoliteZ
+
+#Staraptor, Route 11
+execute at @e[type=armor_stand,x=-1862,y=133,z=-699,distance=..2] run particle dust_color_transition{from_color:[0.6,0.6,0.65],to_color:[0.95,0.95,0.95],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!Staraptite,distance=..30]
+execute at @e[type=armor_stand,x=-1862,y=133,z=-699,distance=..2] run give @p[tag=Dialogue163,tag=!Staraptite,distance=..2] mega_showdown:staraptite
+execute at @e[type=armor_stand,x=-1862,y=133,z=-699,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!Staraptite,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=-1862,y=133,z=-699,distance=..2] run tellraw @p[tag=Dialogue163,tag=!Staraptite,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=-1862,y=133,z=-699,distance=..2] run tag @p[tag=Dialogue163,tag=!Staraptite,distance=..2] add Staraptite
+
+#Garchomp Z, Route 13
+execute at @e[type=armor_stand,x=-913,y=104,z=-438,distance=..2] run particle dust_color_transition{from_color:[0.2,0.3,0.7],to_color:[0.85,0.1,0.1],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!GarchompiteZ,distance=..30]
+execute at @e[type=armor_stand,x=-913,y=104,z=-438,distance=..2] run give @p[tag=Dialogue163,tag=!GarchompiteZ,distance=..2] mega_showdown:garchompite_z
+execute at @e[type=armor_stand,x=-913,y=104,z=-438,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!GarchompiteZ,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=-913,y=104,z=-438,distance=..2] run tellraw @p[tag=Dialogue163,tag=!GarchompiteZ,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=-913,y=104,z=-438,distance=..2] run tag @p[tag=Dialogue163,tag=!GarchompiteZ,distance=..2] add GarchompiteZ
+
+#Lucario Z, Route 22
+execute at @e[type=armor_stand,x=442,y=100,z=375,distance=..2] run particle dust_color_transition{from_color:[0.25,0.45,0.95],to_color:[0.95,0.8,0.2],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!LucarioniteZ,distance=..30]
+execute at @e[type=armor_stand,x=442,y=100,z=375,distance=..2] run give @p[tag=Dialogue163,tag=!LucarioniteZ,distance=..2] mega_showdown:lucarionite_z
+execute at @e[type=armor_stand,x=442,y=100,z=375,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!LucarioniteZ,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=442,y=100,z=375,distance=..2] run tellraw @p[tag=Dialogue163,tag=!LucarioniteZ,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=442,y=100,z=375,distance=..2] run tag @p[tag=Dialogue163,tag=!LucarioniteZ,distance=..2] add LucarioniteZ
+
+#Scolipede, Route 6
+execute at @e[type=armor_stand,x=-1239,y=100,z=-316,distance=..2] run particle dust_color_transition{from_color:[0.55,0.15,0.5],to_color:[0.9,0.85,0.7],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!Scolipite,distance=..30]
+execute at @e[type=armor_stand,x=-1239,y=100,z=-316,distance=..2] run give @p[tag=Dialogue163,tag=!Scolipite,distance=..2] mega_showdown:scolipite
+execute at @e[type=armor_stand,x=-1239,y=100,z=-316,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!Scolipite,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=-1239,y=100,z=-316,distance=..2] run tellraw @p[tag=Dialogue163,tag=!Scolipite,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=-1239,y=100,z=-316,distance=..2] run tag @p[tag=Dialogue163,tag=!Scolipite,distance=..2] add Scolipite
+
+#Scrafty, Route 5
+execute at @e[type=armor_stand,x=-917,y=102,z=-186,distance=..2] run particle dust_color_transition{from_color:[0.9,0.5,0.1],to_color:[0.85,0.15,0.1],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!Scraftinite,distance=..30]
+execute at @e[type=armor_stand,x=-917,y=102,z=-186,distance=..2] run give @p[tag=Dialogue163,tag=!Scraftinite,distance=..2] mega_showdown:scraftinite
+execute at @e[type=armor_stand,x=-917,y=102,z=-186,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!Scraftinite,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=-917,y=102,z=-186,distance=..2] run tellraw @p[tag=Dialogue163,tag=!Scraftinite,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=-917,y=102,z=-186,distance=..2] run tag @p[tag=Dialogue163,tag=!Scraftinite,distance=..2] add Scraftinite
+
+#Chandelure, Lost Hotel
+execute at @e[type=armor_stand,x=411,y=92,z=-439,distance=..2] run particle dust_color_transition{from_color:[0.6,0.25,0.85],to_color:[0.3,0.4,1.0],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!Chandelurite,distance=..30]
+execute at @e[type=armor_stand,x=411,y=92,z=-439,distance=..2] run give @p[tag=Dialogue163,tag=!Chandelurite,distance=..2] mega_showdown:chandelurite
+execute at @e[type=armor_stand,x=411,y=92,z=-439,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!Chandelurite,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=411,y=92,z=-439,distance=..2] run tellraw @p[tag=Dialogue163,tag=!Chandelurite,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=411,y=92,z=-439,distance=..2] run tag @p[tag=Dialogue163,tag=!Chandelurite,distance=..2] add Chandelurite
+
+#Golurk, Route 10
+execute at @e[type=armor_stand,x=-2172,y=104,z=-561,distance=..2] run particle dust_color_transition{from_color:[0.2,0.55,0.5],to_color:[0.95,0.8,0.3],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!Golurkite,distance=..30]
+execute at @e[type=armor_stand,x=-2172,y=104,z=-561,distance=..2] run give @p[tag=Dialogue163,tag=!Golurkite,distance=..2] mega_showdown:golurkite
+execute at @e[type=armor_stand,x=-2172,y=104,z=-561,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!Golurkite,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=-2172,y=104,z=-561,distance=..2] run tellraw @p[tag=Dialogue163,tag=!Golurkite,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=-2172,y=104,z=-561,distance=..2] run tag @p[tag=Dialogue163,tag=!Golurkite,distance=..2] add Golurkite
+
+#Pyroar, Route 22
+execute at @e[type=armor_stand,x=597,y=104,z=431,distance=..2] run particle dust_color_transition{from_color:[1.0,0.45,0.05],to_color:[0.95,0.15,0.05],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!Pyroarite,distance=..30]
+execute at @e[type=armor_stand,x=597,y=104,z=431,distance=..2] run give @p[tag=Dialogue163,tag=!Pyroarite,distance=..2] mega_showdown:pyroarite
+execute at @e[type=armor_stand,x=597,y=104,z=431,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!Pyroarite,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=597,y=104,z=431,distance=..2] run tellraw @p[tag=Dialogue163,tag=!Pyroarite,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=597,y=104,z=431,distance=..2] run tag @p[tag=Dialogue163,tag=!Pyroarite,distance=..2] add Pyroarite
+
+#Meowstic, Route 6
+execute at @e[type=armor_stand,x=-1189,y=100,z=-233,distance=..2] run particle dust_color_transition{from_color:[0.3,0.5,0.95],to_color:[0.95,0.95,1.0],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!Meowsticite,distance=..30]
+execute at @e[type=armor_stand,x=-1189,y=100,z=-233,distance=..2] run give @p[tag=Dialogue163,tag=!Meowsticite,distance=..2] mega_showdown:meowsticite
+execute at @e[type=armor_stand,x=-1189,y=100,z=-233,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!Meowsticite,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=-1189,y=100,z=-233,distance=..2] run tellraw @p[tag=Dialogue163,tag=!Meowsticite,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=-1189,y=100,z=-233,distance=..2] run tag @p[tag=Dialogue163,tag=!Meowsticite,distance=..2] add Meowsticite
+
+#Malamar, Route 8 (Upper)
+execute at @e[type=armor_stand,x=-2018,y=151,z=180,distance=..2] run particle dust_color_transition{from_color:[0.2,0.3,0.7],to_color:[0.9,0.3,0.45],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!Malamarite,distance=..30]
+execute at @e[type=armor_stand,x=-2018,y=151,z=180,distance=..2] run give @p[tag=Dialogue163,tag=!Malamarite,distance=..2] mega_showdown:malamarite
+execute at @e[type=armor_stand,x=-2018,y=151,z=180,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!Malamarite,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=-2018,y=151,z=180,distance=..2] run tellraw @p[tag=Dialogue163,tag=!Malamarite,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=-2018,y=151,z=180,distance=..2] run tag @p[tag=Dialogue163,tag=!Malamarite,distance=..2] add Malamarite
+
+#Barbaracle, Azure Bay
+execute at @e[type=armor_stand,x=-1237,y=76,z=-789,distance=..2] run particle dust_color_transition{from_color:[0.55,0.4,0.25],to_color:[0.3,0.65,0.5],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!Barbaracite,distance=..30]
+execute at @e[type=armor_stand,x=-1237,y=76,z=-789,distance=..2] run give @p[tag=Dialogue163,tag=!Barbaracite,distance=..2] mega_showdown:barbaracite
+execute at @e[type=armor_stand,x=-1237,y=76,z=-789,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!Barbaracite,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=-1237,y=76,z=-789,distance=..2] run tellraw @p[tag=Dialogue163,tag=!Barbaracite,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=-1237,y=76,z=-789,distance=..2] run tag @p[tag=Dialogue163,tag=!Barbaracite,distance=..2] add Barbaracite
+
+#Dragalge, Route 8 (Lower)
+execute at @e[type=armor_stand,x=-2067,y=100,z=360,distance=..2] run particle dust_color_transition{from_color:[0.4,0.45,0.15],to_color:[0.6,0.4,0.2],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!Dragalgite,distance=..30]
+execute at @e[type=armor_stand,x=-2067,y=100,z=360,distance=..2] run give @p[tag=Dialogue163,tag=!Dragalgite,distance=..2] mega_showdown:dragalgite
+execute at @e[type=armor_stand,x=-2067,y=100,z=360,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!Dragalgite,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=-2067,y=100,z=360,distance=..2] run tellraw @p[tag=Dialogue163,tag=!Dragalgite,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=-2067,y=100,z=360,distance=..2] run tag @p[tag=Dialogue163,tag=!Dragalgite,distance=..2] add Dragalgite
+
+#Hawlucha, Route 10
+execute at @e[type=armor_stand,x=-2255,y=104,z=-359,distance=..2] run particle dust_color_transition{from_color:[0.2,0.7,0.3],to_color:[0.9,0.15,0.15],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!Hawluchanite,distance=..30]
+execute at @e[type=armor_stand,x=-2255,y=104,z=-359,distance=..2] run give @p[tag=Dialogue163,tag=!Hawluchanite,distance=..2] mega_showdown:hawluchanite
+execute at @e[type=armor_stand,x=-2255,y=104,z=-359,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!Hawluchanite,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=-2255,y=104,z=-359,distance=..2] run tellraw @p[tag=Dialogue163,tag=!Hawluchanite,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=-2255,y=104,z=-359,distance=..2] run tag @p[tag=Dialogue163,tag=!Hawluchanite,distance=..2] add Hawluchanite
+
+#Zygarde, Terminus Cave
+#execute at @e[type=armor_stand,x=2018,y=61,z=-179,distance=..2] run particle dust_color_transition{from_color:[0.25,0.85,0.35],to_color:[0.0,0.8,0.8],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!Zygardite,distance=..30]
+#execute at @e[type=armor_stand,x=2018,y=61,z=-179,distance=..2] run give @p[tag=Dialogue163,tag=!Zygardite,distance=..2] mega_showdown:zygardite
+#execute at @e[type=armor_stand,x=2018,y=61,z=-179,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!Zygardite,distance=..2] ~ ~ ~ 100 1 1
+#execute at @e[type=armor_stand,x=2018,y=61,z=-179,distance=..2] run tellraw @p[tag=Dialogue163,tag=!Zygardite,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+#execute at @e[type=armor_stand,x=2018,y=61,z=-179,distance=..2] run tag @p[tag=Dialogue163,tag=!Zygardite,distance=..2] add Zygardite
+
+#Skarmory, Victory Road
+execute at @e[type=armor_stand,x=2304,y=177,z=2163,distance=..2] run particle dust_color_transition{from_color:[0.6,0.6,0.65],to_color:[0.95,0.95,0.95],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!Skarmorite,distance=..30]
+execute at @e[type=armor_stand,x=2304,y=177,z=2163,distance=..2] run give @p[tag=Dialogue163,tag=!Skarmorite,distance=..2] mega_showdown:skarmorite
+execute at @e[type=armor_stand,x=2304,y=177,z=2163,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!Skarmorite,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=2304,y=177,z=2163,distance=..2] run tellraw @p[tag=Dialogue163,tag=!Skarmorite,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=2304,y=177,z=2163,distance=..2] run tag @p[tag=Dialogue163,tag=!Skarmorite,distance=..2] add Skarmorite
+
+#Dragonite, Route 21
+execute at @e[type=armor_stand,x=767,y=100,z=461,distance=..2] run particle dust_color_transition{from_color:[0.55,0.4,0.25],to_color:[0.3,0.65,0.5],scale:1} ~ ~ ~ 1 1 1 0 8 force @a[tag=Dialogue163,tag=!Dragoninite,distance=..30]
+execute at @e[type=armor_stand,x=767,y=100,z=461,distance=..2] run give @p[tag=Dialogue163,tag=!Dragoninite,distance=..2] mega_showdown:dragoninite
+execute at @e[type=armor_stand,x=767,y=100,z=461,distance=..2] run playsound megastoneget ambient @p[tag=Dialogue163,tag=!Dragoninite,distance=..2] ~ ~ ~ 100 1 1
+execute at @e[type=armor_stand,x=767,y=100,z=461,distance=..2] run tellraw @p[tag=Dialogue163,tag=!Dragoninite,distance=..2] {"text":"You found a Mega Stone!","italic":true,"color":"gray"}
+execute at @e[type=armor_stand,x=767,y=100,z=461,distance=..2] run tag @p[tag=Dialogue163,tag=!Dragoninite,distance=..2] add Dragoninite
+
+
+
+
+#

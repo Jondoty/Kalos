@@ -1,0 +1,1 @@
+summon minecraft:armor_stand ~ ~ ~ {Invisible:true,Invulnerable:true,PersistenceRequired:true,NoBasePlate:true,DisabledSlots:4144959}

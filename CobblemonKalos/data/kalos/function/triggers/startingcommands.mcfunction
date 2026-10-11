@@ -589,6 +589,27 @@ scoreboard players reset @s Mewtwonite_Y
 scoreboard players reset @s Pinsirite
 scoreboard players reset @s Scizorite
 scoreboard players reset @s Tyranitarite
+tag @s remove RaichuniteX
+tag @s remove RaichuniteY
+tag @s remove Victreebelite
+tag @s remove Starminite
+tag @s remove AbsoliteZ
+tag @s remove Staraptite
+tag @s remove GarchompiteZ
+tag @s remove LucarioniteZ
+tag @s remove Scolipite
+tag @s remove Scraftinite
+tag @s remove Chandelurite
+tag @s remove Golurkite
+tag @s remove Pyroarite
+tag @s remove Meowsticite
+tag @s remove Malamarite
+tag @s remove Barbaracite
+tag @s remove Dragalgite
+tag @s remove Hawluchanite
+tag @s remove Zygardite
+tag @s remove Skarmorite
+tag @s remove Dragoninite
 
 
 #Loots from ground and NPCs

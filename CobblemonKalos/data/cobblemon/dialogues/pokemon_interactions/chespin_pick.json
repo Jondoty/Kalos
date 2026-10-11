@@ -30,7 +30,7 @@
                         "value": "yes",
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:itemget ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run pokegive chespin level=5');",
+                            "q.run_command('execute as ' + q.player.username + ' run pokegive chespin level=5 held_item=mega_showdown:chesnaughtite');",
                             "q.run_command('execute as ' + q.player.username + ' run scoreboard players set @s StarterPick 1');",
                             "q.run_command('execute as ' + q.player.username + ' run tp @s 443 108 1369 88 6');",
                             "q.dialogue.close();"

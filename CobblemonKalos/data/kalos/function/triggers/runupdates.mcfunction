@@ -64,6 +64,28 @@ execute if entity @a[x=-1958,y=141,z=597,distance=..50] unless entity @e[x=-1958
 execute if entity @a[x=-1731,y=84,z=-897,distance=..50] unless entity @e[x=-1731,y=84,z=-897,dy=4] run npcspawnat -1731 84 -897 shalour_psychic
 execute if entity @a[x=-1731,y=84,z=-897,distance=..50] unless entity @e[x=-1731,y=84,z=-897,distance=..4,type=interaction] positioned -1731 84 -897 run function kalos:spawn/npcboxes
 
+#new mega stones
+execute if entity @a[x=477,y=100,z=850,distance=..50] unless entity @e[x=477,y=100,z=850,distance=..4,type=armor_stand] positioned 477 100 850 run function kalos:spawn/armorstand
+execute if entity @a[x=537,y=100,z=773,distance=..50] unless entity @e[x=537,y=100,z=773,distance=..4,type=armor_stand] positioned 537 100 773 run function kalos:spawn/armorstand
+execute if entity @a[x=-218,y=100,z=-1240,distance=..50] unless entity @e[x=-218,y=100,z=-1240,distance=..4,type=armor_stand] positioned -218 100 -1240 run function kalos:spawn/armorstand
+execute if entity @a[x=-2060,y=100,z=91,distance=..50] unless entity @e[x=-2060,y=100,z=91,distance=..4,type=armor_stand] positioned -2060 100 91 run function kalos:spawn/armorstand
+execute if entity @a[x=-1994,y=151,z=128,distance=..50] unless entity @e[x=-1994,y=151,z=128,distance=..4,type=armor_stand] positioned -1994 151 128 run function kalos:spawn/armorstand
+execute if entity @a[x=-1862,y=133,z=-699,distance=..50] unless entity @e[x=-1862,y=133,z=-699,distance=..4,type=armor_stand] positioned -1862 133 -699 run function kalos:spawn/armorstand
+execute if entity @a[x=-913,y=104,z=-438,distance=..50] unless entity @e[x=-913,y=104,z=-438,distance=..4,type=armor_stand] positioned -913 104 -438 run function kalos:spawn/armorstand
+execute if entity @a[x=-1239,y=100,z=-316,distance=..50] unless entity @e[x=-1239,y=100,z=-316,distance=..4,type=armor_stand] positioned -1239 100 -316 run function kalos:spawn/armorstand
+execute if entity @a[x=-917,y=102,z=-186,distance=..50] unless entity @e[x=-917,y=102,z=-186,distance=..4,type=armor_stand] positioned -917 102 -186 run function kalos:spawn/armorstand
+execute if entity @a[x=411,y=92,z=-439,distance=..50] unless entity @e[x=411,y=92,z=-439,distance=..4,type=armor_stand] positioned 411 92 -439 run function kalos:spawn/armorstand
+execute if entity @a[x=-2172,y=104,z=-561,distance=..50] unless entity @e[x=-2172,y=104,z=-561,distance=..4,type=armor_stand] positioned -2172 104 -561 run function kalos:spawn/armorstand
+execute if entity @a[x=597,y=104,z=431,distance=..50] unless entity @e[x=597,y=104,z=431,distance=..4,type=armor_stand] positioned 597 104 431 run function kalos:spawn/armorstand
+execute if entity @a[x=-1189,y=100,z=-233,distance=..50] unless entity @e[x=-1189,y=100,z=-233,distance=..4,type=armor_stand] positioned -1189 100 -233 run function kalos:spawn/armorstand
+execute if entity @a[x=-2018,y=151,z=180,distance=..50] unless entity @e[x=-2018,y=151,z=180,distance=..4,type=armor_stand] positioned -2018 151 180 run function kalos:spawn/armorstand
+execute if entity @a[x=-1237,y=76,z=-789,distance=..50] unless entity @e[x=-1237,y=76,z=-789,distance=..4,type=armor_stand] positioned -1237 76 -789 run function kalos:spawn/armorstand
+execute if entity @a[x=-2067,y=100,z=360,distance=..50] unless entity @e[x=-2067,y=100,z=360,distance=..4,type=armor_stand] positioned -2067 100 360 run function kalos:spawn/armorstand
+execute if entity @a[x=-2255,y=104,z=-359,distance=..50] unless entity @e[x=-2255,y=104,z=-359,distance=..4,type=armor_stand] positioned -2255 104 -359 run function kalos:spawn/armorstand
+execute if entity @a[x=2018,y=61,z=-179,distance=..50] unless entity @e[x=2018,y=61,z=-179,distance=..4,type=armor_stand] positioned 2018 61 -179 run function kalos:spawn/armorstand
+execute if entity @a[x=442,y=100,z=375,distance=..50] unless entity @e[x=442,y=100,z=375,distance=..4,type=armor_stand] positioned 442 100 375 run function kalos:spawn/armorstand
+execute if entity @a[x=767,y=100,z=461,distance=..50] unless entity @e[x=767,y=100,z=461,distance=..4,type=armor_stand] positioned 767 100 461 run function kalos:spawn/armorstand
+execute if entity @a[x=2304,y=177,z=2163,distance=..50] unless entity @e[x=2304,y=177,z=2163,distance=..4,type=armor_stand] positioned 2304 177 2163 run function kalos:spawn/armorstand
 
 
 
