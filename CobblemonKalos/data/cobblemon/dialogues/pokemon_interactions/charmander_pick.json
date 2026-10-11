@@ -30,7 +30,7 @@
                         "value": "yes",
                         "action": [
                             "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:itemget ambient @s ~ ~ ~ 1 1 1');",
-                            "q.run_command('execute as ' + q.player.username + ' run pokegive charmander level=10 held_item=charizardite_x');",
+                            "q.run_command('execute as ' + q.player.username + ' run pokegive charmander level=10 held_item=mega_showdown:charizardite_x');",
                             "q.run_command('execute as ' + q.player.username + ' run tp @s -265 121 95 180 12');",
                             "q.run_command('execute as ' + q.player.username + ' run tag @s add KantoStarter');",
                             "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:charizardite_x');",
