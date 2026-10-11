@@ -98,29 +98,29 @@
                 "vertical": true,
                 "options": [
                     {
-                        "text": "Galladite",
-                        "value": "galladite",
-                        "action": "q.dialogue.set_page('pickgalladite');"
+                        "text": "Chesnaughtite",
+                        "value": "chesnaughtite",
+                        "action": "q.dialogue.set_page('pickchesnaughtite');"
                     },
                     {
-                        "text": "Glalitite",
-                        "value": "glalitite",
-                        "action": "q.dialogue.set_page('pickglalitite');"
+                        "text": "Chimechite",
+                        "value": "chimechite",
+                        "action": "q.dialogue.set_page('pickchimechite');"
                     },
                     {
-                        "text": "Latiasite",
-                        "value": "latiasite",
-                        "action": "q.dialogue.set_page('picklatiasite');"
+                        "text": "Clefablite",
+                        "value": "clefablite",
+                        "action": "q.dialogue.set_page('pickclefablite');"
                     },
                     {
-                        "text": "Latiosite",
-                        "value": "latiosite",
-                        "action": "q.dialogue.set_page('picklatiosite');"
+                        "text": "Delphoxite",
+                        "value": "delphoxite",
+                        "action": "q.dialogue.set_page('pickdelphoxite');"
                     },
                     {
-                        "text": "Lopunnite",
-                        "value": "lopunnite",
-                        "action": "q.dialogue.set_page('picklopunnite');"
+                        "text": "Eelektrossite",
+                        "value": "eelektrossite",
+                        "action": "q.dialogue.set_page('pickeelektrossite');"
                     },
                     {
                         "text": "Next Page >>",
@@ -141,29 +141,29 @@
                 "vertical": true,
                 "options": [
                     {
-                        "text": "Metagrossite",
-                        "value": "metagrossite",
-                        "action": "q.dialogue.set_page('pickmetagrossite');"
+                        "text": "Emboarite",
+                        "value": "emboarite",
+                        "action": "q.dialogue.set_page('pickemboarite');"
                     },
                     {
-                        "text": "Pidgeotite",
-                        "value": "pidgeotite",
-                        "action": "q.dialogue.set_page('pickpidgeotite');"
+                        "text": "Excadrite",
+                        "value": "excadrite",
+                        "action": "q.dialogue.set_page('pickexcadrite');"
                     },
                     {
-                        "text": "Sablenite",
-                        "value": "sablenite",
-                        "action": "q.dialogue.set_page('picksablenite');"
+                        "text": "Feraligite",
+                        "value": "feraligite",
+                        "action": "q.dialogue.set_page('pickferaligite');"
                     },
                     {
-                        "text": "Salamencite",
-                        "value": "salamencite",
-                        "action": "q.dialogue.set_page('picksalamencite');"
-                    },
+                        "text": "Froslassite",
+                        "value": "froslassite",
+                        "action": "q.dialogue.set_page('pickfroslassite');"
+                    },      
                     {
-                        "text": "Sceptilite",
-                        "value": "sceptilite",
-                        "action": "q.dialogue.set_page('picksceptilite');"
+                        "text": "Galladite",
+                        "value": "galladite",
+                        "action": "q.dialogue.set_page('pickgalladite');"
                     },
                     {
                         "text": "Next Page >>",
@@ -184,15 +184,106 @@
                 "vertical": true,
                 "options": [
                     {
+                        "text": "Glalitite",
+                        "value": "glalitite",
+                        "action": "q.dialogue.set_page('pickglalitite');"
+                    },
+                    {
+                        "text": "Greninjite",
+                        "value": "greninjite",
+                        "action": "q.dialogue.set_page('pickgreninjite');"
+                    },
+                    {
+                        "text": "Latiasite",
+                        "value": "latiasite",
+                        "action": "q.dialogue.set_page('picklatiasite');"
+                    },
+                    {
+                        "text": "Latiosite",
+                        "value": "latiosite",
+                        "action": "q.dialogue.set_page('picklatiosite');"
+                    },
+                    {
+                        "text": "Lopunnite",
+                        "value": "lopunnite",
+                        "action": "q.dialogue.set_page('picklopunnite');"
+                    },
+                    {
+                        "text": "Next Page >>",
+                        "value": "nextpage",
+                        "action": "q.dialogue.set_page('buy5');"
+                    }
+                ]
+            }
+        },        
+        {
+            "id": "buy5",
+            "speaker": "npc",
+            "lines": [
+                "It's a sort of power stone that will give your Pokemon shocking strength!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Meganiumite",
+                        "value": "meganiumite",
+                        "action": "q.dialogue.set_page('pickmeganiumite');"
+                    },
+                    {
+                        "text": "Metagrossite",
+                        "value": "metagrossite",
+                        "action": "q.dialogue.set_page('pickmetagrossite');"
+                    },
+                    {
+                        "text": "Pidgeotite",
+                        "value": "pidgeotite",
+                        "action": "q.dialogue.set_page('pickpidgeotite');"
+                    },
+                    {
+                        "text": "Sablenite",
+                        "value": "sablenite",
+                        "action": "q.dialogue.set_page('picksablenite');"
+                    },
+                    {
+                        "text": "Salamencite",
+                        "value": "salamencite",
+                        "action": "q.dialogue.set_page('picksalamencite');"
+                    },        
+                    {
+                        "text": "Next Page >>",
+                        "value": "nextpage",
+                        "action": "q.dialogue.set_page('buy6');"
+                    }
+                ]
+            }
+        },        
+        {
+            "id": "buy6",
+            "speaker": "npc",
+            "lines": [
+                "It's a sort of power stone that will give your Pokemon shocking strength!"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": true,
+                "options": [
+                    {
+                        "text": "Sceptilite",
+                        "value": "sceptilite",
+                        "action": "q.dialogue.set_page('picksceptilite');"
+                    },
+                    {
                         "text": "Sharpedonite",
                         "value": "sharpedonite",
                         "action": "q.dialogue.set_page('picksharpedonite');"
-                    },
+                    },    
                     {
                         "text": "Slowbronite",
                         "value": "slowbronite",
                         "action": "q.dialogue.set_page('pickslowbronite');"
-                    },
+                    },                             
                     {
                         "text": "Steelixite",
                         "value": "steelixite",
@@ -211,6 +302,7 @@
                 ]
             }
         },
+
         {
             "id": "pickaltarianite",
             "speaker": "npc",
@@ -800,6 +892,412 @@
                 ]
             }
         },
+        {
+            "id": "pickchesnaughtite",
+            "speaker": "npc",
+            "lines": [
+                "I'll sell you this Chesnaughtite for just $30,000. So what do you say?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
+                        "text": "Buy",
+                        "value": "buy",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:chesnaughtite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickchimechite",
+            "speaker": "npc",
+            "lines": [
+                "I'll sell you this Chimechite for just $30,000. So what do you say?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
+                        "text": "Buy",
+                        "value": "buy",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:chimechite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickclefablite",
+            "speaker": "npc",
+            "lines": [
+                "I'll sell you this Clefablite for just $30,000. So what do you say?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
+                        "text": "Buy",
+                        "value": "buy",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:clefablite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickdarkranite",
+            "speaker": "npc",
+            "lines": [
+                "I'll sell you this Darkranite for just $30,000. So what do you say?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
+                        "text": "Buy",
+                        "value": "buy",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:darkranite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickdelphoxite",
+            "speaker": "npc",
+            "lines": [
+                "I'll sell you this Delphoxite for just $30,000. So what do you say?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
+                        "text": "Buy",
+                        "value": "buy",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:delphoxite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickeelektrossite",
+            "speaker": "npc",
+            "lines": [
+                "I'll sell you this Eelektrossite for just $30,000. So what do you say?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
+                        "text": "Buy",
+                        "value": "buy",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:eelektrossite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickemboarite",
+            "speaker": "npc",
+            "lines": [
+                "I'll sell you this Emboarite for just $30,000. So what do you say?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
+                        "text": "Buy",
+                        "value": "buy",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:emboarite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickexcadrite",
+            "speaker": "npc",
+            "lines": [
+                "I'll sell you this Excadrite for just $30,000. So what do you say?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
+                        "text": "Buy",
+                        "value": "buy",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:excadrite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickferaligite",
+            "speaker": "npc",
+            "lines": [
+                "I'll sell you this Feraligite for just $30,000. So what do you say?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
+                        "text": "Buy",
+                        "value": "buy",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:feraligite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickfroslassite",
+            "speaker": "npc",
+            "lines": [
+                "I'll sell you this Froslassite for just $30,000. So what do you say?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
+                        "text": "Buy",
+                        "value": "buy",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:froslassite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickgreninjite",
+            "speaker": "npc",
+            "lines": [
+                "I'll sell you this Greninjite for just $30,000. So what do you say?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
+                        "text": "Buy",
+                        "value": "buy",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:greninjite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickheatranite",
+            "speaker": "npc",
+            "lines": [
+                "I'll sell you this Heatranite for just $30,000. So what do you say?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
+                        "text": "Buy",
+                        "value": "buy",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:heatranite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pickmeganiumite",
+            "speaker": "npc",
+            "lines": [
+                "I'll sell you this Meganiumite for just $30,000. So what do you say?"
+            ],
+            "input": {
+                "type": "option",
+                "vertical": false,
+                "options": [
+                    {
+                        "isSelectable": "q.player.has_tag('MoneyHave30000')",
+                        "text": "Buy",
+                        "value": "buy",
+                        "action": [
+                            "q.run_command('execute as ' + q.player.username + ' run give @s mega_showdown:meganiumite 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run playsound minecraft:megastoneget ambient @s ~ ~ ~ 1 1 1');",
+                            "q.run_command('execute as ' + q.player.username + ' run scoreboard players remove @s Money 30000');",
+                            "q.dialogue.set_page('buyend');"
+                        ]
+                    },
+                    {
+                        "text": "Go Back",
+                        "value": "goback",
+                        "action": [
+                            "q.dialogue.set_page('buy1');"
+                        ]
+                    }
+                ]
+            }
+        },
+
+
+
         {
             "id": "buyend",
             "speaker": "npc",
